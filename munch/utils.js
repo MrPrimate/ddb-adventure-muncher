@@ -140,6 +140,11 @@ function directoryReset(config) {
       });
     }
   })
+  // delete adventure zip
+  const targetAdventureZip = path.join(config.run.outputDirEnv,`${config.run.bookCode}.fvttadv`);
+  if (fs.existsSync(targetAdventureZip)) {
+    fs.rmSync(targetAdventureZip);
+  }
 
   console.log(`${config.run.sourceDir} to ${path.join(config.run.outputDir,"assets")}`);
 

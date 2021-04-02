@@ -706,8 +706,6 @@ function collectionFinished(err, count) {
     // save generated Ids table
     configure.saveLookups(idTable);
   }
-
-
 }
 
 function setConfig(conf) {
@@ -733,7 +731,7 @@ function getData(){
     db.run("PRAGMA cipher_hmac_algorithm = 'HMAC_SHA1'")
     db.run("PRAGMA cipher_kdf_algorithm = 'PBKDF2_HMAC_SHA1'")
 
-    // generate chapter journal entires
+    // generate chapter journal entries
     db.each(getAllSQL, rowGenerate, collectionFinished);
   });
 
@@ -751,32 +749,3 @@ function setMasterFolders() {
 exports.setMasterFolders = setMasterFolders;
 exports.getData = getData;
 exports.setConfig = setConfig;
-
-// var externalConfigFile = process.argv[3];
-
-// // getConfig(process.argv[2], externalConfigFile).then((conf) => {
-// //   config = conf;
-// //   setMasterFolders(config);
-// //   utils.directoryReset(config);
-// //   getData(config);
-// // })
-
-
-// if (process.argv[2] === "list") {
-//   getConfig(false, externalConfigFile).then((conf) => {
-//     const bookIds = await ddb.listBooks(config.cobalt);
-//     console.log(bookIds);
-//     exit();
-//   })
-
-// } else if (!process.argv[2] || process.argv[2] == "" ) {
-//   console.log("Please enter a book code or use 'list' to discover codes");
-//   exit();
-// } else {
-//   getConfig(process.argv[2], externalConfigFile).then((conf) => {
-//     config = conf;
-//     setMasterFolders(config);
-//     utils.directoryReset(config);
-//     getData(config);
-//   })
-// }

@@ -2,11 +2,11 @@
 
 // const { ipcRenderer } = require('electron')
 
-let loadConfig = document.getElementById("load-config");
-let setOutputDir = document.getElementById("set-output-dir");
-let patreonLink = document.getElementById("patreon-link");
-let outputLocation = document.getElementById("output-location");
-
+const loadConfig = document.getElementById("load-config");
+const setOutputDir = document.getElementById("set-output-dir");
+const patreonLink = document.getElementById("patreon-link");
+const outputLocation = document.getElementById("output-location");
+const bookList = document.getElementById("book-select");
 const contentLoadMessage = document.getElementById("config-loader");
 const generateButton = document.getElementById("munch-book");
 
@@ -27,6 +27,29 @@ setOutputDir.addEventListener('click', (event) => {
   window.api.send("outputDir");
 });
 
+generateButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  generateButton.disabled = true;
+  const bookCode = "dc";
+  window.api.send("generate", bookCode);
+});
+
+window.api.receive("generate", (data) => {
+  generateButton.disabled = false;
+});
+
+
+window.api.receive("books", (data) => {
+  data.forEach((book) => {
+    console.log(`${book.bookCode} : ${book.book}`);
+  })
+  const bookHtml = data.reduce((html, book) => {
+    html += `<option value="${book.bookCode}">${book.book}</option>`;
+    return html
+  }, '<option value="0">Select book:</option>');
+  bookList.innerHTML = bookHtml;
+});
+
 
 window.api.receive("config", (data) => {
   console.log(`Received config from main process`);
@@ -36,9 +59,10 @@ window.api.receive("config", (data) => {
   if (config.cobalt) {
     contentLoadMessage.innerHTML = "Config loaded!";
     setOutputDir.disabled = false;
-    generateButton.disabled = false;
     if (config.outputDirEnv) {
+      generateButton.disabled = false;
       outputLocation.innerHTML = config.outputDirEnv;
+      window.api.send("books");
     }
   } else {
     console.warn("No config file!");

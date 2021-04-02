@@ -7,6 +7,7 @@ const fs = require("fs");
 const _ = require('lodash');
 
 var configDir = "../dbs";
+var buildDir = `${configDir}/build`;
 var dbDir;
 var CONFIG_FILE = `${configDir}/config.json`;
 var LOOKUP_FILE = `${configDir}/lookup.json`;
@@ -15,6 +16,7 @@ var LOOKUP_FILE = `${configDir}/lookup.json`;
 function setConfigDir (dir) {
   configDir = dir;
   dbDir = `${configDir}/content`;
+  buildDir = `${configDir}/build`;
   CONFIG_FILE = `${configDir}/config.json`;
   LOOKUP_FILE = `${configDir}/lookup.json`;
 }
@@ -45,6 +47,9 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
 
   if (!fs.existsSync(configDir)){
     fs.mkdirSync(configDir);
+  }
+  if (!fs.existsSync(buildDir)){
+    fs.mkdirSync(buildDir);
   }
 
   if (externalConfigFile) {
@@ -93,7 +98,7 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
 
   let downloadDir = path.resolve(__dirname, dbsDir);
   let sourceDir = path.resolve(__dirname, path.join(dbsDir, bookCode));
-  let outputDir = path.resolve(__dirname, path.join(outputDirEnv, bookCode));
+  let outputDir = path.resolve(__dirname, path.join(buildDir, bookCode));
   config.subDirs = [
     "journal",
     // "compendium",
@@ -111,7 +116,7 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
   }
   const bookZipPath = path.join(downloadDir, `${bookCode}.zip`);
   if (!fs.existsSync(bookZipPath)){
-    console.log(`Downloading ${book} to ${outputDir} ... this might take a while...`)
+    console.log(`Downloading ${book} ... this might take a while...`)
     const download = await ddb.downloadBook(bookId, config.cobalt, bookZipPath);
     console.log("Download finished, beginning book parse!");
   }
@@ -123,6 +128,7 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
 
   // let key = await getKey(bookCode, config.cobalt)
   // console.log(`KEY = ${key}`);
+  if (!config.key) config.key = {};
   if (!config.key[bookCode]) {
     config.key[bookCode] = await ddb.getKey(bookId, config.cobalt);
     utils.saveJSONFile(config, configFile);
