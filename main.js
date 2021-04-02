@@ -28,15 +28,36 @@ const loadMainWindow = () => {
     // Send result back to renderer process
     // mainWindow.webContents.send("config", {"bears": "not a bear"});
     configurator.getConfig().then(config => {
-      console.log(args);
       console.log("Config loaded");
       mainWindow.webContents.send('config', config);
     })
   });
 
   ipcMain.on("loadConfig", (event, args) => {
-    dialog.showOpenDialog({ properties: ['openFile', 'multiSelections'] }). then(result => {
-      console.log(result);
+    dialog.showOpenDialog(mainWindow, { 
+      properties: ['openFile', 'createDirectory'],
+      filters: [
+        { name: 'JSON', extensions: ['json'] },
+      ],
+    }). then(result => {
+      if (!result.canceled){
+        configurator.getConfig(null, result.filePaths[0]).then(config => {
+          mainWindow.webContents.send('config', config);
+        })
+      } 
+    })
+  });
+
+  ipcMain.on("outputDir", (event, args) => {
+    dialog.showOpenDialog(mainWindow, { 
+      properties: ['openDirectory', 'createDirectory'],
+    }). then(result => {
+      if (!result.canceled){
+        configurator.getConfig(null, null, result.filePaths[0]).then(config => {
+          console.log(config);
+          mainWindow.webContents.send('config', config);
+        })
+      } 
     })
   });
 

@@ -6,13 +6,15 @@ const { exit } = require("process");
 const fs = require("fs");
 const _ = require('lodash');
 
-var configDir = "../dbs"
+var configDir = "../dbs";
+var dbDir;
 var CONFIG_FILE = `${configDir}/config.json`;
 var LOOKUP_FILE = `${configDir}/lookup.json`;
 
 
 function setConfigDir (dir) {
   configDir = dir;
+  dbDir = `${configDir}/content`;
   CONFIG_FILE = `${configDir}/config.json`;
   LOOKUP_FILE = `${configDir}/lookup.json`;
 }
@@ -37,7 +39,7 @@ function isConfig() {
   return false;
 }
 
-async function getConfig(bookCode, externalConfigFile) {
+async function getConfig(bookCode, externalConfigFile, outputDirPath) {
   const configFile = path.resolve(__dirname,CONFIG_FILE);
   let config = utils.loadConfig(configFile);
 
@@ -52,7 +54,22 @@ async function getConfig(bookCode, externalConfigFile) {
       const externalConfig = utils.loadConfig(externalConfigPath);
       config = _.merge(config, externalConfig);
       utils.saveJSONFile(config, configFile);
+    } else {
+      externalConfigFile = undefined;
     }
+  }
+
+  if (outputDirPath) {
+    outputDirPath = path.resolve(__dirname,outputDirPath);
+    if (fs.existsSync(outputDirPath)){
+      config.outputDirEnv = outputDirPath;
+    } else {
+      outputDirPath = undefined;
+    }
+  }
+
+  if (outputDirPath || externalConfigFile) {
+    utils.saveJSONFile(config, configFile);
   }
 
   if (!bookCode) {
@@ -60,18 +77,23 @@ async function getConfig(bookCode, externalConfigFile) {
   }
 
   bookCode = bookCode.toLowerCase();
-  var bookId = DDB_CONFIG.sources.find((source) => source.name.toLowerCase() === bookCode.toLowerCase()).id;
+  let bookId = DDB_CONFIG.sources.find((source) => source.name.toLowerCase() === bookCode.toLowerCase()).id;
   if (!bookId) {
     console.log(`Book ${bookCode} not found`);
     exit()
   }
-  var book = DDB_CONFIG.sources.find((source) => source.name.toLowerCase() === bookCode).description;
-  var outputDirEnv = config.outputDirEnv;
-  var dbsDir = config.dbsDir;
+  let book = DDB_CONFIG.sources.find((source) => source.name.toLowerCase() === bookCode).description;
+  let outputDirEnv = config.outputDirEnv;
+  let dbsDir;
+  if (!config.dbsDir) {
+    dbsDir = dbDir;
+  } else {
+    dbsDir = config.dbsDir;
+  }
 
-  var downloadDir = path.resolve(__dirname, dbsDir);
-  var sourceDir = path.resolve(__dirname, path.join(dbsDir, bookCode));
-  var outputDir = path.resolve(__dirname, path.join(outputDirEnv, bookCode));
+  let downloadDir = path.resolve(__dirname, dbsDir);
+  let sourceDir = path.resolve(__dirname, path.join(dbsDir, bookCode));
+  let outputDir = path.resolve(__dirname, path.join(outputDirEnv, bookCode));
   config.subDirs = [
     "journal",
     // "compendium",

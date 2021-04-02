@@ -5,6 +5,7 @@
 let loadConfig = document.getElementById("load-config");
 let setOutputDir = document.getElementById("set-output-dir");
 let patreonLink = document.getElementById("patreon-link");
+let outputLocation = document.getElementById("output-location");
 
 const contentLoadMessage = document.getElementById("config-loader");
 const generateButton = document.getElementById("munch-book");
@@ -21,6 +22,11 @@ loadConfig.addEventListener('click', (event) => {
   window.api.send("loadConfig");
 });
 
+setOutputDir.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.api.send("outputDir");
+});
+
 
 window.api.receive("config", (data) => {
   console.log(`Received config from main process`);
@@ -31,6 +37,9 @@ window.api.receive("config", (data) => {
     contentLoadMessage.innerHTML = "Config loaded!";
     setOutputDir.disabled = false;
     generateButton.disabled = false;
+    if (config.outputDirEnv) {
+      outputLocation.innerHTML = config.outputDirEnv;
+    }
   } else {
     console.warn("No config file!");
     contentLoadMessage.innerHTML = "Config not found";
