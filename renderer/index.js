@@ -30,8 +30,9 @@ setOutputDir.addEventListener('click', (event) => {
 generateButton.addEventListener('click', (event) => {
   event.preventDefault();
   generateButton.disabled = true;
-  const bookCode = "dc";
-  window.api.send("generate", bookCode);
+  const bookCode = document.getElementById("book-select");
+  if (bookCode.value !== 0)
+  window.api.send("generate", bookCode.value);
 });
 
 window.api.receive("generate", (data) => {
