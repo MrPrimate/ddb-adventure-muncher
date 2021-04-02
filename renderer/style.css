@@ -1,0 +1,20 @@
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+.footer {
+  bottom: 0;
+  font-size: 13px;
+  left: 50%;
+  opacity: 0.9;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100%;
+}
+#book-select{
+  width:400px;   
+}

@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>DDB Adventure Muncher</title>
+</head>
+
+<body>
+
+  <div>
+    <div class="empty">
+      <p class="empty-title h5">DDB Adventure Muncher</p>
+      <p class="empty-subtitle">
+        You'll need to download an adventure munching config from the ddb-importer app.
+        Once you've done that load it in using the button below.
+      </p>
+      
+      <div class="empty-action">
+        <p class="empty-config" id="config-loader">Checking config...</p>
+        <button class="btn btn-primary" id="load-config">Load config file</button>
+        <br />
+      </div>
+      
+      <div class="empty-action">
+        <p class="empty-config">No output location selected!</p>
+        <button class="btn btn-primary" id="set-output-dir" disabled>Select output location</button>
+        <br />
+      </div>
+      <div class="empty-action">
+        <div class="form-group">
+          <select name="book-select" class="form-select">
+            <option value="0">Select book:</option>
+            <option value="lmop">Lost Mines of Phandelver</option>
+            <option value="br">Basic Rules</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" id="munch-book" disabled>Generate!</button>
+        <br />
+      </div>
+      
+      <p class="footer">
+        <button class="btn btn-primary" id="patreon-link">Support me on Patreon</button>
+      </p>
+    </div>
+  </div>
+
+<script src="index.js"></script>
+</body>
+</html>
