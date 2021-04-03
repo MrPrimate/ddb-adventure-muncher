@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, dialog } = require("electron");
+const { app, BrowserWindow, ipcMain, dialog, Menu, shell } = require("electron");
 const path = require("path");
 const fs = require("fs");
 
@@ -14,6 +14,85 @@ const configurator = require("./munch/config.js");
 
 configurator.setConfigDir(app.getPath('userData'));
 
+const menuTemplate = [
+  // { role: 'appMenu' }
+  ...(isMac ? [{
+    label: app.name,
+    submenu: [
+      { role: 'about' },
+      { type: 'separator' },
+      { role: 'services' },
+      { type: 'separator' },
+      { role: 'hide' },
+      { role: 'hideothers' },
+      { role: 'unhide' },
+      { type: 'separator' },
+      { role: 'quit' }
+    ]
+  }] : []),
+  // { role: 'fileMenu' }
+  {
+    label: 'File',
+    submenu: [
+      isMac ? { role: 'close' } : { role: 'quit' }
+    ]
+  },
+  // { role: 'viewMenu' }
+  {
+    label: 'View',
+    submenu: [
+      { role: 'reload' },
+      { role: 'forceReload' },
+      { role: 'toggleDevTools' },
+      { type: 'separator' },
+      { role: 'resetZoom' },
+      { role: 'zoomIn' },
+      { role: 'zoomOut' },
+      { type: 'separator' },
+      { role: 'togglefullscreen' }
+    ]
+  },
+  // { role: 'windowMenu' }
+  {
+    label: 'Window',
+    submenu: [
+      { role: 'minimize' },
+      { role: 'zoom' },
+      ...(isMac ? [
+        { type: 'separator' },
+        { role: 'front' },
+        { type: 'separator' },
+        { role: 'window' }
+      ] : [
+        { role: 'close' }
+      ])
+    ]
+  },
+  {
+    role: 'help',
+    submenu: [
+      {
+        label: 'Icon attribution',
+        click: async () => {
+          await shell.openExternal('https://iconarchive.com/show/role-playing-icons-by-chanut/Adventure-Map-icon.html');
+        }
+      },
+      {
+        label: 'Software license',
+        click: async () => {
+          await shell.openExternal('https://opensource.org/licenses/MIT');
+        }
+      },
+      {
+        label: 'Source code',
+        click: async () => {
+          await shell.openExternal('https://github,com/MrPrimate/ddb-adventure-muncher');
+        }
+      }
+    ]
+  }
+];
+
 const loadMainWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
@@ -24,6 +103,9 @@ const loadMainWindow = () => {
       preload: path.join(__dirname, "preload.js"),
     },
   });
+
+  const menu = Menu.buildFromTemplate(menuTemplate);
+  Menu.setApplicationMenu(menu);
 
   if (isDevelopment) {
     mainWindow.webContents.openDevTools()
@@ -99,7 +181,7 @@ const loadMainWindow = () => {
 app.on("ready", loadMainWindow);
 
 app.on("window-all-closed", () => {
-  if (isMac) {
+  if (!isMac) {
     app.quit();
   }
 });
