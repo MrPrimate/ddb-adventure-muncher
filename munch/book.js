@@ -450,11 +450,13 @@ function findScenes(document) {
   let possibleFigureSceneNodes = frag.window.document.body.querySelectorAll("figure");
   let possibleDivSceneNodes = frag.window.document.body.querySelectorAll("div.compendium-image-with-subtitle-center, div.compendium-image-with-subtitle-right, div.compendium-image-with-subtitle-left");
   let possibleHandouts = frag.window.document.body.querySelectorAll("img.ddb-lightbox-inner");
+  let possibleViewPlayerScenes = frag.window.document.body.querySelectorAll("p.compendium-image-view-player");
 
   if (config.debug) {
     console.log(possibleFigureSceneNodes.length);
     console.log(possibleDivSceneNodes.length);
     console.log(possibleHandouts.length);
+    console.log(possibleViewPlayerScenes.length);
   }
 
   if (possibleFigureSceneNodes.length > 0) {
@@ -585,7 +587,6 @@ function findScenes(document) {
     possibleHandouts.forEach((node) => {
       if (imgMatched.includes(node.src)) return;
       tmpCount++;
-      let nextNode;
       if (config.debug) {
         console.log(node.outerHTML);
       }
@@ -605,6 +606,39 @@ function findScenes(document) {
       journals.push(journalEntry);
       imgMatched.push(node.src);
 
+    });
+  }
+  if (possibleFigureSceneNodes.length == 0 && possibleViewPlayerScenes.length > 0) {
+    // old style adventures don't have figure tags, hard parse
+    // compendium-image-with-subtitle-center
+    possibleViewPlayerScenes.forEach((node) => {
+      let aNode = node.querySelector("a.ddb-lightbox-outer");
+      if (!aNode || aNode.length == 0) return; 
+
+      if (imgMatched.includes(aNode.src)) return;
+      tmpCount++;
+      if (config.debug) {
+        console.log(aNode.outerHTML);
+      }
+
+      let title = `${document.name} (Player Version)`;
+      unknownHandoutCount++;
+      document.content = document.content.replace(aNode.outerHTML, `@JournalEntry[${title}]{Player Version}`);
+
+      let row = {
+        title: title,
+        id: 10000 + document.flags.ddb.ddbId + tmpCount,
+        parentId: document.flags.ddb.parentId,
+        cobaltId: document.flags.ddb.cobaltId,
+        documentName: document.name,
+        sceneName: utils.titleString(document.name),
+      };
+      const journalEntry = generateJournalEntry(row, aNode.href.replace("ddb://image", "."));
+      journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
+      journals.push(journalEntry);
+      linkReplaces.push( {html: aNode.outerHTML, ref: `@JournalEntry[${title}]{Player Version}` });
+      imgMatched.push(aNode.src);
+      scenes.push(generateScene(row, journalEntry.img));
     });
   }
 
