@@ -7,42 +7,63 @@
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "dist-all": "electron-builder -mwl"
   },
   "build": {
-    "files": [
-      "**/*",
-      "content/**/*",
-      "build/icon.png",
-      "build/icons/*"
-    ],
     "extraFiles": [
       {
         "from": "content/templates",
         "to": "resources/content/templates",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       },
       {
         "from": "content/scene_info",
         "to": "resources/content/scene_info",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       },
       {
         "from": "content/icons",
         "to": "content/icons",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       }
     ],
-    "npmRebuild": false,
-    "buildDependenciesFromSource": false,
     "appId": "ddb-adventure-munch",
     "copyright": "Copyright © 2021 Jack Holloway",
     "mac": {
+      "target": [
+        "zip",
+        "dmg"
+      ],
       "category": "public.app-category.developer-tools"
+    },
+    "linux": { 
+      "target": [
+        "tar.gz",
+        "AppImage",
+        "rpm",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
     }
   },
   "keywords": [],
-  "author": "Jack Holloway",
+  "author": {
+    "name": "Jack Holloway",
+    "email": "jack@mrprimate.co.uk"
+  },
+  "homepage": "https://github.com/mrprimate",
   "license": "MIT",
   "devDependencies": {
     "electron": "^12.0.2",
@@ -58,12 +79,5 @@
     "jsdom": "^16.5.1",
     "jszip": "^3.6.0",
     "lodash": "^4.17.21"
-  },
-  "config": {
-    "forge": {
-      "electronRebuildConfig": {
-        "onlyModules": []
-      }
-    }
   }
 }

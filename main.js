@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain, dialog, Menu, shell } = require("electron");
 const path = require("path");
 const fs = require("fs");
+const _ = require('lodash');
 
 const isDevelopment = process.env.NODE_ENV === 'DEV';
 
@@ -153,6 +154,7 @@ const loadMainWindow = () => {
   ipcMain.on("books", (event, args) => {
     configurator.getConfig().then(config => {
       ddb.listBooks(config.cobalt).then((bookIds) => {
+        bookIds = _.orderBy(bookIds, ['book'],['asc']);
         mainWindow.webContents.send('books', bookIds);
       });
     });
