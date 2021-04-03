@@ -38,14 +38,12 @@
     "copyright": "Copyright © 2021 Jack Holloway",
     "mac": {
       "target": [
-        "zip",
-        "dmg"
+        "zip"
       ],
       "category": "public.app-category.developer-tools"
     },
     "linux": { 
       "target": [
-        "tar.gz",
         "AppImage",
         "rpm",
         "deb"
