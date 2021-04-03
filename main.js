@@ -101,7 +101,7 @@ const loadMainWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 800,
-    icon: path.join(__dirname, "content", "icons", "icon.png"),
+    icon: path.join(__dirname, "build", "icon.png"),
     webPreferences: {
       // nodeIntegration: true,
       preload: path.join(__dirname, "preload.js"),
