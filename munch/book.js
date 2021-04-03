@@ -22,6 +22,13 @@ let chapters = [];
 let folders = [];
 let scenes = [];
 
+var templateDir = path.join("..", "content", "templates");
+
+
+function setTemplateDir (dir) {
+  templateDir = dir;
+}
+
 
 const COMPENDIUM_MAP = {
   "skills": "skills",
@@ -267,7 +274,7 @@ function updateJournals(documents) {
 }
 
 function generateFolder(type, row, baseFolder=false, img=false) {
-  const folder = JSON.parse(JSON.stringify(require("../templates/folder.json")));
+  const folder = JSON.parse(JSON.stringify(require(path.join(templateDir,"folder.json"))));
   folder.flags.ddb.ddbId = row.id;
   folder.flags.ddb.img = img;
   folder.name = row.title;
@@ -356,7 +363,7 @@ function appendJournalToChapter(row) {
 }
 
 function generateJournalEntry(row, img=null) {
-  let journal = JSON.parse(JSON.stringify(require("../templates/journal.json")));
+  let journal = JSON.parse(JSON.stringify(require(path.join(templateDir,"journal.json"))));
 
   journal.name = row.title;
   journal.flags.ddb.ddbId = row.id;
@@ -384,7 +391,7 @@ function generateJournalEntry(row, img=null) {
 }
 
 function generateScene(row, img) {
-  let scene = JSON.parse(JSON.stringify(require("../templates/scene.json")));
+  let scene = JSON.parse(JSON.stringify(require(path.join(templateDir,"scene.json"))));
 
   scene.name = row.sceneName;
   scene.navName = row.sceneName.split(":").pop();
@@ -626,7 +633,7 @@ function outputAdventure(config) {
 
   console.log("Exporting adventure outline...");
 
-  const adventure = require("../templates/adventure.json");
+  const adventure = require(path.join(templateDir,"adventure.json"));
   adventure.name = config.run.book;
   adventure.id = utils.randomString(10, "#aA");
 
@@ -747,5 +754,6 @@ function setMasterFolders() {
 }
 
 exports.setMasterFolders = setMasterFolders;
+exports.setTemplateDir = setTemplateDir;
 exports.getData = getData;
 exports.setConfig = setConfig;

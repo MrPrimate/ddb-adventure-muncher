@@ -8,11 +8,15 @@ const fs = require("fs");
 const path = require("path");
 const { exit } = require("process");
 
-const SCENE_DIR = "../scene_info";
+var sceneDir = path.join("..", "content", "scene_info");
+
+function setSceneDir (dir) {
+  sceneDir = dir;
+}
 
 function getSceneAdjustments(bookCode) {
   let scenesData = [];
-  const sceneDataFile = `${SCENE_DIR}/${bookCode}.json`;
+  const sceneDataFile = path.join(sceneDir, `${bookCode}.json`);
   const sceneDataPath = path.resolve(__dirname, sceneDataFile);
 
   if (fs.existsSync(sceneDataPath)){
@@ -22,7 +26,7 @@ function getSceneAdjustments(bookCode) {
 }
 
 function saveSceneAdjustments(adjustments, bookCode) {
-  const sceneDataFile = `${SCENE_DIR}/${bookCode}.json`;
+  const sceneDataFile = path.join(sceneDir, `${bookCode}.json`);
   const sceneDataPath = path.resolve(__dirname, sceneDataFile);
 
   if (fs.existsSync(sceneDataPath)){
@@ -116,3 +120,4 @@ function importScene(conf, sceneFile) {
 
 exports.importScene = importScene;
 exports.getSceneAdjustments = getSceneAdjustments;
+exports.setSceneDir = setSceneDir;

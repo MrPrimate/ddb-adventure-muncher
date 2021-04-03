@@ -2,14 +2,18 @@ const { app, BrowserWindow, ipcMain, dialog, Menu, shell } = require("electron")
 const path = require("path");
 const fs = require("fs");
 
-require('electron-reload')(__dirname);
-
 const isDevelopment = process.env.NODE_ENV === 'DEV';
+
+if (isDevelopment) {
+  require('electron-reload')(__dirname);
+}
+
 const isMac = process.platform === 'darwin';
 
 const ddb = require("./munch/ddb.js");
 const book = require("./munch/book.js");
 const utils = require("./munch/utils.js");
+const scenes = require("./munch/scene-load.js");
 const configurator = require("./munch/config.js");
 
 configurator.setConfigDir(app.getPath('userData'));
@@ -97,7 +101,7 @@ const loadMainWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 800,
-    icon: path.join(__dirname, "build", "icon.png"),
+    icon: path.join(__dirname, "content", "icons", "icon.png"),
     webPreferences: {
       // nodeIntegration: true,
       preload: path.join(__dirname, "preload.js"),
@@ -156,6 +160,10 @@ const loadMainWindow = () => {
 
   ipcMain.on("generate", (event, args) => {
     configurator.getConfig(args).then(config => {
+      if (!isDevelopment) {
+        book.setTemplateDir(path.join(process.resourcesPath, "content", "templates"));
+        scenes.setSceneDir(path.join(process.resourcesPath, "content", "scene_info"));
+      }
       book.setConfig(config);
       book.setMasterFolders();
       utils.directoryReset(config);
