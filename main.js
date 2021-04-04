@@ -77,6 +77,13 @@ const menuTemplate = [
     role: 'help',
     submenu: [
       {
+        label: 'Config location',
+        click: async () => {
+          const configFolder = path.join(app.getPath('userData'), app.name);
+          shell.showItemInFolder(configFolder);
+        }
+      },
+      {
         label: 'Icon attribution',
         click: async () => {
           await shell.openExternal('https://iconarchive.com/show/role-playing-icons-by-chanut/Adventure-Map-icon.html');

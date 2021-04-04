@@ -11,6 +11,9 @@
     "dist-all": "electron-builder -mwl"
   },
   "build": {
+    "appId": "ddb-adventure-munch",
+    "copyright": "Copyright © 2021 Jack Holloway",
+    "npmRebuild": false,
     "extraFiles": [
       {
         "from": "content/templates",
@@ -34,8 +37,6 @@
         ]
       }
     ],
-    "appId": "ddb-adventure-munch",
-    "copyright": "Copyright © 2021 Jack Holloway",
     "mac": {
       "target": [
         "zip"
