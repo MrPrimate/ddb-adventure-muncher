@@ -79,8 +79,7 @@ const menuTemplate = [
       {
         label: 'Config location',
         click: async () => {
-          const configFolder = path.join(app.getPath('userData'), app.name);
-          shell.showItemInFolder(configFolder);
+          shell.showItemInFolder(app.getPath('userData'));
         }
       },
       {
