@@ -564,6 +564,7 @@ function findScenes(document) {
           linkReplaces.push( {html: playerRef.outerHTML, ref: `@JournalEntry[${title}]{DM Version} @JournalEntry[${row.title}]{Player Version}` });
           document.content = document.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${row.title}]{Player Version}`);
           scenes.push(generateScene(row, playerEntry.img));
+          imgMatched.push(playerRef.href);
         } else {
           document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${title}]{${title}}`);
         }
@@ -614,8 +615,8 @@ function findScenes(document) {
     possibleViewPlayerScenes.forEach((node) => {
       let aNode = node.querySelector("a.ddb-lightbox-outer");
       if (!aNode || aNode.length == 0) return; 
+      if (imgMatched.includes(aNode.href) || imgMatched.includes(aNode.src)) return;
 
-      if (imgMatched.includes(aNode.src)) return;
       tmpCount++;
       if (config.debug) {
         console.log(aNode.outerHTML);
@@ -637,7 +638,7 @@ function findScenes(document) {
       journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
       journals.push(journalEntry);
       linkReplaces.push( {html: aNode.outerHTML, ref: `@JournalEntry[${title}]{Player Version}` });
-      imgMatched.push(aNode.src);
+      imgMatched.push(aNode.href);
       scenes.push(generateScene(row, journalEntry.img));
     });
   }
