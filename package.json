@@ -1,6 +1,6 @@
 {
   "name": "ddb-adventure-muncher",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "D&D Beyond Adventure Muncher for Foundry Virtual Tabletop",
   "main": "main.js",
   "scripts": {
@@ -40,12 +40,14 @@
       }
     ],
     "mac": {
+      "hardenedRuntime": true,
+      "entitlements": "./build/entitlements.mac.inherit.plist",
       "target": [
         "zip"
       ],
       "category": "public.app-category.developer-tools"
     },
-    "linux": { 
+    "linux": {
       "target": [
         "AppImage",
         "rpm",
