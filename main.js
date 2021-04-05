@@ -222,8 +222,9 @@ const loadMainWindow = () => {
         scenes.setSceneDir(path.join(process.resourcesPath, "content", "scene_info"));
       }
       book.setConfig(config);
-      book.setMasterFolders();
       utils.directoryReset(config);
+      book.fetchLookups(config);
+      book.setMasterFolders();
       book.getData();
       const targetAdventureZip = path.join(config.run.outputDirEnv,`${config.run.bookCode}.fvttadv`);
       const { promisify } = require('util');
