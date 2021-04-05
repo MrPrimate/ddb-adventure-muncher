@@ -145,7 +145,10 @@ const menuTemplate = [
         click: async () => {
           await shell.openExternal('https://github,com/MrPrimate/ddb-adventure-muncher');
         }
-      }
+      },
+      {
+        label: `Version: ${app.getVersion()}`
+      },
     ]
   }
 ];
