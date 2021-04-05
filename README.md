@@ -13,11 +13,11 @@ generateAdventureConfig()
 
 ## Alpha Download Links
 
-* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.3-linux-x86_64.AppImage)
-* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.3-linux-x86_64.rpm)
-* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.3-linux-amd64.deb)
-* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.3-win.exe)
-* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.3-mac.zip)
+* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.4-linux-x86_64.AppImage)
+* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.4-linux-x86_64.rpm)
+* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.4-linux-amd64.deb)
+* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.4-win.exe)
+* ~~[Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.4-mac.zip)~~ The OSX build doesn't seem to work right now. I don't have a Mac so can't troubleshoot this right now.
 
 ## Importing the book
 
@@ -45,6 +45,12 @@ The Adventure Module also generates a database of "lookup ids" for you. This is 
 
 If you wish to download the content again, rather than using existing downloaded content, delete the folder called `content` in your config directory, or you can use the `File -> Remove downloaded files`.
 
+## Known Issues
+
+* Most of the scene art is very low resolution. A fix is in development.
+
+
+
 ## Current Scene Support
 
 Books with Aligned, Walled, and Lit scenes:
@@ -58,7 +64,7 @@ If you wish to help improve the scene wall and lighting information, see the bel
 ### Walls and Lighting information
 
 * If you wish to add walls/lighting information you can turn on a setting in Foundry to allow you to support data from a supported map. (VTTA or ddb-adventure-muncher).
-* Open the Chrome Developer Console (F12) and run `game.settings.get("ddb-importer", "allow-scene-download")`
+* Open the Chrome Developer Console (F12) and run `game.settings.get("ddb-importer", "allow-scene-download", true)`
 * Now when you right click on a scene navigation button you will get the option to download the associated data.
 * Upload this to the #scene-adjustments channel on Discord with a description of your changes.
 
