@@ -33,27 +33,20 @@ function getFilePathsRecursively(dir) {
 function getZipOfFolder(dir) {
   // returns a JSZip instance filled with contents of dir.
 
-  let allPaths = getFilePathsRecursively(dir);
+  const allPaths = getFilePathsRecursively(path.resolve(dir));
 
   let zip = new JSZip();
-  for (let filePath of allPaths) {
-    // let addPath = path.relative(path.join(dir, '..'), filePath); // use this instead if you want the source folder itself in the zip
-    let addPath = path.relative(dir, filePath); // use this instead if you don't want the source folder itself in the zip
-    let data = fs.readFileSync(filePath);
-    let stat = fs.lstatSync(filePath);
-   // let permissions = stat.mode;
+  for (const filePath of allPaths) {
+    const addPath = path.relative(dir, filePath);
+    const data = fs.readFileSync(filePath);
+    const stat = fs.lstatSync(filePath);
+    const binary = (filePath.endsWith(".json")) ? false : true;
 
-    if (stat.isSymbolicLink()) {
-      zip.file(addPath, fs.readlinkSync(filePath), {
-        //unixPermissions: parseInt("120755", 8), // This permission can be more permissive than necessary for non-executables but we don't mind.
+    zip.file(addPath.split(path.sep).join(path.posix.sep), data, {
         dir: stat.isDirectory(),
+        binary: binary,
+        createFolders: true,
       });
-    } else {
-      zip.file(addPath, data, {
-        //unixPermissions: permissions,
-        dir: stat.isDirectory(),
-      });
-    }
   }
 
   return zip;
