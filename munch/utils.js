@@ -41,16 +41,16 @@ function getZipOfFolder(dir) {
     let addPath = path.relative(dir, filePath); // use this instead if you don't want the source folder itself in the zip
     let data = fs.readFileSync(filePath);
     let stat = fs.lstatSync(filePath);
-    let permissions = stat.mode;
+   // let permissions = stat.mode;
 
     if (stat.isSymbolicLink()) {
       zip.file(addPath, fs.readlinkSync(filePath), {
-        unixPermissions: parseInt("120755", 8), // This permission can be more permissive than necessary for non-executables but we don't mind.
+        //unixPermissions: parseInt("120755", 8), // This permission can be more permissive than necessary for non-executables but we don't mind.
         dir: stat.isDirectory(),
       });
     } else {
       zip.file(addPath, data, {
-        unixPermissions: permissions,
+        //unixPermissions: permissions,
         dir: stat.isDirectory(),
       });
     }
@@ -124,6 +124,7 @@ function saveJSONFile(content, filePath) {
   try{
     const data = JSON.stringify(content, null, 4);
     fs.writeFileSync(filePath, data);
+    console.log(`Config file saved to ${filePath}`);
   } catch (error) {
     console.log(error);
   }
