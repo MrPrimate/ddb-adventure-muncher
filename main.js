@@ -39,6 +39,45 @@ const menuTemplate = [
   {
     label: 'File',
     submenu: [
+      {
+        label: 'Reset config',
+        click: async () => {
+          const configFile = path.join(app.getPath('userData'), "config.json");
+          console.log(configFile);
+          if (fs.existsSync(configFile)) fs.unlinkSync(configFile);
+        }
+      },
+      {
+        label: 'Reset generated ids',
+        click: async () => {
+          const lookupPath = path.join(app.getPath('userData'), "lookup.json");
+          console.log(lookupPath);
+          if (fs.existsSync(lookupPath)) fs.unlinkSync(lookupPath);
+        }
+      },
+      {
+        label: 'Remove downloaded files',
+        click: async () => {
+          const downloadPath = path.join(app.getPath('userData'), "content");
+          console.log(downloadPath);
+          if (fs.existsSync(downloadPath)) {
+            fs.rmdir(downloadPath, { recursive: true }, (err) => {
+              if (err) {
+                  throw err;
+              }
+            });
+          }
+          const buildPath = path.join(app.getPath('userData'), "build");
+          console.log(buildPath);
+          if (fs.existsSync(buildPath)) {
+            fs.rmdir(buildPath, { recursive: true }, (err) => {
+              if (err) {
+                  throw err;
+              }
+            });
+          }
+        }
+      },
       isMac ? { role: 'close' } : { role: 'quit' }
     ]
   },
@@ -79,7 +118,14 @@ const menuTemplate = [
       {
         label: 'Config location',
         click: async () => {
-          shell.showItemInFolder(app.getPath('userData'));
+          const configFolder = app.getPath('userData');
+          const configFile = path.join(configFolder, "config.json");
+          console.log(configFolder);
+          if (fs.existsSync(configFile)) {
+            shell.showItemInFolder(configFile);  
+          } else {
+            shell.showItemInFolder(configFolder);
+          }
         }
       },
       {
