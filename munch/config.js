@@ -11,6 +11,7 @@ var buildDir = `${configDir}/build`;
 var dbDir;
 var CONFIG_FILE = `${configDir}/config.json`;
 var LOOKUP_FILE = `${configDir}/lookup.json`;
+var IMAGE_FINDER_FILE = `${configDir}/images.json`;
 var config;
 
 
@@ -20,12 +21,13 @@ function setConfigDir (dir) {
   buildDir = `${configDir}/build`;
   CONFIG_FILE = `${configDir}/config.json`;
   LOOKUP_FILE = `${configDir}/lookup.json`;
+  IMAGE_FINDER_FILE = `${configDir}/images.json`;
 }
 
 function getLookups() {
-  const configFile = path.resolve(__dirname,LOOKUP_FILE);
-  if (fs.existsSync(configFile)){
-    return utils.loadJSONFile(configFile);
+  const lookupFile = path.resolve(__dirname,LOOKUP_FILE);
+  if (fs.existsSync(lookupFile)){
+    return utils.loadJSONFile(lookupFile);
   } else {
     return {};
   }
@@ -34,6 +36,16 @@ function getLookups() {
 function saveLookups(content) {
   const configFile = path.resolve(__dirname,LOOKUP_FILE);
   utils.saveJSONFile(content, configFile);
+}
+
+function saveImageFinderResults(content, bookCode) {
+  const imagePath = path.resolve(__dirname,IMAGE_FINDER_FILE);
+
+  const data = (fs.existsSync(imagePath)) ?
+    utils.loadJSONFile(imagePath) :
+    {};
+  data[bookCode] = content;
+  utils.saveJSONFile(data, imagePath);
 }
 
 function isConfig() {
@@ -153,3 +165,4 @@ exports.getConfig = getConfig;
 exports.getLookups = getLookups;
 exports.saveLookups = saveLookups;
 exports.setConfigDir = setConfigDir;
+exports.saveImageFinderResults = saveImageFinderResults;

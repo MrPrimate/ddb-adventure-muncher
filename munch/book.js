@@ -16,7 +16,7 @@ var config;
 var idTable;
 var sceneAdjustments;
 
-var masterFolder = {}
+var masterFolder;
 
 let chapters = [];
 let folders = [];
@@ -24,9 +24,15 @@ let scenes = [];
 
 var templateDir = path.join("..", "content", "templates");
 
+let imageFinderResults = [];
 
 function setTemplateDir (dir) {
   templateDir = dir;
+}
+
+function fetchLookups (config) {
+  idTable = configure.getLookups();
+  if (!idTable[config.run.bookCode]) idTable[config.run.bookCode] = [];
 }
 
 
@@ -369,6 +375,7 @@ function generateJournalEntry(row, img=null) {
   journal.flags.ddb.ddbId = row.id;
   journal.flags.ddb.bookCode = config.run.bookCode;
   journal.flags.ddb.slug = row.slug;
+  journal.flags.ddb.contentChunkId = row.contentChunkId;
   journal.sort = journalSort + parseInt(row.id);
   if (row.cobaltId) journal.flags.ddb.cobaltId = row.cobaltId;
   let imgState = (img !== null && img !== "") ? true : false;
@@ -399,6 +406,7 @@ function generateScene(row, img) {
   scene.flags.ddb.ddbId = row.id;
   scene.flags.ddb.bookCode = config.run.bookCode;
   scene.flags.ddb.slug = row.slug;
+  scene.flags.ddb.contentChunkId = row.contentChunkId;
   scene.sort = journalSort + parseInt(row.id);
   if (row.cobaltId) scene.flags.ddb.cobaltId = row.cobaltId;
   if (row.parentId) {
@@ -424,6 +432,14 @@ function generateScene(row, img) {
   }
 
   scene._id = getId(scene, "Scene");
+
+  if (config.imageFind) {
+    imageFinderResults.push({
+      bookCode: config.run.bookCode,
+      img: scene.img,
+      name: scene.name,
+    });
+  }
 
   scenes.push(scene);
   // console.log(`${journal._id} ${journal.name}`);
@@ -482,6 +498,7 @@ function findScenes(document) {
             cobaltId: document.flags.ddb.cobaltId,
             documentName: document.name,
             sceneName: utils.titleString(title),
+            contentChunkId: caption.getAttribute("data-content-chunk-id"),
           };
           tmpCount++;
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
@@ -497,6 +514,7 @@ function findScenes(document) {
           id: 10000 + document.flags.ddb.ddbId + tmpCount,
           parentId: document.flags.ddb.parentId,
           cobaltId: document.flags.ddb.cobaltId,
+          contentChunkId: node.getAttribute("data-content-chunk-id"),
         };
         const journalEntry = generateJournalEntry(row, img.src);
         journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
@@ -556,6 +574,7 @@ function findScenes(document) {
             cobaltId: document.flags.ddb.cobaltId,
             documentName: document.name,
             sceneName: utils.titleString(title),
+            contentChunkId: (nextNode) ? nextNode.getAttribute("data-content-chunk-id") : undefined,
           };
           tmpCount++;
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
@@ -574,6 +593,7 @@ function findScenes(document) {
           id: 10000 + document.flags.ddb.ddbId + tmpCount,
           parentId: document.flags.ddb.parentId,
           cobaltId: document.flags.ddb.cobaltId,
+          contentChunkId: caption.getAttribute("data-content-chunk-id"),
         };
         const journalEntry = generateJournalEntry(row, img.src);
         journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
@@ -601,6 +621,7 @@ function findScenes(document) {
         id: 10000 + document.flags.ddb.ddbId + tmpCount,
         parentId: document.flags.ddb.parentId,
         cobaltId: document.flags.ddb.cobaltId,
+        contentChunkId: node.getAttribute("data-content-chunk-id"),
       };
       const journalEntry = generateJournalEntry(row, node.src);
       journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
@@ -633,6 +654,7 @@ function findScenes(document) {
         cobaltId: document.flags.ddb.cobaltId,
         documentName: document.name,
         sceneName: utils.titleString(document.name),
+        contentChunkId: node.getAttribute("data-content-chunk-id"),
       };
       const journalEntry = generateJournalEntry(row, aNode.href.replace("ddb://image", "."));
       journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
@@ -747,13 +769,18 @@ function collectionFinished(err, count) {
   } finally {
     // save generated Ids table
     configure.saveLookups(idTable);
+    configure.saveImageFinderResults(imageFinderResults, config.run.bookCode);
   }
 }
 
 function setConfig(conf) {
   config = conf;
-  idTable = configure.getLookups();
-  if (!idTable[config.run.bookCode]) idTable[config.run.bookCode] = [];
+  masterFolder = undefined;
+  chapters = [];
+  folders = [];
+  scenes = [];
+  imageFinderResults = [];
+  fetchLookups(config);
   sceneAdjustments = sceneAdjuster.getSceneAdjustments(config.run.bookCode);
 }
 
@@ -792,3 +819,4 @@ exports.setMasterFolders = setMasterFolders;
 exports.setTemplateDir = setTemplateDir;
 exports.getData = getData;
 exports.setConfig = setConfig;
+exports.fetchLookups = fetchLookups;
