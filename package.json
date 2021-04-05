@@ -1,10 +1,10 @@
 {
   "name": "ddb-adventure-muncher",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "D&D Beyond Adventure Muncher for Foundry Virtual Tabletop",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "NODE_ENV=DEV electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
@@ -14,6 +14,7 @@
   "build": {
     "appId": "ddb-adventure-munch",
     "copyright": "Copyright © 2021 Jack Holloway",
+    "artifactName": "${name}-${version}-${os}-${arch}.${ext}",
     "npmRebuild": false,
     "extraFiles": [
       {
@@ -53,8 +54,7 @@
     },
     "win": {
       "target": [
-        "nsis",
-        "portable"
+        "nsis"
       ]
     }
   },

@@ -13,9 +13,11 @@ generateAdventureConfig()
 
 ## Alpha Download Links
 
-* [Linux](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.1.AppImage)
-* [Windows](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.1.exe)
-* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.1-mac.zip)
+* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.3-linux-x86_64.AppImage)
+* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.3-linux-x86_64.rpm)
+* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.3-linux-amd64.deb)
+* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.3-win.exe)
+* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.3-mac.zip)
 
 ## Importing the book
 
@@ -23,19 +25,31 @@ You will need to use [Adventure Importer/Exporter Module](https://foundryvtt.com
 
 ## Where is the config and downloaded adventure data stored?
 
-You can use `Help -> Config location` to find your config folder. If you wish to download the content again, rather than using existing downloaded content, delete the folder called `content` here.
+You can use `Help -> Config location` to find your config folder.
+If you wish to download the content again, rather than using existing downloaded content, delete the folder called `content` here.
 
 Likely paths:
 
-* Linux: `~/.config/ddb-adventure-importer`
-* Mac OS: `~/Library/Application Support/ddb-adventure-importer`
-* Windows: `C:\Users\<user>\AppData\Roaming\ddb-adventure-importer`
+* Linux: `~/.config/ddb-adventure-muncher`
+* Mac OS: `~/Library/Application Support/ddb-adventure-muncher`
+* Windows: `C:\Users\<user>\AppData\Roaming\ddb-adventure-muncher`
 
 ## Contribution
+
+### Walls and Lighting information
 
 * If you wish to add walls/lighting information you can turn on a setting in Foundry to allow you to support data from a supported map. (VTTA or ddb-adventure-muncher).
 * Open the Chrome Developer Console (F12) and run `game.settings.get("ddb-importer", "allow-scene-download")`
 * Now when you right click on a scene navigation button you will get the option to download the associated data.
+* Upload this to the #scene-adjustments channel on Discord with a description of your changes.
+
+### Missed parsing
+
+If you find a missing scene, or something has just not parsed right please let me know on Discord.
+
+There are a number of handouts/images that are just numbered Handout 1/2/3/etc.
+If you have a good name for one of these handouts please make a note of it.
+I will be starting to collect this information in a shared google sheet in the coming weeks.
 
 
 ## Icons
