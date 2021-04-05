@@ -45,6 +45,14 @@ The Adventure Module also generates a database of "lookup ids" for you. This is 
 
 If you wish to download the content again, rather than using existing downloaded content, delete the folder called `content` in your config directory, or you can use the `File -> Remove downloaded files`.
 
+## Current Scene Support
+
+Books with Aligned, Walled, and Lit scenes:
+
+* Lost Mines of Phandelver.
+
+If you wish to help improve the scene wall and lighting information, see the below section.
+
 ## Contribution
 
 ### Walls and Lighting information
