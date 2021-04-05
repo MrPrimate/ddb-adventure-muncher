@@ -11,6 +11,7 @@ var buildDir = `${configDir}/build`;
 var dbDir;
 var CONFIG_FILE = `${configDir}/config.json`;
 var LOOKUP_FILE = `${configDir}/lookup.json`;
+var config;
 
 
 function setConfigDir (dir) {
@@ -43,7 +44,8 @@ function isConfig() {
 
 async function getConfig(bookCode, externalConfigFile, outputDirPath) {
   const configFile = path.resolve(__dirname,CONFIG_FILE);
-  let config = utils.loadConfig(configFile);
+  if (!config) config = utils.loadConfig(configFile);
+  if (config.run) delete(config.run);
 
   if (!fs.existsSync(configDir)){
     fs.mkdirSync(configDir);
@@ -59,8 +61,6 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
       const externalConfig = utils.loadConfig(externalConfigPath);
       config = _.merge(config, externalConfig);
       utils.saveJSONFile(config, configFile);
-    } else {
-      externalConfigFile = undefined;
     }
   }
 
@@ -68,13 +68,8 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
     outputDirPath = path.resolve(__dirname,outputDirPath);
     if (fs.existsSync(outputDirPath)){
       config.outputDirEnv = outputDirPath;
-    } else {
-      outputDirPath = undefined;
+      utils.saveJSONFile(config, configFile);
     }
-  }
-
-  if (outputDirPath || externalConfigFile) {
-    utils.saveJSONFile(config, configFile);
   }
 
   if (!bookCode) {
@@ -143,8 +138,10 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
   }
   if (config.debug) {
     console.log("================================");
-    console.log("DEBUG CONFIG")
+    console.log("DEBUG CONFIG");
     console.log(config);
+    console.log("CONFIG RUNTIME");
+    console.log(config.run);
     console.log("================================");
   }
 
