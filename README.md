@@ -23,16 +23,27 @@ generateAdventureConfig()
 
 You will need to use [Adventure Importer/Exporter Module](https://foundryvtt.com/packages/adventure-import-export/), however this does not yet contain the changes needed to import journal images (as of version 0.6.0). Please install from [`https://raw.githubusercontent.com/mrprimate/adventure-import-export/ddb-release/module.json`](https://raw.githubusercontent.com/mrprimate/adventure-import-export/ddb-release/module.json).
 
-## Where is the config and downloaded adventure data stored?
 
-You can use `Help -> Config location` to find your config folder.
-If you wish to download the content again, rather than using existing downloaded content, delete the folder called `content` here.
+## Config
+### Where is the config and downloaded adventure data stored?
+
+You can use `Help -> Config location` menu item to find your config folder.
 
 Likely paths:
 
 * Linux: `~/.config/ddb-adventure-muncher`
 * Mac OS: `~/Library/Application Support/ddb-adventure-muncher`
 * Windows: `C:\Users\<user>\AppData\Roaming\ddb-adventure-muncher`
+
+## Reset
+
+If you wish to reset your config use the `File -> Reset config` menu item.
+
+The Adventure Module also generates a database of "lookup ids" for you. This is so that when you reimport an adventure it will overwrite the existing Scenes/Journal entries. It's likely in this early development phase you may need to remove this, use the `File -> Reset generated ids` menu item.
+
+### Delete downloads
+
+If you wish to download the content again, rather than using existing downloaded content, delete the folder called `content` in your config directory, or you can use the `File -> Remove downloaded files`.
 
 ## Contribution
 
