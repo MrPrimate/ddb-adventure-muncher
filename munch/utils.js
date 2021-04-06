@@ -182,7 +182,17 @@ function titleString (text) {
 }
 
 function imageSize(image) {
-  return sizeOf(image);
+  let size = {
+    height: null,
+    width: null,
+  }
+  try {
+    size = sizeOf(image);
+  } catch (e) {
+    console.log(`Error getting size of ${image}`);
+    console.log(e.stack);
+  }
+  return size;
 }
 
 exports.randomString = randomString;
