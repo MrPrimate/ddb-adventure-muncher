@@ -15,7 +15,7 @@ var folderSort = 4000;
 var config;
 var idTable;
 var sceneAdjustments;
-var imgMatched;
+var imgMatched = [];
 
 var masterFolder;
 
@@ -453,7 +453,6 @@ function findScenes(document) {
   let journals = [];
   let tmpCount = 0;
   let unknownHandoutCount = 1;
-  imgMatched = [];
   // const frag = JSDOM.fragment(document.content);
   const frag = new JSDOM(document.content);
   document.content = frag.window.document.body.outerHTML;
@@ -814,6 +813,7 @@ function setConfig(conf) {
   folders = [];
   scenes = [];
   imageFinderResults = [];
+  imgMatched = [];
   fetchLookups(config);
   sceneAdjustments = sceneAdjuster.getSceneAdjustments(config.run.bookCode);
 }
