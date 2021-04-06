@@ -15,6 +15,7 @@ var folderSort = 4000;
 var config;
 var idTable;
 var sceneAdjustments;
+var imgMatched;
 
 var masterFolder;
 
@@ -442,7 +443,8 @@ function generateScene(row, img) {
   }
 
   scenes.push(scene);
-  // console.log(`${journal._id} ${journal.name}`);
+  imgMatched.push(scene.img);
+  console.log(`Added Scene ${scene.name}`);
   return scene;
 }
 
@@ -451,7 +453,7 @@ function findScenes(document) {
   let journals = [];
   let tmpCount = 0;
   let unknownHandoutCount = 1;
-  let imgMatched = [];
+  imgMatched = [];
   // const frag = JSDOM.fragment(document.content);
   const frag = new JSDOM(document.content);
   document.content = frag.window.document.body.outerHTML;
@@ -467,6 +469,7 @@ function findScenes(document) {
   let possibleDivSceneNodes = frag.window.document.body.querySelectorAll("div.compendium-image-with-subtitle-center, div.compendium-image-with-subtitle-right, div.compendium-image-with-subtitle-left");
   let possibleHandouts = frag.window.document.body.querySelectorAll("img.ddb-lightbox-inner");
   let possibleViewPlayerScenes = frag.window.document.body.querySelectorAll("p.compendium-image-view-player");
+  let possibleUnknownPlayerLinks = frag.window.document.body.querySelectorAll("a.ddb-lightbox-inner, a.ddb-lightbox-outer");
 
   if (config.debug) {
     console.log(possibleFigureSceneNodes.length);
@@ -583,7 +586,6 @@ function findScenes(document) {
           linkReplaces.push( {html: playerRef.outerHTML, ref: `@JournalEntry[${title}]{DM Version} @JournalEntry[${row.title}]{Player Version}` });
           document.content = document.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${row.title}]{Player Version}`);
           scenes.push(generateScene(row, playerEntry.img));
-          imgMatched.push(playerRef.href);
         } else {
           document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${title}]{${title}}`);
         }
@@ -598,7 +600,6 @@ function findScenes(document) {
         const journalEntry = generateJournalEntry(row, img.src);
         journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
         journals.push(journalEntry);
-        imgMatched.push(img.src);
       }
     });
   }
@@ -606,7 +607,6 @@ function findScenes(document) {
     // old style adventures don't have figure tags, hard parse
     // compendium-image-with-subtitle-center
     possibleHandouts.forEach((node) => {
-      if (imgMatched.includes(node.src)) return;
       tmpCount++;
       if (config.debug) {
         console.log(node.outerHTML);
@@ -626,8 +626,6 @@ function findScenes(document) {
       const journalEntry = generateJournalEntry(row, node.src);
       journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
       journals.push(journalEntry);
-      imgMatched.push(node.src);
-
     });
   }
   if (possibleFigureSceneNodes.length == 0 && possibleViewPlayerScenes.length > 0) {
@@ -658,12 +656,48 @@ function findScenes(document) {
       };
       const journalEntry = generateJournalEntry(row, aNode.href.replace("ddb://image", "."));
       journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
-      journals.push(journalEntry);
+      
+      // don't add entry if we have already parsed this
+      if (imgMatched.includes(journalEntry.img)) return;
       linkReplaces.push( {html: aNode.outerHTML, ref: `@JournalEntry[${title}]{Player Version}` });
-      imgMatched.push(aNode.href);
+      journals.push(journalEntry);
       scenes.push(generateScene(row, journalEntry.img));
     });
   }
+
+  possibleUnknownPlayerLinks.forEach((node) => {
+    if (imgMatched.includes(node.href)) return;
+    if (!node.textContent.toLowerCase().includes("player")) return;
+
+    tmpCount++;
+    if (config.debug) {
+      console.log(node.outerHTML);
+    }
+
+    let title = `${document.name} (Player Version)`;
+    unknownHandoutCount++;
+    document.content = document.content.replace(node.outerHTML, `@JournalEntry[${title}]{Player Version}`);
+
+    let row = {
+      title: title,
+      id: 10000 + document.flags.ddb.ddbId + tmpCount,
+      parentId: document.flags.ddb.parentId,
+      cobaltId: document.flags.ddb.cobaltId,
+      documentName: document.name,
+      sceneName: utils.titleString(document.name),
+      contentChunkId: node.parentElement.getAttribute("data-content-chunk-id"),
+    };
+    const journalEntry = generateJournalEntry(row, node.href.replace("ddb://image", "."));
+    journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
+
+    // don't add entry if we have already parsed this
+    if (imgMatched.includes(journalEntry.img)) return;
+    journals.push(journalEntry);
+    linkReplaces.push( {html: node.outerHTML, ref: `@JournalEntry[${title}]{Player Version}` });
+    scenes.push(generateScene(row, journalEntry.img));
+  });
+
+  console.log(imgMatched);
 
   return [scenes, journals, linkReplaces];
 }

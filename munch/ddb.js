@@ -82,6 +82,10 @@ const BAD_IDS = [
   31, // CR data, file not found
   53, // SAC, file not found
   42, // TMR, file not found
+  29, // UA - no content
+  4, // EE players
+  26, //cos players
+  30, //ddb
 ];
 async function listBooks(cobalt) {
   const urlencoded = new URLSearchParams();
