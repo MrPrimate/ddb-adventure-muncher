@@ -377,6 +377,7 @@ function generateJournalEntry(row, img=null) {
   journal.flags.ddb.bookCode = config.run.bookCode;
   journal.flags.ddb.slug = row.slug;
   journal.flags.ddb.contentChunkId = row.contentChunkId;
+  journal.flags.ddb.userData = config.run.userData;
   journal.sort = journalSort + parseInt(row.id);
   if (row.cobaltId) journal.flags.ddb.cobaltId = row.cobaltId;
   let imgState = (img !== null && img !== "") ? true : false;
@@ -408,6 +409,7 @@ function generateScene(row, img) {
   scene.flags.ddb.bookCode = config.run.bookCode;
   scene.flags.ddb.slug = row.slug;
   scene.flags.ddb.contentChunkId = row.contentChunkId;
+  scene.flags.ddb.userData = config.run.userData;
   scene.sort = journalSort + parseInt(row.id);
   if (row.cobaltId) scene.flags.ddb.cobaltId = row.cobaltId;
   if (row.parentId) {

@@ -141,7 +141,16 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
     utils.saveJSONFile(config, configFile);
   }
 
+  const userData = await ddb.getUserData(config.cobalt);
+
+  if (userData.status !== "success") {
+    console.log(userData);
+    console.warn("Unable to determine DDB user");
+    exit();
+  }
+
   config.run = {
+    userData: userData,
     book: book,
     bookCode: bookCode,
     outputDir: outputDir,

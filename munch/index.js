@@ -85,6 +85,7 @@ if (process.argv[2] === "config") {
     book.setConfig(config);
     book.setMasterFolders();
     utils.directoryReset(config);
+    console.log(config.run);
     book.getData();
   })
 }

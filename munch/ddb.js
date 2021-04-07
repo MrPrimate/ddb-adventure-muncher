@@ -16,7 +16,8 @@ function ddbCall(url, urlencoded) {
     .then(response => response.json())
     .then(result => {
       if (result.status === "success") {
-        resolve(result.data);
+        if (result.data) resolve(result.data);
+        resolve(result);
       } else {
         console.log(`Error ${result}`);
         reject(result);
@@ -119,9 +120,18 @@ async function listBooks(cobalt) {
   return books;
 }
 
+// {
+//   "status": "success",
+//   "userId": 111111111,
+//   "userDisplayName": "XXXXX",
+//   "twitchUserName": "XXXX",
+//   "AvatarUrl": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/3453/679/64/64/11111111.png"
+// }
 async function getUserData(cobalt) {
-  const userData = {};
-  return userData
+  const urlencoded = new URLSearchParams();
+  urlencoded.append("token", `${cobalt}`);
+  const result = await ddbCall(`https://www.dndbeyond.com/mobile/api/v5/user-data`, urlencoded);
+  return result;
 }
 
 exports.getKey = getKey;
