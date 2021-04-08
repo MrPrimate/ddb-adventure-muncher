@@ -16,7 +16,8 @@ var folderSort = 4000;
 var config;
 var idTable;
 var sceneAdjustments;
-var imgMatched = [];
+var sceneImgMatched = [];
+var journalImgMatched = [];
 var enhancedScenes = [];
 var downloadList = [];
 
@@ -385,7 +386,11 @@ function generateJournalEntry(row, img=null) {
   if (row.cobaltId) journal.flags.ddb.cobaltId = row.cobaltId;
   let imgState = (img !== null && img !== "") ? true : false;
   if (imgState) {
-    journal.img = img;
+    journal.img = replaceImgLinksForJournal(img);
+    if (journalImgMatched.includes(journal.img)) journal.flags.ddb.duplicate = true;
+    journalImgMatched.push(journal.img);
+    const journalHandoutCount = journalImgMatched.filter(img => img === journal.img).length;
+    console.log(`Generated Handout ${journal.name}, (count ${journalHandoutCount})`);
   } else {
     const dom = new JSDOM(row.html);
     journal.content = dom.window.document.body.outerHTML.replace(/  /g, " ");
@@ -397,7 +402,8 @@ function generateJournalEntry(row, img=null) {
   // console.log(`${journal.name}, ${journal.folder}`);
   appendJournalToChapter(row);
   journal._id = getId(journal, "JournalEntry");
-  chapters.push(journal);
+  console.log(`Generated journal entry ${journal.name}`);
+  if (!imgState) chapters.push(journal);
   // console.log(`${journal._id} ${journal.name}`);
   return journal;
 }
@@ -459,8 +465,9 @@ function generateScene(row, img) {
   }
 
   scenes.push(scene);
-  imgMatched.push(scene.img);
-  console.log(`Added Scene ${scene.name}`);
+  sceneImgMatched.push(scene.img);
+  const sceneCount = sceneImgMatched.filter(img => img === scene.img).length;
+  console.log(`Generated Scene ${scene.name}, (count ${sceneCount})`);
   return scene;
 }
 
@@ -520,7 +527,6 @@ function findScenes(document) {
           };
           tmpCount++;
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
-          playerEntry.img = replaceImgLinksForJournal(playerEntry.img);
           journals.push(playerEntry);
           linkReplaces.push( {html: playerRef.outerHTML, ref: `@JournalEntry[${title}]{DM Version} @JournalEntry[${row.title}]{Player Version}` });
           document.content = document.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${row.title}]{Player Version}`);
@@ -535,7 +541,6 @@ function findScenes(document) {
           contentChunkId: node.getAttribute("data-content-chunk-id"),
         };
         const journalEntry = generateJournalEntry(row, img.src);
-        journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
         journals.push(journalEntry);
       }
     });
@@ -596,7 +601,6 @@ function findScenes(document) {
           };
           tmpCount++;
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
-          playerEntry.img = replaceImgLinksForJournal(playerEntry.img);
           journals.push(playerEntry);
           linkReplaces.push( {html: playerRef.outerHTML, ref: `@JournalEntry[${title}]{DM Version} @JournalEntry[${row.title}]{Player Version}` });
           document.content = document.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${row.title}]{Player Version}`);
@@ -613,7 +617,6 @@ function findScenes(document) {
           contentChunkId: caption.getAttribute("data-content-chunk-id"),
         };
         const journalEntry = generateJournalEntry(row, img.src);
-        journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
         journals.push(journalEntry);
       }
     });
@@ -639,8 +642,9 @@ function findScenes(document) {
         contentChunkId: node.getAttribute("data-content-chunk-id"),
       };
       const journalEntry = generateJournalEntry(row, node.src);
-      journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
-      journals.push(journalEntry);
+      if (!journalEntry.flags.ddb.duplicate) {
+        journals.push(journalEntry);
+      }
     });
   }
   if (possibleFigureSceneNodes.length == 0 && possibleViewPlayerScenes.length > 0) {
@@ -649,7 +653,6 @@ function findScenes(document) {
     possibleViewPlayerScenes.forEach((node) => {
       let aNode = node.querySelector("a.ddb-lightbox-outer");
       if (!aNode || aNode.length == 0) return; 
-      if (imgMatched.includes(aNode.href) || imgMatched.includes(aNode.src)) return;
 
       tmpCount++;
       if (config.debug) {
@@ -670,18 +673,20 @@ function findScenes(document) {
         contentChunkId: node.getAttribute("data-content-chunk-id"),
       };
       const journalEntry = generateJournalEntry(row, aNode.href.replace("ddb://image", "."));
-      journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
       
       // don't add entry if we have already parsed this
-      if (imgMatched.includes(journalEntry.img)) return;
-      linkReplaces.push( {html: aNode.outerHTML, ref: `@JournalEntry[${title}]{Player Version}` });
-      journals.push(journalEntry);
-      scenes.push(generateScene(row, journalEntry.img));
+      if (!journalEntry.flags.ddb.duplicate) {
+        linkReplaces.push( {html: aNode.outerHTML, ref: `@JournalEntry[${title}]{Player Version}` });
+        journals.push(journalEntry);
+      }
+      if (!sceneImgMatched.includes(journalEntry.img)) {
+        scenes.push(generateScene(row, journalEntry.img));
+      }
     });
   }
 
   possibleUnknownPlayerLinks.forEach((node) => {
-    if (imgMatched.includes(node.href)) return;
+    if (sceneImgMatched.includes(node.href)) return;
     if (!node.textContent.toLowerCase().includes("player")) return;
 
     tmpCount++;
@@ -703,16 +708,22 @@ function findScenes(document) {
       contentChunkId: node.parentElement.getAttribute("data-content-chunk-id"),
     };
     const journalEntry = generateJournalEntry(row, node.href.replace("ddb://image", "."));
-    journalEntry.img = replaceImgLinksForJournal(journalEntry.img);
 
     // don't add entry if we have already parsed this
-    if (imgMatched.includes(journalEntry.img)) return;
-    journals.push(journalEntry);
-    linkReplaces.push( {html: node.outerHTML, ref: `@JournalEntry[${title}]{Player Version}` });
-    scenes.push(generateScene(row, journalEntry.img));
+    if (!journalEntry.flags.ddb.duplicate) {
+      linkReplaces.push( {html: node.outerHTML, ref: `@JournalEntry[${title}]{Player Version}` });
+      journals.push(journalEntry);
+    }
+    if (!sceneImgMatched.includes(journalEntry.img)) {
+      scenes.push(generateScene(row, journalEntry.img));
+    }
   });
 
-  console.log(imgMatched);
+  console.log("Generated the following journal images:");
+  console.log(journalImgMatched);
+  console.log("Generated the following scene images:");
+  console.log(sceneImgMatched);
+  
 
   return [scenes, journals, linkReplaces];
 }
@@ -839,7 +850,8 @@ async function setConfig(conf) {
   folders = [];
   scenes = [];
   imageFinderResults = [];
-  imgMatched = [];
+  sceneImgMatched = [];
+  journalImgMatched = [];
   fetchLookups(config);
   sceneAdjustments = sceneAdjuster.getSceneAdjustments(config.run.bookCode);
   enhancedScenes = await enhance.getEnhancedData(config);
