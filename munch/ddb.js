@@ -36,7 +36,7 @@ async function getKey(bookId, cobalt) {
     urlencoded.append("token", `${cobalt}`);
     urlencoded.append("sources", `[{\"sourceID\":${bookId},\"versionID\":null}]`);
 
-    const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v5/book-codes", urlencoded);
+    const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v6/book-codes", urlencoded);
     const buff = new Buffer.from(result.find((r) => r.sourceID == bookId).data, 'base64');
     const key = buff.toString('ascii');
     return key;
@@ -48,7 +48,7 @@ async function getKey(bookId, cobalt) {
 async function getBookUrl(bookId, cobalt) {
   const urlencoded = new URLSearchParams();
   urlencoded.append("token", `${cobalt}`);
-  const result = await ddbCall(`https://www.dndbeyond.com/mobile/api/v5/get-book-url/${bookId}`, urlencoded);
+  const result = await ddbCall(`https://www.dndbeyond.com/mobile/api/v6/get-book-url/${bookId}`, urlencoded);
   return result;
 }
 
@@ -71,7 +71,7 @@ async function listBooks(cobalt) {
   const urlencoded = new URLSearchParams();
   urlencoded.append("token", `${cobalt}`);
 
-  const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v5/available-user-content", urlencoded);
+  const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v6/available-user-content", urlencoded);
   const books = result.Licenses.map((block) =>
     block.Entities
       .filter((b) => b.isOwned && !BAD_IDS.includes(b.id))
@@ -109,7 +109,7 @@ async function listBooks(cobalt) {
 async function getUserData(cobalt) {
   const urlencoded = new URLSearchParams();
   urlencoded.append("token", `${cobalt}`);
-  const result = await ddbCall(`https://www.dndbeyond.com/mobile/api/v5/user-data`, urlencoded);
+  const result = await ddbCall(`https://www.dndbeyond.com/mobile/api/v6/user-data`, urlencoded);
   return result;
 }
 
