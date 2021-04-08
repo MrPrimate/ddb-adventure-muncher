@@ -23,7 +23,7 @@ function setConfigDir (dir) {
   buildDir = `${configDir}/build`;
   CONFIG_FILE = `${configDir}/config.json`;
   LOOKUP_FILE = `${configDir}/lookup.json`;
-  IMAGE_FINDER_FILE = `${configDir}/images.json`;
+  IMAGE_FINDER_LOCATION = `${configDir}/images.json`;
 }
 
 function getLookups() {
@@ -40,14 +40,22 @@ function saveLookups(content) {
   utils.saveJSONFile(content, configFile);
 }
 
-function saveImageFinderResults(content, bookCode) {
-  const imagePath = path.resolve(__dirname,IMAGE_FINDER_FILE);
+function saveImageFinderResults(sceneContent, journalContent, bookCode) {
+  const imageScenePath = path.resolve(__dirname,configDir,"scene-images.json");
 
-  const data = (fs.existsSync(imagePath)) ?
-    utils.loadJSONFile(imagePath) :
+  const sceneData = (fs.existsSync(imageScenePath)) ?
+    utils.loadJSONFile(imageScenePath) :
     {};
-  data[bookCode] = content;
-  utils.saveJSONFile(data, imagePath);
+  sceneData[bookCode] = sceneContent;
+  utils.saveJSONFile(sceneData, imageScenePath);
+
+  const imageJournalPath = path.resolve(__dirname,configDir,"journal-images.json");
+
+  const journalData = (fs.existsSync(imageJournalPath)) ?
+    utils.loadJSONFile(imageJournalPath) :
+    {};
+  journalData[bookCode] = journalContent;
+  utils.saveJSONFile(journalData, imageJournalPath);
 }
 
 function isConfig() {

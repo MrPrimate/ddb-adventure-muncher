@@ -29,7 +29,8 @@ let scenes = [];
 
 var templateDir = path.join("..", "content", "templates");
 
-let imageFinderResults = [];
+let imageFinderSceneResults = [];
+let imageFinderJournalResults = [];
 
 function setTemplateDir (dir) {
   templateDir = dir;
@@ -387,7 +388,18 @@ function generateJournalEntry(row, img=null) {
   let imgState = (img !== null && img !== "") ? true : false;
   if (imgState) {
     journal.img = replaceImgLinksForJournal(img);
-    if (journalImgMatched.includes(journal.img)) journal.flags.ddb.duplicate = true;
+    if (journalImgMatched.includes(journal.img)) {
+      journal.flags.ddb.duplicate = true;
+    } else {
+      if (config.imageFind) {
+        imageFinderJournalResults.push({
+          bookCode: config.run.bookCode,
+          img: journal.img,
+          name: journal.name,
+          slug: row.slug,
+        });
+      }
+    }
     journalImgMatched.push(journal.img);
     const journalHandoutCount = journalImgMatched.filter(img => img === journal.img).length;
     console.log(`Generated Handout ${journal.name}, (count ${journalHandoutCount})`);
@@ -446,10 +458,11 @@ function generateScene(row, img) {
   scene._id = getId(scene, "Scene");
 
   if (config.imageFind) {
-    imageFinderResults.push({
+    imageFinderSceneResults.push({
       bookCode: config.run.bookCode,
       img: scene.img,
       name: scene.name,
+      slug: row.slug,
     });
   }
 
@@ -839,7 +852,7 @@ async function collectionFinished(err, count) {
   } finally {
     // save generated Ids table
     configure.saveLookups(idTable);
-    configure.saveImageFinderResults(imageFinderResults, config.run.bookCode);
+    configure.saveImageFinderResults(imageFinderSceneResults, imageFinderJournalResults, config.run.bookCode);
   }
 }
 
@@ -849,7 +862,8 @@ async function setConfig(conf) {
   chapters = [];
   folders = [];
   scenes = [];
-  imageFinderResults = [];
+  imageFinderSceneResults = [];
+  imageFinderJournalResults = [];
   sceneImgMatched = [];
   journalImgMatched = [];
   fetchLookups(config);
