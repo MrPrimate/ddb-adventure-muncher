@@ -5,19 +5,16 @@ Please do not share this link with other people.
 ## How does this work?
 
 * You will need to import monsters, spells, and items using DDB Importer first.
-* When you are happy with the data in your compendiums, you can use the ~~Adventure Config Exporter button~~ _not available in alpha_ to download a config mapping. In alpha you can open the Chrome Developer Console (F12) and run the following instead:
-```shell
-generateAdventureConfig()
-```
+* When you are happy with the data in your compendiums, you can use the Adventure Config Exporter button to download a config mapping. You can find this in the Experimental tab of the muncher screen if your supporter tier can access the alpha.
 * This file contains a cobalt cookie value and mappings to the imported compendium entries. The adventure muncher will use these to construct links to the right spells/items etc in Journal entries.
 
 ## Alpha Download Links
 
-* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.6-linux-x86_64.AppImage)
-* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.6-linux-x86_64.rpm)
-* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.6-linux-amd64.deb)
-* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.6-win.exe)
-* ~~[Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.6-mac.zip)~~ The OSX build doesn't seem to work right now. I don't have a Mac so can't troubleshoot this right now.
+* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.7-linux-x86_64.AppImage)
+* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.7-linux-x86_64.rpm)
+* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.7-linux-amd64.deb)
+* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.7-win.exe)
+* ~~[Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.7-mac.zip)~~ The OSX build doesn't seem to work right now. I don't have a Mac so can't troubleshoot this right now.
 
 ## Importing the book
 
