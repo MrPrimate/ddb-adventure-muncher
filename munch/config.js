@@ -14,6 +14,8 @@ var LOOKUP_FILE = `${configDir}/lookup.json`;
 var IMAGE_FINDER_FILE = `${configDir}/images.json`;
 var config;
 
+const defaultEnhancementEndpoint = "https://ddb.mrprimate.co.uk";
+
 
 function setConfigDir (dir) {
   configDir = dir;
@@ -149,9 +151,12 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
     exit();
   }
 
+  const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint; 
   config.run = {
+    enhancementEndpoint: enhancementEndpoint,
     userData: userData,
     book: book,
+    bookId: bookId,
     bookCode: bookCode,
     outputDir: outputDir,
     sourceDir: sourceDir,

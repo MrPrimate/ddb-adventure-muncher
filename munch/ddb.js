@@ -1,6 +1,6 @@
 const { DDB_CONFIG } = require("./ddb-config.js");
 const fetch = require("node-fetch");
-const fs = require("fs");
+const utils = require("./utils.js");
 
 function ddbCall(url, urlencoded) {
   const options = {
@@ -22,27 +22,6 @@ function ddbCall(url, urlencoded) {
         console.log(`Error ${result}`);
         reject(result);
       }
-    })
-    .catch(error => {
-      console.log('error', error);
-      reject(error);
-    });
-  });
-}
-
-function downloadFile(url, destination) {
-  const options = {
-    url: url,
-    encoding: null
-  };
-
-  return new Promise((resolve, reject) => {
-    fetch(url, options)
-    .then((res) => {
-      const dest = fs.createWriteStream(destination);
-      res.body.pipe(dest);
-      res.body.on('end', () => resolve());
-      dest.on('error', reject);
     })
     .catch(error => {
       console.log('error', error);
@@ -75,7 +54,7 @@ async function getBookUrl(bookId, cobalt) {
 
 async function downloadBook(bookId, cobalt, destination) {
   const url = await getBookUrl(bookId, cobalt);
-  await downloadFile(url, destination);
+  await utils.downloadFile(url, destination);
   return true;
 }
 
@@ -139,3 +118,4 @@ exports.getBookUrl = getBookUrl;
 exports.downloadBook = downloadBook;
 exports.listBooks = listBooks;
 exports.getUserData = getUserData;
+

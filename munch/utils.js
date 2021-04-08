@@ -4,6 +4,7 @@ const JSZip = require("jszip");
 const extract = require('extract-zip')
 const fse = require('fs-extra');
 const sizeOf = require('image-size');
+const fetch = require("node-fetch");
 
 function getFilePathsRecursively(dir) {
   // returns a flat array of absolute paths of all files recursively contained in the dir
@@ -70,6 +71,27 @@ async function unzipFile(filePath, destination) {
   } catch (err) {
     // handle any errors
   }
+}
+
+function downloadFile(url, destination) {
+  const options = {
+    url: url,
+    encoding: null
+  };
+
+  return new Promise((resolve, reject) => {
+    fetch(url, options)
+    .then((res) => {
+      const dest = fs.createWriteStream(destination);
+      res.body.pipe(dest);
+      res.body.on('end', () => resolve());
+      dest.on('error', reject);
+    })
+    .catch(error => {
+      console.log('error', error);
+      reject(error);
+    });
+  });
 }
 
 
@@ -207,3 +229,4 @@ exports.saveConfig = saveJSONFile;
 exports.directoryReset = directoryReset;
 exports.titleString = titleString;
 exports.imageSize = imageSize;
+exports.downloadFile = downloadFile;

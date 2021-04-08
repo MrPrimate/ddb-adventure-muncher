@@ -5,6 +5,7 @@ const { exit } = require("process");
 const scene = require("./scene-load.js");
 const path = require("path");
 const fs = require("fs");
+const enhance = require("./enhance.js");
 
 const configurator = require("./config.js");
 
@@ -50,42 +51,25 @@ if (process.argv[2] === "config") {
     console.log("Imported scene updates");
     exit();
   })
-// } else if (process.argv[2] === "all" ) {
-//   console.log("GOING ALL IN!");
-//   configurator.getConfig(false, null).then((config) => {
-//     ddb.listBooks(config.cobalt).then((bookIds) => {
-//       console.log("BookIds Found");
-//       bookIds.forEach((bookId) => {
-//         console.log(`${bookId.bookCode} : ${bookId.book}`);
-//         configurator.getConfig(bookId.bookCode).then((cfg) => {
-//           book.setConfig(cfg);
-//           book.setMasterFolders();
-//           utils.directoryReset(cfg);
-//           book.getData();
-//           const targetAdventureZip = path.join(cfg.run.outputDirEnv,`${cfg.run.bookCode}.fvttadv`);
-//           const { promisify } = require('util');
-//           const sleep = promisify(setTimeout);
-
-//           const doSomething = async () => {
-//             while (!fs.existsSync(targetAdventureZip)) {
-//               console.log(`Waiting for adventure at ${targetAdventureZip}`);
-//               await sleep(1000);
-//             }
-//           }
-//           doSomething();
-//         });
-//       });
-//     });
-//   })
+}  else if (process.argv[2] == "enhance") {
+  console.log(process.argv[3]);
+  configurator.getConfig(process.argv[3], null).then((config) => {
+    enhance.getEnhancedData(config).then(enhanced => {
+      console.log(enhanced);
+      exit();
+    })
+    
+  });
 }  else if (!process.argv[2] || process.argv[2] == "" ) {
   console.log("Please enter a book code or use 'list' to discover codes");
   exit();
 } else {
   configurator.getConfig(process.argv[2], null).then((config) => {
-    book.setConfig(config);
-    book.setMasterFolders();
-    utils.directoryReset(config);
-    console.log(config.run);
-    book.getData();
+    book.setConfig(config).then(() => {
+      book.setMasterFolders();
+      utils.directoryReset(config);
+      console.log(config.run);
+      book.getData();
+    })
   })
 }

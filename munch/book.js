@@ -9,6 +9,7 @@ const sqlite3 = require('@journeyapps/sqlcipher').verbose();
 const _ = require('lodash');
 const configure = require("./config.js");
 const sceneAdjuster = require("./scene-load.js");
+const enhance = require("./enhance.js");
 
 var journalSort = 1000;
 var folderSort = 4000;
@@ -16,6 +17,8 @@ var config;
 var idTable;
 var sceneAdjustments;
 var imgMatched = [];
+var enhancedScenes = [];
+var downloadList = [];
 
 var masterFolder;
 
@@ -444,6 +447,17 @@ function generateScene(row, img) {
     });
   }
 
+  const enhancedScene = enhancedScenes.find((es) => es.name === scene.name && es.img === scene.img);
+  if (enhancedScene) {
+    if (enhancedScene.hiresImg) {
+      downloadList.push({name: scene.name, url: enhancedScene.hiresImg, path: scene.img });
+    }
+    if (enhancedScene.adjustName != "") {
+      scene.name = enhancedScene.adjustName;
+      scene.navName = enhancedScene.adjustName;
+    }
+  }
+
   scenes.push(scene);
   imgMatched.push(scene.img);
   console.log(`Added Scene ${scene.name}`);
@@ -784,7 +798,16 @@ function rowGenerate(err, row) {
   generateJournalChapterEntry(row);
 }
 
-function collectionFinished(err, count) {
+
+async function downloadEnhancements(list) {
+  for (i = 0; i < list.length; i++) {
+    console.log(`Downloading Hi Res ${list[i].name}`);
+    const dlPath = path.join(config.run.outputDir,list[i].path);
+    await utils.downloadFile(list[i].url, dlPath);
+  } 
+}
+
+async function collectionFinished(err, count) {
   if (err) {
     console.error(err);
     exit();
@@ -797,6 +820,7 @@ function collectionFinished(err, count) {
     outputScenes(scenes, config);
     const allContent = chapters.concat(scenes);
     outputFolders(folders, config, allContent);
+    await downloadEnhancements(downloadList);
     generateZipFile(config);
   } catch (err) {
     console.log(`Error generating adventure: ${err}`);
@@ -808,7 +832,7 @@ function collectionFinished(err, count) {
   }
 }
 
-function setConfig(conf) {
+async function setConfig(conf) {
   config = conf;
   masterFolder = undefined;
   chapters = [];
@@ -818,6 +842,8 @@ function setConfig(conf) {
   imgMatched = [];
   fetchLookups(config);
   sceneAdjustments = sceneAdjuster.getSceneAdjustments(config.run.bookCode);
+  enhancedScenes = await enhance.getEnhancedData(config);
+  downloadList = [];
 }
 
 function getData(){

@@ -221,23 +221,24 @@ const loadMainWindow = () => {
         book.setTemplateDir(path.join(process.resourcesPath, "content", "templates"));
         scenes.setSceneDir(path.join(process.resourcesPath, "content", "scene_info"));
       }
-      book.setConfig(config);
-      utils.directoryReset(config);
-      book.fetchLookups(config);
-      book.setMasterFolders();
-      book.getData();
-      const targetAdventureZip = path.join(config.run.outputDirEnv,`${config.run.bookCode}.fvttadv`);
-      const { promisify } = require('util');
-      const sleep = promisify(setTimeout);
-
-      const doSomething = async () => {
-        while (!fs.existsSync(targetAdventureZip)) {
-          console.log(`No adventure at ${targetAdventureZip}`);
-          await sleep(100);
+      book.setConfig(config).then(() => {
+        utils.directoryReset(config);
+        book.fetchLookups(config);
+        book.setMasterFolders();
+        book.getData();
+        const targetAdventureZip = path.join(config.run.outputDirEnv,`${config.run.bookCode}.fvttadv`);
+        const { promisify } = require('util');
+        const sleep = promisify(setTimeout);
+  
+        const doSomething = async () => {
+          while (!fs.existsSync(targetAdventureZip)) {
+            console.log(`No adventure at ${targetAdventureZip}`);
+            await sleep(100);
+          }
+          mainWindow.webContents.send('generate');
         }
-        mainWindow.webContents.send('generate');
-      }
-      doSomething();
+        doSomething();
+      });
     });
   });
 
