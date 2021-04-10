@@ -11,7 +11,6 @@ var buildDir = `${configDir}/build`;
 var dbDir;
 var CONFIG_FILE = `${configDir}/config.json`;
 var LOOKUP_FILE = `${configDir}/lookup.json`;
-var IMAGE_FINDER_FILE = `${configDir}/images.json`;
 var config;
 
 const defaultEnhancementEndpoint = "https://ddb.mrprimate.co.uk";
@@ -23,7 +22,6 @@ function setConfigDir (dir) {
   buildDir = `${configDir}/build`;
   CONFIG_FILE = `${configDir}/config.json`;
   LOOKUP_FILE = `${configDir}/lookup.json`;
-  IMAGE_FINDER_LOCATION = `${configDir}/images.json`;
 }
 
 function getLookups() {

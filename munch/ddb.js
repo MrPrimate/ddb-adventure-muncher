@@ -67,14 +67,14 @@ const BAD_IDS = [
   26, //cos players
   30, //ddb
 ];
-async function listBooks(cobalt) {
+async function listBooks(cobalt, allBooks=true) {
   const urlencoded = new URLSearchParams();
   urlencoded.append("token", `${cobalt}`);
 
   const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v6/available-user-content", urlencoded);
   const books = result.Licenses.map((block) =>
     block.Entities
-      .filter((b) => b.isOwned && !BAD_IDS.includes(b.id))
+      .filter((b) => (allBooks || b.isOwned) && !BAD_IDS.includes(b.id))
       .filter((b) => DDB_CONFIG.sources.some((s)  => b.id === s.id && s.isReleased))
       .map((b) => {
         const book = DDB_CONFIG.sources.find((s)  => b.id === s.id);

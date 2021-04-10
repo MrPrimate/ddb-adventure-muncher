@@ -3,6 +3,9 @@ const path = require("path");
 const fs = require("fs");
 const _ = require('lodash');
 
+app.commandLine.appendSwitch('trace-warnings');
+app.commandLine.appendSwitch('unhandled-rejections', 'strict');
+
 const isDevelopment = process.env.NODE_ENV === 'DEV';
 
 if (isDevelopment) {
@@ -16,6 +19,12 @@ const book = require("./munch/book.js");
 const utils = require("./munch/utils.js");
 const scenes = require("./munch/scene-load.js");
 const configurator = require("./munch/config.js");
+
+const yargs = require('yargs/yargs');
+const { hideBin } = require('yargs/helpers');
+const pargs = yargs(hideBin(process.argv));
+
+let allBooks = true;
 
 configurator.setConfigDir(app.getPath('userData'));
 
@@ -153,7 +162,128 @@ const menuTemplate = [
   }
 ];
 
+async function downloadBooks(config) {
+  const bookIds = await ddb.listBooks(config.cobalt);
+  // console.log(bookIds)
+  for (let i = 0; i < bookIds.length; i++) {
+    process.stdout.write(`Downloading ${bookIds[i].book}`);
+    await configurator.getConfig(bookIds[i].bookCode, null);
+    process.stdout.write(`Download for ${bookIds[i].book} complete`);
+  }
+}
+
+function generateAdventure(args) {
+  return new Promise((resolve, reject) => {
+    configurator.getConfig(args).then(config => {
+      if (!isDevelopment) {
+        book.setTemplateDir(path.join(process.resourcesPath, "content", "templates"));
+        scenes.setSceneDir(path.join(process.resourcesPath, "content", "scene_info"));
+      }
+      book.setConfig(config).then(() => {
+        utils.directoryReset(config);
+        book.fetchLookups(config);
+        book.setMasterFolders();
+        book.getData();
+        const targetAdventureZip = path.join(config.run.outputDirEnv,`${config.run.bookCode}.fvttadv`);
+        const { promisify } = require('util');
+        const sleep = promisify(setTimeout);
+
+        const doSomething = async () => {
+          while (!fs.existsSync(targetAdventureZip)) {
+            console.log(`No adventure at ${targetAdventureZip}`);
+            await sleep(100);
+          }
+          resolve(true);
+        }
+        doSomething();
+      });
+    });
+  });
+}
+
+function commandLine() {
+  const args = pargs
+    .usage('./$0')
+    .option('version', {
+      alias: 'v',
+      describe: "Program version"
+    })
+    .option('list', {
+      alias: 'l',
+      describe: "List books"
+    })
+    .option('download', {
+      alias: 'd',
+      describe: "Download all the book files you have access. This does not process the book, just downloads for later use."
+    })
+    .option('generate', {
+      alias: 'g',
+      describe: "Generate content for specified book."
+    })
+    .option('show-owned-books', {
+      alias: 'o',
+      describe: "Show only owned books, not shared."
+    })
+    .help('help')
+    .wrap(70)
+    .locale('en')
+    .argv;
+
+  return new Promise((resolve, reject) => {
+    if (args['show-owned-books']){
+      process.stdout.write("Owned books mode activated");
+      allBooks = false;
+      resolve(true);
+    }
+
+    else if (args.list){
+      configurator.getConfig().then((config) => {
+        ddb.listBooks(config.cobalt).then((bookIds) => {
+          bookIds.forEach((bookId) => {
+            process.stdout.write(`${bookId.bookCode} : ${bookId.book}\n`);
+          })
+          process.exit(0);
+        });
+      })
+    }
+
+    else if (args.download) {
+      configurator.getConfig().then((config) => {
+        downloadBooks(config)
+        .then(() => {
+          process.stdout.write("Downloads finished")
+          process.exit(0);
+        });
+      })
+    }
+
+    else if (args.generate) {
+      console.log(args.generate);
+      generateAdventure(args.generate).then(() => {
+        process.exit(0);
+      });
+    }
+
+    else if (args.help){
+      process.stdout.write(options.help());
+      process.exit(0);
+    }
+      
+    else if (args.version) {
+      process.stdout.write(`${app.getVersion()}\n`);
+      process.exit(0);
+    }
+    else {
+      resolve(true);
+    }
+  });
+
+}
+
 const loadMainWindow = () => {
+
+  commandLine();
+
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 800,
@@ -208,44 +338,29 @@ const loadMainWindow = () => {
 
   ipcMain.on("books", (event, args) => {
     configurator.getConfig().then(config => {
-      ddb.listBooks(config.cobalt).then((bookIds) => {
+      ddb.listBooks(config.cobalt, allBooks).then((bookIds) => {
         bookIds = _.orderBy(bookIds, ['book'],['asc']);
         mainWindow.webContents.send('books', bookIds);
       });
     });
   });
 
-  ipcMain.on("generate", (event, args) => {
-    configurator.getConfig(args).then(config => {
-      if (!isDevelopment) {
-        book.setTemplateDir(path.join(process.resourcesPath, "content", "templates"));
-        scenes.setSceneDir(path.join(process.resourcesPath, "content", "scene_info"));
-      }
-      book.setConfig(config).then(() => {
-        utils.directoryReset(config);
-        book.fetchLookups(config);
-        book.setMasterFolders();
-        book.getData();
-        const targetAdventureZip = path.join(config.run.outputDirEnv,`${config.run.bookCode}.fvttadv`);
-        const { promisify } = require('util');
-        const sleep = promisify(setTimeout);
-  
-        const doSomething = async () => {
-          while (!fs.existsSync(targetAdventureZip)) {
-            console.log(`No adventure at ${targetAdventureZip}`);
-            await sleep(100);
-          }
-          mainWindow.webContents.send('generate');
-        }
-        doSomething();
-      });
+  ipcMain.on("generate", (event, book) => {
+    generateAdventure(book).then(() => {
+      mainWindow.webContents.send('generate');
     });
   });
 
   mainWindow.loadFile(path.join(__dirname, "renderer", "index.html"));
 };
 
-app.on("ready", loadMainWindow);
+function prepare () {
+  commandLine().then(() => {
+    loadMainWindow();
+  });
+}
+
+app.on("ready", prepare);
 
 app.on("window-all-closed", () => {
   if (!isMac) {

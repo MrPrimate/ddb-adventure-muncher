@@ -1,6 +1,6 @@
 {
   "name": "ddb-adventure-muncher",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "D&D Beyond Adventure Muncher for Foundry Virtual Tabletop",
   "main": "main.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "dist-all": "electron-builder -mwl",
+    "dist-wl": "electron-builder -wl",
+    "dist-m": "electron-builder -m",
     "docs": "pandoc README.md -f markdown --css=build/pandoc.css -t html5 --self-contained -o dist/index.html"
   },
   "build": {
@@ -80,6 +81,7 @@
     "image-size": "^0.9.7",
     "jsdom": "^16.5.1",
     "jszip": "^3.6.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "yargs": "^16.2.0"
   }
 }
