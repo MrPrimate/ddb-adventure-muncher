@@ -57,6 +57,7 @@ Commands:
                                   This does not process the book, just downloads
                                   for later use.
   ddb-adventure-muncher generate  Generate content for specified book.
+  ddb-adventure-muncher config    Load a config file into the importer.
 
 Options:
   -o, --show-owned-books  Show only owned books, not shared.
