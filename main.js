@@ -201,6 +201,22 @@ function generateAdventure(args) {
   });
 }
 
+function checkAuth() {
+  return new Promise((resolve, reject) => {
+    configurator.getConfig().then(config => {
+      ddb.getUserData(config.cobalt).then((userData) => {
+        if (userData.error || !userData.userDisplayName) {
+          process.stdout.write("Authentication failure, please check your cobalt token\n");
+          process.exit(0);
+        }
+        else {
+          resolve(true);
+        }
+      });
+    });
+  });
+}
+
 function commandLine() {
   const args = pargs
     .usage('./$0 <command> [options]')
@@ -217,6 +233,9 @@ function commandLine() {
     .command('generate', 'Generate content for specified book.')
     .alias('g', "generate")
     .nargs('g', 1)
+    .command('config', 'Load a config file into the importer.')
+    .alias('c', "config")
+    .nargs('c', 1)
     .example('$0 generate lmop', 'Generate import file for Lost Mines of Phandelver')
     .help('help')
     .locale('en')
@@ -224,36 +243,48 @@ function commandLine() {
 
   return new Promise((resolve, reject) => {
     if (args['show-owned-books']){
-      process.stdout.write("Owned books mode activated");
+      process.stdout.write("Owned books mode activated\n");
       allBooks = false;
     }
 
-    if (args.list){
-      configurator.getConfig().then((config) => {
-        ddb.listBooks(config.cobalt).then((bookIds) => {
-          bookIds.forEach((bookId) => {
-            process.stdout.write(`${bookId.bookCode} : ${bookId.book}\n`);
-          })
-          process.exit(0);
-        });
+    if (args.config) {
+      configurator.getConfig(false, args.config).then(() => {
+        process.stdout.write(`Loaded ${args.config}\n`);
+        process.exit(0);
       })
+    }
+
+    else if (args.list){
+      checkAuth().then(() => {
+        configurator.getConfig().then((config) => {
+          ddb.listBooks(config.cobalt).then((bookIds) => {
+            bookIds.forEach((bookId) => {
+              process.stdout.write(`${bookId.bookCode} : ${bookId.book}\n`);
+            })
+            process.exit(0);
+          });
+        });
+      });
     }
 
     else if (args.download) {
-      configurator.getConfig().then((config) => {
-        downloadBooks(config)
-        .then(() => {
-          process.stdout.write("Downloads finished")
-          process.exit(0);
+      checkAuth().then(() => {
+        configurator.getConfig().then((config) => {
+          downloadBooks(config)
+          .then(() => {
+            process.stdout.write("Downloads finished\n")
+            process.exit(0);
+          });
         });
-      })
+      });
     }
 
     else if (args.generate) {
-      console.log(args.generate);
-      generateAdventure(args.generate).then(() => {
-        process.exit(0);
-      });
+      checkAuth().then(() => {
+        generateAdventure(args.generate).then(() => {
+          process.exit(0);
+        });
+      })
     }
 
     else if (args.help){

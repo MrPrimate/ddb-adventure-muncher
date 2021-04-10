@@ -53,7 +53,10 @@ window.api.receive("books", (data) => {
 });
 
 window.api.receive("user", (data) => {
-  if (data) {
+  if (data.error) {
+    userField.innerHTML = `<b>Authentication Failure - please generate and load a new config file!</b>`;
+  }
+  else if (data.userDisplayName) {
     userField.innerHTML = `<b>User name:</b> ${data.userDisplayName}`;
   }
 });

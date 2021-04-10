@@ -19,7 +19,7 @@ function ddbCall(url, urlencoded) {
         if (result.data) resolve(result.data);
         resolve(result);
       } else {
-        console.log(`Error ${result}`);
+        console.log(`Error`, result);
         reject(result);
       }
     })
@@ -107,10 +107,19 @@ async function listBooks(cobalt, allBooks=true) {
 //   "AvatarUrl": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/3453/679/64/64/11111111.png"
 // }
 async function getUserData(cobalt) {
-  const urlencoded = new URLSearchParams();
-  urlencoded.append("token", `${cobalt}`);
-  const result = await ddbCall(`https://www.dndbeyond.com/mobile/api/v6/user-data`, urlencoded);
-  return result;
+  try {
+    const urlencoded = new URLSearchParams();
+    urlencoded.append("token", `${cobalt}`);
+    const result = await ddbCall(`https://www.dndbeyond.com/mobile/api/v6/user-data`, urlencoded);
+    return result;
+  } catch (e) {
+    console.log("Error:", e);
+    return {
+      error: true,
+      message: "Unable to authenticate, check Cobalt value",
+      e: e,
+    }
+  }
 }
 
 exports.getKey = getKey;
