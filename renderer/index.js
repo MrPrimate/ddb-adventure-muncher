@@ -9,6 +9,7 @@ const outputLocation = document.getElementById("output-location");
 const bookList = document.getElementById("book-select");
 const contentLoadMessage = document.getElementById("config-loader");
 const generateButton = document.getElementById("munch-book");
+const userField = document.getElementById("user");
 
 var config;
 
@@ -51,6 +52,12 @@ window.api.receive("books", (data) => {
   bookList.innerHTML = bookHtml;
 });
 
+window.api.receive("user", (data) => {
+  if (data) {
+    userField.innerHTML = `<b>User name:</b> ${data.userDisplayName}`;
+  }
+});
+
 
 window.api.receive("config", (data) => {
   console.log(`Received config from main process`);
@@ -60,6 +67,7 @@ window.api.receive("config", (data) => {
   if (config.cobalt) {
     contentLoadMessage.innerHTML = "Config loaded!";
     setOutputDir.disabled = false;
+    window.api.send("user");
     if (config.outputDirEnv) {
       generateButton.disabled = false;
       outputLocation.innerHTML = config.outputDirEnv;

@@ -48,18 +48,24 @@ If you want to use the app as a command line tool, you can:
 
 ```shell
 ❯ ./ddb-adventure-muncher-0.0.8-linux-x86_64.AppImage --help
-./ddb-adventure-muncher
+./ddb-adventure-muncher <command> [options]
+
+Commands:
+  ddb-adventure-muncher version   Version information
+  ddb-adventure-muncher list      List books
+  ddb-adventure-muncher download  Download all the book files you have access.
+                                  This does not process the book, just downloads
+                                  for later use.
+  ddb-adventure-muncher generate  Generate content for specified book.
 
 Options:
-  -v, --version           Program version                    [boolean]
-  -l, --list              List books
-  -d, --download          Download all the book files you have access.
-                          This does not process the book, just
-                          downloads for later use.
-  -g, --generate          Generate content for specified book.
   -o, --show-owned-books  Show only owned books, not shared.
-      --help              Show help                          [boolean]
+      --help              Show help                                    [boolean]
+  -v, --version           Show version number                          [boolean]
 
+Examples:
+  ddb-adventure-muncher generate lmop  Generate import file for Lost Mines of
+                                       Phandelver
 ```
 
 ## Known Issues

@@ -337,6 +337,14 @@ const loadMainWindow = () => {
     });
   });
 
+  ipcMain.on("user", (event, args) => {
+    configurator.getConfig().then(config => {
+      ddb.getUserData(config.cobalt).then((userData) => {
+        mainWindow.webContents.send('user', userData);
+      });
+    });
+  });
+
   ipcMain.on("generate", (event, book) => {
     generateAdventure(book).then(() => {
       mainWindow.webContents.send('generate');
