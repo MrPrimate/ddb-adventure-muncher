@@ -203,29 +203,22 @@ function generateAdventure(args) {
 
 function commandLine() {
   const args = pargs
-    .usage('./$0')
-    .option('version', {
-      alias: 'v',
-      describe: "Program version"
-    })
-    .option('list', {
-      alias: 'l',
-      describe: "List books"
-    })
-    .option('download', {
-      alias: 'd',
-      describe: "Download all the book files you have access. This does not process the book, just downloads for later use."
-    })
-    .option('generate', {
-      alias: 'g',
-      describe: "Generate content for specified book."
-    })
+    .usage('./$0 <command> [options]')
     .option('show-owned-books', {
       alias: 'o',
       describe: "Show only owned books, not shared."
     })
+    .command('version', 'Version information')
+    .alias('v', "version")
+    .command('list', 'List books')
+    .alias('l', "list")
+    .command('download', 'Download all the book files you have access. This does not process the book, just downloads for later use.')
+    .alias('d', "download")
+    .command('generate', 'Generate content for specified book.')
+    .alias('g', "generate")
+    .nargs('g', 1)
+    .example('$0 generate lmop', 'Generate import file for Lost Mines of Phandelver')
     .help('help')
-    .wrap(70)
     .locale('en')
     .argv;
 
@@ -233,10 +226,9 @@ function commandLine() {
     if (args['show-owned-books']){
       process.stdout.write("Owned books mode activated");
       allBooks = false;
-      resolve(true);
     }
 
-    else if (args.list){
+    if (args.list){
       configurator.getConfig().then((config) => {
         ddb.listBooks(config.cobalt).then((bookIds) => {
           bookIds.forEach((bookId) => {
