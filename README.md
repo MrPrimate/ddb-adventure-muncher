@@ -14,7 +14,7 @@ Please do not share this link with other people.
 * [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.9-linux-x86_64.rpm)
 * [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.9-linux-amd64.deb)
 * [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.9-win.exe)
-* ~~[Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.9-mac.zip)~~ The OSX build doesn't seem to work right now. I don't have a Mac so can't troubleshoot this right now.
+* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.9-mac.dmg)
 
 ## Importing the book
 
@@ -47,7 +47,7 @@ If you wish to download the content again, rather than using existing downloaded
 If you want to use the app as a command line tool, you can:
 
 ```shell
-❯ ./ddb-adventure-muncher-0.0.8-linux-x86_64.AppImage --help
+❯ ./ddb-adventure-muncher-0.0.9-linux-x86_64.AppImage --help
 ./ddb-adventure-muncher <command> [options]
 
 Commands:
