@@ -10,11 +10,11 @@ Please do not share this link with other people.
 
 ## Alpha Download Links
 
-* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.8-linux-x86_64.AppImage)
-* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.8-linux-x86_64.rpm)
-* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.8-linux-amd64.deb)
-* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.8-win.exe)
-* ~~[Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.8-mac.zip)~~ The OSX build doesn't seem to work right now. I don't have a Mac so can't troubleshoot this right now.
+* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.9-linux-x86_64.AppImage)
+* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.9-linux-x86_64.rpm)
+* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.9-linux-amd64.deb)
+* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.9-win.exe)
+* ~~[Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.9-mac.zip)~~ The OSX build doesn't seem to work right now. I don't have a Mac so can't troubleshoot this right now.
 
 ## Importing the book
 
