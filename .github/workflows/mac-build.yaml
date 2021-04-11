@@ -36,43 +36,43 @@ jobs:
       #     # apply provisioning profile
       #     mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
       #     cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles
-    - name: Get Version              # Run the script that returns the version from `module.json`
-      shell: bash
-      id: get-version
-      run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
-    - run: npm ci
-    - name: Webpack
-      run: npm run dist-m
-    - name: Create Release                                # Create an additional release for this version
-      id: create_versioned_release
-      uses: ncipollo/release-action@v1
-      with:
-        allowUpdates: false # set to false if you do not want to allow updates on existing releases
-        name: Release ${{ steps.get-version.outputs.version }} # Use the version in the name
-        draft: false
-        prerelease: false
-        token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: ./dist/ddb-adventure-muncher-${{ steps.get-version.outputs.version }}-mac.dmg
-        tag: ${{ steps.get-version.outputs.version }} # Use the version as the tag
-    - name: Rename output
-      run: mv ./dist/ddb-adventure-muncher-${{ steps.get-version.outputs.version }}-mac.dmg ./dist/ddb-adventure-muncher-mac.dmg
-    - name: Create Latest Release
-      id: create_latest_release
-      uses: ncipollo/release-action@v1
-      if: endsWith(github.ref, 'master') # Only update the latest release when pushing to the master branch
-      with:
-        allowUpdates: true
-        name: Latest
-        draft: false
-        prerelease: false
-        token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: ./dist/ddb-adventure-muncher-mac.dmg
-        tag: latest
-    # - name: Discord notification
-    #   env:
-    #     DISCORD_WEBHOOK: ${{ secrets.DISCORD_HOOK }}
-    #     DISCORD_USERNAME: "Release-O-Bot"
-    #   uses: Ilshidur/action-discord@0.0.2
-    #   with:
-    #     args: 'DDB Adventure Muncher ${{ steps.get-version.outputs.version }} has been created.'
+      - name: Get Version              # Run the script that returns the version from `module.json`
+        shell: bash
+        id: get-version
+        run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
+      - run: npm ci
+      - name: Webpack
+        run: npm run dist-m
+      - name: Create Release                                # Create an additional release for this version
+        id: create_versioned_release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: false # set to false if you do not want to allow updates on existing releases
+          name: Release ${{ steps.get-version.outputs.version }} # Use the version in the name
+          draft: false
+          prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: ./dist/ddb-adventure-muncher-${{ steps.get-version.outputs.version }}-mac.dmg
+          tag: ${{ steps.get-version.outputs.version }} # Use the version as the tag
+      - name: Rename output
+        run: mv ./dist/ddb-adventure-muncher-${{ steps.get-version.outputs.version }}-mac.dmg ./dist/ddb-adventure-muncher-mac.dmg
+      - name: Create Latest Release
+        id: create_latest_release
+        uses: ncipollo/release-action@v1
+        if: endsWith(github.ref, 'master') # Only update the latest release when pushing to the master branch
+        with:
+          allowUpdates: true
+          name: Latest
+          draft: false
+          prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: ./dist/ddb-adventure-muncher-mac.dmg
+          tag: latest
+      # - name: Discord notification
+      #   env:
+      #     DISCORD_WEBHOOK: ${{ secrets.DISCORD_HOOK }}
+      #     DISCORD_USERNAME: "Release-O-Bot"
+      #   uses: Ilshidur/action-discord@0.0.2
+      #   with:
+      #     args: 'DDB Adventure Muncher ${{ steps.get-version.outputs.version }} has been created.'
 
