@@ -228,7 +228,7 @@ function commandLine() {
     .alias('v', "version")
     .command('list', 'List books')
     .alias('l', "list")
-    .command('download', 'Download all the book files you have access. This does not process the book, just downloads for later use.')
+    .command('download', 'Download all the book files you have access to. This does not process the book, just downloads for later use.')
     .alias('d', "download")
     .command('generate', 'Generate content for specified book.')
     .alias('g', "generate")

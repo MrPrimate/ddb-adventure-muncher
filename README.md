@@ -47,13 +47,13 @@ If you wish to download the content again, rather than using existing downloaded
 If you want to use the app as a command line tool, you can:
 
 ```shell
-❯ ./ddb-adventure-muncher-0.0.9-linux-x86_64.AppImage --help
+❯ ./ddb-adventure-muncher --help
 ./ddb-adventure-muncher <command> [options]
 
 Commands:
   ddb-adventure-muncher version   Version information
   ddb-adventure-muncher list      List books
-  ddb-adventure-muncher download  Download all the book files you have access.
+  ddb-adventure-muncher download  Download all the book files you have.
                                   This does not process the book, just downloads
                                   for later use.
   ddb-adventure-muncher generate  Generate content for specified book.
