@@ -35,6 +35,13 @@
         ]
       },
       {
+        "from": "content/icons/icon.png",
+        "to": "resources/content/icon.png",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
         "from": "content/icons",
         "to": "content/icons",
         "filter": [

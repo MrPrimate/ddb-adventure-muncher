@@ -307,10 +307,14 @@ const loadMainWindow = () => {
 
   commandLine();
 
+  let iconLocation = (isDevelopment) ?
+    path.join(__dirname, "build", "icon.png") :
+    path.join(process.resourcesPath, "content", "icon.png");
+
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 800,
-    icon: path.join(__dirname, "build", "icon.png"),
+    icon: iconLocation,
     webPreferences: {
       // nodeIntegration: true,
       preload: path.join(__dirname, "preload.js"),
