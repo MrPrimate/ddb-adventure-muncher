@@ -61,12 +61,6 @@
       "target": [
         "nsis"
       ]
-    },
-    "publish": {
-      "provider": "github",
-      "releaseType": "release",
-      "token": "{{secrets.GITHUB_TOKEN}}",
-      "private": true
     }
   },
   "keywords": [],
