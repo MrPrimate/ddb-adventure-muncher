@@ -1,5 +1,11 @@
 name: MacOS build
-on: push
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'package.json'
 
 jobs:
   build_with_signing:
