@@ -10,6 +10,7 @@
     "dist": "electron-builder",
     "dist-wl": "electron-builder -wl --publish never",
     "dist-m": "electron-builder -m --publish never",
+    "github-dist-m": "electron-builder -m",
     "docs": "pandoc README.md -f markdown --css=build/pandoc.css -t html5 --self-contained -o dist/index.html"
   },
   "build": {
@@ -59,6 +60,12 @@
       "target": [
         "nsis"
       ]
+    },
+    "publish": {
+      "provider": "github",
+      "releaseType": "release",
+      "token": "{{secrets.GITHUB_TOKEN}}",
+      "private": true
     }
   },
   "keywords": [],
