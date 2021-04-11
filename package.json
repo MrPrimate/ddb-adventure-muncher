@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "dist-wl": "electron-builder -wl --publish-never",
-    "dist-m": "electron-builder -m --publish-never",
+    "dist-wl": "electron-builder -wl --publish never",
+    "dist-m": "electron-builder -m --publish never",
     "docs": "pandoc README.md -f markdown --css=build/pandoc.css -t html5 --self-contained -o dist/index.html"
   },
   "build": {
