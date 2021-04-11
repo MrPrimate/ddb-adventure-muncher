@@ -191,7 +191,7 @@ function generateAdventure(args) {
         const doSomething = async () => {
           while (!fs.existsSync(targetAdventureZip)) {
             console.log(`No adventure at ${targetAdventureZip}`);
-            await sleep(100);
+            await sleep(1000);
           }
           resolve(true);
         }

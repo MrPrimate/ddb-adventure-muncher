@@ -92,8 +92,27 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
     }
   }
 
+  // cleanup un-needed config
+  if (config.key) {
+    delete(config.key);
+    utils.saveJSONFile(config, configFile);
+  }
+  if (config.patreon) {
+    delete(config.patreon);
+    utils.saveJSONFile(config, configFile);
+  }
+
   if (!bookCode) {
     return config;
+  }
+
+  // Checking user and authentication
+  const userData = await ddb.getUserData(config.cobalt);
+
+  if (userData.status !== "success") {
+    console.log(userData);
+    console.warn("Unable to determine DDB user");
+    exit();
   }
 
   bookCode = bookCode.toLowerCase();
@@ -124,8 +143,6 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
   console.log(`Pulling ${book} (${bookCode}) off the shelf...`);
   console.log(`Saving adventures to ${outputDir}`);
 
-
-  //const url = await getBookUrl(bookId, config.cobalt);
   if (!fs.existsSync(downloadDir)){
     fs.mkdirSync(downloadDir);
   }
@@ -141,26 +158,13 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
     await utils.unzipFile(bookZipPath, sourceDir);
   }
 
-  // let key = await getKey(bookCode, config.cobalt)
-  // console.log(`KEY = ${key}`);
-  if (!config.key) config.key = {};
-  if (!config.key[bookCode]) {
-    config.key[bookCode] = await ddb.getKey(bookId, config.cobalt);
-    utils.saveJSONFile(config, configFile);
-  }
-
-  const userData = await ddb.getUserData(config.cobalt);
-
-  if (userData.status !== "success") {
-    console.log(userData);
-    console.warn("Unable to determine DDB user");
-    exit();
-  }
-
+  // generate runtime config
+  const key = await ddb.getKey(bookId, config.cobalt);
   const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint; 
   config.run = {
     enhancementEndpoint: enhancementEndpoint,
     userData: userData,
+    key: key,
     book: book,
     bookId: bookId,
     bookCode: bookCode,

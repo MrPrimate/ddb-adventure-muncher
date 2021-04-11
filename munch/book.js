@@ -882,7 +882,7 @@ function getData(){
 
   db.serialize(function() {
     db.run("PRAGMA cipher_compatibility = 3")
-    db.run(`PRAGMA key = '${config.key[config.run.bookCode]}'`)
+    db.run(`PRAGMA key = '${config.run.key}'`)
     db.run("PRAGMA cipher_page_size = '1024'")
     db.run("PRAGMA kdf_iter = '64000'")
     db.run("PRAGMA cipher_hmac_algorithm = 'HMAC_SHA1'")
