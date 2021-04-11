@@ -2,6 +2,7 @@
   "name": "ddb-adventure-muncher",
   "version": "0.0.9",
   "description": "D&D Beyond Adventure Muncher for Foundry Virtual Tabletop",
+  "repository": "https://github.com/MrPrimate/ddb-adventure-muncher",
   "main": "main.js",
   "scripts": {
     "start": "NODE_ENV=DEV electron .",
