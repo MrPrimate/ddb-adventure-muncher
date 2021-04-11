@@ -44,7 +44,7 @@
       "hardenedRuntime": true,
       "entitlements": "./build/entitlements.mac.inherit.plist",
       "target": [
-        "zip"
+        "dmg"
       ],
       "category": "public.app-category.developer-tools"
     },
