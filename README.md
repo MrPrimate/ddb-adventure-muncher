@@ -81,6 +81,10 @@ Books with Aligned, Walled, and Lit scenes:
 
 * Lost Mines of Phandelver.
 
+Books with partial scene adjustment:
+
+* Curse of Strahd
+
 If you wish to help improve the scene wall and lighting information, see the below section.
 
 ## Contribution
