@@ -2,6 +2,7 @@
 
 * CoS - a few maps are now walled.
 * Scene Folders will now always generate in the correct order (CoS did not).
+* HotDQ - scene import failed.
 
 # v0.0.8
 
