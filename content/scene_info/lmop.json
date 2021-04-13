@@ -2172,7 +2172,14 @@
                 "sense": 1
             }
         ],
-        "lights": []
+        "lights": [],
+        "flags": {
+          "ddb": {
+            "ddbId": 10017,
+            "cobaltId": 396,
+            "contentChunkId": "69c5c928-17d4-4b23-88c9-6c248d1fa288"
+          }
+        }
     },
     {
         "name": "Map 3.2: Cragmaw Castle",
@@ -7042,7 +7049,14 @@
                 "x": 2431,
                 "y": 1215
             }
-        ]
+        ],
+        "flags": {
+          "ddb": {
+            "ddbId": 10019,
+            "cobaltId": 396,
+            "contentChunkId": "8c7f8962-ae62-48c5-ad6d-775e60c671df"
+          }
+        }
     },
     {
         "name": "Map 1.1: Cragmaw Hideout",
@@ -11294,7 +11308,14 @@
             }
         ],
         "lights": [],
-        "navName": " Cragmaw Hideout"
+        "navName": " Cragmaw Hideout",
+        "flags": {
+          "ddb": {
+            "ddbId": 10008,
+            "cobaltId": 394,
+            "contentChunkId": "0920c2b4-d0ce-48fa-b643-952db351eedc"
+          }
+        }
     },
     {
         "name": "Map 4.1: Wave Echo Cave",
@@ -22792,7 +22813,14 @@
                 "y": 6292
             }
         ],
-        "navName": "Wave Echo Cave"
+        "navName": "Wave Echo Cave",
+        "flags": {
+          "ddb": {
+            "ddbId": 10024,
+            "cobaltId": 397,
+            "contentChunkId": "f07914a8-e53d-4da1-9dd9-b7865912e243"
+          }
+        }
     },
     {
         "name": "Map 2.2: Redbrand Hideout",
@@ -25196,6 +25224,13 @@
             }
         ],
         "lights": [],
-        "navName": "Redbrand Hideout"
+        "navName": "Redbrand Hideout",
+        "flags": {
+          "ddb": {
+            "ddbId": 10013,
+            "cobaltId": 395,
+            "contentChunkId": "e4171a8b-9120-4daa-96e7-dfc6870beb7d"
+          }
+        }
     }
 ]
