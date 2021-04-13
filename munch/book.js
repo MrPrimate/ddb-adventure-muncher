@@ -68,6 +68,7 @@ function getId(document, docType) {
   if (existingId) {
     if (existingId.name != document.name) {
       existingId.name = document.name;
+      existingId.contentChunkId = document.flags.ddb.contentChunkId;
       const index = _.findIndex(idTable[config.run.bookCode], {id: existingId.id});
       idTable[config.run.bookCode].splice(index, 1, existingId);
     }
@@ -80,6 +81,7 @@ function getId(document, docType) {
       ddbId: document.flags.ddb.ddbId,
       cobaltId: document.flags.ddb.cobaltId,
       parentId: document.flags.ddb.parentId,
+      contentChunkId: document.flags.ddb.contentChunkId,
       name: document.name,
     };
     idTable[config.run.bookCode].push(id);
@@ -329,6 +331,12 @@ function generateFolder(type, row, baseFolder=false, img=false) {
   folder._id = getId(folder, "Folder");
   folder.flags.importid = folder._id;
   folders.push(folder);
+  if (type === "JournalEntry" && !baseFolder) {
+    // lets generate a Scene Folder at the same time
+    // we do this so the scene folder order matches the same as the journals as some
+    // adventures e.g. CoS have different kind of scene detection
+    getFolderId(row, "Scene");
+  }
   return folder;
 }
 
@@ -450,7 +458,9 @@ function generateScene(row, img) {
   // console.log(journal);
   // console.log(`${journal.name}, ${journal.folder}`);
 
-  const adjustment = sceneAdjustments.find((s) => scene.name.includes(s.name));
+  const adjustment = (scene.flags.ddb.contentChunkId) ?
+    sceneAdjustments.find((s) => scene.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId) :
+    sceneAdjustments.find((s) => scene.name.includes(s.name));
   if (adjustment) {
     scene = _.merge(scene, adjustment);
   }
