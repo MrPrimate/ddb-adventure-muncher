@@ -205,13 +205,13 @@ function titleString (text) {
 
 function imageSize(image) {
   let size = {
-    height: null,
-    width: null,
+    height: 2000,
+    width: 2000, 
   }
   try {
     size = sizeOf(image);
   } catch (e) {
-    console.log(`Error getting size of ${image}`);
+    console.error(`Error getting size of ${image}`);
     console.log(e.stack);
   }
   return size;
