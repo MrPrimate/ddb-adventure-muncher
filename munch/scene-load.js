@@ -36,9 +36,21 @@ function saveSceneAdjustments(adjustments, bookCode) {
   utils.saveJSONFile(adjustments, sceneDataPath);
 }
 
+function listSceneIds(bookCode) {
+  let idTable = configure.getLookups();
+
+  if (!idTable[bookCode]) {
+    console.log(`No ids found for book code ${bookCode}`);
+    exit();
+  }
+  idTable[bookCode].filter((r) => r.docType == "Scene").forEach(r => {
+    console.log(`${r.name} => ${r.contentChunkId}`);
+  });
+}
+
 function importScene(conf, sceneFile) {
-  config = conf;
-  idTable = configure.getLookups();
+  let config = conf;
+  let idTable = configure.getLookups();
   console.log(`Loading scene info from ${sceneFile}`);
 
   let inData;
@@ -79,7 +91,7 @@ function importScene(conf, sceneFile) {
       r.name.includes(inData.name)
     );
     if (lookup) {
-      console.log(`Matched Scene "${lookup.name}" in book "${bookCode}" using name match`);
+      console.log(`Matched Scene "${lookup.name}" in book "${bookCode}" using name match "${inData.name}"`);
     } else {
       console.log(`Unable to match scene.`);
       return;
@@ -115,16 +127,21 @@ function importScene(conf, sceneFile) {
   delete(inData.tokens);
   delete(inData.descriptions);
 
-  const newFlags = {
-    ddb: {
-      ddbId: inData.flags.ddb.ddbId,
-      cobaltId: inData.flags.ddb.cobaltId,
-      contentChunkId: inData.flags.ddb.contentChunkId,
-    }
-  };
-
-  delete(inData.flags);
-  inData.flags = newFlags;
+  if (inData.flags.ddb) {
+    const newFlags = {
+      ddb: {
+        ddbId: inData.flags.ddb.ddbId,
+        cobaltId: inData.flags.ddb.cobaltId,
+        contentChunkId: inData.flags.ddb.contentChunkId,
+      }
+    };
+  
+    delete(inData.flags);
+    inData.flags = newFlags;
+  } else {
+    delete(inData.flags);
+  }
+  
 
   inData.name = lookup.name;
   if (inData.navName == "") delete((inData.navName));
@@ -148,3 +165,4 @@ function importScene(conf, sceneFile) {
 exports.importScene = importScene;
 exports.getSceneAdjustments = getSceneAdjustments;
 exports.setSceneDir = setSceneDir;
+exports.listSceneIds = listSceneIds;
