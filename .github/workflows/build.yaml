@@ -38,5 +38,5 @@ jobs:
           DISCORD_USERNAME: "Release-O-Bot"
         uses: Ilshidur/action-discord@0.0.2
         with:
-          args: 'DDB Adventure Muncher ${{ steps.get-version.outputs.version }} has been created.'
+          args: 'DDB Adventure Muncher ${{ steps.get-version.outputs.version }} has been marked as draft. Release imminent...'
 
