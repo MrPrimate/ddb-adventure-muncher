@@ -32,6 +32,18 @@ jobs:
           # If the commit is tagged with a version (e.g. "v1.0.0"),
           # release the app after building
           release: ${{ startsWith(github.ref, 'refs/tags/v') }}
+
+
+  notify:
+    needs: release
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        os: ubuntu-latest]
+
+    steps:
       - name: Discord notification
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_HOOK }}
