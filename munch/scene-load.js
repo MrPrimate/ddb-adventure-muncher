@@ -85,7 +85,7 @@ function importScene(conf, sceneFile) {
   if (lookup) {
     console.log(`Found scene "${lookup.name}" in book "${bookCode}" with contentID ${inData.flags.ddb.contentChunkId}`);
   } else {
-    console.log(`I have not parsed a scene with the contentID trying scene name match for "${inData.name}" in "${bookCode}"`);
+    console.log(`Unable to parse with contentID - trying scene name match for "${inData.name}" in "${bookCode}"`);
     lookup = idTable[bookCode].find((r) =>
       r.docType == "Scene" &&
       r.name.includes(inData.name)
