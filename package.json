@@ -68,9 +68,6 @@
       "target": [
         "nsis"
       ]
-    },
-    "publish": {
-      "releaseType": "release"
     }
   },
   "keywords": [],
