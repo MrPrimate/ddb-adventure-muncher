@@ -44,6 +44,11 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
+      - uses: actions/checkout@v2
+      - name: Get Version              # Run the script that returns the version from `module.json`
+        shell: bash
+        id: get-version
+        run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
       - name: Discord notification
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_HOOK }}
