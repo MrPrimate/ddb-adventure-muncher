@@ -1,3 +1,8 @@
+# 0.0.11
+
+* CoS - A few map improvements.
+* IDRotF - A few maps are now walled and lit.
+
 # 0.0.10
 
 * CoS - a few maps are now walled.
