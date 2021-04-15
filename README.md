@@ -84,6 +84,7 @@ Books with Aligned, Walled, and Lit scenes:
 Books with partial scene adjustment:
 
 * Curse of Strahd
+* Icewind Dale: Rime of the Frost Maiden
 
 If you wish to help improve the scene wall and lighting information, see the below section.
 
