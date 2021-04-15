@@ -243,6 +243,12 @@ function replaceImgLinksForJournal(text) {
   return text;
 }
 
+function replaceRollLinks(text) {
+  diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*)?)/, "g");
+  text = text.replace(diceRegex, "[[/r $1]]");
+  return text;
+}
+
 function updateJournals(documents) {
   let newEntries = [];
   let scenes = [];
@@ -283,6 +289,8 @@ function updateJournals(documents) {
       doc.content = moduleReplaceLinks(doc.content, documents);
       console.log(`Linking ddb-importer compendium content for ${doc.name}`);
       doc.content = foundryCompendiumReplace(doc.content);
+      console.log(`Generating dice rolls for ${doc.name}`);
+      doc.content = replaceRollLinks(doc.content);
     }
     return doc;
   })

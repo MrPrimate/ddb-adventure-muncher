@@ -1,3 +1,9 @@
+# 0.0.12
+
+* Improve scene id detection for ease of importing modifications.
+* CoS: More scenes.
+* Journals will now turn dice expressions into rollable links.
+
 # 0.0.11
 
 * CoS - A few map improvements.
