@@ -36,7 +36,7 @@ function saveSceneAdjustments(adjustments, bookCode) {
   utils.saveJSONFile(adjustments, sceneDataPath);
 }
 
-function listSceneIds(bookCode) {
+function listSceneIds(bookCode, lookups=false) {
   let idTable = configure.getLookups();
 
   if (!idTable[bookCode]) {
@@ -76,11 +76,13 @@ function importScene(conf, sceneFile) {
 
   let scenesData = getSceneAdjustments(bookCode);
 
-  let lookup = idTable[bookCode].find((r) =>
+  let lookup = (inData.flags.ddb && inData.flags.ddb.contentChunkId) ?
+    idTable[bookCode].find((r) =>
       r.docType == "Scene" &&
       r.contentChunkId && inData.flags.ddb.contentChunkId &&
       r.contentChunkId === inData.flags.ddb.contentChunkId
-    );
+    ) : 
+    null;
 
   if (lookup) {
     console.log(`Found scene "${lookup.name}" in book "${bookCode}" with contentID ${inData.flags.ddb.contentChunkId}`);
@@ -117,12 +119,28 @@ function importScene(conf, sceneFile) {
   //     token.img = compendiumMonster.img;
   //   });
 
+  console.log("********************")
+  console.log("Lookup:")
+  console.log(lookup)
   // console.log(scenesData)
   let sceneData = (lookup.contentChunkId) ? 
     scenesData.find((scene) => lookup.contentChunkId === scene.flags.ddb.contentChunkId) :
-    scenesData.find((scene) => lookup.name.includes(scene.name));
+    scenesData.find((scene) => lookup.name.toLowerCase().trim().includes(scene.name.toLowerCase().trim()));
 
+  if (!sceneData && lookup.contentChunkId) {
+    sceneData = scenesData.find((scene) => lookup.name.toLowerCase().trim().includes(scene.name.toLowerCase().trim()));
+  }
 
+  console.log("********************")
+  console.log("Scene Data:")
+  if (sceneData) {
+    console.log(sceneData.name);
+    console.log(sceneData.flags);
+  }
+  else {
+    console.log("Existing scene data not found");
+  }
+  
   // remove things we can't deal with right now
   delete(inData.tokens);
   delete(inData.descriptions);
@@ -145,14 +163,15 @@ function importScene(conf, sceneFile) {
 
   inData.name = lookup.name;
   if (inData.navName == "") delete((inData.navName));
+  if (scene.navName) sceneData.navName = scenesData.navName.trim();
 
   // console.log(sceneData);
   //exit();
   if (sceneData) {
     sceneData = _.merge(sceneData, inData);
-    const index = (lookup.contentChunkId) ?
+    const index = (sceneData.flags.ddb.contentChunkId) ?
       _.findIndex(scenesData, {"flags.ddb.contentChunkId": lookup.contentChunkId}) :
-      _.findIndex(scenesData, {name: lookup.name});
+      _.findIndex(scenesData, {name: sceneData.name});
     scenesData.splice(index, 1, sceneData);
   } else {
     scenesData.push(inData);

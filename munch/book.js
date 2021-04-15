@@ -65,10 +65,13 @@ function getId(document, docType) {
     r.cobaltId === document.flags.ddb.cobaltId &&
     r.parentId === document.flags.ddb.parentId
   );
+  const contentChunkId =  (document.flags.ddb.contentChunkId && document.flags.ddb.contentChunkId != "") ? 
+    document.flags.ddb.contentChunkId :
+    null;
   if (existingId) {
-    if (existingId.name != document.name) {
+    if (existingId.name !== document.name || existingId.contentChunkId !== contentChunkId) {
       existingId.name = document.name;
-      existingId.contentChunkId = document.flags.ddb.contentChunkId;
+      existingId.contentChunkId = contentChunkId;
       const index = _.findIndex(idTable[config.run.bookCode], {id: existingId.id});
       idTable[config.run.bookCode].splice(index, 1, existingId);
     }
@@ -81,7 +84,7 @@ function getId(document, docType) {
       ddbId: document.flags.ddb.ddbId,
       cobaltId: document.flags.ddb.cobaltId,
       parentId: document.flags.ddb.parentId,
-      contentChunkId: document.flags.ddb.contentChunkId,
+      contentChunkId: contentChunkId,
       name: document.name,
     };
     idTable[config.run.bookCode].push(id);
@@ -389,7 +392,10 @@ function generateJournalEntry(row, img=null) {
   journal.flags.ddb.ddbId = row.id;
   journal.flags.ddb.bookCode = config.run.bookCode;
   journal.flags.ddb.slug = row.slug;
-  journal.flags.ddb.contentChunkId = row.contentChunkId;
+  const contentChunkId =  (row.contentChunkId && row.contentChunkId != "") ? 
+    row.contentChunkId :
+    null;
+  journal.flags.ddb.contentChunkId = contentChunkId;
   journal.flags.ddb.userData = config.run.userData;
   journal.sort = journalSort + parseInt(row.id);
   if (row.cobaltId) journal.flags.ddb.cobaltId = row.cobaltId;
@@ -432,12 +438,18 @@ function generateScene(row, img) {
   let scene = JSON.parse(JSON.stringify(require(path.join(templateDir,"scene.json"))));
 
   scene.name = row.sceneName;
-  scene.navName = row.sceneName.split(":").pop();
+  scene.navName = row.sceneName.split(":").pop().trim();
   scene.img = img;
   scene.flags.ddb.ddbId = row.id;
   scene.flags.ddb.bookCode = config.run.bookCode;
   scene.flags.ddb.slug = row.slug;
-  scene.flags.ddb.contentChunkId = row.contentChunkId;
+  // console.log("#############################");
+  // console.log(row);
+  // console.log("#############################");
+  const contentChunkId =  (row.contentChunkId && row.contentChunkId != "") ? 
+    row.contentChunkId :
+    null;
+  scene.flags.ddb.contentChunkId = contentChunkId;
   scene.flags.ddb.userData = config.run.userData;
   scene.sort = journalSort + parseInt(row.id);
   if (row.cobaltId) scene.flags.ddb.cobaltId = row.cobaltId;
@@ -458,10 +470,20 @@ function generateScene(row, img) {
   // console.log(journal);
   // console.log(`${journal.name}, ${journal.folder}`);
 
-  const adjustment = (scene.flags.ddb.contentChunkId) ?
+  let adjustment = (scene.flags.ddb.contentChunkId) ?
     sceneAdjustments.find((s) => scene.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId) :
     sceneAdjustments.find((s) => scene.name.includes(s.name));
+  if (!adjustment && scene.flags.ddb.contentChunkId) {
+    adjustment = sceneAdjustments.find((s) => scene.name.includes(s.name));
+  }
   if (adjustment) {
+    // nuke any bad contentChunkId's present on adjustment data
+    if (
+      scene.flags.ddb.contentChunkId &&
+      (adjustment.flags.ddb.contentChunkId === null || adjustment.flags.ddb.contentChunkId === ""
+    )) {
+      delete(adjustment.flags.ddb.contentChunkId);
+    } 
     scene = _.merge(scene, adjustment);
   }
 
@@ -473,12 +495,17 @@ function generateScene(row, img) {
       img: scene.img,
       name: scene.name,
       slug: row.slug,
+      contentChunkId: contentChunkId,
     });
   }
 
+  const enhancedDownload = (config.enhancedDownload) ? 
+    config.enhancedDownload :
+    true;
+
   const enhancedScene = enhancedScenes.find((es) => es.name === scene.name && es.img === scene.img);
   if (enhancedScene) {
-    if (enhancedScene.hiresImg) {
+    if (enhancedScene.hiresImg && !enhancedDownload) {
       downloadList.push({name: scene.name, url: enhancedScene.hiresImg, path: scene.img });
     }
     if (enhancedScene.adjustName != "") {
@@ -539,6 +566,13 @@ function findScenes(document) {
         if (playerRef) {
           title = title.replace(playerRef.textContent, "").trim();
 
+          let rowContentChunkId = caption.getAttribute("data-content-chunk-id");
+          if (!rowContentChunkId) {
+            // figure type embedds mostly don't have content chunk Id's 
+            // we fall back to element ID which appears to be unique for the outer figure element
+            rowContentChunkId = `${node.id}-player`;
+          }
+
           let row = {
             title: `${utils.titleString(title)} (Player Version)`,
             id: 10000 + document.flags.ddb.ddbId + tmpCount,
@@ -546,7 +580,7 @@ function findScenes(document) {
             cobaltId: document.flags.ddb.cobaltId,
             documentName: document.name,
             sceneName: utils.titleString(title),
-            contentChunkId: caption.getAttribute("data-content-chunk-id"),
+            contentChunkId: rowContentChunkId,
           };
           tmpCount++;
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
@@ -556,12 +590,19 @@ function findScenes(document) {
           scenes.push(generateScene(row, playerEntry.img));
         }
 
+        let contentChunkId = node.getAttribute("data-content-chunk-id");
+        if (!contentChunkId) {
+          // figure type embedds mostly don't have content chunk Id's 
+          // we fall back to element ID which appears to be unique for the outer figure element
+          contentChunkId = node.id;
+        }
+
         let row = {
-          title: title,
+          title: utils.titleString(title),
           id: 10000 + document.flags.ddb.ddbId + tmpCount,
           parentId: document.flags.ddb.parentId,
           cobaltId: document.flags.ddb.cobaltId,
-          contentChunkId: node.getAttribute("data-content-chunk-id"),
+          contentChunkId: contentChunkId,
         };
         const journalEntry = generateJournalEntry(row, img.src);
         journals.push(journalEntry);
