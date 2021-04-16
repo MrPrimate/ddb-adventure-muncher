@@ -135,7 +135,7 @@ function importScene(conf, sceneFile) {
   console.log("Scene Data:")
   if (sceneData) {
     console.log(sceneData.name);
-    console.log(sceneData.flags);
+    console.log(sceneData.flags); 
   }
   else {
     console.log("Existing scene data not found");

@@ -85,6 +85,8 @@ Books with partial scene adjustment:
 
 * Curse of Strahd
 * Icewind Dale: Rime of the Frost Maiden
+* Dragon of Icespire Peak
+* Divine Contention
 
 If you wish to help improve the scene wall and lighting information, see the below section.
 
