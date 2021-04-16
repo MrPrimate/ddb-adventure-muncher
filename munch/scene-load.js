@@ -90,7 +90,7 @@ function importScene(conf, sceneFile) {
     console.log(`Unable to parse with contentID - trying scene name match for "${inData.name}" in "${bookCode}"`);
     lookup = idTable[bookCode].find((r) =>
       r.docType == "Scene" &&
-      r.name.includes(inData.name)
+      r.name.toLowerCase().trim().replace("’", "").replace("'","").includes(inData.name.toLowerCase().replace("’", "").replace("'","").trim())
     );
     if (lookup) {
       console.log(`Matched Scene "${lookup.name}" in book "${bookCode}" using name match "${inData.name}"`);
@@ -124,11 +124,11 @@ function importScene(conf, sceneFile) {
   console.log(lookup)
   // console.log(scenesData)
   let sceneData = (lookup.contentChunkId) ? 
-    scenesData.find((scene) => lookup.contentChunkId === scene.flags.ddb.contentChunkId) :
-    scenesData.find((scene) => lookup.name.toLowerCase().trim().includes(scene.name.toLowerCase().trim()));
+    scenesData.find((scene) => scene.flags.ddb && lookup.contentChunkId === scene.flags.ddb.contentChunkId) :
+    scenesData.find((scene) => lookup.name.toLowerCase().trim().replace("’", "").replace("'","").includes(scene.name.toLowerCase().trim().replace("’", "").replace("'","")));
 
   if (!sceneData && lookup.contentChunkId) {
-    sceneData = scenesData.find((scene) => lookup.name.toLowerCase().trim().includes(scene.name.toLowerCase().trim()));
+    sceneData = scenesData.find((scene) => lookup.name.toLowerCase().trim().replace("’", "").replace("'","").includes(scene.name.toLowerCase().trim().replace("’", "").replace("'","")));
   }
 
   console.log("********************")
@@ -174,6 +174,14 @@ function importScene(conf, sceneFile) {
       _.findIndex(scenesData, {name: sceneData.name});
     scenesData.splice(index, 1, sceneData);
   } else {
+    if (!inData.flags) inData.flags = { 
+      ddb: {
+        lookupDDB: true,
+        ddbId: lookup.ddbId,
+        cobaltId: lookup.cobaltId,
+        contentChunkId: lookup.contentChunkId,
+      }
+    };
     scenesData.push(inData);
   }
 
