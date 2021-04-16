@@ -23489,5 +23489,166 @@
                 "contentChunkId": "5b16af43-e600-4665-a4e7-688bb8929f98"
             }
         }
+    },
+    {
+        "name": "Chapter 8: The Village of Krezk",
+        "navName": "The Village of Krezk",
+        "width": 1979,
+        "height": 2512,
+        "grid": 62,
+        "gridDistance": 50,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 23,
+        "shiftY": 44,
+        "backgroundColor": "#333333",
+        "walls": [
+            {
+                "c": [
+                    527,
+                    2557,
+                    899,
+                    2588
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    899,
+                    2588,
+                    1209,
+                    2790
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1209,
+                    2790,
+                    1333,
+                    3100
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1333,
+                    3100,
+                    527,
+                    3100
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    527,
+                    3100,
+                    527,
+                    2557
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            }
+        ],
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 30,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 1432.8376068376067,
+                "y": 2095.1794871794873
+            },
+            {
+                "angle": 360,
+                "bright": 30,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 1187.7948717948718,
+                "y": 1957.042735042735
+            },
+            {
+                "angle": 360,
+                "bright": 30,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 1127.965811965812,
+                "y": 1756.5128205128206
+            },
+            {
+                "angle": 360,
+                "bright": 30,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 1194.2393162393162,
+                "y": 1597.863247863248
+            },
+            {
+                "angle": 360,
+                "bright": 30,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 1395.6239316239316,
+                "y": 1938.2393162393162
+            },
+            {
+                "angle": 360,
+                "bright": 30,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 1523.897435897436,
+                "y": 1715.0256410256409
+            },
+            {
+                "angle": 360,
+                "bright": 437.37,
+                "darknessThreshold": 0,
+                "dim": 874.74,
+                "rotation": 0,
+                "t": "g",
+                "tintAlpha": 0.49,
+                "x": 837,
+                "y": 2883
+            }
+        ],
+        "flags": {
+            "ddb": {
+                "ddbId": 10055,
+                "cobaltId": 357,
+                "contentChunkId": "faefe19e-4afd-4f53-b69d-aa7093067543"
+            }
+        }
     }
 ]
