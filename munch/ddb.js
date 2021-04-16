@@ -66,6 +66,7 @@ const BAD_IDS = [
   4, // EE players
   26, //cos players
   30, //ddb
+  14, // tftyp - appear as individual adventures
 ];
 async function listBooks(cobalt, allBooks=true) {
   const urlencoded = new URLSearchParams();

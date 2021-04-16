@@ -20,6 +20,7 @@ var sceneImgMatched = [];
 var journalImgMatched = [];
 var enhancedScenes = [];
 var downloadList = [];
+var tableMatched = [];
 
 var masterFolder;
 
@@ -249,6 +250,22 @@ function replaceRollLinks(text) {
   return text;
 }
 
+function generateTable(row, journal, domContent) {
+
+  const document = new JSDOM(domContent);
+  let possibleFigureSceneNodes = document.window.document.body.querySelectorAll("table");
+
+  possibleFigureSceneNodes.forEach(node => {
+    tableMatched.push({
+      journal: journal.name,
+      id: node.id,
+      class: node.class,
+      contentChunkId: node.getAttribute("data-content-chunk-id"),
+    });
+  });
+
+}
+
 function updateJournals(documents) {
   let newEntries = [];
   let scenes = [];
@@ -428,6 +445,7 @@ function generateJournalEntry(row, img=null) {
   } else {
     const dom = new JSDOM(row.html);
     journal.content = dom.window.document.body.outerHTML.replace(/  /g, " ");
+    generateTable(row, journal, journal.content);
   }
   if (row.parentId) journal.flags.ddb.parentId = row.parentId;
   journal.folder = getFolderId(row, "JournalEntry", imgState);
@@ -911,7 +929,12 @@ async function collectionFinished(err, count) {
   } finally {
     // save generated Ids table
     configure.saveLookups(idTable);
-    configure.saveImageFinderResults(imageFinderSceneResults, imageFinderJournalResults, config.run.bookCode);
+    if (config.tableFind) {
+      configure.saveTableData(tableMatched, config.run.bookCode);
+    }
+    if (config.imageFind) {
+      configure.saveImageFinderResults(imageFinderSceneResults, imageFinderJournalResults, config.run.bookCode);
+    }
   }
 }
 
@@ -925,6 +948,7 @@ async function setConfig(conf) {
   imageFinderJournalResults = [];
   sceneImgMatched = [];
   journalImgMatched = [];
+  tableMatched = [];
   fetchLookups(config);
   sceneAdjustments = sceneAdjuster.getSceneAdjustments(config.run.bookCode);
   enhancedScenes = await enhance.getEnhancedData(config);

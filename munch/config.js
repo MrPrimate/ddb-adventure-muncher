@@ -56,6 +56,16 @@ function saveImageFinderResults(sceneContent, journalContent, bookCode) {
   utils.saveJSONFile(journalData, imageJournalPath);
 }
 
+function saveTableData(content, bookCode) {
+  const tableDataPath = path.resolve(__dirname,configDir,"tableData.json");
+
+  const tableData = (fs.existsSync(tableDataPath)) ?
+    utils.loadJSONFile(tableDataPath) :
+    {};
+  tableData[bookCode] = content;
+  utils.saveJSONFile(tableData, tableDataPath);
+}
+
 function isConfig() {
   const config = getConfig();
   if (config.cobalt) return true;
@@ -190,3 +200,4 @@ exports.getLookups = getLookups;
 exports.saveLookups = saveLookups;
 exports.setConfigDir = setConfigDir;
 exports.saveImageFinderResults = saveImageFinderResults;
+exports.saveTableData = saveTableData;
