@@ -163,11 +163,11 @@ function importScene(conf, sceneFile) {
 
   inData.name = lookup.name;
   if (inData.navName == "") delete((inData.navName));
-  if (scene.navName) sceneData.navName = scenesData.navName.trim();
 
   // console.log(sceneData);
   //exit();
   if (sceneData) {
+    if (sceneData.navName) sceneData.navName = sceneData.navName.trim();
     sceneData = _.merge(sceneData, inData);
     const index = (sceneData.flags.ddb.contentChunkId) ?
       _.findIndex(scenesData, {"flags.ddb.contentChunkId": lookup.contentChunkId}) :
