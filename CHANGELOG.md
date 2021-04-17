@@ -1,3 +1,8 @@
+# 0.0.13
+
+* More CoS adjustments.
+* Groundwork for table parsing.
+
 # 0.0.12
 
 * Improve scene id detection for ease of importing modifications.
