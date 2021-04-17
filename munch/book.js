@@ -10,6 +10,7 @@ const _ = require('lodash');
 const configure = require("./config.js");
 const sceneAdjuster = require("./scene-load.js");
 const enhance = require("./enhance.js");
+const tables = require("./vendor/parseTable.js");
 
 var journalSort = 1000;
 var folderSort = 4000;
@@ -245,22 +246,82 @@ function replaceImgLinksForJournal(text) {
 }
 
 function replaceRollLinks(text) {
-  diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*)?)/, "g");
-  text = text.replace(diceRegex, "[[/r $1]]");
+  const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*)?)/, "g");
+  text = text.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").replace(diceRegex, "[[/r $1]]");
   return text;
 }
 
-function generateTable(row, journal, domContent) {
+function findDiceColumns(table) {
+  let result = [];
+  if (table.tHead) {
+    const headings = tables.getHeadings(table);
+    headings.forEach((h) => {
+      const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*)?)/, "g");
+      const match = h.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").match(diceRegex);
+      if (match) {
+        result.push(h);
+      }
+    });
+  }
+  return result;
+}
 
-  const document = new JSDOM(domContent);
-  let possibleFigureSceneNodes = document.window.document.body.querySelectorAll("table");
+function guessTableName(document, contentChunkId) {
+  const element = document.querySelector(`table[data-content-chunk-id='${contentChunkId}']`);
+  let sibling = element.previousElementSibling;
+  
+  if (!sibling && element.parentElement.nodeName === "DIV") {
+    sibling = element.parentElement.previousElementSibling;
+  }
 
-  possibleFigureSceneNodes.forEach(node => {
+  if (sibling) {
+    console.log(sibling.textContent);
+    return sibling.textContent;
+  } else {
+    console.log(`No table name identified for ${contentChunkId}`);
+    return null;
+  }
+}
+
+function generateTable(row, journal, html) {
+
+  const document = new JSDOM(html).window.document;
+  const tableNodes = document.querySelectorAll("table");
+
+  tableNodes.forEach(node => {
+    const parsedTable = (node.tHead) ? 
+      tables.parseTable(node) :
+      [];
+
+    const keys = (node.tHead) ?
+      Object.keys(parsedTable[0]) : 
+      null;
+    const diceColumns = findDiceColumns(node);
+
+    const contentChunkId = node.getAttribute("data-content-chunk-id");
+    console.log(contentChunkId);
+    const nameGuess = guessTableName(document, contentChunkId);
+
+    console.log("***********************************************");
+    console.log(`Table: ${nameGuess}`);
+    console.log(`ContentChunkId: ${contentChunkId}`);
+    if (config.debug) console.log(node.outerHTML);
+    if (config.debug) console.log(parsedTable);
+    console.log(`Headers: ${diceColumns.join(", ")}`);
+    console.log(`Keys: ${keys.join(", ")}`);
+    console.log("***********************************************");
+    
     tableMatched.push({
+      nameGuess: nameGuess,
+      length: parsedTable.length,
+      keys: keys,
+      diceColumns: diceColumns,
+      diceTable: diceColumns.length > 0,
+      multiDiceColumns: diceColumns.length > 1,
       journal: journal.name,
       id: node.id,
       class: node.class,
-      contentChunkId: node.getAttribute("data-content-chunk-id"),
+      contentChunkId: contentChunkId,
     });
   });
 

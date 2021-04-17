@@ -57,7 +57,7 @@ function saveImageFinderResults(sceneContent, journalContent, bookCode) {
 }
 
 function saveTableData(content, bookCode) {
-  const tableDataPath = path.resolve(__dirname,configDir,"tableData.json");
+  const tableDataPath = path.resolve(__dirname,configDir,"table-data.json");
 
   const tableData = (fs.existsSync(tableDataPath)) ?
     utils.loadJSONFile(tableDataPath) :
