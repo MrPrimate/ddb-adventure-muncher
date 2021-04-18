@@ -254,7 +254,7 @@ function replaceImgLinksForJournal(text) {
 }
 
 function replaceRollLinks(text) {
-  const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*)?)/, "g");
+  const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*d*\d*)?)(?:[\s.,])/, "g");
   text = text.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").replace(diceRegex, "[[/r $1]]");
   return text;
 }
@@ -293,6 +293,7 @@ function guessTableName(document, contentChunkId) {
 
 function fixUpTables(tables, journals) {
   //for each table
+  console.log("Updating table references")
   tables.forEach((table) => {
     table.results.forEach((result) => {
       result.text = moduleReplaceLinks(result.text, journals);
@@ -301,9 +302,23 @@ function fixUpTables(tables, journals) {
     })
   });
 
-  // TODO
-  // loop through each journal and add a table id link for rolling if possible
-  return tables;
+  console.log("Updating journals with table links")
+
+  journals.forEach((journal) => {
+    console.log(`Journal: ${journal.name}`);
+    if (!journal.content) return;
+    const dom = new JSDOM(journal.content).window.document;
+    tables.forEach((table) => {
+      const tablePoint = dom.body.querySelector(`table[data-content-chunk-id="${table.flags.ddb.contentChunkId}"]`);
+      if (tablePoint) {
+        console.log(`Updating table reference for: ${table.name}`);
+        tablePoint.insertAdjacentHTML('afterend', `<div id="table-link">@RollTable[${table.name}]{Open RollTable}</div>`);
+      }
+    });
+    journal.content = dom.body.outerHTML;
+  });
+  
+  return [tables, journals];
 }
 
 function diceInt(text) {
@@ -378,7 +393,7 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
     table.folder = getFolderId(tableRow, "RollTable");
     table._id = getId(table, "RollTable");
 
-    const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*)?)/, "g");
+    const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*d*\d*)?)/, "g");
     const formulaMatch = diceKey.match(diceRegex);
     console.log(formulaMatch);
     table.formula = formulaMatch ? formulaMatch[0].trim() : "";
@@ -1126,7 +1141,7 @@ async function collectionFinished(err, count) {
   try {
     console.log(`Processing ${count} entries...`);
     [chapters, scenes] = updateJournals(chapters);
-    tables = fixUpTables(tables, chapters);
+    [tables, chapters] = fixUpTables(tables, chapters);
     outputAdventure(config);
     outputJournals(chapters, config);
     outputScenes(scenes, config);
