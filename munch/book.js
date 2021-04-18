@@ -69,7 +69,7 @@ function getId(document, docType) {
       r.ddbId == document.flags.ddb.ddbId &&
       r.cobaltId === document.flags.ddb.cobaltId &&
       r.parentId === document.flags.ddb.parentId;
-    const tableCheck = (docType === "Table") ? 
+    const tableCheck = (docType === "RollTable") ? 
       document.flags.ddb.contentChunkId === r.contentChunkId :
       true; 
 
@@ -292,12 +292,16 @@ function guessTableName(document, contentChunkId) {
 }
 
 function fixUpTables(tables, journals) {
-  // TODO
   //for each table
-      // for each results
-      // result = moduleReplaceLinks(result, documents);
-      // result = foundryCompendiumReplace(result);
-      // result = replaceRollLinks(result);
+  tables.forEach((table) => {
+    table.results.forEach((result) => {
+      result.text = moduleReplaceLinks(result.text, journals);
+      result.text = foundryCompendiumReplace(result.text);
+      result.text = replaceRollLinks(result.text);
+    })
+  });
+
+  // TODO
   // loop through each journal and add a table id link for rolling if possible
   return tables;
 }
@@ -348,6 +352,7 @@ function getDiceTableRange(value) {
 
 
 function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId) {
+  let tmpCount = 1;
   diceKeys.forEach((diceKey) => {
     const table = JSON.parse(JSON.stringify(require(path.join(templateDir,"table.json"))));
     const nameExtension = diceKeys > 1 ? ` [${diceKeys}]` : "";
@@ -361,8 +366,17 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
     table.sort = journalSort + parseInt(row.id);
     if (row.cobaltId) table.flags.ddb.cobaltId = row.cobaltId;
     if (row.parentId) table.flags.ddb.parentId = row.parentId;
-    table.folder = getFolderId(row, "Table");
-    table._id = getId(table, "Table");
+
+    const tableRow = {
+      title: table.name,
+      id: 10000 + table.flags.ddb.ddbId + tmpCount,
+      cobaltId: (table.flags.ddb.cobaltId) ? table.flags.ddb.cobaltId : table.flags.ddb.parentId,
+      documentName: table.name,
+      contentChunkId: contentChunkId,
+    };
+
+    table.folder = getFolderId(tableRow, "RollTable");
+    table._id = getId(table, "RollTable");
 
     const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*)?)/, "g");
     const formulaMatch = diceKey.match(diceRegex);
@@ -373,6 +387,11 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
     const concatKeys = (keys.length - diceKeys.length) > 1;
     // loop through rows and build result entry. 
     // if more than one result key then we will concat the results.
+
+    console.log("*******************************************");
+    console.log(`Generating table ${table.name}`)
+    console.log(row)
+    console.log(parsedTable.length);
 
     parsedTable.forEach((entry) => {
       const result = {
@@ -395,12 +414,13 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
         } else {
           result.text = value;
         }
-        table.results.push(result);
       });
+      table.results.push(result);
     });
 
     console.log(`Generated table entry ${table.name}`);
     tables.push(table);
+    tmpCount++;
 
   });
 }
@@ -547,6 +567,7 @@ function generateFolder(type, row, baseFolder=false, img=false) {
     // we do this so the scene folder order matches the same as the journals as some
     // adventures e.g. CoS have different kind of scene detection
     getFolderId(row, "Scene");
+    getFolderId(row, "RollTable");
   }
   return folder;
 }
@@ -1110,7 +1131,7 @@ async function collectionFinished(err, count) {
     outputJournals(chapters, config);
     outputScenes(scenes, config);
     outputTables(tables, config);
-    const allContent = chapters.concat(scenes);
+    const allContent = chapters.concat(scenes, tables);
     outputFolders(folders, config, allContent);
     await downloadEnhancements(downloadList);
     generateZipFile(config);
@@ -1178,7 +1199,7 @@ function setMasterFolders() {
   masterFolder = {
     JournalEntry: generateFolder("JournalEntry", {id: -1, cobaltId: -1, title: config.run.book}, true),
     Scene: generateFolder("Scene", {id: -1, cobaltId: -1, title: config.run.book}, true),
-    Table: generateFolder("Table", {id: -1, cobaltId: -1, title: config.run.book}, true),
+    RollTable: generateFolder("RollTable", {id: -1, cobaltId: -1, title: config.run.book}, true),
   };
 }
 
