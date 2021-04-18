@@ -147,7 +147,7 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
     "journal",
     // "compendium",
     "scene",
-    // "table",
+    "table",
   ];
 
   console.log(`Pulling ${book} (${bookCode}) off the shelf...`);

@@ -25,15 +25,21 @@
  * THE SOFTWARE.
  */
 
+const _ = require('lodash');
+
 /**
  * generates factory functions to convert table rows to objects,
  * based on the titles in the table's <thead>
  * @param  {Array<String>} headings the values of the table's <thead>
  * @return {(row: HTMLTableRowElement) => Object} a function that takes a table row and spits out an object
  */
- function mapRow(headings) {
+function mapRow(headings, highSplit=false) {
   return function mapRowToObject({ cells }) {
-    return [...cells].reduce(function(result, cell, i) {
+    const lowCells = [...cells];
+    const highCells = (lowCells.length > headings.length) ? lowCells.splice(lowCells.length/2) : [];
+    const range = highSplit ? highCells : lowCells;
+
+    return range.reduce(function(result, cell, i) {
       const input = cell.querySelector("input,select");
       var value;
 
@@ -45,8 +51,62 @@
 
       return Object.assign(result, { [headings[i]]: value });
     }, {});
+
   };
 }
+
+// function mapRow(headings) {
+//   return function mapRowToObject({ cells }) {
+//     const lowCells = [...cells];
+//     const highCells = (lowCells.length > headings.length) ? lowCells.splice(lowCells.length/2) : [];
+//     const targetCells = [lowCells, highCells];
+    
+//     const results = targetCells.map((range) => {
+//       return range.reduce(function(result, cell, i) {
+//         const input = cell.querySelector("input,select");
+//         var value;
+//         var headingValue = i;
+  
+//         if (input) {
+//           value = input.type === "checkbox" ? input.checked : input.value;
+//         } else {
+//           value = cell.innerHTML;
+//         }
+  
+//         if (i >= headings.length) {
+//           headingValue = i - headings.length;
+//         }
+  
+//         console.log("**************");
+//         console.log(value);
+//         console.log(`i ${i}`);
+//         console.log(`hv ${headingValue}`);
+//         console.log(result);
+  
+//         return Object.assign(result, { [headings[headingValue]]: value });
+//       }, {});
+//     });
+//     console.log(results);
+//     return results;
+//   };
+// }
+
+// function mapRow(headings) {
+//   return function mapRowToObject({ cells }) {
+//     return cells.reduce(function(result, cell, i) {
+//       const input = cell.querySelector("input,select");
+//       var value;
+
+//       if (input) {
+//         value = input.type === "checkbox" ? input.checked : input.value;
+//       } else {
+//         value = cell.innerHTML;
+//       }
+
+//       return Object.assign(result, { [headings[i]]: value });
+//     }, {});
+//   };
+// }
 
 /**
  * given a table, generate an array of keys/column names
@@ -54,11 +114,13 @@
  * @param  {HTMLTableElement} table the table to convert
  * @return {Array<String>}       array of strings representing each header in the table
  */
- function getHeadings(table) {
-  var headings = [...table.tHead.rows[0].cells].map(heading => {
+function getHeadings(table, unique=true) {
+  if (!table.tHead) return [];
+  const headings = [...table.tHead.rows[0].cells].map(heading => {
     return heading.textContent
   });
 
+  if (unique) return _.uniq(headings);
   return headings;
 }
 
@@ -73,8 +135,15 @@
  */
 function parseTable(table) {
   const headings = getHeadings(table);
+  
+  if (headings.length === 0) return [];
+  // DDB often puts d rolls alongside each other. we attempt to detect these
+  const lowResults = [...table.tBodies[0].rows].map(mapRow(headings));
+  const highResults = [...table.tBodies[0].rows].map(mapRow(headings, true));
 
-  return [...table.tBodies[0].rows].map(mapRow(headings));
+  return lowResults.concat(highResults);
+
+
 }
 
 exports.parseTable = parseTable;

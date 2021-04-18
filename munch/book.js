@@ -1,3 +1,5 @@
+"use strict";
+
 const utils = require("./utils.js");
 const { getAllSQL } = require("./sql.js");
 const fs = require('fs');
@@ -10,7 +12,7 @@ const _ = require('lodash');
 const configure = require("./config.js");
 const sceneAdjuster = require("./scene-load.js");
 const enhance = require("./enhance.js");
-const tables = require("./vendor/parseTable.js");
+const parseTable = require("./vendor/parseTable.js");
 
 var journalSort = 1000;
 var folderSort = 4000;
@@ -28,6 +30,7 @@ var masterFolder;
 let chapters = [];
 let folders = [];
 let scenes = [];
+let tables = [];
 
 var templateDir = path.join("..", "content", "templates");
 
@@ -60,13 +63,18 @@ const COMPENDIUM_MAP = {
 
 
 function getId(document, docType) {
-  const existingId = idTable[config.run.bookCode].find((r) =>
-    r.type == document.type &&
-    r.docType == docType &&
-    r.ddbId == document.flags.ddb.ddbId &&
-    r.cobaltId === document.flags.ddb.cobaltId &&
-    r.parentId === document.flags.ddb.parentId
-  );
+  const existingId = idTable[config.run.bookCode].find((r) => {
+    const basicCheck = r.type == document.type &&
+      r.docType == docType &&
+      r.ddbId == document.flags.ddb.ddbId &&
+      r.cobaltId === document.flags.ddb.cobaltId &&
+      r.parentId === document.flags.ddb.parentId;
+    const tableCheck = (docType === "Table") ? 
+      document.flags.ddb.contentChunkId === r.contentChunkId :
+      true; 
+
+    return basicCheck && tableCheck;
+  });
   const contentChunkId =  (document.flags.ddb.contentChunkId && document.flags.ddb.contentChunkId != "") ? 
     document.flags.ddb.contentChunkId :
     null;
@@ -222,14 +230,14 @@ function replaceImageLinks(text) {
 
   // todo generate a journal entry for each of these?
   // replace the start with adventure:// - this will be changed wither by adventure importer or an update in DDB
-  reImage = new RegExp(`src="\.\/${config.run.bookCode}\/`, "g");
+  const reImage = new RegExp(`src="\.\/${config.run.bookCode}\/`, "g");
   // text = text.replace(reImage, `src="adventure://assets/`);
   text = text.replace(reImage, `src="assets/`);
 
   // "ddb://image/idrotf/"
   // <a class="ddb-lightbox-outer compendium-image-center"  href="ddb://image/idrotf/00-000.intro-splash.jpg" data-lightbox="1" data-title="">
   // <img src="./idrotf/00-000.intro-splash.jpg" class="ddb-lightbox-inner" style="width: 650px;"></a>
-  reImageLink = new RegExp(`href="ddb:\/\/image\/${config.run.bookCode}\/`, "g");
+  const reImageLink = new RegExp(`href="ddb:\/\/image\/${config.run.bookCode}\/`, "g");
   // text = text.replace(reImageLink, `href="adventure://assets/`);
   text = text.replace(reImageLink, `href="assets/`);
   return [text, newEntries];
@@ -237,9 +245,9 @@ function replaceImageLinks(text) {
 
 
 function replaceImgLinksForJournal(text) {
-  reImage = new RegExp(`^\.\/${config.run.bookCode}\/`, "g");
+  const reImage = new RegExp(`^\.\/${config.run.bookCode}\/`, "g");
   text = text.replace(reImage, `assets/`);
-  reImage2 = new RegExp(`^${config.run.bookCode}\/`, "g");
+  const reImage2 = new RegExp(`^${config.run.bookCode}\/`, "g");
   text = text.replace(reImage2, `assets/`);
 
   return text;
@@ -251,10 +259,10 @@ function replaceRollLinks(text) {
   return text;
 }
 
-function findDiceColumns(table) {
+function findDiceColumns(table, headings) {
   let result = [];
   if (table.tHead) {
-    const headings = tables.getHeadings(table);
+    const headings = parseTable.getHeadings(table);
     headings.forEach((h) => {
       const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*)?)/, "g");
       const match = h.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").match(diceRegex);
@@ -283,41 +291,155 @@ function guessTableName(document, contentChunkId) {
   }
 }
 
+function fixUpTables(tables, journals) {
+  // TODO
+  //for each table
+      // for each results
+      // result = moduleReplaceLinks(result, documents);
+      // result = foundryCompendiumReplace(result);
+      // result = replaceRollLinks(result);
+  // loop through each journal and add a table id link for rolling if possible
+  return tables;
+}
+
+function diceInt(text) {
+  if (text === "0") return 10;
+  if (text === "00") return 100;
+  return parseInt(text);
+}
+
+/**
+ * This could be:
+ * a single value e.g. 19
+ * a range of values 19-20
+ * remaining values 19+
+ * @param {*} value 
+ * @returns array of range 
+ */
+function getDiceTableRange(value) {
+  const text = value.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").replace(/\s/g, "").trim();
+  const valueRegex = new RegExp(/^(\d+)\-(\d+)|^(\d+)(\+?)$/);
+  const valueMatch = text.match(valueRegex);
+
+
+  if (valueMatch) {
+    if (valueMatch[1] !== undefined && valueMatch[2] !== undefined) {
+      const low = diceInt(valueMatch[1]);
+      const high = diceInt(valueMatch[2]);
+      return [low, high];
+    }
+
+    if (valueMatch[3]) {
+      if (valueMatch[4] !== undefined && valueMatch[4] === "+") {
+        const low = diceInt(valueMatch[3]);
+        return [low, 0];
+      }
+      if (valueMatch[4] !== undefined && valueMatch[4] === "") {
+        const low = diceInt(valueMatch[3]);
+        return [low, low];
+      }
+    }
+  }
+  console.error("###############################################");
+  console.log(`Unable to table range match ${value}`);
+  console.error("###############################################");
+  return [];
+}
+
+
+function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId) {
+  diceKeys.forEach((diceKey) => {
+    const table = JSON.parse(JSON.stringify(require(path.join(templateDir,"table.json"))));
+    const nameExtension = diceKeys > 1 ? ` [${diceKeys}]` : "";
+
+    table.name = tableName + nameExtension;
+    table.flags.ddb.ddbId = row.id;
+    table.flags.ddb.bookCode = config.run.bookCode;
+    table.flags.ddb.slug = row.slug;
+    table.flags.ddb.contentChunkId = contentChunkId;
+    table.flags.ddb.userData = config.run.userData
+    table.sort = journalSort + parseInt(row.id);
+    if (row.cobaltId) table.flags.ddb.cobaltId = row.cobaltId;
+    if (row.parentId) table.flags.ddb.parentId = row.parentId;
+    table.folder = getFolderId(row, "Table");
+    table._id = getId(table, "Table");
+
+    const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*)?)/, "g");
+    const formulaMatch = diceKey.match(diceRegex);
+    console.log(formulaMatch);
+    table.formula = formulaMatch ? formulaMatch[0].trim() : "";
+
+    table.results = [];
+    const concatKeys = (keys.length - diceKeys.length) > 1;
+    // loop through rows and build result entry. 
+    // if more than one result key then we will concat the results.
+
+    parsedTable.forEach((entry) => {
+      const result = {
+        _id: `${utils.randomString(16,"#aA")}`,
+        flags: {},
+        type: 0,
+        text: "",
+        img: "icons/svg/d20-black.svg",
+        resultId: "",
+        weight: 1,
+        range: [],
+        drawn: false
+      };
+      Object.entries(entry).forEach(([key, value]) => {
+        if (key === diceKey) result.range = getDiceTableRange(value);
+        else if (diceKeys.includes(key)) return;
+        if (concatKeys) {
+          if (result.text != "") result.text += "\n\n";
+          result.text += `<b>${key}</b>${value}`;
+        } else {
+          result.text = value;
+        }
+        table.results.push(result);
+      });
+    });
+
+    console.log(`Generated table entry ${table.name}`);
+    tables.push(table);
+
+  });
+}
+
 function generateTable(row, journal, html) {
 
   const document = new JSDOM(html).window.document;
   const tableNodes = document.querySelectorAll("table");
 
   tableNodes.forEach(node => {
-    const parsedTable = (node.tHead) ? 
-      tables.parseTable(node) :
-      [];
-
-    const keys = (node.tHead) ?
-      Object.keys(parsedTable[0]) : 
-      null;
-    const diceColumns = findDiceColumns(node);
-
+    const parsedTable = parseTable.parseTable(node);
+    const keys = parseTable.getHeadings(node);
+    const diceKeys = findDiceColumns(node);
     const contentChunkId = node.getAttribute("data-content-chunk-id");
-    console.log(contentChunkId);
     const nameGuess = guessTableName(document, contentChunkId);
 
     console.log("***********************************************");
-    console.log(`Table: ${nameGuess}`);
+    console.log("Table detection!");
+    console.log(`Table: "${nameGuess}"`);
     console.log(`ContentChunkId: ${contentChunkId}`);
-    if (config.debug) console.log(node.outerHTML);
-    if (config.debug) console.log(parsedTable);
-    console.log(`Headers: ${diceColumns.join(", ")}`);
+    console.log(`Dice Keys: ${diceKeys.join(", ")}`);
     console.log(`Keys: ${keys.join(", ")}`);
     console.log("***********************************************");
+    if (config.debug) console.log(node.outerHTML);
+    if (config.debug && parsedTable) console.log(parsedTable);
+    // if (parsedTable) console.log(parsedTable);
+    console.log("***********************************************");
     
+    buildTable(row, parsedTable, keys, diceKeys, nameGuess, contentChunkId);
     tableMatched.push({
+      // foundryId: ,
       nameGuess: nameGuess,
       length: parsedTable.length,
       keys: keys,
-      diceColumns: diceColumns,
-      diceTable: diceColumns.length > 0,
-      multiDiceColumns: diceColumns.length > 1,
+      diceKeys: diceKeys,
+      diceTable: diceKeys.length > 0,
+      multiDiceKeys: diceKeys.length > 1,
+      diceKeysNumber: diceKeys.length,
+      totalKeys: keys.length,
       journal: journal.name,
       id: node.id,
       class: node.class,
@@ -870,12 +992,6 @@ function findScenes(document) {
     }
   });
 
-  console.log("Generated the following journal images:");
-  console.log(journalImgMatched);
-  console.log("Generated the following scene images:");
-  console.log(sceneImgMatched);
-  
-
   return [scenes, journals, linkReplaces];
 }
 
@@ -929,6 +1045,18 @@ function outputScenes(parsedScenes, config) {
   });
 }
 
+
+function outputTables(parsedTables, config) {
+  console.log("Exporting tables...");
+
+  // tables out
+  parsedTables.forEach((table) => {
+    const tableContent = JSON.stringify(table);
+    fs.writeFileSync(path.join(config.run.outputDir,"table",`${table._id}.json`), tableContent);
+  });
+}
+
+
 function outputFolders(parsedFolders, config, content) {
   console.log("Exporting required folders...");
 
@@ -962,7 +1090,7 @@ function rowGenerate(err, row) {
 
 
 async function downloadEnhancements(list) {
-  for (i = 0; i < list.length; i++) {
+  for (let i = 0; i < list.length; i++) {
     console.log(`Downloading Hi Res ${list[i].name}`);
     const dlPath = path.join(config.run.outputDir,list[i].path);
     await utils.downloadFile(list[i].url, dlPath);
@@ -977,9 +1105,11 @@ async function collectionFinished(err, count) {
   try {
     console.log(`Processing ${count} entries...`);
     [chapters, scenes] = updateJournals(chapters);
+    tables = fixUpTables(tables, chapters);
     outputAdventure(config);
     outputJournals(chapters, config);
     outputScenes(scenes, config);
+    outputTables(tables, config);
     const allContent = chapters.concat(scenes);
     outputFolders(folders, config, allContent);
     await downloadEnhancements(downloadList);
@@ -988,6 +1118,10 @@ async function collectionFinished(err, count) {
     console.log(`Error generating adventure: ${err}`);
     console.log(err.stack);
   } finally {
+    console.log("Generated the following journal images:");
+    console.log(journalImgMatched);
+    console.log("Generated the following scene images:");
+    console.log(sceneImgMatched);
     // save generated Ids table
     configure.saveLookups(idTable);
     if (config.tableFind) {
@@ -1005,6 +1139,7 @@ async function setConfig(conf) {
   chapters = [];
   folders = [];
   scenes = [];
+  tables = [];
   imageFinderSceneResults = [];
   imageFinderJournalResults = [];
   sceneImgMatched = [];
@@ -1043,7 +1178,7 @@ function setMasterFolders() {
   masterFolder = {
     JournalEntry: generateFolder("JournalEntry", {id: -1, cobaltId: -1, title: config.run.book}, true),
     Scene: generateFolder("Scene", {id: -1, cobaltId: -1, title: config.run.book}, true),
-    // Table: generateFolder("Table", {id: -1, cobaltId: -1, title: config.run.book}, true),
+    Table: generateFolder("Table", {id: -1, cobaltId: -1, title: config.run.book}, true),
   };
 }
 

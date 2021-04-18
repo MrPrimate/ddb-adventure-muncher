@@ -1,42 +1,19 @@
 {
-	"_id": "AAAAAAAAAAAAAAAA",
-	"name": "Cool Table",
-	"sort": 100000,
-	"flags": {},
-	"img": "icons/svg/d20-grey.svg",
-	"description": "",
-	"results": [
-		{
-			"_id": "BBBBBBBBBBBBBBBB",
-			"flags": {},
-			"type": 0,
-			"text": "Cool",
-			"img": "table/table/AAAAAAAAAAAAAAAA/d20-black.svg",
-			"resultId": "",
-			"weight": 1,
-			"range": [
-				1,
-				1
-			],
-			"drawn": false
-		},
-		{
-			"_id": "CCCCCCCCCCCCCCCC",
-			"flags": {},
-			"type": 0,
-			"text": "Not cool",
-			"img": "table/table/AAAAAAAAAAAAAAAA/d20-black.svg",
-			"resultId": "",
-			"weight": 1,
-			"range": [
-				2,
-				2
-			],
-			"drawn": false
-		}
-	],
-	"formula": "1d2",
-	"replacement": true,
-	"displayRoll": true,
-	"folder": "AAAAAAAAAAAAAAAA"
+  "_id": "AAAAAAAAAAAAAAAA",
+  "name": "Cool Table",
+  "sort": 100000,
+  "flags": {
+    "ddb": {
+      "cobaltId": null,
+      "ddbId": null,
+      "bookCode": null
+    }
+  },
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [],
+  "formula": "",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "AAAAAAAAAAAAAAAA"
 }
