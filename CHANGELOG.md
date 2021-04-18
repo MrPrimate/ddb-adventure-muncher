@@ -1,7 +1,7 @@
 # 0.0.13
 
 * More CoS adjustments.
-* Groundwork for table parsing.
+* First pass at automatic roll table parsing.
 
 # 0.0.12
 
