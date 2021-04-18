@@ -124,12 +124,12 @@ function importScene(conf, sceneFile) {
   console.log(lookup)
   // console.log(scenesData)
   let sceneData = (lookup.contentChunkId) ? 
-    scenesData.find((scene) => scene.flags.ddb && lookup.contentChunkId === scene.flags.ddb.contentChunkId) :
+    scenesData.find((scene) => scene.flags.ddb && lookup.contentChunkId.trim() == scene.flags.ddb.contentChunkId.trim()) :
     scenesData.find((scene) => lookup.name.toLowerCase().trim().replace("’", "").replace("'","").includes(scene.name.toLowerCase().trim().replace("’", "").replace("'","")));
 
-  if (!sceneData && lookup.contentChunkId) {
-    sceneData = scenesData.find((scene) => lookup.name.toLowerCase().trim().replace("’", "").replace("'","").includes(scene.name.toLowerCase().trim().replace("’", "").replace("'","")));
-  }
+  // if (!sceneData && lookup.contentChunkId) {
+  //   sceneData = scenesData.find((scene) => lookup.name.toLowerCase().trim().replace("’", "").replace("'","").includes(scene.name.toLowerCase().trim().replace("’", "").replace("'","")));
+  // }
 
   console.log("********************")
   console.log("Scene Data:")
