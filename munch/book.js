@@ -63,21 +63,23 @@ const COMPENDIUM_MAP = {
 
 
 function getId(document, docType) {
+  const contentChunkId =  (document.flags.ddb.contentChunkId && document.flags.ddb.contentChunkId != "") ? 
+    document.flags.ddb.contentChunkId :
+    null;
+
   const existingId = idTable[config.run.bookCode].find((r) => {
     const basicCheck = r.type == document.type &&
       r.docType == docType &&
       r.ddbId == document.flags.ddb.ddbId &&
       r.cobaltId === document.flags.ddb.cobaltId &&
       r.parentId === document.flags.ddb.parentId;
-    const tableCheck = (docType === "RollTable") ? 
-      document.flags.ddb.contentChunkId === r.contentChunkId :
-      true; 
+    const chunkCheck = (contentChunkId) ? 
+      contentChunkId == r.contentChunkId :
+      true;
 
-    return basicCheck && tableCheck;
+    return basicCheck && chunkCheck;
   });
-  const contentChunkId =  (document.flags.ddb.contentChunkId && document.flags.ddb.contentChunkId != "") ? 
-    document.flags.ddb.contentChunkId :
-    null;
+  
   if (existingId) {
     if (existingId.name !== document.name || existingId.contentChunkId !== contentChunkId) {
       existingId.name = document.name;
@@ -395,7 +397,7 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
 
     const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*d*\d*)?)/, "g");
     const formulaMatch = diceKey.match(diceRegex);
-    console.log(formulaMatch);
+    //console.log(formulaMatch);
     table.formula = formulaMatch ? formulaMatch[0].trim() : "";
 
     table.results = [];
@@ -405,8 +407,8 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
 
     console.log("*******************************************");
     console.log(`Generating table ${table.name}`)
-    console.log(row)
-    console.log(parsedTable.length);
+    if (config.debug) console.log(row)
+    // console.log(parsedTable.length);
 
     parsedTable.forEach((entry) => {
       const result = {
@@ -718,17 +720,8 @@ function generateScene(row, img) {
   let adjustment = (scene.flags.ddb.contentChunkId) ?
     sceneAdjustments.find((s) => scene.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId) :
     sceneAdjustments.find((s) => scene.name.includes(s.name));
-  if (!adjustment && scene.flags.ddb.contentChunkId) {
-    adjustment = sceneAdjustments.find((s) => scene.name.includes(s.name));
-  }
+
   if (adjustment) {
-    // nuke any bad contentChunkId's present on adjustment data
-    if (
-      scene.flags.ddb.contentChunkId &&
-      (adjustment.flags.ddb.contentChunkId === null || adjustment.flags.ddb.contentChunkId === ""
-    )) {
-      delete(adjustment.flags.ddb.contentChunkId);
-    } 
     scene = _.merge(scene, adjustment);
   }
 
