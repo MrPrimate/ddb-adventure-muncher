@@ -79,11 +79,11 @@ Examples:
 
 Books with Aligned, Walled, and Lit scenes:
 
-* Lost Mines of Phandelver.
-
-Books with partial scene adjustment:
-
+* Lost Mines of Phandelver
 * Curse of Strahd
+
+Books with partial adjustments:
+
 * Icewind Dale: Rime of the Frost Maiden
 * Dragon of Icespire Peak
 * Divine Contention
