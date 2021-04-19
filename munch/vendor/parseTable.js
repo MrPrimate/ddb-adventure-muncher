@@ -115,7 +115,7 @@ function mapRow(headings, highSplit=false) {
  * @return {Array<String>}       array of strings representing each header in the table
  */
 function getHeadings(table, unique=true) {
-  if (!table.tHead) return [];
+  if (!table.tHead || table.tHead.rows.length === 0) return [];
   const headings = [...table.tHead.rows[0].cells].map(heading => {
     return heading.textContent
   });
