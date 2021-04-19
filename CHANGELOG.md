@@ -1,3 +1,7 @@
+# 0.0.14
+
+* CoS now has full alignments, walls and lights. (Thanks @Zac!)
+
 # 0.0.13
 
 * More CoS adjustments.
