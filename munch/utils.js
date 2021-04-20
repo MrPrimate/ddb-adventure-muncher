@@ -208,11 +208,13 @@ function imageSize(image) {
     height: 2000,
     width: 2000, 
   }
-  try {
-    size = sizeOf(image);
-  } catch (e) {
-    console.error(`Error getting size of ${image}`);
-    console.log(e.stack);
+  if (fs.existsSync(image)) {
+    try {
+      size = sizeOf(image);
+    } catch (e) {
+      console.error(`Error getting size of ${image}`);
+      console.log(e.stack);
+    }
   }
   return size;
 }

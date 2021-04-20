@@ -737,13 +737,15 @@ function generateScene(row, img) {
     });
   }
 
-  const enhancedDownload = (config.enhancedDownload) ? 
-    config.enhancedDownload :
-    true;
+  const disableEnhancedDownloads = (config.disableEnhancedDownloads) ? 
+    config.disableEnhancedDownloads :
+    false;
 
   const enhancedScene = enhancedScenes.find((es) => es.name === scene.name && es.img === scene.img);
+  console.log(`Enhanced Scene? ${enhancedScene}`);
+  console.log(`Disable downloads? ${disableEnhancedDownloads}`);
   if (enhancedScene) {
-    if (enhancedScene.hiresImg && !enhancedDownload) {
+    if (enhancedScene.hiresImg && !disableEnhancedDownloads) {
       downloadList.push({name: scene.name, url: enhancedScene.hiresImg, path: scene.img });
     }
     if (enhancedScene.adjustName != "") {
@@ -757,6 +759,29 @@ function generateScene(row, img) {
   const sceneCount = sceneImgMatched.filter(img => img === scene.img).length;
   console.log(`Generated Scene ${scene.name}, (count ${sceneCount})`);
   return scene;
+}
+
+function generateMissingScenes(journals, scenes) {
+  let tmpCount = 0;
+
+  enhancedScenes.filter((es) => es.missing).forEach((es) => {
+    const id =  90000 + es.ddbId + tmpCount;
+    const row = {
+      title: `${es.name} (Player Version)`,
+      id: id,
+      parentId: es.parentId,
+      cobaltId: es.cobaltId,
+      documentName: es.name,
+      sceneName: es.name,
+      contentChunkId: `ddb-missing-${config.run.bookCode}-${id}`,
+    };
+    tmpCount++;
+    const playerEntry = generateJournalEntry(row, es.img);
+    journals.push(playerEntry);
+    scenes.push(generateScene(row, es.img));
+  });
+
+  return [journals, scenes];
 }
 
 function findScenes(document) {
@@ -1135,6 +1160,7 @@ async function collectionFinished(err, count) {
     console.log(`Processing ${count} entries...`);
     [chapters, scenes] = updateJournals(chapters);
     [tables, chapters] = fixUpTables(tables, chapters);
+    [chapters, scenes] = generateMissingScenes(chapters, scenes);
     outputAdventure(config);
     outputJournals(chapters, config);
     outputScenes(scenes, config);
