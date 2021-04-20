@@ -1,0 +1,156 @@
+[
+    {
+        "name": "Map 6.1: Hill Giant Stronghold - Upper Level",
+        "navName": "Hill Giant Stronghold (Upper)",
+        "width": 3675,
+        "height": 4900,
+        "grid": 50,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 34,
+        "shiftY": -3,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 90003,
+                "cobaltId": null,
+                "contentChunkId": "ddb-missing-atg-90003"
+            }
+        }
+    },
+    {
+        "name": "Map 6.2: Hill Giant Stronghold - Dungeon Level",
+        "navName": "Hill Giant Stronghold (Dungeon)",
+        "width": 3896,
+        "height": 5190,
+        "grid": 50,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -10,
+        "shiftY": 22,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 90004,
+                "cobaltId": null,
+                "contentChunkId": "ddb-missing-atg-90004"
+            }
+        }
+    },
+    {
+        "name": "Map 6.3: Frost Giant Stronghold - Upper Level",
+        "navName": "Frost Giant Stronghold (Upper)",
+        "width": 2254,
+        "height": 3000,
+        "grid": 100,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 0,
+        "shiftY": 0,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 90006,
+                "cobaltId": null,
+                "contentChunkId": "ddb-missing-atg-90006"
+            }
+        }
+    },
+    {
+        "name": "Map 6.4: Frost Giant Stronghold - Lower Level",
+        "navName": "Frost Giant Stronghold (Lower)",
+        "width": 2253,
+        "height": 3000,
+        "grid": 100,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 0,
+        "shiftY": 0,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 90007,
+                "cobaltId": null,
+                "contentChunkId": "ddb-missing-atg-90007"
+            }
+        }
+    },
+    {
+        "name": "Map 6.5: Hall of the Fire Giant King - Entrance Level",
+        "navName": "Hall of the Fire Giant King (Entrance)",
+        "width": 2252,
+        "height": 3000,
+        "grid": 100,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 0,
+        "shiftY": 0,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 90009,
+                "cobaltId": null,
+                "contentChunkId": "ddb-missing-atg-90009"
+            }
+        }
+    },
+    {
+        "name": "Map 6.6: Hall of the Fire Giant King - Second Level",
+        "navName": "Hall of the Fire Giant King (Secind)",
+        "width": 2254,
+        "height": 3000,
+        "grid": 100,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 0,
+        "shiftY": 0,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 90010,
+                "cobaltId": null,
+                "contentChunkId": "ddb-missing-atg-90010"
+            }
+        }
+    },
+    {
+        "name": "Map 6.7: Hall of the Fire Giant King - Third Level",
+        "navName": "Hall of the Fire Giant King (Third)",
+        "width": 2253,
+        "height": 3000,
+        "grid": 100,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 0,
+        "shiftY": 0,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 90011,
+                "cobaltId": null,
+                "contentChunkId": "ddb-missing-atg-90011"
+            }
+        }
+    }
+]
