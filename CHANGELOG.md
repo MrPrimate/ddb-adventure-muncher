@@ -1,6 +1,7 @@
 # 0.0.14
 
 * CoS now has full alignments, walls and lights. (Thanks @Zac!)
+* Some OotA Scenes.
 
 # 0.0.13
 
