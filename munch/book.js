@@ -742,8 +742,7 @@ function generateScene(row, img) {
     false;
 
   const enhancedScene = enhancedScenes.find((es) => es.name === scene.name && es.img === scene.img);
-  console.log(`Enhanced Scene? ${enhancedScene}`);
-  console.log(`Disable downloads? ${disableEnhancedDownloads}`);
+
   if (enhancedScene) {
     if (enhancedScene.hiresImg && !disableEnhancedDownloads) {
       downloadList.push({name: scene.name, url: enhancedScene.hiresImg, path: scene.img });

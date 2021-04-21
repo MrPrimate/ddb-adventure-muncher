@@ -96,7 +96,7 @@ If you wish to help improve the scene wall and lighting information, see the bel
 ### Walls and Lighting information
 
 * If you wish to add walls/lighting information you can turn on a setting in Foundry to allow you to support data from a supported map. (VTTA or ddb-adventure-muncher).
-* Open the Chrome Developer Console (F12) and run `game.settings.get("ddb-importer", "allow-scene-download", true)`
+* Open the Chrome Developer Console (F12) and run `game.settings.set("ddb-importer", "allow-scene-download", true)`
 * Now when you right click on a scene navigation button you will get the option to download the associated data.
 * Upload this to the #scene-adjustments channel on Discord with a description of your changes.
 
