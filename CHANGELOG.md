@@ -2,6 +2,7 @@
 
 * CoS now has full alignments, walls and lights. (Thanks @Zac!)
 * Some OotA Scenes.
+* AtG now parses scenes.
 
 # 0.0.13
 
