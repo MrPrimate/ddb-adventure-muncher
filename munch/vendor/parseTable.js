@@ -55,58 +55,6 @@ function mapRow(headings, highSplit=false) {
   };
 }
 
-// function mapRow(headings) {
-//   return function mapRowToObject({ cells }) {
-//     const lowCells = [...cells];
-//     const highCells = (lowCells.length > headings.length) ? lowCells.splice(lowCells.length/2) : [];
-//     const targetCells = [lowCells, highCells];
-    
-//     const results = targetCells.map((range) => {
-//       return range.reduce(function(result, cell, i) {
-//         const input = cell.querySelector("input,select");
-//         var value;
-//         var headingValue = i;
-  
-//         if (input) {
-//           value = input.type === "checkbox" ? input.checked : input.value;
-//         } else {
-//           value = cell.innerHTML;
-//         }
-  
-//         if (i >= headings.length) {
-//           headingValue = i - headings.length;
-//         }
-  
-//         console.log("**************");
-//         console.log(value);
-//         console.log(`i ${i}`);
-//         console.log(`hv ${headingValue}`);
-//         console.log(result);
-  
-//         return Object.assign(result, { [headings[headingValue]]: value });
-//       }, {});
-//     });
-//     console.log(results);
-//     return results;
-//   };
-// }
-
-// function mapRow(headings) {
-//   return function mapRowToObject({ cells }) {
-//     return cells.reduce(function(result, cell, i) {
-//       const input = cell.querySelector("input,select");
-//       var value;
-
-//       if (input) {
-//         value = input.type === "checkbox" ? input.checked : input.value;
-//       } else {
-//         value = cell.innerHTML;
-//       }
-
-//       return Object.assign(result, { [headings[i]]: value });
-//     }, {});
-//   };
-// }
 
 /**
  * given a table, generate an array of keys/column names
