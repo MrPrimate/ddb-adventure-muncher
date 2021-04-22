@@ -1,8 +1,5 @@
 const configure = require("./config.js");
-const book = require("./book.js");
 const utils = require("./utils.js");
-const ddb = require("./ddb.js");
-const { exists } = require("fs-extra");
 const _ = require('lodash');
 const fs = require("fs");
 const path = require("path");

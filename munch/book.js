@@ -11,14 +11,17 @@ const sqlite3 = require('@journeyapps/sqlcipher').verbose();
 const _ = require('lodash');
 const configure = require("./config.js");
 const sceneAdjuster = require("./scene-load.js");
+const noteHinter = require("./notes-load.js");
 const enhance = require("./enhance.js");
 const parseTable = require("./vendor/parseTable.js");
+
 
 var journalSort = 1000;
 var folderSort = 4000;
 var config;
 var idTable;
 var sceneAdjustments;
+var noteHints;
 var sceneImgMatched = [];
 var journalImgMatched = [];
 var enhancedScenes = [];
@@ -536,17 +539,32 @@ function updateJournals(documents) {
   return [documents, scenes];
 }
 
-function generateFolder(type, row, baseFolder=false, img=false) {
+function generateFolder(type, row, baseFolder=false, img=false, note=false) {
   const folder = JSON.parse(JSON.stringify(require(path.join(templateDir,"folder.json"))));
   folder.flags.ddb.ddbId = row.id;
   folder.flags.ddb.img = img;
+  folder.flags.ddb.note = note;
   folder.name = row.title;
   folder.type = type;
   folder.sort = folderSort + parseInt(row.id);
   if (row.cobaltId && !baseFolder) {
     folder.parent = masterFolder[type]._id;
   }
-  if (img) {
+  if (note) {
+    folder.name = `[Notes] ${folder.name}`;
+    let parent;
+    if (row.parentId) {
+      parent = folders.find((f) => f.flags.ddb.parentId == row.parentId && f.type == type && !f.flags.ddb.note);
+    } else if (row.cobaltId) {
+      parent = folders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.note);
+      folder.sort = 1000000;
+    }
+    if (parent) {
+      folder.parent = `${parent._id}`;
+      folder.name = `[Notes] ${parent.name}`;
+    }
+  }
+  else if (img) {
     folder.name = `[Handouts] ${folder.name}`;
     let parent;
     if (row.parentId) {
@@ -632,7 +650,7 @@ function appendJournalToChapter(row) {
   }
 }
 
-function generateJournalEntry(row, img=null) {
+function generateJournalEntry(row, img=null, note=false) {
   let journal = JSON.parse(JSON.stringify(require(path.join(templateDir,"journal.json"))));
 
   journal.name = row.title;
@@ -670,16 +688,35 @@ function generateJournalEntry(row, img=null) {
     generateTable(row, journal, journal.content);
   }
   if (row.parentId) journal.flags.ddb.parentId = row.parentId;
-  journal.folder = getFolderId(row, "JournalEntry", imgState);
+  journal.folder = getFolderId(row, "JournalEntry", imgState, note);
   // console.log(row);
   // console.log(journal);
   // console.log(`${journal.name}, ${journal.folder}`);
   appendJournalToChapter(row);
   journal._id = getId(journal, "JournalEntry");
   console.log(`Generated journal entry ${journal.name}`);
-  if (!imgState) chapters.push(journal);
+  if (!imgState) {
+    chapters.push(journal);
+  }
   // console.log(`${journal._id} ${journal.name}`);
   return journal;
+}
+
+/**
+ * For now this function generates Note Journal entries only
+ * @param {*} row 
+ * @param {*} text 
+ * @returns 
+ */
+ function generateNoteJournals(row, text) {
+  let notes = [];
+  if (!noteHints) return notes;
+
+  // load info about a journal from note lookup. parse each block
+  // create a row including flags.ddb.contentChunkId
+  // pass to generateJournalEntry with the note flag
+  // generateJournalEntry(row, null, true);
+  return notes;
 }
 
 function generateScene(row, img) {
@@ -1202,6 +1239,7 @@ async function setConfig(conf) {
   tableMatched = [];
   fetchLookups(config);
   sceneAdjustments = sceneAdjuster.getSceneAdjustments(config.run.bookCode);
+  noteHints = noteHinter.getNoteHints(config.run.bookCode);
   enhancedScenes = await enhance.getEnhancedData(config);
   downloadList = [];
 }

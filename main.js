@@ -18,6 +18,7 @@ const ddb = require("./munch/ddb.js");
 const book = require("./munch/book.js");
 const utils = require("./munch/utils.js");
 const scenes = require("./munch/scene-load.js");
+const notes = require("./munch/note-load.js");
 const configurator = require("./munch/config.js");
 
 const yargs = require('yargs/yargs');
@@ -178,6 +179,7 @@ function generateAdventure(args) {
       if (!isDevelopment) {
         book.setTemplateDir(path.join(process.resourcesPath, "content", "templates"));
         scenes.setSceneDir(path.join(process.resourcesPath, "content", "scene_info"));
+        notes.setSceneDir(path.join(process.resourcesPath, "content", "note_info"));
       }
       book.setConfig(config).then(() => {
         utils.directoryReset(config);
