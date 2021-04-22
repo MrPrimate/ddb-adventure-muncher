@@ -181,7 +181,7 @@ function foundryCompendiumReplace(text) {
 function moduleReplaceLinks(text, journals) {
   const dom = new JSDOM(text);
   const fragmentLinks = dom.window.document.querySelectorAll(`a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
-  text = dom.window.document.body.outerHTML;
+  text = dom.window.document.body.innerHTML;
 
   const bookSlugRegExp = new RegExp(`ddb:\/\/compendium\/${config.run.bookCode}\/([\\w0-9\-._#+@/]*)`);
 
@@ -301,6 +301,7 @@ function fixUpTables(tables, journals) {
       result.text = moduleReplaceLinks(result.text, journals);
       result.text = foundryCompendiumReplace(result.text);
       result.text = replaceRollLinks(result.text);
+      result.text = JSDOM.fragment(result.text).textContent;
     })
   });
 
@@ -317,7 +318,7 @@ function fixUpTables(tables, journals) {
         tablePoint.insertAdjacentHTML('afterend', `<div id="table-link">@RollTable[${table.name}]{Open RollTable}</div>`);
       }
     });
-    journal.content = dom.body.outerHTML;
+    journal.content = dom.body.innerHTML;
   });
   
   return [tables, journals];
@@ -665,7 +666,7 @@ function generateJournalEntry(row, img=null) {
     console.log(`Generated Handout ${journal.name}, (count ${journalHandoutCount})`);
   } else {
     const dom = new JSDOM(row.html);
-    journal.content = dom.window.document.body.outerHTML.replace(/  /g, " ");
+    journal.content = dom.window.document.body.innerHTML.replace(/  /g, " ");
     generateTable(row, journal, journal.content);
   }
   if (row.parentId) journal.flags.ddb.parentId = row.parentId;
@@ -790,7 +791,7 @@ function findScenes(document) {
   let unknownHandoutCount = 1;
   // const frag = JSDOM.fragment(document.content);
   const frag = new JSDOM(document.content);
-  document.content = frag.window.document.body.outerHTML;
+  document.content = frag.window.document.body.innerHTML;
 
   let linkReplaces = [];
 
