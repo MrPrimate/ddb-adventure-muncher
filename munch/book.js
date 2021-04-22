@@ -736,9 +736,12 @@ function generateJournalEntry(row, img=null, note=false) {
   }]
   if (!noteHints && noteHints.length == 0) return notes;
 
+  noteHints.filter((hint) => hint.slug == row.slug).forEach((hint) => {
+
+  });
+
   // for each matching notehint
   // might be more than 1 notehint per text as multiple scenes per journal entry
-
 
   // e.g. LMOP 1
   // ddbId=9
