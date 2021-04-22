@@ -709,8 +709,48 @@ function generateJournalEntry(row, img=null, note=false) {
  * @returns 
  */
  function generateNoteJournals(row, text) {
+
+  // only need to call this if scenes identified?
+
   let notes = [];
-  if (!noteHints) return notes;
+
+    // noteHints needs:
+  // id
+  // cobaltId
+  // parentId
+  // tag to split at
+  // contentChunkId to start at
+  // contentChunkId to stop at
+
+  // test hint, LMOP
+  noteHints = [{
+    ddbId = 9,
+    cobaltId = null,
+    parentId = 394,
+    splitTag = "h3",
+    slug = "goblin-arrows#CragmawHideout",
+    tagIdFirst = "1CaveMouth",
+    contentChunkIdStart = "6090f5fa-5c2b-43d4-89c0-1b5e37a9b9c5",
+    tagIdLast = "WhatsNext",
+    contentChunkIdStop = "3672ecdc-d709-40b5-bb0f-c06c70c1aa15",
+  }]
+  if (!noteHints && noteHints.length == 0) return notes;
+
+  // for each matching notehint
+  // might be more than 1 notehint per text as multiple scenes per journal entry
+
+
+  // e.g. LMOP 1
+  // ddbId=9
+  // cobaltId=null
+  // parentId=394
+  // splitTag="h3"
+  // slug="goblin-arrows#CragmawHideout"
+  // tagIdFirst="1CaveMouth"
+  // contentChunkIdStart="6090f5fa-5c2b-43d4-89c0-1b5e37a9b9c5"
+  // tagIdLast="WhatsNext"
+  // contentChunkIdStop="3672ecdc-d709-40b5-bb0f-c06c70c1aa15"
+
 
   // load info about a journal from note lookup. parse each block
   // create a row including flags.ddb.contentChunkId
