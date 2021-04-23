@@ -11,7 +11,7 @@ const sqlite3 = require('@journeyapps/sqlcipher').verbose();
 const _ = require('lodash');
 const configure = require("./config.js");
 const sceneAdjuster = require("./scene-load.js");
-const noteHinter = require("./notes-load.js");
+const noteHinter = require("./note-load.js");
 const enhance = require("./enhance.js");
 const parseTable = require("./vendor/parseTable.js");
 
@@ -561,7 +561,7 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
     }
     if (parent) {
       folder.parent = `${parent._id}`;
-      folder.name = `[Notes] ${parent.name}`;
+      folder.name = `[Notes] ${row.sceneName ? row.sceneName : parent.name }`;
     }
   }
   else if (img) {
@@ -610,10 +610,20 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
 
 
 
-function getFolderId(row, type, img) {
+function getFolderId(row, type, img, note) {
   let folderId;
   let folder;
-  if (img) {
+  if (note) {
+    if (row.cobaltId) {
+      folder = folders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && f.flags.ddb.note);
+    } else {
+      folder = folders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.note);
+    }
+    if (!folder) {
+      folder = generateFolder(type, row, false, false, note);
+    }
+    folderId = folder._id;
+  } else if (img) {
     if (row.cobaltId) {
       folder = folders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && f.flags.ddb.img);
     } else {
@@ -692,10 +702,10 @@ function generateJournalEntry(row, img=null, note=false) {
   // console.log(row);
   // console.log(journal);
   // console.log(`${journal.name}, ${journal.folder}`);
-  appendJournalToChapter(row);
   journal._id = getId(journal, "JournalEntry");
   console.log(`Generated journal entry ${journal.name}`);
-  if (!imgState) {
+  if (!imgState && !note) {
+    appendJournalToChapter(row);
     chapters.push(journal);
   }
   // console.log(`${journal._id} ${journal.name}`);
@@ -708,13 +718,13 @@ function generateJournalEntry(row, img=null, note=false) {
  * @param {*} text 
  * @returns 
  */
- function generateNoteJournals(row, text) {
+ function generateNoteJournals(row) {
 
   // only need to call this if scenes identified?
 
   let notes = [];
 
-    // noteHints needs:
+  // noteHints needs:
   // id
   // cobaltId
   // parentId
@@ -724,20 +734,65 @@ function generateJournalEntry(row, img=null, note=false) {
 
   // test hint, LMOP
   noteHints = [{
-    ddbId = 9,
-    cobaltId = null,
-    parentId = 394,
-    splitTag = "h3",
-    slug = "goblin-arrows#CragmawHideout",
-    tagIdFirst = "1CaveMouth",
-    contentChunkIdStart = "6090f5fa-5c2b-43d4-89c0-1b5e37a9b9c5",
-    tagIdLast = "WhatsNext",
-    contentChunkIdStop = "3672ecdc-d709-40b5-bb0f-c06c70c1aa15",
+    ddbId: 9,
+    cobaltId: null,
+    parentId: 394,
+    splitTag: "h3",
+    slug: "goblin-arrows#CragmawHideout",
+    tagIdFirst: "1CaveMouth",
+    contentChunkIdStart: "6090f5fa-5c2b-43d4-89c0-1b5e37a9b9c5",
+    tagIdLast: "WhatsNext",
+    contentChunkIdStop: "3672ecdc-d709-40b5-bb0f-c06c70c1aa15",
+    sceneName: "Cragmaw Hideout",
   }]
   if (!noteHints && noteHints.length == 0) return notes;
 
-  noteHints.filter((hint) => hint.slug == row.slug).forEach((hint) => {
+  const dom = new JSDOM(row.html).window.document;
+  // dom.body.innerHTML.replace(/  /g, " ");
 
+  noteHints.filter((hint) => hint.slug == row.slug).forEach((hint) => {
+    console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+    console.log(`Generating Notes for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`);
+    
+    let keyChunk = dom.querySelector(`${hint.splitTag}[data-content-chunk-id='${hint.contentChunkIdStart}']`);
+    let html = "";
+    let noteTitle = keyChunk.textContent;
+    let keyChunkId = hint.contentChunkIdStart;
+
+    while (true) {
+      keyChunk = keyChunk.nextElementSibling;
+
+      const chunkId = keyChunk.getAttribute("data-content-chunk-id");
+      const tagMatch = keyChunk.tagName.toUpperCase() === hint.splitTag.toUpperCase()
+      const stopChunk = chunkId === hint.contentChunkIdStop;
+
+      // if we have reached the same tag type or last chunk generate a journal
+      if (tagMatch || stopChunk) {
+        let noteRow = JSON.parse(JSON.stringify(row));
+        noteRow.html = html;
+        noteRow.title = noteTitle;
+        noteRow.contentChunkId = keyChunkId;
+        noteRow.sceneName = hint.sceneName;
+        notes.push(generateJournalEntry(noteRow, null, true));
+        html = "";
+      } else {
+        // we add the chunk contents to the html block
+        html += keyChunk.outerHTML;
+      }
+
+      // if we have reached the end leave
+      if (chunkId === hint.contentChunkIdStop) {
+        break;
+      } else if (tagMatch) {
+        noteTitle = keyChunk.textContent;
+        keyChunkId = chunkId;
+      } else {
+        html += keyChunk.outerHTML;
+      }
+
+    }
+
+    console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
   });
 
   // for each matching notehint
@@ -1136,6 +1191,7 @@ function generateJournalChapterEntry(row, img=null) {
     const journal = generateJournalEntry(row, img);
     return journal;
   }
+  return undefined;
 }
 
 function outputAdventure(config) {
@@ -1220,6 +1276,7 @@ function rowGenerate(err, row) {
     console.log("PARSING: " + row.id + ": " + row.title);
   }
   generateJournalChapterEntry(row);
+  generateNoteJournals(row);
 }
 
 
