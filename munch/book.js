@@ -541,7 +541,7 @@ function updateJournals(documents) {
 
 function generateFolder(type, row, baseFolder=false, img=false, note=false) {
   const folder = JSON.parse(JSON.stringify(require(path.join(templateDir,"folder.json"))));
-  folder.flags.ddb.ddbId = row.id;
+  folder.flags.ddb.ddbId = (row.ddbId) ? row.ddbId : row.id;
   folder.flags.ddb.img = img;
   folder.flags.ddb.note = note;
   folder.name = row.title;
@@ -551,18 +551,13 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
     folder.parent = masterFolder[type]._id;
   }
   if (note) {
-    folder.name = `[Notes] ${folder.name}`;
-    let parent;
-    if (row.parentId) {
-      parent = folders.find((f) => f.flags.ddb.parentId == row.parentId && f.type == type && !f.flags.ddb.note);
-    } else if (row.cobaltId) {
-      parent = folders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.note);
-      folder.sort = 1000000;
-    }
+    const parent = folders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+    folder.name = `[Scene Notes] ${row.sceneName ? row.sceneName : row.title}`;
     if (parent) {
       folder.parent = `${parent._id}`;
-      folder.name = `[Notes] ${row.sceneName ? row.sceneName : parent.name }`;
+      if (!row.sceneName) folder.name = `[Scene Notes] ${parent.name }`;
     }
+    folder.flags.ddb.parentId = row.parentId;
   }
   else if (img) {
     folder.name = `[Handouts] ${folder.name}`;
@@ -613,17 +608,24 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
 function getFolderId(row, type, img, note) {
   let folderId;
   let folder;
+
   if (note) {
     if (row.cobaltId) {
-      folder = folders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && f.flags.ddb.note);
+      folder = folders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+      if (!folder) folder = generateFolder(type, row, false, img, note);
+      folderId = folder._id;
+      // return masterFolder[type]._id;
+    } else if (row.parentId) {
+      folder = folders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.parentId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
+      if (!folder) folder = generateFolder(type, row, false, img, note);
+      folderId = folder._id;
     } else {
-      folder = folders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.note);
+      folder = folders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
+      if (folder) folderId = folder._id;
     }
-    if (!folder) {
-      folder = generateFolder(type, row, false, false, note);
-    }
-    folderId = folder._id;
-  } else if (img) {
+    return folderId;
+  }
+  if (img) {
     if (row.cobaltId) {
       folder = folders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && f.flags.ddb.img);
     } else {
@@ -634,16 +636,16 @@ function getFolderId(row, type, img, note) {
     }
     folderId = folder._id;
   } else if (row.cobaltId) {
-    folder = folders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img);
-    if (!folder) folder = generateFolder(type, row);
+    folder = folders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+    if (!folder) folder = generateFolder(type, row, false, img, note);
     folderId = folder._id;
     // return masterFolder[type]._id;
   } else if (row.parentId) {
-    folder = folders.find((f) => f.flags.ddb.parentId == row.parentId && f.type == type && f.flags.ddb.img == img);
-    if (!folder) folder = generateFolder(type, row);
+    folder = folders.find((f) => f.flags.ddb.parentId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
+    if (!folder) folder = generateFolder(type, row, false, img, note);
     folderId = folder._id;
   } else {
-    folder = folders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img);
+    folder = folders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
     if (folder) folderId = folder._id;
   }
   return folderId;
@@ -706,8 +708,8 @@ function generateJournalEntry(row, img=null, note=false) {
   console.log(`Generated journal entry ${journal.name}`);
   if (!imgState && !note) {
     appendJournalToChapter(row);
-    chapters.push(journal);
   }
+  if (!imgState) chapters.push(journal);
   // console.log(`${journal._id} ${journal.name}`);
   return journal;
 }
@@ -720,8 +722,6 @@ function generateJournalEntry(row, img=null, note=false) {
  */
  function generateNoteJournals(row) {
 
-  // only need to call this if scenes identified?
-
   let notes = [];
 
   // noteHints needs:
@@ -733,24 +733,26 @@ function generateJournalEntry(row, img=null, note=false) {
   // contentChunkId to stop at
 
   // test hint, LMOP
-  noteHints = [{
-    ddbId: 9,
-    cobaltId: null,
-    parentId: 394,
-    splitTag: "h3",
-    slug: "goblin-arrows#CragmawHideout",
-    tagIdFirst: "1CaveMouth",
-    contentChunkIdStart: "6090f5fa-5c2b-43d4-89c0-1b5e37a9b9c5",
-    tagIdLast: "WhatsNext",
-    contentChunkIdStop: "3672ecdc-d709-40b5-bb0f-c06c70c1aa15",
-    sceneName: "Cragmaw Hideout",
-  }]
+  // noteHints = [{
+  //   ddbId: 9,
+  //   cobaltId: null,
+  //   parentId: 394,
+  //   splitTag: "h3",
+  //   slug: "goblin-arrows#CragmawHideout",
+  //   tagIdFirst: "1CaveMouth",
+  //   contentChunkIdStart: "6090f5fa-5c2b-43d4-89c0-1b5e37a9b9c5",
+  //   tagIdLast: "WhatsNext",
+  //   contentChunkIdStop: "3672ecdc-d709-40b5-bb0f-c06c70c1aa15",
+  //   sceneName: "Cragmaw Hideout",
+  // }]
   if (!noteHints && noteHints.length == 0) return notes;
 
   const dom = new JSDOM(row.html).window.document;
   // dom.body.innerHTML.replace(/  /g, " ");
+  let tmpCount = 0;
 
   noteHints.filter((hint) => hint.slug == row.slug).forEach((hint) => {
+    let id = 2000 + row.id;
     console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
     console.log(`Generating Notes for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`);
     
@@ -760,11 +762,12 @@ function generateJournalEntry(row, img=null, note=false) {
     let keyChunkId = hint.contentChunkIdStart;
 
     while (true) {
+      tmpCount++;
       keyChunk = keyChunk.nextElementSibling;
 
-      const chunkId = keyChunk.getAttribute("data-content-chunk-id");
-      const tagMatch = keyChunk.tagName.toUpperCase() === hint.splitTag.toUpperCase()
-      const stopChunk = chunkId === hint.contentChunkIdStop;
+      const chunkId = keyChunk ? keyChunk.getAttribute("data-content-chunk-id") : undefined;
+      const tagMatch = keyChunk ? keyChunk.tagName.toUpperCase() === hint.splitTag.toUpperCase() : false;
+      const stopChunk = keyChunk === null || chunkId === hint.contentChunkIdStop;
 
       // if we have reached the same tag type or last chunk generate a journal
       if (tagMatch || stopChunk) {
@@ -773,20 +776,20 @@ function generateJournalEntry(row, img=null, note=false) {
         noteRow.title = noteTitle;
         noteRow.contentChunkId = keyChunkId;
         noteRow.sceneName = hint.sceneName;
+        noteRow.id  = id + tmpCount;
+        noteRow.ddbId = row.id;
         notes.push(generateJournalEntry(noteRow, null, true));
         html = "";
-      } else {
-        // we add the chunk contents to the html block
-        html += keyChunk.outerHTML;
       }
 
       // if we have reached the end leave
-      if (chunkId === hint.contentChunkIdStop) {
+      if (stopChunk) {
         break;
       } else if (tagMatch) {
         noteTitle = keyChunk.textContent;
         keyChunkId = chunkId;
       } else {
+        // we add the chunk contents to the html block
         html += keyChunk.outerHTML;
       }
 
@@ -795,25 +798,6 @@ function generateJournalEntry(row, img=null, note=false) {
     console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
   });
 
-  // for each matching notehint
-  // might be more than 1 notehint per text as multiple scenes per journal entry
-
-  // e.g. LMOP 1
-  // ddbId=9
-  // cobaltId=null
-  // parentId=394
-  // splitTag="h3"
-  // slug="goblin-arrows#CragmawHideout"
-  // tagIdFirst="1CaveMouth"
-  // contentChunkIdStart="6090f5fa-5c2b-43d4-89c0-1b5e37a9b9c5"
-  // tagIdLast="WhatsNext"
-  // contentChunkIdStop="3672ecdc-d709-40b5-bb0f-c06c70c1aa15"
-
-
-  // load info about a journal from note lookup. parse each block
-  // create a row including flags.ddb.contentChunkId
-  // pass to generateJournalEntry with the note flag
-  // generateJournalEntry(row, null, true);
   return notes;
 }
 
@@ -823,6 +807,7 @@ function generateScene(row, img) {
   scene.name = row.sceneName;
   scene.navName = row.sceneName.split(":").pop().trim();
   scene.img = img;
+  scene.flags.ddb.documentName = row.documentName;
   scene.flags.ddb.ddbId = row.id;
   scene.flags.ddb.bookCode = config.run.bookCode;
   scene.flags.ddb.slug = row.slug;
@@ -896,6 +881,19 @@ function generateScene(row, img) {
   return scene;
 }
 
+// function findSceneJournals(scenes, journals) {
+//   scenes.forEach((scene) => {
+//     const journalMatch = journals.find((journal) => {
+//       journal.name.includes(scene.navName);
+//     });
+
+//     scene.journal =
+  
+//   });
+  
+//   return scenes;
+// }
+
 function generateMissingScenes(journals, scenes) {
   let tmpCount = 0;
 
@@ -904,6 +902,7 @@ function generateMissingScenes(journals, scenes) {
     const row = {
       title: `${es.name} (Player Version)`,
       id: id,
+      slug: es.slug,
       parentId: es.parentId,
       cobaltId: es.cobaltId,
       documentName: es.name,
@@ -976,6 +975,7 @@ function findScenes(document) {
             id: 10000 + document.flags.ddb.ddbId + tmpCount,
             parentId: document.flags.ddb.parentId,
             cobaltId: document.flags.ddb.cobaltId,
+            slug: document.flags.ddb.slug,
             documentName: document.name,
             sceneName: utils.titleString(title),
             contentChunkId: rowContentChunkId,
@@ -1001,6 +1001,7 @@ function findScenes(document) {
           parentId: document.flags.ddb.parentId,
           cobaltId: document.flags.ddb.cobaltId,
           contentChunkId: contentChunkId,
+          slug: document.flags.ddb.slug,
         };
         const journalEntry = generateJournalEntry(row, img.src);
         journals.push(journalEntry);
@@ -1057,6 +1058,7 @@ function findScenes(document) {
             id: 10000 + document.flags.ddb.ddbId + tmpCount,
             parentId: document.flags.ddb.parentId,
             cobaltId: document.flags.ddb.cobaltId,
+            slug: document.flags.ddb.slug,
             documentName: document.name,
             sceneName: utils.titleString(title),
             contentChunkId: (nextNode) ? nextNode.getAttribute("data-content-chunk-id") : undefined,
@@ -1077,6 +1079,7 @@ function findScenes(document) {
           parentId: document.flags.ddb.parentId,
           cobaltId: document.flags.ddb.cobaltId,
           contentChunkId: caption.getAttribute("data-content-chunk-id"),
+          slug: document.flags.ddb.slug,
         };
         const journalEntry = generateJournalEntry(row, img.src);
         journals.push(journalEntry);
@@ -1102,6 +1105,7 @@ function findScenes(document) {
         parentId: document.flags.ddb.parentId,
         cobaltId: document.flags.ddb.cobaltId,
         contentChunkId: node.getAttribute("data-content-chunk-id"),
+        slug: document.flags.ddb.slug,
       };
       const journalEntry = generateJournalEntry(row, node.src);
       if (!journalEntry.flags.ddb.duplicate) {
@@ -1133,6 +1137,7 @@ function findScenes(document) {
         documentName: document.name,
         sceneName: utils.titleString(document.name),
         contentChunkId: node.getAttribute("data-content-chunk-id"),
+        slug: document.flags.ddb.slug,
       };
       const journalEntry = generateJournalEntry(row, aNode.href.replace("ddb://image", "."));
       
@@ -1168,6 +1173,7 @@ function findScenes(document) {
       documentName: document.name,
       sceneName: utils.titleString(document.name),
       contentChunkId: node.parentElement.getAttribute("data-content-chunk-id"),
+      slug: document.flags.ddb.slug,
     };
     const journalEntry = generateJournalEntry(row, node.href.replace("ddb://image", "."));
 
