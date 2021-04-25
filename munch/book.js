@@ -648,6 +648,53 @@ function generateScene(row, img) {
     sceneAdjustments.find((s) => scene.name.includes(s.name));
 
   if (adjustment) {
+    if (adjustment.flags.ddb.notes) {
+      console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+      console.log(`Found notes!!!!!`)
+
+      console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+      adjustment.notes = [];
+
+      adjustment.flags.ddb.notes.forEach((note) => {
+        const noteJournal = generatedJournals.find((journal) =>
+          // journal.flags.ddb.slug == note.flags.slug &&
+          // journal.flags.ddb.ddbId == note.flags.ddbId &&
+          // journal.flags.ddb.parentId == note.flags.parentId &&
+          // journal.flags.ddb.cobaltId == note.flags.cobaltId &&
+          journal.flags.ddb.contentChunkId == note.flags.contentChunkId
+        );
+        if (noteJournal){
+          const prefix = note.label.trim().split(".")[0].split(" ")[0];
+          const icon = (isNaN(parseInt(prefix))) ?
+            "icons/svg/book.svg":
+            "modules/ddb-importer/icons/" + prefix.padStart(2, "0") + ".svg";
+
+          note.positions.forEach((position) => {
+            const noteId = getId(noteJournal, "Note")
+            const n = {
+              "_id": noteId,
+              "flags": {
+                "ddb": note.flags,
+                "importid": noteId,
+              },
+              "entryId": noteJournal._id,
+              "x": position.x,
+              "y": position.y,
+              "icon": icon,
+              "iconSize": 40,
+              "iconTint": "",
+              "text": "",
+              "fontFamily": "Signika",
+              "fontSize": 48,
+              "textAnchor": 1,
+              "textColor": ""
+            };
+            adjustment.notes.push(n);
+          })
+        }
+      });
+      // delete(adjustment.flags.ddb.notes);
+    }
     scene = _.merge(scene, adjustment);
   }
 
@@ -1073,11 +1120,11 @@ function rowGenerate(err, row) {
     console.log("PARSING: " + row.id + ": " + row.title);
   }
   let document = generateJournalChapterEntry(row);
+  generateNoteJournals(row);
   if (document.content) {
     let [tempScenes, sceneJournals, tmpReplaceLinks] = findScenes(document);
     replaceLinks = replaceLinks.concat(tmpReplaceLinks);
   }
-  generateNoteJournals(row);
 }
 
 
@@ -1096,9 +1143,13 @@ async function collectionFinished(err, count) {
   }
   try {
     console.log(`Processing ${count} entries...`);
-    generatedJournals = updateJournals(generatedJournals);
-    [generatedTables, generatedJournals] = fixUpTables(generatedTables, generatedJournals);
+    console.log("Looking for missing scenes...");
     [generatedJournals, generatedScenes] = generateMissingScenes(generatedJournals, generatedScenes);
+    console.log("Updating links...");
+    generatedJournals = updateJournals(generatedJournals);
+    console.log("Fixing up tables...");
+    [generatedTables, generatedJournals] = fixUpTables(generatedTables, generatedJournals);
+    console.log("Complete! Generating output files...")
     outputAdventure(config);
     outputJournals(generatedJournals, config);
     outputScenes(generatedScenes, config);
