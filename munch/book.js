@@ -604,6 +604,13 @@ function generateScene(row, img) {
 
   scene.name = row.sceneName;
   scene.navName = row.sceneName.split(":").pop().trim();
+
+  const journalMatch = generatedJournals.find((journal) => 
+    journal.name.includes(scene.navName) &&
+    !journal.flags.ddb.notes && !journal.flags.ddb.img && !journal.img
+  );
+  if (journalMatch) scene.journal = journalMatch._id;
+
   scene.img = img;
   scene.flags.ddb.documentName = row.documentName;
   scene.flags.ddb.ddbId = row.id;
@@ -678,19 +685,6 @@ function generateScene(row, img) {
   console.log(`Generated Scene ${scene.name}, (count ${sceneCount})`);
   return scene;
 }
-
-// function findSceneJournals(scenes, journals) {
-//   scenes.forEach((scene) => {
-//     const journalMatch = journals.find((journal) => {
-//       journal.name.includes(scene.navName);
-//     });
-
-//     scene.journal =
-  
-//   });
-  
-//   return scenes;
-// }
 
 function generateMissingScenes(journals, scenes) {
   let tmpCount = 0;
