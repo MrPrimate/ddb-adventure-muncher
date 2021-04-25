@@ -14,7 +14,7 @@ const sceneAdjuster = require("./scene-load.js");
 const noteHinter = require("./note-load.js");
 const enhance = require("./enhance.js");
 const parseTable = require("./vendor/parseTable.js");
-
+const replacer = require("./replacer.js");
 
 var journalSort = 1000;
 var folderSort = 4000;
@@ -28,12 +28,14 @@ var enhancedScenes = [];
 var downloadList = [];
 var tableMatched = [];
 
+let replaceLinks = [];
+
 var masterFolder;
 
-let chapters = [];
-let folders = [];
-let scenes = [];
-let tables = [];
+let generatedJournals = [];
+let generatedFolders = [];
+let generatedScenes = [];
+let generatedTables = [];
 
 var templateDir = path.join("..", "content", "templates");
 
@@ -48,21 +50,6 @@ function fetchLookups (config) {
   idTable = configure.getLookups();
   if (!idTable[config.run.bookCode]) idTable[config.run.bookCode] = [];
 }
-
-
-const COMPENDIUM_MAP = {
-  "skills": "skills",
-  "senses": "senses",
-  "conditions": "conditions",
-  "spells": "spells",
-  "magicitems": "items",
-  "weapons": "items",
-  "armor": "items",
-  "adventuring-gear": "items",
-  "monsters": "monsters",
-  "actions": "actions",
-  "weaponproperties": "weaponproperties",
-};
 
 
 function getId(document, docType) {
@@ -108,163 +95,8 @@ function getId(document, docType) {
 }
 
 
-function foundryCompendiumReplace(text) {
-  // replace the ddb:// entries with known compendium look ups if we have them
-  // ddb://spells
-  // ddb://magicitems || weapons || adventuring-gear || armor
-  // ddb://monsters
-  // skills
-  // senses
-  // conditions
-  // armor
-  // actions
-  // weaponproperties
 
-  const dom = new JSDOM(text);
-  text = dom.window.document.body.outerHTML;
-
-  for (const lookupKey in COMPENDIUM_MAP) {
-    const compendiumLinks = dom.window.document.querySelectorAll(`a[href*=\"ddb://${lookupKey}\/\"]`);
-    const lookupRegExp = new RegExp(`ddb:\/\/${lookupKey}\/([0-9]*)`);
-    compendiumLinks.forEach((node) => {
-      const lookupMatch = node.outerHTML.match(lookupRegExp);
-      const lookupValue = config.lookups[COMPENDIUM_MAP[lookupKey]];
-      if (lookupValue) {
-        const lookupEntry = lookupValue.find((e) => e.id == lookupMatch[1]);
-        if (lookupEntry) {
-          text = text.replace(node.outerHTML, `@Compendium[${lookupEntry.compendium}.${lookupEntry._id}]{${node.textContent}}`);
-        } else {
-          console.log(`NO Lookup Compendium Entry for ${node.outerHTML}`);
-        }
-      }
-    });
-  }
-
-  const ddbLinks = dom.window.document.querySelectorAll(`a[href*=\"ddb://compendium\/\"]`);
-  const bookSlugRegExp = new RegExp(`\"ddb:\/\/compendium\/(\\w+)(?:\/)?([\\w0-9\-._#+@/]*)\"`);
-
-  // text = text.replace(compendiumReg, "https://www.dndbeyond.com/sources/");
-  // 'ddb://compendium/idrotf/aurils',
-  // 'ddb://compendium/idrotf/doom',
-  ddbLinks.forEach((node) => {
-    const target = node.outerHTML;
-    const slugMatch = node.outerHTML.match(bookSlugRegExp);
-    if (slugMatch) {
-      // console.log(slugMatch);
-      node.setAttribute("href", `https://www.dndbeyond.com/sources/${slugMatch[1]}/${slugMatch[2]}`);
-      text = text.replace(target, node.outerHTML);
-    }
-  })
-
-  // vehicles - not yet handled
-  const compendiumLinks = dom.window.document.querySelectorAll(`a[href*=\"ddb://vehicles\/\"]`);
-  const lookupRegExp = new RegExp(`ddb:\/\/vehicles\/([0-9]*)`);
-  compendiumLinks.forEach((node) => {
-    const target = node.outerHTML;
-    const lookupMatch = node.outerHTML.match(lookupRegExp);
-    const lookupValue = config.lookups["vehicles"];
-    if (lookupMatch) {
-      const lookupEntry = lookupValue.find((e) => e.id == lookupMatch[1]);
-      if (lookupEntry) {
-        node.setAttribute("href", `https://www.dndbeyond.com${lookupEntry.url}`);
-        text = text.replace(target, node.outerHTML);
-      } else {
-        console.log(`NO Vehicle Lookup Entry for ${node.outerHTML}`);
-      }
-    } else {
-      console.log(`NO Vehicle Lookup Match for ${node.outerHTML}`);
-    }
-  });
-
-
-  // ddb://compendium/br (basic rule)
-  return text;
-}
-
-function moduleReplaceLinks(text, journals) {
-  const dom = new JSDOM(text);
-  const fragmentLinks = dom.window.document.querySelectorAll(`a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
-  text = dom.window.document.body.innerHTML;
-
-  const bookSlugRegExp = new RegExp(`ddb:\/\/compendium\/${config.run.bookCode}\/([\\w0-9\-._#+@/]*)`);
-
-  fragmentLinks.forEach((node) => {
-    const slugMatch = node.outerHTML.match(bookSlugRegExp);
-    if (slugMatch) {
-      // console.log(slugMatch);
-      const slug = slugMatch[1].replace(/\//g, "").split('#');
-      const refactoredSlug = (slug.length > 1) ? `${slug[0].toLowerCase()}#${slug[1]}` : slug[0].toLowerCase();
-      const journalEntry = journals.find((journal) => {
-        let check = journal.flags.ddb.slug === refactoredSlug;
-        if (!check && slug.length > 1) check = journal.flags.ddb.slug === slug[0].toLowerCase();
-        return check;
-      });
-      if (journalEntry) {
-        // const journalRegex = new RegExp(`${node.outerHTML}`, "g");
-        //text = text.replace(journalRegex, `@JournalEntry[${journalEntry.name}]{${node.textContent}}`);
-        text = text.replace(node.outerHTML, `@JournalEntry[${journalEntry.name}]{${node.textContent}}`);
-      } else {
-        console.log(`NO JOURNAL for ${node.outerHTML}`);
-      }
-    } else {
-      console.log(`NO SLUGS FOR ${node.outerHTML}`);
-    }
-  })
-
-  const headerLinks = dom.window.document.querySelectorAll("a[href^=\"#\"");
-  headerLinks.forEach((node) => {
-    text = text.replace(node.outerHTML, node.textContent);
-  });
-
-  return text;
-}
-
-function replaceImageLinks(text) {
-  let newEntries = [];
-  // e.g. href="ddb://compendium/mm" to https://www.dndbeyond.com/sources/mm
-  // e.g. href="ddb://compendium/this one to relevant compendium/folder
-  // e.g. href="ddb://image/idrotf/" to "./idrotf/
-  // ddb://compendium/idrotf/appendix-d-magic to it's own entry
-  //let match = /ddb:\/\/(?!spells)([a-zA-z0-9\.\/#-])"/g;
-  let match = /ddb:\/\/(?!vehicles|armor|actions|weaponproperties|compendium|image|spells|magicitems|monsters|skills|senses|conditions|weapons|adventuring-gear)([\w\d\.\/#-]+)+(?:"|')/gi
-  let matches = text.match(match);
-  if (matches) {
-    console.log("Unknown DDB Match");
-    console.log(matches);
-  }
-
-  // todo generate a journal entry for each of these?
-  // replace the start with adventure:// - this will be changed wither by adventure importer or an update in DDB
-  const reImage = new RegExp(`src="\.\/${config.run.bookCode}\/`, "g");
-  // text = text.replace(reImage, `src="adventure://assets/`);
-  text = text.replace(reImage, `src="assets/`);
-
-  // "ddb://image/idrotf/"
-  // <a class="ddb-lightbox-outer compendium-image-center"  href="ddb://image/idrotf/00-000.intro-splash.jpg" data-lightbox="1" data-title="">
-  // <img src="./idrotf/00-000.intro-splash.jpg" class="ddb-lightbox-inner" style="width: 650px;"></a>
-  const reImageLink = new RegExp(`href="ddb:\/\/image\/${config.run.bookCode}\/`, "g");
-  // text = text.replace(reImageLink, `href="adventure://assets/`);
-  text = text.replace(reImageLink, `href="assets/`);
-  return [text, newEntries];
-}
-
-
-function replaceImgLinksForJournal(text) {
-  const reImage = new RegExp(`^\.\/${config.run.bookCode}\/`, "g");
-  text = text.replace(reImage, `assets/`);
-  const reImage2 = new RegExp(`^${config.run.bookCode}\/`, "g");
-  text = text.replace(reImage2, `assets/`);
-
-  return text;
-}
-
-function replaceRollLinks(text) {
-  const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*d*\d*)?)(?:[\s.,])/, "g");
-  text = text.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").replace(diceRegex, "[[/r $1]]");
-  return text;
-}
-
-function findDiceColumns(table, headings) {
+function findDiceColumns(table) {
   let result = [];
   if (table.tHead) {
     const headings = parseTable.getHeadings(table);
@@ -301,9 +133,9 @@ function fixUpTables(tables, journals) {
   console.log("Updating table references")
   tables.forEach((table) => {
     table.results.forEach((result) => {
-      result.text = moduleReplaceLinks(result.text, journals);
-      result.text = foundryCompendiumReplace(result.text);
-      result.text = replaceRollLinks(result.text);
+      result.text = replacer.moduleReplaceLinks(result.text, journals, config);
+      result.text = replacer.foundryCompendiumReplace(result.text, config);
+      result.text = replacer.replaceRollLinks(result.text);
       result.text = JSDOM.fragment(result.text).textContent;
     })
   });
@@ -440,7 +272,7 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
     });
 
     console.log(`Generated table entry ${table.name}`);
-    tables.push(table);
+    generatedTables.push(table);
     tmpCount++;
 
   });
@@ -491,52 +323,33 @@ function generateTable(row, journal, html) {
 }
 
 function updateJournals(documents) {
-  let newEntries = [];
-  let scenes = [];
-  let replaceLinks = [];
-  documents.forEach((entry) => {
-    if (entry.content) {
-      let sceneJournals = [];
-      let tempScenes = [];
-      let tmpReplaceLinks = [];
-      // we only generate scenes for top level sections, these have the snippets
-      // contained within at this point, so we get duplicates otherwise
-      if (entry.flags.ddb.cobaltId) [tempScenes, sceneJournals, tmpReplaceLinks] = findScenes(entry);
-      replaceLinks = replaceLinks.concat(tmpReplaceLinks);
-      newEntries = newEntries.concat(sceneJournals);
-      scenes = scenes.concat(tempScenes);
-    }
-  });
   // console.log(replaceLinks);
-
-  let replaceEntries = [];
-  // console.log(replaceLinks);
-  documents = documents.concat(newEntries).map((doc) => {
-    let replaceJournals = [];
+  documents = documents.map((doc) => {
+    console.log("***********************");
+    console.log(`Updating: ${doc.name}`);
     if (doc.content) {
-      console.log(`Replacing content for ${doc.name}`);
+      doc.content = doc.content.replace(/\s+/g, " ");
+      // console.log(doc.content);
+      console.log("---------------")
+      console.log(`Replacing generate link content for ${doc.name}`);
       replaceLinks.forEach((link) => {
+        // console.log(link);
+        // console.log(doc.content.includes(link.html));
         doc.content = doc.content.replace(link.html, link.ref);
       });
-      [doc.content, replaceJournals] = replaceImageLinks(doc.content);
-      replaceEntries = replaceEntries.concat(replaceJournals);
-    }
-    return doc;
-  })
-
-  documents = documents.concat(replaceEntries).map((doc) => {
-    if (doc.content) {
+      console.log(`Replacing image links for ${doc.name}`);
+      doc.content = replacer.replaceImageLinks(doc.content, config);
       console.log(`Linking module content for ${doc.name}`);
-      doc.content = moduleReplaceLinks(doc.content, documents);
+      doc.content = replacer.moduleReplaceLinks(doc.content, documents, config);
       console.log(`Linking ddb-importer compendium content for ${doc.name}`);
-      doc.content = foundryCompendiumReplace(doc.content);
+      doc.content = replacer.foundryCompendiumReplace(doc.content, config);
       console.log(`Generating dice rolls for ${doc.name}`);
-      doc.content = replaceRollLinks(doc.content);
+      doc.content = replacer.replaceRollLinks(doc.content);
     }
     return doc;
   })
 
-  return [documents, scenes];
+  return documents;
 }
 
 function generateFolder(type, row, baseFolder=false, img=false, note=false) {
@@ -551,7 +364,7 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
     folder.parent = masterFolder[type]._id;
   }
   if (note) {
-    const parent = folders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+    const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
     folder.name = `[Scene Notes] ${row.sceneName ? row.sceneName : row.title}`;
     if (parent) {
       folder.parent = `${parent._id}`;
@@ -560,27 +373,23 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
     folder.flags.ddb.parentId = row.parentId;
   }
   else if (img) {
-    folder.name = `[Handouts] ${folder.name}`;
-    let parent;
-    if (row.parentId) {
-      parent = folders.find((f) => f.flags.ddb.parentId == row.parentId && f.type == type && !f.flags.ddb.img);
-    } else if (row.cobaltId) {
-      parent = folders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img);
-      folder.sort = 1000000;
-    }
+    const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+    folder.name = `[Handouts] ${row.sceneName ? row.sceneName : row.title}`;
+    folder.sort = 1000000;
     if (parent) {
       folder.parent = `${parent._id}`;
-      folder.name = `[Handouts] ${parent.name}`;
+      if (!row.sceneName) folder.name = `[Handouts] ${parent.name }`;
     }
+    folder.flags.ddb.parentId = row.parentId;
   } else if (row.parentId) {
-    const parent = folders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img);
+    const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img);
     if (parent) {
       folder.parent = `${parent._id}`;
       folder.name = `[Sections] ${parent.name}`;
     }
     folder.flags.ddb.parentId = row.parentId;
   } else if(!baseFolder) {
-    const parent = folders.find((f) => f.flags.ddb.cobaltId == -1 && f.type == type && !f.flags.ddb.img);
+    const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == -1 && f.type == type && !f.flags.ddb.img);
     if (parent) folder.parent = `${parent._id}`;
   }
   if (row.cobaltId) folder.flags.ddb.cobaltId = row.cobaltId;
@@ -592,7 +401,7 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
 
   folder._id = getId(folder, "Folder");
   folder.flags.importid = folder._id;
-  folders.push(folder);
+  generatedFolders.push(folder);
   if (type === "JournalEntry" && !baseFolder) {
     // lets generate a Scene Folder at the same time
     // we do this so the scene folder order matches the same as the journals as some
@@ -611,41 +420,29 @@ function getFolderId(row, type, img, note) {
 
   if (note) {
     if (row.cobaltId) {
-      folder = folders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+      folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
       if (!folder) folder = generateFolder(type, row, false, img, note);
       folderId = folder._id;
       // return masterFolder[type]._id;
     } else if (row.parentId) {
-      folder = folders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.parentId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
+      folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.parentId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
       if (!folder) folder = generateFolder(type, row, false, img, note);
       folderId = folder._id;
     } else {
-      folder = folders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
+      folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
       if (folder) folderId = folder._id;
     }
-    return folderId;
-  }
-  if (img) {
-    if (row.cobaltId) {
-      folder = folders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && f.flags.ddb.img);
-    } else {
-      folder = folders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img);
-    }
-    if (!folder) {
-      folder = generateFolder(type, row, false, img);
-    }
-    folderId = folder._id;
   } else if (row.cobaltId) {
-    folder = folders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+    folder = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
     if (!folder) folder = generateFolder(type, row, false, img, note);
     folderId = folder._id;
     // return masterFolder[type]._id;
   } else if (row.parentId) {
-    folder = folders.find((f) => f.flags.ddb.parentId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
+    folder = generatedFolders.find((f) => f.flags.ddb.parentId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
     if (!folder) folder = generateFolder(type, row, false, img, note);
     folderId = folder._id;
   } else {
-    folder = folders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
+    folder = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
     if (folder) folderId = folder._id;
   }
   return folderId;
@@ -654,7 +451,7 @@ function getFolderId(row, type, img, note) {
 function appendJournalToChapter(row) {
   if (row.parentId) {
     console.log(`${row.title} ${row.parentId} search...`)
-    chapters.forEach((journal) => {
+    generatedJournals.forEach((journal) => {
       if (journal.flags.ddb.cobaltId == row.parentId) {
         journal.content += row.html;
       }
@@ -678,7 +475,7 @@ function generateJournalEntry(row, img=null, note=false) {
   if (row.cobaltId) journal.flags.ddb.cobaltId = row.cobaltId;
   let imgState = (img !== null && img !== "") ? true : false;
   if (imgState) {
-    journal.img = replaceImgLinksForJournal(img);
+    journal.img = replacer.replaceImgLinksForJournal(img, config);
     if (journalImgMatched.includes(journal.img)) {
       journal.flags.ddb.duplicate = true;
     } else {
@@ -696,10 +493,11 @@ function generateJournalEntry(row, img=null, note=false) {
     console.log(`Generated Handout ${journal.name}, (count ${journalHandoutCount})`);
   } else {
     const dom = new JSDOM(row.html);
-    journal.content = dom.window.document.body.innerHTML.replace(/  /g, " ");
+    journal.content = dom.window.document.body.innerHTML.replace(/\s+/g, " ");
     generateTable(row, journal, journal.content);
   }
   if (row.parentId) journal.flags.ddb.parentId = row.parentId;
+  if (!row.ddbId) row.ddbId = row.id;
   journal.folder = getFolderId(row, "JournalEntry", imgState, note);
   // console.log(row);
   // console.log(journal);
@@ -709,7 +507,7 @@ function generateJournalEntry(row, img=null, note=false) {
   if (!imgState && !note) {
     appendJournalToChapter(row);
   }
-  if (!imgState) chapters.push(journal);
+  if (!journal.flags.ddb.duplicate) generatedJournals.push(journal);
   // console.log(`${journal._id} ${journal.name}`);
   return journal;
 }
@@ -874,7 +672,7 @@ function generateScene(row, img) {
     }
   }
 
-  scenes.push(scene);
+  generatedScenes.push(scene);
   sceneImgMatched.push(scene.img);
   const sceneCount = sceneImgMatched.filter(img => img === scene.img).length;
   console.log(`Generated Scene ${scene.name}, (count ${sceneCount})`);
@@ -921,13 +719,12 @@ function generateMissingScenes(journals, scenes) {
 function findScenes(document) {
   let scenes = [];
   let journals = [];
+  let linkReplaces = [];
   let tmpCount = 0;
   let unknownHandoutCount = 1;
   // const frag = JSDOM.fragment(document.content);
   const frag = new JSDOM(document.content);
   document.content = frag.window.document.body.innerHTML;
-
-  let linkReplaces = [];
 
   console.log(`Finding Scenes in ${document.name}`);
   if (config.debug) {
@@ -1192,7 +989,7 @@ function findScenes(document) {
 
 
 function generateJournalChapterEntry(row, img=null) {
-  const existingJournal = chapters.find((f) => f.flags.ddb.ddbId == row.id);
+  const existingJournal = generatedJournals.find((f) => f.flags.ddb.ddbId == row.id);
   if (!existingJournal){
     const journal = generateJournalEntry(row, img);
     return journal;
@@ -1281,7 +1078,11 @@ function rowGenerate(err, row) {
   if (config.debug) {
     console.log("PARSING: " + row.id + ": " + row.title);
   }
-  generateJournalChapterEntry(row);
+  let document = generateJournalChapterEntry(row);
+  if (document.content) {
+    let [tempScenes, sceneJournals, tmpReplaceLinks] = findScenes(document);
+    replaceLinks = replaceLinks.concat(tmpReplaceLinks);
+  }
   generateNoteJournals(row);
 }
 
@@ -1301,15 +1102,15 @@ async function collectionFinished(err, count) {
   }
   try {
     console.log(`Processing ${count} entries...`);
-    [chapters, scenes] = updateJournals(chapters);
-    [tables, chapters] = fixUpTables(tables, chapters);
-    [chapters, scenes] = generateMissingScenes(chapters, scenes);
+    generatedJournals = updateJournals(generatedJournals);
+    [generatedTables, generatedJournals] = fixUpTables(generatedTables, generatedJournals);
+    [generatedJournals, generatedScenes] = generateMissingScenes(generatedJournals, generatedScenes);
     outputAdventure(config);
-    outputJournals(chapters, config);
-    outputScenes(scenes, config);
-    outputTables(tables, config);
-    const allContent = chapters.concat(scenes, tables);
-    outputFolders(folders, config, allContent);
+    outputJournals(generatedJournals, config);
+    outputScenes(generatedScenes, config);
+    outputTables(generatedTables, config);
+    const allContent = generatedJournals.concat(generatedScenes, generatedTables);
+    outputFolders(generatedFolders, config, allContent);
     await downloadEnhancements(downloadList);
     generateZipFile(config);
   } catch (err) {
@@ -1334,15 +1135,16 @@ async function collectionFinished(err, count) {
 async function setConfig(conf) {
   config = conf;
   masterFolder = undefined;
-  chapters = [];
-  folders = [];
-  scenes = [];
-  tables = [];
+  generatedJournals = [];
+  generatedFolders = [];
+  generatedScenes = [];
+  generatedTables = [];
   imageFinderSceneResults = [];
   imageFinderJournalResults = [];
   sceneImgMatched = [];
   journalImgMatched = [];
   tableMatched = [];
+  replaceLinks = [];
   fetchLookups(config);
   sceneAdjustments = sceneAdjuster.getSceneAdjustments(config.run.bookCode);
   noteHints = noteHinter.getNoteHints(config.run.bookCode);
