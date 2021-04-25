@@ -10,11 +10,11 @@ Please do not share this link with other people.
 
 ## Alpha Download Links
 
-* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.14-linux-x86_64.AppImage)
-* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.14-linux-x86_64.rpm)
-* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.14-linux-amd64.deb)
-* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.14-win.exe)
-* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.14-mac.dmg)
+* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.15-linux-x86_64.AppImage)
+* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.15-linux-x86_64.rpm)
+* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.15-linux-amd64.deb)
+* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.15-win.exe)
+* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.15-mac.dmg)
 
 ## Importing the book
 
@@ -77,9 +77,12 @@ Examples:
 
 ## Current Scene Support
 
-Books with Aligned, Walled, and Lit scenes:
+Books with Aligned, Walled, Lit and Note Pinned scenes:
 
 * Lost Mines of Phandelver
+
+Books with Aligned, Walled, and Lit scenes:
+
 * Curse of Strahd
 
 Books with partial adjustments:

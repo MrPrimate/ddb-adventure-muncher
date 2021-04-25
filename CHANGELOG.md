@@ -4,7 +4,7 @@
 * Note: note generation requires hints to be added to an adventure.
 * Notes are not currently linked to scenes.
 * Scenes now have a journal entry associated with them if a possible match is found.
-* LMOP now imports Notes for placement on Scenes.
+* LMOP now imports Notes and has them placed on the Scenes.
 
 # 0.0.14
 
