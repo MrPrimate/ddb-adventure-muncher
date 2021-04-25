@@ -148,6 +148,7 @@ function importScene(conf, sceneFile) {
         ddbId: inData.flags.ddb.ddbId,
         cobaltId: inData.flags.ddb.cobaltId,
         contentChunkId: inData.flags.ddb.contentChunkId,
+        notes: inData.flags.ddb.notes,
       }
     };
   

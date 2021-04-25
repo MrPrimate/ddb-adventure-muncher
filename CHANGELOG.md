@@ -1,3 +1,11 @@
+# 0.0.15
+
+* Major refactor for Scene Journal Note generation. If submitting map enhancements you must now use 0.0.15 of `ddb-adventure-muncher` and v0.6.32 of `ddb-importer`.
+* Note: note generation requires hints to be added to an adventure.
+* Notes are not currently linked to scenes.
+* Scenes now have a journal entry associated with them if a possible match is found.
+* LMOP now imports Notes for placement on Scenes.
+
 # 0.0.14
 
 * CoS now has full alignments, walls and lights. (Thanks @Zac!)
