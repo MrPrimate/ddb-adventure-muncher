@@ -1,3 +1,7 @@
+# 0.0.16
+
+* App will now generate adventures again.
+
 # 0.0.15
 
 * Major refactor for Scene Journal Note generation. If submitting map enhancements you must now use 0.0.15 of `ddb-adventure-muncher` and v0.6.32 of `ddb-importer`.

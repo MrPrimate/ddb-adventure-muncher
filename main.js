@@ -179,7 +179,7 @@ function generateAdventure(args) {
       if (!isDevelopment) {
         book.setTemplateDir(path.join(process.resourcesPath, "content", "templates"));
         scenes.setSceneDir(path.join(process.resourcesPath, "content", "scene_info"));
-        notes.setSceneDir(path.join(process.resourcesPath, "content", "note_info"));
+        notes.setNotesDir(path.join(process.resourcesPath, "content", "note_info"));
       }
       book.setConfig(config).then(() => {
         utils.directoryReset(config);
