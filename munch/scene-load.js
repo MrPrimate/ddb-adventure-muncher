@@ -70,6 +70,9 @@ function importScene(conf, sceneFile) {
     console.log("What book is this from? Exiting!");
     return;
   }
+  if (!idTable[bookCode]) {
+    console.log(`Please generate the adventure ${bookCode} before attempting scene import.`);
+  }
 
   let scenesData = getSceneAdjustments(bookCode);
 
