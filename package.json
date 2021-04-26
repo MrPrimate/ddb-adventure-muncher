@@ -1,6 +1,6 @@
 {
   "name": "ddb-adventure-muncher",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "D&D Beyond Adventure Muncher for Foundry Virtual Tabletop",
   "repository": "https://github.com/MrPrimate/ddb-adventure-muncher",
   "main": "main.js",
@@ -30,6 +30,13 @@
       {
         "from": "content/scene_info",
         "to": "resources/content/scene_info",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "content/note_info",
+        "to": "resources/content/note_info",
         "filter": [
           "**/*"
         ]

@@ -2,7 +2,7 @@ const utils = require("./utils.js");
 const fs = require("fs");
 const path = require("path");
 
-var notesDir = path.join("..", "content", "notes_info");
+var notesDir = path.join("..", "content", "note_info");
 
 function setNotesDir (dir) {
   notesDir = dir;
