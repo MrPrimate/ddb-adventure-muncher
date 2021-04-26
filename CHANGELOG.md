@@ -1,3 +1,8 @@
+# 0.0.17
+
+* LMOP Scene Note generation _actually_ included in build.
+* More OotA map tweaks.
+
 # 0.0.16
 
 * App will now generate adventures again.
