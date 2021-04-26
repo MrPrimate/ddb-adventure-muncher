@@ -1,10 +1,21 @@
-# DDB Adventure Muncher Alpha
+# DDB Adventure Muncher Beta
 
-Please do not share this link with other people.
+This is a Beta release for Patreon Supporters. It will be available more widely soon, until then, please don't share this link.
+
+## How?
+
+The adventure muncher checks with DDB to see what adventures you own and presents a list.
+
+When you select an adventure it will download the data and attempt to extract relevant journals, scenes, and tables for foundry.
+
+It bundles these into a zip file for importing.
+
+All the adventure generation and calls to DDB are done locally. A single call to my DDB proxy is made when you run the proxy with your cobalt token to authenticate to DDB and see if you own the content. If it does it provides some enhancement data to improve things like quality of maps. If you wish to disable this call, add the following setting to your `config.json` file: `"disableEnhancedDownloads": true`.
+
 
 ## How does this work?
 
-* You will need to import monsters, spells, and items using DDB Importer first.
+* You will need to import monsters, spells, and items using 9DDB Importer](https://foundryvtt.com/packages/ddb-importer/) first.
 * When you are happy with the data in your compendiums, you can use the Adventure Config Exporter button to download a config mapping. You can find this in the Experimental tab of the muncher screen if your supporter tier can access the alpha and are using v0.6.25+ of DDB Importer.
 * This file contains a cobalt cookie value and mappings to the imported compendium entries. The adventure muncher will use these to construct links to the right spells/items etc in Journal entries.
 
@@ -72,7 +83,7 @@ Examples:
 ## Known Issues
 
 * Most of the Handouts are un-named because it's hard to parse names - I'll be collecting naming suggestions at some point.
-* There are no small entries for pins on the map right now.
+* There are limited entries for pins on the map right now.
 * There are no actors placed on the scene right now.
 
 ## Current Scene Support
@@ -99,6 +110,7 @@ If you wish to help improve the scene wall and lighting information, see the bel
 ### Walls and Lighting information
 
 * If you wish to add walls/lighting information you can turn on a setting in Foundry to allow you to support data from a supported map. (VTTA or ddb-adventure-muncher).
+* You need to be using v0.6.32 of ddb-importer.
 * Open the Chrome Developer Console (F12) and run `game.settings.set("ddb-importer", "allow-scene-download", true)`
 * Now when you right click on a scene navigation button you will get the option to download the associated data.
 * Upload this to the #scene-adjustments channel on Discord with a description of your changes.
@@ -116,6 +128,3 @@ I will be starting to collect this information in a shared google sheet in the c
 
 [Icons by "Chanut is Industries"](https://dribbble.com/Chanut-is) and licensed under [CC Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/).
 
-## How?
-
-* All the adventure generation and calls to DDB are done locally. A single call to my DDB proxy is made when you run the proxy with your cobalt token to authenticate to DDB and see if you own the content. If it does it provides some enhancement data to improve things like quality of maps. If you wish to disable this call, add the following setting to your `config.json` file: `"disableEnhancedDownloads": true`.
