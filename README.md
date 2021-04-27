@@ -98,7 +98,9 @@ Books with Aligned, Walled, and Lit scenes:
 
 Books with just notes:
 
+* Acquisitions Incorporated
 * Princes of the Apocalypse
+* Against the Giants
 
 Books with partial adjustments:
 

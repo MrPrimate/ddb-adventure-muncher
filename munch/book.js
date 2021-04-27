@@ -66,8 +66,11 @@ function getId(document, docType) {
     const chunkCheck = (contentChunkId) ? 
       contentChunkId == r.contentChunkId :
       true;
+    const sceneNotes = (document.flags.ddb.note) ? 
+      document.name === r.name:
+      true;
 
-    return basicCheck && chunkCheck;
+    return basicCheck && chunkCheck && sceneNotes;
   });
   
   if (existingId) {
@@ -365,10 +368,10 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
   }
   if (note) {
     const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
-    folder.name = `[Scene Notes] ${row.sceneName ? row.sceneName : row.title}`;
+    folder.name = `[Pins] ${row.sceneName ? row.sceneName : row.title}`;
     if (parent) {
       folder.parent = `${parent._id}`;
-      if (!row.sceneName) folder.name = `[Scene Notes] ${parent.name }`;
+      if (!row.sceneName) folder.name = `[Pins] ${parent.name }`;
     }
     folder.flags.ddb.parentId = row.parentId;
   }
@@ -425,11 +428,11 @@ function getFolderId(row, type, img, note) {
       folderId = folder._id;
       // return masterFolder[type]._id;
     } else if (row.parentId) {
-      folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.parentId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
+      folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.parentId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note && f.name.includes(row.sceneName));
       if (!folder) folder = generateFolder(type, row, false, img, note);
       folderId = folder._id;
     } else {
-      folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
+      folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note && f.name.includes(row.sceneName));
       if (folder) folderId = folder._id;
     }
   } else if (row.cobaltId) {

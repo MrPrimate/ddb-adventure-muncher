@@ -1,0 +1,82 @@
+[{
+  "ddbId": 4,
+  "cobaltId": null,
+  "parentId": 389,
+  "splitTag": "h4",
+  "slug": "against-the-giants#SteadingoftheHillGiantChief",
+  "tagIdFirst": "1FrontGateandFoyer",
+  "contentChunkIdStart": "c0bfdbcc-0717-416c-b6b0-d76cc940e042",
+  "tagIdLast": "DungeonLevelGeneralFeatures",
+  "contentChunkIdStop": "9f33fc93-4842-4e7e-8ff3-0974f9e88bb6",
+  "sceneName": "Hill Giant Stronghold (Upper)"
+},{
+  "ddbId": 4,
+  "cobaltId": null,
+  "parentId": 389,
+  "splitTag": "h4",
+  "slug": "against-the-giants#SteadingoftheHillGiantChief",
+  "tagIdFirst": "1MarshalingArea",
+  "contentChunkIdStart": "d5847a2e-dfa1-4135-a2ea-75e862c2d93e",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Hill Giant Stronghold (Dungeon)"
+},{
+  "ddbId": 5,
+  "cobaltId": null,
+  "parentId": 389,
+  "splitTag": "h4",
+  "slug": "against-the-giants#TheGlacialRiftoftheFrostGiantJarl",
+  "tagIdFirst": "1GuardroomIceCavern",
+  "contentChunkIdStart": "ce5e2ba2-014f-4a72-9f81-db51d46aff7a",
+  "tagIdLast": "LowerLevelGeneralFeatures",
+  "contentChunkIdStop": "2b631d75-203e-4e19-ab28-aea0f6ce17a7",
+  "sceneName": "Frost Giant Stronghold (Upper)"
+},{
+  "ddbId": 5,
+  "cobaltId": null,
+  "parentId": 389,
+  "splitTag": "h4",
+  "slug": "against-the-giants#TheGlacialRiftoftheFrostGiantJarl",
+  "tagIdFirst": "1GrandEntryCavern",
+  "contentChunkIdStart": "ca6b4c41-3c0d-4827-abac-7eb8f8807d5e",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Frost Giant Stronghold (Lower)"
+},{
+  "ddbId": 6,
+  "cobaltId": null,
+  "parentId": 389,
+  "splitTag": "h4",
+  "slug": "against-the-giants#HalloftheFireGiantKing",
+  "tagIdFirst": "1EntryPassage",
+  "contentChunkIdStart": "7cff75e0-20af-4d6b-bba5-a26f3f808ef9",
+  "tagIdLast": "SecondLevelGeneralFeatures",
+  "contentChunkIdStop": "4fdbc6d4-313a-43a6-8cbf-23f0f279714c",
+  "sceneName": "Hall of the Fire Giant King (Entrance)"
+},{
+  "ddbId": 6,
+  "cobaltId": null,
+  "parentId": 389,
+  "splitTag": "h4",
+  "slug": "against-the-giants#HalloftheFireGiantKing",
+  "tagIdFirst": "1HalloftheDead",
+  "contentChunkIdStart": "d7d946a6-b8fa-4bf9-90d6-3280f0f6c690",
+  "tagIdLast": "ThirdLevelGeneralFeatures",
+  "contentChunkIdStop": "23330301-642a-48a5-ab56-dfc3587145c8",
+  "sceneName": "Hall of the Fire Giant King (Second)"
+},{
+  "ddbId": 6,
+  "cobaltId": null,
+  "parentId": 389,
+  "splitTag": "h4",
+  "slug": "against-the-giants#HalloftheFireGiantKing",
+  "tagIdFirst": "1Cavern",
+  "contentChunkIdStart": "34a8192c-1735-4905-ad33-27fcaf88cc17",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Hall of the Fire Giant King (Third)"
+}
+]
+
+
+
