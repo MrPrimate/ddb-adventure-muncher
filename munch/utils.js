@@ -189,8 +189,8 @@ const SKIPPING_WORDS = [
   "the", "of", "at", "it", "a,"
 ];
 function titleString (text) {
-  const prefixSplit = text.replace("\r\n", " ").split(":");
-  const words = (prefixSplit.length > 1) ? prefixSplit[1].trim().split(" ") : text.split(" ");
+  const prefixSplit = text.replace("\r\n", " ").trim().split(":");
+  const words = (prefixSplit.length > 1) ? prefixSplit[1].trim().split(" ") : text.trim().split(" ");
 
   for (let i = 0; i < words.length; i++) {
     if (i == 0 || !SKIPPING_WORDS.includes(words[i])) {

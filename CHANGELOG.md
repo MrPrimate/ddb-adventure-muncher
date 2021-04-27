@@ -1,6 +1,7 @@
 # 0.0.18
 
 * Notes generation for: PotE
+* TcoE: Failed to complete parse
 
 # 0.0.17
 
