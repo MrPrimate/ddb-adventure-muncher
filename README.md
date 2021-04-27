@@ -96,6 +96,10 @@ Books with Aligned, Walled, and Lit scenes:
 
 * Curse of Strahd
 
+Books with just notes:
+
+* Princes of the Apocalypse
+
 Books with partial adjustments:
 
 * Icewind Dale: Rime of the Frost Maiden

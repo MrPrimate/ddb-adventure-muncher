@@ -1,3 +1,7 @@
+# 0.0.18
+
+* Notes generation for: PotE
+
 # 0.0.17
 
 * LMOP Scene Note generation _actually_ included in build.
