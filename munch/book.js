@@ -494,7 +494,7 @@ function generateJournalEntry(row, img=null, note=false) {
   } else {
     const dom = new JSDOM(row.html);
     journal.content = dom.window.document.body.innerHTML.replace(/\s+/g, " ");
-    generateTable(row, journal, journal.content);
+    if (!note) generateTable(row, journal, journal.content);
   }
   if (row.parentId) journal.flags.ddb.parentId = row.parentId;
   if (!row.ddbId) row.ddbId = row.id;
@@ -664,7 +664,14 @@ function generateScene(row, img) {
           journal.flags.ddb.contentChunkId == note.flags.contentChunkId
         );
         if (noteJournal){
-          const prefix = note.label.trim().split(".")[0].split(" ")[0];
+          let prefix = note.label.trim().split(".")[0].split(" ")[0];
+          // some notes start with letter e.g. S1.
+          // if there is no number match then we will attempt to regex it out
+          if (isNaN(parseInt(prefix))) {
+            const numMatch = prefix.match(/\d+/);
+            if (numMatch) prefix = numMatch[0];
+          }
+
           const icon = (isNaN(parseInt(prefix))) ?
             "icons/svg/book.svg":
             "modules/ddb-importer/icons/" + prefix.padStart(2, "0") + ".svg";
