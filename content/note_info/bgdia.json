@@ -1,13 +1,25 @@
 [{
-  "ddbId": 24,
+  "ddbId": 13,
   "cobaltId": null,
-  "parentId": 710,
+  "parentId": 726,
   "splitTag": "h4",
-  "slug": "a-tale-of-two-cities#TavernLocations1",
+  "slug": "a-tale-of-two-cities#ElfsongTavern",
   "tagIdFirst": "E1Taproom",
   "contentChunkIdStart": "7638e279-3839-43c8-9451-76a0644a4a28",
-  "tagIdLast": "",
-  "contentChunkIdStop": "EOF",
+  "tagIdLast": "DealingwithTarina",
+  "contentChunkIdStop": "b9e0a3cf-c018-4de8-b64e-823490aef57a",
   "sceneName": "Elfsong Tavern"
+},
+{
+  "ddbId": 14,
+  "cobaltId": null,
+  "parentId": 726,
+  "splitTag": "h4",
+  "slug": "a-tale-of-two-cities#DungeonoftheDeadThree",
+  "tagIdFirst": "D1Courtyard",
+  "contentChunkIdStart": "a783f1ef-2d22-426a-834e-b077e089b77a",
+  "tagIdLast": "SurpriseDragonCultists",
+  "contentChunkIdStop": "368ae161-6f2d-43c9-af78-bb6595ff38a5",
+  "sceneName": "Dungeon of the Dead Three"
 }
 ]
