@@ -563,6 +563,7 @@ function generateNoteJournals(row) {
     let html = "";
     let noteTitle = keyChunk.textContent;
     let keyChunkId = hint.contentChunkIdStart;
+    let idTagStop = hint.contentChunkIdStop === "IDSTOP";
 
     while (true) {
       tmpCount++;
@@ -570,7 +571,8 @@ function generateNoteJournals(row) {
 
       const chunkId = keyChunk ? keyChunk.getAttribute("data-content-chunk-id") : undefined;
       const tagMatch = keyChunk ? keyChunk.tagName.toUpperCase() === hint.splitTag.toUpperCase() : false;
-      const stopChunk = keyChunk === null || chunkId === hint.contentChunkIdStop;
+      const idStop = idTagStop && keyChunk.getAttribute("id") === hint.tagIdLast;
+      const stopChunk = keyChunk === null || chunkId === hint.contentChunkIdStop || idStop;
 
       // if we have reached the same tag type or last chunk generate a journal
       if (tagMatch || stopChunk) {
