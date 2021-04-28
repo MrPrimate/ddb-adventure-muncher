@@ -1,6 +1,6 @@
 # 0.0.18
 
-* Notes generation for: PotE, AE, AtG
+* Notes generation for: PotE, AE, AtG, BGDiA
 * TcoE: Failed to complete parse
 
 # 0.0.17

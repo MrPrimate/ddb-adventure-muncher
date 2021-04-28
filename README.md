@@ -101,6 +101,7 @@ Books with just notes:
 * Acquisitions Incorporated
 * Princes of the Apocalypse
 * Against the Giants
+* Baldur's Gate: Descent into Avernus
 
 Books with partial adjustments:
 
