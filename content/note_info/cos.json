@@ -1,7 +1,7 @@
 [{
-  "ddbId": 24,
+  "ddbId": 16,
   "cobaltId": null,
-  "parentId": 710,
+  "parentId": 351,
   "splitTag": "h3",
   "slug": "the-lands-of-barovia#AreasofBarovia",
   "tagIdFirst": "AOldSvalichRoad",
@@ -9,7 +9,30 @@
   "tagIdLast": "",
   "contentChunkIdStop": "EOF",
   "sceneName": "Areas of Barovia"
+},{
+  "ddbId": 19,
+  "cobaltId": null,
+  "parentId": 352,
+  "splitTag": "h3",
+  "slug": "the-village-of-barovia#AreasoftheVillage",
+  "tagIdFirst": "E1BildrathsMercantile",
+  "contentChunkIdStart": "36f71aa2-9fdd-4dea-9868-d6920c0400c4",
+  "tagIdLast": "SpecialEvents",
+  "contentChunkIdStop": "8335caeb-2fd1-4403-92a0-888c364a2acd",
+  "sceneName": "Village of Barovia"
+},{
+  "ddbId": 19,
+  "cobaltId": null,
+  "parentId": 352,
+  "splitTag": "h4",
+  "slug": "the-village-of-barovia#AreasoftheVillage",
+  "tagIdFirst": "E5aHall",
+  "contentChunkIdStart": "13f090c9-8233-447e-9461-e4a283593984",
+  "tagIdLast": "SpecialEvents",
+  "contentChunkIdStop": "8335caeb-2fd1-4403-92a0-888c364a2acd",
+  "sceneName": "Church"
 }
+
 ]
 
 
