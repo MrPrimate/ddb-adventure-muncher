@@ -102,6 +102,7 @@ Books with just notes:
 * Princes of the Apocalypse
 * Against the Giants
 * Baldur's Gate: Descent into Avernus
+* Candlekeep Mysteries
 
 Books with partial adjustments:
 

@@ -185,6 +185,247 @@
   "tagIdLast": "",
   "contentChunkIdStop": "EOF",
   "sceneName": "The Firefly Cellar"
+},{
+  "ddbId": 46,
+  "cobaltId": null,
+  "parentId": 1180,
+  "splitTag": "h4",
+  "slug": "the-price-of-beauty#TempleoftheRestfulLily",
+  "tagIdFirst": "T1Lobby",
+  "contentChunkIdStart": "7c1824af-24ab-473e-90dc-78c8ddc1341d",
+  "tagIdLast": "TempleLocationsT10T18",
+  "contentChunkIdStop": "5c79b03b-a21a-41e2-bec6-e697f0773cd5",
+  "sceneName": "Temple of the Restful Lily"
+},{
+  "ddbId": 46,
+  "cobaltId": null,
+  "parentId": 1180,
+  "splitTag": "h4",
+  "slug": "the-price-of-beauty#TempleoftheRestfulLily",
+  "tagIdFirst": "T10IlmarsRoom",
+  "contentChunkIdStart": "f3a458a7-243c-4bd1-9c70-43430c8f37f6",
+  "tagIdLast": "MapMap702templeoftherestfullily",
+  "contentChunkIdStop": "IDSTOP",
+  "sceneName": "Temple of the Restful Lily"
+},{
+  "ddbId": 46,
+  "cobaltId": null,
+  "parentId": 1180,
+  "splitTag": "h4",
+  "slug": "the-price-of-beauty#TempleoftheRestfulLily",
+  "tagIdFirst": "T13T18Tower",
+  "contentChunkIdStart": "ab77397f-8b1b-497a-b297-bf7a87e66eef",
+  "tagIdLast": "Conclusion",
+  "contentChunkIdStop": "939a9334-7fa8-4d2a-b5d1-9d304332a794",
+  "sceneName": "Temple of the Restful Lily"
+},{
+  "ddbId": 51,
+  "cobaltId": null,
+  "parentId": 1166,
+  "splitTag": "h4",
+  "slug": "book-of-cylinders#HelpingtheGrippli",
+  "tagIdFirst": "Docks",
+  "contentChunkIdStart": "65731934-78e6-44eb-8b9f-dad6a2f7fb9b",
+  "tagIdLast": "OldVillageandTemple",
+  "contentChunkIdStop": "92ccb096-dc9f-477b-91de-589c2b3e13b3",
+  "sceneName": "Grippli Village"
+},{
+  "ddbId": 51,
+  "cobaltId": null,
+  "parentId": 1166,
+  "splitTag": "h4",
+  "slug": "book-of-cylinders#HelpingtheGrippli",
+  "tagIdFirst": "T1Courtyard",
+  "contentChunkIdStart": "a61e1028-fb65-4665-a831-4d28d5d02589",
+  "tagIdLast": "Aftermath",
+  "contentChunkIdStop": "88270a2f-0f15-4658-9de3-45d6a2bbde91",
+  "sceneName": "Temple"
+},{
+  "ddbId": 58,
+  "cobaltId": null,
+  "parentId": 1174,
+  "splitTag": "h4",
+  "slug": "sarah-of-yellowcrest-manor#Greenfast",
+  "tagIdFirst": "G1MayorsHouse",
+  "contentChunkIdStart": "9f3de906-5dde-4e30-9d37-03c03d746e8b",
+  "tagIdLast": "TempleoftheBurntTongueCult",
+  "contentChunkIdStop": "b6bf2ac7-2285-4ce7-807d-3b9fe68aba2d",
+  "sceneName": "Greenfast"
+},{
+  "ddbId": 59,
+  "cobaltId": null,
+  "parentId": 1174,
+  "splitTag": "h4",
+  "slug": "sarah-of-yellowcrest-manor#TempleoftheBurntTongueCult",
+  "tagIdFirst": "B1Antechamber",
+  "contentChunkIdStart": "b9c1b266-72ed-4ccc-bdc5-996dc72f6d80",
+  "tagIdLast": "LowerLevelB10B13",
+  "contentChunkIdStop": "46228477-b3ce-4828-a385-2c834f1a482b",
+  "sceneName": "Temple of the Burnt Tongue Cult"
+},{
+  "ddbId": 59,
+  "cobaltId": null,
+  "parentId": 1174,
+  "splitTag": "h4",
+  "slug": "sarah-of-yellowcrest-manor#TempleoftheBurntTongueCult",
+  "tagIdFirst": "B10Ossuary",
+  "contentChunkIdStart": "582a3006-9045-4ae7-bcd8-f9d64aca0e93",
+  "tagIdLast": "Conclusion",
+  "contentChunkIdStop": "9af075c0-260e-480f-920a-0f950152022d",
+  "sceneName": "Temple of the Burnt Tongue Cult"
+},{
+  "ddbId": 64,
+  "cobaltId": null,
+  "parentId": 1172,
+  "splitTag": "h4",
+  "slug": "lore-of-lurue#IntotheWood",
+  "tagIdFirst": "H1DryWell",
+  "contentChunkIdStart": "46c298a8-f12f-43b7-a004-6fbbc8061f76",
+  "tagIdLast": "RiversEdge",
+  "contentChunkIdStop": "f8697bef-eaff-46f1-ac0a-f7a69ae2379d",
+  "sceneName": "Hag's Hovel"
+},{
+  "ddbId": 70,
+  "cobaltId": null,
+  "parentId": 1171,
+  "splitTag": "h4",
+  "slug": "kandlekeep-dekonstruktion#TheBarnDoor",
+  "tagIdFirst": "B1Library",
+  "contentChunkIdStart": "8fa2d8b6-507e-4f59-a1a0-8efc0e5f4a1c",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "The Barn Door"
+},{
+  "ddbId": 71,
+  "cobaltId": null,
+  "parentId": 1171,
+  "splitTag": "h4",
+  "slug": "kandlekeep-dekonstruktion#UndertheBarnDoor",
+  "tagIdFirst": "U1DescendingStaircase",
+  "contentChunkIdStart": "032b9418-995d-48e8-bc5a-993ec09ebd2b",
+  "tagIdLast": "Conclusion",
+  "contentChunkIdStop": "03c6a489-4923-4b1c-8de2-c9c3bb76746e",
+  "sceneName": "Under The Barn Door"
+},{
+  "ddbId": 77,
+  "cobaltId": null,
+  "parentId": 1183,
+  "splitTag": "h4",
+  "slug": "zikrans-zephyrean-tome#ZikransLaboratory",
+  "tagIdFirst": "L1CoralSpire",
+  "contentChunkIdStart": "1f1b103f-4b98-4faf-b7e1-002b0bb42eaf",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Zikran's Laboratory"
+},{
+  "ddbId": 79,
+  "cobaltId": null,
+  "parentId": 1183,
+  "splitTag": "h4",
+  "slug": "zikrans-zephyrean-tome#CloudGiantsKeep",
+  "tagIdFirst": "C1FrontYard",
+  "contentChunkIdStart": "de1656bc-0ae5-4f60-9d04-61999a1ddff2",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Cloud Giants' Keep"
+},{
+  "ddbId": 86,
+  "cobaltId": null,
+  "parentId": 1178,
+  "splitTag": "h4",
+  "slug": "the-curious-tale-of-wisteria-vale#WisteriaVale",
+  "tagIdFirst": "W1VyridianForest",
+  "contentChunkIdStart": "6cf375ce-cfc1-48ac-86b2-4d7ebebe092a",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Wisteria Vale"
+},{
+  "ddbId": 87,
+  "cobaltId": null,
+  "parentId": 1178,
+  "splitTag": "h4",
+  "slug": "the-curious-tale-of-wisteria-vale#ExploringtheManor",
+  "tagIdFirst": "M1Lounge",
+  "contentChunkIdStart": "b91cd796-67be-4020-a2f4-c1478d5a3761",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "The Manor"
+},{
+  "ddbId": 95,
+  "cobaltId": null,
+  "parentId": 1176,
+  "splitTag": "h3",
+  "slug": "the-book-of-inner-alchemy#TempleoftheImmortalLotus",
+  "tagIdFirst": "L1SteleForest",
+  "contentChunkIdStart": "417c0f92-e783-4081-af49-48e72e895c41",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Temple of the Immortal Lotus"
+},{
+  "ddbId": 101,
+  "cobaltId": null,
+  "parentId": 1177,
+  "splitTag": "h4",
+  "slug": "the-canopic-being#ValinsTomb",
+  "tagIdFirst": "T1Portal",
+  "contentChunkIdStart": "221a7fdd-18c1-4162-94fd-758759a66de9",
+  "tagIdLast": "NewMagicItems",
+  "contentChunkIdStop": "5321b852-2082-43e9-b4c6-a6bb2878ab09",
+  "sceneName": "The tomb of Valin Sarnaster"
+},{
+  "ddbId": 109,
+  "cobaltId": null,
+  "parentId": 1181,
+  "splitTag": "h4",
+  "slug": "the-scriveners-tale#HavenoftheRedQuill",
+  "tagIdFirst": "H1DeepStairwell",
+  "contentChunkIdStart": "9f36fbc8-a0a2-4fbb-8e79-6eb7a7710744",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Haven of the Red Quill"
+},{
+  "ddbId": 118,
+  "cobaltId": null,
+  "parentId": 1165,
+  "splitTag": "h3",
+  "slug": "alkazaars-appendix#ArrivalatHaruun",
+  "tagIdFirst": "H1CaveEntrance",
+  "contentChunkIdStart": "d95a310b-b6bf-4b35-8c34-2c6beffae7de",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Haruun"
+},{
+  "ddbId": 118,
+  "cobaltId": null,
+  "parentId": 1165,
+  "splitTag": "h4",
+  "slug": "alkazaars-appendix#ArrivalatHaruun",
+  "tagIdFirst": "MuralA",
+  "contentChunkIdStart": "3286c99e-c732-4f52-a6cd-2545a156806c",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Haruun Muruals"
+},{
+  "ddbId": 120,
+  "cobaltId": null,
+  "parentId": 1165,
+  "splitTag": "h3",
+  "slug": "alkazaars-appendix#NecropolisofAzumar",
+  "tagIdFirst": "V1Mastaba",
+  "contentChunkIdStart": "428db619-ca29-484b-b2f9-747ed58f78f4",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Necropolis and Mastaba"
+},{
+  "ddbId": 125,
+  "cobaltId": null,
+  "parentId": 1182,
+  "splitTag": "h4",
+  "slug": "xanthoria#TheLykorthaExpanse",
+  "tagIdFirst": "L1Entrance",
+  "contentChunkIdStart": "a9530cb8-a463-4186-9566-16813427a36d",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Lykortha Expanse"
 }
 ]
-
