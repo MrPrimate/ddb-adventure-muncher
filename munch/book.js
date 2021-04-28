@@ -676,11 +676,15 @@ function generateScene(row, img) {
           // if there is no number match then we will attempt to regex it out
           if (isNaN(parseInt(prefix))) {
             const numMatch = prefix.match(/\d+/);
-            if (numMatch) prefix = numMatch[0];
+            if (numMatch) {
+              prefix = numMatch[0];
+            }
           }
 
           const icon = (isNaN(parseInt(prefix))) ?
-            "icons/svg/book.svg":
+            prefix.length == 1 ?
+              "modules/ddb-importer/icons/" + prefix.toUpperCase() + ".svg" :
+              "icons/svg/book.svg" :
             "modules/ddb-importer/icons/" + prefix.padStart(2, "0") + ".svg";
 
           note.positions.forEach((position) => {
