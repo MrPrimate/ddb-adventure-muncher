@@ -376,14 +376,12 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
     folder.flags.ddb.parentId = row.parentId;
   }
   else if (img) {
-    const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
-    folder.name = `[Handouts] ${row.sceneName ? row.sceneName : row.title}`;
+    const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
+    const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+    folder.name = `[Handouts] ${row.sceneName ? row.sceneName : parent.name}`;
     folder.sort = 1000000;
-    if (parent) {
-      folder.parent = `${parent._id}`;
-      if (!row.sceneName) folder.name = `[Handouts] ${parent.name }`;
-    }
-    folder.flags.ddb.parentId = row.parentId;
+    folder.parent = `${parent._id}`;
+    folder.flags.ddb.parentId = parentId;
   } else if (row.parentId) {
     const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img);
     if (parent) {
@@ -426,7 +424,6 @@ function getFolderId(row, type, img, note) {
       folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
       if (!folder) folder = generateFolder(type, row, false, img, note);
       folderId = folder._id;
-      // return masterFolder[type]._id;
     } else if (row.parentId) {
       folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.parentId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note && f.name.includes(row.sceneName));
       if (!folder) folder = generateFolder(type, row, false, img, note);
@@ -435,6 +432,11 @@ function getFolderId(row, type, img, note) {
       folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note && f.name.includes(row.sceneName));
       if (folder) folderId = folder._id;
     }
+  } if (img) {
+    const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
+    folder = generatedFolders.find((f) => f.flags.ddb.parentId == parentId && f.type == type && f.flags.ddb.img == img);
+    if (!folder) folder = generateFolder(type, row, false, img, note);
+    folderId = folder._id;
   } else if (row.cobaltId) {
     folder = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
     if (!folder) folder = generateFolder(type, row, false, img, note);
@@ -482,6 +484,7 @@ function generateJournalEntry(row, img=null, note=false) {
     if (journalImgMatched.includes(journal.img)) {
       journal.flags.ddb.duplicate = true;
     } else {
+      journal.flags.ddb.duplicate = false;
       if (config.imageFind) {
         imageFinderJournalResults.push({
           bookCode: config.run.bookCode,
@@ -511,7 +514,6 @@ function generateJournalEntry(row, img=null, note=false) {
     appendJournalToChapter(row);
   }
   if (!journal.flags.ddb.duplicate) generatedJournals.push(journal);
-  // console.log(`${journal._id} ${journal.name}`);
   return journal;
 }
 
@@ -521,7 +523,7 @@ function generateJournalEntry(row, img=null, note=false) {
  * @param {*} text 
  * @returns 
  */
- function generateNoteJournals(row) {
+function generateNoteJournals(row) {
 
   let notes = [];
 
@@ -797,19 +799,18 @@ function findScenes(document) {
 
   if (possibleFigureSceneNodes.length > 0) {
     possibleFigureSceneNodes.forEach((node) => {
-      tmpCount++;
-      if (config.debug) {
-        console.log(node.outerHTML);
-      }
       let caption = node.querySelector("figcaption");
       let img = node.querySelector("img");
+
+      if (!img.src) return;
+      tmpCount++;
 
       if (caption) {
         // console.log(document);
         let title = caption.textContent;
         const playerRef = node.querySelector("a[data-title~=Player]");
         if (playerRef) {
-          title = title.replace(playerRef.textContent, "").trim();
+          title = utils.titleString(title.replace(playerRef.textContent, "").trim());
 
           let rowContentChunkId = caption.getAttribute("data-content-chunk-id");
           if (!rowContentChunkId) {
@@ -819,7 +820,7 @@ function findScenes(document) {
           }
 
           let row = {
-            title: `${utils.titleString(title)} (Player Version)`,
+            title: `${title} (Player Version)`,
             id: 10000 + document.flags.ddb.ddbId + tmpCount,
             parentId: document.flags.ddb.parentId,
             cobaltId: document.flags.ddb.cobaltId,
@@ -861,13 +862,11 @@ function findScenes(document) {
     // old style adventures don't have figure tags, hard parse
     // compendium-image-with-subtitle-center
     possibleDivSceneNodes.forEach((node) => {
-      tmpCount++;
-
-      if (config.debug) {
-        console.log(node.outerHTML);
-      }
       let caption = node.querySelector("h3, h4");
       let img = node.querySelector("img");
+
+      if (!img.src) return;
+      tmpCount++;
 
       if (caption) {
         console.log(`Checking ${caption.textContent} for Scenes`)
@@ -899,11 +898,11 @@ function findScenes(document) {
         if (playerVersion) {
           //const playerRef = nextNode.querySelector("a.ddb-lightbox-outer");
           const playerRef = lightBoxNode;
-          title = title.replace(playerRef.textContent, "").trim();
+          title = utils.titleString(title.replace(playerRef.textContent, "").trim());
 
           let row = {
-            title: `${utils.titleString(title)} (Player Version)`,
-            id: 10000 + document.flags.ddb.ddbId + tmpCount,
+            title: `${title} (Player Version)`,
+            id: 11000 + document.flags.ddb.ddbId + tmpCount,
             parentId: document.flags.ddb.parentId,
             cobaltId: document.flags.ddb.cobaltId,
             slug: document.flags.ddb.slug,
@@ -923,7 +922,7 @@ function findScenes(document) {
 
         let row = {
           title: title,
-          id: 10000 + document.flags.ddb.ddbId + tmpCount,
+          id: 11000 + document.flags.ddb.ddbId + tmpCount,
           parentId: document.flags.ddb.parentId,
           cobaltId: document.flags.ddb.cobaltId,
           contentChunkId: caption.getAttribute("data-content-chunk-id"),
@@ -938,6 +937,7 @@ function findScenes(document) {
     // old style adventures don't have figure tags, hard parse
     // compendium-image-with-subtitle-center
     possibleHandouts.forEach((node) => {
+      if(!node.srv) return;
       tmpCount++;
       if (config.debug) {
         console.log(node.outerHTML);
@@ -949,7 +949,7 @@ function findScenes(document) {
 
       let row = {
         title: title,
-        id: 10000 + document.flags.ddb.ddbId + tmpCount,
+        id: 12000 + document.flags.ddb.ddbId + tmpCount,
         parentId: document.flags.ddb.parentId,
         cobaltId: document.flags.ddb.cobaltId,
         contentChunkId: node.getAttribute("data-content-chunk-id"),
@@ -979,7 +979,7 @@ function findScenes(document) {
 
       let row = {
         title: title,
-        id: 10000 + document.flags.ddb.ddbId + tmpCount,
+        id: 13000 + document.flags.ddb.ddbId + tmpCount,
         parentId: document.flags.ddb.parentId,
         cobaltId: document.flags.ddb.cobaltId,
         documentName: document.name,
@@ -1015,7 +1015,7 @@ function findScenes(document) {
 
     let row = {
       title: title,
-      id: 10000 + document.flags.ddb.ddbId + tmpCount,
+      id: 14000 + document.flags.ddb.ddbId + tmpCount,
       parentId: document.flags.ddb.parentId,
       cobaltId: document.flags.ddb.cobaltId,
       documentName: document.name,
