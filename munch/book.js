@@ -72,14 +72,13 @@ function getId(document, docType) {
 
     return basicCheck && chunkCheck && sceneNotes;
   });
+
+  // console.log(`Finding id for ${docType} ${document.name}`);
+  // console.log(`Note? ${document.flags.ddb.note}`);
+  // if (existingId) console.log(`For ${docType} ${document.name} returning id ${existingId.id} with name ${existingId.name}`)
+  // console.log("------------------")
   
   if (existingId) {
-    if (existingId.name !== document.name || existingId.contentChunkId !== contentChunkId) {
-      existingId.name = document.name;
-      existingId.contentChunkId = contentChunkId;
-      const index = _.findIndex(idTable[config.run.bookCode], {id: existingId.id});
-      idTable[config.run.bookCode].splice(index, 1, existingId);
-    }
     return existingId.id;
   } else {
     const id = {
@@ -367,13 +366,12 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
     folder.parent = masterFolder[type]._id;
   }
   if (note) {
-    const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
-    folder.name = `[Pins] ${row.sceneName ? row.sceneName : row.title}`;
-    if (parent) {
-      folder.parent = `${parent._id}`;
-      if (!row.sceneName) folder.name = `[Pins] ${parent.name }`;
-    }
-    folder.flags.ddb.parentId = row.parentId;
+    const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
+    const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+    folder.name = `[Pins] ${row.sceneName ? row.sceneName : parent.name}`;
+    folder.sort = 900000;
+    folder.parent = `${parent._id}`;
+    folder.flags.ddb.parentId = parentId;
   }
   else if (img) {
     const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
@@ -395,15 +393,10 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
   }
   if (row.cobaltId) folder.flags.ddb.cobaltId = row.cobaltId;
 
-  if (!folder.name) {
-    console.log(folder)
-    exit()
-  }
-
   folder._id = getId(folder, "Folder");
   folder.flags.importid = folder._id;
   generatedFolders.push(folder);
-  if (type === "JournalEntry" && !baseFolder) {
+  if (type === "JournalEntry" && !baseFolder && !img && !note) {
     // lets generate a Scene Folder at the same time
     // we do this so the scene folder order matches the same as the journals as some
     // adventures e.g. CoS have different kind of scene detection
@@ -420,19 +413,11 @@ function getFolderId(row, type, img, note) {
   let folder;
 
   if (note) {
-    if (row.cobaltId) {
-      folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
-      if (!folder) folder = generateFolder(type, row, false, img, note);
-      folderId = folder._id;
-    } else if (row.parentId) {
-      folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.parentId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note && f.name.includes(row.sceneName));
-      if (!folder) folder = generateFolder(type, row, false, img, note);
-      folderId = folder._id;
-    } else {
-      folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note && f.name.includes(row.sceneName));
-      if (folder) folderId = folder._id;
-    }
-  } if (img) {
+    const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
+    folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.parentId == parentId && f.type == type && !f.flags.ddb.img && f.flags.ddb.note == note && f.name.includes(row.sceneName));
+    if (!folder) folder = generateFolder(type, row, false, img, note);
+    folderId = folder._id;
+  } else if (img) {
     const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
     folder = generatedFolders.find((f) => f.flags.ddb.parentId == parentId && f.type == type && f.flags.ddb.img == img);
     if (!folder) folder = generateFolder(type, row, false, img, note);
