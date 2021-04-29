@@ -88,11 +88,11 @@ Examples:
 
 ## Current Scene Support
 
-Books with Aligned, Walled, Lit and Note Pinned scenes:
+Books with Aligned, Walled, Lit scenes with Note placed:
 
 * Lost Mines of Phandelver
 
-Books with Aligned, Walled, and Lit scenes:
+Books with Aligned, Walled and Lit scenes with Notes not on scenes:
 
 * Curse of Strahd
 
@@ -104,7 +104,7 @@ Books with just notes:
 * Baldur's Gate: Descent into Avernus
 * Candlekeep Mysteries
 
-Books with partial adjustments:
+Books with partial scene adjustments:
 
 * Icewind Dale: Rime of the Frost Maiden
 * Dragon of Icespire Peak

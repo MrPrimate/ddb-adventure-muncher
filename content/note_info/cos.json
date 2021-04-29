@@ -38,7 +38,7 @@
   "splitTag": "h3",
   "slug": "castle-ravenloft#WallsofRavenloft",
   "tagIdFirst": "K1FrontCourtyard",
-  "contentChunkIdStart": "200c593a-e1c0-496c-8298-a5e9bdfb8525",
+  "contentChunkIdStart": "729525a0-4fd7-452f-a928-261ff2baf377",
   "tagIdLast": "",
   "contentChunkIdStop": "EOF",
   "sceneName": "Walls of Ravenloft"
@@ -49,7 +49,7 @@
   "splitTag": "h3",
   "slug": "castle-ravenloft#MainFloor",
   "tagIdFirst": "K7Entry",
-  "contentChunkIdStart": "9450dca4-03ed-46b5-a3ff-5c2bb499e260",
+  "contentChunkIdStart": "f0f0d19b-efd5-4b6d-b6ff-3adcb6af84b4",
   "tagIdLast": "",
   "contentChunkIdStop": "EOF",
   "sceneName": "Main Floor"
@@ -60,7 +60,7 @@
   "splitTag": "h3",
   "slug": "castle-ravenloft#CourtoftheCount",
   "tagIdFirst": "K25AudienceHall",
-  "contentChunkIdStart": "0299bb77-4306-424c-affc-83d6090ddd03",
+  "contentChunkIdStart": "ae13c7cb-68b6-4d34-b787-e2eae101aea4",
   "tagIdLast": "",
   "contentChunkIdStop": "EOF",
   "sceneName": "Court of the Count"
@@ -71,7 +71,7 @@
   "splitTag": "h3",
   "slug": "castle-ravenloft#RoomsofWeeping",
   "tagIdFirst": "K35GuardianVermin",
-  "contentChunkIdStart": "778002a9-b777-42e9-89f0-d9891c0797f6",
+  "contentChunkIdStart": "d325c971-160b-469f-a46e-b521670380b9",
   "tagIdLast": "",
   "contentChunkIdStop": "EOF",
   "sceneName": "Rooms of Weeping"
@@ -82,7 +82,7 @@
   "splitTag": "h3",
   "slug": "castle-ravenloft#SpiresofRavenloft",
   "tagIdFirst": "K47PortraitofStrahd",
-  "contentChunkIdStart": "b2d13eb9-b5cf-4fa6-af5f-34584535ea45",
+  "contentChunkIdStart": "974c4fab-a11b-478a-9964-fe0a64a31ea9",
   "tagIdLast": "",
   "contentChunkIdStop": "EOF",
   "sceneName": "Spires of Ravenloft"
@@ -93,7 +93,7 @@
   "splitTag": "h3",
   "slug": "castle-ravenloft#LardersofIllOmen",
   "tagIdFirst": "K61ElevatorTrap",
-  "contentChunkIdStart": "e3a094c3-6ede-481c-bb7b-ab65f6c920c3",
+  "contentChunkIdStart": "220360f4-f55b-461d-a04f-4ed5814cdba4",
   "tagIdLast": "",
   "contentChunkIdStop": "EOF",
   "sceneName": "Larders of Ill Omen"
@@ -104,14 +104,232 @@
   "splitTag": "h3",
   "slug": "castle-ravenloft#DungeonandCatacombs",
   "tagIdFirst": "K73DungeonHall",
-  "contentChunkIdStart": "2768d9fd-1f5d-4f26-84d0-bc7805be4bac",
+  "contentChunkIdStart": "ad661190-6486-48d1-aa54-e129dafe2f99",
   "tagIdLast": "",
   "contentChunkIdStop": "EOF",
   "sceneName": "Dungeon and Catacombs"
+},{
+  "ddbId": 32,
+  "cobaltId": null,
+  "parentId": 354,
+  "splitTag": "h3",
+  "slug": "the-town-of-vallaki#AreasofVallaki",
+  "tagIdFirst": "N1StAndralsChurch",
+  "contentChunkIdStart": "e55a90f8-4c7a-41dd-b0e6-f51e59847fd6",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Vallaki"
+},{
+  "ddbId": 32,
+  "cobaltId": null,
+  "parentId": 354,
+  "splitTag": "h4",
+  "slug": "the-town-of-vallaki#AreasofVallaki",
+  "tagIdFirst": "N2aWell",
+  "contentChunkIdStart": "497619bf-73fb-4db7-8bbc-00fd82353bec",
+  "tagIdLast": "N3BurgomastersMansion",
+  "contentChunkIdStop": "cdb408a0-b394-4f56-ae83-047e1b99c605",
+  "sceneName": "Blue Water Inn"
+},{
+  "ddbId": 32,
+  "cobaltId": null,
+  "parentId": 354,
+  "splitTag": "h4",
+  "slug": "the-town-of-vallaki#AreasofVallaki",
+  "tagIdFirst": "N3aEntranceHallandVestibule",
+  "contentChunkIdStart": "941d7604-c21c-444d-8718-27f80352cd78",
+  "tagIdLast": "N4Wachterhaus",
+  "contentChunkIdStop": "d9f3d576-bf7c-4ae0-92ec-6364e50627b8",
+  "sceneName": "Burgomaster’s Mansion"
+},{
+  "ddbId": 32,
+  "cobaltId": null,
+  "parentId": 354,
+  "splitTag": "h4",
+  "slug": "the-town-of-vallaki#AreasofVallaki",
+  "tagIdFirst": "N4aFrontDoorandVestibule",
+  "contentChunkIdStart": "41de0538-bcad-4487-80b0-b20c05085826",
+  "tagIdLast": "N5ArasekStockyard",
+  "contentChunkIdStop": "a772ef60-68ee-4768-b795-7d58dac19abd",
+  "sceneName": "Wachterhaus"
+},{
+  "ddbId": 32,
+  "cobaltId": null,
+  "parentId": 354,
+  "splitTag": "h4",
+  "slug": "the-town-of-vallaki#AreasofVallaki",
+  "tagIdFirst": "N6aCoffinStorage",
+  "contentChunkIdStart": "dfcd371c-08a0-4bc9-af77-3062b215ce77",
+  "tagIdLast": "N7BlinskyToys",
+  "contentChunkIdStop": "476f72fb-a3a5-41c2-8550-6d532b9512d8",
+  "sceneName": "Coffin Maker’s Shop"
+},{
+  "ddbId": 32,
+  "cobaltId": null,
+  "parentId": 354,
+  "splitTag": "h4",
+  "slug": "the-town-of-vallaki#AreasofVallaki",
+  "tagIdFirst": "N9aKasimirsHovel",
+  "contentChunkIdStart": "089c5d7b-5078-439b-b8a7-50b7631d0e87",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Vistani Camp"
+},{
+  "ddbId": 38,
+  "cobaltId": null,
+  "parentId": 355,
+  "splitTag": "h3",
+  "slug": "old-bonegrinder#AreasoftheWindmill",
+  "tagIdFirst": "O1GroundFloor",
+  "contentChunkIdStart": "89018567-0384-440a-8718-9a95e53bf6e1",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Old Bonegrinder"
+},{
+  "ddbId": 43,
+  "cobaltId": null,
+  "parentId": 356,
+  "splitTag": "h3",
+  "slug": "argynvostholt#AreasofArgynvostholt",
+  "tagIdFirst": "Q1DragonStatue",
+  "contentChunkIdStart": "1cfbdba3-8936-40fb-bf77-a4c9ead3d47a",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Argynvostholt"
+},{
+  "ddbId": 46,
+  "cobaltId": null,
+  "parentId": 357,
+  "splitTag": "h3",
+  "slug": "the-village-of-krezk#AreasofKrezk",
+  "tagIdFirst": "S1RoadJunction",
+  "contentChunkIdStart": "3382b0e2-af2c-43c8-819a-836ed6abf0c8",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Krezk"
+},{
+  "ddbId": 47,
+  "cobaltId": null,
+  "parentId": 357,
+  "splitTag": "h3",
+  "slug": "the-village-of-krezk#AreasoftheAbbey",
+  "tagIdFirst": "S6NorthGate",
+  "contentChunkIdStart": "5b1947a8-2d48-4b2f-8c04-b389ee37cf21",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Abbey of Saint Markovia"
+},{
+  "ddbId": 47,
+  "cobaltId": null,
+  "parentId": 357,
+  "splitTag": "h4",
+  "slug": "the-village-of-krezk#AreasoftheAbbey",
+  "tagIdFirst": "S15aFearfulMongrelfolk",
+  "contentChunkIdStart": "25c6c459-fc85-422c-b7d3-b5e8a620eabc",
+  "tagIdLast": "S16WineCellar",
+  "contentChunkIdStop": "f5f9e9f3-0238-4555-a875-f8a1ca26c968",
+  "sceneName": "Abbey: Madhouse"
+},{
+  "ddbId": 47,
+  "cobaltId": null,
+  "parentId": 357,
+  "splitTag": "h4",
+  "slug": "the-village-of-krezk#AreasoftheAbbey",
+  "tagIdFirst": "S12aWell",
+  "contentChunkIdStart": "473b4a09-3dd9-4ff6-8e30-e676982bb437",
+  "tagIdLast": "S13MainHall",
+  "contentChunkIdStop": "a839299f-7dfa-4084-96a2-0681f98162dd",
+  "sceneName": "Abbey: Courtyard"
+},{
+  "ddbId": 50,
+  "cobaltId": null,
+  "parentId": 358,
+  "splitTag": "h3",
+  "slug": "tsolenka-pass#AreasofthePass",
+  "tagIdFirst": "T1GatehousePortcullis",
+  "contentChunkIdStart": "4bcb043d-95b2-4607-aa70-8990c307e458",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Tsolenka Pass"
+},{
+  "ddbId": 54,
+  "cobaltId": null,
+  "parentId": 359,
+  "splitTag": "h3",
+  "slug": "the-ruins-of-berez#AreasofBerez",
+  "tagIdFirst": "U1AbandonedCottages",
+  "contentChunkIdStart": "efde23e8-a5a3-401e-adc0-6419488bb7f1",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Berez"
+},{
+  "ddbId": 58,
+  "cobaltId": null,
+  "parentId": 360,
+  "splitTag": "h3",
+  "slug": "van-richtens-tower#AreasoftheTower",
+  "tagIdFirst": "V1EzmereldasMagicWagon",
+  "contentChunkIdStart": "1d6b91aa-9cd0-439b-9d58-ce97a8e9650e",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Van Richtens Tower"
+},{
+  "ddbId": 63,
+  "cobaltId": null,
+  "parentId": 361,
+  "splitTag": "h3",
+  "slug": "the-wizard-of-wines#AreasoftheWinery",
+  "tagIdFirst": "W1Stables",
+  "contentChunkIdStart": "f8d2cb56-e482-49ef-a181-87a39550ee4f",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Wizard of Wines Winery"
+},{
+  "ddbId": 66,
+  "cobaltId": null,
+  "parentId": 362,
+  "splitTag": "h3",
+  "slug": "the-amber-temple#AreasoftheTemple",
+  "tagIdFirst": "X1TempleFacade",
+  "contentChunkIdStart": "9cbed8cf-e0c1-4359-94f5-80c5d3566751",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "The Amber Temple"
+},{
+  "ddbId": 69,
+  "cobaltId": null,
+  "parentId": 363,
+  "splitTag": "h3",
+  "slug": "yester-hill#AreasoftheHill",
+  "tagIdFirst": "Y1Trail",
+  "contentChunkIdStart": "d950261e-93d7-4a68-84ab-c496228e8db8",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Yester Hill"
+},{
+  "ddbId": 73,
+  "cobaltId": null,
+  "parentId": 364,
+  "splitTag": "h3",
+  "slug": "werewolf-den#AreasoftheDen",
+  "tagIdFirst": "Z1CaveMouth",
+  "contentChunkIdStart": "4a340909-f21a-4e67-86a0-7b061994531a",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Werewolf Den"
+},{
+  "ddbId": 84,
+  "cobaltId": null,
+  "parentId": 499,
+  "splitTag": "h3",
+  "slug": "appendix-b-death-house#AreasoftheHouse",
+  "tagIdFirst": "1Entrance",
+  "contentChunkIdStart": "368bb1be-c5ba-4127-b8f5-fa9ffe3f6ed2",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Death House"
 }
-
 ]
-
 
 
 

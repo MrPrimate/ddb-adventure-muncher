@@ -2,7 +2,7 @@
 
 * Some Journal entries were double generated, or parts were generated incorrectly.
 * Handout entries in top level documents were no longer generated.
-* Notes generation for: PotE, AE, AtG, BGDiA, CM
+* Notes generation for: PotE, AE, AtG, BGDiA, CM, CoS
 * TcoE: Failed to complete parse
 
 # 0.0.17
