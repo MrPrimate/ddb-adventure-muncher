@@ -96556,5 +96556,578 @@
                 "contentChunkId": "488d3c90-8bb4-4a55-b5de-243a95b7a53e"
             }
         }
+    },
+    {
+        "name": "Areas of Barovia",
+        "navName": "Areas of Barovia",
+        "width": 6306,
+        "height": 4047,
+        "grid": 100,
+        "gridDistance": 5,
+        "gridType": 4,
+        "gridUnits": "ft",
+        "shiftX": 109,
+        "shiftY": 55,
+        "initial": {
+            "x": 6289,
+            "y": 3087,
+            "scale": 0.23
+        },
+        "backgroundColor": "#999999",
+        "walls": [],
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 14017,
+                "cobaltId": null,
+                "contentChunkId": "ee502515-2944-4a87-a913-c024669df7e9",
+                "notes": [
+                    {
+                        "label": "A. Old Svalich Road",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2019,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "32fe6b34-b76f-4629-899b-536c03e47839",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 7550,
+                                "y": 3291.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "B. Gates of Barovia",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2027,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "7ddd6fa3-36d0-4232-8bd4-9d229aa64136",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 7400,
+                                "y": 3204.3
+                            },
+                            {
+                                "x": 5325,
+                                "y": 2815.301270189222
+                            }
+                        ]
+                    },
+                    {
+                        "label": "C. Svalich Woods",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2038,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "06822d9a-89a4-4605-9be7-2a55e17473f9",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 7325,
+                                "y": 3508.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "D. River Ivlis",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2042,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "cdb82130-1962-457f-8e67-8ed0625d914f",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 7025,
+                                "y": 3941.3
+                            },
+                            {
+                                "x": 6350,
+                                "y": 3811.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "E. Village of Barovia",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2046,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "3e2810ad-7414-4bb6-975a-c6d08e5070e9",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 6425,
+                                "y": 3421.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "F. River Ivlis Crossroads",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2058,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "51ccc4f3-779e-4aca-b5d3-5aad9d0e7bfd",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 5825,
+                                "y": 3941.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "G. Tser Pool Encampment",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2081,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "5d875ce4-a710-4071-b852-557918ebf4d8",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 5600,
+                                "y": 3551.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "H. Tser Falls",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2089,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "c11e0d24-5cce-409f-b59d-4311e8898a46",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 5300,
+                                "y": 3204.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "I. Black Carriage",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2095,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "fb38946f-766f-42a0-a257-c8a94b3f966a",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 5375,
+                                "y": 2988.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "J. Gates of Ravenloft",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2101,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "bb34755a-34de-4380-b414-b7d13c197d68",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 5750,
+                                "y": 3118.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "K. Castle Ravenloft",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2103,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "ff5d709b-30ba-4133-9262-f3a2bd895592",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 6025,
+                                "y": 3161.301270189222
+                            }
+                        ]
+                    },
+                    {
+                        "label": "L. Lake Zarovich",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2116,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "f5884805-4096-47c2-8eb0-31825c75db2c",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 4025,
+                                "y": 2035.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "M. Mad Mage of Mount Baratok",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2133,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "57db13fc-3246-4f8d-9aad-47b14c39c514",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 5225,
+                                "y": 1689.3
+                            },
+                            {
+                                "x": 5000,
+                                "y": 1646.3
+                            },
+                            {
+                                "x": 4550,
+                                "y": 1646.3
+                            },
+                            {
+                                "x": 4025,
+                                "y": 1516.3
+                            },
+                            {
+                                "x": 3575,
+                                "y": 1689.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "N. Town of Vallaki",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2135,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "a37ac033-0c89-4cc4-b951-f05c1fb01fe7",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 4025,
+                                "y": 2468.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "O. Old Bonegrinder",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2137,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "7592f9b5-3460-4a73-90d6-b51a9193e36d",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 4575,
+                                "y": 2685
+                            }
+                        ]
+                    },
+                    {
+                        "label": "P. Luna River Crossroads",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2143,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "14db08ed-b6ce-4726-b0db-e46c14527b71",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 3700,
+                                "y": 2511.698729810778
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Q. Argynvostholt",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2145,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "53262698-0418-4bec-86d5-463da1f9ce02",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 3550,
+                                "y": 3031.698729810778
+                            }
+                        ]
+                    },
+                    {
+                        "label": "R. Raven River Crossroads",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2150,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "ece30e97-e35b-4813-8463-8ab08e2fdf35",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 2900,
+                                "y": 2425.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "S. Village of Krezk",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2152,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "7991ba03-597b-492a-b05e-96529cc7d0de",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 2300,
+                                "y": 2252.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "T. Tsolenka Pass",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2154,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "4b8cab2d-d0ee-40e8-8eb6-a739507ec206",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 3050,
+                                "y": 4071.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "U. Ruins of Berez",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2156,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "3e4e663f-efe1-45fd-ba41-abd33ea034a1",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 3500,
+                                "y": 3464.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "V. Van Richten’s Tower",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2158,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "ec136e1b-e05a-4756-b7de-e672fbb5c6a4",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 3075,
+                                "y": 2122.698729810778
+                            }
+                        ]
+                    },
+                    {
+                        "label": "W. The Wizard of Wines",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2160,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "0b2846fc-7fca-4f1b-ac17-e7ba03f407a4",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 2225,
+                                "y": 2988.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "X. The Amber Temple",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2162,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "c924afeb-fed7-430b-82a1-7a6c2e25bfbc",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 3600,
+                                "y": 4417.698729810778
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Y. Yester Hill",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2164,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "488e7baf-2aa0-4ead-a63e-fb60a8d5ce47",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 1925,
+                                "y": 3594.3
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Z. Werewolf Den",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2166,
+                            "bookCode": "cos",
+                            "slug": "the-lands-of-barovia#AreasofBarovia",
+                            "contentChunkId": "c770d2a6-3a6a-4ed0-8310-68756b71170a",
+                            "userData": {
+                                "userDisplayName": "MrPrimate"
+                            },
+                            "parentId": 351
+                        },
+                        "positions": [
+                            {
+                                "x": 2600,
+                                "y": 1905.3
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
     }
 ]
