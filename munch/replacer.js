@@ -167,7 +167,7 @@ function replaceImgLinksForJournal(text, config) {
 }
 
 function replaceRollLinks(text) {
-  const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*d*\d*)?)(?:[\s.,<])/, "g");
+  const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*d*\d*)?)(?:[\s.,])?/, "g");
   text = text.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").replace(diceRegex, "[[/r $1]]");
   return text;
 }
