@@ -72,8 +72,12 @@ async function listBooks(cobalt, allBooks=true) {
   const urlencoded = new URLSearchParams();
   urlencoded.append("token", `${cobalt}`);
 
+  //  "EntityTypeID": 953599357 - this needs to be filtered out as it gives false positives
+
   const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v6/available-user-content", urlencoded);
-  const books = result.Licenses.map((block) =>
+  const books = result.Licenses.filter((f) => 
+    f.EntityTypeID != "953599357" || !allBooks
+  ).map((block) =>
     block.Entities
       .filter((b) => (allBooks || b.isOwned) && !BAD_IDS.includes(b.id))
       .filter((b) => DDB_CONFIG.sources.some((s)  => b.id === s.id && s.isReleased))
