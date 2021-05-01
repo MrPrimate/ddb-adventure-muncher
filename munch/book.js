@@ -717,7 +717,11 @@ function generateScene(row, img) {
     config.disableEnhancedDownloads :
     false;
 
-  const enhancedScene = enhancedScenes.find((es) => es.name === scene.name && es.img === scene.img);
+  
+  if (config.debug) console.log(`Scene name: "${scene.name}" Img: "${scene.img}"`);
+  //const enhancedScene = enhancedScenes.find((es) => es.name === scene.name && es.img === scene.img);
+  const enhancedScene = enhancedScenes.find((es) => es.img === scene.img && es.bookCode === config.run.bookCode);
+  if (config.debug) console.log(enhancedScene);
 
   if (enhancedScene) {
     if (enhancedScene.hiresImg && !disableEnhancedDownloads) {
@@ -728,11 +732,12 @@ function generateScene(row, img) {
       scene.navName = enhancedScene.adjustName;
     }
   }
+  if (config.debug) console.log(`Scene name: "${scene.name}" Img: "${scene.img}"`);
 
   generatedScenes.push(scene);
   sceneImgMatched.push(scene.img);
   const sceneCount = sceneImgMatched.filter(img => img === scene.img).length;
-  console.log(`Generated Scene ${scene.name}, (count ${sceneCount})`);
+  console.log(`Generated Scene "${scene.name}" with "${scene.img}", (count ${sceneCount})`);
   return scene;
 }
 
