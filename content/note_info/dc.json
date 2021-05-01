@@ -1,0 +1,79 @@
+[{
+  "ddbId": 4,
+  "cobaltId": null,
+  "parentId": 758,
+  "splitTag": "h3",
+  "slug": "introduction#RunningforOnePlayer",
+  "tagIdFirst": "Conyberry",
+  "contentChunkIdStart": "8969770e-f78c-42ef-a70b-b8d1045bfd7f",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "The Sword Coast"
+},{
+  "ddbId": 11,
+  "cobaltId": null,
+  "parentId": 760,
+  "splitTag": "h4",
+  "slug": "dumathoins-gulch#Arrival",
+  "tagIdFirst": "Cliffs",
+  "contentChunkIdStart": "8d77ec79-c958-4e6e-880e-75f0c8e5a49f",
+  "tagIdLast": "Moonstone",
+  "contentChunkIdStop": "ab0a77ed-acf0-4f72-8ada-cca70cbd6a97",
+  "sceneName": "Dumathoin’s Gulch"
+},{
+  "ddbId": 15,
+  "cobaltId": null,
+  "parentId": 761,
+  "splitTag": "h4",
+  "slug": "ebondeaths-mausoleum#Arrival",
+  "tagIdFirst": "E1EntryHall",
+  "contentChunkIdStart": "0721bd1f-fd1b-4600-85b9-2e170965d138",
+  "tagIdLast": "Conclusion",
+  "contentChunkIdStop": "a9976195-686a-4e76-8131-4d698a3a05ff",
+  "sceneName": "Ebondeath’s Mausoleum"
+},{
+  "ddbId": 18,
+  "cobaltId": null,
+  "parentId": 762,
+  "splitTag": "h4",
+  "slug": "icingdeath-and-twinkle#Arrival",
+  "tagIdFirst": "I1IcingdeathMainDeck",
+  "contentChunkIdStart": "0bc6527f-8ee3-4e98-aaf5-5e0748e4984f",
+  "tagIdLast": "TwinkleLocations",
+  "contentChunkIdStop": "be3568ab-2529-4b6e-8c30-f1d7de3e6d6b",
+  "sceneName": "Icingdeath"
+},{
+  "ddbId": 18,
+  "cobaltId": null,
+  "parentId": 762,
+  "splitTag": "h4",
+  "slug": "icingdeath-and-twinkle#Arrival",
+  "tagIdFirst": "T1TwinkleMainDeck",
+  "contentChunkIdStart": "dce5c0d7-f651-47de-b790-583f9196c195",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Twinkle"
+},{
+  "ddbId": 29,
+  "cobaltId": null,
+  "parentId": 764,
+  "splitTag": "h4",
+  "slug": "storm-lords-hideout#Arrival",
+  "tagIdFirst": "D1SkeletalFigurehead",
+  "contentChunkIdStart": "fc93ebc5-b1e0-411b-a7ed-d90113920e2f",
+  "tagIdLast": "RiseoftheStormLord",
+  "contentChunkIdStop": "4a729493-9172-4396-85ee-4d0f68709ddc",
+  "sceneName": "Storm Lord's Hideout"
+},{
+  "ddbId": 33,
+  "cobaltId": null,
+  "parentId": 765,
+  "splitTag": "h4",
+  "slug": "thalivars-beacon#Arrival",
+  "tagIdFirst": "B1TowerExterior",
+  "contentChunkIdStart": "3cbc5990-6196-4210-a2ff-e0514ce40b83",
+  "tagIdLast": "",
+  "contentChunkIdStop": "EOF",
+  "sceneName": "Thalivar’s Beacon"
+}
+]
