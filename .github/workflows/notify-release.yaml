@@ -2,7 +2,8 @@ name: Notify on release
 
 on:
   release:
-    released
+    types: 
+     - released
 
 jobs:
   notify:
