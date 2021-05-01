@@ -1,6 +1,6 @@
 # 0.0.19
 
-* Notes generation for: DC, DoIP, DDvRaM, WA, GoS, HotDQ, IDRotF
+* Notes generation for: DC, DoIP, DDvRaM, WA, GoS, HotDQ, IDRotF, LR, LLoK, OotA
 * Some adjusted scene names were not recognised e.g. GoS
 
 # 0.0.18
