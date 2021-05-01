@@ -16,7 +16,7 @@ All the adventure generation and calls to DDB are done locally. A single call to
 ## How does this work?
 
 * You will need to import monsters, spells, and items using 9DDB Importer](https://foundryvtt.com/packages/ddb-importer/) first.
-* When you are happy with the data in your compendiums, you can use the Adventure Config Exporter button to download a config mapping. You can find this in the Experimental tab of the muncher screen if your supporter tier can access the alpha and are using v0.6.25+ of DDB Importer.
+* When you are happy with the data in your compendiums, you can use the Adventure Config Exporter button to download a config mapping. You can find this in the Experimental tab of the muncher screen if your supporter tier can access the alpha and are using v0.6.25+ of DDB Importer. You should be using ddb-importer version 0.6.33+ for the best experience with these generated adventures.
 * This file contains a cobalt cookie value and mappings to the imported compendium entries. The adventure muncher will use these to construct links to the right spells/items etc in Journal entries.
 
 ## Alpha Download Links
@@ -122,7 +122,7 @@ If you wish to help improve the scene wall and lighting information, see the bel
 ### Walls and Lighting information
 
 * If you wish to add walls/lighting information you can turn on a setting in Foundry to allow you to support data from a supported map. (VTTA or ddb-adventure-muncher).
-* You need to be using v0.6.32 of ddb-importer.
+* You need to be using v0.6.33 of ddb-importer.
 * Open the Chrome Developer Console (F12) and run `game.settings.set("ddb-importer", "allow-scene-download", true)`
 * Now when you right click on a scene navigation button you will get the option to download the associated data.
 * Upload this to the #scene-adjustments channel on Discord with a description of your changes.
