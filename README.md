@@ -21,11 +21,11 @@ All the adventure generation and calls to DDB are done locally. A single call to
 
 ## Alpha Download Links
 
-* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.17-linux-x86_64.AppImage)
-* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.17-linux-x86_64.rpm)
-* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.17-linux-amd64.deb)
-* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.17-win.exe)
-* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.17-mac.dmg)
+* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.18-linux-x86_64.AppImage)
+* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.18-linux-x86_64.rpm)
+* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.18-linux-amd64.deb)
+* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.18-win.exe)
+* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.0.18-mac.dmg)
 
 ## Importing the book
 
@@ -86,6 +86,10 @@ Examples:
 * There are limited entries for pins on the map right now.
 * There are no actors placed on the scene right now.
 
+## Getting Help
+
+* Join us on Discord in the [#adventure-muncher](https://discord.gg/ZZjxEBkqSH) channel.
+
 ## Current Scene Support
 
 Books with Aligned, Walled, Lit scenes with Note placed:
@@ -125,9 +129,9 @@ If you wish to help improve the scene wall and lighting information, see the bel
 
 ### Missed parsing
 
-If you find a missing scene, or something has just not parsed right please let me know on Discord.
+If you find a missing scene, or something has not parsed right please let me know on Discord.
 
-There are a number of handouts/images that are just numbered Handout 1/2/3/etc.
+There are a number of handouts/images that are numbered Handout 1/2/3/etc.
 If you have a good name for one of these handouts please make a note of it.
 I will be starting to collect this information in a shared google sheet in the coming weeks.
 

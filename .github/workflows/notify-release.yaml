@@ -1,0 +1,30 @@
+name: Notify on release
+
+on:
+  release:
+    released
+
+jobs:
+  notify:
+    needs: release
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get Version
+        shell: bash
+        id: get-version
+        run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_HOOK }}
+          DISCORD_USERNAME: "Release-O-Bot"
+        uses: Ilshidur/action-discord@0.0.2
+        with:
+          args: 'DDB Adventure Muncher ${{ steps.get-version.outputs.version }} has been released.'
+

@@ -47,7 +47,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Get Version              # Run the script that returns the version from `module.json`
+      - name: Get Version
         shell: bash
         id: get-version
         run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
@@ -57,5 +57,5 @@ jobs:
           DISCORD_USERNAME: "Release-O-Bot"
         uses: Ilshidur/action-discord@0.0.2
         with:
-          args: 'DDB Adventure Muncher ${{ steps.get-version.outputs.version }} has been marked as draft. Release imminent...'
+          args: 'DDB Adventure Muncher ${{ steps.get-version.outputs.version }} has been marked as built. The testing Kobolds are working hard and a release imminent...'
 
