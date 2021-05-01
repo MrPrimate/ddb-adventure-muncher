@@ -1,3 +1,8 @@
+# 0.0.19
+
+* Notes generation for: DC, DoIP, DDvRaM, WA, GoS, HotDQ, IDRotF
+* Some adjusted scene names were not recognised e.g. GoS
+
 # 0.0.18
 
 * Some Journal entries were double generated, or parts were generated incorrectly.
