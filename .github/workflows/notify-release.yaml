@@ -6,8 +6,6 @@ on:
 
 jobs:
   notify:
-    needs: release
-
     runs-on: ubuntu-latest
 
     strategy:
