@@ -1,0 +1,47 @@
+[
+  {
+    "ddbId": 4,
+    "cobaltId": null,
+    "parentId": 747,
+    "splitTag": "h3",
+    "slug": "introduction#RunningforOnePlayer",
+    "tagIdFirst": "HighRoad",
+    "contentChunkIdStart": "c76f65cc-6460-4593-a160-33df7b97b7b9",
+    "tagIdLast": "",
+    "contentChunkIdStop": "EOF",
+    "sceneName": "The Sword Coast"
+  },{
+    "ddbId": 15,
+    "cobaltId": null,
+    "parentId": 751,
+    "splitTag": "h3",
+    "slug": "aid-from-phandalin#Arrival",
+    "tagIdFirst": "StonehillInn",
+    "contentChunkIdStart": "022add9a-c7d1-4e8c-8ce8-47ca8703b39f",
+    "tagIdLast": "",
+    "contentChunkIdStop": "EOF",
+    "sceneName": "Phandalin"
+  },{
+    "ddbId": 24,
+    "cobaltId": null,
+    "parentId": 753,
+    "splitTag": "h4",
+    "slug": "house-of-thalivar#Arrival",
+    "tagIdFirst": "H1TowerExterior",
+    "contentChunkIdStart": "53d83067-8a59-4dd0-a6fa-eabe952cdfbe",
+    "tagIdLast": "GhostlyFarewell",
+    "contentChunkIdStop": "93eddd54-53d4-4f17-85bd-06669885f94a",
+    "sceneName": "House of Thalivar"
+  },{
+    "ddbId": 33,
+    "cobaltId": null,
+    "parentId": 755,
+    "splitTag": "h3",
+    "slug": "thunder-cliffs#ThunderCliffsCaves",
+    "tagIdFirst": "1UnsureShore",
+    "contentChunkIdStart": "980ad0c2-d682-4df8-a64b-ddf0cdfd751e",
+    "tagIdLast": "Aftermath",
+    "contentChunkIdStop": "9a6f063a-0d55-456c-a21e-01c6c8221ad4",
+    "sceneName": "Thunder Cliffs Caves"
+  }
+]
