@@ -1,3 +1,5 @@
+"use strict";
+
 const configure = require("./config.js");
 const utils = require("./utils.js");
 const _ = require("lodash");
@@ -25,15 +27,10 @@ function getSceneAdjustments(bookCode) {
 function saveSceneAdjustments(adjustments, bookCode) {
   const sceneDataFile = path.join(sceneDir, `${bookCode}.json`);
   const sceneDataPath = path.resolve(__dirname, sceneDataFile);
-
-  if (fs.existsSync(sceneDataPath)){
-    scenesData = utils.loadJSONFile(sceneDataPath);
-  }
-
   utils.saveJSONFile(adjustments, sceneDataPath);
 }
 
-function listSceneIds(bookCode, lookups=false) {
+function listSceneIds(bookCode) {
   let idTable = configure.getLookups();
 
   if (!idTable[bookCode]) {
@@ -46,7 +43,10 @@ function listSceneIds(bookCode, lookups=false) {
 }
 
 function importScene(conf, sceneFile) {
-  let config = conf;
+  // let config = conf;
+  if (conf) {
+    console.log("Config loaded!");
+  }
   let idTable = configure.getLookups();
   console.log(`Loading scene info from ${sceneFile}`);
 

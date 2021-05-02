@@ -348,6 +348,7 @@ const loadMainWindow = () => {
     mainWindow.webContents.openDevTools();
   }
 
+  // eslint-disable-next-line no-unused-vars
   ipcMain.on("config", (event, args) => {
     // Send result back to renderer process
     // mainWindow.webContents.send("config", {"bears": "not a bear"});
@@ -356,6 +357,7 @@ const loadMainWindow = () => {
     });
   });
 
+  // eslint-disable-next-line no-unused-vars
   ipcMain.on("loadConfig", (event, args) => {
     dialog
       .showOpenDialog(mainWindow, {
@@ -371,6 +373,7 @@ const loadMainWindow = () => {
       });
   });
 
+  // eslint-disable-next-line no-unused-vars
   ipcMain.on("outputDir", (event, args) => {
     dialog
       .showOpenDialog(mainWindow, {
@@ -387,6 +390,7 @@ const loadMainWindow = () => {
       });
   });
 
+  // eslint-disable-next-line no-unused-vars
   ipcMain.on("books", (event, args) => {
     configurator.getConfig().then((config) => {
       ddb.listBooks(config.cobalt, allBooks).then((bookIds) => {
@@ -396,6 +400,7 @@ const loadMainWindow = () => {
     });
   });
 
+  // eslint-disable-next-line no-unused-vars
   ipcMain.on("user", (event, args) => {
     configurator.getConfig().then((config) => {
       ddb.getUserData(config.cobalt).then((userData) => {
@@ -404,6 +409,7 @@ const loadMainWindow = () => {
     });
   });
 
+  // eslint-disable-next-line no-unused-vars
   ipcMain.on("generate", (event, book) => {
     generateAdventure(book).then(() => {
       mainWindow.webContents.send("generate");

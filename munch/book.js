@@ -4,7 +4,7 @@ const utils = require("./utils.js");
 const { getAllSQL } = require("./sql.js");
 const fs = require("fs");
 const path = require("path");
-const { exit, domain } = require("process");
+const { exit } = require("process");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 const sqlite3 = require("@journeyapps/sqlcipher").verbose();
@@ -177,6 +177,7 @@ function diceInt(text) {
  */
 function getDiceTableRange(value) {
   const text = value.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").replace(/\s/g, "").trim();
+  // eslint-disable-next-line no-useless-escape
   const valueRegex = new RegExp(/^(\d+)\-(\d+)|^(\d+)(\+?)$/);
   const valueMatch = text.match(valueRegex);
 
@@ -1128,6 +1129,7 @@ function rowGenerate(err, row) {
   let document = generateJournalChapterEntry(row);
   generateNoteJournals(row);
   if (document.content) {
+    // eslint-disable-next-line no-unused-vars
     let [tempScenes, sceneJournals, tmpReplaceLinks] = findScenes(document);
     replaceLinks = replaceLinks.concat(tmpReplaceLinks);
   }

@@ -159,7 +159,7 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
   const bookZipPath = path.join(downloadDir, `${bookCode}.zip`);
   if (!fs.existsSync(bookZipPath)){
     console.log(`Downloading ${book} ... this might take a while...`);
-    const download = await ddb.downloadBook(bookId, config.cobalt, bookZipPath);
+    await ddb.downloadBook(bookId, config.cobalt, bookZipPath);
     console.log("Download finished, beginning book parse!");
   }
 

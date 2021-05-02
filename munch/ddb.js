@@ -34,6 +34,7 @@ async function getKey(bookId, cobalt) {
   try {
     const urlencoded = new URLSearchParams();
     urlencoded.append("token", `${cobalt}`);
+    // eslint-disable-next-line no-useless-escape
     urlencoded.append("sources", `[{\"sourceID\":${bookId},\"versionID\":null}]`);
 
     const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v6/book-codes", urlencoded);

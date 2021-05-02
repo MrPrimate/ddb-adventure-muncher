@@ -4,7 +4,6 @@ const ddb = require("./ddb.js");
 const { exit } = require("process");
 const scene = require("./scene-load.js");
 const path = require("path");
-const fs = require("fs");
 const enhance = require("./enhance.js");
 
 const configurator = require("./config.js");
@@ -24,7 +23,7 @@ async function downloadBooks(config) {
 }
 
 if (process.argv[2] === "config") {
-  configurator.getConfig(false, process.argv[3]).then((config) => {
+  configurator.getConfig(false, process.argv[3]).then(() => {
     console.log(`Loaded ${process.argv[3]}`);
     exit();
   });
@@ -52,7 +51,7 @@ if (process.argv[2] === "config") {
     exit();
   });
 } else if (process.argv[2] === "scene-ids") {
-  configurator.getConfig(false, null).then((config) => {
+  configurator.getConfig(false, null).then(() => {
     scene.listSceneIds(process.argv[3]);
     exit();
   });
