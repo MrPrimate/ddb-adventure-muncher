@@ -946,7 +946,6 @@ function findScenes(document) {
       }
 
       let title = `Handout ${unknownHandoutCount}`;
-      unknownHandoutCount++;
       document.content = document.content.replace(node.parentNode.outerHTML, `${node.parentNode.outerHTML} @JournalEntry[${title}]{${title}}`);
 
       let row = {
@@ -959,6 +958,7 @@ function findScenes(document) {
       };
       const journalEntry = generateJournalEntry(row, node.src);
       if (!journalEntry.flags.ddb.duplicate) {
+        unknownHandoutCount++;
         journals.push(journalEntry);
       }
     });
@@ -976,7 +976,6 @@ function findScenes(document) {
       }
 
       let title = `${document.name} (Player Version)`;
-      unknownHandoutCount++;
       document.content = document.content.replace(aNode.outerHTML, `@JournalEntry[${title}]{Player Version}`);
 
       let row = {
@@ -997,6 +996,7 @@ function findScenes(document) {
         journals.push(journalEntry);
       }
       if (!sceneImgMatched.includes(journalEntry.img)) {
+        unknownHandoutCount++;
         scenes.push(generateScene(row, journalEntry.img));
       }
     });
@@ -1012,7 +1012,6 @@ function findScenes(document) {
     }
 
     let title = `${document.name} (Player Version)`;
-    unknownHandoutCount++;
     document.content = document.content.replace(node.outerHTML, `@JournalEntry[${title}]{Player Version}`);
 
     let row = {
@@ -1029,6 +1028,7 @@ function findScenes(document) {
 
     // don't add entry if we have already parsed this
     if (!journalEntry.flags.ddb.duplicate) {
+      unknownHandoutCount++;
       linkReplaces.push( {html: node.outerHTML, ref: `@JournalEntry[${title}]{Player Version}` });
       journals.push(journalEntry);
     }
