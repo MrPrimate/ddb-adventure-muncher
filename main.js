@@ -5,6 +5,7 @@ const _ = require('lodash');
 
 app.commandLine.appendSwitch('trace-warnings');
 app.commandLine.appendSwitch('unhandled-rejections', 'strict');
+app.commandLine.appendSwitch('js-flags', '--max-old-space-size=1024');
 
 const isDevelopment = process.env.NODE_ENV === 'DEV';
 
