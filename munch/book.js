@@ -29,6 +29,7 @@ var downloadList = [];
 var tableMatched = [];
 
 let replaceLinks = [];
+let tempHandouts = {};
 
 var masterFolder;
 
@@ -482,7 +483,7 @@ function generateJournalEntry(row, img=null, note=false) {
     }
     journalImgMatched.push(journal.img);
     const journalHandoutCount = journalImgMatched.filter(img => img === journal.img).length;
-    console.log(`Generated Handout ${journal.name}, (count ${journalHandoutCount})`);
+    console.log(`Generated Handout ${journal.name}, "${journal.img}", (count ${journalHandoutCount})`);
   } else {
     const dom = new JSDOM(row.html);
     journal.content = dom.window.document.body.innerHTML.replace(/\s+/g, " ");
@@ -499,7 +500,10 @@ function generateJournalEntry(row, img=null, note=false) {
   if (!imgState && !note) {
     appendJournalToChapter(row);
   }
-  if (!journal.flags.ddb.duplicate) generatedJournals.push(journal);
+  if (!journal.flags.ddb.duplicate) {
+    console.log(`Appending ${journal.name} "${journal.img}"`);
+    generatedJournals.push(journal);
+  }
   return journal;
 }
 
@@ -771,15 +775,16 @@ function findScenes(document) {
   let journals = [];
   let linkReplaces = [];
   let tmpCount = 0;
-  let unknownHandoutCount = 1;
+  const handoutTmpRef = document.flags.ddb.cobaltId ? document.flags.ddb.cobaltId : document.flags.ddb.parentId;
+  let unknownHandoutCount = tempHandouts[handoutTmpRef];
+  if (unknownHandoutCount === null || unknownHandoutCount === undefined) unknownHandoutCount = 1;
   // const frag = JSDOM.fragment(document.content);
   const frag = new JSDOM(document.content);
   document.content = frag.window.document.body.innerHTML;
 
+  console.log("----------------------------------------------");
   console.log(`Finding Scenes in ${document.name}`);
-  if (config.debug) {
-    console.log(`Finding Scenes in ${document.name.toUpperCase()}`);
-  }
+
   // let possibleSceneNodes = frag.querySelectorAll("a[data-lightbox]");
   let possibleFigureSceneNodes = frag.window.document.body.querySelectorAll("figure");
   let possibleDivSceneNodes = frag.window.document.body.querySelectorAll("div.compendium-image-with-subtitle-center, div.compendium-image-with-subtitle-right, div.compendium-image-with-subtitle-left");
@@ -787,12 +792,12 @@ function findScenes(document) {
   let possibleViewPlayerScenes = frag.window.document.body.querySelectorAll("p.compendium-image-view-player");
   let possibleUnknownPlayerLinks = frag.window.document.body.querySelectorAll("a.ddb-lightbox-inner, a.ddb-lightbox-outer");
 
-  if (config.debug) {
-    console.log(possibleFigureSceneNodes.length);
-    console.log(possibleDivSceneNodes.length);
-    console.log(possibleHandouts.length);
-    console.log(possibleViewPlayerScenes.length);
-  }
+  // if (config.debug) {
+  console.log(`possibleFigureSceneNodes ${possibleFigureSceneNodes.length}`);
+  console.log(`possibleDivSceneNodes ${possibleDivSceneNodes.length}`);
+  console.log(`possibleHandouts ${possibleHandouts.length}`);
+  console.log(`possibleViewPlayerScenes ${possibleViewPlayerScenes.length}`);
+  // }
 
   if (possibleFigureSceneNodes.length > 0) {
     possibleFigureSceneNodes.forEach((node) => {
@@ -934,7 +939,7 @@ function findScenes(document) {
     // old style adventures don't have figure tags, hard parse
     // compendium-image-with-subtitle-center
     possibleHandouts.forEach((node) => {
-      if(!node.srv) return;
+      if(!node.src) return;
       tmpCount++;
       if (config.debug) {
         console.log(node.outerHTML);
@@ -1032,6 +1037,7 @@ function findScenes(document) {
     }
   });
 
+  tempHandouts[handoutTmpRef] = unknownHandoutCount;
   return [scenes, journals, linkReplaces];
 }
 
@@ -1198,6 +1204,7 @@ async function setConfig(conf) {
   journalImgMatched = [];
   tableMatched = [];
   replaceLinks = [];
+  tempHandouts = {};
   fetchLookups(config);
   sceneAdjustments = sceneAdjuster.getSceneAdjustments(config.run.bookCode);
   noteHints = noteHinter.getNoteHints(config.run.bookCode);
