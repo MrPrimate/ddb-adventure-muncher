@@ -25,7 +25,7 @@
  * THE SOFTWARE.
  */
 
-const _ = require('lodash');
+const _ = require("lodash");
 
 /**
  * generates factory functions to convert table rows to objects,
@@ -34,25 +34,25 @@ const _ = require('lodash');
  * @return {(row: HTMLTableRowElement) => Object} a function that takes a table row and spits out an object
  */
 function mapRow(headings, highSplit=false) {
-  return function mapRowToObject({ cells }) {
-    const lowCells = [...cells];
-    const highCells = (lowCells.length > headings.length) ? lowCells.splice(lowCells.length/2) : [];
-    const range = highSplit ? highCells : lowCells;
+    return function mapRowToObject({ cells }) {
+        const lowCells = [...cells];
+        const highCells = (lowCells.length > headings.length) ? lowCells.splice(lowCells.length/2) : [];
+        const range = highSplit ? highCells : lowCells;
 
-    return range.reduce(function(result, cell, i) {
-      const input = cell.querySelector("input,select");
-      var value;
+        return range.reduce(function(result, cell, i) {
+            const input = cell.querySelector("input,select");
+            var value;
 
-      if (input) {
-        value = input.type === "checkbox" ? input.checked : input.value;
-      } else {
-        value = cell.innerHTML;
-      }
+            if (input) {
+                value = input.type === "checkbox" ? input.checked : input.value;
+            } else {
+                value = cell.innerHTML;
+            }
 
-      return Object.assign(result, { [headings[i]]: value });
-    }, {});
+            return Object.assign(result, { [headings[i]]: value });
+        }, {});
 
-  };
+    };
 }
 
 
@@ -63,13 +63,13 @@ function mapRow(headings, highSplit=false) {
  * @return {Array<String>}       array of strings representing each header in the table
  */
 function getHeadings(table, unique=true) {
-  if (!table.tHead || table.tHead.rows.length === 0) return [];
-  const headings = [...table.tHead.rows[0].cells].map(heading => {
-    return heading.textContent
-  });
+    if (!table.tHead || table.tHead.rows.length === 0) return [];
+    const headings = [...table.tHead.rows[0].cells].map(heading => {
+        return heading.textContent;
+    });
 
-  if (unique) return _.uniq(headings);
-  return headings;
+    if (unique) return _.uniq(headings);
+    return headings;
 }
 
 
@@ -82,17 +82,17 @@ function getHeadings(table, unique=true) {
  * @return {Array<Object>}       array of objects representing each row in the table
  */
 function parseTable(table) {
-  const headings = getHeadings(table);
-  const allHeadings = getHeadings(table, false);
+    const headings = getHeadings(table);
+    const allHeadings = getHeadings(table, false);
   
-  if (headings.length === 0) return [];
-  // DDB often puts d rolls alongside each other. we attempt to detect these
-  const lowResults = [...table.tBodies[0].rows].map(mapRow(headings));
-  const highResults = (allHeadings.length !== headings.length) ? 
-    [...table.tBodies[0].rows].map(mapRow(headings, true)) :
-    [];
+    if (headings.length === 0) return [];
+    // DDB often puts d rolls alongside each other. we attempt to detect these
+    const lowResults = [...table.tBodies[0].rows].map(mapRow(headings));
+    const highResults = (allHeadings.length !== headings.length) ? 
+        [...table.tBodies[0].rows].map(mapRow(headings, true)) :
+        [];
 
-  return lowResults.concat(highResults);
+    return lowResults.concat(highResults);
 
 
 }

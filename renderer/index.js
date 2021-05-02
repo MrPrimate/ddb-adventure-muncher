@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 // const { ipcRenderer } = require('electron')
 
@@ -13,73 +13,73 @@ const userField = document.getElementById("user");
 
 var config;
 
-patreonLink.addEventListener('click', (event) => {
-  event.preventDefault();
-  window.api.patreon();
+patreonLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.api.patreon();
 });
 
-loadConfig.addEventListener('click', (event) => {
-  event.preventDefault();
-  window.api.send("loadConfig");
+loadConfig.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.api.send("loadConfig");
 });
 
-setOutputDir.addEventListener('click', (event) => {
-  event.preventDefault();
-  window.api.send("outputDir");
+setOutputDir.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.api.send("outputDir");
 });
 
-generateButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  generateButton.disabled = true;
-  const bookCode = document.getElementById("book-select");
-  if (bookCode.value !== 0)
-  window.api.send("generate", bookCode.value);
+generateButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    generateButton.disabled = true;
+    const bookCode = document.getElementById("book-select");
+    if (bookCode.value !== 0)
+        window.api.send("generate", bookCode.value);
 });
 
 window.api.receive("generate", (data) => {
-  generateButton.disabled = false;
+    generateButton.disabled = false;
 });
 
 
 window.api.receive("books", (data) => {
-  data.forEach((book) => {
-    console.log(`${book.bookCode} : ${book.book}`);
-  })
-  const bookHtml = data.reduce((html, book) => {
-    html += `<option value="${book.bookCode}">${book.book}</option>`;
-    return html
-  }, '<option value="0">Select book:</option>');
-  bookList.innerHTML = bookHtml;
+    data.forEach((book) => {
+        console.log(`${book.bookCode} : ${book.book}`);
+    });
+    const bookHtml = data.reduce((html, book) => {
+        html += `<option value="${book.bookCode}">${book.book}</option>`;
+        return html;
+    }, "<option value=\"0\">Select book:</option>");
+    bookList.innerHTML = bookHtml;
 });
 
 window.api.receive("user", (data) => {
-  if (data.error) {
-    userField.innerHTML = `<b>Authentication Failure - please generate and load a new config file!</b>`;
-  }
-  else if (data.userDisplayName) {
-    userField.innerHTML = `<b>User name:</b> ${data.userDisplayName}`;
-  }
+    if (data.error) {
+        userField.innerHTML = "<b>Authentication Failure - please generate and load a new config file!</b>";
+    }
+    else if (data.userDisplayName) {
+        userField.innerHTML = `<b>User name:</b> ${data.userDisplayName}`;
+    }
 });
 
 
 window.api.receive("config", (data) => {
-  console.log(`Received config from main process`);
-  console.log(data);
-  config = data;
+    console.log("Received config from main process");
+    console.log(data);
+    config = data;
 
-  if (config.cobalt) {
-    contentLoadMessage.innerHTML = "Config loaded!";
-    setOutputDir.disabled = false;
-    window.api.send("user");
-    if (config.outputDirEnv) {
-      generateButton.disabled = false;
-      outputLocation.innerHTML = config.outputDirEnv;
-      window.api.send("books");
+    if (config.cobalt) {
+        contentLoadMessage.innerHTML = "Config loaded!";
+        setOutputDir.disabled = false;
+        window.api.send("user");
+        if (config.outputDirEnv) {
+            generateButton.disabled = false;
+            outputLocation.innerHTML = config.outputDirEnv;
+            window.api.send("books");
+        }
+    } else {
+        console.warn("No config file!");
+        contentLoadMessage.innerHTML = "Config not found";
     }
-  } else {
-    console.warn("No config file!");
-    contentLoadMessage.innerHTML = "Config not found";
-  }
 });
 window.api.send("config", "get config");
 

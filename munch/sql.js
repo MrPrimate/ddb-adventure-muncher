@@ -10,7 +10,7 @@ WHERE CobaltID IS NOT NULL
 `;
 
 function getChapterContentSQL(cobaltId) {
-  return `
+    return `
 SELECT ID as id, CobaltID as cobaltId, ParentID as parentId, Slug as slug, Title as title, RenderedHTML as html
 FROM Content
 WHERE ParentId = '${cobaltId}'
