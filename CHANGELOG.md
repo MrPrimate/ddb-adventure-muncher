@@ -1,7 +1,9 @@
 # 0.0.19
 
-* Notes generation for: DC, DoIP, DDvRaM, WA, GoS, HotDQ, IDRotF, LR, LLoK, OotA
+* Notes generation for: DC, DoIP, DDvRaM, WA, GoS, HotDQ, IDRotF, LR, LLoK, OotA, RoT, SDW
 * Some adjusted scene names were not recognised e.g. GoS
+* More OotA scene alignments. (Thanks @Zac!)
+* A few PotA scene alignments. (Thanks @Zac!)
 
 # 0.0.18
 

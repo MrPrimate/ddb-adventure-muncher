@@ -100,20 +100,30 @@ Books with Aligned, Walled and Lit scenes with Notes not on scenes:
 
 * Curse of Strahd
 
-Books with just notes:
+Books with notes:
 
 * Acquisitions Incorporated
 * Princes of the Apocalypse
 * Against the Giants
 * Baldur's Gate: Descent into Avernus
 * Candlekeep Mysteries
+* Divine Contention
+* Dragon of Icespire Peak
+* Rick and Morty
+* Frozen Sick
+* Ghosts of Saltmarsh
+* Hoard of the Dragon Queen
+* Icewind Dale Rime of the Frostmaiden
+* Out of the Abyss
+* Rise of Tiamat
+* Sleeping Dragons Wake
 
 Books with partial scene adjustments:
 
 * Icewind Dale: Rime of the Frost Maiden
 * Dragon of Icespire Peak
 * Divine Contention
-* Out of the Abyss
+* Princes of the Apocalypse
 
 If you wish to help improve the scene wall and lighting information, see the below section.
 
