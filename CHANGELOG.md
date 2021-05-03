@@ -1,6 +1,6 @@
-# 0.0.19
+# 0.1.0
 
-* Notes generation for: DC, DoIP, DDvRaM, WA, GoS, HotDQ, IDRotF, LR, LLoK, OotA, RoT, SDW, SKT, SLW, EGtW, TTP, TOH, TSC, THSOT, WPM
+* Notes generation for: DC, DoIP, DDvRaM, WA, GoS, HotDQ, IDRotF, LR, LLoK, OotA, RoT, SDW, SKT, SLW, EGtW, TTP, TOH, TSC, THSOT, WPM, DiT, ToA
 * Some adjusted scene names were not recognised e.g. GoS
 * More OotA scene alignments. (Thanks @Zac!)
 * A few PotA scene alignments (Thanks @Zac!) and THSOT (Thanks @ygg)

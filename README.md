@@ -125,6 +125,8 @@ Books with notes:
 * Tomb of Horrors
 * The Sunless Citadel
 * White Plume Mountain
+* Dead in Thay
+* Tomb of Annihilation
 
 Books with partial scene adjustments:
 
