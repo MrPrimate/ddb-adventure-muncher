@@ -469,9 +469,13 @@ function generateJournalEntry(row, img=null, note=false) {
   if (imgState) {
     journal.img = replacer.replaceImgLinksForJournal(img, config);
     if (journalImgMatched.includes(journal.img)) {
+      const journalMatch = generatedJournals.find((j) => j.img === journal.img);
       journal.flags.ddb.duplicate = true;
+      journal.flags.ddb.duplicateId = journalMatch._id;
+      journal.flags.ddb.linkName = journalMatch.name;
     } else {
       journal.flags.ddb.duplicate = false;
+      journal.flags.ddb.linkName = journal.name;
       if (config.imageFind) {
         imageFinderJournalResults.push({
           bookCode: config.run.bookCode,
@@ -483,7 +487,7 @@ function generateJournalEntry(row, img=null, note=false) {
     }
     journalImgMatched.push(journal.img);
     const journalHandoutCount = journalImgMatched.filter(img => img === journal.img).length;
-    console.log(`Generated Handout ${journal.name}, "${journal.img}", (count ${journalHandoutCount})`);
+    console.log(`Generated Handout ${journal.name}, "${journal.img}", (count ${journalHandoutCount}), Duplicate? ${journal.flags.ddb.duplicate}`);
   } else {
     const dom = new JSDOM(row.html);
     journal.content = dom.window.document.body.innerHTML.replace(/\s+/g, " ");
@@ -834,8 +838,8 @@ function findScenes(document) {
           tmpCount++;
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
           journals.push(playerEntry);
-          linkReplaces.push( {html: playerRef.outerHTML, ref: `@JournalEntry[${title}]{DM Version} @JournalEntry[${row.title}]{Player Version}` });
-          document.content = document.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${row.title}]{Player Version}`);
+          linkReplaces.push( {html: playerRef.outerHTML, ref: `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}` });
+          document.content = document.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}`);
           scenes.push(generateScene(row, playerEntry.img));
         }
 
@@ -915,8 +919,8 @@ function findScenes(document) {
           tmpCount++;
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
           journals.push(playerEntry);
-          linkReplaces.push( {html: playerRef.outerHTML, ref: `@JournalEntry[${title}]{DM Version} @JournalEntry[${row.title}]{Player Version}` });
-          document.content = document.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${row.title}]{Player Version}`);
+          linkReplaces.push( {html: playerRef.outerHTML, ref: `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version} [DDB]` });
+          document.content = document.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version} [DDB2]`);
           scenes.push(generateScene(row, playerEntry.img));
         } else {
           document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${title}]{${title}}`);
@@ -935,34 +939,6 @@ function findScenes(document) {
       }
     });
   }
-  if (possibleFigureSceneNodes.length == 0 && possibleHandouts.length > 0) {
-    // old style adventures don't have figure tags, hard parse
-    // compendium-image-with-subtitle-center
-    possibleHandouts.forEach((node) => {
-      if(!node.src) return;
-      tmpCount++;
-      if (config.debug) {
-        console.log(node.outerHTML);
-      }
-
-      let title = `Handout ${unknownHandoutCount}`;
-      document.content = document.content.replace(node.parentNode.outerHTML, `${node.parentNode.outerHTML} @JournalEntry[${title}]{${title}}`);
-
-      let row = {
-        title: title,
-        id: 12000 + document.flags.ddb.ddbId + tmpCount,
-        parentId: document.flags.ddb.parentId,
-        cobaltId: document.flags.ddb.cobaltId,
-        contentChunkId: node.getAttribute("data-content-chunk-id"),
-        slug: document.flags.ddb.slug,
-      };
-      const journalEntry = generateJournalEntry(row, node.src);
-      if (!journalEntry.flags.ddb.duplicate) {
-        unknownHandoutCount++;
-        journals.push(journalEntry);
-      }
-    });
-  }
   if (possibleFigureSceneNodes.length == 0 && possibleViewPlayerScenes.length > 0) {
     // old style adventures don't have figure tags, hard parse
     // compendium-image-with-subtitle-center
@@ -976,7 +952,6 @@ function findScenes(document) {
       }
 
       let title = `${document.name} (Player Version)`;
-      document.content = document.content.replace(aNode.outerHTML, `@JournalEntry[${title}]{Player Version}`);
 
       let row = {
         title: title,
@@ -991,12 +966,13 @@ function findScenes(document) {
       const journalEntry = generateJournalEntry(row, aNode.href.replace("ddb://image", "."));
       
       // don't add entry if we have already parsed this
+      // 
       if (!journalEntry.flags.ddb.duplicate) {
-        linkReplaces.push( {html: aNode.outerHTML, ref: `@JournalEntry[${title}]{Player Version}` });
+        linkReplaces.push( {html: aNode.outerHTML, ref: `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}` });
+        document.content = document.content.replace(aNode.outerHTML, `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}`);
         journals.push(journalEntry);
       }
       if (!sceneImgMatched.includes(journalEntry.img)) {
-        unknownHandoutCount++;
         scenes.push(generateScene(row, journalEntry.img));
       }
     });
@@ -1012,7 +988,6 @@ function findScenes(document) {
     }
 
     let title = `${document.name} (Player Version)`;
-    document.content = document.content.replace(node.outerHTML, `@JournalEntry[${title}]{Player Version}`);
 
     let row = {
       title: title,
@@ -1028,14 +1003,44 @@ function findScenes(document) {
 
     // don't add entry if we have already parsed this
     if (!journalEntry.flags.ddb.duplicate) {
-      unknownHandoutCount++;
-      linkReplaces.push( {html: node.outerHTML, ref: `@JournalEntry[${title}]{Player Version}` });
+      linkReplaces.push( {html: node.outerHTML, ref: `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}` });
+      document.content = document.content.replace(node.outerHTML, `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}`);
       journals.push(journalEntry);
     }
     if (!sceneImgMatched.includes(journalEntry.img)) {
       scenes.push(generateScene(row, journalEntry.img));
     }
   });
+
+  if (possibleFigureSceneNodes.length == 0 && possibleHandouts.length > 0) {
+    // old style adventures don't have figure tags, hard parse
+    // compendium-image-with-subtitle-center
+    possibleHandouts.forEach((node) => {
+      if(!node.src) return;
+      tmpCount++;
+      if (config.debug) {
+        console.log(node.outerHTML);
+      }
+
+      let title = `Handout ${unknownHandoutCount}`;
+
+      let row = {
+        title: title,
+        id: 12000 + document.flags.ddb.ddbId + tmpCount,
+        parentId: document.flags.ddb.parentId,
+        cobaltId: document.flags.ddb.cobaltId,
+        contentChunkId: node.getAttribute("data-content-chunk-id"),
+        slug: document.flags.ddb.slug,
+      };
+      const journalEntry = generateJournalEntry(row, node.src);
+      if (!journalEntry.flags.ddb.duplicate) {
+        unknownHandoutCount++;
+        linkReplaces.push( {html: node.parentNode.outerHTML, ref: `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkName}]{${title}}` });
+        document.content = document.content.replace(node.parentNode.outerHTML, `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkName}]{${title}}`);
+        journals.push(journalEntry);
+      }
+    });
+  }
 
   tempHandouts[handoutTmpRef] = unknownHandoutCount;
   return [scenes, journals, linkReplaces];
