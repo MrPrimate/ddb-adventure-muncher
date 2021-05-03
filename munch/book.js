@@ -471,7 +471,7 @@ function generateJournalEntry(row, img=null, note=false) {
     if (journalImgMatched.includes(journal.img)) {
       const journalMatch = generatedJournals.find((j) => j.img === journal.img);
       journal.flags.ddb.duplicate = true;
-      journal.flags.ddb.duplicateId = journalMatch._id;
+      journal.flags.ddb.linkId = journalMatch._id;
       journal.flags.ddb.linkName = journalMatch.name;
     } else {
       journal.flags.ddb.duplicate = false;
@@ -505,6 +505,7 @@ function generateJournalEntry(row, img=null, note=false) {
     appendJournalToChapter(row);
   }
   if (!journal.flags.ddb.duplicate) {
+    journal.flags.ddb.linkId = journal._id;
     console.log(`Appending ${journal.name} "${journal.img}"`);
     generatedJournals.push(journal);
   }
@@ -1035,8 +1036,8 @@ function findScenes(document) {
       const journalEntry = generateJournalEntry(row, node.src);
       if (!journalEntry.flags.ddb.duplicate) {
         unknownHandoutCount++;
-        linkReplaces.push( {html: node.parentNode.outerHTML, ref: `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkName}]{${title}}` });
-        document.content = document.content.replace(node.parentNode.outerHTML, `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkName}]{${title}}`);
+        linkReplaces.push( {html: node.parentNode.outerHTML, ref: `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}` });
+        // document.content = document.content.replace(node.parentNode.outerHTML, `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}`);
         journals.push(journalEntry);
       }
     });
