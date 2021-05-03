@@ -25,5 +25,5 @@ jobs:
           DISCORD_USERNAME: "Smol - Head of QA"
         uses: Ilshidur/action-discord@0.0.2
         with:
-          args: 'The release kobolds have pushed DDB Adventure Muncher ${{ steps.get-version.outputs.version }} to it's release page.'
+          args: "The release kobolds have pushed DDB Adventure Muncher ${{ steps.get-version.outputs.version }} to it's release page."
 
