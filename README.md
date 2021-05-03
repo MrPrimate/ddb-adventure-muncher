@@ -127,6 +127,7 @@ Books with notes:
 * White Plume Mountain
 * Dead in Thay
 * Tomb of Annihilation
+* Waterdeep: Dragon Heist
 
 Books with partial scene adjustments:
 
@@ -135,6 +136,10 @@ Books with partial scene adjustments:
 * Divine Contention
 * Princes of the Apocalypse
 * The Hidden Shrine of Tamoachan
+
+Noteable books with no notes:
+
+* Waterdeep: Dungeon of the Mad Mage
 
 If you wish to help improve the scene wall and lighting information, see the below section.
 
