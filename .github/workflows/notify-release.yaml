@@ -22,8 +22,8 @@ jobs:
       - name: Discord notification
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_HOOK }}
-          DISCORD_USERNAME: "Release-O-Bot"
+          DISCORD_USERNAME: "Smol - Head of QA"
         uses: Ilshidur/action-discord@0.0.2
         with:
-          args: 'DDB Adventure Muncher ${{ steps.get-version.outputs.version }} has been released.'
+          args: 'The release kobolds have pushed DDB Adventure Muncher ${{ steps.get-version.outputs.version }} to it's release page.'
 
