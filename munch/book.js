@@ -68,10 +68,13 @@ function getId(document, docType) {
       contentChunkId == r.contentChunkId :
       true;
     const sceneNotes = (document.flags.ddb.note) ? 
-      document.name === r.name:
+      document.name === r.name && r.note :
+      true;
+    const handout = (document.flags.ddb.img) ? 
+      document.name === r.name && r.img :
       true;
 
-    return basicCheck && chunkCheck && sceneNotes;
+    return basicCheck && chunkCheck && sceneNotes && handout;
   });
 
   // console.log(`Finding id for ${docType} ${document.name}`);
@@ -91,6 +94,8 @@ function getId(document, docType) {
       parentId: document.flags.ddb.parentId,
       contentChunkId: contentChunkId,
       name: document.name,
+      note: (document.flags.ddb.note) ? document.flags.ddb.note : false,
+      img: (document.flags.ddb.img) ? document.flags.ddb.img : false,
     };
     idTable[config.run.bookCode].push(id);
     return id.id;
@@ -349,6 +354,8 @@ function updateJournals(documents) {
       doc.content = replacer.foundryCompendiumReplace(doc.content, config);
       console.log(`Generating dice rolls for ${doc.name}`);
       doc.content = replacer.replaceRollLinks(doc.content);
+      console.log(`Fixing up classes for ${doc.name}`);
+      doc.content = replacer.addClasses(doc.content);
     }
     return doc;
   });
@@ -428,23 +435,23 @@ function getFolderId(row, type, img, note) {
     folder = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
     if (!folder) folder = generateFolder(type, row, false, img, note);
     folderId = folder._id;
-    // return masterFolder[type]._id;
   } else if (row.parentId) {
-    folder = generatedFolders.find((f) => f.flags.ddb.parentId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
+    folder = generatedFolders.find((f) => f.flags.ddb.parentId == row.parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
     if (!folder) folder = generateFolder(type, row, false, img, note);
     folderId = folder._id;
-  } else {
-    folder = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
-    if (folder) folderId = folder._id;
   }
+  // else {
+  //   folder = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
+  //   if (folder) folderId = folder._id;
+  // }
   return folderId;
 }
 
 function appendJournalToChapter(row) {
   if (row.parentId) {
-    console.log(`${row.title} ${row.parentId} search...`);
+    console.log(`Appending to chapter... ${row.title} ${row.parentId} search...`);
     generatedJournals.forEach((journal) => {
-      if (journal.flags.ddb.cobaltId == row.parentId) {
+      if (journal.flags.ddb.cobaltId == row.parentId && (journal.img === null || journal.img === undefined || journal.img == "")) {
         journal.content += row.html;
       }
     });
@@ -458,14 +465,20 @@ function generateJournalEntry(row, img=null, note=false) {
   journal.flags.ddb.ddbId = row.id;
   journal.flags.ddb.bookCode = config.run.bookCode;
   journal.flags.ddb.slug = row.slug;
-  const contentChunkId =  (row.contentChunkId && row.contentChunkId != "") ? 
+  const contentChunkId = (row.contentChunkId && row.contentChunkId.trim() != "") ? 
     row.contentChunkId :
     null;
   journal.flags.ddb.contentChunkId = contentChunkId;
   journal.flags.ddb.userData = config.run.userData;
+  journal.flags.ddb.originDocId = row.originDocId;
+  journal.flags.ddb.originHint = row.originHint;
+  journal.flags.ddb.originalLink = row.originalLink;
+  journal.flags.ddb.note = note;
+
   journal.sort = journalSort + parseInt(row.id);
   if (row.cobaltId) journal.flags.ddb.cobaltId = row.cobaltId;
-  let imgState = (img !== null && img !== "") ? true : false;
+  const imgState = (img !== null && img !== "") ? true : false;
+  journal.flags.ddb.img = imgState;
   if (imgState) {
     journal.img = replacer.replaceImgLinksForJournal(img, config);
     if (journalImgMatched.includes(journal.img)) {
@@ -496,9 +509,11 @@ function generateJournalEntry(row, img=null, note=false) {
   if (row.parentId) journal.flags.ddb.parentId = row.parentId;
   if (!row.ddbId) row.ddbId = row.id;
   journal.folder = getFolderId(row, "JournalEntry", imgState, note);
+  // console.log("======= DEBUG ======");
   // console.log(row);
   // console.log(journal);
   // console.log(`${journal.name}, ${journal.folder}`);
+  // console.log("======= DEBUG ======");
   journal._id = getId(journal, "JournalEntry");
   console.log(`Generated journal entry ${journal.name}`);
   if (!imgState && !note) {
@@ -506,7 +521,7 @@ function generateJournalEntry(row, img=null, note=false) {
   }
   if (!journal.flags.ddb.duplicate) {
     journal.flags.ddb.linkId = journal._id;
-    console.log(`Appending ${journal.name} "${journal.img}"`);
+    console.log(`Appending ${journal.name} Img:"${journal.img}"`);
     generatedJournals.push(journal);
   }
   return journal;
@@ -607,10 +622,13 @@ function generateScene(row, img) {
   scene.name = row.sceneName;
   scene.navName = row.sceneName.split(":").pop().trim();
 
-  const journalMatch = generatedJournals.find((journal) => 
-    journal.name.includes(scene.navName) &&
-    !journal.flags.ddb.notes && !journal.flags.ddb.img && !journal.img
-  );
+  let journalMatch = generatedJournals.find((journal) => journal._id === row.originDocId);
+  if (!journalMatch) {
+    journalMatch = generatedJournals.find((journal) => 
+      journal.name.includes(scene.navName) &&
+      !journal.flags.ddb.notes && !journal.flags.ddb.img && !journal.img
+    );
+  }
   if (journalMatch) scene.journal = journalMatch._id;
 
   scene.img = img;
@@ -626,6 +644,10 @@ function generateScene(row, img) {
     null;
   scene.flags.ddb.contentChunkId = contentChunkId;
   scene.flags.ddb.userData = config.run.userData;
+  scene.flags.ddb.originDocId = row.originDocId;
+  scene.flags.ddb.originHint = row.originHint;
+  scene.flags.ddb.originalLink = row.originalLink;
+
   scene.sort = journalSort + parseInt(row.id);
   if (row.cobaltId) scene.flags.ddb.cobaltId = row.cobaltId;
   if (row.parentId) {
@@ -835,6 +857,9 @@ function findScenes(document) {
             documentName: document.name,
             sceneName: utils.titleString(title),
             contentChunkId: rowContentChunkId,
+            originDocId: document._id,
+            originHint: "possibleFigureSceneNodes, player",
+            originalLink: playerRef.href,
           };
           tmpCount++;
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
@@ -858,8 +883,14 @@ function findScenes(document) {
           cobaltId: document.flags.ddb.cobaltId,
           contentChunkId: contentChunkId,
           slug: document.flags.ddb.slug,
+          originHint: "possibleFigureSceneNodes, dm",
+          originalLink: img.src,
         };
         const journalEntry = generateJournalEntry(row, img.src);
+        if (!playerRef) {
+          // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkName}]{${journalEntry.name}}`);
+          linkReplaces.push( {html: img.outerHTML, ref: `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${journalEntry.name}}` });
+        }
         journals.push(journalEntry);
       }
     });
@@ -916,15 +947,16 @@ function findScenes(document) {
             documentName: document.name,
             sceneName: utils.titleString(title),
             contentChunkId: (nextNode) ? nextNode.getAttribute("data-content-chunk-id") : undefined,
+            originDocId: document._id,
+            originHint: "possibleDivSceneNodes, player",
+            originalLink: playerRef.href,
           };
           tmpCount++;
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
           journals.push(playerEntry);
-          linkReplaces.push( {html: playerRef.outerHTML, ref: `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version} [DDB]` });
-          document.content = document.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version} [DDB2]`);
+          linkReplaces.push( {html: playerRef.outerHTML, ref: `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}` });
+          document.content = document.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}`);
           scenes.push(generateScene(row, playerEntry.img));
-        } else {
-          document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${title}]{${title}}`);
         }
 
         let row = {
@@ -934,8 +966,14 @@ function findScenes(document) {
           cobaltId: document.flags.ddb.cobaltId,
           contentChunkId: caption.getAttribute("data-content-chunk-id"),
           slug: document.flags.ddb.slug,
+          originHint: "possibleDivSceneNodes, dm",
+          originalLink: img.src,
         };
         const journalEntry = generateJournalEntry(row, img.src);
+        if (!playerVersion) {
+          // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}`);
+          linkReplaces.push( {html: img.outerHTML, ref: `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}` });
+        }
         journals.push(journalEntry);
       }
     });
@@ -963,6 +1001,9 @@ function findScenes(document) {
         sceneName: utils.titleString(document.name),
         contentChunkId: node.getAttribute("data-content-chunk-id"),
         slug: document.flags.ddb.slug,
+        originDocId: document._id,
+        originHint: "possibleViewPlayerScenes, player",
+        originalLink: aNode.href,
       };
       const journalEntry = generateJournalEntry(row, aNode.href.replace("ddb://image", "."));
       
@@ -999,6 +1040,9 @@ function findScenes(document) {
       sceneName: utils.titleString(document.name),
       contentChunkId: node.parentElement.getAttribute("data-content-chunk-id"),
       slug: document.flags.ddb.slug,
+      originDocId: document._id,
+      originHint: "possibleUnknownPlayerLinks, player",
+      originalLink: node.href,
     };
     const journalEntry = generateJournalEntry(row, node.href.replace("ddb://image", "."));
 
@@ -1013,35 +1057,34 @@ function findScenes(document) {
     }
   });
 
-  if (possibleFigureSceneNodes.length == 0 && possibleHandouts.length > 0) {
-    // old style adventures don't have figure tags, hard parse
-    // compendium-image-with-subtitle-center
-    possibleHandouts.forEach((node) => {
-      if(!node.src) return;
-      tmpCount++;
-      if (config.debug) {
-        console.log(node.outerHTML);
-      }
+  possibleHandouts.forEach((node) => {
+    if(!node.src) return;
+    tmpCount++;
+    if (config.debug) {
+      console.log(node.outerHTML);
+    }
 
-      let title = `Handout ${unknownHandoutCount}`;
+    let title = `Handout ${unknownHandoutCount}`;
 
-      let row = {
-        title: title,
-        id: 12000 + document.flags.ddb.ddbId + tmpCount,
-        parentId: document.flags.ddb.parentId,
-        cobaltId: document.flags.ddb.cobaltId,
-        contentChunkId: node.getAttribute("data-content-chunk-id"),
-        slug: document.flags.ddb.slug,
-      };
-      const journalEntry = generateJournalEntry(row, node.src);
-      if (!journalEntry.flags.ddb.duplicate) {
-        unknownHandoutCount++;
-        linkReplaces.push( {html: node.parentNode.outerHTML, ref: `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}` });
-        // document.content = document.content.replace(node.parentNode.outerHTML, `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}`);
-        journals.push(journalEntry);
-      }
-    });
-  }
+    let row = {
+      title: title,
+      id: 12000 + document.flags.ddb.ddbId + tmpCount,
+      parentId: document.flags.ddb.parentId,
+      cobaltId: document.flags.ddb.cobaltId,
+      contentChunkId: node.getAttribute("data-content-chunk-id"),
+      slug: document.flags.ddb.slug,
+      originDocId: document._id,
+      originHint: "possibleHandouts",
+      originalLink: node.src,
+    };
+    const journalEntry = generateJournalEntry(row, node.src);
+    if (!journalEntry.flags.ddb.duplicate) {
+      unknownHandoutCount++;
+      linkReplaces.push( {html: node.parentNode.outerHTML, ref: `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}` });
+      // document.content = document.content.replace(node.parentNode.outerHTML, `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}`);
+      journals.push(journalEntry);
+    }
+  }); 
 
   tempHandouts[handoutTmpRef] = unknownHandoutCount;
   return [scenes, journals, linkReplaces];
