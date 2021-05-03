@@ -6,8 +6,8 @@
   "main": "main.js",
   "scripts": {
     "start": "NODE_ENV=DEV electron .",
-    "lint": "npx eslint src/",
-    "lint-fix": "npx eslint src/ --fix",
+    "lint": "npx eslint ./",
+    "lint-fix": "npx eslint ./ --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
