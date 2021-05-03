@@ -177,16 +177,16 @@ function addClasses(text) {
   const dom = new JSDOM(text);
   let body = dom.window.document.body;
   const blockquotes = body.getElementsByTagName("blockquote");
-  for(var i = 0, all = blockquotes.length; i < all; i++) {
+  for(let i = 0, all = blockquotes.length; i < all; i++) {
     blockquotes[i].classList.add("ddb");
   }
   const h4 = body.getElementsByTagName("H4");
-  for(var i = 0, all = h4.length; i < all; i++) {
-    h4[i].classList.add("ddb");
+  for(let j = 0, all = h4.length; j < all; j++) {
+    h4[j].classList.add("ddb");
   }
   const h5 = body.getElementsByTagName("H5");
-  for(var i = 0, all = h5.length; i < all; i++) {
-    h5[i].classList.add("ddb");
+  for(let k = 0, all = h5.length; k < all; k++) {
+    h5[k].classList.add("ddb");
   }
 
   text = body.innerHTML;
