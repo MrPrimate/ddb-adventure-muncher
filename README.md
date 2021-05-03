@@ -99,6 +99,7 @@ Books with Aligned, Walled, Lit scenes with Note placed:
 Books with Aligned, Walled and Lit scenes with Notes not on scenes:
 
 * Curse of Strahd
+* The Hidden Shrine of Tamoachan
 
 Books with notes:
 
@@ -117,6 +118,13 @@ Books with notes:
 * Out of the Abyss
 * Rise of Tiamat
 * Sleeping Dragons Wake
+* Storm Kings Thuder
+* Storm Lord's Wrath
+* Explorers Guide to Wildemount
+* The Tortle Package
+* Tomb of Horrors
+* The Sunless Citadel
+* White Plume Mountain
 
 Books with partial scene adjustments:
 
@@ -124,6 +132,7 @@ Books with partial scene adjustments:
 * Dragon of Icespire Peak
 * Divine Contention
 * Princes of the Apocalypse
+* The Hidden Shrine of Tamoachan
 
 If you wish to help improve the scene wall and lighting information, see the below section.
 

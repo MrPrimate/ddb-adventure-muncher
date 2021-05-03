@@ -1,9 +1,11 @@
 # 0.0.19
 
-* Notes generation for: DC, DoIP, DDvRaM, WA, GoS, HotDQ, IDRotF, LR, LLoK, OotA, RoT, SDW
+* Notes generation for: DC, DoIP, DDvRaM, WA, GoS, HotDQ, IDRotF, LR, LLoK, OotA, RoT, SDW, SKT, SLW, EGtW, TTP, TOH, TSC, THSOT, WPM
 * Some adjusted scene names were not recognised e.g. GoS
 * More OotA scene alignments. (Thanks @Zac!)
-* A few PotA scene alignments. (Thanks @Zac!)
+* A few PotA scene alignments (Thanks @Zac!) and THSOT (Thanks @ygg)
+* DMG parsing ran out of memory on some machines.
+* Some books like GGtR had stopped generating handouts.
 
 # 0.0.18
 
