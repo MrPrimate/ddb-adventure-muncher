@@ -174,23 +174,22 @@ function replaceRollLinks(text) {
 }
 
 function addClasses(text) {
-  const dom = new JSDOM(text);
-  let body = dom.window.document.body;
-  const blockquotes = body.getElementsByTagName("blockquote");
-  for(let i = 0, all = blockquotes.length; i < all; i++) {
-    blockquotes[i].classList.add("ddb");
+  const dom = new JSDOM(text).window.document;
+
+  const blockquotes = dom.getElementsByTagName("blockquote");
+  for (let i = 0; i < blockquotes.length; i++) {
+    blockquotes[i].classList.add("ddb-blockquote");
   }
-  const h4 = body.getElementsByTagName("H4");
-  for(let j = 0, all = h4.length; j < all; j++) {
-    h4[j].classList.add("ddb");
+  const h4 = dom.getElementsByTagName("H4");
+  for (let j = 0; j < h4.length; j++) {
+    h4[j].classList.add("ddb-book-header");
   }
-  const h5 = body.getElementsByTagName("H5");
-  for(let k = 0, all = h5.length; k < all; k++) {
-    h5[k].classList.add("ddb");
+  const h5 = dom.getElementsByTagName("H5");
+  for (let k = 0; k < h5.length; k++) {
+    h5[k].classList.add("ddb-book-header");
   }
 
-  text = body.innerHTML;
-  return text;
+  return dom.body.innerHTML;
 }
 
 
