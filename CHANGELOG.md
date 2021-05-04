@@ -1,3 +1,9 @@
+# 0.1.1
+
+* Some Journal content has a CSS class attached to it which rendered content invisible.
+* THSoT scene tweaks (Thanks @ygg)
+* BGDiA first scene (Thanks @samm)
+
 # 0.1.0
 
 * Notes generation for: DC, DoIP, DDvRaM, WA, GoS, HotDQ, IDRotF, LR, LLoK, OotA, RoT, SDW, SKT, SLW, EGtW, TTP, TOH, TSC, THSOT, WPM, DiT, ToA
