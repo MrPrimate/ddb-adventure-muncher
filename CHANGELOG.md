@@ -1,6 +1,7 @@
 # 0.1.1
 
 * Some Journal content has a CSS class attached to it which rendered content invisible.
+* Notes are note sorted alphabetically and numbers are padded with a zero if single digit.
 * THSoT scene tweaks (Thanks @ygg)
 * BGDiA first scene (Thanks @samm)
 
