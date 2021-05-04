@@ -378,7 +378,8 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
     const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
     const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
     folder.name = `[Pins] ${row.sceneName ? row.sceneName : parent.name}`;
-    folder.sort = 900000;
+    // folder.sort = 900000;
+    folder.sorting = "a";
     folder.parent = `${parent._id}`;
     folder.flags.ddb.parentId = parentId;
   }
@@ -588,7 +589,16 @@ function generateNoteJournals(row) {
       if (tagMatch || stopChunk) {
         let noteRow = JSON.parse(JSON.stringify(row));
         noteRow.html = html;
-        noteRow.title = noteTitle;
+
+        console.log(noteTitle);
+        const numMatch = noteTitle.match(/^(\d+)(.*)/);
+        if (numMatch) {
+          const prefix = utils.zeroPad(numMatch[1],2);
+          noteRow.title = `${prefix}${numMatch[2]}`;
+        } else {
+          noteRow.title = noteTitle;
+        }
+
         noteRow.contentChunkId = keyChunkId;
         noteRow.sceneName = hint.sceneName;
         noteRow.id  = id + tmpCount;
@@ -702,7 +712,7 @@ function generateScene(row, img) {
             prefix.length == 1 ?
               "modules/ddb-importer/icons/" + prefix.toUpperCase() + ".svg" :
               "icons/svg/book.svg" :
-            "modules/ddb-importer/icons/" + prefix.padStart(2, "0") + ".svg";
+            "modules/ddb-importer/icons/" + utils.zeroPad(parseInt(prefix),2) + ".svg";
 
           note.positions.forEach((position) => {
             const noteId = getId(noteJournal, "Note");
