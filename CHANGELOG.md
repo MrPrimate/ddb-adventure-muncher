@@ -4,6 +4,7 @@
 * Notes are note sorted alphabetically and numbers are padded with a zero if single digit.
 * THSoT scene tweaks (Thanks @ygg)
 * BGDiA first scene (Thanks @samm)
+* Partial WDotMM Scene Notes (Levels 1-9)
 
 # 0.1.0
 
