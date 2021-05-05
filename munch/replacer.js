@@ -317,8 +317,14 @@ function replaceRollLinks(text, conf) {
   if (!config) config = conf;
 
   text = text.replace(/[­––−-]/gu, "-").replace(/-+/g, "-");
-  const diceRegex = new RegExp(/([.>( ^]|^|regains +)?(\d*d\d+(?:\s*[+-]\s*\d*d*\d*)*)([.,<)]|$| +) *([a-z,A-Z]*) *(damage|points)?/, "g");
-  text = text.replace(diceRegex, diceRollMatcher);
+  const damageRegex = new RegExp(/([.>( ^]|^|regains +)?(\d*d\d+(?:\s*[+-]\s*\d*d*\d*)*)([.,<)]|$| +) *([a-z,A-Z]*) *(damage|points)?/, "g");
+  text = text.replace(damageRegex, diceRollMatcher);
+
+  // const Regex
+  // some other roll stuff -what was it going to be?
+  // to hit rolls
+  const toHitRegex = new RegExp(/ ([+-]) *(\d+) to hit/, "g");
+  text = text.replace(toHitRegex, " [[/r 1d20 $1 $2]] to hit");
   return text;
 }
 
