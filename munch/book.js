@@ -143,7 +143,7 @@ function fixUpTables(tables, journals) {
     table.results.forEach((result) => {
       result.text = replacer.moduleReplaceLinks(result.text, journals, config);
       result.text = replacer.foundryCompendiumReplace(result.text, config);
-      result.text = replacer.replaceRollLinks(result.text);
+      result.text = replacer.replaceRollLinks(result.text, config);
       result.text = JSDOM.fragment(result.text).textContent;
     });
   });
@@ -353,7 +353,7 @@ function updateJournals(documents) {
       console.log(`Linking ddb-importer compendium content for ${doc.name}`);
       doc.content = replacer.foundryCompendiumReplace(doc.content, config);
       console.log(`Generating dice rolls for ${doc.name}`);
-      doc.content = replacer.replaceRollLinks(doc.content);
+      doc.content = replacer.replaceRollLinks(doc.content, config);
       console.log(`Fixing up classes for ${doc.name}`);
       doc.content = replacer.addClasses(doc.content);
     }

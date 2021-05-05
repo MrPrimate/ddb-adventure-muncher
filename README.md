@@ -12,6 +12,8 @@ It bundles these into a zip file for importing.
 
 All the adventure generation and calls to DDB are done locally. A single call to my DDB proxy is made when you run the proxy with your cobalt token to authenticate to DDB and see if you own the content. If it does it provides some enhancement data to improve things like quality of maps. If you wish to disable this call, add the following setting to your `config.json` file: `"disableEnhancedDownloads": true`.
 
+If you wish to disable the damage tagging on rolls set the config value: `"useDamageHints": false`
+
 
 ## How does this work?
 
