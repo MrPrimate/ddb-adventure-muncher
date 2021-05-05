@@ -1,3 +1,8 @@
+# 0.1.2
+
+* Improved roll parsing
+* Improved CoS scenes (Thanks @Zac!)
+
 # 0.1.1
 
 * Some Journal content has a CSS class attached to it which rendered content invisible.
