@@ -384,11 +384,14 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
     folder.flags.ddb.parentId = parentId;
   }
   else if (img) {
+    // console.log(row);
     const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
     const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
-    folder.name = `[Handouts] ${row.sceneName ? row.sceneName : parent.name}`;
+    folder.name = `[Handouts] ${row.sceneName ? row.sceneName : (parent) ? parent.name: row.title }`;
     folder.sort = 1000000;
-    folder.parent = `${parent._id}`;
+    if (parent) { // tmp fix for hftt, for some reason it does not generate a parent folder
+      folder.parent = `${parent._id}`;
+    }
     folder.flags.ddb.parentId = parentId;
   } else if (row.parentId) {
     const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img);
