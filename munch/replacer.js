@@ -168,8 +168,16 @@ function replaceImgLinksForJournal(text, config) {
 }
 
 function replaceRollLinks(text) {
+
+  text = text.replace(/[­––−-]/gu, "-").replace(/-+/g, "-");
+
+  const damageExpression = new RegExp(/([0-9]*d[0-9]+(?:\s*[-+]\s*[0-9]+)?(?:\s+plus [^\)]+)?)\)?)?\s*([\w ]*?)\s*damage/); // eslint-disable-line no-useless-escape
+  const matches = reMatchAll(damageExpression, hit) || [];
+  const regainExpression = new RegExp(/(regains)\s+?(?:([0-9]+))?(?: *\(?([0-9]*d[0-9]+(?:\s*[-+]\s*[0-9]+)??)\)?)?\s+hit\s+points/);
+  const regainMatch = hit.match(regainExpression);
+
   const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*d*\d*)?)([\s.,<])/, "g");
-  text = text.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").replace(diceRegex, "[[/r $1]]$3");
+  text = text.replace(diceRegex, "[[/r $1]]$3");
   return text;
 }
 
