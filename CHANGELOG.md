@@ -5,6 +5,7 @@
 * Improved CoS scenes (Thanks @Zac !)
 * Start of CM maps (Thanks @OniNoKen !)
 * Improved SVG icon generation for Scene Notes - these will now try to generate appropriate numbered/lettered icons for each scene note.
+* WDotMM Scene Notes complete
 
 # 0.1.1
 
