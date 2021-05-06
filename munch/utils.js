@@ -110,6 +110,20 @@ function zeroPad(num, places) {
   return String(num).padStart(places, "0");
 }
 
+function loadFile(file) {
+  const filePath = path.resolve(__dirname, file);
+  if (fs.existsSync(filePath)) {
+    try {
+      const content = fs.readFileSync(filePath);
+      return content.toString();
+    } catch (err) {
+      console.error(err)
+    }
+  } else {
+    return undefined;
+  }
+}
+
 function loadJSONFile(file) {
   const configPath = path.resolve(__dirname, file);
   if (fs.existsSync(configPath)) {
@@ -139,7 +153,21 @@ function saveJSONFile(content, filePath) {
   try{
     const data = JSON.stringify(content, null, 4);
     fs.writeFileSync(filePath, data);
-    console.log(`Config file saved to ${filePath}`);
+    console.log(`JSON file saved to ${filePath}`);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+/**
+ * Save text in a file
+ * @param {*} content
+ * @param {*} file
+ */
+ function saveFile(content, filePath) {
+  try{
+    fs.writeFileSync(filePath, content);
+    console.log(`File saved to ${filePath}`);
   } catch (error) {
     console.log(error);
   }
@@ -226,6 +254,8 @@ exports.unzipFile = unzipFile;
 exports.zeroPad = zeroPad;
 exports.loadJSONFile = loadJSONFile;
 exports.saveJSONFile = saveJSONFile;
+exports.saveFile = saveFile;
+exports.loadFile = loadFile;
 exports.loadConfig = loadConfig;
 exports.saveConfig = saveJSONFile;
 exports.directoryReset = directoryReset;

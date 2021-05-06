@@ -15,6 +15,7 @@ const noteHinter = require("./note-load.js");
 const enhance = require("./enhance.js");
 const parseTable = require("./vendor/parseTable.js");
 const replacer = require("./replacer.js");
+const icons = require("./icons.js");
 
 var journalSort = 1000;
 var folderSort = 4000;
@@ -593,11 +594,14 @@ function generateNoteJournals(row) {
         let noteRow = JSON.parse(JSON.stringify(row));
         noteRow.html = html;
 
-        console.log(noteTitle);
         const numMatch = noteTitle.match(/^(\d+)(.*)/);
+        const letterNumMatch = noteTitle.match(/^([a-z,A-Z])(\d+)(.*)/);
         if (numMatch) {
           const prefix = utils.zeroPad(numMatch[1],2);
           noteRow.title = `${prefix}${numMatch[2]}`;
+        } else if (letterNumMatch) {
+          const prefix = utils.zeroPad(letterNumMatch[2],2);
+          noteRow.title = `${letterNumMatch[1]}${prefix}${letterNumMatch[3]}`;
         } else {
           noteRow.title = noteTitle;
         }
@@ -701,22 +705,6 @@ function generateScene(row, img) {
           journal.flags.ddb.contentChunkId == note.flags.contentChunkId
         );
         if (noteJournal){
-          let prefix = note.label.trim().split(".")[0].split(" ")[0];
-          // some notes start with letter e.g. S1.
-          // if there is no number match then we will attempt to regex it out
-          if (isNaN(parseInt(prefix))) {
-            const numMatch = prefix.match(/\d+/);
-            if (numMatch) {
-              prefix = numMatch[0];
-            }
-          }
-
-          const icon = (isNaN(parseInt(prefix))) ?
-            prefix.length == 1 ?
-              "modules/ddb-importer/icons/" + prefix.toUpperCase() + ".svg" :
-              "icons/svg/book.svg" :
-            "modules/ddb-importer/icons/" + utils.zeroPad(parseInt(prefix),2) + ".svg";
-
           note.positions.forEach((position) => {
             const noteId = getId(noteJournal, "Note");
             const n = {
@@ -728,7 +716,7 @@ function generateScene(row, img) {
               "entryId": noteJournal._id,
               "x": position.x,
               "y": position.y,
-              "icon": icon,
+              "icon": icons.generateIcon(config, note.label, templateDir),
               "iconSize": 40,
               "iconTint": "",
               "text": "",
