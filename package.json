@@ -1,6 +1,6 @@
 {
   "name": "ddb-adventure-muncher",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "D&D Beyond Adventure Muncher for Foundry Virtual Tabletop",
   "repository": "https://github.com/MrPrimate/ddb-adventure-muncher",
   "main": "main.js",
@@ -11,6 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
+    "dist-l": "electron-builder -l --publish never",
+    "dist-w": "electron-builder -w --publish never",
     "dist-wl": "electron-builder -wl --publish never",
     "dist-m": "electron-builder -m --publish never",
     "github-dist-m": "electron-builder -m",

@@ -1,5 +1,6 @@
 # 0.1.2
 
+* Hunt for the Thessalhydra and Mythic Odysseys of Theros could crash the application.
 * Improved roll parsing
 * Improved CoS scenes (Thanks @Zac !)
 * Start of CM maps (Thanks @OniNoKen !)
