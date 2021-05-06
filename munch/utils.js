@@ -117,7 +117,7 @@ function loadFile(file) {
       const content = fs.readFileSync(filePath);
       return content.toString();
     } catch (err) {
-      console.error(err)
+      console.error(err);
     }
   } else {
     return undefined;
@@ -164,7 +164,7 @@ function saveJSONFile(content, filePath) {
  * @param {*} content
  * @param {*} file
  */
- function saveFile(content, filePath) {
+function saveFile(content, filePath) {
   try{
     fs.writeFileSync(filePath, content);
     console.log(`File saved to ${filePath}`);

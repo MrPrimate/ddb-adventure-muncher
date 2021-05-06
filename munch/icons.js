@@ -26,7 +26,7 @@ function generateIcon(config, title, templateDir) {
     if (!fs.existsSync(iconFileOutPath)) {
       console.log(stub);
       const svgTemplate = path.join(templateDir,`${stub.length}char.svg`);
-      console.log(svgTemplate)
+      console.log(svgTemplate);
       let svgContent = utils.loadFile(svgTemplate);
       svgContent = svgContent.replace("REPLACEME", stub);
       utils.saveFile(svgContent, iconFileOutPath);

@@ -170,16 +170,17 @@ function replaceImgLinksForJournal(text, config) {
 }
 
 // replaces matchAll, requires a non global regexp
+// eslint-disable-next-line no-unused-vars
 function reMatchAll(regexp, string) {
   const matches = string.match(new RegExp(regexp, "gm"));
   if (matches) {
-      let start = 0;
-      return matches.map((group0) => {
-          const match = group0.match(regexp);
-          match.index = string.indexOf(group0, start);
-          start = match.index;
-          return match;
-      });
+    let start = 0;
+    return matches.map((group0) => {
+      const match = group0.match(regexp);
+      match.index = string.indexOf(group0, start);
+      start = match.index;
+      return match;
+    });
   }
   return matches;
 }
@@ -189,7 +190,8 @@ function groupBy(arr, property) {
 
   for (const item of arr) {
     const prop = item[property];
-    const group = map.get(prop) ?? [];
+    const mapProp = map.get(prop);
+    const group = mapProp ? mapProp : [];
 
     group.push(item);
     map.set(prop, group);
@@ -200,7 +202,7 @@ function groupBy(arr, property) {
 
 function diceStringResultBuild (diceString, dice, bonus = "", mods = "", diceHint = "", specialFlags = "") {
   const globalDamageHints = config.useDamageHints ? config.useDamageHints : true;
-  const resultBonus = bonus === 0 ? "" : `${bonus > 0 ? ' +' : ''} ${bonus}`;
+  const resultBonus = bonus === 0 ? "" : `${bonus > 0 ? " +" : ""} ${bonus}`;
   const diceHintAdd = globalDamageHints && diceHint && diceString && diceString !== "";
 
   const result = {
@@ -213,7 +215,7 @@ function diceStringResultBuild (diceString, dice, bonus = "", mods = "", diceHin
       (diceHintAdd ? `${diceHint}` : ""),
       mods,
       resultBonus
-    ].join('').trim(),
+    ].join("").trim(),
   };
   return result;
 }
@@ -231,7 +233,7 @@ function parseDiceString (inStr, mods = "", diceHint = "", specialFlags = "") {
 
   for (const { groups } of str.matchAll(diceRegex)) {
     const {
-      rawSign = '+',
+      rawSign = "+",
       count = 0,
       die
     } = groups;
@@ -265,9 +267,9 @@ function parseDiceString (inStr, mods = "", diceHint = "", specialFlags = "") {
   // +1d8-2d8 => +1d8 -2d8 will remain as-is
   const endDice = [];
 
-  const groupBySign = groupBy(dice, 'sign');
+  const groupBySign = groupBy(dice, "sign");
   for (const group of groupBySign.values()) {
-    const groupByDie = groupBy(group, 'die');
+    const groupByDie = groupBy(group, "die");
 
     for (const dieGroup of groupByDie.values()) {
       endDice.push(
@@ -291,7 +293,7 @@ function parseDiceString (inStr, mods = "", diceHint = "", specialFlags = "") {
     }
   });
 
-  const diceString = endDice.map(({ sign, count, die }, index) => `${index ? sign : ''}${count}d${die}`).join(' ');
+  const diceString = endDice.map(({ sign, count, die }, index) => `${index ? sign : ""}${count}d${die}`).join(" ");
 
   const result = diceStringResultBuild(diceString, dice, bonus, mods, diceHint, specialFlags);
   return result;
