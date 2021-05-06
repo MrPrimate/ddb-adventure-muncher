@@ -130,6 +130,7 @@ Books with notes:
 * Dead in Thay
 * Tomb of Annihilation
 * Waterdeep: Dragon Heist
+* Waterdeep: Dungeon of the Mad Mage
 
 Books with partial scene adjustments:
 
@@ -139,10 +140,6 @@ Books with partial scene adjustments:
 * Princes of the Apocalypse
 * Baldur's Gate: Descent into Avernus
 * Candlekeep Mysteries
-
-Noteable books with no notes:
-
-* Waterdeep: Dungeon of the Mad Mage
 
 If you wish to help improve the scene wall and lighting information, see the below section.
 
