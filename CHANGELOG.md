@@ -1,7 +1,9 @@
 # 0.1.2
 
 * Improved roll parsing
-* Improved CoS scenes (Thanks @Zac!)
+* Improved CoS scenes (Thanks @Zac !)
+* Start of CM maps (Thanks @OniNoKen !)
+* Improved SVG icon generation for Scene Notes - these will now try to generate appropriate numbered/lettered icons for each scene note.
 
 # 0.1.1
 
