@@ -2903,5 +2903,49 @@
     "tagIdLast": "",
     "contentChunkIdStop": "EOF",
     "sceneName": "Level 23: Mad Wizards Lair"
+  },{
+    "ddbId": 113,
+    "cobaltId": null,
+    "parentId": 617,
+    "splitTag": "h3",
+    "slug": "skullport#ExploringSkullIsland",
+    "tagIdFirst": "1MurkspanBridge",
+    "contentChunkIdStart": "bd7a5810-70a0-480e-be67-80c72a01b327",
+    "tagIdLast": "",
+    "contentChunkIdStop": "EOF",
+    "sceneName": "Skullport"
+  },{
+    "ddbId": 113,
+    "cobaltId": null,
+    "parentId": 617,
+    "splitTag": "h4",
+    "slug": "skullport#ExploringSkullIsland",
+    "tagIdFirst": "10aOldDock",
+    "contentChunkIdStart": "686aac6c-732c-4f46-b001-a93f9dd242ad",
+    "tagIdLast": "",
+    "contentChunkIdStop": "EOF",
+    "sceneName": "Skullport"
+  },{
+    "ddbId": 114,
+    "cobaltId": null,
+    "parentId": 617,
+    "splitTag": "h3",
+    "slug": "skullport#ExploringtheTown",
+    "tagIdFirst": "11OldMarkets",
+    "contentChunkIdStart": "b5179db9-ee13-4b05-b479-ed783f128da2",
+    "tagIdLast": "",
+    "contentChunkIdStop": "EOF",
+    "sceneName": "Exploring the Town"
+  },{
+    "ddbId": 114,
+    "cobaltId": null,
+    "parentId": 617,
+    "splitTag": "h4",
+    "slug": "skullport#ExploringtheTown",
+    "tagIdFirst": "11aOldFishMarket",
+    "contentChunkIdStart": "360a243b-85a6-4642-94c1-946f85180318",
+    "tagIdLast": "12DeadMansCorner",
+    "contentChunkIdStop": "4864b85c-d686-40ea-9932-cf97c97ba991",
+    "sceneName": "Exploring the Town"
   }
 ]
