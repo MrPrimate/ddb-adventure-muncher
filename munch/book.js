@@ -832,7 +832,7 @@ function findScenes(document) {
       let caption = node.querySelector("figcaption");
       let img = node.querySelector("img");
 
-      if (!img.src) return;
+      if (!img || !img.src) return;
       tmpCount++;
 
       if (caption) {
@@ -904,7 +904,7 @@ function findScenes(document) {
       let caption = node.querySelector("h3, h4");
       let img = node.querySelector("img");
 
-      if (!img.src) return;
+      if (!img || !img.src) return;
       tmpCount++;
 
       if (caption) {
