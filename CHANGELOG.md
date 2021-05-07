@@ -1,3 +1,7 @@
+# 0.1.3
+
+* Walling of some CM maps (Thanks @OniNoKen !)
+
 # 0.1.2
 
 * Hunt for the Thessalhydra and Mythic Odysseys of Theros could crash the application.
