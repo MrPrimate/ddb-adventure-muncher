@@ -1,5 +1,6 @@
 # 0.1.3
 
+* Improved CoS scenes (Thanks @Zac !)
 * Walling of some CM maps (Thanks @OniNoKen !)
 
 # 0.1.2
