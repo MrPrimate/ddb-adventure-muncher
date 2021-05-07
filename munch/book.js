@@ -74,6 +74,9 @@ function getId(document, docType) {
     const handout = (document.flags.ddb.img) ? 
       document.name === r.name && r.img :
       true;
+    const scenePinIdMatch = (docType === "Note") ?
+      document.flags.ddb.pin === r.scenePin :
+      true;
 
     return basicCheck && chunkCheck && sceneNotes && handout;
   });
@@ -97,6 +100,7 @@ function getId(document, docType) {
       name: document.name,
       note: (document.flags.ddb.note) ? document.flags.ddb.note : false,
       img: (document.flags.ddb.img) ? document.flags.ddb.img : false,
+      scenePin: document.flags.ddb.pin,
     };
     idTable[config.run.bookCode].push(id);
     return id.id;
@@ -585,12 +589,14 @@ function generateNoteJournals(row) {
       keyChunk = keyChunk.nextElementSibling;
 
       const chunkId = keyChunk ? keyChunk.getAttribute("data-content-chunk-id") : undefined;
+      // when we match against a P, we never stop
+      const pTag = hint.splitTag.toUpperCase() === "P";
       const tagMatch = keyChunk ? keyChunk.tagName.toUpperCase() === hint.splitTag.toUpperCase() : false;
       const idStop = idTagStop && keyChunk.getAttribute("id") === hint.tagIdLast;
       const stopChunk = keyChunk === null || chunkId === hint.contentChunkIdStop || idStop;
 
       // if we have reached the same tag type or last chunk generate a journal
-      if (tagMatch || stopChunk) {
+      if ((tagMatch && !pTag) || stopChunk) {
         let noteRow = JSON.parse(JSON.stringify(row));
         noteRow.html = html;
 
@@ -612,12 +618,13 @@ function generateNoteJournals(row) {
         noteRow.ddbId = row.id;
         notes.push(generateJournalEntry(noteRow, null, true));
         html = "";
+        noteTitle = "";
       }
 
       // if we have reached the end leave
       if (stopChunk) {
         break;
-      } else if (tagMatch) {
+      } else if ((tagMatch && !pTag) || (noteTitle === "" && pTag)) {
         noteTitle = keyChunk.textContent;
         keyChunkId = chunkId;
       } else {
@@ -706,6 +713,7 @@ function generateScene(row, img) {
         );
         if (noteJournal){
           note.positions.forEach((position) => {
+            noteJournal.flags.ddb.pin = `${position.x}${position.y}`;
             const noteId = getId(noteJournal, "Note");
             const n = {
               "_id": noteId,
