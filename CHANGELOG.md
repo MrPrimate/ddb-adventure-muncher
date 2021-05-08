@@ -3,6 +3,7 @@
 * Improved CoS scenes (Thanks @Zac !)
 * Walling of some CM maps (Thanks @OniNoKen !)
 * Mote PotA Scenes (Thanks Zac! )
+* GoS scene added (thanks @CussaMitre !)
 * PotA had missing Scene Note detection.
 
 # 0.1.2
