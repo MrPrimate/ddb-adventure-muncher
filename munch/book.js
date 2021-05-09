@@ -78,7 +78,7 @@ function getId(document, docType) {
       document.flags.ddb.pin === r.scenePin :
       true;
 
-    return basicCheck && chunkCheck && sceneNotes && handout;
+    return basicCheck && chunkCheck && sceneNotes && handout && scenePinIdMatch;
   });
 
   // console.log(`Finding id for ${docType} ${document.name}`);
