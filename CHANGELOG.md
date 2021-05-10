@@ -1,6 +1,8 @@
 # 0.1.4
 
 * Lost Dungeon of Rickness walled! (Thanks @topper !)
+* Improved CM maps (Thanks @OniNoKen !)
+* THSoT scene tweaks (Thanks @ygg)
 
 # 0.1.3
 

@@ -113,8 +113,32 @@
                 "c": [
                     3348,
                     1152,
-                    2772,
+                    3060,
                     1152
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3060,
+                    1152,
+                    2784,
+                    1152
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2784,
+                    1152,
+                    2772,
+                    1056
                 ],
                 "door": 0,
                 "ds": 0,
@@ -125,8 +149,20 @@
                 "c": [
                     2772,
                     1056,
-                    2580,
+                    2592,
                     1056
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2592,
+                    1056,
+                    2580,
+                    1152
                 ],
                 "door": 0,
                 "ds": 0,
@@ -243,8 +279,8 @@
             },
             {
                 "c": [
-                    2580,
-                    1152,
+                    2592,
+                    1056,
                     2580,
                     948
                 ],
@@ -294,7 +330,7 @@
                     2772,
                     756,
                     2772,
-                    1152
+                    1056
                 ],
                 "door": 0,
                 "ds": 0,
@@ -617,7 +653,7 @@
                 "c": [
                     2112,
                     1728,
-                    2112,
+                    2100,
                     1344
                 ],
                 "door": 0,
@@ -1131,262 +1167,226 @@
             },
             {
                 "c": [
-                    2304,
-                    1344,
-                    3540,
-                    1344
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    3348,
-                    768,
-                    3552,
-                    768
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 0
-            },
-            {
-                "c": [
-                    3552,
-                    768,
-                    3552,
-                    1056
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 0
-            },
-            {
-                "c": [
-                    3552,
-                    1056,
-                    3348,
-                    1056
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 0
-            },
-            {
-                "c": [
-                    2388,
-                    2208,
-                    2676,
-                    2208
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    2784,
-                    2208,
-                    2784,
-                    2604
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    768,
-                    2688,
-                    3840,
-                    2688
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    3840,
-                    2688,
-                    3840,
-                    480
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    3840,
-                    480,
-                    768,
-                    480
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    768,
-                    480,
-                    768,
-                    2688
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    768,
-                    2016,
-                    3840,
-                    2016
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    3840,
-                    1248,
-                    768,
-                    1248
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
                     1716,
-                    1344,
-                    1632,
+                    1836,
+                    1673.4865140691065,
+                    1825.1581863245374
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1673.4865140691065,
+                    1825.1581863245374,
+                    1636.7674588132381,
+                    1808.3015016766292
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1636.7674588132381,
+                    1808.3015016766292,
+                    1605.6538854060354,
+                    1786.1962385187344
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1605.6538854060354,
+                    1786.1962385187344,
+                    1579.9568450211402,
+                    1759.6086893133113
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1579.9568450211402,
+                    1759.6086893133113,
+                    1559.4873888321918,
+                    1729.3051465228173
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1559.4873888321918,
+                    1729.3051465228173,
+                    1544.05656801283,
+                    1696.05190260971
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1544.05656801283,
+                    1696.05190260971,
+                    1533.4754337366962,
+                    1660.6152500364483
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1533.4754337366962,
+                    1660.6152500364483,
+                    1527.555037177431,
+                    1623.7614812654904
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1527.555037177431,
+                    1623.7614812654904,
+                    1526.106429508675,
+                    1586.2568887592947
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1526.106429508675,
+                    1586.2568887592947,
+                    1528.9406619040678,
+                    1548.8677649803178
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1528.9406619040678,
+                    1548.8677649803178,
+                    1535.8687855372502,
+                    1512.360402391019
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1535.8687855372502,
+                    1512.360402391019,
+                    1546.7018515818634,
+                    1477.5010934538566
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1546.7018515818634,
+                    1477.5010934538566,
+                    1561.250911211547,
+                    1445.0561306312875
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1561.250911211547,
+                    1445.0561306312875,
+                    1579.3270155999417,
+                    1415.7918063857705
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1579.3270155999417,
+                    1415.7918063857705,
+                    1600.741215920688,
+                    1390.4744131797638
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1600.741215920688,
+                    1390.4744131797638,
+                    1625.3045633474267,
+                    1369.8702434757251
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1625.3045633474267,
+                    1369.8702434757251,
+                    1652.828109053798,
+                    1354.745589736113
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1652.828109053798,
+                    1354.745589736113,
+                    1683.122904213442,
+                    1345.8667444233852
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1683.122904213442,
+                    1345.8667444233852,
+                    1716,
                     1344
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 0
-            },
-            {
-                "c": [
-                    1632,
-                    1344,
-                    1536,
-                    1440
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 0
-            },
-            {
-                "c": [
-                    1536,
-                    1440,
-                    1536,
-                    1728
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 0
-            },
-            {
-                "c": [
-                    1536,
-                    1728,
-                    1632,
-                    1824
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 0
-            },
-            {
-                "c": [
-                    1632,
-                    1824,
-                    1728,
-                    1824
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 0
-            },
-            {
-                "c": [
-                    3540,
-                    1344,
-                    3648,
-                    1344
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 0
-            },
-            {
-                "c": [
-                    3648,
-                    1344,
-                    3744,
-                    1440
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 0
-            },
-            {
-                "c": [
-                    3744,
-                    1440,
-                    3744,
-                    1728
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 0
-            },
-            {
-                "c": [
-                    3744,
-                    1728,
-                    3648,
-                    1824
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 0
-            },
-            {
-                "c": [
-                    3648,
-                    1824,
-                    3540,
-                    1836
                 ],
                 "door": 0,
                 "ds": 0,
@@ -1760,7 +1760,25 @@
         "tokenVision": true,
         "globalLight": false,
         "globalLightThreshold": null,
-        "lights": [],
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 6,
+                "darknessThreshold": 0,
+                "dim": 12,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 2928,
+                "y": 1104,
+                "lightAnimation": {
+                    "speed": 4,
+                    "intensity": 7,
+                    "type": "torch"
+                },
+                "hidden": false
+            }
+        ],
         "flags": {
             "ddb": {
                 "ddbId": 10014,
@@ -1768,7 +1786,7 @@
                 "contentChunkId": "MapMap201fistandiasmansion-player",
                 "notes": [
                     {
-                        "label": "M01. Foyer and Hallway",
+                        "label": "M1. Foyer and Hallway",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2021,
@@ -1776,12 +1794,12 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "e296a549-7382-466d-9b02-bd761d839f17",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "aI62iCfKlVdQboFy"
+                            "linkId": "89y039zxv1gPGk8q"
                         },
                         "positions": [
                             {
@@ -1795,7 +1813,7 @@
                         "textAnchor": 1
                     },
                     {
-                        "label": "M02. Patio",
+                        "label": "M2. Patio",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2023,
@@ -1803,16 +1821,16 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "aac271fc-7a0f-4947-86f5-7be97f507a4d",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "HC1UOcvP58CsWXqw"
+                            "linkId": "pxpdmkhujRxRWtD7"
                         },
                         "positions": [
                             {
-                                "x": 1632,
+                                "x": 1584,
                                 "y": 1584
                             }
                         ],
@@ -1822,7 +1840,7 @@
                         "textAnchor": 1
                     },
                     {
-                        "label": "M03. Library",
+                        "label": "M3. Library",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2030,
@@ -1830,12 +1848,12 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "acc4a106-ca9e-4982-a782-ac3e5eacfe34",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "VGH75oFPsvthB0yy"
+                            "linkId": "W85jhXbcocYx2job"
                         },
                         "positions": [
                             {
@@ -1849,7 +1867,7 @@
                         "textAnchor": 1
                     },
                     {
-                        "label": "M04. Exercise Room",
+                        "label": "M4. Exercise Room",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2035,
@@ -1857,17 +1875,17 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "9d4ac249-d1a7-4d47-a47a-9ac7ee1a3693",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "uQn8fMQdn9uEAwwp"
+                            "linkId": "SDDHArfUig0OiAFd"
                         },
                         "positions": [
                             {
                                 "x": 2256,
-                                "y": 1536
+                                "y": 1584
                             }
                         ],
                         "iconSize": 40,
@@ -1876,7 +1894,7 @@
                         "textAnchor": 1
                     },
                     {
-                        "label": "M05. Study",
+                        "label": "M5. Study",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2044,
@@ -1884,12 +1902,12 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "e29ba5a4-67b4-458c-9527-141537f64678",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "LujH1zhz1Ozvlb4W"
+                            "linkId": "AN6X8Aw0QVTbfadD"
                         },
                         "positions": [
                             {
@@ -1903,7 +1921,7 @@
                         "textAnchor": 1
                     },
                     {
-                        "label": "M06. Kitchen",
+                        "label": "M6. Kitchen",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2053,
@@ -1911,12 +1929,12 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "800bfbde-d6b0-42a6-a1d7-bde33f8279d6",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "KyDQxYZFm61qIRBp"
+                            "linkId": "OogUY1iUbeibPjGO"
                         },
                         "positions": [
                             {
@@ -1930,34 +1948,7 @@
                         "textAnchor": 1
                     },
                     {
-                        "label": "M07. Pantry",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2056,
-                            "bookCode": "cm",
-                            "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
-                            "contentChunkId": "4224be51-66a6-462a-b0df-046165093013",
-                            "userData": {
-                                "userDisplayName": "MrPrimate"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 1179,
-                            "linkId": "KN1AvsL9Bz5gNDhR"
-                        },
-                        "positions": [
-                            {
-                                "x": 2928,
-                                "y": 1392
-                            }
-                        ],
-                        "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "M08. Dining Room",
+                        "label": "M8. Dining Room",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2062,
@@ -1965,17 +1956,17 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "308da041-80ba-4c2f-9c44-27c4fe1a15a7",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "qaikV7MQvSEN8uyw"
+                            "linkId": "yRJ53e8rRMkH2K2B"
                         },
                         "positions": [
                             {
                                 "x": 3216,
-                                "y": 1536
+                                "y": 1584
                             }
                         ],
                         "iconSize": 40,
@@ -1984,7 +1975,7 @@
                         "textAnchor": 1
                     },
                     {
-                        "label": "M09. Arboretum",
+                        "label": "M9. Arboretum",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2067,
@@ -1992,12 +1983,12 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "a8494c97-e826-4927-ba00-037720f3499d",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "hzzaUvUlIXNJEHlt"
+                            "linkId": "2IdEr7brHyDX7oGk"
                         },
                         "positions": [
                             {
@@ -2019,48 +2010,17 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "cc4146ee-648f-4a62-95a4-9aaaa411a793",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "tI0R6hICThs17VRK"
+                            "linkId": "3Bu519yIMCvJa588"
                         },
                         "positions": [
                             {
                                 "x": 2736,
-                                "y": 1584
-                            },
-                            {
-                                "x": 2688,
                                 "y": 720
-                            }
-                        ],
-                        "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "M14. Trophy Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2093,
-                            "bookCode": "cm",
-                            "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
-                            "contentChunkId": "be06c23d-4da9-4e7b-87c0-1e56df58259a",
-                            "userData": {
-                                "userDisplayName": "MrPrimate"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 1179,
-                            "linkId": "BLIOdycHl7L0Dplc"
-                        },
-                        "positions": [
-                            {
-                                "x": 2928,
-                                "y": 912
                             }
                         ],
                         "iconSize": 40,
@@ -2072,21 +2032,21 @@
                         "label": "M11. Laboratory",
                         "flags": {
                             "cobaltId": null,
-                            "ddbId": 2110,
+                            "ddbId": 2075,
                             "bookCode": "cm",
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "5c481a3f-8480-4313-9ac0-020ad225f4ff",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "PvaOW0TTRraccSIs"
+                            "linkId": "huDsC45s6EqlsxDX"
                         },
                         "positions": [
                             {
-                                "x": 2400,
+                                "x": 2448,
                                 "y": 912
                             }
                         ],
@@ -2099,17 +2059,17 @@
                         "label": "M12. Planetarium",
                         "flags": {
                             "cobaltId": null,
-                            "ddbId": 2115,
+                            "ddbId": 2080,
                             "bookCode": "cm",
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "b6358a87-e11d-4a26-a060-fe2f4b66c249",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "nOoTlkLJ1xio946e"
+                            "linkId": "2IPiqVIkDiR1ncbW"
                         },
                         "positions": [
                             {
@@ -2131,16 +2091,43 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "22cb33e6-fea9-4018-a89a-e1e3d34dd5c6",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "7MAKPsDpvJGGHDRQ"
+                            "linkId": "qSdJUhQV4cFUYzTV"
                         },
                         "positions": [
                             {
-                                "x": 1824,
+                                "x": 1872,
+                                "y": 1008
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "M14. Trophy Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2128,
+                            "bookCode": "cm",
+                            "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
+                            "contentChunkId": "be06c23d-4da9-4e7b-87c0-1e56df58259a",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1179,
+                            "linkId": "zpeenqxgkednlbuh"
+                        },
+                        "positions": [
+                            {
+                                "x": 2928,
                                 "y": 912
                             }
                         ],
@@ -2158,12 +2145,12 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "55ec8b58-b6d8-48e2-b07f-408e764b0d8c",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "XnUR2zyxyYFpbdw1"
+                            "linkId": "EO5A4bOr4mxlW1Ex"
                         },
                         "positions": [
                             {
@@ -2185,16 +2172,16 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "f642d6b3-bda2-4c1f-8b36-16b482368e5c",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "TepA1J3O7ay6j44p"
+                            "linkId": "DN1dj6pwXDEzfktN"
                         },
                         "positions": [
                             {
-                                "x": 3456,
+                                "x": 3504,
                                 "y": 912
                             }
                         ],
@@ -2212,17 +2199,17 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "b1627ce0-1226-4173-95bc-31c4b2f3c7aa",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "WjXtptLWGLH4Jgmz"
+                            "linkId": "Ll3YPsOLUPJXAXr4"
                         },
                         "positions": [
                             {
-                                "x": 2496,
-                                "y": 2400
+                                "x": 2544,
+                                "y": 2448
                             }
                         ],
                         "iconSize": 40,
@@ -2239,17 +2226,17 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "23c4ce7b-c8cd-4c80-9443-a3838557e71f",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "R55OkZzy2NqWg8BP"
+                            "linkId": "owqEu4IUIQ7K3ruW"
                         },
                         "positions": [
                             {
                                 "x": 2928,
-                                "y": 2400
+                                "y": 2352
                             }
                         ],
                         "iconSize": 40,
@@ -2266,12 +2253,12 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "0929e5fa-3898-4fc8-800c-63e9c4f58bd4",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "OniNoKen"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "3VXPnyYdDMs5Uqs4"
+                            "linkId": "b8LmiadSiCx0Qnyi"
                         },
                         "positions": [
                             {
@@ -4956,6 +4943,720 @@
                 "ddbId": 10023,
                 "cobaltId": null,
                 "contentChunkId": "MapMap301amberdunehideout-player",
+                "notes": []
+            }
+        }
+    },
+    {
+        "name": "Map 3.1: Amberdune Hideout",
+        "navName": "Amberdune Hideout",
+        "width": 2163,
+        "height": 3000,
+        "grid": 170,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -49,
+        "shiftY": 141,
+        "initial": {
+            "x": 1864,
+            "y": 2185,
+            "scale": 0.36
+        },
+        "backgroundColor": "#999999",
+        "walls": [
+            {
+                "c": [
+                    1530,
+                    1360,
+                    1530,
+                    2550
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2698,
+                    2550,
+                    2698,
+                    1370
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2698,
+                    1370,
+                    1530,
+                    1360
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1870,
+                    2550,
+                    2698,
+                    2550
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2698,
+                    2040,
+                    1880,
+                    2040
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2550,
+                    1700,
+                    2050,
+                    1700
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2390,
+                    3251,
+                    1923,
+                    3251
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1923,
+                    3017,
+                    2390,
+                    3017
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1880,
+                    1700,
+                    1530,
+                    1700
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2210,
+                    1370,
+                    2215,
+                    1700
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2390,
+                    3017,
+                    2390,
+                    3251
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1880,
+                    2040,
+                    1700,
+                    2040
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2380,
+                    2210,
+                    2380,
+                    2390
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1530,
+                    2550,
+                    1700,
+                    2550
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1700,
+                    2550,
+                    1870,
+                    2550
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2050,
+                    1700,
+                    1880,
+                    1700
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1700,
+                    2040,
+                    1530,
+                    2040
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2380,
+                    2040,
+                    2380,
+                    2210
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2380,
+                    2390,
+                    2380,
+                    2550
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1689,
+                    3336,
+                    1561,
+                    3240
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1848,
+                    3325,
+                    1689,
+                    3336
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2698,
+                    1700,
+                    2550,
+                    1700
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1519,
+                    3145,
+                    1540,
+                    3006
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1753,
+                    2921,
+                    1880,
+                    2964
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1636,
+                    2943,
+                    1753,
+                    2921
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1540,
+                    3006,
+                    1636,
+                    2943
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1923,
+                    3251,
+                    1848,
+                    3325
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1561,
+                    3240,
+                    1519,
+                    3145
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1880,
+                    2964,
+                    1923,
+                    3017
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            }
+        ],
+        "drawings": [],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 10023,
+                "cobaltId": null,
+                "contentChunkId": "MapMap301amberdunehideout-player",
+                "notes": []
+            }
+        }
+    },
+    {
+        "name": "Map 4.02: Harrn Mausoleum",
+        "navName": "Harrn Mausoleum",
+        "width": 2207,
+        "height": 3000,
+        "grid": 171,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -7,
+        "shiftY": 45,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [
+            {
+                "c": [
+                    1539,
+                    2565,
+                    1710,
+                    2565
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1710,
+                    2565,
+                    1881,
+                    2565
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1881,
+                    2565,
+                    2053,
+                    2571
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2053,
+                    2571,
+                    2052,
+                    2233
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2052,
+                    2233,
+                    2052,
+                    2148
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2052,
+                    2148,
+                    2052,
+                    2062
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2052,
+                    2062,
+                    2062,
+                    1881
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2062,
+                    1881,
+                    2062,
+                    1539
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2062,
+                    1539,
+                    1549,
+                    1539
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1549,
+                    1539,
+                    1549,
+                    1881
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1549,
+                    1881,
+                    1549,
+                    2052
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1549,
+                    2052,
+                    1549,
+                    2137
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1539,
+                    2404,
+                    1539,
+                    2565
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1539,
+                    2404,
+                    1197,
+                    2394
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1197,
+                    2394,
+                    1197,
+                    1881
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1197,
+                    1881,
+                    1549,
+                    1881
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2062,
+                    1881,
+                    2394,
+                    1881
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2394,
+                    1881,
+                    2394,
+                    2404
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2394,
+                    2404,
+                    2052,
+                    2404
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1549,
+                    1881,
+                    1710,
+                    1881
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1710,
+                    1881,
+                    1784,
+                    1881
+                ],
+                "door": 1,
+                "ds": 1,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1784,
+                    1881,
+                    1881,
+                    1881
+                ],
+                "door": 1,
+                "ds": 1,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1881,
+                    1881,
+                    2062,
+                    1881
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1539,
+                    2404,
+                    1549,
+                    2212
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1549,
+                    2212,
+                    1549,
+                    2137
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            }
+        ],
+        "drawings": [],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 10029,
+                "cobaltId": null,
+                "contentChunkId": "MapMap402harrnmausoleum-player",
                 "notes": []
             }
         }
@@ -8718,16 +9419,16 @@
                 "angle": 360,
                 "bright": 4.72,
                 "darknessThreshold": 0,
-                "dim": 9.45,
+                "dim": 9.44,
                 "rotation": 0,
                 "t": "l",
                 "tintAlpha": 0.49,
                 "x": 2074,
                 "y": 952,
                 "lightAnimation": {
+                    "type": "torch",
                     "speed": 5,
-                    "intensity": 5,
-                    "type": "torch"
+                    "intensity": 5
                 },
                 "hidden": false
             },
@@ -8756,8 +9457,8 @@
                 "rotation": 0,
                 "t": "l",
                 "tintAlpha": 0.49,
-                "x": 3120.1052631578946,
-                "y": 1118.0526315789473,
+                "x": 3120,
+                "y": 1118,
                 "lightAnimation": {
                     "type": "torch",
                     "speed": 5,
@@ -8773,8 +9474,8 @@
                 "rotation": 0,
                 "t": "l",
                 "tintAlpha": 0.49,
-                "x": 3388.5789473684213,
-                "y": 918.2105263157894,
+                "x": 3388,
+                "y": 918,
                 "lightAnimation": {
                     "type": "torch",
                     "speed": 5,
@@ -8790,8 +9491,8 @@
                 "rotation": 0,
                 "t": "l",
                 "tintAlpha": 0.49,
-                "x": 3050.8421052631575,
-                "y": 1494.578947368421,
+                "x": 3050,
+                "y": 1494,
                 "lightAnimation": {
                     "type": "torch",
                     "speed": 5,
@@ -8824,8 +9525,8 @@
                 "rotation": 0,
                 "t": "l",
                 "tintAlpha": 0.49,
-                "x": 3387.9999999999995,
-                "y": 1763.3333333333333,
+                "x": 3387,
+                "y": 1763,
                 "lightAnimation": {
                     "type": "torch",
                     "speed": 5,
@@ -8841,8 +9542,8 @@
                 "rotation": 0,
                 "t": "l",
                 "tintAlpha": 0.49,
-                "x": 2106.037735849057,
-                "y": 1494.11320754717,
+                "x": 2106,
+                "y": 1494,
                 "lightAnimation": {
                     "type": "torch",
                     "speed": 5,
@@ -8856,7 +9557,471 @@
                 "ddbId": 10029,
                 "cobaltId": null,
                 "contentChunkId": "MapMap401chaletbrantifax-player",
-                "notes": []
+                "notes": [
+                    {
+                        "label": "C1. Storage Cellar",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2032,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "a1e3ef19-e222-4964-bb02-6adefcbb836c",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "KXkvV9gjGhuKP0qy"
+                        },
+                        "positions": [
+                            {
+                                "x": 1326,
+                                "y": 986
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C2. Servants’ Quarters",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2036,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "aae8b4a6-74cf-4d06-8600-59131bd59ba8",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "RtjraJc05wRNIRFx"
+                        },
+                        "positions": [
+                            {
+                                "x": 1462,
+                                "y": 1190
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C3. Haunted Well",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2041,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "486f066e-bdaf-4bb8-9be1-96ef053b37de",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "gm8zvsUvdLGzwAAP"
+                        },
+                        "positions": [
+                            {
+                                "x": 1122,
+                                "y": 1394
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C4. Cloakroom",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2045,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "31eea9d7-6634-4796-a810-33244881d71f",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "4B17vN4bXwtHEO7V"
+                        },
+                        "positions": [
+                            {
+                                "x": 2482,
+                                "y": 918
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C5. Den",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2049,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "55563b84-1584-4140-adb0-00a9313283ea",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "3o4wewDW3DlI0L5n"
+                        },
+                        "positions": [
+                            {
+                                "x": 2142,
+                                "y": 918
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C6. Dining Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2052,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "672f6c24-d2ed-483d-a119-b05344be24a5",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "9Dgx0rqA5OVB4myb"
+                        },
+                        "positions": [
+                            {
+                                "x": 2006,
+                                "y": 1394
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C7. Kitchen",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2055,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "c95d84c4-0071-47e5-8738-29a86cc2b6e7",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "ackFvmYK7SWGXdSq"
+                        },
+                        "positions": [
+                            {
+                                "x": 2210,
+                                "y": 1258
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C8. Parlor",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2059,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "a382439e-43a3-423d-9699-695ec9d0ff3f",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "Uumr6MvxdIR5bIsf"
+                        },
+                        "positions": [
+                            {
+                                "x": 2482,
+                                "y": 1054
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C9. Graveyard",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2067,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "53799172-dded-42e2-8a94-bd31b2be20e0",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "oNe5SOXdCo3JPFn9"
+                        },
+                        "positions": [
+                            {
+                                "x": 2482,
+                                "y": 1938
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C10. Guest Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2071,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "c8b1d555-d89b-4d70-ae70-3832aef4f5eb",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "WaEo4aR4s3ZKqj7z"
+                        },
+                        "positions": [
+                            {
+                                "x": 3026,
+                                "y": 918
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C11. Guest Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2073,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "7917ba70-4dac-4512-b019-55fa3fcb05d9",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "R8pVAFKKO9gOSeuR"
+                        },
+                        "positions": [
+                            {
+                                "x": 3162,
+                                "y": 918
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C12. Study",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2079,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "de30e382-7a10-4a96-9440-91048e154bb7",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "TCBVmlcnu4qV8fBx"
+                        },
+                        "positions": [
+                            {
+                                "x": 3434,
+                                "y": 986
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C13. Master Bedroom",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2083,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "909d7755-21da-451c-b5db-5090fbc24451",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "2q2wJ4HIXy1ueb2j"
+                        },
+                        "positions": [
+                            {
+                                "x": 3162,
+                                "y": 1190
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C14. Baron’s Loft",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2093,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "0bd5b35b-5513-4897-a58c-7956a39b6658",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "LwFndEjO3WZqkjpH"
+                        },
+                        "positions": [
+                            {
+                                "x": 2958,
+                                "y": 1394
+                            },
+                            {
+                                "x": 2958,
+                                "y": 2278
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C15. Attic Nursery",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2096,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "5212f503-4caf-45e3-a064-0a449bdda661",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "gW1Bw1nuapBamPV3"
+                        },
+                        "positions": [
+                            {
+                                "x": 3434,
+                                "y": 1870
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C16. Servants’ Attic",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2103,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "13e79446-200e-4210-8849-32824d1300a9",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "Ls5r3uuXk7sWmCIP"
+                        },
+                        "positions": [
+                            {
+                                "x": 3162,
+                                "y": 1802
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C17. Storage Attic",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2108,
+                            "bookCode": "cm",
+                            "slug": "book-of-the-raven#ChaletBrantifax",
+                            "contentChunkId": "b98d6429-fdb5-418a-bbf1-54c71aba49ba",
+                            "userData": {
+                                "userDisplayName": "OniNoKen"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1167,
+                            "linkId": "RxImOdaVXPWmUjNs"
+                        },
+                        "positions": [
+                            {
+                                "x": 3230,
+                                "y": 2074
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ]
             }
         }
     }

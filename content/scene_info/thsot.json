@@ -14132,9 +14132,9 @@
             {
                 "c": [
                     3818,
-                    7138,
+                    8383,
                     3818,
-                    7636
+                    8881
                 ],
                 "door": 0,
                 "ds": 0,
@@ -14144,9 +14144,9 @@
             {
                 "c": [
                     3818,
-                    7636,
+                    8881,
                     4316,
-                    7636
+                    8881
                 ],
                 "door": 0,
                 "ds": 0,
@@ -14156,9 +14156,9 @@
             {
                 "c": [
                     4316,
-                    7636,
+                    8881,
                     4316,
-                    7138
+                    8383
                 ],
                 "door": 0,
                 "ds": 0,
@@ -14168,14 +14168,134 @@
             {
                 "c": [
                     4316,
-                    7138,
+                    8383,
                     3818,
-                    7138
+                    8383
                 ],
                 "door": 0,
                 "ds": 0,
                 "move": 1,
                 "sense": 1
+            },
+            {
+                "c": [
+                    10053,
+                    9638,
+                    10198,
+                    9638
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    10198,
+                    9638,
+                    10198,
+                    9762
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    10198,
+                    9762,
+                    10053,
+                    9762
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    10053,
+                    9762,
+                    10053,
+                    9638
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    8632,
+                    4980,
+                    8632,
+                    5063
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 0,
+                "sense": 2
+            },
+            {
+                "c": [
+                    8715,
+                    4980,
+                    8715,
+                    5063
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 0,
+                "sense": 2
+            },
+            {
+                "c": [
+                    8798,
+                    4980,
+                    8798,
+                    5063
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 0,
+                "sense": 2
+            },
+            {
+                "c": [
+                    8881,
+                    4980,
+                    8881,
+                    5063
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 0,
+                "sense": 2
+            },
+            {
+                "c": [
+                    8798,
+                    4897,
+                    8881,
+                    4897
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 0,
+                "sense": 2
+            },
+            {
+                "c": [
+                    8881,
+                    4980,
+                    8798,
+                    4980
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 0,
+                "sense": 2
             }
         ],
         "lights": [
@@ -14188,7 +14308,13 @@
                 "t": "l",
                 "tintAlpha": 0.49,
                 "x": 4324.333333333334,
-                "y": 9167.666666666666
+                "y": 9167.666666666666,
+                "lightAnimation": {
+                    "speed": 1,
+                    "intensity": 1,
+                    "type": "pulse"
+                },
+                "hidden": false
             },
             {
                 "angle": 360,
@@ -14199,18 +14325,29 @@
                 "t": "l",
                 "tintAlpha": 0.49,
                 "x": 15023,
-                "y": 8549
+                "y": 8549,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
             },
             {
                 "angle": 360,
-                "bright": 7,
+                "bright": 3,
                 "darknessThreshold": 0,
-                "dim": 13,
+                "dim": 49,
                 "rotation": 0,
                 "t": "l",
                 "tintAlpha": 0.49,
                 "x": 4067,
-                "y": 7387
+                "y": 8507,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5,
+                    "type": ""
+                },
+                "hidden": false
             },
             {
                 "angle": 360,
@@ -14219,9 +14356,15 @@
                 "dim": 9,
                 "rotation": 0,
                 "t": "l",
-                "tintAlpha": 0.2,
+                "tintAlpha": 0.3,
                 "x": 7553.704225352113,
-                "y": 10330.887323943662
+                "y": 10330.887323943662,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5,
+                    "type": ""
+                },
+                "hidden": true
             },
             {
                 "angle": 360,
@@ -14230,9 +14373,202 @@
                 "dim": 9,
                 "rotation": 0,
                 "t": "l",
+                "tintAlpha": 0.3,
+                "x": 5320,
+                "y": 10329,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5,
+                    "type": ""
+                },
+                "hidden": true
+            },
+            {
+                "angle": 360,
+                "bright": 3,
+                "darknessThreshold": 0,
+                "dim": 48.85,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 9420,
+                "y": 5021,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 43.01,
+                "rotation": 0,
+                "t": "l",
                 "tintAlpha": 0.2,
-                "x": 5320.450704225352,
-                "y": 10329.978873239437
+                "x": 5893,
+                "y": 8964,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 43.01,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.2,
+                "x": 6308,
+                "y": 8300,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 10541,
+                "y": 7636,
+                "lightAnimation": {
+                    "type": "fog",
+                    "speed": 4,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 5.5,
+                "darknessThreshold": 0,
+                "dim": 25,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 6520.0847457627115,
+                "y": 7385.677966101695,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5,
+                    "type": ""
+                },
+                "hidden": false
+            },
+            {
+                "angle": 180,
+                "bright": 3,
+                "darknessThreshold": 0,
+                "dim": 4.5,
+                "rotation": 270,
+                "t": "l",
+                "tintAlpha": 0.3,
+                "x": 10461.389830508473,
+                "y": 6391,
+                "lightAnimation": {
+                    "speed": 1,
+                    "intensity": 7,
+                    "type": "chroma"
+                },
+                "hidden": false
+            },
+            {
+                "angle": 180,
+                "bright": -3,
+                "darknessThreshold": 0,
+                "dim": -4.5,
+                "rotation": 179,
+                "t": "l",
+                "tintAlpha": 0.56,
+                "x": 10292,
+                "y": 6225,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 1,
+                    "intensity": 7
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 20,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 8839.5,
+                "y": 4855.5,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 20,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 8343.194915254238,
+                "y": 5035.059322033899,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": true
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 20,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 8673.5,
+                "y": 5021.5,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 20,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 8922.5,
+                "y": 5021.5,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
             }
         ],
         "flags": {
@@ -14242,7 +14578,7 @@
                 "contentChunkId": "c223f47f-6cb6-4350-90b5-adb572ea86f4",
                 "notes": [
                     {
-                        "label": "1. The Vault of Chicomoztoc",
+                        "label": "01. The Vault of Chicomoztoc",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2027,
@@ -14255,17 +14591,22 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "DXOfbc8b2uUQ563U"
+                            "linkId": "wo0MjR3PwLKEhdes",
+                            "pin": "179289669.5"
                         },
                         "positions": [
                             {
-                                "x": 17928,
-                                "y": 9669.5
+                                "x": 17637.5,
+                                "y": 9628
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
-                        "label": "2. The Hall of Thrashing Canes",
+                        "label": "02. The Hall of Thrashing Canes",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2031,
@@ -14278,17 +14619,22 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "cbhuHKrZXpHJFesU"
+                            "linkId": "vhDni51HWQjIE1CB",
+                            "pin": "17471.58756.5"
                         },
                         "positions": [
                             {
-                                "x": 17471.5,
+                                "x": 17388.5,
                                 "y": 8756.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
-                        "label": "3. Roost of the Conch",
+                        "label": "03. Roost of the Conch",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2039,
@@ -14301,17 +14647,22 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "KbF8PzgHRHRnZZvD"
+                            "linkId": "WRmSwe7njRxItj0u",
+                            "pin": "16890.58673.5"
                         },
                         "positions": [
                             {
                                 "x": 16890.5,
                                 "y": 8673.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
-                        "label": "4. Mud-Filled Doorway",
+                        "label": "04. Mud-Filled Doorway",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2046,
@@ -14324,17 +14675,22 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "rTLbb9s7yK3jQNoP"
+                            "linkId": "iKKcZ5jFwcymlRpO",
+                            "pin": "15894.58756.5"
                         },
                         "positions": [
                             {
-                                "x": 15894.5,
+                                "x": 15853,
                                 "y": 8756.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
-                        "label": "5. Tomb Stone and Wet Lime",
+                        "label": "05. Tomb Stone and Wet Lime",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2052,
@@ -14347,17 +14703,22 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "wNXB02jPJOmZSv8t"
+                            "linkId": "FLgLz6GmU21RvQtO",
+                            "pin": "16558.57926.5"
                         },
                         "positions": [
                             {
                                 "x": 16558.5,
                                 "y": 7926.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
-                        "label": "6. Rubble-Filled Staircase",
+                        "label": "06. Rubble-Filled Staircase",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2055,
@@ -14370,17 +14731,22 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "sIMEj3iXhka8qQF1"
+                            "linkId": "62WhgJcw9krfxq4n",
+                            "pin": "15728.57594.5"
                         },
                         "positions": [
                             {
-                                "x": 15728.5,
+                                "x": 15853,
                                 "y": 7594.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
-                        "label": "7. The Sepulcher of Tloques-Popolocas",
+                        "label": "07. The Sepulcher of Tloques-Popolocas",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2082,
@@ -14393,17 +14759,22 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "bTGYzEMAVKp5009z"
+                            "linkId": "NOz2YQf9ZZ8ym37P",
+                            "pin": "16807.57843.5"
                         },
                         "positions": [
                             {
                                 "x": 16807.5,
                                 "y": 7843.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
-                        "label": "8. Courses of the Gods",
+                        "label": "08. Courses of the Gods",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2087,
@@ -14416,17 +14787,22 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "abz23ZXlmkrEhgCi"
+                            "linkId": "YiZylRLHRd7Uh131",
+                            "pin": "16143.510250.5"
                         },
                         "positions": [
                             {
                                 "x": 16143.5,
-                                "y": 10250.5
+                                "y": 10292
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
-                        "label": "9. Stone Statue",
+                        "label": "09. Stone Statue",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2092,
@@ -14439,14 +14815,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "GbXWW6ELAp1FHBar"
+                            "linkId": "0kylgsnizhB7VI9k",
+                            "pin": "16060.510748.5"
                         },
                         "positions": [
                             {
                                 "x": 16060.5,
                                 "y": 10748.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "10. Secret Passage",
@@ -14462,14 +14843,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "WMhOCC4bujP2QuEQ"
+                            "linkId": "WMhOCC4bujP2QuEQ",
+                            "pin": "15728.510084.5"
                         },
                         "positions": [
                             {
-                                "x": 15728.5,
+                                "x": 15687,
                                 "y": 10084.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "11. The Court of Cemanahuac",
@@ -14485,14 +14871,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "HihEflNoznTj8OZl"
+                            "linkId": "HihEflNoznTj8OZl",
+                            "pin": "15064.510416.5"
                         },
                         "positions": [
                             {
-                                "x": 15064.5,
+                                "x": 14940,
                                 "y": 10416.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "12. The Tomb of Hurakan",
@@ -14508,14 +14899,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "hbCAdnJGok6ga5jp"
+                            "linkId": "hbCAdnJGok6ga5jp",
+                            "pin": "14317.510084.5"
                         },
                         "positions": [
                             {
                                 "x": 14317.5,
                                 "y": 10084.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "12B. Tomb, South Entrance",
@@ -14531,14 +14927,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "EUa8ZshRyhwmGNzK"
+                            "linkId": "EUa8ZshRyhwmGNzK",
+                            "pin": "15064.59586.5"
                         },
                         "positions": [
                             {
                                 "x": 15064.5,
-                                "y": 9586.5
+                                "y": 9628
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "13. Child of Zotzilaha",
@@ -14554,14 +14955,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "vLzIaP1jAVPLVMGE"
+                            "linkId": "vLzIaP1jAVPLVMGE",
+                            "pin": "15313.59088.5"
                         },
                         "positions": [
                             {
-                                "x": 15313.5,
+                                "x": 15272,
                                 "y": 9088.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "14. Flooded Hall",
@@ -14577,14 +14983,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "NLs5AOeaW6xScQRe"
+                            "linkId": "NLs5AOeaW6xScQRe",
+                            "pin": "15147.58009.5"
                         },
                         "positions": [
                             {
                                 "x": 15147.5,
-                                "y": 8009.5
+                                "y": 7968
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "15. The Great Hall",
@@ -14600,14 +15011,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "d6HdDzQ5iA0um37N"
+                            "linkId": "d6HdDzQ5iA0um37N",
+                            "pin": "14234.58092.5"
                         },
                         "positions": [
                             {
                                 "x": 14234.5,
-                                "y": 8092.5
+                                "y": 8715
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "16. Secret Door",
@@ -14623,14 +15039,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "RMNbogu7fwt4RmZw"
+                            "linkId": "RMNbogu7fwt4RmZw",
+                            "pin": "137788590.5"
                         },
                         "positions": [
                             {
                                 "x": 13778,
                                 "y": 8590.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "17. Hall of the Great Spirits",
@@ -14646,14 +15067,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "rnF9KWQg2gDUrFtU"
+                            "linkId": "rnF9KWQg2gDUrFtU",
+                            "pin": "12989.58590.5"
                         },
                         "positions": [
                             {
-                                "x": 12989.5,
+                                "x": 13031,
                                 "y": 8590.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "18. Hallway of the Ancestors",
@@ -14669,14 +15095,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "kWvTA7wvahFc5pfX"
+                            "linkId": "kWvTA7wvahFc5pfX",
+                            "pin": "12574.58258.5"
                         },
                         "positions": [
                             {
                                 "x": 12574.5,
-                                "y": 8258.5
+                                "y": 8300
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "19. Silver Coffer",
@@ -14692,14 +15123,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "XaC6RoZsPSU36GEx"
+                            "linkId": "XaC6RoZsPSU36GEx",
+                            "pin": "130319877"
                         },
                         "positions": [
                             {
                                 "x": 13031,
                                 "y": 9877
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "20. Spirit Guard of Ayocuan",
@@ -14715,14 +15151,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "UTH7JoLDfBCG28g6"
+                            "linkId": "UTH7JoLDfBCG28g6",
+                            "pin": "11495.510250.5"
                         },
                         "positions": [
                             {
-                                "x": 11495.5,
-                                "y": 10250.5
+                                "x": 11454,
+                                "y": 10209
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "21. Stone Block",
@@ -14738,14 +15179,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "IhtvLngtW3KZ1xpa"
+                            "linkId": "IhtvLngtW3KZ1xpa",
+                            "pin": "101269835.5"
                         },
                         "positions": [
                             {
                                 "x": 10126,
                                 "y": 9835.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "22. Chamber of the Nacehual",
@@ -14761,14 +15207,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "NHriM8ltx6TH8JsC"
+                            "linkId": "NHriM8ltx6TH8JsC",
+                            "pin": "116208507.5"
                         },
                         "positions": [
                             {
                                 "x": 11620,
                                 "y": 8507.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "23. Light Ahead",
@@ -14784,14 +15235,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "JNogufkhaoFhptIX"
+                            "linkId": "JNogufkhaoFhptIX",
+                            "pin": "13487.57926.5"
                         },
                         "positions": [
                             {
                                 "x": 13487.5,
-                                "y": 7926.5
+                                "y": 7968
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "23A. Triangular Stone",
@@ -14807,14 +15263,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "OYSORMmInKncxKKS"
+                            "linkId": "OYSORMmInKncxKKS",
+                            "pin": "127827179.5"
                         },
                         "positions": [
                             {
                                 "x": 12782,
                                 "y": 7179.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "24. Sandbox",
@@ -14830,14 +15291,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "stt90lXozEHuub6m"
+                            "linkId": "stt90lXozEHuub6m",
+                            "pin": "112887179.5"
                         },
                         "positions": [
                             {
                                 "x": 11288,
                                 "y": 7179.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "25. The Nest of the Warriors",
@@ -14853,14 +15319,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "ab7cQh7cxyEk3Xk3"
+                            "linkId": "ab7cQh7cxyEk3Xk3",
+                            "pin": "102927885"
                         },
                         "positions": [
                             {
                                 "x": 10292,
                                 "y": 7885
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "26. Ramp",
@@ -14876,14 +15347,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "GQZ5ILHMW35h8cCl"
+                            "linkId": "GQZ5ILHMW35h8cCl",
+                            "pin": "91309586.5"
                         },
                         "positions": [
                             {
                                 "x": 9130,
                                 "y": 9586.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "27. Stairs",
@@ -14899,14 +15375,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "rsUIH9Zerln2L9BB"
+                            "linkId": "rsUIH9Zerln2L9BB",
+                            "pin": "91307677.5"
                         },
                         "positions": [
                             {
-                                "x": 9130,
+                                "x": 8632,
                                 "y": 7677.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "28. The Arc of Nanahuatcin",
@@ -14922,14 +15403,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "ZXgexuhobj8PiDN5"
+                            "linkId": "ZXgexuhobj8PiDN5",
+                            "pin": "8424.58300"
                         },
                         "positions": [
                             {
                                 "x": 8424.5,
                                 "y": 8300
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "29. The Tomb of Pelota",
@@ -14945,14 +15431,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "FEvPnpNNeeADjaCG"
+                            "linkId": "FEvPnpNNeeADjaCG",
+                            "pin": "730410209"
                         },
                         "positions": [
                             {
                                 "x": 7304,
                                 "y": 10209
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "30. The Guardian Beast",
@@ -14968,14 +15459,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "WIMfqvYYDOZLemtV"
+                            "linkId": "WIMfqvYYDOZLemtV",
+                            "pin": "5934.59669.5"
                         },
                         "positions": [
                             {
                                 "x": 5934.5,
                                 "y": 9669.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "31. Calendar Stone",
@@ -14991,14 +15487,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "YQFvb28M5NzRUss2"
+                            "linkId": "YQFvb28M5NzRUss2",
+                            "pin": "5021.59835.5"
                         },
                         "positions": [
                             {
-                                "x": 5021.5,
+                                "x": 4980,
                                 "y": 9835.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "32. The Portal to Death",
@@ -15014,14 +15515,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "RC5Oj684J07S2ABi"
+                            "linkId": "RC5Oj684J07S2ABi",
+                            "pin": "4772.510001.5"
                         },
                         "positions": [
                             {
-                                "x": 4772.5,
+                                "x": 4731,
                                 "y": 10001.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "33. The Tomb of Tlacaelel",
@@ -15037,14 +15543,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "TF0u9xz9WLqdJ165"
+                            "linkId": "TF0u9xz9WLqdJ165",
+                            "pin": "514610292"
                         },
                         "positions": [
                             {
-                                "x": 5146,
+                                "x": 4274.5,
                                 "y": 10292
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "33A. Sacrifice to the Sun",
@@ -15060,14 +15571,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "Z6sp7LnO1GdLJMKv"
+                            "linkId": "Z6sp7LnO1GdLJMKv",
+                            "pin": "4108.510541"
                         },
                         "positions": [
                             {
                                 "x": 4108.5,
                                 "y": 10541
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "34. Guardians Bar the Way",
@@ -15083,14 +15599,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "CKBCu2Ai3mXkp3zD"
+                            "linkId": "CKBCu2Ai3mXkp3zD",
+                            "pin": "4772.59420.5"
                         },
                         "positions": [
                             {
-                                "x": 4772.5,
+                                "x": 4897,
                                 "y": 9420.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "35. Xipe’s Audience Chamber",
@@ -15106,18 +15627,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "OduT93C66DeOuoYK"
+                            "linkId": "OduT93C66DeOuoYK",
+                            "pin": "40677677.5"
                         },
                         "positions": [
                             {
                                 "x": 4191.5,
                                 "y": 9545
-                            },
-                            {
-                                "x": 4067,
-                                "y": 7677.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "36. Apartment of the Dust of Ages",
@@ -15133,14 +15655,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "Ikcrh2lJqK2QaGXd"
+                            "linkId": "Ikcrh2lJqK2QaGXd",
+                            "pin": "6681.59337.5"
                         },
                         "positions": [
                             {
-                                "x": 6681.5,
-                                "y": 9337.5
+                                "x": 6598.5,
+                                "y": 9462
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "37. Bed of Xilonen",
@@ -15156,14 +15683,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "N6SgjWA273dEcTRS"
+                            "linkId": "N6SgjWA273dEcTRS",
+                            "pin": "5519.58134"
                         },
                         "positions": [
                             {
                                 "x": 5519.5,
                                 "y": 8134
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "38. Barred Pit",
@@ -15179,14 +15711,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "s2qqjKysXs2SDapK"
+                            "linkId": "s2qqjKysXs2SDapK",
+                            "pin": "6100.58839.5"
                         },
                         "positions": [
                             {
-                                "x": 6100.5,
-                                "y": 8839.5
+                                "x": 5976,
+                                "y": 8632
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "39. Chamber of the Second Sun",
@@ -15202,14 +15739,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "C4DBJsejS5vRCB2X"
+                            "linkId": "C4DBJsejS5vRCB2X",
+                            "pin": "6183.58009.5"
                         },
                         "positions": [
                             {
-                                "x": 6183.5,
+                                "x": 6225,
                                 "y": 8009.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "40. Dragon Breath",
@@ -15225,18 +15767,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "XKJhrTs8TcWkFpGi"
+                            "linkId": "XKJhrTs8TcWkFpGi",
+                            "pin": "10250.54980"
                         },
                         "positions": [
                             {
                                 "x": 7636,
                                 "y": 8839.5
-                            },
-                            {
-                                "x": 10250.5,
-                                "y": 4980
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "41. Free Gold",
@@ -15252,14 +15795,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "cg8c7VpAgVCHINGq"
+                            "linkId": "cg8c7VpAgVCHINGq",
+                            "pin": "9835.56474"
                         },
                         "positions": [
                             {
                                 "x": 9835.5,
                                 "y": 6474
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "42. The Chapel of Kukulkan",
@@ -15275,14 +15823,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "TaBRF8PBui2ildVy"
+                            "linkId": "TaBRF8PBui2ildVy",
+                            "pin": "10167.56681.5"
                         },
                         "positions": [
                             {
-                                "x": 10167.5,
-                                "y": 6681.5
+                                "x": 10126,
+                                "y": 6847.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "43. The Smoking Mirrors",
@@ -15298,14 +15851,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "mhGGeG5xMefF9uDU"
+                            "linkId": "mhGGeG5xMefF9uDU",
+                            "pin": "8922.56557"
                         },
                         "positions": [
                             {
                                 "x": 8922.5,
                                 "y": 6557
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "44. Sun of Motion",
@@ -15321,14 +15879,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "1ybrOUybCm4t5fZQ"
+                            "linkId": "1ybrOUybCm4t5fZQ",
+                            "pin": "9171.55934.5"
                         },
                         "positions": [
                             {
                                 "x": 9171.5,
                                 "y": 5934.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "45. Mictlan",
@@ -15344,14 +15907,46 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "oxAxZARzBHPoSD8S"
+                            "linkId": "oxAxZARzBHPoSD8S",
+                            "pin": "9918.55685.5"
                         },
                         "positions": [
                             {
-                                "x": 9918.5,
-                                "y": 5685.5
+                                "x": 10001.5,
+                                "y": 5561
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "46. Tlazoteotl",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2422,
+                            "bookCode": "thsot",
+                            "slug": "the-hidden-shrine-of-tamoachan#TheRuinsoftheShrine",
+                            "contentChunkId": "393b730c-798f-45f0-a9b4-a272e842e5f0",
+                            "userData": {
+                                "userDisplayName": "Khatab"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 386,
+                            "linkId": "CFqDYmggatWJ6v9R"
+                        },
+                        "positions": [
+                            {
+                                "x": 9794,
+                                "y": 4440.5
+                            }
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "47. Spider in Hiding",
@@ -15367,14 +15962,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "NoChGzM4yiVxcLb6"
+                            "linkId": "NoChGzM4yiVxcLb6",
+                            "pin": "8756.54897"
                         },
                         "positions": [
                             {
                                 "x": 8756.5,
                                 "y": 4897
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "48. Hound of the Bat",
@@ -15390,14 +15990,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "gvZfjCJMkvARSgr0"
+                            "linkId": "gvZfjCJMkvARSgr0",
+                            "pin": "8590.55146"
                         },
                         "positions": [
                             {
                                 "x": 8590.5,
                                 "y": 5146
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "49. Sacred Chitza-Atlan",
@@ -15413,14 +16018,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "zNk2y1ALEmSzrWNA"
+                            "linkId": "zNk2y1ALEmSzrWNA",
+                            "pin": "8175.55436.5"
                         },
                         "positions": [
                             {
-                                "x": 8175.5,
-                                "y": 5436.5
+                                "x": 7926.5,
+                                "y": 5644
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "50. Jade Wall",
@@ -15436,14 +16046,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "kSY7Nh1iqZCsPkOL"
+                            "linkId": "kSY7Nh1iqZCsPkOL",
+                            "pin": "8424.55893"
                         },
                         "positions": [
                             {
                                 "x": 8424.5,
                                 "y": 5893
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "51. Wind Tunnel",
@@ -15459,14 +16074,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "MS9cq4ShBHQAGyxg"
+                            "linkId": "MS9cq4ShBHQAGyxg",
+                            "pin": "78026764.5"
                         },
                         "positions": [
                             {
                                 "x": 7802,
                                 "y": 6764.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "52. The Hidden Room of Nahual",
@@ -15482,14 +16102,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "QfP0u9PSyHQxa3np"
+                            "linkId": "QfP0u9PSyHQxa3np",
+                            "pin": "78025934.5"
                         },
                         "positions": [
                             {
                                 "x": 7802,
                                 "y": 5934.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "53. The Valve",
@@ -15505,14 +16130,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "rzE5qGFxzTZvhV6U"
+                            "linkId": "rzE5qGFxzTZvhV6U",
+                            "pin": "7179.55934.5"
                         },
                         "positions": [
                             {
                                 "x": 7179.5,
                                 "y": 5934.5
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     },
                     {
                         "label": "54. Temple Ruin",
@@ -15528,14 +16158,19 @@
                             "note": true,
                             "img": false,
                             "parentId": 386,
-                            "linkId": "rmVf4Zps6z5zkVcR"
+                            "linkId": "rmVf4Zps6z5zkVcR",
+                            "pin": "45655644"
                         },
                         "positions": [
                             {
                                 "x": 4565,
                                 "y": 5644
                             }
-                        ]
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
                     }
                 ]
             }
@@ -15715,8 +16350,485 @@
                 "type": "r",
                 "author": "JIwmj8Cyv1NxmOKb",
                 "x": 3818,
-                "y": 7138,
+                "y": 8383,
                 "width": 498,
+                "height": 498,
+                "rotation": 0,
+                "z": 0,
+                "hidden": false,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#000000",
+                "strokeAlpha": 1,
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#FFFFFF",
+                "textAlpha": 1,
+                "texture": "",
+                "text": ""
+            },
+            {
+                "_id": "cHX4oyV4wdpnnihz",
+                "flags": {},
+                "type": "f",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 17166,
+                "y": 8798,
+                "width": 262,
+                "height": 160,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [
+                    [
+                        4.625,
+                        0
+                    ],
+                    [
+                        7,
+                        27
+                    ],
+                    [
+                        7,
+                        31
+                    ],
+                    [
+                        9,
+                        40
+                    ],
+                    [
+                        9,
+                        49
+                    ],
+                    [
+                        9,
+                        66
+                    ],
+                    [
+                        9,
+                        72
+                    ],
+                    [
+                        9,
+                        78
+                    ],
+                    [
+                        8,
+                        87
+                    ],
+                    [
+                        8,
+                        95
+                    ],
+                    [
+                        8,
+                        103
+                    ],
+                    [
+                        8,
+                        118
+                    ],
+                    [
+                        8,
+                        125
+                    ],
+                    [
+                        8,
+                        139
+                    ],
+                    [
+                        8,
+                        148
+                    ],
+                    [
+                        8,
+                        156
+                    ],
+                    [
+                        8,
+                        160
+                    ],
+                    [
+                        9,
+                        160
+                    ],
+                    [
+                        15,
+                        160
+                    ],
+                    [
+                        20,
+                        160
+                    ],
+                    [
+                        29,
+                        160
+                    ],
+                    [
+                        66,
+                        158
+                    ],
+                    [
+                        74,
+                        158
+                    ],
+                    [
+                        99,
+                        158
+                    ],
+                    [
+                        109,
+                        158
+                    ],
+                    [
+                        126,
+                        158
+                    ],
+                    [
+                        138,
+                        158
+                    ],
+                    [
+                        154,
+                        158
+                    ],
+                    [
+                        168,
+                        158
+                    ],
+                    [
+                        185,
+                        158
+                    ],
+                    [
+                        198,
+                        158
+                    ],
+                    [
+                        210,
+                        158
+                    ],
+                    [
+                        215,
+                        158
+                    ],
+                    [
+                        228,
+                        159
+                    ],
+                    [
+                        236,
+                        159
+                    ],
+                    [
+                        243,
+                        159
+                    ],
+                    [
+                        245,
+                        159
+                    ],
+                    [
+                        250,
+                        159
+                    ],
+                    [
+                        255,
+                        159
+                    ],
+                    [
+                        261,
+                        159
+                    ],
+                    [
+                        262,
+                        158
+                    ],
+                    [
+                        261,
+                        154
+                    ],
+                    [
+                        258,
+                        150
+                    ],
+                    [
+                        255,
+                        148
+                    ],
+                    [
+                        255,
+                        147
+                    ],
+                    [
+                        252,
+                        141
+                    ],
+                    [
+                        251,
+                        136
+                    ],
+                    [
+                        248,
+                        130
+                    ],
+                    [
+                        245,
+                        122
+                    ],
+                    [
+                        241,
+                        114
+                    ],
+                    [
+                        237,
+                        110
+                    ],
+                    [
+                        232,
+                        103
+                    ],
+                    [
+                        225,
+                        96
+                    ],
+                    [
+                        216,
+                        90
+                    ],
+                    [
+                        203,
+                        85
+                    ],
+                    [
+                        189,
+                        83
+                    ],
+                    [
+                        187,
+                        83
+                    ],
+                    [
+                        180,
+                        83
+                    ],
+                    [
+                        177,
+                        82
+                    ],
+                    [
+                        173,
+                        82
+                    ],
+                    [
+                        173,
+                        81
+                    ],
+                    [
+                        179,
+                        80
+                    ],
+                    [
+                        183,
+                        78
+                    ],
+                    [
+                        191,
+                        76
+                    ],
+                    [
+                        200,
+                        73
+                    ],
+                    [
+                        206,
+                        71
+                    ],
+                    [
+                        214,
+                        67
+                    ],
+                    [
+                        218,
+                        64
+                    ],
+                    [
+                        226,
+                        60
+                    ],
+                    [
+                        232,
+                        53
+                    ],
+                    [
+                        237,
+                        48
+                    ],
+                    [
+                        241,
+                        42
+                    ],
+                    [
+                        243,
+                        34
+                    ],
+                    [
+                        245,
+                        25
+                    ],
+                    [
+                        246,
+                        19
+                    ],
+                    [
+                        248,
+                        13
+                    ],
+                    [
+                        249,
+                        7
+                    ],
+                    [
+                        250,
+                        3
+                    ],
+                    [
+                        249,
+                        2
+                    ],
+                    [
+                        230,
+                        2
+                    ],
+                    [
+                        223,
+                        2
+                    ],
+                    [
+                        209,
+                        2
+                    ],
+                    [
+                        186,
+                        2
+                    ],
+                    [
+                        172,
+                        2
+                    ],
+                    [
+                        162,
+                        2
+                    ],
+                    [
+                        146,
+                        2
+                    ],
+                    [
+                        136,
+                        2
+                    ],
+                    [
+                        117,
+                        2
+                    ],
+                    [
+                        104,
+                        2
+                    ],
+                    [
+                        91,
+                        2
+                    ],
+                    [
+                        73,
+                        2
+                    ],
+                    [
+                        54,
+                        2
+                    ],
+                    [
+                        28,
+                        3
+                    ],
+                    [
+                        19,
+                        4
+                    ],
+                    [
+                        16,
+                        4
+                    ],
+                    [
+                        9,
+                        4
+                    ],
+                    [
+                        4,
+                        4
+                    ],
+                    [
+                        0,
+                        4
+                    ]
+                ],
+                "bezierFactor": 0.5,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#ff0000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "T",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "r01jhOOs9CCOBdXR",
+                "flags": {},
+                "type": "t",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 16558.5,
+                "y": 8009.5,
+                "width": 83,
+                "height": 83,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "T",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "Z2nJDVXcwcLkX4P4",
+                "flags": {},
+                "type": "r",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 14525,
+                "y": 10624,
+                "width": 902.625,
                 "height": 498,
                 "rotation": 0,
                 "z": 0,
@@ -15728,8 +16840,828 @@
                 "fillColor": "#bd28cc",
                 "fillAlpha": 0.5,
                 "strokeWidth": 8,
-                "strokeColor": "#bd28cc",
+                "strokeColor": "#000000",
                 "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#FFFFFF",
+                "textAlpha": 1
+            },
+            {
+                "_id": "HdpUzfEwF6nZ6Y1J",
+                "flags": {},
+                "type": "f",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 13944,
+                "y": 9711,
+                "width": 154,
+                "height": 1,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        20,
+                        0
+                    ],
+                    [
+                        27,
+                        0
+                    ],
+                    [
+                        30,
+                        0
+                    ],
+                    [
+                        38,
+                        0
+                    ],
+                    [
+                        48,
+                        0
+                    ],
+                    [
+                        55,
+                        0
+                    ],
+                    [
+                        58,
+                        0
+                    ],
+                    [
+                        62,
+                        0
+                    ],
+                    [
+                        67,
+                        0
+                    ],
+                    [
+                        69,
+                        0
+                    ],
+                    [
+                        75,
+                        0
+                    ],
+                    [
+                        79,
+                        0
+                    ],
+                    [
+                        82,
+                        0
+                    ],
+                    [
+                        86,
+                        0
+                    ],
+                    [
+                        91,
+                        0
+                    ],
+                    [
+                        93,
+                        0
+                    ],
+                    [
+                        98,
+                        0
+                    ],
+                    [
+                        103,
+                        0
+                    ],
+                    [
+                        106,
+                        0
+                    ],
+                    [
+                        109,
+                        0
+                    ],
+                    [
+                        112,
+                        0
+                    ],
+                    [
+                        115,
+                        0
+                    ],
+                    [
+                        119,
+                        0
+                    ],
+                    [
+                        122,
+                        0
+                    ],
+                    [
+                        126,
+                        0
+                    ],
+                    [
+                        130,
+                        0
+                    ],
+                    [
+                        134,
+                        0
+                    ],
+                    [
+                        137,
+                        0
+                    ],
+                    [
+                        140,
+                        1
+                    ],
+                    [
+                        143,
+                        1
+                    ],
+                    [
+                        147,
+                        1
+                    ],
+                    [
+                        150,
+                        1
+                    ],
+                    [
+                        151,
+                        1
+                    ],
+                    [
+                        154,
+                        1
+                    ]
+                ],
+                "bezierFactor": 0.5,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#ff0000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "T",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "5CdZ9VSgL3hg57OO",
+                "flags": {},
+                "type": "r",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 13446,
+                "y": 9960,
+                "width": 166,
+                "height": 166,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#ff0000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "T",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "SbbmU17vonUotTKq",
+                "flags": {},
+                "type": "t",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 12533,
+                "y": 8798,
+                "width": 83,
+                "height": 83,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "T",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "55wdPNvkrUEndn5X",
+                "flags": {},
+                "type": "t",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 11537,
+                "y": 7013.5,
+                "width": 83,
+                "height": 83,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "T",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "ibHksOX1Q5kqUxyg",
+                "flags": {},
+                "type": "t",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 10956,
+                "y": 7013.5,
+                "width": 83,
+                "height": 83,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "T",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "4BaummGlPyuzuExJ",
+                "flags": {},
+                "type": "r",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 11039,
+                "y": 6972,
+                "width": 166,
+                "height": 166,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#ff0000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#FFFFFF",
+                "textAlpha": 1
+            },
+            {
+                "_id": "YOJAOghVcJ7SrZ2F",
+                "flags": {},
+                "type": "r",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 8549,
+                "y": 7470,
+                "width": 166,
+                "height": 166,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#ff0000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "T",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "Jbfe9qrLMyYLuZ94",
+                "flags": {},
+                "type": "r",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 7553,
+                "y": 8383,
+                "width": 166,
+                "height": 166,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#ff0000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "T",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "osEYUKx5kSJXLN7h",
+                "flags": {},
+                "type": "p",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 7387,
+                "y": 10292,
+                "width": 166,
+                "height": 166,
+                "rotation": 0,
+                "z": 0,
+                "hidden": false,
+                "locked": true,
+                "points": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        166,
+                        166
+                    ],
+                    [
+                        166,
+                        0
+                    ],
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        166
+                    ],
+                    [
+                        166,
+                        0
+                    ],
+                    [
+                        166,
+                        166
+                    ],
+                    [
+                        0,
+                        166
+                    ]
+                ],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#000000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#FFFFFF",
+                "textAlpha": 1
+            },
+            {
+                "_id": "B1A1VtTnvnu2e6RC",
+                "flags": {},
+                "type": "t",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 4413.583333333334,
+                "y": 10047.166666666666,
+                "width": 83,
+                "height": 83,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "T",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "rVk8ky9vb3IqqAAg",
+                "flags": {},
+                "type": "r",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 4565,
+                "y": 9462,
+                "width": 166,
+                "height": 166,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#ff0000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "T",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "jOElSiD97uf1d09k",
+                "flags": {},
+                "type": "r",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 6972,
+                "y": 5976,
+                "width": 166,
+                "height": 166,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#ff0000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "T",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "1b8zwQWzZC8JN9jz",
+                "flags": {},
+                "type": "e",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 7760.5,
+                "y": 6557,
+                "width": 83,
+                "height": 83,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#ff0000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "C",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "L6GYgcY2SxcvT60z",
+                "flags": {},
+                "type": "p",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 8300,
+                "y": 4814,
+                "width": 1162,
+                "height": 259.375,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [
+                    [
+                        498,
+                        166
+                    ],
+                    [
+                        20.75,
+                        166
+                    ],
+                    [
+                        0,
+                        197.125
+                    ],
+                    [
+                        0,
+                        238.625
+                    ],
+                    [
+                        10.375,
+                        259.375
+                    ],
+                    [
+                        1162,
+                        249
+                    ],
+                    [
+                        1162,
+                        166
+                    ],
+                    [
+                        570.625,
+                        166
+                    ],
+                    [
+                        570.625,
+                        0
+                    ],
+                    [
+                        498,
+                        0
+                    ],
+                    [
+                        498,
+                        166
+                    ],
+                    [
+                        487.625,
+                        166
+                    ]
+                ],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#000000",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "#000000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#FFFFFF",
+                "textAlpha": 1
+            },
+            {
+                "_id": "wuXMayswjYDItIVP",
+                "flags": {},
+                "type": "p",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 9451.625,
+                "y": 5021.5,
+                "width": 228.25,
+                "height": 622.5,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [
+                    [
+                        228.25,
+                        622.5
+                    ],
+                    [
+                        228.25,
+                        415
+                    ],
+                    [
+                        51.875,
+                        249
+                    ],
+                    [
+                        51.875,
+                        0
+                    ],
+                    [
+                        0,
+                        0
+                    ]
+                ],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#ff0000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#FFFFFF",
+                "textAlpha": 1
+            },
+            {
+                "_id": "ftsqxi3IgsQFv7YE",
+                "flags": {},
+                "type": "p",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 9742.125,
+                "y": 4731,
+                "width": 176.375,
+                "height": 913,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [
+                    [
+                        0,
+                        913
+                    ],
+                    [
+                        0,
+                        383.875
+                    ],
+                    [
+                        176.375,
+                        51.875
+                    ],
+                    [
+                        176.375,
+                        0
+                    ]
+                ],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#ff0000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#FFFFFF",
+                "textAlpha": 1
+            },
+            {
+                "_id": "ZkLUhCw1sFE8XNun",
+                "flags": {},
+                "type": "r",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 4741.375,
+                "y": 5727,
+                "width": 249,
+                "height": 332,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#ff0000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#FFFFFF",
+                "textAlpha": 1
+            },
+            {
+                "_id": "H3HMaofBiv4Pfwlm",
+                "flags": {},
+                "type": "e",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 4025.5,
+                "y": 8466,
+                "width": 83,
+                "height": 83,
+                "rotation": 0,
+                "z": 0,
+                "hidden": false,
+                "locked": true,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#000000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#FFFFFF",
+                "textAlpha": 1
+            },
+            {
+                "_id": "KF5oHw882drBnKdg",
+                "flags": {},
+                "type": "p",
+                "author": "JIwmj8Cyv1NxmOKb",
+                "x": 4025.5,
+                "y": 8466,
+                "width": 342.375,
+                "height": 726.25,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": true,
+                "points": [
+                    [
+                        342.375,
+                        705.5
+                    ],
+                    [
+                        72.625,
+                        20.75
+                    ],
+                    [
+                        41.5,
+                        0
+                    ],
+                    [
+                        0,
+                        20.75
+                    ],
+                    [
+                        0,
+                        51.875
+                    ],
+                    [
+                        259.375,
+                        726.25
+                    ]
+                ],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#bd28cc",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#000000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
                 "fontFamily": "Signika",
                 "fontSize": 48,
                 "textColor": "#FFFFFF",
@@ -15737,7 +17669,7 @@
             }
         ],
         "weather": "",
-        "darkness": 0.2,
+        "darkness": 0.55,
         "tokenVision": true,
         "globalLight": false,
         "globalLightThreshold": 0.05

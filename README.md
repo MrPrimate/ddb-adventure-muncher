@@ -102,6 +102,7 @@ Books with Aligned, Walled and Lit scenes with Notes not on scenes:
 
 * Curse of Strahd
 * The Hidden Shrine of Tamoachan
+* Rick and Morty
 
 Books with notes:
 
@@ -112,7 +113,6 @@ Books with notes:
 * Candlekeep Mysteries
 * Divine Contention
 * Dragon of Icespire Peak
-* Rick and Morty
 * Frozen Sick
 * Ghosts of Saltmarsh
 * Hoard of the Dragon Queen
