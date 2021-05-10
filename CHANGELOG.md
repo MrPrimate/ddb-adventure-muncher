@@ -1,3 +1,7 @@
+# 0.1.4
+
+* Lost Dungeon of Rickness walled! (Thanks @topper !)
+
 # 0.1.3
 
 * Improved CoS scenes (Thanks @Zac !)
