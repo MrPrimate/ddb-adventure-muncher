@@ -140,6 +140,7 @@ Books with partial scene adjustments:
 * Princes of the Apocalypse
 * Baldur's Gate: Descent into Avernus
 * Candlekeep Mysteries
+* The Forge of Fury
 
 If you wish to help improve the scene wall and lighting information, see the below section.
 
