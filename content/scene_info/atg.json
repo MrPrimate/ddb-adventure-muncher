@@ -45,7 +45,7 @@
     },
     {
         "name": "Map 6.3: Frost Giant Stronghold - Upper Level",
-        "navName": "Frost Giant Stronghold (Upper)",
+        "navName": "Glacier (Upper)",
         "width": 3978,
         "height": 5295,
         "grid": 50,
@@ -17287,6 +17287,30 @@
                 "ds": 0,
                 "move": 1,
                 "sense": 2
+            },
+            {
+                "c": [
+                    2175,
+                    3212,
+                    2175,
+                    3312
+                ],
+                "door": 2,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3187,
+                    5425,
+                    3175,
+                    5550
+                ],
+                "door": 2,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
             }
         ],
         "lights": [],
@@ -17355,6 +17379,28 @@
                 "ddbId": 90009,
                 "cobaltId": null,
                 "contentChunkId": "ddb-missing-atg-90009"
+            }
+        }
+    },
+    {
+        "name": "Map 6.6: Hall of the Fire Giant King - Second Level",
+        "navName": "Hall of the Fire Giant King (Secind)",
+        "width": 2254,
+        "height": 3000,
+        "grid": 100,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 0,
+        "shiftY": 0,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 90010,
+                "cobaltId": null,
+                "contentChunkId": "ddb-missing-atg-90010"
             }
         }
     },
