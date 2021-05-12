@@ -23,11 +23,11 @@ If you wish to disable the damage tagging on rolls set the config value: `"useDa
 
 ## Alpha Download Links
 
-* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.3-linux-x86_64.AppImage)
-* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.3-linux-x86_64.rpm)
-* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.3-linux-amd64.deb)
-* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.3-win.exe)
-* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.3-mac.dmg)
+* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.4-linux-x86_64.AppImage)
+* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.4-linux-x86_64.rpm)
+* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.4-linux-amd64.deb)
+* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.4-win.exe)
+* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.4-mac.dmg)
 
 ## Importing the book
 
@@ -94,43 +94,17 @@ Examples:
 
 ## Current Scene Support
 
+All books with Scenes should now have notes generated. Please highlight if you find missing Notes/Pins.
+
 Books with Aligned, Walled, Lit scenes with Note placed:
 
 * Lost Mines of Phandelver
 
-Books with Aligned, Walled and Lit scenes with Notes not on scenes:
+Books with Aligned, Walled and Lit scenes with partial Note support:
 
 * Curse of Strahd
 * The Hidden Shrine of Tamoachan
 * Rick and Morty
-
-Books with notes:
-
-* Acquisitions Incorporated
-* Princes of the Apocalypse
-* Against the Giants
-* Baldur's Gate: Descent into Avernus
-* Candlekeep Mysteries
-* Divine Contention
-* Dragon of Icespire Peak
-* Frozen Sick
-* Ghosts of Saltmarsh
-* Hoard of the Dragon Queen
-* Icewind Dale Rime of the Frostmaiden
-* Out of the Abyss
-* Rise of Tiamat
-* Sleeping Dragons Wake
-* Storm Kings Thuder
-* Storm Lord's Wrath
-* Explorers Guide to Wildemount
-* The Tortle Package
-* Tomb of Horrors
-* The Sunless Citadel
-* White Plume Mountain
-* Dead in Thay
-* Tomb of Annihilation
-* Waterdeep: Dragon Heist
-* Waterdeep: Dungeon of the Mad Mage
 
 Books with partial scene adjustments:
 
@@ -141,6 +115,7 @@ Books with partial scene adjustments:
 * Baldur's Gate: Descent into Avernus
 * Candlekeep Mysteries
 * The Forge of Fury
+* The Sunless Citadel
 
 If you wish to help improve the scene wall and lighting information, see the below section.
 
@@ -148,8 +123,8 @@ If you wish to help improve the scene wall and lighting information, see the bel
 
 ### Walls and Lighting information
 
-* If you wish to add walls/lighting information you can turn on a setting in Foundry to allow you to support data from a supported map. (VTTA or ddb-adventure-muncher).
-* You need to be using v1.0.1+ of ddb-importer.
+* If you wish to add walls/lighting information you can turn on a setting in Foundry to allow you to support data from a supported map.
+* You need to be using v1.0.4+ of ddb-importer.
 * Open the Chrome Developer Console (F12) and run `game.settings.set("ddb-importer", "allow-scene-download", true)`
 * Now when you right click on a scene navigation button you will get the option to download the associated data (DDB Scene Config).
 * Upload this to the #scene-adjustments channel on Discord with a description of your changes.
