@@ -99,6 +99,7 @@ All books with Scenes should now have notes generated. Please highlight if you f
 Books with Aligned, Walled, Lit scenes with Note placed:
 
 * Lost Mines of Phandelver
+* The Sunless Citadel
 
 Books with Aligned, Walled and Lit scenes with partial Note support:
 
@@ -115,7 +116,6 @@ Books with partial scene adjustments:
 * Baldur's Gate: Descent into Avernus
 * Candlekeep Mysteries
 * The Forge of Fury
-* The Sunless Citadel
 
 If you wish to help improve the scene wall and lighting information, see the below section.
 

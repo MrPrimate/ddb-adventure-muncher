@@ -1,3 +1,7 @@
+# 0.1.5
+
+* TSC mapped, walled, pinned (Amazing work by @ygg)
+
 # 0.1.4
 
 * Lost Dungeon of Rickness walled! (Thanks @topper !)
