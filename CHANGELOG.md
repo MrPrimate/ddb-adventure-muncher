@@ -3,7 +3,9 @@
 * Lost Dungeon of Rickness walled! (Thanks @topper !)
 * Improved CM maps (Thanks @OniNoKen !)
 * THSoT scene tweaks (Thanks @ygg)
-* TFoF partial map support
+* TFoF partial scene support
+* TSC partial scenes (Amazing work by @ygg)
+* IDRotF Scenes were no longer parsing.
 
 # 0.1.3
 
