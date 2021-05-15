@@ -32,7 +32,7 @@ function generateIcon(config, title, templateDir) {
       utils.saveFile(svgContent, iconFileOutPath);
     }
   }
-  return iconPath;
+  return iconPath.split(path.sep).join(path.posix.sep);
 }
 
 exports.generateIcon = generateIcon;
