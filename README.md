@@ -116,6 +116,7 @@ Books with partial scene adjustments:
 * Baldur's Gate: Descent into Avernus
 * Candlekeep Mysteries
 * The Forge of Fury
+* Out of the Abyss
 
 If you wish to help improve the scene wall and lighting information, see the below section.
 
