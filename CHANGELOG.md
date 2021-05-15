@@ -2,6 +2,7 @@
 
 * TSC mapped, walled, pinned (Amazing work by @ygg)
 * Fixed Map Pins not having images on adventures generated on Windows.
+* PotA Moar maps. (Thanks @Zac !)
 
 # 0.1.4
 
