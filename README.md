@@ -100,6 +100,7 @@ Books with Aligned, Walled, Lit scenes with Note placed:
 
 * Lost Mines of Phandelver
 * The Sunless Citadel
+* White Plume Mountain
 
 Books with Aligned, Walled and Lit scenes with partial Note support:
 

@@ -1,3 +1,9 @@
+# 0.1.6
+
+* PotA Moar maps. (Thanks @Zac !)
+* WPM done (Thanks @maadonna !)
+* Start of ToA scene fixing (Thanks @michaelko777 !)
+
 # 0.1.5
 
 * TSC mapped, walled, pinned (Amazing work by @ygg)
