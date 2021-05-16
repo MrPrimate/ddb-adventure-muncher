@@ -737,7 +737,7 @@ function generateScene(row, img) {
           });
         }
       });
-      // delete(adjustment.flags.ddb.notes);
+      delete(adjustment.flags.ddb.notes);
     }
     scene = _.merge(scene, adjustment);
   }

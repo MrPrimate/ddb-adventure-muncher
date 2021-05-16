@@ -305,13 +305,13 @@ function diceRollMatcher(match, p1, p2, p3, p4, p5) {
     let dmgString = `${p4} damage`;
     dmgString = dmgString[0].toUpperCase() + dmgString.substring(1);
     const diceString = parseDiceString(p2, null, `[${p4.toLowerCase()}]`).diceString;
-    return `${p1}[[/r ${diceString} # ${dmgString}]]${p3} damage`;
+    return `${p1 ? p1: ""}[[/r ${diceString} # ${dmgString}]]${p3} damage`;
   } else if (p5 && p1 && p5.toLowerCase() === "points" && p1.toLowerCase() === "regains") {
     const diceString = parseDiceString(p2, null, "[healing]").diceString;
-    return `${p1}[[/r ${diceString} # Healing]]${p3} hit points`;
+    return `${p1 ? p1: ""}[[/r ${diceString} # Healing]]${p3} hit points`;
   } else {
     const diceString = parseDiceString(p2).diceString;
-    return `${p1}[[/r ${diceString}]]${p3}`;
+    return `${p1 ? p1: ""}[[/r ${diceString}]]${p3 ? p3 : ""}${p4 ? p4 : ""}${p5 ? p5 : ""}`;
   }
 }
 
@@ -323,7 +323,6 @@ function replaceRollLinks(text, conf) {
   text = text.replace(damageRegex, diceRollMatcher);
 
   // const Regex
-  // some other roll stuff -what was it going to be?
   // to hit rolls
   const toHitRegex = new RegExp(/ ([+-]) *(\d+) to hit/, "g");
   text = text.replace(toHitRegex, " [[/r 1d20 $1 $2]] to hit");
