@@ -4,6 +4,7 @@
 * WPM done (Thanks @maadonna !)
 * Start of ToA scene fixing (Thanks @michaelko777 !)
 * TSC had a missing scene (sorry ygg!)
+* In some instances replaced rolls, typically in treasure, broke the text.
 
 # 0.1.5
 
