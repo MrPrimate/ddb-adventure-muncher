@@ -3,6 +3,7 @@
 * PotA Moar maps. (Thanks @Zac !)
 * WPM done (Thanks @maadonna !)
 * Start of ToA scene fixing (Thanks @michaelko777 !)
+* TSC had a missing scene (sorry ygg!)
 
 # 0.1.5
 
