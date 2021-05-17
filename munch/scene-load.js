@@ -169,6 +169,11 @@ function importScene(conf, sceneFile) {
   //exit();
   if (sceneData) {
     if (sceneData.flags && sceneData.flags.ddb && sceneData.flags.ddb.notes) sceneData.flags.ddb.notes = [];
+    sceneData.walls = [];
+    sceneData.drawings = [];
+    sceneData.lights = [];
+    sceneData.walls = [];
+    sceneData.tokens = [];
     if (sceneData.navName) sceneData.navName = sceneData.navName.trim();
     sceneData = _.merge(sceneData, inData);
     const index = (sceneData.flags.ddb.contentChunkId) ?
