@@ -1,3 +1,5 @@
+#!/usr/bin/env node --max-old-space-size=4096
+
 const book = require("./book.js");
 const utils = require("./utils.js");
 const ddb = require("./ddb.js");
