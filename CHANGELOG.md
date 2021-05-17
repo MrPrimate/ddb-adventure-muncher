@@ -5,6 +5,8 @@
 * Start of ToA scene fixing (Thanks @michaelko777 !)
 * TSC had a missing scene (sorry ygg!)
 * In some instances replaced rolls, typically in treasure, broke the text.
+* GoS scene added (thanks @CussaMitre !)
+* Stairways module support for Scene import.
 
 # 0.1.5
 

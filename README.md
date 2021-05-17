@@ -131,6 +131,10 @@ If you wish to help improve the scene wall and lighting information, see the bel
 * Now when you right click on a scene navigation button you will get the option to download the associated data (DDB Scene Config).
 * Upload this to the #scene-adjustments channel on Discord with a description of your changes.
 
+### Stairways module
+
+If you export scenes with stairways data included, that will be added in to the generated scenes.
+
 ### Missed parsing
 
 If you find a missing scene, or something has not parsed right please let me know on Discord.
