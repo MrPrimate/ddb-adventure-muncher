@@ -7,6 +7,7 @@
 * In some instances replaced rolls, typically in treasure, broke the text.
 * GoS scene added (thanks @CussaMitre !)
 * Stairways module support for Scene import.
+* Some ToA scenes (THanks @michaelko777 !)
 
 # 0.1.5
 
