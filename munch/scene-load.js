@@ -154,7 +154,7 @@ function importScene(conf, sceneFile) {
         notes: inData.flags.ddb.notes,
       }
     };
-  
+    newFlags.stairways = inData.flags.stairways ? inData.flags.stairways : [];
     delete(inData.flags);
     inData.flags = newFlags;
   } else {
