@@ -142,7 +142,6 @@ function importScene(conf, sceneFile) {
   }
   
   // remove things we can't deal with right now
-  delete(inData.tokens);
   delete(inData.descriptions);
 
   if (inData.flags.ddb) {
@@ -152,6 +151,7 @@ function importScene(conf, sceneFile) {
         cobaltId: inData.flags.ddb.cobaltId,
         contentChunkId: inData.flags.ddb.contentChunkId,
         notes: inData.flags.ddb.notes,
+        tokens: inData.tokens,
       }
     };
     newFlags.stairways = inData.flags.stairways ? inData.flags.stairways : [];
@@ -160,7 +160,8 @@ function importScene(conf, sceneFile) {
   } else {
     delete(inData.flags);
   }
-  
+  // we have moved tokens to flags for future use = they will need to be "jigged"
+  delete(inData.tokens);
 
   inData.name = lookup.name;
   if (inData.navName == "") delete((inData.navName));
