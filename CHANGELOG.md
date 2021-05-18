@@ -8,6 +8,7 @@
 * GoS scene added (thanks @CussaMitre !)
 * Stairways module support for Scene import.
 * Some ToA scenes (THanks @michaelko777 !)
+* Add VRGtR.
 
 # 0.1.5
 
