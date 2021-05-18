@@ -23,11 +23,11 @@ If you wish to disable the damage tagging on rolls set the config value: `"useDa
 
 ## Alpha Download Links
 
-* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.5-linux-x86_64.AppImage)
-* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.5-linux-x86_64.rpm)
-* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.5-linux-amd64.deb)
-* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.5-win.exe)
-* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.5-mac.dmg)
+* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.6-linux-x86_64.AppImage)
+* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.6-linux-x86_64.rpm)
+* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.6-linux-amd64.deb)
+* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.6-win.exe)
+* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.6-mac.dmg)
 
 ## Importing the book
 
@@ -118,6 +118,7 @@ Books with partial scene adjustments:
 * Candlekeep Mysteries
 * The Forge of Fury
 * Out of the Abyss
+* Van Richten's Guide to Ravenloft
 
 If you wish to help improve the scene wall and lighting information, see the below section.
 
