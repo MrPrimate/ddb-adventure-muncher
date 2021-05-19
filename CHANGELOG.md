@@ -1,3 +1,7 @@
+# 0.1.7
+
+* WDH Scenes started (Thanks @maadonna !)
+
 # 0.1.6
 
 * PotA Moar maps. (Thanks @Zac !)
