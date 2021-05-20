@@ -141,79 +141,61 @@ function guessTableName(document, contentChunkId) {
   }
 }
 
-function fixUpTables(tables, journals) {
-  //for each table
+
+function sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
+
+function tableReplacer(text, journals) {
+  text = replacer.moduleReplaceLinks(text, journals, config);
+  text = replacer.foundryCompendiumReplace(text, config);
+  text = replacer.replaceRollLinks(text, config);
+  text = JSDOM.fragment(text).textContent;
+}
+
+function journalTableReplacer(journal, tables) {
+  console.log(`Updating Journal: ${journal.name}`);
+  if (!journal.content) return;
+  const dom = new JSDOM(journal.content).window.document;
+  tables.forEach((table) => {
+    const tablePoint = dom.body.querySelector(`table[data-content-chunk-id="${table.flags.ddb.contentChunkId}"]`);
+    if (tablePoint) {
+      console.log(`Updating table reference for: ${table.name}`);
+      tablePoint.insertAdjacentHTML("afterend", `<div id="table-link">@RollTable[${table.name}]{Open RollTable}</div>`);
+    }
+  });
+  journal.content = dom.body.innerHTML;
+}
+
+async function fixUpTables(tables, journals) {
   console.log("Updating table references for modules...");
+  console.log(`There are ${tables.length} tables`);
+  console.log(`There are ${journals.length} journals`);
+
+  await sleep(1000);
 
   for (let tableIndex = 0, tablesLength = tables.length; tableIndex < tablesLength; tableIndex++) {
     const table = tables[tableIndex];
-    console.log(`Updating ${table.name}...`);
+    console.log(`Updating table: ${table.name}...`);
     for (let resultsIndex = 0, resultsLength = table.results.length; resultsIndex < resultsLength; resultsIndex++) {
-      const result = table.results[resultsIndex];
-      result.text = replacer.moduleReplaceLinks(result.text, journals, config);
-      // result.text = replacer.foundryCompendiumReplace(result.text, config);
-      // result.text = replacer.replaceRollLinks(result.text, config);
-      // result.text = JSDOM.fragment(result.text).textContent;
+      tableReplacer(table.results[resultsIndex].text, journals);
+    }
+    if (tableIndex % 10 == 0) {
+      await sleep(500);
     }
   }
+  await sleep(1000);
 
-  console.log("Table updates finished");
-  // tables.forEach((table) => {
-  //   console.log(table.name);
-  //   table.results.forEach((result) => {
-  //     result.text = replacer.moduleReplaceLinks(result.text, journals, config);
-  //     result.text = replacer.foundryCompendiumReplace(result.text, config);
-  //     result.text = replacer.replaceRollLinks(result.text, config);
-  //     result.text = JSDOM.fragment(result.text).textContent;
-  //   });
-  // });
+  console.log(`Starting Journal Table Updates`);
 
-  // tables.forEach((table) => {
-  //   console.log(table.name);
-  //   table.results.forEach((result) => {
-  //     result.text = replacer.moduleReplaceLinks(result.text, journals, config);
-  //     result.text = replacer.foundryCompendiumReplace(result.text, config);
-  //     result.text = replacer.replaceRollLinks(result.text, config);
-  //     result.text = JSDOM.fragment(result.text).textContent;
-  //   });
-  // });
-  // console.log("Updating table references for compendiums...");
-  // tables.forEach((table) => {
-  //   table.results.forEach((result) => {
-  //     result.text = replacer.foundryCompendiumReplace(result.text, config);
-  //   });
-  // });
-
-  // console.log("Updating table references for roll links...");
-  // tables.forEach((table) => {
-  //   table.results.forEach((result) => {
-  //     result.text = replacer.replaceRollLinks(result.text, config);
-  //   });
-  // });
-
-  // console.log("Updating table references to be a text blob...");
-  // tables.forEach((table) => {
-  //   table.results.forEach((result) => {
-  //     result.text = JSDOM.fragment(result.text).textContent;
-  //   });
-  // });
-
-
-  console.log("Updating journals with table links");
-
-  journals.forEach((journal) => {
-    console.log(`Journal: ${journal.name}`);
-    if (!journal.content) return;
-    const dom = new JSDOM(journal.content).window.document;
-    tables.forEach((table) => {
-      const tablePoint = dom.body.querySelector(`table[data-content-chunk-id="${table.flags.ddb.contentChunkId}"]`);
-      if (tablePoint) {
-        console.log(`Updating table reference for: ${table.name}`);
-        tablePoint.insertAdjacentHTML("afterend", `<div id="table-link">@RollTable[${table.name}]{Open RollTable}</div>`);
-      }
-    });
-    journal.content = dom.body.innerHTML;
-  });
+  for (let journalIndex = 0, journalsLength = journals.length; journalIndex < journalsLength; journalIndex++) {
+    journalTableReplacer(journals[journalIndex], tables);
+    if (journalIndex % 5 == 0) {
+      await sleep(500);
+    }
+  }
   
   return [tables, journals];
 }
@@ -270,7 +252,7 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
     const table = JSON.parse(JSON.stringify(require(path.join(templateDir,"table.json"))));
     const nameExtension = diceKeys > 1 ? ` [${diceKeys}]` : "";
 
-    table.name = tableName + nameExtension;
+    table.name = ((tableName && tableName !== "") ? tableName : "Unnamed Table") + nameExtension;
     table.flags.ddb.ddbId = row.id;
     table.flags.ddb.bookCode = config.run.bookCode;
     table.flags.ddb.slug = row.slug;
@@ -339,7 +321,6 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
 }
 
 function generateTable(row, journal, html) {
-
   const document = new JSDOM(html).window.document;
   const tableNodes = document.querySelectorAll("table");
 
@@ -1266,7 +1247,7 @@ async function collectionFinished(err, count) {
     console.log("Updating links...");
     generatedJournals = updateJournals(generatedJournals);
     console.log("Fixing up tables...");
-    [generatedTables, generatedJournals] = fixUpTables(generatedTables, generatedJournals);
+    [generatedTables, generatedJournals] = await fixUpTables(generatedTables, generatedJournals);
     console.log("Complete! Generating output files...");
     outputAdventure(config);
     outputJournals(generatedJournals, config);
