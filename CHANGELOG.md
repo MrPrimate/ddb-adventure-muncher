@@ -1,6 +1,7 @@
 # 0.1.7
 
 * WDH Scenes started (Thanks @maadonna !)
+* Improved memory useage for books with a lot of tables like DMG and XGtE.
 
 # 0.1.6
 
