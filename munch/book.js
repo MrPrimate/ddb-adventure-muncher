@@ -143,15 +143,61 @@ function guessTableName(document, contentChunkId) {
 
 function fixUpTables(tables, journals) {
   //for each table
-  console.log("Updating table references");
-  tables.forEach((table) => {
-    table.results.forEach((result) => {
+  console.log("Updating table references for modules...");
+
+  for (let tableIndex = 0, tablesLength = tables.length; tableIndex < tablesLength; tableIndex++) {
+    const table = tables[tableIndex];
+    console.log(`Updating ${table.name}...`);
+    for (let resultsIndex = 0, resultsLength = table.results.length; resultsIndex < resultsLength; resultsIndex++) {
+      const result = table.results[resultsIndex];
       result.text = replacer.moduleReplaceLinks(result.text, journals, config);
-      result.text = replacer.foundryCompendiumReplace(result.text, config);
-      result.text = replacer.replaceRollLinks(result.text, config);
-      result.text = JSDOM.fragment(result.text).textContent;
-    });
-  });
+      // result.text = replacer.foundryCompendiumReplace(result.text, config);
+      // result.text = replacer.replaceRollLinks(result.text, config);
+      // result.text = JSDOM.fragment(result.text).textContent;
+    }
+  }
+
+  console.log("Table updates finished");
+  // tables.forEach((table) => {
+  //   console.log(table.name);
+  //   table.results.forEach((result) => {
+  //     result.text = replacer.moduleReplaceLinks(result.text, journals, config);
+  //     result.text = replacer.foundryCompendiumReplace(result.text, config);
+  //     result.text = replacer.replaceRollLinks(result.text, config);
+  //     result.text = JSDOM.fragment(result.text).textContent;
+  //   });
+  // });
+
+  // tables.forEach((table) => {
+  //   console.log(table.name);
+  //   table.results.forEach((result) => {
+  //     result.text = replacer.moduleReplaceLinks(result.text, journals, config);
+  //     result.text = replacer.foundryCompendiumReplace(result.text, config);
+  //     result.text = replacer.replaceRollLinks(result.text, config);
+  //     result.text = JSDOM.fragment(result.text).textContent;
+  //   });
+  // });
+  // console.log("Updating table references for compendiums...");
+  // tables.forEach((table) => {
+  //   table.results.forEach((result) => {
+  //     result.text = replacer.foundryCompendiumReplace(result.text, config);
+  //   });
+  // });
+
+  // console.log("Updating table references for roll links...");
+  // tables.forEach((table) => {
+  //   table.results.forEach((result) => {
+  //     result.text = replacer.replaceRollLinks(result.text, config);
+  //   });
+  // });
+
+  // console.log("Updating table references to be a text blob...");
+  // tables.forEach((table) => {
+  //   table.results.forEach((result) => {
+  //     result.text = JSDOM.fragment(result.text).textContent;
+  //   });
+  // });
+
 
   console.log("Updating journals with table links");
 

@@ -96,11 +96,14 @@ function foundryCompendiumReplace(text, config) {
 function moduleReplaceLinks(text, journals, config) {
   const dom = new JSDOM(text);
   const fragmentLinks = dom.window.document.querySelectorAll(`a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
-  text = dom.window.document.body.innerHTML;
+  let innerHTML = dom.window.document.body.innerHTML;
 
   const bookSlugRegExp = new RegExp(`ddb:\/\/compendium\/${config.run.bookCode}\/([\\w0-9\-._#+@/]*)`);
 
-  fragmentLinks.forEach((node) => {
+  for (let fragmentIndex = 0, fragmentsLength = fragmentLinks.length; fragmentIndex < fragmentsLength; fragmentIndex++) {
+    const node = fragmentLinks[fragmentIndex];
+
+  // fragmentLinks.forEach((node) => {
     const slugMatch = node.outerHTML.match(bookSlugRegExp);
     if (slugMatch) {
       // console.log(slugMatch);
@@ -114,21 +117,25 @@ function moduleReplaceLinks(text, journals, config) {
       if (journalEntry) {
         // const journalRegex = new RegExp(`${node.outerHTML}`, "g");
         //text = text.replace(journalRegex, `@JournalEntry[${journalEntry.name}]{${node.textContent}}`);
-        text = text.replace(node.outerHTML, `@JournalEntry[${journalEntry.name}]{${node.textContent}}`);
+        innerHTML = innerHTML.replace(node.outerHTML, `@JournalEntry[${journalEntry.name}]{${node.textContent}}`);
       } else {
         console.log(`NO JOURNAL for ${node.outerHTML}`);
       }
     } else {
       console.log(`NO SLUGS FOR ${node.outerHTML}`);
     }
-  });
+  }
+  // });
 
   const headerLinks = dom.window.document.querySelectorAll("a[href^=\"#\"");
-  headerLinks.forEach((node) => {
-    text = text.replace(node.outerHTML, node.textContent);
-  });
+  // headerLinks.forEach((node) => {
+  for (let headerIndex = 0, headerLength = headerLinks.length; headerIndex < headerLength; headerIndex++) {
+    const node = headerLinks[headerIndex];
+    innerHTML = innerHTML.replace(node.outerHTML, node.textContent);
+  // });
+  }
 
-  return text;
+  return innerHTML;
 }
 
 function replaceImageLinks(text, config) {
