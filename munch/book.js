@@ -822,6 +822,17 @@ function generateScene(row, img) {
       };
 
       token.actorId = getId(mockActor, "Actor");
+
+      // Get the compendium id for the token's actor
+      const lookupEntry = config.lookups["monsters"].find((e) => e.id == token.flags.ddbActorFlags.id);
+      if (lookupEntry) {
+        token.flags.compendiumActorId = lookupEntry._id;
+        token.flags.actorFolderId = masterFolder["Actor"]._id
+      } else {
+        console.error(`Please regenerate your config file, unable to find the Monster for Token ${token.name}`);
+        throw(`Please regenerate your config file, unable to find the Monster for Token ${token.name}`);
+      }
+
       // these may have been gathered by accident
       delete(token.bar2);
       delete(token.displayName);
@@ -1354,6 +1365,7 @@ function setMasterFolders() {
     JournalEntry: generateFolder("JournalEntry", {id: -1, cobaltId: -1, title: config.run.book}, true),
     Scene: generateFolder("Scene", {id: -1, cobaltId: -1, title: config.run.book}, true),
     RollTable: generateFolder("RollTable", {id: -1, cobaltId: -1, title: config.run.book}, true),
+    Actor: generateFolder("Actor", {id: -1, cobaltId: -1, title: config.run.book}, true),
   };
 }
 
