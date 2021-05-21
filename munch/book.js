@@ -802,6 +802,34 @@ function generateScene(row, img) {
   }
   if (config.debug) console.log(`Scene name: "${scene.name}" Img: "${scene.img}"`);
 
+  if (config.generateTokens && scene.flags.ddb.tokens && scene.flags.ddb.tokens.length > 0) {
+    scene.tokens = scene.flags.ddb.tokens
+    .filter((token) => token.flags.ddbActorFlags && token.flags.ddbActorFlags.id)
+    .map((token) => {
+      const uniqueActorsPerScene = (config.uniqueActorsPerScene !== undefined) ? config.uniqueActorsPerScene : false;
+      // build a mock actor - we will import an actor per scene, even if say an actor appears
+      // across multiple scenes
+      const mockActor = {
+        flags: {
+          ddb: {
+            contentChunkId: `${uniqueActorsPerScene ? contentChunkId : ""}${token.flags.ddbActorFlags.id}`,
+            ddbId: `DDB-Monster-${token.flags.ddbActorFlags.id}`,
+            cobaltId: null,
+            parentId: null,
+          },
+        },
+        type: "Actor",
+      };
+
+      token.actorId = getId(mockActor, "Actor");
+      // these may have been gathered by accident
+      delete(token.bar2);
+      delete(token.displayName);
+      return token;
+    });
+    delete(scene.flags.ddb.tokens);
+  }
+
   generatedScenes.push(scene);
   sceneImgMatched.push(scene.img);
   const sceneCount = sceneImgMatched.filter(img => img === scene.img).length;
@@ -1152,6 +1180,7 @@ function outputAdventure(config) {
   const adventure = require(path.join(templateDir,"adventure.json"));
   adventure.name = config.run.book;
   adventure.id = utils.randomString(10, "#aA");
+  adventure.uniqueActorsPerScene = (config.uniqueActorsPerScene !== undefined) ? config.uniqueActorsPerScene : false;
 
   const adventureData = JSON.stringify(adventure);
   fs.writeFileSync(path.join(config.run.outputDir,"adventure.json"), adventureData);

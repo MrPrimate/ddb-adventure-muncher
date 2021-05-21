@@ -8,5 +8,6 @@
   "options": {
     "folders": true
   },
-  "folderColour": "FF0000"
+  "folderColour": "FF0000",
+  "uniqueActorsPerScene": false
 }

@@ -1,7 +1,8 @@
 # 0.1.7
 
 * WDH Scenes started (Thanks @maadonna !)
-* Improved memory useage for books with a lot of tables like DMG and XGtE.
+* Improved memory usage for books with a lot of tables like DMG and XGtE.
+* If the config value `generateTokens: true` is set the muncher will generate some token stubs in teh adventure. These will only work when importing the adventure through version 2.0.6+ of ddb-importer in Foundry 0.8.4+. Currently only LMOP Cragmaw Hideout has nay token data set.
 
 # 0.1.6
 

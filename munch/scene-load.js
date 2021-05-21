@@ -120,7 +120,7 @@ function importScene(conf, sceneFile) {
   //   });
 
   console.log("********************");
-  console.log("Lookup:");
+  console.log("Lookup data:");
   console.log(lookup);
   // console.log(scenesData)
   let sceneData = (lookup.contentChunkId) ? 
@@ -132,14 +132,22 @@ function importScene(conf, sceneFile) {
   // }
 
   console.log("********************");
-  console.log("Scene Data:");
   if (sceneData) {
-    console.log(sceneData.name);
-    console.log(sceneData.flags); 
+    console.log("Existing Scene Data Found:");
+    console.log(`Name: ${sceneData.name}`);
+    console.log(`Walls: ${sceneData.walls.length}`);
+    console.log(`Lights: ${sceneData.lights.length}`);
+    console.log(`Drawings: ${sceneData.drawings.length}`);
+    const flags = sceneData.flags.ddb;
+    if (flags) {
+      if (flags.notes) console.log(`Notes: ${flags.notes.length}`); 
+      if (flags.tokens) console.log(`Tokens: ${flags.tokens.length}`); 
+    }
   }
   else {
     console.log("Existing scene data not found");
   }
+  console.log("********************")
   
   // remove things we can't deal with right now
   delete(inData.descriptions);
@@ -151,7 +159,11 @@ function importScene(conf, sceneFile) {
         cobaltId: inData.flags.ddb.cobaltId,
         contentChunkId: inData.flags.ddb.contentChunkId,
         notes: inData.flags.ddb.notes,
-        tokens: inData.tokens,
+        tokens: inData.tokens.map((token) => {
+          delete(token.bar2);
+          delete(token.displayName);
+          return token;
+        }),
       }
     };
     newFlags.stairways = inData.flags.stairways ? inData.flags.stairways : [];
