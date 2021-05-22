@@ -806,13 +806,10 @@ function generateScene(row, img) {
     scene.tokens = scene.flags.ddb.tokens
     .filter((token) => token.flags.ddbActorFlags && token.flags.ddbActorFlags.id)
     .map((token) => {
-      const uniqueActorsPerScene = (config.uniqueActorsPerScene !== undefined) ? config.uniqueActorsPerScene : false;
-      // build a mock actor - we will import an actor per scene, even if say an actor appears
-      // across multiple scenes
       const mockActor = {
         flags: {
           ddb: {
-            contentChunkId: `${uniqueActorsPerScene ? contentChunkId : ""}${token.flags.ddbActorFlags.id}`,
+            contentChunkId: token.flags.ddbActorFlags.id,
             ddbId: `DDB-Monster-${token.flags.ddbActorFlags.id}`,
             cobaltId: null,
             parentId: null,
@@ -838,7 +835,7 @@ function generateScene(row, img) {
       delete(token.displayName);
       return token;
     });
-    delete(scene.flags.ddb.tokens);
+    // delete(scene.flags.ddb.tokens);
   }
 
   generatedScenes.push(scene);
@@ -851,10 +848,13 @@ function generateScene(row, img) {
 function generateMissingScenes(journals, scenes) {
   let tmpCount = 0;
 
+  console.log("****************************")
+  console.log("Generating Missing Scenes");
+
   enhancedScenes.filter((es) => es.missing).forEach((es) => {
     const id =  90000 + es.ddbId + tmpCount;
     const row = {
-      title: `${es.name} (Player Version)`,
+      title: `${es.name}`,
       id: id,
       slug: es.slug,
       parentId: es.parentId,
@@ -863,6 +863,7 @@ function generateMissingScenes(journals, scenes) {
       sceneName: es.name,
       contentChunkId: `ddb-missing-${config.run.bookCode}-${id}`,
     };
+    console.log(`Attempting ${row.title} with ${row.contentChunkId}`);
     tmpCount++;
     const playerEntry = generateJournalEntry(row, es.img);
     journals.push(playerEntry);
@@ -1191,7 +1192,6 @@ function outputAdventure(config) {
   const adventure = require(path.join(templateDir,"adventure.json"));
   adventure.name = config.run.book;
   adventure.id = utils.randomString(10, "#aA");
-  adventure.uniqueActorsPerScene = (config.uniqueActorsPerScene !== undefined) ? config.uniqueActorsPerScene : false;
 
   const adventureData = JSON.stringify(adventure);
   fs.writeFileSync(path.join(config.run.outputDir,"adventure.json"), adventureData);
