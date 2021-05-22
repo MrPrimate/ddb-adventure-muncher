@@ -1,11 +1,11 @@
 # 0.1.7
 
-* WDH Scenes started (Thanks @maadonna !)
-* Some ToA scenes (THanks @michaelko777 !)
-* Improved memory usage for books with a lot of tables like DMG and XGtE.
-* If the config value `generateTokens: true` is set the muncher will generate some token stubs in teh adventure. These will only work when importing the adventure through version 2.0.6+ of ddb-importer in Foundry 0.8.4+. Currently only LMOP Cragmaw Hideout has nay token data set.
+* WDH Scenes started (Thanks @maadonna#6222 !)
+* Some ToA scenes (THanks @michaelko777#7952 !)
 * ToA now parses Locations in Chult map scene.
-* BGDiA maps (Thanks @Shyvor !)
+* BGDiA maps (Thanks @Shyvor#3596 !)
+* Improved memory usage for books with a lot of tables like DMG and XGtE.
+* If the config value `generateTokens: true` is set the muncher will generate some token stubs in the adventure. These will only work when importing the adventure through version 2.0.7+ of ddb-importer in Foundry 0.8.5+. Currently only LMOP Cragmaw Hideout has any token data set.
 
 # 0.1.6
 
