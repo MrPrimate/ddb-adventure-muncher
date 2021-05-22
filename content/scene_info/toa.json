@@ -1,5 +1,4 @@
-[
-    {
+[{
         "name": "Locations In the City",
         "navName": "Locations In the City",
         "width": 2800,
@@ -2626,7 +2625,967 @@
                 "tokens": []
             },
             "stairways": []
-        }
+        },
+        "tokens": []
+    },
+    {
+        "name": "Locations In Chult",
+        "navName": "Camp Righteous",
+        "width": 2750,
+        "height": 1900,
+        "grid": 58,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 13,
+        "shiftY": 83,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13033,
+                "cobaltId": null,
+                "contentChunkId": "ae934b5c-b0bb-431b-bd3a-c1dd7660816e",
+                "notes": [
+                    {
+                        "label": "01. Command Tents",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2789,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "b562f336-3ba4-47e9-bdf0-82c721813e8e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "IKBqN658SNSkl8lc"
+                        },
+                        "positions": [
+                            {
+                                "x": 1189,
+                                "y": 1711
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "02. Soldiers’ Tents",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2791,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "22c3a2c5-e782-474b-808d-f32212e3de51",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "TkV0MnoCPxK8XCsI"
+                        },
+                        "positions": [
+                            {
+                                "x": 1015,
+                                "y": 1015
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "03. Burned-Out Shrine",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2794,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "d8a853a9-3ca4-485a-b0b3-f280f65a8128",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "xMDEC66GrZg2ppGT"
+                        },
+                        "positions": [
+                            {
+                                "x": 1363,
+                                "y": 1885
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04. Animal Pens",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2796,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "6cfa5434-ad94-4e35-9dfe-52adb5e52752",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "yX27U7x7ZmdpcJZW"
+                        },
+                        "positions": [
+                            {
+                                "x": 1595,
+                                "y": 1015
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "05. Latrines",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2799,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "2b846454-e4fc-45d6-83ac-c87b46c8e6bb",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "1xYUcsYFasg0rBC1"
+                        },
+                        "positions": [
+                            {
+                                "x": 1885,
+                                "y": 725
+                            },
+                            {
+                                "x": 1711,
+                                "y": 1827
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06. House of the Man and Crocodile",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2806,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "800715e3-8f71-4968-953b-68e9cb4dae02",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "YzRd5FxnqIyfFvBl"
+                        },
+                        "positions": [
+                            {
+                                "x": 1595,
+                                "y": 1363
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06A. Concealed Pit Trap",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2809,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "b01e9d77-49d3-4e8d-bd69-450a105da3ce",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "HaN6CcJTL8an9GcH"
+                        },
+                        "positions": [
+                            {
+                                "x": 1711,
+                                "y": 1363
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06B. Blade Trap",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2811,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "0487d50a-77eb-4672-a9fa-724c3f0215d1",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "1N0gFBGAjhUDUye9"
+                        },
+                        "positions": [
+                            {
+                                "x": 1885,
+                                "y": 1363
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06C. Puzzle Floor",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2815,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "fdab1b38-9e20-4058-99c7-671fa190409e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "Qc5QINJuJWqkEO3q"
+                        },
+                        "positions": [
+                            {
+                                "x": 2001,
+                                "y": 1363
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06D. Puzzle Door",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2817,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "238fd715-9c8c-4cce-ac7d-a995bb70c3ba",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "6bjsaglhFB6vyEfd"
+                        },
+                        "positions": [
+                            {
+                                "x": 2117,
+                                "y": 1363
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06E. Treasury",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2823,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "120aa47a-1f37-49c7-a133-188d49682435",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "DtjUWxzx8rQiozvu"
+                        },
+                        "positions": [
+                            {
+                                "x": 2349,
+                                "y": 1421
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "tokens": []
+    },
+    {
+        "name": "Locations In Chult",
+        "navName": "Fort Beluarian",
+        "width": 6325,
+        "height": 4370,
+        "grid": 50,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 27,
+        "shiftY": 38,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13036,
+                "cobaltId": null,
+                "contentChunkId": "805b27b5-c8c3-49c2-bc04-48c5db56c9b5",
+                "notes": [
+                    {
+                        "label": "01. West Gate",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2896,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "e2ad1571-df4e-4ede-b967-785f7495878a",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "XFqQNsnOK2UVfQEd"
+                        },
+                        "positions": [
+                            {
+                                "x": 2450,
+                                "y": 3400
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "02. Ore Gate",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2898,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "df8acaec-cd9e-473d-a176-4b2e270c12e9",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "duJZ3Y1ow46FjWFP"
+                        },
+                        "positions": [
+                            {
+                                "x": 4850,
+                                "y": 4475
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "03. Armorer/Weaponsmith",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2901,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "f2e00162-8b7e-40aa-b20b-40c95887e364",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "OylZSHkMoCpj4mhT"
+                        },
+                        "positions": [
+                            {
+                                "x": 2850,
+                                "y": 3200
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04. Bazaar",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2903,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "b1684f30-b4f6-44fb-82ce-c76827f8d8a8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "SHg2pItlJYatkLVx"
+                        },
+                        "positions": [
+                            {
+                                "x": 3675,
+                                "y": 3450
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "05. Temple of Helm",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2905,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "95633d3f-c957-4541-bfab-9a5042dbe548",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "JkX58vEaFmnJTh2Y"
+                        },
+                        "positions": [
+                            {
+                                "x": 4375,
+                                "y": 2675
+                            },
+                            {
+                                "x": 4375,
+                                "y": 2675
+                            },
+                            {
+                                "x": 4425,
+                                "y": 2675
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06. Stables",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2909,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "6a706c24-a385-4dd8-8b1f-7d2d4db33570",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "UZnz1hAZUJZu3Jlf"
+                        },
+                        "positions": [
+                            {
+                                "x": 4050,
+                                "y": 3850
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "07. Jousting Field",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2914,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "6847b94a-73fd-4fea-b4d0-b03c6a168989",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "9EI19SkaLwhqQ9eG"
+                        },
+                        "positions": [
+                            {
+                                "x": 4625,
+                                "y": 4100
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "08. Flaming Fist Provisioner",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2916,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "ac1e6b43-235d-4158-922a-14e31dd31428",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "QgWpJzv2adUeYHmI"
+                        },
+                        "positions": [
+                            {
+                                "x": 4025,
+                                "y": 4375
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "09. Flaming Fist Barracks",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2919,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "4959dc5d-0c45-4ab6-96e2-2ef92df99b3c",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "CNGrWgGLCeygetS9"
+                        },
+                        "positions": [
+                            {
+                                "x": 5250,
+                                "y": 4125
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "10J. Guest Quarters",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2951,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "72cb5c58-24b3-4b0a-9615-c834f6a0e481",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "BBAAcmYZvPrXn9jf"
+                        },
+                        "positions": [
+                            {
+                                "x": 5325,
+                                "y": 3450
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "tokens": []
+    },
+    {
+        "name": "Locations In Chult",
+        "navName": "Fort Beluarian",
+        "width": 6325,
+        "height": 4370,
+        "grid": 50,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 27,
+        "shiftY": 38,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13036,
+                "cobaltId": null,
+                "contentChunkId": "805b27b5-c8c3-49c2-bc04-48c5db56c9b5",
+                "notes": [
+                    {
+                        "label": "01. West Gate",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2896,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "e2ad1571-df4e-4ede-b967-785f7495878a",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "XFqQNsnOK2UVfQEd"
+                        },
+                        "positions": [
+                            {
+                                "x": 2450,
+                                "y": 3400
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "02. Ore Gate",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2898,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "df8acaec-cd9e-473d-a176-4b2e270c12e9",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "duJZ3Y1ow46FjWFP"
+                        },
+                        "positions": [
+                            {
+                                "x": 4850,
+                                "y": 4475
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "03. Armorer/Weaponsmith",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2901,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "f2e00162-8b7e-40aa-b20b-40c95887e364",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "OylZSHkMoCpj4mhT"
+                        },
+                        "positions": [
+                            {
+                                "x": 2850,
+                                "y": 3200
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04. Bazaar",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2903,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "b1684f30-b4f6-44fb-82ce-c76827f8d8a8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "SHg2pItlJYatkLVx"
+                        },
+                        "positions": [
+                            {
+                                "x": 3675,
+                                "y": 3450
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "05. Temple of Helm",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2905,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "95633d3f-c957-4541-bfab-9a5042dbe548",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "JkX58vEaFmnJTh2Y"
+                        },
+                        "positions": [
+                            {
+                                "x": 4375,
+                                "y": 2675
+                            },
+                            {
+                                "x": 4375,
+                                "y": 2675
+                            },
+                            {
+                                "x": 4425,
+                                "y": 2675
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06. Stables",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2909,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "6a706c24-a385-4dd8-8b1f-7d2d4db33570",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "UZnz1hAZUJZu3Jlf"
+                        },
+                        "positions": [
+                            {
+                                "x": 4050,
+                                "y": 3850
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "07. Jousting Field",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2914,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "6847b94a-73fd-4fea-b4d0-b03c6a168989",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "9EI19SkaLwhqQ9eG"
+                        },
+                        "positions": [
+                            {
+                                "x": 4625,
+                                "y": 4100
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "08. Flaming Fist Provisioner",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2916,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "ac1e6b43-235d-4158-922a-14e31dd31428",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "QgWpJzv2adUeYHmI"
+                        },
+                        "positions": [
+                            {
+                                "x": 4025,
+                                "y": 4375
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "09. Flaming Fist Barracks",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2919,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "4959dc5d-0c45-4ab6-96e2-2ef92df99b3c",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "CNGrWgGLCeygetS9"
+                        },
+                        "positions": [
+                            {
+                                "x": 5250,
+                                "y": 4125
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "10J. Guest Quarters",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2951,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "72cb5c58-24b3-4b0a-9615-c834f6a0e481",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "BBAAcmYZvPrXn9jf"
+                        },
+                        "positions": [
+                            {
+                                "x": 5325,
+                                "y": 3450
+                            }
+                        ],
+                        "iconSize": 65,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "tokens": []
     },
     {
         "name": "Locations In Chult",
