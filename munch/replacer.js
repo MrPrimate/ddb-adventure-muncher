@@ -103,7 +103,7 @@ function moduleReplaceLinks(text, journals, config) {
   for (let fragmentIndex = 0, fragmentsLength = fragmentLinks.length; fragmentIndex < fragmentsLength; fragmentIndex++) {
     const node = fragmentLinks[fragmentIndex];
 
-  // fragmentLinks.forEach((node) => {
+    // fragmentLinks.forEach((node) => {
     const slugMatch = node.outerHTML.match(bookSlugRegExp);
     if (slugMatch) {
       // console.log(slugMatch);

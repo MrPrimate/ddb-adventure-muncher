@@ -188,7 +188,7 @@ async function fixUpTables(tables, journals) {
   }
   await sleep(1000);
 
-  console.log(`Starting Journal Table Updates`);
+  console.log("Starting Journal Table Updates");
 
   for (let journalIndex = 0, journalsLength = journals.length; journalIndex < journalsLength; journalIndex++) {
     journalTableReplacer(journals[journalIndex], tables);
@@ -804,37 +804,37 @@ function generateScene(row, img) {
 
   if (config.generateTokens && scene.flags.ddb.tokens && scene.flags.ddb.tokens.length > 0) {
     scene.tokens = scene.flags.ddb.tokens
-    .filter((token) => token.flags.ddbActorFlags && token.flags.ddbActorFlags.id)
-    .map((token) => {
-      const mockActor = {
-        flags: {
-          ddb: {
-            contentChunkId: token.flags.ddbActorFlags.id,
-            ddbId: `DDB-Monster-${token.flags.ddbActorFlags.id}`,
-            cobaltId: null,
-            parentId: null,
+      .filter((token) => token.flags.ddbActorFlags && token.flags.ddbActorFlags.id)
+      .map((token) => {
+        const mockActor = {
+          flags: {
+            ddb: {
+              contentChunkId: token.flags.ddbActorFlags.id,
+              ddbId: `DDB-Monster-${token.flags.ddbActorFlags.id}`,
+              cobaltId: null,
+              parentId: null,
+            },
           },
-        },
-        type: "Actor",
-      };
+          type: "Actor",
+        };
 
-      token.actorId = getId(mockActor, "Actor");
+        token.actorId = getId(mockActor, "Actor");
 
-      // Get the compendium id for the token's actor
-      const lookupEntry = config.lookups["monsters"].find((e) => e.id == token.flags.ddbActorFlags.id);
-      if (lookupEntry) {
-        token.flags.compendiumActorId = lookupEntry._id;
-        token.flags.actorFolderId = masterFolder["Actor"]._id
-      } else {
-        console.error(`Please regenerate your config file, unable to find the Monster for Token ${token.name}`);
-        throw(`Please regenerate your config file, unable to find the Monster for Token ${token.name}`);
-      }
+        // Get the compendium id for the token's actor
+        const lookupEntry = config.lookups["monsters"].find((e) => e.id == token.flags.ddbActorFlags.id);
+        if (lookupEntry) {
+          token.flags.compendiumActorId = lookupEntry._id;
+          token.flags.actorFolderId = masterFolder["Actor"]._id;
+        } else {
+          console.error(`Please regenerate your config file, unable to find the Monster for Token ${token.name}`);
+          throw(`Please regenerate your config file, unable to find the Monster for Token ${token.name}`);
+        }
 
-      // these may have been gathered by accident
-      delete(token.bar2);
-      delete(token.displayName);
-      return token;
-    });
+        // these may have been gathered by accident
+        delete(token.bar2);
+        delete(token.displayName);
+        return token;
+      });
     // delete(scene.flags.ddb.tokens);
   }
 
@@ -848,7 +848,7 @@ function generateScene(row, img) {
 function generateMissingScenes(journals, scenes) {
   let tmpCount = 0;
 
-  console.log("****************************")
+  console.log("****************************");
   console.log("Generating Missing Scenes");
 
   enhancedScenes.filter((es) => es.missing).forEach((es) => {

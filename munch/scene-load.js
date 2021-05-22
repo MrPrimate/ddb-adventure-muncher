@@ -147,7 +147,7 @@ function importScene(conf, sceneFile) {
   else {
     console.log("Existing scene data not found");
   }
-  console.log("********************")
+  console.log("********************");
   
   // remove things we can't deal with right now
   delete(inData.descriptions);
