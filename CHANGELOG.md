@@ -1,7 +1,11 @@
+# 0.1.8
+
+* Loads moar ToA scenes (Thanks @michaelko777#7952 !)
+
 # 0.1.7
 
 * WDH Scenes started (Thanks @maadonna#6222 !)
-* Some ToA scenes (THanks @michaelko777#7952 !)
+* Some ToA scenes (Thanks @michaelko777#7952 !)
 * ToA now parses Locations in Chult map scene.
 * BGDiA maps (Thanks @Shyvor#3596 !)
 * Improved memory usage for books with a lot of tables like DMG and XGtE.
