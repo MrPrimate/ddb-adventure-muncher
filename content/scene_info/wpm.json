@@ -10,7 +10,11 @@
         "gridUnits": "ft",
         "shiftX": 44,
         "shiftY": -21,
-        "initial": null,
+        "initial": {
+            "x": 8902,
+            "y": 9859,
+            "scale": 0.26
+        },
         "backgroundColor": "#999999",
         "walls": [
             {
@@ -6236,8 +6240,11 @@
                         "textColor": "",
                         "textAnchor": 1
                     }
-                ]
-            }
-        }
+                ],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "tokens": []
     }
 ]
