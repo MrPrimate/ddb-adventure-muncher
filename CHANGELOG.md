@@ -1,6 +1,7 @@
 # 0.1.8
 
 * Loads moar ToA scenes (Thanks @michaelko777#7952 !)
+* Missing Scene notes for ToA Chapter 5.
 
 # 0.1.7
 
