@@ -2,6 +2,9 @@
 
 * Loads moar ToA scenes (Thanks @michaelko777#7952 !)
 * Missing Scene notes for ToA Chapter 5.
+* WPM config (Thanks @maadonna#6222 !)
+* WDH Scenes (Thanks @maadonna#6222 !)
+* ToH (Thanks @DreadPirateRobbo )
 
 # 0.1.7
 
