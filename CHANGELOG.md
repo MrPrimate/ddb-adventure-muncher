@@ -5,6 +5,7 @@
 * WPM config (Thanks @maadonna#6222 !)
 * WDH Scenes (Thanks @maadonna#6222 !)
 * ToH (Thanks @DreadPirateRobbo )
+* IDRotFM scene improvements (Thanks @michaelko777#7952 !)
 
 # 0.1.7
 
@@ -24,7 +25,7 @@
 * In some instances replaced rolls, typically in treasure, broke the text.
 * GoS scene added (thanks @CussaMitre !)
 * Stairways module support for Scene import.
-* Some ToA scenes (THanks @michaelko777 !)
+* Some ToA scenes (Thanks @michaelko777 !)
 * Add VRGtR.
 
 # 0.1.5

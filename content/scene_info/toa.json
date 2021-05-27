@@ -19044,7 +19044,8 @@
                 "tokens": []
             },
             "stairways": []
-        }
+        },
+        "tokens": []
     },
     {
         "name": "Locations In Chult",
@@ -19315,7 +19316,4053 @@
                 "tokens": []
             },
             "stairways": []
-        }
+        },
+        "tokens": []
+    },
+    {
+        "name": "Ataaz Muhahah",
+        "navName": "Ataaz Muhahah",
+        "width": 2750,
+        "height": 1900,
+        "grid": 65,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 13,
+        "shiftY": 7,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 90018,
+                "cobaltId": null,
+                "contentChunkId": "ddb-missing-toa-90018",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "tokens": []
+    },
+    {
+        "name": "Locations In the City",
+        "navName": "Nine Shrines of Omu",
+        "width": 2800,
+        "height": 3800,
+        "grid": 50,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 26,
+        "shiftY": 18,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [
+            {
+                "_id": "X2Aj7gDn8mzIBIlv",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2950,
+                "y": 1750,
+                "width": 50,
+                "height": 50,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "X",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "X2Aj7gDn8mzIBIlv"
+            },
+            {
+                "_id": "bT4xFNwICt20Tvwj",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2950,
+                "y": 1800,
+                "width": 50,
+                "height": 50,
+                "rotation": 0,
+                "z": 1,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "X",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#000000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "VH2ojZuAkHP99B5Y",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2950,
+                "y": 1700,
+                "width": 50,
+                "height": 50,
+                "rotation": 0,
+                "z": 2,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "X",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "VH2ojZuAkHP99B5Y"
+            },
+            {
+                "_id": "hfFD40hntwk5HgAt",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2875,
+                "y": 1675,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "S",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "ORHNOpFPeI76YuV5",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 3050,
+                "y": 1675,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "S",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "1YpXcrmAhGOSjSRl",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 1850,
+                "y": 2750,
+                "width": 24,
+                "height": 43,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "X",
+                "fontFamily": "Signika",
+                "fontSize": 36,
+                "textColor": "#000000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "dJN96lfLOSmGHuWr",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 1900,
+                "y": 2900,
+                "width": 24,
+                "height": 43,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "X",
+                "fontFamily": "Signika",
+                "fontSize": 36,
+                "textColor": "#000000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "py6fOrfZLBA6cw3g",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2075,
+                "y": 2800,
+                "width": 24,
+                "height": 43,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "X",
+                "fontFamily": "Signika",
+                "fontSize": 36,
+                "textColor": "#000000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "j4vTGDjWYVea0UuR",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2175,
+                "y": 2800,
+                "width": 24,
+                "height": 43,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "X",
+                "fontFamily": "Signika",
+                "fontSize": 36,
+                "textColor": "#000000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "PbZ9WE3Mmvw56FEx",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2125,
+                "y": 2650,
+                "width": 24,
+                "height": 43,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "X",
+                "fontFamily": "Signika",
+                "fontSize": 36,
+                "textColor": "#000000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "h8T45lwgzTP3RJeq",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2775,
+                "y": 2800,
+                "width": 23,
+                "height": 48,
+                "rotation": 0,
+                "z": 5,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "L",
+                "fontFamily": "Signika",
+                "fontSize": 40,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "h8T45lwgzTP3RJeq"
+            },
+            {
+                "_id": "6fzJSxJzvpD85Zkn",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 3075,
+                "y": 2800,
+                "width": 30,
+                "height": 56,
+                "rotation": 0,
+                "z": 6,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "V",
+                "fontFamily": "Signika",
+                "fontSize": 40,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "6fzJSxJzvpD85Zkn"
+            },
+            {
+                "_id": "BqVJXocJUhy7Hn8h",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2800,
+                "y": 2950,
+                "width": 30,
+                "height": 56,
+                "rotation": 0,
+                "z": 6,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "B",
+                "fontFamily": "Signika",
+                "fontSize": 40,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "BqVJXocJUhy7Hn8h"
+            },
+            {
+                "_id": "c8J2KIN88tsS5mkt",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 3000,
+                "y": 2950,
+                "width": 30,
+                "height": 56,
+                "rotation": 0,
+                "z": 6,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Z",
+                "fontFamily": "Signika",
+                "fontSize": 40,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "c8J2KIN88tsS5mkt"
+            },
+            {
+                "_id": "vxHhC6gB31EW2VY9",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2700,
+                "y": 3925,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "S",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "w1FibmjpEsOeRyL6",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2875,
+                "y": 4275,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "S",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            }
+        ],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13025,
+                "cobaltId": null,
+                "contentChunkId": "6eca3635-a4a0-43b7-b70b-522cebc6a21f",
+                "notes": [
+                    {
+                        "label": "03A. Froghemoth Pool",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2325,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "57e55e02-8000-4664-8d64-a1a1fe4e2388",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "n7olZSJL0Ogdgab9"
+                        },
+                        "positions": [
+                            {
+                                "x": 1125,
+                                "y": 2000
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "03B. Locked Gate",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2328,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "4318fa1b-854c-4097-94f3-e6b3f0ada52e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "XZicr5XPvjNjJq5z"
+                        },
+                        "positions": [
+                            {
+                                "x": 1225,
+                                "y": 1775
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "03C. Chamber of Bravery",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2341,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "55223cd3-7a16-494e-b219-1ae7aff45a06",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "SaMpticxnCOFRXY8"
+                        },
+                        "positions": [
+                            {
+                                "x": 1125,
+                                "y": 1525
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04A. Shrine Entrance",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2344,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "8227c165-a7af-4d90-ab2d-76204d824cbb",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "mRZHDy6xrAVxYjxX"
+                        },
+                        "positions": [
+                            {
+                                "x": 2075,
+                                "y": 2225
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04B. Arena Gallery",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2353,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "f1fd3584-2482-4b75-ac70-a545fd95d156",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "ZpqGGJXQPkU4znZB"
+                        },
+                        "positions": [
+                            {
+                                "x": 2150,
+                                "y": 1800
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04C. Gladiator Cells",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2358,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "428893cf-bd82-4341-8956-ca09e141e1fd",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "GXd742MOzjA5UQFu"
+                        },
+                        "positions": [
+                            {
+                                "x": 2325,
+                                "y": 1775
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04D. Gladiatorial Pit",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2364,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "c4c9bc3d-650b-43d2-b7a1-dcb00a372fdf",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "CPRmpM0SAGE6R6gc"
+                        },
+                        "positions": [
+                            {
+                                "x": 2025,
+                                "y": 1975
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06A. Shrine Entrance",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2616,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "5948088b-0358-4ccf-809d-c412f9c71ee8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "RZislgvVnc2N436Q"
+                        },
+                        "positions": [
+                            {
+                                "x": 2975,
+                                "y": 2125
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06B. Trapped Passage",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2622,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "2ebe89a5-0ee9-4d2e-8f75-a664946fd2f6",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "ZB4rVZetTFdGt35J"
+                        },
+                        "positions": [
+                            {
+                                "x": 2975,
+                                "y": 1875
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06C. Chamber of Deception",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2628,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "783bceeb-360d-430c-a493-4aefc3beda1c",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "4HDzhyUqW1mUcLYZ"
+                        },
+                        "positions": [
+                            {
+                                "x": 2925,
+                                "y": 1575
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06D. Western Secret Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2631,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "bd297af8-bd85-4878-9e37-5cb86f617eb2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "rvmZOpXp07y7l9Jb"
+                        },
+                        "positions": [
+                            {
+                                "x": 2825,
+                                "y": 1875
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06E. Eastern Secret Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2635,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "47448ed3-4365-453e-869b-a7089a18c2bc",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "RZdBn8MHK8zOwl0H"
+                        },
+                        "positions": [
+                            {
+                                "x": 3125,
+                                "y": 1875
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "08A. Shrine Entrance",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2637,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "a66052e6-cea6-40bb-8b1b-1bc9b9792b19",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "G6hZlGkMBGEnhRUq"
+                        },
+                        "positions": [
+                            {
+                                "x": 1175,
+                                "y": 3425
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "08B. Ruined Workshop",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2640,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "7f67ec59-604b-4eee-b735-2d2be9a367da",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "UQVstohgkJrnshRa"
+                        },
+                        "positions": [
+                            {
+                                "x": 1025,
+                                "y": 3225
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "08C. Chamber of Contemplation",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2649,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "3d511afe-a618-4775-9cfd-2a06d49922cf",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "1GZHaXj0pYMOyOIW"
+                        },
+                        "positions": [
+                            {
+                                "x": 1125,
+                                "y": 2825
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "10A. Shrine Entrance",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2654,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "340d78a6-0ff8-443b-8eff-dfd41eac55ef",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "LFEWxMr9lQSrGgwT"
+                        },
+                        "positions": [
+                            {
+                                "x": 2125,
+                                "y": 3375
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "10B. Puzzle Floor",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2661,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "8783e914-63b7-48b0-b111-1a140e1437c8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "wPG6bSxqi8iusxik"
+                        },
+                        "positions": [
+                            {
+                                "x": 2125,
+                                "y": 3025
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "10C. Labyrinth",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2663,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "540c05f3-ca1a-4ece-aa92-06b962facb5d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "gebTtt4QYn9LLMoS"
+                        },
+                        "positions": [
+                            {
+                                "x": 2325,
+                                "y": 2875
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "10D. Puzzle Cube",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2667,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "217487cb-5f62-4f8d-942f-447f7a208524",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "Xu3ArFUWTICiP2ZI"
+                        },
+                        "positions": [
+                            {
+                                "x": 2025,
+                                "y": 2575
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "12A. Cracked Obelisks",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2669,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "fb77b279-ebe4-451e-9b97-6475f8e3b743",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "XgVCqdkrK1LTp41n"
+                        },
+                        "positions": [
+                            {
+                                "x": 2925,
+                                "y": 3325
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "12B. Test of Friendship",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2676,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "1141fbaa-f4f7-4cf0-8c6c-dd9a2e2ebfde",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "3pOpg7YuWYTGHneI"
+                        },
+                        "positions": [
+                            {
+                                "x": 2975,
+                                "y": 2775
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "12C. Viewing Corridors",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2681,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "af9f2227-c2c7-497e-bfd9-6e3d2425e927",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "pLrawzIkHgebJXQo"
+                        },
+                        "positions": [
+                            {
+                                "x": 3075,
+                                "y": 3025
+                            },
+                            {
+                                "x": 2775,
+                                "y": 3025
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "16A. Shrine Entrance",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2684,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "c89f1e61-9a5d-44df-b968-bd072ed6b64b",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "lJEvKdAG2DboaHw2"
+                        },
+                        "positions": [
+                            {
+                                "x": 1225,
+                                "y": 4425
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "16B. Mosaic Floor",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2688,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "a4b37047-e746-4252-9119-c44e44fff188",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "afYihWtZ2XRvRMPn"
+                        },
+                        "positions": [
+                            {
+                                "x": 1275,
+                                "y": 4175
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "16C. Chamber of Command",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2696,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "9eb9943b-4cb7-4dbe-bd41-928059f5c45d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "K4SacjAiwafjPlNX"
+                        },
+                        "positions": [
+                            {
+                                "x": 1225,
+                                "y": 3825
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "16D. Hidden Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2699,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "83b8b003-6f19-4f1c-8872-513a092a9cfa",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "YwhJzwYsTDevdDyx"
+                        },
+                        "positions": [
+                            {
+                                "x": 1375,
+                                "y": 4125
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "18A. Shrine Entrance",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2705,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "4d806ae6-ae0d-4b9f-9648-f24c063a9af7",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "5aCCwhnM25TZb7qZ"
+                        },
+                        "positions": [
+                            {
+                                "x": 2025,
+                                "y": 4275
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "18B. Chamber of Greed",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2710,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "3bca57fc-67dc-4bf0-a162-0e01489006b3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "K1zDqADqcWPzBJ9d"
+                        },
+                        "positions": [
+                            {
+                                "x": 2075,
+                                "y": 4125
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "18C. Puzzle Cube",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2713,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "251bc9cb-bc7b-49db-9d40-6b8558f3bcc4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "8ZvleuZ8StZV2WJr"
+                        },
+                        "positions": [
+                            {
+                                "x": 2125,
+                                "y": 3875
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "19A. Shrine Entrance",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2716,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "ea77b7a8-ca3e-48af-8374-59e0f87df860",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "TierGRwyL4SsnCkF"
+                        },
+                        "positions": [
+                            {
+                                "x": 2925,
+                                "y": 4425
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "19B. Gallery of Carvings",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2720,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "5aa611bc-a46f-4df2-87f7-69d0cb9bfd27",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "6i9nec28061DBD8g"
+                        },
+                        "positions": [
+                            {
+                                "x": 2975,
+                                "y": 4275
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "19C. Sun Pool",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2723,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "8f14f4d3-0ebf-4492-b565-157141b15337",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "hF6bMTsBCIVEL6fd"
+                        },
+                        "positions": [
+                            {
+                                "x": 3075,
+                                "y": 3825
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "19D. Moon Pool",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2729,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "3ed8b853-fabc-4d85-af6c-7f0848da0ca0",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "jv1sRACdmXN4M3Fr"
+                        },
+                        "positions": [
+                            {
+                                "x": 2825,
+                                "y": 3825
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "19E. Chamber of Sacraments",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2737,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "ac5f24c9-db88-400a-bbcd-77382945f903",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "z4qL367eqTHLEKw8"
+                        },
+                        "positions": [
+                            {
+                                "x": 2825,
+                                "y": 4075
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "19F. Secret Passage",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2740,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "9f7dd89a-83d2-4388-b204-0d7ba81805a1",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "ZYT6Bmax2e6I41P9"
+                        },
+                        "positions": [
+                            {
+                                "x": 2725,
+                                "y": 4125
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "tokens": []
+    },
+    {
+        "name": "Level 1: Rotten Halls",
+        "navName": "Rotten Halls",
+        "width": 3300,
+        "height": 2280,
+        "grid": 50,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -3,
+        "shiftY": 18,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [
+            {
+                "_id": "FnjzEqvF17iTmAvG",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 1350,
+                "y": 1925,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "S",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "tS2BqcfCkaAnzGap",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2275,
+                "y": 1375,
+                "width": 135,
+                "height": 108,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Down to\nLevel 2",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": 30,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "tS2BqcfCkaAnzGap"
+            },
+            {
+                "_id": "LH40k276rwuQG5FU",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 1350,
+                "y": 1525,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "S",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "idFVWIkgg3Vr6k11",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 1400,
+                "y": 1450,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "S",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "7LC4knMLVTCvEfeZ",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 3125,
+                "y": 1525,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "S",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "IGt0kF3kR5CiHweL",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 1800,
+                "y": 1850,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "X",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "IGt0kF3kR5CiHweL"
+            },
+            {
+                "_id": "D4KMm2uavtPCJPRK",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 1850,
+                "y": 1900,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "X",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#000000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "bghP9PqX4wuSQzYq",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 1800,
+                "y": 2000,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "X",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#000000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "U7DMpg0xGlbUBgB5",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2000,
+                "y": 2400,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "G",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "U7DMpg0xGlbUBgB5"
+            },
+            {
+                "_id": "D8PqIJRMJiK0onMV",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2250,
+                "y": 2300,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "G",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#000000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "wjZpTiDYZF0K1NUi",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2550,
+                "y": 2250,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "G",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#000000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "IiTaj4V7lYhTBS0m",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 1500,
+                "y": 1500,
+                "width": 135,
+                "height": 108,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Down to\nLevel 2",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": 30,
+                "textColor": "#000000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "VvyhL8pJDOK2DzSf",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2325,
+                "y": 1675,
+                "width": 135,
+                "height": 108,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Open to\n45 below",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": 30,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "VvyhL8pJDOK2DzSf"
+            },
+            {
+                "_id": "28xSBZqpDsTG9q8A",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 3250,
+                "y": 825,
+                "width": 135,
+                "height": 108,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Open to\n64 below",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": 30,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "28xSBZqpDsTG9q8A"
+            },
+            {
+                "_id": "eTmvGHB516OhaMk4",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 3125,
+                "y": 2400,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "S",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            }
+        ],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13033,
+                "cobaltId": null,
+                "contentChunkId": "80133cba-2ac1-4350-8b44-be453243b595",
+                "notes": [
+                    {
+                        "label": "01. Acererak’s Warning",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2041,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "1a5cbe3b-3988-44ad-9f64-1d7cdde12e2e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "yIaJ5vhijaV4i41K"
+                        },
+                        "positions": [
+                            {
+                                "x": 2475,
+                                "y": 2575
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "02. Gallery of Tricksters",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2048,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "2b890932-1c4e-420b-ac01-35d127eb8433",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "9NRO5wj8zinHU87H"
+                        },
+                        "positions": [
+                            {
+                                "x": 2975,
+                                "y": 2325
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "03. False Entrance",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2055,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "90022993-020d-456f-a312-144c37b2dc2d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "6V9B0GpiHWjeEez2"
+                        },
+                        "positions": [
+                            {
+                                "x": 2525,
+                                "y": 2175
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06. Crystal Window",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2095,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "05368ac5-e55e-4112-a89f-e6a88638951d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "ogQan4k3XNarFcLC"
+                        },
+                        "positions": [
+                            {
+                                "x": 1525,
+                                "y": 1675
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "07. Grand Staircase",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2114,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "e963e33b-77f8-4065-9551-2b687dd025c9",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "kGFJZSqfNMPhl72k"
+                        },
+                        "positions": [
+                            {
+                                "x": 2275,
+                                "y": 1775
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "08. Magical Attraction",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2118,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "53d94fd0-dfe9-46a5-a35a-a11da767cea2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "lkQe2S170isM0Tdo"
+                        },
+                        "positions": [
+                            {
+                                "x": 1375,
+                                "y": 1275
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "09. Magic Fountain",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2127,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "5a27dd9d-5c67-4e09-b2bd-87d9e85bdc05",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "QhvT6bezP0tqgYgY"
+                        },
+                        "positions": [
+                            {
+                                "x": 1425,
+                                "y": 925
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "10. Obo’laka’s Tomb",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2143,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "250f8bc4-4ebe-4305-962a-3ae5ee9b41c0",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "t6RSEhIQABuzrNL8"
+                        },
+                        "positions": [
+                            {
+                                "x": 1275,
+                                "y": 1675
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "11. Gas Pocket",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2145,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "57df4007-80da-42fb-94da-c3d5c9d1c755",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "ORdraf2PmosPQFUL"
+                        },
+                        "positions": [
+                            {
+                                "x": 1425,
+                                "y": 2075
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "12. Trapped Chest",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2153,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "4f0512ce-d219-42f5-add8-c99a5e4b0763",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "XlvJoUlhWJlM2tQr"
+                        },
+                        "positions": [
+                            {
+                                "x": 1325,
+                                "y": 2475
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "13. Stone Skull",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2158,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "0f6cda8d-5521-4065-b286-9bf4534be033",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "IODtukvloWiN6UeL"
+                        },
+                        "positions": [
+                            {
+                                "x": 2875,
+                                "y": 1725
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "14. Moa’s Tomb",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2178,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "d43ef119-f918-4f90-8b1a-5833c13be165",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "1500PHmXHyBH6VWs"
+                        },
+                        "positions": [
+                            {
+                                "x": 3125,
+                                "y": 1825
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "15. Wind Tunnel",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2186,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "0abbb897-3ea0-4fe9-be1d-32fb9c857862",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "EO3IZPmlBRHEhv91"
+                        },
+                        "positions": [
+                            {
+                                "x": 2625,
+                                "y": 1325
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "16. Wongo’s Tomb",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2205,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "8d3bf033-8e11-4cd3-afd4-9acade999d6a",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "1AKWJiSaSF1mrYzq"
+                        },
+                        "positions": [
+                            {
+                                "x": 2625,
+                                "y": 975
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "17. Underground Waterfall",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2211,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "c164568c-85fc-4be8-90c1-2f1496156fde",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "kg7rOl2LwVwuM0tE"
+                        },
+                        "positions": [
+                            {
+                                "x": 3525,
+                                "y": 975
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04A. First Puzzle Door",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2220,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "4ab97a5b-2e22-4784-a36f-c83ea83de8c4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "9MkfhdZ8Q31o9M2z"
+                        },
+                        "positions": [
+                            {
+                                "x": 1725,
+                                "y": 2325
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04B. Second Puzzle Door",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2230,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "5d56b52c-dc0c-4faa-a6ef-ec939a317a06",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "HaCMWEk1xgJ8sKGW"
+                        },
+                        "positions": [
+                            {
+                                "x": 1975,
+                                "y": 2125
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "05A. Poison Darts",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2233,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "c25a2e79-9956-4260-9a91-cc9d56918188",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "Z7xfDrbvHiqq6ypb"
+                        },
+                        "positions": [
+                            {
+                                "x": 1975,
+                                "y": 1975
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "05B. Devil Face",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2237,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "be9aed5f-e2b9-4f9b-a3ba-44e17f1771fd",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "nKbaWb90CXK9v3sw"
+                        },
+                        "positions": [
+                            {
+                                "x": 1925,
+                                "y": 1675
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "05C. Floor Hatch",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2240,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "5dd91575-e438-44a1-8d34-27ef2cad4b57",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "nKIZEUyjnh1oqx90"
+                        },
+                        "positions": [
+                            {
+                                "x": 1725,
+                                "y": 1675
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "07A. We Are Not Alone",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2244,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "506858a0-1758-4abf-8200-f2adf2395411",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "q8rbgLeYDpY8FLa1"
+                        },
+                        "positions": [
+                            {
+                                "x": 2675,
+                                "y": 1625
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "tokens": []
+    },
+    {
+        "name": "Level 3: Vault of Reflection",
+        "navName": "Vault of Reflection",
+        "width": 3025,
+        "height": 2090,
+        "grid": 54,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -44,
+        "shiftY": 22,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [
+            {
+                "_id": "I2aZpLf0DmlXhluM",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 1836,
+                "y": 1485,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "S",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "iwoaRmfxEi5yE2K9",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2133,
+                "y": 1593,
+                "width": 135,
+                "height": 108,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Up to\nlevel 2",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": 30,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "iwoaRmfxEi5yE2K9"
+            },
+            {
+                "_id": "sI05LQQxJE4VYsfH",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2025,
+                "y": 2322,
+                "width": 29,
+                "height": 56,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "S",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#ff0000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "fmX96BZCDZulTrwE",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 2403,
+                "y": 1836,
+                "width": 216,
+                "height": 54,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Down to level 4",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": 25,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "fmX96BZCDZulTrwE"
+            },
+            {
+                "_id": "e7XqCGY04Ux1LTqT",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 1674,
+                "y": 1674,
+                "width": 108,
+                "height": 162,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "To\nlevels \n2-5",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": 18,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "e7XqCGY04Ux1LTqT"
+            },
+            {
+                "_id": "Gmo2uchndSTayIX2",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 3294,
+                "y": 1080,
+                "width": 216,
+                "height": 54,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Tunnel B",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": 25,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "Gmo2uchndSTayIX2"
+            },
+            {
+                "_id": "6fnqiNfIyU7LoGdq",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 3564,
+                "y": 1296,
+                "width": 216,
+                "height": 54,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#ffffff",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Tunnel A",
+                "fontFamily": "Arial, Helvetica, sans-serif",
+                "fontSize": 25,
+                "textColor": "#000000",
+                "textAlpha": 1,
+                "id": "6fnqiNfIyU7LoGdq"
+            },
+            {
+                "_id": "O7Kp8lMYpNZtfp2T",
+                "flags": {},
+                "type": "f",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 3659,
+                "y": 1223,
+                "width": 41,
+                "height": 49,
+                "rotation": 0,
+                "z": 5,
+                "hidden": true,
+                "locked": false,
+                "points": [
+                    [
+                        41.47584639958586,
+                        48.69019747283505
+                    ],
+                    [
+                        30,
+                        37
+                    ],
+                    [
+                        27,
+                        35
+                    ],
+                    [
+                        25,
+                        32
+                    ],
+                    [
+                        23,
+                        29
+                    ],
+                    [
+                        19,
+                        24
+                    ],
+                    [
+                        17,
+                        21
+                    ],
+                    [
+                        15,
+                        19
+                    ],
+                    [
+                        15,
+                        17
+                    ],
+                    [
+                        11,
+                        12
+                    ],
+                    [
+                        9,
+                        9
+                    ],
+                    [
+                        3,
+                        4
+                    ],
+                    [
+                        1,
+                        1
+                    ],
+                    [
+                        0,
+                        0
+                    ]
+                ],
+                "bezierFactor": 0.5,
+                "fillType": 0,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 8,
+                "strokeColor": "#000000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#000000",
+                "textAlpha": 1
+            },
+            {
+                "_id": "njNP06FcHjKKDmQo",
+                "flags": {},
+                "type": "f",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 3654,
+                "y": 1219,
+                "width": 32,
+                "height": 35,
+                "rotation": 0,
+                "z": 6,
+                "hidden": true,
+                "locked": false,
+                "points": [
+                    [
+                        4.966412437322106,
+                        34.765669170948286
+                    ],
+                    [
+                        3,
+                        19
+                    ],
+                    [
+                        2,
+                        15
+                    ],
+                    [
+                        1,
+                        9
+                    ],
+                    [
+                        0,
+                        6
+                    ],
+                    [
+                        0,
+                        5
+                    ],
+                    [
+                        0,
+                        3
+                    ],
+                    [
+                        1,
+                        3
+                    ],
+                    [
+                        3,
+                        3
+                    ],
+                    [
+                        6,
+                        1
+                    ],
+                    [
+                        7,
+                        1
+                    ],
+                    [
+                        10,
+                        1
+                    ],
+                    [
+                        11,
+                        1
+                    ],
+                    [
+                        12,
+                        1
+                    ],
+                    [
+                        13,
+                        1
+                    ],
+                    [
+                        15,
+                        1
+                    ],
+                    [
+                        18,
+                        1
+                    ],
+                    [
+                        21,
+                        0
+                    ],
+                    [
+                        24,
+                        0
+                    ],
+                    [
+                        26,
+                        0
+                    ],
+                    [
+                        30,
+                        0
+                    ],
+                    [
+                        32,
+                        0
+                    ]
+                ],
+                "bezierFactor": 0.5,
+                "fillType": 0,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 8,
+                "strokeColor": "#000000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#000000",
+                "textAlpha": 1
+            }
+        ],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13035,
+                "cobaltId": null,
+                "contentChunkId": "12164d57-88b0-4265-88d8-311c484468b4",
+                "notes": [
+                    {
+                        "label": "29. Jackal Mask",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2042,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "ee2140b5-c86a-492a-89bd-2e503c5d7269",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "JLSJy6AHVXNeNflS"
+                        },
+                        "positions": [
+                            {
+                                "x": 2673,
+                                "y": 1161
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "30. Iron Barrier",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2046,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "69b381d0-f743-485f-be06-8cc6454290a4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "Z0b4yajSOjJE0FoW"
+                        },
+                        "positions": [
+                            {
+                                "x": 2457,
+                                "y": 1971
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "32. Rotating Crawlways",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2080,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "9ecbd8b4-4cf2-4bc0-8082-94a346537810",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "HsGoh7ycCerzl3uz"
+                        },
+                        "positions": [
+                            {
+                                "x": 3699,
+                                "y": 1053
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "33. Chamber of Opposition",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2092,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "9e587f11-e514-4505-b202-b35511cd2032",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "tYajYCekJVQ4vBct"
+                        },
+                        "positions": [
+                            {
+                                "x": 3267,
+                                "y": 999
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "34. Peephole",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2096,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "4f82fe19-e9f1-496f-a8d4-4d50ccf858bd",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "yFBqhcb5BVGgUNkG"
+                        },
+                        "positions": [
+                            {
+                                "x": 3105,
+                                "y": 837
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "36. Chamber of Respite",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2135,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "fa500c65-9b85-4dd3-b6db-e5be8ce497b9",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "rnfxAe1DzSXu9vTA"
+                        },
+                        "positions": [
+                            {
+                                "x": 3645,
+                                "y": 2133
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "37. Winds of Pandemonium",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2152,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "83bc4b60-b20f-424b-8646-8158dc882a69",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "OE6WMH3NhBVXrxAK"
+                        },
+                        "positions": [
+                            {
+                                "x": 2781,
+                                "y": 2241
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "39. Golem Pit",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2191,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "cfa4aa27-5b3b-421a-a7b3-5bd4d9b946a4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "uZCuIFrkkR58lR0w"
+                        },
+                        "positions": [
+                            {
+                                "x": 1701,
+                                "y": 2403
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "40. Curse of the Golden Skull",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2196,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "fb615a2b-304d-4625-a164-d4ed8f33f840",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "7uwc2Yzxy2yeFE44"
+                        },
+                        "positions": [
+                            {
+                                "x": 1809,
+                                "y": 1647
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "41. Tomb Guardians",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2202,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "86e222f6-2bed-434f-9fe3-c67e7e4957d7",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "AjCRFaPzR4dh2MRv"
+                        },
+                        "positions": [
+                            {
+                                "x": 2079,
+                                "y": 1431
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "42. Kubazan’s Tomb",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2232,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "88f27586-bd9b-43c0-945f-8fd0276812a4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "phfQVkXzAEMcFOrn"
+                        },
+                        "positions": [
+                            {
+                                "x": 1917,
+                                "y": 999
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "43. Veils of Fear",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2247,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "622ff409-4ac1-41bf-a94d-097498f2a775",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "lwTtyQ3nEaUjzt0R"
+                        },
+                        "positions": [
+                            {
+                                "x": 1593,
+                                "y": 1431
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "31A. Hidden Alcoves",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2282,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "13386556-96d4-4458-96a6-5a3b8dbbce6f",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "nevszJaTeY7seiWx"
+                        },
+                        "positions": [
+                            {
+                                "x": 3429,
+                                "y": 1431
+                            },
+                            {
+                                "x": 3429,
+                                "y": 1809
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "31B. Curtain of Water",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2288,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "188e0a53-98ba-481c-8f8e-e0b873128a17",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "1VVngzZSHM0IWIDk"
+                        },
+                        "positions": [
+                            {
+                                "x": 3213,
+                                "y": 1647
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "35A. Stone Block",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2296,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "758b696d-928d-4717-87cf-8e34b355a70e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "k2IzS5mqHhGEz10f"
+                        },
+                        "positions": [
+                            {
+                                "x": 2943,
+                                "y": 945
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "35B. Tomb",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2301,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "12e503cd-c51c-4450-af09-003e09134f77",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "m5YT7nR7ecMO9N4e"
+                        },
+                        "positions": [
+                            {
+                                "x": 2673,
+                                "y": 837
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "38A. Control Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2328,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "1bbb1511-e04a-40ea-85b2-d7da64abfd2e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "AQ8BeFj8yaq7P4Ag"
+                        },
+                        "positions": [
+                            {
+                                "x": 1863,
+                                "y": 1917
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "38B. Access Tunnel",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2333,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "c5dea7c6-d02a-49f7-a695-33601a8333b7",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "1xDnZ330QT3Ad0gO"
+                        },
+                        "positions": [
+                            {
+                                "x": 2133,
+                                "y": 2079
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "38C. Revolving Drum",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2339,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "aa15510c-bb5b-4910-9fc9-7bf6a9f540d4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "j1hbsUud8aJTeaY9"
+                        },
+                        "positions": [
+                            {
+                                "x": 1863,
+                                "y": 2079
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "44A. Eyes of the Beholder",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2347,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "ddd751bd-29f0-480f-8915-87d7c94e9f29",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "SN1HtdArz2siPxTO"
+                        },
+                        "positions": [
+                            {
+                                "x": 1269,
+                                "y": 2241
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "44B. Inside the Vault",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2354,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level3VaultofReflection",
+                            "contentChunkId": "9bd51d2a-78f6-41b9-b690-a879a4e30f07",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "cpLYHkTc3QFV2YCN"
+                        },
+                        "positions": [
+                            {
+                                "x": 1431,
+                                "y": 1836
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "tokens": []
+    },
+    {
+        "name": "Locations In Chult",
+        "navName": "Heart of Ubtao",
+        "width": 3300,
+        "height": 2280,
+        "grid": 52,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -58,
+        "shiftY": -32,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [
+            {
+                "_id": "2mMcRtfv2OpqstaH",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 3562,
+                "y": 1118,
+                "width": 130,
+                "height": 104,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#faf5f5",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Down \nto 4",
+                "fontFamily": "Modesto Condensed",
+                "fontSize": 60,
+                "textColor": "#0d0d0d",
+                "textAlpha": 1,
+                "id": "2mMcRtfv2OpqstaH"
+            },
+            {
+                "_id": "DGUpwhHFSPRxoWfK",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "5gQjkJmdb1dW768F",
+                "x": 3627,
+                "y": 1502,
+                "width": 13,
+                "height": 56,
+                "rotation": 0,
+                "z": 1,
+                "hidden": false,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#a2c716",
+                "fillAlpha": 1,
+                "strokeWidth": 2,
+                "strokeColor": "#a2c716",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#a2c716",
+                "textAlpha": 1
+            }
+        ],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13037,
+                "cobaltId": null,
+                "contentChunkId": "cd283703-37ea-4efa-8b73-aa0a940574d0",
+                "notes": [
+                    {
+                        "label": "01. Petrified Tree",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2953,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "754b358b-1fe4-4dc5-9f77-f3bac3a3bcba",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "Nq193XEFEkvAkwhC"
+                        },
+                        "positions": [
+                            {
+                                "x": 3614,
+                                "y": 1014
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "02. Staircase",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2955,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "af2d6f40-ea1c-4f70-9e9f-d3bcb309dcb4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "wugeRoYDUR6c7bpE"
+                        },
+                        "positions": [
+                            {
+                                "x": 3926,
+                                "y": 1274
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "03. Cave Entrance",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2957,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "23206909-fb93-4f86-a816-f8a4b31418e3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "9ZvLiWrXz9ThfbtZ"
+                        },
+                        "positions": [
+                            {
+                                "x": 3614,
+                                "y": 1586
+                            },
+                            {
+                                "x": 3666,
+                                "y": 2626
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04. Valindra’s Lair",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2962,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "81f1312e-d086-49e2-b612-f3078a2dd790",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "ZNdFanrLWPANvgg6"
+                        },
+                        "positions": [
+                            {
+                                "x": 3718,
+                                "y": 2158
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "05. Undead Guardians",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2964,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "8e97809e-e70f-46b6-92c9-8e059d50e952",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "KVRLE1ER27MC4RqD"
+                        },
+                        "positions": [
+                            {
+                                "x": 3406,
+                                "y": 1898
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06. Teleportation Circle",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2966,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "ed9f833d-6a4f-457d-9c51-19ee67e6f73f",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "hKdgbeVP0TB3gqfG"
+                        },
+                        "positions": [
+                            {
+                                "x": 3822,
+                                "y": 1950
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "tokens": []
     },
     {
         "name": "Ataaz Muhahah",
