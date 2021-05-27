@@ -137,7 +137,7 @@ function importScene(conf, sceneFile) {
     console.log(`Name: ${sceneData.name}`);
     console.log(`Walls: ${sceneData.walls.length}`);
     console.log(`Lights: ${sceneData.lights.length}`);
-    console.log(`Drawings: ${sceneData.drawings.length}`);
+    if (sceneData.drawings) console.log(`Drawings: ${sceneData.drawings.length}`);
     const flags = sceneData.flags.ddb;
     if (flags) {
       if (flags.notes) console.log(`Notes: ${flags.notes.length}`); 

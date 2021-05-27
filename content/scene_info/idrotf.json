@@ -4398,9 +4398,20 @@
             "ddb": {
                 "ddbId": 10029,
                 "cobaltId": 1071,
-                "contentChunkId": "MapMap14caerdinevalkeep-player"
-            }
-        }
+                "contentChunkId": "MapMap14caerdinevalkeep-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 1.6: Duergar Outpost",
@@ -8069,9 +8080,20 @@
             "ddb": {
                 "ddbId": 10034,
                 "cobaltId": 1072,
-                "contentChunkId": "MapMap16duergaroutpost-player"
-            }
-        }
+                "contentChunkId": "MapMap16duergaroutpost-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 1.8: Frost Giant Ice Lodge",
@@ -9064,9 +9086,20 @@
             "ddb": {
                 "ddbId": 10041,
                 "cobaltId": 1077,
-                "contentChunkId": "MapMap18frostgiant-player"
-            }
-        }
+                "contentChunkId": "MapMap18frostgiant-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 1.10: Cauldron Caves",
@@ -18704,7 +18737,12 @@
                 "t": "l",
                 "tintAlpha": 0.49,
                 "x": 3276,
-                "y": 2288
+                "y": 2288,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
             },
             {
                 "angle": 360,
@@ -18715,16 +18753,1032 @@
                 "t": "l",
                 "tintAlpha": 0.49,
                 "x": 2392,
-                "y": 3484
+                "y": 3484,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
             }
         ],
         "flags": {
             "ddb": {
                 "ddbId": 10045,
                 "cobaltId": 1078,
-                "contentChunkId": "MapMap110cauldron-player"
+                "contentChunkId": "MapMap110cauldron-player",
+                "notes": [
+                    {
+                        "label": "U01. Cave Mouths",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2046,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#ToilandTrouble",
+                            "contentChunkId": "1330b094-170f-4d9a-bf0e-abda447651b8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "kl1w5xPhz3bwleqF"
+                        },
+                        "positions": [
+                            {
+                                "x": 1222,
+                                "y": 1794
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "U02. Dire Wolf Den",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2048,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#ToilandTrouble",
+                            "contentChunkId": "e6df17a0-aa65-432c-a885-ebe775dccffb",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "5Jlcpu5U0aWDmQJh"
+                        },
+                        "positions": [
+                            {
+                                "x": 2158,
+                                "y": 2314
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "U03. Cave Drawings",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2051,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#ToilandTrouble",
+                            "contentChunkId": "2c387281-3d02-4a58-8cf4-795507554568",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "2FhlqWXD8kQwjzr9"
+                        },
+                        "positions": [
+                            {
+                                "x": 2002,
+                                "y": 1066
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "U04. Moaning Cavern",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2053,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#ToilandTrouble",
+                            "contentChunkId": "68486dbc-9592-44e6-a54c-addc8a025568",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "7bSsJw0ldgbwGz7q"
+                        },
+                        "positions": [
+                            {
+                                "x": 2158,
+                                "y": 1638
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "U05. Icy Bridge",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2055,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#ToilandTrouble",
+                            "contentChunkId": "753be0cd-5966-41e3-b3d0-205c69dce21b",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "3TYvooZxqjgc4tR7"
+                        },
+                        "positions": [
+                            {
+                                "x": 2678,
+                                "y": 1950
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "U06. Old Camp",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2060,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#ToilandTrouble",
+                            "contentChunkId": "2b77895a-2694-45a6-9d2d-14b3b0824302",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "meeDMeXI8PsZ4Awe"
+                        },
+                        "positions": [
+                            {
+                                "x": 3250,
+                                "y": 2002
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "U07. Waterfall",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2063,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#ToilandTrouble",
+                            "contentChunkId": "1df75c85-e0f5-4d45-b621-bec7655a2db2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "R1hUDhkEIJRM0Lk4"
+                        },
+                        "positions": [
+                            {
+                                "x": 2574,
+                                "y": 2990
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "U08. Sacred Spring",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2066,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#ToilandTrouble",
+                            "contentChunkId": "13ac527b-c89b-4b8a-96ab-677e3e71efe0",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "7GG4MOGzdqaxAgn2"
+                        },
+                        "positions": [
+                            {
+                                "x": 3978,
+                                "y": 1586
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "U09. Ossuary",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2072,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#ToilandTrouble",
+                            "contentChunkId": "9c8e399a-0a5b-406c-b7c0-c16d95e9dd46",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "RnkPRdGGfS7P4o1r"
+                        },
+                        "positions": [
+                            {
+                                "x": 3614,
+                                "y": 2522
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "U10. Cauldron of Plenty",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2079,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#ToilandTrouble",
+                            "contentChunkId": "da69f63b-a73a-4177-9d20-2a6fa4798c0d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "GyVlKyrrCaPvOzzO"
+                        },
+                        "positions": [
+                            {
+                                "x": 4550,
+                                "y": 2366
+                            }
+                        ],
+                        "iconSize": 39,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [
+            {
+                "_id": "4PSVFvrT8jKa2yJZ",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 1426,
+                "y": 1732,
+                "width": 65,
+                "height": 66,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#000000",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "#f1eeee",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "+30\nfeet",
+                "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+                "fontSize": 30,
+                "textColor": "#0d0c0c",
+                "textAlpha": 1,
+                "id": "4PSVFvrT8jKa2yJZ"
+            },
+            {
+                "_id": "3cZIudCiYyxOMbPg",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 1352,
+                "y": 1378,
+                "width": 65,
+                "height": 66,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#000000",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "#f1eeee",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "+30\nfeet",
+                "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+                "fontSize": 30,
+                "textColor": "#0d0c0c",
+                "textAlpha": 1
+            },
+            {
+                "_id": "rMTAlV5YZVJEm910",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 1378,
+                "y": 2210,
+                "width": 65,
+                "height": 66,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#000000",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "#f1eeee",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "+30\nfeet",
+                "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+                "fontSize": 20,
+                "textColor": "#0d0c0c",
+                "textAlpha": 1,
+                "id": "rMTAlV5YZVJEm910"
+            },
+            {
+                "_id": "XO30ngKOxbN3Zv6H",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 2600,
+                "y": 2002,
+                "width": 156,
+                "height": 78,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#000000",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "#f1eeee",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "+20 feet",
+                "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+                "fontSize": 30,
+                "textColor": "#0d0c0c",
+                "textAlpha": 1,
+                "id": "XO30ngKOxbN3Zv6H"
+            },
+            {
+                "_id": "WwZvhjoU3bnvpxbC",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 4082,
+                "y": 754,
+                "width": 214,
+                "height": 66,
+                "rotation": 0,
+                "z": 1,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#000000",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "#000000",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Underground\nriver",
+                "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+                "fontSize": 30,
+                "textColor": "#0d0c0c",
+                "textAlpha": 1
+            },
+            {
+                "_id": "vN9hP8DLN0L33vpj",
+                "flags": {},
+                "type": "f",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 4213,
+                "y": 850,
+                "width": 0,
+                "height": 208,
+                "rotation": 0,
+                "z": 2,
+                "hidden": true,
+                "locked": false,
+                "points": [
+                    [
+                        0.16789133756174124,
+                        207.57481904864107
+                    ],
+                    [
+                        0,
+                        190
+                    ],
+                    [
+                        0,
+                        183
+                    ],
+                    [
+                        0,
+                        179
+                    ],
+                    [
+                        0,
+                        175
+                    ],
+                    [
+                        0,
+                        172
+                    ],
+                    [
+                        0,
+                        167
+                    ],
+                    [
+                        0,
+                        160
+                    ],
+                    [
+                        0,
+                        151
+                    ],
+                    [
+                        0,
+                        137
+                    ],
+                    [
+                        0,
+                        130
+                    ],
+                    [
+                        0,
+                        126
+                    ],
+                    [
+                        0,
+                        114
+                    ],
+                    [
+                        0,
+                        102
+                    ],
+                    [
+                        0,
+                        91
+                    ],
+                    [
+                        0,
+                        81
+                    ],
+                    [
+                        0,
+                        72
+                    ],
+                    [
+                        0,
+                        63
+                    ],
+                    [
+                        0,
+                        49
+                    ],
+                    [
+                        0,
+                        46
+                    ],
+                    [
+                        0,
+                        42
+                    ],
+                    [
+                        0,
+                        37
+                    ],
+                    [
+                        0,
+                        33
+                    ],
+                    [
+                        0,
+                        26
+                    ],
+                    [
+                        0,
+                        19
+                    ],
+                    [
+                        0,
+                        14
+                    ],
+                    [
+                        0,
+                        11
+                    ],
+                    [
+                        0,
+                        9
+                    ],
+                    [
+                        0,
+                        7
+                    ],
+                    [
+                        0,
+                        0
+                    ]
+                ],
+                "bezierFactor": 0.5,
+                "fillType": 0,
+                "fillColor": "#cc4c28",
+                "fillAlpha": 1,
+                "strokeWidth": 8,
+                "strokeColor": "#cc4c28",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#0d0d0d",
+                "textAlpha": 1
+            },
+            {
+                "_id": "kLeaudFbbnTzTZZB",
+                "flags": {},
+                "type": "f",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 4192,
+                "y": 847,
+                "width": 43,
+                "height": 21,
+                "rotation": 0,
+                "z": 3,
+                "hidden": true,
+                "locked": false,
+                "points": [
+                    [
+                        0,
+                        21.10113483811483
+                    ],
+                    [
+                        7.884740241385771,
+                        8
+                    ],
+                    [
+                        14.88474024138577,
+                        3
+                    ],
+                    [
+                        18.88474024138577,
+                        3
+                    ],
+                    [
+                        21.88474024138577,
+                        0
+                    ],
+                    [
+                        23.88474024138577,
+                        0
+                    ],
+                    [
+                        30.88474024138577,
+                        7
+                    ],
+                    [
+                        35.88474024138577,
+                        14
+                    ],
+                    [
+                        41.88474024138577,
+                        17
+                    ],
+                    [
+                        42.88474024138577,
+                        19
+                    ]
+                ],
+                "bezierFactor": 0.5,
+                "fillType": 0,
+                "fillColor": "#cc4c28",
+                "fillAlpha": 1,
+                "strokeWidth": 8,
+                "strokeColor": "#cc4c28",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#0d0d0d",
+                "textAlpha": 1
+            },
+            {
+                "_id": "FrTUvMy64mdfFGPq",
+                "flags": {},
+                "type": "f",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 4117,
+                "y": 2564,
+                "width": 156,
+                "height": 79,
+                "rotation": 0,
+                "z": 4,
+                "hidden": true,
+                "locked": false,
+                "points": [
+                    [
+                        156.30588073919898,
+                        77.805507866874
+                    ],
+                    [
+                        135,
+                        79
+                    ],
+                    [
+                        129,
+                        79
+                    ],
+                    [
+                        119,
+                        79
+                    ],
+                    [
+                        105,
+                        79
+                    ],
+                    [
+                        94,
+                        79
+                    ],
+                    [
+                        82,
+                        79
+                    ],
+                    [
+                        68,
+                        77
+                    ],
+                    [
+                        56,
+                        74
+                    ],
+                    [
+                        38,
+                        69
+                    ],
+                    [
+                        29,
+                        63
+                    ],
+                    [
+                        24,
+                        62
+                    ],
+                    [
+                        17,
+                        54
+                    ],
+                    [
+                        14,
+                        49
+                    ],
+                    [
+                        8,
+                        40
+                    ],
+                    [
+                        7,
+                        32
+                    ],
+                    [
+                        3,
+                        16
+                    ],
+                    [
+                        0,
+                        9
+                    ],
+                    [
+                        0,
+                        0
+                    ]
+                ],
+                "bezierFactor": 0.5,
+                "fillType": 0,
+                "fillColor": "#cc4c28",
+                "fillAlpha": 1,
+                "strokeWidth": 8,
+                "strokeColor": "#cc4c28",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#0d0d0d",
+                "textAlpha": 1
+            },
+            {
+                "_id": "4KjXxdlfXFsPPVKX",
+                "flags": {},
+                "type": "f",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 4094,
+                "y": 2548,
+                "width": 40,
+                "height": 34,
+                "rotation": 0,
+                "z": 5,
+                "hidden": true,
+                "locked": false,
+                "points": [
+                    [
+                        0,
+                        34.15638505985635
+                    ],
+                    [
+                        6.64148768185305,
+                        18
+                    ],
+                    [
+                        8.64148768185305,
+                        14
+                    ],
+                    [
+                        11.64148768185305,
+                        9
+                    ],
+                    [
+                        16.64148768185305,
+                        0
+                    ],
+                    [
+                        20.64148768185305,
+                        0
+                    ],
+                    [
+                        23.64148768185305,
+                        0
+                    ],
+                    [
+                        36.64148768185305,
+                        21
+                    ],
+                    [
+                        39.64148768185305,
+                        27
+                    ]
+                ],
+                "bezierFactor": 0.5,
+                "fillType": 0,
+                "fillColor": "#cc4c28",
+                "fillAlpha": 1,
+                "strokeWidth": 8,
+                "strokeColor": "#cc4c28",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#0d0d0d",
+                "textAlpha": 1
+            },
+            {
+                "_id": "QiPDMqDNC1yM5RWZ",
+                "flags": {},
+                "type": "f",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 3359,
+                "y": 2871,
+                "width": 115,
+                "height": 112,
+                "rotation": 0,
+                "z": 6,
+                "hidden": true,
+                "locked": false,
+                "points": [
+                    [
+                        0,
+                        112.45590773336153
+                    ],
+                    [
+                        4.395294115220622,
+                        93
+                    ],
+                    [
+                        8.395294115220622,
+                        86
+                    ],
+                    [
+                        11.395294115220622,
+                        79
+                    ],
+                    [
+                        22.395294115220622,
+                        65
+                    ],
+                    [
+                        31.395294115220622,
+                        56
+                    ],
+                    [
+                        38.39529411522062,
+                        51
+                    ],
+                    [
+                        43.39529411522062,
+                        47
+                    ],
+                    [
+                        52.39529411522062,
+                        38
+                    ],
+                    [
+                        61.39529411522062,
+                        33
+                    ],
+                    [
+                        82.39529411522062,
+                        19
+                    ],
+                    [
+                        97.39529411522062,
+                        10
+                    ],
+                    [
+                        106.39529411522062,
+                        3
+                    ],
+                    [
+                        111.39529411522062,
+                        1
+                    ],
+                    [
+                        115.39529411522062,
+                        0
+                    ]
+                ],
+                "bezierFactor": 0.5,
+                "fillType": 0,
+                "fillColor": "#cc4c28",
+                "fillAlpha": 1,
+                "strokeWidth": 8,
+                "strokeColor": "#cc4c28",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#0d0d0d",
+                "textAlpha": 1
+            },
+            {
+                "_id": "vje5KcFbpWTXZBhC",
+                "flags": {},
+                "type": "f",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 3443,
+                "y": 2864,
+                "width": 33,
+                "height": 40,
+                "rotation": 0,
+                "z": 7,
+                "hidden": true,
+                "locked": false,
+                "points": [
+                    [
+                        0,
+                        0
+                    ],
+                    [
+                        15.184767799431029,
+                        2.8423378806737674
+                    ],
+                    [
+                        22.18476779943103,
+                        2.8423378806737674
+                    ],
+                    [
+                        27.18476779943103,
+                        2.8423378806737674
+                    ],
+                    [
+                        33.18476779943103,
+                        6.842337880673767
+                    ],
+                    [
+                        33.18476779943103,
+                        20.842337880673767
+                    ],
+                    [
+                        33.18476779943103,
+                        25.842337880673767
+                    ],
+                    [
+                        33.18476779943103,
+                        30.842337880673767
+                    ],
+                    [
+                        33.18476779943103,
+                        34.84233788067377
+                    ],
+                    [
+                        31.18476779943103,
+                        35.84233788067377
+                    ],
+                    [
+                        31.18476779943103,
+                        39.84233788067377
+                    ]
+                ],
+                "bezierFactor": 0.5,
+                "fillType": 0,
+                "fillColor": "#cc4c28",
+                "fillAlpha": 1,
+                "strokeWidth": 8,
+                "strokeColor": "#cc4c28",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#0d0d0d",
+                "textAlpha": 1
             }
-        }
+        ],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 1.11: Easthaven Town Hall",
@@ -27879,7 +28933,12 @@
                 "t": "l",
                 "tintAlpha": 0.49,
                 "x": 3276,
-                "y": 2288
+                "y": 2288,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
             },
             {
                 "angle": 360,
@@ -27890,16 +28949,32 @@
                 "t": "l",
                 "tintAlpha": 0.49,
                 "x": 2392,
-                "y": 3484
+                "y": 3484,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
             }
         ],
         "flags": {
             "ddb": {
                 "ddbId": 10051,
                 "cobaltId": 1080,
-                "contentChunkId": "MapMap113verbeeglair-player"
-            }
-        }
+                "contentChunkId": "MapMap113verbeeglair-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 1.15: Elven Tomb",
@@ -29857,16 +30932,32 @@
                 "t": "l",
                 "tintAlpha": 0.49,
                 "x": 3744,
-                "y": 2132
+                "y": 2132,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
             }
         ],
         "flags": {
             "ddb": {
                 "ddbId": 10055,
                 "cobaltId": 1082,
-                "contentChunkId": "MapMap115elventomb-player"
-            }
-        }
+                "contentChunkId": "MapMap115elventomb-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 1.17: Kelvin’s Cairn",
@@ -31987,9 +33078,20 @@
             "ddb": {
                 "ddbId": 10060,
                 "cobaltId": 1086,
-                "contentChunkId": "MapMap117kelvinscairn-player"
-            }
-        }
+                "contentChunkId": "MapMap117kelvinscairn-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 1.19: Gem Mine",
@@ -40967,16 +42069,32 @@
                 "t": "l",
                 "tintAlpha": 0.49,
                 "x": 4576,
-                "y": 1352
+                "y": 1352,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
             }
         ],
         "flags": {
             "ddb": {
                 "ddbId": 10066,
                 "cobaltId": 1088,
-                "contentChunkId": "MapMap119gemmine-player"
-            }
-        }
+                "contentChunkId": "MapMap119gemmine-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 2.3: Black Cabin",
@@ -41633,9 +42751,20 @@
             "ddb": {
                 "ddbId": 10071,
                 "cobaltId": 1084,
-                "contentChunkId": "MapMap23blackcabin-player"
-            }
-        }
+                "contentChunkId": "MapMap23blackcabin-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 2.4: Cackling Chasm",
@@ -46557,7 +47686,12 @@
                 "t": "l",
                 "tintAlpha": 0.49,
                 "x": 850,
-                "y": 1650
+                "y": 1650,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
             },
             {
                 "angle": 360,
@@ -46568,16 +47702,32 @@
                 "t": "l",
                 "tintAlpha": 0.5,
                 "x": 750,
-                "y": 2550
+                "y": 2550,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
             }
         ],
         "flags": {
             "ddb": {
                 "ddbId": 10073,
                 "cobaltId": 1084,
-                "contentChunkId": "MapMap24cacklingchasm-player"
-            }
-        }
+                "contentChunkId": "MapMap24cacklingchasm-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 2.5: Cave of the Berserkers",
@@ -52639,16 +53789,32 @@
                 "t": "l",
                 "tintAlpha": 0.49,
                 "x": 1125,
-                "y": 2375
+                "y": 2375,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
             }
         ],
         "flags": {
             "ddb": {
                 "ddbId": 10080,
                 "cobaltId": 1084,
-                "contentChunkId": "MapMap25berserkers-player"
-            }
-        }
+                "contentChunkId": "MapMap25berserkers-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 2.10: Lost Spire of Netheril",
@@ -54721,9 +55887,20 @@
             "ddb": {
                 "ddbId": 10079,
                 "cobaltId": 1083,
-                "contentChunkId": "MapMap210lostspire-player"
-            }
-        }
+                "contentChunkId": "MapMap210lostspire-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 2.6: Dark Duchess",
@@ -56004,9 +57181,20 @@
             "ddb": {
                 "ddbId": 10074,
                 "cobaltId": 1084,
-                "contentChunkId": "MapMap26darkduchess-player"
-            }
-        }
+                "contentChunkId": "MapMap26darkduchess-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 2.7: Id Ascendant",
@@ -57707,9 +58895,20 @@
             "ddb": {
                 "ddbId": 10076,
                 "cobaltId": 1084,
-                "contentChunkId": "MapMap27idascendant-player"
-            }
-        }
+                "contentChunkId": "MapMap27idascendant-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 2.8: Jarlmoot",
@@ -59074,9 +60273,20 @@
             "ddb": {
                 "ddbId": 10090,
                 "cobaltId": 1084,
-                "contentChunkId": "MapMap28jarlmoot-player"
-            }
-        }
+                "contentChunkId": "MapMap28jarlmoot-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     },
     {
         "name": "Map 1.11: Easthaven Town Hall",
@@ -62770,5 +63980,5076 @@
         "globalLight": true,
         "globalLightThreshold": null,
         "tokens": []
+    },
+    {
+        "name": "Map 1.11: Easthaven Town Hall",
+        "navName": "Easthaven Town Hall",
+        "width": 4780,
+        "height": 3304,
+        "grid": 100,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -10,
+        "shiftY": -38,
+        "backgroundColor": "#84939f",
+        "walls": [
+            {
+                "c": [
+                    1787,
+                    1587,
+                    1787,
+                    2000
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1787,
+                    1587,
+                    2512,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2575,
+                    1587,
+                    2787,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2787,
+                    1587,
+                    2787,
+                    1700
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2787,
+                    1800,
+                    2787,
+                    2300
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2787,
+                    2400,
+                    2787,
+                    2612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2575,
+                    2612,
+                    3512,
+                    2612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3512,
+                    2612,
+                    3512,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3512,
+                    1587,
+                    3375,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3325,
+                    1587,
+                    3075,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3025,
+                    1587,
+                    2912,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2912,
+                    1587,
+                    2912,
+                    1900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2912,
+                    1900,
+                    3000,
+                    1900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3100,
+                    1900,
+                    3300,
+                    1900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3200,
+                    1587,
+                    3200,
+                    1900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3400,
+                    1900,
+                    3512,
+                    1900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2312,
+                    1700,
+                    2312,
+                    2500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2525,
+                    2612,
+                    1787,
+                    2612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1787,
+                    2612,
+                    1787,
+                    2200
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2687,
+                    1900,
+                    2312,
+                    1900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2787,
+                    2100,
+                    2312,
+                    2100
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2600,
+                    2012,
+                    2600,
+                    2100
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3925,
+                    1587,
+                    3687,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3687,
+                    1587,
+                    3687,
+                    1812
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3687,
+                    1875,
+                    3687,
+                    2325
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3687,
+                    2375,
+                    3687,
+                    2612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3687,
+                    2612,
+                    3925,
+                    2612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3975,
+                    2612,
+                    4425,
+                    2612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4475,
+                    2612,
+                    4912,
+                    2612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5087,
+                    2612,
+                    5412,
+                    2612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5412,
+                    2612,
+                    5412,
+                    2125
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5412,
+                    2075,
+                    5412,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5412,
+                    1587,
+                    4975,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4925,
+                    1587,
+                    4475,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4425,
+                    1587,
+                    3975,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    1587,
+                    4212,
+                    1800
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    1800,
+                    4300,
+                    1800
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4400,
+                    1800,
+                    4687,
+                    1800
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4687,
+                    1800,
+                    4687,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4600,
+                    1900,
+                    4825,
+                    1900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4875,
+                    1900,
+                    5412,
+                    1900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5212,
+                    1700,
+                    5212,
+                    1900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4500,
+                    1900,
+                    4212,
+                    1900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    1900,
+                    4212,
+                    2300
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    2200,
+                    4687,
+                    2200
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4687,
+                    1900,
+                    4687,
+                    2325
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4687,
+                    2375,
+                    4687,
+                    2500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    2400,
+                    4212,
+                    2612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3887,
+                    2887,
+                    3887,
+                    3212
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3887,
+                    3212,
+                    4087,
+                    3212
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    3212,
+                    4412,
+                    3212
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4412,
+                    3212,
+                    4412,
+                    2887
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4412,
+                    2887,
+                    3887,
+                    2887
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4087,
+                    3212,
+                    4087,
+                    3350
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4087,
+                    3450,
+                    4087,
+                    3550
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4087,
+                    3637,
+                    4087,
+                    3700
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4087,
+                    3700,
+                    3900,
+                    3700
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3900,
+                    3700,
+                    3900,
+                    3900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3900,
+                    3900,
+                    4100,
+                    3900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4100,
+                    3900,
+                    4100,
+                    3812
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4087,
+                    3812,
+                    4250,
+                    3812
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4350,
+                    3812,
+                    4450,
+                    3812
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4387,
+                    4000,
+                    4387,
+                    3812
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4387,
+                    4000,
+                    4200,
+                    4000
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4200,
+                    4000,
+                    4200,
+                    3812
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4400,
+                    3812,
+                    4400,
+                    4000
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4400,
+                    4000,
+                    4587,
+                    4000
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4587,
+                    4000,
+                    4587,
+                    3812
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4550,
+                    3812,
+                    5312,
+                    3812
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5312,
+                    3812,
+                    5312,
+                    3362
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5312,
+                    3362,
+                    4887,
+                    3362
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4887,
+                    3362,
+                    4887,
+                    3687
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4887,
+                    3687,
+                    5200,
+                    3687
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4812,
+                    3687,
+                    4887,
+                    3687
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4812,
+                    3687,
+                    4812,
+                    3287
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4812,
+                    3287,
+                    4687,
+                    3287
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4687,
+                    3287,
+                    4687,
+                    3687
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4687,
+                    3687,
+                    4550,
+                    3687
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4600,
+                    3687,
+                    4600,
+                    3500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4600,
+                    3500,
+                    4400,
+                    3500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4400,
+                    3500,
+                    4400,
+                    3687
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4450,
+                    3687,
+                    4212,
+                    3687
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    3687,
+                    4212,
+                    3650
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    3550,
+                    4212,
+                    3450
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    3500,
+                    4400,
+                    3500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4400,
+                    3500,
+                    4400,
+                    3300
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4400,
+                    3300,
+                    4212,
+                    3300
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    3212,
+                    4212,
+                    3350
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1787,
+                    3425,
+                    1787,
+                    3712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1787,
+                    3712,
+                    1925,
+                    3712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1975,
+                    3712,
+                    2425,
+                    3712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2475,
+                    3712,
+                    2925,
+                    3712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2975,
+                    3712,
+                    3512,
+                    3712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3512,
+                    3712,
+                    3512,
+                    3625
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3512,
+                    3575,
+                    3512,
+                    3425
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3512,
+                    3375,
+                    3512,
+                    3225
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3512,
+                    3175,
+                    3512,
+                    3087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3512,
+                    3087,
+                    2975,
+                    3087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2925,
+                    3087,
+                    2475,
+                    3087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2425,
+                    3087,
+                    1975,
+                    3087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1925,
+                    3087,
+                    1787,
+                    3087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1787,
+                    3087,
+                    1787,
+                    3375
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1787,
+                    3287,
+                    2000,
+                    3287
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2100,
+                    3287,
+                    2400,
+                    3287
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2200,
+                    3087,
+                    2200,
+                    3287
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2500,
+                    3287,
+                    2800,
+                    3287
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2700,
+                    3087,
+                    2700,
+                    3287
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2900,
+                    3287,
+                    3087,
+                    3287
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3087,
+                    3087,
+                    3087,
+                    3350
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2900,
+                    3500,
+                    3087,
+                    3500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3087,
+                    3450,
+                    3087,
+                    3712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2500,
+                    3500,
+                    2800,
+                    3500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2700,
+                    3500,
+                    2700,
+                    3712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2100,
+                    3500,
+                    2400,
+                    3500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2200,
+                    3500,
+                    2200,
+                    3712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1787,
+                    3500,
+                    2000,
+                    3500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1925,
+                    3087,
+                    1975,
+                    3087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2425,
+                    3087,
+                    2475,
+                    3087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2925,
+                    3087,
+                    2975,
+                    3087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1787,
+                    3375,
+                    1787,
+                    3425
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1925,
+                    3712,
+                    1975,
+                    3712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2425,
+                    3712,
+                    2475,
+                    3712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2925,
+                    3712,
+                    2975,
+                    3712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    3512,
+                    3175,
+                    3512,
+                    3225
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    3512,
+                    3375,
+                    3512,
+                    3425
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    3512,
+                    3575,
+                    3512,
+                    3625
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    5412,
+                    2075,
+                    5412,
+                    2125
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    4875,
+                    1900,
+                    4825,
+                    1900
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    4975,
+                    1587,
+                    4925,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    4475,
+                    1587,
+                    4425,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    4475,
+                    2612,
+                    4425,
+                    2612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    3975,
+                    2612,
+                    3925,
+                    2612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    3687,
+                    2375,
+                    3687,
+                    2325
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    3687,
+                    1812,
+                    3687,
+                    1875
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    3925,
+                    1587,
+                    3975,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    4687,
+                    2325,
+                    4687,
+                    2375
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    3325,
+                    1587,
+                    3375,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    3025,
+                    1587,
+                    3075,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2525,
+                    2612,
+                    2575,
+                    2612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2512,
+                    1587,
+                    2575,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1787,
+                    2000,
+                    1787,
+                    2100
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1787,
+                    2100,
+                    1787,
+                    2200
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2312,
+                    1700,
+                    2312,
+                    1587
+                ],
+                "door": 2,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2600,
+                    2012,
+                    2600,
+                    1900
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2687,
+                    1900,
+                    2787,
+                    1900
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2787,
+                    1800,
+                    2787,
+                    1700
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2787,
+                    1587,
+                    2912,
+                    1587
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3000,
+                    1900,
+                    3100,
+                    1900
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3300,
+                    1900,
+                    3400,
+                    1900
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2787,
+                    2300,
+                    2787,
+                    2400
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2312,
+                    2500,
+                    2312,
+                    2612
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    1800,
+                    4212,
+                    1900
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4300,
+                    1800,
+                    4400,
+                    1800
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4500,
+                    1900,
+                    4600,
+                    1900
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4687,
+                    1800,
+                    4687,
+                    1900
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5212,
+                    1700,
+                    5212,
+                    1587
+                ],
+                "door": 1,
+                "ds": 2,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4912,
+                    2612,
+                    5000,
+                    2612
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5000,
+                    2612,
+                    5087,
+                    2612
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    2300,
+                    4212,
+                    2400
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4687,
+                    2500,
+                    4687,
+                    2612
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5200,
+                    3687,
+                    5312,
+                    3687
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4450,
+                    3687,
+                    4550,
+                    3687
+                ],
+                "door": 1,
+                "ds": 2,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4450,
+                    3812,
+                    4550,
+                    3812
+                ],
+                "door": 1,
+                "ds": 2,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4250,
+                    3812,
+                    4350,
+                    3812
+                ],
+                "door": 1,
+                "ds": 2,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4087,
+                    3700,
+                    4087,
+                    3812
+                ],
+                "door": 1,
+                "ds": 2,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4087,
+                    3550,
+                    4087,
+                    3637
+                ],
+                "door": 1,
+                "ds": 2,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    3550,
+                    4212,
+                    3650
+                ],
+                "door": 1,
+                "ds": 2,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4212,
+                    3350,
+                    4212,
+                    3450
+                ],
+                "door": 1,
+                "ds": 2,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4087,
+                    3350,
+                    4087,
+                    3450
+                ],
+                "door": 1,
+                "ds": 2,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    4087,
+                    3212,
+                    4212,
+                    3212
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3900,
+                    3500,
+                    3900,
+                    3700
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3900,
+                    3500,
+                    4087,
+                    3500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3900,
+                    3300,
+                    4087,
+                    3300
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3900,
+                    3300,
+                    3900,
+                    3500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3087,
+                    3350,
+                    3087,
+                    3450
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2900,
+                    3287,
+                    2800,
+                    3287
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2800,
+                    3500,
+                    2900,
+                    3500
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2500,
+                    3500,
+                    2400,
+                    3500
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2500,
+                    3287,
+                    2400,
+                    3287
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2100,
+                    3287,
+                    2000,
+                    3287
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2100,
+                    3500,
+                    2000,
+                    3500
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5212,
+                    2100,
+                    5200,
+                    2087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    5200,
+                    2087,
+                    5187,
+                    2100
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    5187,
+                    2100,
+                    5200,
+                    2112
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    5200,
+                    2112,
+                    5212,
+                    2100
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    5200,
+                    2287,
+                    5187,
+                    2300
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    5187,
+                    2300,
+                    5200,
+                    2312
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    5200,
+                    2312,
+                    5212,
+                    2300
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    5212,
+                    2300,
+                    5200,
+                    2287
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    4887,
+                    2298,
+                    4900,
+                    2310
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    4900,
+                    2285,
+                    4887,
+                    2298
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    4912,
+                    2298,
+                    4900,
+                    2285
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    4900,
+                    2310,
+                    4912,
+                    2298
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    4884,
+                    2100,
+                    4897,
+                    2112
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    4897,
+                    2087,
+                    4884,
+                    2100
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    4909,
+                    2100,
+                    4897,
+                    2087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    4897,
+                    2112,
+                    4909,
+                    2100
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    2988,
+                    2101,
+                    3001,
+                    2113
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3001,
+                    2088,
+                    2988,
+                    2101
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3013,
+                    2101,
+                    3001,
+                    2088
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3001,
+                    2113,
+                    3013,
+                    2101
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3285,
+                    2100,
+                    3298,
+                    2112
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3298,
+                    2087,
+                    3285,
+                    2100
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3310,
+                    2100,
+                    3298,
+                    2087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3298,
+                    2112,
+                    3310,
+                    2100
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    2988,
+                    2297,
+                    3001,
+                    2309
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3001,
+                    2284,
+                    2988,
+                    2297
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3013,
+                    2297,
+                    3001,
+                    2284
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3001,
+                    2309,
+                    3013,
+                    2297
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3285,
+                    2301,
+                    3298,
+                    2313
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3298,
+                    2288,
+                    3285,
+                    2301
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3310,
+                    2301,
+                    3298,
+                    2288
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3298,
+                    2313,
+                    3310,
+                    2301
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 2
+            },
+            {
+                "c": [
+                    3512,
+                    2500,
+                    3400,
+                    2500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    3400,
+                    2500,
+                    3400,
+                    2312
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2787,
+                    2200,
+                    2900,
+                    2200
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2900,
+                    2200,
+                    2900,
+                    2000
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2100,
+                    2200,
+                    2200,
+                    2200
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2200,
+                    2200,
+                    2200,
+                    2400
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2200,
+                    2400,
+                    2300,
+                    2400
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2312,
+                    1787,
+                    2200,
+                    1787
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2200,
+                    1787,
+                    2200,
+                    2000
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2200,
+                    2000,
+                    2100,
+                    2000
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    2200,
+                    2000,
+                    2100,
+                    2000
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    3087,
+                    3200,
+                    3300,
+                    3200
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    5212,
+                    1800,
+                    5012,
+                    1800
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    5300,
+                    2312,
+                    5300,
+                    2500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    5300,
+                    2500,
+                    4687,
+                    2500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    4212,
+                    1800,
+                    4100,
+                    1800
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    4100,
+                    1800,
+                    4100,
+                    2000
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    4100,
+                    2000,
+                    4012,
+                    2000
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    4212,
+                    2400,
+                    4100,
+                    2400
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    4100,
+                    2400,
+                    4100,
+                    2200
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    4100,
+                    2200,
+                    4000,
+                    2200
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    1350,
+                    1362,
+                    1400,
+                    2837
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1400,
+                    2837,
+                    3612,
+                    2837
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3612,
+                    2837,
+                    3600,
+                    1450
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3600,
+                    1450,
+                    1350,
+                    1437
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1675,
+                    2837,
+                    1662,
+                    4025
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1662,
+                    4025,
+                    3625,
+                    3975
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3625,
+                    3975,
+                    3600,
+                    2837
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    3612,
+                    2712,
+                    5512,
+                    2712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5512,
+                    2712,
+                    5512,
+                    1437
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    5512,
+                    1437,
+                    3600,
+                    1475
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            }
+        ],
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 10046,
+                "cobaltId": 1078,
+                "contentChunkId": "MapMap111easthaventownhall-player",
+                "notes": [
+                    {
+                        "label": "T01. Reception Hall",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2047,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "3181c576-8f8b-4d97-8590-d6bd2f74fa9a",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "xtxvNRYkKzdfCqaG"
+                        },
+                        "positions": [
+                            {
+                                "x": 1950,
+                                "y": 1950
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T02. Administrative Office",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2049,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "3975c542-486b-4e29-9b27-94389bfcaf50",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "tTdzioCiAvWYeRDB"
+                        },
+                        "positions": [
+                            {
+                                "x": 2550,
+                                "y": 2350
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T03. Speaker’s Office",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2053,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "6278230b-d9b8-4289-baa5-1ee023c5b0ba",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "TdRgRi68qnYrVyzX"
+                        },
+                        "positions": [
+                            {
+                                "x": 2550,
+                                "y": 1750
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T04. Coat Closet",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2055,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "9511f801-99b8-47cc-a6b7-6239786bf0b6",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "rOYQ82VIIYDiJUwJ"
+                        },
+                        "positions": [
+                            {
+                                "x": 2650,
+                                "y": 1950
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T05. Privy",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2057,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "ec39fd8e-c116-436a-b5eb-06779d83801e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "V4nenlm7zxwCPLcQ"
+                        },
+                        "positions": [
+                            {
+                                "x": 2450,
+                                "y": 1950
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T06. Chardalyn Figurehead",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2069,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "a0c08811-ee8a-4d4e-bcf8-1481eb81efe9",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "XNoQXhawF0L2fYVv"
+                        },
+                        "positions": [
+                            {
+                                "x": 3150,
+                                "y": 2350
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T07. Chair Storage",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2071,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "7f60f97d-7002-40ee-8e59-f331132a6c49",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "kJlD7CMnktY0Lqxi"
+                        },
+                        "positions": [
+                            {
+                                "x": 3050,
+                                "y": 1750
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T08. Records Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2073,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "f2ac0c09-ea68-4cdf-aed3-0682524f83dc",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "w0phtaW6Bdh3Y6sE"
+                        },
+                        "positions": [
+                            {
+                                "x": 3450,
+                                "y": 1750
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T09. Event Venue",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2075,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "b9c20203-5655-46d6-9833-ee4f8912ff58",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "QDTPCLrPKwZr4nIz"
+                        },
+                        "positions": [
+                            {
+                                "x": 4450,
+                                "y": 2350
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T10. Small Claims Court",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2077,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "65fb15e6-c109-4114-ad1f-78cd07dc6f70",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "782BPH34LIeALfbY"
+                        },
+                        "positions": [
+                            {
+                                "x": 4550,
+                                "y": 2050
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T11. Fishing Permits",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2080,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "feb9ea4d-1553-4e10-9daa-daf7bc0cda5c",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "MT3it6Dt5Zo4r2DU"
+                        },
+                        "positions": [
+                            {
+                                "x": 4550,
+                                "y": 1650
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T12. Employee Breakroom",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2082,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "30ce1f09-afdd-428e-8afe-33fe50e380b2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "mdUEQ3uc4mOJMUcc"
+                        },
+                        "positions": [
+                            {
+                                "x": 4850,
+                                "y": 1650
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T13. Supply Closet",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2084,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "a5ca7d32-742f-4539-8500-668cd33f0815",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "XrrGVshPEqi1t5f0"
+                        },
+                        "positions": [
+                            {
+                                "x": 5350,
+                                "y": 1650
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T14. Town Library",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2088,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "73248107-94fc-4c45-aae7-b8e0a51651d4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "FVyLiXVXq55ctXe6"
+                        },
+                        "positions": [
+                            {
+                                "x": 3250,
+                                "y": 3350
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T15. Office and Storage Space",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2092,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "62c0807b-4ee9-4935-920c-caa5068e6296",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "UXu7lUPuhe6qc1lq"
+                        },
+                        "positions": [
+                            {
+                                "x": 2450,
+                                "y": 3350
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T16. Stairs to the Dungeon",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2094,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "8f49cf06-7a95-45c4-a73f-18e371f6e711",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "I9bMqlc5F5aTdtIv"
+                        },
+                        "positions": [
+                            {
+                                "x": 4750,
+                                "y": 3650
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T17. Jailers’ Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2096,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "d1275c3d-7d65-4f59-bf6a-e42e23225e96",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "mxF5uzs5BEjONBiH"
+                        },
+                        "positions": [
+                            {
+                                "x": 5250,
+                                "y": 3550
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T18. Jail",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2098,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "8eecd259-c851-4736-84a1-cff10dc38a00",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "zjZd7cYJQe0vuCcz"
+                        },
+                        "positions": [
+                            {
+                                "x": 4150,
+                                "y": 3750
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T19. Interrogation Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2100,
+                            "bookCode": "idrotf",
+                            "slug": "easthaven#TownHallCapers",
+                            "contentChunkId": "cab4ff97-7e36-49e0-a74b-d6218400aef8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1078,
+                            "linkId": "n9FUFBZrLiwa04S8"
+                        },
+                        "positions": [
+                            {
+                                "x": 4150,
+                                "y": 3050
+                            }
+                        ],
+                        "iconSize": 75,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "initial": null,
+        "drawings": [
+            {
+                "_id": "t3wItaOwjIYWvOpA",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 2900,
+                "y": 2000,
+                "width": 135,
+                "height": 66,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#000000",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "#f1eeee",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Down to\nT6",
+                "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+                "fontSize": 40,
+                "textColor": "#faf5f5",
+                "textAlpha": 1,
+                "id": "t3wItaOwjIYWvOpA"
+            },
+            {
+                "_id": "OrLmOKrHc5I8dHRE",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 5000,
+                "y": 1700,
+                "width": 135,
+                "height": 66,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#000000",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "#f1eeee",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Up to\nT14",
+                "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+                "fontSize": 40,
+                "textColor": "#fdf7f7",
+                "textAlpha": 1,
+                "id": "OrLmOKrHc5I8dHRE"
+            },
+            {
+                "_id": "HlJUblDoIfdKLICa",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 4950,
+                "y": 2100,
+                "width": 135,
+                "height": 66,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#000000",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "#f1eeee",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Open to\nT6 below",
+                "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+                "fontSize": 40,
+                "textColor": "#f4ebeb",
+                "textAlpha": 1,
+                "id": "HlJUblDoIfdKLICa"
+            },
+            {
+                "_id": "4sBgzsgfook59zA1",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 3800,
+                "y": 2000,
+                "width": 135,
+                "height": 66,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#000000",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "#f1eeee",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Open to\nT1 below",
+                "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+                "fontSize": 40,
+                "textColor": "#f8f7f7",
+                "textAlpha": 1,
+                "id": "4sBgzsgfook59zA1"
+            },
+            {
+                "_id": "UpNzNJRIhiMvWTTf",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 4700,
+                "y": 3200,
+                "width": 135,
+                "height": 66,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#000000",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "#f1eeee",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Up to \nT6",
+                "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+                "fontSize": 40,
+                "textColor": "#faf4f4",
+                "textAlpha": 1,
+                "id": "UpNzNJRIhiMvWTTf"
+            },
+            {
+                "_id": "0NjBoTtaSbs77WHc",
+                "flags": {
+                    "furnace": {
+                        "textureWidth": 0,
+                        "textureHeight": 0,
+                        "textureAlpha": 1,
+                        "fillType": null
+                    }
+                },
+                "type": "t",
+                "author": "ZNuwacEzhVGx2mbf",
+                "x": 3150,
+                "y": 3200,
+                "width": 135,
+                "height": 66,
+                "rotation": 0,
+                "z": 0,
+                "hidden": true,
+                "locked": false,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#000000",
+                "fillAlpha": 0,
+                "strokeWidth": 0,
+                "strokeColor": "#171616",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Down to\nT12",
+                "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+                "fontSize": 40,
+                "textColor": "#f4f1f1",
+                "textAlpha": 1,
+                "id": "0NjBoTtaSbs77WHc"
+            }
+        ],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": true,
+        "globalLightThreshold": null,
+        "tokens": []
+    },
+    {
+        "name": "Map 2.8: Jarlmoot",
+        "navName": "Jarlmoot",
+        "width": 1912,
+        "height": 2595,
+        "grid": 50,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -46,
+        "shiftY": -52,
+        "backgroundColor": "#999999",
+        "walls": [
+            {
+                "c": [
+                    562,
+                    713,
+                    562,
+                    3275
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    562,
+                    3275,
+                    2450,
+                    3275
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2450,
+                    3275,
+                    2450,
+                    712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2450,
+                    712,
+                    562,
+                    712
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    562,
+                    2150,
+                    1200,
+                    2150
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1200,
+                    2150,
+                    1200,
+                    2450
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1200,
+                    2450,
+                    1100,
+                    2450
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1100,
+                    2450,
+                    1104,
+                    2494
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1104,
+                    2494,
+                    1118,
+                    2535
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1118,
+                    2535,
+                    1148,
+                    2578
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1148,
+                    2578,
+                    1188,
+                    2615
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1188,
+                    2615,
+                    1239,
+                    2644
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1239,
+                    2644,
+                    1300,
+                    2650
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1300,
+                    2550,
+                    1300,
+                    2650
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    800,
+                    2150,
+                    800,
+                    2450
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    800,
+                    2450,
+                    900,
+                    2450
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    900,
+                    2450,
+                    905,
+                    2506
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    905,
+                    2506,
+                    920,
+                    2556
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    920,
+                    2556,
+                    937,
+                    2596
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    937,
+                    2596,
+                    962,
+                    2646
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    962,
+                    2646,
+                    984,
+                    2678
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    984,
+                    2678,
+                    1027,
+                    2728
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1027,
+                    2728,
+                    1073,
+                    2765
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1073,
+                    2765,
+                    1117,
+                    2794
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1117,
+                    2794,
+                    1166,
+                    2816
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1166,
+                    2816,
+                    1226,
+                    2836
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1226,
+                    2836,
+                    1296,
+                    2848
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1296,
+                    2848,
+                    1300,
+                    2912
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1300,
+                    2912,
+                    1311,
+                    2931
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1311,
+                    2931,
+                    1329,
+                    2942
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1329,
+                    2942,
+                    1328,
+                    2965
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1328,
+                    2965,
+                    1304,
+                    2973
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1304,
+                    2973,
+                    1298,
+                    2988
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1298,
+                    2988,
+                    1296,
+                    3015
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1296,
+                    3015,
+                    1311,
+                    3035
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1311,
+                    3035,
+                    1312,
+                    3031
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1312,
+                    3031,
+                    1332,
+                    3039
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1332,
+                    3039,
+                    1332,
+                    3061
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1332,
+                    3061,
+                    1306,
+                    3076
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1306,
+                    3076,
+                    1300,
+                    3087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1300,
+                    3087,
+                    1299,
+                    3088
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1299,
+                    3088,
+                    1300,
+                    3150
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1300,
+                    3150,
+                    1362,
+                    3150
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1362,
+                    3150,
+                    1382,
+                    3133
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1382,
+                    3133,
+                    1390,
+                    3118
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1390,
+                    3118,
+                    1410,
+                    3118
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1410,
+                    3118,
+                    1422,
+                    3140
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1422,
+                    3140,
+                    1439,
+                    3152
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1439,
+                    3152,
+                    1465,
+                    3150
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1465,
+                    3150,
+                    1484,
+                    3136
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1484,
+                    3136,
+                    1490,
+                    3117
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1490,
+                    3117,
+                    1508,
+                    3117
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1508,
+                    3117,
+                    1521,
+                    3141
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1521,
+                    3141,
+                    1534,
+                    3152
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1534,
+                    3152,
+                    1565,
+                    3157
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1565,
+                    3157,
+                    1582,
+                    3140
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1582,
+                    3140,
+                    1590,
+                    3119
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1590,
+                    3119,
+                    1608,
+                    3119
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1608,
+                    3119,
+                    1616,
+                    3137
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1616,
+                    3137,
+                    1625,
+                    3150
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1625,
+                    3150,
+                    1700,
+                    3150
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1700,
+                    3150,
+                    1700,
+                    3087
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1700,
+                    3087,
+                    1685,
+                    3068
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1685,
+                    3068,
+                    1666,
+                    3063
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1666,
+                    3063,
+                    1666,
+                    3043
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1666,
+                    3043,
+                    1695,
+                    3027
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1695,
+                    3027,
+                    1701,
+                    3020
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1701,
+                    3020,
+                    1701,
+                    2979
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1701,
+                    2979,
+                    1678,
+                    2965
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1678,
+                    2965,
+                    1666,
+                    2964
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1666,
+                    2964,
+                    1665,
+                    2944
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1665,
+                    2944,
+                    1688,
+                    2933
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1688,
+                    2933,
+                    1700,
+                    2912
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1700,
+                    2912,
+                    1700,
+                    2750
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1700,
+                    2750,
+                    1800,
+                    2750
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1800,
+                    2750,
+                    1950,
+                    3050
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1950,
+                    3050,
+                    2219,
+                    2913
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    2219,
+                    2913,
+                    1993,
+                    2470
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1993,
+                    2470,
+                    1850,
+                    2550
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1850,
+                    2550,
+                    1600,
+                    2550
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1600,
+                    2550,
+                    1600,
+                    2237
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1600,
+                    2237,
+                    1400,
+                    2237
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1400,
+                    2237,
+                    1400,
+                    2550
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1400,
+                    2550,
+                    1300,
+                    2550
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1712,
+                    2650,
+                    1712,
+                    2550
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1712,
+                    2650,
+                    1712,
+                    2750
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1287,
+                    2650,
+                    1287,
+                    2850
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 0
+            },
+            {
+                "c": [
+                    900,
+                    2450,
+                    1000,
+                    2450
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1000,
+                    2450,
+                    1100,
+                    2450
+                ],
+                "door": 1,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1400,
+                    2237,
+                    1200,
+                    2237
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1600,
+                    2237,
+                    2450,
+                    2237
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1412,
+                    1962,
+                    1435,
+                    2101
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1435,
+                    2101,
+                    1562,
+                    2100
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1562,
+                    2100,
+                    1595,
+                    1965
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1687,
+                    1900,
+                    1812,
+                    1975
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1812,
+                    1975,
+                    1900,
+                    1875
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1900,
+                    1875,
+                    1812,
+                    1762
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1850,
+                    1675,
+                    1975,
+                    1612
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1975,
+                    1612,
+                    1925,
+                    1475
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1925,
+                    1475,
+                    1787,
+                    1500
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1737,
+                    1387,
+                    1787,
+                    1275
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1787,
+                    1275,
+                    1687,
+                    1200
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1687,
+                    1200,
+                    1587,
+                    1287
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1450,
+                    1287,
+                    1362,
+                    1187
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1362,
+                    1187,
+                    1250,
+                    1262
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1250,
+                    1262,
+                    1300,
+                    1387
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1225,
+                    1500,
+                    1087,
+                    1475
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1087,
+                    1475,
+                    1037,
+                    1587
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1037,
+                    1587,
+                    1150,
+                    1675
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1175,
+                    1762,
+                    1075,
+                    1862
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1075,
+                    1862,
+                    1150,
+                    1962
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1150,
+                    1962,
+                    1275,
+                    1912
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            }
+        ],
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 10090,
+                "cobaltId": 1084,
+                "contentChunkId": "MapMap28jarlmoot-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        },
+        "drawings": [],
+        "tokens": [],
+        "initial": null,
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null
     }
 ]
