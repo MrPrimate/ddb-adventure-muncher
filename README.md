@@ -96,6 +96,8 @@ Examples:
 
 All books with Scenes should now have notes generated. Please highlight if you find missing Notes/Pins.
 
+You can se the state of scene support at [this spreadsheet](https://docs.google.com/spreadsheets/d/17b4jG2W521N_nFkE1jr2UGEjixHGjHGnEO9eSKhFmwo/edit?usp=sharing).
+
 Books with Aligned, Walled, Lit scenes with Note placed:
 
 * Lost Mines of Phandelver
