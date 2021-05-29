@@ -5,9 +5,10 @@
 * WPM config (Thanks @maadonna#6222 !)
 * WDH Scenes (Thanks @maadonna#6222 !)
 * ToH (Thanks @DreadPirateRobbo )
-* IDRotFM scene improvements (Thanks @michaelko777#7952 !)
+* IDRotFM scene improvements and new additions (Thanks @michaelko777#7952 !)
 * BIG BUG: WDH didn't load all scenes. This might have effected other adventures.
 * WDH had missing PINS.
+* AI Scenes (Thanks @Pariah Zero !)
 
 # 0.1.7
 
