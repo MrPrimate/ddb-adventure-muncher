@@ -252,5 +252,82 @@
     "tagIdLast": "LeavingtheVault",
     "contentChunkIdStop": "e0ad424e-55c6-4926-9188-9c643ff6d9b0",
     "sceneName": "Vault of Dragons"
+  },{
+    "ddbId": 57,
+    "cobaltId": null,
+    "parentId": 560,
+    "splitTag": "h4",
+    "slug": "spring-madness#XanatharsLair",
+    "tagIdFirst": "X1StaircaseofEyes",
+    "contentChunkIdStart": "77afeff5-d43b-48cd-b57c-a54ac41bba93",
+    "tagIdLast": "",
+    "contentChunkIdStop": "EOF",
+    "sceneName": "Xanathars Lair"
+  },{
+    "ddbId": 62,
+    "cobaltId": null,
+    "parentId": 561,
+    "splitTag": "h4",
+    "slug": "hell-of-a-summer#CassalanterVilla",
+    "tagIdFirst": "C1EntranceHall",
+    "contentChunkIdStart": "003b7f15-fc01-42cc-a344-0c9a0b370e40",
+    "tagIdLast": "",
+    "contentChunkIdStop": "EOF",
+    "sceneName": "Cassalanter Villa"
+  },{
+    "ddbId": 63,
+    "cobaltId": null,
+    "parentId": 561,
+    "splitTag": "h4",
+    "slug": "hell-of-a-summer#TempleofAsmodeus",
+    "tagIdFirst": "A1HalloftheDamned",
+    "contentChunkIdStart": "5ee64759-f32e-4cef-bdc7-15750790bef7",
+    "tagIdLast": "",
+    "contentChunkIdStop": "EOF",
+    "sceneName": "Temple of Asmodeus"
+  },{
+    "ddbId": 67,
+    "cobaltId": null,
+    "parentId": 562,
+    "splitTag": "h4",
+    "slug": "maestros-fall#SeaMaidensFaire",
+    "tagIdFirst": "J1MainDeck",
+    "contentChunkIdStart": "54e47e2c-aac1-4a69-8c77-6f3e879bb7e2",
+    "tagIdLast": "",
+    "contentChunkIdStop": "EOF",
+    "sceneName": "Sea Maidens Faire"
+  },{
+    "ddbId": 68,
+    "cobaltId": null,
+    "parentId": 562,
+    "splitTag": "h4",
+    "slug": "maestros-fall#ScarletMarpenoth",
+    "tagIdFirst": "U1EntranceHatch",
+    "contentChunkIdStart": "b2390f23-9db0-422d-bd98-d6339d09b9e3",
+    "tagIdLast": "",
+    "contentChunkIdStop": "EOF",
+    "sceneName": "Scarlet Marpenoth"
+  },{
+    "ddbId": 72,
+    "cobaltId": null,
+    "parentId": 563,
+    "splitTag": "h4",
+    "slug": "winter-wizardry#KolatTowers",
+    "tagIdFirst": "K1Storeroom",
+    "contentChunkIdStart": "2792d711-ea2a-473d-b19e-edb12ca7b21c",
+    "tagIdLast": "",
+    "contentChunkIdStop": "EOF",
+    "sceneName": "Kolat Towers"
+  },{
+    "ddbId": 73,
+    "cobaltId": null,
+    "parentId": 563,
+    "splitTag": "h4",
+    "slug": "winter-wizardry#ExtradimensionalSanctum",
+    "tagIdFirst": "E1ArrivalPoint",
+    "contentChunkIdStart": "bfdef305-c877-4f2d-9811-5b8c75b9ff63",
+    "tagIdLast": "",
+    "contentChunkIdStop": "EOF",
+    "sceneName": "Extradimensional Sanctum"
   }
 ]

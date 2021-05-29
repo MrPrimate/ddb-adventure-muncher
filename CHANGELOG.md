@@ -6,6 +6,8 @@
 * WDH Scenes (Thanks @maadonna#6222 !)
 * ToH (Thanks @DreadPirateRobbo )
 * IDRotFM scene improvements (Thanks @michaelko777#7952 !)
+* BIG BUG: WDH didn't load all scenes. This might have effected other adventures.
+* WDH had missing PINS.
 
 # 0.1.7
 
