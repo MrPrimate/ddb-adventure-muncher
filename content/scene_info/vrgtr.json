@@ -1829,6 +1829,7 @@
             "ddb": {
                 "ddbId": 10191,
                 "cobaltId": null,
+                "parentId": 1249,
                 "contentChunkId": "MapMap41thehouseoflament-player",
                 "notes": [
                     {
@@ -2109,6 +2110,40 @@
                         "textColor": "",
                         "textAnchor": 1
                     }
+                ],
+                "tokens": [
+                    {
+                        "_id": "XOF94210O0BORyXC",
+                        "name": "Swarm of Maggots",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 1600,
+                        "y": 2100,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 1680947,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 1,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "tint": null
+                    }
                 ]
             },
             "stairways": [
@@ -2286,7 +2321,6 @@
                     "_id": "8od62i468ojbmknt"
                 }
             ]
-        },
-        "tokens": []
+        }
     }
 ]

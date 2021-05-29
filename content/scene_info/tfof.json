@@ -3569,6 +3569,7 @@
             "ddb": {
                 "ddbId": 11011,
                 "cobaltId": null,
+                "parentId": 385,
                 "contentChunkId": "8f41ecba-347b-451b-9d87-f6a34f794ebf",
                 "notes": [
                     {
@@ -3760,8 +3761,10 @@
                         "textColor": "",
                         "textAnchor": 1
                     }
-                ]
-            }
+                ],
+                "tokens": []
+            },
+            "stairways": []
         }
     },
     {
@@ -8078,6 +8081,7 @@
             "ddb": {
                 "ddbId": 11013,
                 "cobaltId": null,
+                "parentId": 385,
                 "contentChunkId": "a351881e-e656-4f75-b900-df06640a260c",
                 "notes": [
                     {
@@ -8512,8 +8516,10 @@
                         "textColor": "",
                         "textAnchor": 1
                     }
-                ]
-            }
+                ],
+                "tokens": []
+            },
+            "stairways": []
         }
     }
 ]

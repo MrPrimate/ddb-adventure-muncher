@@ -6781,9 +6781,12 @@
             "ddb": {
                 "ddbId": 13045,
                 "cobaltId": null,
+                "parentId": 886,
                 "contentChunkId": "295facd6-8ee9-4a91-8fbe-687761dc7422",
-                "notes": []
-            }
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
         }
     }
 ]

@@ -17,8 +17,11 @@
             "ddb": {
                 "ddbId": 90003,
                 "cobaltId": null,
-                "contentChunkId": "ddb-missing-atg-90003"
-            }
+                "parentId": 389,
+                "contentChunkId": "ddb-missing-atg-90003",
+                "tokens": []
+            },
+            "stairways": []
         }
     },
     {
@@ -39,8 +42,11 @@
             "ddb": {
                 "ddbId": 90004,
                 "cobaltId": null,
-                "contentChunkId": "ddb-missing-atg-90004"
-            }
+                "parentId": 389,
+                "contentChunkId": "ddb-missing-atg-90004",
+                "tokens": []
+            },
+            "stairways": []
         }
     },
     {
@@ -54,6 +60,7 @@
         "gridUnits": "ft",
         "shiftX": -17,
         "shiftY": -48,
+        "initial": null,
         "backgroundColor": "#000000",
         "walls": [
             {
@@ -17313,22 +17320,24 @@
                 "sense": 1
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 90006,
-                "cobaltId": null,
-                "contentChunkId": "ddb-missing-atg-90006",
-                "notes": []
-            }
-        },
-        "initial": null,
         "drawings": [],
         "weather": "",
         "darkness": 0,
         "tokenVision": true,
         "globalLight": true,
-        "globalLightThreshold": null
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 90006,
+                "cobaltId": null,
+                "parentId": 389,
+                "contentChunkId": "ddb-missing-atg-90006",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        }
     },
     {
         "name": "Map 6.4: Frost Giant Stronghold - Lower Level",
@@ -17341,24 +17350,27 @@
         "gridUnits": "ft",
         "shiftX": 9,
         "shiftY": 52,
+        "initial": null,
         "backgroundColor": "#999999",
         "walls": [],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 90007,
-                "cobaltId": null,
-                "contentChunkId": "ddb-missing-atg-90007",
-                "notes": []
-            }
-        },
-        "initial": null,
         "drawings": [],
         "weather": "",
         "darkness": 0,
         "tokenVision": true,
         "globalLight": false,
-        "globalLightThreshold": null
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 90007,
+                "cobaltId": null,
+                "parentId": 389,
+                "contentChunkId": "ddb-missing-atg-90007",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": []
+        }
     },
     {
         "name": "Map 6.5: Hall of the Fire Giant King - Entrance Level",
@@ -17378,8 +17390,11 @@
             "ddb": {
                 "ddbId": 90009,
                 "cobaltId": null,
-                "contentChunkId": "ddb-missing-atg-90009"
-            }
+                "parentId": 389,
+                "contentChunkId": "ddb-missing-atg-90009",
+                "tokens": []
+            },
+            "stairways": []
         }
     },
     {
@@ -17400,52 +17415,11 @@
             "ddb": {
                 "ddbId": 90010,
                 "cobaltId": null,
-                "contentChunkId": "ddb-missing-atg-90010"
-            }
-        }
-    },
-    {
-        "name": "Map 6.6: Hall of the Fire Giant King - Second Level",
-        "navName": "Hall of the Fire Giant King (Secind)",
-        "width": 2254,
-        "height": 3000,
-        "grid": 100,
-        "gridDistance": 5,
-        "gridType": 1,
-        "gridUnits": "ft",
-        "shiftX": 0,
-        "shiftY": 0,
-        "backgroundColor": "#999999",
-        "walls": [],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 90010,
-                "cobaltId": null,
-                "contentChunkId": "ddb-missing-atg-90010"
-            }
-        }
-    },
-    {
-        "name": "Map 6.6: Hall of the Fire Giant King - Second Level",
-        "navName": "Hall of the Fire Giant King (Secind)",
-        "width": 2254,
-        "height": 3000,
-        "grid": 100,
-        "gridDistance": 5,
-        "gridType": 1,
-        "gridUnits": "ft",
-        "shiftX": 0,
-        "shiftY": 0,
-        "backgroundColor": "#999999",
-        "walls": [],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 90010,
-                "cobaltId": null,
-                "contentChunkId": "ddb-missing-atg-90010"
-            }
+                "parentId": 389,
+                "contentChunkId": "ddb-missing-atg-90010",
+                "tokens": []
+            },
+            "stairways": []
         }
     },
     {
@@ -17466,8 +17440,11 @@
             "ddb": {
                 "ddbId": 90011,
                 "cobaltId": null,
-                "contentChunkId": "ddb-missing-atg-90011"
-            }
+                "parentId": 389,
+                "contentChunkId": "ddb-missing-atg-90011",
+                "tokens": []
+            },
+            "stairways": []
         }
     }
 ]

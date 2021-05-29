@@ -5453,6 +5453,7 @@
             "ddb": {
                 "ddbId": 11005,
                 "cobaltId": null,
+                "parentId": 387,
                 "contentChunkId": "81c6ac68-90e5-4493-bf4e-b552f7da3fbc",
                 "notes": [
                     {
@@ -6244,7 +6245,6 @@
                 "tokens": []
             },
             "stairways": []
-        },
-        "tokens": []
+        }
     }
 ]

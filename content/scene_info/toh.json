@@ -5070,6 +5070,7 @@
             "ddb": {
                 "ddbId": 11006,
                 "cobaltId": null,
+                "parentId": 390,
                 "contentChunkId": "182ea50b-4e8d-4dd4-8b81-ea90e3dedc17",
                 "notes": [
                     {
@@ -6564,7 +6565,6 @@
                 ]
             },
             "stairways": []
-        },
-        "tokens": []
+        }
     }
 ]
