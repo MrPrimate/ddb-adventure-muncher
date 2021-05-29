@@ -774,8 +774,6 @@ function generateScene(row, img) {
     scene = _.merge(scene, adjustment);
   }
 
-  scene._id = getId(scene, "Scene");
-
   if (config.imageFind) {
     imageFinderSceneResults.push({
       bookCode: config.run.bookCode,
@@ -790,22 +788,23 @@ function generateScene(row, img) {
     config.disableEnhancedDownloads :
     false;
 
-  
   if (config.debug) console.log(`Scene name: "${scene.name}" Img: "${scene.img}"`);
   //const enhancedScene = enhancedScenes.find((es) => es.name === scene.name && es.img === scene.img);
   const enhancedScene = enhancedScenes.find((es) => es.img === scene.img && es.bookCode === config.run.bookCode);
   if (config.debug) console.log(enhancedScene);
 
   if (enhancedScene) {
-    if (enhancedScene.hiresImg && !disableEnhancedDownloads) {
-      downloadList.push({name: scene.name, url: enhancedScene.hiresImg, path: scene.img });
-    }
     if (enhancedScene.adjustName != "") {
       scene.name = enhancedScene.adjustName;
       scene.navName = enhancedScene.adjustName;
     }
+    if (enhancedScene.hiresImg && !disableEnhancedDownloads) {
+      downloadList.push({name: scene.name, url: enhancedScene.hiresImg, path: scene.img });
+    }
   }
   if (config.debug) console.log(`Scene name: "${scene.name}" Img: "${scene.img}"`);
+
+  scene._id = getId(scene, "Scene");
 
   if (config.generateTokens && scene.flags.ddb.tokens && scene.flags.ddb.tokens.length > 0) {
     scene.tokens = scene.flags.ddb.tokens

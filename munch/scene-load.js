@@ -209,6 +209,7 @@ function importScene(conf, sceneFile) {
         lookupDDB: true,
         ddbId: lookup.ddbId,
         cobaltId: lookup.cobaltId,
+        parentId: lookup.parentId,
         contentChunkId: lookup.contentChunkId,
       }
     };
