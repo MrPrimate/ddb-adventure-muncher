@@ -80,7 +80,10 @@ function importScene(conf, sceneFile) {
     idTable[bookCode].find((r) =>
       r.docType == "Scene" &&
       r.contentChunkId && inData.flags.ddb.contentChunkId &&
-      r.contentChunkId === inData.flags.ddb.contentChunkId
+      r.contentChunkId === inData.flags.ddb.contentChunkId &&
+      r.ddbId === inData.flags.ddb.ddbId &&
+      r.parentId === inData.flags.ddb.parentId &&
+      r.cobaltId === inData.flags.ddb.cobaltId
     ) : 
     null;
 
@@ -124,7 +127,13 @@ function importScene(conf, sceneFile) {
   console.log(lookup);
   // console.log(scenesData)
   let sceneData = (lookup.contentChunkId) ? 
-    scenesData.find((scene) => scene.flags.ddb && scene.flags.ddb.contentChunkId && lookup.contentChunkId.trim() == scene.flags.ddb.contentChunkId.trim()) :
+    scenesData.find((scene) =>
+      scene.flags.ddb && scene.flags.ddb.contentChunkId &&
+      lookup.contentChunkId.trim() == scene.flags.ddb.contentChunkId.trim() &&
+      lookup.ddbId === scene.flags.ddb.ddbId &&
+      lookup.parentId === scene.flags.ddb.parentId &&
+      lookup.cobaltId === scene.flags.ddb.cobaltId
+    ) :
     scenesData.find((scene) => lookup.name.toLowerCase().trim().replace("’", "").replace("'","").includes(scene.name.toLowerCase().trim().replace("’", "").replace("'","")));
 
   // if (!sceneData && lookup.contentChunkId) {
@@ -157,6 +166,7 @@ function importScene(conf, sceneFile) {
       ddb: {
         ddbId: inData.flags.ddb.ddbId,
         cobaltId: inData.flags.ddb.cobaltId,
+        parentId: inData.flags.ddb.parentId,
         contentChunkId: inData.flags.ddb.contentChunkId,
         notes: inData.flags.ddb.notes,
         tokens: inData.tokens.map((token) => {

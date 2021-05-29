@@ -65,8 +65,8 @@ function getId(document, docType) {
       r.ddbId == document.flags.ddb.ddbId &&
       r.cobaltId === document.flags.ddb.cobaltId &&
       r.parentId === document.flags.ddb.parentId;
-    const chunkCheck = (contentChunkId) ? 
-      contentChunkId == r.contentChunkId :
+    const chunkCheck = (contentChunkId !== null) ? 
+      contentChunkId === r.contentChunkId :
       true;
     const sceneNotes = (document.flags.ddb.note) ? 
       document.name === r.name && r.note :
@@ -719,7 +719,12 @@ function generateScene(row, img) {
   // console.log(`${journal.name}, ${journal.folder}`);
 
   let adjustment = (scene.flags.ddb.contentChunkId) ?
-    sceneAdjustments.find((s) => scene.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId) :
+    sceneAdjustments.find((s) =>
+      scene.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId &&
+      scene.flags.ddb.ddbId === s.flags.ddb.ddbId &&
+      scene.flags.ddb.parentId === s.flags.ddb.parentId &&
+      scene.flags.ddb.cobaltId === s.flags.ddb.cobaltId
+    ) :
     sceneAdjustments.find((s) => scene.name.includes(s.name));
 
   if (adjustment) {
@@ -1291,6 +1296,8 @@ async function collectionFinished(err, count) {
     console.log("Complete! Generating output files...");
     outputAdventure(config);
     outputJournals(generatedJournals, config);
+    console.log("Generated Scenes:");
+    console.log(generatedScenes.map(s => `${s.name}: ${s._id} : ${s.flags.ddb.contentChunkId }`));
     outputScenes(generatedScenes, config);
     outputTables(generatedTables, config);
     const allContent = generatedJournals.concat(generatedScenes, generatedTables);
