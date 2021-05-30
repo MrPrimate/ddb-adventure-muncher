@@ -1,3 +1,9 @@
+# 0.1.9
+
+* VRGtR - Scene aligned and walled (Thanks @Zac !)
+* IDRotFM scene improvements and new additions (Thanks @michaelko777#7952 !)
+
+
 # 0.1.8
 
 * Loads moar ToA scenes (Thanks @michaelko777#7952 !)
