@@ -76,14 +76,22 @@ function importScene(conf, sceneFile) {
 
   let scenesData = getSceneAdjustments(bookCode);
 
+  const lookupFilter = (inData.flags.ddb && inData.flags.ddb.contentChunkId) ?
+    idTable[bookCode].filter((r) =>
+      r.docType == "Scene" &&
+      r.contentChunkId && inData.flags.ddb.contentChunkId &&
+      r.contentChunkId == inData.flags.ddb.contentChunkId
+    ) : 
+    null;
+
   let lookup = (inData.flags.ddb && inData.flags.ddb.contentChunkId) ?
     idTable[bookCode].find((r) =>
       r.docType == "Scene" &&
       r.contentChunkId && inData.flags.ddb.contentChunkId &&
-      r.contentChunkId === inData.flags.ddb.contentChunkId &&
-      r.ddbId === inData.flags.ddb.ddbId &&
-      r.parentId === inData.flags.ddb.parentId &&
-      r.cobaltId === inData.flags.ddb.cobaltId
+      r.contentChunkId == inData.flags.ddb.contentChunkId &&
+      r.ddbId == inData.flags.ddb.ddbId &&
+      r.parentId == inData.flags.ddb.parentId &&
+      r.cobaltId == inData.flags.ddb.cobaltId
     ) : 
     null;
 
@@ -102,6 +110,47 @@ function importScene(conf, sceneFile) {
       return;
     }
     
+  }
+
+  if (!lookupFilter || lookupFilter.length === 0){
+    console.log("######################################");
+    console.log("######################################");
+    console.log("######################################");
+    console.log("######################################");
+    console.log("CATASTROPHIC SCENE FAILURE!!!!!  No scenes at allll!");
+    console.log("######################################");
+    console.log("######################################");
+    console.log("######################################");
+    console.log("######################################");
+    //exit();
+  }
+  if (lookupFilter && (lookup && lookupFilter.length > 1) || (!lookup && lookupFilter.length > 0)) {
+    console.log("######################################");
+    console.log(`Scene Mismatch failure: ${inData.name}`);
+    if (lookupFilter.length > 1) {
+      console.log("######################################");
+      console.log("######################################");
+      console.log("######################################");
+      console.log("Multiple Scene match, oh noes, but this might not be a problem");
+      console.log("######################################");
+      console.log("######################################");
+      console.log("######################################");
+      // exit();
+    } else {
+      console.log(`IN: ${inData.flags.ddb.contentChunkId } : ${inData.flags.ddb.ddbId }: ${inData.flags.ddb.cobaltId }: ${inData.flags.ddb.parentId }`);
+      const singleMatch = lookupFilter[0];
+      // console.log(singleMatch);
+      console.log(`LO: ${singleMatch.contentChunkId } : ${singleMatch.ddbId }: ${singleMatch.cobaltId }: ${singleMatch.parentId }`);
+      console.log("Correcting indata...");
+      inData.flags.ddb.ddbId = singleMatch.ddbId;
+      inData.flags.ddb.cobaltId = singleMatch.cobaltId;
+      inData.flags.ddb.parentId = singleMatch.parentId;
+      utils.saveJSONFile(inData, configFile);
+      lookup = singleMatch;
+    }
+    console.log("######################################");
+  } else {
+    console.log("All checks pass!");
   }
 
   // config.lookups["monsters"];
@@ -164,10 +213,10 @@ function importScene(conf, sceneFile) {
   if (inData.flags.ddb) {
     const newFlags = {
       ddb: {
-        ddbId: inData.flags.ddb.ddbId,
-        cobaltId: inData.flags.ddb.cobaltId,
-        parentId: inData.flags.ddb.parentId,
-        contentChunkId: inData.flags.ddb.contentChunkId,
+        ddbId: lookup.ddbId,
+        cobaltId: lookup.cobaltId,
+        parentId: lookup.parentId,
+        contentChunkId: lookup.contentChunkId,
         notes: inData.flags.ddb.notes,
         tokens: inData.tokens.map((token) => {
           delete(token.bar2);

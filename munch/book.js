@@ -63,8 +63,8 @@ function getId(document, docType) {
     const basicCheck = r.type == document.type &&
       r.docType == docType &&
       r.ddbId == document.flags.ddb.ddbId &&
-      r.cobaltId === document.flags.ddb.cobaltId &&
-      r.parentId === document.flags.ddb.parentId;
+      r.cobaltId == document.flags.ddb.cobaltId &&
+      r.parentId == document.flags.ddb.parentId;
     const chunkCheck = (contentChunkId !== null) ? 
       contentChunkId === r.contentChunkId :
       true;
@@ -721,9 +721,9 @@ function generateScene(row, img) {
   let adjustment = (scene.flags.ddb.contentChunkId) ?
     sceneAdjustments.find((s) =>
       scene.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId &&
-      scene.flags.ddb.ddbId === s.flags.ddb.ddbId &&
-      scene.flags.ddb.parentId === s.flags.ddb.parentId &&
-      scene.flags.ddb.cobaltId === s.flags.ddb.cobaltId
+      scene.flags.ddb.ddbId == s.flags.ddb.ddbId &&
+      scene.flags.ddb.parentId == s.flags.ddb.parentId &&
+      scene.flags.ddb.cobaltId == s.flags.ddb.cobaltId
     ) :
     sceneAdjustments.find((s) => scene.name.includes(s.name));
 
@@ -769,8 +769,13 @@ function generateScene(row, img) {
           });
         }
       });
-      delete(adjustment.flags.ddb.notes);
     }
+    delete(adjustment.flags.ddb.notes);
+    delete(adjustment.flags.ddb.cobaltId);
+    delete(adjustment.flags.ddb.parentId);
+    delete(adjustment.flags.ddb.ddbId);
+    delete(adjustment.flags.ddb.contentChunkId);
+    adjustment.flags.ddb["sceneAdjustment"] = true;
     scene = _.merge(scene, adjustment);
   }
 
@@ -1296,7 +1301,7 @@ async function collectionFinished(err, count) {
     outputAdventure(config);
     outputJournals(generatedJournals, config);
     console.log("Generated Scenes:");
-    console.log(generatedScenes.map(s => `${s.name}: ${s._id} : ${s.flags.ddb.contentChunkId }`));
+    console.log(generatedScenes.map(s => `${s.name}: ${s._id} : ${s.flags.ddb.contentChunkId } : ${s.flags.ddb.ddbId }: ${s.flags.ddb.cobaltId }: ${s.flags.ddb.parentId }`));
     outputScenes(generatedScenes, config);
     outputTables(generatedTables, config);
     const allContent = generatedJournals.concat(generatedScenes, generatedTables);
