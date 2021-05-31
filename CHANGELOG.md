@@ -2,6 +2,7 @@
 
 * VRGtR - Scene aligned and walled (Thanks @Zac !)
 * IDRotFM scene improvements and new additions (Thanks @michaelko777#7952 !)
+* Many adventures no longer loaded scenes walls, and config etc :(
 
 
 # 0.1.8
