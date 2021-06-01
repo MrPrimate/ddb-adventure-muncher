@@ -226,6 +226,7 @@ function importScene(conf, sceneFile) {
       }
     };
     newFlags.stairways = inData.flags.stairways ? inData.flags.stairways : [];
+    newFlags["perfect-vision"] = inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [];
     delete(inData.flags);
     inData.flags = newFlags;
   } else {
