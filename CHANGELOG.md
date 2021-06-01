@@ -1,3 +1,7 @@
+# 0.1.10
+
+* LMOP map improvements (thanks @AceKokuren !)
+
 # 0.1.9
 
 * VRGtR - Scene aligned and walled (Thanks @Zac !)
