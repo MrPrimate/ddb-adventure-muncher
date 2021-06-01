@@ -44,7 +44,8 @@ function foundryCompendiumReplace(text, config) {
       if (lookupValue) {
         const lookupEntry = lookupValue.find((e) => e.id == lookupMatch[1]);
         if (lookupEntry) {
-          text = text.replace(node.outerHTML, `@Compendium[${lookupEntry.compendium}.${lookupEntry._id}]{${node.textContent}}`);
+          const documentRef = lookupEntry.documentName ? lookupEntry.documentName : lookupEntry._id;
+          text = text.replace(node.outerHTML, `@Compendium[${lookupEntry.compendium}.${documentRef}]{${node.textContent}}`);
         } else {
           console.log(`NO Lookup Compendium Entry for ${node.outerHTML}`);
         }
