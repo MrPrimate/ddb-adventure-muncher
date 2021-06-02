@@ -1,6 +1,7 @@
 # 0.1.10
 
 * LMOP map improvements (thanks @AceKokuren !)
+* Lots of adjusted AI Scenes (Thanks @Pariah Zero !)
 
 # 0.1.9
 
