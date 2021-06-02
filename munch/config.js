@@ -13,7 +13,7 @@ var CONFIG_FILE = `${configDir}/config.json`;
 var LOOKUP_FILE = `${configDir}/lookup.json`;
 var config;
 
-const defaultEnhancementEndpoint = "https://ddb.mrprimate.co.uk";
+const defaultEnhancementEndpoint = "https://proxy.ddb.mrprimate.co.uk";
 
 
 function setConfigDir (dir) {
