@@ -795,7 +795,14 @@ function generateScene(row, img) {
 
   if (config.debug) console.log(`Scene name: "${scene.name}" Img: "${scene.img}"`);
   //const enhancedScene = enhancedScenes.find((es) => es.name === scene.name && es.img === scene.img);
-  const enhancedScene = enhancedScenes.find((es) => es.img === scene.img && es.bookCode === config.run.bookCode);
+  const enhancedScene = enhancedScenes.find((es) => {
+    const missingNameMatch = row.missing ?
+      row.name === es.name && es.missing :
+      true;
+    return missingNameMatch && 
+      es.img === scene.img &&
+      es.bookCode === config.run.bookCode;
+  });
   if (config.debug) console.log(enhancedScene);
 
   if (enhancedScene) {
@@ -859,9 +866,13 @@ function generateMissingScenes(journals, scenes) {
 
   console.log("****************************");
   console.log("Generating Missing Scenes");
+  console.log("----------------------------");
+  console.log(enhancedScenes.filter((es) => es.missing));
+  console.log("----------------------------");
 
   enhancedScenes.filter((es) => es.missing).forEach((es) => {
     const id =  90000 + es.ddbId + tmpCount;
+    const adjustName = (es.adjustName && es.adjustName !== "") ? es.adjustName : es.name;
     const row = {
       title: `${es.name}`,
       id: id,
@@ -869,14 +880,16 @@ function generateMissingScenes(journals, scenes) {
       parentId: es.parentId,
       cobaltId: es.cobaltId,
       documentName: es.name,
-      sceneName: es.name,
+      sceneName: adjustName,
       contentChunkId: `ddb-missing-${config.run.bookCode}-${id}`,
+      missing: true,
     };
     console.log(`Attempting ${row.title} with ${row.contentChunkId}`);
     tmpCount++;
     const playerEntry = generateJournalEntry(row, es.img);
     journals.push(playerEntry);
-    scenes.push(generateScene(row, es.img));
+    //scenes.push(generateScene(row, es.img));
+    generateScene(row, es.img)
   });
 
   return [journals, scenes];

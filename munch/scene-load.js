@@ -227,6 +227,8 @@ function importScene(conf, sceneFile) {
     };
     newFlags.stairways = inData.flags.stairways ? inData.flags.stairways : [];
     newFlags["perfect-vision"] = inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [];
+    newFlags["dynamic-illumination"] = inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [];
+    
     delete(inData.flags);
     inData.flags = newFlags;
   } else {
@@ -235,7 +237,7 @@ function importScene(conf, sceneFile) {
   // we have moved tokens to flags for future use = they will need to be "jigged"
   delete(inData.tokens);
 
-  inData.name = lookup.name;
+  if (inData.flags.ddb.contentChunkId && !inData.flags.ddb.contentChunkId.startsWith("ddb-missing")) inData.name = lookup.name;
   if (inData.navName == "") delete((inData.navName));
 
   // console.log(sceneData);
