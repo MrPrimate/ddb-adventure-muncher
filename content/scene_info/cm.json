@@ -197,18 +197,6 @@
                 "c": [
                     2208,
                     1056,
-                    1920,
-                    1056
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1920,
-                    1056,
                     1728,
                     1056
                 ],
@@ -223,18 +211,6 @@
                     1056,
                     1728,
                     756
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1920,
-                    756,
-                    1920,
-                    1056
                 ],
                 "door": 0,
                 "ds": 0,
@@ -561,30 +537,6 @@
                     1728
                 ],
                 "door": 1,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1716,
-                    1728,
-                    1716,
-                    1716
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1716,
-                    1716,
-                    1716,
-                    1632
-                ],
-                "door": 0,
                 "ds": 0,
                 "move": 1,
                 "sense": 1
@@ -1752,6 +1704,78 @@
                 "ds": 0,
                 "move": 1,
                 "sense": 1
+            },
+            {
+                "c": [
+                    1716,
+                    1632,
+                    1716,
+                    1728
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1920,
+                    756,
+                    1920,
+                    864
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1920,
+                    864,
+                    1920,
+                    960
+                ],
+                "door": 2,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1920,
+                    1056,
+                    1920,
+                    960
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1344,
+                    1248,
+                    3744,
+                    1248
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
+            },
+            {
+                "c": [
+                    1344,
+                    2016,
+                    3744,
+                    2016
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
             }
         ],
         "drawings": [],
@@ -1763,18 +1787,272 @@
         "lights": [
             {
                 "angle": 360,
-                "bright": 6,
+                "bright": 20,
                 "darknessThreshold": 0,
-                "dim": 12,
+                "dim": 40,
                 "rotation": 0,
                 "t": "l",
-                "tintAlpha": 0.49,
+                "tintAlpha": 0.16,
                 "x": 2928,
                 "y": 1104,
                 "lightAnimation": {
-                    "speed": 4,
-                    "intensity": 7,
-                    "type": "torch"
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3312,
+                "y": 720,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2592,
+                "y": 720,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2208,
+                "y": 816,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 1920,
+                "y": 816,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2688,
+                "y": 1728,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2592,
+                "y": 1440,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2112,
+                "y": 1728,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2976,
+                "y": 1440,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3120,
+                "y": 1392,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2448,
+                "y": 2208,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3120,
+                "y": 2592,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2784,
+                "y": 2592,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 1392,
+                "y": 1632,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3696,
+                "y": 1632,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 1,
+                    "intensity": 1
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 26.47,
+                "darknessThreshold": 0,
+                "dim": 52.94,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.25,
+                "x": 3744,
+                "y": 912,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
                 },
                 "hidden": false
             }
@@ -1787,7 +2065,7 @@
                 "contentChunkId": "MapMap201fistandiasmansion-player",
                 "notes": [
                     {
-                        "label": "M1. Foyer and Hallway",
+                        "label": "M01. Foyer and Hallway",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2021,
@@ -1795,12 +2073,13 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "e296a549-7382-466d-9b02-bd761d839f17",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "89y039zxv1gPGk8q"
+                            "linkId": "B4F9LP07uolwqwFW",
+                            "pin": "25921824"
                         },
                         "positions": [
                             {
@@ -1809,12 +2088,12 @@
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
-                        "label": "M2. Patio",
+                        "label": "M02. Patio",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2023,
@@ -1822,26 +2101,27 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "aac271fc-7a0f-4947-86f5-7be97f507a4d",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "pxpdmkhujRxRWtD7"
+                            "linkId": "6e0pUDgqxfk0w7KB",
+                            "pin": "15841584"
                         },
                         "positions": [
                             {
-                                "x": 1584,
-                                "y": 1584
+                                "x": 1632,
+                                "y": 1536
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
-                        "label": "M3. Library",
+                        "label": "M03. Library",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2030,
@@ -1849,12 +2129,13 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "acc4a106-ca9e-4982-a782-ac3e5eacfe34",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "W85jhXbcocYx2job"
+                            "linkId": "Nc0htxsvQIBufMno",
+                            "pin": "19201536"
                         },
                         "positions": [
                             {
@@ -1863,12 +2144,12 @@
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
-                        "label": "M4. Exercise Room",
+                        "label": "M04. Exercise Room",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2035,
@@ -1876,26 +2157,27 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "9d4ac249-d1a7-4d47-a47a-9ac7ee1a3693",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "SDDHArfUig0OiAFd"
+                            "linkId": "FabNwT8jUjfcGa0X",
+                            "pin": "22561584"
                         },
                         "positions": [
                             {
-                                "x": 2256,
-                                "y": 1584
+                                "x": 2208,
+                                "y": 1536
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
-                        "label": "M5. Study",
+                        "label": "M05. Study",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2044,
@@ -1903,26 +2185,27 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "e29ba5a4-67b4-458c-9527-141537f64678",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "AN6X8Aw0QVTbfadD"
+                            "linkId": "irHL1Xq24fMau2IJ",
+                            "pin": "25441584"
                         },
                         "positions": [
                             {
-                                "x": 2544,
-                                "y": 1584
+                                "x": 2496,
+                                "y": 1536
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
-                        "label": "M6. Kitchen",
+                        "label": "M06. Kitchen",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2053,
@@ -1930,26 +2213,27 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "800bfbde-d6b0-42a6-a1d7-bde33f8279d6",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "OogUY1iUbeibPjGO"
+                            "linkId": "Cz708X3DyMXLxDY2",
+                            "pin": "29281584"
                         },
                         "positions": [
                             {
-                                "x": 2928,
-                                "y": 1584
+                                "x": 2880,
+                                "y": 1536
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
-                        "label": "M8. Dining Room",
+                        "label": "M08. Dining Room",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2062,
@@ -1957,26 +2241,27 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "308da041-80ba-4c2f-9c44-27c4fe1a15a7",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "yRJ53e8rRMkH2K2B"
+                            "linkId": "xNXVAtxSFvGYqAS0",
+                            "pin": "32161584"
                         },
                         "positions": [
                             {
-                                "x": 3216,
-                                "y": 1584
+                                "x": 3168,
+                                "y": 1536
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
-                        "label": "M9. Arboretum",
+                        "label": "M09. Arboretum",
                         "flags": {
                             "cobaltId": null,
                             "ddbId": 2067,
@@ -1984,22 +2269,23 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "a8494c97-e826-4927-ba00-037720f3499d",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "2IdEr7brHyDX7oGk"
+                            "linkId": "8nwXyYD0su5uPFYB",
+                            "pin": "35041584"
                         },
                         "positions": [
                             {
-                                "x": 3504,
-                                "y": 1584
+                                "x": 3552,
+                                "y": 1632
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
@@ -2011,22 +2297,23 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "cc4146ee-648f-4a62-95a4-9aaaa411a793",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "3Bu519yIMCvJa588"
+                            "linkId": "UERk61zDbAp9k6Ft",
+                            "pin": "2736720"
                         },
                         "positions": [
                             {
-                                "x": 2736,
-                                "y": 720
+                                "x": 2688,
+                                "y": 768
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
@@ -2038,22 +2325,23 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "5c481a3f-8480-4313-9ac0-020ad225f4ff",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "huDsC45s6EqlsxDX"
+                            "linkId": "auwwH7JpRgrl86v7",
+                            "pin": "2448912"
                         },
                         "positions": [
                             {
-                                "x": 2448,
-                                "y": 912
+                                "x": 2400,
+                                "y": 960
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
@@ -2065,217 +2353,804 @@
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "b6358a87-e11d-4a26-a060-fe2f4b66c249",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "2IPiqVIkDiR1ncbW"
+                            "linkId": "1AxxtYhvSkG34E7g",
+                            "pin": "2064912"
                         },
                         "positions": [
                             {
-                                "x": 2064,
-                                "y": 912
+                                "x": 2112,
+                                "y": 864
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
                         "label": "M13. The Chained Library",
                         "flags": {
                             "cobaltId": null,
-                            "ddbId": 2124,
+                            "ddbId": 2089,
                             "bookCode": "cm",
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "22cb33e6-fea9-4018-a89a-e1e3d34dd5c6",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "qSdJUhQV4cFUYzTV"
+                            "linkId": "o325wSrAyLUq8onQ",
+                            "pin": "18721008"
                         },
                         "positions": [
                             {
-                                "x": 1872,
-                                "y": 1008
+                                "x": 1824,
+                                "y": 960
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
                         "label": "M14. Trophy Room",
                         "flags": {
                             "cobaltId": null,
-                            "ddbId": 2128,
+                            "ddbId": 2093,
                             "bookCode": "cm",
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "be06c23d-4da9-4e7b-87c0-1e56df58259a",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "zpeenqxgkednlbuh"
+                            "linkId": "IJiEMkgvbZGr6XUn",
+                            "pin": "2928912"
                         },
                         "positions": [
                             {
-                                "x": 2928,
-                                "y": 912
+                                "x": 2880,
+                                "y": 960
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
                         "label": "M15. Bedroom",
                         "flags": {
                             "cobaltId": null,
-                            "ddbId": 2134,
+                            "ddbId": 2099,
                             "bookCode": "cm",
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "55ec8b58-b6d8-48e2-b07f-408e764b0d8c",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "EO5A4bOr4mxlW1Ex"
+                            "linkId": "42nCEHMjovryp9dM",
+                            "pin": "3216912"
                         },
                         "positions": [
                             {
-                                "x": 3216,
-                                "y": 912
+                                "x": 3168,
+                                "y": 864
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
                         "label": "M16. Balcony",
                         "flags": {
                             "cobaltId": null,
-                            "ddbId": 2138,
+                            "ddbId": 2102,
                             "bookCode": "cm",
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "f642d6b3-bda2-4c1f-8b36-16b482368e5c",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "DN1dj6pwXDEzfktN"
+                            "linkId": "JMFaHpSQGiFxdpwC",
+                            "pin": "3504912"
                         },
                         "positions": [
                             {
-                                "x": 3504,
-                                "y": 912
+                                "x": 3456,
+                                "y": 960
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
                         "label": "M17. Alchemical Laboratory",
                         "flags": {
                             "cobaltId": null,
-                            "ddbId": 2144,
+                            "ddbId": 2108,
                             "bookCode": "cm",
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "b1627ce0-1226-4173-95bc-31c4b2f3c7aa",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "Ll3YPsOLUPJXAXr4"
+                            "linkId": "uewLefNgLFniRxoi",
+                            "pin": "25442448"
                         },
                         "positions": [
                             {
-                                "x": 2544,
-                                "y": 2448
+                                "x": 2496,
+                                "y": 2400
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
                         "label": "M18. Summoning Room",
                         "flags": {
                             "cobaltId": null,
-                            "ddbId": 2147,
+                            "ddbId": 2111,
                             "bookCode": "cm",
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "23c4ce7b-c8cd-4c80-9443-a3838557e71f",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "owqEu4IUIQ7K3ruW"
+                            "linkId": "mbCzNUDJbo1om7hD",
+                            "pin": "29282352"
                         },
                         "positions": [
                             {
-                                "x": 2928,
-                                "y": 2352
+                                "x": 2880,
+                                "y": 2304
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     },
                     {
                         "label": "M19. Preserved Menagerie",
                         "flags": {
                             "cobaltId": null,
-                            "ddbId": 2152,
+                            "ddbId": 2116,
                             "bookCode": "cm",
                             "slug": "the-joy-of-extradimensional-spaces#FistandiasMansion",
                             "contentChunkId": "0929e5fa-3898-4fc8-800c-63e9c4f58bd4",
                             "userData": {
-                                "userDisplayName": "OniNoKen"
+                                "userDisplayName": "Triasmus"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "b8LmiadSiCx0Qnyi"
+                            "linkId": "yl6IcCSn6OOa7ePW",
+                            "pin": "32162352"
                         },
                         "positions": [
                             {
-                                "x": 3216,
-                                "y": 2352
+                                "x": 3168,
+                                "y": 2304
                             }
                         ],
                         "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
+                        "iconTint": null,
+                        "textColor": null,
                         "textAnchor": 1
                     }
                 ],
-                "tokens": []
+                "tokens": [
+                    {
+                        "_id": "2RgK3CtLmfF4Gcun",
+                        "name": "test",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 3456,
+                        "y": 768,
+                        "disposition": 1,
+                        "flags": {},
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "tint": null,
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "x6zlrZu9gWvLcWpF",
+                        "name": "Sage",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 2592,
+                        "y": 1728,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 1528979,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "WhZrkvvXzuWROHB3",
+                        "name": "Swarm of Animated Books",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 1920,
+                        "y": 1344,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 1528985,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "0ooqBKEvbqu66cHa",
+                        "name": "Animated Broom",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 2208,
+                        "y": 1344,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 1528953,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "5YF1DhNXovEfVrgC",
+                        "name": "Homunculus",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.5,
+                        "x": 2976,
+                        "y": 1632,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16926,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "XzwwQaioOWjbJvQa",
+                        "name": "Homunculus",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.5,
+                        "x": 2880,
+                        "y": 1632,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16926,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "nR2kg8ymILnrAZE9",
+                        "name": "Mimic Chair",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 3072,
+                        "y": 1440,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 1528975,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "XQ1kYPieXFx4oeFN",
+                        "name": "Faerie Dragon (Younger)",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.5,
+                        "x": 3552,
+                        "y": 1440,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17107,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "4IOnawvEh71JSgHr",
+                        "name": "Faerie Dragon (Younger)",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.5,
+                        "x": 3552,
+                        "y": 1632,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17107,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "Zvd7gM0looavVrki",
+                        "name": "Animated Chained Library",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 1632,
+                        "y": 768,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 1528954,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "QOs7kivqrEGAWgCq",
+                        "name": "Flying Sword",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 2784,
+                        "y": 1056,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16865,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "QP7YblbEsgDD25k9",
+                        "name": "Flying Sword",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 2976,
+                        "y": 1056,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16865,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "Atuu9Ket9rznmmJL",
+                        "name": "Quasit",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.5,
+                        "x": 2784,
+                        "y": 2496,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16988,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "9LuK5mh5Vj8opb5L",
+                        "name": "Crawling Claw",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.5,
+                        "x": 3264,
+                        "y": 2400,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17139,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "mlsIcxDV57STHlTQ",
+                        "name": "Crawling Claw",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.5,
+                        "x": 3264,
+                        "y": 2304,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17139,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "YVerUI8SesbSoPSd",
+                        "name": "Crawling Claw",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.5,
+                        "x": 3168,
+                        "y": 2400,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17139,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "obMtPMSKz9RisTZa",
+                        "name": "Crawling Claw",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.5,
+                        "x": 3168,
+                        "y": 2304,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17139,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {
+                            "data": {
+                                "details": {
+                                    "cr": "0"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "_id": "5elimBsD1aarjQeb",
+                        "name": "Slaad Tadpole",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.5,
+                        "x": 3264,
+                        "y": 2208,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17117,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    }
+                ]
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -2643,9 +3518,75 @@
                 "ds": 0,
                 "move": 1,
                 "sense": 1
+            },
+            {
+                "c": [
+                    733,
+                    2805,
+                    2879,
+                    2805
+                ],
+                "door": 0,
+                "ds": 0,
+                "move": 1,
+                "sense": 1
             }
         ],
-        "drawings": [],
+        "drawings": [
+            {
+                "_id": "rBp1dP6Oc4aXiD1H",
+                "author": "anDPMZp4AKJNUPD1",
+                "type": "r",
+                "x": 2231,
+                "y": 1519,
+                "width": 308.375,
+                "height": 170.375,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 1,
+                "fillColor": "#fafafa",
+                "fillAlpha": 1,
+                "strokeWidth": 8,
+                "strokeColor": "#fafafa",
+                "strokeAlpha": 1,
+                "texture": null,
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#FFFFFF",
+                "textAlpha": 1,
+                "hidden": false,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "0BFfKHjYJ5T4MK4P",
+                "author": "anDPMZp4AKJNUPD1",
+                "type": "r",
+                "x": 2465,
+                "y": 1413,
+                "width": 63.75,
+                "height": -21.125,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#35cc28",
+                "fillAlpha": 0.5,
+                "strokeWidth": 8,
+                "strokeColor": "#35cc28",
+                "strokeAlpha": 1,
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#FFFFFF",
+                "textAlpha": 1,
+                "hidden": false,
+                "locked": false,
+                "flags": {}
+            }
+        ],
         "weather": "",
         "darkness": 0,
         "tokenVision": true,
@@ -2658,10 +3599,483 @@
                 "cobaltId": null,
                 "parentId": 1173,
                 "contentChunkId": "MapMap301amberdunehideout-player",
-                "notes": [],
-                "tokens": []
+                "notes": [
+                    {
+                        "label": "A01. Common Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2027,
+                            "bookCode": "cm",
+                            "slug": "mazfroths-mighty-digressions#AmberduneHideout",
+                            "contentChunkId": "249bcce0-da31-4f9c-9358-b2cae8479a3f",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1173,
+                            "linkId": "UuQKMMvVmfa2a8OH"
+                        },
+                        "positions": [
+                            {
+                                "x": 2210,
+                                "y": 2380
+                            }
+                        ],
+                        "iconSize": 85,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "A02. Kitchen",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2030,
+                            "bookCode": "cm",
+                            "slug": "mazfroths-mighty-digressions#AmberduneHideout",
+                            "contentChunkId": "4987a722-20ea-49b0-9390-ad0be685068b",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1173,
+                            "linkId": "72jKVgkwMCkBhaag"
+                        },
+                        "positions": [
+                            {
+                                "x": 2550,
+                                "y": 2210
+                            }
+                        ],
+                        "iconSize": 85,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "A03. Corridor Dormitory",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2034,
+                            "bookCode": "cm",
+                            "slug": "mazfroths-mighty-digressions#AmberduneHideout",
+                            "contentChunkId": "f3ff1177-a650-415b-877f-b2a20d5e5220",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1173,
+                            "linkId": "Jy0rFfWQbkCBEYON"
+                        },
+                        "positions": [
+                            {
+                                "x": 1700,
+                                "y": 1870
+                            }
+                        ],
+                        "iconSize": 85,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "A04. Korvala’s Office",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2043,
+                            "bookCode": "cm",
+                            "slug": "mazfroths-mighty-digressions#AmberduneHideout",
+                            "contentChunkId": "70fc23bb-6d01-484d-aa0a-f18e03073971",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1173,
+                            "linkId": "yE46DtLa2KKmId1r"
+                        },
+                        "positions": [
+                            {
+                                "x": 2550,
+                                "y": 1530
+                            }
+                        ],
+                        "iconSize": 85,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "A05. Storage Room",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2048,
+                            "bookCode": "cm",
+                            "slug": "mazfroths-mighty-digressions#AmberduneHideout",
+                            "contentChunkId": "1a579974-a6e0-4c56-bac3-b845343e2524",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1173,
+                            "linkId": "YSwKOkifXwgPtqQc"
+                        },
+                        "positions": [
+                            {
+                                "x": 1870,
+                                "y": 1530
+                            }
+                        ],
+                        "iconSize": 85,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "A06. Hidden Vault",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2054,
+                            "bookCode": "cm",
+                            "slug": "mazfroths-mighty-digressions#AmberduneHideout",
+                            "contentChunkId": "3239e280-ca0e-4fa6-86f0-de0d0f871a25",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1173,
+                            "linkId": "ewm4wlGkoJilo8OR"
+                        },
+                        "positions": [
+                            {
+                                "x": 1700,
+                                "y": 3060
+                            }
+                        ],
+                        "iconSize": 85,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": [
+                    {
+                        "_id": "oMrge9KPjSqcRAQL",
+                        "name": "Rug of Smothering",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 1700,
+                        "y": 2040,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17000,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "QbX2PfXsX5zvkqei",
+                        "name": "Jackalwere",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 2550,
+                        "y": 2210,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17164,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "fxlRz3XJAJqLnfxc",
+                        "name": "Jackalwere",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 2380,
+                        "y": 2040,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17164,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "U6npp3k4fHCsYDfE",
+                        "name": "Jackalwere",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 2380,
+                        "y": 1870,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17164,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {
+                            "effects": [
+                                {
+                                    "_id": "vwesgxtav7iuctxc",
+                                    "changes": [],
+                                    "disabled": false,
+                                    "duration": {
+                                        "startTime": 0
+                                    },
+                                    "icon": "icons/svg/falling.svg",
+                                    "label": "Prone",
+                                    "transfer": false,
+                                    "flags": {
+                                        "core": {
+                                            "statusId": "prone"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "_id": "lA6oc4jRu4Um1AQN",
+                        "name": "Jackalwere",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 2380,
+                        "y": 1360,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17164,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "fVCg0HfvjGTEjzQk",
+                        "name": "Gingwatzim",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 2210,
+                        "y": 1360,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 1528964,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "INJaImakEWW2t0kx",
+                        "name": "Gingwatzim",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 2550,
+                        "y": 1360,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 1528964,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "i1RTYiA7anirS4kq",
+                        "name": "Jackalwere",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 1870,
+                        "y": 1360,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17164,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "IlQYGfxa54xgcTzy",
+                        "name": "Mimic",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 1530,
+                        "y": 1360,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16957,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    }
+                ]
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -2706,8 +4120,8 @@
                 "c": [
                     1881,
                     2565,
-                    2053,
-                    2571
+                    2052,
+                    2565
                 ],
                 "door": 0,
                 "ds": 0,
@@ -2716,8 +4130,8 @@
             },
             {
                 "c": [
-                    2053,
-                    2571,
+                    2052,
+                    2565,
                     2052,
                     2233
                 ],
@@ -2731,18 +4145,6 @@
                     2052,
                     2233,
                     2052,
-                    2148
-                ],
-                "door": 1,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    2052,
-                    2148,
-                    2052,
                     2062
                 ],
                 "door": 1,
@@ -2754,7 +4156,7 @@
                 "c": [
                     2052,
                     2062,
-                    2062,
+                    2052,
                     1881
                 ],
                 "door": 0,
@@ -2764,9 +4166,9 @@
             },
             {
                 "c": [
-                    2062,
+                    2052,
                     1881,
-                    2062,
+                    2052,
                     1539
                 ],
                 "door": 0,
@@ -2776,9 +4178,9 @@
             },
             {
                 "c": [
-                    2062,
+                    2052,
                     1539,
-                    1549,
+                    1539,
                     1539
                 ],
                 "door": 0,
@@ -2788,21 +4190,9 @@
             },
             {
                 "c": [
-                    1549,
                     1539,
-                    1549,
-                    1881
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1549,
-                    1881,
-                    1549,
+                    1539,
+                    1539,
                     2052
                 ],
                 "door": 0,
@@ -2812,10 +4202,10 @@
             },
             {
                 "c": [
-                    1549,
+                    1539,
                     2052,
-                    1549,
-                    2137
+                    1539,
+                    2223
                 ],
                 "door": 1,
                 "ds": 0,
@@ -2825,7 +4215,7 @@
             {
                 "c": [
                     1539,
-                    2404,
+                    2223,
                     1539,
                     2565
                 ],
@@ -2837,7 +4227,7 @@
             {
                 "c": [
                     1539,
-                    2404,
+                    2394,
                     1197,
                     2394
                 ],
@@ -2862,7 +4252,7 @@
                 "c": [
                     1197,
                     1881,
-                    1549,
+                    1720,
                     1881
                 ],
                 "door": 0,
@@ -2872,7 +4262,7 @@
             },
             {
                 "c": [
-                    2062,
+                    1891,
                     1881,
                     2394,
                     1881
@@ -2908,73 +4298,13 @@
             },
             {
                 "c": [
-                    1549,
-                    1881,
-                    1710,
-                    1881
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
                     1710,
                     1881,
-                    1784,
+                    1891,
                     1881
                 ],
                 "door": 1,
                 "ds": 1,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1784,
-                    1881,
-                    1881,
-                    1881
-                ],
-                "door": 1,
-                "ds": 1,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1881,
-                    1881,
-                    2062,
-                    1881
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1539,
-                    2404,
-                    1549,
-                    2212
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1549,
-                    2212,
-                    1549,
-                    2137
-                ],
-                "door": 1,
-                "ds": 0,
                 "move": 1,
                 "sense": 1
             }
@@ -2995,7 +4325,14 @@
                 "notes": [],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": {
+                "sightLimit": null,
+                "globalLight": "default",
+                "daylightColor": "",
+                "darknessColor": ""
+            },
+            "dynamic-illumination": []
         }
     },
     {
@@ -7362,7 +8699,14 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": {
+                "sightLimit": null,
+                "globalLight": "default",
+                "daylightColor": "",
+                "darknessColor": ""
+            },
+            "dynamic-illumination": []
         }
     }
 ]
