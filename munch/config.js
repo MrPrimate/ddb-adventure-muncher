@@ -72,7 +72,12 @@ function isConfig() {
   return false;
 }
 
-async function getConfig(bookCode, externalConfigFile, outputDirPath) {
+// const options = {
+//   bookCode: null,
+//   externalConfigFile: null,
+//   outputDirPath: null,
+// };
+async function getConfig(options = {}) {
   const configFile = path.resolve(__dirname,CONFIG_FILE);
   if (!config) config = utils.loadConfig(configFile);
   if (config.run) delete(config.run);
@@ -84,20 +89,20 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
     fs.mkdirSync(buildDir);
   }
 
-  if (externalConfigFile) {
-    const externalConfigPath = path.resolve(__dirname, externalConfigFile);
+  if (options.externalConfigFile) {
+    const externalConfigPath = path.resolve(__dirname, options.externalConfigFile);
     if (fs.existsSync(externalConfigPath)){
-      console.log(`Getting External Config file ${externalConfigFile}`);
+      console.log(`Getting External Config file ${options.externalConfigFile}`);
       const externalConfig = utils.loadConfig(externalConfigPath);
       config = _.merge(config, externalConfig);
       utils.saveJSONFile(config, configFile);
     }
   }
 
-  if (outputDirPath) {
-    outputDirPath = path.resolve(__dirname,outputDirPath);
-    if (fs.existsSync(outputDirPath)){
-      config.outputDirEnv = outputDirPath;
+  if (options.outputDirPath) {
+    options.outputDirPath = path.resolve(__dirname,options.outputDirPath);
+    if (fs.existsSync(options.outputDirPath)){
+      config.outputDirEnv = options.outputDirPath;
       utils.saveJSONFile(config, configFile);
     }
   }
@@ -112,7 +117,15 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
     utils.saveJSONFile(config, configFile);
   }
 
-  if (!bookCode) {
+  if (
+    (options.generateTokens === true || options.generateTokens === false) &&
+    config.generateTokens !== options.generateTokens
+  ) {
+    config.generateTokens = options.generateTokens;
+    utils.saveJSONFile(config, configFile);
+  }
+
+  if (!options.bookCode) {
     return config;
   }
 
@@ -125,13 +138,13 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
     exit();
   }
 
-  bookCode = bookCode.toLowerCase();
-  let bookId = DDB_CONFIG.sources.find((source) => source.name.toLowerCase() === bookCode.toLowerCase()).id;
+  options.bookCode = options.bookCode.toLowerCase();
+  let bookId = DDB_CONFIG.sources.find((source) => source.name.toLowerCase() === options.bookCode.toLowerCase()).id;
   if (!bookId) {
-    console.log(`Book ${bookCode} not found`);
+    console.log(`Book ${options.bookCode} not found`);
     exit();
   }
-  let book = DDB_CONFIG.sources.find((source) => source.name.toLowerCase() === bookCode).description;
+  let book = DDB_CONFIG.sources.find((source) => source.name.toLowerCase() === options.bookCode).description;
   let outputDirEnv = config.outputDirEnv;
   let dbsDir;
   if (!config.dbsDir) {
@@ -141,8 +154,8 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
   }
 
   let downloadDir = path.resolve(__dirname, dbsDir);
-  let sourceDir = path.resolve(__dirname, path.join(dbsDir, bookCode));
-  let outputDir = path.resolve(__dirname, path.join(buildDir, bookCode));
+  let sourceDir = path.resolve(__dirname, path.join(dbsDir, options.bookCode));
+  let outputDir = path.resolve(__dirname, path.join(buildDir, options.bookCode));
   config.subDirs = [
     "journal",
     // "compendium",
@@ -150,13 +163,13 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
     "table",
   ];
 
-  console.log(`Pulling ${book} (${bookCode}) off the shelf...`);
+  console.log(`Pulling ${book} (${options.bookCode}) off the shelf...`);
   console.log(`Saving adventures to ${outputDir}`);
 
   if (!fs.existsSync(downloadDir)){
     fs.mkdirSync(downloadDir);
   }
-  const bookZipPath = path.join(downloadDir, `${bookCode}.zip`);
+  const bookZipPath = path.join(downloadDir, `${options.bookCode}.zip`);
   if (!fs.existsSync(bookZipPath)){
     console.log(`Downloading ${book} ... this might take a while...`);
     await ddb.downloadBook(bookId, config.cobalt, bookZipPath);
@@ -177,7 +190,7 @@ async function getConfig(bookCode, externalConfigFile, outputDirPath) {
     key: key,
     book: book,
     bookId: bookId,
-    bookCode: bookCode,
+    bookCode: options.bookCode,
     outputDir: outputDir,
     sourceDir: sourceDir,
     outputDirEnv: path.resolve(__dirname, outputDirEnv),

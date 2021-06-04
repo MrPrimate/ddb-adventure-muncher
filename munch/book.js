@@ -704,7 +704,7 @@ function generateScene(row, img) {
   if (row.parentId) {
     row.cobaltId = row.parentId;
     scene.flags.ddb.parentId = row.parentId;
-    delete(row.parentId);
+    delete row.parentId;
   }
   row.title = row.documentName;
   scene.folder = getFolderId(row, "Scene");
@@ -770,11 +770,11 @@ function generateScene(row, img) {
         }
       });
     }
-    delete(adjustment.flags.ddb.notes);
-    delete(adjustment.flags.ddb.cobaltId);
-    delete(adjustment.flags.ddb.parentId);
-    delete(adjustment.flags.ddb.ddbId);
-    delete(adjustment.flags.ddb.contentChunkId);
+    delete adjustment.flags.ddb.notes;
+    delete adjustment.flags.ddb.cobaltId;
+    delete adjustment.flags.ddb.parentId;
+    delete adjustment.flags.ddb.ddbId;
+    delete adjustment.flags.ddb.contentChunkId;
     adjustment.flags.ddb["sceneAdjustment"] = true;
     scene = _.merge(scene, adjustment);
   }
@@ -847,11 +847,13 @@ function generateScene(row, img) {
         }
 
         // these may have been gathered by accident
-        delete(token.bar2);
-        delete(token.displayName);
+        delete token.bar2;
+        delete token.displayName;
         return token;
       });
-    // delete(scene.flags.ddb.tokens);
+    // delete scene.flags.ddb.tokens;
+  } else {
+    scene.tokens = [];
   }
 
   generatedScenes.push(scene);

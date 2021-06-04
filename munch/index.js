@@ -19,18 +19,24 @@ async function downloadBooks(config) {
   // console.log(bookIds)
   for (let i = 0; i < bookIds.length; i++) {
     console.log(`Downloading ${bookIds[i].book}`);
-    await configurator.getConfig(bookIds[i].bookCode, null);
+    const options = {
+      bookCode: bookIds[i].bookCode,
+    };
+    await configurator.getConfig(options);
     console.log(`Download for ${bookIds[i].book} complete`);
   }
 }
 
 if (process.argv[2] === "config") {
-  configurator.getConfig(false, process.argv[3]).then(() => {
+  const options = {
+    externalConfigFile: process.argv[3],
+  };
+  configurator.getConfig(options).then(() => {
     console.log(`Loaded ${process.argv[3]}`);
     exit();
   });
 } else if (process.argv[2] === "list") {
-  configurator.getConfig(false, null).then((config) => {
+  configurator.getConfig().then((config) => {
     ddb.listBooks(config.cobalt).then((bookIds) => {
       bookIds.forEach((bookId) => {
         console.log(`${bookId.bookCode} : ${bookId.book}`);
@@ -39,7 +45,7 @@ if (process.argv[2] === "config") {
     });
   });
 } else if (process.argv[2] === "download") {
-  configurator.getConfig(false, null).then((config) => {
+  configurator.getConfig().then((config) => {
     downloadBooks(config)
       .then(() => {
         console.log("Downloads finished");
@@ -47,19 +53,22 @@ if (process.argv[2] === "config") {
       });
   });
 } else if (process.argv[2] === "load") {
-  configurator.getConfig(false, null).then((config) => {
+  configurator.getConfig().then((config) => {
     scene.importScene(config, process.argv[3]);
     console.log("Imported scene updates");
     exit();
   });
 } else if (process.argv[2] === "scene-ids") {
-  configurator.getConfig(false, null).then(() => {
+  configurator.getConfig().then(() => {
     scene.listSceneIds(process.argv[3]);
     exit();
   });
 }  else if (process.argv[2] == "enhance") {
   console.log(process.argv[3]);
-  configurator.getConfig(process.argv[3], null).then((config) => {
+  const options = {
+    bookCode: process.argv[3],
+  };
+  configurator.getConfig(options).then((config) => {
     enhance.getEnhancedData(config).then(enhanced => {
       console.log(enhanced);
       exit();
@@ -70,7 +79,10 @@ if (process.argv[2] === "config") {
   console.log("Please enter a book code or use 'list' to discover codes");
   exit();
 } else {
-  configurator.getConfig(process.argv[2], null).then((config) => {
+  const options = {
+    bookCode: process.argv[2],
+  };
+  configurator.getConfig(options).then((config) => {
     book.setConfig(config).then(() => {
       book.setMasterFolders();
       utils.directoryReset(config);

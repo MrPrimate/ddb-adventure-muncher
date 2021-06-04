@@ -229,16 +229,16 @@ function importScene(conf, sceneFile) {
     newFlags["perfect-vision"] = inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [];
     newFlags["dynamic-illumination"] = inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [];
     
-    delete(inData.flags);
+    delete inData.flags;
     inData.flags = newFlags;
   } else {
-    delete(inData.flags);
+    delete inData.flags;
   }
   // we have moved tokens to flags for future use = they will need to be "jigged"
-  delete(inData.tokens);
+  delete inData.tokens;
 
   if (inData.flags.ddb.contentChunkId && !inData.flags.ddb.contentChunkId.startsWith("ddb-missing")) inData.name = lookup.name;
-  if (inData.navName == "") delete((inData.navName));
+  if (inData.navName == "") delete inData.navName;
 
   // console.log(sceneData);
   //exit();
