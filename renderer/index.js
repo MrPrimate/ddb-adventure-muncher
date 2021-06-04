@@ -33,8 +33,12 @@ generateButton.addEventListener("click", (event) => {
   event.preventDefault();
   generateButton.disabled = true;
   const bookCode = document.getElementById("book-select");
-  if (bookCode.value !== 0)
-    window.api.send("generate", bookCode.value);
+  const generateTokens = document.getElementById("generate-tokens");
+  
+  if (bookCode.value !== 0) {
+    window.api.send("generate", { bookCode: bookCode.value, generateTokens: generateTokens.checked });
+  }
+
 });
 
 window.api.receive("generate", () => {
@@ -63,10 +67,9 @@ window.api.receive("user", (data) => {
 });
 
 
-window.api.receive("config", (data) => {
+window.api.receive("config", (config) => {
   console.log("Received config from main process");
-  console.log(data);
-  config = data;
+  console.log(config);
 
   if (config.cobalt) {
     contentLoadMessage.innerHTML = "Config loaded!";
@@ -77,6 +80,7 @@ window.api.receive("config", (data) => {
       outputLocation.innerHTML = config.outputDirEnv;
       window.api.send("books");
     }
+    document.getElementById("generate-tokens").checked = config.generateTokens === true;
   } else {
     console.warn("No config file!");
     contentLoadMessage.innerHTML = "Config not found";

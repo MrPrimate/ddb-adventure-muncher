@@ -33,6 +33,8 @@ const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
 const pargs = yargs(hideBin(process.argv));
 
+const { autoUpdater } = require("electron-updater");
+
 let allBooks = true;
 
 configurator.setConfigDir(app.getPath("userData"));
@@ -184,14 +186,17 @@ async function downloadBooks(config) {
   // console.log(bookIds)
   for (let i = 0; i < bookIds.length; i++) {
     process.stdout.write(`Downloading ${bookIds[i].book}`);
-    await configurator.getConfig(bookIds[i].bookCode, null);
+    const options = {
+      bookCode: bookIds[i].bookCode,
+    };
+    await configurator.getConfig(options);
     process.stdout.write(`Download for ${bookIds[i].book} complete`);
   }
 }
 
-function generateAdventure(args) {
+function generateAdventure(options) {
   return new Promise((resolve) => {
-    configurator.getConfig(args).then((config) => {
+    configurator.getConfig(options).then((config) => {
       if (!isDevelopment) {
         book.setTemplateDir(
           path.join(process.resourcesPath, "content", "templates")
@@ -281,7 +286,10 @@ function commandLine() {
     }
 
     if (args.config) {
-      configurator.getConfig(false, args.config).then(() => {
+      const options = {
+        externalConfigFile: args.config,
+      };
+      configurator.getConfig(options).then(() => {
         process.stdout.write(`Loaded ${args.config}\n`);
         process.exit(0);
       });
@@ -366,7 +374,10 @@ const loadMainWindow = () => {
       })
       .then((result) => {
         if (!result.canceled) {
-          configurator.getConfig(null, result.filePaths[0]).then((config) => {
+          const options = {
+            externalConfigFile: result.filePaths[0],
+          };
+          configurator.getConfig(options).then((config) => {
             mainWindow.webContents.send("config", config);
           });
         }
@@ -381,8 +392,12 @@ const loadMainWindow = () => {
       })
       .then((result) => {
         if (!result.canceled) {
+          // options.bookCode, options.externalConfigFile, options.outputDirPath
+          const options = {
+            outputDirPath: result.filePaths[0],
+          };
           configurator
-            .getConfig(null, null, result.filePaths[0])
+            .getConfig(options)
             .then((config) => {
               mainWindow.webContents.send("config", config);
             });
@@ -410,8 +425,8 @@ const loadMainWindow = () => {
   });
 
   // eslint-disable-next-line no-unused-vars
-  ipcMain.on("generate", (event, book) => {
-    generateAdventure(book).then(() => {
+  ipcMain.on("generate", (event, data) => {
+    generateAdventure(data).then(() => {
       mainWindow.webContents.send("generate");
     });
   });
@@ -421,6 +436,7 @@ const loadMainWindow = () => {
 
 function prepare() {
   commandLine().then(() => {
+    autoUpdater.checkForUpdatesAndNotify();
     loadMainWindow();
   });
 }

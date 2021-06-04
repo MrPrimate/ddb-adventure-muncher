@@ -5,9 +5,7 @@ contextBridge.exposeInMainWorld(
     patreon: () => {
       shell.openExternal("http://patreon.com/mrprimate");
     },
-    // configLoaded: (config) => {
-    //   ipcRenderer.send('config', config);
-    // },
+    // to backend
     send: (channel, data) => {
       // whitelist channels
       let validChannels = ["toMain", "config", "loadConfig", "outputDir", "books", "generate", "user"];
@@ -15,6 +13,7 @@ contextBridge.exposeInMainWorld(
         ipcRenderer.send(channel, data);
       }
     },
+    // to frontend
     receive: (channel, func) => {
       let validChannels = ["fromMain", "config", "loadConfig", "outputDir", "books", "generate", "user"];
       if (validChannels.includes(channel)) {
