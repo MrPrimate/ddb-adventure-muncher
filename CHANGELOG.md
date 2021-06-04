@@ -3,6 +3,7 @@
 * LMOP map improvements (Thanks @AceKokuren !)
 * Lots of adjusted AI Scenes (Thanks @Pariah Zero !)
 * CM tweaks (Thanks @Triasmus !)
+* ToA scene improvements (Thanks @michaelko777#7952 !)
 
 # 0.1.9
 
