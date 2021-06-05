@@ -891,7 +891,7 @@ function generateMissingScenes(journals, scenes) {
     const playerEntry = generateJournalEntry(row, es.img);
     journals.push(playerEntry);
     //scenes.push(generateScene(row, es.img));
-    generateScene(row, es.img)
+    generateScene(row, es.img);
   });
 
   return [journals, scenes];
