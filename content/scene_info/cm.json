@@ -3245,58 +3245,10 @@
             },
             {
                 "c": [
-                    2390,
-                    3251,
-                    1923,
-                    3251
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1923,
-                    3017,
-                    2390,
-                    3017
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
                     1880,
                     1700,
                     1530,
                     1700
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    2210,
-                    1370,
-                    2215,
-                    1700
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    2390,
-                    3017,
-                    2390,
-                    3251
                 ],
                 "door": 0,
                 "ds": 0,
@@ -3401,30 +3353,6 @@
             },
             {
                 "c": [
-                    1689,
-                    3336,
-                    1561,
-                    3240
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1848,
-                    3325,
-                    1689,
-                    3336
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
                     2698,
                     1700,
                     2550,
@@ -3437,10 +3365,10 @@
             },
             {
                 "c": [
-                    1519,
-                    3145,
-                    1540,
-                    3006
+                    10,
+                    2815,
+                    3527,
+                    2815
                 ],
                 "door": 0,
                 "ds": 0,
@@ -3449,82 +3377,10 @@
             },
             {
                 "c": [
-                    1753,
-                    2921,
-                    1880,
-                    2964
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1636,
-                    2943,
-                    1753,
-                    2921
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1540,
-                    3006,
-                    1636,
-                    2943
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1923,
-                    3251,
-                    1848,
-                    3325
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1561,
-                    3240,
-                    1519,
-                    3145
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1880,
-                    2964,
-                    1923,
-                    3017
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    733,
-                    2805,
-                    2879,
-                    2805
+                    2210,
+                    1710,
+                    2210,
+                    1370
                 ],
                 "door": 0,
                 "ds": 0,
@@ -3592,7 +3448,88 @@
         "tokenVision": true,
         "globalLight": false,
         "globalLightThreshold": null,
-        "lights": [],
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 50,
+                "darknessThreshold": 0,
+                "dim": 50,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.25,
+                "x": 2380,
+                "y": 2040,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 50,
+                "darknessThreshold": 0,
+                "dim": 50,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.25,
+                "x": 2210,
+                "y": 1530,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 50,
+                "darknessThreshold": 0,
+                "dim": 50,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.25,
+                "x": 1530,
+                "y": 1360,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 50,
+                "darknessThreshold": 0,
+                "dim": 50,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.25,
+                "x": 2720,
+                "y": 2550,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 50,
+                "darknessThreshold": 0,
+                "dim": 50,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.25,
+                "x": 1785,
+                "y": 2890,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            }
+        ],
         "flags": {
             "ddb": {
                 "ddbId": 10023,
