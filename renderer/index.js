@@ -12,7 +12,7 @@ const contentLoadMessage = document.getElementById("config-loader");
 const generateButton = document.getElementById("munch-book");
 const userField = document.getElementById("user");
 
-var config;
+// var config;
 
 patreonLink.addEventListener("click", (event) => {
   event.preventDefault();
