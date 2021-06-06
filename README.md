@@ -1,6 +1,6 @@
-# DDB Adventure Muncher Beta
+# DDB Adventure Muncher Public Beta
 
-This is a Beta release for Patreon Supporters. It will be available more widely soon, until then, please don't share this link.
+This is a Public Beta release. It does not yet have the polish, documentation or support of a fully released product, and you may encounter bugs/just not work for you.
 
 ## How?
 
@@ -21,17 +21,14 @@ If you wish to disable the damage tagging on rolls set the config value: `"useDa
 * When you are happy with the data in your compendiums, you can use the Adventure Config Exporter button to download a config mapping. You can find this in the Experimental tab of the muncher screen if your supporter tier can access the alpha and are using v0.6.25+ of DDB Importer. You should be using ddb-importer version 1.0.0+ for the best experience with these generated adventures.
 * This file contains a cobalt cookie value and mappings to the imported compendium entries. The adventure muncher will use these to construct links to the right spells/items etc in Journal entries.
 
-## Alpha Download Links
+## Download Links
 
-* [Linux AppImage](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.9-linux-x86_64.AppImage)
-* [Linux RPM](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.9-linux-x86_64.rpm)
-* [Linux DEB](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.9-linux-amd64.deb)
-* [Windows Installer](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.9-win.exe)
-* [Mac](https://artifacts.ddb.mrprimate.co.uk/adventure/djriws2/alpha/ddb-adventure-muncher-0.1.9-mac.dmg)
-
+You can download versions for [Mac, PC, and Linux](https://github.com/MrPrimate/ddb-adventure-muncher/releases/latest).
 ## Importing the book
 
-You will need to use [Adventure Importer/Exporter Module](https://foundryvtt.com/packages/adventure-import-export/), however this does not yet contain the changes needed to import journal images (as of version 0.6.0). Please install from [`https://raw.githubusercontent.com/mrprimate/adventure-import-export/ddb-release/module.json`](https://raw.githubusercontent.com/mrprimate/adventure-import-export/ddb-release/module.json).
+If using Foundry 0.7.9 you will need to use [Adventure Importer/Exporter Module](https://foundryvtt.com/packages/adventure-import-export/), however this does not yet contain the changes needed to import journal images (as of version 0.6.0). Please install from [`https://raw.githubusercontent.com/mrprimate/adventure-import-export/ddb-release/module.json`](https://raw.githubusercontent.com/mrprimate/adventure-import-export/ddb-release/module.json).
+
+If using Foundry 0.8.0 you can use the DDB Importer Adventure Import option.
 
 
 ## Config
@@ -85,8 +82,6 @@ Examples:
 ## Known Issues
 
 * Most of the Handouts are un-named because it's hard to parse names - I'll be collecting naming suggestions at some point.
-* There are limited entries for pins on the map right now.
-* There are no actors placed on the scene right now.
 
 ## Getting Help
 
@@ -98,30 +93,6 @@ All books with Scenes should now have notes generated. Please highlight if you f
 
 You can se the state of scene support at [this spreadsheet](https://docs.google.com/spreadsheets/d/17b4jG2W521N_nFkE1jr2UGEjixHGjHGnEO9eSKhFmwo/edit?usp=sharing).
 
-Books with Aligned, Walled, Lit scenes with Note placed:
-
-* Lost Mines of Phandelver
-* The Sunless Citadel
-* White Plume Mountain
-
-Books with Aligned, Walled and Lit scenes with partial Note support:
-
-* Curse of Strahd
-* The Hidden Shrine of Tamoachan
-* Rick and Morty
-
-Books with partial scene adjustments:
-
-* Icewind Dale: Rime of the Frost Maiden
-* Dragon of Icespire Peak
-* Divine Contention
-* Princes of the Apocalypse
-* Baldur's Gate: Descent into Avernus
-* Candlekeep Mysteries
-* The Forge of Fury
-* Out of the Abyss
-* Van Richten's Guide to Ravenloft
-
 If you wish to help improve the scene wall and lighting information, see the below section.
 
 ## Contribution
@@ -129,7 +100,7 @@ If you wish to help improve the scene wall and lighting information, see the bel
 ### Walls and Lighting information
 
 * If you wish to add walls/lighting information you can turn on a setting in Foundry to allow you to support data from a supported map.
-* You need to be using v1.0.4+ of ddb-importer.
+* You need to be using v1.0.9+ of ddb-importer.
 * Open the Chrome Developer Console (F12) and run `game.settings.set("ddb-importer", "allow-scene-download", true)`
 * Now when you right click on a scene navigation button you will get the option to download the associated data (DDB Scene Config).
 * Upload this to the #scene-adjustments channel on Discord with a description of your changes.
