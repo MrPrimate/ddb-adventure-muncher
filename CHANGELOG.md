@@ -4,7 +4,9 @@
 * Lots of adjusted AI Scenes (Thanks @Pariah Zero !)
 * CM tweaks (Thanks @Triasmus !)
 * ToA scene improvements (Thanks @michaelko777#7952 !)
+* GoS scene additions (Thanks @michaelko777#7952 !)
 * Token generation option added to GUI.
+* CM generated double notes in some cases.
 
 # 0.1.9
 
