@@ -1,5 +1,6 @@
 # 0.2.0
 
+* Adventure Muncher is now a public release.
 * LMOP map improvements (Thanks @AceKokuren !)
 * Lots of adjusted AI Scenes (Thanks @Pariah Zero !)
 * CM tweaks (Thanks @Triasmus !)
