@@ -8190,7 +8190,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "ErQ86IgoGhLwNQ37",
+                            "actorFolderId": "iN46xziYtcxcZzTu"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -8222,7 +8224,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "uNe9jRMRgBLye1Vp",
+                            "actorFolderId": "iN46xziYtcxcZzTu"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -8237,7 +8241,13 @@
                             "speed": 5,
                             "intensity": 5
                         },
-                        "actorData": {}
+                        "actorData": {
+                            "data": {
+                                "details": {
+                                    "cr": "0"
+                                }
+                            }
+                        }
                     },
                     {
                         "_id": "RosbGfaClS5huo8c",
@@ -8254,7 +8264,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "uNe9jRMRgBLye1Vp",
+                            "actorFolderId": "iN46xziYtcxcZzTu"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -8269,7 +8281,13 @@
                             "speed": 5,
                             "intensity": 5
                         },
-                        "actorData": {}
+                        "actorData": {
+                            "data": {
+                                "details": {
+                                    "cr": "0"
+                                }
+                            }
+                        }
                     },
                     {
                         "_id": "BxDeFd84pkZDI8X3",
@@ -8286,7 +8304,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "iglMDv9kqYf9bUOA",
+                            "actorFolderId": "iN46xziYtcxcZzTu"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -8318,7 +8338,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "hcpMpEpTEw7nK14P",
+                            "actorFolderId": "iN46xziYtcxcZzTu"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -8350,7 +8372,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "hcpMpEpTEw7nK14P",
+                            "actorFolderId": "iN46xziYtcxcZzTu"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -8382,7 +8406,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "hcpMpEpTEw7nK14P",
+                            "actorFolderId": "iN46xziYtcxcZzTu"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -8414,7 +8440,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "hcpMpEpTEw7nK14P",
+                            "actorFolderId": "iN46xziYtcxcZzTu"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -8436,6 +8464,7 @@
             "stairways": [],
             "perfect-vision": [],
             "dynamic-illumination": []
-        }
+        },
+        "tokens": []
     }
 ]

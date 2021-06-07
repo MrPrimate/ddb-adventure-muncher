@@ -540,7 +540,14 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": {
+                "sightLimit": null,
+                "globalLight": "default",
+                "daylightColor": "",
+                "darknessColor": ""
+            },
+            "dynamic-illumination": []
         }
     },
     {
@@ -5980,7 +5987,9 @@
                     "y": 2275,
                     "_id": "vjv1rlolt3io1des"
                 }
-            ]
+            ],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -6349,7 +6358,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -11076,7 +11087,9 @@
                     "y": 2225,
                     "_id": "10t4t3bcgwndms99"
                 }
-            ]
+            ],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -11474,7 +11487,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -12718,7 +12733,9 @@
                     "y": 2834,
                     "_id": "mv0qllgl9eac2h2b"
                 }
-            ]
+            ],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -13157,7 +13174,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -23836,7 +23855,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -27529,7 +27550,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -28152,7 +28175,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -35336,7 +35361,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -35754,7 +35781,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -40171,7 +40200,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -40738,7 +40769,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -44621,7 +44654,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -45336,7 +45371,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -54981,7 +55018,9 @@
                     "y": 2028,
                     "_id": "b77sxoiveog1ikkf"
                 }
-            ]
+            ],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -60464,7 +60503,14 @@
                 "notes": [],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": {
+                "sightLimit": null,
+                "globalLight": "default",
+                "daylightColor": "",
+                "darknessColor": ""
+            },
+            "dynamic-illumination": []
         }
     },
     {
@@ -61147,7 +61193,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -62687,7 +62735,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -68268,7 +68318,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -70958,7 +71010,14 @@
                     "y": 2860,
                     "_id": "icl1uo1010dm1uey"
                 }
-            ]
+            ],
+            "perfect-vision": {
+                "sightLimit": null,
+                "globalLight": "default",
+                "daylightColor": "",
+                "darknessColor": ""
+            },
+            "dynamic-illumination": []
         }
     },
     {
@@ -73064,7 +73123,9 @@
                     "y": 1144,
                     "_id": "b9m519p44f4jdgko"
                 }
-            ]
+            ],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -75353,7 +75414,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -79015,7 +79078,9 @@
                     "y": 2860,
                     "_id": "z8l5oe2hixq6xmjw"
                 }
-            ]
+            ],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -82487,7 +82552,9 @@
                     }
                 ]
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -88574,7 +88641,9 @@
                 "notes": [],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -93517,7 +93586,9 @@
                     "y": 2900,
                     "_id": "mpmwzrxxlhfael1m"
                 }
-            ]
+            ],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -95031,7 +95102,9 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     }
 ]
