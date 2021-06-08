@@ -797,7 +797,7 @@ function generateScene(row, img) {
   //const enhancedScene = enhancedScenes.find((es) => es.name === scene.name && es.img === scene.img);
   const enhancedScene = enhancedScenes.find((es) => {
     const missingNameMatch = row.missing ?
-      row.name === es.name && es.missing :
+      es.missing && row.title === es.name :
       true;
     return missingNameMatch && 
       es.img === scene.img &&
@@ -1316,7 +1316,7 @@ async function collectionFinished(err, count) {
     outputAdventure(config);
     outputJournals(generatedJournals, config);
     console.log("Generated Scenes:");
-    console.log(generatedScenes.map(s => `${s.name}: ${s._id} : ${s.flags.ddb.contentChunkId } : ${s.flags.ddb.ddbId }: ${s.flags.ddb.cobaltId }: ${s.flags.ddb.parentId }`));
+    console.log(generatedScenes.map(s => `${s.name} : ${s._id} : ${s.flags.ddb.contentChunkId } : ${s.flags.ddb.ddbId } : ${s.flags.ddb.cobaltId } : ${s.flags.ddb.parentId }`));
     outputScenes(generatedScenes, config);
     outputTables(generatedTables, config);
     const allContent = generatedJournals.concat(generatedScenes, generatedTables);
