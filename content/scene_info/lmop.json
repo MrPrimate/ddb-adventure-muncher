@@ -34,7 +34,8 @@
                 "tokens": []
             },
             "stairways": [],
-            "perfect-vision": []
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -802,19 +803,7 @@
             {
                 "c": [
                     5578,
-                    3319,
-                    5578,
-                    3244
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    5578,
-                    3244,
+                    3318,
                     5569,
                     3131
                 ],
@@ -887,20 +876,8 @@
                 "c": [
                     5588,
                     2822,
-                    5494,
-                    2728
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    5494,
-                    2728,
                     5456,
-                    2663
+                    2662
                 ],
                 "door": 0,
                 "ds": 0,
@@ -1605,20 +1582,8 @@
             },
             {
                 "c": [
-                    2222,
-                    1491,
-                    2138,
-                    1453
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    2138,
-                    1453,
+                    2221,
+                    1490,
                     2091,
                     1425
                 ],
@@ -2055,7 +2020,7 @@
                     1838
                 ],
                 "door": 0,
-                "ds": 0,
+                "ds": 2,
                 "move": 1,
                 "sense": 1
             },
@@ -2067,7 +2032,7 @@
                     1894
                 ],
                 "door": 0,
-                "ds": 0,
+                "ds": 1,
                 "move": 1,
                 "sense": 1
             },
@@ -3119,18 +3084,6 @@
                 "c": [
                     4603,
                     1659,
-                    4547,
-                    1622
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    4547,
-                    1622,
                     4481,
                     1584
                 ],
@@ -3455,18 +3408,6 @@
                 "c": [
                     2353,
                     1903,
-                    2288,
-                    1959
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    2288,
-                    1959,
                     2203,
                     2044
                 ],
@@ -3513,34 +3454,10 @@
             },
             {
                 "c": [
-                    1856,
-                    2119,
-                    1838,
-                    2109
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
                     1575,
                     2025,
-                    1669,
-                    2006
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 1
-            },
-            {
-                "c": [
-                    1669,
-                    2006,
                     1725,
-                    1997
+                    1996
                 ],
                 "door": 0,
                 "ds": 0,
@@ -3790,9 +3707,9 @@
             {
                 "c": [
                     4500,
-                    2916,
-                    4472,
-                    2953
+                    2925,
+                    4481,
+                    2962
                 ],
                 "door": 0,
                 "ds": 0,
@@ -3801,9 +3718,9 @@
             },
             {
                 "c": [
-                    4472,
-                    2953,
-                    4500,
+                    4481,
+                    2962,
+                    4518,
                     2981
                 ],
                 "door": 0,
@@ -3813,20 +3730,8 @@
             },
             {
                 "c": [
-                    4500,
+                    4518,
                     2981,
-                    4538,
-                    2991
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 2
-            },
-            {
-                "c": [
-                    4538,
-                    2991,
                     4528,
                     2943
                 ],
@@ -3840,7 +3745,7 @@
                     4528,
                     2943,
                     4500,
-                    2915
+                    2925
                 ],
                 "door": 0,
                 "ds": 0,
@@ -3963,7 +3868,7 @@
                     1893
                 ],
                 "door": 0,
-                "ds": 0,
+                "ds": 2,
                 "move": 0,
                 "sense": 2
             },
@@ -3987,7 +3892,7 @@
                     1837
                 ],
                 "door": 0,
-                "ds": 0,
+                "ds": 1,
                 "move": 0,
                 "sense": 2
             },
@@ -4029,34 +3934,10 @@
             },
             {
                 "c": [
-                    4884,
-                    2409,
-                    5287,
-                    2409
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 0,
-                "sense": 2
-            },
-            {
-                "c": [
-                    5287,
-                    2446,
-                    5287,
-                    2409
-                ],
-                "door": 0,
-                "ds": 0,
-                "move": 1,
-                "sense": 2
-            },
-            {
-                "c": [
                     4828,
                     2418,
-                    4884,
-                    2409
+                    5287,
+                    2446
                 ],
                 "door": 0,
                 "ds": 0,
@@ -4084,7 +3965,7 @@
                 ],
                 "door": 0,
                 "ds": 0,
-                "move": 0,
+                "move": 1,
                 "sense": 2
             },
             {
@@ -4096,7 +3977,7 @@
                 ],
                 "door": 0,
                 "ds": 0,
-                "move": 0,
+                "move": 1,
                 "sense": 2
             },
             {
@@ -4169,6 +4050,38 @@
                     "intensity": 5
                 },
                 "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 40,
+                "darknessThreshold": 0,
+                "dim": 79.99,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.25,
+                "x": 2475,
+                "y": 3300,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 50.56,
+                "darknessThreshold": 0,
+                "dim": 101.12,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.25,
+                "x": 3600,
+                "y": 3375,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
             }
         ],
         "flags": {
@@ -4187,12 +4100,12 @@
                             "slug": "goblin-arrows#CragmawHideout",
                             "contentChunkId": "6090f5fa-5c2b-43d4-89c0-1b5e37a9b9c5",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "Riddish"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 394,
-                            "linkId": "2IU7YRf4edajtuXL",
+                            "linkId": "S2YgiYwhdSmr6lBc",
                             "pin": "27753225"
                         },
                         "positions": [
@@ -4215,12 +4128,12 @@
                             "slug": "goblin-arrows#CragmawHideout",
                             "contentChunkId": "522899c9-7a3d-4194-b7c2-705e96a4d342",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "Riddish"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 394,
-                            "linkId": "FPan7ZfQVK2hbKdy",
+                            "linkId": "wwvK8DEixPOp2v4n",
                             "pin": "33753375"
                         },
                         "positions": [
@@ -4243,12 +4156,12 @@
                             "slug": "goblin-arrows#CragmawHideout",
                             "contentChunkId": "b8ffe688-652e-4dbc-9ee4-5cfd29f99731",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "Riddish"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 394,
-                            "linkId": "hPftun8hB92qnpxf",
+                            "linkId": "1sY3Q3hAjR7mDQtz",
                             "pin": "35252475"
                         },
                         "positions": [
@@ -4271,12 +4184,12 @@
                             "slug": "goblin-arrows#CragmawHideout",
                             "contentChunkId": "743ad9e1-63e5-4d87-abb6-e5aaa16aae25",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "Riddish"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 394,
-                            "linkId": "Afk2ZRxmI020xXwe",
+                            "linkId": "0iZBKCGwhXSLO8WH",
                             "pin": "29251875"
                         },
                         "positions": [
@@ -4299,12 +4212,12 @@
                             "slug": "goblin-arrows#CragmawHideout",
                             "contentChunkId": "7936abbc-ba4f-4059-b157-64faf6e79aed",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "Riddish"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 394,
-                            "linkId": "QSrw5GWDVMmSaMZl",
+                            "linkId": "3rDQvyRJjFN9yX8K",
                             "pin": "36751575"
                         },
                         "positions": [
@@ -4327,12 +4240,12 @@
                             "slug": "goblin-arrows#CragmawHideout",
                             "contentChunkId": "ddaac01e-e13f-46c3-a13a-c99b3e98054c",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "Riddish"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 394,
-                            "linkId": "8T559WAO2R8SDDan",
+                            "linkId": "C7qEOzPWWTahtacs",
                             "pin": "21751875"
                         },
                         "positions": [
@@ -4355,12 +4268,12 @@
                             "slug": "goblin-arrows#CragmawHideout",
                             "contentChunkId": "58b45771-ea87-4f7e-8d0b-1da0fc15c902",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "Riddish"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 394,
-                            "linkId": "Co79vgdooe7aH4sk",
+                            "linkId": "KNTduEEPx5twpJta",
                             "pin": "50251875"
                         },
                         "positions": [
@@ -4383,12 +4296,12 @@
                             "slug": "goblin-arrows#CragmawHideout",
                             "contentChunkId": "ad1c979a-bf39-44b7-a09f-27660bb4610a",
                             "userData": {
-                                "userDisplayName": "MrPrimate"
+                                "userDisplayName": "Riddish"
                             },
                             "note": true,
                             "img": false,
                             "parentId": 394,
-                            "linkId": "ECDaHGeV1VCfuVkn",
+                            "linkId": "CYz9R7ImPX87JmHi",
                             "pin": "50252925"
                         },
                         "positions": [
@@ -4420,8 +4333,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "v7SWQ5VZlUwpALpq",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4454,8 +4367,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "ZlwXOBbJwyfU5ubQ",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "jPTcz1s7dVszaMeb",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4470,7 +4383,9 @@
                             "speed": 5,
                             "intensity": 5
                         },
-                        "actorData": {}
+                        "actorData": {
+                            "name": "Ripper"
+                        }
                     },
                     {
                         "_id": "iRAeUbpP4SEMPJ4K",
@@ -4488,8 +4403,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "ZOSECT1RplPHPBQA",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "YAAdqRROirgz60XB",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4504,7 +4419,10 @@
                             "speed": 5,
                             "intensity": 5
                         },
-                        "actorData": {}
+                        "tint": "",
+                        "actorData": {
+                            "img": "uploads/avatars/npc/humanoid/goblin.jpeg"
+                        }
                     },
                     {
                         "_id": "miMQEXTfDkit3P23",
@@ -4522,8 +4440,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "Nvcu89qpA8tguHZh",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "NgekkdMKbcUlo7hq",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4538,7 +4456,440 @@
                             "speed": 5,
                             "intensity": 5
                         },
-                        "actorData": {}
+                        "tint": "",
+                        "actorData": {
+                            "data": {
+                                "attributes": {
+                                    "hp": {
+                                        "value": 1
+                                    }
+                                }
+                            },
+                            "newEffect": "new",
+                            "changes": [],
+                            "items": [
+                                {
+                                    "_id": "5rktgwrx6npawov0",
+                                    "name": "Multiattack",
+                                    "type": "feat",
+                                    "img": "systems/dnd5e/icons/skills/red_34.jpg",
+                                    "data": {
+                                        "description": {
+                                            "value": "<section class=\"secret\">\n<p><em><strong></strong></em> Sildar makes two melee attacks.</p></section>\nThe Sildar Hallwinter uses Multiattack.",
+                                            "chat": "",
+                                            "unidentified": ""
+                                        },
+                                        "source": "Lost Mine of Phandelver",
+                                        "activation": {
+                                            "type": "action",
+                                            "cost": 1,
+                                            "condition": ""
+                                        },
+                                        "duration": {
+                                            "value": null,
+                                            "units": "inst"
+                                        },
+                                        "target": {
+                                            "value": null,
+                                            "width": null,
+                                            "units": "",
+                                            "type": ""
+                                        },
+                                        "range": {
+                                            "value": null,
+                                            "long": null,
+                                            "units": ""
+                                        },
+                                        "uses": {
+                                            "value": 0,
+                                            "max": 0,
+                                            "per": null
+                                        },
+                                        "consume": {
+                                            "type": "",
+                                            "target": null,
+                                            "amount": null
+                                        },
+                                        "ability": null,
+                                        "actionType": "",
+                                        "attackBonus": 0,
+                                        "chatFlavor": "",
+                                        "critical": null,
+                                        "damage": {
+                                            "parts": [],
+                                            "versatile": ""
+                                        },
+                                        "formula": "",
+                                        "save": {
+                                            "ability": null,
+                                            "dc": null,
+                                            "scaling": "flat"
+                                        },
+                                        "requirements": "",
+                                        "recharge": {
+                                            "value": null,
+                                            "charged": null
+                                        },
+                                        "properties": {
+                                            "amm": false,
+                                            "fin": false,
+                                            "fir": false,
+                                            "foc": false,
+                                            "hvy": false,
+                                            "lgt": false,
+                                            "lod": false,
+                                            "rch": false,
+                                            "rel": false,
+                                            "ret": false,
+                                            "spc": false,
+                                            "thr": false,
+                                            "two": false,
+                                            "ver": false
+                                        },
+                                        "proficient": false
+                                    },
+                                    "folder": null,
+                                    "sort": 0,
+                                    "permission": {
+                                        "default": 0
+                                    },
+                                    "flags": {
+                                        "monsterMunch": {
+                                            "titleHTML": "<strong>Multiattack.</strong>",
+                                            "fullName": "Multiattack."
+                                        }
+                                    },
+                                    "effects": []
+                                },
+                                {
+                                    "_id": "fmem9z4g4p9cz7f1",
+                                    "name": "Longsword",
+                                    "type": "weapon",
+                                    "img": "icons/weapons/swords/sword-guard-engraved.webp",
+                                    "data": {
+                                        "description": {
+                                            "value": "<section class=\"secret\">\n<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage.</p></section>\nThe Sildar Hallwinter attacks with its Longsword.",
+                                            "chat": "",
+                                            "unidentified": ""
+                                        },
+                                        "source": "Lost Mine of Phandelver",
+                                        "quantity": 1,
+                                        "weight": 0,
+                                        "price": 0,
+                                        "attuned": false,
+                                        "attunement": 0,
+                                        "equipped": true,
+                                        "rarity": "",
+                                        "identified": true,
+                                        "activation": {
+                                            "type": "action",
+                                            "cost": 1,
+                                            "condition": ""
+                                        },
+                                        "duration": {
+                                            "value": null,
+                                            "units": "inst"
+                                        },
+                                        "target": {
+                                            "value": null,
+                                            "width": null,
+                                            "units": "",
+                                            "type": ""
+                                        },
+                                        "range": {
+                                            "value": "5",
+                                            "long": null,
+                                            "units": "ft"
+                                        },
+                                        "uses": {
+                                            "value": 0,
+                                            "max": 0,
+                                            "per": null
+                                        },
+                                        "consume": {
+                                            "type": "",
+                                            "target": null,
+                                            "amount": null
+                                        },
+                                        "ability": "str",
+                                        "actionType": "mwak",
+                                        "attackBonus": 0,
+                                        "chatFlavor": "",
+                                        "critical": null,
+                                        "damage": {
+                                            "parts": [
+                                                [
+                                                    "1d8[slashing] + @mod",
+                                                    "slashing"
+                                                ]
+                                            ],
+                                            "versatile": ""
+                                        },
+                                        "formula": "",
+                                        "save": {
+                                            "ability": null,
+                                            "dc": null,
+                                            "scaling": "flat"
+                                        },
+                                        "armor": {
+                                            "value": 10
+                                        },
+                                        "hp": {
+                                            "value": 0,
+                                            "max": 0,
+                                            "dt": null,
+                                            "conditions": ""
+                                        },
+                                        "weaponType": "martialM",
+                                        "properties": {
+                                            "amm": false,
+                                            "fin": false,
+                                            "fir": false,
+                                            "foc": false,
+                                            "hvy": false,
+                                            "lgt": false,
+                                            "lod": false,
+                                            "rch": true,
+                                            "rel": false,
+                                            "ret": false,
+                                            "spc": false,
+                                            "thr": false,
+                                            "two": false,
+                                            "ver": true
+                                        },
+                                        "proficient": true,
+                                        "requirements": "",
+                                        "recharge": {
+                                            "value": null,
+                                            "charged": null
+                                        }
+                                    },
+                                    "folder": null,
+                                    "sort": 0,
+                                    "permission": {
+                                        "default": 0
+                                    },
+                                    "flags": {
+                                        "monsterMunch": {
+                                            "titleHTML": "<strong>Longsword.</strong>",
+                                            "fullName": "Longsword."
+                                        }
+                                    },
+                                    "effects": []
+                                },
+                                {
+                                    "_id": "zyzg2q07x6r5h5yi",
+                                    "name": "Heavy Crossbow",
+                                    "type": "weapon",
+                                    "img": "icons/weapons/crossbows/crossbow-slotted.webp",
+                                    "data": {
+                                        "description": {
+                                            "value": "<section class=\"secret\">\n<p><em><strong></strong> Ranged Weapon Attack:</em> +2 to hit, range 100 ft./400 ft., one target. Hit: 5 (1d10) piercing damage.</p></section>\nThe Sildar Hallwinter attacks with its Heavy Crossbow.",
+                                            "chat": "",
+                                            "unidentified": ""
+                                        },
+                                        "source": "Lost Mine of Phandelver",
+                                        "quantity": 1,
+                                        "weight": 0,
+                                        "price": 0,
+                                        "attuned": false,
+                                        "attunement": 0,
+                                        "equipped": true,
+                                        "rarity": "",
+                                        "identified": true,
+                                        "activation": {
+                                            "type": "action",
+                                            "cost": 1,
+                                            "condition": ""
+                                        },
+                                        "duration": {
+                                            "value": null,
+                                            "units": "inst"
+                                        },
+                                        "target": {
+                                            "value": null,
+                                            "width": null,
+                                            "units": "",
+                                            "type": ""
+                                        },
+                                        "range": {
+                                            "value": "100",
+                                            "long": "400",
+                                            "units": "ft"
+                                        },
+                                        "uses": {
+                                            "value": 0,
+                                            "max": 0,
+                                            "per": null
+                                        },
+                                        "consume": {
+                                            "type": "",
+                                            "target": null,
+                                            "amount": null
+                                        },
+                                        "ability": "dex",
+                                        "actionType": "rwak",
+                                        "attackBonus": 0,
+                                        "chatFlavor": "",
+                                        "critical": null,
+                                        "damage": {
+                                            "parts": [
+                                                [
+                                                    "1d10[piercing]",
+                                                    "piercing"
+                                                ]
+                                            ],
+                                            "versatile": ""
+                                        },
+                                        "formula": "",
+                                        "save": {
+                                            "ability": null,
+                                            "dc": null,
+                                            "scaling": "flat"
+                                        },
+                                        "armor": {
+                                            "value": 10
+                                        },
+                                        "hp": {
+                                            "value": 0,
+                                            "max": 0,
+                                            "dt": null,
+                                            "conditions": ""
+                                        },
+                                        "weaponType": "martialR",
+                                        "properties": {
+                                            "amm": true,
+                                            "fin": false,
+                                            "fir": false,
+                                            "foc": false,
+                                            "hvy": true,
+                                            "lgt": false,
+                                            "lod": true,
+                                            "rch": false,
+                                            "rel": false,
+                                            "ret": false,
+                                            "spc": false,
+                                            "thr": false,
+                                            "two": true,
+                                            "ver": false
+                                        },
+                                        "proficient": true,
+                                        "requirements": "",
+                                        "recharge": {
+                                            "value": null,
+                                            "charged": null
+                                        }
+                                    },
+                                    "folder": null,
+                                    "sort": 0,
+                                    "permission": {
+                                        "default": 0
+                                    },
+                                    "flags": {
+                                        "monsterMunch": {
+                                            "titleHTML": "<strong>Heavy Crossbow.</strong>",
+                                            "fullName": "Heavy Crossbow."
+                                        }
+                                    },
+                                    "effects": []
+                                },
+                                {
+                                    "_id": "ugnilz5yvsmo71a2",
+                                    "name": "Parry",
+                                    "type": "feat",
+                                    "img": "icons/weapons/swords/swords-short.webp",
+                                    "data": {
+                                        "description": {
+                                            "value": "<section class=\"secret\">\n<p><em><strong></strong></em> When an attacker hits Sildar with a melee attack and Sildar can see the attacker, he can roll 1d6 and add the number rolled to his AC against the triggering attack, provided that he’s wielding a melee weapon.</p></section>\nThe Sildar Hallwinter uses Parry.",
+                                            "chat": "",
+                                            "unidentified": ""
+                                        },
+                                        "source": "Lost Mine of Phandelver",
+                                        "activation": {
+                                            "type": "reaction",
+                                            "cost": 1,
+                                            "condition": ""
+                                        },
+                                        "duration": {
+                                            "value": null,
+                                            "units": "inst"
+                                        },
+                                        "target": {
+                                            "value": null,
+                                            "width": null,
+                                            "units": "",
+                                            "type": ""
+                                        },
+                                        "range": {
+                                            "value": null,
+                                            "long": null,
+                                            "units": ""
+                                        },
+                                        "uses": {
+                                            "value": 0,
+                                            "max": 0,
+                                            "per": null
+                                        },
+                                        "consume": {
+                                            "type": "",
+                                            "target": null,
+                                            "amount": null
+                                        },
+                                        "ability": null,
+                                        "actionType": "",
+                                        "attackBonus": 0,
+                                        "chatFlavor": "",
+                                        "critical": null,
+                                        "damage": {
+                                            "parts": [],
+                                            "versatile": ""
+                                        },
+                                        "formula": "",
+                                        "save": {
+                                            "ability": null,
+                                            "dc": null,
+                                            "scaling": "flat"
+                                        },
+                                        "requirements": "",
+                                        "recharge": {
+                                            "value": null,
+                                            "charged": null
+                                        },
+                                        "properties": {
+                                            "amm": false,
+                                            "fin": false,
+                                            "fir": false,
+                                            "foc": false,
+                                            "hvy": false,
+                                            "lgt": false,
+                                            "lod": false,
+                                            "rch": false,
+                                            "rel": false,
+                                            "ret": false,
+                                            "spc": false,
+                                            "thr": false,
+                                            "two": false,
+                                            "ver": false
+                                        },
+                                        "proficient": false
+                                    },
+                                    "folder": null,
+                                    "sort": 0,
+                                    "permission": {
+                                        "default": 0
+                                    },
+                                    "flags": {
+                                        "monsterMunch": {
+                                            "titleHTML": "<strong>Parry.</strong>",
+                                            "fullName": "Parry."
+                                        }
+                                    },
+                                    "effects": []
+                                }
+                            ],
+                            "effects": [],
+                            "img": "ddb-images/other/npc-token-Satyr.jpeg"
+                        }
                     },
                     {
                         "_id": "wbXQhFaZtkfZ1ODT",
@@ -4556,8 +4907,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "v7SWQ5VZlUwpALpq",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4580,7 +4931,7 @@
                         "width": 1,
                         "height": 1,
                         "scale": 0.8,
-                        "x": 3450,
+                        "x": 3600,
                         "y": 1500,
                         "disposition": -1,
                         "flags": {
@@ -4590,8 +4941,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "v7SWQ5VZlUwpALpq",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4624,8 +4975,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "v7SWQ5VZlUwpALpq",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4658,8 +5009,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "v7SWQ5VZlUwpALpq",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4692,8 +5043,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "v7SWQ5VZlUwpALpq",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4726,8 +5077,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "v7SWQ5VZlUwpALpq",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4760,8 +5111,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "v7SWQ5VZlUwpALpq",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4794,8 +5145,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "v7SWQ5VZlUwpALpq",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4828,8 +5179,8 @@
                                 "creatureGroup": null,
                                 "creatureFlags": []
                             },
-                            "compendiumActorId": "v7SWQ5VZlUwpALpq",
-                            "actorFolderId": "LtsQivofd5ipvzxZ"
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4861,7 +5212,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4893,7 +5246,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4925,7 +5280,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "QU28MkyboIU1zzj9",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4940,7 +5297,7 @@
                             "speed": 5,
                             "intensity": 5
                         },
-                        "tint": "",
+                        "tint": null,
                         "actorData": {
                             "name": "Klarg"
                         }
@@ -4960,7 +5317,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "jPTcz1s7dVszaMeb",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -4992,7 +5351,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "jPTcz1s7dVszaMeb",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -5024,7 +5385,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "jPTcz1s7dVszaMeb",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -5056,7 +5419,9 @@
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
-                            }
+                            },
+                            "compendiumActorId": "m5sbPdR0tyt2nR2M",
+                            "actorFolderId": "nznHXDe6xxmLXjqL"
                         },
                         "actorLink": false,
                         "bar1": {
@@ -5081,7 +5446,8 @@
                 "globalLight": "default",
                 "daylightColor": "",
                 "darknessColor": ""
-            }
+            },
+            "dynamic-illumination": []
         }
     },
     {
@@ -7738,7 +8104,8 @@
                 "tokens": []
             },
             "stairways": [],
-            "perfect-vision": []
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -10187,7 +10554,8 @@
                 "tokens": []
             },
             "stairways": [],
-            "perfect-vision": []
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -15355,7 +15723,8 @@
                 "tokens": []
             },
             "stairways": [],
-            "perfect-vision": []
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     },
     {
@@ -27266,7 +27635,8 @@
                 "tokens": []
             },
             "stairways": [],
-            "perfect-vision": []
+            "perfect-vision": [],
+            "dynamic-illumination": []
         }
     }
 ]

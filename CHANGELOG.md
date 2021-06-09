@@ -1,3 +1,9 @@
+# 0.2.1
+
+* ToA scene improvements (Thanks @michaelko777#7952 !)
+* LMOP map improvements (Thanks @Riddim !)
+
+
 # 0.2.0
 
 * Adventure Muncher is now a public release.
