@@ -18,7 +18,7 @@ If you wish to disable the damage tagging on rolls set the config value: `"useDa
 ## How does this work?
 
 * You will need to import monsters, spells, and items using [DDB Importer](https://foundryvtt.com/packages/ddb-importer/) first.
-* When you are happy with the data in your compendiums, you can use the Adventure Config Exporter button to download a config mapping. You can find this in the Experimental tab of the muncher screen if your supporter tier can access the alpha and are using v0.6.25+ of DDB Importer. You should be using ddb-importer version 1.0.0+ for the best experience with these generated adventures.
+* When you are happy with the data in your compendiums, you can use the Adventure Config Exporter button to download a config mapping. You can find this in the Experimental tab of the muncher screen if yourrunning Foundry 0.7.9. If you are running 0.8.6 use the Adventure tab.
 * This file contains a cobalt cookie value and mappings to the imported compendium entries. The adventure muncher will use these to construct links to the right spells/items etc in Journal entries.
 
 ## Download Links
@@ -28,7 +28,7 @@ You can download versions for [Mac, PC, and Linux](https://github.com/MrPrimate/
 
 If using Foundry 0.7.9 you will need to use [Adventure Importer/Exporter Module](https://foundryvtt.com/packages/adventure-import-export/), however this does not yet contain the changes needed to import journal images (as of version 0.6.0). Please install from [`https://raw.githubusercontent.com/mrprimate/adventure-import-export/ddb-release/module.json`](https://raw.githubusercontent.com/mrprimate/adventure-import-export/ddb-release/module.json).
 
-If using Foundry 0.8.0 you can use the DDB Importer Adventure Import option.
+If using Foundry 0.8.6 you can use the DDB Importer Adventure Import option.
 
 
 ## Config
