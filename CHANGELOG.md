@@ -3,7 +3,8 @@
 * ToA scene improvements (Thanks @michaelko777#7952 !)
 * LMOP map improvements (Thanks @Riddim !)
 * Tortle Package scenes (Thanks @michaelko777#7952 !)
-
+* GoS scene additions (Thanks @michaelko777#7952 !)
+* SKT additions (Thanks Zac !)
 
 # 0.2.0
 

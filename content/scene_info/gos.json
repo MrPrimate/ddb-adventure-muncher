@@ -19992,5 +19992,3435 @@
             "perfect-vision": [],
             "dynamic-illumination": []
         }
+    },
+    {
+        "name": "The Styes",
+        "navName": "The Styes",
+        "width": 2138,
+        "height": 1500,
+        "grid": 50,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 0,
+        "shiftY": 0,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [
+            {
+                "_id": "uQfr4h2dhuhSsgfp",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1944,
+                "y": 1056,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": null,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "Mud",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "L7JfGawH5ChgXzjG",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2200,
+                "y": 1250,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "Mud",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "WUflSoMd0GoWEtI2",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1869,
+                "y": 756,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "Mud",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "zBhOFskDihygphRA",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2150,
+                "y": 850,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "Mud",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            }
+        ],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13068,
+                "cobaltId": null,
+                "parentId": 679,
+                "contentChunkId": "c927d28d-2283-41a0-8a20-302ad3d692e3",
+                "notes": [
+                    {
+                        "label": "01. Harbor Master",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2069,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part1ADyingDistrict",
+                            "contentChunkId": "2ac9b26d-114b-41a2-bf51-8f1facf85102",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "mTIDQMHm1cb5Y3E0"
+                        },
+                        "positions": [
+                            {
+                                "x": 1025,
+                                "y": 1425
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "02. Frother’s Lamp",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2071,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part1ADyingDistrict",
+                            "contentChunkId": "77eaf575-fd01-486f-bbd8-ec1091b45dc7",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "Q5Lay76rlw0CzK0e"
+                        },
+                        "positions": [
+                            {
+                                "x": 1175,
+                                "y": 975
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "03. Marketplace",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2073,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part1ADyingDistrict",
+                            "contentChunkId": "7f5efa01-cd6c-4cac-8ef8-6bc8f14e62b5",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "FTpzkUV0HlPmKkd5"
+                        },
+                        "positions": [
+                            {
+                                "x": 1425,
+                                "y": 1275
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04. District Garrison",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2075,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part1ADyingDistrict",
+                            "contentChunkId": "1a03d59c-961a-43c8-b0b5-261295c8082d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "kZcg0j7evEHByVLv"
+                        },
+                        "positions": [
+                            {
+                                "x": 1525,
+                                "y": 1425
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "05. Council Hall",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2077,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part1ADyingDistrict",
+                            "contentChunkId": "81f57782-6b34-49a3-aa42-70186535a774",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "pvwat5R8hCTOJtHU"
+                        },
+                        "positions": [
+                            {
+                                "x": 1575,
+                                "y": 1325
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06. Refrum’s Workshop",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2080,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part1ADyingDistrict",
+                            "contentChunkId": "268b65e0-f1ff-44a2-b4ab-f1d14d1ad9de",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "74WBnGGkMeuRSj11"
+                        },
+                        "positions": [
+                            {
+                                "x": 1675,
+                                "y": 1075
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "07. Dory’s Warehouse",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2082,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part1ADyingDistrict",
+                            "contentChunkId": "6a750ca7-fa24-45ba-b5f9-694a241b1dd5",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "stGBLd6wHGL1Ns9Q"
+                        },
+                        "positions": [
+                            {
+                                "x": 1925,
+                                "y": 975
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "08. Rashlen Manor",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2084,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part1ADyingDistrict",
+                            "contentChunkId": "e8032d38-1665-4212-9550-f05d5a899d06",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "3KdkKRqRnV6vgy7j"
+                        },
+                        "positions": [
+                            {
+                                "x": 1875,
+                                "y": 1325
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "09. Thornwell Tower",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2086,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part1ADyingDistrict",
+                            "contentChunkId": "e6af4555-ed35-4098-88cf-202767bfa402",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "zw8Pr31sfkectFGk"
+                        },
+                        "positions": [
+                            {
+                                "x": 1775,
+                                "y": 1325
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "10. Mortuary",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2088,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part1ADyingDistrict",
+                            "contentChunkId": "eeded14f-1eac-4d73-8347-b95beef82503",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "IBY3fQFSaNmm36qy"
+                        },
+                        "positions": [
+                            {
+                                "x": 2275,
+                                "y": 1375
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "11. Hopene’er Asylum",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2090,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part1ADyingDistrict",
+                            "contentChunkId": "b7acdceb-0adb-4b70-b235-45d7a9b147c3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "2tOOrBM0ImdNMADZ"
+                        },
+                        "positions": [
+                            {
+                                "x": 2075,
+                                "y": 1575
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        }
+    },
+    {
+        "name": "Dory's Warehouse",
+        "navName": "Dory's Warehouse",
+        "width": 2566,
+        "height": 1800,
+        "grid": 50,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -74,
+        "shiftY": 13,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [
+            {
+                "_id": "i8jHjsQQK2WaiNyO",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2319,
+                "y": 744,
+                "width": 591,
+                "height": 106,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "Open to area D3 Belown",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            }
+        ],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13070,
+                "cobaltId": null,
+                "parentId": 679,
+                "contentChunkId": "2942b2d8-9ea9-4779-85a9-c098c6400198",
+                "notes": [
+                    {
+                        "label": "D01. Main Storehouse",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2079,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "b4ed67c0-670b-4f2b-8909-0464f299a46d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "PPLCzt2HDkH8hU0S"
+                        },
+                        "positions": [
+                            {
+                                "x": 1375,
+                                "y": 775
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "D02. Office",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2083,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "ac3a4327-535b-4823-bdc7-80bb58b10820",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "t34teG5xywZs2kbj"
+                        },
+                        "positions": [
+                            {
+                                "x": 1025,
+                                "y": 625
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "D03. Loft",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2087,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "41e70e48-4a0b-4513-b3cf-dde3341511e2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "E7pgzd0Mqdejux7l"
+                        },
+                        "positions": [
+                            {
+                                "x": 1475,
+                                "y": 1475
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "D04. Upper Walkway",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2090,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "5054310b-de98-4ec4-82a2-825310be5dfc",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "UdjlwMCZobdMurzH"
+                        },
+                        "positions": [
+                            {
+                                "x": 2575,
+                                "y": 575
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "D05. Crane",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2095,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "5a8022be-b2b8-442a-b4f2-bb7526ca140b",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "K7p3ehfXCfd7Nnxm"
+                        },
+                        "positions": [
+                            {
+                                "x": 2325,
+                                "y": 1275
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "D06. Upper Deck",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2100,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "124bb1b9-6501-4461-bb7c-918e508dfbf4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "Px4pPzCtpR7o31dz"
+                        },
+                        "positions": [
+                            {
+                                "x": 2625,
+                                "y": 1625
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "D07. Bow Pool",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2106,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "5b30666c-521b-4666-a29b-d869e31ca407",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "PBkqcHyaVVOSaVzT"
+                        },
+                        "positions": [
+                            {
+                                "x": 2675,
+                                "y": 1975
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "D08. Amidships",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2112,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "8c141490-6a78-41dd-8544-ee0ab1899c90",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "2HmkjZJtHLTEscCt"
+                        },
+                        "positions": [
+                            {
+                                "x": 2525,
+                                "y": 1925
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "D09. Dory’s Chamber",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2130,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "b663e97b-47a6-4a2e-b74c-28f73a07d8f2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "Z86iPxvZHP5Ry8F2"
+                        },
+                        "positions": [
+                            {
+                                "x": 2325,
+                                "y": 1925
+                            }
+                        ],
+                        "iconSize": 38,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        }
+    },
+    {
+        "name": "Low Quater",
+        "navName": "Low Quater",
+        "width": 2352,
+        "height": 1650,
+        "grid": 59,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -124,
+        "shiftY": -10,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13071,
+                "cobaltId": null,
+                "parentId": 679,
+                "contentChunkId": "d506c633-a30b-472c-a81d-78eb2bf68879",
+                "notes": [
+                    {
+                        "label": "T01. Milden Span",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2073,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part4TheLampsShadow",
+                            "contentChunkId": "068458f9-36b6-4659-86ea-63593d4cd18d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "kidAHb3IL7Kv3k70"
+                        },
+                        "positions": [
+                            {
+                                "x": 2684.5,
+                                "y": 1268.5
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T02. Galley Pier",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2077,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part4TheLampsShadow",
+                            "contentChunkId": "8f8b138c-82db-42c4-aacb-c0a3da876ac3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "WvJVrBe8K8V56wva"
+                        },
+                        "positions": [
+                            {
+                                "x": 2271.5,
+                                "y": 1504.5
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T03. Ship’s Prow",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2081,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part4TheLampsShadow",
+                            "contentChunkId": "cbc25f7c-6ec2-4e7f-a969-ecc13e6e56c2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "a4i0f9XgQAXPhI4j"
+                        },
+                        "positions": [
+                            {
+                                "x": 2625.5,
+                                "y": 1504.5
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T04. Chuul-Haunted Hallway",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2086,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part4TheLampsShadow",
+                            "contentChunkId": "afc0b294-ae5d-4722-a244-fc623f238fda",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "AuZbG3MrTWq7Zhr1"
+                        },
+                        "positions": [
+                            {
+                                "x": 1858.5,
+                                "y": 1504.5
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T05. Dark God’s Chapel",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2090,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part4TheLampsShadow",
+                            "contentChunkId": "9de1e246-6a1a-402e-bebd-524f97f1e967",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "jxekFTECc10XUqwC"
+                        },
+                        "positions": [
+                            {
+                                "x": 1504.5,
+                                "y": 1504.5
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "T06. Watery Descent",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2109,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part4TheLampsShadow",
+                            "contentChunkId": "6a0e108a-f66a-409b-8c8b-c0f7cf0cefec",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "fVgmo5YiDfN8rD4i"
+                        },
+                        "positions": [
+                            {
+                                "x": 1150.5,
+                                "y": 1504.5
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        }
+    },
+    {
+        "name": "Landgrave's Folly",
+        "navName": "Landgrave's Folly",
+        "width": 2138,
+        "height": 1500,
+        "grid": 59,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -43,
+        "shiftY": 11,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13072,
+                "cobaltId": null,
+                "parentId": 679,
+                "contentChunkId": "43c40ae3-9e4f-4b7c-8d21-cd520bb60eb8",
+                "notes": [
+                    {
+                        "label": "L01. Ruined Spire",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2076,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part5TharizdunsProgeny",
+                            "contentChunkId": "8dfe7834-8de2-41ec-8052-17f09d043f31",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "xmAdZfJmItXZIAgH"
+                        },
+                        "positions": [
+                            {
+                                "x": 1386.5,
+                                "y": 1445.5
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "L02. Flooded Temple",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2085,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part5TharizdunsProgeny",
+                            "contentChunkId": "e21af47b-c177-43ab-ad76-f76fff544dff",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "Ex1vbv8ukv7rVuPx"
+                        },
+                        "positions": [
+                            {
+                                "x": 1563.5,
+                                "y": 1091.5
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "L03. Landgrave’s Pit",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2094,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part5TharizdunsProgeny",
+                            "contentChunkId": "34dfefff-02f5-45ee-a8e5-7e0ac7d13502",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "78CUx4gMiUO5FwlO"
+                        },
+                        "positions": [
+                            {
+                                "x": 1150.5,
+                                "y": 1032.5
+                            }
+                        ],
+                        "iconSize": 44,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        }
+    },
+    {
+        "name": "Cove Reef",
+        "navName": "Cove Reef",
+        "width": 4200,
+        "height": 5700,
+        "grid": 60,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 1,
+        "shiftY": -17,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [
+            {
+                "_id": "P9x67Ej2aVe9JaIy",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1343,
+                "y": 5078,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-35 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "BspOKbW0mHGBVYa5",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1320,
+                "y": 5220,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-25 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "VQpAA213jEne9qMQ",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1155,
+                "y": 5408,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-20 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "zSLUFjBHOP8n7Aii",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2820,
+                "y": 6600,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-35 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "7BJL9AWwiI6Zw8rm",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2580,
+                "y": 6840,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-25 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "UW7OoRZObZZ3Bj8S",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1560,
+                "y": 6600,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-10 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "kA1KpTfoH1NWWJRI",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1560,
+                "y": 6840,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-15 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "xsW7cGxcRj6DzQuZ",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2490,
+                "y": 5753,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-30 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "YE7fCxMES0xGVe2i",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2940,
+                "y": 6900,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-30 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "yYyhvrhRArKEhzyk",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3720,
+                "y": 6900,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-40 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "0w5mXlwgvXzEmgbW",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 4380,
+                "y": 3120,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-30 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "C6lJTmSkBGkAoMgz",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3900,
+                "y": 1680,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-30 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "djiDv4QI39sRbzAK",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 4500,
+                "y": 2640,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-10 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "Yqr9Frc3QxZAPeyB",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 4080,
+                "y": 2640,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-15 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "hOcbSCMhAw28kEOl",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3720,
+                "y": 2040,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-40 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "cYp9VZbjkWjL5OOT",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 4328,
+                "y": 2205,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-5 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "wuOuPD0Owmfe0yjl",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 4980,
+                "y": 2760,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-5 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "kuDsovEiwFhWCtkR",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 4800,
+                "y": 1620,
+                "width": 87.25,
+                "height": 56.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-5 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#121111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            }
+        ],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13085,
+                "cobaltId": null,
+                "parentId": 671,
+                "contentChunkId": "5c105a8e-fbce-4068-982a-d154627d238b",
+                "notes": [
+                    {
+                        "label": "C01. Blood Hawk Roost",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2088,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "f2ff0588-08e2-45f3-903b-c77e7b3b9700",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "ck2juaOU1OIF6oiu"
+                        },
+                        "positions": [
+                            {
+                                "x": 1710,
+                                "y": 6030
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C02. Crystal Cave",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2093,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "9e089582-c505-4f69-b9e0-13fd37372808",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "Wzagx6bztJHH3sPw"
+                        },
+                        "positions": [
+                            {
+                                "x": 3750,
+                                "y": 2250
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C03. Coral Reef",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2100,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "8bc94ebf-38aa-4b54-97ba-2a04efff6749",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "6wEMrAwsYGhLCHgA"
+                        },
+                        "positions": [
+                            {
+                                "x": 1470,
+                                "y": 3810
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C04. Bleached Reef",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2107,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "249cc8a2-4b18-4b6d-9a82-e183304b77d7",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "AuGB789CBjmhTR9F"
+                        },
+                        "positions": [
+                            {
+                                "x": 3030,
+                                "y": 5490
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C05. Giant Anemone",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2112,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "d5caf675-57c0-4c1b-b88b-0f1bec3382db",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "yZeG93O6lR9GkBvh"
+                        },
+                        "positions": [
+                            {
+                                "x": 4290,
+                                "y": 5430
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C06. Merfolk Mass Grave",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2117,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "85f4b321-3985-479a-a03f-a46408f5d333",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "u32XIHPtHAC2wHHs"
+                        },
+                        "positions": [
+                            {
+                                "x": 3750,
+                                "y": 4290
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "C07. Cove Gorge",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2120,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "f1c55a8d-fdbc-4735-8b69-2d29022bf176",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "P5k4HKPLDvC2QTOg"
+                        },
+                        "positions": [
+                            {
+                                "x": 4890,
+                                "y": 4170
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        }
+    },
+    {
+        "name": "Wreck of the Marshal",
+        "navName": "Wreck of the Marshal",
+        "width": 4200,
+        "height": 5700,
+        "grid": 140,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -139,
+        "shiftY": -2,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [
+            {
+                "_id": "tlZ7SJQIe27jDpum",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1908,
+                "y": 2826,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": null,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-5 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "TGDZgSCzWCHkUDmx",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 4900,
+                "y": 3920,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-5 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "0DeJWmwLjKveSBc5",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2100,
+                "y": 3360,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-10 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "WlZzSnE3bYdkvKMO",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2100,
+                "y": 1680,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-10 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "cd8dIhtVZUIcguCB",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 5180,
+                "y": 2660,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-10 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "REnaLQBIvGnAhcE4",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2126,
+                "y": 4331,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-10 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "uhYZOxtTNDBp8iEy",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 4218,
+                "y": 4305,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-10 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "RrYtBw0tvWrkctKu",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3238,
+                "y": 4454,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-15 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "bjlGHLsP7LmUkmLS",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3080,
+                "y": 2660,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-15 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "S9itFrEtUtQqbk6A",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 5040,
+                "y": 2940,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-30 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "GakufrUHINJ8q8ST",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 4480,
+                "y": 4900,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-25 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "N9N7nTyvqhHOviXw",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1540,
+                "y": 3500,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-15 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            }
+        ],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13086,
+                "cobaltId": null,
+                "parentId": 671,
+                "contentChunkId": "88b34ebb-9506-42f5-918f-886a0fb6f9df",
+                "notes": [
+                    {
+                        "label": "M01. Harpy Rock",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2123,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "e60d7080-8a43-4421-9f8d-3db2126a3475",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "LMRqwP17Budt5Kqv"
+                        },
+                        "positions": [
+                            {
+                                "x": 4970,
+                                "y": 5250
+                            }
+                        ],
+                        "iconSize": 105,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "M02. Upper Decks",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2131,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "baf5f240-76fd-432a-9eb9-c21aa85f3b36",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "hkDrew5nNK0tCQEd"
+                        },
+                        "positions": [
+                            {
+                                "x": 3430,
+                                "y": 3990
+                            }
+                        ],
+                        "iconSize": 105,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "M03. Cargo Hold",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2139,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "6d3b91d8-ddfa-4f69-8336-bdc325c8afed",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "jMQ0k5iG2qnqXGjP"
+                        },
+                        "positions": [
+                            {
+                                "x": 2870,
+                                "y": 6230
+                            }
+                        ],
+                        "iconSize": 105,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "M04. St. Cuthbert’s Shrine",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2145,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "a61796ff-e8c8-4e38-b131-776c9fe158ba",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "ZySlMVqlyvP9ZCN2"
+                        },
+                        "positions": [
+                            {
+                                "x": 2170,
+                                "y": 6370
+                            }
+                        ],
+                        "iconSize": 105,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "M05. Crew Quarters",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2148,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "96370aaf-ac49-4dff-b963-bcdc9aa92ad6",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "Q2WJBN4PiJdvEbEL"
+                        },
+                        "positions": [
+                            {
+                                "x": 3570,
+                                "y": 6090
+                            }
+                        ],
+                        "iconSize": 105,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "M06. Passenger Quarters",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2153,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "307977e3-92df-4604-8975-8ebf926f5412",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "2RMoG6SBtXlzw2xd"
+                        },
+                        "positions": [
+                            {
+                                "x": 3570,
+                                "y": 6650
+                            }
+                        ],
+                        "iconSize": 105,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "M07. Missionary Cargo",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2156,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "1c65bb27-31e4-4490-bcad-ee7a4695fad1",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "EEe8Hw25f5aWEttH"
+                        },
+                        "positions": [
+                            {
+                                "x": 4550,
+                                "y": 6230
+                            }
+                        ],
+                        "iconSize": 105,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "M08. Brig",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2160,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "61d1c069-54b0-4da4-a186-644344ced2f3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "2gBvSUcy9onMxHCV"
+                        },
+                        "positions": [
+                            {
+                                "x": 4550,
+                                "y": 6510
+                            }
+                        ],
+                        "iconSize": 105,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "M09. Cave of Lost Souls",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2167,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "2438ebd4-36ad-4273-8542-8a947f18e9de",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "qbUhHXySBGWReJuI"
+                        },
+                        "positions": [
+                            {
+                                "x": 2170,
+                                "y": 5810
+                            }
+                        ],
+                        "iconSize": 105,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        }
+    },
+    {
+        "name": "Warthalkeel",
+        "navName": "Warthalkeel",
+        "width": 4200,
+        "height": 5700,
+        "grid": 60,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": 1,
+        "shiftY": -16,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [
+            {
+                "_id": "biaTAwPz1GT2ftyf",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2025,
+                "y": 1785,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "a",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "Y8OqWJV3cobRCXaN",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1950,
+                "y": 4245,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-15 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "o1t91nAeVezZfzJ1",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1380,
+                "y": 3600,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-25 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "C3gOTfE79oDd0Ry2",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1560,
+                "y": 4560,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-50 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "cMTwwcOUS5kSDDOL",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1950,
+                "y": 4935,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-40 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "1JDqvInXsYouQV56",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2400,
+                "y": 5220,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-110 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "cqqK9lddw6WAmiAq",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 5040,
+                "y": 4800,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "-40 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "J4SAzIL2GDkbJcGo",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 4680,
+                "y": 5280,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-10 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "v7nLYVCfWXXXNX4r",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 5040,
+                "y": 5400,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "-5 ft",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "MqXjRoN3hbcQdzu5",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3698,
+                "y": 2138,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "a",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "hdhKi0D1m7LwTtTo",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3225,
+                "y": 4050,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "a",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "6ytDSJbPAY3GJeWJ",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1740,
+                "y": 2160,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "b",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "VHh1agLSEXLXRZF2",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3720,
+                "y": 2370,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "b",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "hIMJHMq6MEpFzYaj",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3660,
+                "y": 4073,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "b",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "IsZLsTkJrPgIeMyL",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2738,
+                "y": 3930,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "b",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "82IwJY0BkCUKZ6kl",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 2948,
+                "y": 4538,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "b",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "U5sCXyUak366FzVY",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3428,
+                "y": 4538,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "b",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "fEF2U17ClAYsmTxM",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3720,
+                "y": 2880,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "c",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "SbRyfWyJwxX0H12W",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3398,
+                "y": 2790,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "d",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "H5uRtXWz6zY5DOQ0",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3915,
+                "y": 2775,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "e",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "gj3JVURfKvygYa5b",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3720,
+                "y": 3375,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "f",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "gGbqGekwormyJ1ef",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3210,
+                "y": 4763,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "c",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "t0vpVOz1VgLCQ441",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3600,
+                "y": 4755,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": null,
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "d",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "4nyHDsLhhahML0Th",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1673,
+                "y": 5843,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "e",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "4GzHkaLs8NJ3KpND",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1673,
+                "y": 6218,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "f",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "MUk0sqnn0uUlCuJP",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 1905,
+                "y": 6803,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "g",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "9U2cjlLA7PuYvXRV",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 3113,
+                "y": 5850,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "h",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "XCEomzq1tiG8oUwX",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 4515,
+                "y": 5888,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "i",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "AUTMFTTosMWZ7zGL",
+                "author": "S1cMjMBw2tVRxmq4",
+                "type": "t",
+                "x": 4898,
+                "y": 6690,
+                "width": 201.5,
+                "height": 131.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "j",
+                "fontFamily": "Signika",
+                "fontSize": 70,
+                "textColor": "#0a0a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            }
+        ],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 13087,
+                "cobaltId": null,
+                "parentId": 671,
+                "contentChunkId": "83f2a435-105f-488b-b8f3-982a1dd83bd1",
+                "notes": [
+                    {
+                        "label": "W02. Vaalastroth Trench",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2171,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "133e7a0f-8cbb-4678-8518-bb48c41bcc84",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "IJkYHNOqOHi1T6J2"
+                        },
+                        "positions": [
+                            {
+                                "x": 4710,
+                                "y": 2430
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "W03. Ruined Buildings",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2176,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "95a682e9-5d23-4a11-947f-4f469c8d217f",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "FkaQvzHR389POIvl"
+                        },
+                        "positions": [
+                            {
+                                "x": 4830,
+                                "y": 3210
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "W04. Windmill",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2179,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "2c97546d-aee4-4e49-a23d-e3e562a4e1b8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "J8bib7E0uDPQkcWN"
+                        },
+                        "positions": [
+                            {
+                                "x": 5010,
+                                "y": 1830
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "W05. Kraken’s Vault",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2185,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "c67c6b3b-316e-48b4-828f-9d6dcf518e4e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "YdN3GZqslxYrDGDf"
+                        },
+                        "positions": [
+                            {
+                                "x": 2010,
+                                "y": 1890
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "W06. House of Procan",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2197,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "4a0b9250-38f3-4ffc-af04-074873dd9865",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "ICjKl4c4ripyZSvy"
+                        },
+                        "positions": [
+                            {
+                                "x": 3810,
+                                "y": 3270
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "W07. Temple of Vaalastroth",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2216,
+                            "bookCode": "gos",
+                            "slug": "of-ships-and-the-sea#UnderwaterLocations",
+                            "contentChunkId": "2b0cb29d-14a4-4465-997b-317f0c3ea388",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 671,
+                            "linkId": "3duWHd9O0nMttCJT"
+                        },
+                        "positions": [
+                            {
+                                "x": 1590,
+                                "y": 5850
+                            },
+                            {
+                                "x": 3090,
+                                "y": 4350
+                            }
+                        ],
+                        "iconSize": 45,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        }
     }
 ]
