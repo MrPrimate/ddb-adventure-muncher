@@ -221,6 +221,7 @@ function importScene(conf, sceneFile) {
         tokens: inData.tokens.map((token) => {
           delete(token.bar2);
           delete(token.displayName);
+          delete(token._id);
           return token;
         }),
       }
