@@ -2134,8 +2134,7 @@
                             "note": true,
                             "img": false,
                             "parentId": 1179,
-                            "linkId": "Nc0htxsvQIBufMno",
-                            "pin": "19201536"
+                            "linkId": "Nc0htxsvQIBufMno"
                         },
                         "positions": [
                             {
@@ -2571,33 +2570,6 @@
                 ],
                 "tokens": [
                     {
-                        "_id": "2RgK3CtLmfF4Gcun",
-                        "name": "test",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 3456,
-                        "y": 768,
-                        "disposition": 1,
-                        "flags": {},
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "tint": null,
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "x6zlrZu9gWvLcWpF",
                         "name": "Sage",
                         "width": 1,
                         "height": 1,
@@ -2629,7 +2601,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "WhZrkvvXzuWROHB3",
                         "name": "Swarm of Animated Books",
                         "width": 1,
                         "height": 1,
@@ -2661,7 +2632,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "0ooqBKEvbqu66cHa",
                         "name": "Animated Broom",
                         "width": 1,
                         "height": 1,
@@ -2693,7 +2663,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "5YF1DhNXovEfVrgC",
                         "name": "Homunculus",
                         "width": 1,
                         "height": 1,
@@ -2725,7 +2694,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "XzwwQaioOWjbJvQa",
                         "name": "Homunculus",
                         "width": 1,
                         "height": 1,
@@ -2757,7 +2725,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "nR2kg8ymILnrAZE9",
                         "name": "Mimic Chair",
                         "width": 1,
                         "height": 1,
@@ -2789,7 +2756,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "XQ1kYPieXFx4oeFN",
                         "name": "Faerie Dragon (Younger)",
                         "width": 1,
                         "height": 1,
@@ -2821,7 +2787,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "4IOnawvEh71JSgHr",
                         "name": "Faerie Dragon (Younger)",
                         "width": 1,
                         "height": 1,
@@ -2853,7 +2818,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "Zvd7gM0looavVrki",
                         "name": "Animated Chained Library",
                         "width": 2,
                         "height": 2,
@@ -2885,7 +2849,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "QOs7kivqrEGAWgCq",
                         "name": "Flying Sword",
                         "width": 1,
                         "height": 1,
@@ -2917,7 +2880,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "QP7YblbEsgDD25k9",
                         "name": "Flying Sword",
                         "width": 1,
                         "height": 1,
@@ -2949,7 +2911,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "Atuu9Ket9rznmmJL",
                         "name": "Quasit",
                         "width": 1,
                         "height": 1,
@@ -2981,7 +2942,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "9LuK5mh5Vj8opb5L",
                         "name": "Crawling Claw",
                         "width": 1,
                         "height": 1,
@@ -3013,7 +2973,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "mlsIcxDV57STHlTQ",
                         "name": "Crawling Claw",
                         "width": 1,
                         "height": 1,
@@ -3045,7 +3004,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "YVerUI8SesbSoPSd",
                         "name": "Crawling Claw",
                         "width": 1,
                         "height": 1,
@@ -3077,7 +3035,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "obMtPMSKz9RisTZa",
                         "name": "Crawling Claw",
                         "width": 1,
                         "height": 1,
@@ -3115,7 +3072,6 @@
                         }
                     },
                     {
-                        "_id": "5elimBsD1aarjQeb",
                         "name": "Slaad Tadpole",
                         "width": 1,
                         "height": 1,
@@ -3702,7 +3658,6 @@
                 ],
                 "tokens": [
                     {
-                        "_id": "oMrge9KPjSqcRAQL",
                         "name": "Rug of Smothering",
                         "width": 2,
                         "height": 2,
@@ -3734,7 +3689,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "QbX2PfXsX5zvkqei",
                         "name": "Jackalwere",
                         "width": 1,
                         "height": 1,
@@ -3766,7 +3720,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "fxlRz3XJAJqLnfxc",
                         "name": "Jackalwere",
                         "width": 1,
                         "height": 1,
@@ -3798,7 +3751,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "U6npp3k4fHCsYDfE",
                         "name": "Jackalwere",
                         "width": 1,
                         "height": 1,
@@ -3849,7 +3801,6 @@
                         }
                     },
                     {
-                        "_id": "lA6oc4jRu4Um1AQN",
                         "name": "Jackalwere",
                         "width": 1,
                         "height": 1,
@@ -3881,7 +3832,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "fVCg0HfvjGTEjzQk",
                         "name": "Gingwatzim",
                         "width": 1,
                         "height": 1,
@@ -3913,7 +3863,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "INJaImakEWW2t0kx",
                         "name": "Gingwatzim",
                         "width": 1,
                         "height": 1,
@@ -3945,7 +3894,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "i1RTYiA7anirS4kq",
                         "name": "Jackalwere",
                         "width": 1,
                         "height": 1,
@@ -3977,7 +3925,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "IlQYGfxa54xgcTzy",
                         "name": "Mimic",
                         "width": 1,
                         "height": 1,
@@ -4374,7 +4321,6 @@
                 ],
                 "tokens": [
                     {
-                        "_id": "dpbrYJPKsVpaTJyn",
                         "name": "Warhorse Skeleton",
                         "width": 2,
                         "height": 2,
@@ -4406,7 +4352,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "uRsKuOwAdZ36nEAZ",
                         "name": "Warhorse Skeleton",
                         "width": 2,
                         "height": 2,
@@ -4438,7 +4383,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "QrhJh561i8vxTs7q",
                         "name": "Warhorse Skeleton",
                         "width": 2,
                         "height": 2,
@@ -4470,7 +4414,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "xeOGdiPU4FWNYBBg",
                         "name": "Gargoyle",
                         "width": 1,
                         "height": 1,
@@ -4502,7 +4445,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "pYH7Bsxk4XzKxc4o",
                         "name": "Gargoyle",
                         "width": 1,
                         "height": 1,
@@ -4534,7 +4476,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "e0tBlc8YvUyLGVBI",
                         "name": "Ghoul",
                         "width": 1,
                         "height": 1,
@@ -4566,7 +4507,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "My9n1hzMZNVv8sIE",
                         "name": "Ghoul",
                         "width": 1,
                         "height": 1,
@@ -4598,7 +4538,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "zGL8QwOvEQpZhkib",
                         "name": "Ghoul",
                         "width": 1,
                         "height": 1,
@@ -4630,7 +4569,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "EU89ATlsBX1HEfUJ",
                         "name": "Ghoul",
                         "width": 1,
                         "height": 1,
@@ -4662,7 +4600,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "pJgi0Rlc02VnhBke",
                         "name": "Ghoul",
                         "width": 1,
                         "height": 1,
@@ -4694,7 +4631,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "K6T5rSzXfFKtl5Xk",
                         "name": "Ghoul",
                         "width": 1,
                         "height": 1,
@@ -4726,7 +4662,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "uet2ouGifv3912Vi",
                         "name": "Ghoul",
                         "width": 1,
                         "height": 1,
@@ -4758,7 +4693,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "dPNQDlbuoTSFFeMH",
                         "name": "Ghoul",
                         "width": 1,
                         "height": 1,
@@ -4790,7 +4724,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "JeTF0XKY8hhSLXGf",
                         "name": "Ghoul",
                         "width": 1,
                         "height": 1,
@@ -4822,7 +4755,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "Kqt8cOnCKvrCUMSG",
                         "name": "Ghoul",
                         "width": 1,
                         "height": 1,
@@ -4854,7 +4786,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "8ijbj2pFD8jiimLM",
                         "name": "Ghoul",
                         "width": 1,
                         "height": 1,
@@ -4886,7 +4817,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "gRnL7vGXCb2U7kg5",
                         "name": "Ghoul",
                         "width": 1,
                         "height": 1,
@@ -4918,7 +4848,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "R68OralOrw4CmORV",
                         "name": "Wight",
                         "width": 1,
                         "height": 1,
@@ -5013,7 +4942,7 @@
                     1564,
                     952
                 ],
-                "door": 0,
+                "door": 1,
                 "ds": 0,
                 "move": 1,
                 "sense": 1
@@ -6141,10 +6070,10 @@
                     3502,
                     1904
                 ],
-                "door": 0,
+                "door": 1,
                 "ds": 0,
                 "move": 1,
-                "sense": 0
+                "sense": 1
             },
             {
                 "c": [
@@ -7065,7 +6994,7 @@
                     2992,
                     1224
                 ],
-                "door": 0,
+                "door": 2,
                 "ds": 0,
                 "move": 1,
                 "sense": 1
@@ -7581,7 +7510,7 @@
                     "speed": 5,
                     "intensity": 5
                 },
-                "hidden": false
+                "hidden": true
             },
             {
                 "angle": 360,
@@ -7707,8 +7636,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "bdaqIarANlFxov2R",
-                            "pin": "1326986"
+                            "linkId": "AgwT38VoVZKrVH6U",
+                            "pin": "12921020"
                         },
                         "positions": [
                             {
@@ -7735,8 +7664,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "mtSJDHFR98znUnSK",
-                            "pin": "14621190"
+                            "linkId": "R9oRJnv8GVfiRU9X",
+                            "pin": "14281224"
                         },
                         "positions": [
                             {
@@ -7763,8 +7692,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "JurhlY7mgfoNiAhV",
-                            "pin": "11221394"
+                            "linkId": "jmNKzv42GURYbBxX",
+                            "pin": "10881360"
                         },
                         "positions": [
                             {
@@ -7791,8 +7720,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "Ey7P7t7MAu2huqvL",
-                            "pin": "2482918"
+                            "linkId": "czIVuIcABDMQuen8",
+                            "pin": "2448884"
                         },
                         "positions": [
                             {
@@ -7819,8 +7748,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "DjL9L61BSNsK0azj",
-                            "pin": "2142918"
+                            "linkId": "ADpwr4coW3OADGbU",
+                            "pin": "2176884"
                         },
                         "positions": [
                             {
@@ -7847,8 +7776,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "phKykUXlhuZbBUR1",
-                            "pin": "20061394"
+                            "linkId": "SxjbD57iK831oHnz",
+                            "pin": "19721428"
                         },
                         "positions": [
                             {
@@ -7875,8 +7804,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "znBgFecr5TNa63kB",
-                            "pin": "22101258"
+                            "linkId": "CaQiydiEREcSgHkR",
+                            "pin": "22441292"
                         },
                         "positions": [
                             {
@@ -7903,8 +7832,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "NgJHt6exnWdGX90G",
-                            "pin": "24821054"
+                            "linkId": "BJcxq1oQ2Y3GjRd9",
+                            "pin": "25161020"
                         },
                         "positions": [
                             {
@@ -7931,8 +7860,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "6Fo0BhSHxo82PR2g",
-                            "pin": "24821938"
+                            "linkId": "Dtb8j1hJ9fflmxeF",
+                            "pin": "24481904"
                         },
                         "positions": [
                             {
@@ -7959,8 +7888,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "0jdYFMmGTw86Rwvk",
-                            "pin": "3026918"
+                            "linkId": "9yuxGpjm9bjXMrgS",
+                            "pin": "3060884"
                         },
                         "positions": [
                             {
@@ -7987,8 +7916,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "WD7ewnDQ7c6rYY3O",
-                            "pin": "3162918"
+                            "linkId": "Voak3dUwUGubD3Lg",
+                            "pin": "3196884"
                         },
                         "positions": [
                             {
@@ -8015,8 +7944,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "pZLeLO8G9rPbxS5n",
-                            "pin": "3434986"
+                            "linkId": "PnE8E4K51P8Q1IvM",
+                            "pin": "3400952"
                         },
                         "positions": [
                             {
@@ -8043,8 +7972,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "OJ2OS2lPEOU8dXYQ",
-                            "pin": "31621190"
+                            "linkId": "wEcRr1ZiBVAoAJDz",
+                            "pin": "31281156"
                         },
                         "positions": [
                             {
@@ -8071,8 +8000,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "ThdWUXqAUUZFDk6Y",
-                            "pin": "29582278"
+                            "linkId": "4Fwne34sOMM5JbSr",
+                            "pin": "29922244"
                         },
                         "positions": [
                             {
@@ -8103,8 +8032,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "XSzxUoYw1INeokjH",
-                            "pin": "34341870"
+                            "linkId": "sYXgpC1xyxPIAj2c",
+                            "pin": "34001836"
                         },
                         "positions": [
                             {
@@ -8131,8 +8060,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "iqEFUG3XETKgrtDc",
-                            "pin": "31621802"
+                            "linkId": "z8nrssGX8VzQYpMr",
+                            "pin": "31281836"
                         },
                         "positions": [
                             {
@@ -8159,8 +8088,8 @@
                             "note": true,
                             "img": false,
                             "parentId": 1167,
-                            "linkId": "wywp9iNNemmJtaDH",
-                            "pin": "32302074"
+                            "linkId": "3qdBFmr1oIXJQ0f5",
+                            "pin": "31962040"
                         },
                         "positions": [
                             {
@@ -8176,7 +8105,6 @@
                 ],
                 "tokens": [
                     {
-                        "_id": "EtJUaQDoDovnzopl",
                         "name": "Scarecrow",
                         "width": 1,
                         "height": 1,
@@ -8210,7 +8138,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "EvOp9hmQvScrKl4I",
                         "name": "Crawling Claw",
                         "width": 1,
                         "height": 1,
@@ -8250,7 +8177,6 @@
                         }
                     },
                     {
-                        "_id": "RosbGfaClS5huo8c",
                         "name": "Crawling Claw",
                         "width": 1,
                         "height": 1,
@@ -8290,7 +8216,6 @@
                         }
                     },
                     {
-                        "_id": "BxDeFd84pkZDI8X3",
                         "name": "Poltergeist",
                         "width": 1,
                         "height": 1,
@@ -8324,7 +8249,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "D27VpmVYhAjtJIuL",
                         "name": "Wereraven",
                         "width": 1,
                         "height": 1,
@@ -8358,7 +8282,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "TLeFpQrLzsTkiULE",
                         "name": "Wereraven",
                         "width": 1,
                         "height": 1,
@@ -8392,7 +8315,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "CErdnzyYnAcNKXM9",
                         "name": "Wereraven",
                         "width": 1,
                         "height": 1,
@@ -8426,7 +8348,6 @@
                         "actorData": {}
                     },
                     {
-                        "_id": "UGB2NTTu4gdbuEJR",
                         "name": "Wereraven",
                         "width": 1,
                         "height": 1,
@@ -8464,7 +8385,344 @@
             "stairways": [],
             "perfect-vision": [],
             "dynamic-illumination": []
-        },
-        "tokens": []
+        }
+    },
+    {
+        "name": "Map 5.1: Vermeillon",
+        "navName": "Vermeillon",
+        "width": 5147,
+        "height": 3536,
+        "grid": 50,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -8,
+        "shiftY": -13,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [
+            {
+                "_id": "D0zvYBagGv395UtH",
+                "author": "CvraBN5DKTa4ZItF",
+                "type": "t",
+                "x": 4981,
+                "y": 1081,
+                "width": 131.5,
+                "height": 81.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 1,
+                "texture": "",
+                "text": "To the Mine",
+                "fontFamily": "Signika",
+                "fontSize": 80,
+                "textColor": "#111111",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": true,
+                "flags": {}
+            }
+        ],
+        "weather": "",
+        "darkness": 1,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 325,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.25,
+                "x": 3800,
+                "y": 2675,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            }
+        ],
+        "flags": {
+            "ddb": {
+                "ddbId": 10034,
+                "cobaltId": null,
+                "parentId": 1164,
+                "contentChunkId": "MapMap501vermeillon-player",
+                "notes": [
+                    {
+                        "label": "V01. The Wand and Hammer",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2039,
+                            "bookCode": "cm",
+                            "slug": "a-deep-and-creeping-darkness#Vermeillon",
+                            "contentChunkId": "861813ef-41a2-492a-9c7d-851f83e45e22",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1164,
+                            "linkId": "6yEBnQsaIlIq6Xmi"
+                        },
+                        "positions": [
+                            {
+                                "x": 2850,
+                                "y": 3350
+                            }
+                        ],
+                        "iconSize": 76,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "V02. Stonemason’s Workshop",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2043,
+                            "bookCode": "cm",
+                            "slug": "a-deep-and-creeping-darkness#Vermeillon",
+                            "contentChunkId": "7631b7ab-4d7e-4cf0-8b9c-ac54969a78e4",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1164,
+                            "linkId": "ICyCEJk3DfKawG7t"
+                        },
+                        "positions": [
+                            {
+                                "x": 2950,
+                                "y": 2950
+                            }
+                        ],
+                        "iconSize": 76,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "V03. Mayor’s House",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2047,
+                            "bookCode": "cm",
+                            "slug": "a-deep-and-creeping-darkness#Vermeillon",
+                            "contentChunkId": "cd2206a9-f3d4-46de-82ee-10628d46acd4",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1164,
+                            "linkId": "4HE0CXvD52K8e3Zk"
+                        },
+                        "positions": [
+                            {
+                                "x": 3800,
+                                "y": 1750
+                            }
+                        ],
+                        "iconSize": 76,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "V04. Tree",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2050,
+                            "bookCode": "cm",
+                            "slug": "a-deep-and-creeping-darkness#Vermeillon",
+                            "contentChunkId": "e3a62f34-5a19-4ff5-9676-438c5a9a545f",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1164,
+                            "linkId": "dQduo8wTRsHiHRxc"
+                        },
+                        "positions": [
+                            {
+                                "x": 3750,
+                                "y": 2350
+                            }
+                        ],
+                        "iconSize": 76,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "V05. Graveyard",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2056,
+                            "bookCode": "cm",
+                            "slug": "a-deep-and-creeping-darkness#Vermeillon",
+                            "contentChunkId": "82a156ef-fecc-49c0-bbf4-bd109845b491",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1164,
+                            "linkId": "rkRntUiNEHfEchMJ"
+                        },
+                        "positions": [
+                            {
+                                "x": 2150,
+                                "y": 1850
+                            }
+                        ],
+                        "iconSize": 76,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "V06. Merchant’s Cart",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2065,
+                            "bookCode": "cm",
+                            "slug": "a-deep-and-creeping-darkness#Vermeillon",
+                            "contentChunkId": "668ba54c-b7b2-4221-892d-a57e36c833b9",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1164,
+                            "linkId": "jGZ8AGCMxAhAEHiA"
+                        },
+                        "positions": [
+                            {
+                                "x": 2350,
+                                "y": 1350
+                            }
+                        ],
+                        "iconSize": 76,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": [
+                    {
+                        "name": "Meenlock",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 3900,
+                        "y": 1750,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17281,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "name": "Meenlock",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 4200,
+                        "y": 3600,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17281,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "name": "Meenlock",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 3550,
+                        "y": 3650,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17281,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "effects": [],
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    }
+                ]
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        }
     }
 ]
