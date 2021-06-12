@@ -1,3 +1,7 @@
+# 0.2.2
+
+* Some missing STK scenes now parse.
+
 # 0.2.1
 
 * ToA scene improvements (Thanks @michaelko777#7952 !)
