@@ -11,7 +11,10 @@ async function getEnhancedData(config) {
     false;
 
   return new Promise((resolve, reject) => {
-    if (disableEnhancedDownloads) resolve([]);
+    if (disableEnhancedDownloads) {
+      console.log("Enhanced downloads disabled");
+      resolve([]);
+    } 
     fetch(`${enhancementEndpoint}/proxy/adventure/enhancement`, {
       method: "POST",
       headers: {
@@ -25,6 +28,7 @@ async function getEnhancedData(config) {
           console.log(`Failure: ${data.message}`);
           reject(data.message);
         }
+        console.log(`Successfully received enhanced data for ${config.run.bookCode} containing ${data.data.length} items`);
         return data;
       })
       .then((data) => resolve(data.data))
