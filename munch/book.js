@@ -1347,6 +1347,7 @@ async function collectionFinished(err, count) {
 }
 
 async function setConfig(conf) {
+  console.log(`Starting import of ${config.run.bookCode}`);
   config = conf;
   masterFolder = undefined;
   generatedJournals = [];
