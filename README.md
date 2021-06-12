@@ -97,13 +97,22 @@ If you wish to help improve the scene wall and lighting information, see the bel
 
 ## Contribution
 
-### Walls and Lighting information
+### Scene adjustments
 
-* If you wish to add walls/lighting information you can turn on a setting in Foundry to allow you to support data from a supported map.
+* Scenes will export:
+  * Links to places notes/pins
+  * Information about tokens placed from the DDB Monster Compendium
+  * Lights
+  * Global illumination
+  * Alignment and scaling
+  * Walling and doors
+  * Drawings
+
+### How?
 * You need to be using v1.0.9+ of ddb-importer.
 * Open the Chrome Developer Console (F12) and run `game.settings.set("ddb-importer", "allow-scene-download", true)`
 * Now when you right click on a scene navigation button you will get the option to download the associated data (DDB Scene Config).
-* Upload this to the #scene-adjustments channel on Discord with a description of your changes.
+* Fill out the form and upload the json file [here](https://forms.gle/NvyRWdUxi9Dho4As9)
 
 ### Stairways module
 
