@@ -3,6 +3,7 @@
 * Some missing STK scenes now parse.
 * SKT additions (Thanks Zac !)
 * Option to generate tables and journals as observable by all.
+* Extra deb info for enhanced data fetch.
 
 # 0.2.1
 
