@@ -1,6 +1,8 @@
 # 0.2.2
 
 * Some missing STK scenes now parse.
+* SKT additions (Thanks Zac !)
+* Option to generate tables and journals as observable by all.
 
 # 0.2.1
 

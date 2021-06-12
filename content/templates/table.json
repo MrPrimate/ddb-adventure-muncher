@@ -15,5 +15,8 @@
   "formula": "",
   "replacement": true,
   "displayRoll": true,
-  "folder": "AAAAAAAAAAAAAAAA"
+  "folder": "AAAAAAAAAAAAAAAA",
+  "permission": {
+    "default": 0
+  }
 }

@@ -125,6 +125,14 @@ async function getConfig(options = {}) {
     utils.saveJSONFile(config, configFile);
   }
 
+  if (
+    (options.observeAll === true || options.observeAll === false) &&
+    config.observeAll !== options.observeAll
+  ) {
+    config.observeAll = options.observeAll;
+    utils.saveJSONFile(config, configFile);
+  }
+
   if (!options.bookCode) {
     return config;
   }

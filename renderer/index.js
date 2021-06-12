@@ -34,9 +34,15 @@ generateButton.addEventListener("click", (event) => {
   generateButton.disabled = true;
   const bookCode = document.getElementById("book-select");
   const generateTokens = document.getElementById("generate-tokens");
+  const observeAll = document.getElementById("observe-all");
   
+  const options = {
+    bookCode: bookCode.value,
+    generateTokens: generateTokens.checked,
+    observeAll: observeAll.checked,
+  };
   if (bookCode.value !== 0) {
-    window.api.send("generate", { bookCode: bookCode.value, generateTokens: generateTokens.checked });
+    window.api.send("generate", options);
   }
 
 });

@@ -262,6 +262,8 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
     if (row.cobaltId) table.flags.ddb.cobaltId = row.cobaltId;
     if (row.parentId) table.flags.ddb.parentId = row.parentId;
 
+    if (config.observeAll) table.permission.default = 2;
+
     const tableRow = {
       title: table.name,
       id: 10000 + table.flags.ddb.ddbId + tmpCount,
@@ -510,6 +512,8 @@ function generateJournalEntry(row, img=null, note=false) {
   journal.flags.ddb.originHint = row.originHint;
   journal.flags.ddb.originalLink = row.originalLink;
   journal.flags.ddb.note = note;
+
+  if (config.observeAll) journal.permission.default = 2;
 
   journal.sort = journalSort + parseInt(row.id);
   if (row.cobaltId) journal.flags.ddb.cobaltId = row.cobaltId;

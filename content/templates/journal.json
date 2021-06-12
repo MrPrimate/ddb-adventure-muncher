@@ -11,5 +11,8 @@
     }
   },
   "content": null,
-  "img": null
+  "img": null,
+  "permission": {
+    "default": 0
+  }
 }
