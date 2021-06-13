@@ -1,3 +1,7 @@
+# 0.2.5
+
+* LMoP Ruins of Thundertree update (Thanks @Zac !)
+
 # 0.2.4
 
 * BGDiA corrections (Thanks @michaelko777#7952 !)
