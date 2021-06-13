@@ -1,3 +1,7 @@
+# 0.2.4
+
+* BGDiA corrections (Thanks @michaelko777#7952 !)
+
 # 0.2.2/3
 
 * Some missing STK scenes now parse.
