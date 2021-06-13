@@ -1,6 +1,8 @@
 # 0.2.4
 
 * BGDiA corrections (Thanks @michaelko777#7952 !)
+* IDRotF changes (Thanks @michaelko777#7952 !)
+* HotDQ additions (Thanks @m42e#6427 !)
 
 # 0.2.2/3
 
