@@ -15648,5 +15648,483 @@
             "perfect-vision": [],
             "dynamic-illumination": []
         }
+    },
+    {
+        "name": "Map 1.4: The Low Lantern",
+        "navName": "The Low Lantern",
+        "width": 5964,
+        "height": 4000,
+        "grid": 164,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "shiftX": -7,
+        "shiftY": -58,
+        "padding": 0.25,
+        "initial": null,
+        "backgroundColor": "#999999",
+        "walls": [],
+        "drawings": [
+            {
+                "_id": "JAVESSS3ndbXoIJf",
+                "author": "tnUNKheFpmN8I2u4",
+                "type": "t",
+                "x": 2194,
+                "y": 3239,
+                "width": 256.25,
+                "height": 133.25,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "Crow's Nest",
+                "fontFamily": "Signika",
+                "fontSize": 50,
+                "textColor": "#f50a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "sRTG8T1qy9CB13CI",
+                "author": "tnUNKheFpmN8I2u4",
+                "type": "t",
+                "x": 2296,
+                "y": 2624,
+                "width": 256.25,
+                "height": 133.25,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "Down to L5",
+                "fontFamily": "Signika",
+                "fontSize": 50,
+                "textColor": "#f50a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "AoiHQfLajzfwOHq6",
+                "author": "tnUNKheFpmN8I2u4",
+                "type": "t",
+                "x": 3126,
+                "y": 3700,
+                "width": 256.25,
+                "height": 133.25,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "Wharf",
+                "fontFamily": "Signika",
+                "fontSize": 50,
+                "textColor": "#f50a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "ZTket1pOnfJ0nhPQ",
+                "author": "tnUNKheFpmN8I2u4",
+                "type": "t",
+                "x": 3844,
+                "y": 2470,
+                "width": 256.25,
+                "height": 133.25,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "Up to L1",
+                "fontFamily": "Signika",
+                "fontSize": 50,
+                "textColor": "#f50a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "iHjC3HyWF0GHRmzY",
+                "author": "tnUNKheFpmN8I2u4",
+                "type": "t",
+                "x": 4356,
+                "y": 3475,
+                "width": 256.25,
+                "height": 133.25,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "Down to L6",
+                "fontFamily": "Signika",
+                "fontSize": 50,
+                "textColor": "#f50a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "VOQlb3C54HgDcSyX",
+                "author": "tnUNKheFpmN8I2u4",
+                "type": "t",
+                "x": 5802,
+                "y": 2645,
+                "width": 256.25,
+                "height": 133.25,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "Down to L8",
+                "fontFamily": "Signika",
+                "fontSize": 50,
+                "textColor": "#f50a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "JgrnQ8utcqE7HB53",
+                "author": "tnUNKheFpmN8I2u4",
+                "type": "t",
+                "x": 5576,
+                "y": 3772,
+                "width": 256.25,
+                "height": 133.25,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "Up to L5",
+                "fontFamily": "Signika",
+                "fontSize": 50,
+                "textColor": "#f50a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "pzKoVnic6d13HCNq",
+                "author": "tnUNKheFpmN8I2u4",
+                "type": "t",
+                "x": 7052,
+                "y": 2788,
+                "width": 256.25,
+                "height": 133.25,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0.1,
+                "strokeWidth": 8,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "Up to L6",
+                "fontFamily": "Signika",
+                "fontSize": 50,
+                "textColor": "#f50a0a",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            }
+        ],
+        "weather": "",
+        "darkness": 0,
+        "tokenVision": true,
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "lights": [],
+        "flags": {
+            "ddb": {
+                "ddbId": 11016,
+                "cobaltId": null,
+                "parentId": 726,
+                "contentChunkId": "e39c6429-8c98-4cfe-8351-c6a6785dcc05",
+                "notes": [
+                    {
+                        "label": "L01. Main Deck",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2020,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#LowLantern",
+                            "contentChunkId": "5eff2a3f-dc53-4042-9ba6-e39ccf3c8dc8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "wGEfuD0ib7cFTMLP"
+                        },
+                        "positions": [
+                            {
+                                "x": 2870,
+                                "y": 3198
+                            }
+                        ],
+                        "iconSize": 123,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "L02. Forecastle",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2023,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#LowLantern",
+                            "contentChunkId": "875b1f90-f0a5-4faf-bc66-35b127d8bf87",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "C840eBDCIwE8wE0z"
+                        },
+                        "positions": [
+                            {
+                                "x": 2706,
+                                "y": 3854
+                            }
+                        ],
+                        "iconSize": 123,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "L03. Aftcastle",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2026,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#LowLantern",
+                            "contentChunkId": "656d36bd-cbfe-442c-a017-6e47c5d72719",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "MALGNMPezP4Z1B68"
+                        },
+                        "positions": [
+                            {
+                                "x": 2706,
+                                "y": 2050
+                            }
+                        ],
+                        "iconSize": 123,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "L04. Laraelra’s Cabin",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2034,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#LowLantern",
+                            "contentChunkId": "3300a980-a8c1-4912-95d4-0de0561ca92f",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "qXb53ION8cgRvDbv"
+                        },
+                        "positions": [
+                            {
+                                "x": 4510,
+                                "y": 2214
+                            }
+                        ],
+                        "iconSize": 123,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "L05. Taproom and Gambling Hall",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2040,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#LowLantern",
+                            "contentChunkId": "385643c5-721b-494d-9051-b22427f42955",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "3Nq6JtvkVgGliKZs"
+                        },
+                        "positions": [
+                            {
+                                "x": 4510,
+                                "y": 3362
+                            }
+                        ],
+                        "iconSize": 123,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "L06. Tavern Lounge",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2045,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#LowLantern",
+                            "contentChunkId": "97baf4f8-81f5-4b95-a3c9-e5b6705ea015",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "7NkOWnoaSDX0xKRe"
+                        },
+                        "positions": [
+                            {
+                                "x": 5822,
+                                "y": 4018
+                            }
+                        ],
+                        "iconSize": 123,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "L07. Guest Cabin",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2048,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#LowLantern",
+                            "contentChunkId": "331006e7-271a-4919-8595-7b7d58420054",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "1Joetqq6UjJf7bhK"
+                        },
+                        "positions": [
+                            {
+                                "x": 7134,
+                                "y": 2542
+                            }
+                        ],
+                        "iconSize": 123,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "L08. Sleeping Quarters",
+                        "flags": {
+                            "cobaltId": null,
+                            "ddbId": 2051,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#LowLantern",
+                            "contentChunkId": "f88f62d3-39a9-4598-9738-3d4d662caf1f",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "2cTghmlMIEfjyxQ7"
+                        },
+                        "positions": [
+                            {
+                                "x": 7134,
+                                "y": 3690
+                            }
+                        ],
+                        "iconSize": 123,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        }
     }
 ]
