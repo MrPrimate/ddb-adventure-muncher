@@ -1,6 +1,7 @@
 # 0.2.5
 
 * LMoP Ruins of Thundertree update (Thanks @Zac !)
+* AtG additions (Thanks @Pariah Zero !)
 
 # 0.2.4
 
