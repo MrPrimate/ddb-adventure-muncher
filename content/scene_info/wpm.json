@@ -1,21 +1,880 @@
 [
     {
-        "name": "Map 4.2: White Plume Mountain",
-        "navName": "White Plume Mountain",
-        "width": 13300,
-        "height": 9140,
+        "backgroundColor": "#999999",
+        "darkness": 0,
+        "drawings": [],
+        "flags": {
+            "ddb": {
+                "bookCode": "wpm",
+                "ddbId": 11005,
+                "cobaltId": null,
+                "parentId": 387,
+                "contentChunkId": "81c6ac68-90e5-4493-bf4e-b552f7da3fbc",
+                "notes": [
+                    {
+                        "label": "01. Spiral Staircase",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2008,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "65804cb2-aab5-4042-8e78-b7503a69d31a",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "hMp0lyZPQV8lnkbP"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 8100,
+                                "y": 10400
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "02. Riddling Guardian",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2013,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "a105bc44-5c46-455d-83ca-f683bbadcef5",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "fwzSkZq3Z61LVk5Q"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 9500,
+                                "y": 10300
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "03. Hidden Slime",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2015,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "61481cb5-ee13-4651-81cf-38fe15d4825d",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "Pip7mZe0mYWCMFnn"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 10000,
+                                "y": 9400
+                            }
+                        ],
+                        "iconSize": 40,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04. Glass Globes",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2025,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "db79fb86-7568-40bb-a6ed-5c3138db0385",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "Lm9RxyKi2bs2Cfux"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 12100,
+                                "y": 9800
+                            },
+                            {
+                                "x": 12200,
+                                "y": 10100
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "05. Numbered Golems",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2030,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "3b32baeb-de2d-48da-953e-80bbba0579e4",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "1jwsyxPSKly8ez0R"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 11700,
+                                "y": 7000
+                            },
+                            {
+                                "x": 11900,
+                                "y": 6800
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06. Turnstile",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2033,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "f4c2f7dc-283f-4dac-8ca0-e2412905a98b",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "DwbB8qCgobhbF1E0"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 11800,
+                                "y": 5800
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "07. Geysers and Chains",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2044,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "31ffccf1-79b7-4147-8c46-4763f8e9d8ab",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "v99zDLRIKXuLV34a"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 12500,
+                                "y": 6650
+                            },
+                            {
+                                "x": 12700,
+                                "y": 6800
+                            },
+                            {
+                                "x": 13500,
+                                "y": 8400
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "08. Coffin",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2050,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "70f80815-8ec6-4019-91a9-2fdb8728384f",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "BxfV1NrRabarYtRK"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 13500,
+                                "y": 9400
+                            },
+                            {
+                                "x": 13500,
+                                "y": 9600
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "09. Pool and Drain",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2053,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "f7fb4b2b-40b0-48a0-96e3-8e8dc47bbbd6",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "z8jo5JMKXMAxJcu5"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 9600,
+                                "y": 9200
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "10. Deceptively Deep Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2059,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "b075002d-dbff-4b51-9041-c6a8c43222ec",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "RglVG5LxHz6m5Ng1"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 9500,
+                                "y": 8600
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "11. Spinning Cylinder",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2062,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "9212a68e-88b8-4e90-87b7-28d12e07d341",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "HxKkDzUuylXdhHa2"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 9750,
+                                "y": 7200
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "12. Burket’s Guardpost",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2071,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "e4591307-76f5-48a0-9b75-ae6a5370197b",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "S4NzP0lLeYEhtLIX"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 11200,
+                                "y": 7000
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "13. Snarla’s Sanctum",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2076,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "974c19dd-6798-40d3-b97f-d42cbdf74d29",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "2POE4uMW9eNKRdtH"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 11300,
+                                "y": 6600
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "14. Flood Doors",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2079,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "b74bc357-05b9-43a7-9d14-0b7c78402b9c",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "ICQVi0r9yly7r3XY"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 9700,
+                                "y": 6750
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "15. Boiling Lake",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2083,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "0155a3a5-a6c3-4583-b4ce-e5a049488b1b",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "2gAFIhusMS3V7mvd"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 9950,
+                                "y": 5650
+                            },
+                            {
+                                "x": 9350,
+                                "y": 5650
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "16. Blow Hole",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2085,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "b562f86d-fb85-4e3c-b0ef-fc631ea69b45",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "mRtbJv9QbpdVXPEa"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 11250,
+                                "y": 3750
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "17. The Boiling Bubble",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2097,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "fce56118-8e59-47a4-b34b-520046127ffa",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "TYTB3pvrqkB56UR5"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 9700,
+                                "y": 5700
+                            },
+                            {
+                                "x": 9700,
+                                "y": 4700
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "18. Hall Pit",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2099,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "319b3cf9-6691-4ae4-9669-7634b9b7cf74",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "ksKoAbNQQsqdO80V"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 9000,
+                                "y": 9400
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "19. Metal-Heating Corridor",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2105,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "f453df4a-b48c-4c1b-857e-93e10204155f",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "LRmTe0W8zTjVWjyR"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 7700,
+                                "y": 8400
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "20. Ghoul Ambushers",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2107,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "7efdae28-72f2-4078-aaa5-7b54a41661fd",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "aX4AwunBD2SIdi9f"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 7900,
+                                "y": 7000
+                            },
+                            {
+                                "x": 7900,
+                                "y": 6850
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "21. Stairs Up",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2109,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "1edef616-70af-4440-94d1-1c250db54636",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "qPBwDF3fLcw7Ao5W"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 7500,
+                                "y": 6350
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "22. Frictionless Trap",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2118,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "37142f35-c2a7-417f-ae80-96077cdfb894",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "XSpNpUz3RjPXkneN"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 7300,
+                                "y": 6200
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "23. Floating Stream",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2123,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "4bea5006-c6b8-4c21-bb84-38eeac999ed4",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "37lGvsTqaUYDTcKv"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 5300,
+                                "y": 5600
+                            },
+                            {
+                                "x": 5300,
+                                "y": 5000
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "24. Sir Bluto’s Guardpost",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2128,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "67715e66-9fa1-49fe-852f-6cf9b1d493da",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "s6A6jtfHsNHKHaY3"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 4600,
+                                "y": 3200
+                            },
+                            {
+                                "x": 3900,
+                                "y": 4100
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "25. Magical Secret Doors",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2130,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "c423c17d-b1c4-476b-8b4b-c4ff2813d5f3",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "0Uo6Rx5UnIWdgNRx"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 5150,
+                                "y": 6350
+                            },
+                            {
+                                "x": 3950,
+                                "y": 4550
+                            },
+                            {
+                                "x": 3950,
+                                "y": 4450
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "26. Terraced Aquarium",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2143,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "fe9c6f47-2e16-4c1c-a71b-a6e055bf3acb",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "myQimlWOjBeMlJWq"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 5250,
+                                "y": 7150
+                            },
+                            {
+                                "x": 5250,
+                                "y": 7450
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "27. Luxurious Prison",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2149,
+                                "bookCode": "wpm",
+                                "slug": "white-plume-mountain#LocationsintheDungeon",
+                                "contentChunkId": "72c64228-a4b3-42b8-81ee-e0a01d34021d",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 387,
+                                "linkId": "usE0e2g8ISRCBipq"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 5300,
+                                "y": 10000
+                            },
+                            {
+                                "x": 5350,
+                                "y": 10250
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 100,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": 44,
-        "shiftY": -21,
+        "height": 9140,
         "initial": {
             "x": 8902,
             "y": 9859,
             "scale": 0.26
         },
-        "backgroundColor": "#999999",
+        "lights": [],
+        "name": "Map 4.2: White Plume Mountain",
+        "navName": "White Plume Mountain",
+        "shiftX": 44,
+        "shiftY": -21,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -5442,809 +6301,7 @@
                 "sense": 0
             }
         ],
-        "drawings": [],
         "weather": "",
-        "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 11005,
-                "cobaltId": null,
-                "parentId": 387,
-                "contentChunkId": "81c6ac68-90e5-4493-bf4e-b552f7da3fbc",
-                "notes": [
-                    {
-                        "label": "01. Spiral Staircase",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2008,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "65804cb2-aab5-4042-8e78-b7503a69d31a",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "hMp0lyZPQV8lnkbP"
-                        },
-                        "positions": [
-                            {
-                                "x": 8100,
-                                "y": 10400
-                            }
-                        ],
-                        "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "02. Riddling Guardian",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2013,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "a105bc44-5c46-455d-83ca-f683bbadcef5",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "fwzSkZq3Z61LVk5Q"
-                        },
-                        "positions": [
-                            {
-                                "x": 9500,
-                                "y": 10300
-                            }
-                        ],
-                        "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "03. Hidden Slime",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2015,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "61481cb5-ee13-4651-81cf-38fe15d4825d",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "Pip7mZe0mYWCMFnn"
-                        },
-                        "positions": [
-                            {
-                                "x": 10000,
-                                "y": 9400
-                            }
-                        ],
-                        "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "04. Glass Globes",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2025,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "db79fb86-7568-40bb-a6ed-5c3138db0385",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "Lm9RxyKi2bs2Cfux"
-                        },
-                        "positions": [
-                            {
-                                "x": 12100,
-                                "y": 9800
-                            },
-                            {
-                                "x": 12200,
-                                "y": 10100
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "05. Numbered Golems",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2030,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "3b32baeb-de2d-48da-953e-80bbba0579e4",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "1jwsyxPSKly8ez0R"
-                        },
-                        "positions": [
-                            {
-                                "x": 11700,
-                                "y": 7000
-                            },
-                            {
-                                "x": 11900,
-                                "y": 6800
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "06. Turnstile",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2033,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "f4c2f7dc-283f-4dac-8ca0-e2412905a98b",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "DwbB8qCgobhbF1E0"
-                        },
-                        "positions": [
-                            {
-                                "x": 11800,
-                                "y": 5800
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "07. Geysers and Chains",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2044,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "31ffccf1-79b7-4147-8c46-4763f8e9d8ab",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "v99zDLRIKXuLV34a"
-                        },
-                        "positions": [
-                            {
-                                "x": 12500,
-                                "y": 6650
-                            },
-                            {
-                                "x": 12700,
-                                "y": 6800
-                            },
-                            {
-                                "x": 13500,
-                                "y": 8400
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "08. Coffin",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2050,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "70f80815-8ec6-4019-91a9-2fdb8728384f",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "BxfV1NrRabarYtRK"
-                        },
-                        "positions": [
-                            {
-                                "x": 13500,
-                                "y": 9400
-                            },
-                            {
-                                "x": 13500,
-                                "y": 9600
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "09. Pool and Drain",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2053,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "f7fb4b2b-40b0-48a0-96e3-8e8dc47bbbd6",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "z8jo5JMKXMAxJcu5"
-                        },
-                        "positions": [
-                            {
-                                "x": 9600,
-                                "y": 9200
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "10. Deceptively Deep Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2059,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "b075002d-dbff-4b51-9041-c6a8c43222ec",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "RglVG5LxHz6m5Ng1"
-                        },
-                        "positions": [
-                            {
-                                "x": 9500,
-                                "y": 8600
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "11. Spinning Cylinder",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2062,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "9212a68e-88b8-4e90-87b7-28d12e07d341",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "HxKkDzUuylXdhHa2"
-                        },
-                        "positions": [
-                            {
-                                "x": 9750,
-                                "y": 7200
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "12. Burket’s Guardpost",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2071,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "e4591307-76f5-48a0-9b75-ae6a5370197b",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "S4NzP0lLeYEhtLIX"
-                        },
-                        "positions": [
-                            {
-                                "x": 11200,
-                                "y": 7000
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "13. Snarla’s Sanctum",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2076,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "974c19dd-6798-40d3-b97f-d42cbdf74d29",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "2POE4uMW9eNKRdtH"
-                        },
-                        "positions": [
-                            {
-                                "x": 11300,
-                                "y": 6600
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "14. Flood Doors",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2079,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "b74bc357-05b9-43a7-9d14-0b7c78402b9c",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "ICQVi0r9yly7r3XY"
-                        },
-                        "positions": [
-                            {
-                                "x": 9700,
-                                "y": 6750
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "15. Boiling Lake",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2083,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "0155a3a5-a6c3-4583-b4ce-e5a049488b1b",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "2gAFIhusMS3V7mvd"
-                        },
-                        "positions": [
-                            {
-                                "x": 9950,
-                                "y": 5650
-                            },
-                            {
-                                "x": 9350,
-                                "y": 5650
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "16. Blow Hole",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2085,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "b562f86d-fb85-4e3c-b0ef-fc631ea69b45",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "mRtbJv9QbpdVXPEa"
-                        },
-                        "positions": [
-                            {
-                                "x": 11250,
-                                "y": 3750
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "17. The Boiling Bubble",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2097,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "fce56118-8e59-47a4-b34b-520046127ffa",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "TYTB3pvrqkB56UR5"
-                        },
-                        "positions": [
-                            {
-                                "x": 9700,
-                                "y": 5700
-                            },
-                            {
-                                "x": 9700,
-                                "y": 4700
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "18. Hall Pit",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2099,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "319b3cf9-6691-4ae4-9669-7634b9b7cf74",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "ksKoAbNQQsqdO80V"
-                        },
-                        "positions": [
-                            {
-                                "x": 9000,
-                                "y": 9400
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "19. Metal-Heating Corridor",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2105,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "f453df4a-b48c-4c1b-857e-93e10204155f",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "LRmTe0W8zTjVWjyR"
-                        },
-                        "positions": [
-                            {
-                                "x": 7700,
-                                "y": 8400
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "20. Ghoul Ambushers",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2107,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "7efdae28-72f2-4078-aaa5-7b54a41661fd",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "aX4AwunBD2SIdi9f"
-                        },
-                        "positions": [
-                            {
-                                "x": 7900,
-                                "y": 7000
-                            },
-                            {
-                                "x": 7900,
-                                "y": 6850
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "21. Stairs Up",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2109,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "1edef616-70af-4440-94d1-1c250db54636",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "qPBwDF3fLcw7Ao5W"
-                        },
-                        "positions": [
-                            {
-                                "x": 7500,
-                                "y": 6350
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "22. Frictionless Trap",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2118,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "37142f35-c2a7-417f-ae80-96077cdfb894",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "XSpNpUz3RjPXkneN"
-                        },
-                        "positions": [
-                            {
-                                "x": 7300,
-                                "y": 6200
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "23. Floating Stream",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2123,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "4bea5006-c6b8-4c21-bb84-38eeac999ed4",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "37lGvsTqaUYDTcKv"
-                        },
-                        "positions": [
-                            {
-                                "x": 5300,
-                                "y": 5600
-                            },
-                            {
-                                "x": 5300,
-                                "y": 5000
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "24. Sir Bluto’s Guardpost",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2128,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "67715e66-9fa1-49fe-852f-6cf9b1d493da",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "s6A6jtfHsNHKHaY3"
-                        },
-                        "positions": [
-                            {
-                                "x": 4600,
-                                "y": 3200
-                            },
-                            {
-                                "x": 3900,
-                                "y": 4100
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "25. Magical Secret Doors",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2130,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "c423c17d-b1c4-476b-8b4b-c4ff2813d5f3",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "0Uo6Rx5UnIWdgNRx"
-                        },
-                        "positions": [
-                            {
-                                "x": 5150,
-                                "y": 6350
-                            },
-                            {
-                                "x": 3950,
-                                "y": 4550
-                            },
-                            {
-                                "x": 3950,
-                                "y": 4450
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "26. Terraced Aquarium",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2143,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "fe9c6f47-2e16-4c1c-a71b-a6e055bf3acb",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "myQimlWOjBeMlJWq"
-                        },
-                        "positions": [
-                            {
-                                "x": 5250,
-                                "y": 7150
-                            },
-                            {
-                                "x": 5250,
-                                "y": 7450
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "27. Luxurious Prison",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2149,
-                            "bookCode": "wpm",
-                            "slug": "white-plume-mountain#LocationsintheDungeon",
-                            "contentChunkId": "72c64228-a4b3-42b8-81ee-e0a01d34021d",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 387,
-                            "linkId": "usE0e2g8ISRCBipq"
-                        },
-                        "positions": [
-                            {
-                                "x": 5300,
-                                "y": 10000
-                            },
-                            {
-                                "x": 5350,
-                                "y": 10250
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    }
-                ],
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 13300
     }
 ]

@@ -1,28 +1,34 @@
 [
     {
-        "name": "Map 1.1: Baldur’s Gate",
-        "navName": "Baldur’s Gate",
-        "width": 2048,
-        "height": 1325,
+        "backgroundColor": "#999999",
+        "darkness": 0,
+        "drawings": [],
+        "flags": {
+            "ddb": {
+                "bookCode": "bgdia",
+                "ddbId": 11013,
+                "cobaltId": null,
+                "parentId": 726,
+                "contentChunkId": "1b020d7e-0471-47cf-9a97-14a3d0fa6998",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 100,
         "gridDistance": 5,
         "gridType": 0,
         "gridUnits": "ft",
-        "shiftX": 0,
-        "shiftY": 0,
+        "height": 1325,
         "initial": {
             "x": 1719,
             "y": 1080,
             "scale": 1
         },
-        "backgroundColor": "#999999",
-        "walls": [],
-        "drawings": [],
-        "weather": "",
-        "darkness": 0,
-        "tokenVision": false,
-        "globalLight": false,
-        "globalLightThreshold": null,
         "lights": [
             {
                 "angle": 360,
@@ -42,38 +48,434 @@
                 "hidden": false
             }
         ],
+        "name": "Map 1.1: Baldur’s Gate",
+        "navName": "Baldur’s Gate",
+        "shiftX": 0,
+        "shiftY": 0,
+        "tokenVision": false,
+        "walls": [],
+        "weather": "",
+        "width": 2048
+    },
+    {
+        "backgroundColor": "#999999",
+        "darkness": 0,
+        "drawings": [],
         "flags": {
             "ddb": {
-                "ddbId": 11013,
+                "bookCode": "bgdia",
+                "ddbId": 11014,
                 "cobaltId": null,
                 "parentId": 726,
-                "contentChunkId": "1b020d7e-0471-47cf-9a97-14a3d0fa6998",
-                "notes": [],
+                "contentChunkId": "244f713f-fe1c-4f39-b2ed-3659e22e02c3",
+                "notes": [
+                    {
+                        "label": "E01. Taproom",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2016,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "7638e279-3839-43c8-9451-76a0644a4a28",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "uhXn7wYAtFdJQ97l"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3403,
+                                "y": 2905
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "E02. Lounge",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2018,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "b5f5beef-7f79-4701-a2ae-5e4dd0306f8f",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "aBJjz0cvSA70bZey"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3569,
+                                "y": 3735
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "E03. Private Dining Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2020,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "d3b20f32-1bbb-4018-ba95-8a61510d41f3",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "PqPoreIWJ982Yfuh"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 4399,
+                                "y": 2407
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "E04. Storage Alcove",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2022,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "ad8e20e2-71eb-4a6d-ae30-4ec717e678d6",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "CDCtb6cgpQbYy3UJ"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2407,
+                                "y": 2407
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "E05. Storeroom",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2024,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "b275769e-e7bb-4bf5-9c96-65a1408f71e7",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "pXRVDw9fdGHQkdM1"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 1909,
+                                "y": 2573
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "E06. Kitchen",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2026,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "865e769d-6b2b-427e-aa04-25f4dbd225fe",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "lcE1Ja966naXifRR"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3237,
+                                "y": 2075
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "E07. Upstairs Dining Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2029,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "6167fca6-18b4-4bce-9063-31150c18c578",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "rAeXU83jOskSbo9V"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 6557,
+                                "y": 2739
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "E08. Private Dining Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2031,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "78165198-832e-403b-8a9e-7ea835c042a3",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "IJ3iEja30hT2VGcM"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 6391,
+                                "y": 3901
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "E09. Fancy Guest Suite",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2034,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "9908cbdf-6f31-424b-ac16-bd40d008cb9d",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "AHrhqL2r0hkzUbvO"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 5727,
+                                "y": 3403
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "E10. Private Dining Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2036,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "9ab1039a-dacf-48c2-a27a-07021e3ec69f",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "G43t5bNBVVxJIGAD"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 5561,
+                                "y": 2739
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "E11. Large Guest Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2041,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "04e1a0de-2130-42b3-9e3b-420fec59900a",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "NV2oUEKSd6EQarrd"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 6059,
+                                "y": 2075
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "E12. Plain Guest Rooms",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2044,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "2d1076e7-28dd-49fe-8ada-42be991ffa79",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "lsV6VW4C5BjMCFd3"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 6889,
+                                "y": 1909
+                            },
+                            {
+                                "x": 7055,
+                                "y": 1909
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "E13. Alan’s Bedroom",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2048,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#ElfsongTavern",
+                                "contentChunkId": "63c18d37-b35e-4e5c-bfc5-eb669fc359e4",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "VKtuKZXxef3oXNml"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 7387,
+                                "y": 2407
+                            }
+                        ],
+                        "iconSize": 125,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    }
+                ],
                 "tokens": []
             },
             "stairways": [],
             "perfect-vision": [],
             "dynamic-illumination": []
-        }
-    },
-    {
-        "name": "Map 1.2: Elfsong Tavern",
-        "navName": "Elfsong Tavern",
-        "width": 6105,
-        "height": 4000,
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 166,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": -90,
-        "shiftY": 163,
-        "padding": 0.25,
+        "height": 4000,
         "initial": {
             "x": 1710,
             "y": 988,
             "scale": 0.97
         },
-        "backgroundColor": "#999999",
+        "lights": [],
+        "name": "Map 1.2: Elfsong Tavern",
+        "navName": "Elfsong Tavern",
+        "padding": 0.25,
+        "shiftX": -90,
+        "shiftY": 163,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -1960,400 +2362,45 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
+        "width": 6105
+    },
+    {
+        "backgroundColor": "#999999",
         "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
+        "drawings": [],
         "flags": {
             "ddb": {
-                "ddbId": 11014,
+                "bookCode": "bgdia",
+                "ddbId": 11015,
                 "cobaltId": null,
                 "parentId": 726,
-                "contentChunkId": "244f713f-fe1c-4f39-b2ed-3659e22e02c3",
-                "notes": [
-                    {
-                        "label": "E01. Taproom",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2016,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "7638e279-3839-43c8-9451-76a0644a4a28",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "uhXn7wYAtFdJQ97l"
-                        },
-                        "positions": [
-                            {
-                                "x": 3403,
-                                "y": 2905
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "E02. Lounge",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2018,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "b5f5beef-7f79-4701-a2ae-5e4dd0306f8f",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "aBJjz0cvSA70bZey"
-                        },
-                        "positions": [
-                            {
-                                "x": 3569,
-                                "y": 3735
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "E03. Private Dining Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2020,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "d3b20f32-1bbb-4018-ba95-8a61510d41f3",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "PqPoreIWJ982Yfuh"
-                        },
-                        "positions": [
-                            {
-                                "x": 4399,
-                                "y": 2407
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "E04. Storage Alcove",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2022,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "ad8e20e2-71eb-4a6d-ae30-4ec717e678d6",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "CDCtb6cgpQbYy3UJ"
-                        },
-                        "positions": [
-                            {
-                                "x": 2407,
-                                "y": 2407
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "E05. Storeroom",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2024,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "b275769e-e7bb-4bf5-9c96-65a1408f71e7",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "pXRVDw9fdGHQkdM1"
-                        },
-                        "positions": [
-                            {
-                                "x": 1909,
-                                "y": 2573
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "E06. Kitchen",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2026,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "865e769d-6b2b-427e-aa04-25f4dbd225fe",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "lcE1Ja966naXifRR"
-                        },
-                        "positions": [
-                            {
-                                "x": 3237,
-                                "y": 2075
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "E07. Upstairs Dining Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2029,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "6167fca6-18b4-4bce-9063-31150c18c578",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "rAeXU83jOskSbo9V"
-                        },
-                        "positions": [
-                            {
-                                "x": 6557,
-                                "y": 2739
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "E08. Private Dining Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2031,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "78165198-832e-403b-8a9e-7ea835c042a3",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "IJ3iEja30hT2VGcM"
-                        },
-                        "positions": [
-                            {
-                                "x": 6391,
-                                "y": 3901
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "E09. Fancy Guest Suite",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2034,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "9908cbdf-6f31-424b-ac16-bd40d008cb9d",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "AHrhqL2r0hkzUbvO"
-                        },
-                        "positions": [
-                            {
-                                "x": 5727,
-                                "y": 3403
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "E10. Private Dining Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2036,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "9ab1039a-dacf-48c2-a27a-07021e3ec69f",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "G43t5bNBVVxJIGAD"
-                        },
-                        "positions": [
-                            {
-                                "x": 5561,
-                                "y": 2739
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "E11. Large Guest Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2041,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "04e1a0de-2130-42b3-9e3b-420fec59900a",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "NV2oUEKSd6EQarrd"
-                        },
-                        "positions": [
-                            {
-                                "x": 6059,
-                                "y": 2075
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "E12. Plain Guest Rooms",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2044,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "2d1076e7-28dd-49fe-8ada-42be991ffa79",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "lsV6VW4C5BjMCFd3"
-                        },
-                        "positions": [
-                            {
-                                "x": 6889,
-                                "y": 1909
-                            },
-                            {
-                                "x": 7055,
-                                "y": 1909
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "E13. Alan’s Bedroom",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2048,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#ElfsongTavern",
-                            "contentChunkId": "63c18d37-b35e-4e5c-bfc5-eb669fc359e4",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "VKtuKZXxef3oXNml"
-                        },
-                        "positions": [
-                            {
-                                "x": 7387,
-                                "y": 2407
-                            }
-                        ],
-                        "iconSize": 125,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    }
-                ],
+                "contentChunkId": "a8ec7b0c-e86a-4842-92a9-530a3b006308",
+                "notes": [],
                 "tokens": []
             },
             "stairways": [],
             "perfect-vision": [],
             "dynamic-illumination": []
-        }
-    },
-    {
-        "name": "Map 1.3: Dungeon of the Dead Three",
-        "navName": "Dungeon of the Dead Three",
-        "width": 6105,
-        "height": 4000,
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 93,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": 82,
-        "shiftY": 85,
+        "height": 4000,
         "initial": {
             "x": 3137,
             "y": 1894,
             "scale": 0.33
         },
-        "backgroundColor": "#999999",
+        "lights": [],
+        "name": "Map 1.3: Dungeon of the Dead Three",
+        "navName": "Dungeon of the Dead Three",
+        "shiftX": 82,
+        "shiftY": 85,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -15628,42 +15675,12 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
-        "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 11015,
-                "cobaltId": null,
-                "parentId": 726,
-                "contentChunkId": "a8ec7b0c-e86a-4842-92a9-530a3b006308",
-                "notes": [],
-                "tokens": []
-            },
-            "stairways": [],
-            "perfect-vision": [],
-            "dynamic-illumination": []
-        }
+        "width": 6105
     },
     {
-        "name": "Map 1.4: The Low Lantern",
-        "navName": "The Low Lantern",
-        "width": 5964,
-        "height": 4000,
-        "grid": 164,
-        "gridDistance": 5,
-        "gridType": 1,
-        "gridUnits": "ft",
-        "shiftX": -7,
-        "shiftY": -58,
-        "padding": 0.25,
-        "initial": null,
         "backgroundColor": "#999999",
-        "walls": [],
+        "darkness": 0,
         "drawings": [
             {
                 "_id": "JAVESSS3ndbXoIJf",
@@ -15890,14 +15907,9 @@
                 "flags": {}
             }
         ],
-        "weather": "",
-        "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
         "flags": {
             "ddb": {
+                "bookCode": "bgdia",
                 "ddbId": 11016,
                 "cobaltId": null,
                 "parentId": 726,
@@ -15906,18 +15918,20 @@
                     {
                         "label": "L01. Main Deck",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2020,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#LowLantern",
-                            "contentChunkId": "5eff2a3f-dc53-4042-9ba6-e39ccf3c8dc8",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "wGEfuD0ib7cFTMLP"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2020,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#LowLantern",
+                                "contentChunkId": "5eff2a3f-dc53-4042-9ba6-e39ccf3c8dc8",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "wGEfuD0ib7cFTMLP"
+                            }
                         },
                         "positions": [
                             {
@@ -15933,18 +15947,20 @@
                     {
                         "label": "L02. Forecastle",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2023,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#LowLantern",
-                            "contentChunkId": "875b1f90-f0a5-4faf-bc66-35b127d8bf87",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "C840eBDCIwE8wE0z"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2023,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#LowLantern",
+                                "contentChunkId": "875b1f90-f0a5-4faf-bc66-35b127d8bf87",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "C840eBDCIwE8wE0z"
+                            }
                         },
                         "positions": [
                             {
@@ -15960,18 +15976,20 @@
                     {
                         "label": "L03. Aftcastle",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2026,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#LowLantern",
-                            "contentChunkId": "656d36bd-cbfe-442c-a017-6e47c5d72719",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "MALGNMPezP4Z1B68"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2026,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#LowLantern",
+                                "contentChunkId": "656d36bd-cbfe-442c-a017-6e47c5d72719",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "MALGNMPezP4Z1B68"
+                            }
                         },
                         "positions": [
                             {
@@ -15987,18 +16005,20 @@
                     {
                         "label": "L04. Laraelra’s Cabin",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2034,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#LowLantern",
-                            "contentChunkId": "3300a980-a8c1-4912-95d4-0de0561ca92f",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "qXb53ION8cgRvDbv"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2034,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#LowLantern",
+                                "contentChunkId": "3300a980-a8c1-4912-95d4-0de0561ca92f",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "qXb53ION8cgRvDbv"
+                            }
                         },
                         "positions": [
                             {
@@ -16014,18 +16034,20 @@
                     {
                         "label": "L05. Taproom and Gambling Hall",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2040,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#LowLantern",
-                            "contentChunkId": "385643c5-721b-494d-9051-b22427f42955",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "3Nq6JtvkVgGliKZs"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2040,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#LowLantern",
+                                "contentChunkId": "385643c5-721b-494d-9051-b22427f42955",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "3Nq6JtvkVgGliKZs"
+                            }
                         },
                         "positions": [
                             {
@@ -16041,18 +16063,20 @@
                     {
                         "label": "L06. Tavern Lounge",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2045,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#LowLantern",
-                            "contentChunkId": "97baf4f8-81f5-4b95-a3c9-e5b6705ea015",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "7NkOWnoaSDX0xKRe"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2045,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#LowLantern",
+                                "contentChunkId": "97baf4f8-81f5-4b95-a3c9-e5b6705ea015",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "7NkOWnoaSDX0xKRe"
+                            }
                         },
                         "positions": [
                             {
@@ -16068,18 +16092,20 @@
                     {
                         "label": "L07. Guest Cabin",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2048,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#LowLantern",
-                            "contentChunkId": "331006e7-271a-4919-8595-7b7d58420054",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "1Joetqq6UjJf7bhK"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2048,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#LowLantern",
+                                "contentChunkId": "331006e7-271a-4919-8595-7b7d58420054",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "1Joetqq6UjJf7bhK"
+                            }
                         },
                         "positions": [
                             {
@@ -16095,18 +16121,20 @@
                     {
                         "label": "L08. Sleeping Quarters",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2051,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#LowLantern",
-                            "contentChunkId": "f88f62d3-39a9-4598-9738-3d4d662caf1f",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "2cTghmlMIEfjyxQ7"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2051,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#LowLantern",
+                                "contentChunkId": "f88f62d3-39a9-4598-9738-3d4d662caf1f",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "2cTghmlMIEfjyxQ7"
+                            }
                         },
                         "positions": [
                             {
@@ -16125,23 +16153,29 @@
             "stairways": [],
             "perfect-vision": [],
             "dynamic-illumination": []
-        }
-    },
-    {
-        "name": "Map 1.5: Vanthampur Villa",
-        "navName": "Vanthampur Villa",
-        "width": 6106,
-        "height": 4000,
-        "grid": 99,
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "grid": 164,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": 13,
-        "shiftY": 53,
-        "padding": 0.25,
+        "height": 4000,
         "initial": null,
-        "backgroundColor": "#999999",
+        "lights": [],
+        "name": "Map 1.4: The Low Lantern",
+        "navName": "The Low Lantern",
+        "padding": 0.25,
+        "shiftX": -7,
+        "shiftY": -58,
+        "tokenVision": true,
         "walls": [],
+        "weather": "",
+        "width": 5964
+    },
+    {
+        "backgroundColor": "#999999",
+        "darkness": 0,
         "drawings": [
             {
                 "_id": "PtdN3F7r63hqiqVo",
@@ -16228,14 +16262,9 @@
                 "flags": {}
             }
         ],
-        "weather": "",
-        "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
         "flags": {
             "ddb": {
+                "bookCode": "bgdia",
                 "ddbId": 11017,
                 "cobaltId": null,
                 "parentId": 726,
@@ -16244,18 +16273,20 @@
                     {
                         "label": "V01. Yard",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2019,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "0281d618-d2f9-4c30-9363-7d203eb2def8",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "8nwcpD50NFnq2PJZ"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2019,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "0281d618-d2f9-4c30-9363-7d203eb2def8",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "8nwcpD50NFnq2PJZ"
+                            }
                         },
                         "positions": [
                             {
@@ -16279,18 +16310,20 @@
                     {
                         "label": "V02. Stable House",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2023,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "b94ad106-0f0f-4b97-9917-a80e9f737f9f",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "AyznxhN9kpmFHGaT"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2023,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "b94ad106-0f0f-4b97-9917-a80e9f737f9f",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "AyznxhN9kpmFHGaT"
+                            }
                         },
                         "positions": [
                             {
@@ -16306,18 +16339,20 @@
                     {
                         "label": "V03. Foyer",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2029,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "25400bd8-35b9-47d4-8df8-f9ec69bdf382",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "VkloU1FBQ69aB7eN"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2029,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "25400bd8-35b9-47d4-8df8-f9ec69bdf382",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "VkloU1FBQ69aB7eN"
+                            }
                         },
                         "positions": [
                             {
@@ -16333,18 +16368,20 @@
                     {
                         "label": "V04. Servants’ Quarters",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2031,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "e1bb818a-82a5-48d3-8024-7b9dc97d4ae2",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "ihIfLbHXGL3cUXhr"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2031,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "e1bb818a-82a5-48d3-8024-7b9dc97d4ae2",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "ihIfLbHXGL3cUXhr"
+                            }
                         },
                         "positions": [
                             {
@@ -16360,18 +16397,20 @@
                     {
                         "label": "V05. Kitchen",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2035,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "961f6ff3-e83e-4d94-a223-9dd85ab3aa34",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "WFqwjNsVCVyt2oZN"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2035,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "961f6ff3-e83e-4d94-a223-9dd85ab3aa34",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "WFqwjNsVCVyt2oZN"
+                            }
                         },
                         "positions": [
                             {
@@ -16387,18 +16426,20 @@
                     {
                         "label": "V06. Pantry",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2037,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "3edfa1e8-effc-4ce7-8da9-3e9a3a06f37c",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "wOiR0XMTWV996T5Q"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2037,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "3edfa1e8-effc-4ce7-8da9-3e9a3a06f37c",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "wOiR0XMTWV996T5Q"
+                            }
                         },
                         "positions": [
                             {
@@ -16414,18 +16455,20 @@
                     {
                         "label": "V07. Stairs Down",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2039,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "cce6e9db-e32a-4304-8277-bc31c108cd07",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "X1C8iC1xaySsbLRi"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2039,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "cce6e9db-e32a-4304-8277-bc31c108cd07",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "X1C8iC1xaySsbLRi"
+                            }
                         },
                         "positions": [
                             {
@@ -16441,18 +16484,20 @@
                     {
                         "label": "V08. Parlor",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2043,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "241cbf3a-ea1d-4ca1-897b-dc7bf3365834",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "Mi3kJfhnWbn272Gt"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2043,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "241cbf3a-ea1d-4ca1-897b-dc7bf3365834",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "Mi3kJfhnWbn272Gt"
+                            }
                         },
                         "positions": [
                             {
@@ -16468,18 +16513,20 @@
                     {
                         "label": "V09. Dining Room",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2048,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "04af220d-5fe2-491e-b5e2-9361b3d45768",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "eLp2AYvPr97DQl4u"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2048,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "04af220d-5fe2-491e-b5e2-9361b3d45768",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "eLp2AYvPr97DQl4u"
+                            }
                         },
                         "positions": [
                             {
@@ -16495,18 +16542,20 @@
                     {
                         "label": "V10. Gallery",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2052,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "ebee390d-f407-49c8-ae53-2fde6c570475",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "4TN0EYva38WZN8dI"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2052,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "ebee390d-f407-49c8-ae53-2fde6c570475",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "4TN0EYva38WZN8dI"
+                            }
                         },
                         "positions": [
                             {
@@ -16522,18 +16571,20 @@
                     {
                         "label": "V11. Upstairs Hall",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2055,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "d5e08458-1a99-4dc1-a683-41fd4623e85b",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "cfQ8JQ6RJv9KWEen"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2055,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "d5e08458-1a99-4dc1-a683-41fd4623e85b",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "cfQ8JQ6RJv9KWEen"
+                            }
                         },
                         "positions": [
                             {
@@ -16549,18 +16600,20 @@
                     {
                         "label": "V12. Balcony",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2057,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "fbf18d3a-be50-446b-8d93-5e4cf302cc13",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "fdf5ugxjBDn5rNj5"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2057,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "fbf18d3a-be50-446b-8d93-5e4cf302cc13",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "fdf5ugxjBDn5rNj5"
+                            }
                         },
                         "positions": [
                             {
@@ -16576,18 +16629,20 @@
                     {
                         "label": "V13. Thurstwell’s Bedroom",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2064,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "fe087e45-87bd-4593-a7fd-53c7e9eaabd9",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "zB8vDzRpftX1voI8"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2064,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "fe087e45-87bd-4593-a7fd-53c7e9eaabd9",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "zB8vDzRpftX1voI8"
+                            }
                         },
                         "positions": [
                             {
@@ -16603,18 +16658,20 @@
                     {
                         "label": "V14. Mortlock’s Bedroom",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2066,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "9c2c34c2-78d8-4303-9142-053ae3aa55dc",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "kK7jlckWxwc8Fl6p"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2066,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "9c2c34c2-78d8-4303-9142-053ae3aa55dc",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "kK7jlckWxwc8Fl6p"
+                            }
                         },
                         "positions": [
                             {
@@ -16630,18 +16687,20 @@
                     {
                         "label": "V15. Amrik’s Bedroom",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2069,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "9414c96e-a71d-4fdb-b20b-751d48cfad5b",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "CoFIz5HwZooipFvo"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2069,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "9414c96e-a71d-4fdb-b20b-751d48cfad5b",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "CoFIz5HwZooipFvo"
+                            }
                         },
                         "positions": [
                             {
@@ -16657,18 +16716,20 @@
                     {
                         "label": "V16. Duke’s Powder Room",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2072,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "58bb9f71-a9ac-4144-a559-df2708558040",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "ZtHFFR2jyd5vjYwC"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2072,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "58bb9f71-a9ac-4144-a559-df2708558040",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "ZtHFFR2jyd5vjYwC"
+                            }
                         },
                         "positions": [
                             {
@@ -16684,18 +16745,20 @@
                     {
                         "label": "V17. Master Bedroom",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2076,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "b4b15f37-c229-4c99-ad9b-8908dee989dc",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "S3bPRiGUsJwwhaRh"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2076,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "b4b15f37-c229-4c99-ad9b-8908dee989dc",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "S3bPRiGUsJwwhaRh"
+                            }
                         },
                         "positions": [
                             {
@@ -16711,18 +16774,20 @@
                     {
                         "label": "V18. Duke’s Study",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2080,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "72154114-ac9b-4b1f-aa6e-049c4260a6a7",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "Ogo1q4K2oMphslal"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2080,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "72154114-ac9b-4b1f-aa6e-049c4260a6a7",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "Ogo1q4K2oMphslal"
+                            }
                         },
                         "positions": [
                             {
@@ -16738,18 +16803,20 @@
                     {
                         "label": "V19. Tower Peak",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2087,
-                            "bookCode": "bgdia",
-                            "slug": "a-tale-of-two-cities#VanthampurVilla",
-                            "contentChunkId": "f9b8c16b-d942-47fa-958b-3f4242b6ebe1",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 726,
-                            "linkId": "9Q0qhckEBoRaiGgM"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2087,
+                                "bookCode": "bgdia",
+                                "slug": "a-tale-of-two-cities#VanthampurVilla",
+                                "contentChunkId": "f9b8c16b-d942-47fa-958b-3f4242b6ebe1",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 726,
+                                "linkId": "9Q0qhckEBoRaiGgM"
+                            }
                         },
                         "positions": [
                             {
@@ -16768,6 +16835,24 @@
             "stairways": [],
             "perfect-vision": [],
             "dynamic-illumination": []
-        }
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "grid": 99,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "height": 4000,
+        "initial": null,
+        "lights": [],
+        "name": "Map 1.5: Vanthampur Villa",
+        "navName": "Vanthampur Villa",
+        "padding": 0.25,
+        "shiftX": 13,
+        "shiftY": 53,
+        "tokenVision": true,
+        "walls": [],
+        "weather": "",
+        "width": 6106
     }
 ]

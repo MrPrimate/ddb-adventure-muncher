@@ -1,21 +1,1530 @@
 [
     {
-        "name": "Skyreach Castle - Lower Courtyard",
-        "navName": "Skyreach Castle - Lower Courtyard",
-        "width": 13471,
-        "height": 19308,
+        "backgroundColor": "#999999",
+        "darkness": 0,
+        "drawings": [
+            {
+                "_id": "gNDIWTFtKuLrnTjp",
+                "author": "ccgWMOolnVsWmw7G",
+                "type": "t",
+                "x": 15338,
+                "y": 20038,
+                "width": 644,
+                "height": 399.5,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#FFFFFF",
+                "fillAlpha": 0,
+                "strokeWidth": 8,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "To Upper Courtyard",
+                "fontFamily": "Signika",
+                "fontSize": 76,
+                "textColor": "#a3a3a3",
+                "textAlpha": 0.9,
+                "hidden": true,
+                "locked": true,
+                "flags": {}
+            }
+        ],
+        "flags": {
+            "ddb": {
+                "bookCode": "hotdq",
+                "ddbId": 103059,
+                "cobaltId": null,
+                "parentId": 436,
+                "contentChunkId": "ddb-missing-hotdq-103059",
+                "notes": [],
+                "tokens": [
+                    {
+                        "_id": "Mb3bt3ZAW0ewG41y",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 14400,
+                        "y": 21500,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "RJclj36JZlZqHuBf",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 13900,
+                        "y": 21100,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "wyAGoxoe8YMj7p6W",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 14000,
+                        "y": 21100,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "URXjrn9Z5EthW9Co",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 14100,
+                        "y": 21100,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "bvzPDH1w9Go0XdLM",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 13800,
+                        "y": 21200,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "CY2fQGjU49qYvHLu",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 14200,
+                        "y": 21200,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "VWnN4lZe9oupPurP",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 13900,
+                        "y": 21300,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "SuW7J4BeAmZiv1Ps",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 14000,
+                        "y": 21300,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "qBMQfJM1fr2aWHvZ",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 14100,
+                        "y": 21300,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "fWxHFN7Ve6qQuj8J",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 13900,
+                        "y": 21400,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "tWvMfnL33iXAMjC1",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 14000,
+                        "y": 21400,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "XoA6NuaKxDaJyAKo",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 14100,
+                        "y": 21400,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "3DKgpNo55tU2R2rj",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 14200,
+                        "y": 21500,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "FU5t6OyFkHZc3Z7A",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 14100,
+                        "y": 21600,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "V372Un9ozrIZH4vD",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 14000,
+                        "y": 21600,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "VRrR0fNibwTWQHOO",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 13900,
+                        "y": 21600,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "q7FVA1MCRZZvNoLx",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 13800,
+                        "y": 21500,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "dOTrX1vZRdmcBFxW",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 13600,
+                        "y": 21000,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "TwgASQ3m4Rie2feH",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 13700,
+                        "y": 21000,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "D0Ti9PjFzF5thUyl",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 14300,
+                        "y": 20900,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "2CCHmkusBJKdMNJI",
+                        "name": "Dragonwing",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 11000,
+                        "y": 21900,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 21899,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "Ica4hXrpEQYUKpd1",
+                        "name": "Dragonwing",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 11000,
+                        "y": 21500,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 21899,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "aKudBuW0zU343P87",
+                        "name": "Dragonwing",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 11300,
+                        "y": 21900,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 21899,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "PYSIehS6ImVD1Jjl",
+                        "name": "Dragonwing",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 10500,
+                        "y": 21600,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 21899,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "O6rED7C2NMvtNMHU",
+                        "name": "Dragonwing",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 10600,
+                        "y": 21900,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 21899,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "lYIl7ad8QW2Ldr8A",
+                        "name": "Dragonwing",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 12100,
+                        "y": 21600,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 21899,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "AwkTl9wpDLsBEouN",
+                        "name": "Dragonwing",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 12300,
+                        "y": 21600,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 21899,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "pAP1ajFtHbwfxn92",
+                        "name": "Dragonwing",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 12400,
+                        "y": 21800,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 21899,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "Dx2avnfnJs5MVovR",
+                        "name": "Dragonwing",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 12700,
+                        "y": 21800,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 21899,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "tint": null,
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "qCCgJxbfVn52s1HM",
+                        "name": "Dragonwing",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 12700,
+                        "y": 21600,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 21899,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "Nxgcz388F9wizBjE",
+                        "name": "Ogre",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 9400,
+                        "y": 21200,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16969,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "H8hUoAOv4saumnAr",
+                        "name": "Ogre",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 9700,
+                        "y": 21300,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16969,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "gR8qy12ZFOWtWdu5",
+                        "name": "Ogre",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 9800,
+                        "y": 21100,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16969,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "3OvkRaSDszQmNQr8",
+                        "name": "Ogre",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 8500,
+                        "y": 19500,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16969,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "kErGrfu9vvkr97Xw",
+                        "name": "Ogre",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 8900,
+                        "y": 19600,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16969,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "2PLr117y5lGpLY7Y",
+                        "name": "Ogre",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 8900,
+                        "y": 19900,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16969,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "nR729aT8Dft80fR1",
+                        "name": "Rezmir",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 13900,
+                        "y": 19300,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17477,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "YULLiv7Wl0OzbKsi",
+                        "name": "Guard Drake",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 13900,
+                        "y": 19200,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17265,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "YJJNJlRaodVT798H",
+                        "name": "Guard Drake",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 13900,
+                        "y": 19100,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17265,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "Wwgieqs7vfZrOz3k",
+                        "name": "Rug of Smothering",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 14100,
+                        "y": 19200,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17000,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "fuGj6bCjniYFMmhK",
+                        "name": "Azbara Jos",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 15300,
+                        "y": 17700,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17467,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "eW6f7AWBQpXzTdSx",
+                        "name": "Rath Modar",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 15600,
+                        "y": 17700,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17476,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": true,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "86OsvpPS3zbx1ojf",
+                        "name": "Wyvern",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 9800,
+                        "y": 18000,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17065,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "UZePTa4z9hdnIvLC",
+                        "name": "Wyvern",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 10200,
+                        "y": 17900,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17065,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "veMlmiDny0nflFpx",
+                        "name": "Wyvern",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 10600,
+                        "y": 18400,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17065,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "RVY3yEgqvZ7Ngzcd",
+                        "name": "Wyvern",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 9500,
+                        "y": 18800,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17065,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    }
+                ]
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 100,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": -29,
-        "shiftY": 90,
+        "height": 19308,
         "initial": {
             "x": 12909,
             "y": 19579,
             "scale": 0.17
         },
-        "backgroundColor": "#999999",
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 201.79,
+                "darknessThreshold": 0,
+                "dim": 403.59,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.25,
+                "x": 11100,
+                "y": 19850,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 63.52,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.2,
+                "x": 14100,
+                "y": 20200,
+                "lightAnimation": {
+                    "speed": 4,
+                    "intensity": 1
+                },
+                "hidden": false
+            }
+        ],
+        "name": "Skyreach Castle - Lower Courtyard",
+        "navName": "Skyreach Castle - Lower Courtyard",
+        "shiftX": -29,
+        "shiftY": 90,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -4902,735 +6411,34 @@
                 "sense": 1
             }
         ],
-        "drawings": [
-            {
-                "_id": "gNDIWTFtKuLrnTjp",
-                "author": "ccgWMOolnVsWmw7G",
-                "type": "t",
-                "x": 15338,
-                "y": 20038,
-                "width": 644,
-                "height": 399.5,
-                "rotation": 0,
-                "z": 0,
-                "points": [],
-                "bezierFactor": 0,
-                "fillType": 0,
-                "fillColor": "#FFFFFF",
-                "fillAlpha": 0,
-                "strokeWidth": 8,
-                "strokeColor": "#FFFFFF",
-                "strokeAlpha": 0,
-                "texture": null,
-                "text": "To Upper Courtyard",
-                "fontFamily": "Signika",
-                "fontSize": 76,
-                "textColor": "#a3a3a3",
-                "textAlpha": 0.9,
-                "hidden": true,
-                "locked": true,
-                "flags": {}
-            }
-        ],
         "weather": "",
+        "width": 13471
+    },
+    {
+        "backgroundColor": "#999999",
         "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [
-            {
-                "angle": 360,
-                "bright": 201.79,
-                "darknessThreshold": 0,
-                "dim": 403.59,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.25,
-                "x": 11100,
-                "y": 19850,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 63.52,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.2,
-                "x": 14100,
-                "y": 20200,
-                "lightAnimation": {
-                    "speed": 4,
-                    "intensity": 1
-                },
-                "hidden": false
-            }
-        ],
+        "drawings": [],
         "flags": {
             "ddb": {
-                "ddbId": 103059,
+                "bookCode": "hotdq",
+                "ddbId": 103058,
                 "cobaltId": null,
                 "parentId": 436,
-                "contentChunkId": "ddb-missing-hotdq-103059",
+                "contentChunkId": "ddb-missing-hotdq-103058",
                 "notes": [],
                 "tokens": [
                     {
-                        "_id": "Mb3bt3ZAW0ewG41y",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 14400,
-                        "y": 21500,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "RJclj36JZlZqHuBf",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 13900,
-                        "y": 21100,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "wyAGoxoe8YMj7p6W",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 14000,
-                        "y": 21100,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "URXjrn9Z5EthW9Co",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 14100,
-                        "y": 21100,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "bvzPDH1w9Go0XdLM",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 13800,
-                        "y": 21200,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "CY2fQGjU49qYvHLu",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 14200,
-                        "y": 21200,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "VWnN4lZe9oupPurP",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 13900,
-                        "y": 21300,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "SuW7J4BeAmZiv1Ps",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 14000,
-                        "y": 21300,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "qBMQfJM1fr2aWHvZ",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 14100,
-                        "y": 21300,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "fWxHFN7Ve6qQuj8J",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 13900,
-                        "y": 21400,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "tWvMfnL33iXAMjC1",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 14000,
-                        "y": 21400,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "XoA6NuaKxDaJyAKo",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 14100,
-                        "y": 21400,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "3DKgpNo55tU2R2rj",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 14200,
-                        "y": 21500,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "FU5t6OyFkHZc3Z7A",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 14100,
-                        "y": 21600,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "V372Un9ozrIZH4vD",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 14000,
-                        "y": 21600,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "VRrR0fNibwTWQHOO",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 13900,
-                        "y": 21600,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "q7FVA1MCRZZvNoLx",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 13800,
-                        "y": 21500,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "dOTrX1vZRdmcBFxW",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 13600,
-                        "y": 21000,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "TwgASQ3m4Rie2feH",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 13700,
-                        "y": 21000,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "D0Ti9PjFzF5thUyl",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 14300,
-                        "y": 20900,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "2CCHmkusBJKdMNJI",
-                        "name": "Dragonwing",
-                        "width": 1,
-                        "height": 1,
+                        "_id": "MZKLxBeewL8hdkH3",
+                        "name": "Adult White Dragon",
+                        "width": 3,
+                        "height": 3,
                         "scale": 1,
-                        "x": 11000,
-                        "y": 21900,
+                        "x": 6300,
+                        "y": 13300,
                         "disposition": -1,
                         "flags": {
                             "ddbActorFlags": {
-                                "id": 21899,
+                                "id": 16773,
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
@@ -5640,808 +6448,6 @@
                         "bar1": {
                             "attribute": "attributes.hp"
                         },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "Ica4hXrpEQYUKpd1",
-                        "name": "Dragonwing",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 11000,
-                        "y": 21500,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 21899,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "aKudBuW0zU343P87",
-                        "name": "Dragonwing",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 11300,
-                        "y": 21900,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 21899,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "PYSIehS6ImVD1Jjl",
-                        "name": "Dragonwing",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 10500,
-                        "y": 21600,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 21899,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "O6rED7C2NMvtNMHU",
-                        "name": "Dragonwing",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 10600,
-                        "y": 21900,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 21899,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "lYIl7ad8QW2Ldr8A",
-                        "name": "Dragonwing",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 12100,
-                        "y": 21600,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 21899,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "AwkTl9wpDLsBEouN",
-                        "name": "Dragonwing",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 12300,
-                        "y": 21600,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 21899,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "pAP1ajFtHbwfxn92",
-                        "name": "Dragonwing",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 12400,
-                        "y": 21800,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 21899,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "Dx2avnfnJs5MVovR",
-                        "name": "Dragonwing",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 12700,
-                        "y": 21800,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 21899,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "tint": null,
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "qCCgJxbfVn52s1HM",
-                        "name": "Dragonwing",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 12700,
-                        "y": 21600,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 21899,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "Nxgcz388F9wizBjE",
-                        "name": "Ogre",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 9400,
-                        "y": 21200,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16969,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "H8hUoAOv4saumnAr",
-                        "name": "Ogre",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 9700,
-                        "y": 21300,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16969,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "gR8qy12ZFOWtWdu5",
-                        "name": "Ogre",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 9800,
-                        "y": 21100,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16969,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "3OvkRaSDszQmNQr8",
-                        "name": "Ogre",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 8500,
-                        "y": 19500,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16969,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "kErGrfu9vvkr97Xw",
-                        "name": "Ogre",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 8900,
-                        "y": 19600,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16969,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "2PLr117y5lGpLY7Y",
-                        "name": "Ogre",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 8900,
-                        "y": 19900,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16969,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "nR729aT8Dft80fR1",
-                        "name": "Rezmir",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 13900,
-                        "y": 19300,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17477,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": true,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "YULLiv7Wl0OzbKsi",
-                        "name": "Guard Drake",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 13900,
-                        "y": 19200,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17265,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": true,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "YJJNJlRaodVT798H",
-                        "name": "Guard Drake",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 13900,
-                        "y": 19100,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17265,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": true,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "Wwgieqs7vfZrOz3k",
-                        "name": "Rug of Smothering",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 14100,
-                        "y": 19200,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17000,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": true,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "fuGj6bCjniYFMmhK",
-                        "name": "Azbara Jos",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 15300,
-                        "y": 17700,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17467,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": true,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "eW6f7AWBQpXzTdSx",
-                        "name": "Rath Modar",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 15600,
-                        "y": 17700,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17476,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": true,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "86OsvpPS3zbx1ojf",
-                        "name": "Wyvern",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 9800,
-                        "y": 18000,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17065,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "UZePTa4z9hdnIvLC",
-                        "name": "Wyvern",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 10200,
-                        "y": 17900,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17065,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "veMlmiDny0nflFpx",
-                        "name": "Wyvern",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 10600,
-                        "y": 18400,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17065,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "RVY3yEgqvZ7Ngzcd",
-                        "name": "Wyvern",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 9500,
-                        "y": 18800,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17065,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
                         "elevation": 0,
                         "hidden": false,
                         "lightAlpha": 0.25,
@@ -6457,25 +6463,25 @@
             "stairways": [],
             "perfect-vision": [],
             "dynamic-illumination": []
-        }
-    },
-    {
-        "name": "Skyreach Castle - Ice Tunnels",
-        "navName": "Skyreach Castle - Ice Tunnels",
-        "width": 13471,
-        "height": 19308,
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 100,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": 21,
-        "shiftY": 56,
+        "height": 19308,
         "initial": {
             "x": 7475,
             "y": 14124,
             "scale": 0.14
         },
-        "backgroundColor": "#999999",
+        "lights": [],
+        "name": "Skyreach Castle - Ice Tunnels",
+        "navName": "Skyreach Castle - Ice Tunnels",
+        "shiftX": 21,
+        "shiftY": 56,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -14182,33 +14188,34 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
+        "width": 13471
+    },
+    {
+        "backgroundColor": "#999999",
         "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
+        "drawings": [],
         "flags": {
             "ddb": {
-                "ddbId": 103058,
+                "bookCode": "hotdq",
+                "ddbId": 13058,
                 "cobaltId": null,
                 "parentId": 436,
-                "contentChunkId": "ddb-missing-hotdq-103058",
+                "contentChunkId": "0b923349-9615-43ab-8fa0-6375f251b9ca",
                 "notes": [],
                 "tokens": [
                     {
-                        "_id": "MZKLxBeewL8hdkH3",
-                        "name": "Adult White Dragon",
-                        "width": 3,
-                        "height": 3,
-                        "scale": 1,
-                        "x": 6300,
-                        "y": 13300,
+                        "_id": "1FpJlCa1C0S7hCtg",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 13600,
+                        "y": 21100,
                         "disposition": -1,
                         "flags": {
                             "ddbActorFlags": {
-                                "id": 16773,
+                                "id": 16939,
                                 "entityTypeId": 779871897,
                                 "creatureGroup": null,
                                 "creatureFlags": []
@@ -14218,7 +14225,254 @@
                         "bar1": {
                             "attribute": "attributes.hp"
                         },
-                        "effects": [],
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "Zv431P55DNLdFgbO",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 13700,
+                        "y": 21100,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "sNUnK9yPzxNFKxEA",
+                        "name": "Kobold",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 0.8,
+                        "x": 13800,
+                        "y": 21100,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16939,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "HNDHAq4OxWSiF53t",
+                        "name": "Blagothkus",
+                        "width": 3,
+                        "height": 3,
+                        "scale": 1,
+                        "x": 15500,
+                        "y": 7700,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17468,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "6MMSekhkYcVsJ8ZH",
+                        "name": "Ogre",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 15800,
+                        "y": 7800,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16969,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "N36gNQ8BNntH43xK",
+                        "name": "Ogre",
+                        "width": 2,
+                        "height": 2,
+                        "scale": 1,
+                        "x": 15300,
+                        "y": 7800,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 16969,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "ENvF6PuDk7qABdv9",
+                        "name": "Vampire",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 12900,
+                        "y": 9700,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17043,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "DryK9vnAfEtrA27c",
+                        "name": "Vampire Spawn",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 13100,
+                        "y": 9800,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17044,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "actorData": {}
+                    },
+                    {
+                        "_id": "LS4vX1gAq8zQiq0E",
+                        "name": "Vampire Spawn",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 12800,
+                        "y": 9700,
+                        "disposition": -1,
+                        "flags": {
+                            "ddbActorFlags": {
+                                "id": 17044,
+                                "entityTypeId": 779871897,
+                                "creatureGroup": null,
+                                "creatureFlags": []
+                            }
+                        },
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
                         "elevation": 0,
                         "hidden": false,
                         "lightAlpha": 0.25,
@@ -14234,25 +14488,25 @@
             "stairways": [],
             "perfect-vision": [],
             "dynamic-illumination": []
-        }
-    },
-    {
-        "name": "Skyreach Castle",
-        "navName": "Skyreach Castle - Upper Courtyard",
-        "width": 13471,
-        "height": 19309,
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 100,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": 4,
-        "shiftY": 90,
+        "height": 19309,
         "initial": {
             "x": 13378,
             "y": 9256,
             "scale": 0.14
         },
-        "backgroundColor": "#999999",
+        "lights": [],
+        "name": "Skyreach Castle - Upper Courtyard",
+        "navName": "Skyreach Castle - Upper Courtyard",
+        "shiftX": 4,
+        "shiftY": 90,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -18191,314 +18445,7 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
-        "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 13058,
-                "cobaltId": null,
-                "parentId": 436,
-                "contentChunkId": "0b923349-9615-43ab-8fa0-6375f251b9ca",
-                "notes": [],
-                "tokens": [
-                    {
-                        "_id": "1FpJlCa1C0S7hCtg",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 13600,
-                        "y": 21100,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "Zv431P55DNLdFgbO",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 13700,
-                        "y": 21100,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "sNUnK9yPzxNFKxEA",
-                        "name": "Kobold",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 0.8,
-                        "x": 13800,
-                        "y": 21100,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16939,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "HNDHAq4OxWSiF53t",
-                        "name": "Blagothkus",
-                        "width": 3,
-                        "height": 3,
-                        "scale": 1,
-                        "x": 15500,
-                        "y": 7700,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17468,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "6MMSekhkYcVsJ8ZH",
-                        "name": "Ogre",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 15800,
-                        "y": 7800,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16969,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "N36gNQ8BNntH43xK",
-                        "name": "Ogre",
-                        "width": 2,
-                        "height": 2,
-                        "scale": 1,
-                        "x": 15300,
-                        "y": 7800,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 16969,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "ENvF6PuDk7qABdv9",
-                        "name": "Vampire",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 12900,
-                        "y": 9700,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17043,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "DryK9vnAfEtrA27c",
-                        "name": "Vampire Spawn",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 13100,
-                        "y": 9800,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17044,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    },
-                    {
-                        "_id": "LS4vX1gAq8zQiq0E",
-                        "name": "Vampire Spawn",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 12800,
-                        "y": 9700,
-                        "disposition": -1,
-                        "flags": {
-                            "ddbActorFlags": {
-                                "id": 17044,
-                                "entityTypeId": 779871897,
-                                "creatureGroup": null,
-                                "creatureFlags": []
-                            }
-                        },
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "actorData": {}
-                    }
-                ]
-            },
-            "stairways": [],
-            "perfect-vision": [],
-            "dynamic-illumination": []
-        }
+        "width": 13471
     }
 ]

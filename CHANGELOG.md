@@ -2,6 +2,8 @@
 
 * LMoP Ruins of Thundertree update (Thanks @Zac !)
 * AtG additions (Thanks @Pariah Zero !)
+* ToA Updates (Thanks @michaelko777#7952 !)
+* IDRotF Updates (Thanks @michaelko777#7952 !)
 
 # 0.2.4
 

@@ -1,17 +1,36 @@
 [
     {
-        "name": "The Lost Dungeon of Rickedness",
-        "navName": "The Lost Dungeon of Rickedness",
-        "width": 4712,
-        "height": 1846,
+        "backgroundColor": "#bdd1e6",
+        "darkness": 0,
+        "drawings": [],
+        "flags": {
+            "ddb": {
+                "bookCode": "ddvram",
+                "ddbId": 13045,
+                "cobaltId": null,
+                "parentId": 886,
+                "contentChunkId": "295facd6-8ee9-4a91-8fbe-687761dc7422",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 61,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 1846,
+        "initial": null,
+        "lights": [],
+        "name": "The Lost Dungeon of Rickedness",
+        "navName": "The Lost Dungeon of Rickedness",
         "shiftX": -4,
         "shiftY": -5,
-        "initial": null,
-        "backgroundColor": "#bdd1e6",
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -6770,23 +6789,7 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
-        "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 13045,
-                "cobaltId": null,
-                "parentId": 886,
-                "contentChunkId": "295facd6-8ee9-4a91-8fbe-687761dc7422",
-                "notes": [],
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 4712
     }
 ]

@@ -1,15 +1,28 @@
 [
     {
-        "name": "Shrine of Savras",
-        "width": 3299,
-        "height": 2100,
+        "backgroundColor": "#706b4c",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13051,
+                "cobaltId": null,
+                "parentId": 694,
+                "contentChunkId": "d6f50ac3-ea16-4ee1-ad4f-67892ec635f1",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2100,
+        "lights": [],
+        "name": "Shrine of Savras",
         "shiftX": -47,
         "shiftY": -49,
-        "backgroundColor": "#706b4c",
         "walls": [
             {
                 "c": [
@@ -5376,28 +5389,44 @@
                 "sense": 1
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13051,
-                "cobaltId": null,
-                "parentId": 694,
-                "contentChunkId": "d6f50ac3-ea16-4ee1-ad4f-67892ec635f1"
-            }
-        }
+        "width": 3299
     },
     {
-        "name": "Tower of Storms",
-        "width": 3301,
-        "height": 2101,
+        "backgroundColor": "#595e4e",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13055,
+                "cobaltId": null,
+                "parentId": 695,
+                "contentChunkId": "e8fa1ad6-c6ab-49c2-b9f3-9e29ddc8e004",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2101,
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 7.73,
+                "darknessThreshold": 0,
+                "dim": 15.46,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 3425,
+                "y": 1050
+            }
+        ],
+        "name": "Tower of Storms",
         "shiftX": -47,
         "shiftY": -48,
-        "backgroundColor": "#595e4e",
         "walls": [
             {
                 "c": [
@@ -6636,40 +6665,32 @@
                 "sense": 1
             }
         ],
-        "lights": [
-            {
-                "angle": 360,
-                "bright": 7.73,
-                "darknessThreshold": 0,
-                "dim": 15.46,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 3425,
-                "y": 1050
-            }
-        ],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13055,
-                "cobaltId": null,
-                "parentId": 695,
-                "contentChunkId": "e8fa1ad6-c6ab-49c2-b9f3-9e29ddc8e004"
-            }
-        }
+        "width": 3301
     },
     {
-        "name": "Umbrage Hill",
-        "width": 3301,
-        "height": 2102,
+        "backgroundColor": "#717050",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13057,
+                "cobaltId": null,
+                "parentId": 696,
+                "contentChunkId": "28db532b-3f70-4245-aa20-09c68522250e",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2102,
+        "lights": [],
+        "name": "Umbrage Hill",
         "shiftX": -47,
         "shiftY": -48,
-        "backgroundColor": "#717050",
         "walls": [
             {
                 "c": [
@@ -7656,28 +7677,32 @@
                 "sense": 0
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13057,
-                "cobaltId": null,
-                "parentId": 696,
-                "contentChunkId": "28db532b-3f70-4245-aa20-09c68522250e"
-            }
-        }
+        "width": 3301
     },
     {
-        "name": "Woodland Manse",
-        "width": 3300,
-        "height": 2099,
+        "backgroundColor": "#6a6548",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13060,
+                "cobaltId": null,
+                "parentId": 697,
+                "contentChunkId": "51bcd86b-c04b-40b4-bd02-d754cf11740a",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2099,
+        "lights": [],
+        "name": "Woodland Manse",
         "shiftX": -47,
         "shiftY": -49,
-        "backgroundColor": "#6a6548",
         "walls": [
             {
                 "c": [
@@ -12060,28 +12085,32 @@
                 "sense": 2
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13060,
-                "cobaltId": null,
-                "parentId": 697,
-                "contentChunkId": "51bcd86b-c04b-40b4-bd02-d754cf11740a"
-            }
-        }
+        "width": 3300
     },
     {
-        "name": "Circle of Thunder",
-        "width": 3301,
-        "height": 2104,
+        "backgroundColor": "#62614d",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13020,
+                "cobaltId": null,
+                "parentId": 684,
+                "contentChunkId": "6f8f8665-f276-42d4-b1e3-d3b35d312cd0",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2104,
+        "lights": [],
+        "name": "Circle of Thunder",
         "shiftX": -47,
         "shiftY": -46,
-        "backgroundColor": "#62614d",
         "walls": [
             {
                 "c": [
@@ -14952,28 +14981,32 @@
                 "sense": 1
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13020,
-                "cobaltId": null,
-                "parentId": 684,
-                "contentChunkId": "6f8f8665-f276-42d4-b1e3-d3b35d312cd0"
-            }
-        }
+        "width": 3301
     },
     {
-        "name": "Axeholm",
-        "width": 3448,
-        "height": 2194,
+        "backgroundColor": "#6c654d",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13012,
+                "cobaltId": null,
+                "parentId": 685,
+                "contentChunkId": "6dbddd24-9990-4ca1-99e1-33a3e0292b61",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 52,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2194,
+        "lights": [],
+        "name": "Axeholm",
         "shiftX": 7,
         "shiftY": 3,
-        "backgroundColor": "#6c654d",
         "walls": [
             {
                 "c": [
@@ -24480,28 +24513,32 @@
                 "sense": 1
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13012,
-                "cobaltId": null,
-                "parentId": 685,
-                "contentChunkId": "6dbddd24-9990-4ca1-99e1-33a3e0292b61"
-            }
-        }
+        "width": 3448
     },
     {
-        "name": "Dragon Barrow",
-        "width": 3299,
-        "height": 2101,
+        "backgroundColor": "#66604e",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13024,
+                "cobaltId": null,
+                "parentId": 686,
+                "contentChunkId": "741a4028-2e99-4173-87eb-3990a4b940c5",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2101,
+        "lights": [],
+        "name": "Dragon Barrow",
         "shiftX": -47,
         "shiftY": -47,
-        "backgroundColor": "#66604e",
         "walls": [
             {
                 "c": [
@@ -26868,28 +26905,55 @@
                 "sense": 1
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13024,
-                "cobaltId": null,
-                "parentId": 686,
-                "contentChunkId": "741a4028-2e99-4173-87eb-3990a4b940c5"
-            }
-        }
+        "width": 3299
     },
     {
-        "name": "Dwarven Excavation",
-        "width": 3300,
-        "height": 2103,
+        "backgroundColor": "#565b4d",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13027,
+                "cobaltId": null,
+                "parentId": 688,
+                "contentChunkId": "3b3e836a-6751-4624-9f37-2ac6b4e2a7c2",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2103,
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 93.73,
+                "darknessThreshold": 0,
+                "dim": 187.47,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 950,
+                "y": 2375
+            },
+            {
+                "angle": 360,
+                "bright": 93.73,
+                "darknessThreshold": 0,
+                "dim": 187.47,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 1775,
+                "y": 1625
+            }
+        ],
+        "name": "Dwarven Excavation",
         "shiftX": -47,
         "shiftY": -47,
-        "backgroundColor": "#565b4d",
         "walls": [
             {
                 "c": [
@@ -30360,51 +30424,32 @@
                 "sense": 2
             }
         ],
-        "lights": [
-            {
-                "angle": 360,
-                "bright": 93.73,
-                "darknessThreshold": 0,
-                "dim": 187.47,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 950,
-                "y": 2375
-            },
-            {
-                "angle": 360,
-                "bright": 93.73,
-                "darknessThreshold": 0,
-                "dim": 187.47,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 1775,
-                "y": 1625
-            }
-        ],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13027,
-                "cobaltId": null,
-                "parentId": 688,
-                "contentChunkId": "3b3e836a-6751-4624-9f37-2ac6b4e2a7c2"
-            }
-        }
+        "width": 3300
     },
     {
-        "name": "Falcons Hunting Lodge",
-        "width": 3301,
-        "height": 2101,
+        "backgroundColor": "#676042",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13031,
+                "cobaltId": null,
+                "parentId": 689,
+                "contentChunkId": "96aff679-7d74-4385-bd81-cb3ad93bd409",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2101,
+        "lights": [],
+        "name": "Falcons Hunting Lodge",
         "shiftX": -48,
         "shiftY": -48,
-        "backgroundColor": "#676042",
         "walls": [
             {
                 "c": [
@@ -35039,28 +35084,32 @@
                 "sense": 2
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13031,
-                "cobaltId": null,
-                "parentId": 689,
-                "contentChunkId": "96aff679-7d74-4385-bd81-cb3ad93bd409"
-            }
-        }
+        "width": 3301
     },
     {
-        "name": "Gnomengarde",
-        "width": 3301,
-        "height": 2102,
+        "backgroundColor": "#5d553f",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13034,
+                "cobaltId": null,
+                "parentId": 690,
+                "contentChunkId": "dfcb275e-0365-4852-8944-63c97ec3926b",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2102,
+        "lights": [],
+        "name": "Gnomengarde",
         "shiftX": -47,
         "shiftY": -48,
-        "backgroundColor": "#5d553f",
         "walls": [
             {
                 "c": [
@@ -40283,28 +40332,143 @@
                 "sense": 2
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13034,
-                "cobaltId": null,
-                "parentId": 690,
-                "contentChunkId": "dfcb275e-0365-4852-8944-63c97ec3926b"
-            }
-        }
+        "width": 3301
     },
     {
-        "name": "Icespire Hold",
-        "width": 3302,
-        "height": 2099,
+        "backgroundColor": "#737c6d",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13039,
+                "cobaltId": null,
+                "parentId": 691,
+                "contentChunkId": "261e52e6-22f9-4ddc-99c0-af6452fc0c86",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2099,
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 19.52,
+                "darknessThreshold": 0,
+                "dim": 39.04,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 3725,
+                "y": 2600
+            },
+            {
+                "angle": 360,
+                "bright": 42.18,
+                "darknessThreshold": 0,
+                "dim": 84.36,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 3625,
+                "y": 1100
+            },
+            {
+                "angle": 360,
+                "bright": 60.14,
+                "darknessThreshold": 0,
+                "dim": 120.28,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 1125,
+                "y": 2425
+            },
+            {
+                "angle": 360,
+                "bright": 61.39,
+                "darknessThreshold": 0,
+                "dim": 122.79,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 2325,
+                "y": 2450
+            },
+            {
+                "angle": 360,
+                "bright": 84.42,
+                "darknessThreshold": 0,
+                "dim": 168.85,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 3100,
+                "y": 2075
+            },
+            {
+                "angle": 360,
+                "bright": 92.08,
+                "darknessThreshold": 0,
+                "dim": 184.17,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 2325,
+                "y": 925
+            },
+            {
+                "angle": 360,
+                "bright": 82.68,
+                "darknessThreshold": 0,
+                "dim": 165.37,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 1275,
+                "y": 925
+            },
+            {
+                "angle": 360,
+                "bright": 50.16,
+                "darknessThreshold": 0,
+                "dim": 100.32,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 2175,
+                "y": 675
+            },
+            {
+                "angle": 360,
+                "bright": 11.01,
+                "darknessThreshold": 0,
+                "dim": 22.02,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 1925,
+                "y": 975
+            },
+            {
+                "angle": 360,
+                "bright": 45.64,
+                "darknessThreshold": 0,
+                "dim": 91.29,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 2800,
+                "y": 1450
+            }
+        ],
+        "name": "Icespire Hold",
         "shiftX": -47,
         "shiftY": -48,
-        "backgroundColor": "#737c6d",
         "walls": [
             {
                 "c": [
@@ -46499,139 +46663,32 @@
                 "sense": 0
             }
         ],
-        "lights": [
-            {
-                "angle": 360,
-                "bright": 19.52,
-                "darknessThreshold": 0,
-                "dim": 39.04,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 3725,
-                "y": 2600
-            },
-            {
-                "angle": 360,
-                "bright": 42.18,
-                "darknessThreshold": 0,
-                "dim": 84.36,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 3625,
-                "y": 1100
-            },
-            {
-                "angle": 360,
-                "bright": 60.14,
-                "darknessThreshold": 0,
-                "dim": 120.28,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 1125,
-                "y": 2425
-            },
-            {
-                "angle": 360,
-                "bright": 61.39,
-                "darknessThreshold": 0,
-                "dim": 122.79,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 2325,
-                "y": 2450
-            },
-            {
-                "angle": 360,
-                "bright": 84.42,
-                "darknessThreshold": 0,
-                "dim": 168.85,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 3100,
-                "y": 2075
-            },
-            {
-                "angle": 360,
-                "bright": 92.08,
-                "darknessThreshold": 0,
-                "dim": 184.17,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 2325,
-                "y": 925
-            },
-            {
-                "angle": 360,
-                "bright": 82.68,
-                "darknessThreshold": 0,
-                "dim": 165.37,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 1275,
-                "y": 925
-            },
-            {
-                "angle": 360,
-                "bright": 50.16,
-                "darknessThreshold": 0,
-                "dim": 100.32,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 2175,
-                "y": 675
-            },
-            {
-                "angle": 360,
-                "bright": 11.01,
-                "darknessThreshold": 0,
-                "dim": 22.02,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 1925,
-                "y": 975
-            },
-            {
-                "angle": 360,
-                "bright": 45.64,
-                "darknessThreshold": 0,
-                "dim": 91.29,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 2800,
-                "y": 1450
-            }
-        ],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13039,
-                "cobaltId": null,
-                "parentId": 691,
-                "contentChunkId": "261e52e6-22f9-4ddc-99c0-af6452fc0c86"
-            }
-        }
+        "width": 3302
     },
     {
-        "name": "Loggers Camp",
-        "width": 3302,
-        "height": 2101,
+        "backgroundColor": "#6b6d50",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13044,
+                "cobaltId": null,
+                "parentId": 692,
+                "contentChunkId": "8093759c-a338-4136-954f-0f7662c87f4b",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2101,
+        "lights": [],
+        "name": "Loggers Camp",
         "shiftX": -47,
         "shiftY": -48,
-        "backgroundColor": "#6b6d50",
         "walls": [
             {
                 "c": [
@@ -50366,28 +50423,32 @@
                 "sense": 2
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13044,
-                "cobaltId": null,
-                "parentId": 692,
-                "contentChunkId": "8093759c-a338-4136-954f-0f7662c87f4b"
-            }
-        }
+        "width": 3302
     },
     {
-        "name": "Mountains Toe Gold Mine",
-        "width": 3296,
-        "height": 2105,
+        "backgroundColor": "#6d6d4c",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13048,
+                "cobaltId": null,
+                "parentId": 693,
+                "contentChunkId": "63601dab-6300-4781-9da1-73c9eedc2f9e",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2105,
+        "lights": [],
+        "name": "Mountains Toe Gold Mine",
         "shiftX": -49,
         "shiftY": -46,
-        "backgroundColor": "#6d6d4c",
         "walls": [
             {
                 "c": [
@@ -62546,28 +62607,32 @@
                 "sense": 1
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13048,
-                "cobaltId": null,
-                "parentId": 693,
-                "contentChunkId": "63601dab-6300-4781-9da1-73c9eedc2f9e"
-            }
-        }
+        "width": 3296
     },
     {
-        "name": "Butterskull Ranch",
-        "width": 3304,
-        "height": 2101,
+        "backgroundColor": "#777552",
+        "flags": {
+            "ddb": {
+                "bookCode": "doip",
+                "ddbId": 13016,
+                "cobaltId": null,
+                "parentId": 683,
+                "contentChunkId": "61ce3a48-809c-44b3-9c7d-6bcc9d813311",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2101,
+        "lights": [],
+        "name": "Butterskull Ranch",
         "shiftX": -45,
         "shiftY": -48,
-        "backgroundColor": "#777552",
         "walls": [
             {
                 "c": [
@@ -64382,15 +64447,6 @@
                 "sense": 0
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 13016,
-                "cobaltId": null,
-                "parentId": 683,
-                "contentChunkId": "61ce3a48-809c-44b3-9c7d-6bcc9d813311"
-            }
-        }
+        "width": 3304
     }
 ]

@@ -1,18 +1,7 @@
 [
     {
-        "name": "Snout of Omgar",
-        "navName": "Exploring the Island",
-        "width": 2100,
-        "height": 2850,
-        "grid": 230,
-        "gridDistance": 5,
-        "gridType": 5,
-        "gridUnits": "ft",
-        "shiftX": -36,
-        "shiftY": -111,
-        "initial": null,
         "backgroundColor": "#999999",
-        "walls": [],
+        "darkness": 0,
         "drawings": [
             {
                 "_id": "ZeiolRDVZVJpDvg0",
@@ -593,14 +582,9 @@
                 "flags": {}
             }
         ],
-        "weather": "",
-        "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
         "flags": {
             "ddb": {
+                "bookCode": "ttp",
                 "ddbId": 13010,
                 "cobaltId": null,
                 "parentId": 484,
@@ -611,31 +595,32 @@
             "stairways": [],
             "perfect-vision": [],
             "dynamic-illumination": []
-        }
-    },
-    {
-        "name": "Ahoyhoy",
-        "navName": "Exploring the Island",
-        "width": 3920,
-        "height": 2622,
-        "grid": 54,
-        "gridDistance": 5,
-        "gridType": 1,
-        "gridUnits": "ft",
-        "shiftX": -152,
-        "shiftY": 5,
-        "initial": null,
-        "backgroundColor": "#999999",
-        "walls": [],
-        "drawings": [],
-        "weather": "",
-        "darkness": 0,
-        "tokenVision": true,
+        },
         "globalLight": false,
         "globalLightThreshold": null,
+        "grid": 230,
+        "gridDistance": 5,
+        "gridType": 5,
+        "gridUnits": "ft",
+        "height": 2850,
+        "initial": null,
         "lights": [],
+        "name": "Snout of Omgar",
+        "navName": "Exploring the Island",
+        "shiftX": -36,
+        "shiftY": -111,
+        "tokenVision": true,
+        "walls": [],
+        "weather": "",
+        "width": 2100
+    },
+    {
+        "backgroundColor": "#999999",
+        "darkness": 0,
+        "drawings": [],
         "flags": {
             "ddb": {
+                "bookCode": "ttp",
                 "ddbId": 13011,
                 "cobaltId": null,
                 "parentId": 484,
@@ -644,18 +629,20 @@
                     {
                         "label": "01. South Gate",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2013,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "7e19cf63-41ab-43a3-91ef-546757a1635e",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "hbSnPVuisoOUX1KW"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2013,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "7e19cf63-41ab-43a3-91ef-546757a1635e",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "hbSnPVuisoOUX1KW"
+                            }
                         },
                         "positions": [
                             {
@@ -671,18 +658,20 @@
                     {
                         "label": "02. North Gate and Courtyard",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2018,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "62ed8af8-9b3f-4b70-b01e-6698b307d944",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "nMn4UFTFkFEmeUoC"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2018,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "62ed8af8-9b3f-4b70-b01e-6698b307d944",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "nMn4UFTFkFEmeUoC"
+                            }
                         },
                         "positions": [
                             {
@@ -698,18 +687,20 @@
                     {
                         "label": "03. Living Area",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2020,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "cb0e7744-7b02-4d0f-a6af-8a905cdc6ac3",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "ngvEbn7drKIW7KSJ"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2020,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "cb0e7744-7b02-4d0f-a6af-8a905cdc6ac3",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "ngvEbn7drKIW7KSJ"
+                            }
                         },
                         "positions": [
                             {
@@ -725,18 +716,20 @@
                     {
                         "label": "04. Fishing Space and Storage",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2022,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "74ad1964-377e-4e0b-8e8a-122d397ebbeb",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "eAyK0vqEgl7UOJfS"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2022,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "74ad1964-377e-4e0b-8e8a-122d397ebbeb",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "eAyK0vqEgl7UOJfS"
+                            }
                         },
                         "positions": [
                             {
@@ -752,18 +745,20 @@
                     {
                         "label": "05. Amphitheater",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2024,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "6757f1c3-de30-4255-b409-e299c367f021",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "zkep9BIPIMtFzteF"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2024,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "6757f1c3-de30-4255-b409-e299c367f021",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "zkep9BIPIMtFzteF"
+                            }
                         },
                         "positions": [
                             {
@@ -779,18 +774,20 @@
                     {
                         "label": "06. Egg Hatcheries",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2026,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "7223dc90-2141-4a91-9c3c-a947df83b651",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "G3fRj4EQkkzgZtFV"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2026,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "7223dc90-2141-4a91-9c3c-a947df83b651",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "G3fRj4EQkkzgZtFV"
+                            }
                         },
                         "positions": [
                             {
@@ -810,18 +807,20 @@
                     {
                         "label": "07. Gong",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2029,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "0b0d57cc-26ba-48cb-afab-5781c5bc3ab4",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "HMZfC7qOgHr5D7GI"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2029,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "0b0d57cc-26ba-48cb-afab-5781c5bc3ab4",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "HMZfC7qOgHr5D7GI"
+                            }
                         },
                         "positions": [
                             {
@@ -837,18 +836,20 @@
                     {
                         "label": "08. Smithy",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2031,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "b1d62be0-2965-475e-b441-66e11a49fbd6",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "fIVk6g6J9afk79zK"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2031,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "b1d62be0-2965-475e-b441-66e11a49fbd6",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "fIVk6g6J9afk79zK"
+                            }
                         },
                         "positions": [
                             {
@@ -864,18 +865,20 @@
                     {
                         "label": "09. Market",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2038,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "6915498e-b4a4-4ab6-b78a-695898fbb2b8",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "sDEnHcUrXkBHEw7H"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2038,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "6915498e-b4a4-4ab6-b78a-695898fbb2b8",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "sDEnHcUrXkBHEw7H"
+                            }
                         },
                         "positions": [
                             {
@@ -894,21 +897,1014 @@
             "stairways": [],
             "perfect-vision": [],
             "dynamic-illumination": []
-        }
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "grid": 54,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "height": 2622,
+        "initial": null,
+        "lights": [],
+        "name": "Ahoyhoy",
+        "navName": "Exploring the Island",
+        "shiftX": -152,
+        "shiftY": 5,
+        "tokenVision": true,
+        "walls": [],
+        "weather": "",
+        "width": 3920
     },
     {
-        "name": "Dangaru",
-        "navName": "Exploring the Island",
-        "width": 4200,
-        "height": 5700,
+        "backgroundColor": "#999999",
+        "darkness": 0,
+        "drawings": [
+            {
+                "_id": "9wxZFj81GVdlUyaO",
+                "author": "5gQjkJmdb1dW768F",
+                "type": "t",
+                "x": 2702,
+                "y": 5046,
+                "width": 137.75,
+                "height": 110.125,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#d4b388",
+                "fillAlpha": 0.1,
+                "strokeWidth": 0,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "+30 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#0f0f0f",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "toBpk971yqGasnja",
+                "author": "5gQjkJmdb1dW768F",
+                "type": "t",
+                "x": 2276,
+                "y": 3259,
+                "width": 137.75,
+                "height": 110.125,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#d4b388",
+                "fillAlpha": 0.1,
+                "strokeWidth": 0,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "+30 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#0f0f0f",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "HsFJMrxbOF9VKqKX",
+                "author": "5gQjkJmdb1dW768F",
+                "type": "t",
+                "x": 2317,
+                "y": 5809,
+                "width": 137.75,
+                "height": 110.125,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#d4b388",
+                "fillAlpha": 0.1,
+                "strokeWidth": 0,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "+30 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#d59c48",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "TnNPRu5cbCkaWlmt",
+                "author": "5gQjkJmdb1dW768F",
+                "type": "t",
+                "x": 1815,
+                "y": 5005,
+                "width": 137.75,
+                "height": 110.125,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#d4b388",
+                "fillAlpha": 0.1,
+                "strokeWidth": 0,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "+20 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#d59c48",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "8HpcvnAXqb9wFRq5",
+                "author": "5gQjkJmdb1dW768F",
+                "type": "t",
+                "x": 2207,
+                "y": 4503,
+                "width": 137.75,
+                "height": 110.125,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#d4b388",
+                "fillAlpha": 0.1,
+                "strokeWidth": 0,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "+20 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#d59c48",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "HzanXHnl80TMhqjy",
+                "author": "5gQjkJmdb1dW768F",
+                "type": "t",
+                "x": 1994,
+                "y": 4675,
+                "width": 137.75,
+                "height": 110.125,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#d4b388",
+                "fillAlpha": 0.1,
+                "strokeWidth": 0,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "+10 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#d59c48",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "5l5cv5dgZsRw5Pe5",
+                "author": "5gQjkJmdb1dW768F",
+                "type": "t",
+                "x": 1815,
+                "y": 5445,
+                "width": 137.75,
+                "height": 110.125,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#d4b388",
+                "fillAlpha": 0.1,
+                "strokeWidth": 0,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "+10 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#d59c48",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "UDLcFKjnYp2s7UWo",
+                "author": "5gQjkJmdb1dW768F",
+                "type": "t",
+                "x": 2482,
+                "y": 5418,
+                "width": 137.75,
+                "height": 110.125,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#d4b388",
+                "fillAlpha": 0.1,
+                "strokeWidth": 0,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "+25 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#d59c48",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "mBdopo56zu8DEz7B",
+                "author": "5gQjkJmdb1dW768F",
+                "type": "t",
+                "x": 1946,
+                "y": 5713,
+                "width": 137.75,
+                "height": 110.125,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#d4b388",
+                "fillAlpha": 0.1,
+                "strokeWidth": 0,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": "",
+                "text": "+15 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#d59c48",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            },
+            {
+                "_id": "T4x0C3sBWHF6EuS5",
+                "author": "5gQjkJmdb1dW768F",
+                "type": "t",
+                "x": 2035,
+                "y": 2365,
+                "width": 137.75,
+                "height": 110.125,
+                "rotation": 0,
+                "z": 0,
+                "points": [],
+                "bezierFactor": 0,
+                "fillType": 0,
+                "fillColor": "#d4b388",
+                "fillAlpha": 0.1,
+                "strokeWidth": 0,
+                "strokeColor": "#FFFFFF",
+                "strokeAlpha": 0,
+                "texture": null,
+                "text": "+20 ft",
+                "fontFamily": "Signika",
+                "fontSize": 48,
+                "textColor": "#d59c48",
+                "textAlpha": 1,
+                "hidden": true,
+                "locked": false,
+                "flags": {}
+            }
+        ],
+        "flags": {
+            "ddb": {
+                "bookCode": "ttp",
+                "ddbId": 13012,
+                "cobaltId": null,
+                "parentId": 484,
+                "contentChunkId": "d82bbd31-3098-4184-bf92-c502ee7381b7",
+                "notes": [
+                    {
+                        "label": "01.Ruined Portico",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2043,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "5fd40d78-0cdf-4885-bb2f-8609945e42b3",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "wlMW4J0SVF5nPHOa"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3327.5,
+                                "y": 2392.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "02. Statue of Umberlee",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2046,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "2ca68520-4060-43e5-8094-8a2681d57b2f",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "eZfGhkoEqRq0nACH"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3987.5,
+                                "y": 2227.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "03. Overgrown Garden",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2049,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "b2de5864-6f4b-40f5-ba20-938a40ecd0df",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "DC5Rt8UyUiUZf3fA"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2227.5,
+                                "y": 2227.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "04. Antechamber and Portcullis",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2051,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "6cbb1771-2e4f-4f6d-80db-c016e9477b5f",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "jRFHNU8Yp0eNBekI"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3382.5,
+                                "y": 2777.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "05. Feast Hall",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2056,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "0002a691-ef3d-4f31-a376-50f3bdf3dde5",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "tD7tpoWrjOPwsh96"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3547.5,
+                                "y": 3162.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "06. Abandoned Quarters",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2059,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "5a7c8832-ec7f-4676-8eed-4034ed0969ca",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "HlMxr6YaGOfGs9KZ"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2722.5,
+                                "y": 2887.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "07. Ruined Bath",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2064,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "a9d327a4-48d0-4865-a697-2ae2d9cfe2a3",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "8HyLwmz24YG6bl9V"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3987.5,
+                                "y": 2887.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "08. Shrine",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2069,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "60da1d81-92b9-4ec4-a1d1-07c30919317d",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "AzUHq9ac5KJAmduG"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2667.5,
+                                "y": 3272.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "09. Crab Pool",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2076,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "8bab3a86-a4d3-4cf5-badf-d665334417e8",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "XDzd167O2Hukjsmn"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3822.5,
+                                "y": 3272.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "10. Crumbling Walkway",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2080,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "59b9a4be-e2ce-49e8-a61d-7e19afffe08d",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "kwkRM5yAhqzANogA"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2337.5,
+                                "y": 3107.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "11. Throne Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2088,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "8b90575c-4ca3-4c2d-8652-729fbdc71c9a",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "0w7q3rosbMIjDNS8"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2942.5,
+                                "y": 3822.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "13. Ruined Guard Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2098,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "93d51bd3-7a19-483a-8c12-7e94ed1a02da",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "ESe7xg7uSWazdQJz"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2777.5,
+                                "y": 4592.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "14. Terrace Garden",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2104,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "2575aa84-50bd-415b-94e1-c2e942e3f1f5",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "TkOprBQQXeuwZ4mK"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2557.5,
+                                "y": 5087.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "15. Cleric’s Chambers",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2113,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "c8e60c97-6206-45d7-b562-4bb8af5f027b",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "RzyubDZ0RTxP7ahH"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3162.5,
+                                "y": 4702.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "16. Kitchen and Storage",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2116,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "c6414d54-8b84-41f0-a4f4-646b5e82ec09",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "RgIKNEybrYqy9luD"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3877.5,
+                                "y": 4702.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "17. Hallway",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2121,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "3dd503bd-1937-43b4-adb3-289c6d87778d",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "6fdfmD8p0LOUMclR"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3602.5,
+                                "y": 5087.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "18. Treasury",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2133,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "7d8e5952-98b8-4149-8561-845fd4a26f57",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "WsfD6WcXm6dMwPoJ"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3602.5,
+                                "y": 5692.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "19. Glass Statue",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2136,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "689f1ee1-2d6f-47a0-92df-5a1bdb58c42d",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "ckCwVGrAJqSTwJHU"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3272.5,
+                                "y": 6462.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "20. Haunted Cage",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2143,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "14720ffc-877f-462c-aa21-bef82c7a5105",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "GQY27L2kwFOKrknR"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3822.5,
+                                "y": 6517.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "21. Lounge",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2146,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "403e7796-d1de-400b-8d3e-5d4cdfdf1f2b",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "uCobuhBe8rQJLKjD"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2832.5,
+                                "y": 5527.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "22. Caves of Worship",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2149,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "884cadcb-a523-4179-affb-c69cb9fc521d",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "ZH0wGOAGBycFjrTs"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 4592.5,
+                                "y": 4372.5
+                            },
+                            {
+                                "x": 4647.5,
+                                "y": 5472.5
+                            },
+                            {
+                                "x": 4702.5,
+                                "y": 6132.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "23. Blow Holes",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2151,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "b3fc8c1b-75aa-4b71-99ef-4ac6a045b82b",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "N4J0dDct8Z6BADgw"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 4977.5,
+                                "y": 4042.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "24. Shrine of Umberlee",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2163,
+                                "bookCode": "ttp",
+                                "slug": "the-tortle-package#ExploringtheIsland",
+                                "contentChunkId": "3ed63c21-8949-4366-b4b2-219dba754bcc",
+                                "userData": {
+                                    "userDisplayName": "michaelko777"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 484,
+                                "linkId": "7YNdnRENuteze8mB"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 4647.5,
+                                "y": 3272.5
+                            }
+                        ],
+                        "iconSize": 41,
+                        "iconTint": null,
+                        "textColor": "#FFFFFF",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 55,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 5700,
+        "initial": null,
+        "lights": [],
+        "name": "Dangaru",
+        "navName": "Exploring the Island",
         "shiftX": -64,
         "shiftY": 22,
-        "initial": null,
-        "backgroundColor": "#999999",
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -4847,936 +5843,7 @@
                 "sense": 1
             }
         ],
-        "drawings": [
-            {
-                "_id": "9wxZFj81GVdlUyaO",
-                "author": "5gQjkJmdb1dW768F",
-                "type": "t",
-                "x": 2702,
-                "y": 5046,
-                "width": 137.75,
-                "height": 110.125,
-                "rotation": 0,
-                "z": 0,
-                "points": [],
-                "bezierFactor": 0,
-                "fillType": 0,
-                "fillColor": "#d4b388",
-                "fillAlpha": 0.1,
-                "strokeWidth": 0,
-                "strokeColor": "#FFFFFF",
-                "strokeAlpha": 0,
-                "texture": "",
-                "text": "+30 ft",
-                "fontFamily": "Signika",
-                "fontSize": 48,
-                "textColor": "#0f0f0f",
-                "textAlpha": 1,
-                "hidden": true,
-                "locked": false,
-                "flags": {}
-            },
-            {
-                "_id": "toBpk971yqGasnja",
-                "author": "5gQjkJmdb1dW768F",
-                "type": "t",
-                "x": 2276,
-                "y": 3259,
-                "width": 137.75,
-                "height": 110.125,
-                "rotation": 0,
-                "z": 0,
-                "points": [],
-                "bezierFactor": 0,
-                "fillType": 0,
-                "fillColor": "#d4b388",
-                "fillAlpha": 0.1,
-                "strokeWidth": 0,
-                "strokeColor": "#FFFFFF",
-                "strokeAlpha": 0,
-                "texture": null,
-                "text": "+30 ft",
-                "fontFamily": "Signika",
-                "fontSize": 48,
-                "textColor": "#0f0f0f",
-                "textAlpha": 1,
-                "hidden": true,
-                "locked": false,
-                "flags": {}
-            },
-            {
-                "_id": "HsFJMrxbOF9VKqKX",
-                "author": "5gQjkJmdb1dW768F",
-                "type": "t",
-                "x": 2317,
-                "y": 5809,
-                "width": 137.75,
-                "height": 110.125,
-                "rotation": 0,
-                "z": 0,
-                "points": [],
-                "bezierFactor": 0,
-                "fillType": 0,
-                "fillColor": "#d4b388",
-                "fillAlpha": 0.1,
-                "strokeWidth": 0,
-                "strokeColor": "#FFFFFF",
-                "strokeAlpha": 0,
-                "texture": "",
-                "text": "+30 ft",
-                "fontFamily": "Signika",
-                "fontSize": 48,
-                "textColor": "#d59c48",
-                "textAlpha": 1,
-                "hidden": true,
-                "locked": false,
-                "flags": {}
-            },
-            {
-                "_id": "TnNPRu5cbCkaWlmt",
-                "author": "5gQjkJmdb1dW768F",
-                "type": "t",
-                "x": 1815,
-                "y": 5005,
-                "width": 137.75,
-                "height": 110.125,
-                "rotation": 0,
-                "z": 0,
-                "points": [],
-                "bezierFactor": 0,
-                "fillType": 0,
-                "fillColor": "#d4b388",
-                "fillAlpha": 0.1,
-                "strokeWidth": 0,
-                "strokeColor": "#FFFFFF",
-                "strokeAlpha": 0,
-                "texture": "",
-                "text": "+20 ft",
-                "fontFamily": "Signika",
-                "fontSize": 48,
-                "textColor": "#d59c48",
-                "textAlpha": 1,
-                "hidden": true,
-                "locked": false,
-                "flags": {}
-            },
-            {
-                "_id": "8HpcvnAXqb9wFRq5",
-                "author": "5gQjkJmdb1dW768F",
-                "type": "t",
-                "x": 2207,
-                "y": 4503,
-                "width": 137.75,
-                "height": 110.125,
-                "rotation": 0,
-                "z": 0,
-                "points": [],
-                "bezierFactor": 0,
-                "fillType": 0,
-                "fillColor": "#d4b388",
-                "fillAlpha": 0.1,
-                "strokeWidth": 0,
-                "strokeColor": "#FFFFFF",
-                "strokeAlpha": 0,
-                "texture": null,
-                "text": "+20 ft",
-                "fontFamily": "Signika",
-                "fontSize": 48,
-                "textColor": "#d59c48",
-                "textAlpha": 1,
-                "hidden": true,
-                "locked": false,
-                "flags": {}
-            },
-            {
-                "_id": "HzanXHnl80TMhqjy",
-                "author": "5gQjkJmdb1dW768F",
-                "type": "t",
-                "x": 1994,
-                "y": 4675,
-                "width": 137.75,
-                "height": 110.125,
-                "rotation": 0,
-                "z": 0,
-                "points": [],
-                "bezierFactor": 0,
-                "fillType": 0,
-                "fillColor": "#d4b388",
-                "fillAlpha": 0.1,
-                "strokeWidth": 0,
-                "strokeColor": "#FFFFFF",
-                "strokeAlpha": 0,
-                "texture": "",
-                "text": "+10 ft",
-                "fontFamily": "Signika",
-                "fontSize": 48,
-                "textColor": "#d59c48",
-                "textAlpha": 1,
-                "hidden": true,
-                "locked": false,
-                "flags": {}
-            },
-            {
-                "_id": "5l5cv5dgZsRw5Pe5",
-                "author": "5gQjkJmdb1dW768F",
-                "type": "t",
-                "x": 1815,
-                "y": 5445,
-                "width": 137.75,
-                "height": 110.125,
-                "rotation": 0,
-                "z": 0,
-                "points": [],
-                "bezierFactor": 0,
-                "fillType": 0,
-                "fillColor": "#d4b388",
-                "fillAlpha": 0.1,
-                "strokeWidth": 0,
-                "strokeColor": "#FFFFFF",
-                "strokeAlpha": 0,
-                "texture": null,
-                "text": "+10 ft",
-                "fontFamily": "Signika",
-                "fontSize": 48,
-                "textColor": "#d59c48",
-                "textAlpha": 1,
-                "hidden": true,
-                "locked": false,
-                "flags": {}
-            },
-            {
-                "_id": "UDLcFKjnYp2s7UWo",
-                "author": "5gQjkJmdb1dW768F",
-                "type": "t",
-                "x": 2482,
-                "y": 5418,
-                "width": 137.75,
-                "height": 110.125,
-                "rotation": 0,
-                "z": 0,
-                "points": [],
-                "bezierFactor": 0,
-                "fillType": 0,
-                "fillColor": "#d4b388",
-                "fillAlpha": 0.1,
-                "strokeWidth": 0,
-                "strokeColor": "#FFFFFF",
-                "strokeAlpha": 0,
-                "texture": "",
-                "text": "+25 ft",
-                "fontFamily": "Signika",
-                "fontSize": 48,
-                "textColor": "#d59c48",
-                "textAlpha": 1,
-                "hidden": true,
-                "locked": false,
-                "flags": {}
-            },
-            {
-                "_id": "mBdopo56zu8DEz7B",
-                "author": "5gQjkJmdb1dW768F",
-                "type": "t",
-                "x": 1946,
-                "y": 5713,
-                "width": 137.75,
-                "height": 110.125,
-                "rotation": 0,
-                "z": 0,
-                "points": [],
-                "bezierFactor": 0,
-                "fillType": 0,
-                "fillColor": "#d4b388",
-                "fillAlpha": 0.1,
-                "strokeWidth": 0,
-                "strokeColor": "#FFFFFF",
-                "strokeAlpha": 0,
-                "texture": "",
-                "text": "+15 ft",
-                "fontFamily": "Signika",
-                "fontSize": 48,
-                "textColor": "#d59c48",
-                "textAlpha": 1,
-                "hidden": true,
-                "locked": false,
-                "flags": {}
-            },
-            {
-                "_id": "T4x0C3sBWHF6EuS5",
-                "author": "5gQjkJmdb1dW768F",
-                "type": "t",
-                "x": 2035,
-                "y": 2365,
-                "width": 137.75,
-                "height": 110.125,
-                "rotation": 0,
-                "z": 0,
-                "points": [],
-                "bezierFactor": 0,
-                "fillType": 0,
-                "fillColor": "#d4b388",
-                "fillAlpha": 0.1,
-                "strokeWidth": 0,
-                "strokeColor": "#FFFFFF",
-                "strokeAlpha": 0,
-                "texture": null,
-                "text": "+20 ft",
-                "fontFamily": "Signika",
-                "fontSize": 48,
-                "textColor": "#d59c48",
-                "textAlpha": 1,
-                "hidden": true,
-                "locked": false,
-                "flags": {}
-            }
-        ],
         "weather": "",
-        "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 13012,
-                "cobaltId": null,
-                "parentId": 484,
-                "contentChunkId": "d82bbd31-3098-4184-bf92-c502ee7381b7",
-                "notes": [
-                    {
-                        "label": "01.Ruined Portico",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2043,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "5fd40d78-0cdf-4885-bb2f-8609945e42b3",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "wlMW4J0SVF5nPHOa"
-                        },
-                        "positions": [
-                            {
-                                "x": 3327.5,
-                                "y": 2392.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "02. Statue of Umberlee",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2046,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "2ca68520-4060-43e5-8094-8a2681d57b2f",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "eZfGhkoEqRq0nACH"
-                        },
-                        "positions": [
-                            {
-                                "x": 3987.5,
-                                "y": 2227.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "03. Overgrown Garden",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2049,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "b2de5864-6f4b-40f5-ba20-938a40ecd0df",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "DC5Rt8UyUiUZf3fA"
-                        },
-                        "positions": [
-                            {
-                                "x": 2227.5,
-                                "y": 2227.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "04. Antechamber and Portcullis",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2051,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "6cbb1771-2e4f-4f6d-80db-c016e9477b5f",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "jRFHNU8Yp0eNBekI"
-                        },
-                        "positions": [
-                            {
-                                "x": 3382.5,
-                                "y": 2777.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "05. Feast Hall",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2056,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "0002a691-ef3d-4f31-a376-50f3bdf3dde5",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "tD7tpoWrjOPwsh96"
-                        },
-                        "positions": [
-                            {
-                                "x": 3547.5,
-                                "y": 3162.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "06. Abandoned Quarters",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2059,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "5a7c8832-ec7f-4676-8eed-4034ed0969ca",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "HlMxr6YaGOfGs9KZ"
-                        },
-                        "positions": [
-                            {
-                                "x": 2722.5,
-                                "y": 2887.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "07. Ruined Bath",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2064,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "a9d327a4-48d0-4865-a697-2ae2d9cfe2a3",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "8HyLwmz24YG6bl9V"
-                        },
-                        "positions": [
-                            {
-                                "x": 3987.5,
-                                "y": 2887.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "08. Shrine",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2069,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "60da1d81-92b9-4ec4-a1d1-07c30919317d",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "AzUHq9ac5KJAmduG"
-                        },
-                        "positions": [
-                            {
-                                "x": 2667.5,
-                                "y": 3272.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "09. Crab Pool",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2076,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "8bab3a86-a4d3-4cf5-badf-d665334417e8",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "XDzd167O2Hukjsmn"
-                        },
-                        "positions": [
-                            {
-                                "x": 3822.5,
-                                "y": 3272.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "10. Crumbling Walkway",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2080,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "59b9a4be-e2ce-49e8-a61d-7e19afffe08d",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "kwkRM5yAhqzANogA"
-                        },
-                        "positions": [
-                            {
-                                "x": 2337.5,
-                                "y": 3107.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "11. Throne Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2088,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "8b90575c-4ca3-4c2d-8652-729fbdc71c9a",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "0w7q3rosbMIjDNS8"
-                        },
-                        "positions": [
-                            {
-                                "x": 2942.5,
-                                "y": 3822.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "13. Ruined Guard Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2098,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "93d51bd3-7a19-483a-8c12-7e94ed1a02da",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "ESe7xg7uSWazdQJz"
-                        },
-                        "positions": [
-                            {
-                                "x": 2777.5,
-                                "y": 4592.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "14. Terrace Garden",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2104,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "2575aa84-50bd-415b-94e1-c2e942e3f1f5",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "TkOprBQQXeuwZ4mK"
-                        },
-                        "positions": [
-                            {
-                                "x": 2557.5,
-                                "y": 5087.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "15. Cleric’s Chambers",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2113,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "c8e60c97-6206-45d7-b562-4bb8af5f027b",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "RzyubDZ0RTxP7ahH"
-                        },
-                        "positions": [
-                            {
-                                "x": 3162.5,
-                                "y": 4702.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "16. Kitchen and Storage",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2116,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "c6414d54-8b84-41f0-a4f4-646b5e82ec09",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "RgIKNEybrYqy9luD"
-                        },
-                        "positions": [
-                            {
-                                "x": 3877.5,
-                                "y": 4702.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "17. Hallway",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2121,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "3dd503bd-1937-43b4-adb3-289c6d87778d",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "6fdfmD8p0LOUMclR"
-                        },
-                        "positions": [
-                            {
-                                "x": 3602.5,
-                                "y": 5087.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "18. Treasury",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2133,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "7d8e5952-98b8-4149-8561-845fd4a26f57",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "WsfD6WcXm6dMwPoJ"
-                        },
-                        "positions": [
-                            {
-                                "x": 3602.5,
-                                "y": 5692.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "19. Glass Statue",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2136,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "689f1ee1-2d6f-47a0-92df-5a1bdb58c42d",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "ckCwVGrAJqSTwJHU"
-                        },
-                        "positions": [
-                            {
-                                "x": 3272.5,
-                                "y": 6462.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "20. Haunted Cage",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2143,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "14720ffc-877f-462c-aa21-bef82c7a5105",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "GQY27L2kwFOKrknR"
-                        },
-                        "positions": [
-                            {
-                                "x": 3822.5,
-                                "y": 6517.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "21. Lounge",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2146,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "403e7796-d1de-400b-8d3e-5d4cdfdf1f2b",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "uCobuhBe8rQJLKjD"
-                        },
-                        "positions": [
-                            {
-                                "x": 2832.5,
-                                "y": 5527.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "22. Caves of Worship",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2149,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "884cadcb-a523-4179-affb-c69cb9fc521d",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "ZH0wGOAGBycFjrTs"
-                        },
-                        "positions": [
-                            {
-                                "x": 4592.5,
-                                "y": 4372.5
-                            },
-                            {
-                                "x": 4647.5,
-                                "y": 5472.5
-                            },
-                            {
-                                "x": 4702.5,
-                                "y": 6132.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "23. Blow Holes",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2151,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "b3fc8c1b-75aa-4b71-99ef-4ac6a045b82b",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "N4J0dDct8Z6BADgw"
-                        },
-                        "positions": [
-                            {
-                                "x": 4977.5,
-                                "y": 4042.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "24. Shrine of Umberlee",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2163,
-                            "bookCode": "ttp",
-                            "slug": "the-tortle-package#ExploringtheIsland",
-                            "contentChunkId": "3ed63c21-8949-4366-b4b2-219dba754bcc",
-                            "userData": {
-                                "userDisplayName": "michaelko777"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 484,
-                            "linkId": "7YNdnRENuteze8mB"
-                        },
-                        "positions": [
-                            {
-                                "x": 4647.5,
-                                "y": 3272.5
-                            }
-                        ],
-                        "iconSize": 41,
-                        "iconTint": null,
-                        "textColor": "#FFFFFF",
-                        "textAnchor": 1
-                    }
-                ],
-                "tokens": []
-            },
-            "stairways": [],
-            "perfect-vision": [],
-            "dynamic-illumination": []
-        }
+        "width": 4200
     }
 ]

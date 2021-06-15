@@ -1,21 +1,244 @@
 [
     {
-        "name": "Map 2.4: The Sinkhole",
-        "navName": "The Sinkhole",
-        "width": 4767,
-        "height": 2269,
+        "backgroundColor": "#999999",
+        "darkness": 0.6,
+        "drawings": [],
+        "flags": {
+            "ddb": {
+                "bookCode": "tfof",
+                "ddbId": 11011,
+                "cobaltId": null,
+                "parentId": 385,
+                "contentChunkId": "8f41ecba-347b-451b-9d87-f6a34f794ebf",
+                "notes": [
+                    {
+                        "label": "28. Waterfall Cavern",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2218,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "a92aa497-7419-496b-a267-7ca6dc515583",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "sfJqbk0WTx2FAbLU"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2156,
+                                "y": 1655.5
+                            }
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "29. River Cavern",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2223,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "0a82c750-642b-4da4-abc8-0f5de89d84ce",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "0RasKW6aE3VLOr09"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3080,
+                                "y": 2040.5
+                            }
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "30. Old Storeroom",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2229,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "5d60b64d-f628-4f9c-9aed-7749eac1ed0c",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "pAbGwO07mLOQVuop"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3388,
+                                "y": 885.5
+                            }
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "31. Empty Storeroom",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2231,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "b0e5e495-1a64-4b66-899b-eb8b631949ba",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "RVepCf7r9dsPNftC"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3311,
+                                "y": 1732.5
+                            }
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "32. Flooded Storeroom",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2237,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "67dd8ffe-cc53-41a0-911d-af210d9e3503",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "VrM7Qdq2OApxwmQn"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3696,
+                                "y": 2310
+                            }
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "33. Roper’s Cavern",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2247,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "9705a35c-8955-4194-ae53-2f0deb85a25b",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "xZQkm3OAJBqUHuJV"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 4697,
+                                "y": 2002
+                            }
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "34. Prison",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2253,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "7aa9b08e-5cb2-41ce-99f0-3d5013b06b87",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "UxM0IGoUm87Bdrsv"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 5120.5,
+                                "y": 1232
+                            }
+                        ],
+                        "iconSize": 56,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 77,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": -37,
-        "shiftY": 25,
+        "height": 2269,
         "initial": {
             "x": 2954,
             "y": 1243,
             "scale": 0.86
         },
-        "backgroundColor": "#999999",
+        "lights": [],
+        "name": "Map 2.4: The Sinkhole",
+        "navName": "The Sinkhole",
+        "shiftX": -37,
+        "shiftY": 25,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -3558,205 +3781,481 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
-        "darkness": 0.6,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
+        "width": 4767
+    },
+    {
+        "backgroundColor": "#999999",
+        "darkness": 0.2,
+        "drawings": [],
         "flags": {
             "ddb": {
-                "ddbId": 11011,
+                "bookCode": "tfof",
+                "ddbId": 11013,
                 "cobaltId": null,
                 "parentId": 385,
-                "contentChunkId": "8f41ecba-347b-451b-9d87-f6a34f794ebf",
+                "contentChunkId": "a351881e-e656-4f75-b900-df06640a260c",
                 "notes": [
                     {
-                        "label": "28. Waterfall Cavern",
+                        "label": "35. Chamber of Statues",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2218,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "a92aa497-7419-496b-a267-7ca6dc515583",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "sfJqbk0WTx2FAbLU"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2264,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "86300457-b7d2-4acb-a353-4b6df66ae206",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "aw7FFaX3uUlrQ7Ds"
+                            }
                         },
                         "positions": [
                             {
-                                "x": 2156,
-                                "y": 1655.5
+                                "x": 2232,
+                                "y": 2448
                             }
                         ],
-                        "iconSize": 56,
+                        "iconSize": 48,
                         "iconTint": "",
                         "textColor": "",
                         "textAnchor": 1
                     },
                     {
-                        "label": "29. River Cavern",
+                        "label": "36. The Great Hall",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2223,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "0a82c750-642b-4da4-abc8-0f5de89d84ce",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "0RasKW6aE3VLOr09"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2277,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "032b7daf-1bd9-4a52-8f67-0c82b3073fee",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "I7VDRtypfx5sLHmG"
+                            }
                         },
                         "positions": [
                             {
-                                "x": 3080,
-                                "y": 2040.5
+                                "x": 2556,
+                                "y": 2088
                             }
                         ],
-                        "iconSize": 56,
+                        "iconSize": 48,
                         "iconTint": "",
                         "textColor": "",
                         "textAnchor": 1
                     },
                     {
-                        "label": "30. Old Storeroom",
+                        "label": "37. The Bladeworks",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2229,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "5d60b64d-f628-4f9c-9aed-7749eac1ed0c",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "pAbGwO07mLOQVuop"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2287,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "f0519c33-1288-4d4e-b8d8-0d6db4b3b1e5",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "lyTjbuLu6YVk8J67"
+                            }
                         },
                         "positions": [
                             {
-                                "x": 3388,
-                                "y": 885.5
+                                "x": 4392,
+                                "y": 2952
                             }
                         ],
-                        "iconSize": 56,
+                        "iconSize": 48,
                         "iconTint": "",
                         "textColor": "",
                         "textAnchor": 1
                     },
                     {
-                        "label": "31. Empty Storeroom",
+                        "label": "38. The Chasm",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2231,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "b0e5e495-1a64-4b66-899b-eb8b631949ba",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "RVepCf7r9dsPNftC"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2290,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "63935007-e56d-4d7a-b0ba-93c7779ff221",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "qhIKXOfAghbLA7hm"
+                            }
                         },
                         "positions": [
                             {
-                                "x": 3311,
-                                "y": 1732.5
+                                "x": 5328,
+                                "y": 2844
                             }
                         ],
-                        "iconSize": 56,
+                        "iconSize": 48,
                         "iconTint": "",
                         "textColor": "",
                         "textAnchor": 1
                     },
                     {
-                        "label": "32. Flooded Storeroom",
+                        "label": "38a. Chain Ladder",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2237,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "67dd8ffe-cc53-41a0-911d-af210d9e3503",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "VrM7Qdq2OApxwmQn"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2292,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "5033c881-5dee-47e2-b6f3-88d0a2a365dc",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "dR8ZNaNLmyxzBVZu"
+                            }
                         },
                         "positions": [
                             {
-                                "x": 3696,
-                                "y": 2310
+                                "x": 5616,
+                                "y": 2916
                             }
                         ],
-                        "iconSize": 56,
+                        "iconSize": 40,
                         "iconTint": "",
                         "textColor": "",
                         "textAnchor": 1
                     },
                     {
-                        "label": "33. Roper’s Cavern",
+                        "label": "39. Council Chamber",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2247,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "9705a35c-8955-4194-ae53-2f0deb85a25b",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "xZQkm3OAJBqUHuJV"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2301,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "03a84c94-93ee-490b-86f4-55910a5182cd",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "qGn2GBht7iy2nQGd"
+                            }
                         },
                         "positions": [
                             {
-                                "x": 4697,
-                                "y": 2002
+                                "x": 4608,
+                                "y": 2520
                             }
                         ],
-                        "iconSize": 56,
+                        "iconSize": 48,
                         "iconTint": "",
                         "textColor": "",
                         "textAnchor": 1
                     },
                     {
-                        "label": "34. Prison",
+                        "label": "40. Durgeddin’s Quarters",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2253,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "7aa9b08e-5cb2-41ce-99f0-3d5013b06b87",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "UxM0IGoUm87Bdrsv"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2308,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "1e5b9d4d-2708-4265-94a2-e615449942e2",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "mSJbdfQWtNa9PcO2"
+                            }
                         },
                         "positions": [
                             {
-                                "x": 5120.5,
-                                "y": 1232
+                                "x": 5472,
+                                "y": 2376
                             }
                         ],
-                        "iconSize": 56,
+                        "iconSize": 48,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "41. Kitchens",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2313,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "a1cc527a-0231-4b5b-b946-8fe3711ece79",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "jXYhAcTdbGJvMfMr"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2592,
+                                "y": 3132
+                            }
+                        ],
+                        "iconSize": 48,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "42. Desecrated Shrine",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2321,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "f22d13c1-d090-4d26-8971-0544c1eb7855",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "Y6Ls1PfIEb26xmqg"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2592,
+                                "y": 1728
+                            }
+                        ],
+                        "iconSize": 48,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "43. Entrance to the Dwarf-Halls",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2327,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "5700ba94-a5e0-47d8-a559-461e00e0c8d3",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "792m2nLt9TqkpJ5a"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3960,
+                                "y": 1188
+                            }
+                        ],
+                        "iconSize": 48,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "44. Looted Rooms",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2330,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "b0adb34b-fd53-479e-b947-0e598a339db7",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "OveAgnFdFNVfmMnG"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3744,
+                                "y": 1800
+                            }
+                        ],
+                        "iconSize": 48,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "45. Skeleton Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2335,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "6f2ebbba-c374-4955-9ab0-b37d68b032b8",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "eLYdcSkUDkYRPrbp"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3024,
+                                "y": 1800
+                            }
+                        ],
+                        "iconSize": 48,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "46. Common Area",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2339,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "ce419ce6-8465-499a-95da-dd659d441e8d",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "gdjLsnFUeFELxmqv"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 5760,
+                                "y": 1044
+                            }
+                        ],
+                        "iconSize": 48,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "47. Arundil’s Chambers",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2344,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "80d81412-8977-40d1-ab7e-df31e0e2d417",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "3eXi8pykjhyo1rzQ"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 4140,
+                                "y": 1800
+                            }
+                        ],
+                        "iconSize": 48,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "48. Looted Armory",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2348,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "5dbf5471-333b-4a1f-b69f-54e94c39410a",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "KWcJdO9IBx2AGTou"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 5652,
+                                "y": 1800
+                            }
+                        ],
+                        "iconSize": 48,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "49. Idalla’s Den",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2358,
+                                "bookCode": "tfof",
+                                "slug": "the-forge-of-fury#TheForgeofFury",
+                                "contentChunkId": "5faa7e27-fd7c-40e1-9291-8c5c9f224389",
+                                "userData": {
+                                    "userDisplayName": "Khatab"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 385,
+                                "linkId": "OxQ8E3WBsZOqX00Z"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 5868,
+                                "y": 2196
+                            }
+                        ],
+                        "iconSize": 48,
                         "iconTint": "",
                         "textColor": "",
                         "textAnchor": 1
@@ -3764,26 +4263,28 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
-        }
-    },
-    {
-        "name": "Map 2.5: The Foundry",
-        "navName": "The Foundry",
-        "width": 5436,
-        "height": 3087,
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 72,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": 51,
-        "shiftY": 7,
+        "height": 3087,
         "initial": {
             "x": 2411,
             "y": 2345,
             "scale": 0.76
         },
-        "backgroundColor": "#999999",
+        "lights": [],
+        "name": "Map 2.5: The Foundry",
+        "navName": "The Foundry",
+        "shiftX": 51,
+        "shiftY": 7,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -8070,456 +8571,7 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
-        "darkness": 0.2,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 11013,
-                "cobaltId": null,
-                "parentId": 385,
-                "contentChunkId": "a351881e-e656-4f75-b900-df06640a260c",
-                "notes": [
-                    {
-                        "label": "35. Chamber of Statues",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2264,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "86300457-b7d2-4acb-a353-4b6df66ae206",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "aw7FFaX3uUlrQ7Ds"
-                        },
-                        "positions": [
-                            {
-                                "x": 2232,
-                                "y": 2448
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "36. The Great Hall",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2277,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "032b7daf-1bd9-4a52-8f67-0c82b3073fee",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "I7VDRtypfx5sLHmG"
-                        },
-                        "positions": [
-                            {
-                                "x": 2556,
-                                "y": 2088
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "37. The Bladeworks",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2287,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "f0519c33-1288-4d4e-b8d8-0d6db4b3b1e5",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "lyTjbuLu6YVk8J67"
-                        },
-                        "positions": [
-                            {
-                                "x": 4392,
-                                "y": 2952
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "38. The Chasm",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2290,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "63935007-e56d-4d7a-b0ba-93c7779ff221",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "qhIKXOfAghbLA7hm"
-                        },
-                        "positions": [
-                            {
-                                "x": 5328,
-                                "y": 2844
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "38a. Chain Ladder",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2292,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "5033c881-5dee-47e2-b6f3-88d0a2a365dc",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "dR8ZNaNLmyxzBVZu"
-                        },
-                        "positions": [
-                            {
-                                "x": 5616,
-                                "y": 2916
-                            }
-                        ],
-                        "iconSize": 40,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "39. Council Chamber",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2301,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "03a84c94-93ee-490b-86f4-55910a5182cd",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "qGn2GBht7iy2nQGd"
-                        },
-                        "positions": [
-                            {
-                                "x": 4608,
-                                "y": 2520
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "40. Durgeddin’s Quarters",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2308,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "1e5b9d4d-2708-4265-94a2-e615449942e2",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "mSJbdfQWtNa9PcO2"
-                        },
-                        "positions": [
-                            {
-                                "x": 5472,
-                                "y": 2376
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "41. Kitchens",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2313,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "a1cc527a-0231-4b5b-b946-8fe3711ece79",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "jXYhAcTdbGJvMfMr"
-                        },
-                        "positions": [
-                            {
-                                "x": 2592,
-                                "y": 3132
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "42. Desecrated Shrine",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2321,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "f22d13c1-d090-4d26-8971-0544c1eb7855",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "Y6Ls1PfIEb26xmqg"
-                        },
-                        "positions": [
-                            {
-                                "x": 2592,
-                                "y": 1728
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "43. Entrance to the Dwarf-Halls",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2327,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "5700ba94-a5e0-47d8-a559-461e00e0c8d3",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "792m2nLt9TqkpJ5a"
-                        },
-                        "positions": [
-                            {
-                                "x": 3960,
-                                "y": 1188
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "44. Looted Rooms",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2330,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "b0adb34b-fd53-479e-b947-0e598a339db7",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "OveAgnFdFNVfmMnG"
-                        },
-                        "positions": [
-                            {
-                                "x": 3744,
-                                "y": 1800
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "45. Skeleton Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2335,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "6f2ebbba-c374-4955-9ab0-b37d68b032b8",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "eLYdcSkUDkYRPrbp"
-                        },
-                        "positions": [
-                            {
-                                "x": 3024,
-                                "y": 1800
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "46. Common Area",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2339,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "ce419ce6-8465-499a-95da-dd659d441e8d",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "gdjLsnFUeFELxmqv"
-                        },
-                        "positions": [
-                            {
-                                "x": 5760,
-                                "y": 1044
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "47. Arundil’s Chambers",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2344,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "80d81412-8977-40d1-ab7e-df31e0e2d417",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "3eXi8pykjhyo1rzQ"
-                        },
-                        "positions": [
-                            {
-                                "x": 4140,
-                                "y": 1800
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "48. Looted Armory",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2348,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "5dbf5471-333b-4a1f-b69f-54e94c39410a",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "KWcJdO9IBx2AGTou"
-                        },
-                        "positions": [
-                            {
-                                "x": 5652,
-                                "y": 1800
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "49. Idalla’s Den",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2358,
-                            "bookCode": "tfof",
-                            "slug": "the-forge-of-fury#TheForgeofFury",
-                            "contentChunkId": "5faa7e27-fd7c-40e1-9291-8c5c9f224389",
-                            "userData": {
-                                "userDisplayName": "Khatab"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 385,
-                            "linkId": "OxQ8E3WBsZOqX00Z"
-                        },
-                        "positions": [
-                            {
-                                "x": 5868,
-                                "y": 2196
-                            }
-                        ],
-                        "iconSize": 48,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    }
-                ],
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 5436
     }
 ]

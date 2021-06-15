@@ -24,10 +24,39 @@ function getSceneAdjustments(bookCode) {
   return scenesData;
 }
 
+function saveIndividualScenes(adjustments, bookCode) {
+  adjustments.forEach((adjustment) => {
+    const flags = adjustment.flags.ddb;
+    const ddbId = flags.ddbId;
+    const cobaltId = flags.cobaltId ? `-${flags.cobaltId}` : "";
+    const parentId = flags.parentId ? `-${flags.parentId}` : "";
+    const contentChunkId = flags.contentChunkId ? `-${flags.contentChunkId}` : "";
+    const sceneRef = `${bookCode}-${ddbId}${cobaltId}${parentId}${contentChunkId}`;
+    const sceneDataDir = path.join(sceneDir, bookCode);
+    const sceneDataFile = path.join(sceneDataDir, `${sceneRef}-scene.json`);
+
+    console.log(`Sceneref: ${sceneRef}`);
+    // console.log(`sceneDataDir: ${sceneDataDir}`);
+    // console.log(`sceneDataFile: ${sceneDataFile}`);
+    const sceneDataPath = path.resolve(__dirname, sceneDataFile);
+
+    console.log(`Exporting datafile ${sceneDataPath}`);
+    if (!fs.existsSync(sceneDataDir)) {
+      console.log(`Creating dir ${sceneDataDir}`);
+      fs.mkdirSync(sceneDataDir);
+    }
+    if (fs.existsSync(sceneDataPath)){
+      console.log(`ERROR! Scene ${sceneDataPath} exists!!!`);
+    }
+    utils.saveJSONFile(adjustment, sceneDataPath);
+  });
+}
+
 function saveSceneAdjustments(adjustments, bookCode) {
   const sceneDataFile = path.join(sceneDir, `${bookCode}.json`);
   const sceneDataPath = path.resolve(__dirname, sceneDataFile);
   utils.saveJSONFile(adjustments, sceneDataPath);
+  // saveIndividualScenes(adjustments, bookCode);
 }
 
 function listSceneIds(bookCode) {
@@ -54,6 +83,7 @@ function importScene(conf, sceneFile) {
 
   const configFile = path.resolve(__dirname, sceneFile);
   if (fs.existsSync(configFile)){
+    console.log(`Loading ${configFile}`);
     inData = utils.loadJSONFile(configFile);
   } else {
     console.log("FILE NOT FOUND!");
@@ -145,7 +175,8 @@ function importScene(conf, sceneFile) {
       inData.flags.ddb.ddbId = singleMatch.ddbId;
       inData.flags.ddb.cobaltId = singleMatch.cobaltId;
       inData.flags.ddb.parentId = singleMatch.parentId;
-      utils.saveJSONFile(inData, configFile);
+      inData.flags.ddb.bookCode = bookCode;
+      inDataUpdate = true;
       lookup = singleMatch;
     }
     console.log("######################################");
@@ -153,23 +184,127 @@ function importScene(conf, sceneFile) {
     console.log("All checks pass!");
   }
 
-  // config.lookups["monsters"];
-  // const lookupValue = config.lookups[COMPENDIUM_MAP[lookupKey]];
-  // if (lookupValue) {
-  //   const lookupEntry = lookupValue.find((e) => e.id == lookupMatch[1]);
-  //   if (lookupEntry) {
-  //     text = text.replace(node.outerHTML, `@Compendium[${lookupEntry.compendium}.${lookupEntry._id}]{${node.textContent}}`);
-  //   } else {
+  // are we rewriting this indata file?
+  let inDataUpdate = false;
 
-  // no tokens in the world right now, so we ignore these
-  // rawData.tokens = rawData.tokens
-  //   .filter((token) => config.lookups["monsters"].some((m) => m.name == token.name))
-  //   .map((token) => {
-  //     const compendiumMonster = config.lookups["monsters"].find((m) => m.name == token.name);
-  //     token =
-  //     token.actorId = compendiumMonster._id;
-  //     token.img = compendiumMonster.img;
-  //   });
+
+  // notes
+  console.log("********************");
+  if (inData && inData.flags.ddb && inData.flags.ddb.notes) {
+    console.log("Updating note flags");
+    const notes = inData.flags.ddb.notes.map((note) => {
+      if (note.flags.contentChunkId) {
+        inDataUpdate = true;
+        const newFlags = JSON.parse(JSON.stringify(note.flags));
+        note.flags = {
+          ddb: newFlags,
+        };
+      }
+      return note;
+    });
+    
+    inData.flags.ddb.notes = notes;
+  }
+
+  // remove things we can't deal with right now
+  delete(inData.descriptions);
+
+  // tokens
+  console.log("********************");
+  let tokens = [];
+
+  if (inData && inData.tokens && inData.tokens.length > 0) {
+    console.log("Moving token data");
+    tokens = inData.tokens;
+    inDataUpdate = true;
+  } else if (inData.flags.ddb && inData.flags.ddb.tokens) {
+    tokens = JSON.parse(JSON.stringify(inData.flags.ddb.tokens));
+  }
+
+  console.log("Cleaning token data");
+  const finalTokens = tokens.map((token) => {
+    if (token.actorData) {
+      delete(token.actorData.items);
+      delete(token.actorData.effects);
+      // /if (token.actorData.data) delete(token.actorData.data.details);
+    }
+    delete(token.effects);
+    delete(token.img);
+    delete(token.bar2);
+    delete(token.displayName);
+    return token;
+  });
+
+  if (!_.isEqual(finalTokens, tokens)) inDataUpdate = true;
+
+  if (inData.navName == "") {
+    inDataUpdate = true;
+    delete inData.navName;
+  }
+
+  console.log("********************");
+
+  console.log("Flag check...")
+  // flags
+  if (inData.flags.ddb) {
+    const newFlags = {
+      ddb: {
+        bookCode: bookCode,
+        ddbId: lookup.ddbId,
+        cobaltId: lookup.cobaltId,
+        parentId: lookup.parentId,
+        contentChunkId: lookup.contentChunkId,
+        notes: inData.flags.ddb.notes,
+        tokens: inData.flags.ddb.tokens,
+      }
+    };
+    newFlags.stairways = inData.flags.stairways ? inData.flags.stairways : [];
+    newFlags["perfect-vision"] = inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [];
+    newFlags["dynamic-illumination"] = inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [];
+
+    if (!_.isEqual(inData.flags, newFlags)) inDataUpdate = true;
+    inData.flags = newFlags;
+  } else {
+    inData.flags = { 
+      ddb: {
+        bookCode: bookCode,
+        ddbId: lookup.ddbId,
+        cobaltId: lookup.cobaltId,
+        parentId: lookup.parentId,
+        contentChunkId: lookup.contentChunkId,
+      },
+      stairways: inData.flags.stairways ? inData.flags.stairways : [],
+      "perfect-vision": inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [],
+      "dynamic-illumination": inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [],
+    };
+    inDataUpdate = true;
+  }
+
+  inData.flags.ddb.tokens = finalTokens;
+
+  if (!inData.flags.ddb.bookCode) {
+    inData.flags = { 
+      ddb: {
+        bookCode: bookCode,
+        ddbId: lookup.ddbId,
+        cobaltId: lookup.cobaltId,
+        parentId: lookup.parentId,
+        contentChunkId: lookup.contentChunkId,
+      },
+      stairways: inData.flags.stairways ? inData.flags.stairways : [],
+      "perfect-vision": inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [],
+      "dynamic-illumination": inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [],
+    };
+    inDataUpdate = true;
+  }
+
+  // tokens exist in the flags and are regenerated later
+  delete inData.tokens;
+
+  if (inData.flags && inData.flags.ddb && inData.flags.ddb.contentChunkId && !inData.flags.ddb.contentChunkId.startsWith("ddb-missing")) {
+    inData.name = lookup.name;
+    inDataUpdate = true;
+  };
 
   console.log("********************");
   console.log("Lookup data:");
@@ -205,40 +340,8 @@ function importScene(conf, sceneFile) {
   else {
     console.log("Existing scene data not found");
   }
+
   console.log("********************");
-  
-  // remove things we can't deal with right now
-  delete(inData.descriptions);
-
-  if (inData.flags.ddb) {
-    const newFlags = {
-      ddb: {
-        ddbId: lookup.ddbId,
-        cobaltId: lookup.cobaltId,
-        parentId: lookup.parentId,
-        contentChunkId: lookup.contentChunkId,
-        notes: inData.flags.ddb.notes,
-        tokens: inData.tokens.map((token) => {
-          delete(token.bar2);
-          delete(token.displayName);
-          return token;
-        }),
-      }
-    };
-    newFlags.stairways = inData.flags.stairways ? inData.flags.stairways : [];
-    newFlags["perfect-vision"] = inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [];
-    newFlags["dynamic-illumination"] = inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [];
-    
-    delete inData.flags;
-    inData.flags = newFlags;
-  } else {
-    delete inData.flags;
-  }
-  // we have moved tokens to flags for future use = they will need to be "jigged"
-  delete inData.tokens;
-
-  if (inData.flags.ddb.contentChunkId && !inData.flags.ddb.contentChunkId.startsWith("ddb-missing")) inData.name = lookup.name;
-  if (inData.navName == "") delete inData.navName;
 
   // console.log(sceneData);
   //exit();
@@ -256,17 +359,24 @@ function importScene(conf, sceneFile) {
       _.findIndex(scenesData, {name: sceneData.name});
     scenesData.splice(index, 1, sceneData);
   } else {
-    if (!inData.flags) inData.flags = { 
-      ddb: {
-        lookupDDB: true,
-        ddbId: lookup.ddbId,
-        cobaltId: lookup.cobaltId,
-        parentId: lookup.parentId,
-        contentChunkId: lookup.contentChunkId,
-      }
-    };
     scenesData.push(inData);
   }
+
+  inData.walls = inData.walls.map((wall) => {
+    delete wall._id;
+    delete wall.flags;
+    return wall;
+  });
+  delete inData.wall;
+  
+  inData = _(inData).toPairs().sortBy(0).fromPairs().value();
+
+  if (inDataUpdate || true) {
+    console.log("UPDAING INDATA!");
+    utils.saveJSONFile(inData, configFile);
+  }
+
+  saveIndividualScenes([inData], bookCode);
 
   saveSceneAdjustments(scenesData, bookCode);
 

@@ -1,16 +1,41 @@
 [
     {
-        "name": "Map 1.1: Melkynvelve",
-        "navName": "Melkynvelve",
-        "width": 2560,
-        "height": 3686,
+        "backgroundColor": "#000000",
+        "flags": {
+            "ddb": {
+                "bookCode": "oota",
+                "ddbId": 11009,
+                "cobaltId": null,
+                "parentId": 399,
+                "contentChunkId": "0a4872a8-5e20-4d1b-99a8-99de829d1a68",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 55,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 3686,
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 200,
+                "darknessThreshold": 0,
+                "dim": 200,
+                "rotation": 0,
+                "t": "g",
+                "tintAlpha": 0.49,
+                "x": 1980,
+                "y": 4180
+            }
+        ],
+        "name": "Map 1.1: Melkynvelve",
+        "navName": "Melkynvelve",
         "shiftX": -51,
         "shiftY": -27,
-        "backgroundColor": "#000000",
         "walls": [
             {
                 "c": [
@@ -4813,42 +4838,33 @@
                 "sense": 1
             }
         ],
-        "lights": [
-            {
-                "angle": 360,
-                "bright": 200,
-                "darknessThreshold": 0,
-                "dim": 200,
-                "rotation": 0,
-                "t": "g",
-                "tintAlpha": 0.49,
-                "x": 1980,
-                "y": 4180
-            }
-        ],
-        "flags": {
-            "ddb": {
-                "ddbId": 11009,
-                "cobaltId": null,
-                "parentId": 399,
-                "contentChunkId": "0a4872a8-5e20-4d1b-99a8-99de829d1a68",
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 2560
     },
     {
-        "name": "Map 2.2: The Hook Horror Lair",
-        "navName": "The Hook Horror Lair",
-        "width": 3566,
-        "height": 2904,
+        "backgroundColor": "#000000",
+        "flags": {
+            "ddb": {
+                "bookCode": "oota",
+                "ddbId": 11022,
+                "cobaltId": null,
+                "parentId": 400,
+                "contentChunkId": "8ab0eba4-216e-4e53-b198-302a91a88097",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 57,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2904,
+        "lights": [],
+        "name": "Map 2.2: The Hook Horror Lair",
+        "navName": "The Hook Horror Lair",
         "shiftX": -13,
         "shiftY": 57,
-        "backgroundColor": "#000000",
         "walls": [
             {
                 "c": [
@@ -12819,30 +12835,33 @@
                 "sense": 1
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 11022,
-                "cobaltId": null,
-                "parentId": 400,
-                "contentChunkId": "8ab0eba4-216e-4e53-b198-302a91a88097",
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 3566
     },
     {
-        "name": "Map 2.3: The Oozing Temple",
-        "navName": "The Oozing Temple",
-        "width": 2478,
-        "height": 2018,
+        "backgroundColor": "#000000",
+        "flags": {
+            "ddb": {
+                "bookCode": "oota",
+                "ddbId": 11023,
+                "cobaltId": null,
+                "parentId": 400,
+                "contentChunkId": "3b9ece4d-c150-44ec-99c0-744ff06ac066",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 79,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2018,
+        "lights": [],
+        "name": "Map 2.3: The Oozing Temple",
+        "navName": "The Oozing Temple",
         "shiftX": 19,
         "shiftY": 33,
-        "backgroundColor": "#000000",
         "walls": [
             {
                 "c": [
@@ -17069,30 +17088,33 @@
                 "sense": 1
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 11023,
-                "cobaltId": null,
-                "parentId": 400,
-                "contentChunkId": "3b9ece4d-c150-44ec-99c0-744ff06ac066",
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 2478
     },
     {
-        "name": "Map 2.4: The Lost Tomb",
-        "navName": "The Lost Tomb",
-        "width": 2728,
-        "height": 2222,
+        "backgroundColor": "#000000",
+        "flags": {
+            "ddb": {
+                "bookCode": "oota",
+                "ddbId": 11024,
+                "cobaltId": null,
+                "parentId": 400,
+                "contentChunkId": "60286c9d-6c5c-4734-bd1c-c88d188a2ba7",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 75,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2222,
+        "lights": [],
+        "name": "Map 2.4: The Lost Tomb",
+        "navName": "The Lost Tomb",
         "shiftX": 9,
         "shiftY": 22,
-        "backgroundColor": "#000000",
         "walls": [
             {
                 "c": [
@@ -17695,30 +17717,166 @@
                 "sense": 2
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 11024,
-                "cobaltId": null,
-                "parentId": 400,
-                "contentChunkId": "60286c9d-6c5c-4734-bd1c-c88d188a2ba7",
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 2728
     },
     {
-        "name": "Map 3.1: Sloobludop",
-        "navName": "Sloobludop",
-        "width": 3465,
-        "height": 2822,
+        "backgroundColor": "#333333",
+        "flags": {
+            "ddb": {
+                "bookCode": "oota",
+                "ddbId": 11028,
+                "cobaltId": null,
+                "parentId": 401,
+                "contentChunkId": "ef5389ed-31fe-4ebd-a412-b471cb9ddb93",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 61,
         "gridDistance": 10,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2822,
+        "lights": [
+            {
+                "angle": 180,
+                "bright": 15,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 307,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 2662.8959731543628,
+                "y": 2383.026845637584
+            },
+            {
+                "angle": 180,
+                "bright": 15,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 270,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 2116.1875,
+                "y": 2546.3125
+            },
+            {
+                "angle": 180,
+                "bright": 15,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 284,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 1799.5,
+                "y": 2684
+            },
+            {
+                "angle": 180,
+                "bright": 15,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 209,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 1806.1666666666667,
+                "y": 2019.1538461538462
+            },
+            {
+                "angle": 180,
+                "bright": 15,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 360,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 3071.0526315789475,
+                "y": 2770.7309941520466
+            },
+            {
+                "angle": 180,
+                "bright": 15,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 318,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 3299.921052631579,
+                "y": 2748.2894736842104
+            },
+            {
+                "angle": 180,
+                "bright": 15,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 127,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 3888.348837209302,
+                "y": 2899.5581395348836
+            },
+            {
+                "angle": 180,
+                "bright": 15,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 73,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 3694.782608695652,
+                "y": 2153.4782608695655
+            },
+            {
+                "angle": 180,
+                "bright": 15,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 270,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 4034.588957055215,
+                "y": 1971.0184049079753
+            },
+            {
+                "angle": 180,
+                "bright": 15,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 308,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 3705.614035087719,
+                "y": 1736.9473684210525
+            },
+            {
+                "angle": 180,
+                "bright": 15,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 60,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 3202.5,
+                "y": 2257
+            },
+            {
+                "angle": 180,
+                "bright": 15,
+                "darknessThreshold": 0,
+                "dim": 30,
+                "rotation": 238,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 2987.5744680851067,
+                "y": 2652.0780141843975
+            }
+        ],
+        "name": "Map 3.1: Sloobludop",
+        "navName": "Sloobludop",
         "shiftX": -31,
         "shiftY": -32,
-        "backgroundColor": "#333333",
         "walls": [
             {
                 "c": [
@@ -25797,164 +25955,28 @@
                 "sense": 0
             }
         ],
-        "lights": [
-            {
-                "angle": 180,
-                "bright": 15,
-                "darknessThreshold": 0,
-                "dim": 30,
-                "rotation": 307,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 2662.8959731543628,
-                "y": 2383.026845637584
-            },
-            {
-                "angle": 180,
-                "bright": 15,
-                "darknessThreshold": 0,
-                "dim": 30,
-                "rotation": 270,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 2116.1875,
-                "y": 2546.3125
-            },
-            {
-                "angle": 180,
-                "bright": 15,
-                "darknessThreshold": 0,
-                "dim": 30,
-                "rotation": 284,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 1799.5,
-                "y": 2684
-            },
-            {
-                "angle": 180,
-                "bright": 15,
-                "darknessThreshold": 0,
-                "dim": 30,
-                "rotation": 209,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 1806.1666666666667,
-                "y": 2019.1538461538462
-            },
-            {
-                "angle": 180,
-                "bright": 15,
-                "darknessThreshold": 0,
-                "dim": 30,
-                "rotation": 360,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 3071.0526315789475,
-                "y": 2770.7309941520466
-            },
-            {
-                "angle": 180,
-                "bright": 15,
-                "darknessThreshold": 0,
-                "dim": 30,
-                "rotation": 318,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 3299.921052631579,
-                "y": 2748.2894736842104
-            },
-            {
-                "angle": 180,
-                "bright": 15,
-                "darknessThreshold": 0,
-                "dim": 30,
-                "rotation": 127,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 3888.348837209302,
-                "y": 2899.5581395348836
-            },
-            {
-                "angle": 180,
-                "bright": 15,
-                "darknessThreshold": 0,
-                "dim": 30,
-                "rotation": 73,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 3694.782608695652,
-                "y": 2153.4782608695655
-            },
-            {
-                "angle": 180,
-                "bright": 15,
-                "darknessThreshold": 0,
-                "dim": 30,
-                "rotation": 270,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 4034.588957055215,
-                "y": 1971.0184049079753
-            },
-            {
-                "angle": 180,
-                "bright": 15,
-                "darknessThreshold": 0,
-                "dim": 30,
-                "rotation": 308,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 3705.614035087719,
-                "y": 1736.9473684210525
-            },
-            {
-                "angle": 180,
-                "bright": 15,
-                "darknessThreshold": 0,
-                "dim": 30,
-                "rotation": 60,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 3202.5,
-                "y": 2257
-            },
-            {
-                "angle": 180,
-                "bright": 15,
-                "darknessThreshold": 0,
-                "dim": 30,
-                "rotation": 238,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 2987.5744680851067,
-                "y": 2652.0780141843975
-            }
-        ],
-        "flags": {
-            "ddb": {
-                "ddbId": 11028,
-                "cobaltId": null,
-                "parentId": 401,
-                "contentChunkId": "ef5389ed-31fe-4ebd-a412-b471cb9ddb93",
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 3465
     },
     {
-        "name": "Map 4.1: Gracklstugh",
-        "navName": "Gracklstugh",
-        "width": 2867,
-        "height": 2335,
+        "backgroundColor": "#333333",
+        "flags": {
+            "ddb": {
+                "bookCode": "oota",
+                "ddbId": 11031,
+                "cobaltId": null,
+                "parentId": 402,
+                "contentChunkId": "09bd9322-b716-4196-bf32-fad7ed844ac8",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 82,
         "gridDistance": 200,
         "gridType": 0,
         "gridUnits": "ft",
-        "shiftX": 42,
-        "shiftY": -33,
-        "backgroundColor": "#333333",
-        "walls": [],
+        "height": 2335,
         "lights": [
             {
                 "angle": 360,
@@ -26727,54 +26749,112 @@
                 "y": 2359.0434782608695
             }
         ],
-        "flags": {
-            "ddb": {
-                "ddbId": 11031,
-                "cobaltId": null,
-                "parentId": 402,
-                "contentChunkId": "09bd9322-b716-4196-bf32-fad7ed844ac8",
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "name": "Map 4.1: Gracklstugh",
+        "navName": "Gracklstugh",
+        "shiftX": 42,
+        "shiftY": -33,
+        "walls": [],
+        "width": 2867
     },
     {
-        "name": "Map 4.2: Gracklstugh - The Whorlstone Tunnels",
-        "navName": "Gracklstugh - The Whorlstone Tunnels",
-        "width": 2133,
-        "height": 3072,
-        "grid": 68,
-        "gridDistance": 50,
-        "gridType": 1,
-        "gridUnits": "ft",
-        "shiftX": 1,
-        "shiftY": -10,
         "backgroundColor": "#333333",
-        "walls": [],
-        "lights": [],
         "flags": {
             "ddb": {
+                "bookCode": "oota",
                 "ddbId": 11037,
                 "cobaltId": null,
                 "parentId": 402,
                 "contentChunkId": "35735406-324c-4925-960e-c27e4b603df1",
                 "tokens": []
             },
-            "stairways": []
-        }
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "grid": 68,
+        "gridDistance": 50,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "height": 3072,
+        "lights": [],
+        "name": "Map 4.2: Gracklstugh - The Whorlstone Tunnels",
+        "navName": "Gracklstugh - The Whorlstone Tunnels",
+        "shiftX": 1,
+        "shiftY": -10,
+        "walls": [],
+        "width": 2133
     },
     {
-        "name": "Map 5.1: Neverlight Grove",
-        "navName": "Neverlight Grove",
-        "width": 3736,
-        "height": 3042,
+        "backgroundColor": "#000000",
+        "flags": {
+            "ddb": {
+                "bookCode": "oota",
+                "ddbId": 11043,
+                "cobaltId": null,
+                "parentId": 403,
+                "contentChunkId": "e04377e5-954c-4b40-b781-57754c35dda2",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 52,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 3042,
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 140,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.2,
+                "x": 2470,
+                "y": 2626
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 80,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3952,
+                "y": 1612
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 140,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.2,
+                "x": 2470,
+                "y": 2626
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 80,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.2,
+                "x": 3952,
+                "y": 1612
+            }
+        ],
+        "name": "Map 5.1: Neverlight Grove",
+        "navName": "Neverlight Grove",
         "shiftX": -5,
         "shiftY": -4,
-        "backgroundColor": "#000000",
         "walls": [
             {
                 "c": [
@@ -31673,80 +31753,13 @@
                 "sense": 2
             }
         ],
-        "lights": [
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 140,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.2,
-                "x": 2470,
-                "y": 2626
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 80,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3952,
-                "y": 1612
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 140,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.2,
-                "x": 2470,
-                "y": 2626
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 80,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.2,
-                "x": 3952,
-                "y": 1612
-            }
-        ],
-        "flags": {
-            "ddb": {
-                "ddbId": 11043,
-                "cobaltId": null,
-                "parentId": 403,
-                "contentChunkId": "e04377e5-954c-4b40-b781-57754c35dda2",
-                "notes": [],
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 3736
     },
     {
-        "name": "Map 6.1: Blingdenstone",
-        "navName": "Blingdenstone",
-        "width": 2662,
-        "height": 2168,
-        "grid": 66,
-        "gridDistance": 50,
-        "gridType": 1,
-        "gridUnits": "ft",
-        "shiftX": -14,
-        "shiftY": -34,
         "backgroundColor": "#000000",
-        "walls": [],
-        "lights": [],
         "flags": {
             "ddb": {
+                "bookCode": "oota",
                 "ddbId": 11048,
                 "cobaltId": null,
                 "parentId": 404,
@@ -31754,21 +31767,49 @@
                 "notes": [],
                 "tokens": []
             },
-            "stairways": []
-        }
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "grid": 66,
+        "gridDistance": 50,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "height": 2168,
+        "lights": [],
+        "name": "Map 6.1: Blingdenstone",
+        "navName": "Blingdenstone",
+        "shiftX": -14,
+        "shiftY": -34,
+        "walls": [],
+        "width": 2662
     },
     {
-        "name": "Map 9.1: Mantol-Derith",
-        "navName": "Mantol-Derith",
-        "width": 2232,
-        "height": 1818,
+        "backgroundColor": "#000000",
+        "flags": {
+            "ddb": {
+                "bookCode": "oota",
+                "ddbId": 11069,
+                "cobaltId": null,
+                "parentId": 407,
+                "contentChunkId": "06cc0292-4c4a-40f2-8184-22fb65ace0bc",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 20,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 1818,
+        "lights": [],
+        "name": "Map 9.1: Mantol-Derith",
+        "navName": "Mantol-Derith",
         "shiftX": 36,
         "shiftY": -9,
-        "backgroundColor": "#000000",
         "walls": [
             {
                 "c": [
@@ -39175,36 +39216,39 @@
                 "sense": 1
             }
         ],
-        "lights": [],
+        "width": 2232
+    },
+    {
+        "backgroundColor": "#000000",
         "flags": {
             "ddb": {
-                "ddbId": 11069,
+                "bookCode": "oota",
+                "ddbId": 11088,
                 "cobaltId": null,
-                "parentId": 407,
-                "contentChunkId": "06cc0292-4c4a-40f2-8184-22fb65ace0bc",
+                "parentId": 415,
+                "contentChunkId": "a8ce5800-60f7-4c86-88cb-f0f9ff7c362c",
                 "notes": [],
                 "tokens": []
             },
-            "stairways": []
-        }
-    },
-    {
-        "name": "Map 13.1: Troglodyte Lair",
-        "navName": "Troglodyte Lair",
-        "width": 4660,
-        "height": 3796,
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": -15,
-        "shiftY": 2,
+        "height": 3796,
         "initial": {
             "x": 3253,
             "y": 2756,
             "scale": 0.3
         },
-        "backgroundColor": "#000000",
+        "lights": [],
+        "name": "Map 13.1: Troglodyte Lair",
+        "navName": "Troglodyte Lair",
+        "shiftX": -15,
+        "shiftY": 2,
         "walls": [
             {
                 "c": [
@@ -46935,36 +46979,39 @@
                 "sense": 0
             }
         ],
-        "lights": [],
+        "width": 4660
+    },
+    {
+        "backgroundColor": "#000000",
         "flags": {
             "ddb": {
-                "ddbId": 11088,
+                "bookCode": "oota",
+                "ddbId": 11090,
                 "cobaltId": null,
                 "parentId": 415,
-                "contentChunkId": "a8ce5800-60f7-4c86-88cb-f0f9ff7c362c",
+                "contentChunkId": "a6c0d343-3197-45fd-a8ae-c97acb1a672f",
                 "notes": [],
                 "tokens": []
             },
-            "stairways": []
-        }
-    },
-    {
-        "name": "Map 13.2: The Worm Nursery",
-        "navName": "The Worm Nursery",
-        "width": 4579,
-        "height": 3730,
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 50,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": 27,
-        "shiftY": 1,
+        "height": 3730,
         "initial": {
             "x": 2439,
             "y": 2748,
             "scale": 0.45
         },
-        "backgroundColor": "#000000",
+        "lights": [],
+        "name": "Map 13.2: The Worm Nursery",
+        "navName": "The Worm Nursery",
+        "shiftX": 27,
+        "shiftY": 1,
         "walls": [
             {
                 "c": [
@@ -56915,17 +56962,6 @@
                 "sense": 0
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 11090,
-                "cobaltId": null,
-                "parentId": 415,
-                "contentChunkId": "a6c0d343-3197-45fd-a8ae-c97acb1a672f",
-                "notes": [],
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 4579
     }
 ]

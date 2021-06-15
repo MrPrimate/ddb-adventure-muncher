@@ -1,15 +1,28 @@
 [
     {
-        "name": "Map 4: Ebondeath’s Mausoleum",
-        "width": 3600,
-        "height": 2279,
+        "backgroundColor": "#1f2326",
+        "flags": {
+            "ddb": {
+                "bookCode": "dc",
+                "ddbId": 11016,
+                "cobaltId": null,
+                "parentId": 761,
+                "contentChunkId": "5bd7c75b-fcd9-4d88-b044-1b9a86dcefea",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 86,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2279,
+        "lights": [],
+        "name": "Map 4: Ebondeath’s Mausoleum",
         "shiftX": -48,
         "shiftY": -63,
-        "backgroundColor": "#1f2326",
         "walls": [
             {
                 "c": [
@@ -5040,28 +5053,32 @@
                 "sense": 1
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 11016,
-                "cobaltId": null,
-                "parentId": 761,
-                "contentChunkId": "5bd7c75b-fcd9-4d88-b044-1b9a86dcefea"
-            }
-        }
+        "width": 3600
     },
     {
-        "name": "Map 5: Icingdeath And Twinkle",
-        "width": 3560,
-        "height": 2255,
+        "backgroundColor": "#204b58",
+        "flags": {
+            "ddb": {
+                "bookCode": "dc",
+                "ddbId": 11019,
+                "cobaltId": null,
+                "parentId": 762,
+                "contentChunkId": "231d5955-a7bc-4511-8f9e-b6cba527beca",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 85,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2255,
+        "lights": [],
+        "name": "Map 5: Icingdeath And Twinkle",
         "shiftX": -48,
         "shiftY": -59,
-        "backgroundColor": "#204b58",
         "walls": [
             {
                 "c": [
@@ -7548,28 +7565,32 @@
                 "sense": 1
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 11019,
-                "cobaltId": null,
-                "parentId": 762,
-                "contentChunkId": "231d5955-a7bc-4511-8f9e-b6cba527beca"
-            }
-        }
+        "width": 3560
     },
     {
-        "name": "Map 6: Storm Lord’s Hideout",
-        "width": 3602,
-        "height": 2278,
+        "backgroundColor": "#284048",
+        "flags": {
+            "ddb": {
+                "bookCode": "dc",
+                "ddbId": 11030,
+                "cobaltId": null,
+                "parentId": 764,
+                "contentChunkId": "dc146a57-d6d8-4a2c-b995-124d8da9e676",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 86,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2278,
+        "lights": [],
+        "name": "Map 6: Storm Lord’s Hideout",
         "shiftX": -48,
         "shiftY": -62,
-        "backgroundColor": "#284048",
         "walls": [
             {
                 "c": [
@@ -11280,28 +11301,44 @@
                 "sense": 2
             }
         ],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 11030,
-                "cobaltId": null,
-                "parentId": 764,
-                "contentChunkId": "dc146a57-d6d8-4a2c-b995-124d8da9e676"
-            }
-        }
+        "width": 3602
     },
     {
-        "name": "Map 7: Thalivar’s Beacon",
-        "width": 3600,
-        "height": 2284,
+        "backgroundColor": "#7f562c",
+        "flags": {
+            "ddb": {
+                "bookCode": "dc",
+                "ddbId": 11034,
+                "cobaltId": null,
+                "parentId": 765,
+                "contentChunkId": "de4affca-d50b-4bc1-b452-ec8e5897a2d0",
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 86,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 2284,
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 9.17,
+                "darknessThreshold": 0,
+                "dim": 18.34,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 2967,
+                "y": 2193
+            }
+        ],
+        "name": "Map 7: Thalivar’s Beacon",
         "shiftX": -50,
         "shiftY": -59,
-        "backgroundColor": "#7f562c",
         "walls": [
             {
                 "c": [
@@ -13344,50 +13381,33 @@
                 "sense": 1
             }
         ],
-        "lights": [
-            {
-                "angle": 360,
-                "bright": 9.17,
-                "darknessThreshold": 0,
-                "dim": 18.34,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 2967,
-                "y": 2193
-            }
-        ],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 11034,
-                "cobaltId": null,
-                "parentId": 765,
-                "contentChunkId": "de4affca-d50b-4bc1-b452-ec8e5897a2d0"
-            }
-        }
+        "width": 3600
     },
     {
-        "name": "Map 3: Dumathoin’s Gulch",
-        "width": 2837,
-        "height": 3604,
+        "backgroundColor": "#453b2e",
+        "flags": {
+            "ddb": {
+                "bookCode": "dc",
+                "ddbId": 11012,
+                "cobaltId": null,
+                "parentId": 760,
+                "contentChunkId": null,
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
         "grid": 136,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
+        "height": 3604,
+        "lights": [],
+        "name": "Dumathoin’s Gulch",
         "shiftX": -80,
         "shiftY": -96,
-        "backgroundColor": "#453b2e",
         "walls": [],
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "lookupDDB": true,
-                "ddbId": 11012,
-                "cobaltId": null,
-                "parentId": 760,
-                "contentChunkId": null
-            }
-        }
+        "width": 2837
     }
 ]

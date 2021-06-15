@@ -1,20 +1,73 @@
 [
     {
-        "name": "Map 5.9: Croaker Cave",
-        "width": 2550,
-        "height": 1652,
+        "backgroundColor": "#9aa4a5",
+        "darkness": 1,
+        "drawings": [],
+        "flags": {
+            "ddb": {
+                "bookCode": "egtw",
+                "ddbId": 10118,
+                "cobaltId": null,
+                "parentId": 983,
+                "contentChunkId": "59CroakerCave-player",
+                "notes": [],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 70,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": -62,
-        "shiftY": -49,
+        "height": 1652,
         "initial": {
             "x": 1855,
             "y": 576,
             "scale": 1
         },
-        "backgroundColor": "#9aa4a5",
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 2275,
+                "y": 665,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 2,
+                    "intensity": 2
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.25,
+                "x": 1890,
+                "y": 490,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            }
+        ],
+        "name": "Map 5.9: Croaker Cave",
+        "shiftX": -62,
+        "shiftY": -49,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -2585,59 +2638,7 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
-        "darkness": 1,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 2275,
-                "y": 665,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 2,
-                    "intensity": 2
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.25,
-                "x": 1890,
-                "y": 490,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            }
-        ],
-        "flags": {
-            "ddb": {
-                "ddbId": 10118,
-                "cobaltId": null,
-                "parentId": 983,
-                "contentChunkId": "59CroakerCave-player",
-                "notes": [],
-                "tokens": []
-            },
-            "stairways": [],
-            "perfect-vision": [],
-            "dynamic-illumination": []
-        }
+        "width": 2550
     }
 ]

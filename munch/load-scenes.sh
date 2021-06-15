@@ -1,5 +1,8 @@
 #!/bin/bash
 FILES="$1/*"
+
+echo "Found files..."
+echo "${FILES}"
 for f in $FILES
 do
   echo "Processing $f file..."

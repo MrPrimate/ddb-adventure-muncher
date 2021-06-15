@@ -745,7 +745,7 @@ function generateScene(row, img) {
         // journal.flags.ddb.ddbId == note.flags.ddbId &&
         // journal.flags.ddb.parentId == note.flags.parentId &&
         // journal.flags.ddb.cobaltId == note.flags.cobaltId &&
-          journal.flags.ddb.contentChunkId == note.flags.contentChunkId
+          journal.flags.ddb.contentChunkId == note.flags.ddb.contentChunkId
         );
         if (noteJournal){
           note.positions.forEach((position) => {
@@ -754,7 +754,7 @@ function generateScene(row, img) {
             const n = {
               "_id": noteId,
               "flags": {
-                "ddb": note.flags,
+                "ddb": note.flags.ddb,
                 "importid": noteId,
               },
               "entryId": noteJournal._id,

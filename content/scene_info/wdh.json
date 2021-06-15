@@ -1,21 +1,343 @@
 [
     {
-        "name": "Warehouse",
-        "navName": "Warehouse",
-        "width": 3466,
-        "height": 2394,
+        "backgroundColor": "#999999",
+        "darkness": 0.5,
+        "drawings": [],
+        "flags": {
+            "ddb": {
+                "bookCode": "wdh",
+                "ddbId": 13018,
+                "cobaltId": null,
+                "parentId": 554,
+                "contentChunkId": "f9a869c9-cd1c-4b3f-8b3b-613624572508",
+                "notes": [
+                    {
+                        "label": "Z01. Main Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2029,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#ZhentarimHideout",
+                                "contentChunkId": "77df41a1-b39f-4ec7-a24a-c4b5134e58b4",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "YlacjqMvU8eQA1Ar"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 1800,
+                                "y": 2800
+                            },
+                            {
+                                "x": 1700,
+                                "y": 2200
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Z02. Storage Closet",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2037,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#ZhentarimHideout",
+                                "contentChunkId": "c05221e5-c93f-4b15-b7fc-0a18d5cc7d51",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "A1kVW17WA6yykKva"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 1650,
+                                "y": 1350
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Z03. Secret Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2042,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#ZhentarimHideout",
+                                "contentChunkId": "e9622920-34ca-4817-9af7-ec9b5b2d882c",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "0HakDQ5JGjdYlAiJ"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 1550,
+                                "y": 1050
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Z04. Balcony",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2044,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#ZhentarimHideout",
+                                "contentChunkId": "16b5b317-1c9f-4ba9-9bc1-3caf11b921e5",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "ttDWw285uHsoJWRG"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3550,
+                                "y": 1250
+                            },
+                            {
+                                "x": 4050,
+                                "y": 2150
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Z05. Offices",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2049,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#ZhentarimHideout",
+                                "contentChunkId": "bff0d8a4-7caf-4b76-9119-f46f0796ada0",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "IQokzcWusTKgIGBj"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 4150,
+                                "y": 950
+                            },
+                            {
+                                "x": 3850,
+                                "y": 1050
+                            },
+                            {
+                                "x": 3550,
+                                "y": 950
+                            },
+                            {
+                                "x": 3550,
+                                "y": 1050
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 100,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": 63,
-        "shiftY": -11,
+        "height": 2394,
         "initial": {
             "x": 2755,
             "y": 1838,
             "scale": 0.36
         },
-        "backgroundColor": "#999999",
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 20.6,
+                "darknessThreshold": 0,
+                "dim": 41.21,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 1150,
+                "y": 1850,
+                "lightAnimation": {
+                    "speed": 2,
+                    "intensity": 2,
+                    "type": "torch"
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20.6,
+                "darknessThreshold": 0,
+                "dim": 41.21,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 2300,
+                "y": 2800,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 2,
+                    "intensity": 2
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20.6,
+                "darknessThreshold": 0,
+                "dim": 41.21,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 2350,
+                "y": 1250,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 2,
+                    "intensity": 2
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20.6,
+                "darknessThreshold": 0,
+                "dim": 41.21,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 2300,
+                "y": 2000,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 2,
+                    "intensity": 2
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20.6,
+                "darknessThreshold": 0,
+                "dim": 41.21,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 1150,
+                "y": 1300,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 2,
+                    "intensity": 2
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20.6,
+                "darknessThreshold": 0,
+                "dim": 41.21,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 3950,
+                "y": 1450,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 2,
+                    "intensity": 2
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20.6,
+                "darknessThreshold": 0,
+                "dim": 41.21,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 3900,
+                "y": 2000,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 2,
+                    "intensity": 2
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20.6,
+                "darknessThreshold": 0,
+                "dim": 41.21,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 3950,
+                "y": 2750,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 2,
+                    "intensity": 2
+                },
+                "hidden": false
+            }
+        ],
+        "name": "Warehouse",
+        "navName": "Warehouse",
+        "shiftX": 63,
+        "shiftY": -11,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -810,181 +1132,43 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
-        "darkness": 0.5,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [
-            {
-                "angle": 360,
-                "bright": 20.6,
-                "darknessThreshold": 0,
-                "dim": 41.21,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 1150,
-                "y": 1850,
-                "lightAnimation": {
-                    "speed": 2,
-                    "intensity": 2,
-                    "type": "torch"
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20.6,
-                "darknessThreshold": 0,
-                "dim": 41.21,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 2300,
-                "y": 2800,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 2,
-                    "intensity": 2
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20.6,
-                "darknessThreshold": 0,
-                "dim": 41.21,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 2350,
-                "y": 1250,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 2,
-                    "intensity": 2
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20.6,
-                "darknessThreshold": 0,
-                "dim": 41.21,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 2300,
-                "y": 2000,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 2,
-                    "intensity": 2
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20.6,
-                "darknessThreshold": 0,
-                "dim": 41.21,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 1150,
-                "y": 1300,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 2,
-                    "intensity": 2
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20.6,
-                "darknessThreshold": 0,
-                "dim": 41.21,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 3950,
-                "y": 1450,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 2,
-                    "intensity": 2
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20.6,
-                "darknessThreshold": 0,
-                "dim": 41.21,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 3900,
-                "y": 2000,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 2,
-                    "intensity": 2
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20.6,
-                "darknessThreshold": 0,
-                "dim": 41.21,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 3950,
-                "y": 2750,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 2,
-                    "intensity": 2
-                },
-                "hidden": false
-            }
-        ],
+        "width": 3466
+    },
+    {
+        "backgroundColor": "#999999",
+        "darkness": 0,
+        "drawings": [],
         "flags": {
             "ddb": {
-                "ddbId": 13018,
+                "bookCode": "wdh",
+                "ddbId": 13021,
                 "cobaltId": null,
                 "parentId": 554,
                 "contentChunkId": "f9a869c9-cd1c-4b3f-8b3b-613624572508",
                 "notes": [
                     {
-                        "label": "Z01. Main Room",
+                        "label": "Q01. Central Hub",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2029,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#ZhentarimHideout",
-                            "contentChunkId": "77df41a1-b39f-4ec7-a24a-c4b5134e58b4",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "YlacjqMvU8eQA1Ar"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2026,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#XanatharGuildHideout",
+                                "contentChunkId": "87a1c288-94e1-497a-82e6-714296fbcb29",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "pOTXy6Wb1SNtxyco"
+                            }
                         },
                         "positions": [
                             {
-                                "x": 1800,
-                                "y": 2800
-                            },
-                            {
-                                "x": 1700,
-                                "y": 2200
+                                "x": 1750,
+                                "y": 1650
                             }
                         ],
                         "iconSize": 50,
@@ -993,82 +1177,274 @@
                         "textAnchor": 1
                     },
                     {
-                        "label": "Z02. Storage Closet",
+                        "label": "Q02. Watch Posts",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2037,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#ZhentarimHideout",
-                            "contentChunkId": "c05221e5-c93f-4b15-b7fc-0a18d5cc7d51",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "A1kVW17WA6yykKva"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2030,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#XanatharGuildHideout",
+                                "contentChunkId": "af12e769-a0ce-4b85-bd80-3b99b069f297",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "iAAw3QYlXcDZPIFK"
+                            }
                         },
                         "positions": [
                             {
                                 "x": 1650,
-                                "y": 1350
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Z03. Secret Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2042,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#ZhentarimHideout",
-                            "contentChunkId": "e9622920-34ca-4817-9af7-ec9b5b2d882c",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "0HakDQ5JGjdYlAiJ"
-                        },
-                        "positions": [
-                            {
-                                "x": 1550,
-                                "y": 1050
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Z04. Balcony",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2044,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#ZhentarimHideout",
-                            "contentChunkId": "16b5b317-1c9f-4ba9-9bc1-3caf11b921e5",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "ttDWw285uHsoJWRG"
-                        },
-                        "positions": [
-                            {
-                                "x": 3550,
                                 "y": 1250
                             },
                             {
-                                "x": 4050,
+                                "x": 2050,
+                                "y": 1650
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Q03. Messy Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2032,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#XanatharGuildHideout",
+                                "contentChunkId": "13d544d1-bb58-45ba-bdaf-b33c2404ea4e",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "lYZKZjoLyE8WXBMD"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 1250,
+                                "y": 1750
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Q04. Empty Sleeping Area",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2034,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#XanatharGuildHideout",
+                                "contentChunkId": "cd5a1df8-ac30-4b45-9655-ec9bce0b85b4",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "D94aXzQ8e2szDHbp"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2250,
+                                "y": 950
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Q05. Sleeping Area",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2039,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#XanatharGuildHideout",
+                                "contentChunkId": "a5c9bf86-7b32-4084-8bf2-ca8ee6dc6f69",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "J5Vx20MZ8Hkhj6ax"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2650,
+                                "y": 950
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Q06. Lavatory",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2041,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#XanatharGuildHideout",
+                                "contentChunkId": "a8f5d855-5bd7-4848-b808-d79d555b28f2",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "YcYthetgGWspWvEG"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2950,
+                                "y": 750
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Q07. Boss Fight",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2052,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#XanatharGuildHideout",
+                                "contentChunkId": "1eae5a7a-d4e0-46ad-982a-2ecaaac5e5fd",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "15T9UTIq2AGFVLPy"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2950,
+                                "y": 1850
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Q08. Getaway Passage",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2054,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#XanatharGuildHideout",
+                                "contentChunkId": "812f242e-8722-47e9-a010-fc9d1a8b4394",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "0zy7FMvLrbJ79FQb"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3250,
+                                "y": 1650
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Q09. Private Cellar",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2059,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#XanatharGuildHideout",
+                                "contentChunkId": "c6d26996-2b5d-412b-8770-c83ae5eb83c6",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "OSP3HIBmm0JOH3Wu"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3350,
+                                "y": 950
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Q10. Sleeping Quarters",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2061,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#XanatharGuildHideout",
+                                "contentChunkId": "1874bc7c-4493-4c46-9f67-ac5904e94d6d",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "brtKH4lY5IRj6tBB"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3250,
+                                "y": 2050
+                            },
+                            {
+                                "x": 3350,
+                                "y": 2250
+                            },
+                            {
+                                "x": 2450,
+                                "y": 1750
+                            },
+                            {
+                                "x": 2050,
                                 "y": 2150
                             }
                         ],
@@ -1078,37 +1454,56 @@
                         "textAnchor": 1
                     },
                     {
-                        "label": "Z05. Offices",
+                        "label": "Q11. Back Door",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2049,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#ZhentarimHideout",
-                            "contentChunkId": "bff0d8a4-7caf-4b76-9119-f46f0796ada0",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "IQokzcWusTKgIGBj"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2067,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#XanatharGuildHideout",
+                                "contentChunkId": "d38e26ac-0430-478c-aa09-78816c055e6a",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "EcLR4rM1unUhIcyN"
+                            }
                         },
                         "positions": [
                             {
-                                "x": 4150,
-                                "y": 950
-                            },
+                                "x": 2650,
+                                "y": 2050
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "Q12. Hostel Cellar",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2073,
+                                "bookCode": "wdh",
+                                "slug": "a-friend-in-need#XanatharGuildHideout",
+                                "contentChunkId": "93bf194a-3e3d-4d3f-8b67-63a668a2258d",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 554,
+                                "linkId": "dqRdJixVIKEPpMyx"
+                            }
+                        },
+                        "positions": [
                             {
-                                "x": 3850,
-                                "y": 1050
-                            },
-                            {
-                                "x": 3550,
-                                "y": 950
-                            },
-                            {
-                                "x": 3550,
-                                "y": 1050
+                                "x": 1450,
+                                "y": 2150
                             }
                         ],
                         "iconSize": 50,
@@ -1119,26 +1514,28 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
-        }
-    },
-    {
-        "name": "Sewers",
-        "navName": "Sewers",
-        "width": 3156,
-        "height": 2180,
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 100,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": -38,
-        "shiftY": 6,
+        "height": 2180,
         "initial": {
             "x": 2595,
             "y": 1558,
             "scale": 0.4
         },
-        "backgroundColor": "#999999",
+        "lights": [],
+        "name": "Sewers",
+        "navName": "Sewers",
+        "shiftX": -38,
+        "shiftY": 6,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -3049,393 +3446,16 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
-        "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
-        "flags": {
-            "ddb": {
-                "ddbId": 13021,
-                "cobaltId": null,
-                "parentId": 554,
-                "contentChunkId": "f9a869c9-cd1c-4b3f-8b3b-613624572508",
-                "notes": [
-                    {
-                        "label": "Q01. Central Hub",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2026,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#XanatharGuildHideout",
-                            "contentChunkId": "87a1c288-94e1-497a-82e6-714296fbcb29",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "pOTXy6Wb1SNtxyco"
-                        },
-                        "positions": [
-                            {
-                                "x": 1750,
-                                "y": 1650
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Q02. Watch Posts",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2030,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#XanatharGuildHideout",
-                            "contentChunkId": "af12e769-a0ce-4b85-bd80-3b99b069f297",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "iAAw3QYlXcDZPIFK"
-                        },
-                        "positions": [
-                            {
-                                "x": 1650,
-                                "y": 1250
-                            },
-                            {
-                                "x": 2050,
-                                "y": 1650
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Q03. Messy Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2032,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#XanatharGuildHideout",
-                            "contentChunkId": "13d544d1-bb58-45ba-bdaf-b33c2404ea4e",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "lYZKZjoLyE8WXBMD"
-                        },
-                        "positions": [
-                            {
-                                "x": 1250,
-                                "y": 1750
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Q04. Empty Sleeping Area",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2034,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#XanatharGuildHideout",
-                            "contentChunkId": "cd5a1df8-ac30-4b45-9655-ec9bce0b85b4",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "D94aXzQ8e2szDHbp"
-                        },
-                        "positions": [
-                            {
-                                "x": 2250,
-                                "y": 950
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Q05. Sleeping Area",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2039,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#XanatharGuildHideout",
-                            "contentChunkId": "a5c9bf86-7b32-4084-8bf2-ca8ee6dc6f69",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "J5Vx20MZ8Hkhj6ax"
-                        },
-                        "positions": [
-                            {
-                                "x": 2650,
-                                "y": 950
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Q06. Lavatory",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2041,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#XanatharGuildHideout",
-                            "contentChunkId": "a8f5d855-5bd7-4848-b808-d79d555b28f2",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "YcYthetgGWspWvEG"
-                        },
-                        "positions": [
-                            {
-                                "x": 2950,
-                                "y": 750
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Q07. Boss Fight",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2052,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#XanatharGuildHideout",
-                            "contentChunkId": "1eae5a7a-d4e0-46ad-982a-2ecaaac5e5fd",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "15T9UTIq2AGFVLPy"
-                        },
-                        "positions": [
-                            {
-                                "x": 2950,
-                                "y": 1850
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Q08. Getaway Passage",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2054,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#XanatharGuildHideout",
-                            "contentChunkId": "812f242e-8722-47e9-a010-fc9d1a8b4394",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "0zy7FMvLrbJ79FQb"
-                        },
-                        "positions": [
-                            {
-                                "x": 3250,
-                                "y": 1650
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Q09. Private Cellar",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2059,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#XanatharGuildHideout",
-                            "contentChunkId": "c6d26996-2b5d-412b-8770-c83ae5eb83c6",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "OSP3HIBmm0JOH3Wu"
-                        },
-                        "positions": [
-                            {
-                                "x": 3350,
-                                "y": 950
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Q10. Sleeping Quarters",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2061,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#XanatharGuildHideout",
-                            "contentChunkId": "1874bc7c-4493-4c46-9f67-ac5904e94d6d",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "brtKH4lY5IRj6tBB"
-                        },
-                        "positions": [
-                            {
-                                "x": 3250,
-                                "y": 2050
-                            },
-                            {
-                                "x": 3350,
-                                "y": 2250
-                            },
-                            {
-                                "x": 2450,
-                                "y": 1750
-                            },
-                            {
-                                "x": 2050,
-                                "y": 2150
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Q11. Back Door",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2067,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#XanatharGuildHideout",
-                            "contentChunkId": "d38e26ac-0430-478c-aa09-78816c055e6a",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "EcLR4rM1unUhIcyN"
-                        },
-                        "positions": [
-                            {
-                                "x": 2650,
-                                "y": 2050
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "Q12. Hostel Cellar",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2073,
-                            "bookCode": "wdh",
-                            "slug": "a-friend-in-need#XanatharGuildHideout",
-                            "contentChunkId": "93bf194a-3e3d-4d3f-8b67-63a668a2258d",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 554,
-                            "linkId": "dqRdJixVIKEPpMyx"
-                        },
-                        "positions": [
-                            {
-                                "x": 1450,
-                                "y": 2150
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    }
-                ],
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 3156
     },
     {
-        "name": "Trollskull Alley",
-        "navName": "Trollskull Alley",
-        "width": 14317,
-        "height": 9890,
-        "grid": 100,
-        "gridDistance": 5,
-        "gridType": 1,
-        "gridUnits": "ft",
-        "shiftX": -50,
-        "shiftY": -92,
-        "initial": {
-            "x": 11993,
-            "y": 7371,
-            "scale": 0.1
-        },
         "backgroundColor": "#999999",
-        "walls": [],
-        "drawings": [],
-        "weather": "",
         "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
+        "drawings": [],
         "flags": {
             "ddb": {
+                "bookCode": "wdh",
                 "ddbId": 13025,
                 "cobaltId": null,
                 "parentId": 555,
@@ -3444,18 +3464,20 @@
                     {
                         "label": "T01. Trollskull Manor",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2034,
-                            "bookCode": "wdh",
-                            "slug": "trollskull-alley#AreasintheAlley",
-                            "contentChunkId": "6f5f35d3-13d1-4f09-a457-636fa9775279",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 555,
-                            "linkId": "K6WAF25ww95HuCGT"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2034,
+                                "bookCode": "wdh",
+                                "slug": "trollskull-alley#AreasintheAlley",
+                                "contentChunkId": "6f5f35d3-13d1-4f09-a457-636fa9775279",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 555,
+                                "linkId": "K6WAF25ww95HuCGT"
+                            }
                         },
                         "positions": [
                             {
@@ -3475,18 +3497,20 @@
                     {
                         "label": "T02. The Bent Nail",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2040,
-                            "bookCode": "wdh",
-                            "slug": "trollskull-alley#AreasintheAlley",
-                            "contentChunkId": "48118e14-501d-4c2a-a20d-62988f2d0138",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 555,
-                            "linkId": "7dNkOkV5NBn0LKHJ"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2040,
+                                "bookCode": "wdh",
+                                "slug": "trollskull-alley#AreasintheAlley",
+                                "contentChunkId": "48118e14-501d-4c2a-a20d-62988f2d0138",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 555,
+                                "linkId": "7dNkOkV5NBn0LKHJ"
+                            }
                         },
                         "positions": [
                             {
@@ -3506,18 +3530,20 @@
                     {
                         "label": "T03. Steam and Steel",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2048,
-                            "bookCode": "wdh",
-                            "slug": "trollskull-alley#AreasintheAlley",
-                            "contentChunkId": "4fce1733-4e0b-437d-b9ae-9966a8d50124",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 555,
-                            "linkId": "vyxvbTVy0ryTM2tC"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2048,
+                                "bookCode": "wdh",
+                                "slug": "trollskull-alley#AreasintheAlley",
+                                "contentChunkId": "4fce1733-4e0b-437d-b9ae-9966a8d50124",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 555,
+                                "linkId": "vyxvbTVy0ryTM2tC"
+                            }
                         },
                         "positions": [
                             {
@@ -3537,18 +3563,20 @@
                     {
                         "label": "T04. Corellon’s Crown",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2057,
-                            "bookCode": "wdh",
-                            "slug": "trollskull-alley#AreasintheAlley",
-                            "contentChunkId": "50587623-c1e9-4f6e-85da-94b1fe4eede9",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 555,
-                            "linkId": "q3Qc6uasGimK1geB"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2057,
+                                "bookCode": "wdh",
+                                "slug": "trollskull-alley#AreasintheAlley",
+                                "contentChunkId": "50587623-c1e9-4f6e-85da-94b1fe4eede9",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 555,
+                                "linkId": "q3Qc6uasGimK1geB"
+                            }
                         },
                         "positions": [
                             {
@@ -3568,18 +3596,20 @@
                     {
                         "label": "T05. Tiger’s Eye",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2062,
-                            "bookCode": "wdh",
-                            "slug": "trollskull-alley#AreasintheAlley",
-                            "contentChunkId": "c4af737a-e20a-4269-adc5-d7203d6a30c8",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 555,
-                            "linkId": "Hj5nAqlty3wjS5lg"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2062,
+                                "bookCode": "wdh",
+                                "slug": "trollskull-alley#AreasintheAlley",
+                                "contentChunkId": "c4af737a-e20a-4269-adc5-d7203d6a30c8",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 555,
+                                "linkId": "Hj5nAqlty3wjS5lg"
+                            }
                         },
                         "positions": [
                             {
@@ -3599,18 +3629,20 @@
                     {
                         "label": "T06. Book Wyrm’s Treasure",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2070,
-                            "bookCode": "wdh",
-                            "slug": "trollskull-alley#AreasintheAlley",
-                            "contentChunkId": "e5217ee2-b899-40ee-bf7a-0850d6607552",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 555,
-                            "linkId": "CGtGxF43vFHhppnQ"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2070,
+                                "bookCode": "wdh",
+                                "slug": "trollskull-alley#AreasintheAlley",
+                                "contentChunkId": "e5217ee2-b899-40ee-bf7a-0850d6607552",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 555,
+                                "linkId": "CGtGxF43vFHhppnQ"
+                            }
                         },
                         "positions": [
                             {
@@ -3630,18 +3662,20 @@
                     {
                         "label": "T07. Sewer Access",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2072,
-                            "bookCode": "wdh",
-                            "slug": "trollskull-alley#AreasintheAlley",
-                            "contentChunkId": "f32167d0-2257-46dc-9bf6-b71e888cb09a",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 555,
-                            "linkId": "7GA480mU4ZLt8cDQ"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2072,
+                                "bookCode": "wdh",
+                                "slug": "trollskull-alley#AreasintheAlley",
+                                "contentChunkId": "f32167d0-2257-46dc-9bf6-b71e888cb09a",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 555,
+                                "linkId": "7GA480mU4ZLt8cDQ"
+                            }
                         },
                         "positions": [
                             {
@@ -3657,26 +3691,678 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
-        }
-    },
-    {
-        "name": "Gralhund Villa",
-        "navName": "Gralhund Villa",
-        "width": 3870,
-        "height": 5253,
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 100,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": -49,
-        "shiftY": -33,
+        "height": 9890,
+        "initial": {
+            "x": 11993,
+            "y": 7371,
+            "scale": 0.1
+        },
+        "lights": [],
+        "name": "Trollskull Alley",
+        "navName": "Trollskull Alley",
+        "shiftX": -50,
+        "shiftY": -92,
+        "tokenVision": true,
+        "walls": [],
+        "weather": "",
+        "width": 14317
+    },
+    {
+        "backgroundColor": "#999999",
+        "darkness": 0,
+        "drawings": [],
+        "flags": {
+            "ddb": {
+                "bookCode": "wdh",
+                "ddbId": 13035,
+                "cobaltId": null,
+                "parentId": 557,
+                "contentChunkId": "f9a869c9-cd1c-4b3f-8b3b-613624572508",
+                "notes": [
+                    {
+                        "label": "G01. Locked Gates",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2037,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "87c28961-6cfc-4bc8-99dc-b98c8b5121ea",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "NuiWSdT29kIitWyh"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2300,
+                                "y": 4050
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G02. Yard",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2041,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "8b1f955a-0a57-48b3-88b7-5e711f0af425",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "4j5WncxT7dxrCHs3"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 4100,
+                                "y": 3900
+                            },
+                            {
+                                "x": 4100,
+                                "y": 5300
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G03. Coach House",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2045,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "658e3a52-b17e-42ca-b06a-ed7a6c368e25",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "aLjsefWw87NAPb34"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 4200,
+                                "y": 6200
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G04. Guard Barracks",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2048,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "d6e38377-688c-4249-8208-40c6341bc686",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "rQuYaEQnOxRzOVSZ"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3200,
+                                "y": 5600
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G05. Kitchen",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2050,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "300cfca0-3edb-4b08-a213-28f39b4492ca",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "aFxfraUvvVP7IazT"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2700,
+                                "y": 6000
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G06. Pantry",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2054,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "55eb959f-08a8-4ede-845b-4e1db92babe3",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "N5Tmyf1ZSqPBj36t"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2700,
+                                "y": 6300
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G07. Laundry Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2057,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "e3877731-238d-43c6-b084-74ab6ecc684f",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "UUlJR7xsmQdi5jyT"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2700,
+                                "y": 5600
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G08. Great Hall",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2062,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "f243bbee-e5e6-402b-9217-5321e0acc805",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "e7biPPKf0zUDvuja"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2000,
+                                "y": 6300
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G09. Parlor",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2065,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "f3b0df3e-3380-45ae-9468-c3418de294e5",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "ktkVyiGKmn2AR60y"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 1500,
+                                "y": 6200
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G10. Den and Trophy Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2068,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "9a504630-7e6f-4e4b-ba6e-8eed8389bf10",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "jH7rT1DaLyNAxBy3"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 1500,
+                                "y": 5800
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G11. Orond’s Study",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2072,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "e9c103a5-710f-4dfc-8360-efe65666547a",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "D8usfeD50Qcdircw"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 1700,
+                                "y": 5200
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G12. Family Library",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2081,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "ecf2d306-4be2-4f41-bb5a-e7890725b90d",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "XzquWjz93UAZ6WvK"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 1600,
+                                "y": 4900
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G13. Upstairs Foyer",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2087,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "0337cec9-7eff-407f-b0fb-785196aea5b4",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "4Nnj18Of64uykfcn"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 1300,
+                                "y": 2900
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G14. Ballroom",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2090,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "16ceb1d3-32b8-4a8c-a052-d7432ab5757b",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "leZi2xugPmoNoVkY"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 1500,
+                                "y": 2500
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G15. Guest Suite",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2098,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "80104d20-898b-4b16-b877-a6b75f590aa3",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "SpGgbxEtNwCjTIjj"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 1500,
+                                "y": 3500
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G16. Master Bedroom",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2105,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "ed8a3262-8ceb-499b-af4a-bdfa3814944b",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "NDMbPiwkepPeD7ut"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2000,
+                                "y": 3100
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G17. Balcony",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2107,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "d26f56fd-ec68-4ce3-ba44-c062df07c6d9",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "p61o69dHVTao89RH"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2200,
+                                "y": 2800
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G18. Children’s Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2111,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "fd3227e7-b901-4a08-bee7-217f1916cafd",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "BliTwDkCs5tw8Gtm"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2100,
+                                "y": 3600
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "G19. Servants’ Wing",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2113,
+                                "bookCode": "wdh",
+                                "slug": "fireball#GralhundVilla",
+                                "contentChunkId": "5af62b7e-5d31-4416-ac77-6c8b48a32f80",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 557,
+                                "linkId": "3v98t0hn9Z8sRAYq"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2800,
+                                "y": 3400
+                            },
+                            {
+                                "x": 2800,
+                                "y": 3100
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "grid": 100,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "height": 5253,
         "initial": {
             "x": 2790,
             "y": 4476,
             "scale": 0.2
         },
-        "backgroundColor": "#999999",
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 91.02,
+                "darknessThreshold": 0,
+                "dim": 182.05,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.49,
+                "x": 3500,
+                "y": 4550,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 32.23,
+                "darknessThreshold": 0,
+                "dim": 64.46,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 2800,
+                "y": 5300,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 35.75,
+                "darknessThreshold": 0,
+                "dim": 71.5,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 3050,
+                "y": 6100,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            }
+        ],
+        "name": "Gralhund Villa",
+        "navName": "Gralhund Villa",
+        "shiftX": -49,
+        "shiftY": -33,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -5023,624 +5709,16 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
-        "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [
-            {
-                "angle": 360,
-                "bright": 91.02,
-                "darknessThreshold": 0,
-                "dim": 182.05,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.49,
-                "x": 3500,
-                "y": 4550,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 32.23,
-                "darknessThreshold": 0,
-                "dim": 64.46,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 2800,
-                "y": 5300,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 35.75,
-                "darknessThreshold": 0,
-                "dim": 71.5,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 3050,
-                "y": 6100,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            }
-        ],
-        "flags": {
-            "ddb": {
-                "ddbId": 13035,
-                "cobaltId": null,
-                "parentId": 557,
-                "contentChunkId": "f9a869c9-cd1c-4b3f-8b3b-613624572508",
-                "notes": [
-                    {
-                        "label": "G01. Locked Gates",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2037,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "87c28961-6cfc-4bc8-99dc-b98c8b5121ea",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "NuiWSdT29kIitWyh"
-                        },
-                        "positions": [
-                            {
-                                "x": 2300,
-                                "y": 4050
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G02. Yard",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2041,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "8b1f955a-0a57-48b3-88b7-5e711f0af425",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "4j5WncxT7dxrCHs3"
-                        },
-                        "positions": [
-                            {
-                                "x": 4100,
-                                "y": 3900
-                            },
-                            {
-                                "x": 4100,
-                                "y": 5300
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G03. Coach House",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2045,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "658e3a52-b17e-42ca-b06a-ed7a6c368e25",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "aLjsefWw87NAPb34"
-                        },
-                        "positions": [
-                            {
-                                "x": 4200,
-                                "y": 6200
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G04. Guard Barracks",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2048,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "d6e38377-688c-4249-8208-40c6341bc686",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "rQuYaEQnOxRzOVSZ"
-                        },
-                        "positions": [
-                            {
-                                "x": 3200,
-                                "y": 5600
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G05. Kitchen",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2050,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "300cfca0-3edb-4b08-a213-28f39b4492ca",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "aFxfraUvvVP7IazT"
-                        },
-                        "positions": [
-                            {
-                                "x": 2700,
-                                "y": 6000
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G06. Pantry",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2054,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "55eb959f-08a8-4ede-845b-4e1db92babe3",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "N5Tmyf1ZSqPBj36t"
-                        },
-                        "positions": [
-                            {
-                                "x": 2700,
-                                "y": 6300
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G07. Laundry Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2057,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "e3877731-238d-43c6-b084-74ab6ecc684f",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "UUlJR7xsmQdi5jyT"
-                        },
-                        "positions": [
-                            {
-                                "x": 2700,
-                                "y": 5600
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G08. Great Hall",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2062,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "f243bbee-e5e6-402b-9217-5321e0acc805",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "e7biPPKf0zUDvuja"
-                        },
-                        "positions": [
-                            {
-                                "x": 2000,
-                                "y": 6300
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G09. Parlor",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2065,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "f3b0df3e-3380-45ae-9468-c3418de294e5",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "ktkVyiGKmn2AR60y"
-                        },
-                        "positions": [
-                            {
-                                "x": 1500,
-                                "y": 6200
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G10. Den and Trophy Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2068,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "9a504630-7e6f-4e4b-ba6e-8eed8389bf10",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "jH7rT1DaLyNAxBy3"
-                        },
-                        "positions": [
-                            {
-                                "x": 1500,
-                                "y": 5800
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G11. Orond’s Study",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2072,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "e9c103a5-710f-4dfc-8360-efe65666547a",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "D8usfeD50Qcdircw"
-                        },
-                        "positions": [
-                            {
-                                "x": 1700,
-                                "y": 5200
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G12. Family Library",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2081,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "ecf2d306-4be2-4f41-bb5a-e7890725b90d",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "XzquWjz93UAZ6WvK"
-                        },
-                        "positions": [
-                            {
-                                "x": 1600,
-                                "y": 4900
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G13. Upstairs Foyer",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2087,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "0337cec9-7eff-407f-b0fb-785196aea5b4",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "4Nnj18Of64uykfcn"
-                        },
-                        "positions": [
-                            {
-                                "x": 1300,
-                                "y": 2900
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G14. Ballroom",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2090,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "16ceb1d3-32b8-4a8c-a052-d7432ab5757b",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "leZi2xugPmoNoVkY"
-                        },
-                        "positions": [
-                            {
-                                "x": 1500,
-                                "y": 2500
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G15. Guest Suite",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2098,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "80104d20-898b-4b16-b877-a6b75f590aa3",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "SpGgbxEtNwCjTIjj"
-                        },
-                        "positions": [
-                            {
-                                "x": 1500,
-                                "y": 3500
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G16. Master Bedroom",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2105,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "ed8a3262-8ceb-499b-af4a-bdfa3814944b",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "NDMbPiwkepPeD7ut"
-                        },
-                        "positions": [
-                            {
-                                "x": 2000,
-                                "y": 3100
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G17. Balcony",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2107,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "d26f56fd-ec68-4ce3-ba44-c062df07c6d9",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "p61o69dHVTao89RH"
-                        },
-                        "positions": [
-                            {
-                                "x": 2200,
-                                "y": 2800
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G18. Children’s Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2111,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "fd3227e7-b901-4a08-bee7-217f1916cafd",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "BliTwDkCs5tw8Gtm"
-                        },
-                        "positions": [
-                            {
-                                "x": 2100,
-                                "y": 3600
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "G19. Servants’ Wing",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2113,
-                            "bookCode": "wdh",
-                            "slug": "fireball#GralhundVilla",
-                            "contentChunkId": "5af62b7e-5d31-4416-ac77-6c8b48a32f80",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 557,
-                            "linkId": "3v98t0hn9Z8sRAYq"
-                        },
-                        "positions": [
-                            {
-                                "x": 2800,
-                                "y": 3400
-                            },
-                            {
-                                "x": 2800,
-                                "y": 3100
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    }
-                ],
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 3870
     },
     {
-        "name": "Alley",
-        "navName": "Alley",
-        "width": 3507,
-        "height": 2423,
-        "grid": 100,
-        "gridDistance": 5,
-        "gridType": 1,
-        "gridUnits": "ft",
-        "shiftX": 18,
-        "shiftY": 57,
-        "initial": {
-            "x": 2965,
-            "y": 2082,
-            "scale": 0.4
-        },
         "backgroundColor": "#999999",
-        "walls": [],
-        "drawings": [],
-        "weather": "",
         "darkness": 0,
-        "tokenVision": true,
-        "globalLight": true,
-        "globalLightThreshold": null,
-        "lights": [],
+        "drawings": [],
         "flags": {
             "ddb": {
+                "bookCode": "wdh",
                 "ddbId": 13042,
                 "cobaltId": null,
                 "parentId": 558,
@@ -5649,18 +5727,20 @@
                     {
                         "label": "L01. Alley Residence",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2044,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter1Alley",
-                            "contentChunkId": "6f8bdd09-4f55-4f75-8abc-4815bc9431b7",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "7TuVeTtCov2TosD0"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2044,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter1Alley",
+                                "contentChunkId": "6f8bdd09-4f55-4f75-8abc-4815bc9431b7",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "7TuVeTtCov2TosD0"
+                            }
                         },
                         "positions": [
                             {
@@ -5676,18 +5756,20 @@
                     {
                         "label": "L02. Store",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2049,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter1Alley",
-                            "contentChunkId": "49eb0cd5-d2bc-437f-ab16-5599a61d0f50",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "7gY2MpQATe27IL1y"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2049,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter1Alley",
+                                "contentChunkId": "49eb0cd5-d2bc-437f-ab16-5599a61d0f50",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "7gY2MpQATe27IL1y"
+                            }
                         },
                         "positions": [
                             {
@@ -5703,26 +5785,156 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
-        }
-    },
-    {
-        "name": "Mistshore",
-        "navName": "Mistshore",
-        "width": 5384,
-        "height": 3719,
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": true,
+        "globalLightThreshold": null,
         "grid": 100,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": -7,
-        "shiftY": -15,
+        "height": 2423,
+        "initial": {
+            "x": 2965,
+            "y": 2082,
+            "scale": 0.4
+        },
+        "lights": [],
+        "name": "Alley",
+        "navName": "Alley",
+        "shiftX": 18,
+        "shiftY": 57,
+        "tokenVision": true,
+        "walls": [],
+        "weather": "",
+        "width": 3507
+    },
+    {
+        "backgroundColor": "#999999",
+        "darkness": 0,
+        "drawings": [],
+        "flags": {
+            "ddb": {
+                "bookCode": "wdh",
+                "ddbId": 13043,
+                "cobaltId": null,
+                "parentId": 558,
+                "contentChunkId": "f9a869c9-cd1c-4b3f-8b3b-613624572508",
+                "notes": [
+                    {
+                        "label": "D01. Kraken’s Folly",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2044,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter2Mistshore",
+                                "contentChunkId": "3a0532a4-9c1d-45c9-8280-167eb4b47e9c",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "KMP0tR4G2ogKcHGB"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 4400,
+                                "y": 3900
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "D02. Grinda’s Residence",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2047,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter2Mistshore",
+                                "contentChunkId": "f52cd152-41b7-4a13-afe5-5b89d801be55",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "2YYUdB2ivbVf650a"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 5700,
+                                "y": 3300
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "D03. Grinda’s Apparatus",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2053,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter2Mistshore",
+                                "contentChunkId": "7b44efcd-a6a0-4ee0-8746-4d8f68de25e1",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "Wc4BWfTPgQMZDNYq"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 5650,
+                                "y": 3050
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    }
+                ],
+                "tokens": []
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "grid": 100,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "height": 3719,
         "initial": {
             "x": 4682,
             "y": 3222,
             "scale": 0.3
         },
-        "backgroundColor": "#999999",
+        "lights": [],
+        "name": "Mistshore",
+        "navName": "Mistshore",
+        "shiftX": -7,
+        "shiftY": -15,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -8761,40 +8973,43 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
+        "width": 5384
+    },
+    {
+        "backgroundColor": "#999999",
         "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
+        "drawings": [],
         "flags": {
             "ddb": {
-                "ddbId": 13043,
+                "bookCode": "wdh",
+                "ddbId": 13047,
                 "cobaltId": null,
                 "parentId": 558,
                 "contentChunkId": "f9a869c9-cd1c-4b3f-8b3b-613624572508",
                 "notes": [
                     {
-                        "label": "D01. Kraken’s Folly",
+                        "label": "P01. Lobby",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2044,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter2Mistshore",
-                            "contentChunkId": "3a0532a4-9c1d-45c9-8280-167eb4b47e9c",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "KMP0tR4G2ogKcHGB"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2048,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter6Theater",
+                                "contentChunkId": "989d46e2-7679-4594-8a25-68a09ff3e84b",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "UNy2b59yljZWbUaU"
+                            }
                         },
                         "positions": [
                             {
-                                "x": 4400,
-                                "y": 3900
+                                "x": 1500,
+                                "y": 1600
                             }
                         ],
                         "iconSize": 50,
@@ -8803,25 +9018,31 @@
                         "textAnchor": 1
                     },
                     {
-                        "label": "D02. Grinda’s Residence",
+                        "label": "P02. Ticket Booths",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2047,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter2Mistshore",
-                            "contentChunkId": "f52cd152-41b7-4a13-afe5-5b89d801be55",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "2YYUdB2ivbVf650a"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2051,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter6Theater",
+                                "contentChunkId": "76f61852-d60d-4c79-85d0-cb3ea0c7b8c6",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "10mLC3YfpWbsLrKL"
+                            }
                         },
                         "positions": [
                             {
-                                "x": 5700,
-                                "y": 3300
+                                "x": 1700,
+                                "y": 2100
+                            },
+                            {
+                                "x": 1700,
+                                "y": 1200
                             }
                         ],
                         "iconSize": 50,
@@ -8830,25 +9051,200 @@
                         "textAnchor": 1
                     },
                     {
-                        "label": "D03. Grinda’s Apparatus",
+                        "label": "P03. Ticket Offices",
                         "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2053,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter2Mistshore",
-                            "contentChunkId": "7b44efcd-a6a0-4ee0-8746-4d8f68de25e1",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "Wc4BWfTPgQMZDNYq"
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2054,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter6Theater",
+                                "contentChunkId": "981c27e5-3fb8-4541-963d-189dbf5e1827",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "cz3ozzAmBCt8D1Vz"
+                            }
                         },
                         "positions": [
                             {
-                                "x": 5650,
-                                "y": 3050
+                                "x": 1800,
+                                "y": 1000
+                            },
+                            {
+                                "x": 1800,
+                                "y": 2300
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "P04. Auditorium",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2058,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter6Theater",
+                                "contentChunkId": "3820e2ba-5983-4182-9416-43a2401dfe8b",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "Ah8YzsQLR3F4P10u"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 2800,
+                                "y": 1700
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "P05. Wing",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2060,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter6Theater",
+                                "contentChunkId": "9075ee82-e3c1-4239-9660-7f1748877edc",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "n16lfTeY1wq3Ze8W"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3100,
+                                "y": 2500
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "P06. Stage Manager’s Office",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2062,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter6Theater",
+                                "contentChunkId": "47a2a55a-4e6d-4a49-949a-8d17865b0432",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "Kk4ttV1NAfB2koQr"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3100,
+                                "y": 2700
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "P07. Green Room",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2064,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter6Theater",
+                                "contentChunkId": "c5881058-1042-4fa5-a027-0b90aa837a1f",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "o4SBO3q3aHgsTigC"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3550,
+                                "y": 2650
+                            }
+                        ],
+                        "iconSize": 50,
+                        "iconTint": "",
+                        "textColor": "",
+                        "textAnchor": 1
+                    },
+                    {
+                        "label": "P08. Dressing Rooms",
+                        "flags": {
+                            "ddb": {
+                                "cobaltId": null,
+                                "ddbId": 2066,
+                                "bookCode": "wdh",
+                                "slug": "dragon-season#Encounter6Theater",
+                                "contentChunkId": "f20341b2-2a64-46b0-ad67-62cbf05c05c9",
+                                "userData": {
+                                    "userDisplayName": "maadonna"
+                                },
+                                "note": true,
+                                "img": false,
+                                "parentId": 558,
+                                "linkId": "kMjdTzef3PY6dlv3"
+                            }
+                        },
+                        "positions": [
+                            {
+                                "x": 3650,
+                                "y": 2250
+                            },
+                            {
+                                "x": 3600,
+                                "y": 2100
+                            },
+                            {
+                                "x": 3600,
+                                "y": 1900
+                            },
+                            {
+                                "x": 3600,
+                                "y": 1700
+                            },
+                            {
+                                "x": 3600,
+                                "y": 1500
+                            },
+                            {
+                                "x": 3600,
+                                "y": 1300
+                            },
+                            {
+                                "x": 3600,
+                                "y": 1000
                             }
                         ],
                         "iconSize": 50,
@@ -8859,26 +9255,521 @@
                 ],
                 "tokens": []
             },
-            "stairways": []
-        }
-    },
-    {
-        "name": "Theatre",
-        "navName": "Theatre",
-        "width": 3383,
-        "height": 2337,
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 100,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": 46,
-        "shiftY": -32,
+        "height": 2337,
         "initial": {
             "x": 2684,
             "y": 1783,
             "scale": 0.38
         },
-        "backgroundColor": "#999999",
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 17.53,
+                "darknessThreshold": 0,
+                "dim": 35.07,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 1950,
+                "y": 950,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5,
+                    "type": ""
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 1400,
+                "y": 950,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 1750,
+                "y": 1650,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 1400,
+                "y": 2650,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 1350,
+                "y": 1750,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 1950,
+                "y": 2350,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 1750,
+                "y": 2050,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 1750,
+                "y": 1250,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2150,
+                "y": 950,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2150,
+                "y": 2350,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2750,
+                "y": 2350,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2750,
+                "y": 950,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 1950,
+                "y": 1550,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 1950,
+                "y": 1800,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2450,
+                "y": 1650,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 4.45,
+                "darknessThreshold": 0,
+                "dim": 8.91,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.5,
+                "x": 2950,
+                "y": 2250,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 2950,
+                "y": 1050,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3250,
+                "y": 2150,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3250,
+                "y": 1150,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3050,
+                "y": 2650,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3050,
+                "y": 2450,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3650,
+                "y": 2750,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3650,
+                "y": 2350,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3650,
+                "y": 2150,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3650,
+                "y": 1950,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3650,
+                "y": 1750,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3650,
+                "y": 1550,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3650,
+                "y": 1350,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 20,
+                "darknessThreshold": 0,
+                "dim": 40,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.16,
+                "x": 3650,
+                "y": 950,
+                "lightAnimation": {
+                    "type": "",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            }
+        ],
+        "name": "Theatre",
+        "navName": "Theatre",
+        "shiftX": 46,
+        "shiftY": -32,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -10057,794 +10948,16 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
-        "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [
-            {
-                "angle": 360,
-                "bright": 17.53,
-                "darknessThreshold": 0,
-                "dim": 35.07,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 1950,
-                "y": 950,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5,
-                    "type": ""
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 1400,
-                "y": 950,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 1750,
-                "y": 1650,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 1400,
-                "y": 2650,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 1350,
-                "y": 1750,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 1950,
-                "y": 2350,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 1750,
-                "y": 2050,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 1750,
-                "y": 1250,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 2150,
-                "y": 950,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 2150,
-                "y": 2350,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 2750,
-                "y": 2350,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 2750,
-                "y": 950,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 1950,
-                "y": 1550,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 1950,
-                "y": 1800,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 2450,
-                "y": 1650,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 4.45,
-                "darknessThreshold": 0,
-                "dim": 8.91,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.5,
-                "x": 2950,
-                "y": 2250,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 2950,
-                "y": 1050,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3250,
-                "y": 2150,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3250,
-                "y": 1150,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3050,
-                "y": 2650,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3050,
-                "y": 2450,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3650,
-                "y": 2750,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3650,
-                "y": 2350,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3650,
-                "y": 2150,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3650,
-                "y": 1950,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3650,
-                "y": 1750,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3650,
-                "y": 1550,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3650,
-                "y": 1350,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 20,
-                "darknessThreshold": 0,
-                "dim": 40,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.16,
-                "x": 3650,
-                "y": 950,
-                "lightAnimation": {
-                    "type": "",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            }
-        ],
-        "flags": {
-            "ddb": {
-                "ddbId": 13047,
-                "cobaltId": null,
-                "parentId": 558,
-                "contentChunkId": "f9a869c9-cd1c-4b3f-8b3b-613624572508",
-                "notes": [
-                    {
-                        "label": "P01. Lobby",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2048,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter6Theater",
-                            "contentChunkId": "989d46e2-7679-4594-8a25-68a09ff3e84b",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "UNy2b59yljZWbUaU"
-                        },
-                        "positions": [
-                            {
-                                "x": 1500,
-                                "y": 1600
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "P02. Ticket Booths",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2051,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter6Theater",
-                            "contentChunkId": "76f61852-d60d-4c79-85d0-cb3ea0c7b8c6",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "10mLC3YfpWbsLrKL"
-                        },
-                        "positions": [
-                            {
-                                "x": 1700,
-                                "y": 2100
-                            },
-                            {
-                                "x": 1700,
-                                "y": 1200
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "P03. Ticket Offices",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2054,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter6Theater",
-                            "contentChunkId": "981c27e5-3fb8-4541-963d-189dbf5e1827",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "cz3ozzAmBCt8D1Vz"
-                        },
-                        "positions": [
-                            {
-                                "x": 1800,
-                                "y": 1000
-                            },
-                            {
-                                "x": 1800,
-                                "y": 2300
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "P04. Auditorium",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2058,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter6Theater",
-                            "contentChunkId": "3820e2ba-5983-4182-9416-43a2401dfe8b",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "Ah8YzsQLR3F4P10u"
-                        },
-                        "positions": [
-                            {
-                                "x": 2800,
-                                "y": 1700
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "P05. Wing",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2060,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter6Theater",
-                            "contentChunkId": "9075ee82-e3c1-4239-9660-7f1748877edc",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "n16lfTeY1wq3Ze8W"
-                        },
-                        "positions": [
-                            {
-                                "x": 3100,
-                                "y": 2500
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "P06. Stage Manager’s Office",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2062,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter6Theater",
-                            "contentChunkId": "47a2a55a-4e6d-4a49-949a-8d17865b0432",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "Kk4ttV1NAfB2koQr"
-                        },
-                        "positions": [
-                            {
-                                "x": 3100,
-                                "y": 2700
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "P07. Green Room",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2064,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter6Theater",
-                            "contentChunkId": "c5881058-1042-4fa5-a027-0b90aa837a1f",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "o4SBO3q3aHgsTigC"
-                        },
-                        "positions": [
-                            {
-                                "x": 3550,
-                                "y": 2650
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    },
-                    {
-                        "label": "P08. Dressing Rooms",
-                        "flags": {
-                            "cobaltId": null,
-                            "ddbId": 2066,
-                            "bookCode": "wdh",
-                            "slug": "dragon-season#Encounter6Theater",
-                            "contentChunkId": "f20341b2-2a64-46b0-ad67-62cbf05c05c9",
-                            "userData": {
-                                "userDisplayName": "maadonna"
-                            },
-                            "note": true,
-                            "img": false,
-                            "parentId": 558,
-                            "linkId": "kMjdTzef3PY6dlv3"
-                        },
-                        "positions": [
-                            {
-                                "x": 3650,
-                                "y": 2250
-                            },
-                            {
-                                "x": 3600,
-                                "y": 2100
-                            },
-                            {
-                                "x": 3600,
-                                "y": 1900
-                            },
-                            {
-                                "x": 3600,
-                                "y": 1700
-                            },
-                            {
-                                "x": 3600,
-                                "y": 1500
-                            },
-                            {
-                                "x": 3600,
-                                "y": 1300
-                            },
-                            {
-                                "x": 3600,
-                                "y": 1000
-                            }
-                        ],
-                        "iconSize": 50,
-                        "iconTint": "",
-                        "textColor": "",
-                        "textAnchor": 1
-                    }
-                ],
-                "tokens": []
-            },
-            "stairways": []
-        }
+        "width": 3383
     },
     {
-        "name": "Trollskull Manor and Tavern",
-        "navName": "Trollskull Manor and Tavern",
-        "width": 2100,
-        "height": 2850,
-        "grid": 100,
-        "gridDistance": 5,
-        "gridType": 1,
-        "gridUnits": "ft",
-        "shiftX": -2,
-        "shiftY": -33,
-        "initial": {
-            "x": 1919,
-            "y": 2209,
-            "scale": 0.3
-        },
         "backgroundColor": "#999999",
-        "walls": [],
-        "drawings": [],
-        "weather": "",
         "darkness": 0,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [],
+        "drawings": [],
         "flags": {
             "ddb": {
+                "bookCode": "wdh",
                 "ddbId": 13104,
                 "cobaltId": null,
                 "parentId": 566,
@@ -10852,7 +10965,30 @@
                 "notes": [],
                 "tokens": []
             },
-            "stairways": []
-        }
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
+        "grid": 100,
+        "gridDistance": 5,
+        "gridType": 1,
+        "gridUnits": "ft",
+        "height": 2850,
+        "initial": {
+            "x": 1919,
+            "y": 2209,
+            "scale": 0.3
+        },
+        "lights": [],
+        "name": "Trollskull Manor and Tavern",
+        "navName": "Trollskull Manor and Tavern",
+        "shiftX": -2,
+        "shiftY": -33,
+        "tokenVision": true,
+        "walls": [],
+        "weather": "",
+        "width": 2100
     }
 ]

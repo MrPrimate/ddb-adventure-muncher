@@ -1,21 +1,563 @@
 [
     {
-        "name": "Arauthator’s Iceberg and Lair",
-        "navName": "Ice Caves",
-        "width": 11880,
-        "height": 17100,
+        "backgroundColor": "#333333",
+        "darkness": 0.05,
+        "drawings": [],
+        "flags": {
+            "ddb": {
+                "bookCode": "rot",
+                "ddbId": 13022,
+                "cobaltId": null,
+                "parentId": 443,
+                "contentChunkId": "8f1d0c8c-a586-4f65-a613-07f52756fe95",
+                "notes": [],
+                "tokens": [
+                    {
+                        "_id": "Hm12GwPTMcjm6SAf",
+                        "name": "esasdfadf",
+                        "width": 1,
+                        "height": 1,
+                        "scale": 1,
+                        "x": 5440,
+                        "y": 9180,
+                        "disposition": 1,
+                        "flags": {},
+                        "actorLink": false,
+                        "bar1": {
+                            "attribute": "attributes.hp"
+                        },
+                        "elevation": 0,
+                        "hidden": false,
+                        "lightAlpha": 0.25,
+                        "lightAngle": 360,
+                        "lightAnimation": {
+                            "speed": 5,
+                            "intensity": 5
+                        },
+                        "tint": "",
+                        "actorData": {}
+                    }
+                ]
+            },
+            "stairways": [],
+            "perfect-vision": [],
+            "dynamic-illumination": []
+        },
+        "globalLight": false,
+        "globalLightThreshold": null,
         "grid": 85,
         "gridDistance": 5,
         "gridType": 1,
         "gridUnits": "ft",
-        "shiftX": -9,
-        "shiftY": 48,
+        "height": 17100,
         "initial": {
             "x": 12516,
             "y": 8710,
             "scale": 0.32
         },
-        "backgroundColor": "#333333",
+        "lights": [
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 60,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 11773,
+                "y": 11178,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 3
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 107,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 10795,
+                "y": 10540,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 55,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 9945,
+                "y": 9095,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 4,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 20,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 9393,
+                "y": 10200,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 76.18,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 9053,
+                "y": 11688,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 84.54,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 9053,
+                "y": 9563,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 34.19,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.02,
+                "x": 7140,
+                "y": 7863,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 36.75,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 5355,
+                "y": 7650,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 25.07,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.02,
+                "x": 6290,
+                "y": 7395,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 24.9,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 6333,
+                "y": 7905,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 36.08,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 5865,
+                "y": 8543,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 70,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 7183,
+                "y": 8670,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 111.78,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 5270,
+                "y": 9138,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 45.18,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 7480,
+                "y": 9223,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 68.98,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.02,
+                "x": 7608,
+                "y": 10710,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 89.81,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 5483,
+                "y": 10073,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 79.25,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 5398,
+                "y": 11093,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 104.51,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 8075,
+                "y": 12325,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 65,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 9350,
+                "y": 12325,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 44.63,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0,
+                "x": 10880,
+                "y": 12070,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 267.71,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0,
+                "x": 11263,
+                "y": 12623,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 20.86,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 8330,
+                "y": 11773,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 21.5,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 6843,
+                "y": 11730,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 47.98,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 12070,
+                "y": 9478,
+                "lightAnimation": {
+                    "type": "torch",
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 78.97,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 10328,
+                "y": 8458,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 24.2,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 8670,
+                "y": 8500,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 124.31,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 10158,
+                "y": 6545,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 64.37,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 9223,
+                "y": 5780,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 49.38,
+                "rotation": 0,
+                "t": "l",
+                "tintAlpha": 0.01,
+                "x": 10115,
+                "y": 11518,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            },
+            {
+                "angle": 360,
+                "bright": 0,
+                "darknessThreshold": 0,
+                "dim": 375.68,
+                "rotation": 0,
+                "t": "g",
+                "tintAlpha": 0.01,
+                "x": 9393,
+                "y": 17425,
+                "lightAnimation": {
+                    "speed": 5,
+                    "intensity": 5
+                },
+                "hidden": false
+            }
+        ],
+        "name": "Arauthator’s Iceberg and Lair",
+        "navName": "Ice Caves",
+        "shiftX": -9,
+        "shiftY": 48,
+        "tokenVision": true,
         "walls": [
             {
                 "c": [
@@ -6654,549 +7196,7 @@
                 "sense": 1
             }
         ],
-        "drawings": [],
         "weather": "",
-        "darkness": 0.05,
-        "tokenVision": true,
-        "globalLight": false,
-        "globalLightThreshold": null,
-        "lights": [
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 60,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 11773,
-                "y": 11178,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 3
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 107,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 10795,
-                "y": 10540,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 55,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 9945,
-                "y": 9095,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 4,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 20,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 9393,
-                "y": 10200,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 76.18,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 9053,
-                "y": 11688,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 84.54,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 9053,
-                "y": 9563,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 34.19,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.02,
-                "x": 7140,
-                "y": 7863,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 36.75,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 5355,
-                "y": 7650,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 25.07,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.02,
-                "x": 6290,
-                "y": 7395,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 24.9,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 6333,
-                "y": 7905,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 36.08,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 5865,
-                "y": 8543,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 70,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 7183,
-                "y": 8670,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 111.78,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 5270,
-                "y": 9138,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 45.18,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 7480,
-                "y": 9223,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 68.98,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.02,
-                "x": 7608,
-                "y": 10710,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 89.81,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 5483,
-                "y": 10073,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 79.25,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 5398,
-                "y": 11093,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 104.51,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 8075,
-                "y": 12325,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 65,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 9350,
-                "y": 12325,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 44.63,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0,
-                "x": 10880,
-                "y": 12070,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 267.71,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0,
-                "x": 11263,
-                "y": 12623,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 20.86,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 8330,
-                "y": 11773,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 21.5,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 6843,
-                "y": 11730,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 47.98,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 12070,
-                "y": 9478,
-                "lightAnimation": {
-                    "type": "torch",
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 78.97,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 10328,
-                "y": 8458,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 24.2,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 8670,
-                "y": 8500,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 124.31,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 10158,
-                "y": 6545,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 64.37,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 9223,
-                "y": 5780,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 49.38,
-                "rotation": 0,
-                "t": "l",
-                "tintAlpha": 0.01,
-                "x": 10115,
-                "y": 11518,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            },
-            {
-                "angle": 360,
-                "bright": 0,
-                "darknessThreshold": 0,
-                "dim": 375.68,
-                "rotation": 0,
-                "t": "g",
-                "tintAlpha": 0.01,
-                "x": 9393,
-                "y": 17425,
-                "lightAnimation": {
-                    "speed": 5,
-                    "intensity": 5
-                },
-                "hidden": false
-            }
-        ],
-        "flags": {
-            "ddb": {
-                "ddbId": 13022,
-                "cobaltId": null,
-                "parentId": 443,
-                "contentChunkId": "8f1d0c8c-a586-4f65-a613-07f52756fe95",
-                "notes": [],
-                "tokens": [
-                    {
-                        "_id": "Hm12GwPTMcjm6SAf",
-                        "name": "esasdfadf",
-                        "width": 1,
-                        "height": 1,
-                        "scale": 1,
-                        "x": 5440,
-                        "y": 9180,
-                        "disposition": 1,
-                        "flags": {},
-                        "actorLink": false,
-                        "bar1": {
-                            "attribute": "attributes.hp"
-                        },
-                        "effects": [],
-                        "elevation": 0,
-                        "hidden": false,
-                        "lightAlpha": 0.25,
-                        "lightAngle": 360,
-                        "lightAnimation": {
-                            "speed": 5,
-                            "intensity": 5
-                        },
-                        "tint": "",
-                        "actorData": {}
-                    }
-                ]
-            },
-            "stairways": [],
-            "perfect-vision": [],
-            "dynamic-illumination": []
-        }
+        "width": 11880
     }
 ]
