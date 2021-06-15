@@ -362,13 +362,6 @@ function importScene(conf, sceneFile) {
     scenesData.push(inData);
   }
 
-  inData.walls = inData.walls.map((wall) => {
-    delete wall._id;
-    delete wall.flags;
-    return wall;
-  });
-  delete inData.wall;
-  
   inData = _(inData).toPairs().sortBy(0).fromPairs().value();
 
   if (inDataUpdate || true) {
