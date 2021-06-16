@@ -8,6 +8,8 @@ const _ = require("lodash");
 
 var configDir = "../dbs";
 var buildDir = `${configDir}/build`;
+var scenesDir = `${configDir}/scene_info`;
+var notesDir = `${configDir}/note_info`;
 var dbDir;
 var CONFIG_FILE = `${configDir}/config.json`;
 var LOOKUP_FILE = `${configDir}/lookup.json`;
@@ -15,11 +17,12 @@ var config;
 
 const defaultEnhancementEndpoint = "https://proxy.ddb.mrprimate.co.uk";
 
-
 function setConfigDir (dir) {
   configDir = dir;
   dbDir = `${configDir}/content`;
   buildDir = `${configDir}/build`;
+  scenesDir = `${configDir}/scene_info`;
+  notesDir = `${configDir}/note_info`;
   CONFIG_FILE = `${configDir}/config.json`;
   LOOKUP_FILE = `${configDir}/lookup.json`;
 }
@@ -72,12 +75,20 @@ function isConfig() {
   return false;
 }
 
+function getMetaData(conf) {
+  const metaDataRepoName = (process.env.METADATA_NAME) ? process.env.METADATA_NAME : "ddb-meta-data";
+  const metaDataRepoAuthor = (process.env.METADATA_AUTHOR) ? process.env.METADATA_AUTHOR : "MrPrimate";
+  const githubApiLatest = `https://api.github.com/repos/${metaDataRepoAuthor}/${metaDataRepoName}/releases/latest`;
+  // const githubModuleJson = `https://raw.githubusercontent.com/${metaDataRepoAuthor}/${metaDataRepoName}/master/module.json`;
+}
+
 // const options = {
 //   bookCode: null,
 //   externalConfigFile: null,
 //   outputDirPath: null,
 // };
 async function getConfig(options = {}) {
+  let saveConf = false;
   const configFile = path.resolve(__dirname,CONFIG_FILE);
   if (!config) config = utils.loadConfig(configFile);
   if (config.run) delete(config.run);
@@ -88,6 +99,12 @@ async function getConfig(options = {}) {
   if (!fs.existsSync(buildDir)){
     fs.mkdirSync(buildDir);
   }
+  if (!fs.existsSync(scenesDir)){
+    fs.mkdirSync(scenesDir);
+  }
+  if (!fs.existsSync(notesDir)){
+    fs.mkdirSync(notesDir);
+  }
 
   if (options.externalConfigFile) {
     const externalConfigPath = path.resolve(__dirname, options.externalConfigFile);
@@ -95,7 +112,7 @@ async function getConfig(options = {}) {
       console.log(`Getting External Config file ${options.externalConfigFile}`);
       const externalConfig = utils.loadConfig(externalConfigPath);
       config = _.merge(config, externalConfig);
-      utils.saveJSONFile(config, configFile);
+      saveConf = true;
     }
   }
 
@@ -103,18 +120,18 @@ async function getConfig(options = {}) {
     options.outputDirPath = path.resolve(__dirname,options.outputDirPath);
     if (fs.existsSync(options.outputDirPath)){
       config.outputDirEnv = options.outputDirPath;
-      utils.saveJSONFile(config, configFile);
+      saveConf = true;
     }
   }
 
   // cleanup un-needed config
   if (config.key) {
     delete(config.key);
-    utils.saveJSONFile(config, configFile);
+    saveConf = true;
   }
   if (config.patreon) {
     delete(config.patreon);
-    utils.saveJSONFile(config, configFile);
+    saveConf = true;
   }
 
   if (
@@ -122,7 +139,7 @@ async function getConfig(options = {}) {
     config.generateTokens !== options.generateTokens
   ) {
     config.generateTokens = options.generateTokens;
-    utils.saveJSONFile(config, configFile);
+    saveConf = true;
   }
 
   if (
@@ -130,6 +147,21 @@ async function getConfig(options = {}) {
     config.observeAll !== options.observeAll
   ) {
     config.observeAll = options.observeAll;
+    saveConf = true;
+  }
+
+  if (!config.metaDataVersion) {
+    config.metaDataVersion = "0.0.0";
+    saveConf = true;
+  }
+
+  const currentMetaDataVersion = getMetaData(config)
+  if (currentMetaDataVersion !== config.metaDataVersion) {
+    config.metaDataVersion = currentMetaDataVersion;
+    saveConf = true;
+  }
+
+  if (saveConf) {
     utils.saveJSONFile(config, configFile);
   }
 
@@ -164,6 +196,9 @@ async function getConfig(options = {}) {
   let downloadDir = path.resolve(__dirname, dbsDir);
   let sourceDir = path.resolve(__dirname, path.join(dbsDir, options.bookCode));
   let outputDir = path.resolve(__dirname, path.join(buildDir, options.bookCode));
+  let sceneInfoDir = (process.env.SCENE_DIR) ? process.env.SCENE_DIR : path.resolve(__dirname, path.join(scenesDir, options.bookCode));
+  let noteInfoDir = (process.env.NOTE_DIR) ? process.env.NOTE_DIR : path.resolve(__dirname, notesDir);
+
   config.subDirs = [
     "journal",
     // "compendium",
@@ -191,7 +226,8 @@ async function getConfig(options = {}) {
 
   // generate runtime config
   const key = await ddb.getKey(bookId, config.cobalt);
-  const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint; 
+  const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint;  
+
   config.run = {
     enhancementEndpoint: enhancementEndpoint,
     userData: userData,
@@ -201,6 +237,8 @@ async function getConfig(options = {}) {
     bookCode: options.bookCode,
     outputDir: outputDir,
     sourceDir: sourceDir,
+    sceneInfoDir: sceneInfoDir,
+    noteInfoDir: noteInfoDir,
     outputDirEnv: path.resolve(__dirname, outputDirEnv),
   };
   if (config.debug) {

@@ -14,6 +14,8 @@ if (process.env.CONFIG_DIR) {
   configurator.setConfigDir(path.resolve(__dirname, process.env.CONFIG_DIR));
 }
 
+// For SCENE_DIR and NOTE_DIR set and they are loaded in config.js
+
 async function downloadBooks(config) {
   const bookIds = await ddb.listBooks(config.cobalt);
   // console.log(bookIds)

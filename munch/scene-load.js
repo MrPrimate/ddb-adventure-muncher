@@ -8,16 +8,11 @@ const path = require("path");
 const glob = require("glob");
 const { exit } = require("process");
 
-var sceneDir = path.join("..", "content", "scene_info");
 
-function setSceneDir (dir) {
-  sceneDir = dir;
-}
-
-function getSceneAdjustments(bookCode) {
+function getSceneAdjustments(conf) {
   let scenesData = [];
 
-  const jsonFiles = path.join(sceneDir, bookCode, "*.json");
+  const jsonFiles = path.join(conf.run.sceneInfoDir, conf.run.bookCode, "*.json");
 
   glob.sync(jsonFiles).forEach((sceneDataFile) => {
     console.log(`Loading ${sceneDataFile}`);
@@ -30,15 +25,15 @@ function getSceneAdjustments(bookCode) {
   return scenesData;
 }
 
-function saveIndividualScenes(adjustments, bookCode) {
+function saveIndividualScenes(adjustments, conf) {
   adjustments.forEach((adjustment) => {
     const flags = adjustment.flags.ddb;
     const ddbId = flags.ddbId;
     const cobaltId = flags.cobaltId ? `-${flags.cobaltId}` : "";
     const parentId = flags.parentId ? `-${flags.parentId}` : "";
     const contentChunkId = flags.contentChunkId ? `-${flags.contentChunkId}` : "";
-    const sceneRef = `${bookCode}-${ddbId}${cobaltId}${parentId}${contentChunkId}`;
-    const sceneDataDir = path.join(sceneDir, bookCode);
+    const sceneRef = `${conf.run.bookCode}-${ddbId}${cobaltId}${parentId}${contentChunkId}`;
+    const sceneDataDir = path.join(conf.run.sceneInfoDir, conf.run.bookCode);
     const sceneDataFile = path.join(sceneDataDir, `${sceneRef}-scene.json`);
 
     console.log(`Sceneref: ${sceneRef}`);
@@ -103,7 +98,7 @@ function importScene(conf, sceneFile) {
     console.log(`Please generate the adventure ${bookCode} before attempting scene import.`);
   }
 
-  let scenesData = getSceneAdjustments(bookCode);
+  let scenesData = getSceneAdjustments(conf);
 
   const lookupFilter = (inData.flags.ddb && inData.flags.ddb.contentChunkId) ?
     idTable[bookCode].filter((r) =>
@@ -358,11 +353,10 @@ function importScene(conf, sceneFile) {
     utils.saveJSONFile(inData, configFile);
   }
 
-  saveIndividualScenes([inData], bookCode);
+  saveIndividualScenes([inData], conf);
 
 }
 
 exports.importScene = importScene;
 exports.getSceneAdjustments = getSceneAdjustments;
-exports.setSceneDir = setSceneDir;
 exports.listSceneIds = listSceneIds;

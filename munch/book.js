@@ -1362,8 +1362,8 @@ async function setConfig(conf) {
   replaceLinks = [];
   tempHandouts = {};
   fetchLookups(config);
-  sceneAdjustments = sceneAdjuster.getSceneAdjustments(config.run.bookCode);
-  noteHints = noteHinter.getNoteHints(config.run.bookCode);
+  sceneAdjustments = sceneAdjuster.getSceneAdjustments(config);
+  noteHints = noteHinter.getNoteHints(config);
   enhancedScenes = await enhance.getEnhancedData(config);
   downloadList = [];
 }
