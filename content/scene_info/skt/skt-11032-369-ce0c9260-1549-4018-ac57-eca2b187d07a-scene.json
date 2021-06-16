@@ -1,0 +1,346 @@
+{
+    "backgroundColor": "#333333",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "2VaDnPBwJ4T4TRqa",
+            "author": "3UM1enwvyiMoXqqW",
+            "type": "t",
+            "x": 1269,
+            "y": 959,
+            "width": 149.5,
+            "height": 49.5,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#FFFFFF",
+            "fillAlpha": 0.1,
+            "strokeWidth": 8,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Ruined Cairns",
+            "fontFamily": "Signika",
+            "fontSize": 42,
+            "textColor": "#7a0000",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "g0LLjwGoz8hhthhX",
+            "author": "3UM1enwvyiMoXqqW",
+            "type": "t",
+            "x": 716,
+            "y": 1445,
+            "width": 149.5,
+            "height": 49.5,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#FFFFFF",
+            "fillAlpha": 0.1,
+            "strokeWidth": 8,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Excavations",
+            "fontFamily": "Signika",
+            "fontSize": 42,
+            "textColor": "#7a0000",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "5d3PLIsqraqcAKkm",
+            "author": "3UM1enwvyiMoXqqW",
+            "type": "t",
+            "x": 689,
+            "y": 1850,
+            "width": 149.5,
+            "height": 49.5,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#FFFFFF",
+            "fillAlpha": 0.1,
+            "strokeWidth": 8,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Bones",
+            "fontFamily": "Signika",
+            "fontSize": 42,
+            "textColor": "#7a0000",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "UZG7bmkkpvjwx301",
+            "author": "3UM1enwvyiMoXqqW",
+            "type": "p",
+            "x": 702,
+            "y": 1499,
+            "width": 0,
+            "height": 0,
+            "rotation": 0,
+            "z": 0,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    40
+                ],
+                [
+                    0,
+                    40
+                ]
+            ],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#2843cc",
+            "fillAlpha": 0.5,
+            "strokeWidth": 4,
+            "strokeColor": "#750000",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#FFFFFF",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "7uF7WhuURj7tbIgh",
+            "author": "3UM1enwvyiMoXqqW",
+            "type": "p",
+            "x": 729,
+            "y": 1836,
+            "width": 0,
+            "height": 0,
+            "rotation": 0,
+            "z": 0,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    27,
+                    -94.5
+                ],
+                [
+                    27,
+                    -94.5
+                ]
+            ],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#2843cc",
+            "fillAlpha": 0.5,
+            "strokeWidth": 4,
+            "strokeColor": "#750000",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#FFFFFF",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "H3owj1f8qB6iNJH7",
+            "author": "3UM1enwvyiMoXqqW",
+            "type": "p",
+            "x": 810,
+            "y": 1850,
+            "width": 0,
+            "height": 0,
+            "rotation": 0,
+            "z": 0,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    40.5,
+                    -41
+                ],
+                [
+                    40.5,
+                    -41
+                ]
+            ],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#2843cc",
+            "fillAlpha": 0.5,
+            "strokeWidth": 4,
+            "strokeColor": "#750000",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#FFFFFF",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "oZTiCOOklYitPduS",
+            "author": "3UM1enwvyiMoXqqW",
+            "type": "p",
+            "x": 918,
+            "y": 1471.5,
+            "width": 0,
+            "height": 0,
+            "rotation": 75,
+            "z": 0,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    27,
+                    -94.5
+                ],
+                [
+                    27,
+                    -94.5
+                ]
+            ],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#2843cc",
+            "fillAlpha": 0.5,
+            "strokeWidth": 4,
+            "strokeColor": "#750000",
+            "strokeAlpha": 1,
+            "texture": null,
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#FFFFFF",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "IdeTOmV0sErMxVPK",
+            "author": "3UM1enwvyiMoXqqW",
+            "type": "t",
+            "x": 1064,
+            "y": 2356,
+            "width": 149.5,
+            "height": 49.5,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#FFFFFF",
+            "fillAlpha": 0.1,
+            "strokeWidth": 8,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "Bones",
+            "fontFamily": "Signika",
+            "fontSize": 42,
+            "textColor": "#7a0000",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "skt",
+            "ddbId": 11032,
+            "cobaltId": null,
+            "parentId": 369,
+            "contentChunkId": "ce0c9260-1549-4018-ac57-eca2b187d07a",
+            "notes": [
+                {
+                    "label": "Morgur’s Mound",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2449,
+                            "bookCode": "skt",
+                            "slug": "the-savage-frontier#LocationsoftheNorth",
+                            "contentChunkId": "5b873e53-11a3-4767-b618-0fcab330335a",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 369,
+                            "linkId": "SYf3lmOgAmxKJImx"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1296,
+                            "y": 1404
+                        }
+                    ],
+                    "iconSize": 60,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": true,
+    "globalLightThreshold": null,
+    "grid": 108,
+    "gridDistance": 50,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2200,
+    "initial": {
+        "x": 1374,
+        "y": 1555,
+        "scale": 0.56
+    },
+    "lights": [],
+    "name": "Map 3.7: Mogur’s Mound",
+    "navName": "Mogur’s Mound",
+    "shiftX": -42,
+    "shiftY": -51,
+    "tokenVision": false,
+    "walls": [],
+    "weather": "",
+    "width": 1600
+}

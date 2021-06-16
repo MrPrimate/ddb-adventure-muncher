@@ -1,0 +1,493 @@
+{
+    "backgroundColor": "#333333",
+    "darkness": 0.6,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "cos",
+            "ddbId": 14047,
+            "cobaltId": null,
+            "parentId": 357,
+            "contentChunkId": "faefe19e-4afd-4f53-b69d-aa7093067543",
+            "notes": [
+                {
+                    "label": "S1. Road Junction",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2049,
+                            "bookCode": "cos",
+                            "slug": "the-village-of-krezk#AreasofKrezk",
+                            "contentChunkId": "3382b0e2-af2c-43c8-819a-836ed6abf0c8",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 357,
+                            "linkId": "7s4Vi6z0kTIGwF1O"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1462.5,
+                            "y": 2962.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S2. Gatehouse",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2061,
+                            "bookCode": "cos",
+                            "slug": "the-village-of-krezk#AreasofKrezk",
+                            "contentChunkId": "35f3aa0b-6e9d-45fc-aec0-c7ca5d6a786d",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 357,
+                            "linkId": "gptqQk1ti1SF2nvl"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1762.5,
+                            "y": 2662.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S3. Village of Krezk",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2075,
+                            "bookCode": "cos",
+                            "slug": "the-village-of-krezk#AreasofKrezk",
+                            "contentChunkId": "b431a71e-e448-4530-b2a4-e641f0f0fac1",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 357,
+                            "linkId": "fZ3lmyNGEHx0ybDy"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1687.5,
+                            "y": 2437.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S4. Pool and Shrine",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2081,
+                            "bookCode": "cos",
+                            "slug": "the-village-of-krezk#AreasofKrezk",
+                            "contentChunkId": "7228eed8-a1b5-4df6-81b1-109d26d83822",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 357,
+                            "linkId": "rTVHnFhr5S3bBHNd"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1612.5,
+                            "y": 1687.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S5. Winding Road",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2084,
+                            "bookCode": "cos",
+                            "slug": "the-village-of-krezk#AreasofKrezk",
+                            "contentChunkId": "4cf11cfd-811c-47f1-8194-eff28b83ceaa",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 357,
+                            "linkId": "bF7Dd7FiZ29SjbQT"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1762.5,
+                            "y": 2137.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": true,
+    "globalLightThreshold": null,
+    "grid": 75,
+    "gridDistance": 50,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3034,
+    "initial": {
+        "x": 1848,
+        "y": 2590,
+        "scale": 0.57
+    },
+    "lights": [
+        {
+            "angle": 180,
+            "bright": 20,
+            "darknessThreshold": 0.6,
+            "dim": 40,
+            "rotation": 90,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1745,
+            "y": 2532,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 180,
+            "bright": 20,
+            "darknessThreshold": 0.6,
+            "dim": 40,
+            "rotation": 225,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1419,
+            "y": 2385,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 180,
+            "bright": 20,
+            "darknessThreshold": 0.6,
+            "dim": 40,
+            "rotation": 315,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1343,
+            "y": 2104,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 180,
+            "bright": 20,
+            "darknessThreshold": 0.6,
+            "dim": 40,
+            "rotation": 90,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1472,
+            "y": 1979,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 180,
+            "bright": 20,
+            "darknessThreshold": 0.6,
+            "dim": 40,
+            "rotation": 285,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1429,
+            "y": 1923,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 180,
+            "bright": 25,
+            "darknessThreshold": 0.6,
+            "dim": 50,
+            "rotation": 360,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1842,
+            "y": 2040,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 180,
+            "bright": 25,
+            "darknessThreshold": 0.6,
+            "dim": 50,
+            "rotation": 90,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1944,
+            "y": 2140,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 180,
+            "bright": 20,
+            "darknessThreshold": 0.6,
+            "dim": 40,
+            "rotation": 30,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1705,
+            "y": 2318,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 180,
+            "bright": 20,
+            "darknessThreshold": 0.6,
+            "dim": 40,
+            "rotation": 225,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1545,
+            "y": 2268,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 180,
+            "bright": 20,
+            "darknessThreshold": 0.6,
+            "dim": 40,
+            "rotation": 120,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1773,
+            "y": 2428,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 180,
+            "bright": 20,
+            "darknessThreshold": 0.6,
+            "dim": 40,
+            "rotation": 90,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1376,
+            "y": 2208,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 180,
+            "bright": 25,
+            "darknessThreshold": 0.6,
+            "dim": 50,
+            "rotation": 360,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1719,
+            "y": 2621,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 400,
+            "darknessThreshold": 0,
+            "dim": 400,
+            "rotation": 0,
+            "t": "g",
+            "tintAlpha": 0.49,
+            "x": 1023,
+            "y": 3498,
+            "lightAnimation": {
+                "type": "fog",
+                "speed": 1,
+                "intensity": 3
+            },
+            "hidden": false
+        }
+    ],
+    "name": "The Village of Krezk",
+    "navName": "The Village of Krezk",
+    "shiftX": 26,
+    "shiftY": 51,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                637,
+                3740,
+                637,
+                843
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                637,
+                843,
+                2896,
+                843
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2896,
+                843,
+                2896,
+                3740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2896,
+                3740,
+                637,
+                3740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                637,
+                3150,
+                1200,
+                3150
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1200,
+                3150,
+                1575,
+                3450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1575,
+                3450,
+                1575,
+                3740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 2391
+}

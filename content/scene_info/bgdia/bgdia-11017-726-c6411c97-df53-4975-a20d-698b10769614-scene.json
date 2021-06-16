@@ -1,0 +1,682 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "PtdN3F7r63hqiqVo",
+            "author": "tnUNKheFpmN8I2u4",
+            "type": "t",
+            "x": 1955,
+            "y": 2846,
+            "width": 296.75,
+            "height": 98.625,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#FFFFFF",
+            "fillAlpha": 0.1,
+            "strokeWidth": 8,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Down to V27",
+            "fontFamily": "Signika",
+            "fontSize": 50,
+            "textColor": "#f50a0a",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "X4GpgMekk6qRg9Ml",
+            "author": "tnUNKheFpmN8I2u4",
+            "type": "t",
+            "x": 4356,
+            "y": 3564,
+            "width": 296.75,
+            "height": 98.625,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#FFFFFF",
+            "fillAlpha": 0.1,
+            "strokeWidth": 8,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Down to V20",
+            "fontFamily": "Signika",
+            "fontSize": 50,
+            "textColor": "#f50a0a",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "ZXtTJ3xBU1iCg5ll",
+            "author": "tnUNKheFpmN8I2u4",
+            "type": "t",
+            "x": 6559,
+            "y": 2537,
+            "width": 296.75,
+            "height": 98.625,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#FFFFFF",
+            "fillAlpha": 0.1,
+            "strokeWidth": 8,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Down to V18",
+            "fontFamily": "Signika",
+            "fontSize": 50,
+            "textColor": "#f50a0a",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "bgdia",
+            "ddbId": 11017,
+            "cobaltId": null,
+            "parentId": 726,
+            "contentChunkId": "c6411c97-df53-4975-a20d-698b10769614",
+            "notes": [
+                {
+                    "label": "V01. Yard",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2019,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "0281d618-d2f9-4c30-9363-7d203eb2def8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "8nwcpD50NFnq2PJZ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2326.5,
+                            "y": 4504.5
+                        },
+                        {
+                            "x": 3118.5,
+                            "y": 3019.5
+                        },
+                        {
+                            "x": 4108.5,
+                            "y": 4702.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V02. Stable House",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2023,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "b94ad106-0f0f-4b97-9917-a80e9f737f9f",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "AyznxhN9kpmFHGaT"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2326.5,
+                            "y": 2722.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V03. Foyer",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2029,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "25400bd8-35b9-47d4-8df8-f9ec69bdf382",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "VkloU1FBQ69aB7eN"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3712.5,
+                            "y": 4207.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V04. Servants’ Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2031,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "e1bb818a-82a5-48d3-8024-7b9dc97d4ae2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "ihIfLbHXGL3cUXhr"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4207.5,
+                            "y": 4306.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V05. Kitchen",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2035,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "961f6ff3-e83e-4d94-a223-9dd85ab3aa34",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "WFqwjNsVCVyt2oZN"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3811.5,
+                            "y": 3712.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V06. Pantry",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2037,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "3edfa1e8-effc-4ce7-8da9-3e9a3a06f37c",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "wOiR0XMTWV996T5Q"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4306.5,
+                            "y": 3811.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V07. Stairs Down",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2039,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "cce6e9db-e32a-4304-8277-bc31c108cd07",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "X1C8iC1xaySsbLRi"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4207.5,
+                            "y": 3514.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V08. Parlor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2043,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "241cbf3a-ea1d-4ca1-897b-dc7bf3365834",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "Mi3kJfhnWbn272Gt"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3019.5,
+                            "y": 4306.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V09. Dining Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2048,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "04af220d-5fe2-491e-b5e2-9361b3d45768",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "eLp2AYvPr97DQl4u"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3019.5,
+                            "y": 3712.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V10. Gallery",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2052,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "ebee390d-f407-49c8-ae53-2fde6c570475",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "4TN0EYva38WZN8dI"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3415.5,
+                            "y": 3910.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V11. Upstairs Hall",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2055,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "d5e08458-1a99-4dc1-a683-41fd4623e85b",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "cfQ8JQ6RJv9KWEen"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 6088.5,
+                            "y": 4009.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V12. Balcony",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2057,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "fbf18d3a-be50-446b-8d93-5e4cf302cc13",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "fdf5ugxjBDn5rNj5"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 6088.5,
+                            "y": 4306.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V13. Thurstwell’s Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2064,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "fe087e45-87bd-4593-a7fd-53c7e9eaabd9",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "zB8vDzRpftX1voI8"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 5494.5,
+                            "y": 4207.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V14. Mortlock’s Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2066,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "9c2c34c2-78d8-4303-9142-053ae3aa55dc",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "kK7jlckWxwc8Fl6p"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 5791.5,
+                            "y": 3811.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V15. Amrik’s Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2069,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "9414c96e-a71d-4fdb-b20b-751d48cfad5b",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "CoFIz5HwZooipFvo"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 5494.5,
+                            "y": 3811.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V16. Duke’s Powder Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2072,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "58bb9f71-a9ac-4144-a559-df2708558040",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "ZtHFFR2jyd5vjYwC"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 6385.5,
+                            "y": 4009.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V17. Master Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2076,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "b4b15f37-c229-4c99-ad9b-8908dee989dc",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "S3bPRiGUsJwwhaRh"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 6385.5,
+                            "y": 3613.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V18. Duke’s Study",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2080,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "72154114-ac9b-4b1f-aa6e-049c4260a6a7",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "Ogo1q4K2oMphslal"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 6286.5,
+                            "y": 4306.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V19. Tower Peak",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2087,
+                            "bookCode": "bgdia",
+                            "slug": "a-tale-of-two-cities#VanthampurVilla",
+                            "contentChunkId": "f9b8c16b-d942-47fa-958b-3f4242b6ebe1",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 726,
+                            "linkId": "9Q0qhckEBoRaiGgM"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 6286.5,
+                            "y": 2524.5
+                        }
+                    ],
+                    "iconSize": 74,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 99,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 4000,
+    "initial": null,
+    "lights": [],
+    "name": "Map 1.5: Vanthampur Villa",
+    "navName": "Vanthampur Villa",
+    "padding": 0.25,
+    "shiftX": 13,
+    "shiftY": 53,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 6106
+}

@@ -1,0 +1,4438 @@
+{
+    "backgroundColor": "#62717f",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "MaHV26aswDqZ2B2Q",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1624,
+            "y": 2043,
+            "width": 110,
+            "height": 75,
+            "rotation": 0,
+            "z": 0,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    22.8807559379552,
+                    17.49929300784288
+                ],
+                [
+                    28.8807559379552,
+                    20.49929300784288
+                ],
+                [
+                    33.8807559379552,
+                    28.49929300784288
+                ],
+                [
+                    38.8807559379552,
+                    31.49929300784288
+                ],
+                [
+                    51.8807559379552,
+                    41.49929300784288
+                ],
+                [
+                    59.8807559379552,
+                    46.49929300784288
+                ],
+                [
+                    67.8807559379552,
+                    52.49929300784288
+                ],
+                [
+                    72.8807559379552,
+                    57.49929300784288
+                ],
+                [
+                    78.8807559379552,
+                    62.49929300784288
+                ],
+                [
+                    80.8807559379552,
+                    62.49929300784288
+                ],
+                [
+                    85.8807559379552,
+                    65.49929300784288
+                ],
+                [
+                    91.8807559379552,
+                    70.49929300784288
+                ],
+                [
+                    93.8807559379552,
+                    70.49929300784288
+                ],
+                [
+                    101.8807559379552,
+                    73.49929300784288
+                ],
+                [
+                    104.8807559379552,
+                    73.49929300784288
+                ],
+                [
+                    107.8807559379552,
+                    75.49929300784288
+                ],
+                [
+                    109.8807559379552,
+                    75.49929300784288
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 1,
+            "fillColor": "#050505",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#0f0f0f",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "TsSXfpuQ3s80fe86",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1700,
+            "y": 2084,
+            "width": 37,
+            "height": 43,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    42.71123330794626
+                ],
+                [
+                    28.564966464271038,
+                    42
+                ],
+                [
+                    31.564966464271038,
+                    40
+                ],
+                [
+                    33.56496646427104,
+                    40
+                ],
+                [
+                    36.56496646427104,
+                    37
+                ],
+                [
+                    36.56496646427104,
+                    26
+                ],
+                [
+                    36.56496646427104,
+                    19
+                ],
+                [
+                    36.56496646427104,
+                    13
+                ],
+                [
+                    36.56496646427104,
+                    11
+                ],
+                [
+                    33.56496646427104,
+                    3
+                ],
+                [
+                    28.564966464271038,
+                    0
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 1,
+            "fillColor": "#050505",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#0f0f0f",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "hKGoGZdcFDviREns",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 2200,
+            "y": 2729,
+            "width": 60,
+            "height": 116,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    116.13228593952499
+                ],
+                [
+                    7.564966464271038,
+                    87
+                ],
+                [
+                    12.564966464271038,
+                    79
+                ],
+                [
+                    15.564966464271038,
+                    66
+                ],
+                [
+                    25.564966464271038,
+                    55
+                ],
+                [
+                    28.564966464271038,
+                    45
+                ],
+                [
+                    36.56496646427104,
+                    34
+                ],
+                [
+                    41.56496646427104,
+                    26
+                ],
+                [
+                    46.56496646427104,
+                    18
+                ],
+                [
+                    52.56496646427104,
+                    10
+                ],
+                [
+                    57.56496646427104,
+                    2
+                ],
+                [
+                    59.56496646427104,
+                    0
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 1,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#0f0f0f",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "jtxjhX9k0yFhAdub",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 2219,
+            "y": 2724,
+            "width": 41,
+            "height": 55,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    13.237549097420015
+                ],
+                [
+                    28.143913832692306,
+                    2
+                ],
+                [
+                    31.143913832692306,
+                    0
+                ],
+                [
+                    34.143913832692306,
+                    0
+                ],
+                [
+                    39.143913832692306,
+                    0
+                ],
+                [
+                    41.143913832692306,
+                    2
+                ],
+                [
+                    41.143913832692306,
+                    5
+                ],
+                [
+                    41.143913832692306,
+                    21
+                ],
+                [
+                    41.143913832692306,
+                    34
+                ],
+                [
+                    41.143913832692306,
+                    47
+                ],
+                [
+                    41.143913832692306,
+                    55
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#0f0f0f",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "VwQk60825L7tvd6W",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 2900,
+            "y": 2866,
+            "width": 121,
+            "height": 8,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    33.56496646427149,
+                    4.815082481527497
+                ],
+                [
+                    44.56496646427149,
+                    7.815082481527497
+                ],
+                [
+                    54.56496646427149,
+                    7.815082481527497
+                ],
+                [
+                    65.56496646427149,
+                    7.815082481527497
+                ],
+                [
+                    70.56496646427149,
+                    7.815082481527497
+                ],
+                [
+                    75.56496646427149,
+                    7.815082481527497
+                ],
+                [
+                    83.56496646427149,
+                    7.815082481527497
+                ],
+                [
+                    88.56496646427149,
+                    7.815082481527497
+                ],
+                [
+                    91.56496646427149,
+                    7.815082481527497
+                ],
+                [
+                    96.56496646427149,
+                    7.815082481527497
+                ],
+                [
+                    102.56496646427149,
+                    7.815082481527497
+                ],
+                [
+                    112.56496646427149,
+                    7.815082481527497
+                ],
+                [
+                    115.56496646427149,
+                    7.815082481527497
+                ],
+                [
+                    120.56496646427149,
+                    7.815082481527497
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#0f0f0f",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "pQTN2AwP4Du80Ieb",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 2979,
+            "y": 2858,
+            "width": 42,
+            "height": 39,
+            "rotation": 0,
+            "z": 5,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    30.61759804321855,
+                    4.709819323632473
+                ],
+                [
+                    36.61759804321855,
+                    9.709819323632473
+                ],
+                [
+                    38.61759804321855,
+                    12.709819323632473
+                ],
+                [
+                    41.61759804321855,
+                    12.709819323632473
+                ],
+                [
+                    41.61759804321855,
+                    15.709819323632473
+                ],
+                [
+                    41.61759804321855,
+                    20.709819323632473
+                ],
+                [
+                    33.61759804321855,
+                    28.709819323632473
+                ],
+                [
+                    23.61759804321855,
+                    30.709819323632473
+                ],
+                [
+                    15.61759804321855,
+                    36.70981932363247
+                ],
+                [
+                    9.61759804321855,
+                    38.70981932363247
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#0f0f0f",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "3AXIfqZ9ToQPRiFq",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 2288,
+            "y": 2028,
+            "width": 65,
+            "height": 66,
+            "rotation": 0,
+            "z": 6,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "-10\nfeet",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 30,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1,
+            "id": "3AXIfqZ9ToQPRiFq"
+        },
+        {
+            "_id": "qqmakpCJZTTBRiiU",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 4212,
+            "y": 2028,
+            "width": 65,
+            "height": 66,
+            "rotation": 0,
+            "z": 7,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "+10\nfeet",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 30,
+            "textColor": "#1a1919",
+            "textAlpha": 1
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "idrotf",
+            "ddbId": 10055,
+            "cobaltId": null,
+            "parentId": 1082,
+            "contentChunkId": "MapMap115elventomb-player",
+            "notes": [
+                {
+                    "label": "E01. Elf Statues",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2058,
+                            "bookCode": "idrotf",
+                            "slug": "lonelywood#TheWhiteMoose",
+                            "contentChunkId": "79aa7dd9-73a1-477c-85bf-57c4d988e79c",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1082,
+                            "linkId": "Lj0j5pK8QDS472N1"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3796,
+                            "y": 2860
+                        }
+                    ],
+                    "iconSize": 78,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "E02. Barrow Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2061,
+                            "bookCode": "idrotf",
+                            "slug": "lonelywood#TheWhiteMoose",
+                            "contentChunkId": "e1cf9c04-154a-4fcc-9b70-bb0b4b269953",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1082,
+                            "linkId": "3bylT4yGEuPt9X5L"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3172,
+                            "y": 2964
+                        }
+                    ],
+                    "iconSize": 78,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "E03. Marble Gazebo",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2065,
+                            "bookCode": "idrotf",
+                            "slug": "lonelywood#TheWhiteMoose",
+                            "contentChunkId": "d6e17dea-c74d-41bd-96a9-97c0ef25f8cd",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1082,
+                            "linkId": "q7zsJdZbB6KbKqyI"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4108,
+                            "y": 1508
+                        }
+                    ],
+                    "iconSize": 78,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "E04. Sarcophagus and Crystal Pillars",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2072,
+                            "bookCode": "idrotf",
+                            "slug": "lonelywood#TheWhiteMoose",
+                            "contentChunkId": "736bdab2-a2ba-437d-a205-daca024f87e9",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1082,
+                            "linkId": "aw6WdNzDl1JXwPU8"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4004,
+                            "y": 2028
+                        }
+                    ],
+                    "iconSize": 78,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "E05. Moon Dial",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2080,
+                            "bookCode": "idrotf",
+                            "slug": "lonelywood#TheWhiteMoose",
+                            "contentChunkId": "f1981c66-65fc-4059-a6bf-a7c5aeb51bb3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1082,
+                            "linkId": "QfCHEPMARGogsoBw"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2964,
+                            "y": 2132
+                        }
+                    ],
+                    "iconSize": 78,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "E06. Barrow",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2083,
+                            "bookCode": "idrotf",
+                            "slug": "lonelywood#TheWhiteMoose",
+                            "contentChunkId": "3f551c87-2914-466f-ac62-cd87a0da2c1c",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1082,
+                            "linkId": "J37uVH1lNV8fGQz4"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2236,
+                            "y": 2340
+                        }
+                    ],
+                    "iconSize": 78,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "E07. Mirror of the Full Moon",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2087,
+                            "bookCode": "idrotf",
+                            "slug": "lonelywood#TheWhiteMoose",
+                            "contentChunkId": "c0f7b49e-5f3c-4365-bdf0-88be623f7018",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1082,
+                            "linkId": "3gg8MY8nQ7HpBRQ2"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1508,
+                            "y": 2548
+                        }
+                    ],
+                    "iconSize": 78,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "E08. First Tomb of the Half-Moon",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2094,
+                            "bookCode": "idrotf",
+                            "slug": "lonelywood#TheWhiteMoose",
+                            "contentChunkId": "7c9e6fe8-8282-4320-b690-c14cf64aba43",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1082,
+                            "linkId": "B5SGSV1JrE1QfKur"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2028,
+                            "y": 2964
+                        }
+                    ],
+                    "iconSize": 78,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "E09. Second Tomb of the Half-Moon",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2108,
+                            "bookCode": "idrotf",
+                            "slug": "lonelywood#TheWhiteMoose",
+                            "contentChunkId": "cae0d3c7-5253-4295-aed7-088ea546e09d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1082,
+                            "linkId": "PvXkpyMoRMgreRMs"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1508,
+                            "y": 1508
+                        }
+                    ],
+                    "iconSize": 78,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 104,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2765,
+    "initial": null,
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 16.92,
+            "darknessThreshold": 0,
+            "dim": 33.85,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.5,
+            "x": 3900,
+            "y": 1508,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        }
+    ],
+    "name": "Map 1.15: Elven Tomb",
+    "navName": "Elven Tomb",
+    "shiftX": 113,
+    "shiftY": -75,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                4888,
+                3536,
+                936,
+                3536
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                936,
+                3536,
+                936,
+                832
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                936,
+                832,
+                4888,
+                832
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4888,
+                832,
+                4888,
+                3536
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                793,
+                2067,
+                949
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2067,
+                949,
+                2015,
+                1053
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2015,
+                1053,
+                2106,
+                1183
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2106,
+                1183,
+                2158,
+                1222
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2158,
+                1222,
+                2171,
+                1209
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2171,
+                1209,
+                2249,
+                1235
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2249,
+                1235,
+                2275,
+                1274
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2275,
+                1274,
+                2301,
+                1274
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2301,
+                1274,
+                2327,
+                1404
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2327,
+                1404,
+                2366,
+                1443
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2366,
+                1443,
+                2431,
+                1456
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2431,
+                1456,
+                2535,
+                1456
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2535,
+                1456,
+                2587,
+                1469
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2587,
+                1469,
+                2652,
+                1482
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2652,
+                1482,
+                2665,
+                1456
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2665,
+                1456,
+                2782,
+                1469
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2782,
+                1469,
+                2808,
+                1495
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2808,
+                1495,
+                2782,
+                1547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2782,
+                1547,
+                2873,
+                1677
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2873,
+                1677,
+                2834,
+                1690
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2834,
+                1690,
+                2743,
+                1742
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2743,
+                1742,
+                2652,
+                1807
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2652,
+                1807,
+                2574,
+                1898
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2574,
+                1898,
+                2522,
+                1963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2522,
+                1963,
+                2496,
+                2041
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2470,
+                2197,
+                2470,
+                2275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2470,
+                2275,
+                2483,
+                2379
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2483,
+                2379,
+                2522,
+                2470
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2522,
+                2470,
+                2600,
+                2574
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2600,
+                2574,
+                2652,
+                2652
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2652,
+                2652,
+                2730,
+                2704
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2730,
+                2704,
+                2795,
+                2743
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2795,
+                2743,
+                2899,
+                2769
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2899,
+                2769,
+                2977,
+                2782
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2977,
+                2782,
+                3068,
+                2782
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3068,
+                2782,
+                3094,
+                2795
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3094,
+                2795,
+                3094,
+                2808
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3094,
+                2808,
+                3081,
+                2834
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3081,
+                2834,
+                3042,
+                2821
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3042,
+                2821,
+                3029,
+                2782
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3055,
+                2925,
+                3068,
+                2977
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3068,
+                2977,
+                3016,
+                3029
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3016,
+                3029,
+                3003,
+                3107
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3003,
+                3107,
+                2964,
+                3172
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2964,
+                3172,
+                2925,
+                3211
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2925,
+                3211,
+                2717,
+                3185
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2717,
+                3185,
+                2639,
+                3211
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2639,
+                3211,
+                2626,
+                3263
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2626,
+                3263,
+                2639,
+                3341
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2639,
+                3341,
+                2626,
+                3536
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2626,
+                3536,
+                2626,
+                3575
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2366,
+                2730,
+                2899,
+                2964
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2899,
+                2964,
+                2964,
+                2964
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2964,
+                2964,
+                3003,
+                2951
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3003,
+                2951,
+                3016,
+                2925
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3016,
+                2925,
+                3055,
+                2925
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2249,
+                2912,
+                2262,
+                2847
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2262,
+                2847,
+                2288,
+                2795
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2288,
+                2795,
+                2327,
+                2769
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2327,
+                2769,
+                2366,
+                2730
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2249,
+                2912,
+                2301,
+                2951
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2301,
+                2951,
+                2340,
+                3003
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2340,
+                3003,
+                2366,
+                3042
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2366,
+                3042,
+                2366,
+                3107
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2366,
+                3107,
+                2366,
+                3172
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2366,
+                3172,
+                2340,
+                3237
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2340,
+                3237,
+                2288,
+                3315
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2288,
+                3315,
+                2210,
+                3354
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2210,
+                3354,
+                2119,
+                3354
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2119,
+                3354,
+                2054,
+                3341
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                3341,
+                2002,
+                3315
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2002,
+                3315,
+                1950,
+                3276
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1950,
+                3276,
+                1924,
+                3211
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1924,
+                3211,
+                1898,
+                3146
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1898,
+                3146,
+                1898,
+                3081
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1898,
+                3081,
+                1924,
+                3016
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1924,
+                3016,
+                1963,
+                2951
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1963,
+                2951,
+                2002,
+                2912
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2002,
+                2912,
+                2054,
+                2899
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                2899,
+                2119,
+                2886
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2119,
+                2886,
+                2132,
+                2808
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2132,
+                2808,
+                2158,
+                2756
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2158,
+                2756,
+                2197,
+                2717
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2197,
+                2717,
+                2236,
+                2678
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2236,
+                2678,
+                1963,
+                2561
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1963,
+                2561,
+                1846,
+                2522
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1846,
+                2522,
+                1781,
+                2522
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1781,
+                2522,
+                1716,
+                2548
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1716,
+                2548,
+                1664,
+                2574
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1664,
+                2574,
+                1625,
+                2626
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1625,
+                2626,
+                1599,
+                2678
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1599,
+                2678,
+                1586,
+                2717
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1586,
+                2717,
+                1443,
+                2717
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1443,
+                2717,
+                1456,
+                2626
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1456,
+                2626,
+                1482,
+                2561
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1482,
+                2561,
+                1534,
+                2483
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1534,
+                2483,
+                1625,
+                2405
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1625,
+                2405,
+                1729,
+                2327
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1729,
+                2327,
+                1859,
+                2210
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1859,
+                2210,
+                1794,
+                2210
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1794,
+                2210,
+                1729,
+                2184
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1729,
+                2184,
+                1677,
+                2171
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1677,
+                2171,
+                1625,
+                2145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1625,
+                2145,
+                1573,
+                2093
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1573,
+                2093,
+                1469,
+                1976
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1469,
+                1976,
+                1417,
+                1872
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1417,
+                1872,
+                1352,
+                1690
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1352,
+                1690,
+                1274,
+                1664
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1274,
+                1664,
+                1209,
+                1625
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1209,
+                1625,
+                1157,
+                1573
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1157,
+                1573,
+                1118,
+                1521
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1118,
+                1521,
+                1092,
+                1456
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1092,
+                1456,
+                1079,
+                1378
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1079,
+                1378,
+                1079,
+                1287
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1079,
+                1287,
+                1105,
+                1235
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1105,
+                1235,
+                1131,
+                1170
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1131,
+                1170,
+                1170,
+                1118
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1170,
+                1118,
+                1235,
+                1079
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1235,
+                1079,
+                1300,
+                1053
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1300,
+                1053,
+                1378,
+                1027
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1378,
+                1027,
+                1443,
+                1027
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1443,
+                1027,
+                1521,
+                1053
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1521,
+                1053,
+                1586,
+                1079
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1586,
+                1079,
+                1638,
+                1131
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1638,
+                1131,
+                1690,
+                1196
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1690,
+                1196,
+                1716,
+                1248
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1716,
+                1248,
+                1729,
+                1326
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1729,
+                1326,
+                1729,
+                1404
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1729,
+                1404,
+                1703,
+                1482
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1703,
+                1482,
+                1664,
+                1547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1664,
+                1547,
+                1625,
+                1599
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1625,
+                1599,
+                1599,
+                1612
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1599,
+                1612,
+                1521,
+                1664
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1521,
+                1664,
+                1482,
+                1677
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1482,
+                1677,
+                1495,
+                1729
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1495,
+                1729,
+                1521,
+                1807
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1521,
+                1807,
+                1547,
+                1859
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1547,
+                1859,
+                1586,
+                1924
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1586,
+                1924,
+                1625,
+                1976
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1625,
+                1976,
+                1690,
+                2028
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1690,
+                2028,
+                1768,
+                2067
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1768,
+                2067,
+                1872,
+                2080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1872,
+                2080,
+                1963,
+                2080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1963,
+                2080,
+                2015,
+                2080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2015,
+                2080,
+                2054,
+                2015
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                2015,
+                2145,
+                1950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2145,
+                1950,
+                2210,
+                1898
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2210,
+                1898,
+                2288,
+                1846
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2288,
+                1846,
+                2405,
+                1781
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2405,
+                1781,
+                2509,
+                1742
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2509,
+                1742,
+                2665,
+                1690
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2665,
+                1690,
+                2795,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2795,
+                1651,
+                2821,
+                1703
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2821,
+                1703,
+                2834,
+                1677
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3055,
+                2808,
+                3055,
+                2925
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2119,
+                2886,
+                2249,
+                2912
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1352,
+                1690,
+                1482,
+                1677
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3640,
+                1846,
+                3731,
+                1846
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3731,
+                1846,
+                3770,
+                1911
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3770,
+                1911,
+                3744,
+                2002
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3744,
+                2002,
+                3679,
+                2015
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3679,
+                2015,
+                3627,
+                1950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3627,
+                1950,
+                3614,
+                1898
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3614,
+                1898,
+                3640,
+                1846
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3848,
+                2379,
+                3887,
+                2444
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3887,
+                2444,
+                3861,
+                2535
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3796,
+                2548,
+                3744,
+                2483
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3744,
+                2483,
+                3731,
+                2431
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3861,
+                2535,
+                3796,
+                2548
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3757,
+                2379,
+                3848,
+                2379
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3731,
+                2431,
+                3757,
+                2379
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4667,
+                2418,
+                4706,
+                2483
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4706,
+                2483,
+                4680,
+                2574
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4615,
+                2587,
+                4563,
+                2522
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4563,
+                2522,
+                4550,
+                2470
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4680,
+                2574,
+                4615,
+                2587
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4576,
+                2418,
+                4667,
+                2418
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4550,
+                2470,
+                4576,
+                2418
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4439,
+                2842,
+                4478,
+                2907
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4478,
+                2907,
+                4452,
+                2998
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4387,
+                3011,
+                4335,
+                2946
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4335,
+                2946,
+                4322,
+                2894
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4452,
+                2998,
+                4387,
+                3011
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4348,
+                2842,
+                4439,
+                2842
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4322,
+                2894,
+                4348,
+                2842
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4069,
+                3146,
+                4108,
+                3211
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4108,
+                3211,
+                4082,
+                3302
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4017,
+                3315,
+                3965,
+                3250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3965,
+                3250,
+                3952,
+                3198
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4082,
+                3302,
+                4017,
+                3315
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3978,
+                3146,
+                4069,
+                3146
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3952,
+                3198,
+                3978,
+                3146
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3588,
+                3042,
+                3627,
+                3107
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3627,
+                3107,
+                3601,
+                3198
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3536,
+                3211,
+                3484,
+                3146
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3484,
+                3146,
+                3471,
+                3094
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3601,
+                3198,
+                3536,
+                3211
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3497,
+                3042,
+                3588,
+                3042
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3471,
+                3094,
+                3497,
+                3042
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4719,
+                3211,
+                4758,
+                3276
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4758,
+                3276,
+                4732,
+                3367
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4667,
+                3380,
+                4615,
+                3315
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4615,
+                3315,
+                4602,
+                3263
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4732,
+                3367,
+                4667,
+                3380
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4628,
+                3211,
+                4719,
+                3211
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4602,
+                3263,
+                4628,
+                3211
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3458,
+                1235,
+                3497,
+                1300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3497,
+                1300,
+                3471,
+                1391
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3406,
+                1404,
+                3354,
+                1339
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3354,
+                1339,
+                3341,
+                1287
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3471,
+                1391,
+                3406,
+                1404
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3367,
+                1235,
+                3458,
+                1235
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3341,
+                1287,
+                3367,
+                1235
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4199,
+                1131,
+                4238,
+                1196
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4238,
+                1196,
+                4212,
+                1287
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4147,
+                1300,
+                4095,
+                1235
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4095,
+                1235,
+                4082,
+                1183
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4212,
+                1287,
+                4147,
+                1300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4108,
+                1131,
+                4199,
+                1131
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4082,
+                1183,
+                4108,
+                1131
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3198,
+                3263,
+                3263,
+                3393
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3159,
+                3367,
+                3289,
+                3289
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3250,
+                2938,
+                3302,
+                3003
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3250,
+                2990,
+                3315,
+                2951
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3627,
+                2873,
+                3666,
+                2938
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3614,
+                2925,
+                3666,
+                2899
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3887,
+                2717,
+                3939,
+                2795
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3874,
+                2782,
+                3926,
+                2730
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4095,
+                2509,
+                4121,
+                2587
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4069,
+                2561,
+                4147,
+                2535
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4316,
+                2301,
+                4342,
+                2379
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4290,
+                2366,
+                4355,
+                2327
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4511,
+                2093,
+                4537,
+                2158
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4485,
+                2145,
+                4550,
+                2106
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2327,
+                2197,
+                2353,
+                2262
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2314,
+                2249,
+                2366,
+                2223
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2431,
+                1885,
+                2483,
+                1950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2418,
+                1950,
+                2470,
+                1898
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2431,
+                2509,
+                2470,
+                2587
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2418,
+                2561,
+                2470,
+                2535
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2951,
+                2340,
+                3133,
+                2041
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3094,
+                1560,
+                3133,
+                1625
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3068,
+                1599,
+                3133,
+                1586
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3016,
+                1651,
+                3120,
+                1664
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3120,
+                1664,
+                3224,
+                1690
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3224,
+                1690,
+                3328,
+                1742
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3328,
+                1742,
+                3406,
+                1807
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3406,
+                1807,
+                3458,
+                1859
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3458,
+                1859,
+                3523,
+                1950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3523,
+                1950,
+                3562,
+                2041
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3562,
+                2041,
+                3588,
+                2145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3588,
+                2145,
+                3601,
+                2249
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3601,
+                2249,
+                3588,
+                2353
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3588,
+                2353,
+                3562,
+                2431
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3562,
+                2431,
+                3510,
+                2535
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3510,
+                2535,
+                3458,
+                2600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3458,
+                2600,
+                3393,
+                2665
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3393,
+                2665,
+                3315,
+                2730
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3315,
+                2730,
+                3224,
+                2769
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3224,
+                2769,
+                3237,
+                2795
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3237,
+                2795,
+                3354,
+                2769
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3354,
+                2769,
+                3510,
+                2730
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3510,
+                2730,
+                3640,
+                2665
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3640,
+                2665,
+                3757,
+                2600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3757,
+                2600,
+                3835,
+                2561
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3835,
+                2561,
+                3913,
+                2496
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3913,
+                2496,
+                3991,
+                2418
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3991,
+                2418,
+                4069,
+                2340
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4069,
+                2340,
+                4147,
+                2262
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4147,
+                2262,
+                4212,
+                2197
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4212,
+                2197,
+                4316,
+                2119
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4316,
+                2119,
+                4407,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4407,
+                2054,
+                4485,
+                1976
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4485,
+                1976,
+                4537,
+                1898
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4537,
+                1898,
+                4563,
+                1807
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4563,
+                1807,
+                4576,
+                1742
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4576,
+                1742,
+                4576,
+                1677
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4576,
+                1677,
+                4602,
+                1677
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3016,
+                1651,
+                3016,
+                1599
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3016,
+                1599,
+                3042,
+                1547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3042,
+                1547,
+                3081,
+                1521
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3081,
+                1521,
+                3146,
+                1534
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3146,
+                1534,
+                3549,
+                1703
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3549,
+                1703,
+                4056,
+                1911
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4056,
+                1911,
+                4160,
+                1950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4160,
+                1950,
+                4238,
+                1963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4238,
+                1963,
+                4316,
+                1937
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4316,
+                1937,
+                4381,
+                1898
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4381,
+                1898,
+                4433,
+                1846
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4433,
+                1846,
+                4459,
+                1781
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4459,
+                1781,
+                4472,
+                1742
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4472,
+                1742,
+                4472,
+                1677
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4472,
+                1677,
+                4446,
+                1677
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        }
+    ],
+    "weather": "",
+    "width": 4000
+}

@@ -1,0 +1,1310 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 1,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "ai",
+            "ddbId": 103059,
+            "cobaltId": null,
+            "parentId": 711,
+            "contentChunkId": "ddb-missing-ai-103059",
+            "notes": [
+                {
+                    "label": "Ground Floor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2055,
+                            "bookCode": "ai",
+                            "slug": "darkness-at-the-lighthouse#SilentSoundLighthouse",
+                            "contentChunkId": "4e4e9903-7103-4223-9f2c-a5a7aa3812e0",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 711,
+                            "linkId": "oqPldE4LNeNOtDr9"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2947.6153004227053,
+                            "y": 2205.963730374396
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "Second Floor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2059,
+                            "bookCode": "ai",
+                            "slug": "darkness-at-the-lighthouse#SilentSoundLighthouse",
+                            "contentChunkId": "1a6c5f96-bda5-4c64-9676-67200f78d454",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 711,
+                            "linkId": "kGjqXC08UbMpEDav"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2706,
+                            "y": 3690
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "b3LxuJ7UKdyDE3wR",
+                    "name": "Patsy McRoyne",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2952,
+                    "y": 2214,
+                    "disposition": -1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 16871,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Patsy McRoyne"
+                    }
+                },
+                {
+                    "_id": "lZ2jezPswTBqo5hn",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2091,
+                    "y": 3567,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "rvWR6mnvSlAgkljt",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2706,
+                    "y": 3198,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "6k50WFZ6nOhG6tnN",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2214,
+                    "y": 3075,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "T9FJTyTBcXqZD1Ee",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2583,
+                    "y": 3690,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                }
+            ]
+        },
+        "stairways": [],
+        "perfect-vision": {
+            "sightLimit": null,
+            "daylightColor": "",
+            "darknessColor": "",
+            "forceSaturation": false,
+            "saturation": 0
+        },
+        "dynamic-illumination": {
+            "_animating": false,
+            "darknessColor": "#110033"
+        }
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 123,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3600,
+    "initial": {
+        "x": 2604,
+        "y": 3467,
+        "scale": 0.67
+    },
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 30,
+            "darknessThreshold": 0,
+            "dim": 60,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2091,
+            "y": 1968,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": true
+        },
+        {
+            "angle": 360,
+            "bright": 30,
+            "darknessThreshold": 0,
+            "dim": 60,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3075,
+            "y": 1968,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": true
+        },
+        {
+            "angle": 360,
+            "bright": 50,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "g",
+            "tintAlpha": 0.25,
+            "x": 2583,
+            "y": 1415,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 50,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "g",
+            "tintAlpha": 0.25,
+            "x": 2460,
+            "y": 2768,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 1.61,
+            "darknessThreshold": 0,
+            "dim": 3.21,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2522,
+            "y": 1353,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 50,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "g",
+            "tintAlpha": 0.25,
+            "x": 2460,
+            "y": 4121,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 0,
+            "darknessThreshold": 0,
+            "dim": 0,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 0,
+            "y": 0,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 0,
+            "darknessThreshold": 0,
+            "dim": 0,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 0,
+            "y": 0,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 0,
+            "darknessThreshold": 0,
+            "dim": 0,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 0,
+            "y": 0,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 0,
+            "darknessThreshold": 0,
+            "dim": 0,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 0,
+            "y": 0,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 0,
+            "darknessThreshold": 0,
+            "dim": 0,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 0,
+            "y": 0,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 0,
+            "darknessThreshold": 0,
+            "dim": 0,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 0,
+            "y": 0,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 0,
+            "darknessThreshold": 0,
+            "dim": 0,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 0,
+            "y": 0,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 30,
+            "darknessThreshold": 0,
+            "dim": 60,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1968,
+            "y": 3444,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": true
+        },
+        {
+            "angle": 360,
+            "bright": 30,
+            "darknessThreshold": 0,
+            "dim": 60,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2952,
+            "y": 3444,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": true
+        },
+        {
+            "angle": 360,
+            "bright": 50,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "g",
+            "tintAlpha": 0.25,
+            "x": 3936,
+            "y": 3198,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 50,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "g",
+            "tintAlpha": 0.25,
+            "x": 3936,
+            "y": 4428,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        }
+    ],
+    "name": "Silent Sound Lighthouse (2nd)",
+    "navName": "Silent Sound Lighthouse",
+    "shiftX": 38,
+    "shiftY": -75,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                2075,
+                1460,
+                2578,
+                1459
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2589,
+                1459,
+                3090,
+                1460
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3090,
+                1460,
+                3090,
+                2460
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3090,
+                2460,
+                2644,
+                2460
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2644,
+                2460,
+                2521,
+                2460
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2521,
+                2460,
+                2075,
+                2460
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2075,
+                2460,
+                2075,
+                1460
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2706,
+                1968,
+                2706,
+                1921
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2706,
+                1921,
+                2675,
+                1860
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2675,
+                1860,
+                2629,
+                1829
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2629,
+                1829,
+                2583,
+                1829
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2583,
+                1829,
+                2552,
+                1829
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2552,
+                1829,
+                2521,
+                1845
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2521,
+                1845,
+                2475,
+                1875
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2475,
+                1875,
+                2460,
+                1921
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2460,
+                1921,
+                2444,
+                1968
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2444,
+                1968,
+                2460,
+                1998
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2460,
+                1998,
+                2475,
+                2029
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2475,
+                2029,
+                2490,
+                2060
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2490,
+                2060,
+                2536,
+                2075
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2536,
+                2075,
+                2583,
+                2091
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1952,
+                3444,
+                1968,
+                3321
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1968,
+                3321,
+                2014,
+                3198
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2014,
+                3198,
+                2091,
+                3105
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2091,
+                3105,
+                2137,
+                3059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2137,
+                3059,
+                2214,
+                2998
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2214,
+                2998,
+                2337,
+                2952
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2337,
+                2952,
+                2453,
+                2943
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2455,
+                3946,
+                2337,
+                3920
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2337,
+                3920,
+                2214,
+                3889
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2214,
+                3889,
+                2121,
+                3828
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2121,
+                3828,
+                2044,
+                3736
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2044,
+                3736,
+                1968,
+                3567
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1968,
+                3567,
+                1952,
+                3444
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2470,
+                3946,
+                2613,
+                3920
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2613,
+                3920,
+                2721,
+                3874
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2721,
+                3874,
+                2813,
+                3813
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2813,
+                3813,
+                2875,
+                3736
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2875,
+                3736,
+                2921,
+                3659
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2921,
+                3659,
+                2952,
+                3567
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2952,
+                3567,
+                2967,
+                3459
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2967,
+                3459,
+                2967,
+                3351
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2967,
+                3351,
+                2921,
+                3228
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2921,
+                3228,
+                2844,
+                3136
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2844,
+                3136,
+                2767,
+                3044
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2767,
+                3044,
+                2659,
+                2982
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2659,
+                2982,
+                2552,
+                2952
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2552,
+                2952,
+                2468,
+                2944
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2475,
+                3567,
+                2429,
+                3567
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2429,
+                3567,
+                2383,
+                3536
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2383,
+                3536,
+                2352,
+                3505
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2352,
+                3505,
+                2337,
+                3459
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2337,
+                3459,
+                2337,
+                3413
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2337,
+                3413,
+                2352,
+                3367
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2352,
+                3367,
+                2383,
+                3336
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2383,
+                3336,
+                2413,
+                3321
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2413,
+                3321,
+                2444,
+                3305
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2444,
+                3305,
+                2475,
+                3305
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2475,
+                3305,
+                2521,
+                3321
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2521,
+                3321,
+                2552,
+                3336
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2552,
+                3336,
+                2576,
+                3367
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2576,
+                3368,
+                2598,
+                3397
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2598,
+                3397,
+                2598,
+                3444
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 5400
+}

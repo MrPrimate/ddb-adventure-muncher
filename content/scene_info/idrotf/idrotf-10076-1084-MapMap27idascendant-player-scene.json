@@ -1,0 +1,2446 @@
+{
+    "backgroundColor": "#5c707a",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "z4cf9L5AfOrfrWNy",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 2582,
+            "y": 1953,
+            "width": 118,
+            "height": 132,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 10,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": null,
+            "text": "+25\nfeet",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 50,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        },
+        {
+            "_id": "NIRB79O85byW8aIc",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 2035,
+            "y": 2514,
+            "width": 201,
+            "height": 66,
+            "rotation": 0,
+            "z": 1,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 10,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": null,
+            "text": "+5 feet",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 50,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        },
+        {
+            "_id": "nCfRrvTu9GhAgeFE",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 3692,
+            "y": 988,
+            "width": 184,
+            "height": 141,
+            "rotation": 0,
+            "z": 2,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 10,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": null,
+            "text": "+45 \nfeet",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 50,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "idrotf",
+            "ddbId": 10076,
+            "cobaltId": null,
+            "parentId": 1084,
+            "contentChunkId": "MapMap27idascendant-player",
+            "notes": [
+                {
+                    "label": "N01. Forward Deck",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2078,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest#IdAscendant",
+                            "contentChunkId": "e506214a-802b-44a8-be47-8a4b7ce2c553",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1084,
+                            "linkId": "f4yl3QGb4NhvaBoK",
+                            "pin": "20282756"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2028,
+                            "y": 2756
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "N02. Cargo Hold",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2086,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest#IdAscendant",
+                            "contentChunkId": "ed25a74a-ee4f-49ac-a05c-64c69f0e0018",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1084,
+                            "linkId": "qKGYfVfw3q6xNVZu",
+                            "pin": "23402756"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2340,
+                            "y": 2756
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "N03. Cryogenic Stasis Pods",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2089,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest#IdAscendant",
+                            "contentChunkId": "85b642b4-cbb7-49b3-86b4-bf09c59d602e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1084,
+                            "linkId": "b9npeAhIgbMaYfAM",
+                            "pin": "30682756"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3068,
+                            "y": 2756
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "N04. Battle Deck",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2093,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest#IdAscendant",
+                            "contentChunkId": "107ab165-e4d4-43a3-83fa-53cb3f9b77b3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1084,
+                            "linkId": "Psh63xQTpBdo5Wzs",
+                            "pin": "28602028"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2860,
+                            "y": 2028
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "N05. Maintenance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2099,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest#IdAscendant",
+                            "contentChunkId": "62c4fd20-92c3-4bc1-ab05-6c8dcea6c602",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1084,
+                            "linkId": "mgh3nZUMUGTeb9q4",
+                            "pin": "33801716"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3380,
+                            "y": 1716
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "N06. Propulsion Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2102,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest#IdAscendant",
+                            "contentChunkId": "e8b91eb3-b5ec-4833-bcb4-d505abb4b9f3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1084,
+                            "linkId": "zFnCSJ7QWNBQhiy5",
+                            "pin": "36921716"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3692,
+                            "y": 1716
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "N07. Bridge",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2112,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest#IdAscendant",
+                            "contentChunkId": "9613d189-f7b7-4bd4-81c7-2cbd853af108",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1084,
+                            "linkId": "HuX537GPWw3CHmAd",
+                            "pin": "42121404"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4212,
+                            "y": 1404
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "N08. Observation Deck",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2114,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest#IdAscendant",
+                            "contentChunkId": "91e1623c-e8c8-437d-aded-7c8d440de10d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1084,
+                            "linkId": "LbOrVhIVoU99vJd0",
+                            "pin": "37961092"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3796,
+                            "y": 1092
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "N09. Captains’ Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2123,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest#IdAscendant",
+                            "contentChunkId": "7bebda02-db8f-4a47-ae8e-7a374bfb668d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1084,
+                            "linkId": "xKDnSU9kdOMkUsJg",
+                            "pin": "4628988"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4628,
+                            "y": 988
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "5DUWYPxE3ZeJa11B",
+                    "name": "Gnome Squidling(1)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 2392,
+                    "y": 2808,
+                    "disposition": 0,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123089,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Gnome Squidling(1)"
+                    }
+                },
+                {
+                    "_id": "I4GADgTE31rbDJLG",
+                    "name": "Gnome Squidling(2)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 2288,
+                    "y": 2704,
+                    "disposition": 0,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123089,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Gnome Squidling(2)"
+                    }
+                },
+                {
+                    "_id": "WqzTxf96PKSGlzni",
+                    "name": "Gnome Squidling(3)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 2288,
+                    "y": 2912,
+                    "disposition": 0,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123089,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Gnome Squidling(3)"
+                    }
+                },
+                {
+                    "_id": "S3EcK118uqgXQxDd",
+                    "name": "Flesh Golem(1)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2392,
+                    "y": 2600,
+                    "disposition": 0,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16863,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Flesh Golem(1)"
+                    }
+                },
+                {
+                    "_id": "Pp2ojMOIcfgU1uHV",
+                    "name": "Dredavex",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 3432,
+                    "y": 1664,
+                    "disposition": 0,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 1123088,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Gnome Ceremorph(1)"
+                    }
+                },
+                {
+                    "_id": "BSo4c8g86rTXqDYo",
+                    "name": "Vorryn",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 4264,
+                    "y": 1352,
+                    "disposition": 0,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 1123088,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Gnome Ceremorph(2)"
+                    }
+                },
+                {
+                    "_id": "TYaHex086UShnc6f",
+                    "name": "Bulette(1)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 3328,
+                    "y": 1144,
+                    "disposition": 0,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16818,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Bulette(1)"
+                    }
+                },
+                {
+                    "_id": "AeAbMDYchijK45Sa",
+                    "name": "Carrion Crawler(1)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 3016,
+                    "y": 1144,
+                    "disposition": 0,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17138,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Carrion Crawler(1)"
+                    }
+                },
+                {
+                    "_id": "V4XQpRYoWXRZ4Kbp",
+                    "name": "Carrion Crawler(2)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 2808,
+                    "y": 1144,
+                    "disposition": 0,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17138,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Carrion Crawler(2)"
+                    }
+                }
+            ]
+        },
+        "stairways": [
+            {
+                "scene": null,
+                "name": "sw-cr8cabg7",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 2600,
+                "y": 2860,
+                "_id": "9qrcwb993quviny6"
+            },
+            {
+                "scene": null,
+                "name": "sw-cr8cabg7",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 3016,
+                "y": 1872,
+                "_id": "ttqelfkja6prqic4"
+            },
+            {
+                "scene": null,
+                "name": "sw-olttl95y",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 3016,
+                "y": 1768,
+                "_id": "va7xrqh88xr4iljx"
+            },
+            {
+                "scene": null,
+                "name": "sw-olttl95y",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 4368,
+                "y": 1144,
+                "_id": "b9m519p44f4jdgko"
+            }
+        ],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 104,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2765,
+    "initial": null,
+    "lights": [],
+    "name": "Map 2.7: Id Ascendant",
+    "navName": "Id Ascendant",
+    "padding": 0.25,
+    "shiftX": -38,
+    "shiftY": 30,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                2210,
+                2730,
+                2249,
+                2613
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2249,
+                2613,
+                2301,
+                2535
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2301,
+                2535,
+                2353,
+                2470
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2353,
+                2470,
+                2431,
+                2431
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2431,
+                2431,
+                2496,
+                2392
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2496,
+                2392,
+                2587,
+                2392
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2587,
+                2392,
+                2691,
+                2392
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2691,
+                2392,
+                2808,
+                2392
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2808,
+                2392,
+                2899,
+                2405
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2899,
+                2405,
+                3003,
+                2431
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3003,
+                2431,
+                3120,
+                2457
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3120,
+                2457,
+                3224,
+                2496
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3224,
+                2496,
+                3315,
+                2548
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3315,
+                2548,
+                3419,
+                2626
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3419,
+                2626,
+                3497,
+                2704
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3497,
+                2704,
+                3523,
+                2769
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3523,
+                2769,
+                3523,
+                2808
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3523,
+                2808,
+                3523,
+                2834
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3523,
+                2834,
+                3497,
+                2899
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3497,
+                2899,
+                3458,
+                2951
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3458,
+                2951,
+                3380,
+                3003
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3380,
+                3003,
+                3302,
+                3055
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3302,
+                3055,
+                3198,
+                3120
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3198,
+                3120,
+                3107,
+                3159
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3107,
+                3159,
+                3016,
+                3185
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3016,
+                3185,
+                2873,
+                3198
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2873,
+                3198,
+                2756,
+                3211
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2756,
+                3211,
+                2652,
+                3224
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2652,
+                3224,
+                2561,
+                3224
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2561,
+                3224,
+                2483,
+                3224
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2483,
+                3224,
+                2379,
+                3146
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2379,
+                3146,
+                2314,
+                3094
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2314,
+                3094,
+                2262,
+                3029
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2262,
+                3029,
+                2236,
+                2964
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2236,
+                2964,
+                2210,
+                2899
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3042,
+                2704,
+                3016,
+                2704
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3016,
+                2704,
+                3016,
+                2431
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3107,
+                2730,
+                3172,
+                2756
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3315,
+                2548,
+                3172,
+                2756
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3224,
+                2808,
+                3523,
+                2808
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3185,
+                2873,
+                3302,
+                3055
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3107,
+                2899,
+                3172,
+                2873
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3016,
+                3185,
+                3016,
+                2912
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3016,
+                2912,
+                3042,
+                2912
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2210,
+                2808,
+                2210,
+                2730
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2210,
+                2899,
+                2210,
+                2808
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3107,
+                2730,
+                3042,
+                2704
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3172,
+                2756,
+                3224,
+                2808
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3224,
+                2808,
+                3185,
+                2873
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3107,
+                2899,
+                3042,
+                2912
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2652,
+                1547,
+                2574,
+                1573
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2574,
+                1573,
+                2509,
+                1664
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2509,
+                1664,
+                2483,
+                1768
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2483,
+                1768,
+                2483,
+                1859
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2483,
+                1859,
+                2496,
+                1937
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2496,
+                1937,
+                2535,
+                2028
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2535,
+                2028,
+                2587,
+                2067
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2587,
+                2067,
+                2639,
+                2080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2639,
+                2080,
+                2639,
+                2093
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2639,
+                2093,
+                2795,
+                2132
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2795,
+                2132,
+                2925,
+                2158
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2925,
+                2158,
+                3016,
+                2171
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3016,
+                2171,
+                3107,
+                2171
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3107,
+                2171,
+                3224,
+                2158
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3224,
+                2158,
+                3328,
+                2145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3328,
+                2145,
+                3432,
+                2119
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3432,
+                2119,
+                3536,
+                2080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3536,
+                2080,
+                3627,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3627,
+                2054,
+                3718,
+                1976
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3718,
+                1976,
+                3783,
+                1924
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3783,
+                1924,
+                3822,
+                1885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3822,
+                1885,
+                3835,
+                1833
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3835,
+                1833,
+                3835,
+                1807
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3835,
+                1807,
+                3809,
+                1742
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3809,
+                1742,
+                3731,
+                1664
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3731,
+                1664,
+                3601,
+                1586
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3601,
+                1586,
+                3510,
+                1547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3510,
+                1547,
+                3367,
+                1508
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3367,
+                1508,
+                3328,
+                1508
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3328,
+                1508,
+                3328,
+                1794
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2652,
+                1547,
+                2769,
+                1521
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2769,
+                1521,
+                2899,
+                1495
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2899,
+                1495,
+                3016,
+                1482
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3016,
+                1482,
+                3055,
+                1469
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3055,
+                1469,
+                3159,
+                1469
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3159,
+                1469,
+                3276,
+                1482
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3276,
+                1482,
+                3328,
+                1508
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3328,
+                1846,
+                3328,
+                2145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3731,
+                1664,
+                3653,
+                1664
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3653,
+                1664,
+                3588,
+                1703
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3588,
+                1703,
+                3549,
+                1742
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3549,
+                1742,
+                3536,
+                1794
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3536,
+                1859,
+                3549,
+                1898
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3549,
+                1898,
+                3601,
+                1950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3601,
+                1950,
+                3653,
+                1976
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3653,
+                1976,
+                3718,
+                1976
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4004,
+                962,
+                4030,
+                923
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4030,
+                923,
+                4173,
+                897
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4173,
+                897,
+                4368,
+                858
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4368,
+                858,
+                4485,
+                871
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4485,
+                871,
+                4563,
+                858
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4563,
+                858,
+                4654,
+                897
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4654,
+                897,
+                4771,
+                1001
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4771,
+                1001,
+                4836,
+                1092
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4836,
+                1092,
+                4875,
+                1170
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4875,
+                1170,
+                4875,
+                1248
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4875,
+                1248,
+                4836,
+                1352
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4836,
+                1352,
+                4745,
+                1443
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4745,
+                1443,
+                4654,
+                1508
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4654,
+                1508,
+                4563,
+                1547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4563,
+                1547,
+                4459,
+                1547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4459,
+                1547,
+                4368,
+                1547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4368,
+                1547,
+                4225,
+                1534
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4225,
+                1534,
+                4095,
+                1508
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4095,
+                1508,
+                3991,
+                1482
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3991,
+                1482,
+                4004,
+                1443
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4004,
+                1443,
+                4004,
+                1456
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3887,
+                1157,
+                3900,
+                1105
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3900,
+                1105,
+                3939,
+                1040
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3939,
+                1040,
+                4004,
+                962
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3887,
+                1222,
+                3900,
+                1300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3900,
+                1300,
+                3926,
+                1352
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3926,
+                1352,
+                3991,
+                1443
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                4472,
+                1274,
+                4472,
+                871
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4472,
+                871,
+                4485,
+                871
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4485,
+                1352,
+                4485,
+                1547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4030,
+                923,
+                3926,
+                962
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3926,
+                962,
+                3835,
+                1014
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3835,
+                1014,
+                3757,
+                1053
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3757,
+                1053,
+                3692,
+                1118
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3692,
+                1118,
+                3653,
+                1196
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3653,
+                1196,
+                3653,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3653,
+                1261,
+                3705,
+                1326
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3705,
+                1326,
+                3796,
+                1391
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3796,
+                1391,
+                3861,
+                1417
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3861,
+                1417,
+                3991,
+                1482
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4485,
+                1352,
+                4472,
+                1274
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3887,
+                1157,
+                3887,
+                1222
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3536,
+                1794,
+                3536,
+                1859
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3328,
+                1794,
+                3328,
+                1846
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 4000
+}

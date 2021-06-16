@@ -1,0 +1,351 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 1,
+    "drawings": [
+        {
+            "_id": "D0zvYBagGv395UtH",
+            "author": "CvraBN5DKTa4ZItF",
+            "type": "t",
+            "x": 4981,
+            "y": 1081,
+            "width": 131.5,
+            "height": 81.5,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#FFFFFF",
+            "fillAlpha": 0.1,
+            "strokeWidth": 8,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "To the Mine",
+            "fontFamily": "Signika",
+            "fontSize": 80,
+            "textColor": "#111111",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": true,
+            "flags": {}
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "cm",
+            "ddbId": 10034,
+            "cobaltId": null,
+            "parentId": 1164,
+            "contentChunkId": "MapMap501vermeillon-player",
+            "notes": [
+                {
+                    "label": "V01. The Wand and Hammer",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2039,
+                            "bookCode": "cm",
+                            "slug": "a-deep-and-creeping-darkness#Vermeillon",
+                            "contentChunkId": "861813ef-41a2-492a-9c7d-851f83e45e22",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1164,
+                            "linkId": "6yEBnQsaIlIq6Xmi"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2850,
+                            "y": 3350
+                        }
+                    ],
+                    "iconSize": 76,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V02. Stonemason’s Workshop",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2043,
+                            "bookCode": "cm",
+                            "slug": "a-deep-and-creeping-darkness#Vermeillon",
+                            "contentChunkId": "7631b7ab-4d7e-4cf0-8b9c-ac54969a78e4",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1164,
+                            "linkId": "ICyCEJk3DfKawG7t"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2950,
+                            "y": 2950
+                        }
+                    ],
+                    "iconSize": 76,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V03. Mayor’s House",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2047,
+                            "bookCode": "cm",
+                            "slug": "a-deep-and-creeping-darkness#Vermeillon",
+                            "contentChunkId": "cd2206a9-f3d4-46de-82ee-10628d46acd4",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1164,
+                            "linkId": "4HE0CXvD52K8e3Zk"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3800,
+                            "y": 1750
+                        }
+                    ],
+                    "iconSize": 76,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V04. Tree",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2050,
+                            "bookCode": "cm",
+                            "slug": "a-deep-and-creeping-darkness#Vermeillon",
+                            "contentChunkId": "e3a62f34-5a19-4ff5-9676-438c5a9a545f",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1164,
+                            "linkId": "dQduo8wTRsHiHRxc"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3750,
+                            "y": 2350
+                        }
+                    ],
+                    "iconSize": 76,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V05. Graveyard",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2056,
+                            "bookCode": "cm",
+                            "slug": "a-deep-and-creeping-darkness#Vermeillon",
+                            "contentChunkId": "82a156ef-fecc-49c0-bbf4-bd109845b491",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1164,
+                            "linkId": "rkRntUiNEHfEchMJ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2150,
+                            "y": 1850
+                        }
+                    ],
+                    "iconSize": 76,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "V06. Merchant’s Cart",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2065,
+                            "bookCode": "cm",
+                            "slug": "a-deep-and-creeping-darkness#Vermeillon",
+                            "contentChunkId": "668ba54c-b7b2-4221-892d-a57e36c833b9",
+                            "userData": {
+                                "userDisplayName": "Triasmus"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1164,
+                            "linkId": "jGZ8AGCMxAhAEHiA"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2350,
+                            "y": 1350
+                        }
+                    ],
+                    "iconSize": 76,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "0LDHcaE0XxKBxQBo",
+                    "name": "Meenlock",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 3900,
+                    "y": 1750,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17281,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "V5YKvaZkLEwbI4x0",
+                    "name": "Meenlock",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 4200,
+                    "y": 3600,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17281,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "EwPVeNBsxXQV2oVJ",
+                    "name": "Meenlock",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 3550,
+                    "y": 3650,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17281,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                }
+            ]
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 50,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3536,
+    "initial": null,
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 0,
+            "darknessThreshold": 0,
+            "dim": 325,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3800,
+            "y": 2675,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        }
+    ],
+    "name": "Map 5.1: Vermeillon",
+    "navName": "Vermeillon",
+    "shiftX": -8,
+    "shiftY": -13,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 5147
+}

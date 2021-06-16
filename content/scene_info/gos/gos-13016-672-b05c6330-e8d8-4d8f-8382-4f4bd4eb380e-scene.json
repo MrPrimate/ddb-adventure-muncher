@@ -1,0 +1,1945 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "0OQVAjcV2FhLYRGj",
+            "flags": {},
+            "type": "r",
+            "author": "H9NFQtG1GXy9OAvz",
+            "x": 1671.25,
+            "y": 5740,
+            "width": 148.75,
+            "height": 148.75,
+            "rotation": 0,
+            "z": 0,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#ff0d00",
+            "fillAlpha": 0.5,
+            "strokeWidth": 8,
+            "strokeColor": "#ff0d00",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "T",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#ff0000",
+            "textAlpha": 1
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "gos",
+            "ddbId": 13016,
+            "cobaltId": null,
+            "parentId": 672,
+            "contentChunkId": "b05c6330-e8d8-4d8f-8382-4f4bd4eb380e",
+            "notes": [
+                {
+                    "label": "01. Entrance Hall",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2020,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "9c8effa0-5f2e-4df0-beef-ea25ca2249a9",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "NpoV4ja3VVksz81t"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3290,
+                            "y": 6090
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "02. Library",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2028,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "20e992a3-1a4c-42ce-bfa3-665daf1ef377",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "qla9ZD4x8q0LkHgi"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2590,
+                            "y": 6370
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03. Study",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2032,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "920c6d39-368f-40d9-b61e-2b7854761367",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "ZW9qfexTKkrkdeeT"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2590,
+                            "y": 5810
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04. Living Area",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2038,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "2b64fec0-2720-4880-ab69-24d4220859b7",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "mNhQwzRxxHJZvbGT"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1890,
+                            "y": 6090
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05. Living Area",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2042,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "f567ce55-b045-49d4-b145-73a13446791e",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "nrFN4ui3izC8lx31"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3990,
+                            "y": 6090
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06. Living Area",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2045,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "eab7643d-3731-4af0-8351-2d8210b90ae4",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "pe3i4cbzLtrT7MBj"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4690,
+                            "y": 6090
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "07. Dining Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2048,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "670c41e8-d119-42a3-8231-10230b93a10c",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "24f3pb11KLF7lizx"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3010,
+                            "y": 5250
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "08. Withdrawing Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2053,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "57bb1bbb-c001-410e-82d0-5bb52b5d36d4",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "Mp2x5zsO7qv23xcJ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3570,
+                            "y": 5250
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "09. Kitchen",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2058,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "4cbc262c-9e2b-43f5-a4f3-da3e84efaa76",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "QnLlY8XkR45TDHMm"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3010,
+                            "y": 4550
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "10. Scullery",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2064,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "312bee65-e4d7-481d-b412-fb3eb90ee2ca",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "1A090xU32urmheZj"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3570,
+                            "y": 4410
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "11. Moldering Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2067,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "1ea1041b-d66d-4c59-a37b-afd29ca2425a",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "y5xNhGude8MDV4Fc"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2450,
+                            "y": 3570
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "12. Decrepit Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2070,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "26b3984e-1393-4273-91dd-56fcdc9f083c",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "mAtpwzWE4WiPENfS"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1750,
+                            "y": 3570
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "13. Guest Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2074,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "168be90b-c2a6-4a43-9072-1a0031ef3d46",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "uXGFsfADFlwp7hd7"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3850,
+                            "y": 3850
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "14. Crumbling Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2079,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "d64bcc8a-584b-4137-be54-d1234f2e97e4",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "NSxvhRN2iy73wL73"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4270,
+                            "y": 3850
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "15. Ned’s Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2087,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "17bef131-33c7-4e89-be69-fed0358d0600",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "CmwSmk8RBf54XGnz"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4690,
+                            "y": 3850
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "16. Alchemist’s Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2090,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "b402c37b-44b6-4747-b65a-80060b71344b",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "nPy45mM1PqYzRBVx"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3150,
+                            "y": 2730
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "17. Box Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2094,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "ad0fa84c-e001-42e2-b111-2ae1dc952e06",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "udd6CuxnDTbDUud0"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3150,
+                            "y": 2310
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "18. Landing",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2097,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "7a076cd4-f135-498e-99f2-9efaca21c6b3",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "yLryvszZzP5DFefK"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3150,
+                            "y": 1890
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "19. Attic",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2102,
+                            "bookCode": "gos",
+                            "slug": "the-sinister-secret-of-saltmarsh#TheHauntedHouse",
+                            "contentChunkId": "0437a742-f333-4a19-b336-3240509d9e5c",
+                            "userData": {
+                                "userDisplayName": "CussaMitre"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 672,
+                            "linkId": "ePEG1qJkuekKgiXx"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3430,
+                            "y": 1750
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [
+            {
+                "scene": null,
+                "name": "sw-5q1bsa6d",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 3570,
+                "y": 5810,
+                "_id": "raknbzv447sk0wmu"
+            },
+            {
+                "scene": null,
+                "name": "sw-5q1bsa6d",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 3570,
+                "y": 3430,
+                "_id": "y0952p10lqryo90i"
+            },
+            {
+                "move": 1,
+                "sense": 1,
+                "c": [
+                    3351,
+                    1828,
+                    3419.4044213693746,
+                    1839.5084574154575
+                ],
+                "_id": "53u6y6qiy0yenpaa"
+            },
+            {
+                "scene": null,
+                "name": "sw-li045ch9",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 3290,
+                "y": 4410,
+                "_id": "ku4jk5aih1m9t6ri"
+            },
+            {
+                "scene": null,
+                "name": "sw-li045ch9",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 3010,
+                "y": 1750,
+                "_id": "cy1oy0qj06ox2dwe"
+            },
+            {
+                "move": 1,
+                "sense": 1,
+                "c": [
+                    3351,
+                    1828,
+                    3419.4044213693746,
+                    1839.5084574154575
+                ],
+                "_id": "wm01xn12eoag0htk"
+            }
+        ],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 140,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 5700,
+    "initial": {
+        "x": 3466,
+        "y": 6040,
+        "scale": 1
+    },
+    "lights": [],
+    "name": "Ground Floor",
+    "navName": "The Haunted House",
+    "shiftX": -4,
+    "shiftY": 24,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                3648,
+                6632,
+                4917,
+                6623
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4917,
+                6623,
+                4917,
+                5582
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4917,
+                5582,
+                3675,
+                5573
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3675,
+                5573,
+                3666,
+                4322
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3666,
+                4322,
+                3666,
+                4313
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3666,
+                4313,
+                2773,
+                4322
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2773,
+                4322,
+                2782,
+                5573
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1513,
+                5582,
+                1522,
+                6632
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1522,
+                6597,
+                1522,
+                6588
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1522,
+                6632,
+                3648,
+                6632
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3648,
+                5740,
+                3648,
+                6632
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3675,
+                5573,
+                3368,
+                5591
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3368,
+                5040,
+                3675,
+                5040
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3675,
+                5040,
+                3675,
+                5031
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3701,
+                4891,
+                3368,
+                4891
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2756,
+                4891,
+                3211,
+                4900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3211,
+                5600,
+                2791,
+                5591
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2791,
+                5591,
+                2782,
+                5582
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2091,
+                5556,
+                2091,
+                6002
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2940,
+                6002,
+                2931,
+                5600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2931,
+                6623,
+                2940,
+                6168
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2100,
+                6168,
+                2100,
+                6641
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1531,
+                5573,
+                1540,
+                5197
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1540,
+                5197,
+                2073,
+                5188
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2073,
+                5188,
+                2091,
+                5556
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1513,
+                5582,
+                1811,
+                5573
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1811,
+                5573,
+                1951,
+                5573
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1951,
+                5573,
+                2091,
+                5556
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2091,
+                5556,
+                2782,
+                5573
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2091,
+                6002,
+                2248,
+                6011
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2248,
+                6011,
+                2380,
+                6011
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2380,
+                6011,
+                2940,
+                6002
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2940,
+                6168,
+                2520,
+                6168
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2520,
+                6168,
+                2380,
+                6168
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2380,
+                6168,
+                2100,
+                6168
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4348,
+                5740,
+                4628,
+                5740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4628,
+                5740,
+                4760,
+                5740
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4760,
+                5740,
+                4935,
+                5740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4348,
+                5740,
+                4060,
+                5740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4060,
+                5740,
+                3920,
+                5740
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3920,
+                5740,
+                3648,
+                5740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4348,
+                5740,
+                4348,
+                6028
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4348,
+                6028,
+                4348,
+                6160
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4348,
+                6160,
+                4340,
+                6650
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3368,
+                5040,
+                3368,
+                5320
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3368,
+                5320,
+                3368,
+                5460
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3368,
+                5460,
+                3368,
+                5591
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3211,
+                4900,
+                3220,
+                5188
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3220,
+                5188,
+                3211,
+                5320
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3211,
+                5320,
+                3211,
+                5600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3211,
+                4900,
+                3368,
+                4891
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3368,
+                4891,
+                3368,
+                4760
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3368,
+                4760,
+                3360,
+                4620
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3360,
+                4620,
+                3360,
+                4305
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3648,
+                5740,
+                3500,
+                5740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3500,
+                5740,
+                3500,
+                6160
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2773,
+                1645,
+                2773,
+                2913
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2773,
+                2913,
+                1513,
+                2913
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1513,
+                2913,
+                1513,
+                3937
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1513,
+                3937,
+                4935,
+                3937
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4935,
+                3937,
+                4926,
+                2913
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4926,
+                2913,
+                3675,
+                2913
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3675,
+                2913,
+                3657,
+                1653
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3657,
+                1653,
+                2773,
+                1645
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3683,
+                1968,
+                2940,
+                1960
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2940,
+                1960,
+                2940,
+                2240
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2940,
+                2240,
+                2931,
+                2371
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2931,
+                2371,
+                2940,
+                2668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2940,
+                2668,
+                2940,
+                2800
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2940,
+                2800,
+                2940,
+                2940
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2940,
+                2940,
+                3648,
+                2940
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3648,
+                2940,
+                3675,
+                2913
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3683,
+                2511,
+                2931,
+                2520
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3648,
+                3946,
+                3640,
+                3080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3640,
+                3080,
+                3797,
+                3080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3797,
+                3080,
+                3920,
+                3080
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3920,
+                3080,
+                4060,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4060,
+                3088,
+                4060,
+                3080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4060,
+                3080,
+                4208,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4208,
+                3088,
+                4208,
+                3080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4208,
+                3080,
+                4348,
+                3080
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4060,
+                3080,
+                4068,
+                3963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4348,
+                3080,
+                4480,
+                3080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4480,
+                3080,
+                4506,
+                3080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4506,
+                3080,
+                4628,
+                3080
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4628,
+                3080,
+                4943,
+                3080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4480,
+                3080,
+                4488,
+                3955
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1496,
+                3071,
+                1811,
+                3080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1811,
+                3080,
+                1951,
+                3080
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1951,
+                3080,
+                2100,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2100,
+                3088,
+                2371,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2371,
+                3088,
+                2511,
+                3080
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2511,
+                3080,
+                2791,
+                3080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2791,
+                3080,
+                2791,
+                3963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2791,
+                3963,
+                2800,
+                3963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2100,
+                3088,
+                2100,
+                3972
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3648,
+                3508,
+                3500,
+                3508
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3500,
+                3508,
+                3491,
+                3097
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3491,
+                3097,
+                2948,
+                3097
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2948,
+                3097,
+                2948,
+                3955
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2940,
+                1618,
+                2940,
+                1828
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2940,
+                1828,
+                3088,
+                1828
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3360,
+                4462,
+                2940,
+                4471
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3500,
+                4882,
+                3500,
+                4620
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3088,
+                1828,
+                3351,
+                1828
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        }
+    ],
+    "weather": "",
+    "width": 4200
+}

@@ -1,0 +1,565 @@
+{
+    "backgroundColor": "#333333",
+    "flags": {
+        "ddb": {
+            "bookCode": "pota",
+            "ddbId": 11014,
+            "cobaltId": null,
+            "parentId": 409,
+            "contentChunkId": "6415cf3f-2042-483a-a873-0cc16de43a4b",
+            "notes": [
+                {
+                    "label": "Amphail",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2017,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "d6f1e41c-3523-4185-8dcf-acc4d09f3bb1",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1560,
+                            "y": 4842
+                        }
+                    ]
+                },
+                {
+                    "label": "Bargewright Inn",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2023,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "88bbf090-e2d1-4f48-9f9b-7eee68ff7c22",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2243,
+                            "y": 4335
+                        }
+                    ]
+                },
+                {
+                    "label": "Beliard",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2028,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "c60f780d-a073-4edd-a5f8-ebf294884a1a",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2893,
+                            "y": 3040.29
+                        }
+                    ]
+                },
+                {
+                    "label": "Cult Encampments",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2034,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "468a2c94-8f45-4a85-ad98-4dbb45620c01",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2308,
+                            "y": 4053.29
+                        },
+                        {
+                            "x": 3088,
+                            "y": 2590.29
+                        }
+                    ]
+                },
+                {
+                    "label": "Goldenfields",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2039,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "a505b595-f571-40ee-a58b-4d5f357a33b1",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2145,
+                            "y": 4842
+                        }
+                    ]
+                },
+                {
+                    "label": "Halls of the Hunting Axe",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2044,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "6463cf99-f833-4aea-9611-a0f5b8f4f058",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3088,
+                            "y": 3378.29
+                        }
+                    ]
+                },
+                {
+                    "label": "Haunted Keeps",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2059,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "514e81a2-babc-4487-95fe-7a09eba3f6a4",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2210,
+                            "y": 3547.29
+                        },
+                        {
+                            "x": 2597.727272727273,
+                            "y": 3491.108181818182
+                        },
+                        {
+                            "x": 2427.9166666666665,
+                            "y": 3360.8733333333334
+                        },
+                        {
+                            "x": 2531.25,
+                            "y": 3621.79
+                        }
+                    ]
+                },
+                {
+                    "label": "Helvenblade House",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2063,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "9c8523eb-7631-4cde-8dc7-5ea55e1ff34f",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1950,
+                            "y": 2421.2916512459883
+                        }
+                    ]
+                },
+                {
+                    "label": "High Forest",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2067,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "e075455b-0b42-425d-b6ac-6ff836da1cc1",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3998,
+                            "y": 3603.2916512459883
+                        }
+                    ]
+                },
+                {
+                    "label": "Homesteads",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2072,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "2d90bb9d-7d9b-44b5-b292-664443070c77",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3283,
+                            "y": 2815.29
+                        },
+                        {
+                            "x": 2308,
+                            "y": 2364.29
+                        },
+                        {
+                            "x": 3673,
+                            "y": 2702.29
+                        }
+                    ]
+                },
+                {
+                    "label": "Kryptgarden Forest",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2075,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "3ee3cfa7-5034-41f6-82ae-7a2d1e17c5d0",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1235,
+                            "y": 2758.29
+                        }
+                    ]
+                },
+                {
+                    "label": "Lance Rock",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2078,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "55331643-a722-41bd-993a-63d12d239a34",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1753.5555555555554,
+                            "y": 3681.9566666666665
+                        }
+                    ]
+                },
+                {
+                    "label": "Neverwinter",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2084,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "51f306bf-3463-42fa-a004-174354205c60",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1008,
+                            "y": 1576.7083487540115
+                        }
+                    ]
+                },
+                {
+                    "label": "Rundreth Manor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2089,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "cea8e26b-06ce-4afc-9496-658fcc831947",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1723,
+                            "y": 4504.29
+                        }
+                    ]
+                },
+                {
+                    "label": "Stone Bridge",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2094,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "3e416040-71e0-40e1-a37a-cf96ed3e2cfc",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2653.4545454545455,
+                            "y": 2950.435621481284
+                        }
+                    ]
+                },
+                {
+                    "label": "Sumber Hills",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2099,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "63b59063-472c-4230-b87e-e54d611049ea",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2308,
+                            "y": 3153.29
+                        }
+                    ]
+                },
+                {
+                    "label": "Summit Hall",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2103,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "a72874a7-4106-4bea-9053-144db602b344",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3023,
+                            "y": 3715.2916512459883
+                        }
+                    ]
+                },
+                {
+                    "label": "Triboar",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2109,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "9e6c658b-7790-42bb-8941-9d55e4cbcad2",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2178,
+                            "y": 1689.7083487540115
+                        }
+                    ]
+                },
+                {
+                    "label": "Vale of Dancing Waters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2113,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "d9e9a75e-0738-464b-a75a-a81021264d22",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2602.2727272727275,
+                            "y": 3386.5627272727274
+                        }
+                    ]
+                },
+                {
+                    "label": "Waterdeep",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2117,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "f3ce0c1d-22d7-407e-bc07-e5d3aaec186b",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1430,
+                            "y": 5010.29
+                        }
+                    ]
+                },
+                {
+                    "label": "Westwood",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2125,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "d9d679ce-aac7-4783-9841-de428c292639",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1333,
+                            "y": 4278.29
+                        }
+                    ]
+                },
+                {
+                    "label": "Womford",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2130,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "6794e969-1973-44de-9a91-2c3c67816094",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2503,
+                            "y": 4391.29
+                        }
+                    ]
+                },
+                {
+                    "label": "Yartar",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2136,
+                            "bookCode": "pota",
+                            "slug": "the-dessarin-valley#ValleySites",
+                            "contentChunkId": "89f176a7-add1-4a5c-80fb-23cc05646aac",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "parentId": 409
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2990,
+                            "y": 1633.29
+                        }
+                    ]
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "grid": 130,
+    "gridDistance": 4,
+    "gridType": 5,
+    "gridUnits": "mi",
+    "height": 4058,
+    "initial": {
+        "x": 2637,
+        "y": 2158,
+        "scale": 0.4
+    },
+    "lights": [],
+    "name": "Map 2.2: The Dessarin Valley",
+    "navName": "The Dessarin Valley",
+    "shiftX": -65,
+    "shiftY": 5,
+    "walls": [],
+    "width": 3198
+}

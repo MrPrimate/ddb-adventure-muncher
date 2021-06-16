@@ -1,0 +1,27 @@
+{
+    "backgroundColor": "#453b2e",
+    "flags": {
+        "ddb": {
+            "bookCode": "dc",
+            "ddbId": 11012,
+            "cobaltId": null,
+            "parentId": 760,
+            "contentChunkId": null,
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "grid": 136,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3604,
+    "lights": [],
+    "name": "Dumathoin’s Gulch",
+    "shiftX": -80,
+    "shiftY": -96,
+    "walls": [],
+    "width": 2837
+}

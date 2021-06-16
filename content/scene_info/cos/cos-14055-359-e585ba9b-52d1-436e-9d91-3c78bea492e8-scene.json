@@ -1,0 +1,868 @@
+{
+    "backgroundColor": "#333333",
+    "darkness": 0.6,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "cos",
+            "ddbId": 14055,
+            "cobaltId": null,
+            "parentId": 359,
+            "contentChunkId": "e585ba9b-52d1-436e-9d91-3c78bea492e8",
+            "notes": [
+                {
+                    "label": "U1. Abandoned Cottages",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2057,
+                            "bookCode": "cos",
+                            "slug": "the-ruins-of-berez#AreasofBerez",
+                            "contentChunkId": "efde23e8-a5a3-401e-adc0-6419488bb7f1",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 359,
+                            "linkId": "O3ydA3f7uVhYoa8K"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1760,
+                            "y": 1485
+                        },
+                        {
+                            "x": 1210,
+                            "y": 1045
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "U2. Ulrich Mansion",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2075,
+                            "bookCode": "cos",
+                            "slug": "the-ruins-of-berez#AreasofBerez",
+                            "contentChunkId": "8975a310-1a25-4d94-96a8-6313627c4a3d",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 359,
+                            "linkId": "WD79nXSJwnWF3o9P"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1265,
+                            "y": 1650
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "U3. Baba Lysaga’s Hut",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2092,
+                            "bookCode": "cos",
+                            "slug": "the-ruins-of-berez#AreasofBerez",
+                            "contentChunkId": "e86202a6-4cd1-4519-acea-63f8269ac5df",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 359,
+                            "linkId": "LIz7IwNuFx1wF4WC"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1320,
+                            "y": 1292.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "U4. Churchyard",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2095,
+                            "bookCode": "cos",
+                            "slug": "the-ruins-of-berez#AreasofBerez",
+                            "contentChunkId": "080c9829-2d52-46bb-9c2c-71f1195ed238",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 359,
+                            "linkId": "rr3Evd2WlTLKaACD"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1017.5,
+                            "y": 1375
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "U5. Marina’s Monument",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2106,
+                            "bookCode": "cos",
+                            "slug": "the-ruins-of-berez#AreasofBerez",
+                            "contentChunkId": "82430f80-a935-408b-a23e-f837312a9112",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 359,
+                            "linkId": "KsYJX9sBQLU6or9K"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 770,
+                            "y": 1677.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "U6. Standing Stones",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2117,
+                            "bookCode": "cos",
+                            "slug": "the-ruins-of-berez#AreasofBerez",
+                            "contentChunkId": "b2df7003-1dde-41ce-ab8a-f011b1abeefd",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 359,
+                            "linkId": "25dOV6mkvre7u4uQ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2200,
+                            "y": 1540
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": true,
+    "globalLightThreshold": null,
+    "grid": 55,
+    "gridDistance": 100,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2111,
+    "initial": {
+        "x": 1559,
+        "y": 1566,
+        "scale": 0.51
+    },
+    "lights": [],
+    "name": "Ruins of Berez",
+    "navName": "Ruins of Berez",
+    "shiftX": -23,
+    "shiftY": -1,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                1168,
+                1540,
+                1152,
+                1577
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1152,
+                1577,
+                1100,
+                1595
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1100,
+                1595,
+                1086,
+                1624
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1086,
+                1624,
+                1089,
+                1759
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1089,
+                1759,
+                1113,
+                1870
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1113,
+                1870,
+                1155,
+                1883
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1155,
+                1883,
+                1278,
+                1870
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1278,
+                1870,
+                1278,
+                1760
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1282,
+                1762,
+                1347,
+                1705
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1347,
+                1705,
+                1354,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1354,
+                1651,
+                1320,
+                1608
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1320,
+                1608,
+                1218,
+                1584
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1218,
+                1584,
+                1196,
+                1540
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1196,
+                1540,
+                1168,
+                1540
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1430,
+                1512,
+                1416,
+                1595
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1416,
+                1595,
+                1443,
+                1663
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1443,
+                1663,
+                1485,
+                1691
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1485,
+                1691,
+                1608,
+                1677
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1608,
+                1677,
+                1691,
+                1636
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1691,
+                1636,
+                1801,
+                1512
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1801,
+                1512,
+                1760,
+                1457
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1760,
+                1457,
+                1870,
+                1278
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1870,
+                1278,
+                1870,
+                1223
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1870,
+                1223,
+                1801,
+                1265
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1801,
+                1265,
+                1746,
+                1333
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1746,
+                1333,
+                1663,
+                1278
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1663,
+                1278,
+                1567,
+                1361
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1567,
+                1361,
+                1457,
+                1388
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1457,
+                1388,
+                1430,
+                1512
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                990,
+                1498,
+                1045,
+                1498
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1045,
+                1498,
+                1045,
+                1540
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1045,
+                1540,
+                990,
+                1540
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1471,
+                948,
+                1375,
+                1017
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1375,
+                1017,
+                1237,
+                1182
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1237,
+                1182,
+                1113,
+                1058
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1113,
+                1058,
+                1182,
+                948
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1182,
+                948,
+                1320,
+                825
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1320,
+                825,
+                1430,
+                825
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1430,
+                825,
+                1471,
+                948
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                2310,
+                687,
+                2227,
+                811
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                2227,
+                811,
+                2131,
+                893
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                2131,
+                893,
+                1993,
+                1045
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1993,
+                1045,
+                1842,
+                962
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1842,
+                962,
+                1746,
+                935
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1746,
+                935,
+                1732,
+                976
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1732,
+                976,
+                1842,
+                1017
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1842,
+                1017,
+                1966,
+                1086
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1966,
+                1086,
+                1925,
+                1168
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1925,
+                1168,
+                1952,
+                1182
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                1952,
+                1182,
+                2007,
+                1100
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                2007,
+                1100,
+                2158,
+                948
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                2158,
+                948,
+                2296,
+                797
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                2296,
+                797,
+                2351,
+                701
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        },
+        {
+            "c": [
+                2351,
+                701,
+                2310,
+                687
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 2
+        }
+    ],
+    "weather": "",
+    "width": 2111
+}

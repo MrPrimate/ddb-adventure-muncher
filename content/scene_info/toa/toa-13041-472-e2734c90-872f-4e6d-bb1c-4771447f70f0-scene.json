@@ -1,0 +1,414 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "mJj3vJIgkkgwQaNf",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2108,
+            "y": 3842,
+            "width": 63,
+            "height": 89,
+            "rotation": 0,
+            "z": 0,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "A",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "kRsJOBb4jTnoSgC7",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 3502,
+            "y": 3831,
+            "width": 63,
+            "height": 89,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "B",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "uPUjS7qAXTuAXtWG",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 3407,
+            "y": 2850,
+            "width": 63,
+            "height": 89,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "D",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "LcF2t4AxxTyosYmc",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2040,
+            "y": 2822,
+            "width": 63,
+            "height": 89,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "C",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "toa",
+            "ddbId": 13041,
+            "cobaltId": null,
+            "parentId": 472,
+            "contentChunkId": "e2734c90-872f-4e6d-bb1c-4771447f70f0",
+            "notes": [
+                {
+                    "label": "01. Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3078,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "9fc1450d-80c2-4c10-97f3-02fb4d213868",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "VBjy4rj3IxaCC3rP"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2822,
+                            "y": 5678
+                        }
+                    ],
+                    "iconSize": 51,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "02. Terraces",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3087,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "69b93df4-9d74-46ef-a8e4-aa9a9008da92",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "pzL10nAlxhI4N2Nv"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2958,
+                            "y": 4726
+                        }
+                    ],
+                    "iconSize": 51,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03. Spirit Domes",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3092,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "3480e2a5-bc20-424d-a137-61a4eb5dce8b",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "tMgjjzjr3IhZdJbz"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1666,
+                            "y": 4590
+                        },
+                        {
+                            "x": 3910,
+                            "y": 5338
+                        }
+                    ],
+                    "iconSize": 51,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04. Ruined Palace",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3106,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "f89f8621-c1a4-4e19-8ac1-0a6648f51e7e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "KOIS4IBZoJpw8XhL"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2958,
+                            "y": 3434
+                        }
+                    ],
+                    "iconSize": 51,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05. Hallucinogenic Plants",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3117,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "7f2cf87f-8e77-4dd0-993e-a6f1b0551982",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "m3p8MrUA8A0jX3SF"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3434,
+                            "y": 3910
+                        }
+                    ],
+                    "iconSize": 51,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06. Pagoda",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3121,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "229b6b20-47cb-4f57-93b1-8e724535c691",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "yvCUnrVhQXZpIO8i"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1666,
+                            "y": 2618
+                        }
+                    ],
+                    "iconSize": 51,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "07. Flooded Garden",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3125,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "15c2ea7a-99e6-47db-93a5-fcdb589200dc",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "a6G8mOVAglKFNifK"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2958,
+                            "y": 2618
+                        }
+                    ],
+                    "iconSize": 51,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "08. Zalkoré’s Lair",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3136,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "5d0abb8f-cc03-404f-bf57-bd88ee2deb4d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "AHm6XN32yX6TnzO6"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4046,
+                            "y": 2482
+                        }
+                    ],
+                    "iconSize": 51,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 68,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 4940,
+    "initial": null,
+    "lights": [],
+    "name": "Nangalore",
+    "navName": "Nangalore",
+    "shiftX": 16,
+    "shiftY": -14,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 3640
+}

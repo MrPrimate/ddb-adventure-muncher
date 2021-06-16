@@ -1,0 +1,155 @@
+{
+    "backgroundColor": "#333333",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "SKzxWAn8Eqiu4Pjk",
+            "author": "3UM1enwvyiMoXqqW",
+            "type": "t",
+            "x": 2240,
+            "y": 1646,
+            "width": 149.5,
+            "height": 49.5,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#FFFFFF",
+            "fillAlpha": 0.1,
+            "strokeWidth": 8,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Inner Ring",
+            "fontFamily": "Signika",
+            "fontSize": 36,
+            "textColor": "#7a0000",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "VyCzBITAFP5eygLd",
+            "author": "3UM1enwvyiMoXqqW",
+            "type": "t",
+            "x": 2388,
+            "y": 1485,
+            "width": 149.5,
+            "height": 49.5,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#FFFFFF",
+            "fillAlpha": 0.1,
+            "strokeWidth": 8,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Outer Ring",
+            "fontFamily": "Signika",
+            "fontSize": 36,
+            "textColor": "#7a0000",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "HKL7g7b9ObH9yczx",
+            "author": "3UM1enwvyiMoXqqW",
+            "type": "t",
+            "x": 1844,
+            "y": 1139,
+            "width": 149.5,
+            "height": 49.5,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#FFFFFF",
+            "fillAlpha": 0.1,
+            "strokeWidth": 8,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Crown",
+            "fontFamily": "Signika",
+            "fontSize": 36,
+            "textColor": "#7a0000",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "skt",
+            "ddbId": 11028,
+            "cobaltId": null,
+            "parentId": 369,
+            "contentChunkId": "c42b14e2-b97d-4cfc-aaa7-0d569fff4fa3",
+            "notes": [
+                {
+                    "label": "Grandfather Tree",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2239,
+                            "bookCode": "skt",
+                            "slug": "the-savage-frontier#LocationsoftheNorth",
+                            "contentChunkId": "07368bc7-92e5-4448-8276-6f78903e3fe1",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 369,
+                            "linkId": "iharkHCuyDgRkwm1"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2079,
+                            "y": 1881
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": true,
+    "globalLightThreshold": null,
+    "grid": 99,
+    "gridDistance": 50,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2420,
+    "initial": {
+        "x": 2946,
+        "y": 1929,
+        "scale": 0.37
+    },
+    "lights": [],
+    "name": "Map 3.5: The Grandfather Tree",
+    "navName": "The Grandfather Tree",
+    "shiftX": 19,
+    "shiftY": -1,
+    "tokenVision": false,
+    "walls": [],
+    "weather": "",
+    "width": 3520
+}

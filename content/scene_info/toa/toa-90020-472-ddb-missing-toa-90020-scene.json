@@ -1,0 +1,43 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "toa",
+            "ddbId": 90020,
+            "cobaltId": null,
+            "parentId": 472,
+            "contentChunkId": "ddb-missing-toa-90020",
+            "notes": [],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": {
+            "sightLimit": null,
+            "globalLight": "default",
+            "daylightColor": "",
+            "darknessColor": "",
+            "forceSaturation": false,
+            "saturation": 0
+        },
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 111,
+    "gridDistance": 5,
+    "gridType": 5,
+    "gridUnits": "ft",
+    "height": 8925,
+    "initial": null,
+    "lights": [],
+    "name": "Map: Locations in Chult (DM)",
+    "navName": "Map: Locations in Chult (DM)",
+    "shiftX": 20,
+    "shiftY": -22,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 6563
+}

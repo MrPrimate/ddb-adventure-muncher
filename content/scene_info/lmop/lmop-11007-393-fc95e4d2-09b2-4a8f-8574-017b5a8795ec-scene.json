@@ -1,0 +1,40 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "lmop",
+            "ddbId": 11007,
+            "cobaltId": null,
+            "parentId": 393,
+            "contentChunkId": "fc95e4d2-09b2-4a8f-8574-017b5a8795ec",
+            "notes": [],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": true,
+    "globalLightThreshold": null,
+    "grid": 80,
+    "gridDistance": 5,
+    "gridType": 4,
+    "gridUnits": "mi",
+    "height": 2028,
+    "initial": {
+        "x": 1371,
+        "y": 1901,
+        "scale": 0.63
+    },
+    "lights": [],
+    "name": "Map of the Sword Coast",
+    "navName": "Map of the Sword Coast",
+    "shiftX": -12,
+    "shiftY": -38,
+    "tokenVision": false,
+    "walls": [],
+    "weather": "",
+    "width": 1481
+}

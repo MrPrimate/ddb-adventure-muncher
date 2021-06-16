@@ -1,0 +1,427 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "T1uzJVHWQd4Smmtu",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 650,
+            "y": 2200,
+            "width": 400,
+            "height": 185,
+            "rotation": 0,
+            "z": 0,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Maer Dualdon",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 30,
+            "textColor": "#030303",
+            "textAlpha": 1
+        },
+        {
+            "_id": "FDUCqeJunEYwb7e6",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1450,
+            "y": 1400,
+            "width": 275,
+            "height": 33,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 2,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Speaker's House",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 30,
+            "textColor": "#f40606",
+            "textAlpha": 1,
+            "id": "FDUCqeJunEYwb7e6"
+        },
+        {
+            "_id": "yVfWoX8CfM1zvhYf",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1500,
+            "y": 2050,
+            "width": 274,
+            "height": 66,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "To Termalaine\nand the Eastway",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 30,
+            "textColor": "#e70404",
+            "textAlpha": 1,
+            "id": "yVfWoX8CfM1zvhYf"
+        },
+        {
+            "_id": "SdvmvDLGrLL31zkU",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1544,
+            "y": 1854,
+            "width": 180,
+            "height": 41,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    26.745382278034867,
+                    4.056833972650793
+                ],
+                [
+                    31.745382278034867,
+                    4.056833972650793
+                ],
+                [
+                    50.74538227803487,
+                    6.056833972650793
+                ],
+                [
+                    54.74538227803487,
+                    7.056833972650793
+                ],
+                [
+                    63.74538227803487,
+                    7.056833972650793
+                ],
+                [
+                    85.74538227803487,
+                    13.056833972650793
+                ],
+                [
+                    103.74538227803487,
+                    16.056833972650793
+                ],
+                [
+                    116.74538227803487,
+                    21.056833972650793
+                ],
+                [
+                    133.74538227803487,
+                    24.056833972650793
+                ],
+                [
+                    145.74538227803487,
+                    29.056833972650793
+                ],
+                [
+                    151.74538227803487,
+                    32.05683397265079
+                ],
+                [
+                    160.74538227803487,
+                    35.05683397265079
+                ],
+                [
+                    170.74538227803487,
+                    38.05683397265079
+                ],
+                [
+                    179.74538227803487,
+                    41.05683397265079
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 1,
+            "fillColor": "#050505",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#0f0f0f",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "ZDXFxJyCL4rvSlmn",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1687,
+            "y": 1863,
+            "width": 52,
+            "height": 44,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    12.639233106580377,
+                    0
+                ],
+                [
+                    32,
+                    20.82606474188151
+                ],
+                [
+                    40,
+                    31.82606474188151
+                ],
+                [
+                    46,
+                    39.82606474188151
+                ],
+                [
+                    52,
+                    43.82606474188151
+                ],
+                [
+                    51,
+                    43.82606474188151
+                ],
+                [
+                    40,
+                    43.82606474188151
+                ],
+                [
+                    17,
+                    43.82606474188151
+                ],
+                [
+                    4,
+                    43.82606474188151
+                ],
+                [
+                    0,
+                    43.82606474188151
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 1,
+            "fillColor": "#050505",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#0f0f0f",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "XqyZceAvJRNMNsyD",
+            "flags": {},
+            "type": "p",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1150,
+            "y": 1450,
+            "width": 300,
+            "height": 200,
+            "rotation": 0,
+            "z": 5,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    300,
+                    0
+                ],
+                [
+                    0,
+                    200
+                ]
+            ],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#cc4c28",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#050505",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#cc4c28",
+            "textAlpha": 1
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "idrotf",
+            "ddbId": 10054,
+            "cobaltId": null,
+            "parentId": 1082,
+            "contentChunkId": "MapMap114lonelywood-player",
+            "notes": [
+                {
+                    "label": "The Happy Scrimshander",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2056,
+                            "bookCode": "idrotf",
+                            "slug": "lonelywood#LocationsinLonelywood",
+                            "contentChunkId": "66b08528-c59b-43d6-9014-5a35037ed1a7",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1082,
+                            "linkId": "GoNpNYnpItacT3Ps"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1050,
+                            "y": 1350
+                        }
+                    ],
+                    "iconSize": 75,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "The Lucky Liar",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2060,
+                            "bookCode": "idrotf",
+                            "slug": "lonelywood#LocationsinLonelywood",
+                            "contentChunkId": "203c7231-10dc-4021-8d33-ab42b60729df",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1082,
+                            "linkId": "j0jE24Gy7WEcYqat"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1250,
+                            "y": 1050
+                        }
+                    ],
+                    "iconSize": 75,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "Ramshackle",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2064,
+                            "bookCode": "idrotf",
+                            "slug": "lonelywood#LocationsinLonelywood",
+                            "contentChunkId": "2984baeb-a19c-439e-aec1-a0cc9b4395a0",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1082,
+                            "linkId": "mDyrxvAjx9mOG9mW"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 950,
+                            "y": 1950
+                        }
+                    ],
+                    "iconSize": 75,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 100,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2048,
+    "initial": null,
+    "lights": [],
+    "name": "Map 1.14: Lonelywood",
+    "navName": "Lonelywood",
+    "shiftX": 0,
+    "shiftY": 0,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 1501
+}

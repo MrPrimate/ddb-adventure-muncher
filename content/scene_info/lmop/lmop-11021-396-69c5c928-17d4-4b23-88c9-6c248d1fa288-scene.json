@@ -1,0 +1,4555 @@
+{
+    "backgroundColor": "#7d765d",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "lmop",
+            "ddbId": 11021,
+            "cobaltId": null,
+            "parentId": 396,
+            "contentChunkId": "69c5c928-17d4-4b23-88c9-6c248d1fa288",
+            "notes": [
+                {
+                    "label": "01. Westernmost Cottage",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2027,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "12d337eb-5398-42d6-82f4-374bc7a0f0cd",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "OhjkoWkWiquwuhNv",
+                            "pin": "18752025"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1870,
+                            "y": 2125
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "02. Blighted Cottages",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2036,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "6b8118da-750e-49d4-9bed-e5ad4c435906",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "WypHlhEwivZIqaUV",
+                            "pin": "24752475"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2635,
+                            "y": 2550
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03. The Brown Horse",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2044,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "fb918de0-204b-45c6-ba8d-bb4cf9cad1d0",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "NxHJiGQYmYly54Tm",
+                            "pin": "27751425"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2975,
+                            "y": 1445
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04. Druid’s Watch",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2055,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "b46714a5-44d1-46b6-a1ea-875c7e39d6c9",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "c6LDC8ofm4d2K2bY",
+                            "pin": "24753225"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2720,
+                            "y": 3315
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05. Blighted Farmhouse",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2062,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "1a14b86d-9c05-4dfa-85c3-b057e84da051",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "RkN15N7I8sV2U1ES",
+                            "pin": "30753675"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3400,
+                            "y": 3825
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06. Ruined Store",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2072,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "4d4e09da-8c5e-4211-a81e-9467451fc689",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "0kCAb5CExhD4QiuY",
+                            "pin": "38253075"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4080,
+                            "y": 3315
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "07. Dragon’s Tower",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2086,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "866ca19c-ff4c-4941-8fe6-20538b22e58a",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "GYOeK1Rg9EbSJx05",
+                            "pin": "36751425"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3910,
+                            "y": 1445
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "08. Old Smithy",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2093,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "62b1e095-a563-4af3-9f29-1ae52f4fd430",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "FKlVNVECtpGFvBbN",
+                            "pin": "41253525"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4420,
+                            "y": 3825
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "09. Herbalist’s Shop",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2101,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "e5f8d0fa-7102-48a7-b690-79c16ebf9c74",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "yHU1bsTBtbOj208H",
+                            "pin": "45753075"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 5015,
+                            "y": 3230
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "10. Town Square",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2105,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "02c68a7e-03a6-4b23-b123-20c5663f153f",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "zNSAhED554gdFzbX",
+                            "pin": "47252025"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 5355,
+                            "y": 2040
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "11. Old Garrison",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2112,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "6587470b-81f8-407a-bf7e-0c3e6ce7b8c7",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "WIDa9FKesqK3hywQ",
+                            "pin": "51751575"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 5610,
+                            "y": 1530
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "12. Weaver’s Cottage",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2120,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "9cb7e6e9-78ad-4ba3-bac2-7e261cdc2c1a",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "cc5HdZ0Opp1BwKmm",
+                            "pin": "48752475"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 5355,
+                            "y": 2465
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "13. Dragon Cultists",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2134,
+                            "bookCode": "lmop",
+                            "slug": "the-spiders-web#RuinsofThundertree",
+                            "contentChunkId": "b8916518-e766-413f-b7e7-8af9149e5f39",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 396,
+                            "linkId": "iKau255dcWBPSe1o",
+                            "pin": "53253525"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 5950,
+                            "y": 3825
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "i9wXdAB3DbrnyK6K",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 3740,
+                    "y": 3995,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "Vwz4CxAKzQ0ISLiE",
+                    "name": "Ash Zombie",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 3145,
+                    "y": 1530,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 287872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "ePFrMA0XLAQUTwEa",
+                    "name": "Ash Zombie",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2890,
+                    "y": 1445,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 287872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "1qqkC3dWqT4y94fV",
+                    "name": "Ash Zombie",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2550,
+                    "y": 1530,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 287872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "ECbBxuEfrcS85S9v",
+                    "name": "Ash Zombie",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2550,
+                    "y": 1360,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 287872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "tyf3uQPxlc31UvH4",
+                    "name": "Reidoth",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2400,
+                    "y": 3300,
+                    "disposition": 1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": "art/creatures/npcs/Druid_Medium_Humanoid_A_01.png"
+                        },
+                        "ddbActorFlags": {
+                            "id": 16848,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "1bYnMGf4yHKxMTJE",
+                    "name": "Giant Spider",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 4250,
+                    "y": 3145,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 16895,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "Q3HX3avwKtYhYjFn",
+                    "name": "Giant Spider",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 3740,
+                    "y": 3145,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 16895,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "aanq6ZMCISWE3YDG",
+                    "name": "Venomfang",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 4335,
+                    "y": 1445,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17073,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "ToNDX7PqRwqtbLKR",
+                    "name": "Ash Zombie",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 4420,
+                    "y": 3910,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 287872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "wXA0nSqgnY8zxx1l",
+                    "name": "Ash Zombie",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 4250,
+                    "y": 3825,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 287872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "rjoZMiL11BMTF13z",
+                    "name": "Ash Zombie",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 5780,
+                    "y": 1700,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 287872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "jxg3xoxhcRD3P9W5",
+                    "name": "Cultist",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 5950,
+                    "y": 3315,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16835,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "0n5QIjwb02QvQtLf",
+                    "name": "Cultist",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 6035,
+                    "y": 3400,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16835,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "FIWVEqqu2r5yXkhi",
+                    "name": "Cultist",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 5865,
+                    "y": 3655,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16835,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "dQZGF4QBICEPK2Ur",
+                    "name": "Cultist",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 5780,
+                    "y": 3655,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16835,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "QOxtKqAOp5VyQx8J",
+                    "name": "Cultist",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 5865,
+                    "y": 3910,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16835,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "DkrEHDQZfbfZ1Qqm",
+                    "name": "Cultist",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 5780,
+                    "y": 3825,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16835,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "hObNmjLPrrw6Nugo",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 2720,
+                    "y": 2125,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "FmfsVGfGr1nw4IlM",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 2805,
+                    "y": 2550,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "MSB9OtzjYh09uGfG",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 2635,
+                    "y": 2380,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "qpXtF9RmXQN2BrwT",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 2465,
+                    "y": 2720,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "pcJgcPKLyoOgN8Ub",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 2040,
+                    "y": 1955,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "2hn1zyjkYG42k15u",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 2550,
+                    "y": 2380,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "GvvnCq9tGUBco1HK",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 3740,
+                    "y": 3655,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "5l7riElPbbNEZNRu",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 3910,
+                    "y": 3825,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "uWJSaGYRRAXF2nf4",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 3825,
+                    "y": 3825,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "4PehPrer65J4KJa2",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 3740,
+                    "y": 3740,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "kRs2otLnSuvObTX7",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 3825,
+                    "y": 3995,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "1HtIHO3KrjHk3TAi",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 3910,
+                    "y": 3910,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "QHjQVEEeTC8uALeF",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 2380,
+                    "y": 2635,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "MipBPYgMuh22w3s5",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 3740,
+                    "y": 4080,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "svBZ8WpGke0wWiuh",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 5270,
+                    "y": 2805,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "ziJZzXey1wrjToJh",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 5015,
+                    "y": 2805,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "naVDoC3uruym5QJw",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 5270,
+                    "y": 2890,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "wcV9VAEpHCmKhoEJ",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 4930,
+                    "y": 2890,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "AyW0LS7FJZdyAdfN",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 5100,
+                    "y": 3230,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "xeH32CVAFUpnw0Fv",
+                    "name": "Twig Blight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 5185,
+                    "y": 3230,
+                    "disposition": -1,
+                    "flags": {
+                        "token-hud-wildcard": {
+                            "default": ""
+                        },
+                        "ddbActorFlags": {
+                            "id": 17095,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "5pFBFH8N0xC0i0ee",
+                    "name": "Ash Zombie",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 5695,
+                    "y": 1530,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 287872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "hRzfxyf7fSC1wzJe",
+                    "name": "Ash Zombie",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 5440,
+                    "y": 1360,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 287872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "HdeveW9w1rYfVBgk",
+                    "name": "Ash Zombie",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 5525,
+                    "y": 1360,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 287872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                },
+                {
+                    "_id": "wetsvxC6GDB6jDlV",
+                    "name": "Ash Zombie",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 5695,
+                    "y": 1360,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 287872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                }
+            ]
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": true,
+    "globalLightThreshold": null,
+    "grid": 85,
+    "gridDistance": 10,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3559,
+    "initial": null,
+    "lights": [],
+    "name": "Map 3.1: Ruins of Thundertree",
+    "navName": "Ruins of Thundertree",
+    "shiftX": 0,
+    "shiftY": -6,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                1774,
+                1955,
+                1700,
+                1955
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1700,
+                1955,
+                1700,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1700,
+                2295,
+                2040,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2040,
+                2295,
+                2040,
+                2146
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2040,
+                2040,
+                2040,
+                1955
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2284,
+                2295,
+                2210,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2210,
+                2295,
+                2210,
+                2433
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2210,
+                2454,
+                2210,
+                2507
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2210,
+                2528,
+                2210,
+                2635
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2210,
+                2635,
+                2231,
+                2635
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2305,
+                2635,
+                2486,
+                2635
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2507,
+                2635,
+                2550,
+                2635
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2550,
+                2635,
+                2539,
+                2125
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2539,
+                2125,
+                2507,
+                2125
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2475,
+                2125,
+                2380,
+                2125
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2380,
+                2125,
+                2380,
+                2199
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2380,
+                2231,
+                2380,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2858,
+                2295,
+                3049,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3049,
+                2295,
+                3049,
+                2518
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3060,
+                2635,
+                3060,
+                2805
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3060,
+                2805,
+                2720,
+                2805
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2720,
+                2805,
+                2720,
+                2720
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2720,
+                2624,
+                2720,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2720,
+                2295,
+                2794,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2815,
+                2295,
+                2847,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4930,
+                2125,
+                4930,
+                1965
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4919,
+                1955,
+                4781,
+                1955
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4758,
+                1963,
+                4760,
+                2093
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4758,
+                2132,
+                4760,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4760,
+                2295,
+                4930,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4930,
+                2295,
+                4930,
+                2220
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5270,
+                2295,
+                5440,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5440,
+                2295,
+                5440,
+                2326
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5440,
+                2337,
+                5440,
+                2401
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5440,
+                2422,
+                5440,
+                2465
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5440,
+                2465,
+                5599,
+                2465
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5599,
+                2465,
+                5599,
+                2635
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5599,
+                2635,
+                5567,
+                2635
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5482,
+                2635,
+                5440,
+                2635
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5440,
+                2635,
+                5440,
+                2805
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5440,
+                2805,
+                5418,
+                2805
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5397,
+                2805,
+                5270,
+                2805
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5270,
+                2805,
+                5270,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                2125,
+                5950,
+                1955
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                1955,
+                6056,
+                1955
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                6077,
+                1955,
+                6120,
+                1955
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                6120,
+                1997,
+                6120,
+                2125
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                6120,
+                2188,
+                6120,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                6098,
+                2295,
+                6003,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                2295,
+                5950,
+                2220
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5641,
+                1275,
+                5610,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5440,
+                1275,
+                5440,
+                1466
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5440,
+                1615,
+                5514,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5514,
+                1615,
+                5610,
+                1615
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5610,
+                1615,
+                5854,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5854,
+                1615,
+                5950,
+                1615
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5610,
+                1615,
+                5610,
+                1785
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5705,
+                1785,
+                5950,
+                1785
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                1445,
+                5950,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                1275,
+                5854,
+                1275
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                1445,
+                5854,
+                1445
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5854,
+                1445,
+                5610,
+                1445
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5610,
+                1445,
+                5610,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                3315,
+                6120,
+                3315
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                6120,
+                3315,
+                6120,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                6024,
+                3995,
+                5780,
+                3995
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5780,
+                3995,
+                5780,
+                3963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5780,
+                3655,
+                5950,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                3655,
+                6035,
+                3655
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                3655,
+                5950,
+                3559
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                3485,
+                5950,
+                3400
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                3400,
+                5950,
+                3315
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                6035,
+                3655,
+                6120,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                6024,
+                3995,
+                6120,
+                3995
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5610,
+                3495,
+                5525,
+                3495
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5503,
+                3485,
+                5301,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5291,
+                3485,
+                5270,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5270,
+                3485,
+                5270,
+                3676
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5270,
+                3750,
+                5270,
+                3825
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5270,
+                3825,
+                5386,
+                3825
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5408,
+                3825,
+                5471,
+                3825
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5493,
+                3825,
+                5610,
+                3825
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5610,
+                3697,
+                5610,
+                3623
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4930,
+                3145,
+                5100,
+                3145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5100,
+                3145,
+                5100,
+                3261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5100,
+                3304,
+                5100,
+                3378
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5100,
+                3410,
+                5100,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5100,
+                3485,
+                4930,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4930,
+                3485,
+                4930,
+                3368
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4930,
+                3346,
+                4930,
+                3283
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4930,
+                3272,
+                4930,
+                3230
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4250,
+                3655,
+                4590,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4590,
+                3655,
+                4590,
+                3740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4590,
+                3835,
+                4590,
+                3910
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4590,
+                3910,
+                4590,
+                3995
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4590,
+                3995,
+                4250,
+                3995
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4250,
+                3995,
+                4250,
+                3963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4250,
+                3740,
+                4250,
+                3655
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4228,
+                3145,
+                4356,
+                3145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4377,
+                3145,
+                4420,
+                3145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4420,
+                3145,
+                4420,
+                3293
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4420,
+                3336,
+                4420,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4420,
+                3485,
+                4271,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4228,
+                3485,
+                4069,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4069,
+                3485,
+                4069,
+                3389
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4080,
+                3304,
+                4080,
+                3145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4080,
+                3145,
+                3995,
+                3145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3973,
+                3145,
+                3814,
+                3145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3771,
+                3145,
+                3740,
+                3145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3740,
+                3145,
+                3740,
+                3261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3740,
+                3283,
+                3740,
+                3346
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3740,
+                3368,
+                3740,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3740,
+                3485,
+                3835,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3878,
+                3485,
+                3984,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3400,
+                3559,
+                3400,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3400,
+                3485,
+                3431,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3453,
+                3485,
+                3559,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3559,
+                3485,
+                3559,
+                3559
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3559,
+                3580,
+                3559,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3559,
+                3655,
+                3729,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3729,
+                3655,
+                3729,
+                3793
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3729,
+                3814,
+                3729,
+                3867
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3729,
+                3888,
+                3729,
+                3984
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3729,
+                3984,
+                3676,
+                3984
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3612,
+                3995,
+                3495,
+                3995
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3474,
+                3995,
+                3400,
+                3995
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3304,
+                3995,
+                3230,
+                3995
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3230,
+                3995,
+                3230,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3230,
+                3655,
+                3336,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3357,
+                3655,
+                3400,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2890,
+                3145,
+                2890,
+                3166
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2890,
+                3325,
+                2890,
+                3400
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2890,
+                3400,
+                2890,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2741,
+                3655,
+                2550,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2550,
+                3655,
+                2550,
+                3145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2550,
+                3145,
+                2635,
+                3145
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2635,
+                3145,
+                2890,
+                3145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5780,
+                3963,
+                5780,
+                3899
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                5780,
+                3899,
+                5780,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                6120,
+                3750,
+                6120,
+                3803
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                6120,
+                3803,
+                6120,
+                3995
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4590,
+                3740,
+                4590,
+                3803
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4590,
+                3803,
+                4590,
+                3835
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4250,
+                3963,
+                4250,
+                3910
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4250,
+                3910,
+                4250,
+                3740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                3559,
+                5950,
+                3506
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2550,
+                1275,
+                2805,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2805,
+                1275,
+                2890,
+                1275
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2890,
+                1275,
+                3145,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3198,
+                1275,
+                3230,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3230,
+                1275,
+                3230,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3230,
+                1615,
+                3145,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3081,
+                1615,
+                2985,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2985,
+                1615,
+                2890,
+                1615
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2890,
+                1615,
+                2858,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2805,
+                1615,
+                2663.3333333333335,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2663.3333333333335,
+                1615,
+                2550,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2550,
+                1615,
+                2550,
+                1370
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2550,
+                1370,
+                2550,
+                1306
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2550,
+                1306,
+                2550,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3081,
+                1615,
+                3145,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3198,
+                1275,
+                3145,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2890,
+                1275,
+                2890,
+                1360
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2890,
+                1360,
+                2890,
+                1445
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2890,
+                1445,
+                2890,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2858,
+                1615,
+                2805,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3740,
+                1275,
+                3910,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3910,
+                1275,
+                3995,
+                1275
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3995,
+                1275,
+                4080,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4080,
+                1275,
+                4080,
+                1423
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4090,
+                1445,
+                4090,
+                1530
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4080,
+                1561,
+                4080,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4080,
+                1615,
+                4037,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4037,
+                1615,
+                3984,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3984,
+                1615,
+                3910,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3910,
+                1615,
+                3825,
+                1615
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3825,
+                1615,
+                3740,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3740,
+                1615,
+                3740,
+                1423
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3740,
+                1423,
+                3740,
+                1370
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                3740,
+                1370,
+                3740,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4568,
+                1508,
+                4544.876230655214,
+                1428.18814691605
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4544.876230655214,
+                1428.18814691605,
+                4480.084868734014,
+                1346.942348843715
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4480.084868734014,
+                1346.942348843715,
+                4377,
+                1306
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4313,
+                1306,
+                4281,
+                1306
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4281,
+                1306,
+                4188.915131265986,
+                1346.942348843715
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4188.915131265986,
+                1346.942348843715,
+                4122,
+                1423
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4122,
+                1423,
+                4090,
+                1423
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4111,
+                1561,
+                4124.123769344786,
+                1630.81185308395
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4124.123769344786,
+                1630.81185308395,
+                4188.915131265986,
+                1712.057651156285
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4188.915131265986,
+                1712.057651156285,
+                4282.5413619212,
+                1757.145667494456
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4282.5413619212,
+                1757.145667494456,
+                4313,
+                1763
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4386.4586380788,
+                1757.145667494456,
+                4480.084868734014,
+                1712.057651156285
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4480.084868734014,
+                1712.057651156285,
+                4544.876230655215,
+                1630.81185308395
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4544.876230655215,
+                1630.81185308395,
+                4568,
+                1551
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4111,
+                1561,
+                4090,
+                1561
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4090,
+                1561,
+                4090,
+                1530
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4377,
+                1306,
+                4356,
+                1306
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4356,
+                1306,
+                4313,
+                1306
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4568,
+                1508,
+                4568,
+                1551
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4386.4586380788,
+                1757.145667494456,
+                4356,
+                1763
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4356,
+                1763,
+                4313,
+                1763
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4090,
+                1423,
+                4080,
+                1423
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4090,
+                1423,
+                4090,
+                1445
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4080,
+                1561,
+                4090,
+                1561
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5610,
+                1275,
+                5440,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5440,
+                1466,
+                5440,
+                1530
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                5440,
+                1530,
+                5440,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                1615,
+                5950,
+                1785
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                1530,
+                5950,
+                1615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5641,
+                1275,
+                5705,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                5705,
+                1275,
+                5854,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                1530,
+                5950,
+                1476
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                5950,
+                1476,
+                5950,
+                1445
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5705,
+                1785,
+                5641,
+                1785
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                5641,
+                1785,
+                5610,
+                1785
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                2295,
+                5971,
+                2295
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1795,
+                1955,
+                2040,
+                1955
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2890,
+                3166,
+                2890,
+                3230
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2890,
+                3230,
+                2890,
+                3325
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2890,
+                3655,
+                2805,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2805,
+                3655,
+                2741,
+                3655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                4930,
+                3145,
+                4930,
+                3166
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5610,
+                3825,
+                5610,
+                3729
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                6120,
+                3655,
+                6120,
+                3750
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5950,
+                3506,
+                5950,
+                3485
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 5108
+}

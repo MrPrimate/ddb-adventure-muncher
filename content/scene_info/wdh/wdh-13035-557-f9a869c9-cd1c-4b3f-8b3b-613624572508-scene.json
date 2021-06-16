@@ -1,0 +1,1995 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "wdh",
+            "ddbId": 13035,
+            "cobaltId": null,
+            "parentId": 557,
+            "contentChunkId": "f9a869c9-cd1c-4b3f-8b3b-613624572508",
+            "notes": [
+                {
+                    "label": "G01. Locked Gates",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2037,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "87c28961-6cfc-4bc8-99dc-b98c8b5121ea",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "NuiWSdT29kIitWyh"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2300,
+                            "y": 4050
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G02. Yard",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2041,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "8b1f955a-0a57-48b3-88b7-5e711f0af425",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "4j5WncxT7dxrCHs3"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4100,
+                            "y": 3900
+                        },
+                        {
+                            "x": 4100,
+                            "y": 5300
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G03. Coach House",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2045,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "658e3a52-b17e-42ca-b06a-ed7a6c368e25",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "aLjsefWw87NAPb34"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4200,
+                            "y": 6200
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G04. Guard Barracks",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2048,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "d6e38377-688c-4249-8208-40c6341bc686",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "rQuYaEQnOxRzOVSZ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3200,
+                            "y": 5600
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G05. Kitchen",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2050,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "300cfca0-3edb-4b08-a213-28f39b4492ca",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "aFxfraUvvVP7IazT"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2700,
+                            "y": 6000
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G06. Pantry",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2054,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "55eb959f-08a8-4ede-845b-4e1db92babe3",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "N5Tmyf1ZSqPBj36t"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2700,
+                            "y": 6300
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G07. Laundry Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2057,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "e3877731-238d-43c6-b084-74ab6ecc684f",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "UUlJR7xsmQdi5jyT"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2700,
+                            "y": 5600
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G08. Great Hall",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2062,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "f243bbee-e5e6-402b-9217-5321e0acc805",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "e7biPPKf0zUDvuja"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2000,
+                            "y": 6300
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G09. Parlor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2065,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "f3b0df3e-3380-45ae-9468-c3418de294e5",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "ktkVyiGKmn2AR60y"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1500,
+                            "y": 6200
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G10. Den and Trophy Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2068,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "9a504630-7e6f-4e4b-ba6e-8eed8389bf10",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "jH7rT1DaLyNAxBy3"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1500,
+                            "y": 5800
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G11. Orond’s Study",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2072,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "e9c103a5-710f-4dfc-8360-efe65666547a",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "D8usfeD50Qcdircw"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1700,
+                            "y": 5200
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G12. Family Library",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2081,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "ecf2d306-4be2-4f41-bb5a-e7890725b90d",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "XzquWjz93UAZ6WvK"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1600,
+                            "y": 4900
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G13. Upstairs Foyer",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2087,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "0337cec9-7eff-407f-b0fb-785196aea5b4",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "4Nnj18Of64uykfcn"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1300,
+                            "y": 2900
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G14. Ballroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2090,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "16ceb1d3-32b8-4a8c-a052-d7432ab5757b",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "leZi2xugPmoNoVkY"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1500,
+                            "y": 2500
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G15. Guest Suite",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2098,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "80104d20-898b-4b16-b877-a6b75f590aa3",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "SpGgbxEtNwCjTIjj"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1500,
+                            "y": 3500
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G16. Master Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2105,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "ed8a3262-8ceb-499b-af4a-bdfa3814944b",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "NDMbPiwkepPeD7ut"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2000,
+                            "y": 3100
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G17. Balcony",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2107,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "d26f56fd-ec68-4ce3-ba44-c062df07c6d9",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "p61o69dHVTao89RH"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2200,
+                            "y": 2800
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G18. Children’s Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2111,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "fd3227e7-b901-4a08-bee7-217f1916cafd",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "BliTwDkCs5tw8Gtm"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2100,
+                            "y": 3600
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G19. Servants’ Wing",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2113,
+                            "bookCode": "wdh",
+                            "slug": "fireball#GralhundVilla",
+                            "contentChunkId": "5af62b7e-5d31-4416-ac77-6c8b48a32f80",
+                            "userData": {
+                                "userDisplayName": "maadonna"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 557,
+                            "linkId": "3v98t0hn9Z8sRAYq"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2800,
+                            "y": 3400
+                        },
+                        {
+                            "x": 2800,
+                            "y": 3100
+                        }
+                    ],
+                    "iconSize": 50,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 100,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 5253,
+    "initial": {
+        "x": 2790,
+        "y": 4476,
+        "scale": 0.2
+    },
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 91.02,
+            "darknessThreshold": 0,
+            "dim": 182.05,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 3500,
+            "y": 4550,
+            "lightAnimation": {
+                "type": "",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 32.23,
+            "darknessThreshold": 0,
+            "dim": 64.46,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.5,
+            "x": 2800,
+            "y": 5300,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 35.75,
+            "darknessThreshold": 0,
+            "dim": 71.5,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.5,
+            "x": 3050,
+            "y": 6100,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        }
+    ],
+    "name": "Gralhund Villa",
+    "navName": "Gralhund Villa",
+    "shiftX": -49,
+    "shiftY": -33,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                1187,
+                4400,
+                2212,
+                4112
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2212,
+                4112,
+                2300,
+                4100
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2300,
+                4100,
+                2375,
+                4075
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2375,
+                4075,
+                4712,
+                3462
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4712,
+                3462,
+                4725,
+                4162
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4725,
+                4162,
+                4800,
+                4162
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4800,
+                4162,
+                4837,
+                6625
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4837,
+                6625,
+                4400,
+                6625
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4400,
+                6625,
+                4112,
+                6625
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4112,
+                6625,
+                3987,
+                6612
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3987,
+                6612,
+                3987,
+                6412
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3987,
+                6412,
+                2925,
+                6425
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2925,
+                6425,
+                2925,
+                6512
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2925,
+                6512,
+                1187,
+                6525
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1187,
+                6525,
+                1187,
+                4400
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2000,
+                4162,
+                2000,
+                5400
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1837,
+                5400,
+                1187,
+                5400
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1187,
+                5000,
+                1800,
+                5000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1800,
+                5000,
+                1812,
+                5200
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1812,
+                5200,
+                1812,
+                5300
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1812,
+                5300,
+                1812,
+                5400
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1837,
+                5400,
+                1900,
+                5400
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1900,
+                5400,
+                2000,
+                5400
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2000,
+                5400,
+                2100,
+                5400
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2100,
+                5400,
+                2175,
+                5400
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2175,
+                5400,
+                3100,
+                5387
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3100,
+                5387,
+                3100,
+                5287
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3100,
+                5287,
+                3100,
+                5200
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3100,
+                5200,
+                3112,
+                4900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2912,
+                4887,
+                3200,
+                4887
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3200,
+                4887,
+                3300,
+                4887
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3300,
+                4887,
+                3500,
+                4900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3500,
+                4900,
+                3500,
+                5900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3500,
+                5900,
+                3200,
+                5900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3200,
+                5900,
+                3112,
+                5900
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2912,
+                5887,
+                2912,
+                4887
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2412,
+                5387,
+                2412,
+                5500
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2412,
+                5500,
+                2412,
+                5887
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2412,
+                5887,
+                2512,
+                5887
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2512,
+                5887,
+                2512,
+                5500
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2512,
+                5787,
+                2712,
+                5787
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2712,
+                5787,
+                2800,
+                5787
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2800,
+                5787,
+                2912,
+                5787
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2912,
+                5887,
+                2925,
+                5987
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2925,
+                5987,
+                2925,
+                6425
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2925,
+                6187,
+                2712,
+                6187
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2712,
+                6187,
+                2612,
+                6187
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2612,
+                6187,
+                2425,
+                6200
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2412,
+                5887,
+                2425,
+                6300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2425,
+                6300,
+                2425,
+                6400
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2425,
+                6400,
+                2425,
+                6512
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3987,
+                6412,
+                4012,
+                6187
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4012,
+                6187,
+                4012,
+                6087
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4012,
+                6087,
+                4000,
+                5500
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4000,
+                5500,
+                4812,
+                5487
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4300,
+                5487,
+                4300,
+                5687
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4300,
+                5687,
+                4300,
+                5787
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4300,
+                5787,
+                4300,
+                5887
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4000,
+                5887,
+                4400,
+                5887
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4400,
+                5887,
+                4500,
+                5887
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4500,
+                5887,
+                4825,
+                5887
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1187,
+                5587,
+                1800,
+                5600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1800,
+                5600,
+                1800,
+                5700
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1800,
+                5700,
+                1800,
+                5800
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1800,
+                5800,
+                1800,
+                6000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1800,
+                6000,
+                1812,
+                6087
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1812,
+                6087,
+                1812,
+                6512
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1187,
+                5900,
+                1312,
+                5912
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1312,
+                5912,
+                1412,
+                5912
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1412,
+                5912,
+                1800,
+                5900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1200,
+                3787,
+                2900,
+                3787
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2900,
+                3787,
+                2900,
+                2987
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2900,
+                2987,
+                2312,
+                2987
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2312,
+                2987,
+                2250,
+                2987
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                2987,
+                2200,
+                2987
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2200,
+                2987,
+                2000,
+                2987
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2000,
+                2987,
+                2000,
+                1500
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2000,
+                1500,
+                1700,
+                1587
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1700,
+                1587,
+                1462,
+                1637
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1462,
+                1637,
+                1212,
+                1712
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1212,
+                1712,
+                1200,
+                3787
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1212,
+                2700,
+                1300,
+                2700
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1300,
+                2700,
+                1400,
+                2700
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1400,
+                2700,
+                2900,
+                2700
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2900,
+                2700,
+                2900,
+                2987
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2900,
+                3187,
+                2700,
+                3200
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2700,
+                3200,
+                2600,
+                3200
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2600,
+                3200,
+                2512,
+                3200
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2512,
+                3200,
+                2500,
+                2987
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2400,
+                2987,
+                2412,
+                3487
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2412,
+                3487,
+                2100,
+                3487
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2012,
+                3487,
+                1700,
+                3487
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1700,
+                3787,
+                1700,
+                3100
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1700,
+                3100,
+                1700,
+                3050
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1700,
+                3050,
+                1700,
+                3000
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1700,
+                3000,
+                1712,
+                2700
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1400,
+                2887,
+                1700,
+                2900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1200,
+                3187,
+                1312,
+                3187
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1312,
+                3187,
+                1400,
+                3200
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1400,
+                3200,
+                1700,
+                3212
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1200,
+                3387,
+                1300,
+                3387
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1200,
+                3387,
+                1300,
+                3387
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1300,
+                3387,
+                1412,
+                3387
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1412,
+                3387,
+                1700,
+                3387
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2200,
+                3487,
+                2212,
+                3787
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2512,
+                3787,
+                2512,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2512,
+                3300,
+                2712,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2712,
+                3300,
+                2800,
+                3312
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2800,
+                3312,
+                2900,
+                3312
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2412,
+                3487,
+                2512,
+                3487
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2100,
+                3487,
+                2012,
+                3487
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2912,
+                5887,
+                3112,
+                5900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 3870
+}

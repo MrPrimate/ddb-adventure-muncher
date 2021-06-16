@@ -1,0 +1,28 @@
+{
+    "backgroundColor": "#333333",
+    "flags": {
+        "ddb": {
+            "bookCode": "oota",
+            "ddbId": 11037,
+            "cobaltId": null,
+            "parentId": 402,
+            "contentChunkId": "35735406-324c-4925-960e-c27e4b603df1",
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "grid": 68,
+    "gridDistance": 50,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3072,
+    "lights": [],
+    "name": "Map 4.2: Gracklstugh - The Whorlstone Tunnels",
+    "navName": "Gracklstugh - The Whorlstone Tunnels",
+    "shiftX": 1,
+    "shiftY": -10,
+    "walls": [],
+    "width": 2133
+}

@@ -1,0 +1,1182 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "FnjzEqvF17iTmAvG",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 1350,
+            "y": 1925,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#ff0000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "tS2BqcfCkaAnzGap",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2275,
+            "y": 1375,
+            "width": 135,
+            "height": 108,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Down to\nLevel 2",
+            "fontFamily": "Arial, Helvetica, sans-serif",
+            "fontSize": 30,
+            "textColor": "#000000",
+            "textAlpha": 1,
+            "id": "tS2BqcfCkaAnzGap"
+        },
+        {
+            "_id": "LH40k276rwuQG5FU",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 1350,
+            "y": 1525,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#ff0000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "idFVWIkgg3Vr6k11",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 1400,
+            "y": 1450,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#ff0000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "7LC4knMLVTCvEfeZ",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 3125,
+            "y": 1525,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#ff0000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "IGt0kF3kR5CiHweL",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 1800,
+            "y": 1850,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#000000",
+            "textAlpha": 1,
+            "id": "IGt0kF3kR5CiHweL"
+        },
+        {
+            "_id": "D4KMm2uavtPCJPRK",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 1850,
+            "y": 1900,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#000000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "bghP9PqX4wuSQzYq",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 1800,
+            "y": 2000,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#000000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "U7DMpg0xGlbUBgB5",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2000,
+            "y": 2400,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "G",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#000000",
+            "textAlpha": 1,
+            "id": "U7DMpg0xGlbUBgB5"
+        },
+        {
+            "_id": "D8PqIJRMJiK0onMV",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2250,
+            "y": 2300,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "G",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#000000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "wjZpTiDYZF0K1NUi",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2550,
+            "y": 2250,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "G",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#000000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "IiTaj4V7lYhTBS0m",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 1500,
+            "y": 1500,
+            "width": 135,
+            "height": 108,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Down to\nLevel 2",
+            "fontFamily": "Arial, Helvetica, sans-serif",
+            "fontSize": 30,
+            "textColor": "#000000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "VvyhL8pJDOK2DzSf",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2325,
+            "y": 1675,
+            "width": 135,
+            "height": 108,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Open to\n45 below",
+            "fontFamily": "Arial, Helvetica, sans-serif",
+            "fontSize": 30,
+            "textColor": "#000000",
+            "textAlpha": 1,
+            "id": "VvyhL8pJDOK2DzSf"
+        },
+        {
+            "_id": "28xSBZqpDsTG9q8A",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 3250,
+            "y": 825,
+            "width": 135,
+            "height": 108,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Open to\n64 below",
+            "fontFamily": "Arial, Helvetica, sans-serif",
+            "fontSize": 30,
+            "textColor": "#000000",
+            "textAlpha": 1,
+            "id": "28xSBZqpDsTG9q8A"
+        },
+        {
+            "_id": "eTmvGHB516OhaMk4",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 3125,
+            "y": 2400,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#ff0000",
+            "textAlpha": 1
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "toa",
+            "ddbId": 13033,
+            "cobaltId": null,
+            "parentId": 475,
+            "contentChunkId": "80133cba-2ac1-4350-8b44-be453243b595",
+            "notes": [
+                {
+                    "label": "01. Acererak’s Warning",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2041,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "1a5cbe3b-3988-44ad-9f64-1d7cdde12e2e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "yIaJ5vhijaV4i41K"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2475,
+                            "y": 2575
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "02. Gallery of Tricksters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2048,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "2b890932-1c4e-420b-ac01-35d127eb8433",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "9NRO5wj8zinHU87H"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2975,
+                            "y": 2325
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03. False Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2055,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "90022993-020d-456f-a312-144c37b2dc2d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "6V9B0GpiHWjeEez2"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2525,
+                            "y": 2175
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06. Crystal Window",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2095,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "05368ac5-e55e-4112-a89f-e6a88638951d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "ogQan4k3XNarFcLC"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1525,
+                            "y": 1675
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "07. Grand Staircase",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2114,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "e963e33b-77f8-4065-9551-2b687dd025c9",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "kGFJZSqfNMPhl72k"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2275,
+                            "y": 1775
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "08. Magical Attraction",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2118,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "53d94fd0-dfe9-46a5-a35a-a11da767cea2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "lkQe2S170isM0Tdo"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1375,
+                            "y": 1275
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "09. Magic Fountain",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2127,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "5a27dd9d-5c67-4e09-b2bd-87d9e85bdc05",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "QhvT6bezP0tqgYgY"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1425,
+                            "y": 925
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "10. Obo’laka’s Tomb",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2143,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "250f8bc4-4ebe-4305-962a-3ae5ee9b41c0",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "t6RSEhIQABuzrNL8"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1275,
+                            "y": 1675
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "11. Gas Pocket",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2145,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "57df4007-80da-42fb-94da-c3d5c9d1c755",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "ORdraf2PmosPQFUL"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1425,
+                            "y": 2075
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "12. Trapped Chest",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2153,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "4f0512ce-d219-42f5-add8-c99a5e4b0763",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "XlvJoUlhWJlM2tQr"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1325,
+                            "y": 2475
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "13. Stone Skull",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2158,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "0f6cda8d-5521-4065-b286-9bf4534be033",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "IODtukvloWiN6UeL"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2875,
+                            "y": 1725
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "14. Moa’s Tomb",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2178,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "d43ef119-f918-4f90-8b1a-5833c13be165",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "1500PHmXHyBH6VWs"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3125,
+                            "y": 1825
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "15. Wind Tunnel",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2186,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "0abbb897-3ea0-4fe9-be1d-32fb9c857862",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "EO3IZPmlBRHEhv91"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2625,
+                            "y": 1325
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "16. Wongo’s Tomb",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2205,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "8d3bf033-8e11-4cd3-afd4-9acade999d6a",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "1AKWJiSaSF1mrYzq"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2625,
+                            "y": 975
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "17. Underground Waterfall",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2211,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "c164568c-85fc-4be8-90c1-2f1496156fde",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "kg7rOl2LwVwuM0tE"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3525,
+                            "y": 975
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04A. First Puzzle Door",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2220,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "4ab97a5b-2e22-4784-a36f-c83ea83de8c4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "9MkfhdZ8Q31o9M2z"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1725,
+                            "y": 2325
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04B. Second Puzzle Door",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2230,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "5d56b52c-dc0c-4faa-a6ef-ec939a317a06",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "HaCMWEk1xgJ8sKGW"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1975,
+                            "y": 2125
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05A. Poison Darts",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2233,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "c25a2e79-9956-4260-9a91-cc9d56918188",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "Z7xfDrbvHiqq6ypb"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1975,
+                            "y": 1975
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05B. Devil Face",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2237,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "be9aed5f-e2b9-4f9b-a3ba-44e17f1771fd",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "nKbaWb90CXK9v3sw"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1925,
+                            "y": 1675
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05C. Floor Hatch",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2240,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "5dd91575-e438-44a1-8d34-27ef2cad4b57",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "nKIZEUyjnh1oqx90"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1725,
+                            "y": 1675
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "07A. We Are Not Alone",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2244,
+                            "bookCode": "toa",
+                            "slug": "tomb-of-the-nine-gods#Level1RottenHalls",
+                            "contentChunkId": "506858a0-1758-4abf-8200-f2adf2395411",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 475,
+                            "linkId": "q8rbgLeYDpY8FLa1"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2675,
+                            "y": 1625
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": {
+            "sightLimit": null,
+            "globalLight": "default",
+            "daylightColor": "",
+            "darknessColor": ""
+        },
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 50,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2280,
+    "initial": null,
+    "lights": [],
+    "name": "Rotten Halls",
+    "navName": "Rotten Halls",
+    "shiftX": -3,
+    "shiftY": 18,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 3300
+}

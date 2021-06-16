@@ -1,0 +1,767 @@
+{
+    "backgroundColor": "#333333",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "gos",
+            "ddbId": 13058,
+            "cobaltId": null,
+            "parentId": 678,
+            "contentChunkId": "d758f7cf-cd04-4a97-be6f-9a992e5e059a",
+            "notes": [
+                {
+                    "label": "22. Abandoned Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2195,
+                            "bookCode": "gos",
+                            "slug": "tammerauts-fate#TheHermitage",
+                            "contentChunkId": "ee71a0ee-c2c0-415b-9dda-fd200fb01a75",
+                            "userData": {
+                                "userDisplayName": "The_Mandalorian"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 678,
+                            "linkId": "ZTHqwKzlpzVW566i"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3050,
+                            "y": 2750
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "23. Roof",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2198,
+                            "bookCode": "gos",
+                            "slug": "tammerauts-fate#TheHermitage",
+                            "contentChunkId": "69aac218-ba32-4205-b90f-a41cc0183284",
+                            "userData": {
+                                "userDisplayName": "The_Mandalorian"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 678,
+                            "linkId": "S5gTYSRamKJAli4c"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 5250,
+                            "y": 2750
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "24. Belfry",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2203,
+                            "bookCode": "gos",
+                            "slug": "tammerauts-fate#TheHermitage",
+                            "contentChunkId": "d0abea43-69c0-42fb-a3cd-ed4ef06b2b5d",
+                            "userData": {
+                                "userDisplayName": "The_Mandalorian"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 678,
+                            "linkId": "JpWEpJYt5kZyOFS4"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3050,
+                            "y": 4150
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "25. Bolt-Hole",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2222,
+                            "bookCode": "gos",
+                            "slug": "tammerauts-fate#TheHermitage",
+                            "contentChunkId": "be365040-6612-44d6-bb46-1fde9c42ab28",
+                            "userData": {
+                                "userDisplayName": "The_Mandalorian"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 678,
+                            "linkId": "0ktDY4yyz8Imjni3"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4250,
+                            "y": 4950
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 100,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 4425,
+    "initial": {
+        "x": 4859,
+        "y": 3527,
+        "scale": 0.17
+    },
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 13.7,
+            "darknessThreshold": 0,
+            "dim": 27.4,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3000,
+            "y": 4300,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 10.11,
+            "darknessThreshold": 0,
+            "dim": 20.21,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3000,
+            "y": 2500,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 10.11,
+            "darknessThreshold": 0,
+            "dim": 20.21,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3400,
+            "y": 2900,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 10.11,
+            "darknessThreshold": 0,
+            "dim": 20.21,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3000,
+            "y": 3300,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 10.11,
+            "darknessThreshold": 0,
+            "dim": 20.21,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2600,
+            "y": 2900,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        }
+    ],
+    "name": "Hermitage (Upper and Cellar)",
+    "navName": "Hermitage (Upper and Cellar)",
+    "shiftX": 5,
+    "shiftY": -52,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                2650,
+                2862,
+                2712,
+                2687
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2712,
+                2687,
+                2850,
+                2575
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2850,
+                2575,
+                2950,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2950,
+                2550,
+                3050,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3050,
+                2550,
+                3237,
+                2625
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3237,
+                2625,
+                3350,
+                2775
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3350,
+                2775,
+                3362,
+                2862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3362,
+                2862,
+                3362,
+                2950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3362,
+                2950,
+                3312,
+                3112
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3312,
+                3112,
+                3162,
+                3225
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3162,
+                3225,
+                3050,
+                3250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3050,
+                3250,
+                2950,
+                3250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2950,
+                3250,
+                2812,
+                3212
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2812,
+                3212,
+                2700,
+                3125
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2700,
+                3125,
+                2650,
+                2950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2650,
+                2950,
+                2650,
+                2862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2800,
+                4125,
+                2737,
+                4262
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2737,
+                4262,
+                2800,
+                4475
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2800,
+                4475,
+                2862,
+                4512
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2862,
+                4512,
+                2987,
+                4562
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2987,
+                4562,
+                3125,
+                4512
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3125,
+                4512,
+                3187,
+                4475
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3187,
+                4475,
+                3262,
+                4300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3262,
+                4300,
+                3212,
+                4125
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3212,
+                4125,
+                3150,
+                4075
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3150,
+                4075,
+                2987,
+                4037
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2987,
+                4037,
+                2837,
+                4087
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2837,
+                4087,
+                2800,
+                4125
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                4587,
+                2600,
+                5400,
+                2600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                5400,
+                2600,
+                5400,
+                2962
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                5400,
+                2962,
+                4587,
+                2962
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                4587,
+                2962,
+                4587,
+                2600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                4125,
+                4887,
+                4125,
+                4687
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4125,
+                4687,
+                3775,
+                4687
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3775,
+                4687,
+                3775,
+                5325
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3775,
+                5325,
+                4312,
+                5312
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4312,
+                5312,
+                4312,
+                5125
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4312,
+                5125,
+                4525,
+                5125
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4525,
+                5125,
+                4525,
+                5050
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4525,
+                5050,
+                4612,
+                5050
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4612,
+                5050,
+                4612,
+                4950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4612,
+                4950,
+                4525,
+                4950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4525,
+                4950,
+                4525,
+                4875
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4525,
+                4875,
+                4125,
+                4887
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 6307
+}

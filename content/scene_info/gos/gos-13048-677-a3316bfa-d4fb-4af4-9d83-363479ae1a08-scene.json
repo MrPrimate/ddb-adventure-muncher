@@ -1,0 +1,791 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "gos",
+            "ddbId": 13048,
+            "cobaltId": null,
+            "parentId": 677,
+            "contentChunkId": "a3316bfa-d4fb-4af4-9d83-363479ae1a08",
+            "notes": [
+                {
+                    "label": "20. Large Hall",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2167,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "91dd1c63-35d1-4ebf-be0e-cacf883a9cb4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "6bVHMHmy6hIge4hh"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3106.5,
+                            "y": 5158.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "21. Blademaster’s Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2173,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "4b607f42-2d25-4b9c-8a6e-5a976d06e5ab",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "vyqJJ9bxCIAxFM3f"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4303.5,
+                            "y": 5785.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "22. Champion’s Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2179,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "2d5cda1c-9e9a-45f3-ab76-262696151547",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "UX9TxfZDUFN0QbWG"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1852.5,
+                            "y": 5842.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "23. Champions’ Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2186,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "530a52d4-44a1-491c-bb92-2e79982e62ae",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "JqQgU6HUVxSqZxaQ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1852.5,
+                            "y": 5386.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "24. Living Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2192,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "a73ca25a-5207-4491-b07d-bb4e3aca2d49",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "EKR3hYedQytY3kWJ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3163.5,
+                            "y": 6070.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "25. Hatchery",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2196,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "e7836aaf-9734-4c86-bd49-5a29a415dc00",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "odgdGl17chhFmkuR"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4018.5,
+                            "y": 6355.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "27. Barracks",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2205,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "4657e078-4015-4bf5-87f9-eba13095cbd6",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "jvZWAUmvS7pXyfQe"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4132.5,
+                            "y": 4987.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "28. Wave Shaper’s Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2209,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "dff0d307-0551-45d5-8365-556fac0c7c19",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "IOSEpRMCI5C4T2lB"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4417.5,
+                            "y": 4987.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "29. Barracks",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2216,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "e3e3cc04-f03b-4c72-8f6b-3154e3d383d9",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "YLLeMpkkI9MBzcIC"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2080.5,
+                            "y": 4873.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "30. Champion’s Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2220,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "e90262d4-471f-4d6b-acce-77ba095b2d2c",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "pLCjjf5io0VHB4lx"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1738.5,
+                            "y": 4930.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "31. Priestess’s Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2224,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "3049cd52-f580-4320-8475-0314ff1abdb0",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "Pe9ZUU07NBunxRn6"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3847.5,
+                            "y": 4132.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "32. Priestess’s Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2228,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "074eb372-5762-4d7b-bae4-c29b3a69efe4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "19RAAwQhUOlvtoEE"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3847.5,
+                            "y": 3847.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "33. Priestess’s Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2233,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "2080e012-f240-49f5-bd38-9aaad73c4905",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "18Qg4cgz6mDj1etq"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3790.5,
+                            "y": 3448.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "34. Priestess’s Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2237,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "d2922445-b6f0-4a6b-b0ce-141b9adf2e97",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "B6MVtJiobrCz8ulf"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2308.5,
+                            "y": 4132.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "35. Prayer Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2242,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "4cf9b4d8-44d2-4b3a-b17a-2a088e1418be",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "gpDz7EpoyF4goGuc"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2308.5,
+                            "y": 3676.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "36. High Priestess’s Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2251,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "42865575-a5e6-4146-9044-447117ab072d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "hC7u5m1RoOauH1z8"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2308.5,
+                            "y": 3277.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "37. Temple",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2265,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "2df5c4c8-7e53-40ff-9baf-e3bfa197c604",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "mLZAs5QXLnL6sNHn"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3106.5,
+                            "y": 3448.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "39. Occupied Shark Pen",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2277,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "ef159899-1b4b-4847-b995-ad6e769e7302",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "A1YRV7GRL6WPoyp9"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4303.5,
+                            "y": 3220.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "40. Nearly Empty Shark Pen",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2282,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "2139d4a3-a114-4f76-aff4-16446c9e328e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "XYMsNyBb2IihPabs"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1852.5,
+                            "y": 3220.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "41. Banquet Hall",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2290,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "3e6b6fb4-5a00-4b26-aa2d-20bffbefeb80",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "iBCfOt2Ad4QRzwS6"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3049.5,
+                            "y": 2764.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "42. Throne Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2300,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "08ec5702-89bf-40d5-abce-c96eb6388673",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "JyzxaxUUFYqodD1z"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2992.5,
+                            "y": 2137.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "43. Royal Servant’s Chambers",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2304,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "15c28bdc-23e5-4f39-bf8e-2c3a5107d98e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "hisRDgaZIulyWJWx"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3961.5,
+                            "y": 1966.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "44. Living Quarters of the Baroness",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2308,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "cc78f3c6-a344-4a0a-80d5-ec6a3f036877",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "E8Zbqs9CKU7eJxXT"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4474.5,
+                            "y": 2080.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "45. Sleeping Quarters of the Baroness",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2317,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "33db1bdc-1149-459d-b4ea-e2327da03fae",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "92eTQk04rpkWCBlZ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3961.5,
+                            "y": 2308.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "46. Baron’s Living Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2320,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "8e3fae1c-cea2-4aed-ad05-bf41485677a6",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "kqtZMS47GRSImnu1"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2194.5,
+                            "y": 2080.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "47. Baron’s Sleeping Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2327,
+                            "bookCode": "gos",
+                            "slug": "the-final-enemy#TheMissionBegins",
+                            "contentChunkId": "4f4817b7-ab91-4a3d-90d6-da10a5eafba9",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 677,
+                            "linkId": "2A2YNT97GGSNCAvQ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1738.5,
+                            "y": 2080.5
+                        }
+                    ],
+                    "iconSize": 43,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 57,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 5672,
+    "initial": null,
+    "lights": [],
+    "name": "Level 2",
+    "navName": "Level 2",
+    "shiftX": 42,
+    "shiftY": -23,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 4186
+}

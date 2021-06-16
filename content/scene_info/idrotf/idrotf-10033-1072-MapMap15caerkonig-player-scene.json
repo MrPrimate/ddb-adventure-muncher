@@ -1,0 +1,757 @@
+{
+    "backgroundColor": "#333333",
+    "darkness": 0.6,
+    "drawings": [
+        {
+            "_id": "QvA7rChcexcDkQl5",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 979,
+            "y": 2185,
+            "width": 283,
+            "height": 73,
+            "rotation": 0,
+            "z": 3,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#ffffff",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Speaker's House",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#750000",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        },
+        {
+            "_id": "d2ZIbX2qyuMbXvPb",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 883,
+            "y": 1607,
+            "width": 283,
+            "height": 73,
+            "rotation": 0,
+            "z": 3,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#ffffff",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Ruined Caer",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#750000",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        },
+        {
+            "_id": "KRjJlrKlLvNeEo6a",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 699,
+            "y": 2049,
+            "width": 422,
+            "height": 106,
+            "rotation": 345,
+            "z": 3,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#ffffff",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "To Caer-Dineval",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#750000",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        },
+        {
+            "_id": "tfQzWabEF0RaDKY5",
+            "author": "3UM1enwvyiMoXqqW",
+            "type": "p",
+            "x": 1089,
+            "y": 2168,
+            "width": 0,
+            "height": 0,
+            "rotation": 0,
+            "z": 0,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    140.3230606720108,
+                    -128
+                ],
+                [
+                    140.3230606720108,
+                    -128
+                ]
+            ],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#2843cc",
+            "fillAlpha": 0.5,
+            "strokeWidth": 8,
+            "strokeColor": "#750000",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#FFFFFF",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "p4zNxeTpxffbKq0y",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 2319,
+            "y": 3647,
+            "width": 283,
+            "height": 73,
+            "rotation": 0,
+            "z": 3,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#ffffff",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Lac Dinneshere",
+            "fontFamily": "Signika",
+            "fontSize": 60,
+            "textColor": "#750000",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "idrotf",
+            "ddbId": 10033,
+            "cobaltId": null,
+            "parentId": 1072,
+            "contentChunkId": "MapMap15caerkonig-player",
+            "notes": [
+                {
+                    "label": "Hook, Line, and Sinker",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2036,
+                            "bookCode": "idrotf",
+                            "slug": "caer-konig#LocationsinCaerKonig",
+                            "contentChunkId": "6545ce01-535f-468c-aa39-844b520e27b8",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1072,
+                            "linkId": "pcHSiiNS979yAHWJ",
+                            "pin": "14501450"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2620.592871851711,
+                            "y": 2516
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "Frozenfar Expeditions",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2040,
+                            "bookCode": "idrotf",
+                            "slug": "caer-konig#LocationsinCaerKonig",
+                            "contentChunkId": "95853454-5ccf-445b-9e25-a3403ec3ad98",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1072,
+                            "linkId": "8ZH0rEMG8gs0xnBY",
+                            "pin": "12501050"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2296.699370836331,
+                            "y": 1615
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "The Northern Light",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2045,
+                            "bookCode": "idrotf",
+                            "slug": "caer-konig#LocationsinCaerKonig",
+                            "contentChunkId": "a55f9ee9-53fd-457d-8284-3704763a739e",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1072,
+                            "linkId": "dsJf9nTDoYEBQa2N",
+                            "pin": "17501450"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3032.820964053104,
+                            "y": 2278
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": true,
+    "globalLightThreshold": null,
+    "grid": 68,
+    "gridDistance": 50,
+    "gridType": 3,
+    "gridUnits": "ft",
+    "height": 3600,
+    "initial": {
+        "x": 2276,
+        "y": 2518,
+        "scale": 0.34
+    },
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2592,
+            "y": 2542,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2897,
+            "y": 2380,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2736,
+            "y": 2850,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2657,
+            "y": 2767,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3006,
+            "y": 2617,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2535,
+            "y": 2191,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2276,
+            "y": 1828,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2021,
+            "y": 1803,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1424,
+            "y": 1949,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1346,
+            "y": 2000,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1418,
+            "y": 2079,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1001,
+            "y": 2364,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 977,
+            "y": 2508,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 943,
+            "y": 2741,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1008,
+            "y": 2745,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1083,
+            "y": 3090,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1144,
+            "y": 3178,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1595,
+            "y": 2864,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2351,
+            "y": 2518,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1962,
+            "y": 2708,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1821,
+            "y": 2803,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1649,
+            "y": 3065,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1561,
+            "y": 3580,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1467,
+            "y": 3472,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1365,
+            "y": 3289,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1812,
+            "y": 3629,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 2,
+                "intensity": 2
+            },
+            "hidden": false
+        }
+    ],
+    "name": "Caer-Konig",
+    "navName": "Caer-Konig",
+    "padding": 0.25,
+    "shiftX": 2,
+    "shiftY": 47,
+    "tokenVision": false,
+    "walls": [],
+    "weather": "",
+    "width": 2647
+}

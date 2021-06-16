@@ -1,0 +1,4930 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "9wxZFj81GVdlUyaO",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 2702,
+            "y": 5046,
+            "width": 137.75,
+            "height": 110.125,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#d4b388",
+            "fillAlpha": 0.1,
+            "strokeWidth": 0,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "+30 ft",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0f0f0f",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "toBpk971yqGasnja",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 2276,
+            "y": 3259,
+            "width": 137.75,
+            "height": 110.125,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#d4b388",
+            "fillAlpha": 0.1,
+            "strokeWidth": 0,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "+30 ft",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0f0f0f",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "HsFJMrxbOF9VKqKX",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 2317,
+            "y": 5809,
+            "width": 137.75,
+            "height": 110.125,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#d4b388",
+            "fillAlpha": 0.1,
+            "strokeWidth": 0,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "+30 ft",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#d59c48",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "TnNPRu5cbCkaWlmt",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 1815,
+            "y": 5005,
+            "width": 137.75,
+            "height": 110.125,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#d4b388",
+            "fillAlpha": 0.1,
+            "strokeWidth": 0,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "+20 ft",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#d59c48",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "8HpcvnAXqb9wFRq5",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 2207,
+            "y": 4503,
+            "width": 137.75,
+            "height": 110.125,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#d4b388",
+            "fillAlpha": 0.1,
+            "strokeWidth": 0,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "+20 ft",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#d59c48",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "HzanXHnl80TMhqjy",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 1994,
+            "y": 4675,
+            "width": 137.75,
+            "height": 110.125,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#d4b388",
+            "fillAlpha": 0.1,
+            "strokeWidth": 0,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "+10 ft",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#d59c48",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "5l5cv5dgZsRw5Pe5",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 1815,
+            "y": 5445,
+            "width": 137.75,
+            "height": 110.125,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#d4b388",
+            "fillAlpha": 0.1,
+            "strokeWidth": 0,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "+10 ft",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#d59c48",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "UDLcFKjnYp2s7UWo",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 2482,
+            "y": 5418,
+            "width": 137.75,
+            "height": 110.125,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#d4b388",
+            "fillAlpha": 0.1,
+            "strokeWidth": 0,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "+25 ft",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#d59c48",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "mBdopo56zu8DEz7B",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 1946,
+            "y": 5713,
+            "width": 137.75,
+            "height": 110.125,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#d4b388",
+            "fillAlpha": 0.1,
+            "strokeWidth": 0,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "+15 ft",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#d59c48",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "T4x0C3sBWHF6EuS5",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 2035,
+            "y": 2365,
+            "width": 137.75,
+            "height": 110.125,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#d4b388",
+            "fillAlpha": 0.1,
+            "strokeWidth": 0,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "+20 ft",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#d59c48",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "ttp",
+            "ddbId": 13012,
+            "cobaltId": null,
+            "parentId": 484,
+            "contentChunkId": "d82bbd31-3098-4184-bf92-c502ee7381b7",
+            "notes": [
+                {
+                    "label": "01.Ruined Portico",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2043,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "5fd40d78-0cdf-4885-bb2f-8609945e42b3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "wlMW4J0SVF5nPHOa"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3327.5,
+                            "y": 2392.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "02. Statue of Umberlee",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2046,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "2ca68520-4060-43e5-8094-8a2681d57b2f",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "eZfGhkoEqRq0nACH"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3987.5,
+                            "y": 2227.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03. Overgrown Garden",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2049,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "b2de5864-6f4b-40f5-ba20-938a40ecd0df",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "DC5Rt8UyUiUZf3fA"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2227.5,
+                            "y": 2227.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04. Antechamber and Portcullis",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2051,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "6cbb1771-2e4f-4f6d-80db-c016e9477b5f",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "jRFHNU8Yp0eNBekI"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3382.5,
+                            "y": 2777.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05. Feast Hall",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2056,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "0002a691-ef3d-4f31-a376-50f3bdf3dde5",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "tD7tpoWrjOPwsh96"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3547.5,
+                            "y": 3162.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06. Abandoned Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2059,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "5a7c8832-ec7f-4676-8eed-4034ed0969ca",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "HlMxr6YaGOfGs9KZ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2722.5,
+                            "y": 2887.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "07. Ruined Bath",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2064,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "a9d327a4-48d0-4865-a697-2ae2d9cfe2a3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "8HyLwmz24YG6bl9V"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3987.5,
+                            "y": 2887.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "08. Shrine",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2069,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "60da1d81-92b9-4ec4-a1d1-07c30919317d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "AzUHq9ac5KJAmduG"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2667.5,
+                            "y": 3272.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "09. Crab Pool",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2076,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "8bab3a86-a4d3-4cf5-badf-d665334417e8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "XDzd167O2Hukjsmn"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3822.5,
+                            "y": 3272.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "10. Crumbling Walkway",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2080,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "59b9a4be-e2ce-49e8-a61d-7e19afffe08d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "kwkRM5yAhqzANogA"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2337.5,
+                            "y": 3107.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "11. Throne Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2088,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "8b90575c-4ca3-4c2d-8652-729fbdc71c9a",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "0w7q3rosbMIjDNS8"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2942.5,
+                            "y": 3822.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "13. Ruined Guard Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2098,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "93d51bd3-7a19-483a-8c12-7e94ed1a02da",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "ESe7xg7uSWazdQJz"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2777.5,
+                            "y": 4592.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "14. Terrace Garden",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2104,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "2575aa84-50bd-415b-94e1-c2e942e3f1f5",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "TkOprBQQXeuwZ4mK"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2557.5,
+                            "y": 5087.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "15. Cleric’s Chambers",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2113,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "c8e60c97-6206-45d7-b562-4bb8af5f027b",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "RzyubDZ0RTxP7ahH"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3162.5,
+                            "y": 4702.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "16. Kitchen and Storage",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2116,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "c6414d54-8b84-41f0-a4f4-646b5e82ec09",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "RgIKNEybrYqy9luD"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3877.5,
+                            "y": 4702.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "17. Hallway",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2121,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "3dd503bd-1937-43b4-adb3-289c6d87778d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "6fdfmD8p0LOUMclR"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3602.5,
+                            "y": 5087.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "18. Treasury",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2133,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "7d8e5952-98b8-4149-8561-845fd4a26f57",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "WsfD6WcXm6dMwPoJ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3602.5,
+                            "y": 5692.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "19. Glass Statue",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2136,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "689f1ee1-2d6f-47a0-92df-5a1bdb58c42d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "ckCwVGrAJqSTwJHU"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3272.5,
+                            "y": 6462.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "20. Haunted Cage",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2143,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "14720ffc-877f-462c-aa21-bef82c7a5105",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "GQY27L2kwFOKrknR"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3822.5,
+                            "y": 6517.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "21. Lounge",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2146,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "403e7796-d1de-400b-8d3e-5d4cdfdf1f2b",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "uCobuhBe8rQJLKjD"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2832.5,
+                            "y": 5527.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "22. Caves of Worship",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2149,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "884cadcb-a523-4179-affb-c69cb9fc521d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "ZH0wGOAGBycFjrTs"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4592.5,
+                            "y": 4372.5
+                        },
+                        {
+                            "x": 4647.5,
+                            "y": 5472.5
+                        },
+                        {
+                            "x": 4702.5,
+                            "y": 6132.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "23. Blow Holes",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2151,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "b3fc8c1b-75aa-4b71-99ef-4ac6a045b82b",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "N4J0dDct8Z6BADgw"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4977.5,
+                            "y": 4042.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "24. Shrine of Umberlee",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2163,
+                            "bookCode": "ttp",
+                            "slug": "the-tortle-package#ExploringtheIsland",
+                            "contentChunkId": "3ed63c21-8949-4366-b4b2-219dba754bcc",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 484,
+                            "linkId": "7YNdnRENuteze8mB"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4647.5,
+                            "y": 3272.5
+                        }
+                    ],
+                    "iconSize": 41,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 55,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 5700,
+    "initial": null,
+    "lights": [],
+    "name": "Dangaru",
+    "navName": "Exploring the Island",
+    "shiftX": -64,
+    "shiftY": 22,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                3685,
+                1925,
+                3685,
+                2035
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3685,
+                1925,
+                3685,
+                2035
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3011,
+                1938,
+                3011,
+                2131
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3685,
+                2131,
+                3685,
+                2805
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3011,
+                2255,
+                2997,
+                2915
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3465,
+                2695,
+                4015,
+                2695
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4070,
+                2695,
+                4180,
+                2695
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4180,
+                2695,
+                4235,
+                2722
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4235,
+                2722,
+                4303,
+                2708
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4303,
+                2708,
+                4345,
+                2640
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4345,
+                2640,
+                4372,
+                2612
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4372,
+                2612,
+                4427,
+                2598
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4427,
+                2598,
+                4482,
+                2488
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4482,
+                2488,
+                4455,
+                2420
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4455,
+                2420,
+                4510,
+                2365
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4510,
+                2365,
+                4510,
+                2268
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4510,
+                2268,
+                4565,
+                2172
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4565,
+                2172,
+                4606,
+                2145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4606,
+                2145,
+                4688,
+                2131
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4688,
+                2131,
+                4757,
+                2048
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4757,
+                2048,
+                4757,
+                2007
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4757,
+                2007,
+                4785,
+                1952
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4785,
+                1952,
+                4771,
+                1883
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4771,
+                1883,
+                4798,
+                1842
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4798,
+                1842,
+                4771,
+                1773
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4771,
+                1773,
+                4798,
+                1732
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4798,
+                1732,
+                4798,
+                1650
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4138,
+                2695,
+                4125,
+                3465
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4125,
+                3465,
+                3918,
+                3465
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3863,
+                3465,
+                2585,
+                3465
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2585,
+                3465,
+                2585,
+                3355
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2585,
+                3300,
+                2598,
+                2997
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2598,
+                3121,
+                2997,
+                3121
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2997,
+                3121,
+                2997,
+                3038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2997,
+                3121,
+                2997,
+                3245
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3685,
+                2915,
+                3685,
+                3245
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3685,
+                3135,
+                4125,
+                3135
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3685,
+                3355,
+                3685,
+                3465
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2997,
+                3355,
+                2997,
+                3465
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2585,
+                3465,
+                2585,
+                3575
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3341,
+                3465,
+                3341,
+                3795
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3341,
+                3905,
+                3341,
+                4455
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2598,
+                3685,
+                2598,
+                3822
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2585,
+                3905,
+                2585,
+                4413
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2585,
+                4413,
+                2543,
+                4413
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2585,
+                4207,
+                2901,
+                4221
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2901,
+                4221,
+                2901,
+                4661
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3465,
+                2695,
+                3478,
+                2928
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3478,
+                2928,
+                3437,
+                2928
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3258,
+                2928,
+                3217,
+                2928
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3217,
+                2928,
+                3217,
+                2695
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3217,
+                2695,
+                2997,
+                2695
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2997,
+                2695,
+                2722,
+                2708
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2722,
+                2708,
+                2598,
+                2805
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2598,
+                2805,
+                2585,
+                2928
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4125,
+                3465,
+                4193,
+                3506
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4193,
+                3506,
+                4235,
+                3506
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4235,
+                3506,
+                4290,
+                3520
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4290,
+                3520,
+                4303,
+                3478
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4303,
+                3478,
+                4248,
+                3437
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4248,
+                3437,
+                4248,
+                3327
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4248,
+                3327,
+                4276,
+                3272
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4276,
+                3272,
+                4276,
+                3162
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4276,
+                3162,
+                4400,
+                3052
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4400,
+                3052,
+                4400,
+                2983
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4400,
+                2983,
+                4510,
+                2887
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4510,
+                2887,
+                4592,
+                2915
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4592,
+                2915,
+                4688,
+                2873
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4688,
+                2873,
+                4743,
+                2915
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4743,
+                2915,
+                4840,
+                2901
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4840,
+                2901,
+                4922,
+                2970
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4922,
+                2970,
+                4936,
+                3038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4936,
+                3038,
+                4991,
+                3080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4991,
+                3080,
+                4991,
+                3176
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4991,
+                3176,
+                5005,
+                3245
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5005,
+                3245,
+                4977,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4977,
+                3300,
+                4991,
+                3410
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4991,
+                3410,
+                5073,
+                3396
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5073,
+                3396,
+                5128,
+                3451
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5128,
+                3451,
+                5101,
+                3533
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5101,
+                3533,
+                5060,
+                3561
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5060,
+                3561,
+                5073,
+                3575
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5073,
+                3575,
+                5128,
+                3588
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5128,
+                3588,
+                5128,
+                3630
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5128,
+                3630,
+                5170,
+                3657
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5170,
+                3657,
+                5156,
+                3740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5156,
+                3740,
+                5101,
+                3781
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5101,
+                3781,
+                5128,
+                3795
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5128,
+                3795,
+                5128,
+                3863
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5128,
+                3863,
+                5170,
+                3905
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5128,
+                3863,
+                5170,
+                3905
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5170,
+                3905,
+                5115,
+                4015
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5115,
+                4015,
+                5032,
+                4028
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5032,
+                4028,
+                5005,
+                4056
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5005,
+                4056,
+                5073,
+                4083
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5073,
+                4083,
+                5087,
+                4152
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5087,
+                4152,
+                5032,
+                4235
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5032,
+                4235,
+                4963,
+                4248
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4963,
+                4248,
+                4895,
+                4262
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4895,
+                4262,
+                4853,
+                4276
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4853,
+                4276,
+                4826,
+                4372
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4826,
+                4372,
+                4826,
+                4427
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4826,
+                4427,
+                4771,
+                4496
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4771,
+                4496,
+                4771,
+                4523
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4771,
+                4523,
+                4867,
+                4496
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4455,
+                3492,
+                4606,
+                3465
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4606,
+                3465,
+                4688,
+                3506
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4688,
+                3506,
+                4743,
+                3465
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4743,
+                3465,
+                4798,
+                3396
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4798,
+                3396,
+                4853,
+                3410
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4853,
+                3410,
+                4936,
+                3437
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4936,
+                3437,
+                4963,
+                3506
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4963,
+                3506,
+                4950,
+                3588
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4950,
+                3588,
+                5005,
+                3630
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5005,
+                3630,
+                4963,
+                3726
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4963,
+                3726,
+                5046,
+                3836
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5046,
+                3836,
+                4977,
+                3877
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4977,
+                3877,
+                4963,
+                3960
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4963,
+                3960,
+                4936,
+                4001
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4936,
+                4001,
+                4936,
+                4042
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4936,
+                4001,
+                4936,
+                4042
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4936,
+                4042,
+                4853,
+                4070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4853,
+                4070,
+                4853,
+                4125
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4853,
+                4125,
+                4771,
+                4180
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4771,
+                4180,
+                4743,
+                4166
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4743,
+                4166,
+                4716,
+                4111
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4716,
+                4111,
+                4620,
+                4138
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4620,
+                4138,
+                4551,
+                4070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4551,
+                4070,
+                4565,
+                4028
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4565,
+                4028,
+                4633,
+                4015
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4633,
+                4015,
+                4661,
+                4028
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4661,
+                4028,
+                4826,
+                3932
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4826,
+                3932,
+                4895,
+                3822
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4895,
+                3822,
+                4922,
+                3808
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4922,
+                3808,
+                4963,
+                3753
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4963,
+                3753,
+                4922,
+                3671
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4922,
+                3671,
+                4922,
+                3630
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4922,
+                3630,
+                4798,
+                3561
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4798,
+                3561,
+                4661,
+                3547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4661,
+                3547,
+                4606,
+                3520
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4606,
+                3520,
+                4523,
+                3506
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4523,
+                3506,
+                4455,
+                3520
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4455,
+                3520,
+                4455,
+                3492
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3038,
+                4221,
+                3918,
+                4221
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3918,
+                4221,
+                4001,
+                4180
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4001,
+                4180,
+                4042,
+                4180
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4042,
+                4180,
+                4083,
+                4152
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4083,
+                4152,
+                4152,
+                4152
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4152,
+                4152,
+                4193,
+                4166
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4193,
+                4166,
+                4248,
+                4138
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4248,
+                4138,
+                4290,
+                4152
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4290,
+                4152,
+                4345,
+                4138
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4345,
+                4138,
+                4358,
+                4097
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4358,
+                4097,
+                4400,
+                4097
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4400,
+                4097,
+                4427,
+                4276
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4427,
+                4276,
+                4372,
+                4290
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4372,
+                4290,
+                4372,
+                4427
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4372,
+                4427,
+                4345,
+                4468
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4345,
+                4468,
+                4358,
+                4565
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4358,
+                4565,
+                4441,
+                4647
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4441,
+                4647,
+                4510,
+                4647
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4510,
+                4647,
+                4647,
+                4633
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4647,
+                4633,
+                4702,
+                4688
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4702,
+                4688,
+                4730,
+                4743
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4730,
+                4743,
+                4688,
+                4826
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4688,
+                4826,
+                4675,
+                4867
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4675,
+                4867,
+                4647,
+                4908
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4647,
+                4908,
+                4592,
+                4881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4592,
+                4881,
+                4537,
+                4908
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4537,
+                4908,
+                4537,
+                4963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4537,
+                4963,
+                4496,
+                4977
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4496,
+                4977,
+                4468,
+                4963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4468,
+                4963,
+                4386,
+                5005
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4386,
+                5005,
+                4386,
+                5087
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4386,
+                5087,
+                4386,
+                5115
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3038,
+                4221,
+                3038,
+                4991
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3038,
+                4991,
+                3231,
+                4991
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3465,
+                5005,
+                3726,
+                5005
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3038,
+                4441,
+                3231,
+                4441
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3451,
+                4441,
+                3685,
+                4441
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3685,
+                5032,
+                3685,
+                4221
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3795,
+                4441,
+                4125,
+                4441
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4125,
+                4441,
+                4125,
+                5445
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4125,
+                5445,
+                3698,
+                5445
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3698,
+                5445,
+                3685,
+                5225
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3685,
+                5238,
+                4125,
+                5225
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3795,
+                5005,
+                4125,
+                4991
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3905,
+                4908,
+                3905,
+                4798
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3905,
+                4798,
+                4125,
+                4785
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2543,
+                4578,
+                2598,
+                4578
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2598,
+                4578,
+                2598,
+                4702
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2598,
+                4702,
+                2901,
+                4853
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2901,
+                4853,
+                2901,
+                4991
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2901,
+                4853,
+                2901,
+                4785
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2901,
+                5225,
+                2901,
+                5362
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2901,
+                5362,
+                2763,
+                5500
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2681,
+                5568,
+                2598,
+                5623
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2598,
+                5623,
+                2598,
+                5720
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2598,
+                5857,
+                2598,
+                5995
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2598,
+                5995,
+                2791,
+                6338
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2791,
+                6338,
+                3038,
+                6338
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3038,
+                6338,
+                3025,
+                5225
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3025,
+                5225,
+                3465,
+                5225
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3465,
+                5225,
+                3465,
+                5445
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3465,
+                5445,
+                3025,
+                5445
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3258,
+                5445,
+                3245,
+                5225
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3905,
+                5445,
+                3905,
+                5238
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3231,
+                5445,
+                3231,
+                6215
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3231,
+                6215,
+                3451,
+                6215
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3451,
+                6215,
+                3451,
+                6421
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3451,
+                6421,
+                3368,
+                6421
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3368,
+                6421,
+                3368,
+                6325
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3368,
+                6325,
+                3080,
+                6311
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3080,
+                6311,
+                3080,
+                6655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3080,
+                6655,
+                3368,
+                6655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3368,
+                6655,
+                3368,
+                6558
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3368,
+                6558,
+                3671,
+                6558
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3671,
+                6558,
+                3671,
+                6668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3671,
+                6668,
+                4125,
+                6668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4125,
+                6668,
+                4125,
+                6311
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4125,
+                6311,
+                3671,
+                6325
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3671,
+                6325,
+                3671,
+                6435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3671,
+                6435,
+                3588,
+                6435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3588,
+                6435,
+                3588,
+                6228
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3588,
+                6435,
+                3588,
+                6228
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3588,
+                6228,
+                3918,
+                6215
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3918,
+                6215,
+                3918,
+                5788
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3918,
+                5788,
+                4042,
+                5788
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4042,
+                5788,
+                4042,
+                5720
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4042,
+                5720,
+                3973,
+                5692
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3973,
+                5692,
+                3973,
+                5637
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3973,
+                5637,
+                4001,
+                5610
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4001,
+                5610,
+                4042,
+                5610
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4042,
+                5610,
+                4028,
+                5541
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4028,
+                5541,
+                3905,
+                5527
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3905,
+                5527,
+                3905,
+                5445
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4386,
+                5115,
+                4358,
+                5170
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4358,
+                5170,
+                4331,
+                5252
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4331,
+                5252,
+                4372,
+                5321
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4372,
+                5321,
+                4331,
+                5348
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4331,
+                5348,
+                4317,
+                5403
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4317,
+                5403,
+                4345,
+                5486
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4345,
+                5486,
+                4276,
+                5541
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4276,
+                5541,
+                4262,
+                5610
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4262,
+                5610,
+                4235,
+                5555
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4235,
+                5555,
+                4028,
+                5541
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4042,
+                5788,
+                4138,
+                5788
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4138,
+                5788,
+                4166,
+                5802
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4166,
+                5802,
+                4207,
+                5802
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4207,
+                5802,
+                4248,
+                5843
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4248,
+                5843,
+                4345,
+                5788
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4345,
+                5788,
+                4400,
+                5733
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4345,
+                5788,
+                4400,
+                5733
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4400,
+                5733,
+                4400,
+                5692
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4400,
+                5692,
+                4468,
+                5651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4468,
+                5651,
+                4606,
+                5706
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4606,
+                5706,
+                4606,
+                5775
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4606,
+                5775,
+                4675,
+                5816
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4675,
+                5816,
+                4661,
+                5871
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4661,
+                5871,
+                4688,
+                5926
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4688,
+                5926,
+                4647,
+                5967
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4647,
+                5967,
+                4551,
+                5953
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4551,
+                5953,
+                4427,
+                5995
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4427,
+                5995,
+                4386,
+                6050
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4386,
+                6050,
+                4290,
+                6105
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4290,
+                6105,
+                4303,
+                6297
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4303,
+                6297,
+                4358,
+                6338
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4358,
+                6338,
+                4303,
+                6421
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4303,
+                6421,
+                4345,
+                6613
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4345,
+                6613,
+                4427,
+                6682
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4427,
+                6682,
+                4578,
+                6641
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4578,
+                6641,
+                4620,
+                6586
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4620,
+                6586,
+                4716,
+                6613
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4716,
+                6613,
+                4743,
+                6655
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4743,
+                6655,
+                4867,
+                6600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4867,
+                6600,
+                4867,
+                6490
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4867,
+                6490,
+                4908,
+                6490
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4908,
+                6490,
+                4963,
+                6435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4963,
+                6435,
+                4936,
+                6352
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4936,
+                6352,
+                4977,
+                6338
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4977,
+                6338,
+                5032,
+                6242
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5032,
+                6242,
+                4977,
+                6063
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4977,
+                6063,
+                4936,
+                6063
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4936,
+                6063,
+                4936,
+                6008
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4936,
+                6008,
+                4881,
+                5953
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4881,
+                5953,
+                4908,
+                5885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4908,
+                5885,
+                4826,
+                5788
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4826,
+                5788,
+                4840,
+                5678
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4840,
+                5678,
+                4867,
+                5637
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4867,
+                5637,
+                4922,
+                5651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4867,
+                5637,
+                4922,
+                5651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4922,
+                5651,
+                5018,
+                5596
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5018,
+                5596,
+                5060,
+                5513
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5060,
+                5513,
+                5032,
+                5458
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5032,
+                5458,
+                4991,
+                5417
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4991,
+                5417,
+                5005,
+                5362
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5005,
+                5362,
+                5018,
+                5307
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5018,
+                5307,
+                5073,
+                5321
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5073,
+                5321,
+                5128,
+                5197
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5128,
+                5197,
+                5018,
+                5128
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5018,
+                5128,
+                5018,
+                5032
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5018,
+                5032,
+                4977,
+                5018
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4977,
+                5018,
+                4950,
+                4963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4950,
+                4963,
+                4867,
+                4936
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4867,
+                4936,
+                4826,
+                4853
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4826,
+                4853,
+                4867,
+                4812
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4867,
+                4812,
+                4908,
+                4757
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4908,
+                4757,
+                4895,
+                4730
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4895,
+                4730,
+                4950,
+                4702
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4950,
+                4702,
+                4977,
+                4620
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4977,
+                4620,
+                4867,
+                4496
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3217,
+                2695,
+                3465,
+                2695
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2997,
+                3038,
+                2997,
+                2915
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2997,
+                3355,
+                2997,
+                3245
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3685,
+                2915,
+                3685,
+                2805
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3341,
+                3905,
+                3341,
+                3795
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3231,
+                4441,
+                3341,
+                4441
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3451,
+                4441,
+                3341,
+                4441
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3231,
+                4991,
+                3465,
+                5005
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3726,
+                5005,
+                3795,
+                5005
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3905,
+                4908,
+                3905,
+                5005
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3685,
+                4441,
+                3795,
+                4441
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3465,
+                5225,
+                3685,
+                5225
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3368,
+                6558,
+                3368,
+                6421
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3671,
+                6558,
+                3671,
+                6435
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2598,
+                5857,
+                2598,
+                5720
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2901,
+                4785,
+                2901,
+                4661
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2901,
+                5225,
+                2901,
+                4991
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 4200
+}

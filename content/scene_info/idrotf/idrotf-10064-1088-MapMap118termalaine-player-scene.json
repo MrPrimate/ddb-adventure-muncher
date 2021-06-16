@@ -1,0 +1,722 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "RZoBcKRuIuJYCjvG",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 500,
+            "y": 2150,
+            "width": 386,
+            "height": 66,
+            "rotation": 0,
+            "z": 0,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 10,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Maer Dualdon",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 50,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1
+        },
+        {
+            "_id": "ZoQ2zAjBcZGT36oo",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 500,
+            "y": 650,
+            "width": 421,
+            "height": 66,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 10,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "To Lonelywood",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 50,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1
+        },
+        {
+            "_id": "F5SyasKPH4BDiq48",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1400,
+            "y": 900,
+            "width": 471,
+            "height": 66,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 10,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "To the Gem Mine",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 50,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1
+        },
+        {
+            "_id": "5iF2xpgC8d6GIzjm",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1500,
+            "y": 2300,
+            "width": 281,
+            "height": 66,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 10,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "To Targos",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 50,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1
+        },
+        {
+            "_id": "ZFyLQkS49Kx6D2LC",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 650,
+            "y": 900,
+            "width": 281,
+            "height": 66,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 10,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Town Hall",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 50,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1
+        },
+        {
+            "_id": "uguEcjjQph0ME9wa",
+            "flags": {},
+            "type": "p",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 850,
+            "y": 1000,
+            "width": 350,
+            "height": 400,
+            "rotation": 0,
+            "z": 5,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    350,
+                    400
+                ]
+            ],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#cc4c28",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#050505",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#cc4c28",
+            "textAlpha": 1
+        },
+        {
+            "_id": "693JDHQZS0tblpKA",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 552,
+            "y": 787,
+            "width": 59,
+            "height": 116,
+            "rotation": 0,
+            "z": 6,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    59.05356030119367,
+                    116.2128619532175
+                ],
+                [
+                    44,
+                    82
+                ],
+                [
+                    37,
+                    68
+                ],
+                [
+                    32,
+                    54
+                ],
+                [
+                    27,
+                    42
+                ],
+                [
+                    20,
+                    30
+                ],
+                [
+                    12,
+                    17
+                ],
+                [
+                    8,
+                    12
+                ],
+                [
+                    4,
+                    8
+                ],
+                [
+                    1,
+                    2
+                ],
+                [
+                    0,
+                    0
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "RJVdaHdNNVFUz0Ae",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 548,
+            "y": 776,
+            "width": 27,
+            "height": 42,
+            "rotation": 0,
+            "z": 7,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0.3868936345270413,
+                    41.87952861988413
+                ],
+                [
+                    0,
+                    11
+                ],
+                [
+                    1,
+                    5
+                ],
+                [
+                    1,
+                    3
+                ],
+                [
+                    3,
+                    0
+                ],
+                [
+                    8,
+                    3
+                ],
+                [
+                    16,
+                    8
+                ],
+                [
+                    19,
+                    11
+                ],
+                [
+                    24,
+                    15
+                ],
+                [
+                    27,
+                    17
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "gI3C9Wfjx2tLeJGM",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1640,
+            "y": 1106,
+            "width": 130,
+            "height": 22,
+            "rotation": 0,
+            "z": 8,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    33.81231567718305,
+                    15.87834656700852
+                ],
+                [
+                    51.81231567718305,
+                    19.87834656700852
+                ],
+                [
+                    67.81231567718305,
+                    21.87834656700852
+                ],
+                [
+                    73.81231567718305,
+                    21.87834656700852
+                ],
+                [
+                    83.81231567718305,
+                    21.87834656700852
+                ],
+                [
+                    93.81231567718305,
+                    21.87834656700852
+                ],
+                [
+                    101.81231567718305,
+                    21.87834656700852
+                ],
+                [
+                    111.81231567718305,
+                    21.87834656700852
+                ],
+                [
+                    113.81231567718305,
+                    21.87834656700852
+                ],
+                [
+                    121.81231567718305,
+                    21.87834656700852
+                ],
+                [
+                    127.81231567718305,
+                    21.87834656700852
+                ],
+                [
+                    129.81231567718305,
+                    21.87834656700852
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "bWZG8WyfBlS0EMSA",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1743,
+            "y": 1111,
+            "width": 31,
+            "height": 44,
+            "rotation": 0,
+            "z": 9,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    26.14564901051631,
+                    15.545013233675263
+                ],
+                [
+                    27.14564901051631,
+                    18.545013233675263
+                ],
+                [
+                    31.14564901051631,
+                    22.545013233675263
+                ],
+                [
+                    29.14564901051631,
+                    26.545013233675263
+                ],
+                [
+                    25.14564901051631,
+                    30.545013233675263
+                ],
+                [
+                    22.14564901051631,
+                    31.545013233675263
+                ],
+                [
+                    18.14564901051631,
+                    36.54501323367526
+                ],
+                [
+                    15.145649010516308,
+                    40.54501323367526
+                ],
+                [
+                    14.145649010516308,
+                    43.54501323367526
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "dpz9wJox8J2zCMdp",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1415,
+            "y": 2292,
+            "width": 61,
+            "height": 105,
+            "rotation": 0,
+            "z": 10,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    24.826526726220436,
+                    28.595938358438616
+                ],
+                [
+                    37.826526726220436,
+                    48.595938358438616
+                ],
+                [
+                    44.826526726220436,
+                    64.59593835843862
+                ],
+                [
+                    48.826526726220436,
+                    73.59593835843862
+                ],
+                [
+                    53.826526726220436,
+                    84.59593835843862
+                ],
+                [
+                    57.826526726220436,
+                    92.59593835843862
+                ],
+                [
+                    60.826526726220436,
+                    99.59593835843862
+                ],
+                [
+                    60.826526726220436,
+                    104.59593835843862
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "mhoZjj22fdec0Uso",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1441,
+            "y": 2366,
+            "width": 46,
+            "height": 37,
+            "rotation": 0,
+            "z": 11,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    13.676788914288863
+                ],
+                [
+                    32.37198127167494,
+                    31
+                ],
+                [
+                    35.37198127167494,
+                    35
+                ],
+                [
+                    39.37198127167494,
+                    37
+                ],
+                [
+                    43.37198127167494,
+                    37
+                ],
+                [
+                    45.37198127167494,
+                    8
+                ],
+                [
+                    46.37198127167494,
+                    0
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "idrotf",
+            "ddbId": 10064,
+            "cobaltId": null,
+            "parentId": 1088,
+            "contentChunkId": "MapMap118termalaine-player",
+            "notes": [
+                {
+                    "label": "The Blue Clam",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2068,
+                            "bookCode": "idrotf",
+                            "slug": "termalaine#LocationsinTermalaine",
+                            "contentChunkId": "fb29ebb8-f8d3-400e-995f-1765c0cead07",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1088,
+                            "linkId": "760MSUIK735Jx2Zi"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 650,
+                            "y": 1250
+                        }
+                    ],
+                    "iconSize": 75,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "The Eastside",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2075,
+                            "bookCode": "idrotf",
+                            "slug": "termalaine#LocationsinTermalaine",
+                            "contentChunkId": "07489d5f-3203-4367-98e3-c9a99a6d018e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1088,
+                            "linkId": "40vB8p58XgahwP14"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1750,
+                            "y": 1350
+                        }
+                    ],
+                    "iconSize": 75,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 100,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2048,
+    "initial": null,
+    "lights": [],
+    "name": "Map 1.18: Termalaine",
+    "navName": "Termalaine",
+    "shiftX": 0,
+    "shiftY": 0,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 1499
+}

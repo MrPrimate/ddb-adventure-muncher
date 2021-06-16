@@ -1,0 +1,327 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "i8jHjsQQK2WaiNyO",
+            "author": "S1cMjMBw2tVRxmq4",
+            "type": "t",
+            "x": 2319,
+            "y": 744,
+            "width": 591,
+            "height": 106,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#FFFFFF",
+            "fillAlpha": 0.1,
+            "strokeWidth": 8,
+            "strokeColor": "#FFFFFF",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Open to area D3 Belown",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#121111",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "gos",
+            "ddbId": 13070,
+            "cobaltId": null,
+            "parentId": 679,
+            "contentChunkId": "2942b2d8-9ea9-4779-85a9-c098c6400198",
+            "notes": [
+                {
+                    "label": "D01. Main Storehouse",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2079,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "b4ed67c0-670b-4f2b-8909-0464f299a46d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "PPLCzt2HDkH8hU0S"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1375,
+                            "y": 775
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "D02. Office",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2083,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "ac3a4327-535b-4823-bdc7-80bb58b10820",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "t34teG5xywZs2kbj"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1025,
+                            "y": 625
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "D03. Loft",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2087,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "41e70e48-4a0b-4513-b3cf-dde3341511e2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "E7pgzd0Mqdejux7l"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1475,
+                            "y": 1475
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "D04. Upper Walkway",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2090,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "5054310b-de98-4ec4-82a2-825310be5dfc",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "UdjlwMCZobdMurzH"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2575,
+                            "y": 575
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "D05. Crane",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2095,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "5a8022be-b2b8-442a-b4f2-bb7526ca140b",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "K7p3ehfXCfd7Nnxm"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2325,
+                            "y": 1275
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "D06. Upper Deck",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2100,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "124bb1b9-6501-4461-bb7c-918e508dfbf4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "Px4pPzCtpR7o31dz"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2625,
+                            "y": 1625
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "D07. Bow Pool",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2106,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "5b30666c-521b-4666-a29b-d869e31ca407",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "PBkqcHyaVVOSaVzT"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2675,
+                            "y": 1975
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "D08. Amidships",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2112,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "8c141490-6a78-41dd-8544-ee0ab1899c90",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "2HmkjZJtHLTEscCt"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2525,
+                            "y": 1925
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "D09. Dory’s Chamber",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2130,
+                            "bookCode": "gos",
+                            "slug": "the-styes#Part3HemlockPit",
+                            "contentChunkId": "b663e97b-47a6-4a2e-b74c-28f73a07d8f2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 679,
+                            "linkId": "Z86iPxvZHP5Ry8F2"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2325,
+                            "y": 1925
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 50,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 1800,
+    "initial": null,
+    "lights": [],
+    "name": "Dory's Warehouse",
+    "navName": "Dory's Warehouse",
+    "shiftX": -74,
+    "shiftY": 13,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 2566
+}

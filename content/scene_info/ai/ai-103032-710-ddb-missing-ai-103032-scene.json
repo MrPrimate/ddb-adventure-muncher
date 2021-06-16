@@ -1,0 +1,708 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 1,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "ai",
+            "ddbId": 103032,
+            "cobaltId": null,
+            "parentId": 710,
+            "contentChunkId": "ddb-missing-ai-103032",
+            "notes": [
+                {
+                    "label": "06. Goblin",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2100,
+                            "bookCode": "ai",
+                            "slug": "right-place-wrong-heroes#TheFissure",
+                            "contentChunkId": "9d4fbfb1-603a-491c-93e5-316650e6e4f1",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 710,
+                            "linkId": "mXGQIW4nsvBqdiwD"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3395.34375,
+                            "y": 4213.09375
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "GxHhbSoLVVFFmtGg",
+                    "name": "Gorkoh",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 3744,
+                    "y": 4680,
+                    "disposition": -1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 16907,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Gorkoh"
+                    }
+                },
+                {
+                    "_id": "LxF7yTAd5OvkOdGd",
+                    "name": "Carrion Crawler",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 4095,
+                    "y": 3627,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17138,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "data": {
+                            "attributes": {
+                                "hp": {
+                                    "value": 20
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "_id": "eRAEyMLBzTZsbZyL",
+                    "width": 110,
+                    "height": 323,
+                    "scale": 1,
+                    "x": 2585,
+                    "y": 942,
+                    "disposition": -1,
+                    "flags": {},
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                }
+            ]
+        },
+        "stairways": [],
+        "perfect-vision": {
+            "sightLimit": null,
+            "daylightColor": "",
+            "darknessColor": "",
+            "forceSaturation": false,
+            "saturation": 0
+        },
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 117,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 5500,
+    "initial": {
+        "x": 3855,
+        "y": 4104,
+        "scale": 0.5
+    },
+    "lights": [],
+    "name": "The Fissure 2 Area 06",
+    "navName": "The Fissure 2",
+    "shiftX": -33,
+    "shiftY": 82,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                2983,
+                5455,
+                2632,
+                5455
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2632,
+                5455,
+                2647,
+                5074
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2647,
+                5074,
+                2588,
+                4826
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2588,
+                4826,
+                2661,
+                4694
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2661,
+                4694,
+                2588,
+                4475
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2588,
+                4475,
+                2603,
+                4314
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2603,
+                4314,
+                2705,
+                4299
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2705,
+                4299,
+                2720,
+                4021
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2720,
+                4021,
+                2866,
+                3861
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2866,
+                3861,
+                2910,
+                3831
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2910,
+                3831,
+                2998,
+                3831
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2998,
+                3831,
+                3085,
+                3758
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3085,
+                3758,
+                3056,
+                3641
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3056,
+                3641,
+                3071,
+                3510
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3071,
+                3510,
+                3188,
+                3393
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3188,
+                3393,
+                3393,
+                3349
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3393,
+                3349,
+                3729,
+                3334
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3729,
+                3334,
+                3787,
+                3217
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3787,
+                3217,
+                3729,
+                3100
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3729,
+                3100,
+                3846,
+                2983
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3846,
+                2983,
+                3700,
+                2749
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3700,
+                2749,
+                3831,
+                2559
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3831,
+                2559,
+                4007,
+                2486
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4007,
+                2486,
+                4694,
+                2500
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4694,
+                2500,
+                4694,
+                2866
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4694,
+                2866,
+                4533,
+                2939
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4533,
+                2939,
+                4621,
+                3436
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4621,
+                3436,
+                4577,
+                3612
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4577,
+                3612,
+                4563,
+                3846
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4563,
+                3846,
+                4416,
+                4007
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4416,
+                4007,
+                4109,
+                4080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4109,
+                4080,
+                3802,
+                3919
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3802,
+                3919,
+                3729,
+                3758
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3729,
+                3758,
+                3597,
+                3890
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3597,
+                3890,
+                3846,
+                4007
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3846,
+                4007,
+                4182,
+                4285
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4182,
+                4285,
+                4153,
+                4709
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4153,
+                4709,
+                3861,
+                4957
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3861,
+                4957,
+                3583,
+                5001
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3583,
+                5001,
+                3393,
+                4840
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3393,
+                4840,
+                3188,
+                5001
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3188,
+                5001,
+                3042,
+                5031
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3042,
+                5031,
+                2998,
+                5031
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2998,
+                5031,
+                2983,
+                5455
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 8250
+}

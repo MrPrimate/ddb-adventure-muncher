@@ -1,0 +1,576 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "YUpubf2Bx0QNfTFF",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1472,
+            "y": 937,
+            "width": 226,
+            "height": 33,
+            "rotation": 0,
+            "z": 0,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Maer Dualdon",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 30,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1
+        },
+        {
+            "_id": "z55ie33bvpzZtz6h",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 700,
+            "y": 950,
+            "width": 163,
+            "height": 33,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Town Hall",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 30,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1
+        },
+        {
+            "_id": "h5emaWW29eJkSt7m",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 800,
+            "y": 2250,
+            "width": 350,
+            "height": 100,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 10,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "To Bryn Shander",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 50,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1,
+            "id": "h5emaWW29eJkSt7m"
+        },
+        {
+            "_id": "g42qyHpOkCvEJlZU",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1500,
+            "y": 2250,
+            "width": 300,
+            "height": 100,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 10,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "To Termalaine",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 50,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1,
+            "id": "g42qyHpOkCvEJlZU"
+        },
+        {
+            "_id": "yP2rf9rVqGC1eZDD",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1087,
+            "y": 2209,
+            "width": 125,
+            "height": 65,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    23.75228610478098,
+                    15.856659858766307
+                ],
+                [
+                    33.75228610478098,
+                    21.856659858766307
+                ],
+                [
+                    43.75228610478098,
+                    28.856659858766307
+                ],
+                [
+                    61.75228610478098,
+                    38.85665985876631
+                ],
+                [
+                    70.75228610478098,
+                    40.85665985876631
+                ],
+                [
+                    77.75228610478098,
+                    44.85665985876631
+                ],
+                [
+                    85.75228610478098,
+                    48.85665985876631
+                ],
+                [
+                    96.75228610478098,
+                    53.85665985876631
+                ],
+                [
+                    106.75228610478098,
+                    58.85665985876631
+                ],
+                [
+                    114.75228610478098,
+                    61.85665985876631
+                ],
+                [
+                    120.75228610478098,
+                    63.85665985876631
+                ],
+                [
+                    123.75228610478098,
+                    64.8566598587663
+                ],
+                [
+                    124.75228610478098,
+                    64.8566598587663
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "447iThXbgWC5Vsyt",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1191,
+            "y": 2258,
+            "width": 26,
+            "height": 21,
+            "rotation": 0,
+            "z": 5,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    20.763593305790437
+                ],
+                [
+                    25.954817750350685,
+                    18
+                ],
+                [
+                    25.954817750350685,
+                    16
+                ],
+                [
+                    23.954817750350685,
+                    14
+                ],
+                [
+                    20.954817750350685,
+                    4
+                ],
+                [
+                    19.954817750350685,
+                    0
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "KYs4QjUKg57IzGot",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1535,
+            "y": 2207,
+            "width": 109,
+            "height": 59,
+            "rotation": 0,
+            "z": 6,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    59.105365457689004
+                ],
+                [
+                    37.651020281996125,
+                    43
+                ],
+                [
+                    47.651020281996125,
+                    38
+                ],
+                [
+                    56.651020281996125,
+                    32
+                ],
+                [
+                    63.651020281996125,
+                    26
+                ],
+                [
+                    70.65102028199613,
+                    22
+                ],
+                [
+                    77.65102028199613,
+                    18
+                ],
+                [
+                    85.65102028199613,
+                    13
+                ],
+                [
+                    90.65102028199613,
+                    11
+                ],
+                [
+                    98.65102028199613,
+                    7
+                ],
+                [
+                    104.65102028199613,
+                    4
+                ],
+                [
+                    106.65102028199613,
+                    0
+                ],
+                [
+                    108.65102028199613,
+                    0
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "j1B57SyrCV4l4arN",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1620,
+            "y": 2208,
+            "width": 25,
+            "height": 23,
+            "rotation": 0,
+            "z": 7,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    24.840893699717753,
+                    1.1224826435764044
+                ],
+                [
+                    24.840893699717753,
+                    10.122482643576404
+                ],
+                [
+                    23.840893699717753,
+                    11.122482643576404
+                ],
+                [
+                    21.840893699717753,
+                    18.122482643576404
+                ],
+                [
+                    20.840893699717753,
+                    23.122482643576404
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "CDHo8hxtcB9At8Qi",
+            "flags": {},
+            "type": "p",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 800,
+            "y": 1000,
+            "width": 200,
+            "height": 500,
+            "rotation": 0,
+            "z": 8,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    200,
+                    500
+                ]
+            ],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#cc4c28",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#050505",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#cc4c28",
+            "textAlpha": 1
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "idrotf",
+            "ddbId": 10059,
+            "cobaltId": null,
+            "parentId": 1086,
+            "contentChunkId": "MapMap116targos-player",
+            "notes": [
+                {
+                    "label": "The Luskan Arms",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2062,
+                            "bookCode": "idrotf",
+                            "slug": "targos#LocationsinTargos",
+                            "contentChunkId": "9bf64283-43d8-4050-85c6-15cdb8b7e54c",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1086,
+                            "linkId": "0zO5aqZPF3WXYZy6"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1250,
+                            "y": 1950
+                        }
+                    ],
+                    "iconSize": 75,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "Three Flags Sailing",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2066,
+                            "bookCode": "idrotf",
+                            "slug": "targos#LocationsinTargos",
+                            "contentChunkId": "dfa35927-f9e9-4825-b27d-564ef259acda",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1086,
+                            "linkId": "ZnGffyq5ME3nFdby"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1150,
+                            "y": 1550
+                        }
+                    ],
+                    "iconSize": 75,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "Triglio",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2069,
+                            "bookCode": "idrotf",
+                            "slug": "targos#LocationsinTargos",
+                            "contentChunkId": "637bc3db-580c-44dc-8e9c-d7fb44f7e970",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1086,
+                            "linkId": "lfuo9OhEcDMJTk0c"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 800,
+                            "y": 1650
+                        }
+                    ],
+                    "iconSize": 75,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 100,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2048,
+    "initial": null,
+    "lights": [],
+    "name": "Map 1.16: Targos",
+    "navName": "Targos",
+    "shiftX": 0,
+    "shiftY": 0,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 1499
+}

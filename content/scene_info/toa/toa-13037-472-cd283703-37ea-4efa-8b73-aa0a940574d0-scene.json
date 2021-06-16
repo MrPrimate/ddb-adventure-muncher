@@ -1,0 +1,287 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "2mMcRtfv2OpqstaH",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 3562,
+            "y": 1118,
+            "width": 130,
+            "height": 104,
+            "rotation": 0,
+            "z": 0,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#faf5f5",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Down \nto 4",
+            "fontFamily": "Modesto Condensed",
+            "fontSize": 60,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1,
+            "id": "2mMcRtfv2OpqstaH"
+        },
+        {
+            "_id": "DGUpwhHFSPRxoWfK",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 3627,
+            "y": 1502,
+            "width": 13,
+            "height": 56,
+            "rotation": 0,
+            "z": 1,
+            "hidden": false,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#a2c716",
+            "textAlpha": 1
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "toa",
+            "ddbId": 13037,
+            "cobaltId": null,
+            "parentId": 472,
+            "contentChunkId": "cd283703-37ea-4efa-8b73-aa0a940574d0",
+            "notes": [
+                {
+                    "label": "01. Petrified Tree",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2953,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "754b358b-1fe4-4dc5-9f77-f3bac3a3bcba",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "Nq193XEFEkvAkwhC"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3614,
+                            "y": 1014
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "02. Staircase",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2955,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "af2d6f40-ea1c-4f70-9e9f-d3bcb309dcb4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "wugeRoYDUR6c7bpE"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3926,
+                            "y": 1274
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03. Cave Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2957,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "23206909-fb93-4f86-a816-f8a4b31418e3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "9ZvLiWrXz9ThfbtZ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3614,
+                            "y": 1586
+                        },
+                        {
+                            "x": 3666,
+                            "y": 2626
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04. Valindra’s Lair",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2962,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "81f1312e-d086-49e2-b612-f3078a2dd790",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "ZNdFanrLWPANvgg6"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3718,
+                            "y": 2158
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05. Undead Guardians",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2964,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "8e97809e-e70f-46b6-92c9-8e059d50e952",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "KVRLE1ER27MC4RqD"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3406,
+                            "y": 1898
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06. Teleportation Circle",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2966,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "ed9f833d-6a4f-457d-9c51-19ee67e6f73f",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "hKdgbeVP0TB3gqfG"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3822,
+                            "y": 1950
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 52,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2280,
+    "initial": null,
+    "lights": [],
+    "name": "Heart of Ubtao",
+    "navName": "Heart of Ubtao",
+    "shiftX": -58,
+    "shiftY": -32,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 3300
+}

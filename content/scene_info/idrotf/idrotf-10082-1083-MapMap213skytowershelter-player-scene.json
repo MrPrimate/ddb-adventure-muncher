@@ -1,0 +1,4940 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "7LQcvwFnrVn0M6ui",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1392,
+            "y": 3074,
+            "width": 162,
+            "height": 132,
+            "rotation": 0,
+            "z": 0,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 10,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Down\nto S7",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 50,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1
+        },
+        {
+            "_id": "f3bSGjP6miAHn2Gq",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1972,
+            "y": 2204,
+            "width": 162,
+            "height": 132,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 10,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Down\nto S6",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 50,
+            "textColor": "#0b0a0a",
+            "textAlpha": 1
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "idrotf",
+            "ddbId": 10082,
+            "cobaltId": null,
+            "parentId": 1083,
+            "contentChunkId": "MapMap213skytowershelter-player",
+            "notes": [
+                {
+                    "label": "S01. Stone Causeway",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2083,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#SkytowerShelter",
+                            "contentChunkId": "fd8229e8-417a-454c-a79b-54b9b643211d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "hn6utvWmvH6tyGxw"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 841,
+                            "y": 1537
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S02. Barricade and Chieftain",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2095,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#SkytowerShelter",
+                            "contentChunkId": "0b02d7e9-cc2b-4ae0-8d4a-95b5000d1a10",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "gIaMsgxUlq9WH2EM"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1189,
+                            "y": 2117
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S03. Overlook",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2099,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#SkytowerShelter",
+                            "contentChunkId": "e09ecda1-0530-4620-b41f-d73f9d02201c",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "3OfT0xUjak4zW3JC"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1363,
+                            "y": 2291
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S04. Chieftain’s Cave",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2106,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#SkytowerShelter",
+                            "contentChunkId": "7c76a5ad-1a0a-4eec-9a64-ea447ee0dcac",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "h6AYCZKNUpQS3HZn"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1711,
+                            "y": 2523
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S05. Shrine of Mind and Spirit",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2111,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#SkytowerShelter",
+                            "contentChunkId": "7d0a9611-a710-49ac-909b-6481b2d23147",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "VyefBltEnA3Y2LmY"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2175,
+                            "y": 2233
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S06. Griffons’ Cave",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2118,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#SkytowerShelter",
+                            "contentChunkId": "5323cf1e-f96c-4906-b638-633b0f52e6d5",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "UXoXW1RNY8dV3nc8"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2117,
+                            "y": 1827
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S07. Shrine of Strength and Honor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2124,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#SkytowerShelter",
+                            "contentChunkId": "3c04a1c1-58e2-4cf4-a5c1-291f12e85acf",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "lvSzdcSMHoYmAvPR"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1363,
+                            "y": 2813
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S08. Passage of Carvings",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2128,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#SkytowerShelter",
+                            "contentChunkId": "007cd799-b340-47fa-b709-a6c658260a6d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "gIEjsVWrHaoZ7ipV"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1131,
+                            "y": 2871
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S09. Feasting Cave",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2136,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#SkytowerShelter",
+                            "contentChunkId": "b06a5840-c63d-4f85-9e2a-4df58ed7a1c1",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "TXlVVLDnIz2WoR7r"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1653,
+                            "y": 3451
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "S10. Communal Cave ",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2141,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#SkytowerShelter",
+                            "contentChunkId": "f5b59166-27ac-4b3e-8f2f-28b2c713c8ae",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "QHMAVZI81KJXvmOv"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2059,
+                            "y": 3393
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "dAP5HXY9iTNLlfeO",
+                    "name": "Griffon(5)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 1276,
+                    "y": 1392,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16913,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Griffon(5)"
+                    }
+                },
+                {
+                    "_id": "aDSdVg8CgcJ48tsv",
+                    "name": "Griffon(6)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 1392,
+                    "y": 1334,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16913,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Griffon(6)"
+                    }
+                },
+                {
+                    "_id": "JCysJetXa0gIddbQ",
+                    "name": "Griffon(7)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 1160,
+                    "y": 1334,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16913,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Griffon(7)"
+                    }
+                },
+                {
+                    "_id": "HmW8Wbebk4fUpH43",
+                    "name": "Griffon(8)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 812,
+                    "y": 1798,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16913,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Griffon(8)"
+                    }
+                },
+                {
+                    "_id": "66OKDl7Kpn3Dz62N",
+                    "name": "Griffon(9)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 754,
+                    "y": 1682,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16913,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Griffon(9)"
+                    }
+                },
+                {
+                    "_id": "nyWmskHm9TD73B6a",
+                    "name": "Griffon(10)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 870,
+                    "y": 1914,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16913,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Griffon(10)"
+                    }
+                },
+                {
+                    "_id": "lg3Gpi3zk63CMnqJ",
+                    "name": "Arn Rockfist Akannathi",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1276,
+                    "y": 1914,
+                    "disposition": -1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5,
+                        "type": ""
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Goliath Warrior(1)"
+                    }
+                },
+                {
+                    "_id": "4GaUbjmkpRdIWE9N",
+                    "name": "Goliath Warrior(2)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1276,
+                    "y": 2378,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(2)"
+                    }
+                },
+                {
+                    "_id": "HRWo0Fb1tyJZbeBk",
+                    "name": "Goliath Warrior(3)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1392,
+                    "y": 2320,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(3)"
+                    }
+                },
+                {
+                    "_id": "MrKhDxIJBEhnBVPu",
+                    "name": "Goliath Warrior(4)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1392,
+                    "y": 2262,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(4)"
+                    }
+                },
+                {
+                    "_id": "FC9040FoVjJsP2Hw",
+                    "name": "Goliath Warrior(5)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1566,
+                    "y": 2030,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(5)"
+                    }
+                },
+                {
+                    "_id": "EFaY3yELCfZ4y1YY",
+                    "name": "Goliath Warrior(6)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1566,
+                    "y": 1914,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(6)"
+                    }
+                },
+                {
+                    "_id": "UVIZJWam09T6v5oN",
+                    "name": "Harad Cloudstrider Akannathi",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1914,
+                    "y": 2900,
+                    "disposition": -1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5,
+                        "type": ""
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Goliath Warrior(7)"
+                    }
+                },
+                {
+                    "_id": "wJdPzn02gKQ3EcpY",
+                    "name": "Kaniaka Stormcrow Akannathi",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2204,
+                    "y": 2494,
+                    "disposition": -1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5,
+                        "type": ""
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Goliath Warrior(8)"
+                    }
+                },
+                {
+                    "_id": "GcR7XQ7oZyz6mGvD",
+                    "name": "Crag Cat(1)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 2146,
+                    "y": 2552,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17348,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Crag Cat(1)"
+                    }
+                },
+                {
+                    "_id": "MFRGxvtuwak5VeHf",
+                    "name": "Rahi Skydreamer Akannathi",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2436,
+                    "y": 1566,
+                    "disposition": -1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5,
+                        "type": ""
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Goliath Warrior(9)"
+                    }
+                },
+                {
+                    "_id": "dH481mJQlQYazBS0",
+                    "name": "Young Griffon",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2436,
+                    "y": 1624,
+                    "disposition": -1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 16913,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5,
+                        "type": ""
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Griffon(11)"
+                    }
+                },
+                {
+                    "_id": "Pljf5HDpevBT2lEP",
+                    "name": "Goliath Warrior(10)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1334,
+                    "y": 3306,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(10)"
+                    }
+                },
+                {
+                    "_id": "77OVSI3upgu39mEc",
+                    "name": "Goliath Warrior(11)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1392,
+                    "y": 3248,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(11)"
+                    }
+                },
+                {
+                    "_id": "1zaMy2IgpEmGnG8x",
+                    "name": "Goliath Warrior(12)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1508,
+                    "y": 3248,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(12)"
+                    }
+                },
+                {
+                    "_id": "iZnveqgpI60eTusf",
+                    "name": "Goliath Warrior(13)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1566,
+                    "y": 3190,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(13)"
+                    }
+                },
+                {
+                    "_id": "io2Lkr7V0aHipMlP",
+                    "name": "Goliath Warrior(14)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1392,
+                    "y": 3480,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(14)"
+                    }
+                },
+                {
+                    "_id": "ASWNCLx2VQw9qmH1",
+                    "name": "Goliath Warrior(15)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1450,
+                    "y": 3480,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(15)"
+                    }
+                },
+                {
+                    "_id": "jKgSPx8PsIXh3DaK",
+                    "name": "Goliath Warrior(16)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1624,
+                    "y": 3480,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(16)"
+                    }
+                },
+                {
+                    "_id": "VKA7SOfybQXEiwug",
+                    "name": "Goliath Warrior(17)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1682,
+                    "y": 3364,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(17)"
+                    }
+                },
+                {
+                    "_id": "jeuO22nYu8J781OY",
+                    "name": "Goliath Warrior(18)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1276,
+                    "y": 3422,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123090,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goliath Warrior(18)"
+                    }
+                }
+            ]
+        },
+        "stairways": [
+            {
+                "scene": null,
+                "name": "sw-30lhwdhi",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 2088,
+                "y": 2175,
+                "_id": "z1gkgki38po4xw8z"
+            },
+            {
+                "scene": null,
+                "name": "sw-30lhwdhi",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 2088,
+                "y": 1972,
+                "_id": "hskb3gt6n08axgei"
+            },
+            {
+                "scene": null,
+                "name": "sw-0xi30xpv",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 1508,
+                "y": 3045,
+                "_id": "oklmtdob0le8lw95"
+            },
+            {
+                "scene": null,
+                "name": "sw-0xi30xpv",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 1450,
+                "y": 2900,
+                "_id": "mpmwzrxxlhfael1m"
+            }
+        ],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 58,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3000,
+    "initial": null,
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 30,
+            "darknessThreshold": 0,
+            "dim": 60,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1885,
+            "y": 2552,
+            "lightAnimation": {
+                "speed": 1,
+                "intensity": 1,
+                "type": "torch"
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 28.22,
+            "darknessThreshold": 0,
+            "dim": 56.44,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2233,
+            "y": 3393,
+            "lightAnimation": {
+                "speed": 1,
+                "intensity": 1,
+                "type": "torch"
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 5,
+            "darknessThreshold": 0,
+            "dim": 10,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1450,
+            "y": 3393,
+            "lightAnimation": {
+                "speed": 1,
+                "intensity": 1,
+                "type": "torch"
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 5,
+            "darknessThreshold": 0,
+            "dim": 10,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1537,
+            "y": 3393,
+            "lightAnimation": {
+                "speed": 1,
+                "intensity": 1,
+                "type": "torch"
+            },
+            "hidden": false
+        }
+    ],
+    "name": "Map 2.13: Skytower Shelter",
+    "navName": "Skytower Shelter",
+    "shiftX": -14,
+    "shiftY": -72,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                1667,
+                2276,
+                1638,
+                2349
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1638,
+                2349,
+                1667,
+                2392
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1667,
+                2392,
+                1696,
+                2407
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1696,
+                2407,
+                1696,
+                2465
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1696,
+                2465,
+                1653,
+                2494
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1653,
+                2494,
+                1653,
+                2537
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1653,
+                2537,
+                1638,
+                2610
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1638,
+                2610,
+                1667,
+                2697
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1667,
+                2697,
+                1711,
+                2726
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1711,
+                2726,
+                1740,
+                2769
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1740,
+                2769,
+                1812,
+                2784
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1812,
+                2784,
+                1827,
+                2769
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1827,
+                2769,
+                1856,
+                2813
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1856,
+                2813,
+                1856,
+                2842
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1856,
+                2842,
+                1812,
+                2856
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1812,
+                2856,
+                1783,
+                2958
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1783,
+                2958,
+                1812,
+                3030
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1812,
+                3030,
+                1856,
+                3059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1856,
+                3059,
+                1943,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1943,
+                3088,
+                2030,
+                3074
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2030,
+                3074,
+                2059,
+                2943
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2059,
+                2943,
+                2015,
+                2885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2015,
+                2885,
+                2044,
+                2813
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2044,
+                2813,
+                2059,
+                2827
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2059,
+                2827,
+                2044,
+                2885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2044,
+                2885,
+                2088,
+                2972
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2088,
+                2972,
+                2160,
+                2987
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2160,
+                2987,
+                2233,
+                2972
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2233,
+                2972,
+                2276,
+                2929
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2276,
+                2929,
+                2305,
+                2871
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2305,
+                2871,
+                2334,
+                2784
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2334,
+                2784,
+                2276,
+                2740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2276,
+                2740,
+                2204,
+                2711
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2204,
+                2711,
+                2146,
+                2740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2146,
+                2740,
+                2073,
+                2697
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2073,
+                2697,
+                2059,
+                2697
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2059,
+                2697,
+                2059,
+                2668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2059,
+                2668,
+                2102,
+                2639
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2102,
+                2639,
+                2146,
+                2624
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2146,
+                2624,
+                2146,
+                2668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2146,
+                2668,
+                2175,
+                2697
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2175,
+                2697,
+                2218,
+                2711
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2218,
+                2711,
+                2291,
+                2726
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                2726,
+                2349,
+                2726
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2349,
+                2726,
+                2392,
+                2668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2392,
+                2668,
+                2407,
+                2639
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2407,
+                2639,
+                2378,
+                2595
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2378,
+                2595,
+                2392,
+                2508
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2392,
+                2508,
+                2305,
+                2407
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2305,
+                2407,
+                2218,
+                2421
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2218,
+                2421,
+                2160,
+                2450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2160,
+                2450,
+                2160,
+                2479
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2160,
+                2479,
+                2102,
+                2523
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2102,
+                2523,
+                2059,
+                2479
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2059,
+                2479,
+                2073,
+                2450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2073,
+                2450,
+                2102,
+                2436
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2102,
+                2436,
+                2117,
+                2407
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2117,
+                2407,
+                2204,
+                2392
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2204,
+                2392,
+                2291,
+                2320
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                2320,
+                2291,
+                2204
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                2204,
+                2262,
+                2175
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2262,
+                2175,
+                2305,
+                2189
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2305,
+                2189,
+                2349,
+                2189
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2349,
+                2189,
+                2421,
+                2146
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2421,
+                2146,
+                2421,
+                2102
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2421,
+                2102,
+                2421,
+                2073
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2421,
+                2073,
+                2508,
+                2059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2508,
+                2059,
+                2523,
+                2015
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2523,
+                2015,
+                2523,
+                2001
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2523,
+                2001,
+                2523,
+                1972
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2523,
+                1972,
+                2537,
+                1914
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2537,
+                1914,
+                2494,
+                1885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2494,
+                1885,
+                2508,
+                1841
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2508,
+                1841,
+                2508,
+                1827
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2508,
+                1827,
+                2508,
+                1812
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2508,
+                1812,
+                2523,
+                1754
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2523,
+                1754,
+                2581,
+                1740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2581,
+                1740,
+                2581,
+                1682
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2581,
+                1682,
+                2595,
+                1638
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2595,
+                1638,
+                2581,
+                1580
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2581,
+                1580,
+                2566,
+                1537
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2566,
+                1537,
+                2581,
+                1464
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2581,
+                1464,
+                2479,
+                1435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2479,
+                1435,
+                2407,
+                1450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2407,
+                1450,
+                2378,
+                1522
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2378,
+                1522,
+                2363,
+                1566
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2363,
+                1566,
+                2363,
+                1638
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2363,
+                1638,
+                2407,
+                1696
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2407,
+                1696,
+                2392,
+                1725
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2392,
+                1725,
+                2349,
+                1769
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2349,
+                1769,
+                2305,
+                1754
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2305,
+                1754,
+                2291,
+                1711
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                1711,
+                2291,
+                1667
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                1667,
+                2320,
+                1638
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2320,
+                1638,
+                2334,
+                1580
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2334,
+                1580,
+                2334,
+                1522
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2334,
+                1522,
+                2276,
+                1479
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2276,
+                1479,
+                2276,
+                1421
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2276,
+                1421,
+                2305,
+                1392
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2305,
+                1392,
+                2291,
+                1392
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                1392,
+                2291,
+                1363
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                1363,
+                2305,
+                1363
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2305,
+                1363,
+                2349,
+                1305
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2349,
+                1305,
+                2421,
+                1363
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2421,
+                1363,
+                2494,
+                1377
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2494,
+                1377,
+                2566,
+                1348
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2566,
+                1348,
+                2668,
+                1348
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2668,
+                1348,
+                2769,
+                1348
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1609,
+                2262,
+                1667,
+                2276
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1609,
+                2262,
+                1595,
+                2291
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1595,
+                2291,
+                1595,
+                2363
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1595,
+                2363,
+                1551,
+                2392
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1551,
+                2392,
+                1595,
+                2450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1595,
+                2450,
+                1580,
+                2537
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1580,
+                2537,
+                1595,
+                2581
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1595,
+                2581,
+                1595,
+                2624
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1595,
+                2624,
+                1609,
+                2668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1609,
+                2668,
+                1566,
+                2740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1566,
+                2740,
+                1609,
+                2798
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1609,
+                2798,
+                1595,
+                2827
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1595,
+                2827,
+                1653,
+                2842
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1653,
+                2842,
+                1653,
+                2929
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1653,
+                2929,
+                1667,
+                2987
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1667,
+                2987,
+                1609,
+                3059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1609,
+                3059,
+                1609,
+                3132
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1609,
+                3132,
+                1667,
+                3161
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1667,
+                3161,
+                1667,
+                3190
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1667,
+                3190,
+                1725,
+                3204
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                3204,
+                1754,
+                3175
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1754,
+                3175,
+                1841,
+                3190
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1841,
+                3190,
+                1841,
+                3262
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1841,
+                3262,
+                1972,
+                3291
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1972,
+                3291,
+                2015,
+                3248
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2015,
+                3248,
+                1986,
+                3190
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1986,
+                3190,
+                2015,
+                3132
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2015,
+                3132,
+                2102,
+                3059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2102,
+                3059,
+                2146,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2146,
+                3088,
+                2160,
+                3059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2160,
+                3059,
+                2247,
+                3030
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2247,
+                3030,
+                2276,
+                3045
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2276,
+                3045,
+                2291,
+                3045
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                3045,
+                2291,
+                3016
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                3016,
+                2349,
+                3016
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2349,
+                3016,
+                2320,
+                2958
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2320,
+                2958,
+                2334,
+                2914
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2334,
+                2914,
+                2363,
+                2900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2363,
+                2900,
+                2378,
+                2798
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2378,
+                2798,
+                2494,
+                2813
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2494,
+                2813,
+                2494,
+                2885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2494,
+                2885,
+                2537,
+                2914
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2537,
+                2914,
+                2523,
+                2987
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2523,
+                2987,
+                2581,
+                3030
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2581,
+                3030,
+                2566,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2566,
+                3088,
+                2552,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2552,
+                3088,
+                2581,
+                3117
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2581,
+                3117,
+                2508,
+                3175
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2508,
+                3175,
+                2552,
+                3233
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2552,
+                3233,
+                2537,
+                3262
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2537,
+                3262,
+                2581,
+                3306
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2581,
+                3306,
+                2494,
+                3451
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2494,
+                3451,
+                2479,
+                3480
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2479,
+                3480,
+                2407,
+                3567
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2407,
+                3567,
+                2349,
+                3668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2349,
+                3668,
+                2276,
+                3683
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2276,
+                3683,
+                2175,
+                3697
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2175,
+                3697,
+                2160,
+                3654
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2160,
+                3654,
+                2088,
+                3668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2088,
+                3668,
+                2015,
+                3610
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2015,
+                3610,
+                2044,
+                3581
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2044,
+                3581,
+                1957,
+                3509
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1957,
+                3509,
+                1972,
+                3465
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1972,
+                3465,
+                1856,
+                3436
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1856,
+                3436,
+                1812,
+                3451
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1812,
+                3451,
+                1812,
+                3538
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1812,
+                3538,
+                1740,
+                3581
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1740,
+                3581,
+                1725,
+                3654
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                3654,
+                1653,
+                3683
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1653,
+                3683,
+                1566,
+                3668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1566,
+                3668,
+                1464,
+                3683
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1464,
+                3683,
+                1348,
+                3639
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1348,
+                3639,
+                1334,
+                3567
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1334,
+                3567,
+                1261,
+                3596
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1261,
+                3596,
+                1189,
+                3480
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1189,
+                3480,
+                1203,
+                3451
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1203,
+                3451,
+                1145,
+                3436
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1145,
+                3436,
+                1174,
+                3407
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1174,
+                3407,
+                1073,
+                3320
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1073,
+                3320,
+                1000,
+                3320
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1000,
+                3320,
+                971,
+                3277
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                971,
+                3277,
+                986,
+                3233
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                986,
+                3233,
+                928,
+                3204
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                928,
+                3204,
+                884,
+                3132
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                884,
+                3132,
+                870,
+                3001
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                870,
+                3001,
+                942,
+                2958
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                942,
+                2958,
+                1000,
+                2958
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1000,
+                2958,
+                1000,
+                2885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1000,
+                2885,
+                1058,
+                2827
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1058,
+                2827,
+                957,
+                2668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                957,
+                2668,
+                971,
+                2624
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                971,
+                2624,
+                971,
+                2494
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                971,
+                2494,
+                884,
+                2407
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                884,
+                2407,
+                797,
+                2407
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                797,
+                2407,
+                754,
+                2421
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                754,
+                2421,
+                609,
+                2421
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1203,
+                2363,
+                1261,
+                2407
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1261,
+                2407,
+                1305,
+                2479
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1305,
+                2479,
+                1377,
+                2523
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1377,
+                2523,
+                1421,
+                2523
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1421,
+                2523,
+                1421,
+                2566
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1421,
+                2566,
+                1479,
+                2653
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1479,
+                2653,
+                1435,
+                2697
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1435,
+                2697,
+                1319,
+                2697
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1319,
+                2697,
+                1247,
+                2885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1247,
+                2885,
+                1290,
+                3016
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1290,
+                3016,
+                1334,
+                3103
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1334,
+                3103,
+                1377,
+                3103
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1377,
+                3103,
+                1363,
+                3146
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1363,
+                3146,
+                1290,
+                3161
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1290,
+                3161,
+                1261,
+                3190
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1261,
+                3190,
+                1203,
+                3190
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1203,
+                3190,
+                1160,
+                3204
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1160,
+                3204,
+                1131,
+                3103
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1131,
+                3103,
+                1087,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1087,
+                3088,
+                1145,
+                3045
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1145,
+                3045,
+                1203,
+                3030
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1203,
+                3030,
+                1232,
+                2987
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1232,
+                2987,
+                1232,
+                2929
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1232,
+                2929,
+                1218,
+                2885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1218,
+                2885,
+                1232,
+                2827
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1232,
+                2827,
+                1218,
+                2813
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1218,
+                2813,
+                1232,
+                2769
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1232,
+                2769,
+                1174,
+                2682
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1174,
+                2682,
+                1131,
+                2624
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1131,
+                2624,
+                1145,
+                2537
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1145,
+                2537,
+                1131,
+                2479
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1131,
+                2479,
+                1174,
+                2479
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1174,
+                2479,
+                1218,
+                2436
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1218,
+                2436,
+                1203,
+                2363
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1609,
+                1537,
+                1667,
+                1464
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1667,
+                1464,
+                1754,
+                1435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1754,
+                1435,
+                1798,
+                1435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1798,
+                1435,
+                1870,
+                1479
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1870,
+                1479,
+                1943,
+                1450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1943,
+                1450,
+                2015,
+                1435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2015,
+                1435,
+                2044,
+                1479
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2044,
+                1479,
+                1986,
+                1595
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1986,
+                1595,
+                2001,
+                1653
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2001,
+                1653,
+                2102,
+                1711
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2102,
+                1711,
+                2088,
+                1754
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2088,
+                1754,
+                2044,
+                1754
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2044,
+                1754,
+                1841,
+                1841
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1841,
+                1841,
+                1827,
+                1957
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1827,
+                1957,
+                1899,
+                1986
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1899,
+                1986,
+                1899,
+                2059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1899,
+                2059,
+                1928,
+                2073
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1928,
+                2073,
+                1928,
+                2175
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1928,
+                2175,
+                1986,
+                2233
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1986,
+                2233,
+                2015,
+                2291
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2015,
+                2291,
+                2001,
+                2334
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2001,
+                2334,
+                1972,
+                2363
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1972,
+                2363,
+                1943,
+                2320
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1943,
+                2320,
+                1841,
+                2334
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1841,
+                2334,
+                1812,
+                2276
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1812,
+                2276,
+                1783,
+                2262
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1783,
+                2262,
+                1798,
+                2204
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1798,
+                2204,
+                1725,
+                2102
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                2102,
+                1667,
+                2102
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1667,
+                2102,
+                1696,
+                2015
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1696,
+                2015,
+                1653,
+                1972
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1653,
+                1972,
+                1696,
+                1899
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1696,
+                1899,
+                1682,
+                1856
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1682,
+                1856,
+                1711,
+                1754
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1711,
+                1754,
+                1696,
+                1711
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1696,
+                1711,
+                1725,
+                1609
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                1609,
+                1667,
+                1551
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1667,
+                1551,
+                1624,
+                1551
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1624,
+                1551,
+                1609,
+                1537
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1986,
+                2247,
+                2015,
+                2218
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2015,
+                2218,
+                2001,
+                2175
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2001,
+                2175,
+                2044,
+                2117
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2044,
+                2117,
+                2146,
+                2102
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2146,
+                2102,
+                2175,
+                2146
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2175,
+                2146,
+                2262,
+                2175
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1363,
+                3103,
+                1406,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1406,
+                3088,
+                1421,
+                3045
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1421,
+                3045,
+                1450,
+                3016
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1450,
+                3016,
+                1508,
+                2987
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1508,
+                2987,
+                1551,
+                3001
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1551,
+                3001,
+                1595,
+                3059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1595,
+                3059,
+                1609,
+                3059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1131,
+                2044,
+                1218,
+                1943
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1305,
+                1870,
+                1421,
+                1812
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1203,
+                1957,
+                1319,
+                1870
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 2210
+}

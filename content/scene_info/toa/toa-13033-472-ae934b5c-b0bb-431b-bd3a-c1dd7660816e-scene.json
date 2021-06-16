@@ -1,0 +1,2535 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "toa",
+            "ddbId": 13033,
+            "cobaltId": null,
+            "parentId": 472,
+            "contentChunkId": "ae934b5c-b0bb-431b-bd3a-c1dd7660816e",
+            "notes": [
+                {
+                    "label": "01. Command Tents",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2789,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "b562f336-3ba4-47e9-bdf0-82c721813e8e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "IKBqN658SNSkl8lc",
+                            "pin": "11891711"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1189,
+                            "y": 1711
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "02. Soldiers’ Tents",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2791,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "22c3a2c5-e782-474b-808d-f32212e3de51",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "TkV0MnoCPxK8XCsI",
+                            "pin": "10151015"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1015,
+                            "y": 1015
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03. Burned-Out Shrine",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2794,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "d8a853a9-3ca4-485a-b0b3-f280f65a8128",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "xMDEC66GrZg2ppGT",
+                            "pin": "13631885"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1363,
+                            "y": 1885
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04. Animal Pens",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2796,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "6cfa5434-ad94-4e35-9dfe-52adb5e52752",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "yX27U7x7ZmdpcJZW",
+                            "pin": "15951015"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1595,
+                            "y": 1015
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05. Latrines",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2799,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "2b846454-e4fc-45d6-83ac-c87b46c8e6bb",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "1xYUcsYFasg0rBC1",
+                            "pin": "17111827"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1885,
+                            "y": 725
+                        },
+                        {
+                            "x": 1711,
+                            "y": 1827
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06. House of the Man and Crocodile",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2806,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "800715e3-8f71-4968-953b-68e9cb4dae02",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "YzRd5FxnqIyfFvBl",
+                            "pin": "15951363"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1595,
+                            "y": 1363
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06A. Concealed Pit Trap",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2809,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "b01e9d77-49d3-4e8d-bd69-450a105da3ce",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "HaN6CcJTL8an9GcH",
+                            "pin": "17111363"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1711,
+                            "y": 1363
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06B. Blade Trap",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2811,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "0487d50a-77eb-4672-a9fa-724c3f0215d1",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "1N0gFBGAjhUDUye9",
+                            "pin": "18851363"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1885,
+                            "y": 1363
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06C. Puzzle Floor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2815,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "fdab1b38-9e20-4058-99c7-671fa190409e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "Qc5QINJuJWqkEO3q",
+                            "pin": "20011363"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2001,
+                            "y": 1363
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06D. Puzzle Door",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2817,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "238fd715-9c8c-4cce-ac7d-a995bb70c3ba",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "6bjsaglhFB6vyEfd",
+                            "pin": "21171363"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2117,
+                            "y": 1363
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06E. Treasury",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2823,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "120aa47a-1f37-49c7-a133-188d49682435",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "DtjUWxzx8rQiozvu",
+                            "pin": "23491421"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2349,
+                            "y": 1421
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "Xx89SrflroDr5dka",
+                    "name": "Goblin(13)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 1044,
+                    "y": 638,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16907,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goblin(13)"
+                    }
+                },
+                {
+                    "_id": "AoBx7IQvupCKBM9W",
+                    "name": "Goblin(14)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 928,
+                    "y": 638,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16907,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goblin(14)"
+                    }
+                },
+                {
+                    "_id": "rHfZ83i62sVMUBwe",
+                    "name": "Goblin(13)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 928,
+                    "y": 696,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16907,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goblin(13)"
+                    }
+                },
+                {
+                    "_id": "GNC8q2PHWgT4ba41",
+                    "name": "Goblin(17)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 1044,
+                    "y": 696,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16907,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goblin(17)"
+                    }
+                },
+                {
+                    "_id": "L1cWEd50Flu7DU4P",
+                    "name": "Goblin(15)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 1044,
+                    "y": 580,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16907,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goblin(15)"
+                    }
+                },
+                {
+                    "_id": "WYChRg1SAGyBxjVb",
+                    "name": "Goblin(14)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 1160,
+                    "y": 580,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16907,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goblin(14)"
+                    }
+                },
+                {
+                    "_id": "NejvERXxumJAHN2r",
+                    "name": "Goblin(16)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 1102,
+                    "y": 638,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16907,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goblin(16)"
+                    }
+                },
+                {
+                    "_id": "cepYpAjRixfNLEMC",
+                    "name": "Goblin(15)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 1218,
+                    "y": 638,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16907,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goblin(15)"
+                    }
+                },
+                {
+                    "_id": "TiTa5b4JmSTOC2go",
+                    "name": "Goblin(17)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 1102,
+                    "y": 696,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16907,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goblin(17)"
+                    }
+                },
+                {
+                    "_id": "nruuvYLvHqcvh4xV",
+                    "name": "Goblin(16)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 1218,
+                    "y": 696,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16907,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Goblin(16)"
+                    }
+                },
+                {
+                    "_id": "WUZCkqbjzFRhXIQa",
+                    "name": "Yokka",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 1276,
+                    "y": 580,
+                    "disposition": -1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 17155,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5,
+                        "type": ""
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Yokka"
+                    }
+                },
+                {
+                    "_id": "ppurxtRlyq7lxKe4",
+                    "name": "Zombie(1)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1508,
+                    "y": 580,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17077,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Zombie(1)"
+                    }
+                },
+                {
+                    "_id": "WpKmO1vfyU8ytiTk",
+                    "name": "Skeleton(1)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1682,
+                    "y": 580,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17015,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Skeleton(1)"
+                    }
+                },
+                {
+                    "_id": "JgQChrVZf9McG5db",
+                    "name": "Allosaurus(1)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 1508,
+                    "y": 754,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17087,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Allosaurus(1)"
+                    }
+                },
+                {
+                    "_id": "4BEthi3CQQZea6Uj",
+                    "name": "Axe Beak(1)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 1508,
+                    "y": 928,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16793,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Axe Beak(1)",
+                        "data": {
+                            "attributes": {
+                                "hp": {
+                                    "value": 6
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "_id": "CtPniSszswn7hs4x",
+                    "name": "Poisonous Snake(1)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.5,
+                    "x": 1160,
+                    "y": 1740,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16982,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Poisonous Snake(1)"
+                    }
+                },
+                {
+                    "_id": "oOklLq49LIsQPYQw",
+                    "name": "Axe Beak(2)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 1682,
+                    "y": 696,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16793,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Axe Beak(2)"
+                    }
+                }
+            ]
+        },
+        "stairways": [],
+        "perfect-vision": {
+            "sightLimit": null,
+            "globalLight": "default",
+            "daylightColor": "",
+            "darknessColor": ""
+        },
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 58,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 1900,
+    "initial": null,
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 25,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1189,
+            "y": 1595,
+            "lightAnimation": {
+                "speed": 1,
+                "intensity": 1,
+                "type": "torch"
+            },
+            "hidden": false
+        }
+    ],
+    "name": "Camp Righteous",
+    "navName": "Camp Righteous",
+    "shiftX": 13,
+    "shiftY": 83,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                1696,
+                1406,
+                1696,
+                1435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1667,
+                1421,
+                1696,
+                1435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1696,
+                1435,
+                1711,
+                1464
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1711,
+                1464,
+                1740,
+                1464
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1740,
+                1464,
+                1754,
+                1493
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1754,
+                1493,
+                1812,
+                1493
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1812,
+                1493,
+                1870,
+                1493
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1870,
+                1493,
+                1943,
+                1493
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1943,
+                1493,
+                1957,
+                1493
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1957,
+                1493,
+                1972,
+                1435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1972,
+                1435,
+                2102,
+                1435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2102,
+                1435,
+                2131,
+                1493
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2131,
+                1493,
+                2160,
+                1537
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2160,
+                1537,
+                2189,
+                1566
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2189,
+                1566,
+                2262,
+                1595
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2262,
+                1595,
+                2320,
+                1609
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2320,
+                1609,
+                2407,
+                1624
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2407,
+                1624,
+                2465,
+                1609
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2465,
+                1609,
+                2523,
+                1595
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2523,
+                1595,
+                2581,
+                1551
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2581,
+                1551,
+                2624,
+                1493
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2624,
+                1493,
+                2639,
+                1435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2639,
+                1435,
+                2653,
+                1377
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2653,
+                1377,
+                2653,
+                1305
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2653,
+                1305,
+                3378,
+                1305
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3378,
+                1305,
+                3378,
+                522
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3378,
+                522,
+                2566,
+                522
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2566,
+                522,
+                2566,
+                1305
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2566,
+                1305,
+                2653,
+                1305
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1682,
+                1261,
+                1696,
+                1218
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1696,
+                1218,
+                1740,
+                1203
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1740,
+                1203,
+                1754,
+                1174
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1754,
+                1174,
+                1957,
+                1174
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1957,
+                1174,
+                1957,
+                1232
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1957,
+                1232,
+                2102,
+                1232
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2102,
+                1232,
+                2117,
+                1174
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2117,
+                1174,
+                2146,
+                1131
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2146,
+                1131,
+                2189,
+                1102
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2189,
+                1102,
+                2233,
+                1073
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2233,
+                1073,
+                2291,
+                1044
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                1044,
+                2378,
+                1044
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2378,
+                1044,
+                2465,
+                1058
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2465,
+                1058,
+                2494,
+                1073
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2494,
+                1073,
+                2566,
+                1116
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1682,
+                1261,
+                1870,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1870,
+                1261,
+                1870,
+                1247
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1870,
+                1247,
+                1899,
+                1247
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1899,
+                1247,
+                1899,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1899,
+                1261,
+                1928,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1928,
+                1261,
+                1943,
+                1247
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1943,
+                1247,
+                1957,
+                1247
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1957,
+                1247,
+                1957,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1957,
+                1261,
+                2247,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2247,
+                1261,
+                2247,
+                1203
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2247,
+                1203,
+                2494,
+                1203
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2494,
+                1203,
+                2494,
+                1464
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2494,
+                1464,
+                2247,
+                1464
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2247,
+                1464,
+                2247,
+                1406
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2247,
+                1406,
+                1957,
+                1406
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1957,
+                1406,
+                1943,
+                1421
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1943,
+                1421,
+                1928,
+                1421
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1928,
+                1421,
+                1928,
+                1406
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1928,
+                1406,
+                1899,
+                1406
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1899,
+                1406,
+                1885,
+                1421
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1885,
+                1421,
+                1870,
+                1421
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1870,
+                1421,
+                1870,
+                1406
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1870,
+                1406,
+                1696,
+                1406
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2146,
+                1363,
+                2146,
+                1305
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2146,
+                1261,
+                2146,
+                1305
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2146,
+                1406,
+                2146,
+                1363
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2334,
+                1334,
+                2334,
+                1305
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2334,
+                1305,
+                2363,
+                1290
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2363,
+                1290,
+                2392,
+                1290
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2392,
+                1290,
+                2421,
+                1305
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2421,
+                1305,
+                2421,
+                1348
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2421,
+                1348,
+                2407,
+                1377
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2407,
+                1377,
+                2363,
+                1377
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1174,
+                1464,
+                1145,
+                1435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1145,
+                1435,
+                1116,
+                1392
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1116,
+                1392,
+                1116,
+                1348
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1116,
+                1348,
+                1131,
+                1319
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1131,
+                1319,
+                1174,
+                1290
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1174,
+                1290,
+                1218,
+                1290
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1218,
+                1290,
+                1261,
+                1305
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1261,
+                1305,
+                1290,
+                1348
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1290,
+                1348,
+                1290,
+                1406
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1290,
+                1406,
+                1261,
+                1435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1261,
+                1435,
+                1232,
+                1450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1290,
+                1609,
+                1276,
+                1638
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1276,
+                1638,
+                1290,
+                1682
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1290,
+                1682,
+                1334,
+                1711
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1334,
+                1711,
+                1363,
+                1725
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1363,
+                1725,
+                1406,
+                1725
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1406,
+                1725,
+                1450,
+                1682
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1450,
+                1682,
+                1464,
+                1653
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1464,
+                1653,
+                1450,
+                1595
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1450,
+                1595,
+                1406,
+                1566
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1406,
+                1566,
+                1363,
+                1551
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1363,
+                1551,
+                1334,
+                1551
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1450,
+                1914,
+                1479,
+                1885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1479,
+                1885,
+                1609,
+                1957
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1609,
+                1957,
+                1580,
+                2015
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2233,
+                1783,
+                2189,
+                1696
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2160,
+                1754,
+                2262,
+                1711
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1682,
+                2059,
+                1783,
+                2001
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1711,
+                1972,
+                1754,
+                2088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1116,
+                1972,
+                1218,
+                1972
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1160,
+                1914,
+                1160,
+                2015
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1174,
+                2073,
+                1203,
+                2044
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1464,
+                1740,
+                1551,
+                1740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1508,
+                1682,
+                1508,
+                1783
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1406,
+                1464,
+                1493,
+                1435
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1435,
+                1392,
+                1450,
+                1493
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1435,
+                1551,
+                1493,
+                1537
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1464,
+                1522,
+                1479,
+                1580
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1566,
+                710,
+                1682,
+                681
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1609,
+                638,
+                1638,
+                754
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1928,
+                942,
+                2001,
+                913
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1957,
+                884,
+                1986,
+                971
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2262,
+                971,
+                2320,
+                957
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2276,
+                928,
+                2305,
+                1000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1754,
+                1493,
+                1740,
+                1508
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1740,
+                1508,
+                1508,
+                1508
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1508,
+                1508,
+                1508,
+                1392
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1508,
+                1276,
+                1508,
+                1160
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1508,
+                1160,
+                1740,
+                1160
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1740,
+                1160,
+                1754,
+                1174
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1232,
+                1450,
+                1174,
+                1464
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1290,
+                1609,
+                1334,
+                1551
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 2750
+}

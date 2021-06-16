@@ -1,0 +1,784 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "2x9eCggxndRyp66Z",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2262,
+            "y": 2808,
+            "width": 54,
+            "height": 89,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Arial, Helvetica, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "USEsFqc71Ob2rUhx",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 5434,
+            "y": 4654,
+            "width": 54,
+            "height": 89,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Arial, Helvetica, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "kmaqnMedNlRdOTYN",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2704,
+            "y": 3900,
+            "width": 54,
+            "height": 89,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Arial, Helvetica, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "9SZxjMXZI9KVEZjY",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2834,
+            "y": 2782,
+            "width": 54,
+            "height": 89,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Arial, Helvetica, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "kExQvEIScH8Fpjvs",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 5304,
+            "y": 2938,
+            "width": 54,
+            "height": 89,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Arial, Helvetica, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "7j0EMzm8W07K9cQA",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 5798,
+            "y": 2912,
+            "width": 54,
+            "height": 89,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Arial, Helvetica, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "Y3csor03na4s8ZaY",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2860,
+            "y": 4888,
+            "width": 54,
+            "height": 89,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Arial, Helvetica, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "GJgfvCfmqURRbX4Z",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2964,
+            "y": 2288,
+            "width": 52,
+            "height": 52,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1,
+            "id": "GJgfvCfmqURRbX4Z"
+        },
+        {
+            "_id": "FFu52fKsaJRQH70K",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 4472,
+            "y": 1872,
+            "width": 52,
+            "height": 52,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "RlT8S9HF0f3GzNUy",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 5616,
+            "y": 3120,
+            "width": 52,
+            "height": 52,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "NzwcRSsDeOujKj7B",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 5408,
+            "y": 4576,
+            "width": 52,
+            "height": 52,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "7l9uEVpFXAi40tQX",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 3848,
+            "y": 4940,
+            "width": 52,
+            "height": 52,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "QNKMkVPMP1UGWvot",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 3432,
+            "y": 5044,
+            "width": 52,
+            "height": 52,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "zUkwYQeuH0dFsv1i",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2392,
+            "y": 4056,
+            "width": 52,
+            "height": 52,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "DGfwOF6qUAoLjgNM",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2600,
+            "y": 3016,
+            "width": 52,
+            "height": 52,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": true,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 80,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "toa",
+            "ddbId": 13035,
+            "cobaltId": null,
+            "parentId": 472,
+            "contentChunkId": "bbf6fa4d-3732-4cd4-8ed1-71edae8df703",
+            "notes": [
+                {
+                    "label": "01. Thorn Maze",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2850,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "3b4b6576-f072-477e-89e5-0e5d85f886a2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "XagWBLd0yQkHuNx0"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4082,
+                            "y": 1924
+                        }
+                    ],
+                    "iconSize": 49,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "02. Main Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2854,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "a0289d20-bf27-4670-95de-73e948b5b31f",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "iOHI6Av9uDfpZ1pm"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4134,
+                            "y": 4810
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03. Groak’s Isle",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2856,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "8271e1e4-f131-4254-9970-56059568ec15",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "Xq9DZJKnFUOgJyS6"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4342,
+                            "y": 3874
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04. Shrine",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2861,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "c928597d-0ac2-4ef6-a858-674a2ce861ba",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "gmtiIvwjr3nhpmeD"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3822,
+                            "y": 3406
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05. Grung Hovels",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2864,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "23a0c608-3f93-412d-8f81-07f3ea1284f8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "gnSSglZovtQ8eI3L"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4628,
+                            "y": 2626
+                        },
+                        {
+                            "x": 3302,
+                            "y": 2834
+                        },
+                        {
+                            "x": 5018,
+                            "y": 3666
+                        },
+                        {
+                            "x": 3094,
+                            "y": 3978
+                        }
+                    ],
+                    "iconSize": 49,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06. Lake Grunglung",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2866,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "14320cdc-cc11-4da8-bd9d-efa1665af12d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "hW5C14vIZr7uSgWX"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3666,
+                            "y": 4290
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "07. Prison Pit",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2870,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "584a64c3-d70c-4211-a789-e44882bbe4f6",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "iJ67jhylr3MxnLa5"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3614,
+                            "y": 2366
+                        }
+                    ],
+                    "iconSize": 49,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": {
+            "sightLimit": null,
+            "globalLight": "default",
+            "daylightColor": "",
+            "darknessColor": ""
+        },
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 52,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 4560,
+    "initial": null,
+    "lights": [],
+    "name": "Dungrunglung",
+    "navName": "Dungrunglung",
+    "shiftX": 38,
+    "shiftY": -6,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 6600
+}

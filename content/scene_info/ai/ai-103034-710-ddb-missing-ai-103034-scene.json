@@ -1,0 +1,353 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 1,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "ai",
+            "ddbId": 103034,
+            "cobaltId": null,
+            "parentId": 710,
+            "contentChunkId": "ddb-missing-ai-103034",
+            "notes": [
+                {
+                    "label": "08. Tentacle",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2120,
+                            "bookCode": "ai",
+                            "slug": "right-place-wrong-heroes#TheFissure",
+                            "contentChunkId": "aac41f4e-053a-4f6c-b2cf-f2fda8bb1b1b",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 710,
+                            "linkId": "xEJdl5a2FLomQ32v"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 8927.29646381579,
+                            "y": 2804.636101973684
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "zBuXLYqirZZOyKxh",
+                    "name": "Enormous Tentacle",
+                    "width": 3,
+                    "height": 3,
+                    "scale": 1,
+                    "x": 8755,
+                    "y": 2635,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 360895,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {}
+                }
+            ]
+        },
+        "stairways": [],
+        "perfect-vision": {
+            "sightLimit": null,
+            "daylightColor": "",
+            "darknessColor": "",
+            "forceSaturation": false,
+            "saturation": 0
+        },
+        "dynamic-illumination": {
+            "_animating": false,
+            "darknessColor": "#110033"
+        }
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 85,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 5500,
+    "initial": {
+        "x": 9051,
+        "y": 2867,
+        "scale": 0.63
+    },
+    "lights": [],
+    "name": "The Fissure 2 Area 08",
+    "navName": "The Fissure 2",
+    "shiftX": -49,
+    "shiftY": -3,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                8075,
+                2156,
+                9031,
+                2156
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                9031,
+                2156,
+                9211,
+                2199
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                9211,
+                2199,
+                9445,
+                2369
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                9445,
+                2369,
+                9573,
+                2624
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                9573,
+                2624,
+                9562,
+                2932
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                9562,
+                2932,
+                9509,
+                3155
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                9509,
+                3155,
+                9721,
+                3166
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                9721,
+                3166,
+                9721,
+                3463
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                9721,
+                3463,
+                8840,
+                3453
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                8840,
+                3453,
+                8670,
+                3453
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                8670,
+                3453,
+                8553,
+                3389
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                8553,
+                3389,
+                8393,
+                3293
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                8393,
+                3293,
+                8308,
+                3166
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                8308,
+                3166,
+                8245,
+                2953
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                8245,
+                2953,
+                8223,
+                2794
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                8223,
+                2794,
+                8245,
+                2656
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                8245,
+                2656,
+                8287,
+                2539
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                8287,
+                2539,
+                8351,
+                2422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                8351,
+                2422,
+                8075,
+                2422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                8075,
+                2422,
+                8075,
+                2156
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 8250
+}

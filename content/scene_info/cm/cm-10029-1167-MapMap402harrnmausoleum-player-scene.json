@@ -1,0 +1,924 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "cm",
+            "ddbId": 10029,
+            "cobaltId": null,
+            "parentId": 1167,
+            "contentChunkId": "MapMap402harrnmausoleum-player",
+            "notes": [
+                {
+                    "label": "Shadow Crossing",
+                    "flags": {
+                        "cobaltId": null,
+                        "ddbId": 28,
+                        "bookCode": "cm",
+                        "slug": "book-of-the-raven#ShadowCrossing",
+                        "contentChunkId": null,
+                        "userData": {
+                            "userDisplayName": "Triasmus"
+                        },
+                        "note": false,
+                        "img": false,
+                        "parentId": 1167,
+                        "linkId": "FlTzoMlHL2BZqOoz"
+                    },
+                    "positions": [
+                        {
+                            "x": 2308.5,
+                            "y": 4018.5
+                        }
+                    ],
+                    "iconSize": 100,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "dpbrYJPKsVpaTJyn",
+                    "name": "Warhorse Skeleton",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 2052,
+                    "y": 2565,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17050,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "uRsKuOwAdZ36nEAZ",
+                    "name": "Warhorse Skeleton",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 2052,
+                    "y": 2907,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17050,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "QrhJh561i8vxTs7q",
+                    "name": "Warhorse Skeleton",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 2223,
+                    "y": 2736,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17050,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "xeOGdiPU4FWNYBBg",
+                    "name": "Gargoyle",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1710,
+                    "y": 3078,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16868,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "pYH7Bsxk4XzKxc4o",
+                    "name": "Gargoyle",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2736,
+                    "y": 3078,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16868,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "e0tBlc8YvUyLGVBI",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2052,
+                    "y": 3420,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "My9n1hzMZNVv8sIE",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2223,
+                    "y": 3591,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "zGL8QwOvEQpZhkib",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2394,
+                    "y": 3420,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "EU89ATlsBX1HEfUJ",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 4446,
+                    "y": 4959,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "pJgi0Rlc02VnhBke",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 4446,
+                    "y": 4788,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "K6T5rSzXfFKtl5Xk",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 4446,
+                    "y": 4617,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "uet2ouGifv3912Vi",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2052,
+                    "y": 5814,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "dPNQDlbuoTSFFeMH",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2223,
+                    "y": 5814,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "JeTF0XKY8hhSLXGf",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2394,
+                    "y": 5814,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "Kqt8cOnCKvrCUMSG",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 0,
+                    "y": 4617,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "8ijbj2pFD8jiimLM",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 0,
+                    "y": 4788,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "gRnL7vGXCb2U7kg5",
+                    "name": "Ghoul",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 0,
+                    "y": 4959,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16872,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "R68OralOrw4CmORV",
+                    "name": "Wight",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2223,
+                    "y": 3078,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17059,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                }
+            ]
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 171,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3000,
+    "initial": null,
+    "lights": [],
+    "name": "Map 4.02: Harrn Mausoleum",
+    "navName": "Harrn Mausoleum",
+    "shiftX": -7,
+    "shiftY": 45,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                2052,
+                3249,
+                2223,
+                3249
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2223,
+                3249,
+                2394,
+                3249
+            ],
+            "door": 1,
+            "ds": 1,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2394,
+                3249,
+                2566,
+                3255
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2566,
+                3255,
+                2565,
+                2917
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2565,
+                2917,
+                2565,
+                2832
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2565,
+                2832,
+                2565,
+                2746
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2565,
+                2746,
+                2575,
+                2565
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2575,
+                2565,
+                2575,
+                2223
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2575,
+                2223,
+                2062,
+                2223
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2062,
+                2223,
+                2062,
+                2565
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2062,
+                2565,
+                2062,
+                2736
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2062,
+                2736,
+                2062,
+                2821
+            ],
+            "door": 1,
+            "ds": 1,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2052,
+                3088,
+                2052,
+                3249
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2052,
+                3088,
+                1710,
+                3078
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1710,
+                3078,
+                1710,
+                2565
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1710,
+                2565,
+                2062,
+                2565
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2575,
+                2565,
+                2907,
+                2565
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2907,
+                2565,
+                2907,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2907,
+                3088,
+                2565,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2062,
+                2565,
+                2223,
+                2565
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2223,
+                2565,
+                2297,
+                2565
+            ],
+            "door": 1,
+            "ds": 1,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2297,
+                2565,
+                2394,
+                2565
+            ],
+            "door": 1,
+            "ds": 1,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2394,
+                2565,
+                2575,
+                2565
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2052,
+                3088,
+                2062,
+                2896
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2062,
+                2896,
+                2062,
+                2821
+            ],
+            "door": 1,
+            "ds": 1,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 2207
+}

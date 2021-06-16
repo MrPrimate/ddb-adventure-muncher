@@ -1,0 +1,1628 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "X2Aj7gDn8mzIBIlv",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2950,
+            "y": 1750,
+            "width": 50,
+            "height": 50,
+            "rotation": 0,
+            "z": 0,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#000000",
+            "textAlpha": 1,
+            "id": "X2Aj7gDn8mzIBIlv"
+        },
+        {
+            "_id": "bT4xFNwICt20Tvwj",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2950,
+            "y": 1800,
+            "width": 50,
+            "height": 50,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#000000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "VH2ojZuAkHP99B5Y",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2950,
+            "y": 1700,
+            "width": 50,
+            "height": 50,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#000000",
+            "textAlpha": 1,
+            "id": "VH2ojZuAkHP99B5Y"
+        },
+        {
+            "_id": "hfFD40hntwk5HgAt",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2875,
+            "y": 1675,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#ff0000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "ORHNOpFPeI76YuV5",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 3050,
+            "y": 1675,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#ff0000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "1YpXcrmAhGOSjSRl",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 1850,
+            "y": 2750,
+            "width": 24,
+            "height": 43,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "Signika",
+            "fontSize": 36,
+            "textColor": "#000000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "dJN96lfLOSmGHuWr",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 1900,
+            "y": 2900,
+            "width": 24,
+            "height": 43,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "Signika",
+            "fontSize": 36,
+            "textColor": "#000000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "py6fOrfZLBA6cw3g",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2075,
+            "y": 2800,
+            "width": 24,
+            "height": 43,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "Signika",
+            "fontSize": 36,
+            "textColor": "#000000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "j4vTGDjWYVea0UuR",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2175,
+            "y": 2800,
+            "width": 24,
+            "height": 43,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "Signika",
+            "fontSize": 36,
+            "textColor": "#000000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "PbZ9WE3Mmvw56FEx",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2125,
+            "y": 2650,
+            "width": 24,
+            "height": 43,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "X",
+            "fontFamily": "Signika",
+            "fontSize": 36,
+            "textColor": "#000000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "h8T45lwgzTP3RJeq",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2775,
+            "y": 2800,
+            "width": 23,
+            "height": 48,
+            "rotation": 0,
+            "z": 5,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "L",
+            "fontFamily": "Signika",
+            "fontSize": 40,
+            "textColor": "#000000",
+            "textAlpha": 1,
+            "id": "h8T45lwgzTP3RJeq"
+        },
+        {
+            "_id": "6fzJSxJzvpD85Zkn",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 3075,
+            "y": 2800,
+            "width": 30,
+            "height": 56,
+            "rotation": 0,
+            "z": 6,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "V",
+            "fontFamily": "Signika",
+            "fontSize": 40,
+            "textColor": "#000000",
+            "textAlpha": 1,
+            "id": "6fzJSxJzvpD85Zkn"
+        },
+        {
+            "_id": "BqVJXocJUhy7Hn8h",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2800,
+            "y": 2950,
+            "width": 30,
+            "height": 56,
+            "rotation": 0,
+            "z": 6,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "B",
+            "fontFamily": "Signika",
+            "fontSize": 40,
+            "textColor": "#000000",
+            "textAlpha": 1,
+            "id": "BqVJXocJUhy7Hn8h"
+        },
+        {
+            "_id": "c8J2KIN88tsS5mkt",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 3000,
+            "y": 2950,
+            "width": 30,
+            "height": 56,
+            "rotation": 0,
+            "z": 6,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#ffffff",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Z",
+            "fontFamily": "Signika",
+            "fontSize": 40,
+            "textColor": "#000000",
+            "textAlpha": 1,
+            "id": "c8J2KIN88tsS5mkt"
+        },
+        {
+            "_id": "vxHhC6gB31EW2VY9",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2700,
+            "y": 3925,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#ff0000",
+            "textAlpha": 1
+        },
+        {
+            "_id": "w1FibmjpEsOeRyL6",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2875,
+            "y": 4275,
+            "width": 29,
+            "height": 56,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#a2c716",
+            "fillAlpha": 1,
+            "strokeWidth": 2,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "S",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#ff0000",
+            "textAlpha": 1
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "toa",
+            "ddbId": 13025,
+            "cobaltId": null,
+            "parentId": 473,
+            "contentChunkId": "6eca3635-a4a0-43b7-b70b-522cebc6a21f",
+            "notes": [
+                {
+                    "label": "03A. Froghemoth Pool",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2325,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "57e55e02-8000-4664-8d64-a1a1fe4e2388",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "n7olZSJL0Ogdgab9"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1125,
+                            "y": 2000
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03B. Locked Gate",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2328,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "4318fa1b-854c-4097-94f3-e6b3f0ada52e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "XZicr5XPvjNjJq5z"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1225,
+                            "y": 1775
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03C. Chamber of Bravery",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2341,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "55223cd3-7a16-494e-b219-1ae7aff45a06",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "SaMpticxnCOFRXY8"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1125,
+                            "y": 1525
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04A. Shrine Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2344,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "8227c165-a7af-4d90-ab2d-76204d824cbb",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "mRZHDy6xrAVxYjxX"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2075,
+                            "y": 2225
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04B. Arena Gallery",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2353,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "f1fd3584-2482-4b75-ac70-a545fd95d156",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "ZpqGGJXQPkU4znZB"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2150,
+                            "y": 1800
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04C. Gladiator Cells",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2358,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "428893cf-bd82-4341-8956-ca09e141e1fd",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "GXd742MOzjA5UQFu"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2325,
+                            "y": 1775
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04D. Gladiatorial Pit",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2364,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "c4c9bc3d-650b-43d2-b7a1-dcb00a372fdf",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "CPRmpM0SAGE6R6gc"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2025,
+                            "y": 1975
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06A. Shrine Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2616,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "5948088b-0358-4ccf-809d-c412f9c71ee8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "RZislgvVnc2N436Q"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2975,
+                            "y": 2125
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06B. Trapped Passage",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2622,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "2ebe89a5-0ee9-4d2e-8f75-a664946fd2f6",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "ZB4rVZetTFdGt35J"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2975,
+                            "y": 1875
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06C. Chamber of Deception",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2628,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "783bceeb-360d-430c-a493-4aefc3beda1c",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "4HDzhyUqW1mUcLYZ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2925,
+                            "y": 1575
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06D. Western Secret Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2631,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "bd297af8-bd85-4878-9e37-5cb86f617eb2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "rvmZOpXp07y7l9Jb"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2825,
+                            "y": 1875
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06E. Eastern Secret Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2635,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "47448ed3-4365-453e-869b-a7089a18c2bc",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "RZdBn8MHK8zOwl0H"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3125,
+                            "y": 1875
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "08A. Shrine Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2637,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "a66052e6-cea6-40bb-8b1b-1bc9b9792b19",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "G6hZlGkMBGEnhRUq"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1175,
+                            "y": 3425
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "08B. Ruined Workshop",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2640,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "7f67ec59-604b-4eee-b735-2d2be9a367da",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "UQVstohgkJrnshRa"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1025,
+                            "y": 3225
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "08C. Chamber of Contemplation",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2649,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "3d511afe-a618-4775-9cfd-2a06d49922cf",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "1GZHaXj0pYMOyOIW"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1125,
+                            "y": 2825
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "10A. Shrine Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2654,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "340d78a6-0ff8-443b-8eff-dfd41eac55ef",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "LFEWxMr9lQSrGgwT"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2125,
+                            "y": 3375
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "10B. Puzzle Floor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2661,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "8783e914-63b7-48b0-b111-1a140e1437c8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "wPG6bSxqi8iusxik"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2125,
+                            "y": 3025
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "10C. Labyrinth",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2663,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "540c05f3-ca1a-4ece-aa92-06b962facb5d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "gebTtt4QYn9LLMoS"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2325,
+                            "y": 2875
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "10D. Puzzle Cube",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2667,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "217487cb-5f62-4f8d-942f-447f7a208524",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "Xu3ArFUWTICiP2ZI"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2025,
+                            "y": 2575
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "12A. Cracked Obelisks",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2669,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "fb77b279-ebe4-451e-9b97-6475f8e3b743",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "XgVCqdkrK1LTp41n"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2925,
+                            "y": 3325
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "12B. Test of Friendship",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2676,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "1141fbaa-f4f7-4cf0-8c6c-dd9a2e2ebfde",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "3pOpg7YuWYTGHneI"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2975,
+                            "y": 2775
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "12C. Viewing Corridors",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2681,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "af9f2227-c2c7-497e-bfd9-6e3d2425e927",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "pLrawzIkHgebJXQo"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3075,
+                            "y": 3025
+                        },
+                        {
+                            "x": 2775,
+                            "y": 3025
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "16A. Shrine Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2684,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "c89f1e61-9a5d-44df-b968-bd072ed6b64b",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "lJEvKdAG2DboaHw2"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1225,
+                            "y": 4425
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "16B. Mosaic Floor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2688,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "a4b37047-e746-4252-9119-c44e44fff188",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "afYihWtZ2XRvRMPn"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1275,
+                            "y": 4175
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "16C. Chamber of Command",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2696,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "9eb9943b-4cb7-4dbe-bd41-928059f5c45d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "K4SacjAiwafjPlNX"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1225,
+                            "y": 3825
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "16D. Hidden Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2699,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "83b8b003-6f19-4f1c-8872-513a092a9cfa",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "YwhJzwYsTDevdDyx"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1375,
+                            "y": 4125
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "18A. Shrine Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2705,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "4d806ae6-ae0d-4b9f-9648-f24c063a9af7",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "5aCCwhnM25TZb7qZ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2025,
+                            "y": 4275
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "18B. Chamber of Greed",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2710,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "3bca57fc-67dc-4bf0-a162-0e01489006b3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "K1zDqADqcWPzBJ9d"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2075,
+                            "y": 4125
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "18C. Puzzle Cube",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2713,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "251bc9cb-bc7b-49db-9d40-6b8558f3bcc4",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "8ZvleuZ8StZV2WJr"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2125,
+                            "y": 3875
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "19A. Shrine Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2716,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "ea77b7a8-ca3e-48af-8374-59e0f87df860",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "TierGRwyL4SsnCkF"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2925,
+                            "y": 4425
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "19B. Gallery of Carvings",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2720,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "5aa611bc-a46f-4df2-87f7-69d0cb9bfd27",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "6i9nec28061DBD8g"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2975,
+                            "y": 4275
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "19C. Sun Pool",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2723,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "8f14f4d3-0ebf-4492-b565-157141b15337",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "hF6bMTsBCIVEL6fd"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3075,
+                            "y": 3825
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "19D. Moon Pool",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2729,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "3ed8b853-fabc-4d85-af6c-7f0848da0ca0",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "jv1sRACdmXN4M3Fr"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2825,
+                            "y": 3825
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "19E. Chamber of Sacraments",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2737,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "ac5f24c9-db88-400a-bbcd-77382945f903",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "z4qL367eqTHLEKw8"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2825,
+                            "y": 4075
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "19F. Secret Passage",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2740,
+                            "bookCode": "toa",
+                            "slug": "dwellers-of-the-forbidden-city#LocationsintheCity",
+                            "contentChunkId": "9f7dd89a-83d2-4388-b204-0d7ba81805a1",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 473,
+                            "linkId": "ZYT6Bmax2e6I41P9"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2725,
+                            "y": 4125
+                        }
+                    ],
+                    "iconSize": 38,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": {
+            "sightLimit": null,
+            "globalLight": "default",
+            "daylightColor": "",
+            "darknessColor": ""
+        },
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 50,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3800,
+    "initial": null,
+    "lights": [],
+    "name": "Nine Shrines of Omu",
+    "navName": "Nine Shrines of Omu",
+    "shiftX": 26,
+    "shiftY": 18,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 2800
+}

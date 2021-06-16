@@ -1,0 +1,1263 @@
+{
+    "backgroundColor": "#6a7f90",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "idrotf",
+            "ddbId": 10041,
+            "cobaltId": null,
+            "parentId": 1077,
+            "contentChunkId": "MapMap18frostgiant-player",
+            "notes": [
+                {
+                    "label": "L01. Exterior",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2040,
+                            "bookCode": "idrotf",
+                            "slug": "dougans-hole#HoledUp",
+                            "contentChunkId": "dc64e5e9-1ba2-48f0-9a5f-66cc481c4b76",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1077,
+                            "linkId": "F7fvEWajoenIs7gn"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4446,
+                            "y": 2262
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "L02. Flensing Chamber",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2044,
+                            "bookCode": "idrotf",
+                            "slug": "dougans-hole#HoledUp",
+                            "contentChunkId": "5644d3e4-de67-46ad-846b-a9db78c4757a",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1077,
+                            "linkId": "bfggQOpPMpAHkjjT"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3718,
+                            "y": 1690
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "L03. Caged Townsfolk",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2050,
+                            "bookCode": "idrotf",
+                            "slug": "dougans-hole#HoledUp",
+                            "contentChunkId": "531ed3c4-5c3d-493e-9179-88f53827b9d8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1077,
+                            "linkId": "b2MUdB17dbK4oS2I"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3614,
+                            "y": 2678
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "L04. Entrance Corridor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2053,
+                            "bookCode": "idrotf",
+                            "slug": "dougans-hole#HoledUp",
+                            "contentChunkId": "2589cdde-b81a-4b18-a467-a09280159c47",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1077,
+                            "linkId": "faVp5A6MXS3xH9DS"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3822,
+                            "y": 2262
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "L05. Garagai’s Icy Tomb",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2062,
+                            "bookCode": "idrotf",
+                            "slug": "dougans-hole#HoledUp",
+                            "contentChunkId": "4e17e46a-e415-4691-baca-5b9c87b9e6da",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1077,
+                            "linkId": "1EOPU7J5L140ZoGD"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3042,
+                            "y": 2106
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "L06. War Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2065,
+                            "bookCode": "idrotf",
+                            "slug": "dougans-hole#HoledUp",
+                            "contentChunkId": "859a5942-2ea5-4141-8603-f97f09e2fe63",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1077,
+                            "linkId": "LavQi4k9vn93IdS0"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2678,
+                            "y": 1638
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "L07. Garagai’s Bedroll",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2068,
+                            "bookCode": "idrotf",
+                            "slug": "dougans-hole#HoledUp",
+                            "contentChunkId": "d504d5bd-2b3e-4139-a9c8-8cd79eeba846",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1077,
+                            "linkId": "WWcSIvCcGsD28YAR"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2210,
+                            "y": 2574
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "L08. Whale Oil Storage",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2072,
+                            "bookCode": "idrotf",
+                            "slug": "dougans-hole#HoledUp",
+                            "contentChunkId": "29914ed3-d54a-4280-90dc-478368fc2015",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1077,
+                            "linkId": "HadppJac0BcbeHD7"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2990,
+                            "y": 2990
+                        }
+                    ],
+                    "iconSize": 39,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [
+            {
+                "scene": null,
+                "name": "sw-y84q0oab",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 2782,
+                "y": 3302,
+                "_id": "nq1qsb8xsybuzx82"
+            },
+            {
+                "scene": null,
+                "name": "sw-y84q0oab",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 2886,
+                "y": 2834,
+                "_id": "mv0qllgl9eac2h2b"
+            }
+        ],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 52,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2765,
+    "initial": null,
+    "lights": [],
+    "name": "Map 1.8: Frost Giant Ice Lodge",
+    "navName": "Frost Giant Ice Lodge",
+    "shiftX": -36,
+    "shiftY": -38,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                3861,
+                1989,
+                4120,
+                1849
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4120,
+                1849,
+                4047,
+                1724
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4047,
+                1724,
+                3924,
+                1576
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3924,
+                1576,
+                3707,
+                1473
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3707,
+                1473,
+                3419,
+                1418
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3419,
+                1418,
+                2954,
+                1401
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2954,
+                1401,
+                2625,
+                1434
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2625,
+                1434,
+                2377,
+                1508
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2377,
+                1508,
+                2110,
+                1649
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2110,
+                1649,
+                1950,
+                1789
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1950,
+                1789,
+                1949,
+                1789
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1949,
+                1789,
+                1805,
+                1983
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1805,
+                1983,
+                1804,
+                1983
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1804,
+                1983,
+                1732,
+                2178
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1732,
+                2178,
+                1729,
+                2371
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1729,
+                2371,
+                1757,
+                2494
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1757,
+                2494,
+                1837,
+                2653
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1837,
+                2653,
+                1964,
+                2813
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1964,
+                2813,
+                2160,
+                2941
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2160,
+                2941,
+                2355,
+                3038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2355,
+                3038,
+                2580,
+                3104
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2580,
+                3104,
+                2582,
+                3104
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2582,
+                3104,
+                2902,
+                3153
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2902,
+                3153,
+                3129,
+                3151
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3129,
+                3151,
+                3360,
+                3148
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3360,
+                3148,
+                3632,
+                3106
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3632,
+                3106,
+                3829,
+                3043
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3829,
+                3043,
+                3979,
+                2934
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3979,
+                2934,
+                4097,
+                2776
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4097,
+                2776,
+                4114,
+                2741
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4114,
+                2741,
+                3839,
+                2606
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2886,
+                1651,
+                2889,
+                1406
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3146,
+                1547,
+                3147,
+                1409
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1742,
+                2158,
+                2607,
+                2153
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2607,
+                2153,
+                2679,
+                2069
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2679,
+                2069,
+                2780,
+                2008
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2780,
+                2008,
+                2887,
+                1979
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2887,
+                1979,
+                2885,
+                1876
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3144,
+                1769,
+                3145,
+                1958
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3145,
+                1958,
+                3277,
+                1981
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3277,
+                1981,
+                3437,
+                2061
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3437,
+                2061,
+                3524,
+                2151
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3524,
+                2151,
+                4205,
+                2149
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4205,
+                2149,
+                4189,
+                2078
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4182,
+                2503,
+                4207,
+                2418
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4207,
+                2418,
+                3520,
+                2414
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3520,
+                2414,
+                3434,
+                2504
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3434,
+                2504,
+                3290,
+                2573
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3290,
+                2573,
+                3137,
+                2604
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3137,
+                2604,
+                2970,
+                2604
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2970,
+                2604,
+                2812,
+                2563
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2812,
+                2563,
+                2710,
+                2511
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2710,
+                2511,
+                2614,
+                2414
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2614,
+                2414,
+                2089,
+                2416
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1872,
+                2418,
+                1742,
+                2418
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2756,
+                2691,
+                2817,
+                2566
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3147,
+                3154,
+                3145,
+                2601
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2564,
+                3099,
+                2660,
+                2901
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3585,
+                1921,
+                3440,
+                2063
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3342,
+                1799,
+                3279,
+                1983
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2002,
+                1040,
+                2589,
+                1179
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2589,
+                1179,
+                2750,
+                1229
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2750,
+                1229,
+                3537,
+                1231
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3537,
+                1231,
+                3911,
+                1116
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3911,
+                1116,
+                4446,
+                1077
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4446,
+                1077,
+                4978,
+                1359
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4978,
+                1359,
+                4950,
+                3224
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4950,
+                3224,
+                4809,
+                3292
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4809,
+                3292,
+                4802,
+                3298
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4802,
+                3298,
+                4717,
+                3431
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4717,
+                3431,
+                1502,
+                3440
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1502,
+                3440,
+                1265,
+                3231
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1265,
+                3231,
+                1183,
+                3044
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1183,
+                3044,
+                1185,
+                1072
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1185,
+                1072,
+                1185,
+                1070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1185,
+                1070,
+                1356,
+                1016
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1356,
+                1016,
+                1356,
+                1014
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1356,
+                1014,
+                1419,
+                874
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1419,
+                874,
+                1422,
+                874
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                874,
+                1930,
+                874
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1930,
+                874,
+                2002,
+                1042
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 4000
+}

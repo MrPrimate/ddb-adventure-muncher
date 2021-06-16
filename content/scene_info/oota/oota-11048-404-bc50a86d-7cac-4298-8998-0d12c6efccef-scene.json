@@ -1,0 +1,29 @@
+{
+    "backgroundColor": "#000000",
+    "flags": {
+        "ddb": {
+            "bookCode": "oota",
+            "ddbId": 11048,
+            "cobaltId": null,
+            "parentId": 404,
+            "contentChunkId": "bc50a86d-7cac-4298-8998-0d12c6efccef",
+            "notes": [],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "grid": 66,
+    "gridDistance": 50,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2168,
+    "lights": [],
+    "name": "Map 6.1: Blingdenstone",
+    "navName": "Blingdenstone",
+    "shiftX": -14,
+    "shiftY": -34,
+    "walls": [],
+    "width": 2662
+}

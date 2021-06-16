@@ -1,0 +1,6679 @@
+{
+    "backgroundColor": "#333333",
+    "darkness": 0.6,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "cos",
+            "ddbId": 14064,
+            "cobaltId": null,
+            "parentId": 361,
+            "contentChunkId": "fc0737e5-6526-49d1-a6c9-30b965e5f260",
+            "notes": [
+                {
+                    "label": "W1. Stables",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2065,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "f8d2cb56-e482-49ef-a181-87a39550ee4f",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "6oYtmnNnSe9by1NV"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2844,
+                            "y": 2567.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W2. Loading Dock",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2069,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "6d6d1f00-cf0f-4199-90d7-e994de8bdd47",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "rBt9yiwf6qETCbk3"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2528,
+                            "y": 2883.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W3. Barrel Maker’s Workshop",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2072,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "fb7ef9c6-88d4-49fd-9d81-4590e98a4019",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "vWA5RsRtsALrhtTk"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2291,
+                            "y": 2686
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W4. Barrel Storage",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2075,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "98a7155e-05e6-4fc1-8f40-725191e41a7b",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "VBle9BnbAl3F4l3b"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2054,
+                            "y": 2686
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W5. Veranda",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2078,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "ae92c16d-c9bc-4097-9c74-faeadafbfa1c",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "lettyQ7tR6vLDp0n"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1619.5,
+                            "y": 2686
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W6. Well",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2080,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "97062e20-2bbc-47b4-9094-e559cabd1182",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "kexIs6KY5utuYz68"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1185,
+                            "y": 2567.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W7. Outhouse",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2083,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "28fd85c0-ce78-488a-9d8b-a7066c3f379d",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "zpyhHyvNr9CanVN5"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1185,
+                            "y": 2804.5
+                        },
+                        {
+                            "x": 1224.5,
+                            "y": 1698.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W8. Storage",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2087,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "629935d4-931a-4c3e-ab5f-00e3113d3b00",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "I1mpAtm3PDETKnkZ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1422,
+                            "y": 2962.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W9. Fermentation Vats",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2098,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "c005e5d3-583d-4781-8ffe-88a7b664ee3f",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "wgjoNGAEu5LEwTEa"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1817,
+                            "y": 2883.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W10. Glassblower’s Workshop",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2103,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "b4f9355c-1b9a-4c29-9c06-7bb284ebde28",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "TqdWYNhLiIgZJgAM"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1856.5,
+                            "y": 3160
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W11. Spiral Staircase",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2106,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "23e32ffc-ccec-4bd6-8af0-1adc1f1b3985",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "8U1SKaDOw6DKfSJt"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1422,
+                            "y": 3160
+                        },
+                        {
+                            "x": 1422,
+                            "y": 2054
+                        },
+                        {
+                            "x": 1422,
+                            "y": 4108
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W12. Ramp",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2109,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "e00268b3-7c1d-4513-9a1a-c0b0ff882c3c",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "n6AlDLJV9MOAu5E4"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2449,
+                            "y": 3160
+                        },
+                        {
+                            "x": 2449,
+                            "y": 2054
+                        },
+                        {
+                            "x": 2449,
+                            "y": 4108
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W13. Back Staircase",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2112,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "0ff387b3-b46d-461a-94db-2d52f9a2e303",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "8AvAahWwKhiciD3L"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2093.5,
+                            "y": 4187
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W14. Wine Cellar",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2121,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "5652d696-b85e-4ab9-8671-9956b13bb34e",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "sAuHPxVQQyjOZV7R"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1580,
+                            "y": 3831.5
+                        },
+                        {
+                            "x": 2291,
+                            "y": 3831.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W15. Brown Mold",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2125,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "4eb8b8c7-636f-4452-8f7a-562e64fbfefa",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "Rl8kkT0wlcFLnoTc"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1935.5,
+                            "y": 3871
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W16. Loading Winch",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2131,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "c57a7081-1278-4eed-8da6-f554b7b38474",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "mAsfgny0P2YNmEbu"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2528,
+                            "y": 1777.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W17. Master Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2142,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "13bd6323-c3cb-4cf4-9f4d-9fdcfd370ee4",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "XhsxgtkHz7KH4xNM"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2212,
+                            "y": 1540.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W18. Kitchen and Dining Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2145,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "1e9d8eae-33ce-4f3d-b2b0-0bbd6b24b29e",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "QDVsaL3uGREFhtRX"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2093.5,
+                            "y": 1580
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W19. Sleeping Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2149,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "172bcd6d-5ca8-4267-aefb-8f57483e0f10",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "j1KUbBtpoEOZpfdF"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1817,
+                            "y": 1540.5
+                        },
+                        {
+                            "x": 1659,
+                            "y": 1540.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "W20. Printing Press",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2157,
+                            "bookCode": "cos",
+                            "slug": "the-wizard-of-wines#AreasoftheWinery",
+                            "contentChunkId": "42f88e26-5fc5-4503-ae89-8659e34d0237",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 361,
+                            "linkId": "v1eU5yh0bRIjsLOi"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1501,
+                            "y": 1540.5
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 79,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3597,
+    "initial": {
+        "x": 2193,
+        "y": 2893,
+        "scale": 0.66
+    },
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1540,
+            "y": 1619,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1923.7372262773722,
+            "y": 1455.5766423357666,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2008.5766423357663,
+            "y": 1538.2262773722628,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 20,
+            "darknessThreshold": 0,
+            "dim": 40,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1738,
+            "y": 2923,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 20,
+            "darknessThreshold": 0,
+            "dim": 40,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2131.5862068965516,
+            "y": 2920.7241379310344,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 20,
+            "darknessThreshold": 0,
+            "dim": 40,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1581.1724137931035,
+            "y": 2921.8275862068967,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 20,
+            "darknessThreshold": 0,
+            "dim": 40,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2288.4137931034484,
+            "y": 2923,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2265.27868852459,
+            "y": 1451.5081967213116,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 948,
+            "y": 3436.5,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1935.5,
+            "y": 3436.5,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2962.5,
+            "y": 3436.5,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 3199.5,
+            "y": 2804.5,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 908.5,
+            "y": 2409.5,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1975,
+            "y": 2409.5,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1659,
+            "y": 2765,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2409.5,
+            "y": 2409.5,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2646.5,
+            "y": 2409.5,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 869,
+            "y": 2212,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1972.3684210526314,
+            "y": 2341,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2804.416666666666,
+            "y": 2212,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 3239,
+            "y": 1145.5,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 200,
+            "darknessThreshold": 0,
+            "dim": 200,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 948,
+            "y": 1106,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        }
+    ],
+    "name": "Wizards of Wine Winery",
+    "navName": "Wizards of Wine Winery",
+    "shiftX": -35,
+    "shiftY": 16,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                819,
+                4463,
+                819,
+                3476
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                819,
+                3476,
+                819,
+                2370
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                819,
+                2370,
+                819,
+                997
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                819,
+                997,
+                3298,
+                997
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3298,
+                997,
+                3298,
+                2370
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3298,
+                2370,
+                3298,
+                3476
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3298,
+                3476,
+                3298,
+                4463
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3298,
+                4463,
+                819,
+                4463
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3298,
+                2370,
+                819,
+                2370
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                819,
+                3476,
+                3298,
+                3476
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1896,
+                3782,
+                1501,
+                3782
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1412,
+                3782,
+                1412,
+                4019
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1412,
+                4019,
+                1372,
+                4029
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1372,
+                4029,
+                1343,
+                4058
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1343,
+                4058,
+                1333,
+                4098
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1333,
+                4098,
+                1333,
+                4137
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1333,
+                4137,
+                1352,
+                4167
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1352,
+                4167,
+                1382,
+                4187
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1382,
+                4187,
+                1422,
+                4196
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                4196,
+                1461,
+                4187
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1461,
+                4187,
+                1491,
+                4167
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1491,
+                4167,
+                1501,
+                4137
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                4137,
+                1510,
+                4108
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1510,
+                4108,
+                1422,
+                4108
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1510,
+                4108,
+                2212,
+                4108
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2212,
+                4108,
+                2291,
+                4108
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2300,
+                4108,
+                2350,
+                4108
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2350,
+                4108,
+                2449,
+                4108
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2350,
+                4108,
+                2370,
+                4147
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                4147,
+                2399,
+                4187
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2399,
+                4187,
+                2449,
+                4196
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2449,
+                4196,
+                2488,
+                4187
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2488,
+                4187,
+                2518,
+                4157
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2518,
+                4157,
+                2537,
+                4127
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2537,
+                4127,
+                2537,
+                4088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2537,
+                4088,
+                2518,
+                4048
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2518,
+                4048,
+                2488,
+                4029
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2488,
+                4029,
+                2458,
+                4019
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2458,
+                4019,
+                2458,
+                3782
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2458,
+                3782,
+                1975,
+                3782
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1975,
+                3782,
+                1975,
+                4029
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1975,
+                4029,
+                1896,
+                4029
+            ],
+            "door": 2,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1896,
+                4029,
+                1896,
+                3782
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2300,
+                4108,
+                2300,
+                4196
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2300,
+                4196,
+                1955,
+                4196
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1955,
+                4196,
+                1955,
+                4108
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                4108,
+                2300,
+                4108
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2044,
+                4019,
+                2063,
+                4019
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2063,
+                4019,
+                2063,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2063,
+                4038,
+                2044,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2044,
+                4038,
+                2044,
+                4019
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2202,
+                4019,
+                2221,
+                4019
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2221,
+                4019,
+                2221,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2221,
+                4038,
+                2202,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2202,
+                4038,
+                2202,
+                4019
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2360,
+                4019,
+                2379,
+                4019
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2379,
+                4019,
+                2379,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2379,
+                4038,
+                2360,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2360,
+                4038,
+                2360,
+                4019
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2062,
+                3881,
+                2043,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2043,
+                3881,
+                2043,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2043,
+                3862,
+                2062,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2062,
+                3862,
+                2062,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2221,
+                3881,
+                2202,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2202,
+                3881,
+                2202,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2202,
+                3862,
+                2221,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2221,
+                3862,
+                2221,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2378,
+                3881,
+                2359,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2359,
+                3881,
+                2359,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2359,
+                3862,
+                2378,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2378,
+                3862,
+                2378,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1510,
+                3881,
+                1491,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1491,
+                3881,
+                1491,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1491,
+                3862,
+                1510,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1510,
+                3862,
+                1510,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1510,
+                4038,
+                1491,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1491,
+                4038,
+                1491,
+                4019
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1491,
+                4019,
+                1510,
+                4019
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1510,
+                4019,
+                1510,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1668,
+                4038,
+                1649,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1649,
+                4038,
+                1649,
+                4019
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1649,
+                4019,
+                1668,
+                4019
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1668,
+                4019,
+                1668,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1668,
+                3881,
+                1649,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1649,
+                3881,
+                1649,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1649,
+                3862,
+                1668,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1668,
+                3862,
+                1668,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1826,
+                3881,
+                1807,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1807,
+                3881,
+                1807,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1807,
+                3862,
+                1826,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1826,
+                3862,
+                1826,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1826,
+                4039,
+                1807,
+                4039
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1807,
+                4039,
+                1807,
+                4020
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1807,
+                4020,
+                1826,
+                4020
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1826,
+                4020,
+                1826,
+                4039
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1501,
+                3782,
+                1412,
+                3782
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                3782,
+                1491,
+                3762
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1491,
+                3762,
+                1510,
+                3732
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1510,
+                3732,
+                1540,
+                3713
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1540,
+                3713,
+                1570,
+                3683
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1570,
+                3683,
+                1609,
+                3663
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1609,
+                3663,
+                1639,
+                3663
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1639,
+                3663,
+                1668,
+                3634
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1668,
+                3634,
+                1728,
+                3614
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1728,
+                3614,
+                1787,
+                3624
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1787,
+                3624,
+                1856,
+                3614
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1856,
+                3614,
+                1925,
+                3634
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1925,
+                3634,
+                1994,
+                3624
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1994,
+                3624,
+                2054,
+                3634
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                3634,
+                2103,
+                3643
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2103,
+                3643,
+                2162,
+                3663
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2162,
+                3663,
+                2192,
+                3693
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2192,
+                3693,
+                2221,
+                3693
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2221,
+                3693,
+                2261,
+                3722
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2261,
+                3722,
+                2271,
+                3722
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2271,
+                3722,
+                2300,
+                3762
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2300,
+                3762,
+                2300,
+                3782
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1264,
+                2844,
+                1185,
+                2844
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1185,
+                2844,
+                1185,
+                2923
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1185,
+                2923,
+                1264,
+                2923
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1264,
+                2923,
+                1264,
+                2844
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                3002,
+                1422,
+                3071
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                3071,
+                1393,
+                3077
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1372,
+                3088,
+                1347,
+                3114
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1347,
+                3114,
+                1335,
+                3145
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1335,
+                3145,
+                1336,
+                3178
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1336,
+                3178,
+                1348,
+                3207
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1348,
+                3207,
+                1365,
+                3224
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1365,
+                3224,
+                1422,
+                3160
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1365,
+                3224,
+                1393,
+                3241
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                3248,
+                1461,
+                3239
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1461,
+                3239,
+                1491,
+                3209
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1491,
+                3209,
+                1501,
+                3160
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                3160,
+                1501,
+                3081
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                3160,
+                1738,
+                3160
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1738,
+                3160,
+                1738,
+                3278
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1738,
+                3278,
+                1698,
+                3318
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1698,
+                3318,
+                1738,
+                3357
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1738,
+                3357,
+                1777,
+                3318
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1777,
+                3318,
+                1836,
+                3318
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1836,
+                3318,
+                1876,
+                3318
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1876,
+                3318,
+                2133,
+                3318
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2133,
+                3318,
+                2133,
+                3239
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2133,
+                3239,
+                2133,
+                3160
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2133,
+                3160,
+                1975,
+                3160
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1975,
+                3160,
+                1896,
+                3160
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1896,
+                3160,
+                1738,
+                3160
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2133,
+                3160,
+                2370,
+                3160
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                3160,
+                2370,
+                3090
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                3160,
+                2370,
+                3189
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                3189,
+                2379,
+                3209
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2379,
+                3209,
+                2399,
+                3229
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2399,
+                3229,
+                2438,
+                3245
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2438,
+                3245,
+                2439,
+                3245
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2439,
+                3245,
+                2479,
+                3240
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2479,
+                3240,
+                2508,
+                3222
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2508,
+                3222,
+                2449,
+                3160
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2508,
+                3222,
+                2530,
+                3190
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2530,
+                3190,
+                2536,
+                3156
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2536,
+                3156,
+                2525,
+                3119
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2525,
+                3119,
+                2498,
+                3089
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2498,
+                3089,
+                2470,
+                3076
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2470,
+                3076,
+                2449,
+                3071
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2449,
+                3071,
+                2449,
+                2923
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2449,
+                2923,
+                2686,
+                2923
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2686,
+                2923,
+                2686,
+                2824
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2686,
+                2824,
+                2686,
+                2784
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2686,
+                2784,
+                2686,
+                2765
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2686,
+                2765,
+                2844,
+                2765
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2844,
+                2765,
+                3002,
+                2765
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3002,
+                2765,
+                3002,
+                2607
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3002,
+                2607,
+                3002,
+                2528
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3002,
+                2528,
+                2903,
+                2528
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2784,
+                2528,
+                2686,
+                2528
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2686,
+                2528,
+                2686,
+                2607
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2686,
+                2607,
+                2686,
+                2765
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2686,
+                2607,
+                2715,
+                2607
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2715,
+                2607,
+                2765,
+                2607
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2765,
+                2607,
+                2814,
+                2607
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2814,
+                2607,
+                2844,
+                2607
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2844,
+                2607,
+                2873,
+                2607
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2873,
+                2607,
+                2923,
+                2607
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2923,
+                2607,
+                2972,
+                2607
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2972,
+                2607,
+                3002,
+                2607
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2844,
+                2607,
+                2844,
+                2765
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2784,
+                2508,
+                2844,
+                2508
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2844,
+                2508,
+                2903,
+                2508
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2903,
+                2508,
+                2903,
+                2528
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2784,
+                2508,
+                2784,
+                2528
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                2923,
+                2370,
+                2844
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                2844,
+                2370,
+                2528
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                2528,
+                2291,
+                2528
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                2528,
+                2212,
+                2528
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2212,
+                2528,
+                1975,
+                2528
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1975,
+                2528,
+                1975,
+                2765
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1975,
+                2844,
+                2054,
+                2844
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                2844,
+                2083,
+                2844
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2083,
+                2844,
+                2133,
+                2844
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2133,
+                2844,
+                2182,
+                2844
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2182,
+                2844,
+                2212,
+                2844
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2212,
+                2844,
+                2212,
+                2765
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2212,
+                2765,
+                2212,
+                2686
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2212,
+                2686,
+                2212,
+                2528
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2212,
+                2844,
+                2370,
+                2844
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1975,
+                2765,
+                1975,
+                2844
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                2923,
+                2370,
+                3002
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                3002,
+                2370,
+                3090
+            ],
+            "door": 1,
+            "ds": 1,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2468,
+                2528,
+                2449,
+                2528
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2449,
+                2528,
+                2449,
+                2547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2587,
+                2528,
+                2607,
+                2528
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2607,
+                2528,
+                2607,
+                2547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2439,
+                2597,
+                2458,
+                2597
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2458,
+                2597,
+                2458,
+                2616
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2458,
+                2616,
+                2439,
+                2616
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2439,
+                2616,
+                2439,
+                2597
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2438,
+                2675,
+                2457,
+                2675
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2457,
+                2694,
+                2438,
+                2694
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2438,
+                2694,
+                2438,
+                2675
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2457,
+                2675,
+                2457,
+                2694
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2439,
+                2754,
+                2458,
+                2754
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2458,
+                2773,
+                2439,
+                2773
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2439,
+                2773,
+                2439,
+                2754
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2458,
+                2754,
+                2458,
+                2773
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2438,
+                2834,
+                2457,
+                2834
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2457,
+                2853,
+                2438,
+                2853
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2438,
+                2853,
+                2438,
+                2834
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2457,
+                2834,
+                2457,
+                2853
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2598,
+                2834,
+                2617,
+                2834
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2617,
+                2853,
+                2598,
+                2853
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2598,
+                2853,
+                2598,
+                2834
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2617,
+                2834,
+                2617,
+                2853
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2597,
+                2752,
+                2616,
+                2752
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2616,
+                2771,
+                2597,
+                2771
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2597,
+                2771,
+                2597,
+                2752
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2616,
+                2752,
+                2616,
+                2771
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2598,
+                2675,
+                2617,
+                2675
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2617,
+                2694,
+                2598,
+                2694
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2598,
+                2694,
+                2598,
+                2675
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2617,
+                2675,
+                2617,
+                2694
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2597,
+                2595,
+                2616,
+                2595
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2616,
+                2614,
+                2597,
+                2614
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2597,
+                2614,
+                2597,
+                2595
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2616,
+                2595,
+                2616,
+                2614
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1412,
+                2755,
+                1431,
+                2755
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1431,
+                2755,
+                1431,
+                2774
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1431,
+                2774,
+                1412,
+                2774
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1412,
+                2774,
+                1412,
+                2755
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1430,
+                2517,
+                1430,
+                2536
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1411,
+                2517,
+                1430,
+                2517
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1411,
+                2536,
+                1411,
+                2517
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1430,
+                2536,
+                1411,
+                2536
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1668,
+                2517,
+                1668,
+                2536
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1649,
+                2517,
+                1668,
+                2517
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1649,
+                2536,
+                1649,
+                2517
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1668,
+                2536,
+                1649,
+                2536
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1905,
+                2517,
+                1905,
+                2536
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1886,
+                2517,
+                1905,
+                2517
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1886,
+                2536,
+                1886,
+                2517
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1905,
+                2536,
+                1886,
+                2536
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1520,
+                2676,
+                1560,
+                2676
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1678,
+                2676,
+                1718,
+                2676
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1718,
+                2676,
+                1731,
+                2660
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1731,
+                2660,
+                1731,
+                2635
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1731,
+                2635,
+                1714,
+                2617
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1714,
+                2617,
+                1689,
+                2614
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1689,
+                2614,
+                1671,
+                2626
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1671,
+                2626,
+                1670,
+                2627
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1670,
+                2627,
+                1665,
+                2647
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1665,
+                2647,
+                1665,
+                2648
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1665,
+                2648,
+                1671,
+                2662
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1671,
+                2662,
+                1678,
+                2676
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1520,
+                2676,
+                1512,
+                2662
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1512,
+                2662,
+                1509,
+                2640
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1509,
+                2640,
+                1518,
+                2622
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1518,
+                2622,
+                1519,
+                2622
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1519,
+                2622,
+                1536,
+                2614
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1536,
+                2614,
+                1555,
+                2618
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1555,
+                2618,
+                1567,
+                2632
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1567,
+                2632,
+                1571,
+                2650
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1571,
+                2650,
+                1571,
+                2651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1571,
+                2651,
+                1560,
+                2676
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1836,
+                2676,
+                1876,
+                2675
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1876,
+                2675,
+                1883,
+                2658
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1883,
+                2658,
+                1886,
+                2642
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1886,
+                2642,
+                1877,
+                2623
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1877,
+                2623,
+                1858,
+                2616
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1858,
+                2616,
+                1857,
+                2616
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1857,
+                2616,
+                1839,
+                2619
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1839,
+                2619,
+                1826,
+                2633
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1826,
+                2633,
+                1825,
+                2651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1825,
+                2651,
+                1831,
+                2663
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1831,
+                2663,
+                1836,
+                2676
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1975,
+                2844,
+                1896,
+                2844
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1896,
+                2844,
+                1797,
+                2844
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1797,
+                2844,
+                1797,
+                2824
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1738,
+                2824,
+                1678,
+                2824
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1678,
+                2824,
+                1678,
+                2844
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1678,
+                2844,
+                1501,
+                2844
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                2844,
+                1422,
+                2844
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                2844,
+                1422,
+                2923
+            ],
+            "door": 1,
+            "ds": 1,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                3081,
+                1501,
+                3002
+            ],
+            "door": 1,
+            "ds": 1,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                3002,
+                1422,
+                3002
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                3002,
+                1501,
+                2923
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                2923,
+                1501,
+                2844
+            ],
+            "door": 1,
+            "ds": 1,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                3002,
+                1422,
+                2923
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1975,
+                2765,
+                2014,
+                2765
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                2804,
+                2054,
+                2844
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 1
+        },
+        {
+            "c": [
+                1896,
+                2923,
+                1896,
+                3081
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1975,
+                2923,
+                1975,
+                3081
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1896,
+                3081,
+                1975,
+                3081
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1659,
+                2962,
+                1619,
+                2982
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1619,
+                2982,
+                1619,
+                3021
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1659,
+                3051,
+                1698,
+                3021
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1698,
+                3021,
+                1698,
+                2982
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1698,
+                2982,
+                1659,
+                2962
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1777,
+                2982,
+                1777,
+                3021
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1777,
+                3021,
+                1817,
+                3041
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1817,
+                3041,
+                1846,
+                3021
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1846,
+                3021,
+                1846,
+                2982
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1817,
+                2962,
+                1777,
+                2982
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1846,
+                2982,
+                1817,
+                2962
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2014,
+                2982,
+                2014,
+                3021
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2014,
+                3021,
+                2054,
+                3041
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                3041,
+                2093,
+                3021
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2093,
+                3021,
+                2093,
+                2982
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                2952,
+                2014,
+                2982
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2093,
+                2982,
+                2054,
+                2952
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2172,
+                2981,
+                2172,
+                3021
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2172,
+                3021,
+                2211,
+                3048
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2211,
+                3048,
+                2251,
+                3021
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2251,
+                2982,
+                2212,
+                2952
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2212,
+                2952,
+                2172,
+                2981
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1738,
+                2824,
+                1797,
+                2824
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                1422,
+                1422,
+                1520
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                1520,
+                1422,
+                1560
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1422,
+                1560,
+                1422,
+                1659
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                1659,
+                1422,
+                1678
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                1678,
+                1422,
+                1718
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1422,
+                1718,
+                1422,
+                1836
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                1836,
+                1422,
+                1876
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1422,
+                1876,
+                1422,
+                1965
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                1965,
+                1422,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1422,
+                1965,
+                1390,
+                1970
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1390,
+                1970,
+                1370,
+                1982
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1370,
+                1982,
+                1345,
+                2007
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1345,
+                2007,
+                1332,
+                2052
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1332,
+                2052,
+                1342,
+                2094
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1342,
+                2094,
+                1343,
+                2096
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1343,
+                2096,
+                1368,
+                2122
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1368,
+                2122,
+                1403,
+                2137
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1403,
+                2137,
+                1439,
+                2136
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1439,
+                2136,
+                1466,
+                2125
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1466,
+                2125,
+                1491,
+                2097
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1491,
+                2097,
+                1502,
+                2074
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1502,
+                2074,
+                1501,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                2054,
+                1501,
+                1817
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                1817,
+                1501,
+                1738
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                1738,
+                2054,
+                1738
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                1738,
+                2291,
+                1738
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                1738,
+                2370,
+                1738
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                1738,
+                2370,
+                1817
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                1817,
+                2370,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                2054,
+                2192,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2192,
+                2054,
+                2152,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2152,
+                2054,
+                2034,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2034,
+                2054,
+                1994,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1994,
+                2054,
+                1876,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1876,
+                2054,
+                1836,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1836,
+                2054,
+                1718,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1718,
+                2054,
+                1678,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1678,
+                2054,
+                1501,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2291,
+                1738,
+                2291,
+                1975
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1975,
+                1975,
+                1975,
+                1896
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1975,
+                1896,
+                1896,
+                1896
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1896,
+                1896,
+                1896,
+                1975
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1580,
+                1817,
+                2291,
+                1817
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1580,
+                1817,
+                1580,
+                1747
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1580,
+                1817,
+                1580,
+                1975
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1975,
+                1896,
+                1975,
+                1817
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1896,
+                1896,
+                1896,
+                1817
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1422,
+                1659,
+                1501,
+                1659
+            ],
+            "door": 1,
+            "ds": 1,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1501,
+                1659,
+                1580,
+                1659
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1580,
+                1659,
+                1659,
+                1659
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1659,
+                1659,
+                1738,
+                1659
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1738,
+                1659,
+                1817,
+                1659
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1817,
+                1659,
+                1896,
+                1659
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1896,
+                1659,
+                1975,
+                1659
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1975,
+                1659,
+                2054,
+                1659
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                1659,
+                2133,
+                1659
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2133,
+                1659,
+                2370,
+                1659
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                1659,
+                2370,
+                1738
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                1659,
+                2370,
+                1501
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                1422,
+                2271,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2271,
+                1422,
+                2231,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2231,
+                1422,
+                2133,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2133,
+                1422,
+                2063,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2063,
+                1422,
+                2034,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2034,
+                1422,
+                1994,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1994,
+                1422,
+                1896,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1896,
+                1422,
+                1876,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1876,
+                1422,
+                1836,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1836,
+                1422,
+                1738,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1738,
+                1422,
+                1718,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1718,
+                1422,
+                1678,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1678,
+                1422,
+                1580,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1580,
+                1422,
+                1560,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1560,
+                1422,
+                1520,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1520,
+                1422,
+                1422,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1580,
+                1422,
+                1580,
+                1659
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1738,
+                1422,
+                1738,
+                1659
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1896,
+                1422,
+                1896,
+                1659
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2133,
+                1422,
+                2133,
+                1501
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2133,
+                1501,
+                2133,
+                1580
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2133,
+                1580,
+                2133,
+                1659
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                1422,
+                2468,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2468,
+                1422,
+                2508,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2508,
+                1422,
+                2547,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2547,
+                1422,
+                2587,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2587,
+                1422,
+                2686,
+                1422
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2686,
+                1422,
+                2686,
+                1520
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2686,
+                1520,
+                2686,
+                1560
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2686,
+                1560,
+                2686,
+                1678
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2686,
+                1678,
+                2686,
+                1718
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2686,
+                1718,
+                2686,
+                1817
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2686,
+                1817,
+                2449,
+                1817
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2449,
+                1817,
+                2449,
+                1965
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2457,
+                1728,
+                2457,
+                1747
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2457,
+                1747,
+                2438,
+                1747
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2438,
+                1728,
+                2457,
+                1728
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2438,
+                1747,
+                2438,
+                1728
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2615,
+                1728,
+                2615,
+                1747
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2615,
+                1747,
+                2596,
+                1747
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2596,
+                1728,
+                2615,
+                1728
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2596,
+                1747,
+                2596,
+                1728
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2457,
+                1569,
+                2457,
+                1588
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2457,
+                1588,
+                2438,
+                1588
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2438,
+                1569,
+                2457,
+                1569
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2438,
+                1588,
+                2438,
+                1569
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2615,
+                1568,
+                2615,
+                1587
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2615,
+                1587,
+                2596,
+                1587
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2596,
+                1568,
+                2615,
+                1568
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2596,
+                1587,
+                2596,
+                1568
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2528,
+                1501,
+                2528,
+                1580
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2528,
+                1580,
+                2449,
+                1580
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2449,
+                1580,
+                2449,
+                1738
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2449,
+                1738,
+                2607,
+                1738
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2607,
+                1738,
+                2607,
+                1580
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2607,
+                1580,
+                2528,
+                1580
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2370,
+                2054,
+                2370,
+                2083
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                2083,
+                2380,
+                2099
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2380,
+                2099,
+                2404,
+                2123
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2404,
+                2123,
+                2433,
+                2135
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2433,
+                2135,
+                2435,
+                2135
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2435,
+                2135,
+                2467,
+                2135
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2467,
+                2135,
+                2495,
+                2124
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2495,
+                2124,
+                2520,
+                2098
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2520,
+                2098,
+                2532,
+                2066
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2532,
+                2066,
+                2530,
+                2028
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2530,
+                2028,
+                2510,
+                1995
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2510,
+                1995,
+                2483,
+                1975
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2483,
+                1975,
+                2481,
+                1975
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2481,
+                1975,
+                2449,
+                1965
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2449,
+                1965,
+                2449,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                1659,
+                2054,
+                1738
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2370,
+                1501,
+                2370,
+                1422
+            ],
+            "door": 2,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2419,
+                2952,
+                2449,
+                2923
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 1
+        },
+        {
+            "c": [
+                2076,
+                1447,
+                2104,
+                1478
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2076,
+                1447,
+                2076,
+                1421
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 1
+        },
+        {
+            "c": [
+                2104,
+                1478,
+                2133,
+                1477
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 1
+        },
+        {
+            "c": [
+                2251,
+                3021,
+                2251,
+                2982
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1619,
+                3021,
+                1659,
+                3051
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1393,
+                3077,
+                1372,
+                3088
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1393,
+                3241,
+                1422,
+                3248
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 2616
+}

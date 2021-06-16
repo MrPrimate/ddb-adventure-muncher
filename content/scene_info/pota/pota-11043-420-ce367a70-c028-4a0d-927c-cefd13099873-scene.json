@@ -1,0 +1,68 @@
+{
+    "backgroundColor": "#333333",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "pota",
+            "ddbId": 11043,
+            "cobaltId": null,
+            "parentId": 420,
+            "contentChunkId": "ce367a70-c028-4a0d-927c-cefd13099873",
+            "notes": [
+                {
+                    "label": "Map 6.1: Red Larch Surroundings",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 11044,
+                            "bookCode": "pota",
+                            "slug": "alarums-and-excursions#TroubleinRedLarch",
+                            "contentChunkId": "688934b8-0903-465d-9524-586a2764adb1",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "duplicate": false,
+                            "parentId": 420
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1358.5,
+                            "y": 2605
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": true,
+    "globalLightThreshold": null,
+    "grid": 97,
+    "gridDistance": 2,
+    "gridType": 4,
+    "gridUnits": "mi",
+    "height": 2495,
+    "initial": {
+        "x": 1485,
+        "y": 1727,
+        "scale": 0.44
+    },
+    "lights": [],
+    "name": "Map 6.1: Red Larch Surroundings",
+    "navName": "Red Larch Surroundings",
+    "shiftX": 61,
+    "shiftY": 35,
+    "tokenVision": false,
+    "walls": [],
+    "weather": "",
+    "width": 1802
+}

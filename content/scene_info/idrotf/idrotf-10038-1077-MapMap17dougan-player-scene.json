@@ -1,0 +1,403 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "ELbf673FLb2njWl4",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1350,
+            "y": 1950,
+            "width": 350,
+            "height": 150,
+            "rotation": 0,
+            "z": 0,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Redwaters",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 30,
+            "textColor": "#030303",
+            "textAlpha": 1
+        },
+        {
+            "_id": "uB1wisfBDxaHoXqO",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 600,
+            "y": 1050,
+            "width": 300,
+            "height": 100,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Speaker's House",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 30,
+            "textColor": "#030303",
+            "textAlpha": 1
+        },
+        {
+            "_id": "4QRNuOH1iEXaX4TX",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1600,
+            "y": 1200,
+            "width": 250,
+            "height": 50,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "To Good Mead",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 30,
+            "textColor": "#030303",
+            "textAlpha": 1
+        },
+        {
+            "_id": "HL7iH9rYqYIe8laE",
+            "flags": {},
+            "type": "p",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 900,
+            "y": 1150,
+            "width": 150,
+            "height": 150,
+            "rotation": 0,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    150,
+                    150
+                ]
+            ],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": "#cc4c28",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#050505",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#cc4c28",
+            "textAlpha": 1
+        },
+        {
+            "_id": "7ZXuZV0W6VDZDALW",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1627,
+            "y": 1130,
+            "width": 100,
+            "height": 59,
+            "rotation": 0,
+            "z": 4,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    59.13974514401298
+                ],
+                [
+                    22.745831279372624,
+                    45
+                ],
+                [
+                    25.745831279372624,
+                    43
+                ],
+                [
+                    29.745831279372624,
+                    43
+                ],
+                [
+                    34.745831279372624,
+                    41
+                ],
+                [
+                    39.745831279372624,
+                    38
+                ],
+                [
+                    45.745831279372624,
+                    35
+                ],
+                [
+                    47.745831279372624,
+                    33
+                ],
+                [
+                    53.745831279372624,
+                    30
+                ],
+                [
+                    57.745831279372624,
+                    27
+                ],
+                [
+                    63.745831279372624,
+                    24
+                ],
+                [
+                    69.74583127937262,
+                    20
+                ],
+                [
+                    72.74583127937262,
+                    18
+                ],
+                [
+                    76.74583127937262,
+                    15
+                ],
+                [
+                    82.74583127937262,
+                    12
+                ],
+                [
+                    87.74583127937262,
+                    8
+                ],
+                [
+                    93.74583127937262,
+                    4
+                ],
+                [
+                    93.74583127937262,
+                    3
+                ],
+                [
+                    96.74583127937262,
+                    1
+                ],
+                [
+                    99.74583127937262,
+                    0
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#cc4c28",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#cc4c28",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        },
+        {
+            "_id": "a7rWoR90Qe0UbzbE",
+            "flags": {},
+            "type": "f",
+            "author": "ZNuwacEzhVGx2mbf",
+            "x": 1695,
+            "y": 1127,
+            "width": 28,
+            "height": 29,
+            "rotation": 0,
+            "z": 5,
+            "hidden": true,
+            "locked": false,
+            "points": [
+                [
+                    0,
+                    4.3084198428082345
+                ],
+                [
+                    27.275951761300348,
+                    0
+                ],
+                [
+                    28.275951761300348,
+                    0
+                ],
+                [
+                    28.275951761300348,
+                    1
+                ],
+                [
+                    28.275951761300348,
+                    5
+                ],
+                [
+                    28.275951761300348,
+                    10
+                ],
+                [
+                    27.275951761300348,
+                    15
+                ],
+                [
+                    26.275951761300348,
+                    17
+                ],
+                [
+                    25.275951761300348,
+                    21
+                ],
+                [
+                    25.275951761300348,
+                    22
+                ],
+                [
+                    25.275951761300348,
+                    24
+                ],
+                [
+                    25.275951761300348,
+                    25
+                ],
+                [
+                    25.275951761300348,
+                    28
+                ],
+                [
+                    25.275951761300348,
+                    29
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#cc4c28",
+            "fillAlpha": 1,
+            "strokeWidth": 8,
+            "strokeColor": "#cc4c28",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "idrotf",
+            "ddbId": 10038,
+            "cobaltId": null,
+            "parentId": 1077,
+            "contentChunkId": "MapMap17dougan-player",
+            "notes": [
+                {
+                    "label": "Twenty Stones of Thruun",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2040,
+                            "bookCode": "idrotf",
+                            "slug": "dougans-hole#LocationinDougansHole",
+                            "contentChunkId": "d8600621-7ca6-4733-94a6-645c45281de1",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1077,
+                            "linkId": "C5S8U68ommZTpuBG"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 750,
+                            "y": 2050
+                        }
+                    ],
+                    "iconSize": 75,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 100,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2048,
+    "initial": null,
+    "lights": [],
+    "name": "Map 1.7: Dougan’s Hole",
+    "navName": "Dougan’s Hole",
+    "shiftX": 0,
+    "shiftY": 0,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 1503
+}

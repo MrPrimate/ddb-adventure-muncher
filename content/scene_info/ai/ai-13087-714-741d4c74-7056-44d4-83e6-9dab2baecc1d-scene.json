@@ -1,0 +1,3114 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "ai",
+            "ddbId": 13087,
+            "cobaltId": null,
+            "parentId": 714,
+            "contentChunkId": "741d4c74-7056-44d4-83e6-9dab2baecc1d",
+            "notes": [
+                {
+                    "label": "01. Main Door",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2092,
+                            "bookCode": "ai",
+                            "slug": "showdown-with-the-six#Stage1TheDranCourtier",
+                            "contentChunkId": "a585841a-d3fa-4343-a77b-500604870ddd",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 714,
+                            "linkId": "0uvIynQFAglpCqAG"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3136.6302083333335,
+                            "y": 2350.645833333333
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "02. Common Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2100,
+                            "bookCode": "ai",
+                            "slug": "showdown-with-the-six#Stage1TheDranCourtier",
+                            "contentChunkId": "9bf4da52-14d2-4dec-8789-e61c5eebdcb0",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 714,
+                            "linkId": "FE5z2WDoChD7jvlE"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3141.7604166666665,
+                            "y": 1958.7916666666665
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03. Bar",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2107,
+                            "bookCode": "ai",
+                            "slug": "showdown-with-the-six#Stage1TheDranCourtier",
+                            "contentChunkId": "4ad6fc2a-e9ce-454c-9161-81b8ccac942b",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 714,
+                            "linkId": "HNUqNPc9fadgKGo8"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2742.8229166666665,
+                            "y": 1957.7395833333335
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04. Kitchen and Larder",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2109,
+                            "bookCode": "ai",
+                            "slug": "showdown-with-the-six#Stage1TheDranCourtier",
+                            "contentChunkId": "e55db4a6-ab21-475f-80fc-ebaedbb85631",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 714,
+                            "linkId": "BsjoKN13iPg8zPC4"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2453.8333333333335,
+                            "y": 1764.5052083333333
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05. Propha and Audra’s Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2111,
+                            "bookCode": "ai",
+                            "slug": "showdown-with-the-six#Stage1TheDranCourtier",
+                            "contentChunkId": "f360bd8e-1452-4d75-b4d6-df09756f49e6",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 714,
+                            "linkId": "NI87xviboVamOlqK"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2749.3125,
+                            "y": 1471.4635416666665
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06. Door to the Basement",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2113,
+                            "bookCode": "ai",
+                            "slug": "showdown-with-the-six#Stage1TheDranCourtier",
+                            "contentChunkId": "f0dbcd94-00f2-46ee-bd8e-3ede342f3be4",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 714,
+                            "linkId": "WNNBPrtA8aWO7ISk"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2695,
+                            "y": 1715
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "07. Upstairs Rooms",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2116,
+                            "bookCode": "ai",
+                            "slug": "showdown-with-the-six#Stage1TheDranCourtier",
+                            "contentChunkId": "67059023-87d8-4f79-84fa-fc78e7d976f7",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 714,
+                            "linkId": "fvRJSGwJjxouJ0Sk"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2067.1892605633802,
+                            "y": 979.1320422535211
+                        },
+                        {
+                            "x": 1863.6146566901407,
+                            "y": 976.4762323943662
+                        },
+                        {
+                            "x": 1470,
+                            "y": 980
+                        },
+                        {
+                            "x": 1274,
+                            "y": 980
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "08. Shared Study",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2118,
+                            "bookCode": "ai",
+                            "slug": "showdown-with-the-six#Stage1TheDranCourtier",
+                            "contentChunkId": "27db3327-d02c-44be-bedb-741ef72598c8",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 714,
+                            "linkId": "KjN27VrkAI5ZSuer"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1671.3930457746478,
+                            "y": 783.8307658450705
+                        },
+                        {
+                            "x": 883.693221830986,
+                            "y": 1563.9850352112676
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "09. “C” Team Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2124,
+                            "bookCode": "ai",
+                            "slug": "showdown-with-the-six#Stage1TheDranCourtier",
+                            "contentChunkId": "254e2f23-40f2-4b32-b897-09f7b8de09eb",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 714,
+                            "linkId": "eAA0exAJJTWvVxeT"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1084.146786971831,
+                            "y": 1169.9768926056338
+                        },
+                        {
+                            "x": 1083.034110915493,
+                            "y": 1366.0528169014085
+                        },
+                        {
+                            "x": 1084.3985475352113,
+                            "y": 1760.280809859155
+                        },
+                        {
+                            "x": 1078,
+                            "y": 1960
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "URoltOyVpSR7dP2t",
+                    "name": "Whiskey",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 3473.5403645833335,
+                    "y": 1608.7470703125,
+                    "disposition": 0,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 16915,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Whiskey",
+                        "data": {
+                            "details": {
+                                "alignment": "Neutral",
+                                "type": {
+                                    "value": "humanoid",
+                                    "custom": "",
+                                    "subtype": "Human",
+                                    "swarm": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "_id": "LU2AtfRJYNnUv92L",
+                    "name": "Sigil MacFinn",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 3332,
+                    "y": 1568,
+                    "disposition": 0,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 16915,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "data": {
+                            "details": {
+                                "alignment": "Neutral",
+                                "type": {
+                                    "value": "humanoid",
+                                    "custom": "",
+                                    "subtype": "Human",
+                                    "swarm": ""
+                                }
+                            }
+                        },
+                        "name": "Sigil MacFinn"
+                    }
+                },
+                {
+                    "_id": "utI4Iz1GTbLLcQmw",
+                    "name": "Thalen",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 3390.2363317026347,
+                    "y": 2200.9961596785606,
+                    "disposition": 1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 16829,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Thalen",
+                        "data": {
+                            "details": {
+                                "cr": "0",
+                                "alignment": "Chaotic Good",
+                                "type": {
+                                    "value": "humanoid",
+                                    "custom": "",
+                                    "subtype": "Human",
+                                    "swarm": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "_id": "gPqiOftCgvOZa5Bf",
+                    "name": "Luna",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 3197.444010416667,
+                    "y": 2253.5361328125,
+                    "disposition": 1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 16829,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Luna",
+                        "data": {
+                            "details": {
+                                "cr": "0",
+                                "alignment": "Chaotic Good",
+                                "type": {
+                                    "value": "humanoid",
+                                    "custom": "",
+                                    "subtype": "Human",
+                                    "swarm": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "_id": "GlIGpysowrf2YVl1",
+                    "name": "Tanas",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 3349.724609375,
+                    "y": 2360.0810546875,
+                    "disposition": 1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 17007,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Tanas",
+                        "data": {
+                            "details": {
+                                "alignment": "Neutral Good"
+                            }
+                        }
+                    }
+                },
+                {
+                    "_id": "MWgDNtqOBArquYxr",
+                    "name": "Onyx",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.5,
+                    "x": 3474.830403645833,
+                    "y": 1968.884765625,
+                    "disposition": 0,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 16820,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Onyx",
+                        "data": {
+                            "details": {
+                                "cr": "0"
+                            }
+                        }
+                    }
+                },
+                {
+                    "_id": "wr1P0kDfNzuBlxe2",
+                    "name": "Chance",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2866.7652734213016,
+                    "y": 1957.6614651392276,
+                    "disposition": 1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 17021,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Chance",
+                        "data": {
+                            "details": {
+                                "alignment": "Neutral",
+                                "type": {
+                                    "value": "humanoid",
+                                    "custom": "",
+                                    "subtype": "Half Elf",
+                                    "swarm": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "_id": "4ywW4AeKkiRm8fzZ",
+                    "name": "Prophetess “Propha” Dran",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2744,
+                    "y": 2254,
+                    "disposition": 1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 16843,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": "",
+                    "actorData": {
+                        "name": "Prophetess “Propha” Dran"
+                    }
+                }
+            ]
+        },
+        "stairways": [],
+        "perfect-vision": {
+            "sightLimit": null,
+            "daylightColor": "",
+            "darknessColor": "",
+            "forceSaturation": false,
+            "saturation": 0
+        },
+        "dynamic-illumination": {
+            "_animating": false,
+            "darknessColor": "#db9f6d"
+        }
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 98,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 1971,
+    "initial": null,
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 24.77,
+            "darknessThreshold": 0,
+            "dim": 49.54,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.2,
+            "x": 3577,
+            "y": 2401,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 3.37,
+            "darknessThreshold": 0,
+            "dim": 6.74,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3097,
+            "y": 2136,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 6.04,
+            "darknessThreshold": 0,
+            "dim": 12.08,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3332,
+            "y": 1323,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4.28,
+            "darknessThreshold": 0,
+            "dim": 8.57,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2855,
+            "y": 1875,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4.85,
+            "darknessThreshold": 0,
+            "dim": 9.71,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2007,
+            "y": 1094,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4.85,
+            "darknessThreshold": 0,
+            "dim": 9.71,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1725,
+            "y": 1092,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4.85,
+            "darknessThreshold": 0,
+            "dim": 9.71,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1526,
+            "y": 1092,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4.85,
+            "darknessThreshold": 0,
+            "dim": 9.71,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1215,
+            "y": 1211,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4.85,
+            "darknessThreshold": 0,
+            "dim": 9.71,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1217,
+            "y": 1498,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4.85,
+            "darknessThreshold": 0,
+            "dim": 9.71,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1213,
+            "y": 1714,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4.85,
+            "darknessThreshold": 0,
+            "dim": 9.71,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1215,
+            "y": 1919,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4.28,
+            "darknessThreshold": 0,
+            "dim": 8.57,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1372,
+            "y": 1470,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 24.77,
+            "darknessThreshold": 0,
+            "dim": 49.54,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.2,
+            "x": 2088,
+            "y": 1995,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 3.37,
+            "darknessThreshold": 0,
+            "dim": 6.74,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3252,
+            "y": 1823,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 3.37,
+            "darknessThreshold": 0,
+            "dim": 6.74,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 868,
+            "y": 1521,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 2.64,
+            "darknessThreshold": 0,
+            "dim": 5.29,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2156,
+            "y": 1029,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 2.64,
+            "darknessThreshold": 0,
+            "dim": 5.29,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1668,
+            "y": 677,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 2.64,
+            "darknessThreshold": 0,
+            "dim": 5.29,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1176,
+            "y": 1029,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 2.64,
+            "darknessThreshold": 0,
+            "dim": 5.29,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1127,
+            "y": 1078,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 5,
+            "darknessThreshold": 0,
+            "dim": 10,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2401,
+            "y": 1911,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 2.07,
+            "darknessThreshold": 0,
+            "dim": 4.14,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2610,
+            "y": 1827,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": false
+        }
+    ],
+    "name": "The Dran & Courtier",
+    "navName": "The Dran &amp; Courtier",
+    "shiftX": 63,
+    "shiftY": 16,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                918,
+                1065,
+                967,
+                1065
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                967,
+                1065,
+                1090,
+                1065
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1090,
+                1065,
+                1090,
+                992
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1090,
+                992,
+                1158,
+                988
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1158,
+                988,
+                1168,
+                970
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1168,
+                970,
+                1163,
+                857
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1163,
+                857,
+                1163,
+                808
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1163,
+                808,
+                1163,
+                759
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1163,
+                759,
+                1457,
+                759
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1457,
+                759,
+                1457,
+                747
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1457,
+                747,
+                1457,
+                686
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1457,
+                686,
+                1457,
+                673
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1457,
+                673,
+                1494,
+                673
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1494,
+                673,
+                1543,
+                673
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1617,
+                673,
+                1629,
+                649
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1629,
+                649,
+                1715,
+                649
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1715,
+                649,
+                1727,
+                673
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1727,
+                673,
+                1788,
+                673
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1788,
+                673,
+                1837,
+                673
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1837,
+                673,
+                1874,
+                673
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1874,
+                673,
+                1874,
+                686
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1874,
+                686,
+                1874,
+                747
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1874,
+                747,
+                1874,
+                771
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1874,
+                771,
+                1996,
+                771
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1996,
+                771,
+                2045,
+                771
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2045,
+                771,
+                2168,
+                771
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2168,
+                771,
+                2168,
+                808
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2168,
+                808,
+                2168,
+                857
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2168,
+                857,
+                2168,
+                980
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2168,
+                980,
+                2191,
+                1000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2191,
+                1000,
+                2194,
+                1044
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2194,
+                1044,
+                2167,
+                1067
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2167,
+                1067,
+                2168,
+                1090
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2168,
+                1090,
+                2168,
+                1151
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2168,
+                1151,
+                2168,
+                1298
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2168,
+                1298,
+                2168,
+                1347
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2168,
+                1347,
+                2168,
+                1604
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2168,
+                1604,
+                2168,
+                1653
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2168,
+                1653,
+                2168,
+                1886
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2168,
+                1886,
+                2168,
+                1935
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2168,
+                1935,
+                2168,
+                2070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2168,
+                2070,
+                2070,
+                2070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2070,
+                2070,
+                2009,
+                2070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2009,
+                2070,
+                1825,
+                2070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1825,
+                2070,
+                1764,
+                2070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1764,
+                2070,
+                1580,
+                2070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1580,
+                2070,
+                1531,
+                2070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1531,
+                2070,
+                1261,
+                2070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1261,
+                2070,
+                1212,
+                2070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1212,
+                2070,
+                869,
+                2070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                869,
+                2070,
+                869,
+                1947
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                869,
+                1947,
+                869,
+                1874
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                869,
+                1874,
+                869,
+                1776
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                869,
+                1776,
+                771,
+                1776
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                771,
+                1776,
+                771,
+                1739
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                771,
+                1739,
+                771,
+                1690
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                771,
+                1690,
+                771,
+                1445
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                771,
+                1445,
+                771,
+                1396
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                771,
+                1396,
+                771,
+                1359
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                771,
+                1359,
+                820,
+                1359
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                820,
+                1359,
+                882,
+                1298
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                882,
+                1298,
+                882,
+                1065
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                882,
+                1065,
+                918,
+                1065
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1543,
+                673,
+                1617,
+                673
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1372,
+                759,
+                1372,
+                784
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1372,
+                784,
+                1372,
+                869
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1372,
+                869,
+                1372,
+                1078
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1372,
+                1078,
+                1274,
+                1078
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1274,
+                1078,
+                1176,
+                1078
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1176,
+                1078,
+                1176,
+                1176
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1176,
+                1176,
+                1176,
+                1274
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1176,
+                1274,
+                1176,
+                1372
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1176,
+                1372,
+                1176,
+                1568
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1176,
+                1568,
+                1176,
+                1764
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1176,
+                1764,
+                1176,
+                1849
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1176,
+                1849,
+                1176,
+                1960
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1176,
+                1960,
+                1176,
+                2045
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1176,
+                2045,
+                1176,
+                2070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                869,
+                1862,
+                894,
+                1862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                894,
+                1862,
+                980,
+                1862
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                980,
+                1862,
+                1176,
+                1862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                980,
+                1751,
+                980,
+                1862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                980,
+                1751,
+                980,
+                1666
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                980,
+                1666,
+                980,
+                1457
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                980,
+                1457,
+                980,
+                1372
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                980,
+                1372,
+                980,
+                1274
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                980,
+                1274,
+                894,
+                1274
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                894,
+                1274,
+                882,
+                1274
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                980,
+                1274,
+                1176,
+                1274
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1176,
+                1568,
+                980,
+                1568
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1470,
+                1274,
+                1531,
+                1274
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1531,
+                1274,
+                1531,
+                1335
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1531,
+                1335,
+                1470,
+                1335
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1470,
+                1335,
+                1470,
+                1274
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1470,
+                1274,
+                1274,
+                1274
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1274,
+                1274,
+                1274,
+                2070
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1372,
+                1078,
+                1470,
+                1078
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1470,
+                1078,
+                1670,
+                1075
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1670,
+                1075,
+                1670,
+                880
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1670,
+                880,
+                1564,
+                880
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1564,
+                880,
+                1477,
+                879
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1477,
+                879,
+                1371,
+                879
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1670,
+                1075,
+                1870,
+                1075
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1870,
+                1075,
+                1956,
+                1076
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1956,
+                1076,
+                1966,
+                1076
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1966,
+                1076,
+                1965,
+                880
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1965,
+                880,
+                1965,
+                871
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1965,
+                871,
+                1963,
+                785
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1963,
+                785,
+                1960,
+                771
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1965,
+                880,
+                1862,
+                879
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1862,
+                879,
+                1775,
+                879
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1775,
+                879,
+                1669,
+                879
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1966,
+                1076,
+                2169,
+                1075
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2339,
+                2462,
+                2961,
+                2463
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2961,
+                2463,
+                3023,
+                2462
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3023,
+                2462,
+                3040,
+                2461
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3040,
+                2461,
+                3135,
+                2459
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3135,
+                2459,
+                3164,
+                2459
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3164,
+                2459,
+                3215,
+                2459
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3215,
+                2459,
+                3528,
+                2462
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3528,
+                2462,
+                3589,
+                2462
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3589,
+                2462,
+                3638,
+                2462
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3638,
+                2462,
+                3638,
+                2425
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3638,
+                2425,
+                3638,
+                2364
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3638,
+                2364,
+                3638,
+                2143
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3638,
+                2143,
+                3638,
+                2082
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3638,
+                2082,
+                3638,
+                1653
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3638,
+                1653,
+                3638,
+                1592
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3638,
+                1592,
+                3638,
+                1274
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3638,
+                1274,
+                3319,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3319,
+                1261,
+                3258,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                3258,
+                1261,
+                3025,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3025,
+                1261,
+                2964,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2964,
+                1261,
+                2817,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2817,
+                1261,
+                2768,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2768,
+                1261,
+                2646,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2646,
+                1261,
+                2646,
+                1396
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2646,
+                1396,
+                2646,
+                1445
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2646,
+                1445,
+                2633,
+                1494
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2633,
+                1494,
+                2548,
+                1555
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2548,
+                1555,
+                2339,
+                1555
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2339,
+                1555,
+                2339,
+                2462
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2646,
+                1960,
+                2535,
+                1960
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2535,
+                1960,
+                2462,
+                1960
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2462,
+                1960,
+                2339,
+                1960
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2646,
+                1960,
+                2646,
+                2352
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2646,
+                2352,
+                2646,
+                2450
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2646,
+                2450,
+                2646,
+                2462
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2646,
+                1960,
+                2646,
+                1874
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2646,
+                1874,
+                2646,
+                1568
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2646,
+                1568,
+                2633,
+                1543
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2633,
+                1543,
+                2633,
+                1494
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2940,
+                1666,
+                2744,
+                1666
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2744,
+                1666,
+                2731,
+                1666
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2731,
+                1666,
+                2658,
+                1666
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2658,
+                1666,
+                2646,
+                1666
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2744,
+                1568,
+                2940,
+                1568
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2940,
+                1568,
+                2940,
+                1470
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2940,
+                1470,
+                2940,
+                1261
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2744,
+                1568,
+                2646,
+                1568
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2646,
+                1849,
+                2744,
+                1849
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2744,
+                1849,
+                2866,
+                1849
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2866,
+                1849,
+                2866,
+                2352
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2866,
+                2352,
+                2866,
+                2462
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2432,
+                1894,
+                2451,
+                1881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2436,
+                1871,
+                2425,
+                1886
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2436,
+                1871,
+                2451,
+                1869
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2451,
+                1869,
+                2451,
+                1881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2376,
+                1886,
+                2339,
+                1862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2433,
+                1945,
+                2462,
+                1960
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 3000
+}

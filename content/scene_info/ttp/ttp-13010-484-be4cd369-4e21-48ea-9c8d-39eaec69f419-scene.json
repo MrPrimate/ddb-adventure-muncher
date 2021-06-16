@@ -1,0 +1,615 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "ZeiolRDVZVJpDvg0",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 1222.375,
+            "y": 1269.8097482989333,
+            "width": 173,
+            "height": 174.73896265103758,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": null,
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": null,
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "High Horn",
+            "fontFamily": "Arial Black",
+            "fontSize": 45,
+            "textColor": "#0d0c0c",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "dmHIrFGve5vmnnv4",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 1222.375,
+            "y": 1668.181434039775,
+            "width": 308,
+            "height": 198.816392089597,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#367e0d",
+            "fillAlpha": 0.5,
+            "strokeWidth": 0,
+            "strokeColor": null,
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "Mud pits of Florrb",
+            "fontFamily": "Arial Black",
+            "fontSize": 30,
+            "textColor": "#ececec",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "gNwYdmiIohHmvnPf",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 977.5,
+            "y": 1929.6128528072022,
+            "width": 173,
+            "height": 174.73896265103758,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": null,
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": null,
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "Ahoyhoy",
+            "fontFamily": "Arial Black",
+            "fontSize": 45,
+            "textColor": "#0d0c0c",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "CZu52Ln6ewTDQ7zX",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 1524.25,
+            "y": 2004.3075438836104,
+            "width": 173,
+            "height": 174.73896265103758,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": null,
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": null,
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "Shrine of Fangs",
+            "fontFamily": "Arial Black",
+            "fontSize": 45,
+            "textColor": "#0d0c0c",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "yOngVg7TCNiS0m1Q",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 819.875,
+            "y": 2215.9425019334326,
+            "width": 817,
+            "height": 248.66153321247793,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0.6,
+            "fillType": 0,
+            "fillColor": null,
+            "fillAlpha": 0,
+            "strokeWidth": 6,
+            "strokeColor": "#eaecec",
+            "strokeAlpha": 0.6,
+            "texture": null,
+            "text": "Dangwaru (The Typhoon Palace)",
+            "fontFamily": "Arial Black",
+            "fontSize": 45,
+            "textColor": "#0d0c0c",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "q42vMDiPVroty7S4",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 1208,
+            "y": 2888.194721621103,
+            "width": 173,
+            "height": 174.73896265103758,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": null,
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": null,
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "Geonid Caves",
+            "fontFamily": "Arial Black",
+            "fontSize": 45,
+            "textColor": "#0d0c0c",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "OvxQd7fqUqEtbOpA",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 2214.25,
+            "y": 3236.769946644339,
+            "width": 173,
+            "height": 174.73896265103758,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": null,
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": null,
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "Geonid Caves",
+            "fontFamily": "Arial Black",
+            "fontSize": 45,
+            "textColor": "#0d0c0c",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "TTSyzmSD9jMUqA33",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 2443.75,
+            "y": 2726.356224288886,
+            "width": 173,
+            "height": 174.73896265103758,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": null,
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": null,
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "Geonid Caves",
+            "fontFamily": "Arial Black",
+            "fontSize": 45,
+            "textColor": "#0d0c0c",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "ORoopr8abaipynsp",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "t",
+            "x": 1811.25,
+            "y": 2327.9845385480444,
+            "width": 173,
+            "height": 174.73896265103758,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 0,
+            "fillColor": null,
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": null,
+            "strokeAlpha": 0,
+            "texture": null,
+            "text": "Geonid Caves",
+            "fontFamily": "Arial Black",
+            "fontSize": 45,
+            "textColor": "#0d0c0c",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "eENpMYna8EMKmFGC",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "f",
+            "x": 1841,
+            "y": 2390,
+            "width": 0,
+            "height": 0,
+            "rotation": 0,
+            "z": 0,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    -38,
+                    -50
+                ],
+                [
+                    -39,
+                    -53
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#a2c716",
+            "fillAlpha": 0.5,
+            "strokeWidth": 8,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#FFFFFF",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "mZAl9LhEX82bwOJO",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "f",
+            "x": 1869,
+            "y": 2390,
+            "width": 0,
+            "height": 0,
+            "rotation": 0,
+            "z": 0,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    28,
+                    -63
+                ],
+                [
+                    30,
+                    -70
+                ],
+                [
+                    34,
+                    -80
+                ],
+                [
+                    36,
+                    -84
+                ],
+                [
+                    39,
+                    -88
+                ],
+                [
+                    40,
+                    -89
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#a2c716",
+            "fillAlpha": 0.5,
+            "strokeWidth": 8,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#FFFFFF",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "UaSaIhXeKRThXr8d",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "f",
+            "x": 2415,
+            "y": 2789,
+            "width": 0,
+            "height": 0,
+            "rotation": 0,
+            "z": 0,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    -42,
+                    -43
+                ],
+                [
+                    -51,
+                    -53
+                ],
+                [
+                    -62,
+                    -64
+                ],
+                [
+                    -70,
+                    -73
+                ],
+                [
+                    -77,
+                    -78
+                ],
+                [
+                    -82,
+                    -85
+                ],
+                [
+                    -87,
+                    -92
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#a2c716",
+            "fillAlpha": 0.5,
+            "strokeWidth": 8,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#FFFFFF",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "V97ZiPHoKOAhQALX",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "f",
+            "x": 2358,
+            "y": 2838,
+            "width": 0,
+            "height": 0,
+            "rotation": 0,
+            "z": 0,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    -61,
+                    -5
+                ],
+                [
+                    -66,
+                    -6
+                ],
+                [
+                    -76,
+                    -6
+                ],
+                [
+                    -77,
+                    -6
+                ],
+                [
+                    -80,
+                    -6
+                ],
+                [
+                    -83,
+                    -6
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#a2c716",
+            "fillAlpha": 0.5,
+            "strokeWidth": 8,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#FFFFFF",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "hgefuqTNgJlxyMub",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "f",
+            "x": 1467,
+            "y": 2963,
+            "width": 0,
+            "height": 0,
+            "rotation": 0,
+            "z": 0,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    72,
+                    -32
+                ],
+                [
+                    99,
+                    -45
+                ],
+                [
+                    106,
+                    -52
+                ],
+                [
+                    108,
+                    -58
+                ],
+                [
+                    108,
+                    -62
+                ],
+                [
+                    108,
+                    -67
+                ],
+                [
+                    108,
+                    -68
+                ],
+                [
+                    108,
+                    -71
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#a2c716",
+            "fillAlpha": 0.5,
+            "strokeWidth": 8,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#FFFFFF",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "p0cC2fAfyQ2xoFO0",
+            "author": "5gQjkJmdb1dW768F",
+            "type": "f",
+            "x": 1496,
+            "y": 2950,
+            "width": 0,
+            "height": 0,
+            "rotation": 0,
+            "z": 0,
+            "points": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    76,
+                    51
+                ],
+                [
+                    87,
+                    61
+                ],
+                [
+                    99,
+                    79
+                ],
+                [
+                    106,
+                    90
+                ],
+                [
+                    109,
+                    94
+                ],
+                [
+                    111,
+                    97
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#a2c716",
+            "fillAlpha": 0.5,
+            "strokeWidth": 8,
+            "strokeColor": "#a2c716",
+            "strokeAlpha": 1,
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#FFFFFF",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "ttp",
+            "ddbId": 13010,
+            "cobaltId": null,
+            "parentId": 484,
+            "contentChunkId": "be4cd369-4e21-48ea-9c8d-39eaec69f419",
+            "notes": [],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 230,
+    "gridDistance": 5,
+    "gridType": 5,
+    "gridUnits": "ft",
+    "height": 2850,
+    "initial": null,
+    "lights": [],
+    "name": "Snout of Omgar",
+    "navName": "Exploring the Island",
+    "shiftX": -36,
+    "shiftY": -111,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 2100
+}

@@ -1,0 +1,4106 @@
+{
+    "backgroundColor": "#000000",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "qQxpVnnAHPT1r7c3",
+            "author": "bSq8Tm2FujRv5WCp",
+            "type": "r",
+            "x": 4659,
+            "y": 2578,
+            "width": 291,
+            "height": 272,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#f23a3a",
+            "fillAlpha": 0.5,
+            "strokeWidth": 8,
+            "strokeColor": "#f23a3a",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "TRAP",
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#FFFFFF",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "lmop",
+            "ddbId": 11016,
+            "cobaltId": null,
+            "parentId": 395,
+            "contentChunkId": "e4171a8b-9120-4daa-96e7-dfc6870beb7d",
+            "notes": [
+                {
+                    "label": "01. Cellar",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2028,
+                            "bookCode": "lmop",
+                            "slug": "phandalin#RedbrandHideout",
+                            "contentChunkId": "2fa8d8c7-7803-4ad4-b4e1-f3ab3d32d392",
+                            "userData": {
+                                "userDisplayName": "Riddish"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 395,
+                            "linkId": "H9iizHPLnRQOl2ZO",
+                            "pin": "49503450"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4950,
+                            "y": 3450
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "02. Barracks",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2037,
+                            "bookCode": "lmop",
+                            "slug": "phandalin#RedbrandHideout",
+                            "contentChunkId": "86f5be8e-0f0a-4295-98cc-cfa95d2a5aec",
+                            "userData": {
+                                "userDisplayName": "Riddish"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 395,
+                            "linkId": "vF7QgKGjvhmt64Tr",
+                            "pin": "39753225"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3975,
+                            "y": 3225
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03. Trapped Hall",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2044,
+                            "bookCode": "lmop",
+                            "slug": "phandalin#RedbrandHideout",
+                            "contentChunkId": "9a592d2e-f34e-4a77-945a-d16e601fceb2",
+                            "userData": {
+                                "userDisplayName": "Riddish"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 395,
+                            "linkId": "2vMhwvTxYX6VEpCu",
+                            "pin": "52502700"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 5250,
+                            "y": 2700
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04. Tresendar Crypts",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2055,
+                            "bookCode": "lmop",
+                            "slug": "phandalin#RedbrandHideout",
+                            "contentChunkId": "a67693f8-3d85-465e-9c0f-fa483aee4664",
+                            "userData": {
+                                "userDisplayName": "Riddish"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 395,
+                            "linkId": "Kc7vuBTgUYL0RdRz",
+                            "pin": "39752475"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3975,
+                            "y": 2475
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05. Slave Pens",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2067,
+                            "bookCode": "lmop",
+                            "slug": "phandalin#RedbrandHideout",
+                            "contentChunkId": "0cba375a-b0b9-4350-a82c-6570cf468b32",
+                            "userData": {
+                                "userDisplayName": "Riddish"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 395,
+                            "linkId": "YdxqiG6bpayoXf31",
+                            "pin": "45752025"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4575,
+                            "y": 2025
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06. Armory",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2072,
+                            "bookCode": "lmop",
+                            "slug": "phandalin#RedbrandHideout",
+                            "contentChunkId": "5d0770bc-e25d-40a2-8e3a-862b6c8de676",
+                            "userData": {
+                                "userDisplayName": "Riddish"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 395,
+                            "linkId": "aO0ByxQVfoZ8BqpQ",
+                            "pin": "41251725"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4125,
+                            "y": 1725
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "07. Storeroom and Work Area",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2078,
+                            "bookCode": "lmop",
+                            "slug": "phandalin#RedbrandHideout",
+                            "contentChunkId": "4589a7d9-584f-402c-b3d9-2cba83c4244a",
+                            "userData": {
+                                "userDisplayName": "Riddish"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 395,
+                            "linkId": "GfGjTnl35GHmbqKQ",
+                            "pin": "33751725"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3375,
+                            "y": 1725
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "08. Crevasse",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2095,
+                            "bookCode": "lmop",
+                            "slug": "phandalin#RedbrandHideout",
+                            "contentChunkId": "42d0550b-3dd2-4b78-bacc-f358b2e0be5f",
+                            "userData": {
+                                "userDisplayName": "Riddish"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 395,
+                            "linkId": "JSBJjSGq2hSePHqw",
+                            "pin": "29252775"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2925,
+                            "y": 2775
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "09. Guard Barracks",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2114,
+                            "bookCode": "lmop",
+                            "slug": "phandalin#RedbrandHideout",
+                            "contentChunkId": "8566d675-9117-4703-ac2b-b37838393fb2",
+                            "userData": {
+                                "userDisplayName": "Riddish"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 395,
+                            "linkId": "pFcEebTucsGGDlG2",
+                            "pin": "20253675"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2025,
+                            "y": 3675
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "10. Common Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2124,
+                            "bookCode": "lmop",
+                            "slug": "phandalin#RedbrandHideout",
+                            "contentChunkId": "9a3f2085-f80e-48fe-907c-ffc8d605b9d7",
+                            "userData": {
+                                "userDisplayName": "Riddish"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 395,
+                            "linkId": "iGllp27H021FhocP",
+                            "pin": "20252625"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2025,
+                            "y": 2625
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "11. Wizard’s Workshop",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2135,
+                            "bookCode": "lmop",
+                            "slug": "phandalin#RedbrandHideout",
+                            "contentChunkId": "e1ab6cb3-064c-49d1-b004-a6b25189839b",
+                            "userData": {
+                                "userDisplayName": "Riddish"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 395,
+                            "linkId": "Q7FijByKwIvVR3fK",
+                            "pin": "20251875"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2025,
+                            "y": 1875
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "12. Glasstaff’s Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2160,
+                            "bookCode": "lmop",
+                            "slug": "phandalin#RedbrandHideout",
+                            "contentChunkId": "bd8385fe-ed5e-4655-a517-a33cd6707e7b",
+                            "userData": {
+                                "userDisplayName": "Riddish"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 395,
+                            "linkId": "NxEBx1zd4Riisxoz",
+                            "pin": "26251725"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2625,
+                            "y": 1725
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "QdJzTHIIeZSyv8Rc",
+                    "name": "Redbrand Ruffian",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 3750,
+                    "y": 3000,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 22030,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "flags": {
+                            "core": {
+                                "sheetClass": ""
+                            },
+                            "lootsheetnpc5e": {
+                                "lootsheettype": "Loot"
+                            }
+                        },
+                        "data": {
+                            "flags": {
+                                "lootsheetnpc5e": {
+                                    "lootsheettype": "Loot"
+                                }
+                            },
+                            "currency": {
+                                "pp": {
+                                    "value": null
+                                },
+                                "gp": {
+                                    "value": null
+                                },
+                                "ep": {
+                                    "value": null
+                                },
+                                "sp": {
+                                    "value": null
+                                },
+                                "cp": {
+                                    "value": null
+                                }
+                            }
+                        },
+                        "actor": {
+                            "flags": {
+                                "loot": {
+                                    "playersPermission": -1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "_id": "0Q5XcPe1qGa1eA2z",
+                    "name": "Redbrand Ruffian",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 3900,
+                    "y": 3300,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 22030,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "JabKyQjMfw5tdDh4",
+                    "name": "Redbrand Ruffian",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 4050,
+                    "y": 3000,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 22030,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "newEffect": "new",
+                        "changes": []
+                    }
+                },
+                {
+                    "_id": "MpsCRzaJ3LXyQIKK",
+                    "name": "Skeleton",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 3750,
+                    "y": 2250,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17015,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "kjwUJZZ3rhFmsPAX",
+                    "name": "Skeleton",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 3750,
+                    "y": 2550,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17015,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "QVK9LTftOS954Fgl",
+                    "name": "Skeleton",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 4200,
+                    "y": 2250,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17015,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "yUr3xDB7EO37ekne",
+                    "name": "Redbrand Ruffian",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 4350,
+                    "y": 1800,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 22030,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "xqmLgi8RfAfNTbo8",
+                    "name": "Redbrand Ruffian",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 4350,
+                    "y": 2100,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 22030,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "VWAgdP8mwtNpsxyf",
+                    "name": "Commoner",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 4500,
+                    "y": 1500,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16829,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Mirna Dendrar",
+                        "data": {
+                            "details": {
+                                "cr": "0"
+                            }
+                        }
+                    }
+                },
+                {
+                    "_id": "YvCcS7OmyHjOnzWP",
+                    "name": "Commoner",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 4350,
+                    "y": 2400,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16829,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Ilsa",
+                        "data": {
+                            "details": {
+                                "cr": "0"
+                            }
+                        }
+                    }
+                },
+                {
+                    "_id": "qNvvw0xetNyoe5lR",
+                    "name": "Commoner",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 4650,
+                    "y": 2400,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16829,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Nars",
+                        "data": {
+                            "details": {
+                                "cr": "0"
+                            }
+                        }
+                    }
+                },
+                {
+                    "_id": "pwHU0ZtSBhEHJ8WE",
+                    "name": "Nothic",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2700,
+                    "y": 3000,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17092,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "5GUpe6Kqg1H0j9aX",
+                    "name": "Goblin",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.8,
+                    "x": 1650,
+                    "y": 3450,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16907,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "p6E1R4UcAqaqc9Ri",
+                    "name": "Bugbear",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2250,
+                    "y": 3750,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16817,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "W0b3hXoH4RPg5Isn",
+                    "name": "Bugbear",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2250,
+                    "y": 3450,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16817,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "k7s9ApG9237vgapI",
+                    "name": "Bugbear",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1650,
+                    "y": 3750,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16817,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "1uEUO3Qg43kPWXEN",
+                    "name": "Redbrand Ruffian",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1650,
+                    "y": 2550,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 22030,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "flags": {
+                            "core": {
+                                "sheetClass": ""
+                            },
+                            "lootsheetnpc5e": {
+                                "lootsheettype": "Loot"
+                            }
+                        },
+                        "data": {
+                            "flags": {
+                                "lootsheetnpc5e": {
+                                    "lootsheettype": "Loot"
+                                }
+                            },
+                            "currency": {
+                                "pp": {
+                                    "value": null
+                                },
+                                "gp": {
+                                    "value": null
+                                },
+                                "ep": {
+                                    "value": null
+                                },
+                                "sp": {
+                                    "value": null
+                                },
+                                "cp": {
+                                    "value": null
+                                }
+                            }
+                        },
+                        "actor": {
+                            "flags": {
+                                "loot": {
+                                    "playersPermission": -1
+                                }
+                            }
+                        },
+                        "newEffect": "new",
+                        "changes": []
+                    }
+                },
+                {
+                    "_id": "txCs3g5OeDBTWc8g",
+                    "name": "Redbrand Ruffian",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1950,
+                    "y": 2550,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 22030,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "flags": {
+                            "core": {
+                                "sheetClass": ""
+                            },
+                            "lootsheetnpc5e": {
+                                "lootsheettype": "Loot"
+                            }
+                        },
+                        "data": {
+                            "flags": {
+                                "lootsheetnpc5e": {
+                                    "lootsheettype": "Loot"
+                                }
+                            },
+                            "currency": {
+                                "pp": {
+                                    "value": null
+                                },
+                                "gp": {
+                                    "value": null
+                                },
+                                "ep": {
+                                    "value": null
+                                },
+                                "sp": {
+                                    "value": null
+                                },
+                                "cp": {
+                                    "value": null
+                                }
+                            }
+                        },
+                        "actor": {
+                            "flags": {
+                                "loot": {
+                                    "playersPermission": -1
+                                }
+                            }
+                        },
+                        "newEffect": "new",
+                        "changes": []
+                    }
+                },
+                {
+                    "_id": "xVvhWGGUnrV0xHZ0",
+                    "name": "Redbrand Ruffian",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1950,
+                    "y": 2250,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 22030,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "flags": {
+                            "core": {
+                                "sheetClass": ""
+                            },
+                            "lootsheetnpc5e": {
+                                "lootsheettype": "Loot"
+                            }
+                        },
+                        "data": {
+                            "flags": {
+                                "lootsheetnpc5e": {
+                                    "lootsheettype": "Loot"
+                                }
+                            },
+                            "currency": {
+                                "pp": {
+                                    "value": null
+                                },
+                                "gp": {
+                                    "value": null
+                                },
+                                "ep": {
+                                    "value": null
+                                },
+                                "sp": {
+                                    "value": null
+                                },
+                                "cp": {
+                                    "value": null
+                                }
+                            }
+                        },
+                        "actor": {
+                            "flags": {
+                                "loot": {
+                                    "playersPermission": -1
+                                }
+                            }
+                        },
+                        "newEffect": "new",
+                        "changes": []
+                    }
+                },
+                {
+                    "_id": "EEgfCXBqsQNUsUpM",
+                    "name": "Redbrand Ruffian",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 1650,
+                    "y": 2250,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 22030,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "flags": {
+                            "core": {
+                                "sheetClass": ""
+                            },
+                            "lootsheetnpc5e": {
+                                "lootsheettype": "Loot"
+                            }
+                        },
+                        "data": {
+                            "flags": {
+                                "lootsheetnpc5e": {
+                                    "lootsheettype": "Loot"
+                                }
+                            },
+                            "currency": {
+                                "pp": {
+                                    "value": null
+                                },
+                                "gp": {
+                                    "value": null
+                                },
+                                "ep": {
+                                    "value": null
+                                },
+                                "sp": {
+                                    "value": null
+                                },
+                                "cp": {
+                                    "value": null
+                                }
+                            }
+                        },
+                        "actor": {
+                            "flags": {
+                                "loot": {
+                                    "playersPermission": -1
+                                }
+                            }
+                        },
+                        "newEffect": "new",
+                        "changes": []
+                    }
+                },
+                {
+                    "_id": "ekvSRMv92HTaQsOw",
+                    "name": "Rat",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.5,
+                    "x": 2100,
+                    "y": 1500,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16991,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {}
+                },
+                {
+                    "_id": "C1uwqKXOMovV1tg4",
+                    "name": "Evil Mage",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2550,
+                    "y": 1500,
+                    "disposition": -1,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 22021,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "data": {
+                            "spells": {
+                                "spell1": {
+                                    "value": 4
+                                },
+                                "spell2": {
+                                    "value": 3
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 150,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3145,
+    "initial": {
+        "x": 5180,
+        "y": 3475,
+        "scale": 0.91
+    },
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 5,
+            "darknessThreshold": 0,
+            "dim": 5,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4459,
+            "y": 3451,
+            "lightAnimation": {
+                "type": "ghost",
+                "speed": 2,
+                "intensity": 7
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 5,
+            "darknessThreshold": 0,
+            "dim": 5,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4575,
+            "y": 3450,
+            "lightAnimation": {
+                "type": "ghost",
+                "speed": 2,
+                "intensity": 7
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 5,
+            "darknessThreshold": 0,
+            "dim": 5,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4678,
+            "y": 3451,
+            "lightAnimation": {
+                "type": "ghost",
+                "speed": 2,
+                "intensity": 7
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4,
+            "darknessThreshold": 0,
+            "dim": 10,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4650,
+            "y": 2574,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4,
+            "darknessThreshold": 0,
+            "dim": 10,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4647,
+            "y": 2828,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 17.26,
+            "darknessThreshold": 0,
+            "dim": 34.53,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4650,
+            "y": 2700,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4,
+            "darknessThreshold": 0,
+            "dim": 10,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4951,
+            "y": 2574,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4,
+            "darknessThreshold": 0,
+            "dim": 10,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 5249,
+            "y": 2576,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4,
+            "darknessThreshold": 0,
+            "dim": 10,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4950,
+            "y": 2826,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 17.26,
+            "darknessThreshold": 0,
+            "dim": 34.53,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 5250,
+            "y": 2700,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4949,
+            "y": 3151,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4950,
+            "y": 3741,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 5376,
+            "y": 3456,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4386,
+            "y": 3668,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 4,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4386,
+            "y": 3119,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4200,
+            "y": 3375,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3933,
+            "y": 3029,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2374,
+            "y": 3681,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1967,
+            "y": 3490,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4049,
+            "y": 2837,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4051,
+            "y": 1966,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4314,
+            "y": 2399,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3771,
+            "y": 2397,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4781,
+            "y": 1850,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 4786,
+            "y": 2200,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2387,
+            "y": 2604,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1973,
+            "y": 2972,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1659,
+            "y": 2609,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2217,
+            "y": 1828,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1930,
+            "y": 2073,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2120,
+            "y": 2296,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 1914,
+            "y": 1504,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2271,
+            "y": 1629,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 7,
+            "darknessThreshold": 0,
+            "dim": 15,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2753,
+            "y": 1511,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        }
+    ],
+    "name": "Map 2.2: Redbrand Hideout",
+    "navName": "Redbrand Hideout",
+    "shiftX": -143,
+    "shiftY": -155,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                1631,
+                1481,
+                1631,
+                2100
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1631,
+                2100,
+                1959,
+                2100
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1959,
+                2100,
+                2100,
+                2100
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2100,
+                2100,
+                2250,
+                2100
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                2100,
+                2250,
+                1800
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                1800,
+                2250,
+                1659
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                1659,
+                2250,
+                1481
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1631,
+                1481,
+                4218,
+                1481
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4218,
+                1481,
+                4218,
+                1950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                1950,
+                3891,
+                1950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3900,
+                1950,
+                3731,
+                1950
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3900,
+                1481,
+                3900,
+                1650
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3900,
+                1650,
+                3900,
+                1950
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                1950,
+                4350,
+                1481
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                1481,
+                4818,
+                1481
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4818,
+                1481,
+                4818,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                1950,
+                4350,
+                2100
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                2100,
+                4350,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                2550,
+                5568,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5568,
+                2550,
+                5568,
+                2868
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5568,
+                2868,
+                5418,
+                2868
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5418,
+                2868,
+                5418,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5240,
+                3000,
+                5240,
+                2868
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5240,
+                2868,
+                3731,
+                2868
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                2550,
+                4350,
+                2868
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3731,
+                1659,
+                3731,
+                2868
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3750,
+                2990,
+                4218,
+                2990
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4218,
+                2990,
+                4218,
+                3131
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4218,
+                3131,
+                4350,
+                3131
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                3150,
+                4350,
+                2981
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                2981,
+                4818,
+                2981
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4818,
+                2981,
+                4818,
+                3131
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4818,
+                3131,
+                5081,
+                3131
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5081,
+                3131,
+                5081,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5081,
+                3000,
+                5250,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5550,
+                3000,
+                5550,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5550,
+                3300,
+                5550,
+                3450
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5550,
+                3450,
+                5550,
+                3918
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5549,
+                3916,
+                5081,
+                3918
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5081,
+                3918,
+                5081,
+                3768
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5081,
+                3768,
+                4809,
+                3768
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4809,
+                3768,
+                4809,
+                3918
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                3750,
+                4350,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                3300,
+                4350,
+                3150
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5250,
+                3750,
+                5400,
+                3750
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                5400,
+                3750,
+                5400,
+                3150
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                5400,
+                3150,
+                5250,
+                3150
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                3740,
+                3750,
+                3740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3750,
+                3740,
+                3750,
+                2990
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3750,
+                3440,
+                3450,
+                3440
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3450,
+                3440,
+                3450,
+                3375
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3450,
+                3375,
+                3469,
+                3338
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3469,
+                3338,
+                3450,
+                3244
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3450,
+                3244,
+                3422,
+                3188
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3422,
+                3188,
+                3366,
+                3169
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3366,
+                3169,
+                3403,
+                3113
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3403,
+                3113,
+                3384,
+                3028
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3384,
+                3028,
+                3328,
+                2953
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3328,
+                2953,
+                3328,
+                2850
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3328,
+                2850,
+                3384,
+                2794
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3384,
+                2794,
+                3384,
+                2756
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3384,
+                2756,
+                3478,
+                2681
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3478,
+                2681,
+                3469,
+                2634
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3469,
+                2634,
+                3619,
+                2513
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3619,
+                2513,
+                3600,
+                2419
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3600,
+                2419,
+                3638,
+                2316
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3638,
+                2316,
+                3638,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3638,
+                2250,
+                3656,
+                2138
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3656,
+                2138,
+                3563,
+                2063
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3563,
+                2063,
+                3468,
+                2006
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3468,
+                2006,
+                3468,
+                1968
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3468,
+                1968,
+                3609,
+                1968
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3609,
+                1968,
+                3609,
+                1668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3609,
+                1668,
+                3731,
+                1668
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4809,
+                3918,
+                3571,
+                3918
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3571,
+                3918,
+                3571,
+                3628
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3571,
+                3628,
+                3346,
+                3628
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3346,
+                3628,
+                3328,
+                3684
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3300,
+                3740,
+                3253,
+                3759
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3253,
+                3759,
+                3150,
+                3759
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3150,
+                3759,
+                3113,
+                3647
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3113,
+                3647,
+                3028,
+                3675
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3028,
+                3675,
+                3009,
+                3750
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3009,
+                3750,
+                3028,
+                3844
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3028,
+                3844,
+                3009,
+                3909
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3009,
+                3909,
+                3009,
+                3984
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3009,
+                3984,
+                3000,
+                4050
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2841,
+                4050,
+                2831,
+                3966
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2831,
+                3966,
+                2850,
+                3919
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2850,
+                3919,
+                2803,
+                3853
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2803,
+                3853,
+                2841,
+                3769
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2841,
+                3769,
+                2803,
+                3647
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2803,
+                3647,
+                2719,
+                3609
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2719,
+                3609,
+                2625,
+                3609
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2625,
+                3609,
+                2578,
+                3600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2578,
+                3600,
+                2531,
+                3562
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2494,
+                3478,
+                2418,
+                3450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2418,
+                3450,
+                2418,
+                3918
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2418,
+                3918,
+                1631,
+                3918
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1631,
+                3918,
+                1631,
+                3450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1631,
+                3450,
+                1800,
+                3450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1800,
+                3450,
+                1950,
+                3450
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1950,
+                3450,
+                2418,
+                3450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1781,
+                3450,
+                1781,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1800,
+                3000,
+                1631,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1631,
+                3000,
+                1631,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1631,
+                2250,
+                1950,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1950,
+                2250,
+                2100,
+                2250
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2100,
+                2250,
+                2531,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2418,
+                2250,
+                2418,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2418,
+                3000,
+                1950,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1950,
+                3000,
+                1800,
+                3000
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2531,
+                2250,
+                2531,
+                2418
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2531,
+                2418,
+                2821,
+                2418
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2821,
+                2418,
+                2813,
+                2456
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2813,
+                2456,
+                2794,
+                2513
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2794,
+                2513,
+                2794,
+                2597
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2794,
+                2597,
+                2728,
+                2691
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2728,
+                2691,
+                2672,
+                2766
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2672,
+                2766,
+                2625,
+                2813
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2625,
+                2813,
+                2541,
+                2850
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2541,
+                2850,
+                2522,
+                2963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2522,
+                2963,
+                2503,
+                3038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2503,
+                3038,
+                2522,
+                3094
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2522,
+                3094,
+                2503,
+                3206
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2503,
+                3206,
+                2465,
+                3281
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2465,
+                3281,
+                1968,
+                3281
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1968,
+                3281,
+                1968,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                1959,
+                3129,
+                1962
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2851,
+                1961,
+                2850,
+                1650
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3001,
+                1482,
+                3001,
+                1806
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3131,
+                1959,
+                3131,
+                1996
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3131,
+                1996,
+                3094,
+                2072
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3094,
+                2072,
+                3038,
+                2128
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3038,
+                2128,
+                2972,
+                2109
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2972,
+                2109,
+                2888,
+                2109
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2888,
+                2109,
+                2869,
+                2166
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2869,
+                2166,
+                2784,
+                2213
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2784,
+                2213,
+                2719,
+                2203
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2719,
+                2203,
+                2718,
+                2100
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2718,
+                2100,
+                2250,
+                2100
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                1800,
+                4500,
+                1800
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                4650,
+                1800,
+                4818,
+                1800
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                4650,
+                2250,
+                4818,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                4500,
+                2250,
+                4350,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                4500,
+                2250,
+                4650,
+                2250
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                4500,
+                1800,
+                4650,
+                1800
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                5400,
+                3000,
+                5550,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5250,
+                3150,
+                5250,
+                3000
+            ],
+            "door": 2,
+            "ds": 0,
+            "move": 0,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                3750,
+                4350,
+                3918
+            ],
+            "door": 2,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2850,
+                1650,
+                2850,
+                1481
+            ],
+            "door": 2,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3000,
+                1809,
+                3000,
+                1962
+            ],
+            "door": 2,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2841,
+                4050,
+                3000,
+                4050
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4350,
+                3318,
+                4218,
+                3318
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4218,
+                3318,
+                4218,
+                3618
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4218,
+                3618,
+                3750,
+                3618
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5550,
+                3450,
+                5700,
+                3450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5700,
+                3450,
+                5700,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5700,
+                3300,
+                5550,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3206,
+                2550,
+                3262,
+                2568
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3262,
+                2568,
+                3290,
+                2615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3290,
+                2615,
+                3262,
+                2681
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3262,
+                2681,
+                3196,
+                2671
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3196,
+                2671,
+                3178,
+                2615
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3178,
+                2615,
+                3206,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2756,
+                3159,
+                2803,
+                3187
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2803,
+                3187,
+                2812,
+                3215
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2812,
+                3215,
+                2840,
+                3225
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2840,
+                3225,
+                2840,
+                3262
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2840,
+                3262,
+                2793,
+                3290
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2793,
+                3290,
+                2746,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2746,
+                3300,
+                2728,
+                3281
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2728,
+                3281,
+                2728,
+                3234
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2728,
+                3234,
+                2718,
+                3187
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2718,
+                3187,
+                2756,
+                3159
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3300,
+                3740,
+                3328,
+                3684
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1940,
+                2100,
+                1940,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                5400,
+                3150,
+                5400,
+                3000
+            ],
+            "door": 2,
+            "ds": 0,
+            "move": 0,
+            "sense": 1
+        },
+        {
+            "c": [
+                3735,
+                1661,
+                3734,
+                1479
+            ],
+            "door": 2,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2527,
+                3517,
+                2531,
+                3562
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2493,
+                3478,
+                2531,
+                3515
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 4508
+}

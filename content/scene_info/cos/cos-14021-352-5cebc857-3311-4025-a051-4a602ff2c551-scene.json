@@ -1,0 +1,1513 @@
+{
+    "backgroundColor": "#000000",
+    "darkness": 0.6,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "cos",
+            "ddbId": 14021,
+            "cobaltId": null,
+            "parentId": 352,
+            "contentChunkId": "5cebc857-3311-4025-a051-4a602ff2c551",
+            "notes": [
+                {
+                    "label": "E5a. Hall",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2107,
+                            "bookCode": "cos",
+                            "slug": "the-village-of-barovia#AreasoftheVillage",
+                            "contentChunkId": "13f090c9-8233-447e-9461-e4a283593984",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 352,
+                            "linkId": "am9s4vBqgcCM4OfX"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1314,
+                            "y": 1387
+                        }
+                    ]
+                },
+                {
+                    "label": "E5b. Doru’s Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2110,
+                            "bookCode": "cos",
+                            "slug": "the-village-of-barovia#AreasoftheVillage",
+                            "contentChunkId": "79a673ff-fd95-470d-8c1a-8913b2887b6e",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 352,
+                            "linkId": "ZPdn1dDxStcihIkw"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1095,
+                            "y": 1460
+                        }
+                    ]
+                },
+                {
+                    "label": "E5c. Donavich’s Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2113,
+                            "bookCode": "cos",
+                            "slug": "the-village-of-barovia#AreasoftheVillage",
+                            "contentChunkId": "6076877b-9245-429b-9b0c-9fc03362fdb8",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 352,
+                            "linkId": "ZUt5JDhczik5DN1p"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1095,
+                            "y": 1314
+                        }
+                    ]
+                },
+                {
+                    "label": "E5d. Trapdoor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2116,
+                            "bookCode": "cos",
+                            "slug": "the-village-of-barovia#AreasoftheVillage",
+                            "contentChunkId": "56249285-ae7e-448a-b74c-7d3862f14159",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 352,
+                            "linkId": "aEXemoxAgSIEajmv"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1533,
+                            "y": 1460
+                        }
+                    ]
+                },
+                {
+                    "label": "E5e. Office",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2120,
+                            "bookCode": "cos",
+                            "slug": "the-village-of-barovia#AreasoftheVillage",
+                            "contentChunkId": "071d6b3c-7ff0-4287-893c-1a87eeb1d8f7",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 352,
+                            "linkId": "VMOWadEoenmL8R7J"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1533,
+                            "y": 1314
+                        }
+                    ]
+                },
+                {
+                    "label": "E5f. Chapel",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2132,
+                            "bookCode": "cos",
+                            "slug": "the-village-of-barovia#AreasoftheVillage",
+                            "contentChunkId": "4d1e052c-ec54-4f88-9e75-77feb4f9f8c9",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 352,
+                            "linkId": "C5qrvhZySAFGP5tm"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1314,
+                            "y": 1022
+                        }
+                    ]
+                },
+                {
+                    "label": "E5g. Undercroft",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2136,
+                            "bookCode": "cos",
+                            "slug": "the-village-of-barovia#AreasoftheVillage",
+                            "contentChunkId": "110b787a-0cbb-4958-82de-2f7c1ebfc4c2",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 352,
+                            "linkId": "dbbX87YfiY1zPpAw"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2482,
+                            "y": 1095
+                        }
+                    ]
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 73,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 1683,
+    "initial": {
+        "x": 1685,
+        "y": 1643,
+        "scale": 0.9
+    },
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 912,
+            "y": 1058
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 988.2027027027027,
+            "y": 1213.283783783784
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1136.8918918918916,
+            "y": 1212.5945945945946
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 986.1621621621621,
+            "y": 907.0810810810812
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1137.5675675675677,
+            "y": 905.0540540540541
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1494.4594594594594,
+            "y": 904.3783783783784
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1641.8108108108106,
+            "y": 905.7297297297298
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1721.5405405405406,
+            "y": 1058.4594594594596
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1643.8648648648648,
+            "y": 1211.1891891891892
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1496.4594594594596,
+            "y": 1211.2432432432433
+        },
+        {
+            "angle": 360,
+            "bright": 10.25,
+            "darknessThreshold": 0,
+            "dim": 20.51,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1277,
+            "y": 949
+        },
+        {
+            "angle": 360,
+            "bright": 10.25,
+            "darknessThreshold": 0,
+            "dim": 20.51,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1337.1292517006802,
+            "y": 949
+        },
+        {
+            "angle": 360,
+            "bright": 9.75,
+            "darknessThreshold": 0,
+            "dim": 19.5,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1180.9251700680272,
+            "y": 1360.8843537414966
+        }
+    ],
+    "name": "Church",
+    "navName": "Church",
+    "shiftX": -11,
+    "shiftY": 4,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                730,
+                501,
+                3047,
+                501
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3047,
+                501,
+                3047,
+                2044
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3047,
+                2044,
+                730,
+                2053
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                730,
+                2053,
+                730,
+                501
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1888,
+                483,
+                1888,
+                2062
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2025,
+                930,
+                2929,
+                930
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2929,
+                930,
+                2929,
+                1259
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2929,
+                1259,
+                2792,
+                1259
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2792,
+                1259,
+                2792,
+                1542
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2792,
+                1542,
+                2171,
+                1542
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2171,
+                1542,
+                2171,
+                1259
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2171,
+                1259,
+                2025,
+                1259
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2025,
+                1259,
+                2025,
+                930
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2126,
+                1158,
+                2107,
+                1177
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2126,
+                1177,
+                2107,
+                1158
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2270,
+                1174,
+                2251,
+                1155
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2270,
+                1155,
+                2251,
+                1174
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2269,
+                1320,
+                2250,
+                1301
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2269,
+                1301,
+                2250,
+                1320
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2414,
+                1320,
+                2395,
+                1301
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2414,
+                1301,
+                2395,
+                1320
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2416,
+                1173,
+                2397,
+                1154
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2416,
+                1154,
+                2397,
+                1173
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2416,
+                1029,
+                2397,
+                1010
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2416,
+                1010,
+                2397,
+                1029
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2270,
+                1030,
+                2251,
+                1011
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2270,
+                1011,
+                2251,
+                1030
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2125,
+                1030,
+                2106,
+                1011
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2125,
+                1011,
+                2106,
+                1030
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2563,
+                1032,
+                2544,
+                1013
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2563,
+                1013,
+                2544,
+                1032
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2563,
+                1176,
+                2544,
+                1157
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2563,
+                1157,
+                2544,
+                1176
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2709,
+                1177,
+                2690,
+                1158
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2709,
+                1158,
+                2690,
+                1177
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2709,
+                1031,
+                2690,
+                1012
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2709,
+                1012,
+                2690,
+                1031
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2855,
+                1031,
+                2836,
+                1012
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2855,
+                1012,
+                2836,
+                1031
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2855,
+                1178,
+                2836,
+                1159
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2855,
+                1159,
+                2836,
+                1178
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2563,
+                1322,
+                2544,
+                1303
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2563,
+                1303,
+                2544,
+                1322
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2563,
+                1468,
+                2544,
+                1449
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2563,
+                1449,
+                2544,
+                1468
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2417,
+                1469,
+                2398,
+                1450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2417,
+                1450,
+                2398,
+                1469
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2271,
+                1468,
+                2252,
+                1449
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2271,
+                1449,
+                2252,
+                1468
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                876,
+                876,
+                1031,
+                876
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1031,
+                876,
+                1076,
+                876
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1076,
+                876,
+                1231,
+                876
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1231,
+                876,
+                1241,
+                839
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1241,
+                839,
+                1259,
+                812
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1259,
+                812,
+                1286,
+                793
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1286,
+                793,
+                1314,
+                793
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1314,
+                793,
+                1350,
+                803
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1350,
+                803,
+                1377,
+                821
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1377,
+                821,
+                1396,
+                848
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1396,
+                848,
+                1396,
+                876
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1396,
+                876,
+                1542,
+                876
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1542,
+                876,
+                1596,
+                876
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1596,
+                876,
+                1752,
+                876
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1752,
+                876,
+                1752,
+                958
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1752,
+                958,
+                1752,
+                1012
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1752,
+                1012,
+                1752,
+                1104
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1752,
+                1104,
+                1752,
+                1158
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1752,
+                1158,
+                1752,
+                1241
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1752,
+                1241,
+                1606,
+                1241
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1606,
+                1241,
+                1606,
+                1533
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1606,
+                1533,
+                1387,
+                1533
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1387,
+                1533,
+                1241,
+                1533
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1241,
+                1533,
+                1022,
+                1533
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1022,
+                1533,
+                1022,
+                1241
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1022,
+                1241,
+                876,
+                1241
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                876,
+                1241,
+                876,
+                1158
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                876,
+                1158,
+                876,
+                1104
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                876,
+                1104,
+                876,
+                1012
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                876,
+                1012,
+                876,
+                958
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                876,
+                958,
+                876,
+                876
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1022,
+                1241,
+                1241,
+                1241
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1241,
+                1241,
+                1241,
+                1314
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1241,
+                1314,
+                1241,
+                1387
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1241,
+                1387,
+                1241,
+                1460
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1241,
+                1460,
+                1241,
+                1533
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1241,
+                1387,
+                1022,
+                1387
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1387,
+                1533,
+                1387,
+                1460
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1387,
+                1460,
+                1387,
+                1387
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1387,
+                1387,
+                1387,
+                1314
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1387,
+                1314,
+                1387,
+                1241
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1387,
+                1241,
+                1606,
+                1241
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1387,
+                1387,
+                1606,
+                1387
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1752,
+                949,
+                1825,
+                912
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1825,
+                912,
+                1861,
+                885
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1861,
+                885,
+                1888,
+                848
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                730,
+                866,
+                876,
+                958
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        }
+    ],
+    "weather": "",
+    "width": 2448
+}

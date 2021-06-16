@@ -1,0 +1,3871 @@
+{
+    "backgroundColor": "#6c7d87",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "F2Yw1IqtzKb4J3FN",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 2600,
+            "y": 2704,
+            "width": 235,
+            "height": 132,
+            "rotation": 0,
+            "z": 0,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": null,
+            "strokeColor": "",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Down tolevel 4",
+            "fontFamily": "Arial",
+            "fontSize": 50,
+            "textColor": "#fa0505",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        },
+        {
+            "_id": "XwoyKAD1SN0yig2Q",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 2665,
+            "y": 1898,
+            "width": 235,
+            "height": 132,
+            "rotation": 0,
+            "z": 1,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": null,
+            "strokeColor": "",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Down tolevel 2",
+            "fontFamily": "Arial",
+            "fontSize": 50,
+            "textColor": "#f20707",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        },
+        {
+            "_id": "HltnQi8nmQOspzsi",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 3744,
+            "y": 1716,
+            "width": 208,
+            "height": 104,
+            "rotation": 0,
+            "z": 2,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": null,
+            "strokeColor": "",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Up to level 1",
+            "fontFamily": "Arial",
+            "fontSize": 50,
+            "textColor": "#e70808",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        },
+        {
+            "_id": "ojeCZ7aVUyHAONMZ",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 3380,
+            "y": 1924,
+            "width": 235,
+            "height": 132,
+            "rotation": 0,
+            "z": 3,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": null,
+            "strokeColor": "",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Down tolevel 3",
+            "fontFamily": "Arial",
+            "fontSize": 50,
+            "textColor": "#e60a0a",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        },
+        {
+            "_id": "kr3ssAKlpcS05Cus",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 3640,
+            "y": 2652,
+            "width": 188,
+            "height": 132,
+            "rotation": 0,
+            "z": 4,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": null,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Up tolevel 3",
+            "fontFamily": "Arial",
+            "fontSize": 50,
+            "textColor": "#fd0d0d",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        },
+        {
+            "_id": "x2MKEX4N9Vd0o8yq",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "f",
+            "x": 3744,
+            "y": 1820,
+            "width": 109,
+            "height": 106,
+            "rotation": 0,
+            "z": 5,
+            "points": [
+                [
+                    108.50649530922101,
+                    98.34574703904605
+                ],
+                [
+                    79,
+                    102
+                ],
+                [
+                    71,
+                    104
+                ],
+                [
+                    64,
+                    104
+                ],
+                [
+                    62,
+                    104
+                ],
+                [
+                    50,
+                    104
+                ],
+                [
+                    43,
+                    104
+                ],
+                [
+                    29,
+                    104
+                ],
+                [
+                    21,
+                    102
+                ],
+                [
+                    12,
+                    102
+                ],
+                [
+                    8,
+                    102
+                ],
+                [
+                    6,
+                    100
+                ],
+                [
+                    4,
+                    96
+                ],
+                [
+                    4,
+                    90
+                ],
+                [
+                    2,
+                    79
+                ],
+                [
+                    0,
+                    69
+                ],
+                [
+                    0,
+                    65
+                ],
+                [
+                    0,
+                    58
+                ],
+                [
+                    0,
+                    48
+                ],
+                [
+                    0,
+                    40
+                ],
+                [
+                    0,
+                    33
+                ],
+                [
+                    0,
+                    29
+                ],
+                [
+                    0,
+                    27
+                ],
+                [
+                    2,
+                    15
+                ],
+                [
+                    6,
+                    8
+                ],
+                [
+                    10,
+                    6
+                ],
+                [
+                    21,
+                    4
+                ],
+                [
+                    27,
+                    2
+                ],
+                [
+                    31,
+                    2
+                ],
+                [
+                    41,
+                    2
+                ],
+                [
+                    60,
+                    2
+                ],
+                [
+                    64,
+                    2
+                ],
+                [
+                    68,
+                    0
+                ],
+                [
+                    75,
+                    0
+                ],
+                [
+                    77,
+                    0
+                ],
+                [
+                    81,
+                    0
+                ],
+                [
+                    85,
+                    0
+                ],
+                [
+                    87,
+                    0
+                ],
+                [
+                    91,
+                    0
+                ],
+                [
+                    93,
+                    0
+                ],
+                [
+                    98,
+                    2
+                ],
+                [
+                    102,
+                    8
+                ],
+                [
+                    102,
+                    15
+                ],
+                [
+                    102,
+                    25
+                ],
+                [
+                    102,
+                    31
+                ],
+                [
+                    102,
+                    44
+                ],
+                [
+                    102,
+                    50
+                ],
+                [
+                    102,
+                    67
+                ],
+                [
+                    102,
+                    75
+                ],
+                [
+                    102,
+                    81
+                ],
+                [
+                    102,
+                    85
+                ],
+                [
+                    102,
+                    90
+                ],
+                [
+                    102,
+                    96
+                ],
+                [
+                    104,
+                    102
+                ],
+                [
+                    104,
+                    106
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": null,
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "4SOwqtTDsSGcdwwf",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "f",
+            "x": 2602,
+            "y": 2915,
+            "width": 102,
+            "height": 104,
+            "rotation": 0,
+            "z": 6,
+            "points": [
+                [
+                    4.756495309221009,
+                    0.4290803723793033
+                ],
+                [
+                    46,
+                    2
+                ],
+                [
+                    52,
+                    2
+                ],
+                [
+                    56,
+                    2
+                ],
+                [
+                    65,
+                    2
+                ],
+                [
+                    71,
+                    2
+                ],
+                [
+                    75,
+                    4
+                ],
+                [
+                    79,
+                    4
+                ],
+                [
+                    83,
+                    8
+                ],
+                [
+                    90,
+                    15
+                ],
+                [
+                    96,
+                    19
+                ],
+                [
+                    98,
+                    21
+                ],
+                [
+                    100,
+                    25
+                ],
+                [
+                    102,
+                    40
+                ],
+                [
+                    102,
+                    48
+                ],
+                [
+                    102,
+                    60
+                ],
+                [
+                    102,
+                    69
+                ],
+                [
+                    102,
+                    75
+                ],
+                [
+                    102,
+                    83
+                ],
+                [
+                    102,
+                    87
+                ],
+                [
+                    102,
+                    90
+                ],
+                [
+                    100,
+                    96
+                ],
+                [
+                    98,
+                    100
+                ],
+                [
+                    96,
+                    102
+                ],
+                [
+                    94,
+                    104
+                ],
+                [
+                    90,
+                    104
+                ],
+                [
+                    81,
+                    104
+                ],
+                [
+                    73,
+                    104
+                ],
+                [
+                    56,
+                    104
+                ],
+                [
+                    44,
+                    104
+                ],
+                [
+                    31,
+                    100
+                ],
+                [
+                    25,
+                    100
+                ],
+                [
+                    15,
+                    100
+                ],
+                [
+                    13,
+                    100
+                ],
+                [
+                    6,
+                    98
+                ],
+                [
+                    4,
+                    96
+                ],
+                [
+                    0,
+                    92
+                ],
+                [
+                    0,
+                    73
+                ],
+                [
+                    0,
+                    67
+                ],
+                [
+                    0,
+                    54
+                ],
+                [
+                    0,
+                    44
+                ],
+                [
+                    0,
+                    37
+                ],
+                [
+                    0,
+                    31
+                ],
+                [
+                    0,
+                    25
+                ],
+                [
+                    0,
+                    17
+                ],
+                [
+                    0,
+                    10
+                ],
+                [
+                    0,
+                    6
+                ],
+                [
+                    4,
+                    2
+                ],
+                [
+                    6,
+                    0
+                ],
+                [
+                    11,
+                    0
+                ],
+                [
+                    13,
+                    0
+                ],
+                [
+                    15,
+                    0
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": null,
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "d6kSfrZDI3a359CR",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "f",
+            "x": 3685,
+            "y": 2802,
+            "width": 90,
+            "height": 88,
+            "rotation": 0,
+            "z": 7,
+            "points": [
+                [
+                    3.006495309221009,
+                    0.9290803723793033
+                ],
+                [
+                    53,
+                    0
+                ],
+                [
+                    75,
+                    0
+                ],
+                [
+                    78,
+                    0
+                ],
+                [
+                    80,
+                    0
+                ],
+                [
+                    86,
+                    0
+                ],
+                [
+                    88,
+                    0
+                ],
+                [
+                    90,
+                    7
+                ],
+                [
+                    90,
+                    17
+                ],
+                [
+                    90,
+                    38
+                ],
+                [
+                    90,
+                    44
+                ],
+                [
+                    90,
+                    61
+                ],
+                [
+                    90,
+                    65
+                ],
+                [
+                    88,
+                    69
+                ],
+                [
+                    78,
+                    80
+                ],
+                [
+                    69,
+                    86
+                ],
+                [
+                    48,
+                    88
+                ],
+                [
+                    38,
+                    88
+                ],
+                [
+                    21,
+                    88
+                ],
+                [
+                    11,
+                    86
+                ],
+                [
+                    7,
+                    82
+                ],
+                [
+                    7,
+                    75
+                ],
+                [
+                    5,
+                    65
+                ],
+                [
+                    3,
+                    48
+                ],
+                [
+                    3,
+                    40
+                ],
+                [
+                    3,
+                    32
+                ],
+                [
+                    3,
+                    23
+                ],
+                [
+                    0,
+                    19
+                ],
+                [
+                    0,
+                    13
+                ],
+                [
+                    0,
+                    5
+                ],
+                [
+                    0,
+                    3
+                ],
+                [
+                    3,
+                    3
+                ],
+                [
+                    5,
+                    0
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": null,
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "ZSmvPHnxEqpDfKqd",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "f",
+            "x": 2209,
+            "y": 2761,
+            "width": 76,
+            "height": 169,
+            "rotation": 0,
+            "z": 8,
+            "points": [
+                [
+                    0,
+                    4.429080372379303
+                ],
+                [
+                    33.160171357445506,
+                    4
+                ],
+                [
+                    45.160171357445506,
+                    4
+                ],
+                [
+                    54.160171357445506,
+                    4
+                ],
+                [
+                    56.160171357445506,
+                    4
+                ],
+                [
+                    58.160171357445506,
+                    4
+                ],
+                [
+                    62.160171357445506,
+                    4
+                ],
+                [
+                    66.1601713574455,
+                    4
+                ],
+                [
+                    70.1601713574455,
+                    4
+                ],
+                [
+                    74.1601713574455,
+                    4
+                ],
+                [
+                    76.1601713574455,
+                    6
+                ],
+                [
+                    76.1601713574455,
+                    8
+                ],
+                [
+                    76.1601713574455,
+                    23
+                ],
+                [
+                    76.1601713574455,
+                    35
+                ],
+                [
+                    76.1601713574455,
+                    44
+                ],
+                [
+                    72.1601713574455,
+                    60
+                ],
+                [
+                    72.1601713574455,
+                    66
+                ],
+                [
+                    72.1601713574455,
+                    73
+                ],
+                [
+                    72.1601713574455,
+                    83
+                ],
+                [
+                    72.1601713574455,
+                    94
+                ],
+                [
+                    72.1601713574455,
+                    102
+                ],
+                [
+                    72.1601713574455,
+                    106
+                ],
+                [
+                    72.1601713574455,
+                    116
+                ],
+                [
+                    72.1601713574455,
+                    121
+                ],
+                [
+                    72.1601713574455,
+                    127
+                ],
+                [
+                    72.1601713574455,
+                    135
+                ],
+                [
+                    72.1601713574455,
+                    137
+                ],
+                [
+                    72.1601713574455,
+                    144
+                ],
+                [
+                    72.1601713574455,
+                    150
+                ],
+                [
+                    72.1601713574455,
+                    156
+                ],
+                [
+                    72.1601713574455,
+                    158
+                ],
+                [
+                    72.1601713574455,
+                    164
+                ],
+                [
+                    68.1601713574455,
+                    169
+                ],
+                [
+                    64.1601713574455,
+                    169
+                ],
+                [
+                    58.160171357445506,
+                    169
+                ],
+                [
+                    47.160171357445506,
+                    169
+                ],
+                [
+                    31.160171357445506,
+                    166
+                ],
+                [
+                    22.160171357445506,
+                    166
+                ],
+                [
+                    12.160171357445506,
+                    162
+                ],
+                [
+                    8.160171357445506,
+                    162
+                ],
+                [
+                    8.160171357445506,
+                    160
+                ],
+                [
+                    8.160171357445506,
+                    137
+                ],
+                [
+                    8.160171357445506,
+                    123
+                ],
+                [
+                    8.160171357445506,
+                    106
+                ],
+                [
+                    8.160171357445506,
+                    85
+                ],
+                [
+                    8.160171357445506,
+                    73
+                ],
+                [
+                    8.160171357445506,
+                    62
+                ],
+                [
+                    8.160171357445506,
+                    56
+                ],
+                [
+                    10.160171357445506,
+                    46
+                ],
+                [
+                    10.160171357445506,
+                    31
+                ],
+                [
+                    10.160171357445506,
+                    21
+                ],
+                [
+                    10.160171357445506,
+                    16
+                ],
+                [
+                    10.160171357445506,
+                    12
+                ],
+                [
+                    8.160171357445506,
+                    0
+                ]
+            ],
+            "bezierFactor": 0.5,
+            "fillType": 0,
+            "fillColor": "#f0ebeb",
+            "fillAlpha": 1,
+            "strokeWidth": 5,
+            "strokeColor": "#f70202",
+            "strokeAlpha": 1,
+            "texture": null,
+            "fontFamily": "Signika",
+            "fontSize": 48,
+            "textColor": "#0d0d0d",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {}
+        },
+        {
+            "_id": "GEX8vFvKOwDUeX2I",
+            "author": "ZNuwacEzhVGx2mbf",
+            "type": "t",
+            "x": 2548,
+            "y": 3016,
+            "width": 188,
+            "height": 132,
+            "rotation": 0,
+            "z": 4,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": null,
+            "strokeColor": "#f1eeee",
+            "strokeAlpha": 0,
+            "texture": "",
+            "text": "Up tolevel 2",
+            "fontFamily": "Arial",
+            "fontSize": 50,
+            "textColor": "#e70808",
+            "textAlpha": 1,
+            "hidden": true,
+            "locked": false,
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            }
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "idrotf",
+            "ddbId": 10079,
+            "cobaltId": null,
+            "parentId": 1083,
+            "contentChunkId": "MapMap210lostspire-player",
+            "notes": [
+                {
+                    "label": "P01. Upside-Down Entrance",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2081,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "9677dbbc-32fa-4000-85fb-5664a8f666b1",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "cVbwlsjndJQldEzO",
+                            "pin": "22361716"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2236,
+                            "y": 1716
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P02. Upside-Down Corridor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2083,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "7eb1ff3c-05a1-4250-a674-b2a6a3642a2e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "lb86AIpNefNTVhST",
+                            "pin": "27561716"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2756,
+                            "y": 1716
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P03. Upside-Down Library",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2090,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "f7dc5c73-1927-424e-a1c6-683de816b3a8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "2MwEjYU4nSUgcuvU",
+                            "pin": "26521924"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2652,
+                            "y": 1924
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P04. Upside-Down Workshop",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2093,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "a46926d3-0422-4946-aab1-ffe092c2fcf8",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "wxJ62QqJbjVr4Fer",
+                            "pin": "25481508"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2548,
+                            "y": 1508
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P05. Upside-Down Potion Storage",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2097,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "83f6cc9c-8e9f-43b7-b7c8-24d93d978e2a",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "c0xkP4l9kAoNlKVz",
+                            "pin": "27561508"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2756,
+                            "y": 1508
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P06. Upside-Down Laboratory",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2101,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "5e268462-2456-4740-8d21-3e92681f99dd",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "WP7LyfYeUrRyMTIA",
+                            "pin": "33801716"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3380,
+                            "y": 1716
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P07. Upside-Down Apprentices’ Study",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2107,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "c1c186c1-6985-4c9e-85dd-55ea8aa028a3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "jKjZR39fLrltn6Wd",
+                            "pin": "39001508"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3900,
+                            "y": 1508
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P08. Upside-Down Reading Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2110,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "a10f5bb5-5bf5-4327-9c0a-204d3140f551",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "cvPKBA8nLUqtFIyF",
+                            "pin": "33801508"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3380,
+                            "y": 1508
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P09. Collapsed Staircase",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2113,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "9fc69acb-df91-4787-9ee7-f1d7ce1fb4f6",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "OAjsm6U92svl2i9D",
+                            "pin": "41081716"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4108,
+                            "y": 1716
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P10. Rubble-filled Spiral Stairway",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2115,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "748af758-40a3-4426-a591-63070019bd03",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "GHrTxein1nVLhtzq",
+                            "pin": "29642964"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 4108,
+                            "y": 1820
+                        },
+                        {
+                            "x": 2964,
+                            "y": 2964
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P12. Snow and Shadow",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2135,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "5a9eeed9-31d9-4d48-b372-2fd783b833b3",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "NLuWpe4iuAMtlqHN",
+                            "pin": "25482548"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2548,
+                            "y": 2548
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P13. Upside-Down Shrine",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2142,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "208f23ff-f3af-4fee-b3ea-84afafb83249",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "QwjYA25cdkXJR09E",
+                            "pin": "24442756"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2444,
+                            "y": 2756
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P14. Upside-Down Refectory",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2146,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "d00743b6-39ef-402b-9377-f490224d311b",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "cIabpeFKbb9sgoRB",
+                            "pin": "37962652"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3796,
+                            "y": 2652
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P15. Upside-Down Bedchamber",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2153,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "8a7437cb-f3eb-4020-970d-239f24ea4591",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "gp8xf6wvOSyobJNQ",
+                            "pin": "35883172"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3588,
+                            "y": 3172
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                },
+                {
+                    "label": "P16. Upside-Down Rune Chamber",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2171,
+                            "bookCode": "idrotf",
+                            "slug": "places-of-interest-continued#LostSpireofNetheril",
+                            "contentChunkId": "2fbc6cfe-b6d2-4179-a320-eda33d05b722",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 1083,
+                            "linkId": "gJYZwzuh7tUigyd3",
+                            "pin": "34842652"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3484,
+                            "y": 2652
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": null,
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "snQBZC2boqGbKfh9",
+                    "name": "Dzaan’s Simulacrum(1)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2600,
+                    "y": 2496,
+                    "disposition": 0,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 1123081,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Dzaan’s Simulacrum(1)"
+                    }
+                },
+                {
+                    "_id": "omzKPGTEmXcU49RJ",
+                    "name": "Wight(1)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2704,
+                    "y": 2600,
+                    "disposition": 0,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17059,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Wight(1)"
+                    }
+                },
+                {
+                    "_id": "eUFDlgX9TBwCXjYE",
+                    "name": "Black Pudding(1)",
+                    "width": 2,
+                    "height": 2,
+                    "scale": 1,
+                    "x": 3120,
+                    "y": 2184,
+                    "disposition": 0,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16808,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Black Pudding(1)"
+                    }
+                },
+                {
+                    "_id": "0T1zqS3o4z87VW6X",
+                    "name": "Bugbear(1)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 3016,
+                    "y": 2184,
+                    "disposition": 0,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 16817,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Bugbear(1)"
+                    }
+                },
+                {
+                    "_id": "iqFDPt5MLMhIGV51",
+                    "name": "Will-o'-Wisp(1)",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 0.5,
+                    "x": 3744,
+                    "y": 3016,
+                    "disposition": 0,
+                    "flags": {
+                        "ddbActorFlags": {
+                            "id": 17060,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": true,
+                    "lightAlpha": 0.25,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "actorData": {
+                        "name": "Will-o'-Wisp(1)"
+                    }
+                }
+            ]
+        },
+        "stairways": [
+            {
+                "scene": null,
+                "name": "sw-lehmf1yu",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 2808,
+                "y": 1820,
+                "_id": "vxi2aecfk5hevu66"
+            },
+            {
+                "scene": null,
+                "name": "sw-lehmf1yu",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 3796,
+                "y": 1872,
+                "_id": "69ep9nmomj3mtrlb"
+            },
+            {
+                "scene": null,
+                "name": "sw-0b11ty16",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 3640,
+                "y": 1872,
+                "_id": "5yp7jhlaetal5fm7"
+            },
+            {
+                "scene": null,
+                "name": "sw-0b11ty16",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 2652,
+                "y": 2964,
+                "_id": "7i0p5sotre2znzaq"
+            },
+            {
+                "scene": null,
+                "name": "sw-qfhji7jn",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 2548,
+                "y": 2860,
+                "_id": "76k0twdguvg3eoby"
+            },
+            {
+                "scene": null,
+                "name": "sw-qfhji7jn",
+                "disabled": false,
+                "hidden": false,
+                "animate": false,
+                "x": 3744,
+                "y": 2860,
+                "_id": "z8l5oe2hixq6xmjw"
+            }
+        ],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 104,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2765,
+    "initial": null,
+    "lights": [],
+    "name": "Map 2.10: Lost Spire of Netheril",
+    "navName": "Lost Spire of Netheril",
+    "padding": 0.25,
+    "shiftX": -109,
+    "shiftY": -74,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                1248,
+                1144,
+                1976,
+                1144
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1976,
+                1144,
+                1976,
+                3432
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1976,
+                3432,
+                1248,
+                3432
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1248,
+                3432,
+                1248,
+                1144
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4368,
+                1144,
+                4992,
+                1144
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4992,
+                1144,
+                4992,
+                3432
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4992,
+                3432,
+                4368,
+                3432
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4368,
+                3432,
+                4264,
+                3432
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4264,
+                3432,
+                4264,
+                1144
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4264,
+                1144,
+                4368,
+                1144
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2119,
+                1651,
+                2054,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2054,
+                1651,
+                2002,
+                1716
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2002,
+                1716,
+                2002,
+                1755
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2002,
+                1755,
+                2093,
+                1781
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2093,
+                1781,
+                2132,
+                1781
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2132,
+                1781,
+                2171,
+                1833
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2171,
+                1833,
+                2171,
+                1885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2171,
+                1885,
+                2184,
+                1937
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2184,
+                1937,
+                2223,
+                1989
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2223,
+                1989,
+                2275,
+                2041
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2275,
+                2041,
+                2379,
+                2093
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2379,
+                2093,
+                2509,
+                2119
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2509,
+                2119,
+                2652,
+                2119
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2652,
+                2119,
+                2756,
+                2106
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2756,
+                2106,
+                2886,
+                2028
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2886,
+                2028,
+                2990,
+                1911
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2990,
+                1911,
+                3029,
+                1794
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3029,
+                1794,
+                3068,
+                1703
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3068,
+                1703,
+                3042,
+                1625
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3042,
+                1625,
+                2964,
+                1495
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2964,
+                1495,
+                2860,
+                1391
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2860,
+                1391,
+                2704,
+                1326
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2704,
+                1326,
+                2535,
+                1326
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2535,
+                1326,
+                2392,
+                1352
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2392,
+                1352,
+                2275,
+                1417
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2275,
+                1417,
+                2197,
+                1495
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2197,
+                1495,
+                2171,
+                1560
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2171,
+                1560,
+                2171,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2171,
+                1651,
+                2119,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2405,
+                1677,
+                2405,
+                1547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2405,
+                1547,
+                2171,
+                1547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2509,
+                1651,
+                2405,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2574,
+                1651,
+                2951,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2951,
+                1651,
+                2951,
+                1781
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2951,
+                1781,
+                2691,
+                1781
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2613,
+                1781,
+                2405,
+                1781
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2405,
+                1755,
+                2405,
+                1885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2405,
+                1885,
+                2171,
+                1885
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2691,
+                1547,
+                2691,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2691,
+                1326,
+                2691,
+                1469
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2405,
+                1677,
+                2405,
+                1755
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2509,
+                1651,
+                2574,
+                1651
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2691,
+                1547,
+                2691,
+                1469
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2613,
+                1781,
+                2691,
+                1781
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2951,
+                1716,
+                3068,
+                1716
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3302,
+                1547,
+                3315,
+                1911
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3315,
+                1911,
+                3367,
+                1989
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3367,
+                1989,
+                3445,
+                2054
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3445,
+                2054,
+                3471,
+                2080
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3471,
+                2080,
+                3562,
+                2106
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3562,
+                2106,
+                3718,
+                2119
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3718,
+                2119,
+                3835,
+                2106
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3835,
+                2106,
+                3900,
+                2106
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3900,
+                2106,
+                3978,
+                2067
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3978,
+                2067,
+                4082,
+                1976
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4082,
+                1976,
+                4147,
+                1859
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4147,
+                1859,
+                4186,
+                1768
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4186,
+                1768,
+                4173,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4173,
+                1651,
+                4134,
+                1534
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4134,
+                1534,
+                4069,
+                1443
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4069,
+                1443,
+                3978,
+                1378
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3978,
+                1378,
+                3913,
+                1339
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3913,
+                1339,
+                3796,
+                1313
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3796,
+                1313,
+                3744,
+                1300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3744,
+                1300,
+                3692,
+                1300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3692,
+                1300,
+                3536,
+                1326
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3536,
+                1326,
+                3445,
+                1391
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3445,
+                1391,
+                3367,
+                1456
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3367,
+                1456,
+                3302,
+                1547
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3523,
+                1469,
+                3523,
+                1339
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3302,
+                1651,
+                3653,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3731,
+                1651,
+                4069,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4134,
+                1651,
+                4173,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3523,
+                1547,
+                3523,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3939,
+                1872,
+                3939,
+                1651
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3939,
+                1781,
+                4186,
+                1781
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3939,
+                1950,
+                3939,
+                1963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4095,
+                1963,
+                3939,
+                1963
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3653,
+                1651,
+                3731,
+                1651
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4069,
+                1651,
+                4134,
+                1651
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3939,
+                1872,
+                3939,
+                1950
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3523,
+                1469,
+                3523,
+                1547
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2834,
+                2717,
+                2899,
+                2717
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2795,
+                3003,
+                2795,
+                3081
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3445,
+                2925,
+                3523,
+                2925
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3757,
+                2925,
+                3835,
+                2925
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3939,
+                2925,
+                3939,
+                3042
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3549,
+                3029,
+                3627,
+                3029
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3523,
+                2925,
+                3757,
+                2925
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3835,
+                2925,
+                4160,
+                2938
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4160,
+                2938,
+                4173,
+                2808
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4173,
+                2808,
+                4108,
+                2665
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4108,
+                2665,
+                4043,
+                2574
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4043,
+                2574,
+                3952,
+                2509
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3952,
+                2509,
+                3848,
+                2470
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3848,
+                2470,
+                3718,
+                2457
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3718,
+                2457,
+                3640,
+                2470
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3640,
+                2470,
+                3510,
+                2496
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3510,
+                2496,
+                3419,
+                2561
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3419,
+                2561,
+                3341,
+                2613
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3341,
+                2613,
+                3302,
+                2691
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3302,
+                2691,
+                3289,
+                3055
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3289,
+                3055,
+                3354,
+                3133
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3354,
+                3133,
+                3393,
+                3172
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3393,
+                3172,
+                3406,
+                3185
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3406,
+                3185,
+                3432,
+                3198
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3432,
+                3198,
+                3549,
+                3250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3549,
+                3250,
+                3601,
+                3263
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3601,
+                3263,
+                3731,
+                3263
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3731,
+                3263,
+                3835,
+                3263
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3835,
+                3263,
+                3939,
+                3224
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3939,
+                3224,
+                4043,
+                3159
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4043,
+                3159,
+                4095,
+                3081
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4095,
+                3081,
+                4160,
+                2951
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                4082,
+                3107,
+                3939,
+                3107
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3939,
+                3107,
+                3939,
+                3042
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3939,
+                3042,
+                3627,
+                3029
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3289,
+                2925,
+                3445,
+                2925
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3653,
+                2925,
+                3653,
+                2457
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3289,
+                3029,
+                3549,
+                3029
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2795,
+                3003,
+                2795,
+                2925
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2795,
+                2925,
+                3029,
+                2925
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3029,
+                2925,
+                3055,
+                2821
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3055,
+                2821,
+                3003,
+                2717
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3003,
+                2717,
+                2951,
+                2600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2951,
+                2600,
+                2886,
+                2548
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2886,
+                2548,
+                2808,
+                2496
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2808,
+                2496,
+                2769,
+                2470
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2769,
+                2470,
+                2613,
+                2457
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2613,
+                2457,
+                2561,
+                2444
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2561,
+                2444,
+                2483,
+                2457
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2483,
+                2457,
+                2483,
+                2834
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2483,
+                2834,
+                2483,
+                2717
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2483,
+                2717,
+                2834,
+                2717
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2899,
+                2717,
+                2977,
+                2717
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2977,
+                2717,
+                3003,
+                2717
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2483,
+                2587,
+                2405,
+                2587
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2405,
+                2587,
+                2314,
+                2613
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2314,
+                2613,
+                2236,
+                2652
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2236,
+                2652,
+                2197,
+                2730
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2197,
+                2730,
+                2171,
+                2795
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2171,
+                2795,
+                2158,
+                2873
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2158,
+                2873,
+                2184,
+                2938
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2184,
+                2938,
+                2210,
+                3003
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2210,
+                3003,
+                2249,
+                3055
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2249,
+                3055,
+                2314,
+                3094
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2314,
+                3094,
+                2405,
+                3120
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2405,
+                3120,
+                2470,
+                3133
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2470,
+                3133,
+                2470,
+                3237
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2470,
+                3237,
+                2535,
+                3276
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2535,
+                3276,
+                2574,
+                3276
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2574,
+                3276,
+                2665,
+                3263
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2665,
+                3263,
+                2756,
+                3237
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2756,
+                3237,
+                2795,
+                3237
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2795,
+                3237,
+                2886,
+                3185
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2886,
+                3185,
+                2951,
+                3107
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2951,
+                3107,
+                3003,
+                3016
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3003,
+                3016,
+                3029,
+                2925
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2795,
+                3081,
+                2795,
+                3107
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2795,
+                3107,
+                2951,
+                3107
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2470,
+                3133,
+                2470,
+                2925
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 4000
+}

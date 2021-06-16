@@ -1,0 +1,439 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 1,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "ai",
+            "ddbId": 103058,
+            "cobaltId": null,
+            "parentId": 711,
+            "contentChunkId": "ddb-missing-ai-103058",
+            "notes": [
+                {
+                    "label": "Ground Floor",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2055,
+                            "bookCode": "ai",
+                            "slug": "darkness-at-the-lighthouse#SilentSoundLighthouse",
+                            "contentChunkId": "4e4e9903-7103-4223-9f2c-a5a7aa3812e0",
+                            "userData": {
+                                "userDisplayName": "Pariah_Zero"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 711,
+                            "linkId": "oqPldE4LNeNOtDr9"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2947.6153004227053,
+                            "y": 2205.963730374396
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": [
+                {
+                    "_id": "b3LxuJ7UKdyDE3wR",
+                    "name": "Patsy McRoyne",
+                    "width": 1,
+                    "height": 1,
+                    "scale": 1,
+                    "x": 2952,
+                    "y": 2214,
+                    "disposition": -1,
+                    "flags": {
+                        "perfect-vision": {
+                            "visionRules": "default",
+                            "monoVisionColor": "",
+                            "sightLimit": null
+                        },
+                        "ddbActorFlags": {
+                            "id": 16871,
+                            "entityTypeId": 779871897,
+                            "creatureGroup": null,
+                            "creatureFlags": []
+                        }
+                    },
+                    "actorLink": false,
+                    "bar1": {
+                        "attribute": "attributes.hp"
+                    },
+                    "elevation": 0,
+                    "hidden": false,
+                    "lightAlpha": 1,
+                    "lightAngle": 360,
+                    "lightAnimation": {
+                        "speed": 5,
+                        "intensity": 5
+                    },
+                    "tint": null,
+                    "actorData": {
+                        "name": "Patsy McRoyne"
+                    }
+                }
+            ]
+        },
+        "stairways": [],
+        "perfect-vision": {
+            "sightLimit": null,
+            "daylightColor": "",
+            "darknessColor": "",
+            "forceSaturation": false,
+            "saturation": 0
+        },
+        "dynamic-illumination": {
+            "_animating": false,
+            "darknessColor": "#110033"
+        }
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 123,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3600,
+    "initial": {
+        "x": 2735,
+        "y": 2011,
+        "scale": 0.83
+    },
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 30,
+            "darknessThreshold": 0,
+            "dim": 60,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 2091,
+            "y": 1968,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": true
+        },
+        {
+            "angle": 360,
+            "bright": 30,
+            "darknessThreshold": 0,
+            "dim": 60,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.25,
+            "x": 3075,
+            "y": 1968,
+            "lightAnimation": {
+                "type": "torch",
+                "speed": 1,
+                "intensity": 1
+            },
+            "hidden": true
+        },
+        {
+            "angle": 360,
+            "bright": 50,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "g",
+            "tintAlpha": 0.25,
+            "x": 2583,
+            "y": 1415,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        },
+        {
+            "angle": 360,
+            "bright": 50,
+            "darknessThreshold": 0,
+            "dim": 50,
+            "rotation": 0,
+            "t": "g",
+            "tintAlpha": 0.25,
+            "x": 2583,
+            "y": 2645,
+            "lightAnimation": {
+                "speed": 5,
+                "intensity": 5
+            },
+            "hidden": false
+        }
+    ],
+    "name": "Silent Sound Lighthouse (Ground)",
+    "navName": "Silent Sound Lighthouse",
+    "shiftX": 38,
+    "shiftY": -55,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                2075,
+                1460,
+                2578,
+                1459
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2589,
+                1459,
+                3090,
+                1460
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3090,
+                1460,
+                3090,
+                2460
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3090,
+                2460,
+                2644,
+                2460
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2644,
+                2460,
+                2521,
+                2460
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2521,
+                2460,
+                2075,
+                2460
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2075,
+                2460,
+                2075,
+                1460
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2706,
+                1968,
+                2706,
+                1921
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2706,
+                1921,
+                2675,
+                1860
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2675,
+                1860,
+                2629,
+                1829
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2629,
+                1829,
+                2583,
+                1829
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2583,
+                1829,
+                2552,
+                1829
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2552,
+                1829,
+                2521,
+                1845
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2521,
+                1845,
+                2475,
+                1875
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2475,
+                1875,
+                2460,
+                1921
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2460,
+                1921,
+                2444,
+                1968
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2444,
+                1968,
+                2460,
+                1998
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2460,
+                1998,
+                2475,
+                2029
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2475,
+                2029,
+                2490,
+                2060
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2490,
+                2060,
+                2536,
+                2075
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2536,
+                2075,
+                2583,
+                2091
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        }
+    ],
+    "weather": "",
+    "width": 5400
+}

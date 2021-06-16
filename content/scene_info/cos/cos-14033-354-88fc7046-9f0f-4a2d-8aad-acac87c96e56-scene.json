@@ -1,0 +1,3269 @@
+{
+    "backgroundColor": "#333333",
+    "darkness": 0.6,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "cos",
+            "ddbId": 14033,
+            "cobaltId": null,
+            "parentId": 354,
+            "contentChunkId": "88fc7046-9f0f-4a2d-8aad-acac87c96e56",
+            "notes": [
+                {
+                    "label": "N2a. Well",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2518,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "497619bf-73fb-4db7-8bbc-00fd82353bec",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "KMYT6A5NqlIciaUg"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2437.5,
+                            "y": 3862.5
+                        }
+                    ]
+                },
+                {
+                    "label": "N2b. Outside Staircase",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2520,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "8f4a63c1-bac9-4edd-b815-e3d9c8d2d739",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "D1KBDC3ABBkrupQI"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2362.5,
+                            "y": 3375
+                        }
+                    ]
+                },
+                {
+                    "label": "N2c. Taproom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2537,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "bfff6fd4-6dc5-45a3-8674-7e6ead646687",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "CJRnbJBN7uTB6fvr"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1950,
+                            "y": 3562.5
+                        }
+                    ]
+                },
+                {
+                    "label": "N2d. Wine Storage",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2542,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "3f779e14-0c0b-4588-8a39-8dc3a607b2c4",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "3MvKWrx4CIk0pNY2"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1762.5,
+                            "y": 3712.5
+                        }
+                    ]
+                },
+                {
+                    "label": "N2e. Kitchen",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2546,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "415f9634-e76a-4bda-bbe7-11dcfd396d15",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "So9Xr8QRSsZ4S8iX"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1725,
+                            "y": 3375
+                        }
+                    ]
+                },
+                {
+                    "label": "N2f. Stable",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2551,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "486f7394-e398-4ac5-8974-7062154dd47b",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "KsjwcNPhFwHOrT3q"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1387.5,
+                            "y": 3675
+                        }
+                    ]
+                },
+                {
+                    "label": "N2g. Storage",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2553,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "1cb53647-bdbb-42d1-8180-e6c49c5208e6",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "vYow07e7ua6qqO4L"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1687.5,
+                            "y": 3750
+                        }
+                    ]
+                },
+                {
+                    "label": "N2h. Ravens’ Loft",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2558,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "741c1d28-137c-4f05-8adf-448ed5da8fad",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "bl63jhTCnnF61EE3"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1575,
+                            "y": 2625
+                        }
+                    ]
+                },
+                {
+                    "label": "N2i. Secret Stairs and Hall",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2562,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "d7e476be-9c7d-4274-bd1b-d129246deb72",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "LftkZgmw6dGM6Ay2"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1687.5,
+                            "y": 2812.5
+                        }
+                    ]
+                },
+                {
+                    "label": "N2j. Great Balcony",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2566,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "dafcb4fc-0db8-4b43-a0bc-dc75a5b2e84e",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "IX9Y3RmR2S1XimWD"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1912.5,
+                            "y": 2550
+                        }
+                    ]
+                },
+                {
+                    "label": "N2k. Guest Balcony",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2569,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "89ee9c88-8942-40af-b24f-ceed2034657d",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "04jceT2Vgoc5ZPXi"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2287.5,
+                            "y": 2700
+                        }
+                    ]
+                },
+                {
+                    "label": "N2l. Guest Rooms",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2573,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "41c9f7cc-feee-4ead-aa4a-fa29bd44ab36",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "hVJ40DO6PhCcI8sZ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2437.5,
+                            "y": 2662.5
+                        },
+                        {
+                            "x": 2437.5,
+                            "y": 2887.5
+                        }
+                    ]
+                },
+                {
+                    "label": "N2m. Guest Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2576,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "957b00c5-e066-4b13-80ed-3c5453121c72",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "aRFu7CEksBYSD3TU"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2250,
+                            "y": 2925
+                        }
+                    ]
+                },
+                {
+                    "label": "N2n. Private Guest Room",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2583,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "14535193-975f-4f68-87ae-2391125353d8",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "YXw7J5EfC8ULUq1X"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1875,
+                            "y": 2925
+                        }
+                    ]
+                },
+                {
+                    "label": "N2o. Boys’ Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2589,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "e58ef017-19a1-490d-bf88-29b25a4ec6d6",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "Y0sF0FHBmfNFNx81"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1800,
+                            "y": 2662.5
+                        }
+                    ]
+                },
+                {
+                    "label": "N2p. Master Bedroom",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2594,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "979e8058-8b17-4b81-b00c-d63ff9e2ad3d",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "rpGc8KgoLavdj7Ge"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1800,
+                            "y": 2400
+                        }
+                    ]
+                },
+                {
+                    "label": "N2q. Secret Attic",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2600,
+                            "bookCode": "cos",
+                            "slug": "the-town-of-vallaki#AreasofVallaki",
+                            "contentChunkId": "5891e4ba-acb9-47dc-9490-0123ec6f89d6",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 354,
+                            "linkId": "IHL3a57hQpC0vkSl"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1800,
+                            "y": 1500
+                        }
+                    ]
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 75,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 3333,
+    "initial": {
+        "x": 1664,
+        "y": 3759,
+        "scale": 0.53
+    },
+    "lights": [
+        {
+            "angle": 360,
+            "bright": 20,
+            "darknessThreshold": 0,
+            "dim": 40,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1762,
+            "y": 3300
+        },
+        {
+            "angle": 360,
+            "bright": 20,
+            "darknessThreshold": 0,
+            "dim": 40,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1762,
+            "y": 2250
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1677,
+            "y": 2455
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2512,
+            "y": 2662
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2518,
+            "y": 2894
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2277,
+            "y": 2951
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 20,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1920,
+            "y": 2971
+        },
+        {
+            "angle": 360,
+            "bright": 20,
+            "darknessThreshold": 0,
+            "dim": 40,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2100,
+            "y": 3600
+        },
+        {
+            "angle": 360,
+            "bright": 20,
+            "darknessThreshold": 0,
+            "dim": 40,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1800,
+            "y": 3412
+        },
+        {
+            "angle": 360,
+            "bright": 20,
+            "darknessThreshold": 0,
+            "dim": 40,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 1912,
+            "y": 3750
+        },
+        {
+            "angle": 360,
+            "bright": 10,
+            "darknessThreshold": 0,
+            "dim": 24,
+            "rotation": 0,
+            "t": "l",
+            "tintAlpha": 0.49,
+            "x": 2100,
+            "y": 2587
+        }
+    ],
+    "name": "Blue Water Inn",
+    "navName": "Blue Water Inn",
+    "shiftX": -25,
+    "shiftY": -24,
+    "tokenVision": true,
+    "walls": [
+        {
+            "c": [
+                768,
+                984,
+                3065,
+                984
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3065,
+                984,
+                3065,
+                4190
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3065,
+                4190,
+                768,
+                4190
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                768,
+                4190,
+                768,
+                984
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                768,
+                3150,
+                3065,
+                3150
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                3056,
+                2100,
+                768,
+                2100
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                1275,
+                1875,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                1275,
+                1875,
+                1800
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                1800,
+                1725,
+                1800
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                1800,
+                1725,
+                1275
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                984,
+                3796,
+                1087,
+                3975
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1087,
+                3975,
+                975,
+                4040
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                975,
+                4040,
+                871,
+                3862
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                871,
+                3862,
+                984,
+                3796
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1809,
+                4040,
+                1790,
+                4040
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1790,
+                4040,
+                1790,
+                4059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1790,
+                4059,
+                1809,
+                4059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1809,
+                4059,
+                1809,
+                4040
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1959,
+                4040,
+                1940,
+                4040
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1940,
+                4040,
+                1940,
+                4059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1940,
+                4059,
+                1959,
+                4059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1959,
+                4059,
+                1959,
+                4040
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2106,
+                4037,
+                2087,
+                4037
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2087,
+                4037,
+                2087,
+                4056
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2087,
+                4056,
+                2106,
+                4056
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2106,
+                4056,
+                2106,
+                4037
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2259,
+                4038,
+                2240,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2240,
+                4038,
+                2240,
+                4057
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2240,
+                4057,
+                2259,
+                4057
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2259,
+                4057,
+                2259,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2407,
+                4040,
+                2388,
+                4040
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2388,
+                4040,
+                2388,
+                4059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2388,
+                4059,
+                2407,
+                4059
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2407,
+                4059,
+                2407,
+                4040
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2558,
+                4038,
+                2539,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2539,
+                4038,
+                2539,
+                4057
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2539,
+                4057,
+                2558,
+                4057
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2558,
+                4057,
+                2558,
+                4038
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2558,
+                3888,
+                2539,
+                3888
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2539,
+                3888,
+                2539,
+                3907
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2539,
+                3907,
+                2558,
+                3907
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2558,
+                3907,
+                2558,
+                3888
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2557,
+                3588,
+                2538,
+                3588
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2538,
+                3588,
+                2538,
+                3607
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2538,
+                3607,
+                2557,
+                3607
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2557,
+                3607,
+                2557,
+                3588
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2407,
+                3590,
+                2388,
+                3590
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2388,
+                3590,
+                2388,
+                3609
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2388,
+                3609,
+                2407,
+                3609
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2407,
+                3609,
+                2407,
+                3590
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1275,
+                3450,
+                1275,
+                3609
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1275,
+                3609,
+                1256,
+                3609
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1256,
+                3675,
+                1256,
+                3740
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1256,
+                3740,
+                1275,
+                3740
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1275,
+                3740,
+                1275,
+                3900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1275,
+                3900,
+                1425,
+                3900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1425,
+                3900,
+                1500,
+                3900
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1500,
+                3900,
+                1650,
+                3900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                3900,
+                1668,
+                3900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                3900,
+                1781,
+                3900
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1781,
+                3900,
+                2025,
+                3900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2025,
+                3900,
+                2025,
+                3928
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2025,
+                3928,
+                2025,
+                3956
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2025,
+                3956,
+                2025,
+                3975
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2025,
+                3975,
+                2043,
+                3975
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2043,
+                3975,
+                2081,
+                3975
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2081,
+                3975,
+                2118,
+                3975
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2118,
+                3975,
+                2156,
+                3975
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2156,
+                3975,
+                2175,
+                3975
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2175,
+                3975,
+                2175,
+                3956
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2175,
+                3956,
+                2175,
+                3918
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2175,
+                3918,
+                2175,
+                3900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2175,
+                3900,
+                2250,
+                3900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                3900,
+                2250,
+                3881
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                3881,
+                2250,
+                3853
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2250,
+                3853,
+                2250,
+                3825
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                3825,
+                2325,
+                3825
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                3825,
+                2325,
+                3806
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                3806,
+                2325,
+                3750
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                3693,
+                2325,
+                3675
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                3675,
+                2250,
+                3675
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                3675,
+                2250,
+                3656
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                3656,
+                2250,
+                3618
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2250,
+                3618,
+                2250,
+                3600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                3600,
+                2250,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                3300,
+                2231,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2231,
+                3300,
+                2193,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2193,
+                3300,
+                1950,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1950,
+                3300,
+                1931,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1931,
+                3300,
+                1893,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1893,
+                3300,
+                1856,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1856,
+                3300,
+                1818,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1818,
+                3300,
+                1790,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1790,
+                3300,
+                1790,
+                3271
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1790,
+                3271,
+                1734,
+                3271
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1734,
+                3271,
+                1734,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1734,
+                3300,
+                1706,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1706,
+                3300,
+                1668,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1668,
+                3300,
+                1650,
+                3300
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                3300,
+                1650,
+                3328
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                3328,
+                1650,
+                3356
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1650,
+                3356,
+                1650,
+                3384
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                3384,
+                1650,
+                3440
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                3440,
+                1650,
+                3450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                3450,
+                1500,
+                3450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1500,
+                3450,
+                1425,
+                3450
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1425,
+                3450,
+                1275,
+                3450
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                3450,
+                1650,
+                3684
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                3684,
+                1650,
+                3740
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                3740,
+                1650,
+                3750
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                3750,
+                1631,
+                3750
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1631,
+                3750,
+                1518,
+                3750
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1518,
+                3750,
+                1500,
+                3750
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1500,
+                3750,
+                1500,
+                3900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                3900,
+                1650,
+                3750
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1425,
+                3900,
+                1425,
+                3750
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1425,
+                3750,
+                1406,
+                3750
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1406,
+                3750,
+                1293,
+                3750
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1293,
+                3750,
+                1275,
+                3750
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1425,
+                3450,
+                1425,
+                3600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1425,
+                3600,
+                1406,
+                3600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1406,
+                3600,
+                1293,
+                3600
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1293,
+                3600,
+                1275,
+                3600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1500,
+                3450,
+                1500,
+                3600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1500,
+                3600,
+                1518,
+                3600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1518,
+                3600,
+                1631,
+                3600
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1631,
+                3600,
+                1650,
+                3600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1950,
+                3300,
+                1950,
+                3525
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1950,
+                3525,
+                1875,
+                3525
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                3525,
+                1800,
+                3525
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1800,
+                3525,
+                1725,
+                3525
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                3525,
+                1650,
+                3525
+            ],
+            "door": 2,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                3525,
+                1725,
+                3675
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                3675,
+                1725,
+                3825
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                3825,
+                1650,
+                3825
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                3675,
+                1650,
+                3675
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                3525,
+                1875,
+                3675
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                3675,
+                1800,
+                3675
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                3750,
+                1800,
+                3750
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                3825,
+                1800,
+                3825
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1800,
+                3675,
+                1800,
+                3900
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 0,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                3600,
+                2325,
+                3600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2568,
+                3150,
+                2465,
+                3262
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2465,
+                3262,
+                2596,
+                3384
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2596,
+                3384,
+                2746,
+                3225
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2746,
+                3225,
+                2662,
+                3150
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2325,
+                3300,
+                2325,
+                3600
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2175,
+                3375,
+                1950,
+                3375
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1275,
+                2400,
+                1275,
+                2493
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1275,
+                2493,
+                1275,
+                2531
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1275,
+                2531,
+                1275,
+                2718
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1275,
+                2718,
+                1275,
+                2756
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1275,
+                2756,
+                1275,
+                2850
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1275,
+                2850,
+                1668,
+                2850
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1668,
+                2850,
+                1715,
+                2850
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1715,
+                2850,
+                1800,
+                2850
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1800,
+                2850,
+                1800,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1800,
+                3000,
+                1818,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1818,
+                3000,
+                1856,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1856,
+                3000,
+                1968,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1968,
+                3000,
+                2006,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2006,
+                3000,
+                2118,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2118,
+                3000,
+                2156,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2156,
+                3000,
+                2268,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2268,
+                3000,
+                2306,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2306,
+                3000,
+                2418,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2418,
+                3000,
+                2456,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2456,
+                3000,
+                2550,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2550,
+                3000,
+                2550,
+                2906
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2550,
+                2906,
+                2550,
+                2868
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2550,
+                2868,
+                2550,
+                2681
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2550,
+                2681,
+                2550,
+                2643
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2550,
+                2643,
+                2550,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2550,
+                2550,
+                2456,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2456,
+                2550,
+                2418,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2418,
+                2550,
+                2325,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                2550,
+                2250,
+                2550
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                2550,
+                2250,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                2250,
+                1940,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1940,
+                2250,
+                1903,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1903,
+                2250,
+                1856,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1856,
+                2250,
+                1818,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1818,
+                2250,
+                1793,
+                2249
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1793,
+                2249,
+                1793,
+                2222
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1793,
+                2222,
+                1734,
+                2221
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1734,
+                2221,
+                1734,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1734,
+                2250,
+                1706,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1706,
+                2250,
+                1668,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1668,
+                2250,
+                1650,
+                2250
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                2250,
+                1650,
+                2268
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                2268,
+                1650,
+                2306
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                1650,
+                2550,
+                1650,
+                2850
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1275,
+                2400,
+                1650,
+                2400
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                2550,
+                2325,
+                2625
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                2625,
+                2325,
+                2700
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                2700,
+                2325,
+                2775
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                2775,
+                2325,
+                2850
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                2850,
+                2325,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                2850,
+                2250,
+                2850
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2250,
+                2850,
+                1950,
+                2850
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1950,
+                2850,
+                1875,
+                2850
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                2850,
+                1800,
+                2850
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1950,
+                2850,
+                1950,
+                3000
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                2850,
+                1875,
+                2775
+            ],
+            "door": 2,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                2700,
+                1875,
+                2625
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                2625,
+                1875,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                2550,
+                1875,
+                2325
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                2325,
+                1875,
+                2250
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1875,
+                2550,
+                1650,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                2550,
+                1725,
+                2775
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                2775,
+                1875,
+                2775
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1950,
+                2325,
+                1950,
+                2850
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1950,
+                2325,
+                2175,
+                2325
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1875,
+                2775,
+                1875,
+                2700
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                2250,
+                2325,
+                2550
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                2250,
+                2550,
+                2250,
+                2850
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 0
+        },
+        {
+            "c": [
+                1256,
+                3675,
+                1256,
+                3609
+            ],
+            "door": 1,
+            "ds": 2,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                2475,
+                1650,
+                2306
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1650,
+                2550,
+                1650,
+                2475
+            ],
+            "door": 2,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                1725,
+                3900,
+                1668,
+                3900
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                2325,
+                3750,
+                2325,
+                3693
+            ],
+            "door": 1,
+            "ds": 0,
+            "move": 1,
+            "sense": 1
+        },
+        {
+            "c": [
+                927,
+                3827,
+                1033,
+                4008
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        },
+        {
+            "c": [
+                2681,
+                3168,
+                2529,
+                3326
+            ],
+            "door": 0,
+            "ds": 0,
+            "move": 1,
+            "sense": 2
+        }
+    ],
+    "weather": "",
+    "width": 2424
+}

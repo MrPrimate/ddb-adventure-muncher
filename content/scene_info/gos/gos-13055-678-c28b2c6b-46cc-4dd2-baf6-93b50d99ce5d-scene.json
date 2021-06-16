@@ -1,0 +1,40 @@
+{
+    "backgroundColor": "#333333",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "gos",
+            "ddbId": 13055,
+            "cobaltId": null,
+            "parentId": 678,
+            "contentChunkId": "c28b2c6b-46cc-4dd2-baf6-93b50d99ce5d",
+            "notes": [],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 100,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 1425,
+    "initial": {
+        "x": 1800,
+        "y": 1173,
+        "scale": 0.56
+    },
+    "lights": [],
+    "name": "Firewatch Island",
+    "navName": "Firewatch Island",
+    "shiftX": 0,
+    "shiftY": 0,
+    "tokenVision": false,
+    "walls": [],
+    "weather": "",
+    "width": 2063
+}

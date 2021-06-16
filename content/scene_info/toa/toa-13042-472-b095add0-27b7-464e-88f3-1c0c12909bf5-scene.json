@@ -1,0 +1,679 @@
+{
+    "backgroundColor": "#999999",
+    "darkness": 0,
+    "drawings": [
+        {
+            "_id": "Uj8wGMU7V32GlUjp",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 1357,
+            "y": 1947,
+            "width": 206.5,
+            "height": 118,
+            "rotation": 0,
+            "z": 0,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 2,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Open to \n12 below",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 60,
+            "textColor": "#0d0c0c",
+            "textAlpha": 1,
+            "id": "Uj8wGMU7V32GlUjp"
+        },
+        {
+            "_id": "UELBdwELO2nAfQjG",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 1607,
+            "y": 1983,
+            "width": 21,
+            "height": 67,
+            "rotation": 0,
+            "z": 1,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 0,
+            "strokeColor": "#000000",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 60,
+            "textColor": "#f70202",
+            "textAlpha": 1
+        },
+        {
+            "_id": "RvyuEniwFPrOWH1q",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2773,
+            "y": 2094.5,
+            "width": 206.5,
+            "height": 118,
+            "rotation": 0,
+            "z": 0,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 2,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Open to \n12 below",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 60,
+            "textColor": "#0d0c0c",
+            "textAlpha": 1
+        },
+        {
+            "_id": "kH0xPYJUru2OuEDn",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 2006,
+            "y": 1534,
+            "width": 46,
+            "height": 69,
+            "rotation": 0,
+            "z": 2,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 2,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "T",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 60,
+            "textColor": "#eb0505",
+            "textAlpha": 1
+        },
+        {
+            "_id": "pyQlMZoaaK2g0GfV",
+            "flags": {
+                "furnace": {
+                    "textureWidth": 0,
+                    "textureHeight": 0,
+                    "textureAlpha": 1,
+                    "fillType": null
+                }
+            },
+            "type": "t",
+            "author": "5gQjkJmdb1dW768F",
+            "x": 4012,
+            "y": 1268.5,
+            "width": 236,
+            "height": 38,
+            "rotation": 270,
+            "z": 3,
+            "hidden": true,
+            "locked": false,
+            "points": [],
+            "bezierFactor": 0,
+            "fillType": 1,
+            "fillColor": "#000000",
+            "fillAlpha": 0,
+            "strokeWidth": 2,
+            "strokeColor": "#f2f2f2",
+            "strokeAlpha": 1,
+            "texture": "",
+            "text": "Hrakhamar -->",
+            "fontFamily": "\"Arial Black\", Gadget, sans-serif",
+            "fontSize": 60,
+            "textColor": "#0d0c0c",
+            "textAlpha": 1,
+            "id": "pyQlMZoaaK2g0GfV"
+        }
+    ],
+    "flags": {
+        "ddb": {
+            "bookCode": "toa",
+            "ddbId": 13042,
+            "cobaltId": null,
+            "parentId": 472,
+            "contentChunkId": "b095add0-27b7-464e-88f3-1c0c12909bf5",
+            "notes": [
+                {
+                    "label": "01. Office",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3140,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "ec81265d-64c0-4c5c-8ffa-7ceb1538e8d7",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "SBxw2ZVR2Kufz8i6"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1268.5,
+                            "y": 2802.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "02. Supply Shed",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3144,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "f24651c5-862d-4b2e-83c6-9b6a728bc508",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "ooN0gjHiyrATaV07"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1681.5,
+                            "y": 2802.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "03. Ore Cart",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3147,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "34c7022e-757f-4683-88cd-b99e54560ae1",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "WalaTODalngStzfr"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1504.5,
+                            "y": 2625.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "04. Upper Shaft",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3150,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "7aa68977-9142-4cd0-8cad-c89e208ef2a9",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "MfWnvWZzbQBSPFjI"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1504.5,
+                            "y": 2094.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "05. Haunted Forge",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3154,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "85fca082-5038-4c7f-a43a-fc2db5fa5bf2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "R4gMnigdJAZ2iAJI"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1445.5,
+                            "y": 1445.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06A. Ledge",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3156,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "552dbf67-eac9-464a-a5a1-5868f86b648d",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "WeGJl5XY7m9nPDyx"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1681.5,
+                            "y": 1445.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06B. Egg Nursery",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3159,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "e3922f8a-fe1e-49e4-9cf2-88c394f00dbd",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "mjcm1k0NRxxarssL"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1976.5,
+                            "y": 1327.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "06C. Rolling Stone Trap",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3161,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "b1cff76f-9e73-40bf-8d86-8a6c2e9e5d54",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "SbLDXTCNqKpybmon"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2153.5,
+                            "y": 1563.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "07. Upper Landing",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3164,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "e491227d-0b51-4898-8a94-03f0d976ba42",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "IXXL3tIF6qzH4iRu"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2094.5,
+                            "y": 2212.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "08. Main Living Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3169,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "0c48278c-b650-4a9b-87fb-bd7e865985f2",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "P9xvfHZORPiacFgt"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2861.5,
+                            "y": 2684.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "09. Inventors’ Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3171,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "e56cf093-e2d9-42d6-9ace-721532b4399e",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "FtwWYQSryugO8FMe"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2389.5,
+                            "y": 2684.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "10. Big Smash",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3175,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "56e152e6-a495-4813-85d8-e8d4a17ad613",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "saWE2cND4RdGVrHB"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2330.5,
+                            "y": 1858.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "11. Urds’ Quarters",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3178,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "a9c9aaf7-d56a-43c9-b691-33f7b5267389",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "X3o8IFV3SAxuC5Lv"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2684.5,
+                            "y": 1386.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "12. Bottom of the Shaft",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3183,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "c8406fac-e22e-4b25-83dd-8afaeed32234",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "3xWaaESBYrvYdNNd"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3923.5,
+                            "y": 2094.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "13. Audience Chamber",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3187,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "f2262a7a-f2fd-47bc-9a5e-476274e0601c",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "KHnKfFskK6Kdbsza"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3569.5,
+                            "y": 2625.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "14. Tinder’s Lair",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 3193,
+                            "bookCode": "toa",
+                            "slug": "the-land-of-chult#LocationsinChult",
+                            "contentChunkId": "4f11335c-2792-4861-85b0-23f875003e57",
+                            "userData": {
+                                "userDisplayName": "michaelko777"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 472,
+                            "linkId": "POFPfqPrwoNsg7fO"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 3923.5,
+                            "y": 2625.5
+                        }
+                    ],
+                    "iconSize": 44,
+                    "iconTint": "",
+                    "textColor": "",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": false,
+    "globalLightThreshold": null,
+    "grid": 59,
+    "gridDistance": 5,
+    "gridType": 1,
+    "gridUnits": "ft",
+    "height": 2470,
+    "initial": null,
+    "lights": [],
+    "name": "Wyrmheart Mine",
+    "navName": "Wyrmheart Mine",
+    "shiftX": -12,
+    "shiftY": 2,
+    "tokenVision": true,
+    "walls": [],
+    "weather": "",
+    "width": 3575
+}

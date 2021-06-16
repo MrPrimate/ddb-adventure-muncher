@@ -1,0 +1,705 @@
+{
+    "backgroundColor": "#333333",
+    "darkness": 0,
+    "drawings": [],
+    "flags": {
+        "ddb": {
+            "bookCode": "skt",
+            "ddbId": 11016,
+            "cobaltId": null,
+            "parentId": 368,
+            "contentChunkId": "8a5ea5ee-8225-42ca-90d2-d5ee6d66f15b",
+            "notes": [
+                {
+                    "label": "G01. Gatehouse",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2020,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "ef4f5827-6d5f-4986-8056-f43c2fabb29b",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "KCYPFH85WMPpMTO4"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1216,
+                            "y": 3344
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G02. Watch Posts",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2025,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "abb2ce5b-0646-4ba1-af6d-6a86976c9172",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "LBZ1fOllp2BS8fVJ"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1292,
+                            "y": 3458
+                        },
+                        {
+                            "x": 1026,
+                            "y": 3230
+                        },
+                        {
+                            "x": 722,
+                            "y": 2926
+                        },
+                        {
+                            "x": 836,
+                            "y": 2622
+                        },
+                        {
+                            "x": 950,
+                            "y": 2318
+                        },
+                        {
+                            "x": 836,
+                            "y": 2090
+                        },
+                        {
+                            "x": 722,
+                            "y": 1862
+                        },
+                        {
+                            "x": 950,
+                            "y": 1558
+                        },
+                        {
+                            "x": 1178,
+                            "y": 1330
+                        },
+                        {
+                            "x": 1634,
+                            "y": 1482
+                        },
+                        {
+                            "x": 2242,
+                            "y": 1748
+                        },
+                        {
+                            "x": 2774,
+                            "y": 1976
+                        },
+                        {
+                            "x": 2546,
+                            "y": 2394
+                        },
+                        {
+                            "x": 2470,
+                            "y": 2888
+                        },
+                        {
+                            "x": 2546,
+                            "y": 3458
+                        },
+                        {
+                            "x": 2280,
+                            "y": 3800
+                        },
+                        {
+                            "x": 1672,
+                            "y": 3800
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G03. Earth Mother’s Bounty",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2027,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "f84f1398-0f3c-4c49-98fc-3943965149c7",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "k1mKysCWztCUzxMD"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1330,
+                            "y": 3306
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G04. Grain Towers",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2029,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "9dee4445-212c-471a-90bd-d1e4dae90aad",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "n2gtR6hJPcIcMfWu"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1672,
+                            "y": 3420
+                        },
+                        {
+                            "x": 2204,
+                            "y": 3268
+                        },
+                        {
+                            "x": 1330,
+                            "y": 2584
+                        },
+                        {
+                            "x": 1368,
+                            "y": 1900
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G05. Livestock Fields",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2032,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "0cd70615-f231-4199-86a7-997bb95d86dc",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "6t8IInzBRrA5AoFh"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1520,
+                            "y": 3230
+                        },
+                        {
+                            "x": 1634,
+                            "y": 2774
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G06. Town",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2036,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "87460b29-a381-44fb-bbfd-2c987fe33b68",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "nYuWf940cjG4rqQ6"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1824,
+                            "y": 3040
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G07. Harvesthome Abbey",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2041,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "bc26f912-3383-44ae-a19d-83de0e3d0bab",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "1YP9PwmTwmiciu36"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1900,
+                            "y": 3192
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G08. Northfurrow’s End",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2048,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "d521c434-cf1e-4b42-87ec-16a4b637a9e4",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "u6Lm0PlVixFF3x9H"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1976,
+                            "y": 2698
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G09. Goldengulp Brewery",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2051,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "6a0294d9-75ae-49e5-b3b0-b5a72dbf8389",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "72FTQQ9ATX4SUzxW"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1672,
+                            "y": 2166
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G10. Freshwater Spring",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2053,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "47b57885-0caa-4569-9d5c-379ca64637f7",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "oydOmEZgtg3EOoYz"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1520,
+                            "y": 2052
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G11. Rice Paddies",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2055,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "1c94b1b2-8c27-4442-a7d7-42962f642a6a",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "XcPGihGW6xYjQfdp"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2318,
+                            "y": 2090
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G12. Vegetable Gardens",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2057,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "55a6dbc8-ef05-4a99-8189-186665931b5f",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "vtm2XSHiJPZ8oAY1"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 2090,
+                            "y": 2546
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G13. Wheat Fields",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2059,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "c3164c86-bd4f-4b5a-805f-81f2a3907a85",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "6PpnUxaXI7acJV5A"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1330,
+                            "y": 2850
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G14. Herb Gardens",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2061,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "081f232a-b5a8-4a48-9b2f-1c08e88ceb6f",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "lNTdbfk9QckpLYfo"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 912,
+                            "y": 2812
+                        },
+                        {
+                            "x": 1026,
+                            "y": 2508
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G15. Orange Orchard",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2063,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "f30c2cf6-f295-4d85-bdb1-885f5151a3fa",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "DNyQVP2CMn4v4br6"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1368,
+                            "y": 2204
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G16. Apple Orchard",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2065,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "db059ab9-02f5-4896-85b4-67dfd06c8dc6",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "PfHGOl5cHVwy2Xu8"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1710,
+                            "y": 1824
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G17. Corn Field",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2067,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "7c56d19c-e9bc-4db8-b0e4-d2faaf0c3378",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "IbqzV7nlpYpqX9Ts"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1330,
+                            "y": 1634
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G18. Barley Field",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2069,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "29f474e1-1327-43d4-ba00-975dd79422a1",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "jIoLUBpDBG3vIkV8"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 912,
+                            "y": 1710
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G19. Hops Field",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2071,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "97bc4441-56f8-41e7-af7d-38da098986f8",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "I0HK6H76cyk6pm0A"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1026,
+                            "y": 1900
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                },
+                {
+                    "label": "G20. Pumpkin Patch",
+                    "flags": {
+                        "ddb": {
+                            "cobaltId": null,
+                            "ddbId": 2081,
+                            "bookCode": "skt",
+                            "slug": "rumblings#Goldenfields",
+                            "contentChunkId": "f277afb1-92c8-42ee-8de0-f408ac2cf087",
+                            "userData": {
+                                "userDisplayName": "MrZwij"
+                            },
+                            "note": true,
+                            "img": false,
+                            "parentId": 368,
+                            "linkId": "t0fxRQphBj5QmYUc"
+                        }
+                    },
+                    "positions": [
+                        {
+                            "x": 1140,
+                            "y": 2052
+                        }
+                    ],
+                    "iconSize": 40,
+                    "iconTint": null,
+                    "textColor": "#FFFFFF",
+                    "textAnchor": 1
+                }
+            ],
+            "tokens": []
+        },
+        "stairways": [],
+        "perfect-vision": [],
+        "dynamic-illumination": []
+    },
+    "globalLight": true,
+    "globalLightThreshold": null,
+    "grid": 76,
+    "gridDistance": 0.25,
+    "gridType": 1,
+    "gridUnits": "mi",
+    "height": 3289,
+    "initial": {
+        "x": 1771,
+        "y": 2172,
+        "scale": 0.4
+    },
+    "lights": [],
+    "name": "Map 2.2: Goldenfields",
+    "navName": "Goldenfields",
+    "shiftX": 58,
+    "shiftY": 0,
+    "tokenVision": false,
+    "walls": [],
+    "weather": "",
+    "width": 2385
+}
