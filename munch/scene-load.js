@@ -5,6 +5,7 @@ const utils = require("./utils.js");
 const _ = require("lodash");
 const fs = require("fs");
 const path = require("path");
+const glob = require("glob");
 const { exit } = require("process");
 
 var sceneDir = path.join("..", "content", "scene_info");
@@ -15,12 +16,17 @@ function setSceneDir (dir) {
 
 function getSceneAdjustments(bookCode) {
   let scenesData = [];
-  const sceneDataFile = path.join(sceneDir, `${bookCode}.json`);
-  const sceneDataPath = path.resolve(__dirname, sceneDataFile);
 
-  if (fs.existsSync(sceneDataPath)){
-    scenesData = utils.loadJSONFile(sceneDataPath);
-  }
+  const jsonFiles = path.join(sceneDir, bookCode, "*.json");
+
+  glob.sync(jsonFiles).forEach((sceneDataFile) => {
+    console.log(`Loading ${sceneDataFile}`);
+    const sceneDataPath = path.resolve(__dirname, sceneDataFile);
+    if (fs.existsSync(sceneDataPath)){
+      scenesData = scenesData.concat(utils.loadJSONFile(sceneDataPath));
+    }
+  });
+
   return scenesData;
 }
 
@@ -50,13 +56,6 @@ function saveIndividualScenes(adjustments, bookCode) {
     }
     utils.saveJSONFile(adjustment, sceneDataPath);
   });
-}
-
-function saveSceneAdjustments(adjustments, bookCode) {
-  const sceneDataFile = path.join(sceneDir, `${bookCode}.json`);
-  const sceneDataPath = path.resolve(__dirname, sceneDataFile);
-  utils.saveJSONFile(adjustments, sceneDataPath);
-  // saveIndividualScenes(adjustments, bookCode);
 }
 
 function listSceneIds(bookCode) {
@@ -244,7 +243,7 @@ function importScene(conf, sceneFile) {
 
   console.log("********************");
 
-  console.log("Flag check...")
+  console.log("Flag check...");
   // flags
   if (inData.flags.ddb) {
     const newFlags = {
@@ -304,7 +303,7 @@ function importScene(conf, sceneFile) {
   if (inData.flags && inData.flags.ddb && inData.flags.ddb.contentChunkId && !inData.flags.ddb.contentChunkId.startsWith("ddb-missing")) {
     inData.name = lookup.name;
     inDataUpdate = true;
-  };
+  }
 
   console.log("********************");
   console.log("Lookup data:");
@@ -331,47 +330,35 @@ function importScene(conf, sceneFile) {
     console.log(`Walls: ${sceneData.walls.length}`);
     console.log(`Lights: ${sceneData.lights.length}`);
     if (sceneData.drawings) console.log(`Drawings: ${sceneData.drawings.length}`);
-    const flags = sceneData.flags.ddb;
-    if (flags) {
-      if (flags.notes) console.log(`Notes: ${flags.notes.length}`); 
-      if (flags.tokens) console.log(`Tokens: ${flags.tokens.length}`); 
+    if (sceneData.flags.ddb) {
+      if (sceneData.flags.ddb.notes) console.log(`Notes: ${sceneData.flags.ddb.notes.length}`); 
+      if (sceneData.flags.ddb.tokens) console.log(`Tokens: ${sceneData.flags.ddb.tokens.length}`); 
     }
   }
   else {
     console.log("Existing scene data not found");
   }
+  console.log("********************");
+  console.log("Import Data:");
+  console.log(`Name: ${inData.name}`);
+  console.log(`Walls: ${inData.walls.length}`);
+  console.log(`Lights: ${inData.lights.length}`);
+  if (inData.drawings) console.log(`Drawings: ${inData.drawings.length}`);
+  if (inData.flags.ddb) {
+    if (inData.flags.ddb.notes) console.log(`Notes: ${inData.flags.ddb.notes.length}`); 
+    if (inData.flags.ddb.tokens) console.log(`Tokens: ${inData.flags.ddb.tokens.length}`); 
+  }
 
   console.log("********************");
 
-  // console.log(sceneData);
-  //exit();
-  if (sceneData) {
-    if (sceneData.flags && sceneData.flags.ddb && sceneData.flags.ddb.notes) sceneData.flags.ddb.notes = [];
-    sceneData.walls = [];
-    sceneData.drawings = [];
-    sceneData.lights = [];
-    sceneData.walls = [];
-    sceneData.tokens = [];
-    if (sceneData.navName) sceneData.navName = sceneData.navName.trim();
-    sceneData = _.merge(sceneData, inData);
-    const index = (sceneData.flags.ddb.contentChunkId) ?
-      _.findIndex(scenesData, {"flags.ddb.contentChunkId": lookup.contentChunkId}) :
-      _.findIndex(scenesData, {name: sceneData.name});
-    scenesData.splice(index, 1, sceneData);
-  } else {
-    scenesData.push(inData);
-  }
-
   inData = _(inData).toPairs().sortBy(0).fromPairs().value();
 
-  if (inDataUpdate || true) {
+  if (inDataUpdate) {
     console.log("UPDAING INDATA!");
     utils.saveJSONFile(inData, configFile);
   }
 
   saveIndividualScenes([inData], bookCode);
-
-  saveSceneAdjustments(scenesData, bookCode);
 
 }
 
