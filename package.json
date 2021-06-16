@@ -32,20 +32,6 @@
         ]
       },
       {
-        "from": "content/scene_info",
-        "to": "resources/content/scene_info",
-        "filter": [
-          "**/*"
-        ]
-      },
-      {
-        "from": "content/note_info",
-        "to": "resources/content/note_info",
-        "filter": [
-          "**/*"
-        ]
-      },
-      {
         "from": "content/icons/icon.png",
         "to": "resources/content/icon.png",
         "filter": [
