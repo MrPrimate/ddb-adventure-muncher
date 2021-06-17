@@ -1,5 +1,6 @@
 # 0.2.5
 
+* Meta Data (e.g. Scene mappings etc) is now checked and downloaded when you start the app, rather than contained in a release.
 * LMoP Ruins of Thundertree update (Thanks @Zac !)
 * AtG additions (Thanks @Pariah Zero !)
 * ToA Updates (Thanks @michaelko777#7952 !)
