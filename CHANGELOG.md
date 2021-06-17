@@ -5,6 +5,8 @@
 * AtG additions (Thanks @Pariah Zero !)
 * ToA Updates (Thanks @michaelko777#7952 !)
 * IDRotF Updates (Thanks @michaelko777#7952 !)
+* CM Updates ( Thanks @Triasmus#0942 !)
+* DoIP Updates (Thanks @Bizardanis#3454 !)
 
 # 0.2.4
 
