@@ -74,10 +74,12 @@ async function listBooks(cobalt, allBooks=true) {
   urlencoded.append("token", `${cobalt}`);
 
   //  "EntityTypeID": 953599357 - this needs to be filtered out as it gives false positives
+  // 496802664 is books
+  // 953599357 dice sets
 
   const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v6/available-user-content", urlencoded);
   const books = result.Licenses.filter((f) => 
-    f.EntityTypeID != "953599357" || !allBooks
+    f.EntityTypeID == "496802664"
   ).map((block) =>
     block.Entities
       .filter((b) => (allBooks || b.isOwned) && !BAD_IDS.includes(b.id))
