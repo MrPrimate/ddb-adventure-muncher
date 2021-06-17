@@ -12,6 +12,9 @@ const { exit } = require("process");
 function getSceneAdjustments(conf) {
   let scenesData = [];
 
+  // console.log(conf.run);
+  // console.log(conf.run.sceneInfoDir);
+  // console.log(conf.run.bookCode);
   const jsonFiles = path.join(conf.run.sceneInfoDir, conf.run.bookCode, "*.json");
 
   glob.sync(jsonFiles).forEach((sceneDataFile) => {
@@ -90,7 +93,9 @@ function importScene(conf, sceneFile) {
     inData.flags.ddb.bookCode :
     (inData.flags.vtta && inData.flags.vtta.code) ?
       inData.flags.vtta.code : undefined;
-  if (!bookCode) {
+  if (bookCode) {
+    conf.run.bookCode = bookCode;
+  } else {
     console.log("What book is this from? Exiting!");
     return;
   }

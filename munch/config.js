@@ -162,6 +162,9 @@ async function getConfig(options = {}) {
   const noteInfoDir = (process.env.NOTE_DIR) ? process.env.NOTE_DIR : path.resolve(__dirname, notesDir);
   const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint; 
 
+  console.log(`SceneInfoDir ${sceneInfoDir}`);
+  console.log(`NoteInfoDir ${noteInfoDir}`);
+
   if (!fs.existsSync(downloadDir)){
     fs.mkdirSync(downloadDir);
   }
