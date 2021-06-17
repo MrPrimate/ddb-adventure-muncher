@@ -98,6 +98,15 @@ const menuTemplate = [
               }
             });
           }
+          const metaPath = path.join(app.getPath("userData"), "meta");
+          console.log(metaPath);
+          if (fs.existsSync(metaPath)) {
+            fs.rmdir(metaPath, { recursive: true }, (err) => {
+              if (err) {
+                throw err;
+              }
+            });
+          }
         },
       },
       isMac ? { role: "close" } : { role: "quit" },

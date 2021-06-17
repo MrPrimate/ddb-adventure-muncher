@@ -2,14 +2,14 @@ const utils = require("./utils.js");
 const path = require("path");
 const { DDB_CONFIG } = require("./ddb-config.js");
 const ddb = require("./ddb.js");
+const enhance = require("./enhance.js");
 const { exit } = require("process");
 const fs = require("fs");
 const _ = require("lodash");
 
 var configDir = "../dbs";
 var buildDir = `${configDir}/build`;
-var scenesDir = `${configDir}/scene_info`;
-var notesDir = `${configDir}/note_info`;
+var metaDir = `${configDir}/meta`;
 var dbDir;
 var CONFIG_FILE = `${configDir}/config.json`;
 var LOOKUP_FILE = `${configDir}/lookup.json`;
@@ -21,14 +21,13 @@ function setConfigDir (dir) {
   configDir = dir;
   dbDir = `${configDir}/content`;
   buildDir = `${configDir}/build`;
-  scenesDir = `${configDir}/scene_info`;
-  notesDir = `${configDir}/note_info`;
+  metaDir = `${configDir}/meta`;
   CONFIG_FILE = `${configDir}/config.json`;
   LOOKUP_FILE = `${configDir}/lookup.json`;
 }
 
 function getLookups() {
-  const lookupFile = path.resolve(__dirname,LOOKUP_FILE);
+  const lookupFile = path.resolve(__dirname, LOOKUP_FILE);
   if (fs.existsSync(lookupFile)){
     return utils.loadJSONFile(lookupFile);
   } else {
@@ -37,7 +36,7 @@ function getLookups() {
 }
 
 function saveLookups(content) {
-  const configFile = path.resolve(__dirname,LOOKUP_FILE);
+  const configFile = path.resolve(__dirname, LOOKUP_FILE);
   utils.saveJSONFile(content, configFile);
 }
 
@@ -75,13 +74,6 @@ function isConfig() {
   return false;
 }
 
-function getMetaData(conf) {
-  const metaDataRepoName = (process.env.METADATA_NAME) ? process.env.METADATA_NAME : "ddb-meta-data";
-  const metaDataRepoAuthor = (process.env.METADATA_AUTHOR) ? process.env.METADATA_AUTHOR : "MrPrimate";
-  const githubApiLatest = `https://api.github.com/repos/${metaDataRepoAuthor}/${metaDataRepoName}/releases/latest`;
-  // const githubModuleJson = `https://raw.githubusercontent.com/${metaDataRepoAuthor}/${metaDataRepoName}/master/module.json`;
-}
-
 // const options = {
 //   bookCode: null,
 //   externalConfigFile: null,
@@ -89,7 +81,7 @@ function getMetaData(conf) {
 // };
 async function getConfig(options = {}) {
   let saveConf = false;
-  const configFile = path.resolve(__dirname,CONFIG_FILE);
+  const configFile = path.resolve(__dirname, CONFIG_FILE);
   if (!config) config = utils.loadConfig(configFile);
   if (config.run) delete(config.run);
 
@@ -99,9 +91,14 @@ async function getConfig(options = {}) {
   if (!fs.existsSync(buildDir)){
     fs.mkdirSync(buildDir);
   }
-  if (!fs.existsSync(scenesDir)){
+  if (!fs.existsSync(metaDir)){
+    fs.mkdirSync(metaDir);
+  }
+  let scenesDir = path.resolve(__dirname, path.join(metaDir, "scene_info"));
+  if (!fs.existsSync( scenesDir)){
     fs.mkdirSync(scenesDir);
   }
+  let notesDir = path.resolve(__dirname, path.join(metaDir, "note_info"));
   if (!fs.existsSync(notesDir)){
     fs.mkdirSync(notesDir);
   }
@@ -150,23 +147,41 @@ async function getConfig(options = {}) {
     saveConf = true;
   }
 
-  if (!config.metaDataVersion) {
-    config.metaDataVersion = "0.0.0";
-    saveConf = true;
-  }
-
-  const currentMetaDataVersion = getMetaData(config)
-  if (currentMetaDataVersion !== config.metaDataVersion) {
-    config.metaDataVersion = currentMetaDataVersion;
-    saveConf = true;
-  }
-
   if (saveConf) {
     utils.saveJSONFile(config, configFile);
   }
 
+  let dbsDir;
+  if (config.dbsDir) {
+    dbsDir = config.dbsDir;
+  } else {
+    dbsDir = dbDir;
+  }
+  const downloadDir = path.resolve(__dirname, dbsDir);
+  const sceneInfoDir = (process.env.SCENE_DIR) ? process.env.SCENE_DIR : path.resolve(__dirname, scenesDir);
+  const noteInfoDir = (process.env.NOTE_DIR) ? process.env.NOTE_DIR : path.resolve(__dirname, notesDir);
+  const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint; 
+
+  if (!fs.existsSync(downloadDir)){
+    fs.mkdirSync(downloadDir);
+  }
+
+  config.run = {
+    enhancementEndpoint: enhancementEndpoint,
+    downloadDir: downloadDir,
+    metaDir: path.resolve(__dirname, metaDir),
+    sceneInfoDir: path.resolve(__dirname, sceneInfoDir),
+    noteInfoDir: path.resolve(__dirname, noteInfoDir),
+  };
+
+
   if (!options.bookCode) {
     return config;
+  }
+
+  const remoteMetaDataVersion = enhance.getMetaData(config);
+  if (!config.metaDataVersion || remoteMetaDataVersion != config.metaDataVersion) {
+    utils.saveJSONFile(config, configFile);
   }
 
   // Checking user and authentication
@@ -185,19 +200,8 @@ async function getConfig(options = {}) {
     exit();
   }
   let book = DDB_CONFIG.sources.find((source) => source.name.toLowerCase() === options.bookCode).description;
-  let outputDirEnv = config.outputDirEnv;
-  let dbsDir;
-  if (!config.dbsDir) {
-    dbsDir = dbDir;
-  } else {
-    dbsDir = config.dbsDir;
-  }
-
-  let downloadDir = path.resolve(__dirname, dbsDir);
   let sourceDir = path.resolve(__dirname, path.join(dbsDir, options.bookCode));
   let outputDir = path.resolve(__dirname, path.join(buildDir, options.bookCode));
-  let sceneInfoDir = (process.env.SCENE_DIR) ? process.env.SCENE_DIR : path.resolve(__dirname, path.join(scenesDir, options.bookCode));
-  let noteInfoDir = (process.env.NOTE_DIR) ? process.env.NOTE_DIR : path.resolve(__dirname, notesDir);
 
   config.subDirs = [
     "journal",
@@ -209,9 +213,6 @@ async function getConfig(options = {}) {
   console.log(`Pulling ${book} (${options.bookCode}) off the shelf...`);
   console.log(`Saving adventures to ${outputDir}`);
 
-  if (!fs.existsSync(downloadDir)){
-    fs.mkdirSync(downloadDir);
-  }
   const bookZipPath = path.join(downloadDir, `${options.bookCode}.zip`);
   if (!fs.existsSync(bookZipPath)){
     console.log(`Downloading ${book} ... this might take a while...`);
@@ -224,23 +225,17 @@ async function getConfig(options = {}) {
     await utils.unzipFile(bookZipPath, sourceDir);
   }
 
-  // generate runtime config
-  const key = await ddb.getKey(bookId, config.cobalt);
-  const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint;  
+  // generate book runtime config
+  config.run.userData = userData;
+  config.run.key = await ddb.getKey(bookId, config.cobalt);
+  config.run.book = book;
+  config.run.bookId = bookId;
+  config.run.bookCode = options.bookCode;
+  config.run.outputDir = outputDir;
+  config.run.sourceDir = sourceDir;
+  config.run.outputDirEnv = path.resolve(__dirname, config.outputDirEnv);
+  config.run.scenesBookDir = path.join(config.run.sceneInfoDir, options.bookCode);
 
-  config.run = {
-    enhancementEndpoint: enhancementEndpoint,
-    userData: userData,
-    key: key,
-    book: book,
-    bookId: bookId,
-    bookCode: options.bookCode,
-    outputDir: outputDir,
-    sourceDir: sourceDir,
-    sceneInfoDir: sceneInfoDir,
-    noteInfoDir: noteInfoDir,
-    outputDirEnv: path.resolve(__dirname, outputDirEnv),
-  };
   if (config.debug) {
     console.log("================================");
     console.log("DEBUG CONFIG");

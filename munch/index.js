@@ -77,6 +77,14 @@ if (process.argv[2] === "config") {
     });
     
   });
+} else if (process.argv[2] == "meta") {
+  configurator.getConfig().then((config) => {
+    enhance.getMetaData(config).then(metaData => {
+      console.log(`Latest meta data is ${metaData}`);
+      console.log(`Current meta data is ${config.metaDataVersion}`);
+      exit();
+    });
+  });
 }  else if (!process.argv[2] || process.argv[2] == "" ) {
   console.log("Please enter a book code or use 'list' to discover codes");
   exit();

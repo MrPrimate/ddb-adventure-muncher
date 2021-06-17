@@ -68,6 +68,7 @@ async function unzipFile(filePath, destination) {
   try {
     await extract(filePath, { dir: destination });
     console.log("Extraction complete");
+    return filePath;
   } catch (err) {
     // handle any errors
   }
@@ -84,7 +85,7 @@ function downloadFile(url, destination) {
       .then((res) => {
         const dest = fs.createWriteStream(destination);
         res.body.pipe(dest);
-        res.body.on("end", () => resolve());
+        res.body.on("end", () => resolve(destination));
         dest.on("error", reject);
       })
       .catch(error => {
