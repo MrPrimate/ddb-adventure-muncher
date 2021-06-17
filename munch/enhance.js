@@ -86,7 +86,7 @@ function getMetaData(config) {
       .then((data) => {
         //console.log(data);
         console.log(semver.clean(data.tag_name)); 
-        console.log(`Found metadata version: ${semver.valid(semver.clean(data.tag_name))}`); 
+        console.log(`Found remote metadata version: ${semver.valid(semver.clean(data.tag_name))}`); 
         if (semver.valid(semver.clean(data.tag_name))) {
           return data;
         } else {
@@ -96,7 +96,9 @@ function getMetaData(config) {
       .then((data) => {
         const latestVersion = semver.clean(data.tag_name);
         const noCurrent = semver.valid(config.metaDataVersion) === null;
-        if (noCurrent || semver.gte(latestVersion, semver.clean(config.metaDataVersion))) {
+        const currentVersion = !noCurrent ? semver.clean(config.metaDataVersion) : "0.0.0";
+        console.log(`Current metadata version: ${currentVersion}`);
+        if (semver.gt(latestVersion, currentVersion)) {
           console.log("Downloading new metadata");
           const downloadVersion = downloadMetaData(data, config)
             .then((result) => {
@@ -108,6 +110,8 @@ function getMetaData(config) {
               reject(error);
             });
           return downloadVersion;
+        } else {
+          return currentVersion;
         }
       })
       .then((version) => resolve(version))

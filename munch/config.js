@@ -179,8 +179,9 @@ async function getConfig(options = {}) {
     return config;
   }
 
-  const remoteMetaDataVersion = enhance.getMetaData(config);
+  const remoteMetaDataVersion = await enhance.getMetaData(config);
   if (!config.metaDataVersion || remoteMetaDataVersion != config.metaDataVersion) {
+    config.metaDataVersion = remoteMetaDataVersion;
     utils.saveJSONFile(config, configFile);
   }
 
