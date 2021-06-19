@@ -15,6 +15,11 @@ All the adventure generation and calls to DDB are done locally. A single call to
 If you wish to disable the damage tagging on rolls set the config value: `"useDamageHints": false`
 
 
+## Detailed Guides by Shyvor
+
+* [Foundry 0.7.9](https://cdn.discordapp.com/attachments/830165161104506931/851174356814004284/Adventure_Muncher_Guide_0.7.x.pdf)
+* [Foundry 0.8.*](https://cdn.discordapp.com/attachments/830165161104506931/851174358235086878/Adventure_Muncher_Guide_0.8.x.pdf)
+
 ## How does this work?
 
 * You will need to import monsters, spells, and items using [DDB Importer](https://foundryvtt.com/packages/ddb-importer/) first.
@@ -81,7 +86,45 @@ Examples:
 
 ## Known Issues
 
-* Most of the Handouts are un-named because it's hard to parse names - I'll be collecting naming suggestions at some point.
+
+## Handouts are not named
+
+Most of the Handouts are un-named because it's hard to parse names - I'll be collecting naming suggestions at some point.
+
+
+### The muncher hangs when importing.
+
+
+If the muncher hangs run it in the command line mode:
+
+* Windows users: right click on the application icon on the desktop
+* There should be a field called "Target" copy all of the text in there. in mine it's `C:\Users\jack\AppData\Local\Programs\ddb-adventure-muncher\ddb-adventure-muncher.exe`
+* If you're using a Mac or Linux you can figure the above out yourself
+* In the start menu type "command prompt" and open the command prompt
+* Wnter the above command that was copied
+* When you click on buttons it should output information to the terminal window. Look for the error.
+
+If you get something like:
+
+```
+Please regenerate your config file, unable to find the Monster for Token Homunculus
+FATAL ERROR: Error::Error napi_create_reference
+```
+
+The monsters you have generated don't have the right information in them for the muncher to link.
+
+You need to have monsters munched in your DDB Importer linked compendiums when you generate the config file.
+
+Fix:
+
+1) Untick generate actors/tokens and live without them on the map.
+2) Reimport your monsters using the latest DDB Importer with "Update Existing" checked, then generate a new adventure muncher config file and load.
+3) If this still does not work, update monsters with "Use SRD compendium for things" although in the latest version this should not impact things.
+
+### Things don't seem to generate right
+
+* Try clearing your downloaded files: Files -> Remove downloaded files
+* Try resetting your Ids: Files -> Reset generated Ids
 
 ## Getting Help
 
