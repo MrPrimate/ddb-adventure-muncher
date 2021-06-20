@@ -192,7 +192,7 @@ function importScene(conf, sceneFile) {
   if (inData && inData.flags.ddb && inData.flags.ddb.notes) {
     console.log("Updating note flags");
     const notes = inData.flags.ddb.notes.map((note) => {
-      if (note.flags.contentChunkId) {
+      if (note.flags.contentChunkId || note.flags.ddbId) {
         inDataUpdate = true;
         const newFlags = JSON.parse(JSON.stringify(note.flags));
         note.flags = {

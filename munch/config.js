@@ -121,16 +121,6 @@ async function getConfig(options = {}) {
     }
   }
 
-  // cleanup un-needed config
-  if (config.key) {
-    delete(config.key);
-    saveConf = true;
-  }
-  if (config.patreon) {
-    delete(config.patreon);
-    saveConf = true;
-  }
-
   if (
     (options.generateTokens === true || options.generateTokens === false) &&
     config.generateTokens !== options.generateTokens
@@ -182,7 +172,8 @@ async function getConfig(options = {}) {
     return config;
   }
 
-  const remoteMetaDataVersion = await enhance.getMetaData(config);
+  // only grab remote data if we are not providing a SCENE_DIR as we want to act on the local one
+  const remoteMetaDataVersion = process.env.SCENE_DIR ? "0.0.0" : await enhance.getMetaData(config);
   if (!config.metaDataVersion || remoteMetaDataVersion != config.metaDataVersion) {
     config.metaDataVersion = remoteMetaDataVersion;
     utils.saveJSONFile(config, configFile);

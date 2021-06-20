@@ -740,13 +740,25 @@ function generateScene(row, img) {
       adjustment.notes = [];
 
       adjustment.flags.ddb.notes.forEach((note) => {
-        const noteJournal = generatedJournals.find((journal) =>
-        // journal.flags.ddb.slug == note.flags.slug &&
-        // journal.flags.ddb.ddbId == note.flags.ddbId &&
-        // journal.flags.ddb.parentId == note.flags.parentId &&
-        // journal.flags.ddb.cobaltId == note.flags.cobaltId &&
-          journal.flags.ddb.contentChunkId == note.flags.ddb.contentChunkId
-        );
+        const noteJournal = generatedJournals.find((journal) => {
+          const contentChunkIdMatch = note.flags.ddb.contentChunkId ?
+            journal.flags.ddb && note.flags.ddb && journal.flags.ddb.contentChunkId == note.flags.ddb.contentChunkId :
+            false;
+
+          const noContentChunk = !note.flags.ddb.contentChunkId &&
+            note.flags.ddb.originalLink && note.flags.ddb.ddbId && note.flags.ddb.parentId &&
+            note.flags.ddb.slug && note.flags.ddb.linkName;
+          const originMatch = noContentChunk ?
+            journal.flags.ddb.slug == note.flags.ddb.slug &&
+            journal.flags.ddb.ddbId == note.flags.ddbId &&
+            journal.flags.ddb.parentId == note.flags.ddb.parentId &&
+            journal.flags.ddb.cobaltId == note.flags.ddb.cobaltId &&
+            journal.flags.ddb.originalLink == note.flags.ddb.originalLink &&
+            journal.flags.ddb.linkName == note.flags.ddb.linkName :
+            false;
+          return contentChunkIdMatch || originMatch;
+        
+        });
         if (noteJournal){
           note.positions.forEach((position) => {
             noteJournal.flags.ddb.pin = `${position.x}${position.y}`;
