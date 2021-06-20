@@ -1,3 +1,7 @@
+# 0.3.2
+
+* Better parsing if Handout Notes are on a scene.
+
 # 0.3.0
 
 * Meta Data (e.g. Scene mappings etc) is now checked and downloaded when you start the app, rather than contained in a release.
