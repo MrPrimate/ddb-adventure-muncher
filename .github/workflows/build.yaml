@@ -75,7 +75,7 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_HOOK }}
           DISCORD_USERNAME: "Quality Control Division"
-        uses: Ilshidur/action-discord@0.0.2
+        uses: Ilshidur/action-discord@0.3.2
         with:
           args: 'DDB Adventure Muncher ${{ steps.get-version.outputs.version }} has been marked as built. The testing Kobolds are working hard and a release imminent...'
 
