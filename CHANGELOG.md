@@ -1,3 +1,7 @@
+# 0.3.3
+
+* If your config file is missing actor info for scenes a helpful error message will now be displayed.
+
 # 0.3.2
 
 * Better parsing if Handout Notes are on a scene.
