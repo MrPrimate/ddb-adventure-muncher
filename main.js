@@ -24,6 +24,7 @@ const isMac = process.platform === "darwin";
 
 const ddb = require("./munch/ddb.js");
 const book = require("./munch/book.js");
+const scenes = require("./munch/scene-load.js");
 const utils = require("./munch/utils.js");
 const configurator = require("./munch/config.js");
 
@@ -213,6 +214,17 @@ function generateAdventure(options) {
         utils.directoryReset(config);
         book.fetchLookups(config);
         book.setMasterFolders();
+        if (config.generateTokens){
+          const missingActors = scenes.actorCheck(config);
+          if (missingActors.length > 0) {
+            resolve({
+              success: false,
+              message: "Missing required data about monsters for this adventure, please re-munch actors in Foundry and regenerate a new config file and reload with the button above.",
+              data: missingActors,
+            });
+            return;
+          }
+        }
         book.getData();
         const targetAdventureZip = path.join(
           config.run.outputDirEnv,
@@ -226,7 +238,11 @@ function generateAdventure(options) {
             console.log(`No adventure at ${targetAdventureZip}`);
             await sleep(1000);
           }
-          resolve(true);
+          resolve({
+            success: true,
+            message: `Successfully generated ${config.run.bookCode}.fvttadv`,
+            data: [],
+          });
         };
         doSomething();
       });
@@ -427,8 +443,8 @@ const loadMainWindow = () => {
 
   // eslint-disable-next-line no-unused-vars
   ipcMain.on("generate", (event, data) => {
-    generateAdventure(data).then(() => {
-      mainWindow.webContents.send("generate");
+    generateAdventure(data).then((data) => {
+      mainWindow.webContents.send("generate", data);
     });
   });
 

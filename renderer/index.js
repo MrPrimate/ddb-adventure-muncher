@@ -35,6 +35,8 @@ generateButton.addEventListener("click", (event) => {
   const bookCode = document.getElementById("book-select");
   const generateTokens = document.getElementById("generate-tokens");
   const observeAll = document.getElementById("observe-all");
+  const messageDiv = document.getElementById("message-div");
+  messageDiv.innerHTML = "";
   
   const options = {
     bookCode: bookCode.value,
@@ -47,8 +49,20 @@ generateButton.addEventListener("click", (event) => {
 
 });
 
-window.api.receive("generate", () => {
+window.api.receive("generate", (data) => {
+  console.log(data);
   generateButton.disabled = false;
+  const messageDiv = document.getElementById("message-div");
+  const colour = data.success ? "green" : "red";
+  messageDiv.innerHTML = `<p style="color:${colour};">${data.message}</p>`;
+  if (!data.success) {
+    messageDiv.innerHTML += "<p><b>Missing:</b> ";
+    data.data.slice(0,9).forEach((item) => {
+      messageDiv.innerHTML += `${item.actorName}, `;
+    });
+    if (data.data.length > 10) messageDiv.innerHTML += `and more to a total of ${data.data.length} monsters.`;
+    messageDiv.innerHTML += "</p><br><br><br>";
+  }
 });
 
 

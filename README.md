@@ -36,17 +36,6 @@ If using Foundry 0.7.9 you will need to use [Adventure Importer/Exporter Module]
 If using Foundry 0.8.6 you can use the DDB Importer Adventure Import option.
 
 
-## Config
-### Where is the config and downloaded adventure data stored?
-
-You can use `Help -> Config location` menu item to find your config folder.
-
-Likely paths:
-
-* Linux: `~/.config/ddb-adventure-muncher`
-* Mac OS: `~/Library/Application Support/ddb-adventure-muncher`
-* Windows: `C:\Users\<user>\AppData\Roaming\ddb-adventure-muncher`
-
 ## Reset
 
 If you wish to reset your config use the `File -> Reset config` menu item.
@@ -57,37 +46,11 @@ The Adventure Module also generates a database of "lookup ids" for you. This is 
 
 If you wish to download the content again, rather than using existing downloaded content, delete the folder called `content` in your config directory, or you can use the `File -> Remove downloaded files`.
 
-## Command Line
-
-If you want to use the app as a command line tool, you can:
-
-```shell
-❯ ./ddb-adventure-muncher --help
-./ddb-adventure-muncher <command> [options]
-
-Commands:
-  ddb-adventure-muncher version   Version information
-  ddb-adventure-muncher list      List books
-  ddb-adventure-muncher download  Download all the book files you have.
-                                  This does not process the book, just downloads
-                                  for later use.
-  ddb-adventure-muncher generate  Generate content for specified book.
-  ddb-adventure-muncher config    Load a config file into the importer.
-
-Options:
-  -o, --show-owned-books  Show only owned books, not shared.
-      --help              Show help                                    [boolean]
-  -v, --version           Show version number                          [boolean]
-
-Examples:
-  ddb-adventure-muncher generate lmop  Generate import file for Lost Mines of
-                                       Phandelver
-```
 
 ## Known Issues
 
 
-## Handouts are not named
+### Handouts are not named
 
 Most of the Handouts are un-named because it's hard to parse names - I'll be collecting naming suggestions at some point.
 
@@ -125,6 +88,26 @@ Fix:
 
 * Try clearing your downloaded files: Files -> Remove downloaded files
 * Try resetting your Ids: Files -> Reset generated Ids
+
+## FAQ
+### Where is the config and downloaded adventure data stored?
+
+You can use `Help -> Config location` menu item to find your config folder.
+
+Likely paths:
+
+* Linux: `~/.config/ddb-adventure-muncher`
+* Mac OS: `~/Library/Application Support/ddb-adventure-muncher`
+* Windows: `C:\Users\<user>\AppData\Roaming\ddb-adventure-muncher`
+
+
+### How do I update an existing adventure?
+
+You need to delete (make a backup first) any material you wish to update.
+Adventure muncher does not update/replace any existing content in your world.
+
+If you wish to import new scenes alongside existing ones you can use `File -> Reset generated ids` and it will import new scenes, actors, journals etc alongside existing ones.
+
 
 ## Getting Help
 
@@ -169,6 +152,35 @@ There are a number of handouts/images that are numbered Handout 1/2/3/etc.
 If you have a good name for one of these handouts please make a note of it.
 I will be starting to collect this information in a shared google sheet in the coming weeks.
 
+## Config
+
+
+## Command Line
+
+If you want to use the app as a command line tool, you can:
+
+```shell
+❯ ./ddb-adventure-muncher --help
+./ddb-adventure-muncher <command> [options]
+
+Commands:
+  ddb-adventure-muncher version   Version information
+  ddb-adventure-muncher list      List books
+  ddb-adventure-muncher download  Download all the book files you have.
+                                  This does not process the book, just downloads
+                                  for later use.
+  ddb-adventure-muncher generate  Generate content for specified book.
+  ddb-adventure-muncher config    Load a config file into the importer.
+
+Options:
+  -o, --show-owned-books  Show only owned books, not shared.
+      --help              Show help                                    [boolean]
+  -v, --version           Show version number                          [boolean]
+
+Examples:
+  ddb-adventure-muncher generate lmop  Generate import file for Lost Mines of
+                                       Phandelver
+```
 
 ## Icons
 
