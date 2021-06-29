@@ -50,7 +50,7 @@ function saveIndividualScenes(adjustments, conf) {
       fs.mkdirSync(sceneDataDir);
     }
     if (fs.existsSync(sceneDataPath)){
-      console.log(`ERROR! Scene ${sceneDataPath} exists!!!`);
+      console.log(`Warning! Scene ${sceneDataPath} exists, replacing.`);
     }
     utils.saveJSONFile(adjustment, sceneDataPath);
   });
@@ -220,19 +220,81 @@ function importScene(conf, sceneFile) {
     tokens = JSON.parse(JSON.stringify(inData.flags.ddb.tokens));
   }
 
-  console.log("Cleaning token data");
-  const finalTokens = tokens.map((token) => {
-    if (token.actorData) {
-      delete(token.actorData.items);
-      delete(token.actorData.effects);
-      // /if (token.actorData.data) delete(token.actorData.data.details);
+  tokens.forEach((token) => {
+    if (!token.flags || !token.flags.ddbActorFlags || !token.flags.ddbActorFlags.id) {
+      if (token.name) {
+        const monsterNameLookup = conf.lookups["monsters"].find((e) => e.name == token.name);
+        if (monsterNameLookup) {
+          token.flags.ddbActorFlags = {
+            id: monsterNameLookup.id,
+            name: monsterNameLookup.name,
+          };
+        } else {
+          const monsterPartialNameLookup = conf.lookups["monsters"].find((e) => token.name.includes(e.name));
+          if (monsterPartialNameLookup) {
+            console.log("***********************************");
+            console.log("***********************************");
+            console.log(`TOKEN NAME PARTIAL MATCH: ${token.name} to ${monsterPartialNameLookup.name} with id ${monsterPartialNameLookup.id}`);
+            console.log("Update this manually");
+            // token.flags.ddbActorFlags = {
+            //   id: monsterPartialNameLookup.id,
+            //   name: monsterPartialNameLookup.name,
+            // };
+            console.log("***********************************");
+            console.log("***********************************");
+          }
+        }
+      } {
+        console.log("***********************************");
+        console.log("Unnamed token");
+        console.log("***********************************");
+      }
     }
-    delete(token.effects);
-    delete(token.img);
-    delete(token.bar2);
-    delete(token.displayName);
-    return token;
   });
+
+  console.log("Cleaning token data");
+  const finalTokens = tokens
+    .filter((token) => token.flags.ddbActorFlags && token.flags.ddbActorFlags.id)
+    .map((token) => {
+      if (token.actorData) {
+        delete token.actorData.items;
+        delete token.actorData.effects;
+        // /if (token.actorData.data) delete(token.actorData.data.details);
+      }
+      delete token.effects;
+      delete token.img;
+      delete token.bar2;
+      delete token.displayName;
+      if (token.flags.compendiumActorId) delete token.flags.compendiumActorId;
+      if (token.flags.actorFolderId) delete token.flags.actorFolderId;
+      if (!token.flags.ddbActorFlags.name) {
+        const monsterLookup = conf.lookups["monsters"].find((e) => e.id == token.flags.ddbActorFlags.id);
+        if (monsterLookup) {
+          token.flags.ddbActorFlags.name = monsterLookup.name;
+        } else {
+          console.error(`ERROR! Could not find token lookup for ${token.name} with id ${token.flags.ddbActorFlags.id}`);
+          exit();
+        }
+      }
+      return token;
+    });
+
+  const badTokens = tokens
+    .filter((token) => !token.flags || !token.flags.ddbActorFlags || !token.flags.ddbActorFlags.id)
+    .map((token) => {
+      return token.name;
+    });
+
+  if (badTokens.length > 0) {
+    console.error("********************");
+    console.error("********************");
+    console.log(`Book: ${bookCode} Scene: ${inData.name}`);
+    console.error("BAD TOKENS");
+    console.log(badTokens);
+    console.error("********************");
+    console.error("********************");
+    console.error("********************");
+  }
 
   if (!_.isEqual(finalTokens, tokens)) inDataUpdate = true;
 
@@ -354,7 +416,7 @@ function importScene(conf, sceneFile) {
   inData = _(inData).toPairs().sortBy(0).fromPairs().value();
 
   if (inDataUpdate) {
-    console.log("UPDAING INDATA!");
+    console.log("UPDATING INDATA!");
     utils.saveJSONFile(inData, configFile);
   }
 
@@ -362,6 +424,36 @@ function importScene(conf, sceneFile) {
 
 }
 
+
+function actorCheck(config) {
+  let missingActors = [];
+  const scenesData = getSceneAdjustments(config);
+
+  scenesData.forEach((scene) => {
+    if (scene.flags.ddb.tokens) {
+      scene.flags.ddb.tokens
+        .filter((token) => token.flags.ddbActorFlags && token.flags.ddbActorFlags.id)
+        .filter((token) => !config.lookups["monsters"].some((e) => e.id == token.flags.ddbActorFlags.id))
+        .forEach((token) => {
+          const result = {
+            tokenName: token.name,
+            id: token.flags.ddbActorFlags.id,
+            actorName: token.flags.ddbActorFlags.name,
+          };
+          if(!missingActors.some((actor) => actor.id == token.flags.ddbActorFlags.id)) missingActors.push(result);
+        });
+    }
+  });
+
+  if (missingActors.length > 0) {
+    console.log("Missing Actors for this adventure");
+    console.log(missingActors);
+  }
+
+  return missingActors;
+}
+
 exports.importScene = importScene;
 exports.getSceneAdjustments = getSceneAdjustments;
 exports.listSceneIds = listSceneIds;
+exports.actorCheck = actorCheck;
