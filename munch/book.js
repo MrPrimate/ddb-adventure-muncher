@@ -732,6 +732,7 @@ function generateScene(row, img) {
     sceneAdjustments.find((s) => scene.name.includes(s.name));
 
   if (adjustment) {
+    console.log(`ADJUSTMENTS found named ${adjustment.name} with chunkid "${adjustment.flags.ddb.contentChunkId}" and id ${adjustment.flags.ddb.ddbId}`);
     if (adjustment.flags.ddb.notes) {
       console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
       console.log("Found notes!!!!!");
@@ -881,6 +882,7 @@ function generateScene(row, img) {
 
 function generateMissingScenes(journals, scenes) {
   let tmpCount = 0;
+  //let lastDDBId = 0;
 
   console.log("****************************");
   console.log("Generating Missing Scenes");
@@ -889,6 +891,7 @@ function generateMissingScenes(journals, scenes) {
   console.log("----------------------------");
 
   enhancedScenes.filter((es) => es.missing).forEach((es) => {
+    // if (lastDDBId != 0 & es.ddbId != lastDDBId) tmpCount = 0;
     const id =  90000 + es.ddbId + tmpCount;
     const adjustName = (es.adjustName && es.adjustName !== "") ? es.adjustName : es.name;
     const row = {
@@ -908,6 +911,7 @@ function generateMissingScenes(journals, scenes) {
     journals.push(playerEntry);
     //scenes.push(generateScene(row, es.img));
     generateScene(row, es.img);
+    //lastDDBId = es.ddbId;
   });
 
   return [journals, scenes];
