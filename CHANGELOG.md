@@ -1,3 +1,7 @@
+# 0.3.4
+
+* Roll tables with dice expressions will now use the [[1d6]] style expression to roll the dice for you as part of drawing that result. The dice expression will also remain for manual rolls.
+
 # 0.3.3
 
 * If your config file is missing actor info for scenes a helpful error message will now be displayed.

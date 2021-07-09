@@ -151,7 +151,6 @@ function sleep(ms) {
 function tableReplacer(text, journals) {
   text = replacer.moduleReplaceLinks(text, journals, config);
   text = replacer.foundryCompendiumReplace(text, config);
-  text = replacer.replaceRollLinks(text, config);
   text = JSDOM.fragment(text).textContent;
 }
 
@@ -312,6 +311,9 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
           result.text = value;
         }
       });
+      result.text = replacer.replaceRollLinks(result.text, config);
+      const diceRollerRegexp = new RegExp(/\[\[\/r\s*([0-9d+-\s]*)(:?#.*)?\]\]/);
+      result.text = result.text.replace(diceRollerRegexp, "[[$1]] ($&)");
       table.results.push(result);
     });
 
