@@ -54,8 +54,11 @@ async function getBookUrl(bookId, cobalt) {
 }
 
 async function downloadBook(bookId, cobalt, destination) {
+  console.log(`Getting download link for ${bookId}`);
   const url = await getBookUrl(bookId, cobalt);
+  console.log("Generated unique download URL");
   await utils.downloadFile(url, destination);
+  console.log("Download complete");
   return true;
 }
 
