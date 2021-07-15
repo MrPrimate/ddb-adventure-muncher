@@ -215,7 +215,7 @@ function directoryReset(config) {
 }
 
 const SKIPPING_WORDS = [
-  "the", "of", "at", "it", "a,"
+  "the", "of", "at", "it", "a"
 ];
 function titleString (text) {
   const prefixSplit = text.replace("\r\n", " ").trim().split(":");
