@@ -1,3 +1,8 @@
+# 0.3.5
+
+* Improvements to link generation.
+* Actors folder is now alphabetical sorted.
+
 # 0.3.4
 
 * Roll tables with dice expressions will now use the [[1d6]] style expression to roll the dice for you as part of drawing that result. The dice expression will also remain for manual rolls.

@@ -190,15 +190,15 @@ const menuTemplate = [
 ];
 
 async function downloadBooks(config) {
-  const bookIds = await ddb.listBooks(config.cobalt);
+  const availableBooks = await ddb.listBooks(config.cobalt);
   // console.log(bookIds)
-  for (let i = 0; i < bookIds.length; i++) {
-    process.stdout.write(`Downloading ${bookIds[i].book}`);
+  for (let i = 0; i < availableBooks.length; i++) {
+    process.stdout.write(`Downloading ${availableBooks[i].book.description}`);
     const options = {
-      bookCode: bookIds[i].bookCode,
+      bookCode: availableBooks[i].bookCode,
     };
     await configurator.getConfig(options);
-    process.stdout.write(`Download for ${bookIds[i].book} complete`);
+    process.stdout.write(`Download for ${availableBooks[i].book.description} complete`);
   }
 }
 
@@ -313,9 +313,9 @@ function commandLine() {
     } else if (args.list) {
       checkAuth().then(() => {
         configurator.getConfig().then((config) => {
-          ddb.listBooks(config.cobalt).then((bookIds) => {
-            bookIds.forEach((bookId) => {
-              process.stdout.write(`${bookId.bookCode} : ${bookId.book}\n`);
+          ddb.listBooks(config.cobalt).then((books) => {
+            books.forEach((book) => {
+              process.stdout.write(`${book.bookCode} : ${book.book.description}\n`);
             });
             process.exit(0);
           });
@@ -425,9 +425,9 @@ const loadMainWindow = () => {
   // eslint-disable-next-line no-unused-vars
   ipcMain.on("books", (event, args) => {
     configurator.getConfig().then((config) => {
-      ddb.listBooks(config.cobalt, allBooks).then((bookIds) => {
-        bookIds = _.orderBy(bookIds, ["book"], ["asc"]);
-        mainWindow.webContents.send("books", bookIds);
+      ddb.listBooks(config.cobalt, allBooks).then((books) => {
+        books = _.orderBy(books, ["book.description"], ["asc"]);
+        mainWindow.webContents.send("books", books);
       });
     });
   });

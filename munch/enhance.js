@@ -6,7 +6,7 @@ const path = require("path");
 async function getEnhancedData(config) {
   const cobaltCookie = config.cobalt;
   const enhancementEndpoint = config.run.enhancementEndpoint;
-  const body = { cobalt: cobaltCookie, bookId: config.run.bookId };
+  const body = { cobalt: cobaltCookie, bookId: config.run.book.id };
   console.log(`Starting download enhanced data for ${config.run.bookCode}`);
 
   const disableEnhancedDownloads = (config.disableEnhancedDownloads) ? 

@@ -64,7 +64,7 @@ function foundryCompendiumReplace(text, config) {
     const slugMatch = node.outerHTML.match(bookSlugRegExp);
     if (slugMatch) {
       // console.log(slugMatch);
-      node.setAttribute("href", `https://www.dndbeyond.com/sources/${slugMatch[1]}/${slugMatch[2]}`);
+      node.setAttribute("href", `https://www.dndbeyond.com/${config.run.book.sourceURL}/${slugMatch[2]}`);
       text = text.replace(target, node.outerHTML);
     }
   });

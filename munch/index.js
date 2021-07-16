@@ -17,15 +17,15 @@ if (process.env.CONFIG_DIR) {
 // For SCENE_DIR and NOTE_DIR set and they are loaded in config.js
 
 async function downloadBooks(config) {
-  const bookIds = await ddb.listBooks(config.cobalt);
-  // console.log(bookIds)
-  for (let i = 0; i < bookIds.length; i++) {
-    console.log(`Downloading ${bookIds[i].book}`);
+  const availableBooks = await ddb.listBooks(config.cobalt);
+  // console.log(availableBooks)
+  for (let i = 0; i < availableBooks.length; i++) {
+    console.log(`Downloading ${availableBooks[i].book.description}`);
     const options = {
-      bookCode: bookIds[i].bookCode,
+      bookCode: availableBooks[i].bookCode,
     };
     await configurator.getConfig(options);
-    console.log(`Download for ${bookIds[i].book} complete`);
+    console.log(`Download for ${availableBooks[i].book.description} complete`);
   }
 }
 
@@ -39,9 +39,9 @@ if (process.argv[2] === "config") {
   });
 } else if (process.argv[2] === "list") {
   configurator.getConfig().then((config) => {
-    ddb.listBooks(config.cobalt).then((bookIds) => {
-      bookIds.forEach((bookId) => {
-        console.log(`${bookId.bookCode} : ${bookId.book}`);
+    ddb.listBooks(config.cobalt).then((availableBooks) => {
+      availableBooks.forEach((book) => {
+        console.log(`${book.bookCode} : ${book.book.description}`);
       });
       exit();
     });

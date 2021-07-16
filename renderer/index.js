@@ -68,10 +68,11 @@ window.api.receive("generate", (data) => {
 
 window.api.receive("books", (data) => {
   data.forEach((book) => {
-    console.log(`${book.bookCode} : ${book.book}`);
+    console.log(`${book.bookCode} : ${book.book.description}`);
+    console.log(book);
   });
   const bookHtml = data.reduce((html, book) => {
-    html += `<option value="${book.bookCode}">${book.book}</option>`;
+    html += `<option value="${book.bookCode}">${book.book.description}</option>`;
     return html;
   }, "<option value=\"0\">Select book:</option>");
   bookList.innerHTML = bookHtml;

@@ -442,6 +442,8 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
   }
   if (row.cobaltId) folder.flags.ddb.cobaltId = row.cobaltId;
 
+  if (baseFolder && type === "Actor") folder.sorting = "a";
+
   folder._id = getId(folder, "Folder");
   folder.flags.importid = folder._id;
   generatedFolders.push(folder);
@@ -1236,7 +1238,7 @@ function outputAdventure(config) {
   console.log("Exporting adventure outline...");
 
   const adventure = require(path.join(templateDir,"adventure.json"));
-  adventure.name = config.run.book;
+  adventure.name = config.run.book.description;
   adventure.id = utils.randomString(10, "#aA");
 
   const adventureData = JSON.stringify(adventure);
@@ -1411,10 +1413,10 @@ function getData(){
 
 function setMasterFolders() {
   masterFolder = {
-    JournalEntry: generateFolder("JournalEntry", {id: -1, cobaltId: -1, title: config.run.book}, true),
-    Scene: generateFolder("Scene", {id: -1, cobaltId: -1, title: config.run.book}, true),
-    RollTable: generateFolder("RollTable", {id: -1, cobaltId: -1, title: config.run.book}, true),
-    Actor: generateFolder("Actor", {id: -1, cobaltId: -1, title: config.run.book}, true),
+    JournalEntry: generateFolder("JournalEntry", {id: -1, cobaltId: -1, title: config.run.book.description}, true),
+    Scene: generateFolder("Scene", {id: -1, cobaltId: -1, title: config.run.book.description}, true),
+    RollTable: generateFolder("RollTable", {id: -1, cobaltId: -1, title: config.run.book.description}, true),
+    Actor: generateFolder("Actor", {id: -1, cobaltId: -1, title: config.run.book.description}, true),
   };
 }
 

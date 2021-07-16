@@ -1,6 +1,5 @@
 const utils = require("./utils.js");
 const path = require("path");
-const { DDB_CONFIG } = require("./ddb-config.js");
 const ddb = require("./ddb.js");
 const enhance = require("./enhance.js");
 const { exit } = require("process");
@@ -189,12 +188,12 @@ async function getConfig(options = {}) {
   }
 
   options.bookCode = options.bookCode.toLowerCase();
-  let bookId = DDB_CONFIG.sources.find((source) => source.name.toLowerCase() === options.bookCode.toLowerCase()).id;
-  if (!bookId) {
+  config.run.ddb_config = await ddb.getDDBConfig();
+  const book = config.run.ddb_config.sources.find((source) => source.name.toLowerCase() === options.bookCode.toLowerCase());
+  if (!book.id) {
     console.log(`Book ${options.bookCode} not found`);
     exit();
   }
-  let book = DDB_CONFIG.sources.find((source) => source.name.toLowerCase() === options.bookCode).description;
   let sourceDir = path.resolve(__dirname, path.join(dbsDir, options.bookCode));
   let outputDir = path.resolve(__dirname, path.join(buildDir, options.bookCode));
 
@@ -205,13 +204,13 @@ async function getConfig(options = {}) {
     "table",
   ];
 
-  console.log(`Pulling ${book} (${options.bookCode}) off the shelf...`);
+  console.log(`Pulling ${book.description} (${options.bookCode}) off the shelf...`);
   console.log(`Saving adventures to ${outputDir}`);
 
   const bookZipPath = path.join(downloadDir, `${options.bookCode}.zip`);
   if (!fs.existsSync(bookZipPath)){
-    console.log(`Downloading ${book} ... this might take a while...`);
-    await ddb.downloadBook(bookId, config.cobalt, bookZipPath);
+    console.log(`Downloading ${book.description} ... this might take a while...`);
+    await ddb.downloadBook(book.id, config.cobalt, bookZipPath);
     console.log("Download finished, beginning book parse!");
   }
 
@@ -222,9 +221,8 @@ async function getConfig(options = {}) {
 
   // generate book runtime config
   config.run.userData = userData;
-  config.run.key = await ddb.getKey(bookId, config.cobalt);
+  config.run.key = await ddb.getKey(book.id, config.cobalt);
   config.run.book = book;
-  config.run.bookId = bookId;
   config.run.bookCode = options.bookCode;
   config.run.outputDir = outputDir;
   config.run.sourceDir = sourceDir;

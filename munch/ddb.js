@@ -1,4 +1,3 @@
-const { DDB_CONFIG } = require("./ddb-config.js");
 const fetch = require("node-fetch");
 const utils = require("./utils.js");
 
@@ -29,6 +28,35 @@ function ddbCall(url, urlencoded) {
       });
   });
 }
+
+function getDDBConfig() {
+  const url = "https://www.dndbeyond.com/api/config/json";
+  const options = {
+    method: "GET",
+    headers: {
+      "User-Agent": "Foundry VTT Integrator",
+      "Sec-GPC": "1",
+      "Accept": "*/*",
+      "Accept-Language": "en-GB,en;q=0.5",
+    },
+    mode: "cors",
+
+  };
+  return new Promise((resolve, reject) => {
+    fetch(url, options)
+      .then(response => response.json())
+      .then(result => {
+        // console.log(result.sources);
+        resolve(result);
+      })
+      .catch(error => {
+        console.log("Error fetching book info from DDB");
+        console.log("error", error);
+        reject(error);
+      });
+  });
+}
+
 
 async function getKey(bookId, cobalt) {
   try {
@@ -79,6 +107,7 @@ async function listBooks(cobalt, allBooks=true) {
   //  "EntityTypeID": 953599357 - this needs to be filtered out as it gives false positives
   // 496802664 is books
   // 953599357 dice sets
+  const ddb_config = await getDDBConfig();
 
   const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v6/available-user-content", urlencoded);
   const books = result.Licenses.filter((f) => 
@@ -86,12 +115,13 @@ async function listBooks(cobalt, allBooks=true) {
   ).map((block) =>
     block.Entities
       .filter((b) => (allBooks || b.isOwned) && !BAD_IDS.includes(b.id))
-      .filter((b) => DDB_CONFIG.sources.some((s)  => b.id === s.id && s.isReleased))
+      .filter((b) => ddb_config.sources.some((s)  => b.id === s.id && s.isReleased))
       .map((b) => {
-        const book = DDB_CONFIG.sources.find((s)  => b.id === s.id);
+        const book = ddb_config.sources.find((s)  => b.id === s.id);
         return {
           id: b.id,
-          book: book.description,
+          book: book,
+          description: book.description,
           bookCode: book.name.toLowerCase(),
           bookCodeNormal: book.name,
         };
@@ -138,4 +168,4 @@ exports.getBookUrl = getBookUrl;
 exports.downloadBook = downloadBook;
 exports.listBooks = listBooks;
 exports.getUserData = getUserData;
-
+exports.getDDBConfig = getDDBConfig;
