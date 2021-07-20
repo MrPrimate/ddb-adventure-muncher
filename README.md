@@ -1,6 +1,6 @@
-# DDB Adventure Muncher Public Beta
+# DDB Adventure Muncher
 
-This is a Public Beta release. It does not yet have the polish, documentation or support of a fully released product, and you may encounter bugs/just not work for you.
+This is considered Beta software. It does not yet have the polish, documentation or support of a fully released product, and you may encounter bugs/just not work for you.
 
 ## How?
 
