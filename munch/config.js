@@ -228,6 +228,7 @@ async function getConfig(options = {}) {
   config.run.sourceDir = sourceDir;
   config.run.outputDirEnv = path.resolve(__dirname, config.outputDirEnv);
   config.run.scenesBookDir = path.join(config.run.sceneInfoDir, options.bookCode);
+  config.run.version = options.version;
 
   if (config.debug) {
     console.log("================================");

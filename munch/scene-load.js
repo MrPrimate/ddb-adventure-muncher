@@ -50,7 +50,7 @@ function saveIndividualScenes(adjustments, conf) {
       fs.mkdirSync(sceneDataDir);
     }
     if (fs.existsSync(sceneDataPath)){
-      console.log(`Warning! Scene ${sceneDataPath} exists, replacing.`);
+      console.log(`Scene ${sceneDataPath} exists, replacing.`);
     }
     utils.saveJSONFile(adjustment, sceneDataPath);
   });
@@ -68,6 +68,18 @@ function listSceneIds(bookCode) {
   });
 }
 
+function getDDBMetaData(conf) {
+  const meta = utils.loadJSONFile(path.resolve(conf.run.sceneInfoDir, "../meta.json"));
+  return meta;
+}
+
+function updateDDBMetaData(conf, key, update) {
+  const metaPath = path.resolve(conf.run.sceneInfoDir, "../meta.json");
+  const meta = utils.loadJSONFile(metaPath);
+  meta.scenes[key] = update;
+  utils.saveJSONFile(meta, metaPath);
+}
+
 function importScene(conf, sceneFile) {
   // let config = conf;
   if (conf) {
@@ -77,6 +89,8 @@ function importScene(conf, sceneFile) {
   console.log(`Loading scene info from ${sceneFile}`);
 
   let inData;
+  // are we rewriting this indata file?
+  let inDataUpdate = false;
 
   const configFile = path.resolve(__dirname, sceneFile);
   if (fs.existsSync(configFile)){
@@ -102,6 +116,10 @@ function importScene(conf, sceneFile) {
   if (!idTable[bookCode]) {
     console.log(`Please generate the adventure ${bookCode} before attempting scene import.`);
   }
+
+  const ddbMetaData = getDDBMetaData(conf);
+  const ddbMetaDataVersion = ddbMetaData.version;
+  console.log(`DDB Meta Data Version: ${ddbMetaDataVersion}`);
 
   let scenesData = getSceneAdjustments(conf);
 
@@ -176,15 +194,13 @@ function importScene(conf, sceneFile) {
       inData.flags.ddb.parentId = singleMatch.parentId;
       inData.flags.ddb.bookCode = bookCode;
       inDataUpdate = true;
+      console.log("Indata update from initial data clean");
       lookup = singleMatch;
     }
     console.log("######################################");
   } else {
     console.log("All checks pass!");
   }
-
-  // are we rewriting this indata file?
-  let inDataUpdate = false;
 
 
   // notes
@@ -193,6 +209,7 @@ function importScene(conf, sceneFile) {
     console.log("Updating note flags");
     const notes = inData.flags.ddb.notes.map((note) => {
       if (note.flags.contentChunkId || note.flags.ddbId) {
+        console.log("Indata update from note flags");
         inDataUpdate = true;
         const newFlags = JSON.parse(JSON.stringify(note.flags));
         note.flags = {
@@ -216,6 +233,7 @@ function importScene(conf, sceneFile) {
     console.log("Moving token data");
     tokens = inData.tokens;
     inDataUpdate = true;
+    console.log("Indata update from moving token data");
   } else if (inData.flags.ddb && inData.flags.ddb.tokens) {
     tokens = JSON.parse(JSON.stringify(inData.flags.ddb.tokens));
   }
@@ -296,11 +314,19 @@ function importScene(conf, sceneFile) {
     console.error("********************");
   }
 
-  if (!_.isEqual(finalTokens, tokens)) inDataUpdate = true;
+  if (!_.isEqual(finalTokens, tokens)) {
+    console.log("Indata update from token mismatch");
+    inDataUpdate = true;
+  }
 
   if (inData.navName == "") {
+    console.log("Indata update from blank nav name");
     inDataUpdate = true;
     delete inData.navName;
+  }
+
+  if (inData.flags.ddb.versions) {
+    delete inData.flags.ddb.versions;
   }
 
   console.log("********************");
@@ -323,7 +349,10 @@ function importScene(conf, sceneFile) {
     newFlags["perfect-vision"] = inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [];
     newFlags["dynamic-illumination"] = inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [];
 
-    if (!_.isEqual(inData.flags, newFlags)) inDataUpdate = true;
+    if (!_.isEqual(inData.flags, newFlags)) {
+      console.log("Indata update from newflags");
+      inDataUpdate = true;
+    }
     inData.flags = newFlags;
   } else {
     inData.flags = { 
@@ -338,6 +367,7 @@ function importScene(conf, sceneFile) {
       "perfect-vision": inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [],
       "dynamic-illumination": inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [],
     };
+    console.log("Indata update from missing ddb flags");
     inDataUpdate = true;
   }
 
@@ -356,14 +386,16 @@ function importScene(conf, sceneFile) {
       "perfect-vision": inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [],
       "dynamic-illumination": inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [],
     };
+    console.log("Indata update from missing bookcode flag");
     inDataUpdate = true;
   }
 
   // tokens exist in the flags and are regenerated later
   delete inData.tokens;
 
-  if (inData.flags && inData.flags.ddb && inData.flags.ddb.contentChunkId && !inData.flags.ddb.contentChunkId.startsWith("ddb-missing")) {
+  if (inData.flags && inData.flags.ddb && inData.flags.ddb.contentChunkId && !inData.flags.ddb.contentChunkId.startsWith("ddb-missing") && inData.name !== lookup.name) {
     inData.name = lookup.name;
+    console.log("Indata update from missing scene");
     inDataUpdate = true;
   }
 
@@ -393,8 +425,11 @@ function importScene(conf, sceneFile) {
     console.log(`Lights: ${sceneData.lights.length}`);
     if (sceneData.drawings) console.log(`Drawings: ${sceneData.drawings.length}`);
     if (sceneData.flags.ddb) {
-      if (sceneData.flags.ddb.notes) console.log(`Notes: ${sceneData.flags.ddb.notes.length}`); 
-      if (sceneData.flags.ddb.tokens) console.log(`Tokens: ${sceneData.flags.ddb.tokens.length}`); 
+      if (sceneData.flags.ddb.notes) console.log(`Notes: ${sceneData.flags.ddb.notes.length}`);
+      if (sceneData.flags.ddb.tokens) console.log(`Tokens: ${sceneData.flags.ddb.tokens.length}`);
+      if (sceneData.flags.ddb.versions) {
+        inData.flags.ddb.versions = sceneData.flags.ddb.versions;
+      }
     }
   }
   else {
@@ -406,21 +441,64 @@ function importScene(conf, sceneFile) {
   console.log(`Walls: ${inData.walls.length}`);
   console.log(`Lights: ${inData.lights.length}`);
   if (inData.drawings) console.log(`Drawings: ${inData.drawings.length}`);
-  if (inData.flags.ddb) {
-    if (inData.flags.ddb.notes) console.log(`Notes: ${inData.flags.ddb.notes.length}`); 
-    if (inData.flags.ddb.tokens) console.log(`Tokens: ${inData.flags.ddb.tokens.length}`); 
-  }
+  if (inData.flags.ddb.notes) console.log(`Notes: ${inData.flags.ddb.notes.length}`);
+  if (inData.flags.ddb.tokens) console.log(`Tokens: ${inData.flags.ddb.tokens.length}`);
 
+  // get metadata updates
+  const metaDataKey = `${bookCode}-${inData.flags.ddb.contentChunkId}`;
+  const sceneUpdateDiff = ddbMetaData.scenes[metaDataKey]
+    ? ddbMetaData.scenes[metaDataKey]
+    : {
+      name: inData.name,
+      bookCode: bookCode,
+      contentChunkId: inData.flags.ddb.contentChunkId,
+      lastUpdate: ddbMetaDataVersion,
+      notes: ddbMetaDataVersion,
+      tokens: ddbMetaDataVersion,
+      walls: ddbMetaDataVersion,
+      lights: ddbMetaDataVersion,
+      drawings: ddbMetaDataVersion,
+    };
+
+  if (sceneData && inData.walls.length !== sceneData.walls.length) sceneUpdateDiff.flags = ddbMetaDataVersion;
+  if (sceneData && inData.lights.length !== sceneData.lights.length) sceneUpdateDiff.lights = ddbMetaDataVersion;
+  if (sceneData && inData.drawings && inData.drawings.length !== sceneData.drawings.length) sceneUpdateDiff.drawings = ddbMetaDataVersion;
+  if (sceneData && inData.flags.ddb.notes && inData.flags.ddb.notes.length !== sceneData.flags.ddb.notes.length) sceneUpdateDiff.notes = ddbMetaDataVersion;
+  if (sceneData && inData.flags.ddb.tokens && inData.flags.ddb.tokens.length !== sceneData.flags.ddb.tokens.length) sceneUpdateDiff.tokens = ddbMetaDataVersion;
+
+  // final diff
   console.log("********************");
 
   inData = _(inData).toPairs().sortBy(0).fromPairs().value();
+  sceneData = _(sceneData).toPairs().sortBy(0).fromPairs().value();
+
+  const dataMatch = _.isEqual(inData, sceneData);
+  const sceneDataFlags = sceneData.flags.ddb.versions;
+  if (!sceneDataFlags) console.log("Updating to add scene data version flag");
+  const versionFlags = inData.flags.ddb.versions;
+  console.log("Data match: " + dataMatch);
+
+  if (!dataMatch || !versionFlags) {
+    inData.flags.ddb.versions = {
+      ddbMetaData: ddbMetaDataVersion,
+    };
+  }
 
   if (inDataUpdate) {
     console.log("UPDATING INDATA!");
     utils.saveJSONFile(inData, configFile);
   }
 
-  saveIndividualScenes([inData], conf);
+  if (!dataMatch || !sceneDataFlags) {
+    console.log("UPDATING META DATA");
+    saveIndividualScenes([inData], conf);
+    sceneUpdateDiff.lastUpdate = ddbMetaDataVersion;
+    console.log("********************");
+    console.log("MetaData Update:");
+    console.log(sceneUpdateDiff);
+    console.log("********************");
+    updateDDBMetaData(conf, metaDataKey, sceneUpdateDiff);
+  }
 
 }
 

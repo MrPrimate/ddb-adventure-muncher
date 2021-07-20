@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -rf ../content/scene_info/*.json
+# rm -rf ../content/scene_info/*.json
 
 echo "Regenerating adventures"
 

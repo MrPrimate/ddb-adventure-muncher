@@ -203,6 +203,7 @@ async function downloadBooks(config) {
 }
 
 function generateAdventure(options) {
+  options.version = app.getVersion();
   return new Promise((resolve) => {
     configurator.getConfig(options).then((config) => {
       if (!isDevelopment) {

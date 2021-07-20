@@ -706,6 +706,9 @@ function generateScene(row, img) {
   scene.flags.ddb.originDocId = row.originDocId;
   scene.flags.ddb.originHint = row.originHint;
   scene.flags.ddb.originalLink = row.originalLink;
+  scene.flags.ddb.versions = {
+    "adventureMuncher": config.run.version
+  };
 
   scene.sort = journalSort + parseInt(row.id);
   if (row.cobaltId) scene.flags.ddb.cobaltId = row.cobaltId;
@@ -797,6 +800,8 @@ function generateScene(row, img) {
     delete adjustment.flags.ddb.ddbId;
     delete adjustment.flags.ddb.contentChunkId;
     adjustment.flags.ddb["sceneAdjustment"] = true;
+    console.log(adjustment.flags);
+    console.log(scene.flags);
     scene = _.merge(scene, adjustment);
   }
 

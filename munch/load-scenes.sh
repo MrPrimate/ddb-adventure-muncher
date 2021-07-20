@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 FILES="$1/*"
 
 echo "Found files..."

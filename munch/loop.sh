@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 
 RESULTS=$(node ./index.js list | cut -d " " -f1)
 
