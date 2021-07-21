@@ -462,9 +462,9 @@ function importScene(conf, sceneFile) {
 
   if (sceneData && inData.walls.length !== sceneData.walls.length) sceneUpdateDiff.flags = ddbMetaDataVersion;
   if (sceneData && inData.lights.length !== sceneData.lights.length) sceneUpdateDiff.lights = ddbMetaDataVersion;
-  if (sceneData && inData.drawings && inData.drawings.length !== sceneData.drawings.length) sceneUpdateDiff.drawings = ddbMetaDataVersion;
-  if (sceneData && inData.flags.ddb.notes && inData.flags.ddb.notes.length !== sceneData.flags.ddb.notes.length) sceneUpdateDiff.notes = ddbMetaDataVersion;
-  if (sceneData && inData.flags.ddb.tokens && inData.flags.ddb.tokens.length !== sceneData.flags.ddb.tokens.length) sceneUpdateDiff.tokens = ddbMetaDataVersion;
+  if (sceneData && inData.drawings && (!sceneData.drawings || inData.drawings.length !== sceneData.drawings.length)) sceneUpdateDiff.drawings = ddbMetaDataVersion;
+  if (sceneData && inData.flags.ddb.notes && (!sceneData.flags.ddb.notes || inData.flags.ddb.notes.length !== sceneData.flags.ddb.notes.length)) sceneUpdateDiff.notes = ddbMetaDataVersion;
+  if (sceneData && inData.flags.ddb.tokens && (!sceneData.flags.ddb.tokens || inData.flags.ddb.tokens.length !== sceneData.flags.ddb.tokens.length)) sceneUpdateDiff.tokens = ddbMetaDataVersion;
 
   // final diff
   console.log("********************");
@@ -480,7 +480,7 @@ function importScene(conf, sceneFile) {
 
   if (!dataMatch || !versionFlags) {
     inData.flags.ddb.versions = {
-      ddbMetaData: ddbMetaDataVersion,
+      ddbMetaData: sceneUpdateDiff,
     };
   }
 
