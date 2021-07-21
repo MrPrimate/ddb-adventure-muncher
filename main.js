@@ -178,7 +178,7 @@ const menuTemplate = [
         label: "Source code",
         click: async () => {
           await shell.openExternal(
-            "https://github,com/MrPrimate/ddb-adventure-muncher"
+            "https://github.com/MrPrimate/ddb-adventure-muncher"
           );
         },
       },
