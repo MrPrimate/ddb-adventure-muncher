@@ -1,3 +1,8 @@
+# 0.3.6
+
+* Improved table name generation for some adventures, notably GoS
+* Sometimes dice rolls in journals would concat words together.
+
 # 0.3.5
 
 * Improvements to link generation.
