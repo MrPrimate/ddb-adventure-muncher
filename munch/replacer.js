@@ -319,7 +319,7 @@ function diceRollMatcher(match, p1, p2, p3, p4, p5) {
     return `${p1 ? p1: ""}[[/r ${diceString} # Healing]]${p3} hit points`;
   } else {
     const diceString = parseDiceString(p2).diceString;
-    return `${p1 ? p1: ""}[[/r ${diceString}]]${p3 ? p3 : ""}${p4 ? p4 : ""}${p5 ? p5 : ""}`;
+    return `${p1 ? p1: ""}[[/r ${diceString}]] ${p3 ? p3 : ""} ${p4 ? p4 : ""} ${p5 ? p5 : ""}`;
   }
 }
 
