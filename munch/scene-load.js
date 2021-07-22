@@ -460,17 +460,18 @@ function importScene(conf, sceneFile) {
       drawings: ddbMetaDataVersion,
     };
 
-  if (sceneData && inData.walls.length !== sceneData.walls.length) sceneUpdateDiff.flags = ddbMetaDataVersion;
-  if (sceneData && inData.lights.length !== sceneData.lights.length) sceneUpdateDiff.lights = ddbMetaDataVersion;
-  if (sceneData && inData.drawings && (!sceneData.drawings || inData.drawings.length !== sceneData.drawings.length)) sceneUpdateDiff.drawings = ddbMetaDataVersion;
-  if (sceneData && inData.flags.ddb.notes && (!sceneData.flags.ddb.notes || inData.flags.ddb.notes.length !== sceneData.flags.ddb.notes.length)) sceneUpdateDiff.notes = ddbMetaDataVersion;
-  if (sceneData && inData.flags.ddb.tokens && (!sceneData.flags.ddb.tokens || inData.flags.ddb.tokens.length !== sceneData.flags.ddb.tokens.length)) sceneUpdateDiff.tokens = ddbMetaDataVersion;
+  inData = _(inData).toPairs().sortBy(0).fromPairs().value();
+  sceneData = _(sceneData).toPairs().sortBy(0).fromPairs().value();
+
+  if (sceneData && !_.isEqual(inData.walls, sceneData.walls)) sceneUpdateDiff.walls = ddbMetaDataVersion;
+  if (sceneData && !_.isEqual(inData.lights, sceneData.lights)) sceneUpdateDiff.lights = ddbMetaDataVersion;
+  if (sceneData && inData.drawings && (!sceneData.drawings || !_.isEqual(inData.drawings, sceneData.drawings))) sceneUpdateDiff.drawings = ddbMetaDataVersion;
+  if (sceneData && inData.flags.ddb.notes && (!sceneData.flags.ddb.notes || !_.isEqual(inData.flags.ddb.notes, sceneData.flags.ddb.notes))) sceneUpdateDiff.notes = ddbMetaDataVersion;
+  if (sceneData && inData.flags.ddb.tokens && (!sceneData.flags.ddb.tokens || !_.isEqual(inData.flags.ddb.tokens, sceneData.flags.ddb.tokens))) sceneUpdateDiff.tokens = ddbMetaDataVersion;
+  if (sceneUpdateDiff.flags) delete sceneUpdateDiff.flags;
 
   // final diff
   console.log("********************");
-
-  inData = _(inData).toPairs().sortBy(0).fromPairs().value();
-  sceneData = _(sceneData).toPairs().sortBy(0).fromPairs().value();
 
   const dataMatch = _.isEqual(inData, sceneData);
   const sceneDataFlags = sceneData.flags.ddb.versions;
