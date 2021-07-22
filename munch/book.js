@@ -126,10 +126,19 @@ function findDiceColumns(table) {
 
 function guessTableName(document, contentChunkId) {
   const element = document.querySelector(`table[data-content-chunk-id='${contentChunkId}']`);
-  let sibling = element.previousElementSibling;
+  let track = element;
+  let sibling = track.previousElementSibling;
   
-  if (!sibling && element.parentElement.nodeName === "DIV") {
-    sibling = element.parentElement.previousElementSibling;
+  // if (!sibling && track.parentElement.nodeName === "DIV") {
+  //   sibling = track.parentElement.previousElementSibling;
+  // }
+
+  while (!sibling && track.parentElement && track.parentElement.nodeName === "DIV") {
+    if (!track.parentElement.previousElementSibling) {
+      track = track.parentElement;
+    } else {
+      sibling = track.parentElement.previousElementSibling;
+    }
   }
 
   if (sibling) {
