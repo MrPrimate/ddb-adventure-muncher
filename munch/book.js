@@ -399,6 +399,7 @@ function updateJournals(documents) {
       doc.content = replacer.foundryCompendiumReplace(doc.content, config);
       console.log(`Generating dice rolls for ${doc.name}`);
       doc.content = replacer.replaceRollLinks(doc.content, config);
+      // fs.writeFileSync(path.join(config.run.outputDir,"html",`${doc._id}.html`), doc.content);
       console.log(`Fixing up classes for ${doc.name}`);
       doc.content = replacer.addClasses(doc.content);
     }
