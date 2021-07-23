@@ -149,10 +149,14 @@ async function getConfig(options = {}) {
   const downloadDir = path.resolve(__dirname, dbsDir);
   const sceneInfoDir = (process.env.SCENE_DIR) ? process.env.SCENE_DIR : path.resolve(__dirname, scenesDir);
   const noteInfoDir = (process.env.NOTE_DIR) ? process.env.NOTE_DIR : path.resolve(__dirname, notesDir);
+  const tableInfoDir = (process.env.TABLE_DIR) ? process.env.TABLE_DIR : path.resolve(__dirname, notesDir);
   const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint; 
 
-  console.log(`SceneInfoDir ${sceneInfoDir}`);
-  console.log(`NoteInfoDir ${noteInfoDir}`);
+  if (config.debug) {
+    console.log(`SceneInfoDir ${sceneInfoDir}`);
+    console.log(`NoteInfoDir ${noteInfoDir}`);
+    console.log(`TableInfoDir ${tableInfoDir}`);
+  }
 
   if (!fs.existsSync(downloadDir)){
     fs.mkdirSync(downloadDir);
@@ -164,6 +168,7 @@ async function getConfig(options = {}) {
     metaDir: path.resolve(__dirname, metaDir),
     sceneInfoDir: path.resolve(__dirname, sceneInfoDir),
     noteInfoDir: path.resolve(__dirname, noteInfoDir),
+    tableInfoDir: path.resolve(__dirname, tableInfoDir),
   };
 
 

@@ -12,6 +12,7 @@ const _ = require("lodash");
 const configure = require("./config.js");
 const sceneAdjuster = require("./scene-load.js");
 const noteHinter = require("./note-load.js");
+const tableHinter = require("./table-load.js");
 const enhance = require("./enhance.js");
 const parseTable = require("./vendor/parseTable.js");
 const replacer = require("./replacer.js");
@@ -23,6 +24,7 @@ var config;
 var idTable;
 var sceneAdjustments;
 var noteHints;
+var tableHints;
 var sceneImgMatched = [];
 var journalImgMatched = [];
 var enhancedScenes = [];
@@ -125,6 +127,13 @@ function findDiceColumns(table) {
 }
 
 function guessTableName(document, contentChunkId) {
+
+  const hintName = tableHints.find((hint) => hint.contentChunkId == contentChunkId);
+
+  if (hintName) {
+    return hintName.tableName;
+  }
+
   const element = document.querySelector(`table[data-content-chunk-id='${contentChunkId}']`);
   let track = element;
   let sibling = track.previousElementSibling;
@@ -1399,6 +1408,7 @@ async function setConfig(conf) {
   fetchLookups(config);
   sceneAdjustments = sceneAdjuster.getSceneAdjustments(config);
   noteHints = noteHinter.getNoteHints(config);
+  tableHints = tableHinter.getTableHints(config);
   enhancedScenes = await enhance.getEnhancedData(config);
   downloadList = [];
 }
