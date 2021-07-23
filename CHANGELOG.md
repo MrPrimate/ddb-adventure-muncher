@@ -1,3 +1,8 @@
+# 0.3.7
+
+* Some table headers broken in journals where roll link were created.
+* Add ability to start loading hints for table names.
+
 # 0.3.6
 
 * Improved table name generation for some adventures, notably GoS
