@@ -1,6 +1,6 @@
 # 0.3.8
 
-* Improved folder name generation for some tables, noteably DMG.
+* Improved folder name generation for some tables, notably DMG.
 
 # 0.3.7
 
