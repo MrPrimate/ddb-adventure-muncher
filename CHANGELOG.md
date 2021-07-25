@@ -1,3 +1,7 @@
+# 0.3.8
+
+* Improved folder name generation for some tables, noteably DMG.
+
 # 0.3.7
 
 * Some table headers broken in journals where roll link were created.

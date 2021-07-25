@@ -281,12 +281,17 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
 
     if (config.observeAll) table.permission.default = 2;
 
+    const tableHint = tableHints.find((hint) => hint.contentChunkId == contentChunkId);
+    const cobaltId = (table.flags.ddb.cobaltId) ? table.flags.ddb.cobaltId : table.flags.ddb.parentId;
+    const folderName = (tableHint && tableHint.folderName) ? tableHint.folderName : null;
+
     const tableRow = {
       title: table.name,
       id: 10000 + table.flags.ddb.ddbId + tmpCount,
-      cobaltId: (table.flags.ddb.cobaltId) ? table.flags.ddb.cobaltId : table.flags.ddb.parentId,
+      cobaltId: cobaltId,
       documentName: table.name,
       contentChunkId: contentChunkId,
+      nameOverride: folderName,
     };
 
     table.folder = getFolderId(tableRow, "RollTable");
@@ -462,6 +467,8 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
   if (row.cobaltId) folder.flags.ddb.cobaltId = row.cobaltId;
 
   if (baseFolder && type === "Actor") folder.sorting = "a";
+
+  if (row.nameOverride) folder.name = row.nameOverride;
 
   folder._id = getId(folder, "Folder");
   folder.flags.importid = folder._id;
