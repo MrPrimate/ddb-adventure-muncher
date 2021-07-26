@@ -232,11 +232,13 @@ function diceInt(text) {
  * @returns array of range 
  */
 function getDiceTableRange(value) {
-  const text = value.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").replace(/\s/g, "").trim();
+  const fragment = JSDOM.fragment(value).textContent;
+  const text = fragment.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").replace(/\s/g, "").trim();
   // eslint-disable-next-line no-useless-escape
   const valueRegex = new RegExp(/^(\d+)\-(\d+)|^(\d+)(\+?)$/);
   const valueMatch = text.match(valueRegex);
 
+  console.warn(valueMatch);
 
   if (valueMatch) {
     if (valueMatch[1] !== undefined && valueMatch[2] !== undefined) {
@@ -258,6 +260,7 @@ function getDiceTableRange(value) {
   }
   console.error("###############################################");
   console.log(`Unable to table range match ${value}`);
+  console.log(`Text value: ${text}`);
   console.error("###############################################");
   return [];
 }
@@ -325,7 +328,9 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
         drawn: false
       };
       Object.entries(entry).forEach(([key, value]) => {
-        if (key === diceKey) result.range = getDiceTableRange(value);
+        if (key === diceKey) {
+          result.range = getDiceTableRange(value);
+        }
         else if (diceKeys.includes(key)) return;
         if (concatKeys) {
           if (result.text != "") result.text += "\n\n";

@@ -1,3 +1,7 @@
+# 0.3.9
+
+* Improve some table generation in DMG tables. Some tables will still parse poorly, e.g. "Villan's Methods".
+
 # 0.3.8
 
 * Improved folder name generation for some tables, notably DMG.
