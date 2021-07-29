@@ -1,3 +1,7 @@
+# 0.3.11
+
+* Allow for scenes changing ids across releases from DDB. Some map pins from CoS may not currently be imported, these will be fixed in the next update.
+
 # 0.3.10
 
 * New formatting in CoS caused breakage and odd headers in journals.
