@@ -164,7 +164,7 @@ function importScene(conf, sceneFile) {
     console.log("######################################");
     console.log("######################################");
     console.log("######################################");
-    console.log("CATASTROPHIC SCENE FAILURE!!!!!  No scenes at allll!");
+    console.log("CATASTROPHIC SCENE FAILURE!!!!!  No scenes at all!");
     console.log("######################################");
     console.log("######################################");
     console.log("######################################");
@@ -343,6 +343,8 @@ function importScene(conf, sceneFile) {
         contentChunkId: lookup.contentChunkId,
         notes: inData.flags.ddb.notes,
         tokens: inData.flags.ddb.tokens,
+        alternateIds: inData.flags.ddb.alternateIds,
+        originalLink: inData.flags.ddb.originalLink,
       }
     };
     newFlags.stairways = inData.flags.stairways ? inData.flags.stairways : [];

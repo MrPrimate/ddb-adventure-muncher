@@ -771,10 +771,16 @@ function generateScene(row, img) {
 
   let adjustment = (scene.flags.ddb.contentChunkId) ?
     sceneAdjustments.find((s) =>
-      scene.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId &&
+      (scene.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId &&
       scene.flags.ddb.ddbId == s.flags.ddb.ddbId &&
       scene.flags.ddb.parentId == s.flags.ddb.parentId &&
-      scene.flags.ddb.cobaltId == s.flags.ddb.cobaltId
+      scene.flags.ddb.cobaltId == s.flags.ddb.cobaltId) ||
+      (s.flags.ddb.alternateIds && s.flags.ddb.alternateIds.some((ai) =>
+        scene.flags.ddb.contentChunkId === ai.contentChunkId &&
+        scene.flags.ddb.ddbId == ai.ddbId &&
+        scene.flags.ddb.parentId == ai.parentId &&
+        scene.flags.ddb.cobaltId == ai.cobaltId
+      ))
     ) :
     sceneAdjustments.find((s) => scene.name.includes(s.name));
 
