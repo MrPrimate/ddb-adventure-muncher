@@ -96,15 +96,27 @@ function foundryCompendiumReplace(text, config) {
 
 function moduleReplaceLinks(text, journals, config) {
   const dom = new JSDOM(text);
-  const fragmentLinks = dom.window.document.querySelectorAll(`a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
-  let innerHTML = dom.window.document.body.innerHTML;
 
   const bookSlugRegExp = new RegExp(`ddb:\/\/compendium\/${config.run.bookCode}\/([\\w0-9\-._#+@/]*)`);
+  let innerHTML = dom.window.document.body.innerHTML;
+
+  const h1Links = dom.window.document.querySelectorAll(`h1 a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
+  const h2Links = dom.window.document.querySelectorAll(`h2 a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
+  const h3Links = dom.window.document.querySelectorAll(`h3 a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
+  const h4Links = dom.window.document.querySelectorAll(`h4 a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
+  const hLinks = [h1Links, h2Links, h3Links, h4Links];
+  hLinks.forEach((hLink) => {
+    for (let headerIndex = 0, headerLength = hLink.length; headerIndex < headerLength; headerIndex++) {
+      const node = hLink[headerIndex];
+      innerHTML = innerHTML.replace(node.outerHTML, node.textContent);
+    }
+  });
+
+  const fragmentLinks = dom.window.document.querySelectorAll(`a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
 
   for (let fragmentIndex = 0, fragmentsLength = fragmentLinks.length; fragmentIndex < fragmentsLength; fragmentIndex++) {
     const node = fragmentLinks[fragmentIndex];
 
-    // fragmentLinks.forEach((node) => {
     const slugMatch = node.outerHTML.match(bookSlugRegExp);
     if (slugMatch) {
       // console.log(slugMatch);
@@ -126,14 +138,12 @@ function moduleReplaceLinks(text, journals, config) {
       console.log(`NO SLUGS FOR ${node.outerHTML}`);
     }
   }
-  // });
+
 
   const headerLinks = dom.window.document.querySelectorAll("a[href^=\"#\"");
-  // headerLinks.forEach((node) => {
   for (let headerIndex = 0, headerLength = headerLinks.length; headerIndex < headerLength; headerIndex++) {
     const node = headerLinks[headerIndex];
     innerHTML = innerHTML.replace(node.outerHTML, node.textContent);
-  // });
   }
 
   return innerHTML;

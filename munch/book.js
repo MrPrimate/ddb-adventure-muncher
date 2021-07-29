@@ -643,8 +643,17 @@ function generateNoteJournals(row) {
     let id = 2000 + row.id;
     console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
     console.log(`Generating Notes for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`);
+    console.log(`${hint.splitTag}[data-content-chunk-id='${hint.contentChunkIdStart}']`);
     
     let keyChunk = dom.querySelector(`${hint.splitTag}[data-content-chunk-id='${hint.contentChunkIdStart}']`);
+    console.log(`keyChunk: ${keyChunk}`);
+    if (!keyChunk) {
+      console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+      console.log(`WARNING NO keyChunk found for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`);
+      console.log(hint);
+      console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+      return;
+    };
     let html = "";
     let noteTitle = keyChunk.textContent;
     let keyChunkId = hint.contentChunkIdStart;

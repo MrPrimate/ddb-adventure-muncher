@@ -1,3 +1,7 @@
+# 0.3.10
+
+* New formatting in CoS caused breakage and odd headers in journals.
+
 # 0.3.9
 
 * Improve some table generation in DMG tables. Some tables will still parse poorly, e.g. "Villan's Methods".
