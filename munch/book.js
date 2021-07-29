@@ -653,7 +653,7 @@ function generateNoteJournals(row) {
       console.log(hint);
       console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
       return;
-    };
+    }
     let html = "";
     let noteTitle = keyChunk.textContent;
     let keyChunkId = hint.contentChunkIdStart;
