@@ -858,6 +858,9 @@ function generateScene(row, img) {
       name: scene.name,
       slug: row.slug,
       contentChunkId: contentChunkId,
+      ddbId: scene.flags.ddb.ddbId,
+      parentId: scene.flags.ddb.parentId,
+      cobaltId: scene.flags.ddb.cobaltId,
     });
   }
 

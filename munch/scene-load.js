@@ -481,6 +481,29 @@ function importScene(conf, sceneFile) {
   const versionFlags = inData.flags.ddb.versions;
   console.log("Data match: " + dataMatch);
 
+
+  const sceneDataHints = configure.loadImageFinderResults("scene", bookCode);
+  const oldSceneDataHints = configure.loadImageFinderResults("old-scene", bookCode);
+  
+  const inSceneDataHints = sceneDataHints.some((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId);
+  const inOldSceneDataHints = oldSceneDataHints.some((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId);
+
+  let alternativeSceneIdsUpdate = false;
+  if (!inSceneDataHints && inOldSceneDataHints) {
+    inDataUpdate = true;
+    alternativeSceneIdsUpdate = true;
+    const oldData = oldSceneDataHints.find((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId);
+    const alternateId = sceneDataHints.find((scene) => scene.img === oldData.img);
+    console.log(alternateId);
+    if (inData.flags.ddb.alternateIds) {
+      if (!inData.flags.ddb.alternateIds.some((ai) => ai.contentChunkId === alternateId.contentChunkId)) {
+        inData.flags.ddb.alternateIds.push(alternateId);
+      }
+    } else {
+      inData.flags.ddb.alternateIds = [alternateId];
+    }
+  }
+
   if (!dataMatch || !versionFlags) {
     inData.flags.ddb.versions = {
       ddbMetaData: sceneUpdateDiff,
@@ -492,7 +515,7 @@ function importScene(conf, sceneFile) {
     utils.saveJSONFile(inData, configFile);
   }
 
-  if (!dataMatch || !sceneDataFlags) {
+  if (!dataMatch || !sceneDataFlags || alternativeSceneIdsUpdate) {
     console.log("UPDATING META DATA");
     saveIndividualScenes([inData], conf);
     sceneUpdateDiff.lastUpdate = ddbMetaDataVersion;
@@ -534,7 +557,44 @@ function actorCheck(config) {
   return missingActors;
 }
 
+function sceneCheck(conf, sceneFile) {
+  const configFile = path.resolve(__dirname, sceneFile);
+  let inData = utils.loadJSONFile(configFile);
+  const bookCode = (inData.flags.ddb && inData.flags.ddb.bookCode) ?
+    inData.flags.ddb.bookCode :
+    (inData.flags.vtta && inData.flags.vtta.code) ?
+      inData.flags.vtta.code : undefined;
+
+  conf.run.bookCode = bookCode;
+
+  const sceneData = configure.loadImageFinderResults("scene", bookCode);
+  const oldSceneData = configure.loadImageFinderResults("old-scene", bookCode);
+  
+  const inSceneData = sceneData.some((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId);
+  const inOldSceneData = oldSceneData.some((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId);
+
+  if (!inSceneData && inOldSceneData) {
+    const oldData = oldSceneData.find((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId);
+    const alternateId = sceneData.find((scene) => scene.img === oldData.img);
+    console.log(alternateId);
+    if (inData.flags.ddb.alternateIds) {
+      if (!inData.flags.ddb.alternateIds.some((ai) => ai.contentChunkId === alternateId.contentChunkId)) {
+        inData.flags.ddb.alternateIds.push(alternateId);
+      }
+    } else {
+      inData.flags.ddb.alternateIds = [alternateId];
+    }
+  }
+
+  utils.saveJSONFile(inData, configFile);
+  saveIndividualScenes([inData], conf);
+
+  // "alternateIds": [{"contentChunkId": null}],
+
+}
+
 exports.importScene = importScene;
 exports.getSceneAdjustments = getSceneAdjustments;
 exports.listSceneIds = listSceneIds;
 exports.actorCheck = actorCheck;
+exports.sceneCheck = sceneCheck;

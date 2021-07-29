@@ -57,6 +57,19 @@ function saveImageFinderResults(sceneContent, journalContent, bookCode) {
   utils.saveJSONFile(journalData, imageJournalPath);
 }
 
+function loadImageFinderResults(type, bookCode) {
+  const imageScenePath = path.resolve(__dirname,configDir,`${type}-images.json`);
+
+  const data = (fs.existsSync(imageScenePath)) ?
+    utils.loadJSONFile(imageScenePath) :
+    { bookCode: [] };
+
+  console.log("loaded image file");
+
+  return data[bookCode];
+
+}
+
 function saveTableData(content, bookCode) {
   const tableDataPath = path.resolve(__dirname,configDir,"table-data.json");
 
@@ -254,3 +267,4 @@ exports.saveLookups = saveLookups;
 exports.setConfigDir = setConfigDir;
 exports.saveImageFinderResults = saveImageFinderResults;
 exports.saveTableData = saveTableData;
+exports.loadImageFinderResults = loadImageFinderResults;
