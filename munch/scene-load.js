@@ -468,15 +468,15 @@ function importScene(conf, sceneFile) {
   if (sceneData && !_.isEqual(inData.walls, sceneData.walls)) sceneUpdateDiff.walls = ddbMetaDataVersion;
   if (sceneData && !_.isEqual(inData.lights, sceneData.lights)) sceneUpdateDiff.lights = ddbMetaDataVersion;
   if (sceneData && inData.drawings && (!sceneData.drawings || !_.isEqual(inData.drawings, sceneData.drawings))) sceneUpdateDiff.drawings = ddbMetaDataVersion;
-  if (sceneData && inData.flags.ddb.notes && (!sceneData.flags.ddb.notes || !_.isEqual(inData.flags.ddb.notes, sceneData.flags.ddb.notes))) sceneUpdateDiff.notes = ddbMetaDataVersion;
-  if (sceneData && inData.flags.ddb.tokens && (!sceneData.flags.ddb.tokens || !_.isEqual(inData.flags.ddb.tokens, sceneData.flags.ddb.tokens))) sceneUpdateDiff.tokens = ddbMetaDataVersion;
+  if (sceneData && inData.flags.ddb.notes && sceneData.flags && (!sceneData.flags.ddb.notes || !_.isEqual(inData.flags.ddb.notes, sceneData.flags.ddb.notes))) sceneUpdateDiff.notes = ddbMetaDataVersion;
+  if (sceneData && inData.flags.ddb.tokens && sceneData.flags && (!sceneData.flags.ddb.tokens || !_.isEqual(inData.flags.ddb.tokens, sceneData.flags.ddb.tokens))) sceneUpdateDiff.tokens = ddbMetaDataVersion;
   if (sceneUpdateDiff.flags) delete sceneUpdateDiff.flags;
 
   // final diff
   console.log("********************");
 
   const dataMatch = _.isEqual(inData, sceneData);
-  const sceneDataFlags = sceneData.flags.ddb.versions;
+  const sceneDataFlags = sceneData.flags && sceneData.flags.ddb.versions;
   if (!sceneDataFlags) console.log("Updating to add scene data version flag");
   const versionFlags = inData.flags.ddb.versions;
   console.log("Data match: " + dataMatch);
