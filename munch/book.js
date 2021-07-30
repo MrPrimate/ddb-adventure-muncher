@@ -1370,11 +1370,16 @@ function rowGenerate(err, row) {
 
 
 async function downloadEnhancements(list) {
-  for (let i = 0; i < list.length; i++) {
-    console.log(`Downloading Hi Res ${list[i].name}`);
-    const dlPath = path.join(config.run.outputDir,list[i].path);
-    await utils.downloadFile(list[i].url, dlPath);
-  } 
+  const disableLargeDownloads = (config.disableLargeDownloads) ? 
+    config.disableLargeDownloads :
+    false;
+  if (!disableLargeDownloads) {
+    for (let i = 0; i < list.length; i++) {
+      console.log(`Downloading Hi Res ${list[i].name}`);
+      const dlPath = path.join(config.run.outputDir,list[i].path);
+      await utils.downloadFile(list[i].url, dlPath);
+    }
+  }
 }
 
 async function collectionFinished(err, count) {
