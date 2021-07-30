@@ -156,16 +156,21 @@ async function getConfig(options = {}) {
   let dbsDir;
   if (config.dbsDir) {
     dbsDir = config.dbsDir;
+  } else if (process.env.DB_DIR) {
+    dbsDir = process.env.DB_DIR;
   } else {
     dbsDir = dbDir;
   }
   const downloadDir = path.resolve(__dirname, dbsDir);
+  const metaInfoDir = (process.env.META_DIR) ? process.env.META_DIR : path.resolve(__dirname, metaDir);
   const sceneInfoDir = (process.env.SCENE_DIR) ? process.env.SCENE_DIR : path.resolve(__dirname, scenesDir);
   const noteInfoDir = (process.env.NOTE_DIR) ? process.env.NOTE_DIR : path.resolve(__dirname, notesDir);
   const tableInfoDir = (process.env.TABLE_DIR) ? process.env.TABLE_DIR : path.resolve(__dirname, notesDir);
   const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint; 
 
   if (config.debug) {
+    console.log(`DownloadDir ${downloadDir}`); 
+    console.log(`MetaInfoDir ${metaInfoDir}`); 
     console.log(`SceneInfoDir ${sceneInfoDir}`);
     console.log(`NoteInfoDir ${noteInfoDir}`);
     console.log(`TableInfoDir ${tableInfoDir}`);
@@ -178,7 +183,7 @@ async function getConfig(options = {}) {
   config.run = {
     enhancementEndpoint: enhancementEndpoint,
     downloadDir: downloadDir,
-    metaDir: path.resolve(__dirname, metaDir),
+    metaDir: path.resolve(__dirname, metaInfoDir),
     sceneInfoDir: path.resolve(__dirname, sceneInfoDir),
     noteInfoDir: path.resolve(__dirname, noteInfoDir),
     tableInfoDir: path.resolve(__dirname, tableInfoDir),
@@ -222,8 +227,30 @@ async function getConfig(options = {}) {
     "table",
   ];
 
-  console.log(`Pulling ${book.description} (${options.bookCode}) off the shelf...`);
   console.log(`Saving adventures to ${outputDir}`);
+
+  console.log(`Pulling ${book.description} (${options.bookCode}) off the shelf...`);
+
+  const versionsFile = path.resolve(__dirname, path.join(metaInfoDir, "versions.json"));
+  console.log(`Supported versions file ${versionsFile}`);
+  let currentVersion = 0;
+  let supportedVersion = 0;
+  let latestVersion = 0;
+  let versions = {};
+  versions[options.bookCode] = currentVersion;
+
+  if (fs.existsSync(sourceDir)) {
+    console.warn("LOADING CURRENT VERSION");
+    const downloadedVersionPath = path.resolve(__dirname, path.join(sourceDir, "version.txt"));
+    const existingVersionContent = utils.loadFile(downloadedVersionPath);
+    currentVersion = parseInt(existingVersionContent.trim());
+  }
+
+  if (fs.existsSync(versionsFile)){
+    console.warn("LOADING VERSIONS");
+    versions = utils.loadConfig(versionsFile);
+    if (versions[options.bookCode]) supportedVersion = versions[options.bookCode];
+  }
 
   const bookZipPath = path.join(downloadDir, `${options.bookCode}.zip`);
   if (!fs.existsSync(bookZipPath)){
@@ -237,6 +264,27 @@ async function getConfig(options = {}) {
     await utils.unzipFile(bookZipPath, sourceDir);
   }
 
+  // reload current version
+  if (currentVersion === 0 && fs.existsSync(sourceDir)) {
+    const downloadedVersionPath = path.resolve(__dirname, path.join(sourceDir, "version.txt"));
+    const existingVersionContent = utils.loadFile(downloadedVersionPath);
+    currentVersion = parseInt(existingVersionContent.trim());
+  }
+
+  // TODO - load latest version rather than using current
+  latestVersion = currentVersion;
+
+  // update supported version to current? (dev mode activity)
+  if (config.updateVersions){
+    console.warn("SAVING VERSIONS");
+    versions[options.bookCode] = currentVersion;
+    utils.saveConfig(versions, versionsFile);
+  }
+
+  console.log(`Current version: ${currentVersion}`);
+  console.log(`Supported version: ${supportedVersion}`);
+  console.log(`Latest version: ${latestVersion}`);
+
   // generate book runtime config
   config.run.userData = userData;
   config.run.key = await ddb.getKey(book.id, config.cobalt);
@@ -247,6 +295,11 @@ async function getConfig(options = {}) {
   config.run.outputDirEnv = path.resolve(__dirname, config.outputDirEnv);
   config.run.scenesBookDir = path.join(config.run.sceneInfoDir, options.bookCode);
   config.run.version = options.version;
+  config.run.ddbVersions = {
+    latestVersion,
+    currentVersion,
+    supportedVersion,
+  };
 
   if (config.debug) {
     console.log("================================");
