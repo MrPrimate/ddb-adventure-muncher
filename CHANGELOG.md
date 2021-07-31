@@ -1,3 +1,7 @@
+# 0.3.12
+
+* The muncher will now display a warning if it does not know if the version of the data supplied by DDB was known to parse.
+
 # 0.3.11
 
 * Allow for scenes changing ids across releases from DDB. Some map pins from CoS may not currently be imported, these will be fixed in the next update.
