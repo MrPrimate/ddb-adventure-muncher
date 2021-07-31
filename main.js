@@ -222,6 +222,7 @@ function generateAdventure(options) {
               success: false,
               message: "Missing required data about monsters for this adventure, please re-munch actors in Foundry and regenerate a new config file and reload with the button above.",
               data: missingActors,
+              config,
             });
             return;
           }
@@ -243,6 +244,7 @@ function generateAdventure(options) {
             success: true,
             message: `Successfully generated ${config.run.bookCode}.fvttadv`,
             data: [],
+            config,
           });
         };
         doSomething();

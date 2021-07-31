@@ -235,7 +235,8 @@ async function getConfig(options = {}) {
   console.log(`Supported versions file ${versionsFile}`);
   let currentVersion = 0;
   let supportedVersion = 0;
-  let latestVersion = 0;
+  let updateAvailable = false;
+  let downloadNewVersion = false;
   let versions = {};
   versions[options.bookCode] = currentVersion;
 
@@ -244,6 +245,11 @@ async function getConfig(options = {}) {
     const downloadedVersionPath = path.resolve(__dirname, path.join(sourceDir, "version.txt"));
     const existingVersionContent = utils.loadFile(downloadedVersionPath);
     currentVersion = parseInt(existingVersionContent.trim());
+    const latest = await ddb.checkLatestBookVersion(book.id, config.cobalt, currentVersion);
+    console.warn(latest);
+    if (latest.sourceUpdatesAvailable[book.id]) {
+      updateAvailable = true;
+    }
   }
 
   if (fs.existsSync(versionsFile)){
@@ -253,6 +259,23 @@ async function getConfig(options = {}) {
   }
 
   const bookZipPath = path.join(downloadDir, `${options.bookCode}.zip`);
+
+  // if an update is available and we _think_ it is supported (we don't know till we grab it)
+  // delete and redownload
+  downloadNewVersion = updateAvailable && supportedVersion > currentVersion;
+  if (downloadNewVersion) {
+    if (fs.existsSync(bookZipPath)) {
+      fs.rmSync(bookZipPath);
+    }
+    if (fs.existsSync(sourceDir)) {
+      fs.rmdir(sourceDir, { recursive: true }, (err) => {
+        if (err) {
+          throw err;
+        }
+      });
+    }
+  }
+
   if (!fs.existsSync(bookZipPath)){
     console.log(`Downloading ${book.description} ... this might take a while...`);
     await ddb.downloadBook(book.id, config.cobalt, bookZipPath);
@@ -265,14 +288,11 @@ async function getConfig(options = {}) {
   }
 
   // reload current version
-  if (currentVersion === 0 && fs.existsSync(sourceDir)) {
+  if ((currentVersion === 0 || downloadNewVersion) && fs.existsSync(sourceDir)) {
     const downloadedVersionPath = path.resolve(__dirname, path.join(sourceDir, "version.txt"));
     const existingVersionContent = utils.loadFile(downloadedVersionPath);
     currentVersion = parseInt(existingVersionContent.trim());
   }
-
-  // TODO - load latest version rather than using current
-  latestVersion = currentVersion;
 
   // update supported version to current? (dev mode activity)
   if (config.updateVersions){
@@ -283,7 +303,7 @@ async function getConfig(options = {}) {
 
   console.log(`Current version: ${currentVersion}`);
   console.log(`Supported version: ${supportedVersion}`);
-  console.log(`Latest version: ${latestVersion}`);
+  console.log(`Downloaded new: ${downloadNewVersion}`);
 
   // generate book runtime config
   config.run.userData = userData;
@@ -296,9 +316,10 @@ async function getConfig(options = {}) {
   config.run.scenesBookDir = path.join(config.run.sceneInfoDir, options.bookCode);
   config.run.version = options.version;
   config.run.ddbVersions = {
-    latestVersion,
+    downloadNewVersion,
     currentVersion,
     supportedVersion,
+    updateAvailable
   };
 
   if (config.debug) {

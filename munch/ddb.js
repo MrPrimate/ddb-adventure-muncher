@@ -74,6 +74,18 @@ async function getKey(bookId, cobalt) {
   }
 }
 
+async function checkLatestBookVersion(bookId, cobalt, currentVersion) {
+  const url = "https://www.dndbeyond.com/mobile/api/v6/do-higher-versions-exist";
+  const urlencoded = new URLSearchParams();
+  urlencoded.append("token", `${cobalt}`);
+  const versions = {};
+  versions[bookId] = currentVersion;
+  urlencoded.append("sourceVersions", JSON.stringify(versions));
+  urlencoded.append("manifestVersion", "0.0");
+  const result = await ddbCall(url, urlencoded);
+  return result;
+}
+
 async function getBookUrl(bookId, cobalt) {
   const urlencoded = new URLSearchParams();
   urlencoded.append("token", `${cobalt}`);
@@ -169,3 +181,4 @@ exports.downloadBook = downloadBook;
 exports.listBooks = listBooks;
 exports.getUserData = getUserData;
 exports.getDDBConfig = getDDBConfig;
+exports.checkLatestBookVersion = checkLatestBookVersion;

@@ -63,6 +63,15 @@ window.api.receive("generate", (data) => {
     if (data.data.length > 10) messageDiv.innerHTML += `and more to a total of ${data.data.length} monsters.`;
     messageDiv.innerHTML += "</p><br><br><br>";
   }
+  if (data.success) {
+    const currentVersion = data.config.run.ddbVersions.currentVersion;
+    const supportedVersion = data.config.run.ddbVersions.supportedVersion;
+    if (currentVersion > supportedVersion) {
+      messageDiv.innerHTML += `<p style="color:red">Current book version is ${currentVersion}, last known supported version is ${supportedVersion}. There is a chance that this adventure has not parsed properly.</p>`;
+    } else if (data.config.run.ddbVersions.downloadNewVersion) {
+      messageDiv.innerHTML += `<p style="color:green"><b>Used DDB book version (${currentVersion}).</b></p>`;
+    }
+  }
 });
 
 
