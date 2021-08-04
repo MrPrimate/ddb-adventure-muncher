@@ -36,6 +36,7 @@ let tempHandouts = {};
 
 var masterFolder;
 
+let documents = [];
 let generatedJournals = [];
 let generatedFolders = [];
 let generatedScenes = [];
@@ -790,10 +791,10 @@ function generateScene(row, img) {
       console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
       console.log("Found notes!!!!!");
 
-      console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
       adjustment.notes = [];
 
       adjustment.flags.ddb.notes.forEach((note) => {
+        console.log(`Checking ${note.label}`);
         const noteJournal = generatedJournals.find((journal) => {
           const contentChunkIdMatch = note.flags.ddb.contentChunkId ?
             journal.flags.ddb && note.flags.ddb && journal.flags.ddb.contentChunkId == note.flags.ddb.contentChunkId :
@@ -810,10 +811,14 @@ function generateScene(row, img) {
             journal.flags.ddb.originalLink == note.flags.ddb.originalLink &&
             journal.flags.ddb.linkName == note.flags.ddb.linkName :
             false;
-          return contentChunkIdMatch || originMatch;
-        
+          const journalNameMatch = !contentChunkIdMatch && !originMatch ?
+            journal.name.trim() == note.label.trim() :
+            false;
+          return contentChunkIdMatch || originMatch || journalNameMatch;
+
         });
         if (noteJournal){
+          console.log(`Found ${note.label} matched to ${noteJournal._id} (${noteJournal.name})`);
           note.positions.forEach((position) => {
             noteJournal.flags.ddb.pin = `${position.x}${position.y}`;
             const noteId = getId(noteJournal, "Note");
@@ -838,6 +843,7 @@ function generateScene(row, img) {
             adjustment.notes.push(n);
           });
         }
+        console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
       });
     }
     delete adjustment.flags.ddb.notes;
@@ -1361,11 +1367,16 @@ function rowGenerate(err, row) {
   }
   let document = generateJournalChapterEntry(row);
   generateNoteJournals(row);
-  if (document.content) {
+
+  // if this is a top tier parent document we process it for scenes now.
+  if (document.content && document.flags.ddb.cobaltId) {
     // eslint-disable-next-line no-unused-vars
     let [tempScenes, sceneJournals, tmpReplaceLinks] = findScenes(document);
     replaceLinks = replaceLinks.concat(tmpReplaceLinks);
+  } else {
+    documents.push(document);
   }
+  
 }
 
 
@@ -1388,6 +1399,16 @@ async function collectionFinished(err, count) {
     exit();
   }
   try {
+
+    console.log(`Processing ${documents.length} scenes`);
+    documents.forEach((document) => {
+      if (document.content) {
+        // eslint-disable-next-line no-unused-vars
+        let [tempScenes, sceneJournals, tmpReplaceLinks] = findScenes(document);
+        replaceLinks = replaceLinks.concat(tmpReplaceLinks);
+      }
+    });
+
     console.log(`Processing ${count} entries...`);
     console.log("Looking for missing scenes...");
     [generatedJournals, generatedScenes] = generateMissingScenes(generatedJournals, generatedScenes);
@@ -1429,6 +1450,7 @@ async function setConfig(conf) {
   config = conf;
   console.log(`Starting import of ${config.run.bookCode}`);
   masterFolder = undefined;
+  documents = [];
   generatedJournals = [];
   generatedFolders = [];
   generatedScenes = [];

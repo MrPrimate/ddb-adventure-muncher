@@ -1,3 +1,7 @@
+# 0.3.13
+
+* Improved note detection for scenes that change DDB format.
+
 # 0.3.12
 
 * The muncher will now display a warning if it does not know if the version of the data supplied by DDB was known to parse.
