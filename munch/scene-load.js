@@ -485,8 +485,8 @@ function importScene(conf, sceneFile) {
   const sceneDataHints = configure.loadImageFinderResults("scene", bookCode);
   const oldSceneDataHints = configure.loadImageFinderResults("old-scene", bookCode);
   
-  const inSceneDataHints = sceneDataHints.some((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId);
-  const inOldSceneDataHints = oldSceneDataHints.some((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId);
+  const inSceneDataHints = sceneDataHints ? sceneDataHints.some((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId) : [];
+  const inOldSceneDataHints = oldSceneDataHints ? oldSceneDataHints.some((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId) : [];
 
   let alternativeSceneIdsUpdate = false;
   if (!inSceneDataHints && inOldSceneDataHints) {
