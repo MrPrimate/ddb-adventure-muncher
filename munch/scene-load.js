@@ -347,12 +347,16 @@ function importScene(conf, sceneFile) {
         originalLink: inData.flags.ddb.originalLink,
       }
     };
-    newFlags.stairways = inData.flags.stairways ? inData.flags.stairways : [];
+    newFlags["stairways"] = inData.flags["stairways"] ? inData.flags["stairways"] : [];
     newFlags["perfect-vision"] = inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [];
     newFlags["dynamic-illumination"] = inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [];
 
-    if (!_.isEqual(inData.flags, newFlags)) {
+    if (!_.isEqual(inData.flags, JSON.parse(JSON.stringify(newFlags)))) {
       console.log("Indata update from newflags");
+      console.log("Old flags:");
+      console.log(inData.flags);
+      console.log("New flags:");
+      console.log(newFlags);
       inDataUpdate = true;
     }
     inData.flags = newFlags;
@@ -475,7 +479,7 @@ function importScene(conf, sceneFile) {
   // final diff
   console.log("********************");
 
-  const dataMatch = _.isEqual(inData, sceneData);
+  const dataMatch = _.isEqual(JSON.parse(JSON.stringify(inData)), JSON.parse(JSON.stringify(sceneData)));
   const sceneDataFlags = sceneData.flags && sceneData.flags.ddb.versions;
   if (!sceneDataFlags) console.log("Updating to add scene data version flag");
   const versionFlags = inData.flags.ddb.versions;
@@ -490,6 +494,7 @@ function importScene(conf, sceneFile) {
 
   let alternativeSceneIdsUpdate = false;
   if (!inSceneDataHints && inOldSceneDataHints) {
+    console.log("Scene data hint triggered indata update");
     inDataUpdate = true;
     alternativeSceneIdsUpdate = true;
     const oldData = oldSceneDataHints.find((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId);
