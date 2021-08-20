@@ -321,6 +321,18 @@ async function getConfig(options = {}) {
     supportedVersion,
     updateAvailable
   };
+  config.run.required = {
+    monsters: [],
+    items: [],
+    spells: [],
+    vehicles: [],
+    skills: [],
+    senses: [],
+    conditions: [],
+    actions: [],
+    weaponproperties: [],
+  };
+
 
   if (config.debug) {
     console.log("================================");

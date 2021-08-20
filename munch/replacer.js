@@ -32,6 +32,19 @@ function foundryCompendiumReplace(text, config) {
   // actions
   // weaponproperties
 
+  // add to config.run.required to import missing items in ddbimporter
+  // config.run.required = {
+  //   monsters: [],
+  //   items: [],
+  //   spells: [],
+  //   vehicles: [],
+  //   skills: [],
+  //   senses: [],
+  //   conditions: [],
+  //   actions: [],
+  //   weaponproperties: [],
+  // };
+
   const dom = new JSDOM(text);
   text = dom.window.document.body.outerHTML;
 
@@ -42,12 +55,16 @@ function foundryCompendiumReplace(text, config) {
       const lookupMatch = node.outerHTML.match(lookupRegExp);
       const lookupValue = config.lookups[COMPENDIUM_MAP[lookupKey]];
       if (lookupValue) {
+        if (!config.run.required[COMPENDIUM_MAP[lookupKey]].includes(String(lookupMatch[1]))) {
+          config.run.required[COMPENDIUM_MAP[lookupKey]].push(String(lookupMatch[1]));
+        }
+
         const lookupEntry = lookupValue.find((e) => e.id == lookupMatch[1]);
         if (lookupEntry) {
           const documentRef = lookupEntry.documentName ? lookupEntry.documentName : lookupEntry._id;
           text = text.replace(node.outerHTML, `@Compendium[${lookupEntry.compendium}.${documentRef}]{${node.textContent}}`);
         } else {
-          console.log(`NO Lookup Compendium Entry for ${node.outerHTML}`);
+          console.log(`No Lookup Compendium Entry for ${node.textContent} with ID ${lookupMatch[1]}. DDB Importer will attempt to import this during adventure load.`);
         }
       }
     });
@@ -77,6 +94,9 @@ function foundryCompendiumReplace(text, config) {
     const lookupMatch = node.outerHTML.match(lookupRegExp);
     const lookupValue = config.lookups["vehicles"];
     if (lookupMatch) {
+      if (!config.run.required["vehicles"].some((e) => e.id == lookupMatch[1])) {
+        config.run.required["vehicles"].push(lookupMatch[1]);
+      }
       const lookupEntry = lookupValue.find((e) => e.id == lookupMatch[1]);
       if (lookupEntry) {
         node.setAttribute("href", `https://www.dndbeyond.com${lookupEntry.url}`);

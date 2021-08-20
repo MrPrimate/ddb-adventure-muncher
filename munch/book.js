@@ -919,12 +919,15 @@ function generateScene(row, img) {
 
         // Get the compendium id for the token's actor
         const lookupEntry = config.lookups["monsters"].find((e) => e.id == token.flags.ddbActorFlags.id);
+        token.flags.actorFolderId = masterFolder["Actor"]._id;
         if (lookupEntry) {
           token.flags.compendiumActorId = lookupEntry._id;
-          token.flags.actorFolderId = masterFolder["Actor"]._id;
         } else {
-          console.error(`Please regenerate your config file, unable to find the Monster for Token ${token.name}`);
-          throw(`Please regenerate your config file, unable to find the Monster for Token ${token.name}`);
+          console.log(`Found actor with Id ${token.flags.ddbActorFlags.id}`);
+        }
+
+        if (!config.run.required["monsters"].includes(String(token.flags.ddbActorFlags.id))) {
+          config.run.required["monsters"].push(String(token.flags.ddbActorFlags.id));
         }
 
         // these may have been gathered by accident
@@ -1300,6 +1303,7 @@ function outputAdventure(config) {
   const adventure = require(path.join(templateDir,"adventure.json"));
   adventure.name = config.run.book.description;
   adventure.id = utils.randomString(10, "#aA");
+  adventure.required = config.run.required;
 
   const adventureData = JSON.stringify(adventure);
   fs.writeFileSync(path.join(config.run.outputDir,"adventure.json"), adventureData);

@@ -1,3 +1,7 @@
+# 0.4.0
+
+* Adventure Muncher will no longer prevent munching if monsters are not in your compendium, and if using a DDB Importer version 2.4.0 or greater will automatically download and add missing monsters, items and spells into your DDB Importer compendiums.
+
 # 0.3.13
 
 * Improved note detection for scenes that change DDB format.
