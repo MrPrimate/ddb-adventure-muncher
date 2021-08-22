@@ -7,7 +7,7 @@ The Adventure Muncher can integrate the adventures/books you own on D&D Beyond i
 
 ## Install
 
-There are two parts to install to get munching.
+There are two parts to install to get munching. This guide assumes you're using Adventure Muncher 0.4.0+ and DDB Importer 2.4.0+.
 
 * Install the [DDB Importer](https://foundryvtt.com/packages/ddb-importer/) module into Foundry.
 * [Adventure Muncher](https://github.com/MrPrimate/ddb-adventure-muncher/releases/latest) to generate an adventure to import into Foundry using DDB Importer.
@@ -38,14 +38,7 @@ It's real easy to forget.
 ![muncher button location](./images/buttons.png)
 8. If you've not used the Muncher before, the default settings will be fine.
 ![muncher settings screen](./images/muncher-settings.png)
-9. Click on the Spells tab and click Spell Munch; this will grab your spells.
-![muncher spells screen](./images/muncher-spells.png)
-10. Click on the Items tab and click Item Munch; this will grab your items.
-![muncher item screen](./images/muncher-items.png)
-11. Click on the Monsters tab and click Monster Munch; this will import your monsters.
-This is going to take a few minutes, so maybe grab a drink?
-![muncher monsters screen](./images/muncher-monsters.png)
-12. Click the Adventures tab, and click Generate Adventure Muncher Config File.
+9. Click the Adventures tab, and click Generate Adventure Muncher Config File.
 This will download a config file that can be used by the Adventure Muncher.
 We will return to this screen to use the Import Generated Adventure button when the Muncher has done its work!
 ![muncher adventures screen](./images/muncher-adventures.png)
@@ -65,7 +58,7 @@ Once loaded into Adventure Muncher, you can remove the download. Adventure Munch
 6. You should now be able to select an adventure to generate.
 You need to have access to this content on D&D Beyond.
 7. If you want to generate tokens on scenes (Foundry v8+ only), then tick "Generate actors and tokens?".
-Please note that not all scenes have actors generated.
+Please note that not all scenes have actors placed on them at the moment.
 This is a community effort, and you can see the current progress at the [spreadsheet](https://docs.google.com/spreadsheets/d/17b4jG2W521N_nFkE1jr2UGEjixHGjHGnEO9eSKhFmwo/edit?usp=sharing).
 8. If you wish all the Journal and Table entries to be viewable by players (useful in books such as The Players Handbook), tick this option.
 9. Click Generate.

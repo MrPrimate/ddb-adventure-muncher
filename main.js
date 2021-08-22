@@ -24,7 +24,7 @@ const isMac = process.platform === "darwin";
 
 const ddb = require("./munch/ddb.js");
 const book = require("./munch/book.js");
-const scenes = require("./munch/scene-load.js");
+// const scenes = require("./munch/scene-load.js");
 const utils = require("./munch/utils.js");
 const configurator = require("./munch/config.js");
 
@@ -215,18 +215,6 @@ function generateAdventure(options) {
         utils.directoryReset(config);
         book.fetchLookups(config);
         book.setMasterFolders();
-        if (config.generateTokens){
-          const missingActors = scenes.actorCheck(config);
-          if (missingActors.length > 0) {
-            resolve({
-              success: false,
-              message: "Missing required data about monsters for this adventure, please re-munch actors in Foundry and regenerate a new config file and reload with the button above.",
-              data: missingActors,
-              config,
-            });
-            return;
-          }
-        }
         book.getData();
         const targetAdventureZip = path.join(
           config.run.outputDirEnv,
