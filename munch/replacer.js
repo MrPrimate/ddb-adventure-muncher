@@ -81,8 +81,13 @@ function foundryCompendiumReplace(text, config) {
     const slugMatch = node.outerHTML.match(bookSlugRegExp);
     if (slugMatch) {
       // console.log(slugMatch);
-      node.setAttribute("href", `https://www.dndbeyond.com/${config.run.book.sourceURL}/${slugMatch[2]}`);
-      text = text.replace(target, node.outerHTML);
+      const book = config.run.ddb_config.sources.find((source) => source.name.toLowerCase() == slugMatch[1].toLowerCase());
+      if (book) {
+        node.setAttribute("href", `https://www.dndbeyond.com/${book.sourceURL}/${slugMatch[2]}`);
+        text = text.replace(target, node.outerHTML);
+      } else {
+        console.error(`Unknown book reference found ${slugMatch[1]} in ${slugMatch[0]}`);
+      }
     }
   });
 

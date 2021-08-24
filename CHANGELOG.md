@@ -1,3 +1,7 @@
+# 0.4.1
+
+* Attempt to replace links to other modules, e.g. basic rules, with correct DDB links if no compendium lookup found.
+
 # 0.4.0
 
 * Adventure Muncher will no longer prevent munching if monsters are not in your compendium, and if using a DDB Importer version 2.4.0 or greater will automatically download and add missing monsters, items and spells into your DDB Importer compendiums.
