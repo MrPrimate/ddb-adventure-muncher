@@ -362,7 +362,11 @@ function generateTable(row, journal, html) {
     const keys = parseTable.getHeadings(node);
     const diceKeys = findDiceColumns(node);
     const contentChunkId = node.getAttribute("data-content-chunk-id");
-    const nameGuess = guessTableName(document, contentChunkId);
+    let nameGuess = guessTableName(document, contentChunkId);
+
+    if (nameGuess.split(" ").length > 5 && diceKeys.length === 1 && keys.length === 2) {
+      nameGuess = keys[1];
+    }
 
     console.log("***********************************************");
     console.log("Table detection!");
