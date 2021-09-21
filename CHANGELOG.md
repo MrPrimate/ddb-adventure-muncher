@@ -1,3 +1,8 @@
+# 0.4.2
+
+* Support for TWBtW.
+* A log file is now generated during every run to ease debugging problems. Access it through the Help menu.
+
 # 0.4.1
 
 * Attempt to replace links to other modules, e.g. basic rules, with correct DDB links if no compendium lookup found.
