@@ -1,6 +1,7 @@
 /* eslint-disable no-useless-escape */
 "use strict";
 
+const logger = require("./logger.js");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
@@ -64,7 +65,7 @@ function foundryCompendiumReplace(text, config) {
           const documentRef = lookupEntry.documentName ? lookupEntry.documentName : lookupEntry._id;
           text = text.replace(node.outerHTML, `@Compendium[${lookupEntry.compendium}.${documentRef}]{${node.textContent}}`);
         } else {
-          console.log(`No Lookup Compendium Entry for ${node.textContent} with ID ${lookupMatch[1]}. DDB Importer will attempt to import this during adventure load.`);
+          logger.info(`No Lookup Compendium Entry for ${node.textContent} with ID ${lookupMatch[1]}. DDB Importer will attempt to import this during adventure load.`);
         }
       }
     });
@@ -80,13 +81,13 @@ function foundryCompendiumReplace(text, config) {
     const target = node.outerHTML;
     const slugMatch = node.outerHTML.match(bookSlugRegExp);
     if (slugMatch) {
-      // console.log(slugMatch);
+      // logger.info(slugMatch);
       const book = config.run.ddb_config.sources.find((source) => source.name.toLowerCase() == slugMatch[1].toLowerCase());
       if (book) {
         node.setAttribute("href", `https://www.dndbeyond.com/${book.sourceURL}/${slugMatch[2]}`);
         text = text.replace(target, node.outerHTML);
       } else {
-        console.error(`Unknown book reference found ${slugMatch[1]} in ${slugMatch[0]}`);
+        logger.error(`Unknown book reference found ${slugMatch[1]} in ${slugMatch[0]}`);
       }
     }
   });
@@ -107,10 +108,10 @@ function foundryCompendiumReplace(text, config) {
         node.setAttribute("href", `https://www.dndbeyond.com${lookupEntry.url}`);
         text = text.replace(target, node.outerHTML);
       } else {
-        console.log(`NO Vehicle Lookup Entry for ${node.outerHTML}`);
+        logger.info(`NO Vehicle Lookup Entry for ${node.outerHTML}`);
       }
     } else {
-      console.log(`NO Vehicle Lookup Match for ${node.outerHTML}`);
+      logger.info(`NO Vehicle Lookup Match for ${node.outerHTML}`);
     }
   });
 
@@ -144,7 +145,7 @@ function moduleReplaceLinks(text, journals, config) {
 
     const slugMatch = node.outerHTML.match(bookSlugRegExp);
     if (slugMatch) {
-      // console.log(slugMatch);
+      // logger.info(slugMatch);
       const slug = slugMatch[1].replace(/\//g, "").split("#");
       const refactoredSlug = (slug.length > 1) ? `${slug[0].toLowerCase()}#${slug[1]}` : slug[0].toLowerCase();
       const journalEntry = journals.find((journal) => {
@@ -157,10 +158,10 @@ function moduleReplaceLinks(text, journals, config) {
         //text = text.replace(journalRegex, `@JournalEntry[${journalEntry.name}]{${node.textContent}}`);
         innerHTML = innerHTML.replace(node.outerHTML, `@JournalEntry[${journalEntry.name}]{${node.textContent}}`);
       } else {
-        console.log(`NO JOURNAL for ${node.outerHTML}`);
+        logger.info(`NO JOURNAL for ${node.outerHTML}`);
       }
     } else {
-      console.log(`NO SLUGS FOR ${node.outerHTML}`);
+      logger.info(`NO SLUGS FOR ${node.outerHTML}`);
     }
   }
 
@@ -183,8 +184,8 @@ function replaceImageLinks(text, config) {
   let match = /ddb:\/\/(?!vehicles|armor|actions|weaponproperties|compendium|image|spells|magicitems|monsters|skills|senses|conditions|weapons|adventuring-gear)([\w\d\.\/#-]+)+(?:"|')/gi;
   let matches = text.match(match);
   if (matches) {
-    console.log("Unknown DDB Match");
-    console.log(matches);
+    logger.info("Unknown DDB Match");
+    logger.info(matches);
   }
 
   // todo generate a journal entry for each of these?
@@ -354,14 +355,14 @@ function diceRollMatcher(match, p1, p2, p3, p4, p5) {
     return `${p1 ? p1: ""}[[/r ${diceString} # Healing]]${p3} hit points`;
   } else {
     const diceString = parseDiceString(p2).diceString;
-    // console.log(match);
-    // console.log(`p1: ${p1}`);
-    // console.log(`p2: ${p2}`);
-    // console.log(`p3: ${p3}`);
-    // console.log(`p4: ${p4}`);
-    // console.log(`p5: ${p5}`);
+    // logger.info(match);
+    // logger.info(`p1: ${p1}`);
+    // logger.info(`p2: ${p2}`);
+    // logger.info(`p3: ${p3}`);
+    // logger.info(`p4: ${p4}`);
+    // logger.info(`p5: ${p5}`);
     const result = `${p1 ? p1: ""}[[/r ${diceString}]]${p3 ? p3 : ""} ${p4 ? p4 : ""} ${p5 ? p5 : ""}`.trim();
-    // console.log(result);
+    // logger.info(result);
     return result;
   }
 }

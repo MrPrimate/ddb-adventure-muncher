@@ -306,9 +306,9 @@ function importScene(conf, sceneFile) {
   if (badTokens.length > 0) {
     console.error("********************");
     console.error("********************");
-    console.log(`Book: ${bookCode} Scene: ${inData.name}`);
+    console.error(`Book: ${bookCode} Scene: ${inData.name}`);
     console.error("BAD TOKENS");
-    console.log(badTokens);
+    console.error(badTokens);
     console.error("********************");
     console.error("********************");
     console.error("********************");

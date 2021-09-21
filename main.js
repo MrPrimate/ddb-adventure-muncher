@@ -9,6 +9,7 @@ const {
 const path = require("path");
 const fs = require("fs");
 const _ = require("lodash");
+const logger = require("./munch/logger.js");
 
 app.commandLine.appendSwitch("trace-warnings");
 app.commandLine.appendSwitch("unhandled-rejections", "strict");
@@ -36,7 +37,8 @@ const { autoUpdater } = require("electron-updater");
 
 let allBooks = true;
 
-configurator.setConfigDir(app.getPath("userData"));
+const configFolder = app.getPath("userData");
+configurator.setConfigDir(configFolder);
 
 const menuTemplate = [
   // { role: 'appMenu' }
@@ -65,24 +67,24 @@ const menuTemplate = [
       {
         label: "Reset config",
         click: async () => {
-          const configFile = path.join(app.getPath("userData"), "config.json");
-          console.log(configFile);
+          const configFile = path.join(configFolder, "config.json");
+          logger.info(configFile);
           if (fs.existsSync(configFile)) fs.unlinkSync(configFile);
         },
       },
       {
         label: "Reset generated ids",
         click: async () => {
-          const lookupPath = path.join(app.getPath("userData"), "lookup.json");
-          console.log(lookupPath);
+          const lookupPath = path.join(configFolder, "lookup.json");
+          logger.info(lookupPath);
           if (fs.existsSync(lookupPath)) fs.unlinkSync(lookupPath);
         },
       },
       {
         label: "Remove downloaded files",
         click: async () => {
-          const downloadPath = path.join(app.getPath("userData"), "content");
-          console.log(downloadPath);
+          const downloadPath = path.join(configFolder, "content");
+          logger.info(downloadPath);
           if (fs.existsSync(downloadPath)) {
             fs.rmdir(downloadPath, { recursive: true }, (err) => {
               if (err) {
@@ -90,8 +92,8 @@ const menuTemplate = [
               }
             });
           }
-          const buildPath = path.join(app.getPath("userData"), "build");
-          console.log(buildPath);
+          const buildPath = path.join(configFolder, "build");
+          logger.info(buildPath);
           if (fs.existsSync(buildPath)) {
             fs.rmdir(buildPath, { recursive: true }, (err) => {
               if (err) {
@@ -99,8 +101,8 @@ const menuTemplate = [
               }
             });
           }
-          const metaPath = path.join(app.getPath("userData"), "meta");
-          console.log(metaPath);
+          const metaPath = path.join(configFolder, "meta");
+          logger.info(metaPath);
           if (fs.existsSync(metaPath)) {
             fs.rmdir(metaPath, { recursive: true }, (err) => {
               if (err) {
@@ -150,13 +152,25 @@ const menuTemplate = [
       {
         label: "Config location",
         click: async () => {
-          const configFolder = app.getPath("userData");
           const configFile = path.join(configFolder, "config.json");
-          console.log(configFolder);
+          logger.info(configFolder);
           if (fs.existsSync(configFile)) {
             shell.showItemInFolder(configFile);
           } else {
             shell.showItemInFolder(configFolder);
+          }
+        },
+      },
+      {
+        label: "Log file location",
+        click: async () => {
+          const logFolder = path.join(configFolder, "logs");
+          const logFile = path.join(logFolder, "main.log");
+          logger.info(logFolder);
+          if (fs.existsSync(logFile)) {
+            shell.showItemInFolder(logFile);
+          } else {
+            shell.showItemInFolder(logFolder);
           }
         },
       },
@@ -191,7 +205,7 @@ const menuTemplate = [
 
 async function downloadBooks(config) {
   const availableBooks = await ddb.listBooks(config.cobalt);
-  // console.log(bookIds)
+  // logger.info(bookIds)
   for (let i = 0; i < availableBooks.length; i++) {
     process.stdout.write(`Downloading ${availableBooks[i].book.description}`);
     const options = {
@@ -225,7 +239,7 @@ function generateAdventure(options) {
 
         const doSomething = async () => {
           while (!fs.existsSync(targetAdventureZip)) {
-            console.log(`No adventure at ${targetAdventureZip}`);
+            logger.info(`No adventure at ${targetAdventureZip}`);
             await sleep(1000);
           }
           resolve({

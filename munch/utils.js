@@ -5,6 +5,7 @@ const extract = require("extract-zip");
 const fse = require("fs-extra");
 const sizeOf = require("image-size");
 const fetch = require("node-fetch");
+const logger = require("./logger.js");
 
 function getFilePathsRecursively(dir) {
   // returns a flat array of absolute paths of all files recursively contained in the dir
@@ -60,14 +61,14 @@ function writeZipFile(zip, targetFile) {
     .on("finish", function () {
       // JSZip generates a readable stream with a "end" event,
       // but is piped here in a writable stream which emits a "finish" event.
-      console.log(`${targetFile} written.`);
+      logger.info(`${targetFile} written.`);
     });
 }
 
 async function unzipFile(filePath, destination) {
   try {
     await extract(filePath, { dir: destination });
-    console.log("Extraction complete");
+    logger.info("Extraction complete");
     return filePath;
   } catch (err) {
     // handle any errors
@@ -89,7 +90,7 @@ function downloadFile(url, destination) {
         dest.on("error", reject);
       })
       .catch(error => {
-        console.log("error", error);
+        logger.error("error", error);
         reject(error);
       });
   });
@@ -118,7 +119,7 @@ function loadFile(file) {
       const content = fs.readFileSync(filePath);
       return content.toString();
     } catch (err) {
-      console.error(err);
+      logger.error(err);
     }
   } else {
     return undefined;
@@ -154,9 +155,9 @@ function saveJSONFile(content, filePath) {
   try{
     const data = JSON.stringify(content, null, 4);
     fs.writeFileSync(filePath, data);
-    console.log(`JSON file saved to ${filePath}`);
+    logger.info(`JSON file saved to ${filePath}`);
   } catch (error) {
-    console.log(error);
+    logger.error(error);
   }
 }
 
@@ -168,9 +169,9 @@ function saveJSONFile(content, filePath) {
 function saveFile(content, filePath) {
   try{
     fs.writeFileSync(filePath, content);
-    console.log(`File saved to ${filePath}`);
+    logger.info(`File saved to ${filePath}`);
   } catch (error) {
-    console.log(error);
+    logger.error(error);
   }
 }
 
@@ -188,11 +189,11 @@ function directoryReset(config) {
   // delete adventure zip
   const targetAdventureZip = path.join(config.run.outputDirEnv,`${config.run.bookCode}.fvttadv`);
   if (fs.existsSync(targetAdventureZip)) {
-    console.log(`Removing ${targetAdventureZip}`);
+    logger.info(`Removing ${targetAdventureZip}`);
     fs.unlinkSync(targetAdventureZip);
   }
 
-  console.log(`${config.run.sourceDir} to ${path.join(config.run.outputDir,"assets")}`);
+  logger.info(`${config.run.sourceDir} to ${path.join(config.run.outputDir,"assets")}`);
 
   if (!fs.existsSync(config.run.outputDir)) {
     fs.mkdirSync(config.run.outputDir);
@@ -203,13 +204,13 @@ function directoryReset(config) {
 
   // remove copied db
   const copiedDbPath = path.join(config.run.outputDir,"assets",`${config.run.bookCode}.db3`);
-  console.log(copiedDbPath);
+  logger.info(copiedDbPath);
   if (fs.existsSync(copiedDbPath)) {
     try {
       fs.unlinkSync(copiedDbPath);
       //file removed
     } catch(err) {
-      console.error(err);
+      logger.error(err);
     }
   }
 }
@@ -218,6 +219,7 @@ const SKIPPING_WORDS = [
   "the", "of", "at", "it", "a"
 ];
 function titleString (text) {
+  //if (!text || text === "") return "";
   const prefixSplit = text.replace("\r\n", " ").trim().split(":");
   const words = (prefixSplit.length > 1) ? prefixSplit[1].trim().split(" ") : text.trim().split(" ");
 
@@ -241,8 +243,8 @@ function imageSize(image) {
     try {
       size = sizeOf(image);
     } catch (e) {
-      console.error(`Error getting size of ${image}`);
-      console.log(e.stack);
+      logger.error(`Error getting size of ${image}`);
+      logger.error(e.stack);
     }
   }
   return size;

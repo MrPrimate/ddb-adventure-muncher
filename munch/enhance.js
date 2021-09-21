@@ -2,12 +2,13 @@ const utils = require("./utils.js");
 const fetch = require("node-fetch");
 const semver = require("semver");
 const path = require("path");
+const logger = require("./logger.js");
 
 async function getEnhancedData(config) {
   const cobaltCookie = config.cobalt;
   const enhancementEndpoint = config.run.enhancementEndpoint;
   const body = { cobalt: cobaltCookie, bookId: config.run.book.id };
-  console.log(`Starting download enhanced data for ${config.run.bookCode}`);
+  logger.info(`Starting download enhanced data for ${config.run.bookCode}`);
 
   const disableEnhancedDownloads = (config.disableEnhancedDownloads) ? 
     config.disableEnhancedDownloads :
@@ -15,7 +16,7 @@ async function getEnhancedData(config) {
 
   return new Promise((resolve, reject) => {
     if (disableEnhancedDownloads) {
-      console.log("Enhanced downloads disabled");
+      logger.warn("Enhanced downloads disabled");
       resolve([]);
     } 
     fetch(`${enhancementEndpoint}/proxy/adventure/enhancement`, {
@@ -28,15 +29,15 @@ async function getEnhancedData(config) {
       .then((response) => response.json())
       .then((data) => {
         if (!data.success) {
-          console.log(`Failure: ${data.message}`);
+          logger.error(`Failure: ${data.message}`);
           reject(data.message);
         }
-        console.log(`Successfully received enhanced data for ${config.run.bookCode} containing ${data.data.length} items`);
+        logger.info(`Successfully received enhanced data for ${config.run.bookCode} containing ${data.data.length} items`);
         return data;
       })
       .then((data) => resolve(data.data))
       .catch((error) => {
-        console.warn(`Failed to get enhanced data from ${enhancementEndpoint} for ${config.run.bookCode}`);
+        logger.error(`Failed to get enhanced data from ${enhancementEndpoint} for ${config.run.bookCode}`);
         reject(error);
       });
   });
@@ -59,7 +60,7 @@ async function downloadMetaData(data, config) {
   });
 
   const unzipped = results.downloaded.map((downloadFile) => {
-    console.log(`Unzipping ${downloadFile}`);
+    logger.info(`Unzipping ${downloadFile}`);
     return utils.unzipFile(downloadFile, config.run.metaDir);
   });
 
@@ -84,9 +85,9 @@ function getMetaData(config) {
     })
       .then((response) => response.json())
       .then((data) => {
-        //console.log(data);
-        console.log(semver.clean(data.tag_name)); 
-        console.log(`Found remote metadata version: ${semver.valid(semver.clean(data.tag_name))}`); 
+        //logger.info(data);
+        logger.info(semver.clean(data.tag_name)); 
+        logger.info(`Found remote metadata version: ${semver.valid(semver.clean(data.tag_name))}`); 
         if (semver.valid(semver.clean(data.tag_name))) {
           return data;
         } else {
@@ -97,16 +98,16 @@ function getMetaData(config) {
         const latestVersion = semver.clean(data.tag_name);
         const noCurrent = semver.valid(config.metaDataVersion) === null;
         const currentVersion = !noCurrent ? semver.clean(config.metaDataVersion) : "0.0.0";
-        console.log(`Current metadata version: ${currentVersion}`);
+        logger.info(`Current metadata version: ${currentVersion}`);
         if (semver.gt(latestVersion, currentVersion)) {
-          console.log("Downloading new metadata");
+          logger.info("Downloading new metadata");
           const downloadVersion = downloadMetaData(data, config)
             .then((result) => {
-              console.log(result);
+              logger.info(result);
               return result.version;
             })
             .catch((error) => {
-              console.warn(`Failed to download data from ${githubApiLatest} for ${data.zipball_url}`);
+              logger.error(`Failed to download data from ${githubApiLatest} for ${data.zipball_url}`);
               reject(error);
             });
           return downloadVersion;
@@ -116,7 +117,7 @@ function getMetaData(config) {
       })
       .then((version) => resolve(version))
       .catch((error) => {
-        console.warn(`Failed to get meta data from ${githubApiLatest}`);
+        logger.error(`Failed to get meta data from ${githubApiLatest}`);
         reject(error);
       });
   });

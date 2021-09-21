@@ -17,6 +17,7 @@ const enhance = require("./enhance.js");
 const parseTable = require("./vendor/parseTable.js");
 const replacer = require("./replacer.js");
 const icons = require("./icons.js");
+const logger = require("./logger.js");
 
 var journalSort = 1000;
 var folderSort = 4000;
@@ -84,10 +85,10 @@ function getId(document, docType) {
     return basicCheck && chunkCheck && sceneNotes && handout && scenePinIdMatch;
   });
 
-  // console.log(`Finding id for ${docType} ${document.name}`);
-  // console.log(`Note? ${document.flags.ddb.note}`);
-  // if (existingId) console.log(`For ${docType} ${document.name} returning id ${existingId.id} with name ${existingId.name}`)
-  // console.log("------------------")
+  // logger.info(`Finding id for ${docType} ${document.name}`);
+  // logger.info(`Note? ${document.flags.ddb.note}`);
+  // if (existingId) logger.info(`For ${docType} ${document.name} returning id ${existingId.id} with name ${existingId.name}`)
+  // logger.info("------------------")
   
   if (existingId) {
     return existingId.id;
@@ -152,10 +153,10 @@ function guessTableName(document, contentChunkId) {
   }
 
   if (sibling) {
-    console.log(sibling.textContent);
+    logger.info(sibling.textContent);
     return sibling.textContent;
   } else {
-    console.log(`No table name identified for ${contentChunkId}`);
+    logger.info(`No table name identified for ${contentChunkId}`);
     return null;
   }
 }
@@ -174,13 +175,13 @@ function tableReplacer(text, journals) {
 }
 
 function journalTableReplacer(journal, tables) {
-  console.log(`Updating Journal: ${journal.name}`);
+  logger.info(`Updating Journal: ${journal.name}`);
   if (!journal.content) return;
   const dom = new JSDOM(journal.content).window.document;
   tables.forEach((table) => {
     const tablePoint = dom.body.querySelector(`table[data-content-chunk-id="${table.flags.ddb.contentChunkId}"]`);
     if (tablePoint) {
-      console.log(`Updating table reference for: ${table.name}`);
+      logger.info(`Updating table reference for: ${table.name}`);
       tablePoint.insertAdjacentHTML("afterend", `<div id="table-link">@RollTable[${table.name}]{Open RollTable}</div>`);
     }
   });
@@ -188,15 +189,15 @@ function journalTableReplacer(journal, tables) {
 }
 
 async function fixUpTables(tables, journals) {
-  console.log("Updating table references for modules...");
-  console.log(`There are ${tables.length} tables`);
-  console.log(`There are ${journals.length} journals`);
+  logger.info("Updating table references for modules...");
+  logger.info(`There are ${tables.length} tables`);
+  logger.info(`There are ${journals.length} journals`);
 
   await sleep(1000);
 
   for (let tableIndex = 0, tablesLength = tables.length; tableIndex < tablesLength; tableIndex++) {
     const table = tables[tableIndex];
-    console.log(`Updating table: ${table.name}...`);
+    logger.info(`Updating table: ${table.name}...`);
     for (let resultsIndex = 0, resultsLength = table.results.length; resultsIndex < resultsLength; resultsIndex++) {
       tableReplacer(table.results[resultsIndex].text, journals);
     }
@@ -206,7 +207,7 @@ async function fixUpTables(tables, journals) {
   }
   await sleep(1000);
 
-  console.log("Starting Journal Table Updates");
+  logger.info("Starting Journal Table Updates");
 
   for (let journalIndex = 0, journalsLength = journals.length; journalIndex < journalsLength; journalIndex++) {
     journalTableReplacer(journals[journalIndex], tables);
@@ -239,7 +240,7 @@ function getDiceTableRange(value) {
   const valueRegex = new RegExp(/^(\d+)\-(\d+)|^(\d+)(\+?)$/);
   const valueMatch = text.match(valueRegex);
 
-  console.warn(valueMatch);
+  logger.warn(valueMatch);
 
   if (valueMatch) {
     if (valueMatch[1] !== undefined && valueMatch[2] !== undefined) {
@@ -259,10 +260,10 @@ function getDiceTableRange(value) {
       }
     }
   }
-  console.error("###############################################");
-  console.log(`Unable to table range match ${value}`);
-  console.log(`Text value: ${text}`);
-  console.error("###############################################");
+  logger.error("###############################################");
+  logger.info(`Unable to table range match ${value}`);
+  logger.info(`Text value: ${text}`);
+  logger.error("###############################################");
   return [];
 }
 
@@ -303,7 +304,7 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
 
     const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*d*\d*)?)/, "g");
     const formulaMatch = diceKey.match(diceRegex);
-    //console.log(formulaMatch);
+    //logger.info(formulaMatch);
     table.formula = formulaMatch ? formulaMatch[0].trim() : "";
 
     table.results = [];
@@ -311,10 +312,10 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
     // loop through rows and build result entry. 
     // if more than one result key then we will concat the results.
 
-    console.log("*******************************************");
-    console.log(`Generating table ${table.name}`);
-    if (config.debug) console.log(row);
-    // console.log(parsedTable.length);
+    logger.info("*******************************************");
+    logger.info(`Generating table ${table.name}`);
+    if (config.debug) logger.debug(row);
+    // logger.info(parsedTable.length);
 
     parsedTable.forEach((entry) => {
       const result = {
@@ -346,7 +347,7 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
       table.results.push(result);
     });
 
-    console.log(`Generated table entry ${table.name}`);
+    logger.info(`Generated table entry ${table.name}`);
     generatedTables.push(table);
     tmpCount++;
 
@@ -368,17 +369,17 @@ function generateTable(row, journal, html) {
       nameGuess = keys[1];
     }
 
-    console.log("***********************************************");
-    console.log("Table detection!");
-    console.log(`Table: "${nameGuess}"`);
-    console.log(`ContentChunkId: ${contentChunkId}`);
-    console.log(`Dice Keys: ${diceKeys.join(", ")}`);
-    console.log(`Keys: ${keys.join(", ")}`);
-    console.log("***********************************************");
-    if (config.debug) console.log(node.outerHTML);
-    if (config.debug && parsedTable) console.log(parsedTable);
-    // if (parsedTable) console.log(parsedTable);
-    console.log("***********************************************");
+    logger.info("***********************************************");
+    logger.info("Table detection!");
+    logger.info(`Table: "${nameGuess}"`);
+    logger.info(`ContentChunkId: ${contentChunkId}`);
+    logger.info(`Dice Keys: ${diceKeys.join(", ")}`);
+    logger.info(`Keys: ${keys.join(", ")}`);
+    logger.info("***********************************************");
+    if (config.debug) logger.debug(node.outerHTML);
+    if (config.debug && parsedTable) logger.debug(parsedTable);
+    // if (parsedTable) logger.info(parsedTable);
+    logger.info("***********************************************");
     
     buildTable(row, parsedTable, keys, diceKeys, nameGuess, contentChunkId);
     tableMatched.push({
@@ -401,30 +402,30 @@ function generateTable(row, journal, html) {
 }
 
 function updateJournals(documents) {
-  // console.log(replaceLinks);
+  // logger.info(replaceLinks);
   documents = documents.map((doc) => {
-    console.log("***********************");
-    console.log(`Updating: ${doc.name}`);
+    logger.info("***********************");
+    logger.info(`Updating: ${doc.name}`);
     if (doc.content) {
       doc.content = doc.content.replace(/\s+/g, " ");
-      // console.log(doc.content);
-      console.log("---------------");
-      console.log(`Replacing generate link content for ${doc.name}`);
+      // logger.info(doc.content);
+      logger.info("---------------");
+      logger.info(`Replacing generate link content for ${doc.name}`);
       replaceLinks.forEach((link) => {
-        // console.log(link);
-        // console.log(doc.content.includes(link.html));
+        // logger.info(link);
+        // logger.info(doc.content.includes(link.html));
         doc.content = doc.content.replace(link.html, link.ref);
       });
-      console.log(`Replacing image links for ${doc.name}`);
+      logger.info(`Replacing image links for ${doc.name}`);
       doc.content = replacer.replaceImageLinks(doc.content, config);
-      console.log(`Linking module content for ${doc.name}`);
+      logger.info(`Linking module content for ${doc.name}`);
       doc.content = replacer.moduleReplaceLinks(doc.content, documents, config);
-      console.log(`Linking ddb-importer compendium content for ${doc.name}`);
+      logger.info(`Linking ddb-importer compendium content for ${doc.name}`);
       doc.content = replacer.foundryCompendiumReplace(doc.content, config);
-      console.log(`Generating dice rolls for ${doc.name}`);
+      logger.info(`Generating dice rolls for ${doc.name}`);
       doc.content = replacer.replaceRollLinks(doc.content, config);
       // fs.writeFileSync(path.join(config.run.outputDir,"html",`${doc._id}.html`), doc.content);
-      console.log(`Fixing up classes for ${doc.name}`);
+      logger.info(`Fixing up classes for ${doc.name}`);
       doc.content = replacer.addClasses(doc.content);
     }
     return doc;
@@ -454,7 +455,7 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
     folder.flags.ddb.parentId = parentId;
   }
   else if (img) {
-    // console.log(row);
+    // logger.info(row);
     const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
     const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
     folder.name = `[Handouts] ${row.sceneName ? row.sceneName : (parent) ? parent.name: row.title }`;
@@ -527,7 +528,7 @@ function getFolderId(row, type, img, note) {
 
 function appendJournalToChapter(row) {
   if (row.parentId) {
-    console.log(`Appending to chapter... ${row.title} ${row.parentId} search...`);
+    logger.info(`Appending to chapter... ${row.title} ${row.parentId} search...`);
     generatedJournals.forEach((journal) => {
       if (journal.flags.ddb.cobaltId == row.parentId && (journal.img === null || journal.img === undefined || journal.img == "")) {
         journal.content += row.html;
@@ -580,7 +581,7 @@ function generateJournalEntry(row, img=null, note=false) {
     }
     journalImgMatched.push(journal.img);
     const journalHandoutCount = journalImgMatched.filter(img => img === journal.img).length;
-    console.log(`Generated Handout ${journal.name}, "${journal.img}", (count ${journalHandoutCount}), Duplicate? ${journal.flags.ddb.duplicate}`);
+    logger.info(`Generated Handout ${journal.name}, "${journal.img}", (count ${journalHandoutCount}), Duplicate? ${journal.flags.ddb.duplicate}`);
   } else {
     const dom = new JSDOM(row.html);
     journal.content = dom.window.document.body.innerHTML.replace(/\s+/g, " ");
@@ -589,19 +590,19 @@ function generateJournalEntry(row, img=null, note=false) {
   if (row.parentId) journal.flags.ddb.parentId = row.parentId;
   if (!row.ddbId) row.ddbId = row.id;
   journal.folder = getFolderId(row, "JournalEntry", imgState, note);
-  // console.log("======= DEBUG ======");
-  // console.log(row);
-  // console.log(journal);
-  // console.log(`${journal.name}, ${journal.folder}`);
-  // console.log("======= DEBUG ======");
+  // logger.info("======= DEBUG ======");
+  // logger.info(row);
+  // logger.info(journal);
+  // logger.info(`${journal.name}, ${journal.folder}`);
+  // logger.info("======= DEBUG ======");
   journal._id = getId(journal, "JournalEntry");
-  console.log(`Generated journal entry ${journal.name}`);
+  logger.info(`Generated journal entry ${journal.name}`);
   if (!imgState && !note) {
     appendJournalToChapter(row);
   }
   if (!journal.flags.ddb.duplicate) {
     journal.flags.ddb.linkId = journal._id;
-    console.log(`Appending ${journal.name} Img:"${journal.img}"`);
+    logger.info(`Appending ${journal.name} Img:"${journal.img}"`);
     generatedJournals.push(journal);
   }
   return journal;
@@ -646,17 +647,17 @@ function generateNoteJournals(row) {
 
   noteHints.filter((hint) => hint.slug == row.slug).forEach((hint) => {
     let id = 2000 + row.id;
-    console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-    console.log(`Generating Notes for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`);
-    console.log(`${hint.splitTag}[data-content-chunk-id='${hint.contentChunkIdStart}']`);
+    logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+    logger.info(`Generating Notes for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`);
+    logger.info(`${hint.splitTag}[data-content-chunk-id='${hint.contentChunkIdStart}']`);
     
     let keyChunk = dom.querySelector(`${hint.splitTag}[data-content-chunk-id='${hint.contentChunkIdStart}']`);
-    console.log(`keyChunk: ${keyChunk}`);
+    logger.info(`keyChunk: ${keyChunk}`);
     if (!keyChunk) {
-      console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-      console.log(`WARNING NO keyChunk found for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`);
-      console.log(hint);
-      console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+      logger.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+      logger.info(`WARNING NO keyChunk found for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`);
+      logger.info(hint);
+      logger.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
       return;
     }
     let html = "";
@@ -714,7 +715,7 @@ function generateNoteJournals(row) {
 
     }
 
-    console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+    logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
   });
 
   return notes;
@@ -740,9 +741,9 @@ function generateScene(row, img) {
   scene.flags.ddb.ddbId = row.id;
   scene.flags.ddb.bookCode = config.run.bookCode;
   scene.flags.ddb.slug = row.slug;
-  // console.log("#############################");
-  // console.log(row);
-  // console.log("#############################");
+  // logger.info("#############################");
+  // logger.info(row);
+  // logger.info("#############################");
   const contentChunkId =  (row.contentChunkId && row.contentChunkId != "") ? 
     row.contentChunkId :
     null;
@@ -767,12 +768,12 @@ function generateScene(row, img) {
 
   const imagePath = path.join(config.run.outputDir,img);
   const dimensions = utils.imageSize(imagePath);
-  // console.log(dimensions.width, dimensions.height);
+  // logger.info(dimensions.width, dimensions.height);
   scene.width = dimensions.width;
   scene.height = dimensions.height;
-  // console.log(row);
-  // console.log(journal);
-  // console.log(`${journal.name}, ${journal.folder}`);
+  // logger.info(row);
+  // logger.info(journal);
+  // logger.info(`${journal.name}, ${journal.folder}`);
 
   let adjustment = (scene.flags.ddb.contentChunkId) ?
     sceneAdjustments.find((s) =>
@@ -790,15 +791,15 @@ function generateScene(row, img) {
     sceneAdjustments.find((s) => scene.name.includes(s.name));
 
   if (adjustment) {
-    console.log(`ADJUSTMENTS found named ${adjustment.name} with chunkid "${adjustment.flags.ddb.contentChunkId}" and id ${adjustment.flags.ddb.ddbId}`);
+    logger.info(`ADJUSTMENTS found named ${adjustment.name} with chunkid "${adjustment.flags.ddb.contentChunkId}" and id ${adjustment.flags.ddb.ddbId}`);
     if (adjustment.flags.ddb.notes) {
-      console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-      console.log("Found notes!!!!!");
+      logger.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+      logger.info("Found notes!!!!!");
 
       adjustment.notes = [];
 
       adjustment.flags.ddb.notes.forEach((note) => {
-        console.log(`Checking ${note.label}`);
+        logger.info(`Checking ${note.label}`);
         const noteJournal = generatedJournals.find((journal) => {
           const contentChunkIdMatch = note.flags.ddb.contentChunkId ?
             journal.flags.ddb && note.flags.ddb && journal.flags.ddb.contentChunkId == note.flags.ddb.contentChunkId :
@@ -822,7 +823,7 @@ function generateScene(row, img) {
 
         });
         if (noteJournal){
-          console.log(`Found ${note.label} matched to ${noteJournal._id} (${noteJournal.name})`);
+          logger.info(`Found ${note.label} matched to ${noteJournal._id} (${noteJournal.name})`);
           note.positions.forEach((position) => {
             noteJournal.flags.ddb.pin = `${position.x}${position.y}`;
             const noteId = getId(noteJournal, "Note");
@@ -847,7 +848,7 @@ function generateScene(row, img) {
             adjustment.notes.push(n);
           });
         }
-        console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        logger.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
       });
     }
     delete adjustment.flags.ddb.notes;
@@ -856,8 +857,8 @@ function generateScene(row, img) {
     delete adjustment.flags.ddb.ddbId;
     delete adjustment.flags.ddb.contentChunkId;
     adjustment.flags.ddb["sceneAdjustment"] = true;
-    console.log(adjustment.flags);
-    console.log(scene.flags);
+    logger.info(adjustment.flags);
+    logger.info(scene.flags);
     scene = _.merge(scene, adjustment);
   }
 
@@ -878,7 +879,7 @@ function generateScene(row, img) {
     config.disableEnhancedDownloads :
     false;
 
-  if (config.debug) console.log(`Scene name: "${scene.name}" Img: "${scene.img}"`);
+  if (config.debug) logger.debug(`Scene name: "${scene.name}" Img: "${scene.img}"`);
   //const enhancedScene = enhancedScenes.find((es) => es.name === scene.name && es.img === scene.img);
   const enhancedScene = enhancedScenes.find((es) => {
     const missingNameMatch = row.missing ?
@@ -888,7 +889,7 @@ function generateScene(row, img) {
       es.img === scene.img &&
       es.bookCode === config.run.bookCode;
   });
-  if (config.debug) console.log(enhancedScene);
+  if (config.debug) logger.debug(enhancedScene);
 
   if (enhancedScene) {
     if (enhancedScene.adjustName != "") {
@@ -899,7 +900,7 @@ function generateScene(row, img) {
       downloadList.push({name: scene.name, url: enhancedScene.hiresImg, path: scene.img });
     }
   }
-  if (config.debug) console.log(`Scene name: "${scene.name}" Img: "${scene.img}"`);
+  if (config.debug) logger.debug(`Scene name: "${scene.name}" Img: "${scene.img}"`);
 
   scene._id = getId(scene, "Scene");
 
@@ -927,7 +928,7 @@ function generateScene(row, img) {
         if (lookupEntry) {
           token.flags.compendiumActorId = lookupEntry._id;
         } else {
-          console.log(`Found actor with Id ${token.flags.ddbActorFlags.id}`);
+          logger.info(`Found actor with Id ${token.flags.ddbActorFlags.id}`);
         }
 
         if (!config.run.required["monsters"].includes(String(token.flags.ddbActorFlags.id))) {
@@ -947,7 +948,7 @@ function generateScene(row, img) {
   generatedScenes.push(scene);
   sceneImgMatched.push(scene.img);
   const sceneCount = sceneImgMatched.filter(img => img === scene.img).length;
-  console.log(`Generated Scene "${scene.name}" with "${scene.img}", (count ${sceneCount})`);
+  logger.info(`Generated Scene "${scene.name}" with "${scene.img}", (count ${sceneCount})`);
   return scene;
 }
 
@@ -955,11 +956,11 @@ function generateMissingScenes(journals, scenes) {
   let tmpCount = 0;
   //let lastDDBId = 0;
 
-  console.log("****************************");
-  console.log("Generating Missing Scenes");
-  console.log("----------------------------");
-  console.log(enhancedScenes.filter((es) => es.missing));
-  console.log("----------------------------");
+  logger.info("****************************");
+  logger.info("Generating Missing Scenes");
+  logger.info("----------------------------");
+  logger.info(enhancedScenes.filter((es) => es.missing));
+  logger.info("----------------------------");
 
   enhancedScenes.filter((es) => es.missing).forEach((es) => {
     // if (lastDDBId != 0 & es.ddbId != lastDDBId) tmpCount = 0;
@@ -976,7 +977,7 @@ function generateMissingScenes(journals, scenes) {
       contentChunkId: `ddb-missing-${config.run.bookCode}-${id}`,
       missing: true,
     };
-    console.log(`Attempting ${row.title} with ${row.contentChunkId}`);
+    logger.info(`Attempting ${row.title} with ${row.contentChunkId}`);
     tmpCount++;
     const playerEntry = generateJournalEntry(row, es.img);
     journals.push(playerEntry);
@@ -1000,8 +1001,8 @@ function findScenes(document) {
   const frag = new JSDOM(document.content);
   document.content = frag.window.document.body.innerHTML;
 
-  console.log("----------------------------------------------");
-  console.log(`Finding Scenes in ${document.name}`);
+  logger.info("----------------------------------------------");
+  logger.info(`Finding Scenes in ${document.name}`);
 
   // let possibleSceneNodes = frag.querySelectorAll("a[data-lightbox]");
   let possibleFigureSceneNodes = frag.window.document.body.querySelectorAll("figure");
@@ -1011,10 +1012,10 @@ function findScenes(document) {
   let possibleUnknownPlayerLinks = frag.window.document.body.querySelectorAll("a.ddb-lightbox-inner, a.ddb-lightbox-outer");
 
   // if (config.debug) {
-  console.log(`possibleFigureSceneNodes ${possibleFigureSceneNodes.length}`);
-  console.log(`possibleDivSceneNodes ${possibleDivSceneNodes.length}`);
-  console.log(`possibleHandouts ${possibleHandouts.length}`);
-  console.log(`possibleViewPlayerScenes ${possibleViewPlayerScenes.length}`);
+  logger.info(`possibleFigureSceneNodes ${possibleFigureSceneNodes.length}`);
+  logger.info(`possibleDivSceneNodes ${possibleDivSceneNodes.length}`);
+  logger.info(`possibleHandouts ${possibleHandouts.length}`);
+  logger.info(`possibleViewPlayerScenes ${possibleViewPlayerScenes.length}`);
   // }
 
   if (possibleFigureSceneNodes.length > 0) {
@@ -1026,7 +1027,7 @@ function findScenes(document) {
       tmpCount++;
 
       if (caption) {
-        // console.log(document);
+        // logger.info(document);
         let title = caption.textContent;
         const playerRef = node.querySelector("a[data-title~=Player]");
         if (playerRef) {
@@ -1067,6 +1068,11 @@ function findScenes(document) {
           contentChunkId = node.id;
         }
 
+        if (!title || title === "") {
+          title = `Handout ${unknownHandoutCount}`;
+          unknownHandoutCount++;
+        }
+
         let row = {
           title: utils.titleString(title),
           id: 10000 + document.flags.ddb.ddbId + tmpCount,
@@ -1082,7 +1088,9 @@ function findScenes(document) {
           // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkName}]{${journalEntry.name}}`);
           linkReplaces.push( {html: img.outerHTML, ref: `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${journalEntry.name}}` });
         }
+        // if (!journalEntry.flags.ddb.duplicate) {
         journals.push(journalEntry);
+        //}
       }
     });
   }
@@ -1098,8 +1106,8 @@ function findScenes(document) {
       tmpCount++;
 
       if (caption) {
-        console.log(`Checking ${caption.textContent} for Scenes`);
-        // console.log(document);
+        logger.info(`Checking ${caption.textContent} for Scenes`);
+        // logger.info(document);
         let title = caption.textContent;
         let nextNode = frag.window.document.getElementById(node.id);
         let playerVersion = false;
@@ -1109,8 +1117,8 @@ function findScenes(document) {
           if (!nextNode) {
             lightBoxNode = Array.from(node.querySelectorAll("a.ddb-lightbox-outer"))
               .find(el => el.textContent.toLowerCase().includes("player"));
-            // console.log(lightBoxNode.outerHTML)
-            // console.log(`Attempting div query ${lightBoxNode}`)
+            // logger.info(lightBoxNode.outerHTML)
+            // logger.info(`Attempting div query ${lightBoxNode}`)
           } else {
             nextNode = nextNode.nextSibling;
             if (!nextNode || !nextNode.tagName) continue;
@@ -1121,8 +1129,8 @@ function findScenes(document) {
             break;
           }
         }
-        // console.log(lightBoxNode)
-        // console.log(playerVersion);
+        // logger.info(lightBoxNode)
+        // logger.info(playerVersion);
 
         if (playerVersion) {
           //const playerRef = nextNode.querySelector("a.ddb-lightbox-outer");
@@ -1178,7 +1186,7 @@ function findScenes(document) {
 
       tmpCount++;
       if (config.debug) {
-        console.log(aNode.outerHTML);
+        logger.verbose(aNode.outerHTML);
       }
 
       let title = `${document.name} (Player Version)`;
@@ -1217,7 +1225,7 @@ function findScenes(document) {
 
     tmpCount++;
     if (config.debug) {
-      console.log(node.outerHTML);
+      logger.verbose(node.outerHTML);
     }
 
     let title = `${document.name} (Player Version)`;
@@ -1252,7 +1260,7 @@ function findScenes(document) {
     if(!node.src) return;
     tmpCount++;
     if (config.debug) {
-      console.log(node.outerHTML);
+      logger.verbose(node.outerHTML);
     }
 
     let title = `Handout ${unknownHandoutCount}`;
@@ -1302,7 +1310,7 @@ function outputAdventure(config) {
     }
   });
 
-  console.log("Exporting adventure outline...");
+  logger.info("Exporting adventure outline...");
 
   const adventure = require(path.join(templateDir,"adventure.json"));
   adventure.name = config.run.book.description;
@@ -1314,7 +1322,7 @@ function outputAdventure(config) {
 }
 
 function outputJournals(parsedChapters, config) {
-  console.log("Exporting journal chapters...");
+  logger.info("Exporting journal chapters...");
 
   // journals out
   parsedChapters.forEach((chapter) => {
@@ -1324,7 +1332,7 @@ function outputJournals(parsedChapters, config) {
 }
 
 function outputScenes(parsedScenes, config) {
-  console.log("Exporting scenes...");
+  logger.info("Exporting scenes...");
 
   // scenes out
   parsedScenes.forEach((scene) => {
@@ -1335,7 +1343,7 @@ function outputScenes(parsedScenes, config) {
 
 
 function outputTables(parsedTables, config) {
-  console.log("Exporting tables...");
+  logger.info("Exporting tables...");
 
   // tables out
   parsedTables.forEach((table) => {
@@ -1346,7 +1354,7 @@ function outputTables(parsedTables, config) {
 
 
 function outputFolders(parsedFolders, config, content) {
-  console.log("Exporting required folders...");
+  logger.info("Exporting required folders...");
 
   parsedFolders = parsedFolders.filter((folder) => content.some((content) =>
     folder._id === content.folder ||
@@ -1359,19 +1367,19 @@ function outputFolders(parsedFolders, config, content) {
 
 
 function generateZipFile(config) {
-  console.log("Generating adventure zip...");
+  logger.info("Generating adventure zip...");
   const zip = utils.getZipOfFolder(config.run.outputDir);
   utils.writeZipFile(zip, path.join(config.run.outputDirEnv,`${config.run.bookCode}.fvttadv`));
 }
 
 function rowGenerate(err, row) {
   if(err){
-    console.log("ERROR");
-    console.log(err);
+    logger.error("ERROR");
+    logger.error(err);
     exit();
   }
   if (config.debug) {
-    console.log("PARSING: " + row.id + ": " + row.title);
+    logger.debug("PARSING: " + row.id + ": " + row.title);
   }
   let document = generateJournalChapterEntry(row);
   generateNoteJournals(row);
@@ -1394,7 +1402,7 @@ async function downloadEnhancements(list) {
     false;
   if (!disableLargeDownloads) {
     for (let i = 0; i < list.length; i++) {
-      console.log(`Downloading Hi Res ${list[i].name}`);
+      logger.info(`Downloading Hi Res ${list[i].name}`);
       const dlPath = path.join(config.run.outputDir,list[i].path);
       await utils.downloadFile(list[i].url, dlPath);
     }
@@ -1403,12 +1411,12 @@ async function downloadEnhancements(list) {
 
 async function collectionFinished(err, count) {
   if (err) {
-    console.error(err);
+    logger.error(err);
     exit();
   }
   try {
 
-    console.log(`Processing ${documents.length} scenes`);
+    logger.info(`Processing ${documents.length} scenes`);
     documents.forEach((document) => {
       if (document.content) {
         // eslint-disable-next-line no-unused-vars
@@ -1417,18 +1425,18 @@ async function collectionFinished(err, count) {
       }
     });
 
-    console.log(`Processing ${count} entries...`);
-    console.log("Looking for missing scenes...");
+    logger.info(`Processing ${count} entries...`);
+    logger.info("Looking for missing scenes...");
     [generatedJournals, generatedScenes] = generateMissingScenes(generatedJournals, generatedScenes);
-    console.log("Updating links...");
+    logger.info("Updating links...");
     generatedJournals = updateJournals(generatedJournals);
-    console.log("Fixing up tables...");
+    logger.info("Fixing up tables...");
     [generatedTables, generatedJournals] = await fixUpTables(generatedTables, generatedJournals);
-    console.log("Complete! Generating output files...");
+    logger.info("Complete! Generating output files...");
     outputAdventure(config);
     outputJournals(generatedJournals, config);
-    console.log("Generated Scenes:");
-    console.log(generatedScenes.map(s => `${s.name} : ${s._id} : ${s.flags.ddb.contentChunkId } : ${s.flags.ddb.ddbId } : ${s.flags.ddb.cobaltId } : ${s.flags.ddb.parentId }`));
+    logger.info("Generated Scenes:");
+    logger.info(generatedScenes.map(s => `${s.name} : ${s._id} : ${s.flags.ddb.contentChunkId } : ${s.flags.ddb.ddbId } : ${s.flags.ddb.cobaltId } : ${s.flags.ddb.parentId }`));
     outputScenes(generatedScenes, config);
     outputTables(generatedTables, config);
     const allContent = generatedJournals.concat(generatedScenes, generatedTables);
@@ -1436,13 +1444,13 @@ async function collectionFinished(err, count) {
     await downloadEnhancements(downloadList);
     generateZipFile(config);
   } catch (err) {
-    console.log(`Error generating adventure: ${err}`);
-    console.log(err.stack);
+    logger.error(`Error generating adventure: ${err}`);
+    logger.error(err.stack);
   } finally {
-    console.log("Generated the following journal images:");
-    console.log(journalImgMatched);
-    console.log("Generated the following scene images:");
-    console.log(sceneImgMatched);
+    logger.info("Generated the following journal images:");
+    logger.info(journalImgMatched);
+    logger.info("Generated the following scene images:");
+    logger.info(sceneImgMatched);
     // save generated Ids table
     configure.saveLookups(idTable);
     if (config.tableFind) {
@@ -1456,7 +1464,7 @@ async function collectionFinished(err, count) {
 
 async function setConfig(conf) {
   config = conf;
-  console.log(`Starting import of ${config.run.bookCode}`);
+  logger.info(`Starting import of ${config.run.bookCode}`);
   masterFolder = undefined;
   documents = [];
   generatedJournals = [];
@@ -1483,7 +1491,7 @@ function getData(){
     path.join(config.run.sourceDir,`${config.run.bookCode}.db3`),
     sqlite3.OPEN_READONLY,
     (err) => {
-      if (err) console.log(err);
+      if (err) logger.info(err);
     });
 
   db.serialize(function() {

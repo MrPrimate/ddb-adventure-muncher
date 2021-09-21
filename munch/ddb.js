@@ -1,5 +1,6 @@
 const fetch = require("node-fetch");
 const utils = require("./utils.js");
+const logger = require("./logger.js");
 
 function ddbCall(url, urlencoded) {
   const options = {
@@ -18,12 +19,12 @@ function ddbCall(url, urlencoded) {
           if (result.data) resolve(result.data);
           resolve(result);
         } else {
-          console.log("Error", result);
+          logger.error("Error", result);
           reject(result);
         }
       })
       .catch(error => {
-        console.log("error", error);
+        logger.error("error", error);
         reject(error);
       });
   });
@@ -46,12 +47,12 @@ function getDDBConfig() {
     fetch(url, options)
       .then(response => response.json())
       .then(result => {
-        // console.log(result.sources);
+        // logger.info(result.sources);
         resolve(result);
       })
       .catch(error => {
-        console.log("Error fetching book info from DDB");
-        console.log("error", error);
+        logger.error("Error fetching book info from DDB");
+        logger.error("error", error);
         reject(error);
       });
   });
@@ -70,7 +71,7 @@ async function getKey(bookId, cobalt) {
     const key = buff.toString("ascii");
     return key;
   } catch (error) {
-    console.log(error);
+    logger.error(error);
   }
 }
 
@@ -94,11 +95,11 @@ async function getBookUrl(bookId, cobalt) {
 }
 
 async function downloadBook(bookId, cobalt, destination) {
-  console.log(`Getting download link for ${bookId}`);
+  logger.info(`Getting download link for ${bookId}`);
   const url = await getBookUrl(bookId, cobalt);
-  console.log("Generated unique download URL");
+  logger.info("Generated unique download URL");
   await utils.downloadFile(url, destination);
-  console.log("Download complete");
+  logger.info("Download complete");
   return true;
 }
 
@@ -166,7 +167,7 @@ async function getUserData(cobalt) {
     const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v6/user-data", urlencoded);
     return result;
   } catch (e) {
-    console.log("Error:", e);
+    logger.error("Error:", e);
     return {
       error: true,
       message: "Unable to authenticate, check Cobalt value",

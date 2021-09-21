@@ -5,6 +5,7 @@ const enhance = require("./enhance.js");
 const { exit } = require("process");
 const fs = require("fs");
 const _ = require("lodash");
+const logger = require("./logger.js");
 
 var configDir = "../dbs";
 var buildDir = `${configDir}/build`;
@@ -64,7 +65,7 @@ function loadImageFinderResults(type, bookCode) {
     utils.loadJSONFile(imageScenePath) :
     { bookCode: [] };
 
-  console.log("loaded image file");
+  logger.info("loaded image file");
 
   return data[bookCode];
 
@@ -118,7 +119,7 @@ async function getConfig(options = {}) {
   if (options.externalConfigFile) {
     const externalConfigPath = path.resolve(__dirname, options.externalConfigFile);
     if (fs.existsSync(externalConfigPath)){
-      console.log(`Getting External Config file ${options.externalConfigFile}`);
+      logger.info(`Getting External Config file ${options.externalConfigFile}`);
       const externalConfig = utils.loadConfig(externalConfigPath);
       config = _.merge(config, externalConfig);
       saveConf = true;
@@ -169,11 +170,11 @@ async function getConfig(options = {}) {
   const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint; 
 
   if (config.debug) {
-    console.log(`DownloadDir ${downloadDir}`); 
-    console.log(`MetaInfoDir ${metaInfoDir}`); 
-    console.log(`SceneInfoDir ${sceneInfoDir}`);
-    console.log(`NoteInfoDir ${noteInfoDir}`);
-    console.log(`TableInfoDir ${tableInfoDir}`);
+    logger.debug(`DownloadDir ${downloadDir}`); 
+    logger.debug(`MetaInfoDir ${metaInfoDir}`); 
+    logger.debug(`SceneInfoDir ${sceneInfoDir}`);
+    logger.debug(`NoteInfoDir ${noteInfoDir}`);
+    logger.debug(`TableInfoDir ${tableInfoDir}`);
   }
 
   if (!fs.existsSync(downloadDir)){
@@ -205,8 +206,8 @@ async function getConfig(options = {}) {
   const userData = await ddb.getUserData(config.cobalt);
 
   if (userData.status !== "success") {
-    console.log(userData);
-    console.warn("Unable to determine DDB user");
+    logger.info(userData);
+    logger.warn("Unable to determine DDB user");
     exit();
   }
 
@@ -214,7 +215,7 @@ async function getConfig(options = {}) {
   config.run.ddb_config = await ddb.getDDBConfig();
   const book = config.run.ddb_config.sources.find((source) => source.name.toLowerCase() === options.bookCode.toLowerCase());
   if (!book.id) {
-    console.log(`Book ${options.bookCode} not found`);
+    logger.info(`Book ${options.bookCode} not found`);
     exit();
   }
   let sourceDir = path.resolve(__dirname, path.join(dbsDir, options.bookCode));
@@ -227,12 +228,12 @@ async function getConfig(options = {}) {
     "table",
   ];
 
-  console.log(`Saving adventures to ${outputDir}`);
+  logger.info(`Saving adventures to ${outputDir}`);
 
-  console.log(`Pulling ${book.description} (${options.bookCode}) off the shelf...`);
+  logger.info(`Pulling ${book.description} (${options.bookCode}) off the shelf...`);
 
   const versionsFile = path.resolve(__dirname, path.join(metaInfoDir, "versions.json"));
-  console.log(`Supported versions file ${versionsFile}`);
+  logger.info(`Supported versions file ${versionsFile}`);
   let currentVersion = 0;
   let supportedVersion = 0;
   let updateAvailable = false;
@@ -241,19 +242,19 @@ async function getConfig(options = {}) {
   versions[options.bookCode] = currentVersion;
 
   if (fs.existsSync(sourceDir)) {
-    console.warn("LOADING CURRENT VERSION");
+    logger.warn("LOADING CURRENT VERSION");
     const downloadedVersionPath = path.resolve(__dirname, path.join(sourceDir, "version.txt"));
     const existingVersionContent = utils.loadFile(downloadedVersionPath);
     currentVersion = parseInt(existingVersionContent.trim());
     const latest = await ddb.checkLatestBookVersion(book.id, config.cobalt, currentVersion);
-    console.warn(latest);
+    logger.warn(latest);
     if (latest.sourceUpdatesAvailable[book.id]) {
       updateAvailable = true;
     }
   }
 
   if (fs.existsSync(versionsFile)){
-    console.warn("LOADING VERSIONS");
+    logger.warn("LOADING VERSIONS");
     versions = utils.loadConfig(versionsFile);
     if (versions[options.bookCode]) supportedVersion = versions[options.bookCode];
   }
@@ -277,13 +278,13 @@ async function getConfig(options = {}) {
   }
 
   if (!fs.existsSync(bookZipPath)){
-    console.log(`Downloading ${book.description} ... this might take a while...`);
+    logger.info(`Downloading ${book.description} ... this might take a while...`);
     await ddb.downloadBook(book.id, config.cobalt, bookZipPath);
-    console.log("Download finished, beginning book parse!");
+    logger.info("Download finished, beginning book parse!");
   }
 
   if (!fs.existsSync(sourceDir)){
-    console.log(`Having to unzip, targeting ${sourceDir}`);
+    logger.info(`Having to unzip, targeting ${sourceDir}`);
     await utils.unzipFile(bookZipPath, sourceDir);
   }
 
@@ -296,14 +297,14 @@ async function getConfig(options = {}) {
 
   // update supported version to current? (dev mode activity)
   if (config.updateVersions){
-    console.warn("SAVING VERSIONS");
+    logger.warn("SAVING VERSIONS");
     versions[options.bookCode] = currentVersion;
     utils.saveConfig(versions, versionsFile);
   }
 
-  console.log(`Current version: ${currentVersion}`);
-  console.log(`Supported version: ${supportedVersion}`);
-  console.log(`Downloaded new: ${downloadNewVersion}`);
+  logger.info(`Current version: ${currentVersion}`);
+  logger.info(`Supported version: ${supportedVersion}`);
+  logger.info(`Downloaded new: ${downloadNewVersion}`);
 
   // generate book runtime config
   config.run.userData = userData;
@@ -335,12 +336,12 @@ async function getConfig(options = {}) {
 
 
   if (config.debug) {
-    console.log("================================");
-    console.log("DEBUG CONFIG");
-    console.log(config);
-    console.log("CONFIG RUNTIME");
-    console.log(config.run);
-    console.log("================================");
+    logger.debug("================================");
+    logger.debug("DEBUG CONFIG");
+    logger.debug(config);
+    logger.debug("CONFIG RUNTIME");
+    logger.debug(config.run);
+    logger.debug("================================");
   }
 
   return config;

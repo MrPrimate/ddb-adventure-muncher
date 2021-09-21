@@ -3,7 +3,7 @@
 const utils = require("./utils.js");
 const fs = require("fs");
 const path = require("path");
-
+const logger = require("./logger.js");
 
 function unPad(match, p1) {
   if (isNaN(parseInt(p1))) {
@@ -24,9 +24,9 @@ function generateIcon(config, title, templateDir) {
     const iconFileOutPath = path.join(config.run.outputDir,iconPath);
     if (!fs.existsSync(svgDirPath)) fs.mkdirSync(svgDirPath);
     if (!fs.existsSync(iconFileOutPath)) {
-      console.log(stub);
+      logger.info(stub);
       const svgTemplate = path.join(templateDir,`${stub.length}char.svg`);
-      console.log(svgTemplate);
+      logger.info(svgTemplate);
       let svgContent = utils.loadFile(svgTemplate);
       svgContent = svgContent.replace("REPLACEME", stub);
       utils.saveFile(svgContent, iconFileOutPath);
