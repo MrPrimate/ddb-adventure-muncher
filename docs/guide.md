@@ -72,8 +72,12 @@ If you have problems, see the [Troubleshooting](#troubleshooting) section.
 
 1. If using Windows, try right-clicking and Run As Administrator. On some setups, this appears to be needed.
 2. Try clearing the downloaded files `File -> Remove downloaded files`, a download may have become corrupted.
-3. Try running from the command line:
+3. Get the log file! It is cleared everytime the app is opened, and can be found by going to Help -> Log file location.
+4. If you can't identify the problem, please reach out on Discord in the [#adventure-muncher](https://discord.gg/ZZjxEBkqSH) channel.
 
+#### Old method:
+
+Try running from the command line:
 
 * Windows users: right-click on the application icon on the desktop
 * There should be a field called "Target" copy all of the text in there. in mine it's `C:\Users\jack\AppData\Local\Programs\ddb-adventure-muncher\ddb-adventure-muncher.exe`
@@ -82,7 +86,6 @@ If you have problems, see the [Troubleshooting](#troubleshooting) section.
 * Enter the above command that was copied
 * When you click on buttons, it should output information to the terminal window.
 Look for the error.
-* If you can't identify the problem, please reach out on Discord in the [#adventure-muncher](https://discord.gg/ZZjxEBkqSH) channel.
 
 
 ### How do I reset the Muncher?

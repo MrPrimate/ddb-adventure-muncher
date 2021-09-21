@@ -1,3 +1,5 @@
+![Downloads of latest release](https://img.shields.io/github/downloads/MrPrimate/ddb-adventure-muncher/latest/total?label=Downloads%20of%20latest%20release&style=for-the-badge)
+
 # DDB Adventure Muncher
 
 Run your D&D Beyond Adventures in Foundry VTT!
