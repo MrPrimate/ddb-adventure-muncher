@@ -121,6 +121,8 @@ async function getConfig(options = {}) {
     if (fs.existsSync(externalConfigPath)){
       logger.info(`Getting External Config file ${options.externalConfigFile}`);
       const externalConfig = utils.loadConfig(externalConfigPath);
+      delete(config.cobalt);
+      delete(config.lookups);
       config = _.merge(config, externalConfig);
       saveConf = true;
     }
@@ -213,7 +215,10 @@ async function getConfig(options = {}) {
 
   options.bookCode = options.bookCode.toLowerCase();
   config.run.ddb_config = await ddb.getDDBConfig();
-  const book = config.run.ddb_config.sources.find((source) => source.name.toLowerCase() === options.bookCode.toLowerCase());
+  const book = config.run.ddb_config.sources.find((source) => source.name.toLowerCase() === options.bookCode);
+  if (!book) {
+    throw new Error(`Unable to find a book match for ${options.bookCode}.`);
+  }
   if (!book.id) {
     logger.info(`Book ${options.bookCode} not found`);
     exit();

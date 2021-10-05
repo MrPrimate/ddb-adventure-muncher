@@ -1,3 +1,7 @@
+# 0.4.3
+
+* New config files did not load over existing config files.
+
 # 0.4.2
 
 * Support for TWBtW.
