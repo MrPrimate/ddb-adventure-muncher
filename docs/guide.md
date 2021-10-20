@@ -87,6 +87,37 @@ Try running from the command line:
 * When you click on buttons, it should output information to the terminal window.
 Look for the error.
 
+### Arch (and Arch-based OS) or Linux with
+
+You may get an [error](https://github.com/MrPrimate/ddb-adventure-muncher/issues/8):
+
+```
+[2021-10-17 18:58:08.766] [error] Error: SQLITE_NOTADB: file is not a database
+--> in Database#each('\n' +
+  'SELECT ID as id, CobaltID as cobaltId, ParentID as parentId, Slug as slug, Title as title, RenderedHTML as html\n' +
+  'FROM Content\n', [Function: rowGenerate], [AsyncFunction: collectionFinished])
+    at Database.<anonymous> (/tmp/.mount_ddb-aduIneDx/resources/app.asar/munch/book.js:1506:8)
+    at Object.getData (/tmp/.mount_ddb-aduIneDx/resources/app.asar/munch/book.js:1497:6)
+    at /tmp/.mount_ddb-aduIneDx/resources/app.asar/main.js:232:14
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+```
+
+This is due to newer versions of GTK3 shipping sqllite as a core library. A workaround for now:
+
+Ensure that libsqlcipher is installed:
+
+```
+sudo pacman -Sy sqlcipher
+```
+
+Then run the adventure muncher by first setting the environment variable `LD_PRELOAD=/usr/lib/libsqlcipher.so`
+
+`LD_PRELOAD=/usr/lib/libsqlcipher.so ./ddb-adventure-muncher.appImage`
+
+or if running from source:
+
+`LD_PRELOAD=/usr/lib/libsqlcipher.so npm start`
 
 ### How do I reset the Muncher?
 
