@@ -1,3 +1,7 @@
+# 0.4.4
+
+* Support for FToD
+
 # 0.4.3
 
 * New config files did not load over existing config files.
