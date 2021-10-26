@@ -1028,10 +1028,11 @@ function findScenes(document) {
 
       if (caption) {
         // logger.info(document);
-        let title = caption.textContent;
+        let title = caption.textContent.trim();
         const playerRef = node.querySelector("a[data-title~=Player]");
         if (playerRef) {
           title = utils.titleString(title.replace(playerRef.textContent, "").trim());
+          logger.warn(`possibleFigureSceneNodes Player TITLE: ${title}`);
 
           let rowContentChunkId = caption.getAttribute("data-content-chunk-id");
           if (!rowContentChunkId) {
@@ -1047,7 +1048,7 @@ function findScenes(document) {
             cobaltId: document.flags.ddb.cobaltId,
             slug: document.flags.ddb.slug,
             documentName: document.name,
-            sceneName: utils.titleString(title),
+            sceneName: title,
             contentChunkId: rowContentChunkId,
             originDocId: document._id,
             originHint: "possibleFigureSceneNodes, player",
@@ -1073,6 +1074,7 @@ function findScenes(document) {
           unknownHandoutCount++;
         }
 
+        logger.warn(`possibleFigureSceneNodes DM TITLE: ${title}`);
         let row = {
           title: utils.titleString(title),
           id: 10000 + document.flags.ddb.ddbId + tmpCount,
