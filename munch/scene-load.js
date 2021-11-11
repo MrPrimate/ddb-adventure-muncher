@@ -349,9 +349,10 @@ function importScene(conf, sceneFile) {
         originalLink: inData.flags.ddb.originalLink,
       }
     };
-    newFlags["stairways"] = inData.flags["stairways"] ? inData.flags["stairways"] : [];
-    newFlags["perfect-vision"] = inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [];
-    newFlags["dynamic-illumination"] = inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [];
+    newFlags["stairways"] = inData.flags["stairways"] ? inData.flags["stairways"] : {};
+    newFlags["perfect-vision"] = inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : {};
+    newFlags["dynamic-illumination"] = inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : {};
+    newFlags["ddbimporter"] = inData.flags["ddbimporter"] ? inData.flags["ddbimporter"] : {};
 
     if (!_.isEqual(inData.flags, JSON.parse(JSON.stringify(newFlags)))) {
       console.log("Indata update from newflags");
@@ -371,9 +372,10 @@ function importScene(conf, sceneFile) {
         parentId: lookup.parentId,
         contentChunkId: lookup.contentChunkId,
       },
-      stairways: inData.flags.stairways ? inData.flags.stairways : [],
-      "perfect-vision": inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [],
-      "dynamic-illumination": inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [],
+      stairways: inData.flags.stairways ? inData.flags.stairways : {},
+      "perfect-vision": inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : {},
+      "dynamic-illumination": inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : {},
+      ddbimporter: inData.flags["ddbimporter"] ? inData.flags["ddbimporter"] : {},
     };
     console.log("Indata update from missing ddb flags");
     inDataUpdate = true;
@@ -390,9 +392,10 @@ function importScene(conf, sceneFile) {
         parentId: lookup.parentId,
         contentChunkId: lookup.contentChunkId,
       },
-      stairways: inData.flags.stairways ? inData.flags.stairways : [],
-      "perfect-vision": inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : [],
-      "dynamic-illumination": inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : [],
+      stairways: inData.flags.stairways ? inData.flags.stairways : {},
+      "perfect-vision": inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : {},
+      "dynamic-illumination": inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : {},
+      ddbimporter: inData.flags["ddbimporter"] ? inData.flags["ddbimporter"] : {},
     };
     console.log("Indata update from missing bookcode flag");
     inDataUpdate = true;
