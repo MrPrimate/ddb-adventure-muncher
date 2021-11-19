@@ -202,6 +202,12 @@ function directoryReset(config) {
   // To copy a folder or file
   fse.copySync(config.run.sourceDir, path.join(config.run.outputDir,"assets"));
 
+  // copy assets files
+  const assetFilePath = path.join(config.run.assetsInfoDir, config.run.bookCode);
+  if (fs.existsSync(assetFilePath)) {
+    fse.copySync(assetFilePath, path.join(config.run.outputDir,"assets"));
+  }
+
   // remove copied db
   const copiedDbPath = path.join(config.run.outputDir,"assets",`${config.run.bookCode}.db3`);
   logger.info(copiedDbPath);

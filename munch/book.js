@@ -792,6 +792,9 @@ function generateScene(row, img) {
 
   if (adjustment) {
     logger.info(`ADJUSTMENTS found named ${adjustment.name} with chunkid "${adjustment.flags.ddb.contentChunkId}" and id ${adjustment.flags.ddb.ddbId}`);
+    if (adjustment.flags.ddb.tiles) {
+      adjustment.tiles = adjustment.flags.ddb.tiles;
+    }
     if (adjustment.flags.ddb.notes) {
       logger.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
       logger.info("Found notes!!!!!");

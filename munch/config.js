@@ -115,6 +115,11 @@ async function getConfig(options = {}) {
   if (!fs.existsSync(notesDir)){
     fs.mkdirSync(notesDir);
   }
+  let assetsDir = path.resolve(__dirname, path.join(metaDir, "assets"));
+  if (!fs.existsSync(assetsDir)){
+    fs.mkdirSync(assetsDir);
+  }
+
 
   if (options.externalConfigFile) {
     const externalConfigPath = path.resolve(__dirname, options.externalConfigFile);
@@ -168,6 +173,7 @@ async function getConfig(options = {}) {
   const metaInfoDir = (process.env.META_DIR) ? process.env.META_DIR : path.resolve(__dirname, metaDir);
   const sceneInfoDir = (process.env.SCENE_DIR) ? process.env.SCENE_DIR : path.resolve(__dirname, scenesDir);
   const noteInfoDir = (process.env.NOTE_DIR) ? process.env.NOTE_DIR : path.resolve(__dirname, notesDir);
+  const assetsInfoDir = (process.env.ASSETS_DIR) ? process.env.ASSETS_DIR : path.resolve(__dirname, assetsDir);
   const tableInfoDir = (process.env.TABLE_DIR) ? process.env.TABLE_DIR : path.resolve(__dirname, notesDir);
   const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint; 
 
@@ -177,6 +183,7 @@ async function getConfig(options = {}) {
     logger.debug(`SceneInfoDir ${sceneInfoDir}`);
     logger.debug(`NoteInfoDir ${noteInfoDir}`);
     logger.debug(`TableInfoDir ${tableInfoDir}`);
+    logger.debug(`AssetsInfoDir ${assetsInfoDir}`);
   }
 
   if (!fs.existsSync(downloadDir)){
@@ -190,6 +197,7 @@ async function getConfig(options = {}) {
     sceneInfoDir: path.resolve(__dirname, sceneInfoDir),
     noteInfoDir: path.resolve(__dirname, noteInfoDir),
     tableInfoDir: path.resolve(__dirname, tableInfoDir),
+    assetsInfoDir: path.resolve(__dirname, assetsInfoDir),
   };
 
 
