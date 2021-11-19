@@ -1,3 +1,7 @@
+# 0.4.5
+
+* Able to distribute custom tiles
+
 # 0.4.4
 
 * Support for FToD
