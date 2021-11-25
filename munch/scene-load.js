@@ -349,6 +349,7 @@ function importScene(conf, sceneFile) {
         originalLink: inData.flags.ddb.originalLink,
       }
     };
+    if (inData.flags.ddb.tiles) newFlags.ddb.tiles = inData.flags.ddb.tiles;
     newFlags["stairways"] = inData.flags["stairways"] ? inData.flags["stairways"] : {};
     newFlags["perfect-vision"] = inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : {};
     newFlags["dynamic-illumination"] = inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : {};
