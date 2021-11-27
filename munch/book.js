@@ -840,13 +840,13 @@ function generateScene(row, img) {
               "x": position.x,
               "y": position.y,
               "icon": icons.generateIcon(config, note.label, templateDir),
-              "iconSize": 40,
+              "iconSize": note.iconSize ? note.iconSize : 40,
               "iconTint": "",
               "text": "",
-              "fontFamily": "Signika",
-              "fontSize": 48,
+              "fontFamily": note.fontFamily ? note.fontFamily : "Signika",
+              "fontSize": note.fontSize ? note.fontSize : 48,
               "textAnchor": 1,
-              "textColor": ""
+              "textColor": note.textColor ? note.textColor : "",
             };
             adjustment.notes.push(n);
           });
