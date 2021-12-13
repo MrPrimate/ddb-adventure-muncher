@@ -347,6 +347,7 @@ function importScene(conf, sceneFile) {
         tokens: inData.flags.ddb.tokens,
         alternateIds: inData.flags.ddb.alternateIds,
         originalLink: inData.flags.ddb.originalLink,
+        foundryVersion: inData.flags.ddb.foundryVersion ? inData.flags.ddb.foundryVersion :  "0.8.9",
       }
     };
     if (inData.flags.ddb.tiles) newFlags.ddb.tiles = inData.flags.ddb.tiles;
@@ -441,6 +442,9 @@ function importScene(conf, sceneFile) {
       if (sceneData.flags.ddb.tokens) console.log(`Tokens: ${sceneData.flags.ddb.tokens.length}`);
       if (sceneData.flags.ddb.versions) {
         inData.flags.ddb.versions = sceneData.flags.ddb.versions;
+        if(!inData.flags.ddb.versions.foundry) {
+          inData.flags.ddb.versions.foundry = inData.flags.ddb.foundryVersion ? inData.flags.ddb.foundryVersion :  "0.8.9";
+        }
       }
     }
   }
@@ -470,11 +474,13 @@ function importScene(conf, sceneFile) {
       walls: ddbMetaDataVersion,
       lights: ddbMetaDataVersion,
       drawings: ddbMetaDataVersion,
+      foundry: inData.flags.ddb.foundryVersion ? inData.flags.ddb.foundryVersion :  "0.8.9",
     };
 
   inData = _(inData).toPairs().sortBy(0).fromPairs().value();
   sceneData = _(sceneData).toPairs().sortBy(0).fromPairs().value();
 
+  if (sceneData && inData.flags?.ddb?.foundryVersion && sceneData.flags?.ddb?.foundryVersion && !_.isEqual(inData.flags.ddb.foundryVersion, sceneData.flags.ddb.foundryVersion)) sceneUpdateDiff.foundry = inData.flags.ddb.foundryVersion;
   if (sceneData && !_.isEqual(inData.walls, sceneData.walls)) sceneUpdateDiff.walls = ddbMetaDataVersion;
   if (sceneData && !_.isEqual(inData.lights, sceneData.lights)) sceneUpdateDiff.lights = ddbMetaDataVersion;
   if (sceneData && inData.drawings && (!sceneData.drawings || !_.isEqual(inData.drawings, sceneData.drawings))) sceneUpdateDiff.drawings = ddbMetaDataVersion;
