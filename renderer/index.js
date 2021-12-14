@@ -1,8 +1,6 @@
 /* eslint-disable no-undef */
 "use strict";
 
-// const { ipcRenderer } = require('electron')
-
 const loadConfig = document.getElementById("load-config");
 const setOutputDir = document.getElementById("set-output-dir");
 const patreonLink = document.getElementById("patreon-link");
@@ -11,8 +9,6 @@ const bookList = document.getElementById("book-select");
 const contentLoadMessage = document.getElementById("config-loader");
 const generateButton = document.getElementById("munch-book");
 const userField = document.getElementById("user");
-
-// var config;
 
 patreonLink.addEventListener("click", (event) => {
   event.preventDefault();
@@ -64,11 +60,11 @@ window.api.receive("generate", (data) => {
     messageDiv.innerHTML += "</p><br><br><br>";
   }
   if (data.success) {
-    const currentVersion = data.config.run.ddbVersions.currentVersion;
-    const supportedVersion = data.config.run.ddbVersions.supportedVersion;
+    const currentVersion = data.ddbVersions.currentVersion;
+    const supportedVersion = data.ddbVersions.supportedVersion;
     if (currentVersion > supportedVersion) {
       messageDiv.innerHTML += `<p style="color:red">Current book version is ${currentVersion}, last known supported version is ${supportedVersion}. There is a chance that this adventure has not parsed properly.</p>`;
-    } else if (data.config.run.ddbVersions.downloadNewVersion) {
+    } else if (data.ddbVersions.downloadNewVersion) {
       messageDiv.innerHTML += `<p style="color:green"><b>Used DDB book version (${currentVersion}).</b></p>`;
     }
   }

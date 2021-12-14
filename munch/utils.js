@@ -179,7 +179,7 @@ function directoryReset(config) {
   // delete directory recursively
   config.subDirs.forEach((d) => {
     if (fs.existsSync(path.join(config.run.outputDir,d))) {
-      fs.rmdir(path.join(config.run.outputDir,d), { recursive: true }, (err) => {
+      fs.rm(path.join(config.run.outputDir,d), { recursive: true }, (err) => {
         if (err) {
           throw err;
         }
@@ -219,6 +219,7 @@ function directoryReset(config) {
       logger.error(err);
     }
   }
+  logger.info("Directory reset complete");
 }
 
 const SKIPPING_WORDS = [

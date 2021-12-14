@@ -55,6 +55,7 @@ function setTemplateDir (dir) {
 function fetchLookups (config) {
   idTable = configure.getLookups();
   if (!idTable[config.run.bookCode]) idTable[config.run.bookCode] = [];
+  logger.debug(`Fetched ${idTable[config.run.bookCode].length} lookups`);
 }
 
 
@@ -1415,12 +1416,12 @@ async function downloadEnhancements(list) {
 }
 
 async function collectionFinished(err, count) {
+  logger.info("Data extraction complete document linking commencing...");
   if (err) {
     logger.error(err);
     exit();
   }
   try {
-
     logger.info(`Processing ${documents.length} scenes`);
     documents.forEach((document) => {
       if (document.content) {
@@ -1464,6 +1465,9 @@ async function collectionFinished(err, count) {
     if (config.imageFind) {
       configure.saveImageFinderResults(imageFinderSceneResults, imageFinderJournalResults, config.run.bookCode);
     }
+    if (config.run.returnAdventure) {
+      config.run.returnAdventure(config);
+    }
   }
 }
 
@@ -1492,7 +1496,7 @@ async function setConfig(conf) {
 }
 
 function getData(){
-  var db = new sqlite3.Database(
+  const db = new sqlite3.Database(
     path.join(config.run.sourceDir,`${config.run.bookCode}.db3`),
     sqlite3.OPEN_READONLY,
     (err) => {
@@ -1500,15 +1504,20 @@ function getData(){
     });
 
   db.serialize(function() {
-    db.run("PRAGMA cipher_compatibility = 3");
-    db.run(`PRAGMA key = '${config.run.key}'`);
-    db.run("PRAGMA cipher_page_size = '1024'");
-    db.run("PRAGMA kdf_iter = '64000'");
-    db.run("PRAGMA cipher_hmac_algorithm = 'HMAC_SHA1'");
-    db.run("PRAGMA cipher_kdf_algorithm = 'PBKDF2_HMAC_SHA1'");
+    try {
+      db.run("PRAGMA cipher_compatibility = 3");
+      db.run(`PRAGMA key = '${config.run.key}'`);
+      db.run("PRAGMA cipher_page_size = '1024'");
+      db.run("PRAGMA kdf_iter = '64000'");
+      db.run("PRAGMA cipher_hmac_algorithm = 'HMAC_SHA1'");
+      db.run("PRAGMA cipher_kdf_algorithm = 'PBKDF2_HMAC_SHA1'");
 
-    // generate chapter journal entries
-    db.each(getAllSQL, rowGenerate, collectionFinished);
+      // generate chapter journal entries
+      db.each(getAllSQL, rowGenerate, collectionFinished);
+    } catch (err) {
+      logger.error(err);
+      logger.error(err.stack);
+    }
   });
 
   db.close();
@@ -1521,6 +1530,7 @@ function setMasterFolders() {
     RollTable: generateFolder("RollTable", {id: -1, cobaltId: -1, title: config.run.book.description}, true),
     Actor: generateFolder("Actor", {id: -1, cobaltId: -1, title: config.run.book.description}, true),
   };
+  logger.debug("Master Folders generated");
 }
 
 exports.setMasterFolders = setMasterFolders;

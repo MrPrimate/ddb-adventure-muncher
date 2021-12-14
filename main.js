@@ -17,6 +17,9 @@ app.commandLine.appendSwitch("js-flags", "--max-old-space-size=1024");
 
 const isDevelopment = process.env.NODE_ENV === "DEV";
 
+// Keep a global reference of the window object
+let mainWindow;
+
 if (isDevelopment) {
   require("electron-reload")(__dirname);
 }
@@ -86,7 +89,7 @@ const menuTemplate = [
           const downloadPath = path.join(configFolder, "content");
           logger.info(downloadPath);
           if (fs.existsSync(downloadPath)) {
-            fs.rmdir(downloadPath, { recursive: true }, (err) => {
+            fs.rm(downloadPath, { recursive: true }, (err) => {
               if (err) {
                 throw err;
               }
@@ -95,7 +98,7 @@ const menuTemplate = [
           const buildPath = path.join(configFolder, "build");
           logger.info(buildPath);
           if (fs.existsSync(buildPath)) {
-            fs.rmdir(buildPath, { recursive: true }, (err) => {
+            fs.rm(buildPath, { recursive: true }, (err) => {
               if (err) {
                 throw err;
               }
@@ -104,7 +107,7 @@ const menuTemplate = [
           const metaPath = path.join(configFolder, "meta");
           logger.info(metaPath);
           if (fs.existsSync(metaPath)) {
-            fs.rmdir(metaPath, { recursive: true }, (err) => {
+            fs.rm(metaPath, { recursive: true }, (err) => {
               if (err) {
                 throw err;
               }
@@ -216,41 +219,22 @@ async function downloadBooks(config) {
   }
 }
 
-function generateAdventure(options) {
+function generateAdventure(options, returnAdventure) {
   options.version = app.getVersion();
-  return new Promise((resolve) => {
-    configurator.getConfig(options).then((config) => {
-      if (!isDevelopment) {
-        book.setTemplateDir(
-          path.join(process.resourcesPath, "content", "templates")
-        );
-      }
-      book.setConfig(config).then(() => {
-        utils.directoryReset(config);
-        book.fetchLookups(config);
-        book.setMasterFolders();
-        book.getData();
-        const targetAdventureZip = path.join(
-          config.run.outputDirEnv,
-          `${config.run.bookCode}.fvttadv`
-        );
-        const { promisify } = require("util");
-        const sleep = promisify(setTimeout);
-
-        const doSomething = async () => {
-          while (!fs.existsSync(targetAdventureZip)) {
-            logger.info(`No adventure at ${targetAdventureZip}`);
-            await sleep(1000);
-          }
-          resolve({
-            success: true,
-            message: `Successfully generated ${config.run.bookCode}.fvttadv`,
-            data: [],
-            config,
-          });
-        };
-        doSomething();
-      });
+  // return new Promise((resolve) => {
+  configurator.getConfig(options).then((config) => {
+    if (!isDevelopment) {
+      book.setTemplateDir(
+        path.join(process.resourcesPath, "content", "templates")
+      );
+    }
+    config.run.returnAdventure = returnAdventure;
+    book.setConfig(config).then(() => {
+      utils.directoryReset(config);
+      book.fetchLookups(config);
+      book.setMasterFolders();
+      book.getData();
+      console.log("Generating adventure...");
     });
   });
 }
@@ -354,21 +338,28 @@ function commandLine() {
   });
 }
 
-const loadMainWindow = () => {
+function loadMainWindow() {
   commandLine();
 
   let iconLocation = isDevelopment
     ? path.join(__dirname, "build", "icon.png")
     : path.join(process.resourcesPath, "content", "icon.png");
 
-  const mainWindow = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 800,
     height: 800,
     icon: iconLocation,
     webPreferences: {
-      // nodeIntegration: true,
       preload: path.join(__dirname, "preload.js"),
     },
+  });
+
+  // Emitted when the window is closed.
+  mainWindow.on("closed", function () {
+    // Dereference the window object, usually you would store windows
+    // in an array if your app supports multi windows, this is the time
+    // when you should delete the corresponding element.
+    mainWindow = null;
   });
 
   const menu = Menu.buildFromTemplate(menuTemplate);
@@ -446,15 +437,32 @@ const loadMainWindow = () => {
     });
   });
 
-  // eslint-disable-next-line no-unused-vars
-  ipcMain.on("generate", (event, data) => {
-    generateAdventure(data).then((data) => {
+  const returnAdventure = (config) => {
+    const data = {
+      success: true,
+      message: `Successfully generated ${config.run.bookCode}.fvttadv`,
+      data: [],
+      ddbVersions: config.run.ddbVersions,
+    };
+    const targetAdventureZip = path.join(
+      config.run.outputDirEnv,
+      `${config.run.bookCode}.fvttadv`
+    );
+    logger.info(`Adventure generated to ${targetAdventureZip}`);
+    try {
       mainWindow.webContents.send("generate", data);
-    });
+    } catch (err) {
+      logger.error(err);
+      logger.error(err.stack);
+    }
+  };
+
+  ipcMain.on("generate", (event, data) => {
+    generateAdventure(data, returnAdventure);
   });
 
   mainWindow.loadFile(path.join(__dirname, "renderer", "index.html"));
-};
+}
 
 function prepare() {
   commandLine().then(() => {

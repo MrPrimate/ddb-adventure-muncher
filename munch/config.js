@@ -282,7 +282,7 @@ async function getConfig(options = {}) {
       fs.rmSync(bookZipPath);
     }
     if (fs.existsSync(sourceDir)) {
-      fs.rmdir(sourceDir, { recursive: true }, (err) => {
+      fs.rm(sourceDir, { recursive: true }, (err) => {
         if (err) {
           throw err;
         }

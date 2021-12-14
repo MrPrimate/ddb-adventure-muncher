@@ -6,6 +6,7 @@
   "main": "main.js",
   "scripts": {
     "start": "NODE_ENV=DEV electron .",
+    "start-debug": "NODE_ENV=DEV electron --inspect=5858 .",
     "lint": "npx eslint ./",
     "lint-fix": "npx eslint ./ --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -80,16 +81,16 @@
   "homepage": "https://github.com/mrprimate",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^12.2.1",
-    "electron-builder": "^22.14.4",
+    "electron": "^12.2.3",
+    "electron-builder": "^22.14.5",
     "electron-reload": "^1.5.0",
     "eslint": "^7.32.0",
     "spectre.css": "^0.5.9"
   },
   "dependencies": {
-    "@journeyapps/sqlcipher": "^5.2.0",
+    "@journeyapps/sqlcipher": "^5.1.0",
     "electron-log": "^4.4.1",
-    "electron-updater": "^4.3.9",
+    "electron-updater": "^4.6.1",
     "extract-zip": "^2.0.1",
     "fs-extra": "^9.1.0",
     "image-size": "^0.9.7",
