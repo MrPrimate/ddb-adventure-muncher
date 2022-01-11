@@ -1407,10 +1407,14 @@ async function downloadEnhancements(list) {
     config.disableLargeDownloads :
     false;
   if (!disableLargeDownloads) {
+    let downloaded = [];
     for (let i = 0; i < list.length; i++) {
-      logger.info(`Downloading Hi Res ${list[i].name}`);
-      const dlPath = path.join(config.run.outputDir,list[i].path);
-      await utils.downloadFile(list[i].url, dlPath);
+      if (!downloaded.includes(list[i].path)) {
+        const dlPath = path.join(config.run.outputDir,list[i].path);
+        logger.info(`Downloading Hi Res ${list[i].name} (${dlPath})`);
+        await utils.downloadFile(list[i].url, dlPath);
+        downloaded.push(list[i].path);
+      }
     }
   }
 }
