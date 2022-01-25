@@ -119,6 +119,10 @@ async function getConfig(options = {}) {
   if (!fs.existsSync(assetsDir)){
     fs.mkdirSync(assetsDir);
   }
+  let tablesDir = path.resolve(__dirname, path.join(metaDir, "table_info"));
+  if (!fs.existsSync(tablesDir)){
+    fs.mkdirSync(tablesDir);
+  }
 
 
   if (options.externalConfigFile) {
@@ -174,7 +178,7 @@ async function getConfig(options = {}) {
   const sceneInfoDir = (process.env.SCENE_DIR) ? process.env.SCENE_DIR : path.resolve(__dirname, scenesDir);
   const noteInfoDir = (process.env.NOTE_DIR) ? process.env.NOTE_DIR : path.resolve(__dirname, notesDir);
   const assetsInfoDir = (process.env.ASSETS_DIR) ? process.env.ASSETS_DIR : path.resolve(__dirname, assetsDir);
-  const tableInfoDir = (process.env.TABLE_DIR) ? process.env.TABLE_DIR : path.resolve(__dirname, notesDir);
+  const tableInfoDir = (process.env.TABLE_DIR) ? process.env.TABLE_DIR : path.resolve(__dirname, tablesDir);
   const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint; 
 
   if (config.debug) {
