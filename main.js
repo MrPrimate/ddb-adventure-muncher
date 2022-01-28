@@ -178,6 +178,14 @@ const menuTemplate = [
         },
       },
       {
+        label: "Scene status page",
+        click: async () => {
+          await shell.openExternal(
+            "https://docs.ddb.mrprimate.co.uk/status.html"
+          );
+        },
+      },
+      {
         label: "Icon attribution",
         click: async () => {
           await shell.openExternal(

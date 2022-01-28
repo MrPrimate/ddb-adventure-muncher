@@ -1,3 +1,7 @@
+# 0.4.6
+
+* Change Scene Status Page.
+
 # 0.4.5
 
 * Able to distribute custom tiles
