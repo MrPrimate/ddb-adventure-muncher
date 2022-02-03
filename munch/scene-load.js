@@ -295,6 +295,18 @@ function importScene(conf, sceneFile) {
           console.error(`ERROR! Could not find token lookup for ${token.name} with id ${token.flags.ddbActorFlags.id}`);
           exit();
         }
+      } else {
+        if (token.flags.ddbActorFlags.name !== token.name &&
+          token.name.endsWith(token.flags.ddbActorFlags.name))
+        {
+          token.name = token.flags.ddbActorFlags.name;
+        }
+        if (token.actorData.name &&
+          token.actorData.name !== token.flags.ddbActorFlags.name &&
+          token.actorData.name.endsWith(token.flags.ddbActorFlags.name)
+        ) {
+          token.actorData.name = token.flags.ddbActorFlags.name;
+        }
       }
       return token;
     });
