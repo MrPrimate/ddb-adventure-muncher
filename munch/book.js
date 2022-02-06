@@ -1236,6 +1236,14 @@ function findScenes(document) {
 
     let title = `${document.name} (Player Version)`;
 
+    const parentId = node.parentElement.getAttribute("data-content-chunk-id");
+    const nodeId = node.getAttribute("data-content-chunk-id");
+    const contentChunkId = parentId
+      ? parentId
+      : nodeId
+        ? nodeId
+        : `${document.flags.ddb.ddbId}-${document.flags.ddb.parentId}-${tmpCount}-${document.flags.ddb.slug}`.replace("#","-");
+
     let row = {
       title: title,
       id: 14000 + document.flags.ddb.ddbId + tmpCount,
@@ -1243,7 +1251,7 @@ function findScenes(document) {
       cobaltId: document.flags.ddb.cobaltId,
       documentName: document.name,
       sceneName: utils.titleString(document.name),
-      contentChunkId: node.parentElement.getAttribute("data-content-chunk-id"),
+      contentChunkId: contentChunkId,
       slug: document.flags.ddb.slug,
       originDocId: document._id,
       originHint: "possibleUnknownPlayerLinks, player",

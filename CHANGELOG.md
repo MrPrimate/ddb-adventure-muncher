@@ -1,3 +1,7 @@
+# 0.4.7
+
+* Theros parsing tweaks.
+
 # 0.4.6
 
 * Change Scene Status Page.
