@@ -3,6 +3,7 @@
 const utils = require("./utils.js");
 const { getAllSQL } = require("./sql.js");
 const fs = require("fs");
+const fse = require("fs-extra");
 const path = require("path");
 const { exit } = require("process");
 const jsdom = require("jsdom");
@@ -1415,14 +1416,64 @@ async function downloadEnhancements(list) {
     config.disableLargeDownloads :
     false;
   if (!disableLargeDownloads) {
-    let downloaded = [];
+    let dlFile = utils.loadFile(path.join(config.run.sourceDir, "hiRes.json"));
+    let downloaded = dlFile ? JSON.parse(dlFile) : [];
+    if (!Array.isArray(downloaded)) downloaded = [];
     for (let i = 0; i < list.length; i++) {
-      if (!downloaded.includes(list[i].path)) {
-        const dlPath = path.join(config.run.outputDir,list[i].path);
+      const listPath = list[i].path.replace(/^assets\//, "");
+      if (!downloaded.includes(listPath)) {
+        const dlPath = path.join(config.run.sourceDir, listPath);
         logger.info(`Downloading Hi Res ${list[i].name} (${dlPath})`);
         await utils.downloadFile(list[i].url, dlPath);
-        downloaded.push(list[i].path);
+        downloaded.push(listPath);
       }
+    }
+    utils.saveJSONFile(downloaded, path.join(config.run.sourceDir, "hiRes.json"));
+  }
+}
+
+async function downloadDDBMobile() {
+  const targetFilesFile = utils.loadFile(path.join(config.run.sourceDir, "files.txt"));
+  const targetFiles = targetFilesFile ? JSON.parse(targetFilesFile) : {};
+
+  if (targetFiles.files) {
+    const list = targetFiles.files;
+    for (let i = 0; i < list.length; i++) {
+      const localUrl = list[i].LocalUrl[0].replace(/^\//,"");
+      const dlPath = path.join(config.run.sourceDir, localUrl);
+      const isLocalFile = fs.existsSync(dlPath);
+      if (!isLocalFile) {
+        logger.info(`Downloading DDB Image ${localUrl} (${dlPath})`);
+        await utils.downloadFile(list[i].RemoteUrl, dlPath);
+        if (list[i].LocalUrl.length > 1) {
+          for (let i = 1; i < list[i].LocalUrl.length; i++) {
+            logger.info(`Copying ${localUrl} to ${localUrl}`);
+            fse.copySync(dlPath, path.join(config.run.sourceDir,localUrl));
+          }
+        }
+      }
+    }
+  }
+}
+
+function finalAssetCopy(config) {
+  // To copy a folder or file
+  fse.copySync(config.run.sourceDir, path.join(config.run.outputDir,"assets"));
+
+  // copy assets files
+  const assetFilePath = path.join(config.run.assetsInfoDir, config.run.bookCode);
+  if (fs.existsSync(assetFilePath)) {
+    fse.copySync(assetFilePath, path.join(config.run.outputDir,"assets"));
+  }
+
+  const copiedDbPath = path.join(config.run.outputDir,"assets",`${config.run.bookCode}.db3`);
+  logger.info(copiedDbPath);
+  if (fs.existsSync(copiedDbPath)) {
+    try {
+      fs.unlinkSync(copiedDbPath);
+      //file removed
+    } catch(err) {
+      logger.error(err);
     }
   }
 }
@@ -1460,6 +1511,8 @@ async function collectionFinished(err, count) {
     const allContent = generatedJournals.concat(generatedScenes, generatedTables);
     outputFolders(generatedFolders, config, allContent);
     await downloadEnhancements(downloadList);
+    await downloadDDBMobile(downloadList);
+    finalAssetCopy(config);
     generateZipFile(config);
   } catch (err) {
     logger.error(`Error generating adventure: ${err}`);

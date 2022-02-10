@@ -285,13 +285,6 @@ async function getConfig(options = {}) {
     if (fs.existsSync(bookZipPath)) {
       fs.rmSync(bookZipPath);
     }
-    if (fs.existsSync(sourceDir)) {
-      fs.rm(sourceDir, { recursive: true }, (err) => {
-        if (err) {
-          throw err;
-        }
-      });
-    }
   }
 
   if (!fs.existsSync(bookZipPath)){
@@ -300,7 +293,7 @@ async function getConfig(options = {}) {
     logger.info("Download finished, beginning book parse!");
   }
 
-  if (!fs.existsSync(sourceDir)){
+  if (!fs.existsSync(sourceDir) || downloadNewVersion){
     logger.info(`Having to unzip, targeting ${sourceDir}`);
     await utils.unzipFile(bookZipPath, sourceDir);
   }

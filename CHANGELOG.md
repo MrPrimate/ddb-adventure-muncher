@@ -1,3 +1,7 @@
+# 0.5.0
+
+* Support for new DDB Download format (mandatory update).
+
 # 0.4.7
 
 * Theros parsing tweaks.
