@@ -1,3 +1,7 @@
+# 0.5.1
+
+* Fixes for new parsing format, notably in LMoP and SKT.
+
 # 0.5.0
 
 * Support for new DDB Download format (mandatory update).
