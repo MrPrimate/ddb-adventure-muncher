@@ -71,6 +71,8 @@ async function unzipFile(filePath, destination) {
     logger.info("Extraction complete");
     return filePath;
   } catch (err) {
+    logger.error("Error extracting file", err);
+    throw new Error("Error extracting file", err);
     // handle any errors
   }
 }
