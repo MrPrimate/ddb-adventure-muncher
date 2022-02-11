@@ -473,9 +473,16 @@ function generateFolder(type, row, baseFolder=false, img=false, note=false) {
       folder.name = `[Sections] ${parent.name}`;
     }
     folder.flags.ddb.parentId = row.parentId;
+    if (!folder.name || folder.name === "") {
+      logger.warn("NO NAME ROW FOUND (parent)!!!");
+    }
+
   } else if(!baseFolder) {
     const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == -1 && f.type == type && !f.flags.ddb.img);
     if (parent) folder.parent = `${parent._id}`;
+    if (!folder.name || folder.name === "") {
+      logger.warn("NO NAME ROW FOUND!!!");
+    }
   }
   if (row.cobaltId) folder.flags.ddb.cobaltId = row.cobaltId;
 
@@ -728,6 +735,7 @@ function generateScene(row, img) {
 
   scene.name = row.sceneName;
   scene.navName = row.sceneName.split(":").pop().trim();
+  logger.info(`Generating Scene ${scene.name}`);
 
   let journalMatch = generatedJournals.find((journal) => journal._id === row.originDocId);
   if (!journalMatch) {
@@ -865,6 +873,8 @@ function generateScene(row, img) {
     logger.info(adjustment.flags);
     logger.info(scene.flags);
     scene = _.merge(scene, adjustment);
+  } else {
+    logger.info(`NO ADJUSTMENTS found with chunkid "${scene.flags.ddb.contentChunkId}" and id ${scene.flags.ddb.ddbId}`);
   }
 
   if (config.imageFind) {
@@ -1308,6 +1318,11 @@ function findScenes(document) {
 function generateJournalChapterEntry(row, img=null) {
   const existingJournal = generatedJournals.find((f) => f.flags.ddb.ddbId == row.id);
   if (!existingJournal){
+    if (!row.title || row.title == "") {
+      const frag = new JSDOM(row.html);
+      row.title = frag.window.document.body.textContent;
+    }
+    logger.info(`Generating ${row.title}`);
     const journal = generateJournalEntry(row, img);
     return journal;
   }
@@ -1510,7 +1525,7 @@ async function collectionFinished(err, count) {
     outputAdventure(config);
     outputJournals(generatedJournals, config);
     logger.info("Generated Scenes:");
-    logger.info(generatedScenes.map(s => `${s.name} : ${s._id} : ${s.flags.ddb.contentChunkId } : ${s.flags.ddb.ddbId } : ${s.flags.ddb.cobaltId } : ${s.flags.ddb.parentId }`));
+    logger.info(generatedScenes.map(s => `${s.name} : ${s._id} : ${s.flags.ddb.contentChunkId } : ${s.flags.ddb.ddbId } : ${s.flags.ddb.cobaltId } : ${s.flags.ddb.parentId } : ${s.img}`));
     outputScenes(generatedScenes, config);
     outputTables(generatedTables, config);
     const allContent = generatedJournals.concat(generatedScenes, generatedTables);

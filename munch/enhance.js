@@ -3,6 +3,7 @@ const fetch = require("node-fetch");
 const semver = require("semver");
 const path = require("path");
 const logger = require("./logger.js");
+const fs = require("fs");
 
 async function getEnhancedData(config) {
   const cobaltCookie = config.cobalt;
@@ -88,7 +89,9 @@ function getMetaData(config) {
         //logger.info(data);
         logger.info(semver.clean(data.tag_name)); 
         logger.info(`Found remote metadata version: ${semver.valid(semver.clean(data.tag_name))}`); 
-        if (semver.valid(semver.clean(data.tag_name))) {
+        const versionsPath = path.join(config.run.metaDir, "versions.json");       
+        const versionsFileExists = fs.existsSync(versionsPath);
+        if (semver.valid(semver.clean(data.tag_name)) && versionsFileExists) {
           return data;
         } else {
           resolve(config.metaDataVersion);

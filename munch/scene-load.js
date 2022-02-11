@@ -153,8 +153,28 @@ function importScene(conf, sceneFile) {
     if (lookup) {
       console.log(`Matched Scene "${lookup.name}" in book "${bookCode}" using name match "${inData.name}"`);
     } else {
-      console.log("Unable to match scene.");
-      return;
+      console.log(`Falling back to img match for ${inData.img}`);
+      lookup = idTable[bookCode].find((r) =>
+        r.docType == "Scene" &&
+        inData.flags.ddb.img &&
+        inData.flags.ddb.img.includes(r.img)
+      );
+      if (lookup) {
+        console.log(`Matched Scene "${lookup.name}" in book "${bookCode}" using img match "${inData.img}"`);
+      } else {
+        console.log(`Falling back to just contentChunkId match for ${inData.img}`);
+        lookup = idTable[bookCode].find((r) =>
+          r.docType == "Scene" &&
+          r.contentChunkId && inData.flags.ddb.contentChunkId &&
+          r.contentChunkId == inData.flags.ddb.contentChunkId
+        );
+        if (lookup) {
+          console.log(`Matched Scene "${lookup.name}" in book "${bookCode}" using pure contentChunkId"`);
+        } else {
+          console.log("Unable to match scene.");
+          return;
+        }
+      }
     }
     
   }
