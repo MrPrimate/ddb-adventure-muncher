@@ -89,9 +89,11 @@ function getMetaData(config) {
         //logger.info(data);
         logger.info(semver.clean(data.tag_name)); 
         logger.info(`Found remote metadata version: ${semver.valid(semver.clean(data.tag_name))}`); 
-        const versionsPath = path.join(config.run.metaDir, "versions.json");       
+        const versionsPath = path.join(config.run.metaDir, "versions.json");
+        const metaPath = path.join(config.run.metaDir, "meta.json");
         const versionsFileExists = fs.existsSync(versionsPath);
-        if (semver.valid(semver.clean(data.tag_name)) && versionsFileExists) {
+        const metaFileExists = fs.existsSync(metaPath);
+        if (semver.valid(semver.clean(data.tag_name)) && versionsFileExists && metaFileExists) {
           return data;
         } else {
           resolve(config.metaDataVersion);
