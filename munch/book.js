@@ -1412,6 +1412,7 @@ function rowGenerate(err, row) {
 
 
 async function downloadEnhancements(list) {
+  logger.info("Checking for download enhancements...");
   const disableLargeDownloads = (config.disableLargeDownloads) ? 
     config.disableLargeDownloads :
     false;
@@ -1433,6 +1434,7 @@ async function downloadEnhancements(list) {
 }
 
 async function downloadDDBMobile() {
+  logger.info("Checking for missing ddb images...");
   const targetFilesFile = utils.loadFile(path.join(config.run.sourceDir, "files.txt"));
   const targetFiles = targetFilesFile ? JSON.parse(targetFilesFile) : {};
 
@@ -1446,9 +1448,12 @@ async function downloadDDBMobile() {
         logger.info(`Downloading DDB Image ${localUrl} (${dlPath})`);
         await utils.downloadFile(list[i].RemoteUrl, dlPath);
         if (list[i].LocalUrl.length > 1) {
-          for (let i = 1; i < list[i].LocalUrl.length; i++) {
-            logger.info(`Copying ${localUrl} to ${localUrl}`);
-            fse.copySync(dlPath, path.join(config.run.sourceDir,localUrl));
+          for (let i = 0; i < list[i].LocalUrl.length; i++) {
+            const targetUrl = list[i].LocalUrl[i].replace(/^\//,"");
+            if (localUrl !== targetUrl) {
+              logger.info(`Copying ${localUrl} to ${targetUrl}`);
+              fse.copySync(dlPath, path.join(config.run.sourceDir,targetUrl));
+            }
           }
         }
       }
