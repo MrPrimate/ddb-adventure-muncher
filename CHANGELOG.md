@@ -1,3 +1,7 @@
+# 0.5.2
+
+* Try and improve meta data download failures.
+
 # 0.5.1
 
 * Fixes for new parsing format, notably in LMoP and SKT.
