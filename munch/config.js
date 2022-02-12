@@ -223,7 +223,7 @@ async function getConfig(options = {}) {
   if (userData.status !== "success") {
     logger.info(userData);
     logger.warn("Unable to determine DDB user");
-    exit();
+    
   }
 
   options.bookCode = options.bookCode.toLowerCase();
@@ -252,6 +252,11 @@ async function getConfig(options = {}) {
 
   const versionsFile = path.resolve(__dirname, path.join(metaInfoDir, "versions.json"));
   logger.info(`Supported versions file ${versionsFile}`);
+  const metaPath = path.join(config.run.metaDir, "meta.json");
+  logger.info(`Meta data file ${metaPath}`);
+  const versionsFileExists = fs.existsSync(versionsFile);
+  const metaFileExists = fs.existsSync(metaPath);
+
   let currentVersion = 0;
   let supportedVersion = 0;
   let updateAvailable = false;
@@ -271,10 +276,17 @@ async function getConfig(options = {}) {
     }
   }
 
-  if (fs.existsSync(versionsFile)){
+  if (versionsFileExists){
     logger.warn("LOADING VERSIONS");
     versions = utils.loadConfig(versionsFile);
     if (versions[options.bookCode]) supportedVersion = versions[options.bookCode];
+  } else if (!versionsFileExists || !metaFileExists) {
+    if (!versionsFileExists) logger.error("Can't find versions file.");
+    if (!metaFileExists) logger.error("Can't find meta file.");
+    logger.error("Meta data probably didn't download, please fix manually.");
+    logger.info(`You can manually download the data from https://github.com/MrPrimate/ddb-meta-data/releases/latest and extract to ${config.run.metaDir} this should have things like the following in afterwards:`);
+    logger.info("assets ddb-meta-data.zip  LICENSE.md  meta.json  note_info  scene_info  table_info  versions.json");
+    exit();
   }
 
   const bookZipPath = path.join(downloadDir, `${options.bookCode}.zip`);
