@@ -76,6 +76,11 @@ function getMetaData(config) {
   const metaDataRepoAuthor = (process.env.METADATA_AUTHOR) ? process.env.METADATA_AUTHOR : "MrPrimate";
   const githubApiLatest = `https://api.github.com/repos/${metaDataRepoAuthor}/${metaDataRepoName}/releases/latest`;
 
+  const versionsPath = path.join(config.run.metaDir, "versions.json");
+  const metaPath = path.join(config.run.metaDir, "meta.json");
+  const versionsFileExists = fs.existsSync(versionsPath);
+  const metaFileExists = fs.existsSync(metaPath);
+
 
   return new Promise((resolve, reject) => {
     fetch(githubApiLatest, {
@@ -89,11 +94,7 @@ function getMetaData(config) {
         //logger.info(data);
         logger.info(semver.clean(data.tag_name)); 
         logger.info(`Found remote metadata version: ${semver.valid(semver.clean(data.tag_name))}`); 
-        const versionsPath = path.join(config.run.metaDir, "versions.json");
-        const metaPath = path.join(config.run.metaDir, "meta.json");
-        const versionsFileExists = fs.existsSync(versionsPath);
-        const metaFileExists = fs.existsSync(metaPath);
-        if (semver.valid(semver.clean(data.tag_name)) && versionsFileExists && metaFileExists) {
+        if (semver.valid(semver.clean(data.tag_name)) || !versionsFileExists || !metaFileExists) {
           return data;
         } else {
           resolve(config.metaDataVersion);
@@ -104,7 +105,7 @@ function getMetaData(config) {
         const noCurrent = semver.valid(config.metaDataVersion) === null;
         const currentVersion = !noCurrent ? semver.clean(config.metaDataVersion) : "0.0.0";
         logger.info(`Current metadata version: ${currentVersion}`);
-        if (semver.gt(latestVersion, currentVersion)) {
+        if (semver.gt(latestVersion, currentVersion) || !versionsFileExists || !metaFileExists) {
           logger.info("Downloading new metadata");
           const downloadVersion = downloadMetaData(data, config)
             .then((result) => {
