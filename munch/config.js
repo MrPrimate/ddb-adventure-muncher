@@ -27,6 +27,7 @@ function setConfigDir (dir) {
 }
 
 function getLookups() {
+  logger.info("Getting lookups");
   const lookupFile = path.resolve(__dirname, LOOKUP_FILE);
   if (fs.existsSync(lookupFile)){
     return utils.loadJSONFile(lookupFile);

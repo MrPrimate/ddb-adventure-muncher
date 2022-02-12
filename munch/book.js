@@ -1558,6 +1558,7 @@ async function collectionFinished(err, count) {
 
 async function setConfig(conf) {
   config = conf;
+  logger.info(`Adventure Muncher version ${config.run.version}`);
   logger.info(`Starting import of ${config.run.bookCode}`);
   masterFolder = undefined;
   documents = [];
