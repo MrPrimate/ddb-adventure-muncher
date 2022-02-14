@@ -62,8 +62,10 @@ window.api.receive("generate", (data) => {
   if (data.success) {
     const currentVersion = data.ddbVersions.currentVersion;
     const supportedVersion = data.ddbVersions.supportedVersion;
-    if (currentVersion > supportedVersion) {
-      messageDiv.innerHTML += `<p style="color:red">Current book version is ${currentVersion}, last known supported version is ${supportedVersion}. There is a chance that this adventure has not parsed properly.</p>`;
+    if (supportedVersion == 0) {
+      messageDiv.innerHTML += "<p style=\"color:red\">ERROR: Adventure Muncher could not download any meta data for this book, scenes will not be processed correctly.</p>";
+    } else if (currentVersion > supportedVersion) {
+      messageDiv.innerHTML += `<p style="color:orange">WARNING: Current book version is ${currentVersion}, last known supported version is ${supportedVersion}. There is a chance that this adventure has not parsed properly.</p>`;
     } else if (data.ddbVersions.downloadNewVersion) {
       messageDiv.innerHTML += `<p style="color:green"><b>Used DDB book version (${currentVersion}).</b></p>`;
     }
