@@ -14,11 +14,9 @@ jobs:
 
         - name: Install dependencies
           run: npm install
-          working-directory: docs
 
         - name: Build
-          run: npm run deploy
-          working-directory: docs
+          run: npm run docs
 
         - name: Deploy
           uses: reggionick/s3-deploy@v3
