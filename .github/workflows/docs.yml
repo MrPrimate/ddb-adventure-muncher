@@ -15,6 +15,9 @@ jobs:
         - name: Install dependencies
           run: npm install
 
+        - name: Install pandoc
+          run: apt install -f pandoc
+
         - name: Build
           run: npm run docs
 
