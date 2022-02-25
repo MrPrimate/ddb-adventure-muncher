@@ -5,6 +5,10 @@
 
 The Adventure Muncher can integrate the adventures/books you own on D&D Beyond into Foundry Virtual Table Top.
 
+## YouTube Guide
+
+You can view a [YouTube walk through](https://www.youtube.com/watch?v=OMaJHLQORWo&feature=youtu.be) or follow the instructions below.
+
 ## Install
 
 There are two parts to install to get munching. This guide assumes you're using Adventure Muncher 0.4.0+ and DDB Importer 2.4.0+.

@@ -1,0 +1,33 @@
+name: Deploy documentation updates
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.S3_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+    steps:
+        - uses: actions/checkout@v2
+
+        - name: Install dependencies
+          run: npm install
+          working-directory: docs
+
+        - name: Build
+          run: npm run deploy
+          working-directory: docs
+
+        - name: Deploy
+          uses: reggionick/s3-deploy@v3
+          with:
+            folder: dist/docs 
+            bucket: ${{ secrets.S3_BUCKET }}
+            bucket-region: ${{ secrets.S3_BUCKET_REGION }}
+            dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+            invalidation: /
+            delete-removed: false
+            no-cache: true
+            private: true

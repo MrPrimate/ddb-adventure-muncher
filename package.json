@@ -18,8 +18,10 @@
     "dist-m": "electron-builder -m --publish never",
     "github-dist-m": "electron-builder -m",
     "docs-index": "pandoc README.md -f markdown --css=build/pandoc.css -t html5 --self-contained -o dist/index.html",
-    "docs-guide": "cd docs; pandoc guide.md -f markdown --css=../build/pandoc.css -t html5 --self-contained -o ../dist/index.html --lua-filter=links-to-html.lua --metadata pagetitle='Adventure Muncher Getting Started Guide'",
-    "docs-scenes": "cd docs; pandoc scenes.md -f markdown --css=../build/pandoc.css -t html5 --self-contained -o ../dist/scenes.html --metadata pagetitle='Adventure Muncher Contributing Scenes'"
+    "docs-guide": "mkdir -p ./dist/docs; cd docs; pandoc guide.md -f markdown --css=../build/pandoc.css -t html5 --self-contained -o ../dist/docs/index.html --lua-filter=links-to-html.lua --metadata pagetitle='Adventure Muncher Getting Started Guide'",
+    "docs-scenes": "mkdir -p ./dist/docs; cd docs; pandoc scenes.md -f markdown --css=../build/pandoc.css -t html5 --self-contained -o ../dist/docs/scenes.html --metadata pagetitle='Adventure Muncher Contributing Scenes'",
+    "docs-third": "mkdir -p ./dist/docs; cd docs; pandoc third.md -f markdown --css=../build/pandoc.css -t html5 --self-contained -o ../dist/docs/third.html --metadata pagetitle='Adventure Muncher Third Party Integration'",
+    "docs": "npm run docs-guide && npm run docs-scenes && npm run docs-third"
   },
   "build": {
     "appId": "ddb-adventure-munch",
