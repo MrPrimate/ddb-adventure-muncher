@@ -1046,7 +1046,9 @@ function findScenes(document) {
         let title = caption.textContent.trim();
         const playerRef = node.querySelector("a[data-title~=Player]");
         if (playerRef) {
-          title = utils.titleString(title.replace(playerRef.textContent, "").trim());
+          if (title !== playerRef.textContent) {
+            title = utils.titleString(title.replace(playerRef.textContent, "").trim());
+          }
           logger.warn(`possibleFigureSceneNodes Player TITLE: ${title}`);
 
           let rowContentChunkId = caption.getAttribute("data-content-chunk-id");

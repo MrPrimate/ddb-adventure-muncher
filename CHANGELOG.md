@@ -1,3 +1,7 @@
+# 0.5.3
+
+* Support for Call of the Netherdeep
+
 # 0.5.2
 
 * Try and improve meta data download failures.
