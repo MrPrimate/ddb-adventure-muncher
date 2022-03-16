@@ -2,6 +2,7 @@ name: Deploy documentation updates
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   run:

@@ -1,3 +1,7 @@
+# 0.5.4
+
+* Improve parsing for notes in Call of the Netherdeep.
+
 # 0.5.3
 
 * Support for Call of the Netherdeep
