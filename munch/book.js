@@ -617,6 +617,17 @@ function generateJournalEntry(row, img=null, note=false) {
   return journal;
 }
 
+function getNoteTitle(html) {
+  const pDom = new JSDOM(html).window.document;
+  const boldText = pDom.querySelector("b, strong");
+  if (boldText) {
+    return boldText.textContent;
+  } else {
+    return pDom.body.textContent;
+  }
+
+}
+
 /**
  * For now this function generates Note Journal entries only
  * @param {*} row 
@@ -670,19 +681,25 @@ function generateNoteJournals(row) {
       return;
     }
     let html = "";
-    let noteTitle = keyChunk.textContent;
+    let noteTitle = getNoteTitle(keyChunk.innerHTML);
     let keyChunkId = hint.contentChunkIdStart;
     let idTagStop = hint.contentChunkIdStop === "IDSTOP";
 
     while (true) {
+      const pTag = hint.splitTag.toUpperCase() === "P";
+      // if this is the first p tag add the full p tag to the html
+      if (pTag && hint.contentChunkIdStart === keyChunkId) {
+        html += keyChunk.innerHTML;
+        //logger.warn("html: ", html);
+      }
+
       tmpCount++;
       keyChunk = keyChunk.nextElementSibling;
 
       const chunkId = keyChunk ? keyChunk.getAttribute("data-content-chunk-id") : undefined;
       // when we match against a P, we never stop
-      const pTag = hint.splitTag.toUpperCase() === "P";
       const tagMatch = keyChunk ? keyChunk.tagName.toUpperCase() === hint.splitTag.toUpperCase() : false;
-      const idStop = idTagStop && keyChunk.getAttribute("id") === hint.tagIdLast;
+      const idStop = (idTagStop && keyChunk.getAttribute("id") === hint.tagIdLast) || hint.contentChunkIdStart === hint.contentChunkIdStop;
       const stopChunk = keyChunk === null || chunkId === hint.contentChunkIdStop || idStop;
 
       // if we have reached the same tag type or last chunk generate a journal
@@ -715,7 +732,7 @@ function generateNoteJournals(row) {
       if (stopChunk) {
         break;
       } else if ((tagMatch && !pTag) || (noteTitle === "" && pTag)) {
-        noteTitle = keyChunk.textContent;
+        noteTitle = getNoteTitle(keyChunk.innerHTML);
         keyChunkId = chunkId;
       } else {
         // we add the chunk contents to the html block
