@@ -1,6 +1,7 @@
 const fetch = require("node-fetch");
 const utils = require("./utils.js");
 const logger = require("./logger.js");
+const bookData = require("./bookData.js");
 
 function ddbCall(url, urlencoded) {
   const options = {
@@ -31,31 +32,30 @@ function ddbCall(url, urlencoded) {
 }
 
 function getDDBConfig() {
-  const url = "https://www.dndbeyond.com/api/config/json";
-  const options = {
-    method: "GET",
-    headers: {
-      "User-Agent": "Foundry VTT Integrator",
-      "Sec-GPC": "1",
-      "Accept": "*/*",
-      "Accept-Language": "en-GB,en;q=0.5",
-    },
-    mode: "cors",
-
-  };
-  return new Promise((resolve, reject) => {
-    fetch(url, options)
-      .then(response => response.json())
-      .then(result => {
-        // logger.info(result.sources);
-        resolve(result);
-      })
-      .catch(error => {
-        logger.error("Error fetching book info from DDB");
-        logger.error("error", error);
-        reject(error);
-      });
-  });
+  // const url = "https://www.dndbeyond.com/api/config/json";
+  // const options = {
+  //   method: "GET",
+  //   headers: {
+  //     "Sec-GPC": "1",
+  //     "Accept": "*/*",
+  //     "Accept-Language": "en-GB,en;q=0.5",
+  //   },
+  //   mode: "cors",
+  // };
+  // return new Promise((resolve, reject) => {
+  //   fetch(url, options)
+  //     .then(response => response.json())
+  //     .then(result => {
+  //       logger.info(result);
+  //       resolve(result);
+  //     })
+  //     .catch(error => {
+  //       logger.error("Error fetching book info from DDB");
+  //       logger.error("error", error);
+  //       reject(error);
+  //     });
+  // });
+  return bookData;
 }
 
 

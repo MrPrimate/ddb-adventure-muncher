@@ -1,3 +1,7 @@
+# 0.5.5
+
+* Captcha change at DDB caused loading issues.
+
 # 0.5.4
 
 * Improve parsing for notes in Call of the Netherdeep.
