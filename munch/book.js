@@ -8,7 +8,7 @@ const path = require("path");
 const { exit } = require("process");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
-const sqlite3 = require("@journeyapps/sqlcipher").verbose();
+const sqlite3 = require("better-sqlite3-multiple-ciphers");
 const _ = require("lodash");
 const configure = require("./config.js");
 const sceneAdjuster = require("./scene-load.js");
@@ -1601,31 +1601,39 @@ async function setConfig(conf) {
 }
 
 function getData(){
-  const db = new sqlite3.Database(
-    path.join(config.run.sourceDir,`${config.run.bookCode}.db3`),
-    sqlite3.OPEN_READONLY,
-    (err) => {
-      if (err) logger.info(err);
-    });
 
-  db.serialize(function() {
-    try {
-      db.run("PRAGMA cipher_compatibility = 3");
-      db.run(`PRAGMA key = '${config.run.key}'`);
-      db.run("PRAGMA cipher_page_size = '1024'");
-      db.run("PRAGMA kdf_iter = '64000'");
-      db.run("PRAGMA cipher_hmac_algorithm = 'HMAC_SHA1'");
-      db.run("PRAGMA cipher_kdf_algorithm = 'PBKDF2_HMAC_SHA1'");
+  const options = {
+    readonly: true,
+    fileMustExist: true,
+  };
+  const dbPath = path.join(config.run.sourceDir,`${config.run.bookCode}.db3`);
+  const db = new sqlite3(dbPath, options);
 
-      // generate chapter journal entries
-      db.each(getAllSQL, rowGenerate, collectionFinished);
-    } catch (err) {
-      logger.error(err);
-      logger.error(err.stack);
+  db.pragma("cipher='sqlcipher'");
+  db.pragma("legacy=3");
+  db.pragma(`key='${config.run.key}'`);
+  db.pragma("cipher_page_size='1024'");
+  db.pragma("kdf_iter='64000'");
+  db.pragma("cipher_hmac_algorithm='HMAC_SHA1'");
+  db.pragma("cipher_kdf_algorithm='PBKDF2_HMAC_SHA1'");
+
+  logger.debug(db);
+
+  try {
+    const stmt = db.prepare(getAllSQL);
+    const rows = stmt.all();
+
+    for (const row of rows) {
+      rowGenerate(null, row);
     }
-  });
+    collectionFinished(null, stmt.length);
 
+  } catch (err) {
+    logger.error(err);
+    logger.error(err.stack);
+  }
   db.close();
+
 }
 
 function setMasterFolders() {
