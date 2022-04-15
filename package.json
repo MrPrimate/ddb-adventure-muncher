@@ -6,6 +6,7 @@
   "main": "main.js",
   "scripts": {
     "rebuild": "./node_modules/.bin/electron-rebuild",
+    "postinstall": "electron-builder install-app-deps",
     "start": "npm run rebuild && NODE_ENV=DEV electron .",
     "start-debug": "NODE_ENV=DEV electron --inspect=5858 .",
     "lint": "npx eslint ./",
@@ -85,7 +86,7 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^18.0.3",
-    "electron-builder": "^22.5.1",
+    "electron-builder": "^22.11.7",
     "electron-rebuild": "^3.2.7",
     "electron-reload": "^1.5.0",
     "eslint": "^7.32.0",
