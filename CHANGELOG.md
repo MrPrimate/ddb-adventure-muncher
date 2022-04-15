@@ -1,3 +1,8 @@
+# 0.6.0
+
+* Moved to new SQLite module to resolve some issues on newer linux versions, and to enable moving to a newer electron version.
+* New version of Electron.
+
 # 0.5.5
 
 * Captcha change at DDB caused loading issues.
