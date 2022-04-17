@@ -1,3 +1,7 @@
+# 0.6.1
+
+* Windows did not generate scene data enhancements
+
 # 0.6.0
 
 * Moved to new SQLite module to resolve some issues on newer linux versions, and to enable moving to a newer electron version.
