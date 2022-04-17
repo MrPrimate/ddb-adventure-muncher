@@ -1593,13 +1593,17 @@ async function setConfig(conf) {
   replaceLinks = [];
   tempHandouts = {};
   fetchLookups(config);
-  sceneAdjustments = sceneAdjuster.getSceneAdjustments(config);
-  logger.debug(`Scene adjustments : ${sceneAdjustments.length}`);
-  if (sceneAdjustments.length > 0) logger.debug("Scene Adjustment[0]", sceneAdjustments[0]);
+  sceneAdjustments = sceneAdjuster.getSceneAdjustments(config, true);
   noteHints = noteHinter.getNoteHints(config);
   tableHints = tableHinter.getTableHints(config);
   enhancedScenes = await enhance.getEnhancedData(config);
   downloadList = [];
+  logger.debug("Current config adjustments", {
+    sceneAdjustments: sceneAdjustments.length,
+    noteHints: noteHints.length,
+    tableHints: tableHints.length,
+    enhancedScenes: enhancedScenes.length,
+  });
 }
 
 function getData(){
