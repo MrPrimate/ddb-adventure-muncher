@@ -8,7 +8,7 @@ const path = require("path");
 const glob = require("glob");
 const { exit } = require("process");
 const logger = require("./logger.js");
-
+const os = require("os");
 
 function getSceneAdjustments(conf, useLogger = false) {
   let scenesData = [];
@@ -18,7 +18,15 @@ function getSceneAdjustments(conf, useLogger = false) {
   // console.log(conf.run.bookCode);
   const jsonFiles = path.join(conf.run.sceneInfoDir, conf.run.bookCode, "*.json");
 
-  glob.sync(jsonFiles).forEach((sceneDataFile) => {
+  const globbedPath = os.platform() === "win32"
+    ? jsonFiles.replace(/\\/g, "/")
+    : jsonFiles;
+  if (useLogger) {
+    logger.info(`jsonFiles from "${jsonFiles}"`);
+    logger.info(`globbedPath is "${globbedPath}"`);
+  }
+
+  glob.sync(globbedPath).forEach((sceneDataFile) => {
     if (useLogger) {
       logger.info(`Loading ${sceneDataFile}`);
     } else {
