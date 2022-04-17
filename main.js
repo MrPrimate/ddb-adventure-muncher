@@ -238,9 +238,14 @@ function generateAdventure(options, returnAdventure) {
     }
     config.run.returnAdventure = returnAdventure;
     book.setConfig(config).then(() => {
+      console.log("Set Config complete");
       utils.directoryReset(config);
+      console.warn("Directory reset complete");
       book.fetchLookups(config);
+      console.warn("Lookups fetched");
       book.setMasterFolders();
+      console.warn("Master folders set");
+      console.log("About to start generating adventure...");
       book.getData();
       console.log("Generating adventure...");
     });
