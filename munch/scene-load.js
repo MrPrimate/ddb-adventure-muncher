@@ -7,9 +7,10 @@ const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
 const { exit } = require("process");
+const logger = require("./logger.js");
 
 
-function getSceneAdjustments(conf) {
+function getSceneAdjustments(conf, useLogger = false) {
   let scenesData = [];
 
   // console.log(conf.run);
@@ -18,12 +19,22 @@ function getSceneAdjustments(conf) {
   const jsonFiles = path.join(conf.run.sceneInfoDir, conf.run.bookCode, "*.json");
 
   glob.sync(jsonFiles).forEach((sceneDataFile) => {
-    console.log(`Loading ${sceneDataFile}`);
+    if (useLogger) {
+      logger.info(`Loading ${sceneDataFile}`);
+    } else {
+      console.log(`Loading ${sceneDataFile}`);
+    }
+
     const sceneDataPath = path.resolve(__dirname, sceneDataFile);
     if (fs.existsSync(sceneDataPath)){
       scenesData = scenesData.concat(utils.loadJSONFile(sceneDataPath));
     }
   });
+
+  if (useLogger) {
+    logger.debug(`Scene adjustments : ${scenesData.length}`);
+    if (scenesData.length > 0) logger.debug("Scene Adjustment[0]", scenesData[0]);
+  }
 
   return scenesData;
 }
