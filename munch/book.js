@@ -1594,6 +1594,8 @@ async function setConfig(conf) {
   tempHandouts = {};
   fetchLookups(config);
   sceneAdjustments = sceneAdjuster.getSceneAdjustments(config);
+  logger.debug(`Scene adjustments : ${sceneAdjustments.length}`);
+  if (sceneAdjustments.length > 0) logger.debug("Scene Adjustment[0]", sceneAdjustments[0]);
   noteHints = noteHinter.getNoteHints(config);
   tableHints = tableHinter.getTableHints(config);
   enhancedScenes = await enhance.getEnhancedData(config);
