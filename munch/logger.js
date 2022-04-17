@@ -1,5 +1,7 @@
 const logger = require("electron-log");
 
+
+logger.transports.maxSize = 5242880;
 var cleared = false;
 if (!cleared) {
   logger.transports.file.getFile().clear();
