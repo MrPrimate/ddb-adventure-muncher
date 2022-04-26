@@ -1482,8 +1482,8 @@ async function downloadDDBMobile() {
         logger.info(`Downloading DDB Image ${localUrl} (${dlPath})`);
         await utils.downloadFile(list[i].RemoteUrl, dlPath);
         if (list[i].LocalUrl.length > 1) {
-          for (let i = 0; i < list[i].LocalUrl.length; i++) {
-            const targetUrl = list[i].LocalUrl[i].replace(/^\//,"");
+          for (let ui = 0; ui < list[i].LocalUrl.length; ui++) {
+            const targetUrl = list[i].LocalUrl[ui].replace(/^\//,"");
             if (localUrl !== targetUrl) {
               logger.info(`Copying ${localUrl} to ${targetUrl}`);
               fse.copySync(dlPath, path.join(config.run.sourceDir,targetUrl));

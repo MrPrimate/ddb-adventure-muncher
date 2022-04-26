@@ -1,3 +1,7 @@
+# 0.6.3
+
+* A rare loop bug could cause, in some very rare cases, images to be replaced by unexpected images. e.g. DC:  Ebondeath's Mausoleum would be replaced with the cover image.
+
 # 0.6.2
 
 * Remove ":" from pin names.
