@@ -16,7 +16,7 @@ function unPad(match, p1) {
 function generateIcon(config, title, templateDir) {
   // default path
   let iconPath = "icons/svg/book.svg";
-  let stub = title.trim().split(".")[0].split(" ")[0];
+  let stub = title.trim().split(".")[0].split(" ")[0].split(":")[0];
   stub = stub.replace(/(\d+)/, unPad);
   if (stub.length <= 4) {
     const svgDirPath = path.join(config.run.outputDir,"assets","icons");
