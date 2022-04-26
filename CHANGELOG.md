@@ -1,3 +1,7 @@
+# 0.6.2
+
+* Remove ":" from pin names.
+
 # 0.6.1
 
 * Windows did not generate scene data enhancements
