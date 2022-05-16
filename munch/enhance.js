@@ -30,16 +30,21 @@ async function getEnhancedData(config) {
       .then((response) => response.json())
       .then((data) => {
         if (!data.success) {
-          logger.error(`Failure: ${data.message}`);
-          reject(data.message);
+          logger.error(`Proxy response failure: ${data.message}`);
+          if (data.message === `Unknown error during item loading: No info for book ${config.run.book.id} yet`) {
+            logger.error(`No enhanced data for ${config.run.bookCode}`);
+            resolve([]);
+          } else {
+            reject(data.message);
+          }
         }
         logger.info(`Successfully received enhanced data for ${config.run.bookCode} containing ${data.data.length} items`);
         return data;
       })
       .then((data) => resolve(data.data))
-      .catch((error) => {
+      .catch(() => {
         logger.error(`Failed to get enhanced data from ${enhancementEndpoint} for ${config.run.bookCode}`);
-        reject(error);
+        resolve([]);
       });
   });
 }

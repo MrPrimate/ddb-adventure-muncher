@@ -1,3 +1,7 @@
+# 0.6.5
+
+* Support for MotM and MCV1. 
+
 # 0.6.4
 
 * Increase memory ceiling.
