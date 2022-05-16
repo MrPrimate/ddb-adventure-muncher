@@ -11,11 +11,14 @@ const fs = require("fs");
 const _ = require("lodash");
 const logger = require("./munch/logger.js");
 
+// Load environment variables
+const isDevelopment = process.env.NODE_ENV === "DEV";
+const memoryCap = process.env.MEMORY ? process.env.MEMORY : "2048";
+
+// add electron switches
 app.commandLine.appendSwitch("trace-warnings");
 app.commandLine.appendSwitch("unhandled-rejections", "strict");
-app.commandLine.appendSwitch("js-flags", "--max-old-space-size=2048");
-
-const isDevelopment = process.env.NODE_ENV === "DEV";
+app.commandLine.appendSwitch("js-flags", `--max-old-space-size=${memoryCap}`);
 
 // Keep a global reference of the window object
 let mainWindow;
