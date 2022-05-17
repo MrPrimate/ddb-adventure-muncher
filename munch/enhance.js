@@ -31,7 +31,9 @@ async function getEnhancedData(config) {
       .then((data) => {
         if (!data.success) {
           logger.error(`Proxy response failure: ${data.message}`);
-          if (data.message === `Unknown error during item loading: No info for book ${config.run.book.id} yet`) {
+          if (data.message === `Unknown error during item loading: No info for book ${config.run.book.id} yet` ||
+            data.message === `Unknown error during item loading: No info for book ${config.run.bookCode} yet`
+          ) {
             logger.error(`No enhanced data for ${config.run.bookCode}`);
             resolve([]);
           } else {

@@ -1,3 +1,7 @@
+# 0.6.6
+
+* Improve support for adventures with missing data.
+
 # 0.6.5
 
 * Support for MotM and MCV1. 
