@@ -1,3 +1,7 @@
+# 0.6.7
+
+* Try and improve hanging or partial downloads on Windows.
+
 # 0.6.6
 
 * Improve support for adventures with missing data.
