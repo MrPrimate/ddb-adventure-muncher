@@ -1,0 +1,108 @@
+{
+  "name": "ddb-adventure-muncher",
+  "version": "0.6.6",
+  "description": "D&D Beyond Adventure Muncher for Foundry Virtual Tabletop",
+  "repository": "https://github.com/MrPrimate/ddb-adventure-muncher",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run rebuild && NODE_ENV=DEV electron .",
+    "start-debug": "NODE_ENV=DEV electron --inspect=5858 .",
+    "lint": "npx eslint ./",
+    "lint-fix": "npx eslint ./ --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist-l": "electron-builder -l --publish never",
+    "dist-w": "electron-builder -w --publish never",
+    "dist-wl": "electron-builder -wl --publish never",
+    "dist-m": "electron-builder -m --publish never",
+    "github-dist-m": "electron-builder -m",
+    "docs-index": "pandoc README.md -f markdown --css=build/pandoc.css -t html5 --self-contained -o dist/index.html",
+    "docs-guide": "mkdir -p ./dist/docs; cd docs; pandoc guide.md -f markdown --css=../build/pandoc.css -t html5 --self-contained -o ../dist/docs/index.html --lua-filter=links-to-html.lua --metadata pagetitle='Adventure Muncher Getting Started Guide'",
+    "docs-scenes": "mkdir -p ./dist/docs; cd docs; pandoc scenes.md -f markdown --css=../build/pandoc.css -t html5 --self-contained -o ../dist/docs/scenes.html --metadata pagetitle='Adventure Muncher Contributing Scenes'",
+    "docs-third": "mkdir -p ./dist/docs; cd docs; pandoc third.md -f markdown --css=../build/pandoc.css -t html5 --self-contained -o ../dist/docs/third.html --metadata pagetitle='Adventure Muncher Third Party Integration'",
+    "docs": "npm run docs-guide && npm run docs-scenes && npm run docs-third"
+  },
+  "build": {
+    "appId": "ddb-adventure-munch",
+    "copyright": "Copyright © 2021-2022 Jack Holloway",
+    "artifactName": "${name}-${version}-${os}-${arch}.${ext}",
+    "npmRebuild": false,
+    "extraFiles": [
+      {
+        "from": "content/templates",
+        "to": "resources/content/templates",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "content/icons/icon.png",
+        "to": "resources/content/icon.png",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "content/icons",
+        "to": "content/icons",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "mac": {
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "entitlements": "./build/entitlements.mac.inherit.plist",
+      "entitlementsInherit": "./build/entitlements.mac.inherit.plist",
+      "target": [
+        "dmg"
+      ],
+      "category": "public.app-category.developer-tools"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "rpm",
+        "deb"
+      ]
+    },
+    "win": {
+      "publisherName": "DDBAdventureMuncher",
+      "target": [
+        "nsis"
+      ]
+    }
+  },
+  "keywords": [],
+  "author": {
+    "name": "Jack Holloway",
+    "email": "jack@mrprimate.co.uk"
+  },
+  "homepage": "https://github.com/mrprimate",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^16.2.2",
+    "electron-builder": "^23.0.6",
+    "electron-rebuild": "^3.2.7",
+    "electron-reload": "^1.5.0",
+    "eslint": "^7.32.0",
+    "spectre.css": "^0.5.9"
+  },
+  "dependencies": {
+    "better-sqlite3-multiple-ciphers": "^7.5.1",
+    "electron-log": "^4.4.1",
+    "electron-updater": "^5.0.2",
+    "extract-zip": "^2.0.1",
+    "fs-extra": "^9.1.0",
+    "glob": "^8.0.1",
+    "image-size": "^0.9.7",
+    "jsdom": "^16.7.0",
+    "jszip": "^3.7.1",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.7",
+    "semver": "^7.3.5",
+    "yargs": "^16.2.0"
+  }
+}
