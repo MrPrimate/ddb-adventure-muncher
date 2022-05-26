@@ -60,7 +60,7 @@ async function downloadMetaData(data, config) {
   };
 
   const downloads = data.assets.map((asset) => {
-    return utils.downloadFile(asset.browser_download_url, path.join(config.run.metaDir, asset.name));
+    return utils.downloadFile(asset.browser_download_url, path.join(config.run.metaDir, asset.name), config.run.downloadTimeout);
   });
 
   await Promise.all(downloads).then((downloadFiles) => {

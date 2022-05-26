@@ -1459,7 +1459,7 @@ async function downloadEnhancements(list) {
       if (!downloaded.includes(listPath)) {
         const dlPath = path.join(config.run.sourceDir, listPath);
         logger.info(`Downloading Hi Res ${list[i].name} (${dlPath})`);
-        await utils.downloadFile(list[i].url, dlPath);
+        await utils.downloadFile(list[i].url, dlPath, config.run.downloadTimeout);
         downloaded.push(listPath);
       }
     }
@@ -1480,7 +1480,7 @@ async function downloadDDBMobile() {
       const isLocalFile = fs.existsSync(dlPath);
       if (!isLocalFile) {
         logger.info(`Downloading DDB Image ${localUrl} (${dlPath})`);
-        await utils.downloadFile(list[i].RemoteUrl, dlPath);
+        await utils.downloadFile(list[i].RemoteUrl, dlPath, config.run.downloadTimeout);
         if (list[i].LocalUrl.length > 1) {
           for (let ui = 0; ui < list[i].LocalUrl.length; ui++) {
             const targetUrl = list[i].LocalUrl[ui].replace(/^\//,"");

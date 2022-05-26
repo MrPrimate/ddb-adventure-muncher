@@ -94,11 +94,11 @@ async function getBookUrl(bookId, cobalt) {
   return result;
 }
 
-async function downloadBook(bookId, cobalt, destination) {
+async function downloadBook(bookId, cobalt, destination, timeout = 30000) {
   logger.info(`Getting download link for ${bookId}`);
   const url = await getBookUrl(bookId, cobalt);
   logger.info("Generated unique download URL");
-  await utils.downloadFile(url, destination);
+  await utils.downloadFile(url, destination, timeout);
   logger.info("Download complete");
   return true;
 }

@@ -14,6 +14,7 @@ var dbDir;
 var CONFIG_FILE = `${configDir}/config.json`;
 var LOOKUP_FILE = `${configDir}/lookup.json`;
 var config;
+var timeout = 15000;
 
 const defaultEnhancementEndpoint = "https://proxy.ddb.mrprimate.co.uk";
 
@@ -195,6 +196,10 @@ async function getConfig(options = {}) {
     fs.mkdirSync(downloadDir);
   }
 
+  if (config.downloadTimeout) {
+    timeout = config.downloadTimeout;
+  }
+
   config.run = {
     enhancementEndpoint: enhancementEndpoint,
     downloadDir: downloadDir,
@@ -203,6 +208,7 @@ async function getConfig(options = {}) {
     noteInfoDir: path.resolve(__dirname, noteInfoDir),
     tableInfoDir: path.resolve(__dirname, tableInfoDir),
     assetsInfoDir: path.resolve(__dirname, assetsInfoDir),
+    downloadTimeout: timeout,
   };
 
 
@@ -302,7 +308,7 @@ async function getConfig(options = {}) {
 
   if (!fs.existsSync(bookZipPath)){
     logger.info(`Downloading ${book.description} ... this might take a while...`);
-    await ddb.downloadBook(book.id, config.cobalt, bookZipPath);
+    await ddb.downloadBook(book.id, config.cobalt, bookZipPath, timeout);
     logger.info("Download finished, beginning book parse!");
   }
 

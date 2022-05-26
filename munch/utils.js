@@ -77,14 +77,24 @@ async function unzipFile(filePath, destination) {
   }
 }
 
-function downloadFile(url, destination) {
+function fetchWithTimeout(url, options, timeout = 15000) {
+  return Promise.race([
+    fetch(url, options),
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error("timeout")), timeout)
+    )
+  ]);
+}
+
+function fetchFile(url, destination, timeout = 15000) {
+  logger.info(`Downloading ${url} to ${destination} (timeout: ${timeout})`);
   const options = {
     url: url,
     encoding: null
   };
 
   return new Promise((resolve, reject) => {
-    fetch(url, options)
+    fetchWithTimeout(url, options, timeout)
       .then((res) => {
         const dest = fs.createWriteStream(destination);
         res.body.pipe(dest);
@@ -98,6 +108,27 @@ function downloadFile(url, destination) {
   });
 }
 
+function downloadFile(url, destination, timeout = 15000) {
+  return new Promise((resolve, reject) => {
+    for (let i = 0; i < 5; i++) {
+      try {
+        fetchFile(url, destination, timeout)
+          .then((destination) => {
+            resolve(destination);
+          });
+      } catch (error) {
+        logger.error(`Failed to download ${url} to ${destination} (Attempt ${i + 1} of 5)`);
+        if (i === 4) {
+          fs.rm(destination);
+          reject(error);
+        } else {
+          fs.rm(destination);
+          logger.error("Retrying download...");
+        }
+      }
+    }
+  });
+}
 
 function randomString(length, chars) {
   var mask = "";
