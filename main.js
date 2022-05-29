@@ -10,6 +10,8 @@ const path = require("path");
 const fs = require("fs");
 const _ = require("lodash");
 const logger = require("./munch/logger.js");
+// immediately clear the log file
+logger.clear();
 
 // Load environment variables
 const isDevelopment = process.env.NODE_ENV === "DEV";

@@ -7,6 +7,9 @@ const { exit } = require("process");
 const scene = require("./scene-load.js");
 const path = require("path");
 const enhance = require("./enhance.js");
+const logger = require("./logger.js");
+// immediately clear the log file
+logger.clear();
 
 const configurator = require("./config.js");
 
