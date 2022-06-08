@@ -98,7 +98,10 @@ function fetchFile(url, destination, timeout = 15000) {
       .then((res) => {
         const dest = fs.createWriteStream(destination);
         res.body.pipe(dest);
-        res.body.on("end", () => resolve(destination));
+        dest.on("finish", function() {
+          dest.close();
+          resolve(destination);
+        });
         dest.on("error", reject);
       })
       .catch(error => {
@@ -277,7 +280,7 @@ function titleString (text) {
 function imageSize(image) {
   let size = {
     height: 2000,
-    width: 2000, 
+    width: 2000,
   };
   if (fs.existsSync(image)) {
     try {
