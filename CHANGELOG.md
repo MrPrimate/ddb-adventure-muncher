@@ -1,3 +1,7 @@
+# 0.6.8
+
+* Try and improve corrupted EOF downloads on some systems.
+
 # 0.6.7
 
 * Try and improve hanging or partial downloads on Windows.
