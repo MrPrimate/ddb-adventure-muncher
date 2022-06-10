@@ -764,6 +764,15 @@ const sources = [
       "https://www.dndbeyond.com/avatars/25098/972/637854763136224645.jpeg",
     sourceURL: "sources/mcv1",
   },
+  {
+    id: 91,
+    name: "TVD",
+    description: "The Vecna Dossier",
+    sourceCategoryId: 1,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/26305/340/637901114717317528.jpeg",
+    sourceURL: "sources/tvd",
+  },
 ];
 
 exports.sources = sources;
