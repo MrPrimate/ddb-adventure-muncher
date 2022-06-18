@@ -15,7 +15,7 @@ logger.clear();
 
 // Load environment variables
 const isDevelopment = process.env.NODE_ENV === "DEV";
-const memoryCap = process.env.MEMORY ? process.env.MEMORY : "2048";
+const memoryCap = process.env.MEMORY ? process.env.MEMORY : "4096";
 
 // add electron switches
 app.commandLine.appendSwitch("trace-warnings");
