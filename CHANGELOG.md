@@ -1,3 +1,7 @@
+# 0.6.9
+
+* Some dice roll detection would break some links.
+
 # 0.6.8
 
 * Try and improve corrupted EOF downloads on some systems.
