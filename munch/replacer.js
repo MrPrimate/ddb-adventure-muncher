@@ -348,21 +348,31 @@ function diceRollMatcher(match, p1, p2, p3, p4, p5) {
   if (p5 && p5.toLowerCase() === "damage") {
     let dmgString = `${p4} damage`;
     dmgString = dmgString[0].toUpperCase() + dmgString.substring(1);
-    const diceString = parseDiceString(p2, null, `[${p4.toLowerCase()}]`).diceString;
-    return `${p1 ? p1: ""} [[/r ${diceString} # ${dmgString}]]${p3} damage`;
+    const diceString = parseDiceString(p2, null, `[${p4.toLowerCase().trim()}]`).diceString;
+    return `${p1 ? p1: ""} [[/r ${diceString} # ${dmgString}]]${p3} ${p4} damage`;
   } else if (p5 && p1 && p5.toLowerCase() === "points" && p1.toLowerCase() === "regains") {
     const diceString = parseDiceString(p2, null, "[healing]").diceString;
     return `${p1 ? p1: ""} [[/r ${diceString} # Healing]]${p3} hit points`;
   } else {
     const diceString = parseDiceString(p2).diceString;
-    // logger.info(match);
-    // logger.info(`p1: ${p1}`);
-    // logger.info(`p2: ${p2}`);
-    // logger.info(`p3: ${p3}`);
-    // logger.info(`p4: ${p4}`);
-    // logger.info(`p5: ${p5}`);
-    const result = `${p1 ? p1: ""} [[/r ${diceString}]]${p3 ? p3 : ""} ${p4 ? p4 : ""} ${p5 ? p5 : ""} `;
-    // logger.info(result);
+    const rollString = `${p1 ? p1: ""} [[/r ${diceString}]]${p3 ? p3 : ""}${p4 ? p4 : ""} ${p5 ? p5 : ""} `;
+    const result = rollString
+      .replace("( [[/r ", "([[/r ")
+      .replace("> [[/r", ">[[/r")
+      .replace(/ {2}/g, " ")
+      .replace(/^\(/, " (")
+      .replace(/< $/, "<");
+    // console.warn("diceroll", {
+    //   match,
+    //   p1,
+    //   p2,
+    //   p3,
+    //   p4,
+    //   p5,
+    //   diceString,
+    //   rollString,
+    //   result,
+    // });
     return result;
   }
 }
@@ -371,7 +381,7 @@ function replaceRollLinks(text, conf) {
   if (!config) config = conf;
 
   text = text.replace(/[­––−-]/gu, "-").replace(/-+/g, "-");
-  const damageRegex = new RegExp(/([.>( ^]|^|regains +)*(\d*d\d+(?:\s*[+-]\s*\d*d*\d*)*)([.,<)$\s])*(\s?[a-z,A-Z]*)\s*(damage|points)?/, "g");
+  const damageRegex = new RegExp(/([.>(^\s]|^|regains +)+(\d*d\d+(?:\s*[+-]\s*\d*d*\d*)*)( <|[.,<)$\s])+?(\s?[a-z,A-Z]*)\s*(damage|points)?/, "g");
   text = text.replace(damageRegex, diceRollMatcher);
 
   // to hit rolls
