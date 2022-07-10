@@ -196,6 +196,7 @@ async function fixUpTables(tables, journals) {
   logger.info(`There are ${journals.length} journals`);
 
   await sleep(1000);
+  if (global.gc) global.gc();
 
   for (let tableIndex = 0, tablesLength = tables.length; tableIndex < tablesLength; tableIndex++) {
     const table = tables[tableIndex];
@@ -208,6 +209,7 @@ async function fixUpTables(tables, journals) {
     }
   }
   await sleep(1000);
+  if (global.gc) global.gc();
 
   logger.info("Starting Journal Table Updates");
 
@@ -215,6 +217,7 @@ async function fixUpTables(tables, journals) {
     journalTableReplacer(journals[journalIndex], tables);
     if (journalIndex % 5 == 0) {
       await sleep(500);
+      if (global.gc) global.gc();
     }
   }
   
@@ -430,6 +433,7 @@ function updateJournals(documents) {
       logger.info(`Fixing up classes for ${doc.name}`);
       doc.content = replacer.addClasses(doc.content);
     }
+    if (global.gc) global.gc();
     return doc;
   });
 
@@ -1524,12 +1528,14 @@ async function collectionFinished(err, count) {
     exit();
   }
   try {
+    if (global.gc) global.gc();
     logger.info(`Processing ${documents.length} scenes`);
     documents.forEach((document) => {
       if (document.content) {
         // eslint-disable-next-line no-unused-vars
         let [tempScenes, sceneJournals, tmpReplaceLinks] = findScenes(document);
         replaceLinks = replaceLinks.concat(tmpReplaceLinks);
+        if (global.gc) global.gc();
       }
     });
 

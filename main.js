@@ -15,12 +15,12 @@ logger.clear();
 
 // Load environment variables
 const isDevelopment = process.env.NODE_ENV === "DEV";
-const memoryCap = process.env.MEMORY ? process.env.MEMORY : "4096";
+const memoryCap = process.env.MEMORY ? process.env.MEMORY : "6144";
 
 // add electron switches
 app.commandLine.appendSwitch("trace-warnings");
 app.commandLine.appendSwitch("unhandled-rejections", "strict");
-app.commandLine.appendSwitch("js-flags", `--max-old-space-size=${memoryCap}`);
+app.commandLine.appendSwitch("js-flags", `--max-old-space-size=${memoryCap} --expose-gc`);
 
 // Keep a global reference of the window object
 let mainWindow;
