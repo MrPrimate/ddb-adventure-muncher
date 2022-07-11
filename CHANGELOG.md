@@ -1,3 +1,8 @@
+# 0.6.10
+
+* Support for Spell Jammer Academy.
+* Support for The Radiant Citadel chapter 1 excerpt.
+
 # 0.6.9
 
 * Some dice roll detection would break some links.
