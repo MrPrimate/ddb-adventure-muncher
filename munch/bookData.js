@@ -755,6 +755,15 @@ const sources = [
     sourceURL: "sources/motm",
   },
   {
+    id: 87,
+    name: "JttRC",
+    description: "Journeys through the Radiant Citadel",
+    sourceCategoryId: 1,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/24454/511/637830510509865265.jpeg",
+    sourceURL: "sources/jttrc",
+  },
+  {
     id: 89,
     name: "MCv1",
     description: "Monstrous Compendium Volume One: Spelljammer Creatures",
