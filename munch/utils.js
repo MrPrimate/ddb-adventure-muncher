@@ -114,8 +114,7 @@ function fetchFile(url, destination, timeout = 15000) {
 function downloadFile(url, destination, timeout = 1500, count = 0, maxcount = 5, error = null) {
   return new Promise((resolve, reject) => {
     if (count === maxcount) {
-      logger.error(`Failed to download ${url} to ${destination} (Attempt ${i + 1} of 5)`);
-      logger.error("Download error:", error);
+      logger.error("Max attempts reached. Download error:", error);
       fs.rm(destination);
       reject(error);
     }
