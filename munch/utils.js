@@ -111,23 +111,24 @@ function fetchFile(url, destination, timeout = 15000) {
   });
 }
 
-function downloadFile(url, destination, timeout = 15000) {
+function downloadFile(url, destination, timeout = 1500, count = 0, maxcount = 5, error = null) {
   return new Promise((resolve, reject) => {
-    for (let i = 0; i < 5; i++) {
+    if (count === maxcount) {
+      logger.error(`Failed to download ${url} to ${destination} (Attempt ${i + 1} of 5)`);
+      logger.error("Download error:", error);
+      fs.rm(destination);
+      reject(error);
+    }
+    else {
       try {
         fetchFile(url, destination, timeout)
           .then((destination) => {
             resolve(destination);
           });
-      } catch (error) {
-        logger.error(`Failed to download ${url} to ${destination} (Attempt ${i + 1} of 5)`);
-        if (i === 4) {
-          fs.rm(destination);
-          reject(error);
-        } else {
-          fs.rm(destination);
-          logger.error("Retrying download...");
-        }
+      } catch (err) {
+        logger.error(`Failed to download ${url} to ${destination} (Attempt ${count + 1} of ${maxcount})`);
+        fs.rm(destination);
+        resolve(downloadFile(url, destination, timeout, count + 1, maxcount, err));
       }
     }
   });
