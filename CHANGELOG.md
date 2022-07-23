@@ -1,3 +1,11 @@
+# 0.6.12
+
+* Try and improve download failures.
+
+# 0.6.11
+
+* Initial support for Journeys Through the Radiant Citadel
+
 # 0.6.10
 
 * Support for Spell Jammer Academy.
