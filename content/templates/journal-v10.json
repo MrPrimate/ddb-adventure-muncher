@@ -1,0 +1,17 @@
+{
+  "_id": null,
+  "name": "Cool journal entry",
+  "folder": null,
+  "sort": 10000,
+  "flags": {
+    "ddb": {
+      "cobaltId": null,
+      "ddbId": null,
+      "bookCode": null
+    }
+  },
+  "pages": [],
+  "permission": {
+    "default": 0
+  }
+}

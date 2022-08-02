@@ -29,15 +29,15 @@ generateButton.addEventListener("click", (event) => {
   event.preventDefault();
   generateButton.disabled = true;
   const bookCode = document.getElementById("book-select");
-  const generateTokens = document.getElementById("generate-tokens");
+  const v10Mode = document.getElementById("v10-mode");
   const observeAll = document.getElementById("observe-all");
   const messageDiv = document.getElementById("message-div");
   messageDiv.innerHTML = "";
   
   const options = {
     bookCode: bookCode.value,
-    generateTokens: generateTokens.checked,
     observeAll: observeAll.checked,
+    v10Mode: v10Mode.checked,
   };
   if (bookCode.value !== 0) {
     window.api.send("generate", options);
@@ -108,7 +108,7 @@ window.api.receive("config", (config) => {
       outputLocation.innerHTML = config.outputDirEnv;
       window.api.send("books");
     }
-    document.getElementById("generate-tokens").checked = config.generateTokens === true;
+    document.getElementById("v10-mode").checked = config.v10Mode === true;
   } else {
     console.warn("No config file!");
     contentLoadMessage.innerHTML = "Config not found";

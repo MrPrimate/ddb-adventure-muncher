@@ -148,10 +148,10 @@ async function getConfig(options = {}) {
   }
 
   if (
-    (options.generateTokens === true || options.generateTokens === false) &&
-    config.generateTokens !== options.generateTokens
+    (options.v10Mode === true || options.v10Mode === false) &&
+    config.v10Mode !== options.v10Mode
   ) {
-    config.generateTokens = options.generateTokens;
+    config.v10Mode = options.v10Mode;
     saveConf = true;
   }
 

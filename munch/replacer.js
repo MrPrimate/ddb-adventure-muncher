@@ -17,6 +17,7 @@ const COMPENDIUM_MAP = {
   "monsters": "monsters",
   "actions": "actions",
   "weaponproperties": "weaponproperties",
+  "vehicles": "vehicles",
 };
 
 var config;
@@ -92,30 +93,6 @@ function foundryCompendiumReplace(text, config) {
     }
   });
 
-  // vehicles - not yet handled
-  const compendiumLinks = dom.window.document.querySelectorAll("a[href*=\"ddb://vehicles\/\"]");
-  const lookupRegExp = new RegExp("ddb:\/\/vehicles\/([0-9]*)");
-  compendiumLinks.forEach((node) => {
-    const target = node.outerHTML;
-    const lookupMatch = node.outerHTML.match(lookupRegExp);
-    const lookupValue = config.lookups["vehicles"];
-    if (lookupMatch) {
-      if (!config.run.required["vehicles"].some((e) => e.id == lookupMatch[1])) {
-        config.run.required["vehicles"].push(lookupMatch[1]);
-      }
-      const lookupEntry = lookupValue.find((e) => e.id == lookupMatch[1]);
-      if (lookupEntry) {
-        node.setAttribute("href", `https://www.dndbeyond.com${lookupEntry.url}`);
-        text = text.replace(target, node.outerHTML);
-      } else {
-        logger.info(`NO Vehicle Lookup Entry for ${node.outerHTML}`);
-      }
-    } else {
-      logger.info(`NO Vehicle Lookup Match for ${node.outerHTML}`);
-    }
-  });
-
-
   // ddb://compendium/br (basic rule)
   return text;
 }
@@ -148,20 +125,35 @@ function moduleReplaceLinks(text, journals, config) {
       // logger.info(slugMatch);
       const slug = slugMatch[1].replace(/\//g, "").split("#");
       const refactoredSlug = (slug.length > 1) ? `${slug[0].toLowerCase()}#${slug[1]}` : slug[0].toLowerCase();
-      const journalEntry = journals.find((journal) => {
-        let check = journal.flags.ddb.slug === refactoredSlug;
-        if (!check && slug.length > 1) check = journal.flags.ddb.slug === slug[0].toLowerCase();
-        return check;
+      const journalPageMap = config.v10Mode ? journals.map((j) => j.pages).flat() : journals;
+      const journalPage = journalPageMap.find((journalPage) => {
+        let check = journalPage.flags.ddb.slug === refactoredSlug;
+        if (!check && slug.length > 1) check = journalPage.flags.ddb.slug === slug[0].toLowerCase();
+        const pageNameSlug = journalPage.name.replace(/[^\w\d]+/g, "");
+        const pageCheck = config.v10Mode && slug.length > 2
+          ? !journalPage.flags.ddb.img && !journalPage.flags.ddb.note &&
+            pageNameSlug.toLowerCase() === slug[1].toLowerCase()
+          : true;
+        return check && pageCheck;
       });
-      if (journalEntry) {
+      if (journalPage) {
         // const journalRegex = new RegExp(`${node.outerHTML}`, "g");
         //text = text.replace(journalRegex, `@JournalEntry[${journalEntry.name}]{${node.textContent}}`);
-        innerHTML = innerHTML.replace(node.outerHTML, `@JournalEntry[${journalEntry.name}]{${node.textContent}}`);
+        const textPointer = node.textContent.trim() !== "";
+        const textValue = `${node.textContent}`;
+        if (config.v10Mode) {
+          const journalEntry = journals.find((j) => j.pages.some((p) => p._id === journalPage._id));
+          const slugLink = textPointer ? `#${textValue.replace(/\s/g, "")}` : "";
+          innerHTML = innerHTML.replace(node.outerHTML, `@UUID[JournalEntry.${journalEntry._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`);
+        } else {
+          innerHTML = innerHTML.replace(node.outerHTML, `@JournalEntry[${journalPage.name}]${textPointer ? textValue : ""}`);
+        }
+        
       } else {
-        logger.info(`NO JOURNAL for ${node.outerHTML}`);
+        logger.warn(`NO JOURNAL for "${node.outerHTML}" Slugs: "${slug}" Refactored slug: "${refactoredSlug}"`);
       }
     } else {
-      logger.info(`NO SLUGS FOR ${node.outerHTML}`);
+      logger.warn(`NO SLUGS FOR ${node.outerHTML}`);
     }
   }
 
