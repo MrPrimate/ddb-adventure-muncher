@@ -1328,7 +1328,8 @@ function findScenes(document) {
         const journalEntry = generateJournalEntry(row, img.src);
         if (!playerRef) {
           // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkName}]{${journalEntry.name}}`);
-          linkReplaces.push( {html: img.outerHTML, ref: `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${journalEntry.name}}` });
+          const linkId = journalEntry.flags.ddb.linkId ? journalEntry.flags.ddb.linkId : journalEntry._id;
+          linkReplaces.push( {html: img.outerHTML, ref: `${img.outerHTML} @JournalEntry[${linkId}]{${journalEntry.name}}` });
         }
         // if (!journalEntry.flags.ddb.duplicate) {
         journals.push(journalEntry);
@@ -1417,7 +1418,8 @@ function findScenes(document) {
         const journalEntry = generateJournalEntry(row, img.src);
         if (!playerVersion) {
           // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}`);
-          linkReplaces.push( {html: img.outerHTML, ref: `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}` });
+          const linkId = journalEntry.flags.ddb.linkId ? journalEntry.flags.ddb.linkId : journalEntry._id;
+          linkReplaces.push( {html: img.outerHTML, ref: `${img.outerHTML} @JournalEntry[${linkId}]{${title}}` });
         }
         journals.push(journalEntry);
       }
@@ -1541,7 +1543,8 @@ function findScenes(document) {
     const journalEntry = generateJournalEntry(row, node.src);
     if (!journalEntry.flags.ddb.duplicate) {
       unknownHandoutCount++;
-      linkReplaces.push( {html: node.parentNode.outerHTML, ref: `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}` });
+      const linkId = journalEntry.flags.ddb.linkId ? journalEntry.flags.ddb.linkId : journalEntry._id;
+      linkReplaces.push( {html: node.parentNode.outerHTML, ref: `${node.parentNode.outerHTML} @JournalEntry[${linkId}]{${title}}` });
       // document.content = document.content.replace(node.parentNode.outerHTML, `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}`);
       journals.push(journalEntry);
     }
