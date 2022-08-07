@@ -365,7 +365,7 @@ function loadMainWindow() {
 
   mainWindow = new BrowserWindow({
     width: 800,
-    height: 800,
+    height: 1000,
     icon: iconLocation,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
