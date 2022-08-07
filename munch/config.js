@@ -89,13 +89,27 @@ function isConfig() {
   return false;
 }
 
+function checkConfigSetting(config, options, settingName, defaultValue) {
+  // let value = config[settingName] !== undefined ? config[settingName] : defaultValue;
+  // if (options[settingName] !== undefined) {
+  //   value = options[settingName] ;
+  // }
+
+  const value = options[settingName] !== undefined
+    ? options[settingName]
+    : config[settingName] !== undefined
+      ? config[settingName]
+      : defaultValue;
+
+  return value;
+}
+
 // const options = {
 //   bookCode: null,
 //   externalConfigFile: null,
 //   outputDirPath: null,
 // };
 async function getConfig(options = {}) {
-  let saveConf = false;
   const configFile = path.resolve(__dirname, CONFIG_FILE);
   if (!config) config = utils.loadConfig(configFile);
   if (config.run) delete(config.run);
@@ -135,7 +149,6 @@ async function getConfig(options = {}) {
       delete(config.cobalt);
       delete(config.lookups);
       config = _.merge(config, externalConfig);
-      saveConf = true;
     }
   }
 
@@ -143,29 +156,16 @@ async function getConfig(options = {}) {
     options.outputDirPath = path.resolve(__dirname,options.outputDirPath);
     if (fs.existsSync(options.outputDirPath)){
       config.outputDirEnv = options.outputDirPath;
-      saveConf = true;
     }
   }
 
-  if (
-    (options.generateTokens === true || options.generateTokens === false) &&
-    config.generateTokens !== options.generateTokens
-  ) {
-    config.generateTokens = options.generateTokens;
-    saveConf = true;
-  }
+  config.v10Mode = checkConfigSetting(config, options, "v10Mode", false);
+  config.createHandouts = checkConfigSetting(config, options, "createHandouts", true);
+  config.createPlayerHandouts = checkConfigSetting(config, options, "createPlayerHandouts", true);
+  config.observeAll = checkConfigSetting(config, options, "observeAll", false);
 
-  if (
-    (options.observeAll === true || options.observeAll === false) &&
-    config.observeAll !== options.observeAll
-  ) {
-    config.observeAll = options.observeAll;
-    saveConf = true;
-  }
+  utils.saveJSONFile(config, configFile);
 
-  if (saveConf) {
-    utils.saveJSONFile(config, configFile);
-  }
 
   let dbsDir;
   if (config.dbsDir) {
