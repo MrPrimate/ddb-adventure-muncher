@@ -1657,31 +1657,10 @@ function hasFolderContent(parsedFolders, foldersWithContent, folder) {
 function outputFolders(parsedFolders, config, content) {
   logger.info("Exporting required folders...");
 
-  // const foldersWithContent = parsedFolders.filter((folder) => content.some((content) =>
-  //   folder._id === content.folder ||
-  //   masterFolder[folder.type]._id == folder._id
-  // ));
-
   const foldersWithContent = parsedFolders.filter((folder) => content.some((content) =>
     folder._id === content.folder ||
     masterFolder[folder.type]._id == folder._id
   )).map((folder) => folder._id);
-
-  // const foldersWithParents = parsedFolders.filter((folder) => 
-  //   parsedFolders.some((pFolder) => folder._id === pFolder.parent)
-  // );
-
-  // const finalFolders = parsedFolders.filter((folder) => {
-  //   const hasContent = content.some((content) =>
-  //     folder._id === content.folder ||
-  //     masterFolder[folder.type]._id == folder._id
-  //   );
-    
-  //   const hasChildren = parsedFolders.some((pFolder) => folder._id === pFolder.parent);
-  //   const hasChildrenWithContent = hasChildren.some((childFolder) => foldersWithContent.some((cFolder) => cFolder._id === childFolder._id));
-  //   if (hasContent && !hasChildrenWithContent) 
-  //   return hasContent || hasChildrenWithContent;
-  // });
 
   const finalFolders = parsedFolders.filter((folder) => hasFolderContent(parsedFolders, foldersWithContent, folder));
 
