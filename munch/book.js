@@ -671,8 +671,8 @@ function generateJournalEntryV10(row, img=null, note=false) {
     if (journalImgMatched.includes(content)) {
       const journalMatch =  generatedJournals.map((j) => j.pages).flat().find((j) => j.src === content);
       journal.flags.ddb.duplicate = true;
-      journal.flags.ddb.linkId = journalMatch._id;
-      journal.flags.ddb.linkName = journalMatch.name;
+      journal.flags.ddb.linkId = journalMatch ? journalMatch._id : null;
+      journal.flags.ddb.linkName = journalMatch ?journalMatch.name : null;
     } else {
       journal.flags.ddb.duplicate = false;
       journal.flags.ddb.linkName = name;
@@ -713,8 +713,9 @@ function generateJournalEntryV10(row, img=null, note=false) {
   if (!imgState && !note) {
     appendJournalToChapter(row, journal);
   }
-  // if (!journal.flags.ddb.duplicate && (imgState || note)) {
-  if (!journal.flags.ddb.duplicate && (imgState || note || !row.parentId)) {
+
+  const createImgHandouts = ((config.createHandouts && !row.player) || (row.player && config.createPlayerHandouts)) && imgState;
+  if (!journal.flags.ddb.duplicate && (createImgHandouts || note || !row.parentId)) {
     logger.info(`Appending ${name} Img:"${journal.flags.ddb.imageSrc}"`);
     generatedJournals.push(journal);
   }
@@ -1122,7 +1123,7 @@ function generateScene(row, img) {
   if (config.debug) logger.debug(enhancedScene);
 
   if (enhancedScene) {
-    if (enhancedScene.adjustName != "") {
+    if (enhancedScene.adjustName && enhancedScene.adjustName.trim() != "") {
       scene.name = enhancedScene.adjustName;
       scene.navName = enhancedScene.adjustName;
     }
@@ -1289,15 +1290,18 @@ function findScenes(document) {
             originDocId: document._id,
             originHint: "possibleFigureSceneNodes, player",
             originalLink: playerRef.href,
+            player: true,
           };
           tmpCount++;
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
           journals.push(playerEntry);
-          linkReplaces.push( {html: playerRef.outerHTML, ref: `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}` });
+          const dmText = config.createHandouts ? `@JournalEntry[${title}]{DM Version} ` : "";
+          const playerText = config.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}` : "";
+          linkReplaces.push( {html: playerRef.outerHTML, ref: `${dmText}${playerText}` });
           if (config.v10Mode) {
-            document.text.content = document.text.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}`);
+            document.text.content = document.text.content.replace(playerRef.outerHTML, `${dmText}${playerText}`);
           } else {
-            document.content = document.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}`);
+            document.content = document.content.replace(playerRef.outerHTML, `${dmText}${playerText}`);
           }
           scenes.push(generateScene(row, config.v10Mode ? playerEntry.pages[0].src : playerEntry.img));
         }
@@ -1329,10 +1333,11 @@ function findScenes(document) {
         if (!playerRef) {
           // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkName}]{${journalEntry.name}}`);
           const linkId = journalEntry.flags.ddb.linkId ? journalEntry.flags.ddb.linkId : journalEntry._id;
-          linkReplaces.push( {html: img.outerHTML, ref: `${img.outerHTML} @JournalEntry[${linkId}]{${journalEntry.name}}` });
+          const dmText = config.createHandouts ? ` @JournalEntry[${linkId}]{${journalEntry.name}}` : "";
+          linkReplaces.push( {html: img.outerHTML, ref: `${img.outerHTML}${dmText}}` });
         }
         // if (!journalEntry.flags.ddb.duplicate) {
-        journals.push(journalEntry);
+        if (config.createHandouts) journals.push(journalEntry);
         //}
       }
     });
@@ -1392,15 +1397,19 @@ function findScenes(document) {
             originDocId: document._id,
             originHint: "possibleDivSceneNodes, player",
             originalLink: playerRef.href,
+            player: true,
           };
           tmpCount++;
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
           journals.push(playerEntry);
-          linkReplaces.push( {html: playerRef.outerHTML, ref: `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}` });
+          const dmText = config.createHandouts ? `@JournalEntry[${title}]{DM Version} ` : "";
+          const playerText = config.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}` : "";
+
+          linkReplaces.push( {html: playerRef.outerHTML, ref: `${dmText}${playerText}` });
           if (config.v10Mode) {
-            document.text.content = document.text.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}`);
+            document.text.content = document.text.content.replace(playerRef.outerHTML, `${dmText}${playerText}`);
           } else {
-            document.content = document.content.replace(playerRef.outerHTML, `@JournalEntry[${title}]{DM Version} @JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}`);
+            document.content = document.content.replace(playerRef.outerHTML, `${dmText}${playerText}`);
           }
           scenes.push(generateScene(row, config.v10Mode ? playerEntry.pages[0].src : playerEntry.img));
         }
@@ -1419,9 +1428,10 @@ function findScenes(document) {
         if (!playerVersion) {
           // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}`);
           const linkId = journalEntry.flags.ddb.linkId ? journalEntry.flags.ddb.linkId : journalEntry._id;
-          linkReplaces.push( {html: img.outerHTML, ref: `${img.outerHTML} @JournalEntry[${linkId}]{${title}}` });
+          const dmText = config.createHandouts ? ` @JournalEntry[${linkId}]{${title}}` : "";
+          linkReplaces.push( {html: img.outerHTML, ref: `${img.outerHTML}${dmText}}` });
         }
-        journals.push(journalEntry);
+        if (config.createHandouts) journals.push(journalEntry);
       }
     });
   }
@@ -1451,17 +1461,19 @@ function findScenes(document) {
         originDocId: document._id,
         originHint: "possibleViewPlayerScenes, player",
         originalLink: aNode.href,
+        player: true,
       };
       const journalEntry = generateJournalEntry(row, aNode.href.replace("ddb://image", "."));
-      
+
       // don't add entry if we have already parsed this
       // 
       if (!journalEntry.flags.ddb.duplicate) {
-        linkReplaces.push( {html: aNode.outerHTML, ref: `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}` });
+        const playerText = config.createPlayerHandouts ? `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}` : "";
+        linkReplaces.push({ html: aNode.outerHTML, ref: playerText });
         if (config.v10Mode) {
-          document.text.content = document.text.content.replace(aNode.outerHTML, `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}`);
+          document.text.content = document.text.content.replace(aNode.outerHTML, playerText);
         } else {
-          document.content = document.content.replace(aNode.outerHTML, `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}`);
+          document.content = document.content.replace(aNode.outerHTML, playerText);
         }
         journals.push(journalEntry);
       }
@@ -1502,16 +1514,18 @@ function findScenes(document) {
       originDocId: document._id,
       originHint: "possibleUnknownPlayerLinks, player",
       originalLink: node.href,
+      player: true,
     };
     const journalEntry = generateJournalEntry(row, node.href.replace("ddb://image", "."));
 
     // don't add entry if we have already parsed this
     if (!journalEntry.flags.ddb.duplicate) {
-      linkReplaces.push( {html: node.outerHTML, ref: `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}` });
+      const playerText = config.createPlayerHandouts ? `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}` : "";
+      linkReplaces.push( {html: node.outerHTML, ref: playerText });
       if (config.v10Mode) {
-        document.text.content = document.text.content.replace(node.outerHTML, `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}`);
+        document.text.content = document.text.content.replace(node.outerHTML, playerText);
       } else {
-        document.content = document.content.replace(node.outerHTML, `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}`);
+        document.content = document.content.replace(node.outerHTML, playerText);
       }
       journals.push(journalEntry);
     }
@@ -1520,35 +1534,37 @@ function findScenes(document) {
     }
   });
 
-  possibleHandouts.forEach((node) => {
-    if(!node.src) return;
-    tmpCount++;
-    if (config.debug) {
-      logger.verbose(node.outerHTML);
-    }
+  if (config.createHandouts) {
+    possibleHandouts.forEach((node) => {
+      if(!node.src) return;
+      tmpCount++;
+      if (config.debug) {
+        logger.verbose(node.outerHTML);
+      }
 
-    let title = `Handout ${unknownHandoutCount}`;
+      let title = `Handout ${unknownHandoutCount}`;
 
-    let row = {
-      title: title,
-      id: 12000 + document.flags.ddb.ddbId + tmpCount,
-      parentId: document.flags.ddb.parentId,
-      cobaltId: document.flags.ddb.cobaltId,
-      contentChunkId: node.getAttribute("data-content-chunk-id"),
-      slug: document.flags.ddb.slug,
-      originDocId: document._id,
-      originHint: "possibleHandouts",
-      originalLink: node.src,
-    };
-    const journalEntry = generateJournalEntry(row, node.src);
-    if (!journalEntry.flags.ddb.duplicate) {
-      unknownHandoutCount++;
-      const linkId = journalEntry.flags.ddb.linkId ? journalEntry.flags.ddb.linkId : journalEntry._id;
-      linkReplaces.push( {html: node.parentNode.outerHTML, ref: `${node.parentNode.outerHTML} @JournalEntry[${linkId}]{${title}}` });
-      // document.content = document.content.replace(node.parentNode.outerHTML, `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}`);
-      journals.push(journalEntry);
-    }
-  }); 
+      let row = {
+        title: title,
+        id: 12000 + document.flags.ddb.ddbId + tmpCount,
+        parentId: document.flags.ddb.parentId,
+        cobaltId: document.flags.ddb.cobaltId,
+        contentChunkId: node.getAttribute("data-content-chunk-id"),
+        slug: document.flags.ddb.slug,
+        originDocId: document._id,
+        originHint: "possibleHandouts",
+        originalLink: node.src,
+      };
+      const journalEntry = generateJournalEntry(row, node.src);
+      if (!journalEntry.flags.ddb.duplicate) {
+        unknownHandoutCount++;
+        const linkId = journalEntry.flags.ddb.linkId ? journalEntry.flags.ddb.linkId : journalEntry._id;
+        linkReplaces.push( {html: node.parentNode.outerHTML, ref: `${node.parentNode.outerHTML} @JournalEntry[${linkId}]{${title}}` });
+        // document.content = document.content.replace(node.parentNode.outerHTML, `${node.parentNode.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}`);
+        journals.push(journalEntry);
+      }
+    });
+  }
 
   tempHandouts[handoutTmpRef] = unknownHandoutCount;
   return [scenes, journals, linkReplaces];
@@ -1695,7 +1711,7 @@ function rowGenerate(err, row) {
   // if this is a top tier parent document we process it for scenes now.
   const content = config.v10Mode
     ? document.pages[0]
-    : document.content;
+    : document;
   if (content && document.flags.ddb.cobaltId) {
     // eslint-disable-next-line no-unused-vars
     let [tempScenes, sceneJournals, tmpReplaceLinks] = findScenes(content);

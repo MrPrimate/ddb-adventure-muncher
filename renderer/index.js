@@ -30,6 +30,8 @@ generateButton.addEventListener("click", (event) => {
   generateButton.disabled = true;
   const bookCode = document.getElementById("book-select");
   const v10Mode = document.getElementById("v10-mode");
+  const createHandouts = document.getElementById("create-handouts");
+  const createPlayerHandouts = document.getElementById("create-player-handouts");
   const observeAll = document.getElementById("observe-all");
   const messageDiv = document.getElementById("message-div");
   messageDiv.innerHTML = "";
@@ -37,6 +39,8 @@ generateButton.addEventListener("click", (event) => {
   const options = {
     bookCode: bookCode.value,
     observeAll: observeAll.checked,
+    createHandouts: createHandouts.checked,
+    createPlayerHandouts: createPlayerHandouts.checked,
     v10Mode: v10Mode.checked,
   };
   if (bookCode.value !== 0) {
@@ -109,6 +113,8 @@ window.api.receive("config", (config) => {
       window.api.send("books");
     }
     document.getElementById("v10-mode").checked = config.v10Mode === true;
+    document.getElementById("create-handouts").checked = config.createHandouts === true;
+    document.getElementById("create-player-handouts").checked = config.createPlayerHandouts === true;
   } else {
     console.warn("No config file!");
     contentLoadMessage.innerHTML = "Config not found";
