@@ -1,9 +1,15 @@
+# 0.7.1
+
+* Some adventures would choke on table generation.
+* Some tables would create an upper range value can be 0, which I no longer supported in v10.
+
 # 0.7.0
 
 * Foundry v10 Adventure Generation mode for new style combined Journals. Pins and Handouts are still generated separately.
 * Some improvements to linking in documents.
 * Tokens will always be generated for scenes, ddb-importer removes dead tokens from scenes if it can't find links.
 * Option to reduce the number of hand outs generated. This is useful in the latest version if DDB Importer to reduce the number of journal entries, as handouts can now be generated for players by hovering over images and read aloud sections. There is a slim chance that some of these handouts have been used for Map Notes/Pins. Images/maps marked as Player versions will always be generated as handouts.
+* Option to prevent generation of player map handouts.
 
 # 0.6.12
 
