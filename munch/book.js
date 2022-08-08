@@ -159,7 +159,7 @@ function guessTableName(document, contentChunkId) {
     return sibling.textContent;
   } else {
     logger.info(`No table name identified for ${contentChunkId}`);
-    return null;
+    return `${document.name}: Unknown Table: ${contentChunkId}`;
   }
 }
 
@@ -272,7 +272,7 @@ function getDiceTableRange(value) {
     if (valueMatch[3]) {
       if (valueMatch[4] !== undefined && valueMatch[4] === "+") {
         const low = diceInt(valueMatch[3]);
-        return [low, 0];
+        return [low, low + 1];
       }
       if (valueMatch[4] !== undefined && valueMatch[4] === "") {
         const low = diceInt(valueMatch[3]);
