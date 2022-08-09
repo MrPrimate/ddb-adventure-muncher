@@ -770,12 +770,17 @@ function generateJournalEntryOld(row, img=null, note=false) {
   } else {
     const dom = new JSDOM(row.html);
     const firstElement = dom.window.document.body.firstElementChild;
-    const allFirstElements = dom.window.document.body.getElementsByTagName(firstElement.tagName);
-    if (firstElement === "H1" || allFirstElements.length === 1) {
-      firstElement.remove();
+    try {
+      const allFirstElements = dom.window.document.body.getElementsByTagName(firstElement.tagName);
+      if (firstElement === "H1" || allFirstElements.length === 1) {
+        firstElement.remove();
+      }
+      journal.content = dom.window.document.body.innerHTML.replace(/\s+/g, " ");
+      if (!note) generateTable(row, journal, journal.content);
+    } catch (err) {
+      logger.error("Journal Generation failed, bad note row?", row);
+      throw err;
     }
-    journal.content = dom.window.document.body.innerHTML.replace(/\s+/g, " ");
-    if (!note) generateTable(row, journal, journal.content);
   }
   if (row.parentId) journal.flags.ddb.parentId = row.parentId;
   if (!row.ddbId) row.ddbId = row.id;
