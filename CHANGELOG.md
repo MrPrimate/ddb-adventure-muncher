@@ -1,6 +1,7 @@
 # 0.7.2
 
 * Improve logging around note generation failure.
+* Mad Mage no longer generated.
 
 # 0.7.1
 
