@@ -750,8 +750,8 @@ function generateJournalEntryOld(row, img=null, note=false) {
     if (journalImgMatched.includes(journal.img)) {
       const journalMatch = generatedJournals.find((j) => j.img === journal.img);
       journal.flags.ddb.duplicate = true;
-      journal.flags.ddb.linkId = journalMatch._id;
-      journal.flags.ddb.linkName = journalMatch.name;
+      journal.flags.ddb.linkId = journalMatch ? journalMatch._id : null;
+      journal.flags.ddb.linkName = journalMatch ?journalMatch.name : null;
     } else {
       journal.flags.ddb.duplicate = false;
       journal.flags.ddb.linkName = journal.name;
