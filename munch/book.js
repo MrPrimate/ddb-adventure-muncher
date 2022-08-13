@@ -222,16 +222,16 @@ async function fixUpTables(tables, journals) {
     if (config.v10Mode) {
       for (let journalPageIndex = 0, journalPagesLength = journal.pages.length; journalPageIndex < journalPagesLength; journalPageIndex++) {
         if (journal.pages[journalIndex]) journalTableReplacer(journal.pages[journalIndex], tables);
-        // if (journalPageIndex % 5 == 0) {
-        //   await sleep(500);
-        //   if (global.gc) global.gc();
-        // }
+        if (journalPageIndex % 5 == 0) {
+          // await sleep(500);
+          if (global.gc) await global.gc();
+        }
       }
     } else {
       journalTableReplacer(journals[journalIndex], tables);
     }
     if (journalIndex % 5 == 0) {
-      await sleep(500);
+      await sleep(1000);
       if (global.gc) global.gc();
     }
   }
@@ -785,17 +785,14 @@ function generateJournalEntryOld(row, img=null, note=false) {
   if (row.parentId) journal.flags.ddb.parentId = row.parentId;
   if (!row.ddbId) row.ddbId = row.id;
   journal.folder = getFolderId(row, "JournalEntry", imgState, note);
-  // logger.info("======= DEBUG ======");
-  // logger.info(row);
-  // logger.info(journal);
-  // logger.info(`${journal.name}, ${journal.folder}`);
-  // logger.info("======= DEBUG ======");
   journal._id = getId(journal, "JournalEntry");
   logger.info(`Generated journal entry ${journal.name}`);
   if (!imgState && !note) {
     appendJournalToChapter(row);
   }
-  if (!journal.flags.ddb.duplicate) {
+
+  const createImgHandouts = ((config.createHandouts && !row.player) || (row.player && config.createPlayerHandouts)) && imgState;
+  if (!journal.flags.ddb.duplicate && (createImgHandouts || note)) {
     journal.flags.ddb.linkId = journal._id;
     logger.info(`Appending ${journal.name} Img:"${journal.img}"`);
     generatedJournals.push(journal);
