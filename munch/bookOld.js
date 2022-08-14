@@ -19,10 +19,9 @@ const parseTable = require("./vendor/parseTable.js");
 const replacer = require("./replacer.js");
 const icons = require("./icons.js");
 const logger = require("./logger.js");
-const Ids = require("./adventure/IdFactory.js");
 
 const JOURNAL_SORT = 1000;
-
+const FOLDER_SORT = 4000;
 var config;
 var idTable;
 var sceneAdjustments;
@@ -47,8 +46,8 @@ let generatedTables = [];
 
 var templateDir = path.join("..", "content", "templates");
 
-// let imageFinderSceneResults = [];
-// let imageFinderJournalResults = [];
+let imageFinderSceneResults = [];
+let imageFinderJournalResults = [];
 
 function setTemplateDir (dir) {
   templateDir = dir;
@@ -59,6 +58,62 @@ function fetchLookups (config) {
   if (!idTable[config.run.bookCode]) idTable[config.run.bookCode] = [];
   logger.debug(`Fetched ${idTable[config.run.bookCode].length} lookups`);
 }
+
+
+function getId(document, docType) {
+  const contentChunkId =  (document.flags.ddb.contentChunkId && document.flags.ddb.contentChunkId != "") ? 
+    document.flags.ddb.contentChunkId :
+    null;
+
+  const existingId = idTable[config.run.bookCode].find((r) => {
+    const basicCheck = r.type == document.type &&
+      r.docType == docType &&
+      r.ddbId == document.flags.ddb.ddbId &&
+      r.cobaltId == document.flags.ddb.cobaltId &&
+      r.parentId == document.flags.ddb.parentId;
+    const chunkCheck = (contentChunkId !== null) ? 
+      contentChunkId === r.contentChunkId :
+      true;
+    const sceneNotes = (document.flags.ddb.note) ? 
+      document.name === r.name && r.note :
+      true;
+    const handout = (document.flags.ddb.img) ? 
+      document.name === r.name && r.img :
+      true;
+    const scenePinIdMatch = (docType === "Note") ?
+      document.flags.ddb.pin === r.scenePin :
+      true;
+
+    return basicCheck && chunkCheck && sceneNotes && handout && scenePinIdMatch;
+  });
+
+  // logger.info(`Finding id for ${docType} ${document.name}`);
+  // logger.info(`Note? ${document.flags.ddb.note}`);
+  // if (existingId) logger.info(`For ${docType} ${document.name} returning id ${existingId.id} with name ${existingId.name}`)
+  // logger.info("------------------")
+  
+  if (existingId) {
+    return existingId.id;
+  } else {
+    const id = {
+      id: `${utils.randomString(16,"#aA")}`,
+      type: document.type,
+      docType: docType,
+      ddbId: document.flags.ddb.ddbId,
+      cobaltId: document.flags.ddb.cobaltId,
+      parentId: document.flags.ddb.parentId,
+      contentChunkId: contentChunkId,
+      name: document.name,
+      note: (document.flags.ddb.note) ? document.flags.ddb.note : false,
+      img: (document.flags.ddb.img) ? document.flags.ddb.img : false,
+      scenePin: document.flags.ddb.pin,
+    };
+    idTable[config.run.bookCode].push(id);
+    return id.id;
+  }
+}
+
+
 
 function findDiceColumns(table) {
   let result = [];
@@ -209,7 +264,7 @@ function getDiceTableRange(value) {
 
   if (valueMatch) {
     if (valueMatch[1] !== undefined && valueMatch[2] !== undefined) {
-      const low = parseInt(valueMatch[1]);
+      const low = diceInt(valueMatch[1]);
       const high = diceInt(valueMatch[2]);
       return [low, high];
     }
@@ -239,7 +294,7 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
     const table = JSON.parse(JSON.stringify(require(path.join(templateDir,"table.json"))));
     const nameExtension = diceKeys > 1 ? ` [${diceKeys}]` : "";
 
-    table.name = ((tableName && tableName.trim() !== "") ? tableName : "Unnamed Table") + nameExtension;
+    table.name = ((tableName && tableName !== "") ? tableName : "Unnamed Table") + nameExtension;
     table.flags.ddb.ddbId = row.id;
     table.flags.ddb.bookCode = config.run.bookCode;
     table.flags.ddb.slug = row.slug;
@@ -284,7 +339,7 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
 
     parsedTable.forEach((entry) => {
       const result = {
-        _id: `${Ids.random()}`,
+        _id: `${utils.randomString(16,"#aA")}`,
         flags: {},
         type: 0,
         text: "",
@@ -412,6 +467,346 @@ function updateJournals(documents) {
   });
 
   return documents;
+}
+
+function generateFolder(type, row, baseFolder=false, img=false, note=false) {
+  const folder = JSON.parse(JSON.stringify(require(path.join(templateDir,"folder.json"))));
+  folder.flags.ddb.ddbId = (row.ddbId) ? row.ddbId : row.id;
+  folder.flags.ddb.img = img;
+  folder.flags.ddb.note = note;
+  folder.name = row.title;
+  folder.type = type;
+  folder.sort = FOLDER_SORT + parseInt(row.id);
+  if (row.cobaltId && !baseFolder) {
+    folder.parent = masterFolder[type]._id;
+  }
+  if (note) {
+    const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
+    const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+    folder.name = `[Pins] ${row.sceneName ? row.sceneName : parent.name}`;
+    // folder.sort = 900000;
+    folder.sorting = "a";
+    folder.parent = `${parent._id}`;
+    folder.flags.ddb.parentId = parentId;
+  }
+  else if (img) {
+    // logger.info(row);
+    const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
+    const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+    folder.name = `[Handouts] ${row.sceneName ? row.sceneName : (parent) ? parent.name: row.title }`;
+    folder.sort = 1000000;
+    if (parent) { // tmp fix for hftt, for some reason it does not generate a parent folder
+      folder.parent = `${parent._id}`;
+    }
+    folder.flags.ddb.parentId = parentId;
+  } else if (row.parentId) {
+    const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img);
+    if (parent) {
+      folder.parent = `${parent._id}`;
+      folder.name = `[Sections] ${parent.name}`;
+    }
+    folder.flags.ddb.parentId = row.parentId;
+    if (!folder.name || folder.name === "") {
+      logger.warn("NO NAME ROW FOUND (parent)!!!");
+    }
+
+  } else if(!baseFolder) {
+    const parent = generatedFolders.find((f) => f.flags.ddb.cobaltId == -1 && f.type == type && !f.flags.ddb.img);
+    if (parent) folder.parent = `${parent._id}`;
+    if (!folder.name || folder.name === "") {
+      logger.warn("NO NAME ROW FOUND!!!");
+    }
+  }
+  if (row.cobaltId) folder.flags.ddb.cobaltId = row.cobaltId;
+
+  if (baseFolder && type === "Actor") folder.sorting = "a";
+
+  if (row.nameOverride) folder.name = row.nameOverride;
+
+  folder._id = getId(folder, "Folder");
+  folder.flags.importid = folder._id;
+  generatedFolders.push(folder);
+  if (type === "JournalEntry" && !baseFolder && !img && !note) {
+    // lets generate a Scene Folder at the same time
+    // we do this so the scene folder order matches the same as the journals as some
+    // adventures e.g. CoS have different kind of scene detection
+    getFolderId(row, "Scene");
+    getFolderId(row, "RollTable");
+  }
+  return folder;
+}
+
+
+
+function getFolderId(row, type, img, note) {
+  let folderId;
+  let folder;
+
+  if (note) {
+    const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
+    folder = generatedFolders.find((f) => f.flags.ddb.ddbId == row.ddbId && f.flags.ddb.parentId == parentId && f.type == type && !f.flags.ddb.img && f.flags.ddb.note == note && f.name.includes(row.sceneName));
+    if (!folder) folder = generateFolder(type, row, false, img, note);
+    folderId = folder._id;
+  } else if (img) {
+    const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
+    folder = generatedFolders.find((f) => f.flags.ddb.parentId == parentId && f.type == type && f.flags.ddb.img == img);
+    if (!folder) folder = generateFolder(type, row, false, img, note);
+    folderId = folder._id;
+  } else if (row.cobaltId) {
+    folder = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.cobaltId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+    if (!folder) folder = generateFolder(type, row, false, img, note);
+    folderId = folder._id;
+  } else if (row.parentId) {
+    folder = generatedFolders.find((f) => f.flags.ddb.parentId == row.parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+    if (!folder) folder = generateFolder(type, row, false, img, note);
+    folderId = folder._id;
+  }
+  // else {
+  //   folder = generatedFolders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && f.flags.ddb.img == img && f.flags.ddb.note == note);
+  //   if (folder) folderId = folder._id;
+  // }
+  return folderId;
+}
+
+function generateV10Page({name, content, flags, id, type = "text", level = 1}) {
+  let page = {
+    name: name,
+    // name: journalEntry.name,
+    type,
+    title: {
+      show: false,
+      level,
+    },
+    // _id: journalEntry._id,
+    _id: id,
+    text: {
+      format: 1,
+    },
+    video: {
+      controls: true,
+      volume: 0.5,
+    },
+    image: {},
+    src: null,
+    sort: 0,
+    ownership: {
+      default: -1,
+    },
+    flags: flags,
+    // flags: journalEntry.flags,
+  };
+
+  switch (type) {
+    case "text": {
+      page.text.content = content;
+      break;
+    }
+    case "image": {
+      page.title.show = true;
+      page.src = content;
+      break;
+    }
+    case "pdf": {
+      page.src = content;
+      break;
+    }
+    //no default
+  }
+
+  return page;
+}
+
+function appendJournalToChapter(row, journalEntry) {
+  if (row.parentId) {
+    logger.info(`Appending to chapter... ${row.title} ${row.parentId} search...`);
+    generatedJournals.forEach((journal) => {
+      const imageCheck = config.v10Mode
+        ? !journal.flags.ddb.img && !journal.flags.ddb.note
+        : journal.img === null || journal.img === undefined || journal.img == "";
+      if (journal.flags.ddb.cobaltId == row.parentId && imageCheck) {
+        if (config.v10Mode && journalEntry.pages.length > 0) {
+          const page = journalEntry.pages[0];
+          if (page.name != journal.name) {
+            page.title.show = true;
+          }
+          journal.pages.push(page);
+        } else {
+          journal.content += row.html;
+        }
+      }
+    });
+  }
+}
+
+function generateJournalEntryV10(row, img=null, note=false) {
+  let journal = JSON.parse(JSON.stringify(require(path.join(templateDir, "journal-v10.json"))));
+
+  const name = row.title;
+  journal.name = name;
+  journal.flags.ddb.ddbId = row.id;
+  journal.flags.ddb.bookCode = config.run.bookCode;
+  journal.flags.ddb.slug = row.slug;
+  const contentChunkId = (row.contentChunkId && row.contentChunkId.trim() != "") ? 
+    row.contentChunkId :
+    null;
+  journal.flags.ddb.contentChunkId = contentChunkId;
+  journal.flags.ddb.userData = config.run.userData;
+  journal.flags.ddb.originDocId = row.originDocId;
+  journal.flags.ddb.originHint = row.originHint;
+  journal.flags.ddb.originalLink = row.originalLink;
+  journal.flags.ddb.note = note;
+
+  if (config.observeAll) journal.ownership.default = 2;
+
+  journal.sort = JOURNAL_SORT + parseInt(row.id);
+  if (row.cobaltId) journal.flags.ddb.cobaltId = row.cobaltId;
+  const imgState = (img !== null && img !== "") ? true : false;
+  journal.flags.ddb.img = imgState;
+  let content;
+  let type;
+  if (imgState) {
+    content = replacer.replaceImgLinksForJournal(img, config);
+    type = "image";
+    journal.flags.ddb.imageSrc = content;
+    if (journalImgMatched.includes(content)) {
+      const journalMatch =  generatedJournals.map((j) => j.pages).flat().find((j) => j.src === content);
+      journal.flags.ddb.duplicate = true;
+      journal.flags.ddb.linkId = journalMatch ? journalMatch._id : null;
+      journal.flags.ddb.linkName = journalMatch ?journalMatch.name : null;
+    } else {
+      journal.flags.ddb.duplicate = false;
+      journal.flags.ddb.linkName = name;
+      if (config.imageFind) {
+        imageFinderJournalResults.push({
+          bookCode: config.run.bookCode,
+          img: content,
+          name: name,
+          slug: row.slug,
+        });
+      }
+    }
+    journalImgMatched.push(content);
+    const journalHandoutCount = journalImgMatched.filter(img => img === content).length;
+    logger.info(`Generated Handout ${name}, "${content}", (count ${journalHandoutCount}), Duplicate? ${journal.flags.ddb.duplicate}`);
+  } else {
+    const dom = new JSDOM(row.html);
+    const firstElement = dom.window.document.body.firstElementChild;
+    const allFirstElements = dom.window.document.body.getElementsByTagName(firstElement.tagName);
+    if (firstElement === "H1" || allFirstElements.length === 1) {
+      firstElement.remove();
+    }
+    content = dom.window.document.body.innerHTML.replace(/\s+/g, " ");
+    if (!note) generateTable(row, journal, content);
+    type = "text";
+  }
+
+  if (row.parentId) journal.flags.ddb.parentId = row.parentId;
+  if (!row.ddbId) row.ddbId = row.id;
+  journal.folder = getFolderId(row, "JournalEntry", imgState, note);
+  journal._id = getId(journal, "JournalEntry");
+
+  const page = generateV10Page({name: row.title, content, flags: journal.flags, id: journal._id, type, level: 1});
+  
+  logger.info(`Generated journal page entry ${name}`);
+  if (!journal.flags.ddb.duplicate && !row.parentId) journal.flags.ddb.linkId = journal._id;
+  journal.pages.push(page);
+  if (!imgState && !note) {
+    appendJournalToChapter(row, journal);
+  }
+
+  const createImgHandouts = ((config.createHandouts && !row.player) || (row.player && config.createPlayerHandouts)) && imgState;
+  if (!journal.flags.ddb.duplicate && (createImgHandouts || note || !row.parentId)) {
+    logger.info(`Appending ${name} Img:"${journal.flags.ddb.imageSrc}"`);
+    generatedJournals.push(journal);
+  }
+  return journal;
+}
+
+function generateJournalEntryOld(row, img=null, note=false) {
+  let journal = JSON.parse(JSON.stringify(require(path.join(templateDir,"journal.json"))));
+
+  journal.name = row.title;
+  journal.flags.ddb.ddbId = row.id;
+  journal.flags.ddb.bookCode = config.run.bookCode;
+  journal.flags.ddb.slug = row.slug;
+  const contentChunkId = (row.contentChunkId && row.contentChunkId.trim() != "") ? 
+    row.contentChunkId :
+    null;
+  journal.flags.ddb.contentChunkId = contentChunkId;
+  journal.flags.ddb.userData = config.run.userData;
+  journal.flags.ddb.originDocId = row.originDocId;
+  journal.flags.ddb.originHint = row.originHint;
+  journal.flags.ddb.originalLink = row.originalLink;
+  journal.flags.ddb.note = note;
+
+  if (config.observeAll) journal.permission.default = 2;
+
+  journal.sort = JOURNAL_SORT + parseInt(row.id);
+  if (row.cobaltId) journal.flags.ddb.cobaltId = row.cobaltId;
+  const imgState = (img !== null && img !== "") ? true : false;
+  journal.flags.ddb.img = imgState;
+  if (imgState) {
+    journal.img = replacer.replaceImgLinksForJournal(img, config);
+    if (journalImgMatched.includes(journal.img)) {
+      const journalMatch = generatedJournals.find((j) => j.img === journal.img);
+      journal.flags.ddb.duplicate = true;
+      journal.flags.ddb.linkId = journalMatch ? journalMatch._id : null;
+      journal.flags.ddb.linkName = journalMatch ?journalMatch.name : null;
+    } else {
+      journal.flags.ddb.duplicate = false;
+      journal.flags.ddb.linkName = journal.name;
+      if (config.imageFind) {
+        imageFinderJournalResults.push({
+          bookCode: config.run.bookCode,
+          img: journal.img,
+          name: journal.name,
+          slug: row.slug,
+        });
+      }
+    }
+    journalImgMatched.push(journal.img);
+    const journalHandoutCount = journalImgMatched.filter(img => img === journal.img).length;
+    logger.info(`Generated Handout ${journal.name}, "${journal.img}", (count ${journalHandoutCount}), Duplicate? ${journal.flags.ddb.duplicate}`);
+  } else {
+    const dom = new JSDOM(row.html);
+    const firstElement = dom.window.document.body.firstElementChild;
+    try {
+      const allFirstElements = dom.window.document.body.getElementsByTagName(firstElement.tagName);
+      if (firstElement === "H1" || allFirstElements.length === 1) {
+        firstElement.remove();
+      }
+      journal.content = dom.window.document.body.innerHTML.replace(/\s+/g, " ");
+      if (!note) generateTable(row, journal, journal.content);
+    } catch (err) {
+      logger.error("Journal Generation failed, bad note row?", row);
+      throw err;
+    }
+  }
+  if (row.parentId) journal.flags.ddb.parentId = row.parentId;
+  if (!row.ddbId) row.ddbId = row.id;
+  journal.folder = getFolderId(row, "JournalEntry", imgState, note);
+  journal._id = getId(journal, "JournalEntry");
+  logger.info(`Generated journal entry ${journal.name}`);
+  if (!imgState && !note) {
+    appendJournalToChapter(row);
+  }
+
+  const createImgHandouts = ((config.createHandouts && !row.player) || (row.player && config.createPlayerHandouts)) && imgState;
+  if (!journal.flags.ddb.duplicate && (createImgHandouts || note)) {
+    journal.flags.ddb.linkId = journal._id;
+    logger.info(`Appending ${journal.name} Img:"${journal.img}"`);
+    generatedJournals.push(journal);
+  }
+  return journal;
+}
+
+function generateJournalEntry(row, img=null, note=false) {
+  if (config.v10Mode) {
+    return generateJournalEntryV10(row, img, note);
+
+  } else {
+    return generateJournalEntryOld(row, img, note);
+  }
 }
 
 function getNoteTitle(html) {
@@ -619,7 +1014,7 @@ function generateScene(row, img) {
         scene.flags.ddb.cobaltId == ai.cobaltId
       ))
     ) :
-    sceneAdjustments.find((s) => scene.name.trim().includes(s.name.trim()));
+    sceneAdjustments.find((s) => scene.name.includes(s.name));
 
   if (adjustment) {
     logger.info(`ADJUSTMENTS found named ${adjustment.name} with chunkid "${adjustment.flags.ddb.contentChunkId}" and id ${adjustment.flags.ddb.ddbId}`);
@@ -697,8 +1092,7 @@ function generateScene(row, img) {
     logger.info(scene.flags);
     scene = _.merge(scene, adjustment);
   } else {
-    let adjustment = (scene.flags.ddb.contentChunkId) ? "adjustment with contentChunkId" : "name match";
-    logger.info(`NO ADJUSTMENTS found for "${scene.name}" with chunkid "${scene.flags.ddb.contentChunkId}" and id ${scene.flags.ddb.ddbId} (${adjustment})`, scene.flags.ddb);
+    logger.info(`NO ADJUSTMENTS found with chunkid "${scene.flags.ddb.contentChunkId}" and id ${scene.flags.ddb.ddbId}`);
   }
 
   if (config.imageFind) {
@@ -783,13 +1177,6 @@ function generateScene(row, img) {
   } else {
     scene.tokens = [];
   }
-
-  scene.lights = scene.lights.map((light) => {
-    if (light.config?.darkness?.min > light.config?.darkness?.max) {
-      light.config.darkness.max = light.config.darkness.min;
-    }
-    return light;
-  });
 
   generatedScenes.push(scene);
   sceneImgMatched.push(scene.img);
@@ -880,25 +1267,21 @@ function findScenes(document) {
         // logger.info(document);
         let title = caption.textContent.trim();
         const playerRef = node.querySelector("a[data-title~=Player]");
-        const unlabeledRef = node.querySelector("a[data-title~=Unlabeled]");
-
-        if (playerRef || unlabeledRef) {
-          const ref = playerRef ? playerRef : unlabeledRef;
-          let titleType = playerRef ? "Player" : "Unlabeled";
-          if (title !== ref.textContent) {
-            title = utils.titleString(title.replace(ref.textContent, "").trim());
+        if (playerRef) {
+          if (title !== playerRef.textContent) {
+            title = utils.titleString(title.replace(playerRef.textContent, "").trim());
           }
-          logger.warn(`possibleFigureSceneNodes ${titleType} TITLE: ${title}`);
+          logger.warn(`possibleFigureSceneNodes Player TITLE: ${title}`);
 
           let rowContentChunkId = caption.getAttribute("data-content-chunk-id");
           if (!rowContentChunkId) {
             // figure type embedds mostly don't have content chunk Id's 
             // we fall back to element ID which appears to be unique for the outer figure element
-            rowContentChunkId = `${node.id}-${titleType.toLowerCase()}`;
+            rowContentChunkId = `${node.id}-player`;
           }
 
           let row = {
-            title: `${title} (${titleType} Version)`,
+            title: `${title} (Player Version)`,
             id: 10000 + document.flags.ddb.ddbId + tmpCount,
             parentId: document.flags.ddb.parentId,
             cobaltId: document.flags.ddb.cobaltId,
@@ -907,20 +1290,20 @@ function findScenes(document) {
             sceneName: title,
             contentChunkId: rowContentChunkId,
             originDocId: document._id,
-            originHint: `possibleFigureSceneNodes, ${titleType.toLowerCase()}`,
-            originalLink: ref.href,
+            originHint: "possibleFigureSceneNodes, player",
+            originalLink: playerRef.href,
             player: true,
           };
           tmpCount++;
-          const playerEntry = generateJournalEntry(row, ref.href.replace("ddb://image", "."));
+          const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
           journals.push(playerEntry);
           const dmText = config.createHandouts ? `@JournalEntry[${title}]{DM Version} ` : "";
-          const playerText = config.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{${titleType} Version}` : "";
-          linkReplaces.push( {html: ref.outerHTML, ref: `${dmText}${playerText}` });
+          const playerText = config.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}` : "";
+          linkReplaces.push( {html: playerRef.outerHTML, ref: `${dmText}${playerText}` });
           if (config.v10Mode) {
-            document.text.content = document.text.content.replace(ref.outerHTML, `${dmText}${playerText}`);
+            document.text.content = document.text.content.replace(playerRef.outerHTML, `${dmText}${playerText}`);
           } else {
-            document.content = document.content.replace(ref.outerHTML, `${dmText}${playerText}`);
+            document.content = document.content.replace(playerRef.outerHTML, `${dmText}${playerText}`);
           }
           scenes.push(generateScene(row, config.v10Mode ? playerEntry.pages[0].src : playerEntry.img));
         }
@@ -978,13 +1361,12 @@ function findScenes(document) {
         let title = caption.textContent;
         let nextNode = frag.window.document.getElementById(node.id);
         let playerVersion = false;
-        let unlabeledVersion = false;
         let lightBoxNode;
 
         for (let i = 0; i < 15; i++) {
           if (!nextNode) {
             lightBoxNode = Array.from(node.querySelectorAll("a.ddb-lightbox-outer"))
-              .find(el => el.textContent.toLowerCase().includes("player") || el.textContent.toLowerCase().includes("unlabeled"));
+              .find(el => el.textContent.toLowerCase().includes("player"));
             // logger.info(lightBoxNode.outerHTML)
             // logger.info(`Attempting div query ${lightBoxNode}`)
           } else {
@@ -994,20 +1376,19 @@ function findScenes(document) {
           }
           if (lightBoxNode) {
             playerVersion = lightBoxNode.textContent.toLowerCase().includes("player");
-            unlabeledVersion = lightBoxNode.textContent.toLowerCase().includes("unlabeled");
             break;
           }
         }
+        // logger.info(lightBoxNode)
+        // logger.info(playerVersion);
 
-        if (playerVersion || unlabeledVersion) {
+        if (playerVersion) {
           //const playerRef = nextNode.querySelector("a.ddb-lightbox-outer");
           const playerRef = lightBoxNode;
           title = utils.titleString(title.replace(playerRef.textContent, "").trim());
 
-          let titleType = playerVersion ? "Player" : "Unlabeled";
-
           let row = {
-            title: `${title} (${titleType} Version)`,
+            title: `${title} (Player Version)`,
             id: 11000 + document.flags.ddb.ddbId + tmpCount,
             parentId: document.flags.ddb.parentId,
             cobaltId: document.flags.ddb.cobaltId,
@@ -1016,7 +1397,7 @@ function findScenes(document) {
             sceneName: utils.titleString(title),
             contentChunkId: (nextNode) ? nextNode.getAttribute("data-content-chunk-id") : undefined,
             originDocId: document._id,
-            originHint: `possibleDivSceneNodes, ${titleType.toLowerCase()}`,
+            originHint: "possibleDivSceneNodes, player",
             originalLink: playerRef.href,
             player: true,
           };
@@ -1024,7 +1405,7 @@ function findScenes(document) {
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
           journals.push(playerEntry);
           const dmText = config.createHandouts ? `@JournalEntry[${title}]{DM Version} ` : "";
-          const playerText = config.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{${titleType} Version}` : "";
+          const playerText = config.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}` : "";
 
           linkReplaces.push( {html: playerRef.outerHTML, ref: `${dmText}${playerText}` });
           if (config.v10Mode) {
@@ -1106,17 +1487,14 @@ function findScenes(document) {
 
   possibleUnknownPlayerLinks.forEach((node) => {
     if (sceneImgMatched.includes(node.href)) return;
-    const playerNode = node.textContent.toLowerCase().includes("player");
-    const unlabeledNode = node.textContent.toLowerCase().includes("unlabeled");
-    if (!playerNode && !unlabeledNode) return;
+    if (!node.textContent.toLowerCase().includes("player")) return;
 
     tmpCount++;
     if (config.debug) {
       logger.verbose(node.outerHTML);
     }
 
-    let titleType = playerNode ? "Player" : "Unlabeled";
-    let title = `${document.name} (${titleType} Version)`;
+    let title = `${document.name} (Player Version)`;
 
     const parentId = node.parentElement.getAttribute("data-content-chunk-id");
     const nodeId = node.getAttribute("data-content-chunk-id");
@@ -1136,7 +1514,7 @@ function findScenes(document) {
       contentChunkId: contentChunkId,
       slug: document.flags.ddb.slug,
       originDocId: document._id,
-      originHint: `possibleUnknownPlayerLinks, ${titleType}`,
+      originHint: "possibleUnknownPlayerLinks, player",
       originalLink: node.href,
       player: true,
     };
@@ -1144,7 +1522,7 @@ function findScenes(document) {
 
     // don't add entry if we have already parsed this
     if (!journalEntry.flags.ddb.duplicate) {
-      const playerText = config.createPlayerHandouts ? `@JournalEntry[${journalEntry.flags.ddb.linkName}]{${titleType} Version}` : "";
+      const playerText = config.createPlayerHandouts ? `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}` : "";
       linkReplaces.push( {html: node.outerHTML, ref: playerText });
       if (config.v10Mode) {
         document.text.content = document.text.content.replace(node.outerHTML, playerText);
