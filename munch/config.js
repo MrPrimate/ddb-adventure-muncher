@@ -14,9 +14,9 @@ var dbDir;
 var CONFIG_FILE = `${configDir}/config.json`;
 var LOOKUP_FILE = `${configDir}/lookup.json`;
 var config;
-var timeout = 15000;
+const TIMEOUT = 15000;
 
-const defaultEnhancementEndpoint = "https://proxy.ddb.mrprimate.co.uk";
+const ENHANCEMENT_ENDPOINT = "https://proxy.ddb.mrprimate.co.uk";
 
 function setConfigDir (dir) {
   configDir = dir;
@@ -27,19 +27,30 @@ function setConfigDir (dir) {
   LOOKUP_FILE = `${configDir}/lookup.json`;
 }
 
-function getLookups() {
+function getLookups(id = null) {
   logger.info("Getting lookups");
   const lookupFile = path.resolve(__dirname, LOOKUP_FILE);
   if (fs.existsSync(lookupFile)){
-    return utils.loadJSONFile(lookupFile);
+    const data = utils.loadJSONFile(lookupFile);
+    if (id){
+      return data && data[id] ? data[id] : [];
+    } else {
+      return data ? data : {};
+    }
   } else {
     return {};
   }
 }
 
-function saveLookups(content) {
+function saveLookups(content, id = null) {
+  const resolvedContent = id
+    ? getLookups()
+    : content;
+  if (id) {
+    resolvedContent[id] = content;
+  }
   const configFile = path.resolve(__dirname, LOOKUP_FILE);
-  utils.saveJSONFile(content, configFile);
+  utils.saveJSONFile(resolvedContent, configFile);
 }
 
 function saveImageFinderResults(sceneContent, journalContent, bookCode) {
@@ -181,7 +192,7 @@ async function getConfig(options = {}) {
   const noteInfoDir = (process.env.NOTE_DIR) ? process.env.NOTE_DIR : path.resolve(__dirname, notesDir);
   const assetsInfoDir = (process.env.ASSETS_DIR) ? process.env.ASSETS_DIR : path.resolve(__dirname, assetsDir);
   const tableInfoDir = (process.env.TABLE_DIR) ? process.env.TABLE_DIR : path.resolve(__dirname, tablesDir);
-  const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : defaultEnhancementEndpoint; 
+  const enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : ENHANCEMENT_ENDPOINT; 
 
   if (config.debug) {
     logger.debug(`DownloadDir ${downloadDir}`); 
@@ -196,9 +207,7 @@ async function getConfig(options = {}) {
     fs.mkdirSync(downloadDir);
   }
 
-  if (config.downloadTimeout) {
-    timeout = config.downloadTimeout;
-  }
+  const downloadTimeout = config.downloadTimeout ? config.downloadTimeout : TIMEOUT;
 
   config.run = {
     enhancementEndpoint: enhancementEndpoint,
@@ -208,7 +217,7 @@ async function getConfig(options = {}) {
     noteInfoDir: path.resolve(__dirname, noteInfoDir),
     tableInfoDir: path.resolve(__dirname, tableInfoDir),
     assetsInfoDir: path.resolve(__dirname, assetsInfoDir),
-    downloadTimeout: timeout,
+    downloadTimeout,
   };
 
 
@@ -308,7 +317,7 @@ async function getConfig(options = {}) {
 
   if (!fs.existsSync(bookZipPath)){
     logger.info(`Downloading ${book.description} ... this might take a while...`);
-    await ddb.downloadBook(book.id, config.cobalt, bookZipPath, timeout);
+    await ddb.downloadBook(book.id, config.cobalt, bookZipPath, downloadTimeout);
     logger.info("Download finished, beginning book parse!");
   }
 
