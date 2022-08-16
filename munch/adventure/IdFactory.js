@@ -1,5 +1,5 @@
 const logger = require("../logger.js");
-const utils = require("./utils.js");
+const utils = require("../utils.js");
 
 class IdFactory {
 

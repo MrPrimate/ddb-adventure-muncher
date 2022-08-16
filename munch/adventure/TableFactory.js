@@ -10,7 +10,7 @@ class TableFactory {
   }
 
   generateTables(content) {
-
+    
   }
 }
 
