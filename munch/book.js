@@ -294,7 +294,7 @@ function buildTable(row, parsedTable, keys, diceKeys, tableName, contentChunkId)
     const table = JSON.parse(JSON.stringify(require(path.join(templateDir,"table.json"))));
     const nameExtension = diceKeys > 1 ? ` [${diceKeys}]` : "";
 
-    table.name = ((tableName && tableName !== "") ? tableName : "Unnamed Table") + nameExtension;
+    table.name = ((tableName && tableName.trim() !== "") ? tableName : "Unnamed Table") + nameExtension;
     table.flags.ddb.ddbId = row.id;
     table.flags.ddb.bookCode = config.run.bookCode;
     table.flags.ddb.slug = row.slug;
@@ -792,7 +792,8 @@ function generateJournalEntryOld(row, img=null, note=false) {
   }
 
   const createImgHandouts = ((config.createHandouts && !row.player) || (row.player && config.createPlayerHandouts)) && imgState;
-  if (!journal.flags.ddb.duplicate && (createImgHandouts || note)) {
+  const createPartialPages = !imgState && !note && row.parentId;
+  if (!journal.flags.ddb.duplicate && (createImgHandouts || note || !row.parentId || createPartialPages)) {
     journal.flags.ddb.linkId = journal._id;
     logger.info(`Appending ${journal.name} Img:"${journal.img}"`);
     generatedJournals.push(journal);
@@ -1267,21 +1268,25 @@ function findScenes(document) {
         // logger.info(document);
         let title = caption.textContent.trim();
         const playerRef = node.querySelector("a[data-title~=Player]");
-        if (playerRef) {
-          if (title !== playerRef.textContent) {
-            title = utils.titleString(title.replace(playerRef.textContent, "").trim());
+        const unlabeledRef = node.querySelector("a[data-title~=Unlabeled]");
+
+        if (playerRef || unlabeledRef) {
+          const ref = playerRef ? playerRef : unlabeledRef;
+          let titleType = playerRef ? "Player" : "Unlabeled";
+          if (title !== ref.textContent) {
+            title = utils.titleString(title.replace(ref.textContent, "").trim());
           }
-          logger.warn(`possibleFigureSceneNodes Player TITLE: ${title}`);
+          logger.warn(`possibleFigureSceneNodes ${titleType} TITLE: ${title}`);
 
           let rowContentChunkId = caption.getAttribute("data-content-chunk-id");
           if (!rowContentChunkId) {
             // figure type embedds mostly don't have content chunk Id's 
             // we fall back to element ID which appears to be unique for the outer figure element
-            rowContentChunkId = `${node.id}-player`;
+            rowContentChunkId = `${node.id}-${titleType.toLowerCase()}`;
           }
 
           let row = {
-            title: `${title} (Player Version)`,
+            title: `${title} (${titleType} Version)`,
             id: 10000 + document.flags.ddb.ddbId + tmpCount,
             parentId: document.flags.ddb.parentId,
             cobaltId: document.flags.ddb.cobaltId,
@@ -1290,20 +1295,20 @@ function findScenes(document) {
             sceneName: title,
             contentChunkId: rowContentChunkId,
             originDocId: document._id,
-            originHint: "possibleFigureSceneNodes, player",
-            originalLink: playerRef.href,
+            originHint: `possibleFigureSceneNodes, ${titleType.toLowerCase()}`,
+            originalLink: ref.href,
             player: true,
           };
           tmpCount++;
-          const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
+          const playerEntry = generateJournalEntry(row, ref.href.replace("ddb://image", "."));
           journals.push(playerEntry);
           const dmText = config.createHandouts ? `@JournalEntry[${title}]{DM Version} ` : "";
-          const playerText = config.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}` : "";
-          linkReplaces.push( {html: playerRef.outerHTML, ref: `${dmText}${playerText}` });
+          const playerText = config.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{${titleType} Version}` : "";
+          linkReplaces.push( {html: ref.outerHTML, ref: `${dmText}${playerText}` });
           if (config.v10Mode) {
-            document.text.content = document.text.content.replace(playerRef.outerHTML, `${dmText}${playerText}`);
+            document.text.content = document.text.content.replace(ref.outerHTML, `${dmText}${playerText}`);
           } else {
-            document.content = document.content.replace(playerRef.outerHTML, `${dmText}${playerText}`);
+            document.content = document.content.replace(ref.outerHTML, `${dmText}${playerText}`);
           }
           scenes.push(generateScene(row, config.v10Mode ? playerEntry.pages[0].src : playerEntry.img));
         }
@@ -1361,12 +1366,13 @@ function findScenes(document) {
         let title = caption.textContent;
         let nextNode = frag.window.document.getElementById(node.id);
         let playerVersion = false;
+        let unlabeledVersion = false;
         let lightBoxNode;
 
         for (let i = 0; i < 15; i++) {
           if (!nextNode) {
             lightBoxNode = Array.from(node.querySelectorAll("a.ddb-lightbox-outer"))
-              .find(el => el.textContent.toLowerCase().includes("player"));
+              .find(el => el.textContent.toLowerCase().includes("player") || el.textContent.toLowerCase().includes("unlabeled"));
             // logger.info(lightBoxNode.outerHTML)
             // logger.info(`Attempting div query ${lightBoxNode}`)
           } else {
@@ -1376,19 +1382,20 @@ function findScenes(document) {
           }
           if (lightBoxNode) {
             playerVersion = lightBoxNode.textContent.toLowerCase().includes("player");
+            unlabeledVersion = lightBoxNode.textContent.toLowerCase().includes("unlabeled");
             break;
           }
         }
-        // logger.info(lightBoxNode)
-        // logger.info(playerVersion);
 
-        if (playerVersion) {
+        if (playerVersion || unlabeledVersion) {
           //const playerRef = nextNode.querySelector("a.ddb-lightbox-outer");
           const playerRef = lightBoxNode;
           title = utils.titleString(title.replace(playerRef.textContent, "").trim());
 
+          let titleType = playerVersion ? "Player" : "Unlabeled";
+
           let row = {
-            title: `${title} (Player Version)`,
+            title: `${title} (${titleType} Version)`,
             id: 11000 + document.flags.ddb.ddbId + tmpCount,
             parentId: document.flags.ddb.parentId,
             cobaltId: document.flags.ddb.cobaltId,
@@ -1397,7 +1404,7 @@ function findScenes(document) {
             sceneName: utils.titleString(title),
             contentChunkId: (nextNode) ? nextNode.getAttribute("data-content-chunk-id") : undefined,
             originDocId: document._id,
-            originHint: "possibleDivSceneNodes, player",
+            originHint: `possibleDivSceneNodes, ${titleType.toLowerCase()}`,
             originalLink: playerRef.href,
             player: true,
           };
@@ -1405,7 +1412,7 @@ function findScenes(document) {
           const playerEntry = generateJournalEntry(row, playerRef.href.replace("ddb://image", "."));
           journals.push(playerEntry);
           const dmText = config.createHandouts ? `@JournalEntry[${title}]{DM Version} ` : "";
-          const playerText = config.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{Player Version}` : "";
+          const playerText = config.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{${titleType} Version}` : "";
 
           linkReplaces.push( {html: playerRef.outerHTML, ref: `${dmText}${playerText}` });
           if (config.v10Mode) {
@@ -1487,14 +1494,17 @@ function findScenes(document) {
 
   possibleUnknownPlayerLinks.forEach((node) => {
     if (sceneImgMatched.includes(node.href)) return;
-    if (!node.textContent.toLowerCase().includes("player")) return;
+    const playerNode = node.textContent.toLowerCase().includes("player");
+    const unlabeledNode = node.textContent.toLowerCase().includes("unlabeled");
+    if (!playerNode && !unlabeledNode) return;
 
     tmpCount++;
     if (config.debug) {
       logger.verbose(node.outerHTML);
     }
 
-    let title = `${document.name} (Player Version)`;
+    let titleType = playerNode ? "Player" : "Unlabeled";
+    let title = `${document.name} (${titleType} Version)`;
 
     const parentId = node.parentElement.getAttribute("data-content-chunk-id");
     const nodeId = node.getAttribute("data-content-chunk-id");
@@ -1514,7 +1524,7 @@ function findScenes(document) {
       contentChunkId: contentChunkId,
       slug: document.flags.ddb.slug,
       originDocId: document._id,
-      originHint: "possibleUnknownPlayerLinks, player",
+      originHint: `possibleUnknownPlayerLinks, ${titleType}`,
       originalLink: node.href,
       player: true,
     };
@@ -1522,7 +1532,7 @@ function findScenes(document) {
 
     // don't add entry if we have already parsed this
     if (!journalEntry.flags.ddb.duplicate) {
-      const playerText = config.createPlayerHandouts ? `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}` : "";
+      const playerText = config.createPlayerHandouts ? `@JournalEntry[${journalEntry.flags.ddb.linkName}]{${titleType} Version}` : "";
       linkReplaces.push( {html: node.outerHTML, ref: playerText });
       if (config.v10Mode) {
         document.text.content = document.text.content.replace(node.outerHTML, playerText);

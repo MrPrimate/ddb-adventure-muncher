@@ -774,6 +774,15 @@ const sources = [
     sourceURL: "sources/mcv1",
   },
   {
+    id: 90,
+    name: "SAiS",
+    description: "Spelljammer: Adventures in Space",
+    sourceCategoryId: 1,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/25228/876/637859890823057854.jpeg",
+    sourceURL: "sources/sais",
+  },
+  {
     id: 91,
     name: "TVD",
     description: "The Vecna Dossier",
