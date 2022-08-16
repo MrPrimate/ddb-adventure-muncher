@@ -107,7 +107,8 @@ function moduleReplaceLinks(text, journals, config) {
   const h2Links = dom.window.document.querySelectorAll(`h2 a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
   const h3Links = dom.window.document.querySelectorAll(`h3 a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
   const h4Links = dom.window.document.querySelectorAll(`h4 a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
-  const hLinks = [h1Links, h2Links, h3Links, h4Links];
+  const h5Links = dom.window.document.querySelectorAll(`h5 a[href*=\"ddb://compendium\/${config.run.bookCode}"]`);
+  const hLinks = [h1Links, h2Links, h3Links, h4Links, h5Links];
   hLinks.forEach((hLink) => {
     for (let headerIndex = 0, headerLength = hLink.length; headerIndex < headerLength; headerIndex++) {
       const node = hLink[headerIndex];

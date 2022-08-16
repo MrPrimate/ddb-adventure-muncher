@@ -59,11 +59,7 @@
       "entitlements": "./build/entitlements.mac.inherit.plist",
       "entitlementsInherit": "./build/entitlements.mac.inherit.plist",
       "target": {
-        "target": "dmg",
-        "arch": [
-          "x64",
-          "arm64"
-        ]
+        "target": "dmg"
       },
       "category": "public.app-category.developer-tools"
     },
