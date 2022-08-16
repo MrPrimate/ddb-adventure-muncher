@@ -83,10 +83,13 @@ class Journal {
     const isDuplicate = this.data.flags.ddb.duplicate;
     const createHandouts = ((this.adventure.config.createHandouts && !this.row.player) ||
       (this.row.player && this.config.createPlayerHandouts));
-      // no parent id - top level journal
+    const createSections = this.adventure.config.v10Mode
+      ? !this.row.parentId
+      : this.config.createSections;
+      // no parent id - top level journal, never in v10, hidden option v9
       // force - create this/override for sub class
       // respect the handout config settings
-    const addJournal = force || createHandouts || !this.row.parentId;
+    const addJournal = force || createHandouts || createSections;
 
     if (!isDuplicate && addJournal) {
       logger.info(`Appending ${this.row.title} ${this.type} Journal"`);
