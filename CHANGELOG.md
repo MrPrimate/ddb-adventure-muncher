@@ -1,3 +1,7 @@
+# 0.7.3
+
+* Support Spelljammer Adventures in Space
+
 # 0.7.2
 
 * Improve logging around note generation failure.
