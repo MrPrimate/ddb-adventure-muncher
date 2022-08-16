@@ -2,7 +2,7 @@ module.exports = {
   env: {
     node: true,
     commonjs: true,
-    es20219: true,
+    es2019: true,
   },
   extends: "eslint:recommended",
   parserOptions: {
