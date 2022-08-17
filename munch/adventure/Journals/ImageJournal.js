@@ -2,11 +2,19 @@ const logger = require("../../logger.js");
 const { Journal } = require("./Journal");
 
 
-class Image extends Journal {
+class ImageJournal extends Journal {
 
   TYPE = "image";
   PAGE_TYPE = "image";
 
+  get section() {
+    return false;
+  }
+
+  get image() {
+    return true;
+  }
+ 
   appendJournalToChapter() {
     // we don't append images to chapters
   }
@@ -90,14 +98,9 @@ class Image extends Journal {
   }
 
   constructor(adventure, row, imagePath) {
-    const flags = {
-      img: true,
-    }
-    this.section = false;
     this.imagePath = imagePath;
-
-    super(adventure, row, flags);
+    super(adventure, row);
   }
 }
 
-exports.Image = Image;
+exports.Image = ImageJournal;
