@@ -205,8 +205,6 @@ function getDiceTableRange(value) {
   const valueRegex = new RegExp(/^(\d+)\-(\d+)|^(\d+)(\+?)$/);
   const valueMatch = text.match(valueRegex);
 
-  logger.warn(valueMatch);
-
   if (valueMatch) {
     if (valueMatch[1] !== undefined && valueMatch[2] !== undefined) {
       const low = parseInt(valueMatch[1]);

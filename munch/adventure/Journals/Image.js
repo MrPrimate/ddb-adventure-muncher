@@ -5,13 +5,10 @@ const { Journal } = require("./Journal");
 class Image extends Journal {
 
   TYPE = "image";
+  PAGE_TYPE = "image";
 
   appendJournalToChapter() {
     // we don't append images to chapters
-  }
-
-  getFolder() {
-    super.getFolder(true, false);
   }
 
   generateTable(content) {
@@ -96,6 +93,7 @@ class Image extends Journal {
     const flags = {
       img: true,
     }
+    this.section = false;
     this.imagePath = imagePath;
 
     super(adventure, row, flags);

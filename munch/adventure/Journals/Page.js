@@ -40,7 +40,7 @@ class Page {
         this.src = content;
         break;
       }
-      //no default
+      // no default
     }
   }
 

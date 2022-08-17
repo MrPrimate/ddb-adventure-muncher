@@ -6,15 +6,14 @@ class Journal {
 
   static JOURNAL_SORT = 1000;
   TYPE = "text";
+  PAGE_TYPE = "text";
 
   appendJournalToChapter() {
     if (this.row.parentId) {
       logger.info(`Appending to chapter... ${this.row.title} ${this.row.parentId} search...`);
       this.adventure.journals.forEach((journal) => {
-        const imageCheck = config.v10Mode
-          ? !journal.flags.ddb.img && !journal.flags.ddb.note
-          : journal.img === null || journal.img === undefined || journal.img == "";
-        if (journal.flags.ddb.cobaltId == row.parentId && imageCheck) {
+        const imageCheck = !this.TYPE === "image";
+        if (journal.flags.ddb.cobaltId == this.row.parentId && imageCheck) {
           if (config.v10Mode && this.data.pages.length > 0) {
             const page = this.data.pages[0];
             if (page.name != journal.name) {
@@ -30,7 +29,13 @@ class Journal {
   }
 
   generatePage(content) {
-    const page = new Page({name: this.row.title, content, flags: this.data.flags, id: this.data._id, type: this.TYPE, level: 1});
+    const page = new Page({
+      name: this.row.title,
+      content,
+      flags: this.data.flags,
+      id: this.data._id,
+      type: this.PAGE_TYPE, level: 1
+    });
     return page.toObject();
   }
 
@@ -97,8 +102,9 @@ class Journal {
     }
   }
 
-  getFolder(img = false, note = false) {
-    this.data.folder = this.adventure.folderFactory.getFolderId(this.row, "JournalEntry", img, note);
+  getFolder() {
+    const folderType = this.section ? "section" : this.TYPE;
+    this.data.folder = this.adventure.folderFactory.getFolderId(this.row, "JournalEntry", folderType);
   }
 
   constructor(adventure, row, flags = {}) {
@@ -117,6 +123,7 @@ class Journal {
     this.data.flags.ddb.originDocId = this.row.originDocId;
     this.data.flags.ddb.originHint = this.row.originHint;
     this.data.flags.ddb.originalLink = this.row.originalLink;
+    this.section = this.row.parentId;
 
     const contentChunkId = (this.row.contentChunkId && this.row.contentChunkId.trim() != "") ? 
       this.row.contentChunkId :
@@ -150,13 +157,12 @@ class Journal {
     this.addJournal();
   }
 
-  // check to see if I need to override the defaults
   toJson() {
     return JSON.stringify(this.data);
   }
 
   toObject() {
-    return JSON.stringify(this.toJson());
+    return JSON.parse(this.toJson());
   }
 
 

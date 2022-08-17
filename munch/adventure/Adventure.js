@@ -1,17 +1,28 @@
 const logger = require("../logger.js");
 const path = require("path");
 const { FolderFactory } = require("./FolderFactory.js");
+const { Folder } = require("./Folders/Folder.js");
 const { IdFactory } = require("./IdFactory.js");
 const { TableFactory } = require("./TableFactory.js")
+
+const _ = require("lodash");
 
 class Adventure {
 
   #createMasterFolders() {
+    const mainRow = { id: -1, cobaltId: -1, title: this.config.run.book.description };
+
+    const folderData = {
+      adventure: this,
+      row: mainRow,
+      specialType: "base",
+    };
+
     this.masterFolder = {
-      JournalEntry: this.folderFactory.generateFolder("JournalEntry", {id: -1, cobaltId: -1, title: this.config.run.book.description}, true),
-      Scene: this.folderFactory.generateFolder("Scene", {id: -1, cobaltId: -1, title: this.config.run.book.description}, true),
-      RollTable: this.folderFactory.generateFolder("RollTable", {id: -1, cobaltId: -1, title: this.config.run.book.description}, true),
-      Actor: this.folderFactory.generateFolder("Actor", {id: -1, cobaltId: -1, title: this.config.run.book.description}, true),
+      JournalEntry: new Folder(_.merge(folderData, { type: "JournalEntry"})).toJson(),
+      Scene: new Folder(_.merge(folderData, { type: "Scene"})).toJson(),
+      RollTable: new Folder(_.merge(folderData, { type: "RollTable"})).toJson(),
+      Actor: new Folder(_.merge(folderData, { type: "Actor"})).toJson(),
     };
   }
 
@@ -61,7 +72,14 @@ class Adventure {
 
   }
 
-  
+  // check to see if I need to override the defaults
+  toJson() {
+    // return JSON.stringify(this.data);
+  }
+
+  toObject() {
+    return JSON.parse(this.toJson());
+  }
 
 
 }

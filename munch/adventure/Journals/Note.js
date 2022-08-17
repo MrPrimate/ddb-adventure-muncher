@@ -4,6 +4,7 @@ const { Journal } = require("./Journal");
 class Note extends Journal {
 
   TYPE = "note";
+  PAGE_TYPE = "text";
 
   appendJournalToChapter() {
     // we don't append notes to chapters
@@ -11,10 +12,6 @@ class Note extends Journal {
 
   addJournal() {
     super.addJournal(true);
-  }
-
-  getFolder() {
-    super.getFolder(false, true);
   }
 
   generateTable(content) {
@@ -25,7 +22,7 @@ class Note extends Journal {
     const flags = {
       note: true,
     }
-
+    this.section = false;
     super(adventure, row, flags);
   }
 

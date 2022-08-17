@@ -1,0 +1,108 @@
+
+const logger = require("../../logger.js");
+const _ = require("lodash");
+
+class Folder {
+
+  static FOLDER_SORT = 4000;
+
+  addFolder() {
+    this.adventure.folders.push(this.data);
+  }
+
+  constructor({adventure, row, type, specialType = null}) {
+    this.adventure = adventure;
+    const folderJsonPath = path.join(this.adventure.overrides.templateDir,"folder.json");
+    this.data = JSON.parse(JSON.stringify(require(folderJsonPath)));
+
+    this.data.name = row.title;    
+    this.data.type = type;
+    this.data.sort = Folder.FOLDER_SORT + parseInt(row.id);
+
+    this.data.flags.ddb.ddbId = (row.ddbId) ? row.ddbId : row.id;
+    this.data.flags.ddb.img = specialType === "image";
+    this.data.flags.ddb.note = specialType === "note";
+
+    // detect parent folders
+    if (row.cobaltId && specialType !== "base") {
+      // by default place folder in root folder
+      this.data.parent = this.adventure.masterFolder[type]._id;
+    }
+
+    const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
+
+    // handle changes based on various folder types
+    switch (specialType) {
+      case "note": {
+        const parent = this.adventure.folders.find((f) => f.flags.ddb.cobaltId == parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+        this.data.name = `[Pins] ${row.sceneName ? row.sceneName : parent.name}`;
+        this.data.sorting = "a";
+        this.data.parent = `${parent._id}`;
+        this.data.flags.ddb.parentId = parentId;
+        break;
+      }
+      case "image": {
+        const parent = this.adventure.folders.find((f) => f.flags.ddb.cobaltId == parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
+        this.data.name = `[Handouts] ${row.sceneName ? row.sceneName : (parent) ? parent.name: row.title }`;
+        this.data.sort = 1000000;
+        if (parent) { // tmp fix for hftt, for some reason it does not generate a parent folder
+          this.data.parent = `${parent._id}`;
+        }
+        this.data.flags.ddb.parentId = parentId;
+        break;
+      }
+      case "section": {
+        const parent = this.adventure.folders.find((f) => f.flags.ddb.cobaltId == row.parentId && f.type == type && !f.flags.ddb.img);
+        if (parent) {
+          this.data.parent = `${parent._id}`;
+          this.data.name = `[Sections] ${parent.name}`;
+        }
+        this.data.flags.ddb.parentId = row.parentId;
+        if (!this.data.name || this.data.name === "") {
+          logger.warn("NO NAME ROW FOUND (parent)!!!");
+        }
+        break;
+      }
+      case "base": {
+        if (type === "Actor") this.data.sorting = "a";
+        break;
+      }
+      default: {
+        // place in root folder
+        const parent = this.adventure.folders.find((f) => f.flags.ddb.cobaltId == -1 && f.type == type && !f.flags.ddb.img);
+        if (parent) this.data.parent = `${parent._id}`;
+        if (!this.data.name || this.data.name === "") {
+          logger.warn("NO NAME ROW FOUND!!!");
+        }
+      }
+    }
+
+    if (row.cobaltId) this.data.flags.ddb.cobaltId = row.cobaltId;  
+    if (row.nameOverride) this.data.name = row.nameOverride;
+
+    this.data._id = this.adventure.idFactory.getId(this.data, "Folder");
+    this.data.flags.importid = this.data._id;
+
+    //
+    this.addFolder();
+    
+    if (type === "JournalEntry" && !baseFolder && !img && !note) {
+      // lets generate a Scene && RollTable Folders at the same time
+      // we do this so the scene folder order matches the same as the journals as some
+      // adventures e.g. CoS have different kind of scene detection
+      this.adventure.folderFactory.getFolderId(row, "Scene");
+      this.adventure.folderFactory.getFolderId(row, "RollTable");
+    }
+  }
+
+  toJson() {
+    return JSON.stringify(this.data);
+  }
+
+  toObject() {
+    return JSON.parse(this.toJson());
+  }
+
+}
+
+exports.Folder = Folder;

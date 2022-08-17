@@ -65,8 +65,6 @@ function foundryCompendiumReplace(text, config) {
         if (lookupEntry) {
           const documentRef = lookupEntry.documentName ? lookupEntry.documentName : lookupEntry._id;
           text = text.replace(node.outerHTML, `@Compendium[${lookupEntry.compendium}.${documentRef}]{${node.textContent}}`);
-        } else {
-          logger.info(`No Lookup Compendium Entry for ${node.textContent} with ID ${lookupMatch[1]}. DDB Importer will attempt to import this during adventure load.`);
         }
       }
     });
