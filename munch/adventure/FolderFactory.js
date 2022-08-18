@@ -4,6 +4,23 @@ const Folder = require("./Folders/Folder.js");
 
 class FolderFactory {
 
+   get masterFolders() {
+    const mainRow = { id: -1, cobaltId: -1, title: this.adventure.config.run.book.description };
+
+    const folderData = {
+      adventure: this.adventure,
+      row: mainRow,
+      specialType: "base",
+    };
+
+    return {
+      JournalEntry: new Folder(_.merge(folderData, { type: "JournalEntry"})).toJson(),
+      Scene: new Folder(_.merge(folderData, { type: "Scene"})).toJson(),
+      RollTable: new Folder(_.merge(folderData, { type: "RollTable"})).toJson(),
+      Actor: new Folder(_.merge(folderData, { type: "Actor"})).toJson(),
+    };
+  }
+
   constructor(adventure) {
     this.adventure = adventure;
   }
