@@ -36,6 +36,7 @@ class Adventure {
       sceneResults: [],
       journalResults: [],
     }
+    this.tableMatched = [];
 
     this.replaceLinks = [];
     this.tempHandouts = [];
@@ -57,6 +58,17 @@ class Adventure {
     // initialize master folders
     this.masterFolder = this.folderFactory.masterFolders;
 
+  }
+
+  processAdventure() {
+    // ToDo
+    // process Journals
+    // process Scenes
+    // process Tables
+    // add notes
+    // missing scenes
+    // asset copy
+    // 
   }
 
   toJson() {

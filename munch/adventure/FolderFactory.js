@@ -12,12 +12,16 @@ class FolderFactory {
       row: mainRow,
       specialType: "base",
     };
+    const mainJournal = new Folder(_.merge(folderData, { type: "JournalEntry"}));
+    const sceneJournal = new Folder(_.merge(folderData, { type: "Scene"}));
+    const rollTableJournal = new Folder(_.merge(folderData, { type: "RollTable"}));
+    const actorJournal = new Folder(_.merge(folderData, { type: "Actor"}));
 
     return {
-      JournalEntry: new Folder(_.merge(folderData, { type: "JournalEntry"})).toJson(),
-      Scene: new Folder(_.merge(folderData, { type: "Scene"})).toJson(),
-      RollTable: new Folder(_.merge(folderData, { type: "RollTable"})).toJson(),
-      Actor: new Folder(_.merge(folderData, { type: "Actor"})).toJson(),
+      JournalEntry: mainJournal.toJson(),
+      Scene: sceneJournal.toJson(),
+      RollTable: rollTableJournal.toJson(),
+      Actor: actorJournal.toJson(),
     };
   }
 

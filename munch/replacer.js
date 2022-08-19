@@ -194,16 +194,6 @@ function replaceImageLinks(text, config) {
   return text;
 }
 
-
-function replaceImgLinksForJournal(text, config) {
-  const reImage = new RegExp(`^\.\/${config.run.bookCode}\/`, "g");
-  text = text.replace(reImage, "assets/");
-  const reImage2 = new RegExp(`^${config.run.bookCode}\/`, "g");
-  text = text.replace(reImage2, "assets/");
-
-  return text;
-}
-
 // replaces matchAll, requires a non global regexp
 // eslint-disable-next-line no-unused-vars
 function reMatchAll(regexp, string) {
@@ -402,7 +392,6 @@ function addClasses(text) {
 
 
 exports.foundryCompendiumReplace = foundryCompendiumReplace;
-exports.replaceImgLinksForJournal = replaceImgLinksForJournal;
 exports.replaceImageLinks = replaceImageLinks;
 exports.replaceRollLinks = replaceRollLinks;
 exports.moduleReplaceLinks = moduleReplaceLinks;

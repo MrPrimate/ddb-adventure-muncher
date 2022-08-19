@@ -2,6 +2,9 @@
 const logger = require("../../logger.js");
 const _ = require("lodash");
 
+const { IdFactory } = require("../IdFactory.js");
+const { replaceRollLinks } = require("../../replacer.js");
+
 class Table {
 
   static diceInt(text) {
@@ -51,40 +54,51 @@ class Table {
   }
 
 
-  constructor({adventure, row, parsedTable, keys, diceKeys, diceKey, tableName, contentChunkId, tmpCount}) {
+  constructor({adventure, row, diceKey, tableData, count}) {
     this.adventure = adventure;
-    this.contentChunkId = contentChunkId;
+    this.contentChunkId = tableData.contentChunkId;
     const tableJsonPath = path.join(this.adventure.overrides.templateDir,"table.json");
     this.data = JSON.parse(JSON.stringify(require(tableJsonPath)));
 
-    const nameExtension = diceKeys > 1 ? ` [${diceKeys}]` : "";
+    const nameExtension = tableData.diceKeys > 1 ? ` [${tableData.diceKeys}]` : "";
 
-    this.data.name = ((tableName && tableName.trim() !== "") ? tableName : "Unnamed Table") + nameExtension;
+    this.data.name = ((tableData.tableName && tableData.tableName.trim() !== "")
+      ? tableData.tableName
+      : "Unnamed Table") + nameExtension;
     this.data.flags.ddb.ddbId = row.id;
-    this.data.flags.ddb.bookCode = config.run.bookCode;
+    this.data.flags.ddb.bookCode = this.adventure.bookCode;
     this.data.flags.ddb.slug = row.slug;
-    this.data.flags.ddb.contentChunkId = contentChunkId;
-    this.data.flags.ddb.userData = config.run.userData;
+    this.data.flags.ddb.contentChunkId = tableData.contentChunkId;
+    this.data.flags.ddb.userData = this.adventure.config.run.userData;
     this.data.sort = JOURNAL_SORT + parseInt(row.id);
     if (row.cobaltId) this.data.flags.ddb.cobaltId = row.cobaltId;
     if (row.parentId) this.data.flags.ddb.parentId = row.parentId;
 
-    if (config.observeAll) this.data.permission.default = 2;
+    if (this.adventure.config.observeAll) {
+      if (this.adventure.config.v10Mode) {
+        this.data.ownership.default = 2;
+      } else {
+        this.data.permission.default = 2;
+      }
+    }
 
-    const tableHint = tableHints.find((hint) => hint.contentChunkId == contentChunkId);
-    const cobaltId = (this.data.flags.ddb.cobaltId) ? this.data.flags.ddb.cobaltId : this.data.flags.ddb.parentId;
+    const tableHint = this.adventure.enhancements.tableHints
+      .find((hint) => hint.contentChunkId == tableData.contentChunkId);
+    const cobaltId = (this.data.flags.ddb.cobaltId)
+      ? this.data.flags.ddb.cobaltId
+      : this.data.flags.ddb.parentId;
     const folderName = (tableHint && tableHint.folderName) ? tableHint.folderName : null;
 
     const tableRow = {
       title: this.data.name,
-      id: 10000 + this.data.flags.ddb.ddbId + tmpCount,
+      id: 10000 + this.data.flags.ddb.ddbId + count,
       cobaltId: cobaltId,
       documentName: this.data.name,
-      contentChunkId: contentChunkId,
+      contentChunkId: tableData.contentChunkId,
       nameOverride: folderName,
     };
 
-    this.data.folder = getFolderId(tableRow, "RollTable");
+    this.data.folder = this.adventure.idFactory.getFolderId(tableRow, "RollTable");
     this.data._id = getId(this.data, "RollTable");
 
     const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*d*\d*)?)/, "g");
@@ -93,18 +107,17 @@ class Table {
     this.data.formula = formulaMatch ? formulaMatch[0].trim() : "";
 
     this.data.results = [];
-    const concatKeys = (keys.length - diceKeys.length) > 1;
+    const concatKeys = (tableData.keys.length - tableData.diceKeys.length) > 1;
     // loop through rows and build result entry. 
     // if more than one result key then we will concat the results.
 
     logger.info("*******************************************");
     logger.info(`Generating table ${this.data.name}`);
     if (config.debug) logger.debug(row);
-    // logger.info(parsedTable.length);
 
-    parsedTable.forEach((entry) => {
+    tableData.parsedTable.forEach((entry) => {
       const result = {
-        _id: `${Ids.random()}`,
+        _id: `${IdFactory.random()}`,
         flags: {},
         type: 0,
         text: "",
@@ -116,9 +129,9 @@ class Table {
       };
       Object.entries(entry).forEach(([key, value]) => {
         if (key === diceKey) {
-          result.range = getDiceTableRange(value);
+          result.range = Table.getDiceTableRange(value);
         }
-        else if (diceKeys.includes(key)) return;
+        else if (tableData.diceKeys.includes(key)) return;
         if (concatKeys) {
           if (result.text != "") result.text += "\n\n";
           result.text += `<b>${key}</b>${value}`;
@@ -126,14 +139,13 @@ class Table {
           result.text = value;
         }
       });
-      result.text = replacer.replaceRollLinks(result.text, config);
+      result.text = replacer.replaceRollLinks(result.text, this.adventure.config);
       const diceRollerRegexp = new RegExp(/\[\[\/r\s*([0-9d+-\s]*)(:?#.*)?\]\]/);
       result.text = result.text.replace(diceRollerRegexp, "[[$1]] ($&)");
       this.data.results.push(result);
     });
 
     logger.info(`Generated table entry ${this.data.name}`);
-    this.adventure.tables.push(this.data);
 
   }
 

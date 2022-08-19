@@ -1,6 +1,8 @@
 const logger = require("../logger.js");
 const { Table } = require("./Tables/Table.js");
-const parseTable = require("../../vendor/parseTable.js");
+const jsdom = require("jsdom");
+const { ParsedTable } = require("./Tables/ParsedTable.js");
+const { JSDOM } = jsdom;
 
 /**
  * The TableFactory is going to take some html and render out tables from it.
@@ -18,55 +20,30 @@ class TableFactory {
 
   }
 
-  findDiceColumns(tableNode) {
-    let result = [];
-    if (tableNode.tHead) {
-      const headings = parseTable.getHeadings(tableNode);
-      headings.forEach((h) => {
-        const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*)?)/, "g");
-        const match = h.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").match(diceRegex);
-        if (match) {
-          result.push(h);
-        }
+  // generates a html doc and loops through it to find tables
+  generateTables(row, html) {
+    this.document = new JSDOM(html).window.document;
+    this.tableNodes = document.querySelectorAll("table");
+
+    this.tableNodes.forEach((tableNode) => {
+      const parsedTable = new ParsedTable(this.adventure, tableNode);
+
+      let count = 1;
+      parsedTable.diceKeys.forEach((diceKey) => {
+        const table = new Table({
+          adventure: this.adventure,
+          diceKey,
+          row,
+          parsedTable,
+          count,
+        });
+
+        this.adventure.tables.push(table);
+        count++;
+
       });
-    }
-    return result;
-  }
 
-  guessTableName(document, contentChunkId) {
-    const hintName = tableHints.find((hint) => hint.contentChunkId == contentChunkId);
-
-    if (hintName) {
-      return hintName.tableName;
-    }
-
-    const element = document.querySelector(`table[data-content-chunk-id='${contentChunkId}']`);
-    let track = element;
-    let sibling = track.previousElementSibling;
-    
-    // if (!sibling && track.parentElement.nodeName === "DIV") {
-    //   sibling = track.parentElement.previousElementSibling;
-    // }
-
-    while (!sibling && track.parentElement && track.parentElement.nodeName === "DIV") {
-      if (!track.parentElement.previousElementSibling) {
-        track = track.parentElement;
-      } else {
-        sibling = track.parentElement.previousElementSibling;
-      }
-    }
-
-    if (sibling) {
-      logger.info(sibling.textContent);
-      return sibling.textContent;
-    } else {
-      logger.info(`No table name identified for ${contentChunkId}`);
-      return `${document.name}: Unknown Table: ${contentChunkId}`;
-    }
-  }
-
-  generateTables(content) {
-    
+    });
   }
 }
 

@@ -27,12 +27,12 @@
 
 const _ = require("lodash");
 
-/**
- * generates factory functions to convert table rows to objects,
- * based on the titles in the table's <thead>
- * @param  {Array<String>} headings the values of the table's <thead>
- * @return {(row: HTMLTableRowElement) => Object} a function that takes a table row and spits out an object
- */
+ /**
+  * generates factory functions to convert table rows to objects,
+  * based on the titles in the table's <thead>
+  * @param  {Array<String>} headings the values of the table's <thead>
+  * @return {(row: HTMLTableRowElement) => Object} a function that takes a table row and spits out an object
+  */
 function mapRow(headings, highSplit=false) {
   return function mapRowToObject({ cells }) {
     const lowCells = [...cells];
@@ -56,12 +56,12 @@ function mapRow(headings, highSplit=false) {
 }
 
 
-/**
- * given a table, generate an array of keys/column names
- *
- * @param  {HTMLTableElement} table the table to convert
- * @return {Array<String>}       array of strings representing each header in the table
- */
+ /**
+  * given a table, generate an array of keys/column names
+  *
+  * @param  {HTMLTableElement} table the table to convert
+  * @return {Array<String>}       array of strings representing each header in the table
+  */
 function getHeadings(table, unique=true) {
   if (!table.tHead || table.tHead.rows.length === 0) return [];
   const headings = [...table.tHead.rows[0].cells].map(heading => {
@@ -74,13 +74,13 @@ function getHeadings(table, unique=true) {
 
 
 /**
- * given a table, generate an array of objects.
- * each object corresponds to a row in the table.
- * each object's key/value pairs correspond to a column's heading and the row's value for that column
- *
- * @param  {HTMLTableElement} table the table to convert
- * @return {Array<Object>}       array of objects representing each row in the table
- */
+* given a table, generate an array of objects.
+* each object corresponds to a row in the table.
+* each object's key/value pairs correspond to a column's heading and the row's value for that column
+*
+* @param  {HTMLTableElement} table the table to convert
+* @return {Array<Object>}       array of objects representing each row in the table
+*/
 function parseTable(table) {
   const headings = getHeadings(table);
   const allHeadings = getHeadings(table, false);
@@ -93,9 +93,8 @@ function parseTable(table) {
     [];
 
   return lowResults.concat(highResults);
-
-
 }
 
 exports.parseTable = parseTable;
 exports.getHeadings = getHeadings;
+ 
