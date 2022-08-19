@@ -19,7 +19,7 @@ class ImageJournal extends Journal {
     // we don't append images to chapters
   }
 
-  generateTable(content) {
+  generateTable() {
     // we don't generate tables for images
   }
 
@@ -32,34 +32,41 @@ class ImageJournal extends Journal {
     return text2;
   }
 
-  _generateJournalEntryV10() {
 
-    if (this.adventure.config.observeAll) this.data.ownership.default = 2;
+  // we check the generated assets to see if this asset is unique (so far)
+  isDuplicate() {
+    return this.adventure.assets.includes(this.imageContent);
+  }
 
-    let content = replacer.replaceImgLinksForJournal();
-    this.data.flags.ddb.imageSrc = content;
-    if (this.adventure.assets.includes(content)) {
-      const journalMatch =  generatedJournals.map((j) => j.pages).flat().find((j) => j.src === content);
-      this.data.flags.ddb.duplicate = true;
-      this.data.flags.ddb.linkId = journalMatch ? journalMatch._id : null;
-      this.data.flags.ddb.linkName = journalMatch ? journalMatch.name : null;
-    } else {
-      this.data.flags.ddb.duplicate = false;
-      this.data.flags.ddb.linkName = this.row.name;
+  _generateJournalEntryShared() {
+    if (!this.duplicate) {
       if (this.adventure.config.imageFind) {
         this.adventure.imageFinder.journalResults.push({
           bookCode: this.adventure.bookCode,
-          img: content,
+          img: this.imageContent,
           name: this.row.name,
           slug: this.row.slug,
         });
       }
     }
-    this.adventure.assets.push(content);
-    const journalHandoutCount = this.adventure.assets.filter(img => img === content).length;
-    logger.info(`Generated Handout ${this.row.name}, "${content}", (count ${journalHandoutCount}), Duplicate? ${this.data.flags.ddb.duplicate}`);
+    this.adventure.assets.push(this.imageContent);
+    const journalHandoutCount = this.adventure.assets.filter(img => img === this.imageContent).length;
+    logger.debug(`Generated Handout ${this.row.name}, "${this.imageContent}", (count ${journalHandoutCount}), Duplicate? ${this.duplicate}`);
 
-    const page = this.generatePage(content);
+  }
+
+  _generateJournalEntryV10() {
+
+    if (this.adventure.config.observeAll) this.data.ownership.default = 2;
+
+    if (this.duplicate) {
+      const journalMatch =  this.adventure.journals.map((j) => j.data.pages).flat().find((j) => j.src === this.imageContent);
+      this.data.flags.ddb.linkId = journalMatch ? journalMatch._id : null;
+      this.data.flags.ddb.linkName = journalMatch ? journalMatch.name : null;
+    }
+    this._generateJournalEntryShared();
+
+    const page = this.generatePage(this.imageContent);
 
     if (!this.row.parentId) this.data.flags.ddb.linkId = this.data._id;
     this.data.pages.push(page);
@@ -69,36 +76,21 @@ class ImageJournal extends Journal {
   _generateJournalEntryOld() {
     if (this.adventure.config.observeAll) this.data.permission.default = 2;
 
-    this.data.img = replacer.replaceImgLinksForJournal();
+    this.data.img = this.imageContent;
 
-    if (this.adventure.assets.includes(this.data.img)) {
-      this.data.flags.ddb.imageSrc = this.data.img;
+    if (this.duplicate) {
       const journalMatch = generatedJournals.find((j) => j.img === this.data.img);
-      this.data.flags.ddb.duplicate = true;
       this.data.flags.ddb.linkId = journalMatch ? journalMatch._id : null;
       this.data.flags.ddb.linkName = journalMatch ? journalMatch.name : null;
-    } else {
-      this.data.flags.ddb.duplicate = false;
-      this.data.flags.ddb.linkName = this.data.name;
-      if (config.imageFind) {
-        this.adventure.imageFinder.journalResults.push({
-          bookCode: this.adventure.bookCode,
-          img: this.data.img,
-          name: this.data.name,
-          slug: this.row.slug,
-        });
-      }
     }
-    this.adventure.assets.push(this.data.img);
-    const journalHandoutCount = this.adventure.assets.filter(img => img === this.data.img).length;
-    logger.info(`Generated Handout ${this.data.name}, "${this.data.img}", (count ${journalHandoutCount}), Duplicate? ${this.data.flags.ddb.duplicate}`);
-
+    this._generateJournalEntryShared();
     this.data.flags.ddb.linkId = this.data._id;
-
   }
 
   constructor(adventure, row, imagePath) {
     this.imagePath = imagePath;
+    this.imageContent = this.replaceImgLinksForJournal();
+    this.data.flags.ddb.imageSrc = this.imageContent;
     super(adventure, row);
   }
 }

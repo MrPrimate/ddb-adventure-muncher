@@ -14,15 +14,15 @@ class NoteJournal extends Journal {
     return true;
   }
 
+  get forceAdd() {
+    return true;
+  }
+
   appendJournalToChapter() {
     // we don't append notes to chapters
   }
 
-  addJournal() {
-    super.addJournal(true);
-  }
-
-  generateTable(content) {
+  generateTable() {
     // we don't generate tables for notes
   }
 

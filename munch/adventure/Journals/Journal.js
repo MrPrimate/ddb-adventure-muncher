@@ -24,15 +24,15 @@ class Journal {
     if (this.row.parentId) {
       logger.info(`Appending to chapter... ${this.row.title} ${this.row.parentId} search...`);
       this.adventure.journals.forEach((journal) => {
-        if (journal.flags.ddb.cobaltId === this.row.parentId && !this.image) {
-          if (config.v10Mode && this.data.pages.length > 0) {
+        if (journal.data.flags.ddb.cobaltId === this.row.parentId) {
+          if (this.adventure.config.v10Mode && this.data.pages.length > 0) {
             const page = this.data.pages[0];
-            if (page.name != journal.name) {
+            if (page.name != journal.data.name) {
               page.title.show = true;
             }
-            journal.pages.push(page);
+            journal.data.pages.push(page);
           } else {
-            journal.content += row.html;
+            journal.data.content += row.html;
           }
         }
       });
@@ -52,6 +52,11 @@ class Journal {
 
   generateTable(content) {
     this.adventure.tableFactory.generateTables(this.row, this.data, content);
+  }
+
+  // assume that all text journals are unique
+  isDuplicate() {
+    return false;
   }
 
   _generateJournalEntryV10(html) {
@@ -95,21 +100,29 @@ class Journal {
 
   }
 
-  addJournal(force = false) {
-    const isDuplicate = this.data.flags.ddb.duplicate;
-    const createHandouts = ((this.adventure.config.createHandouts && !this.row.player) ||
-      (this.row.player && this.config.createPlayerHandouts));
-    const createSections = this.adventure.config.v10Mode
-      ? !this.row.parentId
-      : this.config.createSections;
-      // no parent id - top level journal, never in v10, hidden option v9
-      // force - create this/override for sub class
-      // respect the handout config settings
-    const addJournal = force || createHandouts || createSections;
+  get forceAdd() {
+    return false;
+  }
 
-    if (!isDuplicate && addJournal) {
+  get createHandouts() {
+    return ((this.adventure.config.createHandouts && !this.row.player) ||
+      (this.row.player && this.config.createPlayerHandouts));
+  }
+
+  get createSections() {
+    return this.adventure.config.v10Mode
+      ? !this.row.parentId // never in v10
+      : this.config.createSections; // hidden setting in v9
+  }
+
+  addJournal() {
+    const validType = this.forceAdd || this.createHandouts || this.createSections;
+
+    // we never add duplicates
+    // return !this.duplicate && validType;
+    if (!this.duplicate && validType) {
       logger.info(`Appending ${this.row.title} ${this.type} Journal"`);
-      this.adventure.journals.push(this.data);
+      this.adventure.journals.push(this);
     }
   }
 
@@ -146,6 +159,10 @@ class Journal {
     this.data.flags.ddb.originDocId = row.originDocId;
     this.data.flags.ddb.originHint = row.originHint;
     this.data.flags.ddb.originalLink = row.originalLink;
+    this.data.flags.ddb.linkName = row.title;
+
+    this.duplicate = this.isDuplicate();
+    this.data.flags.ddb.duplicate = this.duplicate;
 
     const contentChunkId = (row.contentChunkId && row.contentChunkId.trim() != "") ? 
       row.contentChunkId :
