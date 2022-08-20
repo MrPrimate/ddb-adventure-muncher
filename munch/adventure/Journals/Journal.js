@@ -1,5 +1,6 @@
 const logger = require("../../logger.js");
 const { Page } = require("./Page.js");
+const { DiceReplacer, LinkReplacer } = require("../Replacer.js");
 const _ = require("lodash");
 
 class Journal {
@@ -115,23 +116,12 @@ class Journal {
       : this.config.createSections; // hidden setting in v9
   }
 
-  addJournal() {
-    const validType = this.forceAdd || this.createHandouts || this.createSections;
-
-    // we never add duplicates
-    // return !this.duplicate && validType;
-    if (!this.duplicate && validType) {
-      logger.info(`Appending ${this.row.title} ${this.type} Journal"`);
-      this.adventure.journals.push(this);
-    }
-  }
-
   getFolder() {
     const folderType = this.section ? "section" : this.TYPE;
     this.data.folder = this.adventure.folderFactory.getFolderId(this.row, "JournalEntry", folderType);
   }
 
-  constructor(adventure, row, flags = {}) {
+  constructor(adventure, row) {
     this.overrides = overrides;
     this.adventure = adventure;
     // can we reduce memory load by removing 
@@ -173,9 +163,6 @@ class Journal {
     this.data.flags.ddb.img = this.image;
     this.data.flags.ddb.note = this.note;
 
-    // add override flags
-    this.data.flags.ddb = _.merge(this.data.flags.ddb, flags);
-
     if (row.cobaltId) this.data.flags.ddb.cobaltId = row.cobaltId;
     if (row.parentId) this.data.flags.ddb.parentId = row.parentId;
     if (!this.row.ddbId) this.row.ddbId = row.id;
@@ -202,6 +189,36 @@ class Journal {
 
   toObject() {
     return JSON.parse(this.toJson());
+  }
+
+  fixUp() {
+    logger.info(`Fixing up text journal: ${this.data.name}`);
+    this.adventure.replaceLinks.forEach((link) => {
+      if (this.adventure.config.v10Mode) {
+        this.data.pages.forEach((page) =>{
+          if (page.type === "text") {
+            page.text.content = page.text.content.replace(link.html, link.ref);
+          }
+        });
+      } else {
+        this.data.content = this.data.content.replace(link.html, link.ref);
+      }
+    });
+ 
+    if (this.adventure.config.v10Mode) {
+      this.data.pages.forEach((page) =>{
+        if (page.type === "text") {
+          page.text.content = new LinkReplacer(this.adventure, page.text.content, `${this.data.name}`).process().result;
+          page.text.content = new DiceReplacer(this.adventure, page.text.content, `${this.data.name}`).process().result;
+          page.text.content = page.text.content.replace(/\s+/g, " ");
+        }
+      });
+    } else {
+      this.data.content = new LinkReplacer(this.adventure, this.data.content, `${this.data.name}`).process().result;
+      this.data.content = new DiceReplacer(this.adventure, this.data.content, `${this.data.name}`).process().result;
+      this.data.content = this.data.content.replace(/\s+/g, " ");
+    }
+
   }
 
 

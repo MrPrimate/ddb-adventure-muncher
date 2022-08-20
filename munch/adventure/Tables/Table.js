@@ -4,6 +4,7 @@ const _ = require("lodash");
 
 const { IdFactory } = require("../IdFactory.js");
 const { replaceRollLinks } = require("../../replacer.js");
+const { DiceReplacer } = require("../Replacer.js");
 
 class Table {
 
@@ -139,7 +140,7 @@ class Table {
           result.text = value;
         }
       });
-      result.text = replacer.replaceRollLinks(result.text, this.adventure.config);
+      result.text = new DiceReplacer(this.adventure, result.text, `${this.data.name}-${result._id}`).process().result;
       const diceRollerRegexp = new RegExp(/\[\[\/r\s*([0-9d+-\s]*)(:?#.*)?\]\]/);
       result.text = result.text.replace(diceRollerRegexp, "[[$1]] ($&)");
       this.data.results.push(result);
@@ -156,6 +157,12 @@ class Table {
 
   toObject() {
     return JSON.parse(this.toJson());
+  }
+
+  fixUp() {
+    this.data.results.forEach((result) => {
+      result.text = new LinkReplacer(this.adventure, result.text, `${this.data.name}-${result._id}`).process().textContent;
+    });
   }
 
 }
