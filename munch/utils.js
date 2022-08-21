@@ -3,7 +3,6 @@ const path = require("path");
 const JSZip = require("jszip");
 const extract = require("extract-zip");
 const fse = require("fs-extra");
-const sizeOf = require("image-size");
 const fetch = require("node-fetch");
 const logger = require("./logger.js");
 
@@ -277,22 +276,6 @@ function titleString (text) {
   return prefix + words.join(" ");
 }
 
-function imageSize(image) {
-  let size = {
-    height: 2000,
-    width: 2000,
-  };
-  if (fs.existsSync(image)) {
-    try {
-      size = sizeOf(image);
-    } catch (e) {
-      logger.error(`Error getting size of ${image}`);
-      logger.error(e.stack);
-    }
-  }
-  return size;
-}
-
 exports.randomString = randomString;
 exports.getZipOfFolder = getZipOfFolder;
 exports.writeZipFile = writeZipFile;
@@ -306,5 +289,4 @@ exports.loadConfig = loadConfig;
 exports.saveConfig = saveJSONFile;
 exports.directoryReset = directoryReset;
 exports.titleString = titleString;
-exports.imageSize = imageSize;
 exports.downloadFile = downloadFile;

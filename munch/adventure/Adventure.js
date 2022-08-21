@@ -78,7 +78,11 @@ class Adventure {
     this.tables = [];
     this.cards = [];
     this.actors = [];
+    // assets is a list of all images matches
     this.assets = [];
+
+    // track all scene images found
+    this.sceneImages = [];
 
     this.enhancements = {
       noteHints: [],
@@ -87,6 +91,17 @@ class Adventure {
       hiRes: [],
     };
 
+    this.required = {
+      monsters: [],
+      items: [],
+      spells: [],
+      vehicles: [],
+      skills: [],
+      senses: [],
+      conditions: [],
+      actions: [],
+      weaponproperties: [],
+    };
 
     this.imageFinder = {
       sceneResults: [],
