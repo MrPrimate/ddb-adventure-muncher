@@ -5,6 +5,8 @@ const _ = require("lodash");
 const { IdFactory } = require("../IdFactory.js");
 const { replaceRollLinks } = require("../../replacer.js");
 const { DiceReplacer } = require("../Replacer.js");
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 
 class Table {
 
@@ -90,17 +92,20 @@ class Table {
       : this.data.flags.ddb.parentId;
     const folderName = (tableHint && tableHint.folderName) ? tableHint.folderName : null;
 
+    // mock up a row
     const tableRow = {
-      title: this.data.name,
-      id: 10000 + this.data.flags.ddb.ddbId + count,
-      cobaltId: cobaltId,
-      documentName: this.data.name,
-      contentChunkId: tableData.contentChunkId,
-      nameOverride: folderName,
+      data: {
+        title: this.data.name,
+        id: 10000 + this.data.flags.ddb.ddbId + count,
+        cobaltId: cobaltId,
+        documentName: this.data.name,
+        contentChunkId: tableData.contentChunkId,
+        nameOverride: folderName,
+      }
     };
 
-    this.data.folder = this.adventure.idFactory.getFolderId(tableRow, "RollTable");
-    this.data._id = getId(this.data, "RollTable");
+    this.data.folder = this.adventure.folderFactory.getFolderId(tableRow, "RollTable");
+    this.data._id = this.adventure.idFactory.getId(row, "RollTable");
 
     const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*d*\d*)?)/, "g");
     const formulaMatch = diceKey.match(diceRegex);

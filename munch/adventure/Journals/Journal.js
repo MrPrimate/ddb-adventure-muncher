@@ -10,7 +10,7 @@ class Journal {
   PAGE_TYPE = "text";
 
   get section() {
-    return this.row.parentId && Number.isInteger(this.row.parentId);
+    return this.row.data.parentId && Number.isInteger(this.row.data.parentId);
   }
 
   get note() {
@@ -22,8 +22,8 @@ class Journal {
   }
 
   appendJournalToChapter() {
-    if (this.row.parentId) {
-      logger.info(`Appending to chapter... ${this.row.title} ${this.row.parentId} search...`);
+    if (this.row.data.parentId) {
+      logger.info(`Appending to chapter... ${this.row.data.title} ${this.row.data.parentId} search...`);
       this.adventure.journals.forEach((journal) => {
         if (journal.data.flags.ddb.cobaltId === this.row.parentId) {
           if (this.adventure.config.v10Mode && this.data.pages.length > 0) {
@@ -42,7 +42,7 @@ class Journal {
 
   generatePage(content) {
     const page = new Page({
-      name: this.row.title,
+      name: this.row.data.title,
       content,
       flags: this.data.flags,
       id: this.data._id,
@@ -51,49 +51,46 @@ class Journal {
     return page.toObject();
   }
 
-  generateTable(content) {
-    this.adventure.tableFactory.generateTables(this.row, this.data, content);
-  }
-
   // assume that all text journals are unique
   isDuplicate() {
     return false;
   }
 
-  _generateJournalEntryV10(html) {
+  setPermissions() {
+    if (this.adventure.config.observeAll) {
+      if (this.adventure.config.v10Mode) {
+        this.data.ownership.default = 2;
+      } else {
+        this.data.permission.default = 2;
+      }
+    }
+  }
 
-    if (this.adventure.config.observeAll) this.data.ownership.default = 2;
-
-    const dom = new JSDOM(html);
-    const firstElement = dom.window.document.body.firstElementChild;
-    const allFirstElements = dom.window.document.body.getElementsByTagName(firstElement.tagName);
+  _generateJournalEntryV10() {
+    const firstElement = this.row.doc.body.firstElementChild;
+    const allFirstElements = this.row.doc.body.getElementsByTagName(firstElement.tagName);
     if (firstElement === "H1" || allFirstElements.length === 1) {
       firstElement.remove();
     }
-    let content = dom.window.document.body.innerHTML.replace(/\s+/g, " ");
-    this.generateTable(content);
+    let content = this.row.doc.body.innerHTML.replace(/\s+/g, " ");
 
     const page = this.generatePage(content);
 
-    if (!this.row.parentId) this.data.flags.ddb.linkId = this.data._id;
+    if (!this.row.data.parentId) this.data.flags.ddb.linkId = this.data._id;
     this.data.pages.push(page);
 
   }
 
-  _generateJournalEntryOld(html) {
-    if (this.adventure.config.observeAll) this.data.permission.default = 2;
-
-    const dom = new JSDOM(html);
-    const firstElement = dom.window.document.body.firstElementChild;
+  _generateJournalEntryOld() {
+    const firstElement = this.row.doc.body.firstElementChild;
     try {
-      const allFirstElements = dom.window.document.body.getElementsByTagName(firstElement.tagName);
+      const allFirstElements = this.row.doc.body.getElementsByTagName(firstElement.tagName);
       if (firstElement === "H1" || allFirstElements.length === 1) {
         firstElement.remove();
       }
-      this.data.content = dom.window.document.body.innerHTML.replace(/\s+/g, " ");
-      this.generateTable(this.data.content);
+      this.data.content = this.row.doc.innerHTML.replace(/\s+/g, " ");
     } catch (err) {
-      logger.error("Journal Generation failed, bad note row?", this.row);
+      logger.error("Journal Generation failed, bad note row?", this.row.data);
       throw err;
     }
 
@@ -106,13 +103,13 @@ class Journal {
   }
 
   get createHandouts() {
-    return ((this.adventure.config.createHandouts && !this.row.player) ||
+    return ((this.adventure.config.createHandouts && !this.row.data.player) ||
       (this.row.player && this.config.createPlayerHandouts));
   }
 
   get createSections() {
     return this.adventure.config.v10Mode
-      ? !this.row.parentId // never in v10
+      ? !this.row.data.parentId // never in v10
       : this.config.createSections; // hidden setting in v9
   }
 
@@ -124,38 +121,26 @@ class Journal {
   constructor(adventure, row) {
     this.overrides = overrides;
     this.adventure = adventure;
-    // can we reduce memory load by removing 
-    // this.row = {
-    //   id: row.id,
-    //   parentId: row.parentId,
-    //   cobaltId: row.cobaltId,
-    //   ddbId: row.ddbId,
-    //   title: row.title,
-    //   contentChunkId: row.contentChunkId,
-    //   player: row.player,
-    //   name: row.name,
-    //   slug: row.slug,
-    // };
     this.row = row;
     this.data = this.adventure.config.v10Mode
       ? JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "journal-v10.json"))))
       : JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"journal.json"))));
 
-    this.data.name = row.title;
-    this.data.flags.ddb.ddbId = row.id;
+    this.data.name = row.data.title;
+    this.data.flags.ddb.ddbId = row.data.id;
     this.data.flags.ddb.bookCode = this.adventure.bookCode;
-    this.data.flags.ddb.slug = row.slug;
+    this.data.flags.ddb.slug = row.data.slug;
     this.data.flags.ddb.userData = this.adventure.config.run.userData;
-    this.data.flags.ddb.originDocId = row.originDocId;
-    this.data.flags.ddb.originHint = row.originHint;
-    this.data.flags.ddb.originalLink = row.originalLink;
-    this.data.flags.ddb.linkName = row.title;
+    this.data.flags.ddb.originDocId = row.data.originDocId;
+    this.data.flags.ddb.originHint = row.data.originHint;
+    this.data.flags.ddb.originalLink = row.data.originalLink;
+    this.data.flags.ddb.linkName = row.data.title;
 
     this.duplicate = this.isDuplicate();
     this.data.flags.ddb.duplicate = this.duplicate;
 
-    const contentChunkId = (row.contentChunkId && row.contentChunkId.trim() != "") ? 
-      row.contentChunkId :
+    const contentChunkId = (row.data.contentChunkId && row.data.contentChunkId.trim() != "") ? 
+      row.data.contentChunkId :
       null;
     this.data.flags.ddb.contentChunkId = contentChunkId;
 
@@ -163,24 +148,25 @@ class Journal {
     this.data.flags.ddb.img = this.image;
     this.data.flags.ddb.note = this.note;
 
-    if (row.cobaltId) this.data.flags.ddb.cobaltId = row.cobaltId;
-    if (row.parentId) this.data.flags.ddb.parentId = row.parentId;
-    if (!this.row.ddbId) this.row.ddbId = row.id;
+    if (row.data.cobaltId) this.data.flags.ddb.cobaltId = row.data.cobaltId;
+    if (row.data.parentId) this.data.flags.ddb.parentId = row.data.parentId;
+    if (!this.row.ddbId) this.row.ddbId = row.data.id;
 
-    this.data.sort = this.JOURNAL_SORT + parseInt(row.id);
+    this.data.sort = this.JOURNAL_SORT + parseInt(row.data.id);
     this.getFolder();
     this.data._id = this.adventure.idFactory.getId(this.data, "JournalEntry");
 
+    this.setPermissions();
+
     if (this.adventure.config.v10Mode) {
-      this._generateJournalEntryV10(row.html);
+      this._generateJournalEntryV10();
     } else {
-      this._generateJournalEntryOld(row.html);
+      this._generateJournalEntryOld();
     }
 
     logger.info(`Generated journal entry ${this.data.name}`);
 
     this.appendJournalToChapter();
-    this.addJournal();
   }
 
   toJson() {
@@ -191,6 +177,8 @@ class Journal {
     return JSON.parse(this.toJson());
   }
 
+  // this runs the replacer for each journal/journal page
+  // it should be called after all journals, scenes and tables have been generated
   fixUp() {
     logger.info(`Fixing up text journal: ${this.data.name}`);
     this.adventure.replaceLinks.forEach((link) => {

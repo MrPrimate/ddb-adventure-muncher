@@ -1,8 +1,6 @@
 const logger = require("../logger.js");
 const { Table } = require("./Tables/Table.js");
-const jsdom = require("jsdom");
 const { ParsedTable } = require("./Tables/ParsedTable.js");
-const { JSDOM } = jsdom;
 
 /**
  * The TableFactory is going to take some html and render out tables from it.
@@ -20,26 +18,23 @@ class TableFactory {
   }
 
   // generates a html doc and loops through it to find tables
-  generateTables(row, html) {
-    this.document = new JSDOM(html).window.document;
-    this.tableNodes = document.querySelectorAll("table");
+  generateTables(row) {
+    this.row = row;
+    this.tableNodes = this.row.doc.querySelectorAll("table");
 
     this.tableNodes.forEach((tableNode) => {
       const parsedTable = new ParsedTable(this.adventure, tableNode);
 
-      let count = 1;
-      parsedTable.diceKeys.forEach((diceKey) => {
+      parsedTable.diceKeys.forEach((diceKey, index) => {
         const table = new Table({
           adventure: this.adventure,
           diceKey,
-          row,
+          row: this.row,
           parsedTable,
-          count,
+          count: index + 1,
         });
 
         this.adventure.tables.push(table);
-        count++;
-
       });
 
     });

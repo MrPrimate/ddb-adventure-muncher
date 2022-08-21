@@ -32,5 +32,5 @@ class NoteJournal extends Journal {
 
 }
 
-exports.Note = NoteJournal;
+exports.NoteJournal = NoteJournal;
 

@@ -128,13 +128,22 @@ class Adventure {
 
   processAdventure() {
     // ToDo
-    // process Journals
-    // process Scenes
-    // process Tables
+     // rows.forEach()
+      // process Journals
+      // process Scenes
+      // process Tables
+
+      // this.tableFactory.generateNoteRows(this.row);
+    
+    // run once
+    // this.tableFactory.generateJournals();
     // add notes
     // missing scenes
     // asset copy
-    // 
+    this.processAssets();
+
+    // save
+    this.saveZip();
   }
 
 

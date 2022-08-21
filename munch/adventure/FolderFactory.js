@@ -32,7 +32,7 @@ class FolderFactory {
   getFolderId(row, type, specialType = null) {
     let folder;
 
-    const parentId = (row.cobaltId) ? row.cobaltId : row.parentId;
+    const parentId = (row.data.cobaltId) ? row.data.cobaltId : row.data.parentId;
 
     const folderData = {
       adventure: this.adventure,
@@ -44,11 +44,11 @@ class FolderFactory {
     switch (specialType) {
       case "note": {
         folder = this.adventure.folders.find((f) =>
-          f.flags.ddb.ddbId == row.ddbId &&
+          f.flags.ddb.ddbId == row.data.ddbId &&
           f.flags.ddb.parentId == parentId &&
           f.type == type && !f.flags.ddb.img &&
           f.flags.ddb.note == note && 
-          f.name.includes(row.sceneName)
+          f.name.includes(row.data.sceneName)
         );
         break;
       }
@@ -61,15 +61,15 @@ class FolderFactory {
         break;
       }
       default: {
-        if (row.cobaltId) {
+        if (row.data.cobaltId) {
           folder = this.adventure.folders.find((f) =>
-            f.flags.ddb.cobaltId == row.cobaltId &&
+            f.flags.ddb.cobaltId == row.data.cobaltId &&
             f.type == type && !f.flags.ddb.img &&
             !f.flags.ddb.note
           );
-        } else if (row.parentId) {
+        } else if (row.data.parentId) {
           folder = this.adventure.folders.find((f) =>
-            f.flags.ddb.parentId == row.parentId &&
+            f.flags.ddb.parentId == row.data.parentId &&
             f.type == type &&
             !f.flags.ddb.img &&
             !f.flags.ddb.note

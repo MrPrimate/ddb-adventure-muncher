@@ -56,9 +56,6 @@ class ImageJournal extends Journal {
   }
 
   _generateJournalEntryV10() {
-
-    if (this.adventure.config.observeAll) this.data.ownership.default = 2;
-
     if (this.duplicate) {
       const journalMatch =  this.adventure.journals.map((j) => j.data.pages).flat().find((j) => j.src === this.imageContent);
       this.data.flags.ddb.linkId = journalMatch ? journalMatch._id : null;
@@ -74,8 +71,6 @@ class ImageJournal extends Journal {
   }
 
   _generateJournalEntryOld() {
-    if (this.adventure.config.observeAll) this.data.permission.default = 2;
-
     this.data.img = this.imageContent;
 
     if (this.duplicate) {
