@@ -13,6 +13,7 @@ const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
 const os = require("os");
+const { SceneFactory } = require("./SceneFactory.js");
 
 
 class Adventure {
@@ -127,6 +128,7 @@ class Adventure {
 
     this.tableFactory = new TableFactory(this);
     this.journalFactory = new JournalFactory(this);
+    this.sceneFactory = new SceneFactory(this);
 
     // initialize master folders
     this.masterFolder = this.folderFactory.masterFolders;
@@ -146,8 +148,13 @@ class Adventure {
 
   }
 
-  processAdventure() {
+  async processAdventure() {
     // ToDo
+    // get metadata
+    // download adventure
+    // get enhanced data
+    // asset copy
+    await this.downloadAssets();
     // rows.forEach()
     // process Journals
     // process Scenes
@@ -159,8 +166,9 @@ class Adventure {
     // this.tableFactory.generateJournals();
     // add notes
     // missing scenes
-    // asset copy
-    this.processAssets();
+    this.sceneFactory.generateMissingScenes();
+    // second loop of asset processing to ensure missed assets are corrected
+    this.copyAssets();
 
     // save
     this.saveZip();
@@ -178,10 +186,14 @@ class Adventure {
     return JSON.parse(this.toJson());
   }
 
-  async processAssets() {
+  async downloadAssets() {
     const assets = new Assets(this);
     await assets.downloadEnhancements();
     await assets.downloadDDBMobile();
+  }
+
+  copyAssets() {
+    const assets = new Assets(this);
     assets.finalAssetCopy();
   }
 

@@ -1,5 +1,11 @@
 class Helpers {
 
+  static sleep(ms) {
+    return new Promise((resolve) => {
+      setTimeout(resolve, ms);
+    });
+  }
+
   static randomString(length, chars) {
     let mask = "";
     if (chars.indexOf("a") > -1) mask += "abcdefghijklmnopqrstuvwxyz";

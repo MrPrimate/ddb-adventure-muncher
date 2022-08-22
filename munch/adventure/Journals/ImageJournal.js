@@ -95,4 +95,4 @@ class ImageJournal extends Journal {
   }
 }
 
-exports.Image = ImageJournal;
+exports.ImageJournal = ImageJournal;
