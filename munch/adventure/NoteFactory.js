@@ -1,6 +1,8 @@
-const { NoteJournal } = require("./Journals/NoteJournal");
+const { logger } = require("../logger.js");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
+const { Helpers } = require("./Helpers.js");
+const { NoteJournal } = require("./Journals/NoteJournal");
 
 class NoteFactory {
 
@@ -48,7 +50,6 @@ class NoteFactory {
         //logger.warn("html: ", html);
       }
 
-      count++;
       keyChunk = keyChunk.nextElementSibling;
 
       const chunkId = keyChunk ? keyChunk.getAttribute("data-content-chunk-id") : undefined;
@@ -62,16 +63,16 @@ class NoteFactory {
         let noteRow = {
           doc: JSDOM.fragmet(html),
           data: JSON.parse(JSON.stringify(this.row.data)),
-        }
+        };
         delete noteRow.data.html;
 
         const numMatch = noteTitle.match(/^(\d+)(.*)/);
         const letterNumMatch = noteTitle.match(/^([a-z,A-Z])(\d+)(.*)/);
         if (numMatch) {
-          const prefix = utils.zeroPad(numMatch[1],2);
+          const prefix = Helpers.zeroPad(numMatch[1],2);
           noteRow.title = `${prefix}${numMatch[2]}`;
         } else if (letterNumMatch) {
-          const prefix = utils.zeroPad(letterNumMatch[2],2);
+          const prefix = Helpers.zeroPad(letterNumMatch[2],2);
           noteRow.data.title = `${letterNumMatch[1]}${prefix}${letterNumMatch[3]}`;
         } else {
           noteRow.data.title = noteTitle;
@@ -91,7 +92,7 @@ class NoteFactory {
       if (stopChunk) {
         break;
       } else if ((tagMatch && !pTag) || (noteTitle === "" && pTag)) {
-        noteTitle = getNoteTitle(keyChunk.innerHTML);
+        noteTitle = NoteFactory.getNoteTitle(keyChunk.innerHTML);
         keyChunkId = chunkId;
       } else {
         // we add the chunk contents to the html block
@@ -131,8 +132,8 @@ class NoteFactory {
   generateNoteRows(row) {
     this.adventure.enhancements.noteHints
       .filter((hint) => hint.slug == row.data.slug)
-      .forEach((hint) => {
-
+      .forEach((hint, index) => {
+        this.noteRows.push(this.#parseNoteHint(hint, index + 1));
       });
   }
 
@@ -140,7 +141,7 @@ class NoteFactory {
     this.noteRows.forEach((row) => {
       const noteJournal = new NoteJournal(this.adventure, row);
       this.adventure.journals.push(noteJournal);
-    })
+    });
   }
 
 }

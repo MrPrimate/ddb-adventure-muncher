@@ -1,7 +1,7 @@
 const logger = require("../../logger.js");
 const { Page } = require("./Page.js");
 const { DiceReplacer, LinkReplacer } = require("../Replacer.js");
-const _ = require("lodash");
+const path = require("path");
 
 class Journal {
 
@@ -33,7 +33,7 @@ class Journal {
             }
             journal.data.pages.push(page);
           } else {
-            journal.data.content += row.html;
+            journal.data.content += this.data.content;
           }
         }
       });
@@ -118,10 +118,14 @@ class Journal {
     this.data.folder = this.adventure.folderFactory.getFolderId(this.row, "JournalEntry", folderType);
   }
 
-  constructor(adventure, row) {
-    this.overrides = overrides;
+  _additionalConstuction() {
+    // we don't need this for the core Journal
+  }
+
+  constructor(adventure, row, options) {
     this.adventure = adventure;
     this.row = row;
+    this._additionalConstuction(options);
     this.data = this.adventure.config.v10Mode
       ? JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "journal-v10.json"))))
       : JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"journal.json"))));

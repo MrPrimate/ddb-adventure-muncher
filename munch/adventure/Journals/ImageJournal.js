@@ -24,8 +24,10 @@ class ImageJournal extends Journal {
   }
 
   replaceImgLinksForJournal() {
+    // eslint-disable-next-line no-useless-escape
     const reImage = new RegExp(`^\.\/${this.adventure.bookCode}\/`, "g");
     const text1 = this.imagePath.replace(reImage, "assets/");
+    // eslint-disable-next-line no-useless-escape
     const reImage2 = new RegExp(`^${this.adventure.bookCode}\/`, "g");
     const text2 = text1.replace(reImage2, "assets/");
   
@@ -74,7 +76,7 @@ class ImageJournal extends Journal {
     this.data.img = this.imageContent;
 
     if (this.duplicate) {
-      const journalMatch = generatedJournals.find((j) => j.img === this.data.img);
+      const journalMatch = this.adventure.journals.find((j) => j.img === this.data.img);
       this.data.flags.ddb.linkId = journalMatch ? journalMatch._id : null;
       this.data.flags.ddb.linkName = journalMatch ? journalMatch.name : null;
     }
@@ -82,11 +84,14 @@ class ImageJournal extends Journal {
     this.data.flags.ddb.linkId = this.data._id;
   }
 
-  constructor(adventure, row, imagePath) {
+  _additionalConstuction({ imagePath }) {
     this.imagePath = imagePath;
     this.imageContent = this.replaceImgLinksForJournal();
     this.data.flags.ddb.imageSrc = this.imageContent;
-    super(adventure, row);
+  }
+
+  constructor(adventure, row, imagePath) {
+    super(adventure, row, { imagePath });
   }
 }
 

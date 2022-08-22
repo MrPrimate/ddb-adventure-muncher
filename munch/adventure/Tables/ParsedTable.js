@@ -5,10 +5,7 @@
  */
 
 const logger = require("../../logger.js");
-const _ = require("lodash");
 const parseTable = require("./TableParser.js");
-
-
 
 class ParsedTable {
 
@@ -56,18 +53,18 @@ class ParsedTable {
     }
   }
 
-  #logInfo() {
+  #logInfo(tableNode) {
     logger.debug("***********************************************");
     logger.debug("Table detection!");
-    logger.info(`Table: "${nameGuess}"`);
-    logger.debug(`ContentChunkId: ${contentChunkId}`);
-    logger.info(`Dice Keys: ${diceKeys.join(", ")}`);
-    logger.info(`Keys: ${keys.join(", ")}`);
+    logger.info(`Table: "${this.nameGuess}"`);
+    logger.debug(`ContentChunkId: ${this.contentChunkId}`);
+    logger.info(`Dice Keys: ${this.diceKeys.join(", ")}`);
+    logger.info(`Keys: ${this.keys.join(", ")}`);
     logger.debug("***********************************************");
 
     if (this.adventure.config.tableDebug) {
       if (this.adventure.config.debug) logger.debug(tableNode.outerHTML);
-      if (this.adventure.config.debug && parsedTable) logger.debug(parsedTable);
+      if (this.adventure.config.debug && this.parsedTable) logger.debug(this.parsedTable);
       // if (parsedTable) logger.info(parsedTable);
       logger.info("***********************************************");
     }
@@ -76,6 +73,8 @@ class ParsedTable {
   constructor(adventure, tableNode) {
     this.adventure = adventure;
 
+    // this takes the html of a table and breaks it up so we can use it
+    // into arrays
     this.parsedTable = parseTable.parseTable(tableNode);
     this.keys = parseTable.getHeadings(tableNode);
     this.diceKeys = this.findDiceColumns();
@@ -86,7 +85,7 @@ class ParsedTable {
       this.nameGuess = this.keys[1];
     }
 
-    this.#logInfo();
+    this.#logInfo(tableNode);
     this.tableMatched();
 
   }

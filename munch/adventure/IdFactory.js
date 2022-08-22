@@ -1,10 +1,9 @@
-const logger = require("../logger.js");
-const utils = require("../utils.js");
+const { Helpers } = require("./Helpers.js");
 
 class IdFactory {
 
   static random() {
-    utils.randomString(16,"#aA")
+    Helpers.randomString(16,"#aA");
   }
 
   constructor(adventure) {

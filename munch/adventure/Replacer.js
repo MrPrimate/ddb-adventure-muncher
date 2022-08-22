@@ -38,7 +38,7 @@ class LinkReplacer {
     this.foundryCompendiumReplace();
     logger.debug(`Fixing up classes for ${this.name}`);
     this.addClasses();
-    logger.debug(`Updating Journal with Table Links`);
+    logger.debug("Updating Journal with Table Links");
     this.replaceTables();
   }
 

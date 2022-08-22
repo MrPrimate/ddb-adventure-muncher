@@ -1,12 +1,13 @@
 
 const logger = require("../../logger.js");
-const _ = require("lodash");
-
-const { IdFactory } = require("../IdFactory.js");
-const { replaceRollLinks } = require("../../replacer.js");
-const { DiceReplacer } = require("../Replacer.js");
+const path = require("path");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
+
+const { IdFactory } = require("../IdFactory.js");
+const { DiceReplacer, LinkReplacer } = require("../Replacer.js");
+const { Journal } = require("../Journals/Journal.js");
+
 
 class Table {
 
@@ -33,18 +34,18 @@ class Table {
 
     if (valueMatch) {
       if (valueMatch[1] !== undefined && valueMatch[2] !== undefined) {
-        const low = diceInt(valueMatch[1]);
-        const high = diceInt(valueMatch[2]);
+        const low = Table.diceInt(valueMatch[1]);
+        const high = Table.diceInt(valueMatch[2]);
         return [low, high];
       }
 
       if (valueMatch[3]) {
         if (valueMatch[4] !== undefined && valueMatch[4] === "+") {
-          const low = diceInt(valueMatch[3]);
+          const low = Table.diceInt(valueMatch[3]);
           return [low, low + 1];
         }
         if (valueMatch[4] !== undefined && valueMatch[4] === "") {
-          const low = diceInt(valueMatch[3]);
+          const low = Table.diceInt(valueMatch[3]);
           return [low, low];
         }
       }
@@ -73,7 +74,7 @@ class Table {
     this.data.flags.ddb.slug = row.slug;
     this.data.flags.ddb.contentChunkId = tableData.contentChunkId;
     this.data.flags.ddb.userData = this.adventure.config.run.userData;
-    this.data.sort = JOURNAL_SORT + parseInt(row.id);
+    this.data.sort = Journal.JOURNAL_SORT + parseInt(row.id);
     if (row.cobaltId) this.data.flags.ddb.cobaltId = row.cobaltId;
     if (row.parentId) this.data.flags.ddb.parentId = row.parentId;
 
@@ -119,7 +120,7 @@ class Table {
 
     logger.info("*******************************************");
     logger.info(`Generating table ${this.data.name}`);
-    if (config.debug) logger.debug(row);
+    if (this.config.debug) logger.debug(row);
 
     tableData.parsedTable.forEach((entry) => {
       const result = {

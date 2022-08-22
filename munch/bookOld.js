@@ -1,7 +1,7 @@
 "use strict";
 
 const utils = require("./utils.js");
-const { getAllSQL } = require("./sql.js");
+const { getAllSQL } = require("./data/sql.js");
 const fs = require("fs");
 const fse = require("fs-extra");
 const path = require("path");

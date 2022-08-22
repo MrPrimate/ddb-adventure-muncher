@@ -1,10 +1,9 @@
-const logger = require("../logger.js");
 const Folder = require("./Folders/Folder.js");
-
+const _ = require("lodash");
 
 class FolderFactory {
 
-   get masterFolders() {
+  get masterFolders() {
     const mainRow = { id: -1, cobaltId: -1, title: this.adventure.config.run.book.description };
 
     const folderData = {
@@ -47,7 +46,7 @@ class FolderFactory {
           f.flags.ddb.ddbId == row.data.ddbId &&
           f.flags.ddb.parentId == parentId &&
           f.type == type && !f.flags.ddb.img &&
-          f.flags.ddb.note == note && 
+          f.flags.ddb.note === true && 
           f.name.includes(row.data.sceneName)
         );
         break;
@@ -56,7 +55,7 @@ class FolderFactory {
         folder = this.adventure.folders.find((f) =>
           f.flags.ddb.parentId == parentId &&
           f.type == type &&
-          f.flags.ddb.img == img
+          f.flags.ddb.img === true
         );
         break;
       }

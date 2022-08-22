@@ -1,4 +1,3 @@
-const logger = require("../logger.js");
 const { Table } = require("./Tables/Table.js");
 const { ParsedTable } = require("./Tables/ParsedTable.js");
 
@@ -44,7 +43,7 @@ class TableFactory {
     this.adventure.tables.forEach((table) => {
       table.fixUp();
       if (global.gc) global.gc();
-    })
+    });
   }
 }
 

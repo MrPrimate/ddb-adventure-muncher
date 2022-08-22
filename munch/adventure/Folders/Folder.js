@@ -1,6 +1,6 @@
 
 const logger = require("../../logger.js");
-const _ = require("lodash");
+const path = require("path");
 
 class Folder {
 
@@ -86,7 +86,7 @@ class Folder {
     //
     this.addFolder();
     
-    if (type === "JournalEntry" && !baseFolder && !img && !note) {
+    if (type === "JournalEntry" && !specialType.includes["base", "note", "image", "section"] ) {
       // lets generate a Scene && RollTable Folders at the same time
       // we do this so the scene folder order matches the same as the journals as some
       // adventures e.g. CoS have different kind of scene detection

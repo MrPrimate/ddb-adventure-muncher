@@ -1,12 +1,14 @@
 const logger = require("../logger.js");
-const utils = require("../utils.js");
 
 const { FolderFactory } = require("./FolderFactory.js");
 const { IdFactory } = require("./IdFactory.js");
-const { TableFactory } = require("./TableFactory.js")
+const { TableFactory } = require("./TableFactory.js");
+const { JournalFactory } = require("./JournalFactory.js");
 const { NoteFactory } = require("./NoteFactory.js");
+const { FileHelper } = require("./FileHelper.js");
+const { Assets } = require("./Assets.js");
 
-const _ = require("lodash");
+// const _ = require("lodash");
 const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
@@ -20,7 +22,7 @@ class Adventure {
     const notesDataPath = path.resolve(__dirname, notesDataFile);
   
     if (fs.existsSync(notesDataPath)){
-      this.enhancements.noteHints = notesData = utils.loadJSONFile(notesDataPath);
+      this.enhancements.noteHints = FileHelper.loadJSONFile(notesDataPath);
     }
   }
 
@@ -29,12 +31,12 @@ class Adventure {
     const tableDataPath = path.resolve(__dirname, tableDataFile);
 
     if (fs.existsSync(tableDataPath)){
-      this.enhancements.tableHints = utils.loadJSONFile(tableDataPath);
+      this.enhancements.tableHints = FileHelper.loadJSONFile(tableDataPath);
     }
   }
 
   loadSceneAdjustments() {
-    const jsonFiles = path.join(conf.run.sceneInfoDir, conf.run.bookCode, "*.json");
+    const jsonFiles = path.join(this.config.run.sceneInfoDir, this.config.run.bookCode, "*.json");
 
     const globbedPath = os.platform() === "win32"
       ? jsonFiles.replace(/\\/g, "/")
@@ -48,7 +50,7 @@ class Adventure {
 
       const sceneDataPath = path.resolve(__dirname, sceneDataFile);
       if (fs.existsSync(sceneDataPath)){
-        this.enhancements.sceneAdjustments = this.enhancements.sceneAdjustments.concat(utils.loadJSONFile(sceneDataPath));
+        this.enhancements.sceneAdjustments = this.enhancements.sceneAdjustments.concat(FileHelper.loadJSONFile(sceneDataPath));
       }
     });
 
@@ -83,11 +85,14 @@ class Adventure {
 
     // track all scene images found
     this.sceneImages = [];
+    // enhancements to dl
+    this.downloadList = [];
 
     this.enhancements = {
       noteHints: [],
       tableHints: [],
       sceneAdjustments: [],
+      sceneEnhancements: [],
       hiRes: [],
     };
 
@@ -106,7 +111,7 @@ class Adventure {
     this.imageFinder = {
       sceneResults: [],
       journalResults: [],
-    }
+    };
     this.tableMatched = [];
 
     this.replaceLinks = [];
@@ -123,15 +128,15 @@ class Adventure {
     this.tableFactory = new TableFactory(this);
     this.journalFactory = new JournalFactory(this);
 
-
     // initialize master folders
     this.masterFolder = this.folderFactory.masterFolders;
 
     logger.debug("Current config adjustments", {
-      sceneAdjustments: sceneAdjustments.length,
-      noteHints: noteHints.length,
-      tableHints: tableHints.length,
-      enhancedScenes: enhancedScenes.length,
+      sceneAdjustments: this.enhancements.sceneAdjustments.length,
+      sceneEnhancements: this.enhancements.sceneEnhancements.length,
+      noteHints: this.enhancements.noteHints.length,
+      tableHints: this.enhancements.tableHints.length,
+      enhancedScenes: this.enhancements.enhancedScenes.length,
     });
 
   }
@@ -143,12 +148,12 @@ class Adventure {
 
   processAdventure() {
     // ToDo
-     // rows.forEach()
-      // process Journals
-      // process Scenes
-      // process Tables
+    // rows.forEach()
+    // process Journals
+    // process Scenes
+    // process Tables
 
-      // this.tableFactory.generateNoteRows(this.row);
+    // this.tableFactory.generateNoteRows(this.row);
     
     // run once
     // this.tableFactory.generateJournals();
@@ -173,11 +178,11 @@ class Adventure {
     return JSON.parse(this.toJson());
   }
 
-  processAssets() {
-    this.assets = new Assets(this);
-    await this.assets.downloadEnhancements();
-    await this.assets.downloadDDBMobile();
-    this.assets.finalAssetCopy();
+  async processAssets() {
+    const assets = new Assets(this);
+    await assets.downloadEnhancements();
+    await assets.downloadDDBMobile();
+    assets.finalAssetCopy();
   }
 
   saveZip() {

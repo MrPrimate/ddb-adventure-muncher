@@ -27,7 +27,7 @@
 
 const _ = require("lodash");
 
- /**
+/**
   * generates factory functions to convert table rows to objects,
   * based on the titles in the table's <thead>
   * @param  {Array<String>} headings the values of the table's <thead>
@@ -56,7 +56,7 @@ function mapRow(headings, highSplit=false) {
 }
 
 
- /**
+/**
   * given a table, generate an array of keys/column names
   *
   * @param  {HTMLTableElement} table the table to convert

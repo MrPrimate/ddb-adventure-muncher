@@ -1,7 +1,5 @@
 const logger = require("../logger.js");
 const { Journal } = require("./Journals/Journal.js");
-const { ImageJournal } = require("./Journals/ImageJournal.js");
-const { NoteJournal } = require("./Journals/NoteJournal.js");
 
 class JournalFactory {
 
@@ -27,7 +25,7 @@ class JournalFactory {
     this.adventure.journals.forEach((journal) => {
       journal.fixUp();
       if (global.gc) global.gc();
-    })
+    });
   }
 
 }

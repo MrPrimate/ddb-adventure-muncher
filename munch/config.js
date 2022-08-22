@@ -1,6 +1,6 @@
 const utils = require("./utils.js");
 const path = require("path");
-const ddb = require("./ddb.js");
+const ddb = require("./data/ddb.js");
 const enhance = require("./enhance.js");
 const { exit } = require("process");
 const fs = require("fs");

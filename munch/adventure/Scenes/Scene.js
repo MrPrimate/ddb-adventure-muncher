@@ -1,8 +1,42 @@
 const logger = require("../../logger.js");
 const _ = require("lodash");
+const path = require("path");
+const fs = require("fs");
 const sizeOf = require("image-size");
+const { FileHelper } = require("../FileHelper.js");
+const { Journal } = require("../Journals/Journal.js");
+
+function unPad(match, p1) {
+  if (isNaN(parseInt(p1))) {
+    return p1;
+  } else {
+    return parseInt(p1);
+  }
+}
 
 class Scene {
+
+  generateIcon(title) {
+    // default path
+    let iconPath = "icons/svg/book.svg";
+    let stub = title.trim().split(".")[0].split(" ")[0].split(":")[0];
+    stub = stub.replace(/(\d+)/, unPad);
+    if (stub.length <= 4) {
+      const svgDirPath = path.join(this.adventure.config.run.outputDir, "assets", "icons");
+      iconPath = path.join("assets","icons",`${stub}.svg`);
+      const iconFileOutPath = path.join(this.adventure.config.run.outputDir, iconPath);
+      if (!fs.existsSync(svgDirPath)) fs.mkdirSync(svgDirPath);
+      if (!fs.existsSync(iconFileOutPath)) {
+        logger.info(stub);
+        const svgTemplate = path.join(this.adventure.overrides.templateDir, `${stub.length}char.svg`);
+        logger.info(svgTemplate);
+        let svgContent = FileHelper.loadFile(svgTemplate);
+        svgContent = svgContent.replace("REPLACEME", stub);
+        FileHelper.saveFile(svgContent, iconFileOutPath);
+      }
+    }
+    return iconPath.split(path.sep).join(path.posix.sep);
+  }
 
   imageSize() {
     let size = {
@@ -22,15 +56,15 @@ class Scene {
 
   #journalMatch() {
     let journalMatch = this.adventure.config.v10Mode
-      ? generatedJournals.map((j) => j.pages).flat().find((journal) => journal._id === row.data.originDocId)
-      : generatedJournals.find((journal) => journal._id === row.data.originDocId);
+      ? this.adventure.journals.map((j) => j.pages).flat().find((journal) => journal._id === this.row.data.originDocId)
+      : this.adventure.journals.find((journal) => journal._id === this.row.data.originDocId);
     if (!journalMatch) {
       journalMatch = this.adventure.config.v10Mode
-        ? generatedJournals.map((j) => j.pages).flat().find((journalPage) => 
+        ? this.adventure.journals.map((j) => j.pages).flat().find((journalPage) => 
           journalPage.name.includes(this.data.navName) &&
           !journalPage.flags.ddb.notes && !journalPage.flags.ddb.img && !journalPage.src
         )
-        : generatedJournals.find((journal) => 
+        : this.adventure.journals.find((journal) => 
           journal.name.includes(this.data.navName) &&
           !journal.flags.ddb.notes && !journal.flags.ddb.img && !journal.img
         );
@@ -42,7 +76,7 @@ class Scene {
   // this is the magic that adds walls, actor positions and note data
   #adjustment() {
     let adjustment = (this.data.flags.ddb.contentChunkId) ?
-      sceneAdjustments.find((s) =>
+      this.adventure.enhancements.sceneAdjustments.find((s) =>
         (this.data.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId &&
         this.data.flags.ddb.ddbId == s.flags.ddb.ddbId &&
         this.data.flags.ddb.parentId == s.flags.ddb.parentId &&
@@ -54,7 +88,7 @@ class Scene {
           this.data.flags.ddb.cobaltId == ai.cobaltId
         ))
       ) :
-      sceneAdjustments.find((s) => this.data.name.includes(s.name));
+      this.adventure.enhancements.sceneAdjustments.find((s) => this.data.name.includes(s.name));
 
     if (adjustment) {
       logger.info(`ADJUSTMENTS found named ${adjustment.name} with chunkid "${adjustment.flags.ddb.contentChunkId}" and id ${adjustment.flags.ddb.ddbId}`);
@@ -107,7 +141,7 @@ class Scene {
                 "entryId": noteJournal.data._id,
                 "x": position.x,
                 "y": position.y,
-                "icon": icons.generateIcon(this.adventure.config, note.label, templateDir),
+                "icon": this.generateIcon(note.label),
                 "iconSize": note.iconSize ? note.iconSize : 40,
                 "iconTint": "",
                 "text": "",
@@ -142,9 +176,9 @@ class Scene {
       this.adventure.config.disableEnhancedDownloads :
       false;
 
-    const enhancedScene = enhancedScenes.find((scene) => {
-      const missingNameMatch = row.data.missing ?
-        scene.missing && row.data.title === scene.name :
+    const enhancedScene = this.adventure.enhancements.sceneEnhancements.find((scene) => {
+      const missingNameMatch = this.row.data.missing ?
+        scene.missing && this.row.data.title === scene.name :
         true;
       return missingNameMatch && 
         scene.img === this.data.img &&
@@ -158,7 +192,7 @@ class Scene {
         this.data.navName = enhancedScene.adjustName;
       }
       if (enhancedScene.hiresImg && !disableEnhancedDownloads) {
-        downloadList.push({name: this.data.name, url: enhancedScene.hiresImg, path: this.data.img });
+        this.adventure.downloadList.push({name: this.data.name, url: enhancedScene.hiresImg, path: this.data.img });
       }
     }
   }
@@ -204,6 +238,7 @@ class Scene {
   constructor(adventure, row, image) {
     logger.info(`Generating Scene ${row.data.sceneName}`);
     this.adventure = adventure;
+    this.row = row;
     this.image = image;
     this.imagePath = path.join(this.adventure.config.run.outputDir, image);
     this.contentChunkId =  (row.data.contentChunkId && row.data.contentChunkId != "")
@@ -214,7 +249,7 @@ class Scene {
     this.data = JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"scene.json"))));
 
     // initial image size guess (used if not set by adjustment)
-    const dimensions = this.imageSize(imagePath);
+    const dimensions = this.imageSize();
     this.data.width = dimensions.width;
     this.data.height = dimensions.height;
 
@@ -270,7 +305,7 @@ class Scene {
     
     if (this.adventure.config.debug) logger.debug(`Scene name: "${this.data.name}" Img: "${this.data.img}"`);
 
-    this.data._id = getId(this.data, "Scene");
+    this.data._id = this.adventure.idFactory.getId(this.data, "Scene");
 
     this.#tokens();
 
@@ -290,249 +325,3 @@ class Scene {
 
 
 exports.Scene = Scene;
-
-function generateScene(row, img) {
-  let scene = JSON.parse(JSON.stringify(require(path.join(templateDir,"scene.json"))));
-
-  scene.name = row.sceneName;
-  scene.navName = row.sceneName.split(":").pop().trim();
-  logger.info(`Generating Scene ${scene.name}`);
-
-  let journalMatch = config.v10Mode
-    ? generatedJournals.map((j) => j.pages).flat().find((journal) => journal._id === row.originDocId)
-    : generatedJournals.find((journal) => journal._id === row.originDocId);
-  if (!journalMatch) {
-    journalMatch = config.v10Mode
-      ? generatedJournals.map((j) => j.pages).flat().find((journalPage) => 
-        journalPage.name.includes(scene.navName) &&
-        !journalPage.flags.ddb.notes && !journalPage.flags.ddb.img && !journalPage.src
-      )
-      : generatedJournals.find((journal) => 
-        journal.name.includes(scene.navName) &&
-        !journal.flags.ddb.notes && !journal.flags.ddb.img && !journal.img
-      );
-  }
-  if (journalMatch) scene.journal = journalMatch._id;
-
-  scene.img = img;
-  scene.flags.ddb.documentName = row.documentName;
-  scene.flags.ddb.ddbId = row.id;
-  scene.flags.ddb.bookCode = config.run.bookCode;
-  scene.flags.ddb.slug = row.slug;
-  // logger.info("#############################");
-  // logger.info(row);
-  // logger.info("#############################");
-  const contentChunkId =  (row.contentChunkId && row.contentChunkId != "") ? 
-    row.contentChunkId :
-    null;
-  scene.flags.ddb.contentChunkId = contentChunkId;
-  scene.flags.ddb.userData = config.run.userData;
-  scene.flags.ddb.originDocId = row.originDocId;
-  scene.flags.ddb.originHint = row.originHint;
-  scene.flags.ddb.originalLink = row.originalLink;
-  scene.flags.ddb.versions = {
-    "adventureMuncher": config.run.version
-  };
-
-  scene.sort = JOURNAL_SORT + parseInt(row.id);
-  if (row.cobaltId) scene.flags.ddb.cobaltId = row.cobaltId;
-  if (row.parentId) {
-    row.cobaltId = row.parentId;
-    scene.flags.ddb.parentId = row.parentId;
-    delete row.parentId;
-  }
-  row.title = row.documentName;
-  scene.folder = getFolderId(row, "Scene");
-
-  const imagePath = path.join(config.run.outputDir,img);
-  const dimensions = utils.imageSize(imagePath);
-  // logger.info(dimensions.width, dimensions.height);
-  scene.width = dimensions.width;
-  scene.height = dimensions.height;
-  // logger.info(row);
-  // logger.info(journal);
-  // logger.info(`${journal.name}, ${journal.folder}`);
-
-  let adjustment = (scene.flags.ddb.contentChunkId) ?
-    sceneAdjustments.find((s) =>
-      (scene.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId &&
-      scene.flags.ddb.ddbId == s.flags.ddb.ddbId &&
-      scene.flags.ddb.parentId == s.flags.ddb.parentId &&
-      scene.flags.ddb.cobaltId == s.flags.ddb.cobaltId) ||
-      (s.flags.ddb.alternateIds && s.flags.ddb.alternateIds.some((ai) =>
-        scene.flags.ddb.contentChunkId === ai.contentChunkId &&
-        scene.flags.ddb.ddbId == ai.ddbId &&
-        scene.flags.ddb.parentId == ai.parentId &&
-        scene.flags.ddb.cobaltId == ai.cobaltId
-      ))
-    ) :
-    sceneAdjustments.find((s) => scene.name.includes(s.name));
-
-  if (adjustment) {
-    logger.info(`ADJUSTMENTS found named ${adjustment.name} with chunkid "${adjustment.flags.ddb.contentChunkId}" and id ${adjustment.flags.ddb.ddbId}`);
-    if (adjustment.flags.ddb.tiles) {
-      adjustment.tiles = adjustment.flags.ddb.tiles;
-    }
-    if (adjustment.flags.ddb.notes) {
-      logger.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-      logger.info("Found notes!!!!!");
-
-      adjustment.notes = [];
-
-      adjustment.flags.ddb.notes.forEach((note) => {
-        logger.info(`Checking ${note.label}`);
-        const noteJournal = generatedJournals.find((journal) => {
-          const contentChunkIdMatch = note.flags.ddb.contentChunkId ?
-            journal.flags.ddb && note.flags.ddb && journal.flags.ddb.contentChunkId == note.flags.ddb.contentChunkId :
-            false;
-
-          const noContentChunk = !note.flags.ddb.contentChunkId &&
-            note.flags.ddb.originalLink && note.flags.ddb.ddbId && note.flags.ddb.parentId &&
-            note.flags.ddb.slug && note.flags.ddb.linkName;
-          const originMatch = noContentChunk ?
-            journal.flags.ddb.slug == note.flags.ddb.slug &&
-            journal.flags.ddb.ddbId == note.flags.ddbId &&
-            journal.flags.ddb.parentId == note.flags.ddb.parentId &&
-            journal.flags.ddb.cobaltId == note.flags.ddb.cobaltId &&
-            journal.flags.ddb.originalLink == note.flags.ddb.originalLink &&
-            journal.flags.ddb.linkName == note.flags.ddb.linkName :
-            false;
-          const journalNameMatch = !contentChunkIdMatch && !originMatch ?
-            config.v10Mode
-              ? journal.pages.some((page) => page.name.trim() === note.label.trim())
-              : journal.name.trim() == note.label.trim() :
-            false;
-          return contentChunkIdMatch || originMatch || journalNameMatch;
-
-        });
-        if (noteJournal){
-          logger.info(`Found ${note.label} matched to ${noteJournal._id} (${noteJournal.name})`);
-          note.positions.forEach((position) => {
-            noteJournal.flags.ddb.pin = `${position.x}${position.y}`;
-            const noteId = getId(noteJournal, "Note");
-            const n = {
-              "_id": noteId,
-              "flags": {
-                "ddb": note.flags.ddb,
-                "importid": noteId,
-              },
-              "entryId": noteJournal._id,
-              "x": position.x,
-              "y": position.y,
-              "icon": icons.generateIcon(config, note.label, templateDir),
-              "iconSize": note.iconSize ? note.iconSize : 40,
-              "iconTint": "",
-              "text": "",
-              "fontFamily": note.fontFamily ? note.fontFamily : "Signika",
-              "fontSize": note.fontSize ? note.fontSize : 48,
-              "textAnchor": 1,
-              "textColor": note.textColor ? note.textColor : "",
-            };
-            adjustment.notes.push(n);
-          });
-        }
-        logger.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-      });
-    }
-    delete adjustment.flags.ddb.notes;
-    delete adjustment.flags.ddb.cobaltId;
-    delete adjustment.flags.ddb.parentId;
-    delete adjustment.flags.ddb.ddbId;
-    delete adjustment.flags.ddb.contentChunkId;
-    adjustment.flags.ddb["sceneAdjustment"] = true;
-    logger.info(adjustment.flags);
-    logger.info(scene.flags);
-    scene = _.merge(scene, adjustment);
-  } else {
-    logger.info(`NO ADJUSTMENTS found with chunkid "${scene.flags.ddb.contentChunkId}" and id ${scene.flags.ddb.ddbId}`);
-  }
-
-  if (config.imageFind) {
-    imageFinderSceneResults.push({
-      bookCode: config.run.bookCode,
-      img: scene.img,
-      name: scene.name,
-      slug: row.slug,
-      contentChunkId: contentChunkId,
-      ddbId: scene.flags.ddb.ddbId,
-      parentId: scene.flags.ddb.parentId,
-      cobaltId: scene.flags.ddb.cobaltId,
-    });
-  }
-
-  const disableEnhancedDownloads = (config.disableEnhancedDownloads) ? 
-    config.disableEnhancedDownloads :
-    false;
-
-  if (config.debug) logger.debug(`Scene name: "${scene.name}" Img: "${scene.img}"`);
-  //const enhancedScene = enhancedScenes.find((es) => es.name === scene.name && es.img === scene.img);
-  const enhancedScene = enhancedScenes.find((es) => {
-    const missingNameMatch = row.missing ?
-      es.missing && row.title === es.name :
-      true;
-    return missingNameMatch && 
-      es.img === scene.img &&
-      es.bookCode === config.run.bookCode;
-  });
-  if (config.debug) logger.debug(enhancedScene);
-
-  if (enhancedScene) {
-    if (enhancedScene.adjustName && enhancedScene.adjustName.trim() != "") {
-      scene.name = enhancedScene.adjustName;
-      scene.navName = enhancedScene.adjustName;
-    }
-    if (enhancedScene.hiresImg && !disableEnhancedDownloads) {
-      downloadList.push({name: scene.name, url: enhancedScene.hiresImg, path: scene.img });
-    }
-  }
-  if (config.debug) logger.debug(`Scene name: "${scene.name}" Img: "${scene.img}"`);
-
-  scene._id = getId(scene, "Scene");
-
-  if (scene.flags.ddb.tokens && scene.flags.ddb.tokens.length > 0) {
-    scene.tokens = scene.flags.ddb.tokens
-      .filter((token) => token.flags.ddbActorFlags && token.flags.ddbActorFlags.id)
-      .map((token) => {
-        const mockActor = {
-          flags: {
-            ddb: {
-              contentChunkId: token.flags.ddbActorFlags.id,
-              ddbId: `DDB-Monster-${token.flags.ddbActorFlags.id}`,
-              cobaltId: null,
-              parentId: null,
-            },
-          },
-          type: "Actor",
-        };
-
-        token.actorId = getId(mockActor, "Actor");
-
-        // Get the compendium id for the token's actor
-        const lookupEntry = config.lookups["monsters"].find((e) => e.id == token.flags.ddbActorFlags.id);
-        token.flags.actorFolderId = masterFolder["Actor"]._id;
-        if (lookupEntry) {
-          token.flags.compendiumActorId = lookupEntry._id;
-        } else {
-          logger.info(`Found actor with Id ${token.flags.ddbActorFlags.id}`);
-        }
-
-        if (!config.run.required["monsters"].includes(String(token.flags.ddbActorFlags.id))) {
-          config.run.required["monsters"].push(String(token.flags.ddbActorFlags.id));
-        }
-
-        // these may have been gathered by accident
-        delete token.bar2;
-        delete token.displayName;
-        return token;
-      });
-    // delete scene.flags.ddb.tokens;
-  } else {
-    scene.tokens = [];
-  }
-
-  generatedScenes.push(scene);
-  sceneImgMatched.push(scene.img);
-  const sceneCount = sceneImgMatched.filter(img => img === scene.img).length;
-  logger.info(`Generated Scene "${scene.name}" with "${scene.img}", (count ${sceneCount})`);
-  return scene;
-}

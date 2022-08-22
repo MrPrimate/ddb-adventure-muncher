@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 const utils = require("./utils.js");
-const logger = require("./logger.js");
+const logger = require("../logger.js");
 const bookData = require("./bookData.js");
 
 function ddbCall(url, urlencoded) {
