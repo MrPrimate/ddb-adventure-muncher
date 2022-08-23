@@ -1,11 +1,13 @@
 const { Scene } = require("./Scenes/Scene.js");
 const { ImageJournal } = require("./Journals/ImageJournal.js");
 const { logger } = require("../logger");
+const { SceneParser } = require("./Scenes/SceneParser.js");
 
 class SceneFactory {
   
   constructor(adventure) {
     this.adventure = adventure;
+    this.tracker = {};
   }
 
   generateMissingScenes() {
@@ -39,6 +41,11 @@ class SceneFactory {
         this.adventure.scenes.push(scene);
       });
 
+  }
+
+  findScenes(row, document) {
+    const sceneParser = new SceneParser(this, row, document);
+    sceneParser.parse();
   }
 
 }

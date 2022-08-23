@@ -2,7 +2,7 @@ const { logger } = require("../logger.js");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 const { Helpers } = require("./Helpers.js");
-const { NoteJournal } = require("./Journals/NoteJournal");
+// const { NoteJournal } = require("./Journals/NoteJournal");
 
 class NoteFactory {
 
@@ -22,13 +22,13 @@ class NoteFactory {
   
   }
 
-  #parseNoteHint(hint, count) {
-    let id = 2000 + this.row.data.id;
+  #parseNoteHint(row, hint, count) {
+    let id = 2000 + row.data.id;
     logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
     logger.info(`Generating Notes for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`);
     logger.info(`${hint.splitTag}[data-content-chunk-id='${hint.contentChunkIdStart}']`);
     
-    let keyChunk = this.row.doc.querySelector(`${hint.splitTag}[data-content-chunk-id='${hint.contentChunkIdStart}']`);
+    let keyChunk = row.doc.querySelector(`${hint.splitTag}[data-content-chunk-id='${hint.contentChunkIdStart}']`);
     logger.info(`keyChunk: ${keyChunk}`);
     if (!keyChunk) {
       logger.warn("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
@@ -62,7 +62,7 @@ class NoteFactory {
       if ((tagMatch && !pTag) || stopChunk) {
         let noteRow = {
           doc: JSDOM.fragmet(html),
-          data: JSON.parse(JSON.stringify(this.row.data)),
+          data: JSON.parse(JSON.stringify(row.data)),
         };
         delete noteRow.data.html;
 
@@ -82,7 +82,7 @@ class NoteFactory {
         noteRow.data.contentChunkId = keyChunkId;
         noteRow.data.sceneName = hint.sceneName;
         noteRow.data.id  = id + count;
-        noteRow.data.ddbId = this.row.data.id;
+        noteRow.data.ddbId = row.data.id;
         this.noteRows.push(noteRow);
         html = "";
         noteTitle = "";
@@ -129,18 +129,21 @@ class NoteFactory {
   //   contentChunkIdStop: "3672ecdc-d709-40b5-bb0f-c06c70c1aa15",
   //   sceneName: "Cragmaw Hideout",
   // }]
-  generateNoteRows(row) {
+  #generateNoteRows(row) {
     this.adventure.enhancements.noteHints
       .filter((hint) => hint.slug == row.data.slug)
       .forEach((hint, index) => {
-        this.noteRows.push(this.#parseNoteHint(hint, index + 1));
+        this.noteRows.push(this.#parseNoteHint(row, hint, index + 1));
       });
   }
 
-  generateJournals() {
+  generateJournals(row) {
+    // ensure note hints exist for the row
+    this.#generateNoteRows(row);
     this.noteRows.forEach((row) => {
-      const noteJournal = new NoteJournal(this.adventure, row);
-      this.adventure.journals.push(noteJournal);
+      this.adventure.journalFactory.createNoteJournal(row);
+      // const noteJournal = new NoteJournal(this.adventure, row);
+      // this.adventure.journals.push(noteJournal);
     });
   }
 

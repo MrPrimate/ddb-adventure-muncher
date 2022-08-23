@@ -5,6 +5,8 @@ const { IdFactory } = require("./IdFactory.js");
 const { TableFactory } = require("./TableFactory.js");
 const { JournalFactory } = require("./JournalFactory.js");
 const { NoteFactory } = require("./NoteFactory.js");
+const { SceneFactory } = require("./SceneFactory.js");
+const { Database } = require("./Database.js");
 const { FileHelper } = require("./FileHelper.js");
 const { Assets } = require("./Assets.js");
 
@@ -13,8 +15,10 @@ const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
 const os = require("os");
-const { SceneFactory } = require("./SceneFactory.js");
 
+const jsdom = require("jsdom");
+const { Journal } = require("./Journals/Journal.js");
+const { JSDOM } = jsdom;
 
 class Adventure {
 
@@ -148,6 +152,101 @@ class Adventure {
 
   }
 
+  rowProcess(row) {
+    logger.debug("Processing DB Row: " + row.id + ": " + row.title);
+
+    const existingJournal = this.journals.find((f) => f.flags.ddb.ddbId == row.id);
+
+    if (!existingJournal){
+      if (!row.title || row.title == "") {
+        const frag = new JSDOM(row.html);
+        row.title = frag.window.document.body.textContent;
+      }
+      logger.info(`Generating ${row.title}`);
+
+      const journal = this.journalFactory.createJournal(row);
+      this.notesFactory.generateJournals(row);
+      
+      // if this is a top tier parent document we process it for scenes now.
+      const content = this.adventure.config.v10Mode
+        ? journal.data.pages[0]
+        : journal.data;
+      if (content && journal.data.flags.ddb.cobaltId) {
+        this.adventure.sceneFactory.findScenes(row, content);
+      }
+    }
+
+  }
+
+  async finaliseAdventure(count) {
+    logger.info("Data extraction complete document linking commencing...");
+    if (err) {
+      logger.error(err);
+      exit();
+    }
+    try {
+      if (global.gc) global.gc();
+      logger.info(`Processing ${documents.length} scenes`);
+      documents.forEach((document) => {
+        if (document.content) {
+          // eslint-disable-next-line no-unused-vars
+          let [tempScenes, sceneJournals, tmpReplaceLinks] = findScenes(document);
+          replaceLinks = replaceLinks.concat(tmpReplaceLinks);
+          if (global.gc) global.gc();
+        } else if (document.pages) {
+          document.pages.forEach((page) => {
+            // eslint-disable-next-line no-unused-vars
+            let [tempScenes, sceneJournals, tmpReplaceLinks] = findScenes(page);
+            replaceLinks = replaceLinks.concat(tmpReplaceLinks);
+            if (global.gc) global.gc();
+          });
+        }
+      });
+  
+      logger.info(`Processing ${count} entries...`);
+      logger.info("Looking for missing scenes...");
+      [generatedJournals, generatedScenes] = generateMissingScenes(generatedJournals, generatedScenes);
+      logger.info("Updating links...");
+      generatedJournals = updateJournals(generatedJournals);
+      logger.info("Fixing up tables...");
+      [generatedTables, generatedJournals] = await fixUpTables(generatedTables, generatedJournals);
+      logger.info("Complete! Generating output files...");
+      outputAdventure(config);
+      outputJournals(generatedJournals, config);
+      logger.info("Generated Scenes:");
+      logger.info(generatedScenes.map(s => `${s.name} : ${s._id} : ${s.flags.ddb.contentChunkId } : ${s.flags.ddb.ddbId } : ${s.flags.ddb.cobaltId } : ${s.flags.ddb.parentId } : ${s.img}`));
+      outputScenes(generatedScenes, config);
+      outputTables(generatedTables, config);
+      const allContent = generatedJournals.concat(generatedScenes, generatedTables);
+      outputFolders(generatedFolders, config, allContent);
+  
+      // const assets = new Assets(adventure);
+      // await assets.downloadEnhancements();
+      // await assets.downloadDDBMobile();
+      // assets.finalAssetCopy();
+      // assets.generateZipFile();
+    } catch (err) {
+      logger.error(`Error generating adventure: ${err}`);
+      logger.error(err.stack);
+    } finally {
+      logger.info("Generated the following journal images:");
+      logger.info(journalImgMatched);
+      logger.info("Generated the following scene images:");
+      logger.info(sceneImgMatched);
+      // save generated Ids table
+      configure.saveLookups(idTable);
+      if (config.tableFind) {
+        configure.saveTableData(tableMatched, config.run.bookCode);
+      }
+      if (config.imageFind) {
+        configure.saveImageFinderResults(imageFinderSceneResults, imageFinderJournalResults, config.run.bookCode);
+      }
+      if (config.run.returnAdventure) {
+        config.run.returnAdventure(config);
+      }
+    }
+  }
+
   async processAdventure() {
     // ToDo
     // get metadata
@@ -155,6 +254,9 @@ class Adventure {
     // get enhanced data
     // asset copy
     await this.downloadAssets();
+
+    const db = new Database(this, this.rowProcess);
+    db.getData();
     // rows.forEach()
     // process Journals
     // process Scenes

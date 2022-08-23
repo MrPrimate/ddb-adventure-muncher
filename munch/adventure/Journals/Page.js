@@ -3,41 +3,42 @@
 class Page {
 
   constructor({name, content, flags, id, type = "text", level = 1}) {
-    this.name = name;
-    this.type = type;
-    this.title = {
-      show: false,
-      level,
+    this.data = {
+      name,
+      type,
+      title: {
+        show: false,
+        level,
+      },
+      _id: id,
+      text: {
+        format: 1,
+      },
+      video: {
+        controls: true,
+        volume: 0.5,
+      },
+      image: {},
+      src: null,
+      sort: 0,
+      ownership: {
+        default: -1,
+      },
+      flags,
     };
-
-    this._id = id;
-    this.text = {
-      format: 1,
-    };
-    this.video = {
-      controls: true,
-      volume: 0.5,
-    };
-    this.image = {};
-    this.src = null;
-    this.sort = 0;
-    this.ownership = {
-      default: -1,
-    };
-    this.flags= flags;
 
     switch (type) {
       case "text": {
-        this.text.content = content;
+        this.data.text.content = content;
         break;
       }
       case "image": {
-        this.title.show = true;
-        this.src = content;
+        this.data.title.show = true;
+        this.data.src = content;
         break;
       }
       case "pdf": {
-        this.src = content;
+        this.data.src = content;
         break;
       }
       // no default
@@ -46,7 +47,7 @@ class Page {
 
   // check to see if I need to override the defaults
   toJson() {
-    return JSON.stringify(this);
+    return JSON.stringify(this.data);
   }
 
   toObject() {
