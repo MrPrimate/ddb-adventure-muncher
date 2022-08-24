@@ -61,7 +61,7 @@ class Table {
   constructor({adventure, row, diceKey, tableData, count}) {
     this.adventure = adventure;
     this.contentChunkId = tableData.contentChunkId;
-    const tableJsonPath = path.join(this.adventure.overrides.templateDir,"table.json");
+    const tableJsonPath = path.join(this.adventure.overrides.templateDir, "table.json");
     this.data = JSON.parse(JSON.stringify(require(tableJsonPath)));
 
     const nameExtension = tableData.diceKeys > 1 ? ` [${tableData.diceKeys}]` : "";

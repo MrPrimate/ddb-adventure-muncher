@@ -27,50 +27,7 @@ function setConfigDir (dir) {
   LOOKUP_FILE = `${configDir}/lookup.json`;
 }
 
-function getLookups(id = null) {
-  logger.info("Getting lookups");
-  const lookupFile = path.resolve(__dirname, LOOKUP_FILE);
-  if (fs.existsSync(lookupFile)){
-    const data = utils.loadJSONFile(lookupFile);
-    if (id){
-      return data && data[id] ? data[id] : [];
-    } else {
-      return data ? data : {};
-    }
-  } else {
-    return {};
-  }
-}
-
-function saveLookups(content, id = null) {
-  const resolvedContent = id
-    ? getLookups()
-    : content;
-  if (id) {
-    resolvedContent[id] = content;
-  }
-  const configFile = path.resolve(__dirname, LOOKUP_FILE);
-  utils.saveJSONFile(resolvedContent, configFile);
-}
-
-function saveImageFinderResults(sceneContent, journalContent, bookCode) {
-  const imageScenePath = path.resolve(__dirname,configDir,"scene-images.json");
-
-  const sceneData = (fs.existsSync(imageScenePath)) ?
-    utils.loadJSONFile(imageScenePath) :
-    {};
-  sceneData[bookCode] = sceneContent;
-  utils.saveJSONFile(sceneData, imageScenePath);
-
-  const imageJournalPath = path.resolve(__dirname,configDir,"journal-images.json");
-
-  const journalData = (fs.existsSync(imageJournalPath)) ?
-    utils.loadJSONFile(imageJournalPath) :
-    {};
-  journalData[bookCode] = journalContent;
-  utils.saveJSONFile(journalData, imageJournalPath);
-}
-
+// needed by scene loader
 function loadImageFinderResults(type, bookCode) {
   const imageScenePath = path.resolve(__dirname,configDir,`${type}-images.json`);
 
@@ -387,9 +344,11 @@ async function getConfig(options = {}) {
 
 exports.isConfig = isConfig;
 exports.getConfig = getConfig;
-exports.getLookups = getLookups;
-exports.saveLookups = saveLookups;
 exports.setConfigDir = setConfigDir;
 exports.saveImageFinderResults = saveImageFinderResults;
 exports.saveTableData = saveTableData;
 exports.loadImageFinderResults = loadImageFinderResults;
+
+// to add to config
+exports.LOOKUP_FILE = LOOKUP_FILE;
+exports.configDir = configDir;

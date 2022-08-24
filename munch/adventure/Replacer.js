@@ -161,8 +161,8 @@ class LinkReplacer {
         const lookupMatch = node.outerHTML.match(lookupRegExp);
         const lookupValue = this.adventure.config.lookups[COMPENDIUM_MAP[lookupKey]];
         if (lookupValue) {
-          if (!this.adventure.config.run.required[COMPENDIUM_MAP[lookupKey]].includes(String(lookupMatch[1]))) {
-            this.adventure.config.run.required[COMPENDIUM_MAP[lookupKey]].push(String(lookupMatch[1]));
+          if (!this.adventure.required[COMPENDIUM_MAP[lookupKey]].includes(String(lookupMatch[1]))) {
+            this.adventure.required[COMPENDIUM_MAP[lookupKey]].push(String(lookupMatch[1]));
           }
   
           const lookupEntry = lookupValue.find((e) => e.id == lookupMatch[1]);

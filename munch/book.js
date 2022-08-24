@@ -61,88 +61,8 @@ function generateJournalChapterEntry(row, img=null) {
   return undefined;
 }
 
-function outputAdventure(config) {
-  if (!fs.existsSync(config.run.outputDir)) {
-    fs.mkdirSync(config.run.outputDir);
-  }
-
-  config.subDirs.forEach((d) => {
-    if (!fs.existsSync(path.join(config.run.outputDir,d))) {
-      fs.mkdirSync(path.join(config.run.outputDir,d));
-    }
-  });
-
-  logger.info("Exporting adventure outline...");
-
-  const adventure = require(path.join(templateDir,"adventure.json"));
-  adventure.name = config.run.book.description;
-  adventure.id = utils.randomString(10, "#aA");
-  adventure.required = config.run.required;
-
-  const adventureData = JSON.stringify(adventure);
-  fs.writeFileSync(path.join(config.run.outputDir,"adventure.json"), adventureData);
-}
-
-function outputJournals(parsedChapters, config) {
-  logger.info("Exporting journal chapters...");
-
-  // journals out
-  parsedChapters.forEach((chapter) => {
-    const journalEntry = JSON.stringify(chapter);
-    fs.writeFileSync(path.join(config.run.outputDir,"journal",`${chapter._id}.json`), journalEntry);
-  });
-}
-
-function outputScenes(parsedScenes, config) {
-  logger.info("Exporting scenes...");
-
-  // scenes out
-  parsedScenes.forEach((scene) => {
-    const sceneContent = JSON.stringify(scene);
-    fs.writeFileSync(path.join(config.run.outputDir,"scene",`${scene._id}.json`), sceneContent);
-  });
-}
 
 
-function outputTables(parsedTables, config) {
-  logger.info("Exporting tables...");
-
-  // tables out
-  parsedTables.forEach((table) => {
-    const tableContent = JSON.stringify(table);
-    fs.writeFileSync(path.join(config.run.outputDir,"table",`${table._id}.json`), tableContent);
-  });
-}
-
-function hasFolderContent(parsedFolders, foldersWithContent, folder) {
-  const hasContent = foldersWithContent.includes(folder._id);
-  if (hasContent) return true;
-
-  const childFolders = parsedFolders.filter((pFolder) => folder._id === pFolder.parent);
-  if (!childFolders) return false;
-
-  const hasChildrenWithContent = childFolders.some((childFolder) => foldersWithContent.includes(childFolder._id));
-  if (hasChildrenWithContent) return true;
-
-  const hasRecursiveContent = childFolders.some((childFolder) => hasFolderContent(parsedFolders, foldersWithContent, childFolder));
-
-  return hasRecursiveContent;
-
-}
-
-function outputFolders(parsedFolders, config, content) {
-  logger.info("Exporting required folders...");
-
-  const foldersWithContent = parsedFolders.filter((folder) => content.some((content) =>
-    folder._id === content.folder ||
-    masterFolder[folder.type]._id == folder._id
-  )).map((folder) => folder._id);
-
-  const finalFolders = parsedFolders.filter((folder) => hasFolderContent(parsedFolders, foldersWithContent, folder));
-
-  const foldersData = JSON.stringify(finalFolders);
-  fs.writeFileSync(path.join(config.run.outputDir,"folders.json"), foldersData);
-}
 
 
 
