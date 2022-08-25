@@ -134,7 +134,7 @@ class Journal {
     this.data.flags.ddb.ddbId = row.data.id;
     this.data.flags.ddb.bookCode = this.adventure.bookCode;
     this.data.flags.ddb.slug = row.data.slug;
-    this.data.flags.ddb.userData = this.adventure.config.run.userData;
+    this.data.flags.ddb.userData = this.adventure.config.userData;
     this.data.flags.ddb.originDocId = row.data.originDocId;
     this.data.flags.ddb.originHint = row.data.originHint;
     this.data.flags.ddb.originalLink = row.data.originalLink;

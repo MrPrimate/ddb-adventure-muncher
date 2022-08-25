@@ -185,7 +185,7 @@ class LinkReplacer {
       const slugMatch = node.outerHTML.match(bookSlugRegExp);
       if (slugMatch) {
         // logger.info(slugMatch);
-        const book = this.adventure.config.run.ddb_config.sources.find((source) => source.name.toLowerCase() == slugMatch[1].toLowerCase());
+        const book = this.adventure.config.ddb_config.sources.find((source) => source.name.toLowerCase() == slugMatch[1].toLowerCase());
         if (book) {
           node.setAttribute("href", `https://www.dndbeyond.com/${book.sourceURL}/${slugMatch[2]}`);
           this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);

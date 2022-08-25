@@ -23,7 +23,7 @@ const { JSDOM } = jsdom;
 class Adventure {
 
   loadNoteHints() {
-    const notesDataFile = path.join(this.config.run.noteInfoDir, `${this.bookCode}.json`);
+    const notesDataFile = path.join(this.config.noteInfoDir, `${this.bookCode}.json`);
     const notesDataPath = path.resolve(__dirname, notesDataFile);
   
     if (fs.existsSync(notesDataPath)){
@@ -32,7 +32,7 @@ class Adventure {
   }
 
   loadTableHints() {
-    const tableDataFile = path.join(this.config.run.tableInfoDir, `${this.bookCode}.json`);
+    const tableDataFile = path.join(this.config.tableInfoDir, `${this.bookCode}.json`);
     const tableDataPath = path.resolve(__dirname, tableDataFile);
 
     if (fs.existsSync(tableDataPath)){
@@ -41,7 +41,7 @@ class Adventure {
   }
 
   loadSceneAdjustments() {
-    const jsonFiles = path.join(this.config.run.sceneInfoDir, this.config.run.bookCode, "*.json");
+    const jsonFiles = path.join(this.config.sceneInfoDir, this.config.bookCode, "*.json");
 
     const globbedPath = os.platform() === "win32"
       ? jsonFiles.replace(/\\/g, "/")
@@ -72,14 +72,14 @@ class Adventure {
   }
 
   constructor(config) {
-    logger.info(`Adventure Muncher version ${config.run.version}`);
-    logger.info(`Starting Adventure instance for ${config.run.bookCode}`);
+    logger.info(`Adventure Muncher version ${config.version}`);
+    logger.info(`Starting Adventure instance for ${config.bookCode}`);
     this.config = config;
     this.overrides = {
       templateDir: path.join("..", "content", "templates"),
     };
-    this.bookCode = config.run.bookCode;
-    this.name = config.run.book.description;
+    this.bookCode = config.bookCode;
+    this.name = config.book.description;
     this.folders = [];
     
     this.journals = [];
@@ -258,15 +258,15 @@ class Adventure {
       logger.info(this.sceneImages);
 
       this.#saveMetrics();
-      if (this.config.run.returnAdventure) {
-        this.config.run.returnAdventure(this);
+      if (this.config.returns.returnAdventure) {
+        this.config.this.returns.returnAdventure(this);
       }
     }
   }
 
   getLookups(all = false) {
     logger.info("Getting lookups");
-    const lookupFile = path.resolve(__dirname, this.config.LOOKUP_FILE);
+    const lookupFile = path.resolve(__dirname, this.config.lookupFile);
     if (fs.existsSync(lookupFile)){
       const data = FileHelper.loadJSONFile(lookupFile);
       if (all){
@@ -282,7 +282,7 @@ class Adventure {
   #saveLookups() {
     const resolvedContent = this.getLookups(true);
     resolvedContent[this.bookCode] = this.ids;
-    const configFile = path.resolve(__dirname, this.config.LOOKUP_FILE);
+    const configFile = path.resolve(__dirname, this.config.lookupFile);
     FileHelper.saveJSONFile(resolvedContent, configFile);
   }
 
@@ -367,25 +367,25 @@ class Adventure {
   }
 
   #outputAdventure() {
-    if (!fs.existsSync(this.config.run.outputDir)) {
-      fs.mkdirSync(this.config.run.outputDir);
+    if (!fs.existsSync(this.config.outputDir)) {
+      fs.mkdirSync(this.config.outputDir);
     }
   
     this.config.subDirs.forEach((d) => {
-      if (!fs.existsSync(path.join(this.config.run.outputDir,d))) {
-        fs.mkdirSync(path.join(this.config.run.outputDir,d));
+      if (!fs.existsSync(path.join(this.config.outputDir,d))) {
+        fs.mkdirSync(path.join(this.config.outputDir,d));
       }
     });
   
     logger.info("Exporting adventure outline...");
   
     const adventure = require(path.join(this.adventure.overrides.templateDir,"adventure.json"));
-    adventure.name = this.config.run.book.description;
+    adventure.name = this.config.book.description;
     adventure.id = Helpers.randomString(10, "#aA");
     adventure.required = this.required;
   
     const adventureData = JSON.stringify(adventure);
-    fs.writeFileSync(path.join(this.config.run.outputDir,"adventure.json"), adventureData);
+    fs.writeFileSync(path.join(this.config.outputDir,"adventure.json"), adventureData);
   }
 
   #outputJournals() {
@@ -393,7 +393,7 @@ class Adventure {
   
     // journals out
     this.journals.forEach((journal) => {
-      fs.writeFileSync(path.join(this.config.run.outputDir, "journal", `${journal._id}.json`), journal.toJson());
+      fs.writeFileSync(path.join(this.config.outputDir, "journal", `${journal._id}.json`), journal.toJson());
     });
   }
 
@@ -404,7 +404,7 @@ class Adventure {
   
     // scenes out
     this.scenes.forEach((scene) => {
-      fs.writeFileSync(path.join(this.config.run.outputDir,"scene",`${scene._id}.json`), scene.toJson());
+      fs.writeFileSync(path.join(this.config.outputDir,"scene",`${scene._id}.json`), scene.toJson());
     });
   }
   
@@ -414,7 +414,7 @@ class Adventure {
   
     // tables out
     this.tables.forEach((table) => {
-      fs.writeFileSync(path.join(this.config.run.outputDir,"table",`${table._id}.json`), table.toJson());
+      fs.writeFileSync(path.join(this.config.outputDir,"table",`${table._id}.json`), table.toJson());
     });
   }
 
@@ -458,7 +458,7 @@ class Adventure {
     logger.info("Exporting required folders...");
     const finalFolders = this.folders.filter((folder) => this.#hasFolderContent(folder));
     const foldersData = JSON.stringify(finalFolders);
-    fs.writeFileSync(path.join(this.config.run.outputDir,"folders.json"), foldersData);
+    fs.writeFileSync(path.join(this.config.outputDir,"folders.json"), foldersData);
   }
 
 }

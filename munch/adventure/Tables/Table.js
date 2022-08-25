@@ -73,7 +73,7 @@ class Table {
     this.data.flags.ddb.bookCode = this.adventure.bookCode;
     this.data.flags.ddb.slug = row.slug;
     this.data.flags.ddb.contentChunkId = tableData.contentChunkId;
-    this.data.flags.ddb.userData = this.adventure.config.run.userData;
+    this.data.flags.ddb.userData = this.adventure.config.userData;
     this.data.sort = Journal.JOURNAL_SORT + parseInt(row.id);
     if (row.cobaltId) this.data.flags.ddb.cobaltId = row.cobaltId;
     if (row.parentId) this.data.flags.ddb.parentId = row.parentId;

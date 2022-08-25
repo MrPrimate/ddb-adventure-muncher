@@ -4,7 +4,7 @@ const _ = require("lodash");
 class FolderFactory {
 
   get masterFolders() {
-    const mainRow = { id: -1, cobaltId: -1, title: this.adventure.config.run.book.description };
+    const mainRow = { id: -1, cobaltId: -1, title: this.adventure.config.book.description };
 
     const folderData = {
       adventure: this.adventure,

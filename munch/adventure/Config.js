@@ -2,6 +2,7 @@ const logger = require("../logger.js");
 const path = require("path");
 const fs = require("fs");
 const { exit } = require("process");
+const _ = require("lodash");
 
 const ddb = require("../data/ddb.js");
 const enhance = require("../data/enhance.js");
@@ -240,7 +241,7 @@ class Config {
     this.options = options;
     this.version = options.version;
     this.returns = options.returns;
-    this.setConfigDir(Config.DEFAULT_CONFIG_DIR);
+    this.setConfigDirs(Config.DEFAULT_CONFIG_DIR);
 
     this.data = FileHelper.loadConfig(this.configFile);
     if (this.data.run) delete(this.data.run);

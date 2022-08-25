@@ -46,7 +46,7 @@ const { autoUpdater } = require("electron-updater");
 let allBooks = true;
 
 const configFolder = app.getPath("userData");
-configurator.setConfigDir(configFolder);
+configurator.setConfigDirs(configFolder);
 
 const menuTemplate = [
   // { role: 'appMenu' }
@@ -232,8 +232,9 @@ async function downloadBooks(config) {
   }
 }
 
-function generateAdventure(options, returnAdventure) {
+function generateAdventure(options, returnFuncs) {
   options.version = app.getVersion();
+  options.returns = returnFuncs;
   // return new Promise((resolve) => {
   configurator.getConfig(options).then((config) => {
     if (!isDevelopment) {
@@ -241,7 +242,6 @@ function generateAdventure(options, returnAdventure) {
         path.join(process.resourcesPath, "content", "templates")
       );
     }
-    config.run.returnAdventure = returnAdventure;
     book.setConfig(config).then(() => {
       console.log("Set Config complete");
       utils.directoryReset(config);
@@ -458,13 +458,13 @@ function loadMainWindow() {
   const returnAdventure = (config) => {
     const data = {
       success: true,
-      message: `Successfully generated ${config.run.bookCode}.fvttadv`,
+      message: `Successfully generated ${config.bookCode}.fvttadv`,
       data: [],
-      ddbVersions: config.run.ddbVersions,
+      ddbVersions: config.ddbVersions,
     };
     const targetAdventureZip = path.join(
-      config.run.outputDirEnv,
-      `${config.run.bookCode}.fvttadv`
+      config.outputDirEnv,
+      `${config.bookCode}.fvttadv`
     );
     logger.info(`Adventure generated to ${targetAdventureZip}`);
     try {
@@ -475,8 +475,21 @@ function loadMainWindow() {
     }
   };
 
+  const statusMessage = (message) => {
+    try {
+      mainWindow.webContents.send("stateMessage", message);
+    } catch (err) {
+      logger.error(err);
+      logger.error(err.stack);
+    }
+  };
+
   ipcMain.on("generate", (event, data) => {
-    generateAdventure(data, returnAdventure);
+    const returnFuncs = {
+      returnAdventure: returnAdventure,
+      statusMessage: statusMessage,
+    };
+    generateAdventure(data, returnFuncs);
   });
 
   mainWindow.loadFile(path.join(__dirname, "renderer", "index.html"));

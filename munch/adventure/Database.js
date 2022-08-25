@@ -36,12 +36,12 @@ WHERE ParentId = '${cobaltId}'
       readonly: true,
       fileMustExist: true,
     };
-    const dbPath = path.join(this.adventure.config.run.sourceDir,`${this.adventure.bookCode}.db3`);
+    const dbPath = path.join(this.adventure.config.sourceDir,`${this.adventure.bookCode}.db3`);
     const db = new sqlite3(dbPath, options);
   
     db.pragma("cipher='sqlcipher'");
     db.pragma("legacy=3");
-    db.pragma(`key='${this.adventure.config.run.key}'`);
+    db.pragma(`key='${this.adventure.config.key}'`);
     db.pragma("cipher_page_size='1024'");
     db.pragma("kdf_iter='64000'");
     db.pragma("cipher_hmac_algorithm='HMAC_SHA1'");

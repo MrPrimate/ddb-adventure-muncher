@@ -218,9 +218,9 @@ class FileHelper {
   static directoryReset(config) {
     // delete directory recursively
     config.subDirs.forEach((d) => {
-      if (fs.existsSync(path.join(config.run.outputDir, d))) {
+      if (fs.existsSync(path.join(config.outputDir, d))) {
         fs.rm(
-          path.join(config.run.outputDir, d),
+          path.join(config.outputDir, d),
           { recursive: true },
           (err) => {
             if (err) {
@@ -232,8 +232,8 @@ class FileHelper {
     });
     // delete adventure zip
     const targetAdventureZip = path.join(
-      config.run.outputDirEnv,
-      `${config.run.bookCode}.fvttadv`
+      config.outputDirEnv,
+      `${config.bookCode}.fvttadv`
     );
     if (fs.existsSync(targetAdventureZip)) {
       logger.info(`Removing ${targetAdventureZip}`);
@@ -241,31 +241,31 @@ class FileHelper {
     }
 
     logger.info(
-      `${config.run.sourceDir} to ${path.join(config.run.outputDir, "assets")}`
+      `${config.sourceDir} to ${path.join(config.outputDir, "assets")}`
     );
 
-    FileHelper.checkDirectories([config.run.outputDir]);
+    FileHelper.checkDirectories([config.outputDir]);
 
     // To copy a folder or file
     fse.copySync(
-      config.run.sourceDir,
-      path.join(config.run.outputDir, "assets")
+      config.sourceDir,
+      path.join(config.outputDir, "assets")
     );
 
     // copy assets files
     const assetFilePath = path.join(
-      config.run.assetsInfoDir,
-      config.run.bookCode
+      config.assetsInfoDir,
+      config.bookCode
     );
     if (fs.existsSync(assetFilePath)) {
-      fse.copySync(assetFilePath, path.join(config.run.outputDir, "assets"));
+      fse.copySync(assetFilePath, path.join(config.outputDir, "assets"));
     }
 
     // remove copied db
     const copiedDbPath = path.join(
-      config.run.outputDir,
+      config.outputDir,
       "assets",
-      `${config.run.bookCode}.db3`
+      `${config.bookCode}.db3`
     );
     logger.info(copiedDbPath);
     if (fs.existsSync(copiedDbPath)) {

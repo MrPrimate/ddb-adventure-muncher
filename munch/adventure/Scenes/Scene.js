@@ -22,9 +22,9 @@ class Scene {
     let stub = title.trim().split(".")[0].split(" ")[0].split(":")[0];
     stub = stub.replace(/(\d+)/, unPad);
     if (stub.length <= 4) {
-      const svgDirPath = path.join(this.adventure.config.run.outputDir, "assets", "icons");
+      const svgDirPath = path.join(this.adventure.config.outputDir, "assets", "icons");
       iconPath = path.join("assets","icons",`${stub}.svg`);
-      const iconFileOutPath = path.join(this.adventure.config.run.outputDir, iconPath);
+      const iconFileOutPath = path.join(this.adventure.config.outputDir, iconPath);
       if (!fs.existsSync(svgDirPath)) fs.mkdirSync(svgDirPath);
       if (!fs.existsSync(iconFileOutPath)) {
         logger.info(stub);
@@ -182,7 +182,7 @@ class Scene {
         true;
       return missingNameMatch && 
         scene.img === this.data.img &&
-        scene.bookCode === this.adventure.config.run.bookCode;
+        scene.bookCode === this.adventure.config.bookCode;
     });
     if (this.adventure.config.debug) logger.debug(enhancedScene);
 
@@ -240,7 +240,7 @@ class Scene {
     this.adventure = adventure;
     this.row = row;
     this.image = image;
-    this.imagePath = path.join(this.adventure.config.run.outputDir, image);
+    this.imagePath = path.join(this.adventure.config.outputDir, image);
     this.contentChunkId =  (row.data.contentChunkId && row.data.contentChunkId != "")
       ? row.data.contentChunkId
       : null;
@@ -264,15 +264,15 @@ class Scene {
     // set flags
     this.data.flags.ddb.documentName = row.data.documentName;
     this.data.flags.ddb.ddbId = row.data.id;
-    this.data.flags.ddb.bookCode = this.adventure.config.run.bookCode;
+    this.data.flags.ddb.bookCode = this.adventure.config.bookCode;
     this.data.flags.ddb.slug = row.data.slug;
     this.data.flags.ddb.contentChunkId = this.contentChunkId;
-    this.data.flags.ddb.userData = this.adventure.config.run.userData;
+    this.data.flags.ddb.userData = this.adventure.config.userData;
     this.data.flags.ddb.originDocId = row.data.originDocId;
     this.data.flags.ddb.originHint = row.data.originHint;
     this.data.flags.ddb.originalLink = row.data.originalLink;
     this.data.flags.ddb.versions = {
-      "adventureMuncher": this.adventure.config.run.version
+      "adventureMuncher": this.adventure.config.version
     };
 
     if (row.data.cobaltId) this.data.flags.ddb.cobaltId = row.data.cobaltId;

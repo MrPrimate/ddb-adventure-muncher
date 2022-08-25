@@ -11,7 +11,7 @@ const configurator = require("./config.js");
 const _ = require("lodash");
 
 if (process.env.CONFIG_DIR) {
-  configurator.setConfigDir(path.resolve(__dirname, process.env.CONFIG_DIR));
+  configurator.setConfigDirs(path.resolve(__dirname, process.env.CONFIG_DIR));
 }
 
 let RESULTS = {};
