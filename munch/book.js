@@ -47,25 +47,6 @@ let generatedTables = [];
 
 
 
-function generateJournalChapterEntry(row, img=null) {
-  const existingJournal = generatedJournals.find((f) => f.flags.ddb.ddbId == row.id);
-  if (!existingJournal){
-    if (!row.title || row.title == "") {
-      const frag = new JSDOM(row.html);
-      row.title = frag.window.document.body.textContent;
-    }
-    logger.info(`Generating ${row.title}`);
-    const journal = generateJournalEntry(row, img);
-    return journal;
-  }
-  return undefined;
-}
-
-
-
-
-
-
 async function setConfig(conf) {
   config = conf;
   logger.info(`Adventure Muncher version ${config.run.version}`);

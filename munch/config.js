@@ -1,7 +1,7 @@
 const utils = require("./utils.js");
 const path = require("path");
 const ddb = require("./data/ddb.js");
-const enhance = require("./enhance.js");
+const enhance = require("./data/enhance.js");
 const { exit } = require("process");
 const fs = require("fs");
 const _ = require("lodash");
@@ -41,15 +41,6 @@ function loadImageFinderResults(type, bookCode) {
 
 }
 
-function saveTableData(content, bookCode) {
-  const tableDataPath = path.resolve(__dirname,configDir,"table-data.json");
-
-  const tableData = (fs.existsSync(tableDataPath)) ?
-    utils.loadJSONFile(tableDataPath) :
-    {};
-  tableData[bookCode] = content;
-  utils.saveJSONFile(tableData, tableDataPath);
-}
 
 function isConfig() {
   const config = getConfig();

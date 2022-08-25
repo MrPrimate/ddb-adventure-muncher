@@ -18,9 +18,6 @@ class Row {
 
   }
 
-  process() {
-
-  }
 }
 
 exports.Row = Row;

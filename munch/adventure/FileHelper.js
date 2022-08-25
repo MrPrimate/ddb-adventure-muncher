@@ -7,6 +7,14 @@ const fetch = require("node-fetch");
 const logger = require("./logger.js");
 
 class FileHelper {
+  static checkDirectories(directories) {
+    directories.forEach((dir) => {
+      if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir);
+      }
+    });
+  }
+
   static getFilePathsRecursively(dir) {
     // returns a flat array of absolute paths of all files recursively contained in the dir
     let results = [];
@@ -236,9 +244,7 @@ class FileHelper {
       `${config.run.sourceDir} to ${path.join(config.run.outputDir, "assets")}`
     );
 
-    if (!fs.existsSync(config.run.outputDir)) {
-      fs.mkdirSync(config.run.outputDir);
-    }
+    FileHelper.checkDirectories([config.run.outputDir]);
 
     // To copy a folder or file
     fse.copySync(

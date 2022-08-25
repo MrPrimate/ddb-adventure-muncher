@@ -1,6 +1,7 @@
 const sqlite3 = require("better-sqlite3-multiple-ciphers");
 const path = require("path");
 const logger = require("./logger.js");
+const { Row } = require("./Row.js");
 
 class Database {
 
@@ -53,7 +54,8 @@ WHERE ParentId = '${cobaltId}'
       const rows = statement.all();
   
       for (const row of rows) {
-        this.rowFunction(row);
+        const rowObject = new Row(this.adventure, row);
+        this.rowFunction(rowObject);
       }
       // this.finishedFunction(statement.length);
   

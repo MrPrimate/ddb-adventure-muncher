@@ -72,6 +72,8 @@ class Adventure {
   }
 
   constructor(config) {
+    logger.info(`Adventure Muncher version ${config.run.version}`);
+    logger.info(`Starting Adventure instance for ${config.run.bookCode}`);
     this.config = config;
     this.overrides = {
       templateDir: path.join("..", "content", "templates"),
@@ -157,7 +159,7 @@ class Adventure {
     this.tableFactory.fixUpTables();
   }
 
-  rowProcess(row) {
+  processRow(row) {
     logger.debug("Processing DB Row: " + row.id + ": " + row.title);
 
     const existingJournal = this.journals.find((f) => f.flags.ddb.ddbId == row.id);
@@ -227,12 +229,12 @@ class Adventure {
       // we download assets first so we can use the image sizes for rough guesses
       await this.downloadAssets();
 
-      // the this.rowProcess will loop through each row and do a first pass
+      // the this.processRow will loop through each row and do a first pass
       // for:
       // process Journals
       // process Scenes
       // process Tables
-      const db = new Database(this, this.rowProcess);
+      const db = new Database(this, this.processRow, null);
       db.getData();
 
       this.tableFactory.generateNoteRows(this.row);
