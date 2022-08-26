@@ -4,13 +4,13 @@ const JSZip = require("jszip");
 const extract = require("extract-zip");
 const fse = require("fs-extra");
 const fetch = require("node-fetch");
-const logger = require("./logger.js");
+const logger = require("../logger.js");
 
 class FileHelper {
   static checkDirectories(directories) {
     directories.forEach((dir) => {
       if (!fs.existsSync(dir)){
-        fs.mkdirSync(dir);
+        fs.mkdirSync(dir, { recursive: true });
       }
     });
   }
@@ -217,7 +217,7 @@ class FileHelper {
 
   static directoryReset(config) {
     // delete directory recursively
-    config.subDirs.forEach((d) => {
+    config.data.subDirs.forEach((d) => {
       if (fs.existsSync(path.join(config.outputDir, d))) {
         fs.rm(
           path.join(config.outputDir, d),

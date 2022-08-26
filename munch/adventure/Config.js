@@ -51,8 +51,10 @@ class Config {
   #environmentOverrides() {
     if (process.env.DB_DIR) {
       this.dbsDir = process.env.DB_DIR;
+    } else if (this.options.dbsDir) {
+      this.dbsDir = this.options.dbsDir;
     } else {
-      this.dbsDir = "";
+      this.dbsDir = this.dbDir;
     }
     this.downloadDir = path.resolve(__dirname, this.dbsDir);
     this.metaInfoDir = (process.env.META_DIR) ? path.resolve(__dirname, process.env.META_DIR) : path.resolve(__dirname, this.metaDir);
@@ -61,9 +63,9 @@ class Config {
     this.assetsInfoDir = (process.env.ASSETS_DIR) ? path.resolve(__dirname,process.env.ASSETS_DIR) : path.resolve(__dirname, this.assetsDir);
     this.tableInfoDir = (process.env.TABLE_DIR) ? path.resolve(__dirname,process.env.TABLE_DIR) : path.resolve(__dirname, this.tablesDir);
     this.enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : Config.ENHANCEMENT_ENDPOINT; 
-    this.downloadTimeout = this.data.downloadTimeout ? this.data.downloadTimeout : Config.TIMEOUT;
+    this.debug = (process.env.DEBUG) ? process.env.DEBUG : false; 
   
-    if (this.data.debug) {
+    if (this.debug) {
       logger.debug(`DownloadDir ${this.downloadDir}`); 
       logger.debug(`MetaInfoDir ${this.metaInfoDir}`); 
       logger.debug(`SceneInfoDir ${this.sceneInfoDir}`);
@@ -88,7 +90,7 @@ class Config {
 
   #loadExternalConfig() {
     if (this.options.externalConfigFile) {
-      const externalConfigPath = path.resolve(__dirname, this.ptions.externalConfigFile);
+      const externalConfigPath = path.resolve(__dirname, this.options.externalConfigFile);
       if (fs.existsSync(externalConfigPath)){
         logger.info(`Getting External Config file ${this.options.externalConfigFile}`);
         const externalConfig = FileHelper.loadConfig(externalConfigPath);
@@ -214,7 +216,7 @@ class Config {
     if (this.data.updateVersions){
       logger.warn("SAVING VERSIONS");
       versions[bookCode] = this.ddbVersions.currentVersion;
-      FileHelper.saveConfig(versions, versionsFile);
+      FileHelper.saveJSONFile(versions, versionsFile);
     }
   
     logger.info(`Current version: ${this.ddbVersions.currentVersion}`);
@@ -237,15 +239,21 @@ class Config {
   
   }
 
-  constructor(options) {
+  constructor(options = {}) {
     this.options = options;
-    this.version = options.version;
-    this.returns = options.returns;
-    this.setConfigDirs(Config.DEFAULT_CONFIG_DIR);
+    this.version = options.version || null;
+    this.returns = options.returns || {};
+    const configPath = (process.env.CONFIG_DIR) ? process.env.CONFIG_DIR : Config.DEFAULT_CONFIG_DIR;
+    logger.info(`Using initial config directory ${this.configFile}`);
+    this.setConfigDirs(configPath);
+    // override config with environment vars
+    this.#environmentOverrides();
 
     this.data = FileHelper.loadConfig(this.configFile);
     if (this.data.run) delete(this.data.run);
 
+    this.downloadTimeout = this.data.downloadTimeout ? this.data.downloadTimeout : Config.TIMEOUT;
+    
     this.#loadExternalConfig();
   
     if (options.outputDirPath) {
@@ -256,14 +264,12 @@ class Config {
     }
 
     this.#setDefaultConfig();
+
+    console.warn(this.data);
     // save config
-    FileHelper.saveJSONFile(this.data, this.configFile);
-  
-    // override config with environment vars
-    this.#environmentOverrides();
+    // FileHelper.saveJSONFile(this.data, this.configFile);
 
     FileHelper.checkDirectories([this.downloadDir]);
-
   }
 
   

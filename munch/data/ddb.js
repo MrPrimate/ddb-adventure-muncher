@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
-const utils = require("./utils.js");
 const logger = require("../logger.js");
 const bookData = require("./bookData.js");
+const { FileHelper } = require("../adventure/FileHelper.js");
 
 function ddbCall(url, urlencoded) {
   const options = {
@@ -98,7 +98,7 @@ async function downloadBook(bookId, cobalt, destination, timeout = 30000) {
   logger.info(`Getting download link for ${bookId}`);
   const url = await getBookUrl(bookId, cobalt);
   logger.info("Generated unique download URL");
-  await utils.downloadFile(url, destination, timeout);
+  await FileHelper.downloadFile(url, destination, timeout);
   logger.info("Download complete");
   return true;
 }

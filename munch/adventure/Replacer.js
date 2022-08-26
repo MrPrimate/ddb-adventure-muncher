@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-escape */
 "use strict";
 
-const logger = require("./logger.js");
+const logger = require("../logger.js");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 

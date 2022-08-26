@@ -59,7 +59,7 @@ if (process.argv[2] === "config") {
   console.log("Imported scene updates");
   exit();
 } else if (process.argv[2] === "scene-check") {
-  scene.sceneCheck(configurator, process.argv[3]);
+  scene.sceneCheck(process.argv[3]);
   exit();
 } else if (process.argv[2] === "scene-ids") {
   scene.listSceneIds(process.argv[3]);

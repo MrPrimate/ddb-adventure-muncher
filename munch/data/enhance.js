@@ -1,9 +1,9 @@
-const utils = require("./utils.js");
 const fetch = require("node-fetch");
 const semver = require("semver");
 const path = require("path");
-const logger = require("./logger.js");
+const logger = require("../logger.js");
 const fs = require("fs");
+const { FileHelper } = require("../adventure/FileHelper.js");
 
 async function getEnhancedData(config) {
   const cobaltCookie = config.cobalt;
@@ -60,7 +60,7 @@ async function downloadMetaData(data, config) {
   };
 
   const downloads = data.assets.map((asset) => {
-    return utils.downloadFile(asset.browser_download_url, path.join(config.metaDir, asset.name), config.downloadTimeout);
+    return FileHelper.downloadFile(asset.browser_download_url, path.join(config.metaDir, asset.name), config.downloadTimeout);
   });
 
   await Promise.all(downloads).then((downloadFiles) => {
@@ -69,7 +69,7 @@ async function downloadMetaData(data, config) {
 
   const unzipped = results.downloaded.map((downloadFile) => {
     logger.info(`Unzipping ${downloadFile}`);
-    return utils.unzipFile(downloadFile, config.metaDir);
+    return FileHelper.unzipFile(downloadFile, config.metaDir);
   });
 
   await Promise.all(unzipped).then((unzippedFiles) => {

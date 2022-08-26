@@ -1,4 +1,4 @@
-const Folder = require("./Folders/Folder.js");
+const { Folder } = require("./Folders/Folder.js");
 const _ = require("lodash");
 
 class FolderFactory {

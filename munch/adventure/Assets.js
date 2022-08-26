@@ -2,7 +2,7 @@ const logger = require("../logger.js");
 const { FileHelper } = require("./FileHelper.js");
 
 const fs = require("fs");
-const fse = require("fse");
+const fse = require("fs-extra");
 const path = require("path");
 
 class Assets {

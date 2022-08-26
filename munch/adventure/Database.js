@@ -1,6 +1,6 @@
 const sqlite3 = require("better-sqlite3-multiple-ciphers");
 const path = require("path");
-const logger = require("./logger.js");
+const logger = require("../logger.js");
 const { Row } = require("./Row.js");
 
 class Database {
