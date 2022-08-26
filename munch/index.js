@@ -83,13 +83,11 @@ if (process.argv[2] === "config") {
   exit();
 } else {
   configurator.loadBook(process.argv[2]).then(() => {
+    FileHelper.directoryReset(configurator);
+    console.log(configurator);
     const adventure = new Adventure(configurator);
-    adventure.
-    book.setConfig(config).then(() => {
-      book.setMasterFolders();
-      FileHelper.directoryReset(config);
-      console.log(config.run);
-      book.getData();
+    adventure.processAdventure().then(() => {
+      console.log(configurator);
     });
   });
 }

@@ -118,8 +118,8 @@ class Adventure {
     };
 
     this.imageFinder = {
-      sceneResults: [],
-      journalResults: [],
+      scenes: [],
+      journals: [],
     };
 
     this.replaceLinks = [];
@@ -220,14 +220,10 @@ class Adventure {
   async processAdventure() {
 
     try {
-
-      // ToDo
-      // get metadata
-      // download adventure
-      // get enhanced data
-      // asset copy
       // we download assets first so we can use the image sizes for rough guesses
       await this.downloadAssets();
+      // load up hint data
+      this.loadHints();
 
       // the this.processRow will loop through each row and do a first pass
       // for:
@@ -292,7 +288,7 @@ class Adventure {
     const sceneData = (fs.existsSync(imageScenePath)) ?
       FileHelper.loadJSONFile(imageScenePath) :
       {};
-    sceneData[this.bookCode] = this.imageFinder.sceneResults;
+    sceneData[this.bookCode] = this.imageFinder.scenes;
     FileHelper.saveJSONFile(sceneData, imageScenePath);
   
     const imageJournalPath = path.resolve(__dirname, this.config.configDir, "journal-images.json");
@@ -300,25 +296,24 @@ class Adventure {
     const journalData = (fs.existsSync(imageJournalPath)) ?
       FileHelper.loadJSONFile(imageJournalPath) :
       {};
-    journalData[this.bookCode] = this.imageFinder.journalResults;
+    journalData[this.bookCode] = this.imageFinder.journals;
     FileHelper.saveJSONFile(journalData, imageJournalPath);
   }
+
+  getImageFinderResults(type) {
+    const imagePath = path.resolve(__dirname, this.config.configDir, `${type}-images.json`);
   
+    const data = (fs.existsSync(imagePath))
+      ? FileHelper.loadJSONFile(imagePath)
+      : {};
+  
+    return data[this.bookCode] ? data[this.bookCode] : [];
+  }
+
   loadImageFinderResults() {
-    const imageScenePath = path.resolve(__dirname, this.config.configDir, "scene-images.json");
-  
-    const sceneData = (fs.existsSync(imageScenePath))
-      ? FileHelper.loadJSONFile(imageScenePath)
-      : {};
-  
-    this.imageFinder.sceneResults = sceneData[this.bookCode] ? sceneData[this.bookCode] : [];
-
-    const imageJournalPath = path.resolve(__dirname, this.config.configDir, "journal-images.json");
-    const journalData = (fs.existsSync(imageJournalPath))
-      ? FileHelper.loadJSONFile(imageJournalPath)
-      : {};
-
-    this.imageFinder.journalResults = journalData[this.bookCode] ? journalData[this.bookCode] : [];
+    ["scene", "journal"].forEach((type) => {
+      this.imageFinder[`${type}s`] = this.getImageFinderResults(type);
+    });
   }
 
   #saveTableData() {

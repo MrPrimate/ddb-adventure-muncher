@@ -43,7 +43,7 @@ class ImageJournal extends Journal {
   _generateJournalEntryShared() {
     if (!this.duplicate) {
       if (this.adventure.config.imageFind) {
-        this.adventure.imageFinder.journalResults.push({
+        this.adventure.imageFinder.journals.push({
           bookCode: this.adventure.bookCode,
           img: this.imageContent,
           name: this.row.name,
