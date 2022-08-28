@@ -80,6 +80,7 @@ class Config {
     this.data.createHandouts = this.checkConfigSetting("createHandouts", true);
     this.data.createPlayerHandouts = this.checkConfigSetting("createPlayerHandouts", true);
     this.data.observeAll = this.checkConfigSetting("observeAll", false);
+    this.data.createSections = this.checkConfigSetting("createSections", true);
     this.data.subDirs = [
       "journal",
       // "compendium",
@@ -265,7 +266,7 @@ class Config {
 
     this.#setDefaultConfig();
 
-    console.warn(this.data);
+    // console.warn(this.data);
     // save config
     // FileHelper.saveJSONFile(this.data, this.configFile);
 

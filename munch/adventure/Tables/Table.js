@@ -61,7 +61,7 @@ class Table {
   constructor({adventure, row, diceKey, tableData, count}) {
     this.adventure = adventure;
     this.contentChunkId = tableData.contentChunkId;
-    const tableJsonPath = path.join(this.adventure.overrides.templateDir, "table.json");
+    const tableJsonPath = path.join("../../", this.adventure.overrides.templateDir, "table.json");
     this.data = JSON.parse(JSON.stringify(require(tableJsonPath)));
 
     const nameExtension = tableData.diceKeys > 1 ? ` [${tableData.diceKeys}]` : "";
@@ -78,8 +78,8 @@ class Table {
     if (row.cobaltId) this.data.flags.ddb.cobaltId = row.cobaltId;
     if (row.parentId) this.data.flags.ddb.parentId = row.parentId;
 
-    if (this.adventure.config.observeAll) {
-      if (this.adventure.config.v10Mode) {
+    if (this.adventure.config.data.observeAll) {
+      if (this.adventure.config.data.v10Mode) {
         this.data.ownership.default = 2;
       } else {
         this.data.permission.default = 2;

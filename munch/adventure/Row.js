@@ -9,12 +9,12 @@ class Row {
   constructor(adventure, row) {
     this.adventure = adventure;
     this.data = row; 
-    this.doc =  new JSDOM(row.html).window.document;
-    this.scenes = [];
-    this.journals = [];
-    this.notes = [];
-    this.tables = [];
-    this.actorIds = [];
+    this.doc = new JSDOM(row.html).window.document;
+    // this.scenes = [];
+    // this.journals = [];
+    // this.notes = [];
+    // this.tables = [];
+    // this.actorIds = [];
 
   }
 

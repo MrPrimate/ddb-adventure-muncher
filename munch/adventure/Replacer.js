@@ -102,12 +102,12 @@ class LinkReplacer {
         // logger.info(slugMatch);
         const slug = slugMatch[1].replace(/\//g, "").split("#");
         const refactoredSlug = (slug.length > 1) ? `${slug[0].toLowerCase()}#${slug[1]}` : slug[0].toLowerCase();
-        const journalPageMap = this.adventure.config.v10Mode ? this.adventure.journals.map((j) => j.pages).flat() : this.adventure.journals;
+        const journalPageMap = this.adventure.config.data.v10Mode ? this.adventure.journals.map((j) => j.pages).flat() : this.adventure.journals;
         const journalPage = journalPageMap.find((journalPage) => {
           let check = journalPage.flags.ddb.slug === refactoredSlug;
           if (!check && slug.length > 1) check = journalPage.flags.ddb.slug === slug[0].toLowerCase();
           const pageNameSlug = journalPage.name.replace(/[^\w\d]+/g, "");
-          const pageCheck = this.adventure.config.v10Mode && slug.length > 2
+          const pageCheck = this.adventure.config.data.v10Mode && slug.length > 2
             ? !journalPage.flags.ddb.img && !journalPage.flags.ddb.note &&
               pageNameSlug.toLowerCase() === slug[1].toLowerCase()
             : true;
@@ -118,7 +118,7 @@ class LinkReplacer {
           //text = text.replace(journalRegex, `@JournalEntry[${journalEntry.name}]{${node.textContent}}`);
           const textPointer = node.textContent.trim() !== "";
           const textValue = `${node.textContent}`;
-          if (this.adventure.config.v10Mode) {
+          if (this.adventure.config.data.v10Mode) {
             const journalEntry = this.adventure.journals.find((j) => j.pages.some((p) => p._id === journalPage._id));
             const slugLink = textPointer ? `#${textValue.replace(/\s/g, "")}` : "";
             this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@UUID[JournalEntry.${journalEntry._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`);

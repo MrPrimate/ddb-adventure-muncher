@@ -8,7 +8,7 @@ class FolderFactory {
 
     const folderData = {
       adventure: this.adventure,
-      row: mainRow,
+      row: { data: mainRow },
       specialType: "base",
     };
     const mainJournal = new Folder(_.merge(folderData, { type: "JournalEntry"}));

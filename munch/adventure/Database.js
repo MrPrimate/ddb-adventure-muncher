@@ -24,10 +24,8 @@ WHERE ParentId = '${cobaltId}'
 `;
   }
 
-  constructor(adventure, rowFunction, finishedFunction) {
+  constructor(adventure) {
     this.adventure = adventure;
-    this.rowFunction = rowFunction;
-    this.finishedFunction = finishedFunction;
   }
 
   getData(){
@@ -55,7 +53,7 @@ WHERE ParentId = '${cobaltId}'
   
       for (const row of rows) {
         const rowObject = new Row(this.adventure, row);
-        this.rowFunction(rowObject);
+        this.adventure.processRow(rowObject);
       }
       // this.finishedFunction(statement.length);
   

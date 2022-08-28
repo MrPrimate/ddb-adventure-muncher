@@ -26,7 +26,7 @@ class Journal {
       logger.info(`Appending to chapter... ${this.row.data.title} ${this.row.data.parentId} search...`);
       this.adventure.journals.forEach((journal) => {
         if (journal.data.flags.ddb.cobaltId === this.row.parentId) {
-          if (this.adventure.config.v10Mode && this.data.pages.length > 0) {
+          if (this.adventure.config.data.v10Mode && this.data.pages.length > 0) {
             const page = this.data.pages[0];
             if (page.name != journal.data.name) {
               page.title.show = true;
@@ -57,8 +57,8 @@ class Journal {
   }
 
   setPermissions() {
-    if (this.adventure.config.observeAll) {
-      if (this.adventure.config.v10Mode) {
+    if (this.adventure.config.data.observeAll) {
+      if (this.adventure.config.data.v10Mode) {
         this.data.ownership.default = 2;
       } else {
         this.data.permission.default = 2;
@@ -88,7 +88,7 @@ class Journal {
       if (firstElement === "H1" || allFirstElements.length === 1) {
         firstElement.remove();
       }
-      this.data.content = this.row.doc.innerHTML.replace(/\s+/g, " ");
+      this.data.content = this.row.doc.body.innerHTML.replace(/\s+/g, " ");
     } catch (err) {
       logger.error("Journal Generation failed, bad note row?", this.row.data);
       throw err;
@@ -103,14 +103,14 @@ class Journal {
   }
 
   get createHandouts() {
-    return ((this.adventure.config.createHandouts && !this.row.data.player) ||
-      (this.row.player && this.config.createPlayerHandouts));
+    return ((this.adventure.config.data.createHandouts && !this.row.data.player) ||
+      (this.row.player && this.config.data.createPlayerHandouts));
   }
 
   get createSections() {
-    return this.adventure.config.v10Mode
+    return this.adventure.config.data.v10Mode
       ? !this.row.data.parentId // never in v10
-      : this.config.createSections; // hidden setting in v9
+      : this.adventure.config.data.createSections; // hidden setting in v9
   }
 
   getFolder() {
@@ -126,9 +126,9 @@ class Journal {
     this.adventure = adventure;
     this.row = row;
     this._additionalConstuction(options);
-    this.data = this.adventure.config.v10Mode
-      ? JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "journal-v10.json"))))
-      : JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"journal.json"))));
+    this.data = this.adventure.config.data.v10Mode
+      ? JSON.parse(JSON.stringify(require(path.join("../../", this.adventure.overrides.templateDir, "journal-v10.json"))))
+      : JSON.parse(JSON.stringify(require(path.join("../../", this.adventure.overrides.templateDir,"journal.json"))));
 
     this.data.name = row.data.title;
     this.data.flags.ddb.ddbId = row.data.id;
@@ -162,7 +162,7 @@ class Journal {
 
     this.setPermissions();
 
-    if (this.adventure.config.v10Mode) {
+    if (this.adventure.config.data.v10Mode) {
       this._generateJournalEntryV10();
     } else {
       this._generateJournalEntryOld();
@@ -186,7 +186,7 @@ class Journal {
   fixUp() {
     logger.info(`Fixing up text journal: ${this.data.name}`);
     this.adventure.replaceLinks.forEach((link) => {
-      if (this.adventure.config.v10Mode) {
+      if (this.adventure.config.data.v10Mode) {
         this.data.pages.forEach((page) =>{
           if (page.type === "text") {
             page.text.content = page.text.content.replace(link.html, link.ref);
@@ -197,7 +197,7 @@ class Journal {
       }
     });
  
-    if (this.adventure.config.v10Mode) {
+    if (this.adventure.config.data.v10Mode) {
       this.data.pages.forEach((page) =>{
         if (page.type === "text") {
           page.text.content = new LinkReplacer(this.adventure, page.text.content, `${this.data.name}`).process().result;

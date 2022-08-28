@@ -12,16 +12,19 @@ class JournalFactory {
   createJournal(row) {
     const journal = new Journal(this.adventure, row);
     this.addJournal(journal, row);
+    return journal;
   }
 
   createImageJournal(row, img) {
     const journal = new ImageJournal(this.adventure, row, img);
     this.addJournal(journal, row);
+    return journal;
   }
 
   createNoteJournal(row) {
     const journal = new NoteJournal(this.adventure, row);
     this.addJournal(journal, row);
+    return journal;
   }
 
   addJournal(journal) {

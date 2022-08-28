@@ -12,10 +12,10 @@ class Folder {
 
   constructor({adventure, row, type, specialType = null}) {
     this.adventure = adventure;
-    const folderJsonPath = path.join(this.adventure.overrides.templateDir,"folder.json");
+    const folderJsonPath = path.join("../../", this.adventure.overrides.templateDir,"folder.json");
     this.data = JSON.parse(JSON.stringify(require(folderJsonPath)));
 
-    this.data.name = row.data.title;    
+    this.data.name = row.data.title;
     this.data.type = type;
     this.data.sort = Folder.FOLDER_SORT + parseInt(row.data.id);
 
@@ -90,8 +90,8 @@ class Folder {
       // lets generate a Scene && RollTable Folders at the same time
       // we do this so the scene folder order matches the same as the journals as some
       // adventures e.g. CoS have different kind of scene detection
-      this.adventure.folderFactory.getFolderId(row, "Scene");
-      this.adventure.folderFactory.getFolderId(row, "RollTable");
+      this.adventure.folderFactory.getFolderId(row, "Scene", specialType);
+      this.adventure.folderFactory.getFolderId(row, "RollTable", specialType);
     }
   }
 

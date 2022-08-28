@@ -126,8 +126,6 @@ class Adventure {
     this.tempHandouts = [];
     this.ids = this.getLookups(false);
 
-    this.masterFolder = {};
-
     // create global factories
     this.idFactory = new IdFactory(this);
     this.folderFactory = new FolderFactory(this);
@@ -145,7 +143,6 @@ class Adventure {
       sceneEnhancements: this.enhancements.sceneEnhancements.length,
       noteHints: this.enhancements.noteHints.length,
       tableHints: this.enhancements.tableHints.length,
-      enhancedScenes: this.enhancements.enhancedScenes.length,
     });
 
   }
@@ -160,27 +157,27 @@ class Adventure {
   }
 
   processRow(row) {
-    logger.debug("Processing DB Row: " + row.id + ": " + row.title);
+    logger.debug(`Processing DB Row: ${row.data.id} : ${row.data.title}`);
 
-    const existingJournal = this.journals.find((f) => f.flags.ddb.ddbId == row.id);
+    const existingJournal = this.journals.some((f) => f.data.flags.ddb.ddbId == row.data.id);
 
     if (!existingJournal){
-      if (!row.title || row.title == "") {
-        const frag = new JSDOM(row.html);
-        row.title = frag.window.document.body.textContent;
+      if (!row.data.title || row.title == "") {
+        const frag = new JSDOM(row.data.html);
+        row.data.title = frag.window.document.body.textContent;
       }
-      logger.info(`Generating ${row.title}`);
+      logger.info(`Generating ${row.data.title}`);
 
       const journal = this.journalFactory.createJournal(row);
       this.notesFactory.generateJournals(row);
       
       // if this is a top tier parent document we process it for scenes now.
-      const content = this.adventure.config.v10Mode
+      const content = this.config.data.v10Mode
         ? journal.data.pages[0]
         : journal.data;
       // if (content && journal.data.flags.ddb.cobaltId) {
       if (content) {
-        this.adventure.sceneFactory.findScenes(row, content);
+        this.sceneFactory.findScenes(row, content);
       }
     }
 
@@ -230,15 +227,14 @@ class Adventure {
       // process Journals
       // process Scenes
       // process Tables
-      const db = new Database(this, this.processRow, null);
+      const db = new Database(this);
       db.getData();
-
-      this.tableFactory.generateNoteRows(this.row);
 
       // finally we do some second passes to fix up links for generated images, scenes etc
       this.#fixUpAdventure();
 
       // we copy assets and save out generated json
+      await this.downloadEnhancementAssets();
       this.copyAssets();
       this.saveJson();
 
@@ -271,7 +267,7 @@ class Adventure {
         return data && data[this.bookCode] ? data[this.bookCode] : [];
       }
     } else {
-      return {};
+      return all ? {} : [];
     }
   }
 
@@ -348,8 +344,12 @@ class Adventure {
 
   async downloadAssets() {
     const assets = new Assets(this);
-    await assets.downloadEnhancements();
     await assets.downloadDDBMobile();
+  }
+
+  async downloadEnhancementAssets() {
+    const assets = new Assets(this);
+    await assets.downloadEnhancements(this.downloadList);
   }
 
   copyAssets() {
@@ -366,7 +366,7 @@ class Adventure {
       fs.mkdirSync(this.config.outputDir);
     }
   
-    this.config.subDirs.forEach((d) => {
+    this.config.data.subDirs.forEach((d) => {
       if (!fs.existsSync(path.join(this.config.outputDir,d))) {
         fs.mkdirSync(path.join(this.config.outputDir,d));
       }
@@ -374,7 +374,7 @@ class Adventure {
   
     logger.info("Exporting adventure outline...");
   
-    const adventure = require(path.join(this.adventure.overrides.templateDir,"adventure.json"));
+    const adventure = require(path.join("../", this.overrides.templateDir,"adventure.json"));
     adventure.name = this.config.book.description;
     adventure.id = Helpers.randomString(10, "#aA");
     adventure.required = this.required;

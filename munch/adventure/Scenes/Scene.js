@@ -28,7 +28,7 @@ class Scene {
       if (!fs.existsSync(svgDirPath)) fs.mkdirSync(svgDirPath);
       if (!fs.existsSync(iconFileOutPath)) {
         logger.info(stub);
-        const svgTemplate = path.join(this.adventure.overrides.templateDir, `${stub.length}char.svg`);
+        const svgTemplate = path.join("../../", this.adventure.overrides.templateDir, `${stub.length}char.svg`);
         logger.info(svgTemplate);
         let svgContent = FileHelper.loadFile(svgTemplate);
         svgContent = svgContent.replace("REPLACEME", stub);
@@ -55,11 +55,11 @@ class Scene {
   }
 
   #journalMatch() {
-    let journalMatch = this.adventure.config.v10Mode
+    let journalMatch = this.adventure.config.data.v10Mode
       ? this.adventure.journals.map((j) => j.pages).flat().find((journal) => journal._id === this.row.data.originDocId)
       : this.adventure.journals.find((journal) => journal._id === this.row.data.originDocId);
     if (!journalMatch) {
-      journalMatch = this.adventure.config.v10Mode
+      journalMatch = this.adventure.config.data.v10Mode
         ? this.adventure.journals.map((j) => j.pages).flat().find((journalPage) => 
           journalPage.name.includes(this.data.navName) &&
           !journalPage.flags.ddb.notes && !journalPage.flags.ddb.img && !journalPage.src
@@ -120,7 +120,7 @@ class Scene {
               journal.data.flags.ddb.linkName == note.flags.ddb.linkName :
               false;
             const journalNameMatch = !contentChunkIdMatch && !originMatch ?
-              this.adventure.config.v10Mode
+              this.adventure.config.data.v10Mode
                 ? journal.data.pages.some((page) => page.name.trim() === note.label.trim())
                 : journal.data.name.trim() == note.label.trim() :
               false;
@@ -282,7 +282,7 @@ class Scene {
       delete row.data.parentId;
     }
     row.data.title = row.data.documentName;
-    this.data.folder = this.adventure.folderFactory.getFolderId(row, "Scene");
+    this.data.folder = this.adventure.folderFactory.getFolderId(row, "Scene", "scene");
 
     // load meta-data adjustments
     this.#adjustment();
@@ -302,7 +302,7 @@ class Scene {
     }
 
     this.#enhancedScenes();
-    
+
     if (this.adventure.config.debug) logger.debug(`Scene name: "${this.data.name}" Img: "${this.data.img}"`);
 
     this.data._id = this.adventure.idFactory.getId(this.data, "Scene");

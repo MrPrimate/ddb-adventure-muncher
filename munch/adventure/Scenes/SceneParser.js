@@ -68,15 +68,15 @@ class SceneParser {
             this.tmpCount++;
             const playerEntry = new ImageJournal(this.adventure, row, ref.href.replace("ddb://image", "."));
             this.adventure.journals.push(playerEntry);
-            const dmText = this.adventure.config.createHandouts ? `@JournalEntry[${title}]{DM Version} ` : "";
-            const playerText = this.adventure.config.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{${titleType} Version}` : "";
+            const dmText = this.adventure.config.data.createHandouts ? `@JournalEntry[${title}]{DM Version} ` : "";
+            const playerText = this.adventure.config.data.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{${titleType} Version}` : "";
             this.adventure.replaceLinks.push( {html: ref.outerHTML, ref: `${dmText}${playerText}` });
-            if (this.adventure.config.v10Mode) {
+            if (this.adventure.config.data.v10Mode) {
               this.document.text.content = this.document.text.content.replace(ref.outerHTML, `${dmText}${playerText}`);
             } else {
               this.document.content = this.document.content.replace(ref.outerHTML, `${dmText}${playerText}`);
             }
-            const scene = new Scene(this.adventure, row, this.adventure.config.v10Mode ? playerEntry.pages[0].src : playerEntry.img);
+            const scene = new Scene(this.adventure, row, this.adventure.config.data.v10Mode ? playerEntry.pages[0].src : playerEntry.img);
             this.adventure.scenes.push(scene);
           }
   
@@ -107,11 +107,11 @@ class SceneParser {
           if (!playerRef) {
             // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkName}]{${journalEntry.name}}`);
             const linkId = journalEntry.flags.ddb.linkId ? journalEntry.flags.ddb.linkId : journalEntry._id;
-            const dmText = this.adventure.config.createHandouts ? ` @JournalEntry[${linkId}]{${journalEntry.name}}` : "";
+            const dmText = this.adventure.config.data.createHandouts ? ` @JournalEntry[${linkId}]{${journalEntry.name}}` : "";
             this.adventure.replaceLinks.push( {html: img.outerHTML, ref: `${img.outerHTML}${dmText}}` });
           }
           // if (!journalEntry.flags.ddb.duplicate) {
-          if (this.adventure.config.createHandouts) this.adventure.journals.push(journalEntry);
+          if (this.adventure.config.data.createHandouts) this.adventure.journals.push(journalEntry);
           //}
         }
       });
@@ -180,16 +180,16 @@ class SceneParser {
             this.tmpCount++;
             const playerEntry = new ImageJournal(this.adventure, row, playerRef.href.replace("ddb://image", "."));
             this.adventure.journals.push(playerEntry);
-            const dmText = this.adventure.config.createHandouts ? `@JournalEntry[${title}]{DM Version} ` : "";
-            const playerText = this.adventure.config.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{${titleType} Version}` : "";
+            const dmText = this.adventure.config.data.createHandouts ? `@JournalEntry[${title}]{DM Version} ` : "";
+            const playerText = this.adventure.config.data.createPlayerHandouts ? `@JournalEntry[${playerEntry.flags.ddb.linkName}]{${titleType} Version}` : "";
   
             this.adventure.replaceLinks.push( {html: playerRef.outerHTML, ref: `${dmText}${playerText}` });
-            if (this.adventure.config.v10Mode) {
+            if (this.adventure.config.data.v10Mode) {
               this.document.text.content = this.document.text.content.replace(playerRef.outerHTML, `${dmText}${playerText}`);
             } else {
               this.document.content = this.document.content.replace(playerRef.outerHTML, `${dmText}${playerText}`);
             }
-            const scene = new Scene(this.adventure, row, this.adventure.config.v10Mode ? playerEntry.pages[0].src : playerEntry.img);
+            const scene = new Scene(this.adventure, row, this.adventure.config.data.v10Mode ? playerEntry.pages[0].src : playerEntry.img);
             this.adventure.scenes.push(scene);
           }
   
@@ -207,10 +207,10 @@ class SceneParser {
           if (!playerVersion) {
             // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}`);
             const linkId = journalEntry.flags.ddb.linkId ? journalEntry.flags.ddb.linkId : journalEntry._id;
-            const dmText = this.adventure.config.createHandouts ? ` @JournalEntry[${linkId}]{${title}}` : "";
+            const dmText = this.adventure.config.data.createHandouts ? ` @JournalEntry[${linkId}]{${title}}` : "";
             this.adventure.replaceLinks.push( {html: img.outerHTML, ref: `${img.outerHTML}${dmText}}` });
           }
-          if (this.adventure.config.createHandouts) this.adventure.journals.push(journalEntry);
+          if (this.adventure.config.data.createHandouts) this.adventure.journals.push(journalEntry);
         }
       });
     }
@@ -218,7 +218,7 @@ class SceneParser {
   }
 
   #possibleHandouts() {
-    if (this.adventure.config.createHandouts) {
+    if (this.adventure.config.data.createHandouts) {
       this.possibleHandouts.forEach((node) => {
         if(!node.src) return;
         this.tmpCount++;
@@ -285,17 +285,17 @@ class SceneParser {
         // don't add entry if we have already parsed this
         // 
         if (!journalEntry.flags.ddb.duplicate) {
-          const playerText = this.adventure.config.createPlayerHandouts ? `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}` : "";
+          const playerText = this.adventure.config.data.createPlayerHandouts ? `@JournalEntry[${journalEntry.flags.ddb.linkName}]{Player Version}` : "";
           this.adventure.replaceLinks.push({ html: aNode.outerHTML, ref: playerText });
-          if (this.adventure.config.v10Mode) {
+          if (this.adventure.config.data.v10Mode) {
             this.document.text.content = this.document.text.content.replace(aNode.outerHTML, playerText);
           } else {
             this.document.content = this.document.content.replace(aNode.outerHTML, playerText);
           }
           this.adventure.journals.push(journalEntry);
         }
-        if (this.adventure.config.v10Mode ? !this.adventure.sceneImages.includes(journalEntry.pages[0].src) : !this.adventure.sceneImages.includes(journalEntry.img)) {
-          const scene = new Scene(this.adventure, row, this.adventure.config.v10Mode ? journalEntry.pages[0].src : journalEntry.img);
+        if (this.adventure.config.data.v10Mode ? !this.adventure.sceneImages.includes(journalEntry.pages[0].src) : !this.adventure.sceneImages.includes(journalEntry.img)) {
+          const scene = new Scene(this.adventure, row, this.adventure.config.data.v10Mode ? journalEntry.pages[0].src : journalEntry.img);
           this.adventure.scenes.push(scene);
         }
       });
@@ -343,17 +343,17 @@ class SceneParser {
   
       // don't add entry if we have already parsed this
       if (!journalEntry.flags.ddb.duplicate) {
-        const playerText = this.adventure.config.createPlayerHandouts ? `@JournalEntry[${journalEntry.flags.ddb.linkName}]{${titleType} Version}` : "";
+        const playerText = this.adventure.config.data.createPlayerHandouts ? `@JournalEntry[${journalEntry.flags.ddb.linkName}]{${titleType} Version}` : "";
         this.adventure.replaceLinks.push( {html: node.outerHTML, ref: playerText });
-        if (this.adventure.config.v10Mode) {
+        if (this.adventure.config.data.v10Mode) {
           this.document.text.content = this.document.text.content.replace(node.outerHTML, playerText);
         } else {
           this.document.content = this.document.content.replace(node.outerHTML, playerText);
         }
         this.adventure.journals.push(journalEntry);
       }
-      if (this.adventure.config.v10Mode ? !this.adventure.sceneImages.includes(journalEntry.pages[0].src) : !this.adventure.sceneImages.includes(journalEntry.img)) {
-        const scene = new Scene(this.adventure, row, this.adventure.config.v10Mode ? journalEntry.pages[0].src : journalEntry.img);
+      if (this.adventure.config.data.v10Mode ? !this.adventure.sceneImages.includes(journalEntry.pages[0].src) : !this.adventure.sceneImages.includes(journalEntry.img)) {
+        const scene = new Scene(this.adventure, row, this.adventure.config.data.v10Mode ? journalEntry.pages[0].src : journalEntry.img);
         this.adventure.scenes.push(scene);
       }
     });
