@@ -414,16 +414,21 @@ class Adventure {
   }
 
   #hasFolderContent(folder) {
+    // console.warn(folder);
     const hasContent = this.#foldersWithContent.includes(folder._id);
+    // console.warn({folder, hasContent})
     if (hasContent) return true;
   
     const childFolders = this.folders.filter((pFolder) => folder._id === pFolder.parent);
+    // console.warn({folder, childFolders})
     if (!childFolders) return false;
   
     const hasChildrenWithContent = childFolders.some((childFolder) => this.folders.includes(childFolder._id));
+    // console.warn({folder, hasChildrenWithContent})
     if (hasChildrenWithContent) return true;
   
-    const hasRecursiveContent = childFolders.some((childFolder) => this.hasFolderContent(childFolder));
+    const hasRecursiveContent = childFolders.some((childFolder) => this.#hasFolderContent(childFolder));
+    // console.warn(hasRecursiveContent)
   
     return hasRecursiveContent;
   

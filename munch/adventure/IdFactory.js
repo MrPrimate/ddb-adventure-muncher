@@ -3,7 +3,7 @@ const { Helpers } = require("./Helpers.js");
 class IdFactory {
 
   static random() {
-    Helpers.randomString(16,"#aA");
+    return Helpers.randomString(16,"#aA");
   }
 
   constructor(adventure) {
@@ -36,7 +36,7 @@ class IdFactory {
   
       return basicCheck && chunkCheck && sceneNotes && handout && scenePinIdMatch;
     });
-  
+
     if (existingId) {
       return existingId.id;
     } else {
@@ -54,6 +54,7 @@ class IdFactory {
         scenePin: document.flags.ddb.pin,
       };
       this.adventure.ids.push(id);
+      console.warn({id: id})
       return id.id;
     }
   }
