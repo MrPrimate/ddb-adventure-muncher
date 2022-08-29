@@ -56,17 +56,17 @@ class Scene {
 
   #journalMatch() {
     let journalMatch = this.adventure.config.data.v10Mode
-      ? this.adventure.journals.map((j) => j.pages).flat().find((journal) => journal._id === this.row.data.originDocId)
-      : this.adventure.journals.find((journal) => journal._id === this.row.data.originDocId);
+      ? this.adventure.journals.map((j) => j.data.pages).flat().find((journal) => journal._id === this.row.data.originDocId)
+      : this.adventure.journals.find((journal) => journal.data._id === this.row.data.originDocId);
     if (!journalMatch) {
       journalMatch = this.adventure.config.data.v10Mode
-        ? this.adventure.journals.map((j) => j.pages).flat().find((journalPage) => 
+        ? this.adventure.journals.map((j) => j.data.pages).flat().find((journalPage) => 
           journalPage.name.includes(this.data.navName) &&
           !journalPage.flags.ddb.notes && !journalPage.flags.ddb.img && !journalPage.src
         )
         : this.adventure.journals.find((journal) => 
-          journal.name.includes(this.data.navName) &&
-          !journal.flags.ddb.notes && !journal.flags.ddb.img && !journal.img
+          journal.data.name.includes(this.data.navName) &&
+          !journal.data.flags.ddb.notes && !journal.data.flags.ddb.img && !journal.data.img
         );
     }
     if (journalMatch) this.data.journal = journalMatch._id;
@@ -246,7 +246,7 @@ class Scene {
       : null;
 
     // load skeleton
-    this.data = JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"scene.json"))));
+    this.data = JSON.parse(JSON.stringify(require(path.join("../../", this.adventure.overrides.templateDir,"scene.json"))));
 
     // initial image size guess (used if not set by adjustment)
     const dimensions = this.imageSize();
