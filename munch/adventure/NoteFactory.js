@@ -38,7 +38,7 @@ class NoteFactory {
       return;
     }
     let html = "";
-    let noteTitle = this.getNoteTitle(keyChunk.innerHTML);
+    let noteTitle = NoteFactory.getNoteTitle(keyChunk.innerHTML);
     let keyChunkId = hint.contentChunkIdStart;
     let idTagStop = hint.contentChunkIdStop === "IDSTOP";
 
@@ -61,7 +61,7 @@ class NoteFactory {
       // if we have reached the same tag type or last chunk generate a journal
       if ((tagMatch && !pTag) || stopChunk) {
         let noteRow = {
-          doc: JSDOM.fragmet(html),
+          doc: JSDOM.fragment(html),
           data: JSON.parse(JSON.stringify(row.data)),
         };
         delete noteRow.data.html;
