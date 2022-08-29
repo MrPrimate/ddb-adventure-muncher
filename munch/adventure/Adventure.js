@@ -135,6 +135,8 @@ class Adventure {
     this.journalFactory = new JournalFactory(this);
     this.sceneFactory = new SceneFactory(this);
 
+    this.assetFactory = new Assets(this);
+
     // initialize master folders
     this.masterFolder = this.folderFactory.masterFolders;
 
@@ -343,22 +345,19 @@ class Adventure {
   }
 
   async downloadAssets() {
-    const assets = new Assets(this);
-    await assets.downloadDDBMobile();
+    await this.assetFactory.downloadDDBMobile();
   }
 
   async downloadEnhancementAssets() {
-    const assets = new Assets(this);
-    await assets.downloadEnhancements(this.downloadList);
+    await this.assetFactory.downloadEnhancements(this.downloadList);
   }
 
   copyAssets() {
-    const assets = new Assets(this);
-    assets.finalAssetCopy();
+    this.assetFactory.finalAssetCopy();
   }
 
   saveZip() {
-    this.assets.generateZipFile();
+    this.assetFactory.generateZipFile();
   }
 
   #outputAdventure() {
