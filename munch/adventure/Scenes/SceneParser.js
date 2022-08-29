@@ -51,7 +51,7 @@ class SceneParser {
               rowContentChunkId = `${node.id}-${titleType.toLowerCase()}`;
             }
   
-            let row = {
+            let row = { data: {
               title: `${title} (${titleType} Version)`,
               id: 10000 + this.document.flags.ddb.ddbId + this.tmpCount,
               parentId: this.document.flags.ddb.parentId,
@@ -64,7 +64,7 @@ class SceneParser {
               originHint: `possibleFigureSceneNodes, ${titleType.toLowerCase()}`,
               originalLink: ref.href,
               player: true,
-            };
+            }};
             this.tmpCount++;
             const playerEntry = new ImageJournal(this.adventure, row, ref.href.replace("ddb://image", "."));
             this.adventure.journals.push(playerEntry);
@@ -93,7 +93,7 @@ class SceneParser {
           }
   
           logger.warn(`possibleFigureSceneNodes DM TITLE: ${title}`);
-          let row = {
+          let row = { data: {
             title: Helpers.titleString(title),
             id: 10000 + this.document.flags.ddb.ddbId + this.tmpCount,
             parentId: this.document.flags.ddb.parentId,
@@ -102,7 +102,7 @@ class SceneParser {
             slug: this.document.flags.ddb.slug,
             originHint: "possibleFigureSceneNodes, dm",
             originalLink: img.src,
-          };
+          }};
           const journalEntry = new ImageJournal(this.adventure, row, img.src);
           if (!playerRef) {
             // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkName}]{${journalEntry.name}}`);
@@ -163,7 +163,7 @@ class SceneParser {
   
             let titleType = playerVersion ? "Player" : "Unlabeled";
   
-            let row = {
+            let row = { data: {
               title: `${title} (${titleType} Version)`,
               id: 11000 + this.document.flags.ddb.ddbId + this.tmpCount,
               parentId: this.document.flags.ddb.parentId,
@@ -176,7 +176,7 @@ class SceneParser {
               originHint: `possibleDivSceneNodes, ${titleType.toLowerCase()}`,
               originalLink: playerRef.href,
               player: true,
-            };
+            }};
             this.tmpCount++;
             const playerEntry = new ImageJournal(this.adventure, row, playerRef.href.replace("ddb://image", "."));
             this.adventure.journals.push(playerEntry);
@@ -193,7 +193,7 @@ class SceneParser {
             this.adventure.scenes.push(scene);
           }
   
-          let row = {
+          let row = { data: {
             title: title,
             id: 11000 + this.document.flags.ddb.ddbId + this.tmpCount,
             parentId: this.document.flags.ddb.parentId,
@@ -202,7 +202,7 @@ class SceneParser {
             slug: this.document.flags.ddb.slug,
             originHint: "possibleDivSceneNodes, dm",
             originalLink: img.src,
-          };
+          }};
           const journalEntry = new ImageJournal(this.adventure, row, img.src);
           if (!playerVersion) {
             // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}`);
@@ -228,7 +228,7 @@ class SceneParser {
   
         let title = `Handout ${this.factory.tracker[this.handoutTmpRef]}`;
   
-        let row = {
+        let row = { data: {
           title: title,
           id: 12000 + this.document.flags.ddb.ddbId + this.tmpCount,
           parentId: this.document.flags.ddb.parentId,
@@ -238,7 +238,7 @@ class SceneParser {
           originDocId: this.document._id,
           originHint: "possibleHandouts",
           originalLink: node.src,
-        };
+        }};
         const journalEntry = new ImageJournal(this.adventure, row, node.src);
         if (!journalEntry.flags.ddb.duplicate) {
           this.factory.tracker[this.handoutTmpRef]++;
@@ -266,7 +266,7 @@ class SceneParser {
   
         let title = `${this.document.name} (Player Version)`;
   
-        let row = {
+        let row = { data: {
           title: title,
           id: 13000 + this.document.flags.ddb.ddbId + this.tmpCount,
           parentId: this.document.flags.ddb.parentId,
@@ -279,7 +279,7 @@ class SceneParser {
           originHint: "possibleViewPlayerScenes, player",
           originalLink: aNode.href,
           player: true,
-        };
+        }};
         const journalEntry = new ImageJournal(this.adventure, row, aNode.href.replace("ddb://image", "."));
   
         // don't add entry if we have already parsed this
@@ -325,7 +325,7 @@ class SceneParser {
           ? nodeId
           : `${this.document.flags.ddb.ddbId}-${this.document.flags.ddb.parentId}-${this.tmpCount}-${this.document.flags.ddb.slug}`.replace("#","-");
   
-      let row = {
+      let row = { data: {
         title: title,
         id: 14000 + this.document.flags.ddb.ddbId + this.tmpCount,
         parentId: this.document.flags.ddb.parentId,
@@ -338,7 +338,7 @@ class SceneParser {
         originHint: `possibleUnknownPlayerLinks, ${titleType}`,
         originalLink: node.href,
         player: true,
-      };
+      }};
       const journalEntry = new ImageJournal(this.adventure, row, node.href.replace("ddb://image", "."));
   
       // don't add entry if we have already parsed this
