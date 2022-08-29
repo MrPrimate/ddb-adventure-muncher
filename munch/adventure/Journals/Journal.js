@@ -125,10 +125,11 @@ class Journal {
   constructor(adventure, row, options) {
     this.adventure = adventure;
     this.row = row;
-    this._additionalConstuction(options);
     this.data = this.adventure.config.data.v10Mode
       ? JSON.parse(JSON.stringify(require(path.join("../../", this.adventure.overrides.templateDir, "journal-v10.json"))))
       : JSON.parse(JSON.stringify(require(path.join("../../", this.adventure.overrides.templateDir,"journal.json"))));
+
+    this._additionalConstuction(options);
 
     this.data.name = row.data.title;
     this.data.flags.ddb.ddbId = row.data.id;
