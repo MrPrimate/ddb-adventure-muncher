@@ -154,6 +154,7 @@ class FileHelper {
 
   static loadFile(file) {
     const filePath = path.resolve(__dirname, file);
+    console.warn(filePath)
     if (fs.existsSync(filePath)) {
       try {
         const content = fs.readFileSync(filePath);

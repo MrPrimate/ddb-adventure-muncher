@@ -5,6 +5,7 @@ const fs = require("fs");
 const sizeOf = require("image-size");
 const { FileHelper } = require("../FileHelper.js");
 const { Journal } = require("../Journals/Journal.js");
+const { exit } = require("process");
 
 function unPad(match, p1) {
   if (isNaN(parseInt(p1))) {
@@ -28,8 +29,7 @@ class Scene {
       if (!fs.existsSync(svgDirPath)) fs.mkdirSync(svgDirPath);
       if (!fs.existsSync(iconFileOutPath)) {
         logger.info(stub);
-        const svgTemplate = path.join("../../", this.adventure.overrides.templateDir, `${stub.length}char.svg`);
-        logger.info(svgTemplate);
+        const svgTemplate = path.join("../", this.adventure.overrides.templateDir, `${stub.length}char.svg`);
         let svgContent = FileHelper.loadFile(svgTemplate);
         svgContent = svgContent.replace("REPLACEME", stub);
         FileHelper.saveFile(svgContent, iconFileOutPath);
@@ -131,7 +131,7 @@ class Scene {
             logger.info(`Found ${note.label} matched to ${noteJournal.data._id} (${noteJournal.data.name})`);
             note.positions.forEach((position) => {
               noteJournal.data.flags.ddb.pin = `${position.x}${position.y}`;
-              const noteId = this.adventure.idFactory.getId(noteJournal, "Note");
+              const noteId = this.adventure.idFactory.getId(noteJournal.data, "Note");
               const n = {
                 "_id": noteId,
                 "flags": {
