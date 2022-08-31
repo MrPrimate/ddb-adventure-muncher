@@ -61,7 +61,8 @@ class NoteFactory {
       // if we have reached the same tag type or last chunk generate a journal
       if ((tagMatch && !pTag) || stopChunk) {
         let noteRow = {
-          doc: JSDOM.fragment(html),
+          // doc: JSDOM.fragment(html),
+          doc: new JSDOM(html).window.document,
           data: JSON.parse(JSON.stringify(row.data)),
         };
         delete noteRow.data.html;
@@ -133,7 +134,7 @@ class NoteFactory {
     this.adventure.enhancements.noteHints
       .filter((hint) => hint.slug == row.data.slug)
       .forEach((hint, index) => {
-        this.noteRows.push(this.#parseNoteHint(row, hint, index + 1));
+        this.#parseNoteHint(row, hint, index + 1);
       });
   }
 
