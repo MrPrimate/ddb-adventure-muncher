@@ -1,3 +1,7 @@
+# 0.7.4
+
+* Some fixes for adventure munching in v10 around tables and lights.
+
 # 0.7.3
 
 * Support Spelljammer Adventures in Space

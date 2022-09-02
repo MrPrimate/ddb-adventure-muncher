@@ -264,7 +264,7 @@ function getDiceTableRange(value) {
 
   if (valueMatch) {
     if (valueMatch[1] !== undefined && valueMatch[2] !== undefined) {
-      const low = diceInt(valueMatch[1]);
+      const low = parseInt(valueMatch[1]);
       const high = diceInt(valueMatch[2]);
       return [low, high];
     }
@@ -1178,6 +1178,13 @@ function generateScene(row, img) {
   } else {
     scene.tokens = [];
   }
+
+  scene.lights = scene.lights.map((light) => {
+    if (light.config?.darkness?.min > light.config?.darkness?.max) {
+      light.config.darkness.max = light.config.darkness.min;
+    }
+    return light;
+  });
 
   generatedScenes.push(scene);
   sceneImgMatched.push(scene.img);
