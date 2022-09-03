@@ -12,12 +12,17 @@ class SceneFactory {
 
   generateMissingScenes() {
  
-    logger.info("****************************");
-    logger.info("Generating Missing Scenes");
-    logger.info("----------------------------");
-    logger.info(this.adventure.enhancements.sceneEnhancements.filter((es) => es.missing));
-    logger.info("----------------------------");
+    if (this.adventure.enhancements.sceneEnhancements.length > 0) {
+      logger.info("****************************");
+      logger.info("Generating Missing Scenes");
+      logger.info("----------------------------");
+      logger.info(this.adventure.enhancements.sceneEnhancements.filter((es) => es.missing));
+      logger.info("----------------------------");
   
+    } else {
+      logger.info("No missing scenes to process.");
+    }
+
     this.adventure.enhancements.sceneEnhancements
       .filter((es) => es.missing)
       .forEach((es, index) => {

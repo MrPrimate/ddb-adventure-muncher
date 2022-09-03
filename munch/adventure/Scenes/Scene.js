@@ -5,7 +5,6 @@ const fs = require("fs");
 const sizeOf = require("image-size");
 const { FileHelper } = require("../FileHelper.js");
 const { Journal } = require("../Journals/Journal.js");
-const { exit } = require("process");
 
 function unPad(match, p1) {
   if (isNaN(parseInt(p1))) {
@@ -235,6 +234,15 @@ class Scene {
     }
   }
 
+  #lights() {
+    this.data.lights = this.data.lights.map((light) => {
+      if (light.config?.darkness?.min > light.config?.darkness?.max) {
+        light.config.darkness.max = light.config.darkness.min;
+      }
+      return light;
+    });
+  }
+
   constructor(adventure, row, image) {
     logger.info(`Generating Scene ${row.data.sceneName}`);
     this.adventure = adventure;
@@ -308,6 +316,7 @@ class Scene {
     this.data._id = this.adventure.idFactory.getId(this.data, "Scene");
 
     this.#tokens();
+    this.#lights();
 
     this.adventure.sceneImages.push(this.data.img);
     const sceneCount = this.adventure.sceneImages.filter(img => img === this.data.img).length;

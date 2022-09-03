@@ -61,7 +61,6 @@ class NoteFactory {
       // if we have reached the same tag type or last chunk generate a journal
       if ((tagMatch && !pTag) || stopChunk) {
         let noteRow = {
-          // doc: JSDOM.fragment(html),
           doc: new JSDOM(html).window.document,
           data: JSON.parse(JSON.stringify(row.data)),
         };
@@ -85,6 +84,7 @@ class NoteFactory {
         noteRow.data.id  = id + count;
         noteRow.data.ddbId = row.data.id;
         this.noteRows.push(noteRow);
+
         html = "";
         noteTitle = "";
       }
@@ -132,7 +132,7 @@ class NoteFactory {
   // }]
   #generateNoteRows(row) {
     this.adventure.enhancements.noteHints
-      .filter((hint) => hint.slug == row.data.slug)
+      .filter((hint) => hint.ddbId == row.data.id)
       .forEach((hint, index) => {
         this.#parseNoteHint(row, hint, index + 1);
       });
@@ -141,11 +141,13 @@ class NoteFactory {
   generateJournals(row) {
     // ensure note hints exist for the row
     this.#generateNoteRows(row);
-    this.noteRows.forEach((row) => {
-      this.adventure.journalFactory.createNoteJournal(row);
-      // const noteJournal = new NoteJournal(this.adventure, row);
-      // this.adventure.journals.push(noteJournal);
-    });
+    this.noteRows
+      .filter((noteRow) => noteRow.data.ddbId === row.data.id)
+      .forEach((noteRow) => {
+        this.adventure.journalFactory.createNoteJournal(noteRow);
+        // const noteJournal = new NoteJournal(this.adventure, row);
+        // this.adventure.journals.push(noteJournal);
+      });
   }
 
 }

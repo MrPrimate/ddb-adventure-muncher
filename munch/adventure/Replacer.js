@@ -25,7 +25,7 @@ class LinkReplacer {
   constructor(adventure, text, name = null) {
     this.adventure = adventure;
     this.name = name;
-    this.dom = JSDOM(text).window.document;
+    this.dom = new JSDOM(text).window.document;
   }
 
   process() {
@@ -104,15 +104,16 @@ class LinkReplacer {
         const refactoredSlug = (slug.length > 1) ? `${slug[0].toLowerCase()}#${slug[1]}` : slug[0].toLowerCase();
         const journalPageMap = this.adventure.config.data.v10Mode ? this.adventure.journals.map((j) => j.pages).flat() : this.adventure.journals;
         const journalPage = journalPageMap.find((journalPage) => {
-          let check = journalPage.flags.ddb.slug === refactoredSlug;
-          if (!check && slug.length > 1) check = journalPage.flags.ddb.slug === slug[0].toLowerCase();
-          const pageNameSlug = journalPage.name.replace(/[^\w\d]+/g, "");
+          const pageData = this.adventure.config.data.v10Mode ? journalPage : journalPage.data;
+          let check = pageData.flags.ddb.slug === refactoredSlug;
+          if (!check && slug.length > 1) check = pageData.flags.ddb.slug === slug[0].toLowerCase();
+          const pageNameSlug = pageData.name.replace(/[^\w\d]+/g, "");
           const pageCheck = this.adventure.config.data.v10Mode && slug.length > 2
-            ? !journalPage.flags.ddb.img && !journalPage.flags.ddb.note &&
+            ? !pageData.flags.ddb.img && !pageData.flags.ddb.note &&
               pageNameSlug.toLowerCase() === slug[1].toLowerCase()
             : true;
           return check && pageCheck;
-        });
+        }) ;
         if (journalPage) {
           // const journalRegex = new RegExp(`${node.outerHTML}`, "g");
           //text = text.replace(journalRegex, `@JournalEntry[${journalEntry.name}]{${node.textContent}}`);
@@ -123,7 +124,7 @@ class LinkReplacer {
             const slugLink = textPointer ? `#${textValue.replace(/\s/g, "")}` : "";
             this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@UUID[JournalEntry.${journalEntry._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`);
           } else {
-            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@JournalEntry[${journalPage.name}]${textPointer ? textValue : ""}`);
+            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@JournalEntry[${journalPage.data.name}]${textPointer ? textValue : ""}`);
           }
           
         } else {
@@ -159,7 +160,7 @@ class LinkReplacer {
       const lookupRegExp = new RegExp(`ddb:\/\/${lookupKey}\/([0-9]*)`);
       compendiumLinks.forEach((node) => {
         const lookupMatch = node.outerHTML.match(lookupRegExp);
-        const lookupValue = this.adventure.config.lookups[COMPENDIUM_MAP[lookupKey]];
+        const lookupValue = this.adventure.config.data.lookups[COMPENDIUM_MAP[lookupKey]];
         if (lookupValue) {
           if (!this.adventure.required[COMPENDIUM_MAP[lookupKey]].includes(String(lookupMatch[1]))) {
             this.adventure.required[COMPENDIUM_MAP[lookupKey]].push(String(lookupMatch[1]));
@@ -202,8 +203,8 @@ class LinkReplacer {
     // e.g. href="ddb://image/idrotf/" to "./idrotf/
     // ddb://compendium/idrotf/appendix-d-magic to it's own entry
     //let match = /ddb:\/\/(?!spells)([a-zA-z0-9\.\/#-])"/g;
-    let match = /ddb:\/\/(?!vehicles|armor|actions|weaponproperties|compendium|image|spells|magicitems|monsters|skills|senses|conditions|weapons|adventuring-gear)([\w\d\.\/#-]+)+(?:"|')/gi;
-    let matches = this.dom.body.innerHTML.match(match);
+    const match = /ddb:\/\/(?!vehicles|armor|actions|weaponproperties|compendium|image|spells|magicitems|monsters|skills|senses|conditions|weapons|adventuring-gear)([\w\d\.\/#-]+)+(?:"|')/gi;
+    const matches = this.dom.body.innerHTML.match(match);
     if (matches) {
       logger.warn("Unknown DDB Match:", matches);
     }
@@ -258,7 +259,8 @@ class DiceReplacer {
   }
 
   static diceStringResultBuild (diceString, dice, bonus = "", mods = "", diceHint = "", specialFlags = "") {
-    const globalDamageHints = this.adventure.config.useDamageHints ? this.adventure.config.useDamageHints : true;
+    // const globalDamageHints = this.adventure.config.data.useDamageHints ? this.adventure.config.data.useDamageHints : true;
+    const globalDamageHints = true;
     const resultBonus = bonus === 0 ? "" : `${bonus > 0 ? " +" : ""} ${bonus}`;
     const diceHintAdd = globalDamageHints && diceHint && diceString && diceString !== "";
   

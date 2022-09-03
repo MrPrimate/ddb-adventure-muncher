@@ -23,6 +23,10 @@ class ImageJournal extends Journal {
     // we don't generate tables for images
   }
 
+  fixUp() {
+    // we don't need to fix image journals
+  }
+
   replaceImgLinksForJournal() {
     // eslint-disable-next-line no-useless-escape
     const reImage = new RegExp(`^\.\/${this.adventure.bookCode}\/`, "g");

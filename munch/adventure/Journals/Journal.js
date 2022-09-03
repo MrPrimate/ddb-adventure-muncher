@@ -201,14 +201,22 @@ class Journal {
     if (this.adventure.config.data.v10Mode) {
       this.data.pages.forEach((page) =>{
         if (page.type === "text") {
-          page.text.content = new LinkReplacer(this.adventure, page.text.content, `${this.data.name}`).process().result;
-          page.text.content = new DiceReplacer(this.adventure, page.text.content, `${this.data.name}`).process().result;
+          const links = new LinkReplacer(this.adventure, page.text.content, `${this.data.name}`);
+          links.process();
+          const dice = new DiceReplacer(this.adventure, page.text.content, `${this.data.name}`);
+          dice.process();
+          page.text.content = links.result;
+          page.text.content = dice.result;
           page.text.content = page.text.content.replace(/\s+/g, " ");
         }
       });
     } else {
-      this.data.content = new LinkReplacer(this.adventure, this.data.content, `${this.data.name}`).process().result;
-      this.data.content = new DiceReplacer(this.adventure, this.data.content, `${this.data.name}`).process().result;
+      const links = new LinkReplacer(this.adventure, this.data.content, `${this.data.name}`);
+      links.process();
+      const dice = new DiceReplacer(this.adventure, this.data.content, `${this.data.name}`);
+      dice.process();
+      this.data.content = links.result;
+      this.data.content = dice.result;
       this.data.content = this.data.content.replace(/\s+/g, " ");
     }
 

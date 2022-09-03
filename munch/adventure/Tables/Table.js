@@ -34,7 +34,7 @@ class Table {
 
     if (valueMatch) {
       if (valueMatch[1] !== undefined && valueMatch[2] !== undefined) {
-        const low = Table.diceInt(valueMatch[1]);
+        const low = parseInt(valueMatch[1]);
         const high = Table.diceInt(valueMatch[2]);
         return [low, high];
       }
@@ -146,7 +146,9 @@ class Table {
           result.text = value;
         }
       });
-      result.text = new DiceReplacer(this.adventure, result.text, `${this.data.name}-${result._id}`).process().result;
+      const replacer = new DiceReplacer(this.adventure, result.text, `${this.data.name}-${result._id}`);
+      replacer.process(); 
+      result.text = replacer.result;
       const diceRollerRegexp = new RegExp(/\[\[\/r\s*([0-9d+-\s]*)(:?#.*)?\]\]/);
       result.text = result.text.replace(diceRollerRegexp, "[[$1]] ($&)");
       this.data.results.push(result);
@@ -167,7 +169,9 @@ class Table {
 
   fixUp() {
     this.data.results.forEach((result) => {
-      result.text = new LinkReplacer(this.adventure, result.text, `${this.data.name}-${result._id}`).process().textContent;
+      const replacer = new LinkReplacer(this.adventure, result.text, `${this.data.name}-${result._id}`);
+      replacer.process();
+      result.text = replacer.textContent;
     });
   }
 

@@ -54,7 +54,6 @@ class IdFactory {
         scenePin: document.flags.ddb.pin,
       };
       this.adventure.ids.push(id);
-      console.warn({id: id})
       return id.id;
     }
   }
