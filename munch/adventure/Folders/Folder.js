@@ -14,6 +14,11 @@ class Folder {
     return this.data._id;
   }
 
+  get _id() {
+    return this.data._id;
+  }
+
+
   constructor({adventure, row, type, specialType = null}) {
     this.adventure = adventure;
     this.specialType = specialType;
@@ -33,7 +38,7 @@ class Folder {
     // detect parent folders
     if (row.data.cobaltId && specialType !== "base") {
       // by default place folder in root folder
-      this.data.parent = this.adventure.masterFolder[type]._id;
+      this.data.parent = this.adventure.folderFactory.masterFolders[type]._id;
     }
 
     const parentId = (row.data.cobaltId) ? row.data.cobaltId : row.data.parentId;

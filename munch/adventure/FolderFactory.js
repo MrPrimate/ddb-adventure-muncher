@@ -3,7 +3,7 @@ const _ = require("lodash");
 
 class FolderFactory {
 
-  get masterFolders() {
+  generateMasterFolders() {
     const mainRow = { id: -1, cobaltId: -1, title: this.adventure.config.book.description };
 
     const folderData = {
@@ -16,7 +16,7 @@ class FolderFactory {
     const rollTableJournal = new Folder(_.merge(folderData, { type: "RollTable"}));
     const actorJournal = new Folder(_.merge(folderData, { type: "Actor"}));
 
-    return {
+    this.masterFolders = {
       JournalEntry: mainJournal.toObject(),
       Scene: sceneJournal.toObject(),
       RollTable: rollTableJournal.toObject(),
@@ -26,6 +26,7 @@ class FolderFactory {
 
   constructor(adventure) {
     this.adventure = adventure;
+    this.masterFolders = {};
   }
 
   getFolderId(row, type, specialType = null) {
@@ -63,7 +64,8 @@ class FolderFactory {
         if (row.data.cobaltId) {
           folder = this.adventure.folders.find((f) =>
             f.flags.ddb.cobaltId == row.data.cobaltId &&
-            f.type == type && !f.flags.ddb.img &&
+            f.type == type &&
+            !f.flags.ddb.img &&
             !f.flags.ddb.note
           );
         } else if (row.data.parentId) {

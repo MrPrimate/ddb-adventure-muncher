@@ -138,7 +138,7 @@ class Adventure {
     this.assetFactory = new Assets(this);
 
     // initialize master folders
-    this.masterFolder = this.folderFactory.masterFolders;
+    this.folderFactory.generateMasterFolders();
 
     logger.debug("Current config adjustments", {
       sceneAdjustments: this.enhancements.sceneAdjustments.length,
@@ -461,17 +461,17 @@ class Adventure {
     return this.folders.filter((folder) => {
       const journalCheck = this.journals.some((content) =>
         folder._id === content.data.folder ||
-        this.masterFolder[folder.type]._id == folder._id
+        this.folderFactory.masterFolders[folder.type]._id == folder._id
       );
       if (journalCheck) return true;
       const sceneCheck = this.scenes.some((content) =>
         folder._id === content.data.folder ||
-        this.masterFolder[folder.type]._id == folder._id
+        this.folderFactory.masterFolders[folder.type]._id == folder._id
       );
       if (sceneCheck) return true;
       const tableCheck = this.tables.some((content) =>
         folder._id === content.data.folder ||
-        this.masterFolder[folder.type]._id == folder._id
+        this.folderFactory.masterFolders[folder.type]._id == folder._id
       );
       if (tableCheck) return true;
       if (folder.flags.ddb.specialType === "base") return true;
