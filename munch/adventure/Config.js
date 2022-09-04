@@ -81,6 +81,7 @@ class Config {
     this.data.createPlayerHandouts = this.checkConfigSetting("createPlayerHandouts", true);
     this.data.observeAll = this.checkConfigSetting("observeAll", false);
     this.data.createSections = this.checkConfigSetting("createSections", true);
+    this.data.logLevel = this.checkConfigSetting("logLevel", "info");
     this.data.subDirs = [
       "journal",
       // "compendium",
@@ -274,6 +275,14 @@ class Config {
     // FileHelper.saveJSONFile(this.data, this.configFile);
 
     FileHelper.checkDirectories([this.downloadDir]);
+
+    if (this.data.debug) {
+      logger.setLogLevel(this.data.logLevel);
+    } else if (this.data.logLevel) {
+      logger.setLogLevel("silly");
+    } else {
+      logger.setLogLevel("info");
+    }
   }
 
   
