@@ -100,7 +100,7 @@ class Scene {
       }
       if (adjustment.flags.ddb.notes) {
         logger.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-        logger.info("Found note adjutments");
+        logger.info("Found note adjustments");
 
         adjustment.notes = [];
 
@@ -165,8 +165,8 @@ class Scene {
       delete adjustment.flags.ddb.ddbId;
       delete adjustment.flags.ddb.contentChunkId;
       adjustment.flags.ddb["sceneAdjustment"] = true;
-      logger.info(adjustment.flags);
-      logger.info(this.data.flags);
+      logger.debug(adjustment.flags);
+      logger.debug(this.data.flags);
       this.data = _.merge(this.data, adjustment);
     } else {
       logger.info(`NO ADJUSTMENTS found with chunkid "${this.data.flags.ddb.contentChunkId}" and id ${this.data.flags.ddb.ddbId}`);

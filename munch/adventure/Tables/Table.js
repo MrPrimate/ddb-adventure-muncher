@@ -55,8 +55,8 @@ class Table {
       }
     }
     logger.error("###############################################");
-    logger.info(`Unable to table range match ${value}`);
-    logger.info(`Text value: ${text}`);
+    logger.error(`Unable to table range match ${value}`);
+    logger.error(`Text value: ${text}`);
     logger.error("###############################################");
     return [];
   }
