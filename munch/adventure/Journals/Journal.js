@@ -207,9 +207,9 @@ class Journal {
         if (page.type === "text") {
           const links = new LinkReplacer(this.adventure, page.text.content, `${this.data.name}`);
           links.process();
+          page.text.content = links.result;
           const dice = new DiceReplacer(this.adventure, page.text.content, `${this.data.name}`);
           dice.process();
-          page.text.content = links.result;
           page.text.content = dice.result;
           page.text.content = page.text.content.replace(/\s+/g, " ");
         }
@@ -217,9 +217,9 @@ class Journal {
     } else {
       const links = new LinkReplacer(this.adventure, this.data.content, `${this.data.name}`);
       links.process();
+      this.data.content = links.result;
       const dice = new DiceReplacer(this.adventure, this.data.content, `${this.data.name}`);
       dice.process();
-      this.data.content = links.result;
       this.data.content = dice.result;
       this.data.content = this.data.content.replace(/\s+/g, " ");
     }
