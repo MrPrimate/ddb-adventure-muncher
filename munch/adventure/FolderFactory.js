@@ -17,10 +17,10 @@ class FolderFactory {
     const actorJournal = new Folder(_.merge(folderData, { type: "Actor"}));
 
     return {
-      JournalEntry: mainJournal.toJson(),
-      Scene: sceneJournal.toJson(),
-      RollTable: rollTableJournal.toJson(),
-      Actor: actorJournal.toJson(),
+      JournalEntry: mainJournal.toObject(),
+      Scene: sceneJournal.toObject(),
+      RollTable: rollTableJournal.toObject(),
+      Actor: actorJournal.toObject(),
     };
   }
 

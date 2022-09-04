@@ -474,6 +474,7 @@ class Adventure {
         this.masterFolder[folder.type]._id == folder._id
       );
       if (tableCheck) return true;
+      if (folder.flags.ddb.specialType === "base") return true;
     }).map((folder) => folder._id);
   }
 

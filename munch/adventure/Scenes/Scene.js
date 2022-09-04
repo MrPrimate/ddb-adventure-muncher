@@ -221,7 +221,8 @@ class Scene {
           };
 
           token.actorId = this.adventure.idFactory.getId(mockActor, "Actor");
-          logger.info(`Found actor with Id ${ddbId}`);
+          token.flags.actorFolderId = this.adventure.masterFolder["Actor"]._id;
+          logger.debug(`Found actor with Id ${ddbId}, actorId ${token.actorId}, folderId ${token.flags.actorFolderId}`);
 
           if (!this.adventure.required.monsters.includes(String(ddbId))) {
             this.adventure.required.monsters.push(String(ddbId));

@@ -16,6 +16,8 @@ class Folder {
 
   constructor({adventure, row, type, specialType = null}) {
     this.adventure = adventure;
+    this.specialType = specialType;
+    this.type = type;
     const folderJsonPath = path.join("../../", this.adventure.overrides.templateDir,"folder.json");
     this.data = JSON.parse(JSON.stringify(require(folderJsonPath)));
 
@@ -26,6 +28,7 @@ class Folder {
     this.data.flags.ddb.ddbId = (row.data.ddbId) ? row.data.ddbId : row.data.id;
     this.data.flags.ddb.img = specialType === "image";
     this.data.flags.ddb.note = specialType === "note";
+    this.data.flags.ddb.specialType = specialType;
 
     // detect parent folders
     if (row.data.cobaltId && specialType !== "base") {
