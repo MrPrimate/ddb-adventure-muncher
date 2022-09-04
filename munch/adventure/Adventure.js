@@ -18,7 +18,6 @@ const os = require("os");
 
 const jsdom = require("jsdom");
 const { Helpers } = require("./Helpers.js");
-const { exit } = require("process");
 const { JSDOM } = jsdom;
 
 class Adventure {
@@ -244,7 +243,7 @@ class Adventure {
       this.saveJson();
 
       // save the zip out
-      this.saveZip();
+      await this.saveZip();
     } catch (error) {
       logger.error(`Error generating adventure: ${error}`);
       logger.error(error.stack);
@@ -359,8 +358,8 @@ class Adventure {
     this.assetFactory.finalAssetCopy();
   }
 
-  saveZip() {
-    this.assetFactory.generateZipFile();
+  async saveZip() {
+    await this.assetFactory.generateZipFile();
   }
 
   #outputAdventure() {

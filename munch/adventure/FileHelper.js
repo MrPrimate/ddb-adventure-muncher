@@ -45,32 +45,40 @@ class FileHelper {
 
     const allPaths = FileHelper.getFilePathsRecursively(path.resolve(dir));
 
+    logger.debug(`Compressing ${allPaths.length} items into the adventure file...`);
+
     let zip = new JSZip();
     for (const filePath of allPaths) {
       const addPath = path.relative(dir, filePath);
       const data = fs.readFileSync(filePath);
       const stat = fs.lstatSync(filePath);
       const binary = filePath.endsWith(".json") ? false : true;
-
-      zip.file(addPath.split(path.sep).join(path.posix.sep), data, {
+      const name = addPath.split(path.sep).join(path.posix.sep);
+      const options = {
         dir: stat.isDirectory(),
-        binary: binary,
+        binary,
         createFolders: true,
-      });
+      };
+
+      logger.debug(`Adding ${name} (Binary? ${options.binary}) (Dir? ${options.dir})`);
+      zip.file(name, data, options);
     }
 
     return zip;
   }
 
-  static writeZipFile(zip, targetFile) {
-    zip
-      .generateNodeStream({ type: "nodebuffer", streamFiles: true })
-      .pipe(fs.createWriteStream(targetFile))
-      .on("finish", function () {
-        // JSZip generates a readable stream with a "end" event,
-        // but is piped here in a writable stream which emits a "finish" event.
-        logger.info(`${targetFile} written.`);
-      });
+  static async writeZipFile(zip, targetFile) {
+    return new Promise((resolve) => {
+      zip
+        .generateNodeStream({ type: "nodebuffer", streamFiles: true })
+        .pipe(fs.createWriteStream(targetFile))
+        .on("finish", function () {
+          // JSZip generates a readable stream with a "end" event,
+          // but is piped here in a writable stream which emits a "finish" event.
+          logger.info(`${targetFile} written.`);
+          resolve(targetFile);
+        });
+    });
   }
 
   static async unzipFile(filePath, destination) {

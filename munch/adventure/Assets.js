@@ -83,10 +83,12 @@ class Assets {
     }
   }
 
-  generateZipFile() {
-    logger.info("Generating adventure zip...");
+  async generateZipFile() {
+    const filePath = path.join(this.adventure.config.outputDirEnv,`${this.adventure.bookCode}.fvttadv`);
+    logger.info(`Generating adventure zip to ${filePath}`);
     const zip = FileHelper.getZipOfFolder(this.adventure.config.outputDir);
-    FileHelper.writeZipFile(zip, path.join(this.adventure.config.outputDirEnv,`${this.adventure.bookCode}.fvttadv`));
+    logger.debug(`Zip contains ${Object.keys(zip.files).length} files`);
+    await FileHelper.writeZipFile(zip, filePath);
   }
 
 }
