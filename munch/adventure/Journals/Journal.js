@@ -103,7 +103,7 @@ class Journal {
   }
 
   get forceAdd() {
-    return false;
+    return Number.isInteger(parseInt(this.row.data.cobaltId));
   }
 
   get createHandouts() {
