@@ -16,6 +16,10 @@ function unPad(match, p1) {
 
 class Scene {
 
+  get id() {
+    return this.data._id;
+  }
+
   generateIcon(title) {
     // default path
     let iconPath = "icons/svg/book.svg";

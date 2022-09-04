@@ -19,6 +19,7 @@ logger.clear();
 const configurator = new Config();
 
 if (process.env.CONFIG_DIR) {
+  console.log(`Setting config directory to: ${process.env.CONFIG_DIR}`);
   configurator.setConfigDirs(path.resolve(__dirname, process.env.CONFIG_DIR));
 }
 
@@ -83,11 +84,12 @@ if (process.argv[2] === "config") {
   exit();
 } else {
   configurator.loadBook(process.argv[2]).then(() => {
-    FileHelper.directoryReset(configurator);
     console.log(configurator);
     const adventure = new Adventure(configurator);
     adventure.processAdventure().then(() => {
-      console.log(configurator);
+      // console.log(configurator);
+      console.warn("Done");
+      exit();
     });
   });
 }

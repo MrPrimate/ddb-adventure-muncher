@@ -21,6 +21,10 @@ class Journal {
     return false;
   }
 
+  get id() {
+    return this.data._id;
+  }
+
   appendJournalToChapter() {
     if (this.row.data.parentId) {
       logger.info(`Appending to chapter... ${this.row.data.title} ${this.row.data.parentId} search...`);

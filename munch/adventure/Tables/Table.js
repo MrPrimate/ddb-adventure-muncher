@@ -11,6 +11,10 @@ const { Journal } = require("../Journals/Journal.js");
 
 class Table {
 
+  get id() {
+    return this.data._id;
+  }
+
   static diceInt(text) {
     if (text === "0") return 10;
     if (text === "00") return 100;

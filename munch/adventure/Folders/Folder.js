@@ -10,6 +10,10 @@ class Folder {
     this.adventure.folders.push(this.data);
   }
 
+  get id() {
+    return this.data._id;
+  }
+
   constructor({adventure, row, type, specialType = null}) {
     this.adventure = adventure;
     const folderJsonPath = path.join("../../", this.adventure.overrides.templateDir,"folder.json");

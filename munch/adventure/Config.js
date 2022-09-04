@@ -124,8 +124,8 @@ class Config {
       throw new Error(this.userData);
     }
 
-    this.ddb_config = await ddb.getDDBConfig();
-    this.book = this.ddb_config.sources.find((source) => source.name.toLowerCase() === bookCode);
+    this.ddbConfig = await ddb.getDDBConfig();
+    this.book = this.ddbConfig.sources.find((source) => source.name.toLowerCase() === bookCode);
     if (!this.book) {
       throw new Error(`Unable to find a book match for ${bookCode}. Adventure Muncher may need an update, or this book may not be ready for munching yet.`);
     }
@@ -245,10 +245,12 @@ class Config {
     this.version = options.version || null;
     this.returns = options.returns || {};
     const configPath = (process.env.CONFIG_DIR) ? process.env.CONFIG_DIR : Config.DEFAULT_CONFIG_DIR;
-    logger.info(`Using initial config directory ${this.configFile}`);
+    logger.info(`Using initial config directory ${this.configPath}`);
     this.setConfigDirs(configPath);
     // override config with environment vars
     this.#environmentOverrides();
+
+    logger.info(`Config Path is now ${this.configPath}`);
 
     this.data = FileHelper.loadConfig(this.configFile);
     if (this.data.run) delete(this.data.run);
@@ -266,6 +268,7 @@ class Config {
 
     this.#setDefaultConfig();
 
+    console.error("TODO: Need to save out config here")
     // console.warn(this.data);
     // save config
     // FileHelper.saveJSONFile(this.data, this.configFile);

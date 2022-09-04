@@ -18,6 +18,7 @@ const os = require("os");
 
 const jsdom = require("jsdom");
 const { Helpers } = require("./Helpers.js");
+const { exit } = require("process");
 const { JSDOM } = jsdom;
 
 class Adventure {
@@ -219,6 +220,8 @@ class Adventure {
   async processAdventure() {
 
     try {
+      // reset build directories
+      FileHelper.directoryReset(this.config);
       // we download assets first so we can use the image sizes for rough guesses
       await this.downloadAssets();
       // load up hint data
@@ -387,19 +390,35 @@ class Adventure {
   
     // journals out
     this.journals.forEach((journal) => {
-      fs.writeFileSync(path.join(this.config.outputDir, "journal", `${journal._id}.json`), journal.toJson());
+      const filePath = path.join(this.config.outputDir, "journal", `${journal.id}.json`);
+      logger.info({
+        scene: journal.data.name,
+        id: journal.id,
+        path: filePath,
+      });
+      fs.writeFileSync(filePath, journal.toJson());
     });
   }
 
   #outputScenes() {
-    logger.info("Exporting scenes...");
     logger.info("Generated Scenes:");
-    logger.info(this.scenes.map((s) => `${s.data.name} : ${s.data._id} : ${s.data.flags.ddb.contentChunkId } : ${s.data.flags.ddb.ddbId } : ${s.data.flags.ddb.cobaltId } : ${s.data.flags.ddb.parentId } : ${s.data.img}`));
-  
+    logger.info(this.scenes.map((s) => `${s.data.name} : ${s.id} : ${s.data.flags.ddb.contentChunkId } : ${s.data.flags.ddb.ddbId } : ${s.data.flags.ddb.cobaltId } : ${s.data.flags.ddb.parentId } : ${s.data.img}`));
+
+    logger.info(`Exporting ${this.scenes.length} scenes...`);
+
     // scenes out
     this.scenes.forEach((scene) => {
-      fs.writeFileSync(path.join(this.config.outputDir,"scene",`${scene._id}.json`), scene.toJson());
+      const filePath = path.join(this.config.outputDir,"scene",`${scene.id}.json`);
+      logger.info({
+        scene: scene.data.name,
+        id: scene.id,
+        path: filePath,
+      });
+      fs.writeFileSync(filePath, scene.toJson());
     });
+
+    logger.debug("Scene export complete");
+
   }
   
   
@@ -408,7 +427,13 @@ class Adventure {
   
     // tables out
     this.tables.forEach((table) => {
-      fs.writeFileSync(path.join(this.config.outputDir,"table",`${table._id}.json`), table.toJson());
+      const filePath = path.join(this.config.outputDir,"table",`${table.id}.json`);
+      logger.info({
+        scene: table.data.name,
+        id: table.id,
+        path: filePath,
+      });
+      fs.writeFileSync(filePath, table.toJson());
     });
   }
 
