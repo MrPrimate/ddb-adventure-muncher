@@ -14,7 +14,7 @@ class Config {
   static ENHANCEMENT_ENDPOINT = "https://proxy.ddb.mrprimate.co.uk";
   static DEFAULT_CONFIG_DIR = "../dbs";
 
-  checkConfigSetting(settingName, defaultValue) {
+  setDataConfigSetting(settingName, defaultValue) {
     const value = this.options[settingName] !== undefined
       ? this.options[settingName]
       : this.data[settingName] !== undefined
@@ -76,12 +76,12 @@ class Config {
   }
 
   #setDefaultConfig() {
-    this.data.v10Mode = this.checkConfigSetting("v10Mode", false);
-    this.data.createHandouts = this.checkConfigSetting("createHandouts", true);
-    this.data.createPlayerHandouts = this.checkConfigSetting("createPlayerHandouts", true);
-    this.data.observeAll = this.checkConfigSetting("observeAll", false);
-    this.data.createSections = this.checkConfigSetting("createSections", true);
-    this.data.logLevel = this.checkConfigSetting("logLevel", "info");
+    this.setDataConfigSetting("v10Mode", false);
+    this.setDataConfigSetting("createHandouts", true);
+    this.setDataConfigSetting("createPlayerHandouts", true);
+    this.setDataConfigSetting("observeAll", false);
+    this.setDataConfigSetting("createSections", true);
+    this.setDataConfigSetting("logLevel", "info");
     this.data.subDirs = [
       "journal",
       // "compendium",
