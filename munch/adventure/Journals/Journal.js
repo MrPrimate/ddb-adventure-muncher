@@ -6,11 +6,18 @@ const path = require("path");
 class Journal {
 
   static JOURNAL_SORT = 1000;
-  TYPE = "text";
-  PAGE_TYPE = "text";
+
+  get folderType() {
+    return "text";
+  }
+
+  get pageType() {
+    return "text";
+  }
 
   get section() {
-    return this.row.data.parentId && Number.isInteger(this.row.data.parentId);
+    const hasParentId = this.row.data.parentId && Number.isInteger(this.row.data.parentId);
+    return hasParentId && !this.note && !this.image;
   }
 
   get note() {
@@ -26,10 +33,10 @@ class Journal {
   }
 
   appendJournalToChapter() {
-    if (this.row.data.parentId) {
+    if (this.section) {
       logger.info(`Appending to chapter... ${this.row.data.title} ${this.row.data.parentId} search...`);
       this.adventure.journals.forEach((journal) => {
-        if (journal.data.flags.ddb.cobaltId === this.row.parentId) {
+        if (journal.data.flags.ddb.cobaltId === this.row.data.parentId) {
           if (this.adventure.config.data.v10Mode && this.data.pages.length > 0) {
             const page = this.data.pages[0];
             if (page.name != journal.data.name) {
@@ -50,7 +57,8 @@ class Journal {
       content,
       flags: this.data.flags,
       id: this.data._id,
-      type: this.PAGE_TYPE(), level: 1
+      type: this.pageType,
+      level: 1,
     });
     return page.toObject();
   }
@@ -118,7 +126,7 @@ class Journal {
   }
 
   getFolder() {
-    const folderType = this.section ? "section" : this.TYPE;
+    const folderType = this.section ? "section" : this.folderType;
     this.data.folder = this.adventure.folderFactory.getFolderId(this.row, "JournalEntry", folderType);
   }
 

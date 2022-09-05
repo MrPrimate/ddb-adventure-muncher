@@ -2,7 +2,6 @@ const { logger } = require("../logger.js");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 const { Helpers } = require("./Helpers.js");
-// const { NoteJournal } = require("./Journals/NoteJournal");
 
 class NoteFactory {
 
@@ -70,7 +69,7 @@ class NoteFactory {
         const letterNumMatch = noteTitle.match(/^([a-z,A-Z])(\d+)(.*)/);
         if (numMatch) {
           const prefix = Helpers.zeroPad(numMatch[1],2);
-          noteRow.title = `${prefix}${numMatch[2]}`;
+          noteRow.data.title = `${prefix}${numMatch[2]}`;
         } else if (letterNumMatch) {
           const prefix = Helpers.zeroPad(letterNumMatch[2],2);
           noteRow.data.title = `${letterNumMatch[1]}${prefix}${letterNumMatch[3]}`;
@@ -78,7 +77,6 @@ class NoteFactory {
           noteRow.data.title = noteTitle;
         }
 
-        
         noteRow.data.contentChunkId = keyChunkId;
         noteRow.data.sceneName = hint.sceneName;
         noteRow.data.id  = id + count;
@@ -145,8 +143,6 @@ class NoteFactory {
       .filter((noteRow) => noteRow.data.ddbId === row.data.id)
       .forEach((noteRow) => {
         this.adventure.journalFactory.createNoteJournal(noteRow);
-        // const noteJournal = new NoteJournal(this.adventure, row);
-        // this.adventure.journals.push(noteJournal);
       });
   }
 

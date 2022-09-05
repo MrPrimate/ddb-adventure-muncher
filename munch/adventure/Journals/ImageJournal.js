@@ -4,8 +4,13 @@ const { Journal } = require("./Journal");
 
 class ImageJournal extends Journal {
 
-  TYPE = "image";
-  PAGE_TYPE = "image";
+  get folderType() {
+    return "image";
+  }
+
+  get pageType() {
+    return "image";
+  }
 
   get section() {
     return false;

@@ -277,11 +277,9 @@ class Config {
     FileHelper.checkDirectories([this.downloadDir]);
 
     if (this.data.debug) {
-      logger.setLogLevel(this.data.logLevel);
-    } else if (this.data.logLevel) {
       logger.setLogLevel("silly");
     } else {
-      logger.setLogLevel("info");
+      logger.setLogLevel(this.data.logLevel);
     }
   }
 

@@ -3,8 +3,13 @@ const { Journal } = require("./Journal");
 
 class NoteJournal extends Journal {
 
-  TYPE = "note";
-  PAGE_TYPE = "text";
+  get folderType() {
+    return "note";
+  }
+
+  get pageType() {
+    return "text";
+  }
 
   get section() {
     return false;

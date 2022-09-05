@@ -159,18 +159,16 @@ class Adventure {
   }
 
   processRow(row) {
-    logger.debug(`Processing DB Row: ${row.data.id} : ${row.data.title}`);
+    logger.info(`Processing DB Row: ${row.data.id} : ${row.data.title}`);
 
     const existingJournal = this.journals.some((f) => f.data.flags.ddb.ddbId == row.data.id);
 
     if (!existingJournal){
-      if (!row.data.title || row.title == "") {
-        const frag = new JSDOM(row.data.html);
-        row.data.title = frag.window.document.body.textContent;
-      }
-      logger.info(`Generating ${row.data.title}`);
-
+      logger.info(`Generating Journal for ${row.data.title}`);
       const journal = this.journalFactory.createJournal(row);
+      logger.info(`Row name now: ${row.data.title}`);
+
+      logger.info(`Generating Note Journals for ${row.data.title}`);
       this.notesFactory.generateJournals(row);
       
       // if this is a top tier parent document we process it for scenes now.
@@ -179,8 +177,11 @@ class Adventure {
         : journal.data;
       // if (content && journal.data.flags.ddb.cobaltId) {
       if (content) {
+        logger.info(`Finding Scenes for ${row.data.title}`);
         this.sceneFactory.findScenes(row, content);
       }
+    } else {
+      logger.error(`Duplicate row parse attempted for ${row.data.id}`);
     }
 
   }
@@ -385,13 +386,15 @@ class Adventure {
   }
 
   #outputJournals() {
-    logger.info("Exporting journal chapters...");
+    logger.info(`Exporting ${this.journals.length} journals...`);
   
     // journals out
     this.journals.forEach((journal) => {
       const filePath = path.join(this.config.outputDir, "journal", `${journal.id}.json`);
       logger.info({
-        scene: journal.data.name,
+        title: journal.row.data.title,
+        ddbId: journal.data.flags.ddb.ddbId,
+        name: journal.data.name,
         id: journal.id,
         path: filePath,
       });
@@ -409,7 +412,7 @@ class Adventure {
     this.scenes.forEach((scene) => {
       const filePath = path.join(this.config.outputDir,"scene",`${scene.id}.json`);
       logger.info({
-        scene: scene.data.name,
+        name: scene.data.name,
         id: scene.id,
         path: filePath,
       });
@@ -428,7 +431,7 @@ class Adventure {
     this.tables.forEach((table) => {
       const filePath = path.join(this.config.outputDir,"table",`${table.id}.json`);
       logger.info({
-        scene: table.data.name,
+        name: table.data.name,
         id: table.id,
         path: filePath,
       });
