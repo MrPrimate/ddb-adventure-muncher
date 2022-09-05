@@ -55,7 +55,7 @@ class Folder {
       }
       case "image": {
         const parent = this.adventure.folders.find((f) => f.flags.ddb.cobaltId == parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
-        this.data.name = `[Handouts] ${row.data.sceneName ? row.data.sceneName : (parent) ? parent.name: row.data.title }`;
+        this.data.name = `[Handouts] ${row.data.sceneName ? row.data.sceneName : (parent) ? parent.name : row.data.title }`;
         this.data.sort = 1000000;
         if (parent) { // tmp fix for hftt, for some reason it does not generate a parent folder
           this.data.parent = `${parent._id}`;

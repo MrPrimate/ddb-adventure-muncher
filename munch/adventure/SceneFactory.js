@@ -1,5 +1,4 @@
 const { Scene } = require("./Scenes/Scene.js");
-const { ImageJournal } = require("./Journals/ImageJournal.js");
 const { logger } = require("../logger");
 const { SceneParser } = require("./Scenes/SceneParser.js");
 
@@ -39,10 +38,10 @@ class SceneFactory {
           contentChunkId: `ddb-missing-${this.adventure.bookCode}-${id}`,
           missing: true,
         };
-        logger.info(`Attempting ${row.title} with ${row.contentChunkId}`);
-        const playerEntry = new ImageJournal(this.adventure, row, es.img);
-        this.adventure.journals.push(playerEntry);
-        const scene = new Scene(this.adventure, row, es.img);
+        logger.info(`Attempting Missing Scene ${row.title} with ${row.contentChunkId}`);
+        const playerEntry = this.adventure.journalFactory.createImageJournal({ data: row}, es.img);
+        this.adventure.journalFactory.add(playerEntry);
+        const scene = new Scene(this.adventure, { data: row}, es.img);
         this.adventure.scenes.push(scene);
       });
 

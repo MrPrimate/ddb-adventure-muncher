@@ -294,7 +294,7 @@ class Scene {
       this.data.flags.ddb.parentId = row.data.parentId;
       delete row.data.parentId;
     }
-    row.data.title = row.data.documentName;
+    // row.data.title = row.data.documentName;
     this.data.folder = this.adventure.folderFactory.getFolderId(row, "Scene", "scene");
 
     // load meta-data adjustments

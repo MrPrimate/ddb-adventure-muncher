@@ -122,7 +122,7 @@ class Journal {
     this.data.folder = this.adventure.folderFactory.getFolderId(this.row, "JournalEntry", folderType);
   }
 
-  _additionalConstuction() {
+  _additionalConstruction() {
     // we don't need this for the core Journal
   }
 
@@ -133,7 +133,7 @@ class Journal {
       ? JSON.parse(JSON.stringify(require(path.join("../../", this.adventure.overrides.templateDir, "journal-v10.json"))))
       : JSON.parse(JSON.stringify(require(path.join("../../", this.adventure.overrides.templateDir,"journal.json"))));
 
-    this._additionalConstuction(options);
+    this._additionalConstruction(options);
 
     this.data.name = row.data.title;
     this.data.flags.ddb.ddbId = row.data.id;

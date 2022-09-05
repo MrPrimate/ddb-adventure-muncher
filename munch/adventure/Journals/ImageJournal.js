@@ -88,7 +88,7 @@ class ImageJournal extends Journal {
     this.data.flags.ddb.linkId = this.data._id;
   }
 
-  _additionalConstuction({ imagePath }) {
+  _additionalConstruction({ imagePath }) {
     this.imagePath = imagePath;
     this.imageContent = this.replaceImgLinksForJournal();
     this.data.flags.ddb.imageSrc = this.imageContent;

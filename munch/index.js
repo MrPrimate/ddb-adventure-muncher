@@ -89,7 +89,6 @@ if (process.argv[2] === "config") {
     adventure.processAdventure().then(() => {
       // console.log(configurator);
       console.warn("Done");
-      exit();
     });
   });
 }
