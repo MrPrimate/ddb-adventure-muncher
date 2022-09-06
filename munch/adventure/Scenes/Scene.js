@@ -78,20 +78,31 @@ class Scene {
   // here we load adjustment data from ddb-meta-data
   // this is the magic that adds walls, actor positions and note data
   #adjustment() {
-    let adjustment = (this.data.flags.ddb.contentChunkId) ?
-      this.adventure.enhancements.sceneAdjustments.find((s) =>
-        (this.data.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId &&
-        this.data.flags.ddb.ddbId == s.flags.ddb.ddbId &&
-        this.data.flags.ddb.parentId == s.flags.ddb.parentId &&
-        this.data.flags.ddb.cobaltId == s.flags.ddb.cobaltId) ||
-        (s.flags.ddb.alternateIds && s.flags.ddb.alternateIds.some((ai) =>
-          this.data.flags.ddb.contentChunkId === ai.contentChunkId &&
-          this.data.flags.ddb.ddbId == ai.ddbId &&
-          this.data.flags.ddb.parentId == ai.parentId &&
-          this.data.flags.ddb.cobaltId == ai.cobaltId
-        ))
-      ) :
-      this.adventure.enhancements.sceneAdjustments.find((s) => this.data.name.includes(s.name));
+
+    // if a single adjustment that matches the contentCHunk, lets assume that's correct
+    const contentChunkUnique = this.adventure.enhancements.sceneAdjustments.filter((s) =>
+      this.data.flags.ddb.contentChunkId &&
+      this.data.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId);
+    
+    let adjustment = contentChunkUnique.length > 0
+      ? contentChunkUnique[0]
+      // okay so not unique
+      : (this.data.flags.ddb.contentChunkId)
+        // try and fins a specific scene data
+        ? this.adventure.enhancements.sceneAdjustments.find((s) =>
+          (this.data.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId &&
+          this.data.flags.ddb.ddbId == s.flags.ddb.ddbId &&
+          this.data.flags.ddb.parentId == s.flags.ddb.parentId &&
+          this.data.flags.ddb.cobaltId == s.flags.ddb.cobaltId) ||
+          (s.flags.ddb.alternateIds && s.flags.ddb.alternateIds.some((ai) =>
+            this.data.flags.ddb.contentChunkId === ai.contentChunkId &&
+            this.data.flags.ddb.ddbId == ai.ddbId &&
+            this.data.flags.ddb.parentId == ai.parentId &&
+            this.data.flags.ddb.cobaltId == ai.cobaltId
+          ))
+        ) 
+        // can't match on chunk, so lets try name
+        : this.adventure.enhancements.sceneAdjustments.find((s) => this.data.name.includes(s.name));
 
     if (adjustment) {
       logger.info(`ADJUSTMENTS found named ${adjustment.name} with chunkid "${adjustment.flags.ddb.contentChunkId}" and id ${adjustment.flags.ddb.ddbId}`);
@@ -159,11 +170,13 @@ class Scene {
           logger.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
         });
       }
+      // never include these adjustment fields they are probs bad
       delete adjustment.flags.ddb.notes;
       delete adjustment.flags.ddb.cobaltId;
       delete adjustment.flags.ddb.parentId;
       delete adjustment.flags.ddb.ddbId;
       delete adjustment.flags.ddb.contentChunkId;
+      // mark as adjusted
       adjustment.flags.ddb["sceneAdjustment"] = true;
       logger.debug(adjustment.flags);
       logger.debug(this.data.flags);
