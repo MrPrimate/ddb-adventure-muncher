@@ -1015,7 +1015,7 @@ function generateScene(row, img) {
         scene.flags.ddb.cobaltId == ai.cobaltId
       ))
     ) :
-    sceneAdjustments.find((s) => scene.name.includes(s.name));
+    sceneAdjustments.find((s) => scene.name.trim().includes(s.name.trim()));
 
   if (adjustment) {
     logger.info(`ADJUSTMENTS found named ${adjustment.name} with chunkid "${adjustment.flags.ddb.contentChunkId}" and id ${adjustment.flags.ddb.ddbId}`);
@@ -1093,7 +1093,8 @@ function generateScene(row, img) {
     logger.info(scene.flags);
     scene = _.merge(scene, adjustment);
   } else {
-    logger.info(`NO ADJUSTMENTS found with chunkid "${scene.flags.ddb.contentChunkId}" and id ${scene.flags.ddb.ddbId}`);
+    let adjustment = (scene.flags.ddb.contentChunkId) ? "adjustment with contentChunkId" : "name match";
+    logger.info(`NO ADJUSTMENTS found for "${scene.name}" with chunkid "${scene.flags.ddb.contentChunkId}" and id ${scene.flags.ddb.ddbId} (${adjustment})`, scene.flags.ddb);
   }
 
   if (config.imageFind) {
