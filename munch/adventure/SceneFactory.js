@@ -39,6 +39,7 @@ class SceneFactory {
           missing: true,
         };
         logger.info(`Attempting Missing Scene ${row.title} with ${row.contentChunkId}`);
+        this.adventure.config.returns.statusMessage(`Attempting Missing Scene ${row.title}`);
         const playerEntry = this.adventure.journalFactory.createImageJournal({ data: row}, es.img);
         this.adventure.journalFactory.add(playerEntry);
         const scene = new Scene(this.adventure, { data: row}, es.img);

@@ -263,6 +263,7 @@ class Scene {
 
   constructor(adventure, row, image) {
     logger.info(`Generating Scene ${row.data.sceneName}`);
+    adventure.config.returns.statusMessage(`Generating Scene ${row.data.sceneName}`);
     this.adventure = adventure;
     this.row = row;
     this.image = image;

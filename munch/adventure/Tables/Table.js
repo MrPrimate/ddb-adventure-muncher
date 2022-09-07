@@ -124,6 +124,7 @@ class Table {
 
     logger.info("*******************************************");
     logger.info(`Generating table ${this.data.name}`);
+    this.adventure.config.returns.statusMessage(`Generating table ${this.data.name}`);
     if (this.config.debug) logger.debug(row);
 
     tableData.parsedTable.forEach((entry) => {

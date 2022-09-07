@@ -25,6 +25,7 @@ class NoteFactory {
     let id = 2000 + row.data.id;
     logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
     logger.info(`Generating Notes for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`);
+    this.adventure.config.returns.statusMessage(`Generating Notes for ${hint.slug}`);
     logger.info(`${hint.splitTag}[data-content-chunk-id='${hint.contentChunkIdStart}']`);
     
     let keyChunk = row.doc.querySelector(`${hint.splitTag}[data-content-chunk-id='${hint.contentChunkIdStart}']`);

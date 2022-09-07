@@ -244,7 +244,7 @@ async function generateAdventure(options, returnFuncs) {
     };
 
   const adventure = new Adventure(config, overrides);
-  await adventure.processAdventure();
+  adventure.processAdventure();
 }
 
 function checkAuth() {
@@ -322,9 +322,7 @@ function commandLine() {
       });
     } else if (args.generate) {
       checkAuth().then(() => {
-        generateAdventure(args.generate).then(() => {
-          process.exit(0);
-        });
+        generateAdventure(args.generate);
       });
     } else if (args.help) {
       // eslint-disable-next-line no-undef
@@ -439,16 +437,16 @@ function loadMainWindow() {
     });
   });
 
-  const returnAdventure = (config) => {
+  const returnAdventure = (adventure) => {
     const data = {
       success: true,
-      message: `Successfully generated ${config.bookCode}.fvttadv`,
+      message: `Successfully generated ${adventure.bookCode}.fvttadv`,
       data: [],
-      ddbVersions: config.ddbVersions,
+      ddbVersions: adventure.config.ddbVersions,
     };
     const targetAdventureZip = path.join(
-      config.outputDirEnv,
-      `${config.bookCode}.fvttadv`
+      adventure.config.outputDirEnv,
+      `${adventure.bookCode}.fvttadv`
     );
     logger.info(`Adventure generated to ${targetAdventureZip}`);
     try {
@@ -461,6 +459,7 @@ function loadMainWindow() {
 
   const statusMessage = (message) => {
     try {
+      console.warn(message);
       mainWindow.webContents.send("stateMessage", message);
     } catch (err) {
       logger.error(err);

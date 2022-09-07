@@ -77,6 +77,12 @@ window.api.receive("generate", (data) => {
   }
 });
 
+window.api.receive("stateMessage", (message) => {
+  console.log(message);
+  const messageDiv = document.getElementById("message-div");
+  const colour = "blue";
+  messageDiv.innerHTML = `<p style="color:${colour};">${message}</p>`;
+});
 
 window.api.receive("books", (data) => {
   data.forEach((book) => {

@@ -364,6 +364,7 @@ class SceneParser {
 
     logger.info("----------------------------------------------");
     logger.info(`Finding Scenes in ${this.document.name}`);
+    this.adventure.config.returns.statusMessage(`Finding Scenes in ${this.document.name}`);
 
     // let possibleSceneNodes = frag.querySelectorAll("a[data-lightbox]");
     this.possibleFigureSceneNodes = this.row.doc.body.querySelectorAll("figure");
