@@ -31,11 +31,9 @@ if (isDevelopment) {
 
 const isMac = process.platform === "darwin";
 
-const ddb = require("./munch/ddb.js");
-const book = require("./munch/book.js");
-// const scenes = require("./munch/scene-load.js");
-const utils = require("./munch/utils.js");
-const configurator = require("./munch/config.js");
+const ddb = require("./munch/data/ddb.js");
+const { Adventure } = require("./munch/adventure/Adventure.js");
+const { Config } = require("./munch/adventure/Config.js");
 
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
@@ -45,8 +43,7 @@ const { autoUpdater } = require("electron-updater");
 
 let allBooks = true;
 
-const configFolder = app.getPath("userData");
-configurator.setConfigDir(configFolder);
+const configDir = app.getPath("userData");
 
 const menuTemplate = [
   // { role: 'appMenu' }
@@ -75,7 +72,7 @@ const menuTemplate = [
       {
         label: "Reset config",
         click: async () => {
-          const configFile = path.join(configFolder, "config.json");
+          const configFile = path.join(configDir, "config.json");
           logger.info(configFile);
           if (fs.existsSync(configFile)) fs.unlinkSync(configFile);
         },
@@ -83,7 +80,7 @@ const menuTemplate = [
       {
         label: "Reset generated ids",
         click: async () => {
-          const lookupPath = path.join(configFolder, "lookup.json");
+          const lookupPath = path.join(configDir, "lookup.json");
           logger.info(lookupPath);
           if (fs.existsSync(lookupPath)) fs.unlinkSync(lookupPath);
         },
@@ -91,7 +88,7 @@ const menuTemplate = [
       {
         label: "Remove downloaded files",
         click: async () => {
-          const downloadPath = path.join(configFolder, "content");
+          const downloadPath = path.join(configDir, "content");
           logger.info(downloadPath);
           if (fs.existsSync(downloadPath)) {
             fs.rm(downloadPath, { recursive: true }, (err) => {
@@ -100,7 +97,7 @@ const menuTemplate = [
               }
             });
           }
-          const buildPath = path.join(configFolder, "build");
+          const buildPath = path.join(configDir, "build");
           logger.info(buildPath);
           if (fs.existsSync(buildPath)) {
             fs.rm(buildPath, { recursive: true }, (err) => {
@@ -109,7 +106,7 @@ const menuTemplate = [
               }
             });
           }
-          const metaPath = path.join(configFolder, "meta");
+          const metaPath = path.join(configDir, "meta");
           logger.info(metaPath);
           if (fs.existsSync(metaPath)) {
             fs.rm(metaPath, { recursive: true }, (err) => {
@@ -160,19 +157,19 @@ const menuTemplate = [
       {
         label: "Config location",
         click: async () => {
-          const configFile = path.join(configFolder, "config.json");
-          logger.info(configFolder);
+          const configFile = path.join(configDir, "config.json");
+          logger.info(configDir);
           if (fs.existsSync(configFile)) {
             shell.showItemInFolder(configFile);
           } else {
-            shell.showItemInFolder(configFolder);
+            shell.showItemInFolder(configDir);
           }
         },
       },
       {
         label: "Log file location",
         click: async () => {
-          const logFolder = path.join(configFolder, "logs");
+          const logFolder = path.join(configDir, "logs");
           const logFile = path.join(logFolder, "main.log");
           logger.info(logFolder);
           if (fs.existsSync(logFile)) {
@@ -220,56 +217,43 @@ const menuTemplate = [
 ];
 
 async function downloadBooks(config) {
-  const availableBooks = await ddb.listBooks(config.cobalt);
+  const availableBooks = await ddb.listBooks(config.data.cobalt);
   // logger.info(bookIds)
   for (let i = 0; i < availableBooks.length; i++) {
     process.stdout.write(`Downloading ${availableBooks[i].book.description}`);
-    const options = {
-      bookCode: availableBooks[i].bookCode,
-    };
-    await configurator.getConfig(options);
+    await config.loadBook(availableBooks[i].bookCode);
     process.stdout.write(`Download for ${availableBooks[i].book.description} complete`);
   }
 }
 
-function generateAdventure(options, returnAdventure) {
+async function generateAdventure(options, returnFuncs) {
   options.version = app.getVersion();
+  options.returns = returnFuncs;
+  options.configDir = configDir;
   // return new Promise((resolve) => {
-  configurator.getConfig(options).then((config) => {
-    if (!isDevelopment) {
-      book.setTemplateDir(
-        path.join(process.resourcesPath, "content", "templates")
-      );
-    }
-    config.run.returnAdventure = returnAdventure;
-    book.setConfig(config).then(() => {
-      console.log("Set Config complete");
-      utils.directoryReset(config);
-      console.warn("Directory reset complete");
-      book.fetchLookups(config);
-      console.warn("Lookups fetched");
-      book.setMasterFolders();
-      console.warn("Master folders set");
-      console.log("About to start generating adventure...");
-      book.getData();
-      console.log("Generating adventure...");
-    });
-  });
+  const config = new Config(options);
+  await config.loadBook(options.bookCode);
+
+  const overrides = isDevelopment
+    ? {}
+    : {
+      templateDir: path.join(process.resourcesPath, "content", "templates")
+    };
+
+  const adventure = new Adventure(config, overrides);
+  adventure.processAdventure();
 }
 
 function checkAuth() {
   return new Promise((resolve) => {
-    configurator.getConfig().then((config) => {
-      ddb.getUserData(config.cobalt).then((userData) => {
-        if (userData.error || !userData.userDisplayName) {
-          process.stdout.write(
-            "Authentication failure, please check your cobalt token\n"
-          );
-          process.exit(0);
-        } else {
-          resolve(true);
-        }
-      });
+    const config = new Config({configDir});
+    ddb.getUserData(config.data.cobalt).then((userData) => {
+      if (userData.error || !userData.userDisplayName) {
+        process.stdout.write("Authentication failure, please check your cobalt token\n");
+        process.exit(0);
+      } else {
+        resolve(config);
+      }
     });
   });
 }
@@ -312,36 +296,30 @@ function commandLine() {
     if (args.config) {
       const options = {
         externalConfigFile: args.config,
+        configDir,
       };
-      configurator.getConfig(options).then(() => {
-        process.stdout.write(`Loaded ${args.config}\n`);
-        process.exit(0);
-      });
+      new Config(options);
+      process.stdout.write(`Loaded ${args.config}\n`);
+      process.exit(0);
     } else if (args.list) {
-      checkAuth().then(() => {
-        configurator.getConfig().then((config) => {
-          ddb.listBooks(config.cobalt).then((books) => {
-            books.forEach((book) => {
-              process.stdout.write(`${book.bookCode} : ${book.book.description}\n`);
-            });
-            process.exit(0);
+      checkAuth().then((config) => {
+        ddb.listBooks(config.data.cobalt).then((books) => {
+          books.forEach((book) => {
+            process.stdout.write(`${book.bookCode} : ${book.book.description}\n`);
           });
+          process.exit(0);
         });
       });
     } else if (args.download) {
-      checkAuth().then(() => {
-        configurator.getConfig().then((config) => {
-          downloadBooks(config).then(() => {
-            process.stdout.write("Downloads finished\n");
-            process.exit(0);
-          });
+      checkAuth().then((config) => {
+        downloadBooks(config).then(() => {
+          process.stdout.write("Downloads finished\n");
+          process.exit(0);
         });
       });
     } else if (args.generate) {
       checkAuth().then(() => {
-        generateAdventure(args.generate).then(() => {
-          process.exit(0);
-        });
+        generateAdventure(args.generate);
       });
     } else if (args.help) {
       // eslint-disable-next-line no-undef
@@ -391,9 +369,8 @@ function loadMainWindow() {
   ipcMain.on("config", (event, args) => {
     // Send result back to renderer process
     // mainWindow.webContents.send("config", {"bears": "not a bear"});
-    configurator.getConfig().then((config) => {
-      mainWindow.webContents.send("config", config);
-    });
+    const config = new Config({configDir});
+    mainWindow.webContents.send("config", config);
   });
 
   // eslint-disable-next-line no-unused-vars
@@ -407,10 +384,10 @@ function loadMainWindow() {
         if (!result.canceled) {
           const options = {
             externalConfigFile: result.filePaths[0],
+            configDir,
           };
-          configurator.getConfig(options).then((config) => {
-            mainWindow.webContents.send("config", config);
-          });
+          const config = new Config(options);
+          mainWindow.webContents.send("config", config);
         }
       });
   });
@@ -426,45 +403,47 @@ function loadMainWindow() {
           // options.bookCode, options.externalConfigFile, options.outputDirPath
           const options = {
             outputDirPath: result.filePaths[0],
+            configDir,
           };
-          configurator
-            .getConfig(options)
-            .then((config) => {
-              mainWindow.webContents.send("config", config);
-            });
+          const config = new Config(options);
+          mainWindow.webContents.send("config", config);
         }
       });
   });
 
   // eslint-disable-next-line no-unused-vars
   ipcMain.on("books", (event, args) => {
-    configurator.getConfig().then((config) => {
-      ddb.listBooks(config.cobalt, allBooks).then((books) => {
-        books = _.orderBy(books, ["book.description"], ["asc"]);
-        mainWindow.webContents.send("books", books);
-      });
+    const options = {
+      configDir,
+    };
+    const config = new Config(options);
+    ddb.listBooks(config.data.cobalt, allBooks).then((books) => {
+      books = _.orderBy(books, ["book.description"], ["asc"]);
+      mainWindow.webContents.send("books", books);
     });
   });
 
   // eslint-disable-next-line no-unused-vars
   ipcMain.on("user", (event, args) => {
-    configurator.getConfig().then((config) => {
-      ddb.getUserData(config.cobalt).then((userData) => {
-        mainWindow.webContents.send("user", userData);
-      });
+    const options = {
+      configDir,
+    };
+    const config = new Config(options);
+    ddb.getUserData(config.data.cobalt).then((userData) => {
+      mainWindow.webContents.send("user", userData);
     });
   });
 
-  const returnAdventure = (config) => {
+  const returnAdventure = (adventure) => {
     const data = {
       success: true,
-      message: `Successfully generated ${config.run.bookCode}.fvttadv`,
+      message: `Successfully generated ${adventure.bookCode}.fvttadv`,
       data: [],
-      ddbVersions: config.run.ddbVersions,
+      ddbVersions: adventure.config.ddbVersions,
     };
     const targetAdventureZip = path.join(
-      config.run.outputDirEnv,
-      `${config.run.bookCode}.fvttadv`
+      adventure.config.outputDirEnv,
+      `${adventure.bookCode}.fvttadv`
     );
     logger.info(`Adventure generated to ${targetAdventureZip}`);
     try {
@@ -475,8 +454,22 @@ function loadMainWindow() {
     }
   };
 
+  const statusMessage = (message) => {
+    try {
+      console.warn(message);
+      mainWindow.webContents.send("stateMessage", message);
+    } catch (err) {
+      logger.error(err);
+      logger.error(err.stack);
+    }
+  };
+
   ipcMain.on("generate", (event, data) => {
-    generateAdventure(data, returnAdventure);
+    const returnFuncs = {
+      returnAdventure: returnAdventure,
+      statusMessage: statusMessage,
+    };
+    generateAdventure(data, returnFuncs);
   });
 
   mainWindow.loadFile(path.join(__dirname, "renderer", "index.html"));

@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
-const utils = require("./utils.js");
-const logger = require("./logger.js");
+const logger = require("../logger.js");
 const bookData = require("./bookData.js");
+const { FileHelper } = require("../adventure/FileHelper.js");
 
 function ddbCall(url, urlencoded) {
   const options = {
@@ -98,7 +98,7 @@ async function downloadBook(bookId, cobalt, destination, timeout = 30000) {
   logger.info(`Getting download link for ${bookId}`);
   const url = await getBookUrl(bookId, cobalt);
   logger.info("Generated unique download URL");
-  await utils.downloadFile(url, destination, timeout);
+  await FileHelper.downloadFile(url, destination, timeout);
   logger.info("Download complete");
   return true;
 }
@@ -120,7 +120,7 @@ async function listBooks(cobalt, allBooks=true) {
   //  "EntityTypeID": 953599357 - this needs to be filtered out as it gives false positives
   // 496802664 is books
   // 953599357 dice sets
-  const ddb_config = await getDDBConfig();
+  const ddbConfig = await getDDBConfig();
 
   const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v6/available-user-content", urlencoded);
   const books = result.Licenses.filter((f) => 
@@ -128,9 +128,9 @@ async function listBooks(cobalt, allBooks=true) {
   ).map((block) =>
     block.Entities
       .filter((b) => (allBooks || b.isOwned) && !BAD_IDS.includes(b.id))
-      .filter((b) => ddb_config.sources.some((s)  => b.id === s.id && s.isReleased))
+      .filter((b) => ddbConfig.sources.some((s)  => b.id === s.id && s.isReleased))
       .map((b) => {
-        const book = ddb_config.sources.find((s)  => b.id === s.id);
+        const book = ddbConfig.sources.find((s)  => b.id === s.id);
         return {
           id: b.id,
           book: book,

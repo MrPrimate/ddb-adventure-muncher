@@ -43,7 +43,8 @@ generateButton.addEventListener("click", (event) => {
     createPlayerHandouts: createPlayerHandouts.checked,
     v10Mode: v10Mode.checked,
   };
-  if (bookCode.value !== 0) {
+
+  if (Number.parseInt(bookCode.value) !== 0) {
     window.api.send("generate", options);
   }
 
@@ -76,6 +77,12 @@ window.api.receive("generate", (data) => {
   }
 });
 
+window.api.receive("stateMessage", (message) => {
+  console.log(message);
+  const messageDiv = document.getElementById("message-div");
+  const colour = "blue";
+  messageDiv.innerHTML = `<p style="color:${colour};">${message}</p>`;
+});
 
 window.api.receive("books", (data) => {
   data.forEach((book) => {
@@ -103,18 +110,18 @@ window.api.receive("config", (config) => {
   console.log("Received config from main process");
   console.log(config);
 
-  if (config.cobalt) {
+  if (config.data.cobalt) {
     contentLoadMessage.innerHTML = "Config loaded!";
     setOutputDir.disabled = false;
     window.api.send("user");
-    if (config.outputDirEnv) {
+    if (config.data.outputDirEnv) {
       generateButton.disabled = false;
-      outputLocation.innerHTML = config.outputDirEnv;
+      outputLocation.innerHTML = config.data.outputDirEnv;
       window.api.send("books");
     }
-    document.getElementById("v10-mode").checked = config.v10Mode === true;
-    document.getElementById("create-handouts").checked = config.createHandouts === true;
-    document.getElementById("create-player-handouts").checked = config.createPlayerHandouts === true;
+    document.getElementById("v10-mode").checked = config.data.v10Mode === true;
+    document.getElementById("create-handouts").checked = config.data.createHandouts === true;
+    document.getElementById("create-player-handouts").checked = config.data.createPlayerHandouts === true;
   } else {
     console.warn("No config file!");
     contentLoadMessage.innerHTML = "Config not found";

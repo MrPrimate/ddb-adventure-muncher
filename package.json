@@ -1,6 +1,6 @@
 {
   "name": "ddb-adventure-muncher",
-  "version": "0.7.4",
+  "version": "1.0.0",
   "description": "D&D Beyond Adventure Muncher for Foundry Virtual Tabletop",
   "repository": "https://github.com/MrPrimate/ddb-adventure-muncher",
   "main": "main.js",
@@ -90,7 +90,10 @@
     "electron-rebuild": "^3.2.7",
     "electron-reload": "^1.5.0",
     "eslint": "^7.32.0",
-    "spectre.css": "^0.5.9"
+    "spectre.css": "^0.5.9",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "2.3.2",
+    "eslint": "^8.11.0"
   },
   "dependencies": {
     "better-sqlite3-multiple-ciphers": "^7.5.1",

@@ -1,51 +1,13 @@
 "use strict";
 
-const configure = require("./config.js");
-const utils = require("./utils.js");
 const _ = require("lodash");
 const fs = require("fs");
 const path = require("path");
-const glob = require("glob");
 const { exit } = require("process");
-const logger = require("./logger.js");
-const os = require("os");
 
-function getSceneAdjustments(conf, useLogger = false) {
-  let scenesData = [];
-
-  // console.log(conf.run);
-  // console.log(conf.run.sceneInfoDir);
-  // console.log(conf.run.bookCode);
-  const jsonFiles = path.join(conf.run.sceneInfoDir, conf.run.bookCode, "*.json");
-
-  const globbedPath = os.platform() === "win32"
-    ? jsonFiles.replace(/\\/g, "/")
-    : jsonFiles;
-  if (useLogger) {
-    logger.info(`jsonFiles from "${jsonFiles}"`);
-    logger.info(`globbedPath is "${globbedPath}"`);
-  }
-
-  glob.sync(globbedPath).forEach((sceneDataFile) => {
-    if (useLogger) {
-      logger.info(`Loading ${sceneDataFile}`);
-    } else {
-      console.log(`Loading ${sceneDataFile}`);
-    }
-
-    const sceneDataPath = path.resolve(__dirname, sceneDataFile);
-    if (fs.existsSync(sceneDataPath)){
-      scenesData = scenesData.concat(utils.loadJSONFile(sceneDataPath));
-    }
-  });
-
-  if (useLogger) {
-    logger.debug(`Scene adjustments : ${scenesData.length}`);
-    if (scenesData.length > 0) logger.debug("Scene Adjustment[0]", scenesData[0]);
-  }
-
-  return scenesData;
-}
+const { Config } = require("./adventure/Config.js");
+const { Adventure } = require("./adventure/Adventure.js");
+const { FileHelper } = require("./adventure/FileHelper.js");
 
 function saveIndividualScenes(adjustments, conf) {
   adjustments.forEach((adjustment) => {
@@ -54,8 +16,8 @@ function saveIndividualScenes(adjustments, conf) {
     const cobaltId = flags.cobaltId ? `-${flags.cobaltId}` : "";
     const parentId = flags.parentId ? `-${flags.parentId}` : "";
     const contentChunkId = flags.contentChunkId ? `-${flags.contentChunkId}` : "";
-    const sceneRef = `${conf.run.bookCode}-${ddbId}${cobaltId}${parentId}${contentChunkId}`;
-    const sceneDataDir = path.join(conf.run.sceneInfoDir, conf.run.bookCode);
+    const sceneRef = `${conf.bookCode}-${ddbId}${cobaltId}${parentId}${contentChunkId}`;
+    const sceneDataDir = path.join(conf.sceneInfoDir, conf.bookCode);
     const sceneDataFile = path.join(sceneDataDir, `${sceneRef}-scene.json`);
 
     console.log(`Sceneref: ${sceneRef}`);
@@ -71,40 +33,55 @@ function saveIndividualScenes(adjustments, conf) {
     if (fs.existsSync(sceneDataPath)){
       console.log(`Scene ${sceneDataPath} exists, replacing.`);
     }
-    utils.saveJSONFile(adjustment, sceneDataPath);
+    FileHelper.saveJSONFile(adjustment, sceneDataPath);
   });
 }
 
 function listSceneIds(bookCode) {
-  let idTable = configure.getLookups();
+  const config = new Config();
+  config.loadBook(bookCode);
+  const adventure = new Adventure(config);
+  adventure.getLookups();
+  let idTable = adventure.ids;
 
-  if (!idTable[bookCode]) {
+  if (!idTable[adventure.bookCode]) {
     console.log(`No ids found for book code ${bookCode}`);
     exit();
   }
-  idTable[bookCode].filter((r) => r.docType == "Scene").forEach(r => {
+  idTable[adventure.bookCode].filter((r) => r.docType == "Scene").forEach(r => {
     console.log(`${r.name} => ${r.contentChunkId}`);
   });
 }
 
 function getDDBMetaData(conf) {
-  const meta = utils.loadJSONFile(path.resolve(conf.run.sceneInfoDir, "../meta.json"));
+  const meta = FileHelper.loadJSONFile(path.resolve(conf.sceneInfoDir, "../meta.json"));
   return meta;
 }
 
 function updateDDBMetaData(conf, key, update) {
-  const metaPath = path.resolve(conf.run.sceneInfoDir, "../meta.json");
-  const meta = utils.loadJSONFile(metaPath);
+  const metaPath = path.resolve(conf.sceneInfoDir, "../meta.json");
+  const meta = FileHelper.loadJSONFile(metaPath);
   meta.scenes[key] = update;
-  utils.saveJSONFile(meta, metaPath);
+  FileHelper.saveJSONFile(meta, metaPath);
 }
 
 function importScene(conf, sceneFile) {
-  // let config = conf;
-  if (conf) {
-    console.log("Config loaded!");
+
+  const bookCode = (inData.flags.ddb && inData.flags.ddb.bookCode) ?
+    inData.flags.ddb.bookCode :
+    (inData.flags.vtta && inData.flags.vtta.code) ?
+      inData.flags.vtta.code : undefined;
+  if (bookCode) {
+    conf.loadBook(bookCode);
+  } else {
+    console.log("What book is this from? Exiting!");
+    return;
   }
-  let idTable = configure.getLookups();
+
+  const adventure = new Adventure(conf);
+  adventure.getLookups();
+
+  let idTable = adventure.ids;
   console.log(`Loading scene info from ${sceneFile}`);
 
   let inData;
@@ -114,24 +91,12 @@ function importScene(conf, sceneFile) {
   const configFile = path.resolve(__dirname, sceneFile);
   if (fs.existsSync(configFile)){
     console.log(`Loading ${configFile}`);
-    inData = utils.loadJSONFile(configFile);
+    inData = FileHelper.loadJSONFile(configFile);
   } else {
     console.log("FILE NOT FOUND!");
     return;
   }
 
-  // console.log(inData)
-
-  const bookCode = (inData.flags.ddb && inData.flags.ddb.bookCode) ?
-    inData.flags.ddb.bookCode :
-    (inData.flags.vtta && inData.flags.vtta.code) ?
-      inData.flags.vtta.code : undefined;
-  if (bookCode) {
-    conf.run.bookCode = bookCode;
-  } else {
-    console.log("What book is this from? Exiting!");
-    return;
-  }
   if (!idTable[bookCode]) {
     console.log(`Please generate the adventure ${bookCode} before attempting scene import.`);
   }
@@ -140,7 +105,7 @@ function importScene(conf, sceneFile) {
   const ddbMetaDataVersion = ddbMetaData.version;
   console.log(`DDB Meta Data Version: ${ddbMetaDataVersion}`);
 
-  let scenesData = getSceneAdjustments(conf);
+  let scenesData = adventure.loadSceneAdjustments();
 
   const lookupFilter = (inData.flags.ddb && inData.flags.ddb.contentChunkId) ?
     idTable[bookCode].filter((r) =>
@@ -549,8 +514,8 @@ function importScene(conf, sceneFile) {
   console.log("Data match: " + dataMatch);
 
 
-  const sceneDataHints = configure.loadImageFinderResults("scene", bookCode);
-  const oldSceneDataHints = configure.loadImageFinderResults("old-scene", bookCode);
+  const sceneDataHints = adventure.loadImageFinderResults("scene", bookCode);
+  const oldSceneDataHints = adventure.loadImageFinderResults("old-scene", bookCode);
   
   const inSceneDataHints = sceneDataHints ? sceneDataHints.some((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId) : [];
   const inOldSceneDataHints = oldSceneDataHints ? oldSceneDataHints.some((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId) : [];
@@ -580,7 +545,7 @@ function importScene(conf, sceneFile) {
 
   if (inDataUpdate) {
     console.log("UPDATING INDATA!");
-    utils.saveJSONFile(inData, configFile);
+    FileHelper.saveJSONFile(inData, configFile);
   }
 
   if (!dataMatch || !sceneDataFlags || alternativeSceneIdsUpdate) {
@@ -599,7 +564,9 @@ function importScene(conf, sceneFile) {
 
 function actorCheck(config) {
   let missingActors = [];
-  const scenesData = getSceneAdjustments(config);
+  const adventure = new Adventure(config);
+  adventure.loadSceneAdjustments();
+  const scenesData = adventure.enhancements.sceneAdjustments;
 
   scenesData.forEach((scene) => {
     if (scene.flags.ddb.tokens) {
@@ -625,18 +592,21 @@ function actorCheck(config) {
   return missingActors;
 }
 
-function sceneCheck(conf, sceneFile) {
+function sceneCheck(sceneFile) {
+  
   const configFile = path.resolve(__dirname, sceneFile);
-  let inData = utils.loadJSONFile(configFile);
+  let inData = FileHelper.loadJSONFile(configFile);
   const bookCode = (inData.flags.ddb && inData.flags.ddb.bookCode) ?
     inData.flags.ddb.bookCode :
     (inData.flags.vtta && inData.flags.vtta.code) ?
       inData.flags.vtta.code : undefined;
 
-  conf.run.bookCode = bookCode;
+  const config = new Config();
+  config.loadBook(bookCode);
+  const adventure = new Adventure(config);
 
-  const sceneData = configure.loadImageFinderResults("scene", bookCode);
-  const oldSceneData = configure.loadImageFinderResults("old-scene", bookCode);
+  const sceneData = adventure.getImageFinderResults("scene");
+  const oldSceneData = adventure.getImageFinderResults("old-scene");
   
   const inSceneData = sceneData.some((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId);
   const inOldSceneData = oldSceneData.some((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId);
@@ -654,15 +624,14 @@ function sceneCheck(conf, sceneFile) {
     }
   }
 
-  utils.saveJSONFile(inData, configFile);
-  saveIndividualScenes([inData], conf);
+  FileHelper.saveJSONFile(inData, configFile);
+  saveIndividualScenes([inData], config);
 
   // "alternateIds": [{"contentChunkId": null}],
 
 }
 
 exports.importScene = importScene;
-exports.getSceneAdjustments = getSceneAdjustments;
 exports.listSceneIds = listSceneIds;
 exports.actorCheck = actorCheck;
 exports.sceneCheck = sceneCheck;

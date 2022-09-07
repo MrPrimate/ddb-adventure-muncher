@@ -15,7 +15,7 @@ contextBridge.exposeInMainWorld(
     },
     // to frontend
     receive: (channel, func) => {
-      let validChannels = ["fromMain", "config", "loadConfig", "outputDir", "books", "generate", "user"];
+      let validChannels = ["fromMain", "config", "loadConfig", "outputDir", "books", "generate", "user", "stateMessage"];
       if (validChannels.includes(channel)) {
         // Deliberately strip event as it includes `sender` 
         ipcRenderer.on(channel, (event, ...args) => func(...args));
