@@ -217,7 +217,7 @@ const menuTemplate = [
 ];
 
 async function downloadBooks(config) {
-  const availableBooks = await ddb.listBooks(config.cobalt);
+  const availableBooks = await ddb.listBooks(config.data.cobalt);
   // logger.info(bookIds)
   for (let i = 0; i < availableBooks.length; i++) {
     process.stdout.write(`Downloading ${availableBooks[i].book.description}`);
@@ -235,12 +235,12 @@ async function generateAdventure(options, returnFuncs) {
   options.configDir = configDir;
   // return new Promise((resolve) => {
   const config = new Config(options);
-  await config.loadBook(bookCode);
+  await config.loadBook(options.bookCode);
 
   const overrides = isDevelopment
    ? {}
    : {
-    templateDir: path.resolve(__dirPath, path.join(process.resourcesPath, "content", "templates"))
+    templateDir: path.join(process.resourcesPath, "content", "templates")
     };
 
   const adventure = new Adventure(config, overrides);
@@ -299,13 +299,14 @@ function commandLine() {
     if (args.config) {
       const options = {
         externalConfigFile: args.config,
+        configDir,
       };
       new Config(options);
       process.stdout.write(`Loaded ${args.config}\n`);
       process.exit(0);
     } else if (args.list) {
       checkAuth().then((config) => {
-        ddb.listBooks(config.cobalt).then((books) => {
+        ddb.listBooks(config.data.cobalt).then((books) => {
           books.forEach((book) => {
             process.stdout.write(`${book.bookCode} : ${book.book.description}\n`);
           });
@@ -373,7 +374,7 @@ function loadMainWindow() {
   ipcMain.on("config", (event, args) => {
     // Send result back to renderer process
     // mainWindow.webContents.send("config", {"bears": "not a bear"});
-    const config = new Config();
+    const config = new Config({configDir});
     mainWindow.webContents.send("config", config);
   });
 
@@ -388,6 +389,7 @@ function loadMainWindow() {
         if (!result.canceled) {
           const options = {
             externalConfigFile: result.filePaths[0],
+            configDir,
           };
           const config = new Config(options);
           mainWindow.webContents.send("config", config);
@@ -406,6 +408,7 @@ function loadMainWindow() {
           // options.bookCode, options.externalConfigFile, options.outputDirPath
           const options = {
             outputDirPath: result.filePaths[0],
+            configDir,
           };
           const config = new Config(options);
           mainWindow.webContents.send("config", config);
@@ -415,20 +418,24 @@ function loadMainWindow() {
 
   // eslint-disable-next-line no-unused-vars
   ipcMain.on("books", (event, args) => {
-    configurator.getConfig().then((config) => {
-      ddb.listBooks(config.cobalt, allBooks).then((books) => {
-        books = _.orderBy(books, ["book.description"], ["asc"]);
-        mainWindow.webContents.send("books", books);
-      });
+    const options = {
+      configDir,
+    };
+    const config = new Config(options);
+    ddb.listBooks(config.data.cobalt, allBooks).then((books) => {
+      books = _.orderBy(books, ["book.description"], ["asc"]);
+      mainWindow.webContents.send("books", books);
     });
   });
 
   // eslint-disable-next-line no-unused-vars
   ipcMain.on("user", (event, args) => {
-    configurator.getConfig().then((config) => {
-      ddb.getUserData(config.cobalt).then((userData) => {
-        mainWindow.webContents.send("user", userData);
-      });
+    const options = {
+      configDir,
+    };
+    const config = new Config(options);
+    ddb.getUserData(config.data.cobalt).then((userData) => {
+      mainWindow.webContents.send("user", userData);
     });
   });
 

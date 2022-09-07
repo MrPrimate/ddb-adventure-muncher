@@ -245,17 +245,17 @@ class Config {
     this.options = options;
     this.version = options.version || null;
     this.returns = options.returns || {};
-    const configPath = (process.env.CONFIG_DIR)
+    const configDir = (process.env.CONFIG_DIR)
       ? process.env.CONFIG_DIR
       : options.configDir 
         ? options.configDir
         : Config.DEFAULT_CONFIG_DIR;
-    logger.info(`Using initial config directory ${this.configPath}`);
-    this.setConfigDirs(configPath);
+    logger.info(`Using initial config directory ${configDir}`);
+    this.setConfigDirs(configDir);
     // override config with environment vars
     this.#environmentOverrides();
 
-    logger.info(`Config Path is now ${this.configPath}`);
+    logger.info(`Config Directory is now ${this.configDir}`);
 
     this.data = FileHelper.loadConfig(this.configFile);
     if (this.data.run) delete(this.data.run);
@@ -273,11 +273,8 @@ class Config {
 
     this.#setDefaultConfig();
 
-    console.error("TODO: Need to save out config here")
-    // console.warn(this.data);
     // save config
-    // FileHelper.saveJSONFile(this.data, this.configFile);
-
+    FileHelper.saveJSONFile(this.data, this.configFile);
     FileHelper.checkDirectories([this.downloadDir]);
 
     if (this.data.debug) {

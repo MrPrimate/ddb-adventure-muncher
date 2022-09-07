@@ -9,16 +9,14 @@ const { SceneFactory } = require("./SceneFactory.js");
 const { Database } = require("./Database.js");
 const { FileHelper } = require("./FileHelper.js");
 const { Assets } = require("./Assets.js");
+const { Helpers } = require("./Helpers.js");
 
-// const _ = require("lodash");
 const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
 const os = require("os");
+const _ = require("lodash");
 
-const jsdom = require("jsdom");
-const { Helpers } = require("./Helpers.js");
-const { JSDOM } = jsdom;
 
 class Adventure {
 
@@ -77,7 +75,7 @@ class Adventure {
     this.config = config;
 
     const defaultOverrides = {
-      templateDir: path.resolve(__dirname, path.join("..", "content", "templates")),
+      templateDir: path.resolve(__dirname, path.join("../../", "content", "templates")),
     };
 
     this.overrides = _.merge(defaultOverrides, overrides)
