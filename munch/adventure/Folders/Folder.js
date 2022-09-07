@@ -23,7 +23,7 @@ class Folder {
     this.adventure = adventure;
     this.specialType = specialType;
     this.type = type;
-    const folderJsonPath = path.join("../../", this.adventure.overrides.templateDir,"folder.json");
+    const folderJsonPath = path.join(this.adventure.overrides.templateDir, "folder.json");
     this.data = JSON.parse(JSON.stringify(require(folderJsonPath)));
 
     this.data.name = row.data.title;

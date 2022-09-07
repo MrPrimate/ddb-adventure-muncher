@@ -114,7 +114,7 @@ class Config {
 
   async loadBook(bookCode) {
     this.bookCode = bookCode.toLowerCase();
-    this.getMetaData();
+    await this.getMetaData();
   
     // Checking user and authentication
     this.userData = await ddb.getUserData(this.data.cobalt);
@@ -245,7 +245,11 @@ class Config {
     this.options = options;
     this.version = options.version || null;
     this.returns = options.returns || {};
-    const configPath = (process.env.CONFIG_DIR) ? process.env.CONFIG_DIR : Config.DEFAULT_CONFIG_DIR;
+    const configPath = (process.env.CONFIG_DIR)
+      ? process.env.CONFIG_DIR
+      : options.configDir 
+        ? options.configDir
+        : Config.DEFAULT_CONFIG_DIR;
     logger.info(`Using initial config directory ${this.configPath}`);
     this.setConfigDirs(configPath);
     // override config with environment vars

@@ -138,8 +138,8 @@ class Journal {
     this.adventure = adventure;
     this.row = row;
     this.data = this.adventure.config.data.v10Mode
-      ? JSON.parse(JSON.stringify(require(path.join("../../", this.adventure.overrides.templateDir, "journal-v10.json"))))
-      : JSON.parse(JSON.stringify(require(path.join("../../", this.adventure.overrides.templateDir,"journal.json"))));
+      ? JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "journal-v10.json"))))
+      : JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"journal.json"))));
 
     this._additionalConstruction(options);
 

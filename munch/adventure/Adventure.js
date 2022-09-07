@@ -71,13 +71,16 @@ class Adventure {
     this.loadSceneAdjustments();
   }
 
-  constructor(config) {
+  constructor(config, overrides = {}) {
     logger.info(`Adventure Muncher version ${config.version}`);
     logger.info(`Starting Adventure instance for ${config.bookCode}`);
     this.config = config;
-    this.overrides = {
-      templateDir: path.join("..", "content", "templates"),
+
+    const defaultOverrides = {
+      templateDir: path.resolve(__dirname, path.join("..", "content", "templates")),
     };
+
+    this.overrides = _.merge(defaultOverrides, overrides)
     this.bookCode = config.bookCode;
     this.name = config.book.description;
     this.folders = [];
@@ -194,27 +197,6 @@ class Adventure {
     this.#outputScenes();
     this.#outputTables();
     this.#outputFolders();
-  }
-
-  // not sure we actually need to do a second pass for scenes, I think we can
-  // now get them on first pass
-  async #secondPass() {
-    logger.info(`Processing ${this.journals.length} scenes`);
-    // documents.forEach((document) => {
-    //   if (document.content) {
-    //     // eslint-disable-next-line no-unused-vars
-    //     let [tempScenes, sceneJournals, tmpReplaceLinks] = findScenes(document);
-    //     replaceLinks = replaceLinks.concat(tmpReplaceLinks);
-    //     if (global.gc) global.gc();
-    //   } else if (document.pages) {
-    //     document.pages.forEach((page) => {
-    //       // eslint-disable-next-line no-unused-vars
-    //       let [tempScenes, sceneJournals, tmpReplaceLinks] = findScenes(page);
-    //       replaceLinks = replaceLinks.concat(tmpReplaceLinks);
-    //       if (global.gc) global.gc();
-    //     });
-    //   }
-    // });
   }
 
   async processAdventure() {
@@ -376,7 +358,7 @@ class Adventure {
   
     logger.info("Exporting adventure outline...");
   
-    const adventure = require(path.join("../", this.overrides.templateDir,"adventure.json"));
+    const adventure = require(path.join(this.overrides.templateDir, "adventure.json"));
     adventure.name = this.config.book.description;
     adventure.id = Helpers.randomString(10, "#aA");
     adventure.required = this.required;

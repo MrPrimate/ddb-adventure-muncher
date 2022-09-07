@@ -32,7 +32,7 @@ class Scene {
       if (!fs.existsSync(svgDirPath)) fs.mkdirSync(svgDirPath);
       if (!fs.existsSync(iconFileOutPath)) {
         logger.info(stub);
-        const svgTemplate = path.join("../", this.adventure.overrides.templateDir, `${stub.length}char.svg`);
+        const svgTemplate = path.join(this.adventure.overrides.templateDir, `${stub.length}char.svg`);
         let svgContent = FileHelper.loadFile(svgTemplate);
         svgContent = svgContent.replace("REPLACEME", stub);
         FileHelper.saveFile(svgContent, iconFileOutPath);
@@ -272,7 +272,7 @@ class Scene {
       : null;
 
     // load skeleton
-    this.data = JSON.parse(JSON.stringify(require(path.join("../../", this.adventure.overrides.templateDir,"scene.json"))));
+    this.data = JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"scene.json"))));
 
     // initial image size guess (used if not set by adjustment)
     const dimensions = this.imageSize();
