@@ -109,7 +109,7 @@ class Config {
 
   async getMetaData() {
     // only grab remote data if we are not providing a SCENE_DIR as we want to act on the local one
-    this.returns.statusMessage(`Checking Meta Data`);
+    this.returns.statusMessage("Checking Meta Data");
     const remoteMetaDataVersion = process.env.SCENE_DIR ? "0.0.0" : await enhance.getMetaData(this);
     if (!this.data.metaDataVersion || remoteMetaDataVersion != this.data.metaDataVersion) {
       this.data.metaDataVersion = remoteMetaDataVersion;
@@ -258,9 +258,9 @@ class Config {
     // };
     if (!options.returns) {
       this.returns = {
-          statusMessage: this.fakeReturns,
-          returnAdventure: this.fakeReturns,
-        };
+        statusMessage: this.fakeReturns,
+        returnAdventure: this.fakeReturns,
+      };
     }
     this.returns = options.returns;
     const configDir = (process.env.CONFIG_DIR)

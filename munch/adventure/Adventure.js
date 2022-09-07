@@ -78,7 +78,7 @@ class Adventure {
       templateDir: path.resolve(__dirname, path.join("../../", "content", "templates")),
     };
 
-    this.overrides = _.merge(defaultOverrides, overrides)
+    this.overrides = _.merge(defaultOverrides, overrides);
     this.bookCode = config.bookCode;
     this.name = config.book.description;
     this.folders = [];

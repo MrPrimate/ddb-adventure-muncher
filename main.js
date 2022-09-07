@@ -221,10 +221,7 @@ async function downloadBooks(config) {
   // logger.info(bookIds)
   for (let i = 0; i < availableBooks.length; i++) {
     process.stdout.write(`Downloading ${availableBooks[i].book.description}`);
-    const options = {
-      bookCode: availableBooks[i].bookCode,
-    };
-    await config.loadBook(bookCode);
+    await config.loadBook(availableBooks[i].bookCode);
     process.stdout.write(`Download for ${availableBooks[i].book.description} complete`);
   }
 }
@@ -238,9 +235,9 @@ async function generateAdventure(options, returnFuncs) {
   await config.loadBook(options.bookCode);
 
   const overrides = isDevelopment
-   ? {}
-   : {
-    templateDir: path.join(process.resourcesPath, "content", "templates")
+    ? {}
+    : {
+      templateDir: path.join(process.resourcesPath, "content", "templates")
     };
 
   const adventure = new Adventure(config, overrides);

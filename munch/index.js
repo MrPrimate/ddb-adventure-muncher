@@ -2,7 +2,7 @@
 
 const { Adventure } = require("./adventure/Adventure.js");
 const { Config } = require("./adventure/Config.js");
-const { FileHelper } = require("./adventure/FileHelper.js");
+// const { FileHelper } = require("./adventure/FileHelper.js");
 const scene = require("./scene-load.js");
 const ddb = require("./data/ddb.js");
 const enhance = require("./data/enhance.js");
