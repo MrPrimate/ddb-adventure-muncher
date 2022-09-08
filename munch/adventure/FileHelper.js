@@ -205,6 +205,7 @@ class FileHelper {
       const data = JSON.stringify(content, null, 4);
       fs.writeFileSync(filePath, data);
       logger.info(`JSON file saved to ${filePath}`);
+      // logger.silly(`JSON file saved to ${filePath}`, content);
     } catch (error) {
       logger.error(error);
     }
@@ -225,6 +226,7 @@ class FileHelper {
   }
 
   static directoryReset(config) {
+    logger.info(`Resetting output dir ${config.outputDir}`);
     // delete directory recursively
     config.data.subDirs.forEach((d) => {
       if (fs.existsSync(path.join(config.outputDir, d))) {

@@ -42,7 +42,7 @@ class SceneParser {
             if (title !== ref.textContent) {
               title = Helpers.titleString(title.replace(ref.textContent, "").trim());
             }
-            logger.warn(`possibleFigureSceneNodes ${titleType} TITLE: ${title}`);
+            logger.debug(`possibleFigureSceneNodes ${titleType} TITLE: ${title}`);
   
             let rowContentChunkId = caption.getAttribute("data-content-chunk-id");
             if (!rowContentChunkId) {
@@ -92,7 +92,7 @@ class SceneParser {
             this.factory.tracker[this.handoutTmpRef]++;
           }
   
-          logger.warn(`possibleFigureSceneNodes DM TITLE: ${title}`);
+          logger.debug(`possibleFigureSceneNodes DM TITLE: ${title}`);
           let row = { data: {
             title: Helpers.titleString(title),
             id: 10000 + this.document.flags.ddb.ddbId + this.tmpCount,
