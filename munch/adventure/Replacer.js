@@ -123,7 +123,7 @@ class LinkReplacer {
           if (this.adventure.supports.pages) {
             const journalEntry = this.adventure.journals.find((j) => j.data.pages.some((p) => p._id === journalPage._id));
             const slugLink = textPointer ? `#${textValue.replace(/\s/g, "")}` : "";
-            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@UUID[JournalEntry.${journalEntry._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`);
+            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@UUID[JournalEntry.${journalEntry.data._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`);
           } else {
             this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@JournalEntry[${journalPage.data.name}]${textPointer ? textValue : ""}`);
           }
@@ -166,13 +166,16 @@ class LinkReplacer {
           if (!this.adventure.data.required[COMPENDIUM_MAP[lookupKey]].includes(String(lookupMatch[1]))) {
             this.adventure.data.required[COMPENDIUM_MAP[lookupKey]].push(String(lookupMatch[1]));
           }
-  
           const lookupEntry = lookupValue.find((e) => e.id == lookupMatch[1]);
           if (lookupEntry) {
-            const documentRef = lookupEntry.documentName ? lookupEntry.documentName : lookupEntry._id;
-            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@Compendium[${lookupEntry.compendium}.${documentRef}]{${node.textContent}}`);
+            const documentRef = lookupEntry._id ? lookupEntry._id : lookupEntry.documentName;
+            const pageLink = lookupEntry.pageId ? `.JournalEntryPage.${lookupEntry.pageId}` : "";
+            const linkStub = lookupEntry.headerLink ? `#${lookupEntry.headerLink}` : "";
+            const link = `${lookupEntry.compendium}.${documentRef}${pageLink}${linkStub}`;
+            const linkType = this.adventure.supports.pages && lookupEntry._id ? `UUID[Compendium.` : `Compendium[`
+            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@${linkType}${link}]{${node.textContent}}`);
           }
-        }
+        } 
       });
     }
   
