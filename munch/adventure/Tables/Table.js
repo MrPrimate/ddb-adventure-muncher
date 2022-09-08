@@ -73,7 +73,7 @@ class Table {
     this.data.name = ((tableData.tableName && tableData.tableName.trim() !== "")
       ? tableData.tableName
       : "Unnamed Table") + nameExtension;
-    this.data.flags.ddb.ddbId = row.id;
+    this.data.flags.ddb.ddbId = row.data.id;
     this.data.flags.ddb.bookCode = this.adventure.bookCode;
     this.data.flags.ddb.slug = row.slug;
     this.data.flags.ddb.contentChunkId = tableData.contentChunkId;
@@ -110,7 +110,7 @@ class Table {
     };
 
     this.data.folder = this.adventure.folderFactory.getFolderId(tableRow, "RollTable");
-    this.data._id = this.adventure.idFactory.getId(row, "RollTable");
+    this.data._id = this.adventure.idFactory.getId(this.data, "RollTable");
 
     const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*d*\d*)?)/, "g");
     const formulaMatch = diceKey.match(diceRegex);
@@ -125,7 +125,6 @@ class Table {
     logger.info("*******************************************");
     logger.info(`Generating table ${this.data.name}`);
     this.adventure.config.returns.statusMessage(`Generating table ${this.data.name}`);
-    if (this.config.debug) logger.debug(row);
 
     tableData.parsedTable.forEach((entry) => {
       const result = {

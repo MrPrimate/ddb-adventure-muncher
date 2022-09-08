@@ -180,6 +180,9 @@ class Adventure {
 
       logger.info(`Generating Note Journals for ${row.data.title}`);
       this.notesFactory.generateJournals(row);
+
+      logger.info(`Generating tables for ${row.data.title}`);
+      this.tableFactory.generateTables(row);
       
       // if this is a top tier parent document we process it for scenes now.
       const content = this.supports.pages

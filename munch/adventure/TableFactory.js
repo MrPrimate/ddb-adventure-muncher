@@ -18,18 +18,17 @@ class TableFactory {
 
   // generates a html doc and loops through it to find tables
   generateTables(row) {
-    this.row = row;
-    this.tableNodes = this.row.doc.querySelectorAll("table");
+    this.tableNodes = row.doc.querySelectorAll("table");
 
     this.tableNodes.forEach((tableNode) => {
-      const parsedTable = new ParsedTable(this.adventure, tableNode);
+      const parsedTable = new ParsedTable(this.adventure, row, tableNode);
 
       parsedTable.diceKeys.forEach((diceKey, index) => {
         const table = new Table({
           adventure: this.adventure,
           diceKey,
-          row: this.row,
-          parsedTable,
+          row,
+          tableData: parsedTable,
           count: index + 1,
         });
 

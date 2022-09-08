@@ -32,7 +32,7 @@ class ParsedTable {
       return hintName.tableName;
     }
 
-    const element = this.tableNode.querySelector(`table[data-content-chunk-id='${this.contentChunkId}']`);
+    const element = this.row.doc.querySelector(`table[data-content-chunk-id='${this.contentChunkId}']`);
     let track = element;
     let sibling = track.previousElementSibling;
 
@@ -70,15 +70,17 @@ class ParsedTable {
     }
   }
 
-  constructor(adventure, tableNode) {
+  constructor(adventure, row, tableNode) {
     this.adventure = adventure;
+    this.row = row,
+    this.tableNode = tableNode;
+    this.contentChunkId = tableNode.getAttribute("data-content-chunk-id");
 
     // this takes the html of a table and breaks it up so we can use it
     // into arrays
     this.parsedTable = parseTable.parseTable(tableNode);
     this.keys = parseTable.getHeadings(tableNode);
     this.diceKeys = this.findDiceColumns();
-    this.contentChunkId = tableNode.getAttribute("data-content-chunk-id");
     this.nameGuess = this.guessTableName();
 
     if (this.nameGuess.split(" ").length > 5 && this.diceKeys.length === 1 && this.keys.length === 2) {
