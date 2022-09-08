@@ -112,11 +112,11 @@ window.api.receive("config", (config) => {
   if (config.data.cobalt) {
     contentLoadMessage.innerHTML = "Config loaded!";
     setOutputDir.disabled = false;
-    window.api.send("user");
+    window.api.send("user", config);
     if (config.data.outputDirEnv) {
       generateButton.disabled = false;
       outputLocation.innerHTML = config.data.outputDirEnv;
-      window.api.send("books");
+      window.api.send("books", config);
     }
     const v4Schema = Number.parseFloat(config.data.schemaVersion) >= 4.0;
     if (v4Schema) {
@@ -131,5 +131,6 @@ window.api.receive("config", (config) => {
     contentLoadMessage.innerHTML = "Config not found";
   }
 });
-window.api.send("config", "get config");
+
+// window.api.send("config", "get config");
 

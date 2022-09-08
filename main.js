@@ -80,9 +80,12 @@ const menuTemplate = [
       {
         label: "Reset generated ids",
         click: async () => {
-          const lookupPath = path.join(configDir, "lookup.json");
-          logger.info(lookupPath);
-          if (fs.existsSync(lookupPath)) fs.unlinkSync(lookupPath);
+          const lookupPathV3 = path.join(configDir, "lookup.json");
+          logger.info(lookupPathV3);
+          if (fs.existsSync(lookupPathV3)) fs.unlinkSync(lookupPathV3);
+          const lookupPathV4 = path.join(configDir, "lookup4.json");
+          logger.info(lookupPathV4);
+          if (fs.existsSync(lookupPathV4)) fs.unlinkSync(lookupPathV4);
         },
       },
       {
@@ -365,6 +368,12 @@ function loadMainWindow() {
     mainWindow.webContents.openDevTools();
   }
 
+  mainWindow.once('ready-to-show', () => {
+    const config = new Config({configDir});
+    mainWindow.webContents.send("config", config);
+  })
+  
+
   // eslint-disable-next-line no-unused-vars
   ipcMain.on("config", (event, args) => {
     // Send result back to renderer process
@@ -386,6 +395,7 @@ function loadMainWindow() {
             externalConfigFile: result.filePaths[0],
             configDir,
           };
+          console.debug("Loading config", options);
           const config = new Config(options);
           mainWindow.webContents.send("config", config);
         }
@@ -412,11 +422,7 @@ function loadMainWindow() {
   });
 
   // eslint-disable-next-line no-unused-vars
-  ipcMain.on("books", (event, args) => {
-    const options = {
-      configDir,
-    };
-    const config = new Config(options);
+  ipcMain.on("books", (event, config) => {
     ddb.listBooks(config.data.cobalt, allBooks).then((books) => {
       books = _.orderBy(books, ["book.description"], ["asc"]);
       mainWindow.webContents.send("books", books);
@@ -424,11 +430,7 @@ function loadMainWindow() {
   });
 
   // eslint-disable-next-line no-unused-vars
-  ipcMain.on("user", (event, args) => {
-    const options = {
-      configDir,
-    };
-    const config = new Config(options);
+  ipcMain.on("user", (event, config) => {
     ddb.getUserData(config.data.cobalt).then((userData) => {
       mainWindow.webContents.send("user", userData);
     });
