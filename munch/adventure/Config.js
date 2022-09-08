@@ -34,7 +34,6 @@ class Config {
     this.buildDir = `${configDir}/build`;
     this.metaDir = `${configDir}/meta`;
     this.configFile = path.resolve(__dirname, `${configDir}/config.json`);
-    this.lookupFile = `${configDir}/lookup.json`;
 
     this.scenesDir = path.resolve(__dirname, path.join(this.metaDir, "scene_info"));
     this.notesDir = path.resolve(__dirname, path.join(this.metaDir, "note_info"));
@@ -114,7 +113,6 @@ class Config {
     const remoteMetaDataVersion = process.env.SCENE_DIR ? "0.0.0" : await enhance.getMetaData(this);
     if (!this.data.metaDataVersion || remoteMetaDataVersion != this.data.metaDataVersion) {
       this.data.metaDataVersion = remoteMetaDataVersion;
-      FileHelper.saveJSONFile(this.data, this.configFile);
     }
   }
 
@@ -291,11 +289,11 @@ class Config {
     }
 
     this.#setDefaultConfig();
+    FileHelper.checkDirectories([this.downloadDir]);
 
     // save config
     FileHelper.saveJSONFile(this.data, this.configFile);
-    FileHelper.checkDirectories([this.downloadDir]);
-
+    
     if (this.data.debug) {
       logger.setLogLevel("silly");
     } else {

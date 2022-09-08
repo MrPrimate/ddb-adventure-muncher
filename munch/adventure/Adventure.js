@@ -252,7 +252,8 @@ class Adventure {
 
   getLookups(all = false) {
     logger.info("Getting lookups");
-    const lookupFile = path.resolve(__dirname, this.config.lookupFile);
+    const fileName = this.supports.pages ? "lookupPages.json" : "lookup.json";
+    const lookupFile = path.resolve(__dirname, this.config.configDir, fileName);
     if (fs.existsSync(lookupFile)){
       const data = FileHelper.loadJSONFile(lookupFile);
       if (all){
@@ -268,8 +269,9 @@ class Adventure {
   #saveLookups() {
     const resolvedContent = this.getLookups(true);
     resolvedContent[this.bookCode] = this.ids;
-    const configFile = path.resolve(__dirname, this.config.lookupFile);
-    FileHelper.saveJSONFile(resolvedContent, configFile);
+    const fileName = this.supports.pages ? "lookupPages.json" : "lookup.json";
+    const lookupFile = path.resolve(__dirname, this.config.configDir, fileName);
+    FileHelper.saveJSONFile(resolvedContent, lookupFile);
   }
 
   #saveImageFinderResults() {
@@ -318,10 +320,10 @@ class Adventure {
 
   #saveMetrics() {
     this.#saveLookups();
-    if (this.config.tableFind) {
+    if (this.config.data.tableFind) {
       this.#saveTableData();
     }
-    if (this.config.imageFind) {
+    if (this.config.data.imageFind) {
       this.#saveImageFinderResults();
     }
   }
