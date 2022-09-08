@@ -71,12 +71,12 @@ class SceneParser {
             const dmText = this.adventure.config.data.createHandouts ? `@JournalEntry[${title}]{DM Version} ` : "";
             const playerText = this.adventure.config.data.createPlayerHandouts ? `@JournalEntry[${playerEntry.data.flags.ddb.linkName}]{${titleType} Version}` : "";
             this.adventure.replaceLinks.push( {html: ref.outerHTML, ref: `${dmText}${playerText}` });
-            if (this.adventure.config.data.v10Mode) {
+            if (this.adventure.supports.pages) {
               this.document.text.content = this.document.text.content.replace(ref.outerHTML, `${dmText}${playerText}`);
             } else {
               this.document.content = this.document.content.replace(ref.outerHTML, `${dmText}${playerText}`);
             }
-            const scene = new Scene(this.adventure, row, this.adventure.config.data.v10Mode ? playerEntry.data.pages[0].src : playerEntry.data.img);
+            const scene = new Scene(this.adventure, row, this.adventure.supports.pages ? playerEntry.data.pages[0].src : playerEntry.data.img);
             this.adventure.scenes.push(scene);
           }
   
@@ -184,12 +184,12 @@ class SceneParser {
             const playerText = this.adventure.config.data.createPlayerHandouts ? `@JournalEntry[${playerEntry.data.flags.ddb.linkName}]{${titleType} Version}` : "";
   
             this.adventure.replaceLinks.push( {html: playerRef.outerHTML, ref: `${dmText}${playerText}` });
-            if (this.adventure.config.data.v10Mode) {
+            if (this.adventure.supports.pages) {
               this.document.text.content = this.document.text.content.replace(playerRef.outerHTML, `${dmText}${playerText}`);
             } else {
               this.document.content = this.document.content.replace(playerRef.outerHTML, `${dmText}${playerText}`);
             }
-            const scene = new Scene(this.adventure, row, this.adventure.config.data.v10Mode ? playerEntry.data.pages[0].src : playerEntry.data.img);
+            const scene = new Scene(this.adventure, row, this.adventure.supports.pages ? playerEntry.data.pages[0].src : playerEntry.data.img);
             this.adventure.scenes.push(scene);
           }
   
@@ -287,15 +287,15 @@ class SceneParser {
         if (!journalEntry.data.flags.ddb.duplicate) {
           const playerText = this.adventure.config.data.createPlayerHandouts ? `@JournalEntry[${journalEntry.data.flags.ddb.linkName}]{Player Version}` : "";
           this.adventure.replaceLinks.push({ html: aNode.outerHTML, ref: playerText });
-          if (this.adventure.config.data.v10Mode) {
+          if (this.adventure.supports.pages) {
             this.document.text.content = this.document.text.content.replace(aNode.outerHTML, playerText);
           } else {
             this.document.content = this.document.content.replace(aNode.outerHTML, playerText);
           }
           this.adventure.journals.push(journalEntry);
         }
-        if (this.adventure.config.data.v10Mode ? !this.adventure.sceneImages.includes(journalEntry.data.pages[0].src) : !this.adventure.sceneImages.includes(journalEntry.data.img)) {
-          const scene = new Scene(this.adventure, row, this.adventure.config.data.v10Mode ? journalEntry.data.pages[0].src : journalEntry.data.img);
+        if (this.adventure.supports.pages ? !this.adventure.sceneImages.includes(journalEntry.data.pages[0].src) : !this.adventure.sceneImages.includes(journalEntry.data.img)) {
+          const scene = new Scene(this.adventure, row, this.adventure.supports.pages ? journalEntry.data.pages[0].src : journalEntry.data.img);
           this.adventure.scenes.push(scene);
         }
       });
@@ -345,15 +345,15 @@ class SceneParser {
       if (!journalEntry.data.flags.ddb.duplicate) {
         const playerText = this.adventure.config.data.createPlayerHandouts ? `@JournalEntry[${journalEntry.data.flags.ddb.linkName}]{${titleType} Version}` : "";
         this.adventure.replaceLinks.push( {html: node.outerHTML, ref: playerText });
-        if (this.adventure.config.data.v10Mode) {
+        if (this.adventure.supports.pages) {
           this.document.text.content = this.document.text.content.replace(node.outerHTML, playerText);
         } else {
           this.document.content = this.document.content.replace(node.outerHTML, playerText);
         }
         this.adventure.journals.push(journalEntry);
       }
-      if (this.adventure.config.data.v10Mode ? !this.adventure.sceneImages.includes(journalEntry.data.pages[0].src) : !this.adventure.sceneImages.includes(journalEntry.data.img)) {
-        const scene = new Scene(this.adventure, row, this.adventure.config.data.v10Mode ? journalEntry.data.pages[0].src : journalEntry.data.img);
+      if (this.adventure.supports.pages ? !this.adventure.sceneImages.includes(journalEntry.data.pages[0].src) : !this.adventure.sceneImages.includes(journalEntry.data.img)) {
+        const scene = new Scene(this.adventure, row, this.adventure.supports.pages ? journalEntry.data.pages[0].src : journalEntry.data.img);
         this.adventure.scenes.push(scene);
       }
     });

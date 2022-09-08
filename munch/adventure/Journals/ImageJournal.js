@@ -66,7 +66,7 @@ class ImageJournal extends Journal {
 
   }
 
-  _generateJournalEntryV10() {
+  _generateJournalEntryWithPages() {
     if (this.duplicate) {
       const journalMatch =  this.adventure.journals.map((j) => j.data.pages).flat().find((j) => j.src === this.imageContent);
       this.data.flags.ddb.linkId = journalMatch ? journalMatch._id : null;
@@ -81,7 +81,7 @@ class ImageJournal extends Journal {
 
   }
 
-  _generateJournalEntryOld() {
+  _generateJournalEntryNoPages() {
     this.data.img = this.imageContent;
 
     if (this.duplicate) {

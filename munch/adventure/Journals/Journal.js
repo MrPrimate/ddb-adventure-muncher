@@ -37,7 +37,7 @@ class Journal {
       logger.info(`Appending to chapter... ${this.row.data.title} ${this.row.data.parentId} search...`);
       this.adventure.journals.forEach((journal) => {
         if (journal.data.flags.ddb.cobaltId === this.row.data.parentId) {
-          if (this.adventure.config.data.v10Mode && this.data.pages.length > 0) {
+          if (this.adventure.supports.pages && this.data.pages.length > 0) {
             const page = this.data.pages[0];
             if (page.name != journal.data.name) {
               page.title.show = true;
@@ -70,7 +70,7 @@ class Journal {
 
   setPermissions() {
     if (this.adventure.config.data.observeAll) {
-      if (this.adventure.config.data.v10Mode) {
+      if (this.adventure.config.data.schemaVersion >= 4.0) {
         this.data.ownership.default = 2;
       } else {
         this.data.permission.default = 2;
@@ -78,7 +78,7 @@ class Journal {
     }
   }
 
-  _generateJournalEntryV10() {
+  _generateJournalEntryWithPages() {
     const firstElement = this.row.doc.body.firstElementChild;
     const allFirstElements = this.row.doc.body.getElementsByTagName(firstElement.tagName);
     if (firstElement === "H1" || allFirstElements.length === 1) {
@@ -93,7 +93,7 @@ class Journal {
 
   }
 
-  _generateJournalEntryOld() {
+  _generateJournalEntryNoPages() {
     const firstElement = this.row.doc.body.firstElementChild;
     try {
       const allFirstElements = this.row.doc.body.getElementsByTagName(firstElement.tagName);
@@ -120,8 +120,8 @@ class Journal {
   }
 
   get createSections() {
-    return this.adventure.config.data.v10Mode
-      ? !this.row.data.parentId // never in v10
+    return this.adventure.supports.pages
+      ? !this.row.data.parentId // never with page support
       : this.adventure.config.data.createSections; // hidden setting in v9
   }
 
@@ -137,8 +137,8 @@ class Journal {
   constructor(adventure, row, options) {
     this.adventure = adventure;
     this.row = row;
-    this.data = this.adventure.config.data.v10Mode
-      ? JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "journal-v10.json"))))
+    this.data = this.adventure.supports.pages
+      ? JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "journal-pages.json"))))
       : JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"journal.json"))));
 
     this._additionalConstruction(options);
@@ -175,10 +175,10 @@ class Journal {
 
     this.setPermissions();
 
-    if (this.adventure.config.data.v10Mode) {
-      this._generateJournalEntryV10();
+    if (this.adventure.supports.pages) {
+      this._generateJournalEntryWithPages();
     } else {
-      this._generateJournalEntryOld();
+      this._generateJournalEntryNoPages();
     }
 
     logger.info(`Generated journal entry ${this.data.name}`);
@@ -200,7 +200,7 @@ class Journal {
   fixUp() {
     logger.info(`Fixing up text journal: ${this.data.name}`);
     this.adventure.replaceLinks.forEach((link) => {
-      if (this.adventure.config.data.v10Mode) {
+      if (this.adventure.supports.pages) {
         this.data.pages.forEach((page) =>{
           if (page.type === "text") {
             page.text.content = page.text.content.replace(link.html, link.ref);
@@ -211,7 +211,7 @@ class Journal {
       }
     });
  
-    if (this.adventure.config.data.v10Mode) {
+    if (this.adventure.supports.pages) {
       this.data.pages.forEach((page) =>{
         if (page.type === "text") {
           const links = new LinkReplacer(this.adventure, page.text.content, `${this.data.name}`);

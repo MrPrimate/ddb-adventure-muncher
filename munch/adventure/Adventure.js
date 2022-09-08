@@ -106,7 +106,16 @@ class Adventure {
       hiRes: [],
     };
 
-    this.required = {
+    this.imageFinder = {
+      scenes: [],
+      journals: [],
+    };
+
+    // load adventure data skeleton
+    this.data = require(path.join(this.overrides.templateDir, "adventure.json"));
+    this.data.name = this.config.book.description;
+    this.data.id = Helpers.randomString(10, "#aA");
+    this.data.required = {
       monsters: [],
       items: [],
       spells: [],
@@ -117,10 +126,9 @@ class Adventure {
       actions: [],
       weaponproperties: [],
     };
-
-    this.imageFinder = {
-      scenes: [],
-      journals: [],
+    this.data.version = this.config.data.schemaVersion;
+    this.supports = {
+      pages: this.config.data.schemaVersion >= 4.0,
     };
 
     this.replaceLinks = [];
@@ -174,7 +182,7 @@ class Adventure {
       this.notesFactory.generateJournals(row);
       
       // if this is a top tier parent document we process it for scenes now.
-      const content = this.config.data.v10Mode
+      const content = this.supports.pages
         ? journal.data.pages[0]
         : journal.data;
       // if (content && journal.data.flags.ddb.cobaltId) {
@@ -356,13 +364,8 @@ class Adventure {
     });
   
     logger.info("Exporting adventure outline...");
-  
-    const adventure = require(path.join(this.overrides.templateDir, "adventure.json"));
-    adventure.name = this.config.book.description;
-    adventure.id = Helpers.randomString(10, "#aA");
-    adventure.required = this.required;
-  
-    const adventureData = JSON.stringify(adventure);
+
+    const adventureData = JSON.stringify(this.data);
     fs.writeFileSync(path.join(this.config.outputDir,"adventure.json"), adventureData);
   }
 

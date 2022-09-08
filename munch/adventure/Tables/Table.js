@@ -83,7 +83,7 @@ class Table {
     if (row.parentId) this.data.flags.ddb.parentId = row.parentId;
 
     if (this.adventure.config.data.observeAll) {
-      if (this.adventure.config.data.v10Mode) {
+      if (this.adventure.config.data.schemaVersion >= 4.0) {
         this.data.ownership.default = 2;
       } else {
         this.data.permission.default = 2;

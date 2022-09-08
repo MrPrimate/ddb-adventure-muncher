@@ -9,6 +9,7 @@ const bookList = document.getElementById("book-select");
 const contentLoadMessage = document.getElementById("config-loader");
 const generateButton = document.getElementById("munch-book");
 const userField = document.getElementById("user");
+const versionSupport = document.getElementById("version-support");
 
 patreonLink.addEventListener("click", (event) => {
   event.preventDefault();
@@ -29,7 +30,6 @@ generateButton.addEventListener("click", (event) => {
   event.preventDefault();
   generateButton.disabled = true;
   const bookCode = document.getElementById("book-select");
-  const v10Mode = document.getElementById("v10-mode");
   const createHandouts = document.getElementById("create-handouts");
   const createPlayerHandouts = document.getElementById("create-player-handouts");
   const observeAll = document.getElementById("observe-all");
@@ -41,7 +41,6 @@ generateButton.addEventListener("click", (event) => {
     observeAll: observeAll.checked,
     createHandouts: createHandouts.checked,
     createPlayerHandouts: createPlayerHandouts.checked,
-    v10Mode: v10Mode.checked,
   };
 
   if (Number.parseInt(bookCode.value) !== 0) {
@@ -119,7 +118,12 @@ window.api.receive("config", (config) => {
       outputLocation.innerHTML = config.data.outputDirEnv;
       window.api.send("books");
     }
-    document.getElementById("v10-mode").checked = config.data.v10Mode === true;
+    const v4Schema = Number.parseFloat(config.data.schemaVersion) >= 4.0;
+    if (v4Schema) {
+      versionSupport.innerHTML = "<p><b>Version:</b> v10+ mode. To generate for v9, recreate your config file.</p>";
+    } else {
+      versionSupport.innerHTML = "<p><b>Version:</b> v9 mode. To generate for v10+, recreate your config file.</p>";
+    }
     document.getElementById("create-handouts").checked = config.data.createHandouts === true;
     document.getElementById("create-player-handouts").checked = config.data.createPlayerHandouts === true;
   } else {

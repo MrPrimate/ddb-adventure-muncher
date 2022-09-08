@@ -80,11 +80,12 @@ class Config {
   }
 
   #setDefaultConfig() {
-    this.setDataConfigSetting("v10Mode", false);
-    this.setDataConfigSetting("createHandouts", true);
-    this.setDataConfigSetting("createPlayerHandouts", true);
+    const v4Schema = Number.parseFloat(this.data.schemaVersion) >= 4.0;
+    this.setDataConfigSetting("schemaVersion", 3.0);
+    this.setDataConfigSetting("createHandouts", !v4Schema);
+    this.setDataConfigSetting("createPlayerHandouts", !v4Schema);
     this.setDataConfigSetting("observeAll", false);
-    this.setDataConfigSetting("createSections", true);
+    this.setDataConfigSetting("createSections", !v4Schema);
     this.setDataConfigSetting("logLevel", "info");
     this.data.subDirs = [
       "journal",

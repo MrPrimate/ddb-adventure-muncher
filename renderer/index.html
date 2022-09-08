@@ -49,10 +49,10 @@
           <input type="checkbox" id="create-player-handouts" name="create-player-handouts" value="Create Player Map Handouts?">
           <label for="create-player-handouts"> <b>Create Handouts for player images?</b><br> This creates journal entries for images marked as "Player Versions". These are typically used in Scene backgrounds and not needed as Handouts. YMMV.</label><br>
         </div>
-        <div>
-          <input type="checkbox" id="v10-mode" name="v10-mode" value="V10 Mode">
-          <label for="v10-mode"> <b>Generate content for Foundry v10?</b><br> (Incompatible with v9)</label><br>
+        <div id="version-support">
+
         </div>
+        <input type="checkbox" id="v10-mode" name="v10-mode" hidden>
         <button class="btn btn-primary" id="munch-book" disabled>Generate!</button>
         <br />
         <div class="empty-action" id="message-div">

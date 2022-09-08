@@ -58,11 +58,11 @@ class Scene {
   }
 
   #journalMatch() {
-    let journalMatch = this.adventure.config.data.v10Mode
+    let journalMatch = this.adventure.supports.pages
       ? this.adventure.journals.map((j) => j.data.pages).flat().find((journal) => journal._id === this.row.data.originDocId)
       : this.adventure.journals.find((journal) => journal.data._id === this.row.data.originDocId);
     if (!journalMatch) {
-      journalMatch = this.adventure.config.data.v10Mode
+      journalMatch = this.adventure.supports.pages
         ? this.adventure.journals.map((j) => j.data.pages).flat().find((journalPage) => 
           journalPage.name.includes(this.data.navName) &&
           !journalPage.flags.ddb.notes && !journalPage.flags.ddb.img && !journalPage.src
@@ -134,7 +134,7 @@ class Scene {
               journal.data.flags.ddb.linkName == note.flags.ddb.linkName :
               false;
             const journalNameMatch = !contentChunkIdMatch && !originMatch ?
-              this.adventure.config.data.v10Mode
+              this.adventure.supports.pages
                 ? journal.data.pages.some((page) => page.name.trim() === note.label.trim())
                 : journal.data.name.trim() == note.label.trim() :
               false;
@@ -237,8 +237,8 @@ class Scene {
           token.flags.actorFolderId = this.adventure.folderFactory.masterFolders["Actor"]._id;
           logger.debug(`Found actor with Id ${ddbId}, actorId ${token.actorId}, folderId ${token.flags.actorFolderId}`);
 
-          if (!this.adventure.required.monsters.includes(String(ddbId))) {
-            this.adventure.required.monsters.push(String(ddbId));
+          if (!this.adventure.data.required.monsters.includes(String(ddbId))) {
+            this.adventure.data.required.monsters.push(String(ddbId));
           }
 
           // these may have been gathered by accident
