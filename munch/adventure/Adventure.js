@@ -98,6 +98,9 @@ class Adventure {
     // enhancements to dl
     this.downloadList = [];
 
+    // catches un journaled assets like pdf files
+    this.otherFiles = [];
+
     this.enhancements = {
       noteHints: [],
       tableHints: [],
@@ -227,8 +230,11 @@ class Adventure {
       const db = new Database(this);
       db.getData();
 
-      // finally we do some second passes to fix up links for generated images, scenes etc
+      // we do some second passes to fix up links for generated images, scenes etc
       this.#fixUpAdventure();
+
+      // create a journal for other files
+      this.journalFactory.generateOtherFilesJournal();
 
       // we copy assets and save out generated json
       await this.downloadEnhancementAssets();

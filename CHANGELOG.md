@@ -1,3 +1,10 @@
+# 1.0.0
+
+* Massive rewrite, main features are:
+- Performance increased by about x10
+- PDF's are now imported as Journal Pages in v10
+- To generate a v10 adventure you will now need to regenerate your config file with DDB Importer v3.0.6 or higher.
+
 # 0.7.4
 
 * Some fixes for adventure munching in v10 around tables and lights.

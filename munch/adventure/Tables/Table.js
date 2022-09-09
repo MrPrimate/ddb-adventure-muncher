@@ -70,9 +70,11 @@ class Table {
 
     const nameExtension = tableData.diceKeys > 1 ? ` [${tableData.diceKeys}]` : "";
 
-    this.data.name = ((tableData.tableName && tableData.tableName.trim() !== "")
-      ? tableData.tableName
-      : "Unnamed Table") + nameExtension;
+    const tableName = tableData.nameGuess && tableData.nameGuess.trim() !== ""
+      ? tableData.nameGuess.trim()
+      : "Unnamed Table";
+
+    this.data.name = tableName + nameExtension;
     this.data.flags.ddb.ddbId = row.data.id;
     this.data.flags.ddb.bookCode = this.adventure.bookCode;
     this.data.flags.ddb.slug = row.slug;
@@ -173,7 +175,8 @@ class Table {
 
   fixUp() {
     this.data.results.forEach((result) => {
-      const replacer = new LinkReplacer(this.adventure, result.text, `${this.data.name}-${result._id}`);
+      const linkDetails = { text: result.text, name: `${this.data.name}-${result._id}` };
+      const replacer = new LinkReplacer(this.adventure, linkDetails);
       replacer.process();
       result.text = replacer.textContent;
     });

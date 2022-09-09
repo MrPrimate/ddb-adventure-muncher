@@ -3,6 +3,8 @@
 
 const logger = require("../logger.js");
 const jsdom = require("jsdom");
+const { Page } = require("./Journals/Page.js");
+const { Helpers } = require("./Helpers.js");
 const { JSDOM } = jsdom;
 
 const COMPENDIUM_MAP = {
@@ -22,10 +24,11 @@ const COMPENDIUM_MAP = {
 
 class LinkReplacer {
 
-  constructor(adventure, text, name = null) {
+  constructor(adventure, { text, name = null, journal = null}) {
     this.adventure = adventure;
     this.name = name;
     this.dom = new JSDOM(text).window.document;
+    this.journal = journal;
   }
 
   process() {
@@ -68,10 +71,10 @@ class LinkReplacer {
 
   replaceTables() {
     this.adventure.tables.forEach((table) => {
-      const tablePoint = this.dom.querySelector(`table[data-content-chunk-id="${table.flags.ddb.contentChunkId}"]`);
+      const tablePoint = this.dom.querySelector(`table[data-content-chunk-id="${table.data.flags.ddb.contentChunkId}"]`);
       if (tablePoint) {
-        logger.info(`Updating table reference for: ${table.name}`);
-        tablePoint.insertAdjacentHTML("afterend", `<div id="table-link">@RollTable[${table.name}]{Open RollTable}</div>`);
+        logger.info(`Updating table reference for: ${table.data.name}`);
+        tablePoint.insertAdjacentHTML("afterend", `<div id="table-link">@RollTable[${table.data.name}]{Open RollTable}</div>`);
       }
     });
   }
@@ -207,7 +210,7 @@ class LinkReplacer {
     // e.g. href="ddb://image/idrotf/" to "./idrotf/
     // ddb://compendium/idrotf/appendix-d-magic to it's own entry
     //let match = /ddb:\/\/(?!spells)([a-zA-z0-9\.\/#-])"/g;
-    const match = /ddb:\/\/(?!vehicles|armor|actions|weaponproperties|compendium|image|spells|magicitems|monsters|skills|senses|conditions|weapons|adventuring-gear)([\w\d\.\/#-]+)+(?:"|')/gi;
+    const match = /ddb:\/\/(?!vehicles|armor|actions|weaponproperties|compendium|image|spells|magicitems|monsters|skills|senses|conditions|weapons|file|adventuring-gear)([\w\d\.\/#-]+)+(?:"|')/gi;
     const matches = this.dom.body.innerHTML.match(match);
     if (matches) {
       logger.warn("Unknown DDB Match:", matches);
@@ -225,6 +228,36 @@ class LinkReplacer {
     const reImageLink = new RegExp(`href="ddb:\/\/image\/${this.adventure.bookCode}\/`, "g");
     // text = text.replace(reImageLink, `href="adventure://assets/`);
     this.dom.body.innerHTML = this.dom.body.innerHTML.replace(reImageLink, "href=\"assets/");
+
+    // href="ddb://file/lmop/dwarf-cleric.pdf"
+    const reFileLink = new RegExp(`href="ddb:\/\/file\/${this.adventure.bookCode}\/(.*?)"`, "g");
+    const fileLinks = this.dom.querySelectorAll("a[href*=\"ddb://file\/\"]");
+
+    fileLinks.forEach((node) => {
+      const target = node.outerHTML;
+      const fileMatch = node.outerHTML.match(reFileLink);
+      if (fileMatch) {
+        logger.warn("fileMatch", {fileMatch, target, inner: node.innerHTML})
+        this.adventure.otherFiles.push({ name: node.inner, fileName: fileMatch[0] });
+
+        if (this.adventure.supports.pages && this.journal) {
+          const pageData = {
+            name: node.innerHTML,
+            content: fileMatch[0],
+            flags: this.journal.data.flags,
+            id: Helpers.randomString(16,"#aA"),
+            type: "pdf",
+          };
+          const page = new Page(pageData);
+          this.journal.data.pages.push(page.toObject());
+          node.outerHTML = `@UUID[JournalEntry.${this.journal.data._id}.JournalEntryPage.${page._id}]${node.innerHTML}`;
+        } else {
+          node.setAttribute("href", `assets/${fileMatch[0]}`);
+        }
+        this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
+      }
+    });
+
   }
 
 }

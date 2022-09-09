@@ -164,19 +164,19 @@ class Config {
     versions[bookCode] = this.ddbVersions.currentVersion;
   
     if (fs.existsSync(this.sourceDir)) {
-      logger.warn("LOADING CURRENT VERSION");
+      logger.info(`Checking downloaded version of metadata ${this.ddbVersions.currentVersion}`);
       const downloadedVersionPath = path.resolve(__dirname, path.join(this.sourceDir, "version.txt"));
       const existingVersionContent = FileHelper.loadFile(downloadedVersionPath);
       this.ddbVersions.currentVersion = parseInt(existingVersionContent.trim());
       const latest = await ddb.checkLatestBookVersion(this.book.id, this.data.cobalt, this.ddbVersions.currentVersion);
-      logger.warn(latest);
+      logger.info("Latest versions", latest);
       if (latest.sourceUpdatesAvailable[this.book.id]) {
         this.ddbVersions.updateAvailable = true;
       }
     }
   
     if (versionsFileExists){
-      logger.warn("LOADING VERSIONS");
+      logger.info("Loading meta data versions");
       versions = FileHelper.loadConfig(versionsFile);
       if (versions[bookCode]) this.ddbVersions.supportedVersion = versions[bookCode];
     } else if (!versionsFileExists || !metaFileExists) {
@@ -223,7 +223,7 @@ class Config {
   
     // update supported version to current? (dev mode activity)
     if (this.data.updateVersions){
-      logger.warn("SAVING VERSIONS");
+      logger.info("Saving versions info");
       versions[bookCode] = this.ddbVersions.currentVersion;
       FileHelper.saveJSONFile(versions, versionsFile);
     }

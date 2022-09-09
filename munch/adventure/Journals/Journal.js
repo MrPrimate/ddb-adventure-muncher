@@ -214,7 +214,8 @@ class Journal {
     if (this.adventure.supports.pages) {
       this.data.pages.forEach((page) =>{
         if (page.type === "text") {
-          const links = new LinkReplacer(this.adventure, page.text.content, `${this.data.name}`);
+          const linkDetails = { text: page.text.content, name: `${this.data.name}`, journal: this };
+          const links = new LinkReplacer(this.adventure, linkDetails);
           links.process();
           page.text.content = links.result;
           const dice = new DiceReplacer(this.adventure, page.text.content, `${this.data.name}`);
@@ -224,7 +225,8 @@ class Journal {
         }
       });
     } else {
-      const links = new LinkReplacer(this.adventure, this.data.content, `${this.data.name}`);
+      const linkDetails = { text: this.data.content, name: `${this.data.name}`, journal: this };
+      const links = new LinkReplacer(this.adventure, linkDetails);
       links.process();
       this.data.content = links.result;
       const dice = new DiceReplacer(this.adventure, this.data.content, `${this.data.name}`);
