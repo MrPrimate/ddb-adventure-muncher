@@ -368,10 +368,10 @@ function loadMainWindow() {
     mainWindow.webContents.openDevTools();
   }
 
-  mainWindow.once('ready-to-show', () => {
+  mainWindow.once("ready-to-show", () => {
     const config = new Config({configDir});
     mainWindow.webContents.send("config", config);
-  })
+  });
   
 
   // eslint-disable-next-line no-unused-vars

@@ -175,7 +175,7 @@ class LinkReplacer {
             const pageLink = lookupEntry.pageId ? `.JournalEntryPage.${lookupEntry.pageId}` : "";
             const linkStub = lookupEntry.headerLink ? `#${lookupEntry.headerLink}` : "";
             const link = `${lookupEntry.compendium}.${documentRef}${pageLink}${linkStub}`;
-            const linkType = this.adventure.supports.pages && lookupEntry._id ? `UUID[Compendium.` : `Compendium[`
+            const linkType = this.adventure.supports.pages && lookupEntry._id ? "UUID[Compendium." : "Compendium[";
             this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@${linkType}${link}]{${node.textContent}}`);
           }
         } 
@@ -258,7 +258,7 @@ class LinkReplacer {
           this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
         }
 
-        logger.info("fileMatchTarget", {fileMatch, target, inner: node.innerHTML, outer: node.outerHTML})
+        logger.info("fileMatchTarget", {fileMatch, target, inner: node.innerHTML, outer: node.outerHTML});
         this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
       }
     });
