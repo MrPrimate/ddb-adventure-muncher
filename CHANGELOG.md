@@ -1,9 +1,10 @@
 # 1.0.0
 
-* Massive rewrite, main features are:
-- Performance increased by about x10
+Massive rewrite, main features are:
+- Performance increased between x6 and x10, depending on the adventure.
 - PDF's are now imported as Journal Pages in v10
 - To generate a v10 adventure you will now need to regenerate your config file with DDB Importer v3.0.6 or higher.
+- Improved linking to SRD elements.
 
 # 0.7.4
 
