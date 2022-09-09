@@ -260,8 +260,10 @@ class Config {
         statusMessage: this.fakeReturns,
         returnAdventure: this.fakeReturns,
       };
+    } else {
+      this.returns = options.returns;
     }
-    this.returns = options.returns;
+
     const configDir = (process.env.CONFIG_DIR)
       ? process.env.CONFIG_DIR
       : options.configDir 
