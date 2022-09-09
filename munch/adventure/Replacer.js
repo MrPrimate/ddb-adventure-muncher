@@ -230,30 +230,35 @@ class LinkReplacer {
     this.dom.body.innerHTML = this.dom.body.innerHTML.replace(reImageLink, "href=\"assets/");
 
     // href="ddb://file/lmop/dwarf-cleric.pdf"
-    const reFileLink = new RegExp(`href="ddb:\/\/file\/${this.adventure.bookCode}\/(.*?)"`, "g");
+    const reFileLink = new RegExp(`href="ddb:\/\/file\/${this.adventure.bookCode}\/(.*?)"`);
     const fileLinks = this.dom.querySelectorAll("a[href*=\"ddb://file\/\"]");
 
-    fileLinks.forEach((node) => {
-      const target = node.outerHTML;
+    // for (let filesIndex = 0, filesLength = fileLinks.length; filesIndex < filesLength; filesIndex++) {
+    //   const node = fileLinks[filesIndex];
+    fileLinks.forEach((node) =>{
+      const target = `${node.outerHTML}`;
       const fileMatch = node.outerHTML.match(reFileLink);
       if (fileMatch) {
-        logger.warn("fileMatch", {fileMatch, target, inner: node.innerHTML})
-        this.adventure.otherFiles.push({ name: node.inner, fileName: fileMatch[0] });
+        this.adventure.otherFiles.push({ name: node.inner, fileName: `assets/${fileMatch[1]}` });
 
         if (this.adventure.supports.pages && this.journal) {
           const pageData = {
             name: node.innerHTML,
-            content: fileMatch[0],
+            content: `assets/${fileMatch[1]}`,
             flags: this.journal.data.flags,
             id: Helpers.randomString(16,"#aA"),
             type: "pdf",
           };
           const page = new Page(pageData);
           this.journal.data.pages.push(page.toObject());
-          node.outerHTML = `@UUID[JournalEntry.${this.journal.data._id}.JournalEntryPage.${page._id}]${node.innerHTML}`;
+          const link = `@UUID[JournalEntry.${this.journal.data._id}.JournalEntryPage.${page.data._id}]`;
+          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, link);
         } else {
-          node.setAttribute("href", `assets/${fileMatch[0]}`);
+          node.setAttribute("href", `assets/${fileMatch[1]}`);
+          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
         }
+
+        logger.info("fileMatchTarget", {fileMatch, target, inner: node.innerHTML, outer: node.outerHTML})
         this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
       }
     });
