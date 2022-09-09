@@ -119,16 +119,17 @@ class LinkReplacer {
           return check && pageCheck;
         }) ;
         if (journalPage) {
-          // const journalRegex = new RegExp(`${node.outerHTML}`, "g");
-          //text = text.replace(journalRegex, `@JournalEntry[${journalEntry.name}]{${node.textContent}}`);
           const textPointer = node.textContent.trim() !== "";
           const textValue = `${node.textContent}`;
           if (this.adventure.supports.pages) {
+            
             const journalEntry = this.adventure.journals.find((j) => j.data.pages.some((p) => p._id === journalPage._id));
-            const slugLink = textPointer ? `#${textValue.replace(/\s/g, "")}` : "";
-            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@UUID[JournalEntry.${journalEntry.data._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`);
+            const slugLink = (slug.length > 2) ? `#${slug[2].replace(/[^\w\d]+/g, "")}` : "";
+            const result = `@UUID[JournalEntry.${journalEntry.data._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`;
+            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, result);
           } else {
-            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@JournalEntry[${journalPage.data.name}]${textPointer ? textValue : ""}`);
+            const result = `@JournalEntry[${journalPage.data.name}]${textPointer ? textValue : ""}`;
+            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, result);
           }
           
         } else {
