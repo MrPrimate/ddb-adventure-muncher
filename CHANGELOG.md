@@ -5,6 +5,7 @@ Massive rewrite, main features are:
 - PDF's are now imported as Journal Pages in v10
 - To generate a v10 adventure you will now need to regenerate your config file with DDB Importer v3.0.6 or higher.
 - Improved linking to SRD elements.
+- v10 imports require DDB Importer 3.1.0
 
 # 0.7.4
 
