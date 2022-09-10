@@ -289,7 +289,7 @@ class Config {
   
     if (options.outputDirPath) {
       const outPutPath = path.resolve(__dirname,options.outputDirPath);
-      logger.deebug(`Checking output path ${outPutPath}`);
+      logger.debug(`Checking output path ${outPutPath}`);
       if (fs.existsSync(outPutPath)){
         logger.debug(`Setting output path to ${outPutPath}`);
         this.data.outputDirEnv = outPutPath;
