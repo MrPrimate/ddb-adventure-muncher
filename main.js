@@ -27,6 +27,7 @@ let mainWindow;
 
 if (isDevelopment) {
   require("electron-reload")(__dirname);
+  logger.warn("DEVELOPMENT ENVIRONMENT");
 }
 
 const isMac = process.platform === "darwin";
@@ -369,15 +370,8 @@ function loadMainWindow() {
   }
 
   // eslint-disable-next-line no-unused-vars
-  ipcMain.on("config", (event, args) => {
-    // Send result back to renderer process
-    // mainWindow.webContents.send("config", {"bears": "not a bear"});
-    const config = new Config({configDir});
-    mainWindow.webContents.send("config", config);
-  });
-
-  // eslint-disable-next-line no-unused-vars
   ipcMain.on("loadConfig", (event, args) => {
+    logger.info("Loading config for UI");
     dialog
       .showOpenDialog(mainWindow, {
         properties: ["openFile", "createDirectory"],
@@ -398,6 +392,7 @@ function loadMainWindow() {
 
   // eslint-disable-next-line no-unused-vars
   ipcMain.on("outputDir", (event, args) => {
+    logger.info("Setting output dir for UI");
     dialog
       .showOpenDialog(mainWindow, {
         properties: ["openDirectory", "createDirectory"],
@@ -410,13 +405,14 @@ function loadMainWindow() {
             configDir,
           };
           const config = new Config(options);
-          mainWindow.webContents.send("config", config);
+          mainWindow.webContents.send("directoryConfig", config);
         }
       });
   });
 
   // eslint-disable-next-line no-unused-vars
   ipcMain.on("books", (event, config) => {
+    logger.info("Fetching books for UI");
     ddb.listBooks(config.data.cobalt, allBooks).then((books) => {
       books = _.orderBy(books, ["book.description"], ["asc"]);
       mainWindow.webContents.send("books", books);
@@ -425,6 +421,7 @@ function loadMainWindow() {
 
   // eslint-disable-next-line no-unused-vars
   ipcMain.on("user", (event, config) => {
+    logger.info("Getting User for UI");
     ddb.getUserData(config.data.cobalt).then((userData) => {
       mainWindow.webContents.send("user", userData);
     });
@@ -470,8 +467,8 @@ function loadMainWindow() {
 
   mainWindow.loadFile(path.join(__dirname, "renderer", "index.html"));
 
-  mainWindow.webContents.on("did-finish-load", () => {
-    logger.debug("Init config to ", configDir);
+  mainWindow.webContents.once("did-finish-load", () => {
+    logger.info("Init config to ", configDir);
     const config = new Config({configDir});
     mainWindow.webContents.send("config", config);
   });

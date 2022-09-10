@@ -132,5 +132,18 @@ window.api.receive("config", (config) => {
   }
 });
 
-// window.api.send("config", "get config");
+window.api.receive("directoryConfig", (config) => {
+  console.log("Received config from main process");
+  console.log(config);
+
+  if (config.data.outputDirEnv) {
+    generateButton.disabled = false;
+    outputLocation.innerHTML = config.data.outputDirEnv;
+    window.api.send("books", config);
+  } else {
+    console.warn("No output dir found in config!");
+    contentLoadMessage.innerHTML = "Config unable to parse output dir.";
+  }
+});
+
 

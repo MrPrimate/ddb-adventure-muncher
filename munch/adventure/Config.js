@@ -249,6 +249,7 @@ class Config {
   }
 
   constructor(options = {}) {
+    console.debug("Passed Options", options);
     this.options = options;
     this.version = options.version || null;
     // this.returns = options.returns || {
@@ -277,6 +278,7 @@ class Config {
     this.#environmentOverrides();
 
     logger.info(`Config Directory is now ${this.configDir}`);
+    logger.info(`Loading ${this.configFile}`);
 
     this.data = FileHelper.loadConfig(this.configFile);
     if (this.data.run) delete(this.data.run);
@@ -286,9 +288,11 @@ class Config {
     this.#loadExternalConfig();
   
     if (options.outputDirPath) {
-      options.outputDirPath = path.resolve(__dirname,options.outputDirPath);
-      if (fs.existsSync(options.outputDirPath)){
-        this.data.outputDirEnv = options.outputDirPath;
+      const outPutPath = path.resolve(__dirname,options.outputDirPath);
+      logger.deebug(`Checking output path ${outPutPath}`);
+      if (fs.existsSync(outPutPath)){
+        logger.debug(`Setting output path to ${outPutPath}`);
+        this.data.outputDirEnv = outPutPath;
       }
     }
 

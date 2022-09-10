@@ -178,7 +178,7 @@ class FileHelper {
   static loadJSONFile(file) {
     const configPath = path.resolve(__dirname, file);
     if (fs.existsSync(configPath)) {
-      const config = JSON.parse(JSON.stringify(require(configPath)));
+      const config = JSON.parse(FileHelper.loadFile(configPath));
       return config;
     } else {
       return {};
@@ -186,6 +186,7 @@ class FileHelper {
   }
 
   static loadConfig(file) {
+    logger.info(`Loading config file ${file}`);
     const config = FileHelper.loadJSONFile(file);
 
     if (process.env.output) {

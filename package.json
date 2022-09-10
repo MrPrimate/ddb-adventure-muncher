@@ -8,6 +8,7 @@
     "rebuild": "./node_modules/.bin/electron-rebuild",
     "postinstall": "electron-builder install-app-deps",
     "start": "npm run rebuild && NODE_ENV=DEV electron .",
+    "start_windows": "set NODE_ENV=DEV && electron .",
     "start-debug": "NODE_ENV=DEV electron --inspect=5858 .",
     "lint": "npx eslint ./",
     "lint-fix": "npx eslint ./ --fix",
