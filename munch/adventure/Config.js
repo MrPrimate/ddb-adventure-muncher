@@ -24,7 +24,7 @@ class Config {
     this.data[settingName] = value;
   }
 
-  fakeReturns() {
+  returns() {
     return;
   }
 
@@ -256,11 +256,13 @@ class Config {
     //   returnAdventure: this.fakeReturns,
     // };
     if (!options.returns) {
+      logger.info("Setting return functions");
       this.returns = {
         statusMessage: this.fakeReturns,
         returnAdventure: this.fakeReturns,
       };
     } else {
+      logger.info("Setting mock return functions");
       this.returns = options.returns;
     }
 

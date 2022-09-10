@@ -368,12 +368,6 @@ function loadMainWindow() {
     mainWindow.webContents.openDevTools();
   }
 
-  mainWindow.once("ready-to-show", () => {
-    const config = new Config({configDir});
-    mainWindow.webContents.send("config", config);
-  });
-  
-
   // eslint-disable-next-line no-unused-vars
   ipcMain.on("config", (event, args) => {
     // Send result back to renderer process
@@ -475,6 +469,14 @@ function loadMainWindow() {
   });
 
   mainWindow.loadFile(path.join(__dirname, "renderer", "index.html"));
+
+  mainWindow.webContents.on("did-finish-load", () => {
+    logger.debug("Init config to ", configDir);
+    const config = new Config({configDir});
+    logger.debug("config", config);
+    mainWindow.webContents.send("config", config);
+  });
+  
 }
 
 function prepare() {
