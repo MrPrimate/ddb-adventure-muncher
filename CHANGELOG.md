@@ -1,3 +1,7 @@
+# 1.0.1
+
+* New config would not always load, depending on existing config.
+
 # 1.0.0
 
 Massive rewrite, main features are:
