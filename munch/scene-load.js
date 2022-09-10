@@ -368,7 +368,7 @@ function importScene(conf, sceneFile) {
     };
     if (inData.flags.ddb.tiles) newFlags.ddb.tiles = inData.flags.ddb.tiles;
     newFlags["stairways"] = inData.flags["stairways"] ? inData.flags["stairways"] : {};
-    newFlags["perfect-vision"] = inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : {};
+    newFlags["perfect-vision"] = inData.flags["perfect-vision"] && !Array.isArray(inData.flags["perfect-vision"]) ? inData.flags["perfect-vision"] : {};
     newFlags["dynamic-illumination"] = inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : {};
     newFlags["ddbimporter"] = inData.flags["ddbimporter"] ? inData.flags["ddbimporter"] : {};
 
@@ -391,7 +391,7 @@ function importScene(conf, sceneFile) {
         contentChunkId: lookup.contentChunkId,
       },
       stairways: inData.flags.stairways ? inData.flags.stairways : {},
-      "perfect-vision": inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : {},
+      "perfect-vision": inData.flags["perfect-vision"] && !Array.isArray(inData.flags["perfect-vision"]) ? inData.flags["perfect-vision"] : {},
       "dynamic-illumination": inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : {},
       ddbimporter: inData.flags["ddbimporter"] ? inData.flags["ddbimporter"] : {},
     };
@@ -411,7 +411,7 @@ function importScene(conf, sceneFile) {
         contentChunkId: lookup.contentChunkId,
       },
       stairways: inData.flags.stairways ? inData.flags.stairways : {},
-      "perfect-vision": inData.flags["perfect-vision"] ? inData.flags["perfect-vision"] : {},
+      "perfect-vision": inData.flags["perfect-vision"] && !Array.isArray(inData.flags["perfect-vision"]) ? inData.flags["perfect-vision"] : {},
       "dynamic-illumination": inData.flags["dynamic-illumination"] ? inData.flags["dynamic-illumination"] : {},
       ddbimporter: inData.flags["ddbimporter"] ? inData.flags["ddbimporter"] : {},
     };
