@@ -473,7 +473,6 @@ function loadMainWindow() {
   mainWindow.webContents.on("did-finish-load", () => {
     logger.debug("Init config to ", configDir);
     const config = new Config({configDir});
-    logger.debug("config", config);
     mainWindow.webContents.send("config", config);
   });
   
