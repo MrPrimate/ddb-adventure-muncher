@@ -1,3 +1,7 @@
+# 1.0.3
+
+* If loading a new config file on Windows, could get stuck in a loop as old file would always overwrite new one.
+
 # 1.0.2
 
 * A race condition could leave old scenes, journals etc in the folder resulting in multiple entries, or entries in the root folders during import.
