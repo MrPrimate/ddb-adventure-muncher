@@ -1,3 +1,7 @@
+# 1.0.2
+
+* A race condition could leave old scenes, journals etc in the folder resulting in multiple entries, or entries in the root folders during import.
+
 # 1.0.1
 
 * New config would not always load, depending on existing config.

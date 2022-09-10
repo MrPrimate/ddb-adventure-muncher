@@ -138,7 +138,7 @@ class FileHelper {
     return new Promise((resolve, reject) => {
       if (count === maxcount) {
         logger.error("Max attempts reached. Download error:", error);
-        fs.rm(destination);
+        fs.rmSync(destination);
         reject(error);
       } else {
         try {
@@ -151,7 +151,7 @@ class FileHelper {
               count + 1
             } of ${maxcount})`
           );
-          fs.rm(destination);
+          fs.rmSync(destination);
           resolve(
             FileHelper.downloadFile(url, destination, timeout, count + 1, maxcount, err)
           );
@@ -230,14 +230,9 @@ class FileHelper {
     // delete directory recursively
     config.data.subDirs.forEach((d) => {
       if (fs.existsSync(path.join(config.outputDir, d))) {
-        fs.rm(
+        fs.rmSync(
           path.join(config.outputDir, d),
-          { recursive: true },
-          (err) => {
-            if (err) {
-              throw err;
-            }
-          }
+          { recursive: true }
         );
       }
     });
