@@ -2,6 +2,7 @@
 
 * Some missing scenes were not included.
 * Some tweaks to improve Note changes in recent DDB data updates.
+* Fix table parsing in some adventures such as CoS.
 
 # 1.0.3
 
