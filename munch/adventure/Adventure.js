@@ -10,6 +10,7 @@ const { Database } = require("./Database.js");
 const { FileHelper } = require("./FileHelper.js");
 const { Assets } = require("./Assets.js");
 const { Helpers } = require("./Helpers.js");
+const { getEnhancedData } = require("../data/enhance.js");
 
 const fs = require("fs");
 const path = require("path");
@@ -63,10 +64,21 @@ class Adventure {
     } 
   }
 
+  async loadEnhancements() {
+    this.enhancements.sceneEnhancements = await getEnhancedData(this.config);
+  }
+
   loadHints() {
     this.loadNoteHints();
     this.loadTableHints();
     this.loadSceneAdjustments();
+
+    logger.debug("Current config adjustments", {
+      sceneAdjustments: this.enhancements.sceneAdjustments.length,
+      sceneEnhancements: this.enhancements.sceneEnhancements.length,
+      noteHints: this.enhancements.noteHints.length,
+      tableHints: this.enhancements.tableHints.length,
+    });
   }
 
   constructor(config, overrides = {}) {
@@ -152,13 +164,6 @@ class Adventure {
     // initialize master folders
     this.folderFactory.generateMasterFolders();
 
-    logger.debug("Current config adjustments", {
-      sceneAdjustments: this.enhancements.sceneAdjustments.length,
-      sceneEnhancements: this.enhancements.sceneEnhancements.length,
-      noteHints: this.enhancements.noteHints.length,
-      tableHints: this.enhancements.tableHints.length,
-    });
-
   }
 
   #fixUpAdventure() {
@@ -212,6 +217,14 @@ class Adventure {
     this.#outputFolders();
   }
 
+  writeFixes() {
+    if (this.config.data.generateFixes) {
+      logger.info("Generating fix files");
+      this.sceneFactory.writeFixes();
+      this.notesFactory.writeFixes();
+    }
+  }
+
   async processAdventure() {
 
     try {
@@ -219,6 +232,8 @@ class Adventure {
       FileHelper.directoryReset(this.config);
       // we download assets first so we can use the image sizes for rough guesses
       await this.downloadAssets();
+      // get enriched data hints
+      await this.loadEnhancements();
       // load up hint data
       this.loadHints();
 
@@ -240,6 +255,7 @@ class Adventure {
       await this.downloadEnhancementAssets();
       this.copyAssets();
       this.saveJson();
+      this.writeFixes();
 
       // save the zip out
       await this.saveZip();

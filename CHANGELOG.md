@@ -1,3 +1,8 @@
+# 1.0.5
+
+* Some missing scenes were not included.
+* Some tweaks to improve Note changes in recent DDB data updates.
+
 # 1.0.3
 
 * If loading a new config file on Windows, could get stuck in a loop as old file would always overwrite new one.

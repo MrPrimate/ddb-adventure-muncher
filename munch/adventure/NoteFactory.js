@@ -2,12 +2,24 @@ const { logger } = require("../logger.js");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 const { Helpers } = require("./Helpers.js");
+const { FileHelper } = require("./FileHelper.js");
+const path = require("path");
 
 class NoteFactory {
 
   constructor(adventure) {
     this.adventure = adventure;
     this.noteRows = [];
+    this.badHints = [];
+    this.fixedHints = [];
+    this.hintsChanges = false;
+  }
+
+  writeFixes() {
+    if (this.hintsChanges) {
+      logger.error(`Generated ${this.fixedHints.length} note hint fixes`);
+      FileHelper.saveJSONFile(this.fixedHints, path.join(this.adventure.config.fixes.notesDir, `${this.adventure.bookCode}.json`));
+    }
   }
 
   static getNoteTitle(html) {
@@ -24,7 +36,7 @@ class NoteFactory {
   #parseNoteHint(row, hint, count) {
     let id = 2000 + row.data.id;
     logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-    logger.info(`Generating Notes for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`);
+    logger.info(`Generating Notes for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`, { rowId: row.data.id, hintId: hint.ddbId });
     this.adventure.config.returns.statusMessage(`Generating Notes for ${hint.slug}`);
     logger.info(`${hint.splitTag}[data-content-chunk-id='${hint.contentChunkIdStart}']`);
     
@@ -34,8 +46,16 @@ class NoteFactory {
       logger.warn("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
       logger.warn(`WARNING NO keyChunk found for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart}`);
       logger.warn(hint);
+      if (this.adventure.config.data.generateFixes) this.badHints.push(hint);
       logger.warn("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
       return;
+    } else if (this.adventure.config.data.generateFixes) {
+      if (row.data.id === hint.ddbId - 1) {
+        logger.warn(`GENERATING NOTE FIX for ${hint.slug} ContentChunkId ${hint.contentChunkIdStart} with id: ${hint.ddbId}`);
+        hint.ddbId = hint.ddbId - 1;
+        this.hintsChanges = true;
+      }
+      this.fixedHints.push(hint);
     }
     let html = "";
     let noteTitle = NoteFactory.getNoteTitle(keyChunk.innerHTML);
@@ -131,7 +151,7 @@ class NoteFactory {
   // }]
   #generateNoteRows(row) {
     this.adventure.enhancements.noteHints
-      .filter((hint) => hint.ddbId == row.data.id)
+      .filter((hint) => hint.ddbId == row.data.id || hint.ddbId - 1 == row.data.id)
       .forEach((hint, index) => {
         this.#parseNoteHint(row, hint, index + 1);
       });
@@ -141,7 +161,7 @@ class NoteFactory {
     // ensure note hints exist for the row
     this.#generateNoteRows(row);
     this.noteRows
-      .filter((noteRow) => noteRow.data.ddbId === row.data.id)
+      .filter((noteRow) => noteRow.data.ddbId === row.data.id || noteRow.data.ddbId - 1 == row.data.id)
       .forEach((noteRow) => {
         this.adventure.journalFactory.createNoteJournal(noteRow);
       });

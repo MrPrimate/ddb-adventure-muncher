@@ -105,7 +105,15 @@ class Scene {
         : this.adventure.enhancements.sceneAdjustments.find((s) => this.data.name.includes(s.name));
 
     if (adjustment) {
-      logger.info(`ADJUSTMENTS found named ${adjustment.name} with chunkid "${adjustment.flags.ddb.contentChunkId}" and id ${adjustment.flags.ddb.ddbId}`);
+      logger.info(`ADJUSTMENTS found named ${adjustment.name} with chunkid "${adjustment.flags.ddb.contentChunkId}" and id ${adjustment.flags.ddb.ddbId} for ${this.data.flags.ddb.ddbId}`);
+
+      if (this.adventure.config.data.generateFixes && this.data.flags.ddb.ddbId == adjustment.flags.ddb.ddbId - 1) {
+        logger.warn(`GENERATING SCENE ADJUSTMENT FIX for ${adjustment.name} ContentChunkId ${adjustment.flags.ddb.contentChunkId} with id: ${adjustment.flags.ddb.ddbId}`);
+        const adjustmentCopy = JSON.parse(JSON.stringify(adjustment));
+        adjustmentCopy.flags.ddb.ddbId = adjustment.flags.ddb.ddbId -1;
+        this.adventure.sceneFactory.fixedAdjustments.push(adjustmentCopy);
+      }
+
       if (adjustment.flags.ddb.tiles) {
         adjustment.tiles = adjustment.flags.ddb.tiles;
       }

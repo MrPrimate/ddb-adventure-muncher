@@ -121,7 +121,8 @@ class Journal {
 
   get createSections() {
     return this.adventure.supports.pages
-      ? !this.row.data.parentId // never with page support
+      // never with page support
+      ? !this.row.data.parentId || this.adventure.config.data.noteAdminMode
       : this.adventure.config.data.createSections; // hidden setting in v9
   }
 

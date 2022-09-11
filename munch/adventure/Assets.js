@@ -19,7 +19,9 @@ class Assets {
       false;
     if (!disableLargeDownloads) {
       let dlFile = FileHelper.loadFile(path.join(this.adventure.config.sourceDir, "hiRes.json"));
-      let downloaded = dlFile ? JSON.parse(dlFile) : [];
+      let downloaded = dlFile || !this.adventure.config.data.forceNew
+        ? JSON.parse(dlFile)
+        : [];
       if (!Array.isArray(downloaded)) downloaded = [];
       for (let i = 0; i < list.length; i++) {
         const listPath = list[i].path.replace(/^assets\//, "");

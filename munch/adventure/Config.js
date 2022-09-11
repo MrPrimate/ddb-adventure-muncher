@@ -24,7 +24,7 @@ class Config {
     this.data[settingName] = value;
   }
 
-  returns() {
+  fakeReturns() {
     return;
   }
 
@@ -47,6 +47,26 @@ class Config {
       this.notesDir,
       this.assetsDir,
       this.tablesDir,
+    ];
+    FileHelper.checkDirectories(directories);
+  }
+
+  #generateFixDirectories() {
+    if (!this.data.generateFixes) return;
+
+    this.fixes = {
+      dir: path.join(this.configDir, "fixes"),
+    };
+
+    this.fixes.scenesDir = path.resolve(__dirname, `${this.fixes.dir}/scene_info`);
+    this.fixes.notesDir = path.resolve(__dirname, `${this.fixes.dir}/note_info`);
+    this.fixes.tablesDir = path.resolve(__dirname, `${this.fixes.dir}/table_info`);
+
+    const directories = [
+      this.fixes.dir,
+      this.fixes.scenesDir,
+      this.fixes.notesDir,
+      this.fixes.tablesDir,
     ];
     FileHelper.checkDirectories(directories);
   }
@@ -85,7 +105,12 @@ class Config {
     this.setDataConfigSetting("createPlayerHandouts", !v4Schema);
     this.setDataConfigSetting("observeAll", false);
     this.setDataConfigSetting("createSections", !v4Schema);
+    this.setDataConfigSetting("noteAdminMode", false);
+    this.setDataConfigSetting("outputKey", false);
+    this.setDataConfigSetting("generateFixes", false);
     this.setDataConfigSetting("logLevel", "info");
+    this.setDataConfigSetting("forceNew", false);
+    this.setDataConfigSetting("disableEnhancedDownloads", false);
     this.data.subDirs = [
       "journal",
       // "compendium",
@@ -195,6 +220,7 @@ class Config {
     // delete and redownload
     this.ddbVersions.downloadNewVersion = this.ddbVersions.updateAvailable &&
       this.ddbVersions.supportedVersion > this.ddbVersions.currentVersion;
+    if (this.data.forceNew) this.ddbVersions.downloadNewVersion = true;
     if (this.ddbVersions.downloadNewVersion) {
       if (fs.existsSync(bookZipPath)) {
         fs.rmSync(bookZipPath);
@@ -234,6 +260,7 @@ class Config {
   
     // generate book runtime config
     this.key = await ddb.getKey(this.book.id, this.data.cobalt);
+    if (this.data.outputKey) logger.debug(`Key is "${this.key}"`);
     this.outputDirEnv = path.resolve(__dirname, this.data.outputDirEnv);
     this.scenesBookDir = path.join(this.sceneInfoDir, bookCode);
 
@@ -252,10 +279,7 @@ class Config {
     console.debug("Passed Options", options);
     this.options = options;
     this.version = options.version || null;
-    // this.returns = options.returns || {
-    //   statusMessage: this.fakeReturns,
-    //   returnAdventure: this.fakeReturns,
-    // };
+
     if (!options.returns) {
       logger.info("Setting return functions");
       this.returns = {
@@ -298,6 +322,7 @@ class Config {
 
     this.#setDefaultConfig();
     FileHelper.checkDirectories([this.downloadDir]);
+    this.#generateFixDirectories();
 
     // save config
     FileHelper.saveJSONFile(this.data, this.configFile);

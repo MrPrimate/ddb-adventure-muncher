@@ -1,12 +1,50 @@
 const { Scene } = require("./Scenes/Scene.js");
 const { logger } = require("../logger");
 const { SceneParser } = require("./Scenes/SceneParser.js");
+const { FileHelper } = require("./FileHelper.js");
+const path = require("path");
 
 class SceneFactory {
   
   constructor(adventure) {
     this.adventure = adventure;
     this.tracker = {};
+    this.fixedAdjustments = [];
+  }
+
+  saveIndividualScenes() {
+    this.fixedAdjustments.forEach((adjustment) => {
+      const flags = adjustment.flags.ddb;
+      const ddbId = flags.ddbId;
+      const cobaltId = flags.cobaltId ? `-${flags.cobaltId}` : "";
+      const parentId = flags.parentId ? `-${flags.parentId}` : "";
+      const contentChunkId = flags.contentChunkId ? `-${flags.contentChunkId}` : "";
+      const sceneRef = `${conf.bookCode}-${ddbId}${cobaltId}${parentId}${contentChunkId}`;
+      const sceneDataDir = path.join(this.adventure.config.fixes.scenesDir, this.bookCode)
+      const sceneDataFile = path.join(sceneDataDir, `${sceneRef}-scene.json`);
+  
+      console.log(`Sceneref: ${sceneRef}`);
+      // console.log(`sceneDataDir: ${sceneDataDir}`);
+      // console.log(`sceneDataFile: ${sceneDataFile}`);
+      const sceneDataPath = path.resolve(__dirname, sceneDataFile);
+  
+      console.log(`Exporting datafile ${sceneDataPath}`);
+      if (!fs.existsSync(sceneDataDir)) {
+        console.log(`Creating dir ${sceneDataDir}`);
+        fs.mkdirSync(sceneDataDir);
+      }
+      if (fs.existsSync(sceneDataPath)){
+        console.log(`Scene ${sceneDataPath} exists, replacing.`);
+      }
+      FileHelper.saveJSONFile(adjustment, sceneDataPath);
+    });
+  }
+
+  writeFixes() {
+    logger.error(`Generated ${this.fixedAdjustments.length} scene adjustment fixes`);
+    const savePath = path.join(this.adventure.config.fixes.scenesDir, this.adventure.bookCode);
+    FileHelper.checkDirectories([savePath]);
+    this.saveIndividualScenes();
   }
 
   generateMissingScenes() {
@@ -41,7 +79,7 @@ class SceneFactory {
         logger.info(`Attempting Missing Scene ${row.title} with ${row.contentChunkId}`);
         this.adventure.config.returns.statusMessage(`Attempting Missing Scene ${row.title}`);
         const playerEntry = this.adventure.journalFactory.createImageJournal({ data: row}, es.img);
-        this.adventure.journalFactory.add(playerEntry);
+        this.adventure.journalFactory.addJournal(playerEntry);
         const scene = new Scene(this.adventure, { data: row}, es.img);
         this.adventure.scenes.push(scene);
       });

@@ -6,21 +6,15 @@ const fs = require("fs");
 const { FileHelper } = require("../adventure/FileHelper.js");
 
 async function getEnhancedData(config) {
-  const cobaltCookie = config.cobalt;
-  const enhancementEndpoint = config.enhancementEndpoint;
-  const body = { cobalt: cobaltCookie, bookId: config.book.id };
+  const body = { cobalt: config.data.cobalt, bookId: config.book.id };
   logger.info(`Starting download enhanced data for ${config.bookCode}`);
 
-  const disableEnhancedDownloads = (config.disableEnhancedDownloads) ? 
-    config.disableEnhancedDownloads :
-    false;
-
   return new Promise((resolve, reject) => {
-    if (disableEnhancedDownloads) {
+    if (config.data.disableEnhancedDownloads) {
       logger.warn("Enhanced downloads disabled");
       resolve([]);
     } 
-    fetch(`${enhancementEndpoint}/proxy/adventure/enhancement`, {
+    fetch(`${config.enhancementEndpoint}/proxy/adventure/enhancement`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,7 +39,7 @@ async function getEnhancedData(config) {
       })
       .then((data) => resolve(data.data))
       .catch(() => {
-        logger.error(`Failed to get enhanced data from ${enhancementEndpoint} for ${config.bookCode}`);
+        logger.error(`Failed to get enhanced data from ${config.enhancementEndpoint} for ${config.bookCode}`);
         resolve([]);
       });
   });
