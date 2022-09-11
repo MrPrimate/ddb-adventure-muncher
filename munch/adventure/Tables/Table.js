@@ -31,7 +31,7 @@ class Table {
    */
   static getDiceTableRange(value) {
     const fragment = JSDOM.fragment(value).textContent;
-    const text = fragment.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").replace(/\s/g, "").trim();
+    const text = fragment.replace(/[—­––−-]/gu, "-").replace(/-+/g, "-").replace(/\s/g, "").trim();
     // eslint-disable-next-line no-useless-escape
     const valueRegex = new RegExp(/^(\d+)\-(\d+)|^(\d+)(\+?)$/);
     const valueMatch = text.match(valueRegex);
@@ -58,6 +58,7 @@ class Table {
     logger.error(`Unable to table range match ${value}`);
     logger.error(`Text value: ${text}`);
     logger.error("###############################################");
+    // default to a set of ints at least
     return [];
   }
 
@@ -157,7 +158,11 @@ class Table {
       result.text = replacer.result;
       const diceRollerRegexp = new RegExp(/\[\[\/r\s*([0-9d+-\s]*)(:?#.*)?\]\]/);
       result.text = result.text.replace(diceRollerRegexp, "[[$1]] ($&)");
-      this.data.results.push(result);
+      if (result.range.length !== 0) {
+        this.data.results.push(result);
+      } else {
+        logger.error(`Table parsing failed for result for ${this.data.name}`, { result, entry})
+      }
     });
 
     logger.info(`Generated table entry ${this.data.name}`);

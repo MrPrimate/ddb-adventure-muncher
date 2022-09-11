@@ -19,7 +19,7 @@ class SceneFactory {
       const cobaltId = flags.cobaltId ? `-${flags.cobaltId}` : "";
       const parentId = flags.parentId ? `-${flags.parentId}` : "";
       const contentChunkId = flags.contentChunkId ? `-${flags.contentChunkId}` : "";
-      const sceneRef = `${conf.bookCode}-${ddbId}${cobaltId}${parentId}${contentChunkId}`;
+      const sceneRef = `${this.adventure.bookCode}-${ddbId}${cobaltId}${parentId}${contentChunkId}`;
       const sceneDataDir = path.join(this.adventure.config.fixes.scenesDir, this.bookCode)
       const sceneDataFile = path.join(sceneDataDir, `${sceneRef}-scene.json`);
   

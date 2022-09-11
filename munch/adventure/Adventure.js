@@ -220,8 +220,8 @@ class Adventure {
   writeFixes() {
     if (this.config.data.generateFixes) {
       logger.info("Generating fix files");
-      this.sceneFactory.writeFixes();
       this.notesFactory.writeFixes();
+      this.sceneFactory.writeFixes();
     }
   }
 
