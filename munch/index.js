@@ -56,9 +56,10 @@ if (process.argv[2] === "config") {
       exit();
     });
 } else if (process.argv[2] === "load") {
-  scene.importScene(configurator, process.argv[3]);
-  console.log("Imported scene updates");
-  exit();
+  scene.importScene(configurator, process.argv[3]).then(() => {
+    console.log("Imported scene updates");
+    exit();
+  })
 } else if (process.argv[2] === "scene-check") {
   scene.sceneCheck(process.argv[3]);
   exit();

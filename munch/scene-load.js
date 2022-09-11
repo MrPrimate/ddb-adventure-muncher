@@ -65,23 +65,8 @@ function updateDDBMetaData(conf, key, update) {
   FileHelper.saveJSONFile(meta, metaPath);
 }
 
-function importScene(conf, sceneFile) {
+async function importScene(conf, sceneFile) {
 
-  const bookCode = (inData.flags.ddb && inData.flags.ddb.bookCode) ?
-    inData.flags.ddb.bookCode :
-    (inData.flags.vtta && inData.flags.vtta.code) ?
-      inData.flags.vtta.code : undefined;
-  if (bookCode) {
-    conf.loadBook(bookCode);
-  } else {
-    console.log("What book is this from? Exiting!");
-    return;
-  }
-
-  const adventure = new Adventure(conf);
-  adventure.getLookups();
-
-  let idTable = adventure.ids;
   console.log(`Loading scene info from ${sceneFile}`);
 
   let inData;
@@ -97,8 +82,24 @@ function importScene(conf, sceneFile) {
     return;
   }
 
+  const bookCode = (inData.flags.ddb && inData.flags.ddb.bookCode) ?
+    inData.flags.ddb.bookCode :
+    (inData.flags.vtta && inData.flags.vtta.code) ?
+      inData.flags.vtta.code : undefined;
+  if (bookCode) {
+    console.log(`Loading ${bookCode}`);
+    await conf.loadBook(bookCode);
+  } else {
+    console.log("What book is this from? Exiting!");
+    return;
+  }
+
+  const adventure = new Adventure(conf);
+  let idTable = adventure.getLookups(true);
+
   if (!idTable[bookCode]) {
-    console.log(`Please generate the adventure ${bookCode} before attempting scene import.`);
+    console.error(`Please generate the adventure ${bookCode} before attempting scene import.`);
+    exit(-2);
   }
 
   const ddbMetaData = getDDBMetaData(conf);
