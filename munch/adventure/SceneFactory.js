@@ -3,6 +3,7 @@ const { logger } = require("../logger");
 const { SceneParser } = require("./Scenes/SceneParser.js");
 const { FileHelper } = require("./FileHelper.js");
 const path = require("path");
+const fs = require("fs");
 
 class SceneFactory {
   
@@ -20,7 +21,7 @@ class SceneFactory {
       const parentId = flags.parentId ? `-${flags.parentId}` : "";
       const contentChunkId = flags.contentChunkId ? `-${flags.contentChunkId}` : "";
       const sceneRef = `${this.adventure.bookCode}-${ddbId}${cobaltId}${parentId}${contentChunkId}`;
-      const sceneDataDir = path.join(this.adventure.config.fixes.scenesDir, this.adventure.bookCode)
+      const sceneDataDir = path.join(this.adventure.config.fixes.scenesDir, this.adventure.bookCode);
       const sceneDataFile = path.join(sceneDataDir, `${sceneRef}-scene.json`);
   
       console.log(`Sceneref: ${sceneRef}`);
