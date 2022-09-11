@@ -158,7 +158,6 @@ class NoteFactory {
   }
 
   generateJournals(row) {
-    // ensure note hints exist for the row
     this.#generateNoteRows(row);
     this.noteRows
       .filter((noteRow) => noteRow.data.ddbId === row.data.id || noteRow.data.ddbId - 1 == row.data.id)

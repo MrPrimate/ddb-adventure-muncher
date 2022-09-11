@@ -75,6 +75,62 @@ class Scene {
     if (journalMatch) this.data.journal = journalMatch._id;
   }
 
+  linkNotes() {
+    this.notes.forEach((note) => {
+      logger.info(`Checking ${note.label}`);
+      const noteJournal = this.adventure.journals.find((journal) => {
+        const contentChunkIdMatch = note.flags.ddb.contentChunkId ?
+          journal.data.flags.ddb && note.flags.ddb && journal.data.flags.ddb.contentChunkId == note.flags.ddb.contentChunkId :
+          false;
+
+        const noContentChunk = !note.flags.ddb.contentChunkId &&
+          note.flags.ddb.originalLink && note.flags.ddb.ddbId && note.flags.ddb.parentId &&
+          note.flags.ddb.slug && note.flags.ddb.linkName;
+        const originMatch = noContentChunk ?
+          journal.data.flags.ddb.slug == note.flags.ddb.slug &&
+          journal.data.flags.ddb.ddbId == note.flags.ddbId &&
+          journal.data.flags.ddb.parentId == note.flags.ddb.parentId &&
+          journal.data.flags.ddb.cobaltId == note.flags.ddb.cobaltId &&
+          journal.data.flags.ddb.originalLink == note.flags.ddb.originalLink &&
+          journal.data.flags.ddb.linkName == note.flags.ddb.linkName :
+          false;
+        const journalNameMatch = !contentChunkIdMatch && !originMatch ?
+          this.adventure.supports.pages
+            ? journal.data.pages.some((page) => page.name.trim() === note.label.trim())
+            : journal.data.name.trim() == note.label.trim() :
+          false;
+        return contentChunkIdMatch || originMatch || journalNameMatch;
+
+      });
+      if (noteJournal){
+        logger.info(`Found ${note.label} matched to ${noteJournal.data._id} (${noteJournal.data.name})`);
+        note.positions.forEach((position) => {
+          noteJournal.data.flags.ddb.pin = `${position.x}${position.y}`;
+          const noteId = this.adventure.idFactory.getId(noteJournal.data, "Note");
+          const n = {
+            "_id": noteId,
+            "flags": {
+              "ddb": note.flags.ddb,
+              "importid": noteId,
+            },
+            "entryId": noteJournal.data._id,
+            "x": position.x,
+            "y": position.y,
+            "icon": this.generateIcon(note.label),
+            "iconSize": note.iconSize ? note.iconSize : 40,
+            "iconTint": "",
+            "text": "",
+            "fontFamily": note.fontFamily ? note.fontFamily : "Signika",
+            "fontSize": note.fontSize ? note.fontSize : 48,
+            "textAnchor": 1,
+            "textColor": note.textColor ? note.textColor : "",
+          };
+          this.data.notes.push(n);
+        });
+      }
+    });
+  }
+
   // here we load adjustment data from ddb-meta-data
   // this is the magic that adds walls, actor positions and note data
   #adjustment() {
@@ -118,65 +174,7 @@ class Scene {
         adjustment.tiles = adjustment.flags.ddb.tiles;
       }
       if (adjustment.flags.ddb.notes) {
-        logger.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-        logger.info("Found note adjustments");
-
-        adjustment.notes = [];
-
-        adjustment.flags.ddb.notes.forEach((note) => {
-          logger.info(`Checking ${note.label}`);
-          const noteJournal = this.adventure.journals.find((journal) => {
-            const contentChunkIdMatch = note.flags.ddb.contentChunkId ?
-              journal.data.flags.ddb && note.flags.ddb && journal.data.flags.ddb.contentChunkId == note.flags.ddb.contentChunkId :
-              false;
-
-            const noContentChunk = !note.flags.ddb.contentChunkId &&
-              note.flags.ddb.originalLink && note.flags.ddb.ddbId && note.flags.ddb.parentId &&
-              note.flags.ddb.slug && note.flags.ddb.linkName;
-            const originMatch = noContentChunk ?
-              journal.data.flags.ddb.slug == note.flags.ddb.slug &&
-              journal.data.flags.ddb.ddbId == note.flags.ddbId &&
-              journal.data.flags.ddb.parentId == note.flags.ddb.parentId &&
-              journal.data.flags.ddb.cobaltId == note.flags.ddb.cobaltId &&
-              journal.data.flags.ddb.originalLink == note.flags.ddb.originalLink &&
-              journal.data.flags.ddb.linkName == note.flags.ddb.linkName :
-              false;
-            const journalNameMatch = !contentChunkIdMatch && !originMatch ?
-              this.adventure.supports.pages
-                ? journal.data.pages.some((page) => page.name.trim() === note.label.trim())
-                : journal.data.name.trim() == note.label.trim() :
-              false;
-            return contentChunkIdMatch || originMatch || journalNameMatch;
-
-          });
-          if (noteJournal){
-            logger.info(`Found ${note.label} matched to ${noteJournal.data._id} (${noteJournal.data.name})`);
-            note.positions.forEach((position) => {
-              noteJournal.data.flags.ddb.pin = `${position.x}${position.y}`;
-              const noteId = this.adventure.idFactory.getId(noteJournal.data, "Note");
-              const n = {
-                "_id": noteId,
-                "flags": {
-                  "ddb": note.flags.ddb,
-                  "importid": noteId,
-                },
-                "entryId": noteJournal.data._id,
-                "x": position.x,
-                "y": position.y,
-                "icon": this.generateIcon(note.label),
-                "iconSize": note.iconSize ? note.iconSize : 40,
-                "iconTint": "",
-                "text": "",
-                "fontFamily": note.fontFamily ? note.fontFamily : "Signika",
-                "fontSize": note.fontSize ? note.fontSize : 48,
-                "textAnchor": 1,
-                "textColor": note.textColor ? note.textColor : "",
-              };
-              adjustment.notes.push(n);
-            });
-          }
-          logger.info("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-        });
+        this.notes = adjustment.flags.ddb.notes;
       }
       // never include these adjustment fields they are probs bad
       delete adjustment.flags.ddb.notes;
@@ -275,6 +273,7 @@ class Scene {
     this.adventure = adventure;
     this.row = row;
     this.image = image;
+    this.notes = [];
     this.imagePath = path.join(this.adventure.config.outputDir, image);
     this.contentChunkId =  (row.data.contentChunkId && row.data.contentChunkId != "")
       ? row.data.contentChunkId

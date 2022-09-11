@@ -22,7 +22,7 @@ const COMPENDIUM_MAP = {
   "vehicles": "vehicles",
 };
 
-class LinkReplacer {
+class DynamicLinkReplacer {
 
   constructor(adventure, { text, name = null, journal = null}) {
     this.adventure = adventure;
@@ -40,8 +40,6 @@ class LinkReplacer {
     this.moduleReplaceLinks();
     logger.debug(`Linking ddb-importer compendium content for ${this.name}`);
     this.foundryCompendiumReplace();
-    logger.debug(`Fixing up classes for ${this.name}`);
-    this.addClasses();
     logger.debug("Updating Journal with Table Links");
     this.replaceTables();
   }
@@ -52,21 +50,6 @@ class LinkReplacer {
 
   get textContent() {
     return this.dom.body.textContent;
-  }
-
-  addClasses() {
-    const blockquotes = this.dom.getElementsByTagName("blockquote");
-    for (let i = 0; i < blockquotes.length; i++) {
-      blockquotes[i].classList.add("ddb-blockquote");
-    }
-    const h4 = this.dom.getElementsByTagName("H4");
-    for (let j = 0; j < h4.length; j++) {
-      h4[j].classList.add("ddb-book-header");
-    }
-    const h5 = this.dom.getElementsByTagName("H5");
-    for (let k = 0; k < h5.length; k++) {
-      h5[k].classList.add("ddb-book-header");
-    }
   }
 
   replaceTables() {
@@ -82,19 +65,6 @@ class LinkReplacer {
 
   moduleReplaceLinks() {
     const bookSlugRegExp = new RegExp(`ddb:\/\/compendium\/${this.adventure.bookCode}\/([\\w0-9\-._#+@/]*)`);
-
-    const h1Links = this.dom.querySelectorAll(`h1 a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
-    const h2Links = this.dom.querySelectorAll(`h2 a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
-    const h3Links = this.dom.querySelectorAll(`h3 a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
-    const h4Links = this.dom.querySelectorAll(`h4 a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
-    const h5Links = this.dom.querySelectorAll(`h5 a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
-    const hLinks = [h1Links, h2Links, h3Links, h4Links, h5Links];
-    hLinks.forEach((hLink) => {
-      for (let headerIndex = 0, headerLength = hLink.length; headerIndex < headerLength; headerIndex++) {
-        const node = hLink[headerIndex];
-        this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, node.textContent);
-      }
-    });
 
     const fragmentLinks = this.dom.querySelectorAll(`a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
 
@@ -140,12 +110,6 @@ class LinkReplacer {
       }
     }
 
-
-    const headerLinks = this.dom.querySelectorAll("a[href^=\"#\"");
-    for (let headerIndex = 0, headerLength = headerLinks.length; headerIndex < headerLength; headerIndex++) {
-      const node = headerLinks[headerIndex];
-      this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, node.textContent);
-    }
   }
 
   foundryCompendiumReplace() {
@@ -206,30 +170,6 @@ class LinkReplacer {
   }
 
   replaceImageLinks() {
-    // e.g. href="ddb://compendium/mm" to https://www.dndbeyond.com/sources/mm
-    // e.g. href="ddb://compendium/this one to relevant compendium/folder
-    // e.g. href="ddb://image/idrotf/" to "./idrotf/
-    // ddb://compendium/idrotf/appendix-d-magic to it's own entry
-    //let match = /ddb:\/\/(?!spells)([a-zA-z0-9\.\/#-])"/g;
-    const match = /ddb:\/\/(?!vehicles|armor|actions|weaponproperties|compendium|image|spells|magicitems|monsters|skills|senses|conditions|weapons|file|adventuring-gear)([\w\d\.\/#-]+)+(?:"|')/gi;
-    const matches = this.dom.body.innerHTML.match(match);
-    if (matches) {
-      logger.warn("Unknown DDB Match:", matches);
-    }
-  
-    // todo generate a journal entry for each of these?
-    // replace the start with adventure:// - this will be changed wither by adventure importer or an update in DDB
-    const reImage = new RegExp(`src="\.\/${this.adventure.bookCode}\/`, "g");
-    // text = text.replace(reImage, `src="adventure://assets/`);
-    this.dom.body.innerHTML = this.dom.body.innerHTML.replace(reImage, "src=\"assets/");
-  
-    // "ddb://image/idrotf/"
-    // <a class="ddb-lightbox-outer compendium-image-center"  href="ddb://image/idrotf/00-000.intro-splash.jpg" data-lightbox="1" data-title="">
-    // <img src="./idrotf/00-000.intro-splash.jpg" class="ddb-lightbox-inner" style="width: 650px;"></a>
-    const reImageLink = new RegExp(`href="ddb:\/\/image\/${this.adventure.bookCode}\/`, "g");
-    // text = text.replace(reImageLink, `href="adventure://assets/`);
-    this.dom.body.innerHTML = this.dom.body.innerHTML.replace(reImageLink, "href=\"assets/");
-
     // href="ddb://file/lmop/dwarf-cleric.pdf"
     const reFileLink = new RegExp(`href="ddb:\/\/file\/${this.adventure.bookCode}\/(.*?)"`);
     const fileLinks = this.dom.querySelectorAll("a[href*=\"ddb://file\/\"]");
@@ -264,6 +204,158 @@ class LinkReplacer {
       }
     });
 
+  }
+
+}
+
+class StaticLinkReplacer {
+
+  constructor(adventure, { text, name = null, journal = null}) {
+    this.adventure = adventure;
+    this.name = name;
+    this.dom = new JSDOM(text).window.document;
+    this.journal = journal;
+  }
+
+  process() {
+    logger.info(`Replacing links for ${this.name}`);
+    this.adventure.config.returns.statusMessage(`Replacing links for ${this.name}`);
+    logger.debug(`Replacing image links for ${this.name}`);
+    this.replaceImageLinks();
+    logger.debug(`Linking module content for ${this.name}`);
+    this.moduleReplaceLinks();
+    logger.debug(`Linking ddb-importer compendium content for ${this.name}`);
+    this.foundryCompendiumReplace();
+    logger.debug(`Fixing up classes for ${this.name}`);
+    this.addClasses();
+  }
+
+  get result() {
+    return this.dom.body.innerHTML;
+  }
+
+  get textContent() {
+    return this.dom.body.textContent;
+  }
+
+  addClasses() {
+    const blockquotes = this.dom.getElementsByTagName("blockquote");
+    for (let i = 0; i < blockquotes.length; i++) {
+      blockquotes[i].classList.add("ddb-blockquote");
+    }
+    const h4 = this.dom.getElementsByTagName("H4");
+    for (let j = 0; j < h4.length; j++) {
+      h4[j].classList.add("ddb-book-header");
+    }
+    const h5 = this.dom.getElementsByTagName("H5");
+    for (let k = 0; k < h5.length; k++) {
+      h5[k].classList.add("ddb-book-header");
+    }
+  }
+
+
+  moduleReplaceLinks() {
+    const h1Links = this.dom.querySelectorAll(`h1 a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
+    const h2Links = this.dom.querySelectorAll(`h2 a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
+    const h3Links = this.dom.querySelectorAll(`h3 a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
+    const h4Links = this.dom.querySelectorAll(`h4 a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
+    const h5Links = this.dom.querySelectorAll(`h5 a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
+    const hLinks = [h1Links, h2Links, h3Links, h4Links, h5Links];
+    hLinks.forEach((hLink) => {
+      for (let headerIndex = 0, headerLength = hLink.length; headerIndex < headerLength; headerIndex++) {
+        const node = hLink[headerIndex];
+        this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, node.textContent);
+      }
+    });
+
+    const headerLinks = this.dom.querySelectorAll("a[href^=\"#\"");
+    for (let headerIndex = 0, headerLength = headerLinks.length; headerIndex < headerLength; headerIndex++) {
+      const node = headerLinks[headerIndex];
+      this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, node.textContent);
+    }
+  }
+
+  foundryCompendiumReplace() {
+    // replace the ddb:// entries with known compendium look ups if we have them
+    // ddb://spells
+    // ddb://magicitems || weapons || adventuring-gear || armor
+    // ddb://monsters
+    // skills
+    // senses
+    // conditions
+    // armor
+    // actions
+    // weaponproperties
+
+    for (const lookupKey in COMPENDIUM_MAP) {
+      const compendiumLinks = this.dom.querySelectorAll(`a[href*=\"ddb://${lookupKey}\/\"]`);
+      const lookupRegExp = new RegExp(`ddb:\/\/${lookupKey}\/([0-9]*)`);
+      compendiumLinks.forEach((node) => {
+        const lookupMatch = node.outerHTML.match(lookupRegExp);
+        const lookupValue = this.adventure.config.data.lookups[COMPENDIUM_MAP[lookupKey]];
+        if (lookupValue) {
+          if (!this.adventure.data.required[COMPENDIUM_MAP[lookupKey]].includes(String(lookupMatch[1]))) {
+            this.adventure.data.required[COMPENDIUM_MAP[lookupKey]].push(String(lookupMatch[1]));
+          }
+          const lookupEntry = lookupValue.find((e) => e.id == lookupMatch[1]);
+          if (lookupEntry) {
+            const documentRef = lookupEntry._id ? lookupEntry._id : lookupEntry.documentName;
+            const pageLink = lookupEntry.pageId ? `.JournalEntryPage.${lookupEntry.pageId}` : "";
+            const linkStub = lookupEntry.headerLink ? `#${lookupEntry.headerLink}` : "";
+            const link = `${lookupEntry.compendium}.${documentRef}${pageLink}${linkStub}`;
+            const linkType = this.adventure.supports.pages && lookupEntry._id ? "UUID[Compendium." : "Compendium[";
+            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@${linkType}${link}]{${node.textContent}}`);
+          }
+        } 
+      });
+    }
+  
+    const ddbLinks = this.dom.querySelectorAll("a[href*=\"ddb://compendium\/\"]");
+    const bookSlugRegExp = new RegExp("\"ddb:\/\/compendium\/(\\w+)(?:\/)?([\\w0-9\-._#+@/]*)\"");
+  
+    // text = text.replace(compendiumReg, "https://www.dndbeyond.com/sources/");
+    // 'ddb://compendium/idrotf/aurils',
+    // 'ddb://compendium/idrotf/doom',
+    ddbLinks.forEach((node) => {
+      const target = node.outerHTML;
+      const slugMatch = node.outerHTML.match(bookSlugRegExp);
+      if (slugMatch && slugMatch[1].toLowerCase() !== this.adventure.bookCode.toLowerCase()) {
+        // logger.info(slugMatch);
+        const book = this.adventure.config.ddbConfig.sources.find((source) => source.name.toLowerCase() == slugMatch[1].toLowerCase());
+        if (book) {
+          node.setAttribute("href", `https://www.dndbeyond.com/${book.sourceURL}/${slugMatch[2]}`);
+          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
+        } else {
+          logger.error(`Unknown book reference found ${slugMatch[1]} in ${slugMatch[0]}`);
+        }
+      }
+    });
+  }
+
+  replaceImageLinks() {
+    // e.g. href="ddb://compendium/mm" to https://www.dndbeyond.com/sources/mm
+    // e.g. href="ddb://compendium/this one to relevant compendium/folder
+    // e.g. href="ddb://image/idrotf/" to "./idrotf/
+    // ddb://compendium/idrotf/appendix-d-magic to it's own entry
+    //let match = /ddb:\/\/(?!spells)([a-zA-z0-9\.\/#-])"/g;
+    const match = /ddb:\/\/(?!vehicles|armor|actions|weaponproperties|compendium|image|spells|magicitems|monsters|skills|senses|conditions|weapons|file|adventuring-gear)([\w\d\.\/#-]+)+(?:"|')/gi;
+    const matches = this.dom.body.innerHTML.match(match);
+    if (matches) {
+      logger.warn("Unknown DDB Match:", matches);
+    }
+  
+    // todo generate a journal entry for each of these?
+    // replace the start with adventure:// - this will be changed wither by adventure importer or an update in DDB
+    const reImage = new RegExp(`src="\.\/${this.adventure.bookCode}\/`, "g");
+    // text = text.replace(reImage, `src="adventure://assets/`);
+    this.dom.body.innerHTML = this.dom.body.innerHTML.replace(reImage, "src=\"assets/");
+  
+    // "ddb://image/idrotf/"
+    // <a class="ddb-lightbox-outer compendium-image-center"  href="ddb://image/idrotf/00-000.intro-splash.jpg" data-lightbox="1" data-title="">
+    // <img src="./idrotf/00-000.intro-splash.jpg" class="ddb-lightbox-inner" style="width: 650px;"></a>
+    const reImageLink = new RegExp(`href="ddb:\/\/image\/${this.adventure.bookCode}\/`, "g");
+    // text = text.replace(reImageLink, `href="adventure://assets/`);
+    this.dom.body.innerHTML = this.dom.body.innerHTML.replace(reImageLink, "href=\"assets/");
   }
 
 }
@@ -446,5 +538,6 @@ class DiceReplacer {
   }
 }
 
-exports.LinkReplacer = LinkReplacer;
+exports.StaticLinkReplacer = StaticLinkReplacer;
 exports.DiceReplacer = DiceReplacer;
+exports.DynamicLinkReplacer = DynamicLinkReplacer;

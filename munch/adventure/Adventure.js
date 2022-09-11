@@ -185,13 +185,17 @@ class Adventure {
       logger.info(`Generating Journal for ${row.data.title}`);
       const journal = this.journalFactory.createJournal(row);
       logger.info(`Row name now: ${row.data.title}`);
+      if (global.gc) global.gc();
 
+      // note journals split, and add notes to scenes
       logger.info(`Generating Note Journals for ${row.data.title}`);
       this.notesFactory.generateJournals(row);
+      if (global.gc) global.gc();
 
       logger.info(`Generating tables for ${row.data.title}`);
       this.tableFactory.generateTables(row);
-      
+      if (global.gc) global.gc();
+
       // if this is a top tier parent document we process it for scenes now.
       const content = this.supports.pages
         ? journal.data.pages[0]
@@ -201,6 +205,7 @@ class Adventure {
         logger.info(`Finding Scenes for ${row.data.title}`);
         this.sceneFactory.findScenes(row, content);
       }
+      if (global.gc) global.gc();
     } else {
       logger.error(`Duplicate row parse attempted for ${row.data.id}`);
     }
@@ -245,11 +250,10 @@ class Adventure {
       const db = new Database(this);
       db.getData();
 
+      this.sceneFactory.addNotes();
+
       // we do some second passes to fix up links for generated images, scenes etc
       this.#fixUpAdventure();
-
-      // create a journal for other files
-      this.journalFactory.generateOtherFilesJournal();
 
       // we copy assets and save out generated json
       await this.downloadEnhancementAssets();

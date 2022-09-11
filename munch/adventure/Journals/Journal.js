@@ -1,6 +1,6 @@
 const logger = require("../../logger.js");
 const { Page } = require("./Page.js");
-const { DiceReplacer, LinkReplacer } = require("../Replacer.js");
+const { DynamicLinkReplacer } = require("../Replacer.js");
 const path = require("path");
 
 class Journal {
@@ -216,23 +216,17 @@ class Journal {
       this.data.pages.forEach((page) =>{
         if (page.type === "text") {
           const linkDetails = { text: page.text.content, name: `${this.data.name}`, journal: this };
-          const links = new LinkReplacer(this.adventure, linkDetails);
+          const links = new DynamicLinkReplacer(this.adventure, linkDetails);
           links.process();
           page.text.content = links.result;
-          const dice = new DiceReplacer(this.adventure, page.text.content, `${this.data.name}`);
-          dice.process();
-          page.text.content = dice.result;
           page.text.content = page.text.content.replace(/\s+/g, " ");
         }
       });
     } else {
       const linkDetails = { text: this.data.content, name: `${this.data.name}`, journal: this };
-      const links = new LinkReplacer(this.adventure, linkDetails);
+      const links = new DynamicLinkReplacer(this.adventure, linkDetails);
       links.process();
       this.data.content = links.result;
-      const dice = new DiceReplacer(this.adventure, this.data.content, `${this.data.name}`);
-      dice.process();
-      this.data.content = dice.result;
       this.data.content = this.data.content.replace(/\s+/g, " ");
     }
 

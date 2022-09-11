@@ -9,10 +9,6 @@ class JournalFactory {
     this.adventure = adventure;
   }
 
-  generateOtherFilesJournal() {
-    logger.warn("Other Files", this.adventure.otherFiles);
-  }
-
   createJournal(row) {
     const journal = new Journal(this.adventure, row);
     this.addJournal(journal, row);

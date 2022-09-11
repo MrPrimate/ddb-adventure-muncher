@@ -5,7 +5,7 @@ const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
 const { IdFactory } = require("../IdFactory.js");
-const { DiceReplacer, LinkReplacer } = require("../Replacer.js");
+const { DynamicLinkReplacer } = require("../Replacer.js");
 const { Journal } = require("../Journals/Journal.js");
 
 
@@ -153,15 +153,13 @@ class Table {
           result.text = value;
         }
       });
-      const replacer = new DiceReplacer(this.adventure, result.text, `${this.data.name}-${result._id}`);
-      replacer.process(); 
-      result.text = replacer.result;
+
       const diceRollerRegexp = new RegExp(/\[\[\/r\s*([0-9d+-\s]*)(:?#.*)?\]\]/);
       result.text = result.text.replace(diceRollerRegexp, "[[$1]] ($&)");
       if (result.range.length !== 0) {
         this.data.results.push(result);
       } else {
-        logger.error(`Table parsing failed for result for ${this.data.name}`, { result, entry})
+        logger.error(`Table parsing failed for result for ${this.data.name}`, { result, entry});
       }
     });
 
@@ -181,9 +179,9 @@ class Table {
   fixUp() {
     this.data.results.forEach((result) => {
       const linkDetails = { text: result.text, name: `${this.data.name}-${result._id}` };
-      const replacer = new LinkReplacer(this.adventure, linkDetails);
+      const replacer = new DynamicLinkReplacer(this.adventure, linkDetails);
       replacer.process();
-      result.text = replacer.textContent;
+      result.text = replacer.result;
     });
   }
 
