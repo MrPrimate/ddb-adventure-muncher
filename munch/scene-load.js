@@ -106,7 +106,8 @@ async function importScene(conf, sceneFile) {
   const ddbMetaDataVersion = ddbMetaData.version;
   console.log(`DDB Meta Data Version: ${ddbMetaDataVersion}`);
 
-  let scenesData = adventure.loadSceneAdjustments();
+  adventure.loadSceneAdjustments();
+  let scenesData = adventure.enhancements.sceneAdjustments;
 
   const lookupFilter = (inData.flags.ddb && inData.flags.ddb.contentChunkId) ?
     idTable[bookCode].filter((r) =>
