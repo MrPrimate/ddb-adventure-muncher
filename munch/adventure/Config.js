@@ -24,10 +24,6 @@ class Config {
     this.data[settingName] = value;
   }
 
-  fakeReturns() {
-    return;
-  }
-
   setConfigDirs(configDir) {
     this.configDir = configDir;
     this.dbDir = `${configDir}/content`;
@@ -134,7 +130,7 @@ class Config {
 
   async getMetaData() {
     // only grab remote data if we are not providing a SCENE_DIR as we want to act on the local one
-    this.returns.statusMessage("Checking Meta Data");
+    if (this.returns) this.returns.statusMessage("Checking Meta Data");
     const remoteMetaDataVersion = process.env.SCENE_DIR ? "0.0.0" : await enhance.getMetaData(this);
     if (!this.data.metaDataVersion || remoteMetaDataVersion != this.data.metaDataVersion) {
       this.data.metaDataVersion = remoteMetaDataVersion;
@@ -207,7 +203,7 @@ class Config {
     } else if (!versionsFileExists || !metaFileExists) {
       if (!versionsFileExists) logger.error("Can't find versions file.");
       if (!metaFileExists) logger.error("Can't find meta file.");
-      this.returns.statusMessage("Can't find meta file.");
+      if (this.returns) this.returns.statusMessage("Can't find meta file.");
       logger.error("Meta data probably didn't download, please fix manually.");
       logger.info(`You can manually download the data from https://github.com/MrPrimate/ddb-meta-data/releases/latest and extract to ${this.metaDir} this should have things like the following in afterwards:`);
       logger.info("assets ddb-meta-data.zip  LICENSE.md  meta.json  note_info  scene_info  table_info  versions.json");
@@ -229,14 +225,14 @@ class Config {
   
     if (!fs.existsSync(bookZipPath)){
       logger.info(`Downloading ${this.book.description} ... this might take a while...`);
-      this.returns.statusMessage(`Downloading ${this.book.description}`);
+      if (this.returns) this.returns.statusMessage(`Downloading ${this.book.description}`);
       await ddb.downloadBook(this.book.id, this.data.cobalt, bookZipPath, this.downloadTimeout);
       logger.info("Download finished, beginning book parse!");
     }
   
     if (!fs.existsSync(this.sourceDir) || this.ddbVersions.downloadNewVersion){
       logger.info(`Having to unzip, targeting ${this.sourceDir}`);
-      this.returns.statusMessage(`Unzipping ${this.book.description}`);
+      if (this.returns) this.returns.statusMessage(`Unzipping ${this.book.description}`);
       await FileHelper.unzipFile(bookZipPath, this.sourceDir);
     }
   
@@ -280,15 +276,12 @@ class Config {
     this.options = options;
     this.version = options.version || null;
 
-    if (!options.returns) {
+    if (options.returns) {
       logger.info("Setting return functions");
-      this.returns = {
-        statusMessage: this.fakeReturns,
-        returnAdventure: this.fakeReturns,
-      };
-    } else {
-      logger.info("Setting mock return functions");
       this.returns = options.returns;
+    } else {
+      logger.info("Keeping empty return functions");
+      this.returns = null;
     }
 
     const configDir = (process.env.CONFIG_DIR)

@@ -13,13 +13,13 @@ class Assets {
 
   async downloadEnhancements(list) {
     logger.info("Checking for download enhancements...");
-    this.adventure.config.returns.statusMessage("Checking for download enhancements...");
+    if (this.adventure.return) this.adventure.returns.statusMessage("Checking for download enhancements...");
     const disableLargeDownloads = this.adventure.config.disableLargeDownloads ? 
       this.adventure.config.disableLargeDownloads :
       false;
     if (!disableLargeDownloads) {
       let dlFile = FileHelper.loadFile(path.join(this.adventure.config.sourceDir, "hiRes.json"));
-      let downloaded = dlFile || !this.adventure.config.data.forceNew
+      let downloaded = dlFile && !this.adventure.config.data.forceNew
         ? JSON.parse(dlFile)
         : [];
       if (!Array.isArray(downloaded)) downloaded = [];
@@ -49,7 +49,7 @@ class Assets {
         const isLocalFile = fs.existsSync(dlPath);
         if (!isLocalFile) {
           logger.info(`Downloading DDB Image ${localUrl} (${dlPath})`);
-          this.adventure.config.returns.statusMessage(`Downloading DDB Image ${localUrl}`);
+          if (this.adventure.return) this.adventure.returns.statusMessage(`Downloading DDB Image ${localUrl}`);
           await FileHelper.downloadFile(list[i].RemoteUrl, dlPath, this.adventure.config.downloadTimeout);
           if (list[i].LocalUrl.length > 1) {
             for (let ui = 0; ui < list[i].LocalUrl.length; ui++) {
@@ -90,7 +90,7 @@ class Assets {
   async generateZipFile() {
     const filePath = path.join(this.adventure.config.outputDirEnv,`${this.adventure.bookCode}.fvttadv`);
     logger.info(`Generating adventure zip to ${filePath}`);
-    this.adventure.config.returns.statusMessage(`Generating adventure zip to ${filePath}`);
+    if (this.adventure.return) this.adventure.returns.statusMessage(`Generating adventure zip to ${filePath}`);
     const zip = FileHelper.getZipOfFolder(this.adventure.config.outputDir);
     logger.debug(`Zip contains ${Object.keys(zip.files).length} files`);
     await FileHelper.writeZipFile(zip, filePath);

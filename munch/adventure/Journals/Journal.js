@@ -183,7 +183,7 @@ class Journal {
     }
 
     logger.info(`Generated journal entry ${this.data.name}`);
-    this.adventure.config.returns.statusMessage(`Generated journal entry ${this.data.name}`);
+    if (this.adventure.return) this.adventure.returns.statusMessage(`Generated journal entry ${this.data.name}`);
 
     this.appendJournalToChapter();
   }

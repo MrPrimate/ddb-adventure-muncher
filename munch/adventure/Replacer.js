@@ -33,7 +33,7 @@ class DynamicLinkReplacer {
 
   process() {
     logger.info(`Replacing links for ${this.name}`);
-    this.adventure.config.returns.statusMessage(`Replacing links for ${this.name}`);
+    if (this.adventure.return) this.adventure.returns.statusMessage(`Replacing links for ${this.name}`);
     logger.debug(`Replacing image links for ${this.name}`);
     this.replaceImageLinks();
     logger.debug(`Linking module content for ${this.name}`);
@@ -219,7 +219,7 @@ class StaticLinkReplacer {
 
   process() {
     logger.info(`Replacing links for ${this.name}`);
-    this.adventure.config.returns.statusMessage(`Replacing links for ${this.name}`);
+    if (this.adventure.return) this.adventure.returns.statusMessage(`Replacing links for ${this.name}`);
     logger.debug(`Replacing image links for ${this.name}`);
     this.replaceImageLinks();
     logger.debug(`Linking module content for ${this.name}`);

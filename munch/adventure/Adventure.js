@@ -164,6 +164,9 @@ class Adventure {
     // initialize master folders
     this.folderFactory.generateMasterFolders();
 
+    // has returns?
+    this.returns = config.returns;
+
   }
 
   #fixUpAdventure() {
@@ -177,7 +180,7 @@ class Adventure {
 
   processRow(row) {
     logger.info(`Processing DB Row: ${row.data.id} : ${row.data.title}`);
-    this.config.returns.statusMessage(`Processing DB Row: ${row.data.id} : ${row.data.title}`);
+    if (this.returns) this.returns.statusMessage(`Processing DB Row: ${row.data.id} : ${row.data.title}`);
 
     const existingJournal = this.journals.some((f) => f.data.flags.ddb.ddbId == row.data.id);
 
@@ -273,8 +276,8 @@ class Adventure {
       logger.info(this.sceneImages);
 
       this.#saveMetrics();
-      if (this.config.returns.returnAdventure) {
-        this.config.returns.returnAdventure(this);
+      if (this.returns) {
+        this.returns.returnAdventure(this);
       }
     }
   }
