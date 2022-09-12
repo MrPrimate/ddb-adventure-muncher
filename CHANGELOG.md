@@ -1,3 +1,7 @@
+# 1.0.6
+
+* Config did not load correctly in compiled version.
+
 # 1.0.5
 
 * Some missing scenes were not included.
