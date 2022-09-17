@@ -66,8 +66,10 @@ class Table {
   constructor({adventure, row, diceKey, tableData, count}) {
     this.adventure = adventure;
     this.contentChunkId = tableData.contentChunkId;
-    const tableJsonPath = path.join(this.adventure.overrides.templateDir, "table.json");
-    this.data = JSON.parse(JSON.stringify(require(tableJsonPath)));
+    this.data = this.adventure.config.data.schemaVersion >= 4.0
+      ? JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "table-4.json"))))
+      : JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"table.json"))));
+
 
     const nameExtension = tableData.diceKeys > 1 ? ` [${tableData.diceKeys}]` : "";
 

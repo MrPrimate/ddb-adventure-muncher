@@ -1,3 +1,7 @@
+# 1.0.7
+
+* If "Journals and Tables observable by all players?", Journal and Table generation would fail.
+
 # 1.0.6
 
 * Config did not load correctly in compiled version.
