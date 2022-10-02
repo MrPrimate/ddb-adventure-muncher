@@ -11,28 +11,28 @@ class IdFactory {
   }
 
   getId(document, docType) {
-    const contentChunkId =  (document.flags.ddb.contentChunkId && document.flags.ddb.contentChunkId != "") ? 
-      document.flags.ddb.contentChunkId :
-      null;
+    const contentChunkId =  (document.flags.ddb.contentChunkId && document.flags.ddb.contentChunkId != "") 
+      ? document.flags.ddb.contentChunkId
+      : null;
   
     const existingId = this.adventure.ids.find((r) => {
-      const basicCheck = r.type == document.type &&
-        r.docType == docType &&
-        r.ddbId == document.flags.ddb.ddbId &&
-        r.cobaltId == document.flags.ddb.cobaltId &&
-        r.parentId == document.flags.ddb.parentId;
-      const chunkCheck = (contentChunkId !== null) ? 
-        contentChunkId === r.contentChunkId :
-        true;
-      const sceneNotes = (document.flags.ddb.note) ? 
-        document.name === r.name && r.note :
-        true;
-      const handout = (document.flags.ddb.img) ? 
-        document.name === r.name && r.img :
-        true;
-      const scenePinIdMatch = (docType === "Note") ?
-        document.flags.ddb.pin === r.scenePin :
-        true;
+      const basicCheck = r.type == document.type
+        && r.docType == docType
+        && r.ddbId == document.flags.ddb.ddbId
+        && r.cobaltId == document.flags.ddb.cobaltId
+        && r.parentId == document.flags.ddb.parentId;
+      const chunkCheck = (contentChunkId !== null) 
+        ? contentChunkId === r.contentChunkId
+        : true;
+      const sceneNotes = (document.flags.ddb.note) 
+        ? document.name === r.name && r.note
+        : true;
+      const handout = (document.flags.ddb.img) 
+        ? document.name === r.name && r.img
+        : true;
+      const scenePinIdMatch = (docType === "Note")
+        ? document.flags.ddb.pin === r.scenePin
+        : true;
   
       return basicCheck && chunkCheck && sceneNotes && handout && scenePinIdMatch;
     });

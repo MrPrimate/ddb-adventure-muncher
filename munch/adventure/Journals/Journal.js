@@ -115,8 +115,8 @@ class Journal {
   }
 
   get createHandouts() {
-    return ((this.adventure.config.data.createHandouts && !this.row.data.player) ||
-      (this.row.player && this.config.data.createPlayerHandouts));
+    return ((this.adventure.config.data.createHandouts && !this.row.data.player)
+      || (this.row.player && this.config.data.createPlayerHandouts));
   }
 
   get createSections() {
@@ -157,9 +157,9 @@ class Journal {
     this.duplicate = this.isDuplicate();
     this.data.flags.ddb.duplicate = this.duplicate;
 
-    const contentChunkId = (row.data.contentChunkId && row.data.contentChunkId.trim() != "") ? 
-      row.data.contentChunkId :
-      null;
+    const contentChunkId = (row.data.contentChunkId && row.data.contentChunkId.trim() != "") 
+      ? row.data.contentChunkId
+      : null;
     this.data.flags.ddb.contentChunkId = contentChunkId;
 
     // entry type

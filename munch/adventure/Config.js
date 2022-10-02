@@ -214,8 +214,8 @@ class Config {
   
     // if an update is available and we _think_ it is supported (we don't know till we grab it)
     // delete and redownload
-    this.ddbVersions.downloadNewVersion = this.ddbVersions.updateAvailable &&
-      this.ddbVersions.supportedVersion > this.ddbVersions.currentVersion;
+    this.ddbVersions.downloadNewVersion = this.ddbVersions.updateAvailable
+      && this.ddbVersions.supportedVersion > this.ddbVersions.currentVersion;
     if (this.data.forceNew) this.ddbVersions.downloadNewVersion = true;
     if (this.ddbVersions.downloadNewVersion) {
       if (fs.existsSync(bookZipPath)) {

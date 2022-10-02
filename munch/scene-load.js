@@ -82,10 +82,10 @@ async function importScene(conf, sceneFile) {
     return;
   }
 
-  const bookCode = (inData.flags.ddb && inData.flags.ddb.bookCode) ?
-    inData.flags.ddb.bookCode :
-    (inData.flags.vtta && inData.flags.vtta.code) ?
-      inData.flags.vtta.code : undefined;
+  const bookCode = (inData.flags.ddb && inData.flags.ddb.bookCode)
+    ? inData.flags.ddb.bookCode
+    : (inData.flags.vtta && inData.flags.vtta.code)
+      ? inData.flags.vtta.code : undefined;
   if (bookCode) {
     console.log(`Loading ${bookCode}`);
     await conf.loadBook(bookCode);
@@ -109,50 +109,50 @@ async function importScene(conf, sceneFile) {
   adventure.loadSceneAdjustments();
   let scenesData = adventure.enhancements.sceneAdjustments;
 
-  const lookupFilter = (inData.flags.ddb && inData.flags.ddb.contentChunkId) ?
-    idTable[bookCode].filter((r) =>
-      r.docType == "Scene" &&
-      r.contentChunkId && inData.flags.ddb.contentChunkId &&
-      r.contentChunkId == inData.flags.ddb.contentChunkId
-    ) : 
-    null;
+  const lookupFilter = (inData.flags.ddb && inData.flags.ddb.contentChunkId)
+    ? idTable[bookCode].filter((r) =>
+      r.docType == "Scene"
+      && r.contentChunkId && inData.flags.ddb.contentChunkId
+      && r.contentChunkId == inData.flags.ddb.contentChunkId
+    ) 
+    : null;
 
-  let lookup = (inData.flags.ddb && inData.flags.ddb.contentChunkId) ?
-    idTable[bookCode].find((r) =>
-      r.docType == "Scene" &&
-      r.contentChunkId && inData.flags.ddb.contentChunkId &&
-      r.contentChunkId == inData.flags.ddb.contentChunkId &&
-      r.ddbId == inData.flags.ddb.ddbId &&
-      r.parentId == inData.flags.ddb.parentId &&
-      r.cobaltId == inData.flags.ddb.cobaltId
-    ) : 
-    null;
+  let lookup = (inData.flags.ddb && inData.flags.ddb.contentChunkId)
+    ? idTable[bookCode].find((r) =>
+      r.docType == "Scene"
+      && r.contentChunkId && inData.flags.ddb.contentChunkId
+      && r.contentChunkId == inData.flags.ddb.contentChunkId
+      && r.ddbId == inData.flags.ddb.ddbId
+      && r.parentId == inData.flags.ddb.parentId
+      && r.cobaltId == inData.flags.ddb.cobaltId
+    ) 
+    : null;
 
   if (lookup) {
     console.log(`Found scene "${lookup.name}" in book "${bookCode}" with contentID ${inData.flags.ddb.contentChunkId}`);
   } else {
     console.log(`Unable to parse with contentID - trying scene name match for "${inData.name}" in "${bookCode}"`);
     lookup = idTable[bookCode].find((r) =>
-      r.docType == "Scene" &&
-      r.name.toLowerCase().trim().replace("’", "").replace("'","").includes(inData.name.toLowerCase().replace("’", "").replace("'","").trim())
+      r.docType == "Scene"
+      && r.name.toLowerCase().trim().replace("’", "").replace("'","").includes(inData.name.toLowerCase().replace("’", "").replace("'","").trim())
     );
     if (lookup) {
       console.log(`Matched Scene "${lookup.name}" in book "${bookCode}" using name match "${inData.name}"`);
     } else {
       console.log(`Falling back to img match for ${inData.img}`);
       lookup = idTable[bookCode].find((r) =>
-        r.docType == "Scene" &&
-        inData.flags.ddb.img &&
-        inData.flags.ddb.img.includes(r.img)
+        r.docType == "Scene"
+        && inData.flags.ddb.img
+        && inData.flags.ddb.img.includes(r.img)
       );
       if (lookup) {
         console.log(`Matched Scene "${lookup.name}" in book "${bookCode}" using img match "${inData.img}"`);
       } else {
         console.log(`Falling back to just contentChunkId match for ${inData.img}`);
         lookup = idTable[bookCode].find((r) =>
-          r.docType == "Scene" &&
-          r.contentChunkId && inData.flags.ddb.contentChunkId &&
-          r.contentChunkId == inData.flags.ddb.contentChunkId
+          r.docType == "Scene"
+          && r.contentChunkId && inData.flags.ddb.contentChunkId
+          && r.contentChunkId == inData.flags.ddb.contentChunkId
         );
         if (lookup) {
           console.log(`Matched Scene "${lookup.name}" in book "${bookCode}" using pure contentChunkId"`);
@@ -302,14 +302,14 @@ async function importScene(conf, sceneFile) {
           exit();
         }
       } else {
-        if (token.flags.ddbActorFlags.name !== token.name &&
-          token.name.endsWith(token.flags.ddbActorFlags.name))
+        if (token.flags.ddbActorFlags.name !== token.name
+          && token.name.endsWith(token.flags.ddbActorFlags.name))
         {
           token.name = token.flags.ddbActorFlags.name;
         }
-        if (token.actorData.name &&
-          token.actorData.name !== token.flags.ddbActorFlags.name &&
-          token.actorData.name.endsWith(token.flags.ddbActorFlags.name)
+        if (token.actorData.name
+          && token.actorData.name !== token.flags.ddbActorFlags.name
+          && token.actorData.name.endsWith(token.flags.ddbActorFlags.name)
         ) {
           token.actorData.name = token.flags.ddbActorFlags.name;
         }
@@ -434,15 +434,15 @@ async function importScene(conf, sceneFile) {
   console.log("Lookup data:");
   console.log(lookup);
   // console.log(scenesData)
-  let sceneData = (lookup.contentChunkId) ? 
-    scenesData.find((scene) =>
-      scene.flags.ddb && scene.flags.ddb.contentChunkId &&
-      lookup.contentChunkId.trim() == scene.flags.ddb.contentChunkId.trim() &&
-      lookup.ddbId === scene.flags.ddb.ddbId &&
-      lookup.parentId === scene.flags.ddb.parentId &&
-      lookup.cobaltId === scene.flags.ddb.cobaltId
-    ) :
-    scenesData.find((scene) => lookup.name.toLowerCase().trim().replace("’", "").replace("'","").includes(scene.name.toLowerCase().trim().replace("’", "").replace("'","")));
+  let sceneData = (lookup.contentChunkId) 
+    ? scenesData.find((scene) =>
+      scene.flags.ddb && scene.flags.ddb.contentChunkId
+      && lookup.contentChunkId.trim() == scene.flags.ddb.contentChunkId.trim()
+      && lookup.ddbId === scene.flags.ddb.ddbId
+      && lookup.parentId === scene.flags.ddb.parentId
+      && lookup.cobaltId === scene.flags.ddb.cobaltId
+    )
+    : scenesData.find((scene) => lookup.name.toLowerCase().trim().replace("’", "").replace("'","").includes(scene.name.toLowerCase().trim().replace("’", "").replace("'","")));
 
   // if (!sceneData && lookup.contentChunkId) {
   //   sceneData = scenesData.find((scene) => lookup.name.toLowerCase().trim().replace("’", "").replace("'","").includes(scene.name.toLowerCase().trim().replace("’", "").replace("'","")));
@@ -598,10 +598,10 @@ function sceneCheck(sceneFile) {
   
   const configFile = path.resolve(__dirname, sceneFile);
   let inData = FileHelper.loadJSONFile(configFile);
-  const bookCode = (inData.flags.ddb && inData.flags.ddb.bookCode) ?
-    inData.flags.ddb.bookCode :
-    (inData.flags.vtta && inData.flags.vtta.code) ?
-      inData.flags.vtta.code : undefined;
+  const bookCode = (inData.flags.ddb && inData.flags.ddb.bookCode)
+    ? inData.flags.ddb.bookCode
+    : (inData.flags.vtta && inData.flags.vtta.code)
+      ? inData.flags.vtta.code : undefined;
 
   const config = new Config();
   config.loadBook(bookCode);

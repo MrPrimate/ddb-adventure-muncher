@@ -27,8 +27,8 @@ class Helpers {
   static titleString(text) {
     //if (!text || text === "") return "";
     const prefixSplit = text.replace("\r\n", " ").trim().split(":");
-    const words =
-      prefixSplit.length > 1
+    const words
+      = prefixSplit.length > 1
         ? prefixSplit[1].trim().split(" ")
         : text.trim().split(" ");
   

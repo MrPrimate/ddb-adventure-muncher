@@ -14,9 +14,9 @@ class Assets {
   async downloadEnhancements(list) {
     logger.info("Checking for download enhancements...");
     if (this.adventure.return) this.adventure.returns.statusMessage("Checking for download enhancements...");
-    const disableLargeDownloads = this.adventure.config.disableLargeDownloads ? 
-      this.adventure.config.disableLargeDownloads :
-      false;
+    const disableLargeDownloads = this.adventure.config.disableLargeDownloads 
+      ? this.adventure.config.disableLargeDownloads
+      : false;
     if (!disableLargeDownloads) {
       let dlFile = FileHelper.loadFile(path.join(this.adventure.config.sourceDir, "hiRes.json"));
       let downloaded = dlFile && !this.adventure.config.data.forceNew

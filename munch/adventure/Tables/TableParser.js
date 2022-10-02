@@ -88,9 +88,9 @@ function parseTable(table) {
   if (headings.length === 0) return [];
   // DDB often puts d rolls alongside each other. we attempt to detect these
   const lowResults = [...table.tBodies[0].rows].map(mapRow(headings));
-  const highResults = (allHeadings.length !== headings.length) ? 
-    [...table.tBodies[0].rows].map(mapRow(headings, true)) :
-    [];
+  const highResults = (allHeadings.length !== headings.length) 
+    ? [...table.tBodies[0].rows].map(mapRow(headings, true))
+    : [];
 
   return lowResults.concat(highResults);
 }

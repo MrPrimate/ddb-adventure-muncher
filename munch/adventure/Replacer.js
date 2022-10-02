@@ -83,8 +83,8 @@ class DynamicLinkReplacer {
           if (!check && slug.length > 1) check = pageData.flags.ddb.slug === slug[0].toLowerCase();
           const pageNameSlug = pageData.name.replace(/[^\w\d]+/g, "");
           const pageCheck = this.adventure.supports.pages && slug.length > 2
-            ? !pageData.flags.ddb.img && !pageData.flags.ddb.note &&
-              pageNameSlug.toLowerCase() === slug[1].toLowerCase()
+            ? !pageData.flags.ddb.img && !pageData.flags.ddb.note
+              && pageNameSlug.toLowerCase() === slug[1].toLowerCase()
             : true;
           return check && pageCheck;
         }) ;

@@ -64,12 +64,12 @@ class Scene {
     if (!journalMatch) {
       journalMatch = this.adventure.supports.pages
         ? this.adventure.journals.map((j) => j.data.pages).flat().find((journalPage) => 
-          journalPage.name.includes(this.data.navName) &&
-          !journalPage.flags.ddb.notes && !journalPage.flags.ddb.img && !journalPage.src
+          journalPage.name.includes(this.data.navName)
+          && !journalPage.flags.ddb.notes && !journalPage.flags.ddb.img && !journalPage.src
         )
         : this.adventure.journals.find((journal) => 
-          journal.data.name.includes(this.data.navName) &&
-          !journal.data.flags.ddb.notes && !journal.data.flags.ddb.img && !journal.data.img
+          journal.data.name.includes(this.data.navName)
+          && !journal.data.flags.ddb.notes && !journal.data.flags.ddb.img && !journal.data.img
         );
     }
     if (journalMatch) this.data.journal = journalMatch._id;
@@ -79,26 +79,26 @@ class Scene {
     this.notes.forEach((note) => {
       logger.info(`Checking ${note.label}`);
       const noteJournal = this.adventure.journals.find((journal) => {
-        const contentChunkIdMatch = note.flags.ddb.contentChunkId ?
-          journal.data.flags.ddb && note.flags.ddb && journal.data.flags.ddb.contentChunkId == note.flags.ddb.contentChunkId :
-          false;
+        const contentChunkIdMatch = note.flags.ddb.contentChunkId
+          ? journal.data.flags.ddb && note.flags.ddb && journal.data.flags.ddb.contentChunkId == note.flags.ddb.contentChunkId
+          : false;
 
-        const noContentChunk = !note.flags.ddb.contentChunkId &&
-          note.flags.ddb.originalLink && note.flags.ddb.ddbId && note.flags.ddb.parentId &&
-          note.flags.ddb.slug && note.flags.ddb.linkName;
-        const originMatch = noContentChunk ?
-          journal.data.flags.ddb.slug == note.flags.ddb.slug &&
-          journal.data.flags.ddb.ddbId == note.flags.ddbId &&
-          journal.data.flags.ddb.parentId == note.flags.ddb.parentId &&
-          journal.data.flags.ddb.cobaltId == note.flags.ddb.cobaltId &&
-          journal.data.flags.ddb.originalLink == note.flags.ddb.originalLink &&
-          journal.data.flags.ddb.linkName == note.flags.ddb.linkName :
-          false;
-        const journalNameMatch = !contentChunkIdMatch && !originMatch ?
-          this.adventure.supports.pages
+        const noContentChunk = !note.flags.ddb.contentChunkId
+          && note.flags.ddb.originalLink && note.flags.ddb.ddbId && note.flags.ddb.parentId
+          && note.flags.ddb.slug && note.flags.ddb.linkName;
+        const originMatch = noContentChunk
+          ? journal.data.flags.ddb.slug == note.flags.ddb.slug
+          && journal.data.flags.ddb.ddbId == note.flags.ddbId
+          && journal.data.flags.ddb.parentId == note.flags.ddb.parentId
+          && journal.data.flags.ddb.cobaltId == note.flags.ddb.cobaltId
+          && journal.data.flags.ddb.originalLink == note.flags.ddb.originalLink
+          && journal.data.flags.ddb.linkName == note.flags.ddb.linkName
+          : false;
+        const journalNameMatch = !contentChunkIdMatch && !originMatch
+          ? this.adventure.supports.pages
             ? journal.data.pages.some((page) => page.name.trim() === note.label.trim())
-            : journal.data.name.trim() == note.label.trim() :
-          false;
+            : journal.data.name.trim() == note.label.trim()
+          : false;
         return contentChunkIdMatch || originMatch || journalNameMatch;
 
       });
@@ -137,8 +137,8 @@ class Scene {
 
     // if a single adjustment that matches the contentCHunk, lets assume that's correct
     const contentChunkUnique = this.adventure.enhancements.sceneAdjustments.filter((s) =>
-      this.data.flags.ddb.contentChunkId &&
-      this.data.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId);
+      this.data.flags.ddb.contentChunkId
+      && this.data.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId);
     
     let adjustment = contentChunkUnique.length > 0
       ? contentChunkUnique[0]
@@ -146,15 +146,15 @@ class Scene {
       : (this.data.flags.ddb.contentChunkId)
         // try and fins a specific scene data
         ? this.adventure.enhancements.sceneAdjustments.find((s) =>
-          (this.data.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId &&
-          this.data.flags.ddb.ddbId == s.flags.ddb.ddbId &&
-          this.data.flags.ddb.parentId == s.flags.ddb.parentId &&
-          this.data.flags.ddb.cobaltId == s.flags.ddb.cobaltId) ||
-          (s.flags.ddb.alternateIds && s.flags.ddb.alternateIds.some((ai) =>
-            this.data.flags.ddb.contentChunkId === ai.contentChunkId &&
-            this.data.flags.ddb.ddbId == ai.ddbId &&
-            this.data.flags.ddb.parentId == ai.parentId &&
-            this.data.flags.ddb.cobaltId == ai.cobaltId
+          (this.data.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId
+          && this.data.flags.ddb.ddbId == s.flags.ddb.ddbId
+          && this.data.flags.ddb.parentId == s.flags.ddb.parentId
+          && this.data.flags.ddb.cobaltId == s.flags.ddb.cobaltId)
+          || (s.flags.ddb.alternateIds && s.flags.ddb.alternateIds.some((ai) =>
+            this.data.flags.ddb.contentChunkId === ai.contentChunkId
+            && this.data.flags.ddb.ddbId == ai.ddbId
+            && this.data.flags.ddb.parentId == ai.parentId
+            && this.data.flags.ddb.cobaltId == ai.cobaltId
           ))
         ) 
         // can't match on chunk, so lets try name
@@ -194,17 +194,17 @@ class Scene {
 
   // this enriches with enhanced scene data
   #enhancedScenes() {
-    const disableEnhancedDownloads = (this.adventure.config.disableEnhancedDownloads) ? 
-      this.adventure.config.disableEnhancedDownloads :
-      false;
+    const disableEnhancedDownloads = (this.adventure.config.disableEnhancedDownloads) 
+      ? this.adventure.config.disableEnhancedDownloads
+      : false;
 
     const enhancedScene = this.adventure.enhancements.sceneEnhancements.find((scene) => {
-      const missingNameMatch = this.row.data.missing ?
-        scene.missing && this.row.data.title === scene.name :
-        true;
-      return missingNameMatch && 
-        scene.img === this.data.img &&
-        scene.bookCode === this.adventure.config.bookCode;
+      const missingNameMatch = this.row.data.missing
+        ? scene.missing && this.row.data.title === scene.name
+        : true;
+      return missingNameMatch 
+        && scene.img === this.data.img
+        && scene.bookCode === this.adventure.config.bookCode;
     });
     if (this.adventure.config.debug) logger.debug(enhancedScene);
 

@@ -309,17 +309,17 @@ class Adventure {
   #saveImageFinderResults() {
     const imageScenePath = path.resolve(__dirname, this.config.configDir, "scene-images.json");
   
-    const sceneData = (fs.existsSync(imageScenePath)) ?
-      FileHelper.loadJSONFile(imageScenePath) :
-      {};
+    const sceneData = (fs.existsSync(imageScenePath))
+      ? FileHelper.loadJSONFile(imageScenePath)
+      : {};
     sceneData[this.bookCode] = this.imageFinder.scenes;
     FileHelper.saveJSONFile(sceneData, imageScenePath);
   
     const imageJournalPath = path.resolve(__dirname, this.config.configDir, "journal-images.json");
   
-    const journalData = (fs.existsSync(imageJournalPath)) ?
-      FileHelper.loadJSONFile(imageJournalPath) :
-      {};
+    const journalData = (fs.existsSync(imageJournalPath))
+      ? FileHelper.loadJSONFile(imageJournalPath)
+      : {};
     journalData[this.bookCode] = this.imageFinder.journals;
     FileHelper.saveJSONFile(journalData, imageJournalPath);
   }
@@ -343,9 +343,9 @@ class Adventure {
   #saveTableData() {
     const tableDataPath = path.resolve(__dirname, this.config.configDir, "table-data.json");
 
-    const tableData = (fs.existsSync(tableDataPath)) ?
-      FileHelper.loadJSONFile(tableDataPath) :
-      {};
+    const tableData = (fs.existsSync(tableDataPath))
+      ? FileHelper.loadJSONFile(tableDataPath)
+      : {};
     tableData[this.bookCode] = this.tableMatched;
     FileHelper.saveJSONFile(tableData, tableDataPath);
   }
@@ -481,18 +481,18 @@ class Adventure {
   get #foldersWithContent() {
     return this.folders.filter((folder) => {
       const journalCheck = this.journals.some((content) =>
-        folder._id === content.data.folder ||
-        this.folderFactory.masterFolders[folder.type]._id == folder._id
+        folder._id === content.data.folder
+        || this.folderFactory.masterFolders[folder.type]._id == folder._id
       );
       if (journalCheck) return true;
       const sceneCheck = this.scenes.some((content) =>
-        folder._id === content.data.folder ||
-        this.folderFactory.masterFolders[folder.type]._id == folder._id
+        folder._id === content.data.folder
+        || this.folderFactory.masterFolders[folder.type]._id == folder._id
       );
       if (sceneCheck) return true;
       const tableCheck = this.tables.some((content) =>
-        folder._id === content.data.folder ||
-        this.folderFactory.masterFolders[folder.type]._id == folder._id
+        folder._id === content.data.folder
+        || this.folderFactory.masterFolders[folder.type]._id == folder._id
       );
       if (tableCheck) return true;
       if (folder.flags.ddb.specialType === "base") return true;

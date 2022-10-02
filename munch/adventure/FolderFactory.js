@@ -44,36 +44,36 @@ class FolderFactory {
     switch (specialType) {
       case "note": {
         folder = this.adventure.folders.find((f) =>
-          f.flags.ddb.ddbId == row.data.ddbId &&
-          f.flags.ddb.parentId == parentId &&
-          f.type == type && !f.flags.ddb.img &&
-          f.flags.ddb.note === true && 
-          f.name.includes(row.data.sceneName)
+          f.flags.ddb.ddbId == row.data.ddbId
+          && f.flags.ddb.parentId == parentId
+          && f.type == type && !f.flags.ddb.img
+          && f.flags.ddb.note === true 
+          && f.name.includes(row.data.sceneName)
         );
         break;
       }
       case "image": {
         folder = this.adventure.folders.find((f) =>
-          f.flags.ddb.parentId == parentId &&
-          f.type == type &&
-          f.flags.ddb.img === true
+          f.flags.ddb.parentId == parentId
+          && f.type == type
+          && f.flags.ddb.img === true
         );
         break;
       }
       default: {
         if (row.data.cobaltId) {
           folder = this.adventure.folders.find((f) =>
-            f.flags.ddb.cobaltId == row.data.cobaltId &&
-            f.type == type &&
-            !f.flags.ddb.img &&
-            !f.flags.ddb.note
+            f.flags.ddb.cobaltId == row.data.cobaltId
+            && f.type == type
+            && !f.flags.ddb.img
+            && !f.flags.ddb.note
           );
         } else if (row.data.parentId) {
           folder = this.adventure.folders.find((f) =>
-            f.flags.ddb.parentId == row.data.parentId &&
-            f.type == type &&
-            !f.flags.ddb.img &&
-            !f.flags.ddb.note
+            f.flags.ddb.parentId == row.data.parentId
+            && f.type == type
+            && !f.flags.ddb.img
+            && !f.flags.ddb.note
           );
         }
       }
