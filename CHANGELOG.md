@@ -1,3 +1,7 @@
+# 1.0.8
+
+* Support Dragons of Stormwreck Isle.
+
 # 1.0.7
 
 * If "Journals and Tables observable by all players?", Journal and Table generation would fail.
