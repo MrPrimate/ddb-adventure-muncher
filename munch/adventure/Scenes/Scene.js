@@ -322,7 +322,7 @@ class Scene {
     this.#adjustment();
 
     // record this if we are recording scene information
-    if (this.adventure.config.imageFind) {
+    if (this.adventure.config.data.imageFind) {
       this.adventure.imageFinder.scenes.push({
         bookCode: this.adventure.bookCode,
         img: this.data.img,

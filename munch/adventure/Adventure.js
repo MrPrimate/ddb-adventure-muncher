@@ -312,6 +312,7 @@ class Adventure {
     const sceneData = (fs.existsSync(imageScenePath))
       ? FileHelper.loadJSONFile(imageScenePath)
       : {};
+    logger.debug(`Saving ${this.imageFinder.scenes.length} scenes`);
     sceneData[this.bookCode] = this.imageFinder.scenes;
     FileHelper.saveJSONFile(sceneData, imageScenePath);
   
