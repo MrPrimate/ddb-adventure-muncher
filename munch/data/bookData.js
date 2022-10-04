@@ -812,6 +812,15 @@ const sources = [
       "https://www.dndbeyond.com/avatars/26848/192/637920417931102595.jpeg",
     sourceURL: "sources/sja",
   },
+  {
+    id: 94,
+    name: "DoSI",
+    description: "Dragons of Stormwreck Isle",
+    sourceCategoryId: 1,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/26865/226/637921086362458107.jpeg",
+    sourceURL: "sources/dosi",
+  },
 ];
 
 exports.sources = sources;
