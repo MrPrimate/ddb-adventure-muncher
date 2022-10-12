@@ -248,6 +248,7 @@ async function importScene(conf, sceneFile) {
 
   tokens.forEach((token) => {
     if (!token.flags || !token.flags.ddbActorFlags || !token.flags.ddbActorFlags.id) {
+      console.warn(`Bad token match for ${token.name}`, token);
       if (token.name) {
         const monsterNameLookup = conf.lookups["monsters"].find((e) => e.name == token.name);
         if (monsterNameLookup) {
