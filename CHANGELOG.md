@@ -1,3 +1,7 @@
+# 1.0.9
+
+* Support to allow all adventure actors into the world.
+
 # 1.0.8
 
 * Support Dragons of Stormwreck Isle.

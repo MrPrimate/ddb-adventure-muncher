@@ -13,6 +13,8 @@ class Config {
   static TIMEOUT = 15000;
   static ENHANCEMENT_ENDPOINT = "https://proxy.ddb.mrprimate.co.uk";
   static DEFAULT_CONFIG_DIR = "../dbs";
+  static LATEST_MAJOR_SCHEMA = 4;
+  static LATEST_MINOR_SCHEMA = 4.1;
 
   setDataConfigSetting(settingName, defaultValue) {
     const value = this.options[settingName] !== undefined
@@ -96,7 +98,7 @@ class Config {
 
   #setDefaultConfig() {
     const v4Schema = Number.parseFloat(this.data.schemaVersion) >= 4.0;
-    this.setDataConfigSetting("schemaVersion", 3.0);
+    this.setDataConfigSetting("schemaVersion", 3.0); // default schema is v3.0
     this.setDataConfigSetting("createHandouts", !v4Schema);
     this.setDataConfigSetting("createPlayerHandouts", !v4Schema);
     this.setDataConfigSetting("observeAll", false);
@@ -113,6 +115,12 @@ class Config {
       "scene",
       "table",
     ];
+    // update minor schema versions for v4 onwards
+    logger.debug(`Schema Version ${parseInt(this.data.schemaVersion)}`);
+    if (parseInt(this.data.schemaVersion) >= Config.LATEST_MAJOR_SCHEMA) {
+      logger.debug(`Setting schema to ${Config.LATEST_MINOR_SCHEMA}`);
+      this.data.schemaVersion = Config.LATEST_MINOR_SCHEMA;
+    }
   }
 
   #loadExternalConfig() {

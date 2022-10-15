@@ -243,8 +243,8 @@ class Scene {
           token.flags.actorFolderId = this.adventure.folderFactory.masterFolders["Actor"]._id;
           logger.debug(`Found actor with Id ${ddbId}, actorId ${token.actorId}, folderId ${token.flags.actorFolderId}`);
 
-          if (!this.adventure.data.required.monsters.includes(String(ddbId))) {
-            this.adventure.data.required.monsters.push(String(ddbId));
+          if (!this.adventure.data.required.monsters.has(String(ddbId))) {
+            this.adventure.data.required.monsters.add(String(ddbId));
           }
 
           // these may have been gathered by accident

@@ -131,19 +131,20 @@ class Adventure {
     this.data.name = this.config.book.description;
     this.data.id = Helpers.randomString(10, "#aA");
     this.data.required = {
-      monsters: [],
-      items: [],
-      spells: [],
-      vehicles: [],
-      skills: [],
-      senses: [],
-      conditions: [],
-      actions: [],
-      weaponproperties: [],
+      monsters: new Set(),
+      monsterData: new Set(),
+      items: new Set(),
+      spells: new Set(),
+      vehicles: new Set(),
+      skills: new Set(),
+      senses: new Set(),
+      conditions: new Set(),
+      actions: new Set(),
+      weaponproperties: new Set(),
     };
-    this.data.version = this.config.data.schemaVersion;
+    this.data.version = parseFloat(this.config.data.schemaVersion);
     this.supports = {
-      pages: this.config.data.schemaVersion >= 4.0,
+      pages: parseFloat(this.config.data.schemaVersion) >= 4.0,
     };
 
     this.replaceLinks = [];
@@ -167,6 +168,32 @@ class Adventure {
     // has returns?
     this.returns = config.returns;
 
+  }
+
+  #mockMonsterCreation() {
+    logger.debug(`Generating mock actor data now for ${this.data.required.monsters.size} monsters`);
+    this.data.required.monsterData = [...this.data.required.monsters]
+      .map((ddbId) => {
+        const mockActor = {
+          flags: {
+            ddb: {
+              contentChunkId: parseInt(ddbId),
+              ddbId: `DDB-Monster-${ddbId}`,
+              cobaltId: null,
+              parentId: null,
+            },
+          },
+          type: "Actor",
+        };
+
+        const mockData = {
+          actorId: this.idFactory.getId(mockActor, "Actor"),
+          ddbId: parseInt(ddbId),
+          folderId: this.folderFactory.masterFolders["Actor"]._id
+        };
+
+        return mockData;
+      });
   }
 
   #fixUpAdventure() {
@@ -257,6 +284,9 @@ class Adventure {
 
       // we do some second passes to fix up links for generated images, scenes etc
       this.#fixUpAdventure();
+
+      // generate mock actors
+      this.#mockMonsterCreation();
 
       // we copy assets and save out generated json
       await this.downloadEnhancementAssets();
