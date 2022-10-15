@@ -1,6 +1,6 @@
 # 1.0.9
 
-* Support to allow all adventure actors into the world.
+* Support to allow all DDB Importer to import all adventure actors into the world, and to link to world actors in journals.
 
 # 1.0.8
 
