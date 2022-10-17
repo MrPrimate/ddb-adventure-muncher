@@ -101,6 +101,7 @@ class Config {
     this.setDataConfigSetting("schemaVersion", 3.0); // default schema is v3.0
     this.setDataConfigSetting("createHandouts", !v4Schema);
     this.setDataConfigSetting("createPlayerHandouts", !v4Schema);
+    this.setDataConfigSetting("createPinJournals", true);
     this.setDataConfigSetting("observeAll", false);
     this.setDataConfigSetting("createSections", !v4Schema);
     this.setDataConfigSetting("noteAdminMode", false);

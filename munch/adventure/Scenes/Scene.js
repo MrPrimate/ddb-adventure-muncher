@@ -125,6 +125,8 @@ class Scene {
             "textAnchor": 1,
             "textColor": note.textColor ? note.textColor : "",
           };
+          n.flags.ddb.linkName =noteJournal.data.flags.ddb.linkName;
+          n.flags.ddb.slugLink = noteJournal.data.flags.ddb.slugLink;
           this.data.notes.push(n);
         });
       }

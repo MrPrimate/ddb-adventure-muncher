@@ -100,8 +100,9 @@ class NoteFactory {
 
         noteRow.data.contentChunkId = keyChunkId;
         noteRow.data.sceneName = hint.sceneName;
-        noteRow.data.id  = id + count;
+        noteRow.data.id = id + count;
         noteRow.data.ddbId = row.data.id;
+        noteRow.data.slugLink = noteTitle.replace(/[^\w\d]+/g, "");
         this.noteRows.push(noteRow);
 
         html = "";
@@ -159,11 +160,13 @@ class NoteFactory {
 
   generateJournals(row) {
     this.#generateNoteRows(row);
-    this.noteRows
-      .filter((noteRow) => noteRow.data.ddbId === row.data.id || noteRow.data.ddbId - 1 == row.data.id)
-      .forEach((noteRow) => {
-        this.adventure.journalFactory.createNoteJournal(noteRow);
-      });
+    if (this.adventure.config.data.createPinJournals) {
+      this.noteRows
+        .filter((noteRow) => noteRow.data.ddbId === row.data.id || noteRow.data.ddbId - 1 == row.data.id)
+        .forEach((noteRow) => {
+          this.adventure.journalFactory.createNoteJournal(noteRow);
+        });
+    }
   }
 
 }

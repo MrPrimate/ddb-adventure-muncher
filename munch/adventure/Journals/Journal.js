@@ -153,6 +153,7 @@ class Journal {
     this.data.flags.ddb.originHint = row.data.originHint;
     this.data.flags.ddb.originalLink = row.data.originalLink;
     this.data.flags.ddb.linkName = row.data.title;
+    this.data.flags.ddb.slugLink = row.data.slugLink ?? row.data.title.replace(/[^\w\d]+/g, "");
 
     this.duplicate = this.isDuplicate();
     this.data.flags.ddb.duplicate = this.duplicate;
