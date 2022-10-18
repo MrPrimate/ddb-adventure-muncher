@@ -126,6 +126,10 @@ class Adventure {
       journals: [],
     };
 
+    this.bad = {
+      notes: [],
+    };
+
     // load adventure data skeleton
     this.data = require(path.join(this.overrides.templateDir, "adventure.json"));
     this.data.name = this.config.book.description;
@@ -296,6 +300,7 @@ class Adventure {
 
       // save the zip out
       await this.saveZip();
+
     } catch (error) {
       logger.error(`Error generating adventure: ${error}`);
       logger.error(error.stack);
@@ -304,6 +309,12 @@ class Adventure {
       logger.info(this.assets);
       logger.info("Generated the following scene images:");
       logger.info(this.sceneImages);
+      if (this.bad.notes.length > 0) {
+        logger.error("Bad notes found");
+        this.bad.notes.forEach((note) => {
+          logger.warn(note);
+        });
+      }
 
       this.#saveMetrics();
       if (this.returns) {

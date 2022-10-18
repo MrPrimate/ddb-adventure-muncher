@@ -43,6 +43,8 @@ class Journal {
               page.title.show = true;
             }
             journal.data.pages.push(page);
+            journal.contentChunkIds[this.data._id] = this.contentChunkIds[this.data._id];
+            journal.elementIds[this.data._id] = this.elementIds[this.data._id];
           } else {
             journal.data.content += this.data.content;
           }
@@ -131,6 +133,22 @@ class Journal {
     this.data.folder = this.adventure.folderFactory.getFolderId(this.row, "JournalEntry", folderType);
   }
 
+  generateContentLinks() {
+    const chunkElements = this.row.doc.body.querySelectorAll("[data-content-chunk-id]");
+    const chunkIds = new Set();
+    chunkElements.forEach((chunk) => {
+      chunkIds.add(chunk.dataset["contentChunkId"]);
+    });
+    this.contentChunkIds[this.data._id] = chunkIds;
+
+    const idElements = this.row.doc.body.querySelectorAll("[id]");
+    const elementIds = new Set();
+    idElements.forEach((chunk) => {
+      elementIds.add(chunk.id);
+    });
+    this.elementIds[this.data._id] = elementIds;
+  }
+
   _additionalConstruction() {
     // we don't need this for the core Journal
   }
@@ -176,6 +194,10 @@ class Journal {
     this.data._id = this.adventure.idFactory.getId(this.data, "JournalEntry");
 
     this.setPermissions();
+    // scan content to get quick matching lookups for notes
+    this.contentChunkIds = {};
+    this.elementIds = {};
+    this.generateContentLinks();
 
     if (this.adventure.supports.pages) {
       this._generateJournalEntryWithPages();
@@ -233,6 +255,22 @@ class Journal {
 
   }
 
+  // returns page Id if content chunk id known in contents
+  getPageIdForContentChunkId(chunkId) {
+    for (const [key, value] of Object.entries(this.contentChunkIds)) {
+      if (value.has(chunkId)) return key;
+    }
+    return undefined;
+  }
+
+  // returns page Id if element id known in contents
+  getPageIdForElementId(elementId) {
+    for (const [key, value] of Object.entries(this.elementIds)) {
+      if (value.has(elementId)) return key;
+      // if (value.has(elementId.replace(/^0+/, ""))) return key;
+    }
+    return undefined;
+  }
 
 }
 

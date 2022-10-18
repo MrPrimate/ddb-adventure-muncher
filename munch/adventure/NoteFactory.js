@@ -30,7 +30,6 @@ class NoteFactory {
     } else {
       return pDom.body.textContent;
     }
-  
   }
 
   #parseNoteHint(row, hint, count) {
@@ -159,8 +158,8 @@ class NoteFactory {
   }
 
   generateJournals(row) {
-    this.#generateNoteRows(row);
     if (this.adventure.config.data.createPinJournals) {
+      this.#generateNoteRows(row);
       this.noteRows
         .filter((noteRow) => noteRow.data.ddbId === row.data.id || noteRow.data.ddbId - 1 == row.data.id)
         .forEach((noteRow) => {

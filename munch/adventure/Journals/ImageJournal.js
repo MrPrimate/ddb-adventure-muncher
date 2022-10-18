@@ -32,6 +32,11 @@ class ImageJournal extends Journal {
     // we don't need to fix image journals
   }
 
+  generateContentLinks() {
+    this.contentChunkIds[this.data._id] = new Set([]);
+    this.elementIds[this.data._id] = new Set([]);
+  }
+
   replaceImgLinksForJournal() {
     // eslint-disable-next-line no-useless-escape
     const reImage = new RegExp(`^\.\/${this.adventure.bookCode}\/`, "g");

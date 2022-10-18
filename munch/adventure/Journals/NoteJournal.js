@@ -23,6 +23,11 @@ class NoteJournal extends Journal {
     return true;
   }
 
+  generateContentLinks() {
+    this.contentChunkIds[this.data._id] = new Set([]);
+    this.elementIds[this.data._id] = new Set([]);
+  }
+
   appendJournalToChapter() {
     // we don't append notes to chapters
   }
