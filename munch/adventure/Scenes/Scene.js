@@ -135,8 +135,12 @@ class Scene {
           
           if (!this.adventure.config.data.createPinJournals) {
             n.flags.ddb.labelName = `${note.label}`; 
-            // generate slug, and strip 0
-            n.flags.ddb.slugLink = note.label.replace(/[^\w\d]+/g, "").replace(/^0+/, "");
+            // generate slug, and strip 0, support for native ddb sluging
+            n.flags.ddb.slugLink = note.label.replace(/[^\w\d]+/g, "").replace(/^([a-zA-Z]?)0+/, "$1");
+            // support for anchor links mondule
+            n.flags.anchor = {
+              slug: n.flags.ddb.slugLink
+            };
             n.text = note.label;
 
             const contentChunkIdPageId = note.flags.ddb.contentChunkId
@@ -149,7 +153,7 @@ class Scene {
             const journalPage = noteJournal.data.pages.find((page) =>
               page.flags.ddb.parentId == note.flags.ddb.parentId
               && (page.flags.ddb.slug == note.flags.ddb.slug
-              || page.flags.ddb.slug.replace(/\d+$/, "") == note.flags.ddb.slug
+              || page.flags.ddb.slug.replace(/^([a-zA-Z]?)0+/, "$1") == note.flags.ddb.slug
               || page.flags.ddb.slug.startsWith(note.flags.ddb.slug))
               && (page._id === contentChunkIdPageId || page._id === slugLinkPageId)
             );
@@ -160,13 +164,14 @@ class Scene {
               logger.error(`Unable to find journal page for note ${note.label}`, note);
               const idPage = noteJournal.data.pages.find((page) => page._id === contentChunkIdPageId || page._id === slugLinkPageId);
               this.adventure.bad.notes.push({
-                note,
+                noteLabel: note.label,
                 noteFlags: note.flags.ddb,
                 contentChunkIdPageId,
                 slugLinkPageId,
                 slug: note.flags.ddb.slug,
                 parentId: note.flags.ddb.parentId,
                 idPageFlags: idPage ? idPage.flags.ddb : "No page",
+                nFlags: n.flags.ddb,
               });
             }
           }
