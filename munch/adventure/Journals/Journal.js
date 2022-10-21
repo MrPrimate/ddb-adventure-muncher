@@ -83,11 +83,10 @@ class Journal {
   _generateJournalEntryWithPages() {
     const firstElement = this.row.doc.body.firstElementChild;
     const allFirstElements = this.row.doc.body.getElementsByTagName(firstElement.tagName);
-    if (firstElement === "H1" || allFirstElements.length === 1) {
+    if (firstElement.tagName === "H1" || (allFirstElements.length === 1 && firstElement.tagName !== "P")) {
       firstElement.remove();
     }
     let content = this.row.doc.body.innerHTML.replace(/\s+/g, " ");
-
     const page = this.generatePage(content);
 
     if (!this.row.data.parentId) this.data.flags.ddb.linkId = this.data._id;
@@ -99,7 +98,7 @@ class Journal {
     const firstElement = this.row.doc.body.firstElementChild;
     try {
       const allFirstElements = this.row.doc.body.getElementsByTagName(firstElement.tagName);
-      if (firstElement === "H1" || allFirstElements.length === 1) {
+      if (firstElement.tagName === "H1" || (allFirstElements.length === 1 && firstElement.tagName !== "P")) {
         firstElement.remove();
       }
       this.data.content = this.row.doc.body.innerHTML.replace(/\s+/g, " ");
@@ -154,6 +153,7 @@ class Journal {
   }
 
   constructor(adventure, row, options) {
+    logger.info(`Starting journal entry creation ${row.data.title}`);
     this.adventure = adventure;
     this.row = row;
     this.data = this.adventure.supports.pages

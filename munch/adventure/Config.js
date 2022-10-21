@@ -14,7 +14,7 @@ class Config {
   static ENHANCEMENT_ENDPOINT = "https://proxy.ddb.mrprimate.co.uk";
   static DEFAULT_CONFIG_DIR = "../dbs";
   static LATEST_MAJOR_SCHEMA = 4;
-  static LATEST_MINOR_SCHEMA = 4.1;
+  static LATEST_MINOR_SCHEMA = 4.2;
 
   setDataConfigSetting(settingName, defaultValue) {
     const value = this.options[settingName] !== undefined
@@ -101,7 +101,7 @@ class Config {
     this.setDataConfigSetting("schemaVersion", 3.0); // default schema is v3.0
     this.setDataConfigSetting("createHandouts", !v4Schema);
     this.setDataConfigSetting("createPlayerHandouts", !v4Schema);
-    this.setDataConfigSetting("createPinJournals", true);
+    this.setDataConfigSetting("createPinJournals", !v4Schema);
     this.setDataConfigSetting("observeAll", false);
     this.setDataConfigSetting("createSections", !v4Schema);
     this.setDataConfigSetting("noteAdminMode", false);

@@ -1,3 +1,8 @@
+# 1.1.0
+
+* Support for generating adventures without Note Pin pages, in v10 the latest DDB Importer can jump to links within Journal Pages instead.
+* Bug in Journal Pin generation which could produce empty pins in some circumstances.
+
 # 1.0.9
 
 * Support to allow all DDB Importer to import all adventure actors into the world, and to link to world actors in journals.

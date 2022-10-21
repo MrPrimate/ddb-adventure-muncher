@@ -32,7 +32,7 @@ class JournalFactory {
     // we never add duplicates
     // return !this.duplicate && validType;
     if (!journal.duplicate && validType) {
-      logger.info(`Appending ${journal.row.data.title} ${journal.TYPE} Journal"`);
+      logger.info(`Appending ${journal.row.data.title} ${journal.pageType} Journal"`);
       this.adventure.journals.push(journal);
     }
   }

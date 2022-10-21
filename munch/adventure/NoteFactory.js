@@ -61,6 +61,7 @@ class NoteFactory {
     let keyChunkId = hint.contentChunkIdStart;
     let idTagStop = hint.contentChunkIdStop === "IDSTOP";
 
+    logger.debug("Initial note hint", { noteTitle, keyChunkId, idTagStop });
     while (true) {
       const pTag = hint.splitTag.toUpperCase() === "P";
       // if this is the first p tag add the full p tag to the html
@@ -76,6 +77,8 @@ class NoteFactory {
       const tagMatch = keyChunk ? keyChunk.tagName.toUpperCase() === hint.splitTag.toUpperCase() : false;
       const idStop = (idTagStop && keyChunk.getAttribute("id") === hint.tagIdLast) || hint.contentChunkIdStart === hint.contentChunkIdStop;
       const stopChunk = keyChunk === null || chunkId === hint.contentChunkIdStop || idStop;
+
+      // logger.warn("nextelement", { noteTitle, htmlLength: html.length, html, keyChunkId, tag: keyChunk? keyChunk.tagName: undefined, chunkId, tagMatch, idStop, stopChunk })
 
       // if we have reached the same tag type or last chunk generate a journal
       if ((tagMatch && !pTag) || stopChunk) {
