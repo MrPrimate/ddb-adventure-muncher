@@ -1,3 +1,7 @@
+# 1.1.1
+
+* Generation of adventures for v9 would fail to generate content for Journals.
+
 # 1.1.0
 
 * Support for generating adventures without Note Pin pages, in v10 the latest DDB Importer can jump to links within Journal Pages instead.

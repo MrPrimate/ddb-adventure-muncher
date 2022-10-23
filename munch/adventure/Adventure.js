@@ -457,17 +457,20 @@ class Adventure {
         name: journal.data.name,
         id: journal.id,
         path: filePath,
+        pages: journal.data.pages?.length ?? "No Pages"
       });
       const pagesNoContent = journal.data.pages
-        .filter(s => s.type === "text")
-        .filter(s => s.text.content.trim() === "")
-        .map(s => {
-          return {
-            name: s.name,
-            content: s.text.content,
-          };
-        });
-      if (pagesNoContent.length > 0) logger.warn("missing pages", pagesNoContent);
+        ? journal.data.pages
+          .filter(s => s.type === "text")
+          .filter(s => s.text.content.trim() === "")
+          .map(s => {
+            return {
+              name: s.name,
+              content: s.text.content,
+            };
+          })
+        : [];
+      if (pagesNoContent.length > 0) logger.error("missing pages", pagesNoContent);
       fs.writeFileSync(filePath, journal.toJson());
     });
   }

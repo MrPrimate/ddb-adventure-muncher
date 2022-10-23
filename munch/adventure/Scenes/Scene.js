@@ -78,7 +78,7 @@ class Scene {
   linkNotes() {
     this.notes.forEach((note) => {
       logger.info(`Checking ${note.label}`);
-      const noteJournal = this.adventure.config.data.createPinJournals
+      const noteJournal = this.adventure.config.data.createPinJournals || this.adventure.config.data.schemaVersion <= 4.1
         ? this.adventure.journals.find((journal) => {
           const contentChunkIdMatch = note.flags.ddb.contentChunkId
             ? journal.data.flags.ddb && note.flags.ddb && journal.data.flags.ddb.contentChunkId == note.flags.ddb.contentChunkId
@@ -133,7 +133,7 @@ class Scene {
           n.flags.ddb.slugLink = noteJournal.data.flags.ddb.slugLink;
           n.flags.ddb.linkId = noteId;
           
-          if (!this.adventure.config.data.createPinJournals) {
+          if (!this.adventure.config.data.createPinJournals && this.adventure.config.data.schemaVersion >= 4.2) {
             n.flags.ddb.labelName = `${note.label}`; 
             // generate slug, and strip 0, support for native ddb sluging
             n.flags.ddb.slugLink = note.label.replace(/[^\w\d]+/g, "").replace(/^([a-zA-Z]?)0+/, "$1");
