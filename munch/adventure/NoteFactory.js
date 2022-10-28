@@ -161,7 +161,7 @@ class NoteFactory {
   }
 
   generateJournals(row) {
-    if (this.adventure.config.data.createPinJournals || this.adventure.config.data.schemaVersion <= 4.2) {
+    if (this.adventure.config.data.createPinJournals || this.adventure.config.data.schemaVersion <= 4.1) {
       this.#generateNoteRows(row);
       this.noteRows
         .filter((noteRow) => noteRow.data.ddbId === row.data.id || noteRow.data.ddbId - 1 == row.data.id)
