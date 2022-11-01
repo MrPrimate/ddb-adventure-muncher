@@ -134,7 +134,7 @@ class Adventure {
     this.data = require(path.join(this.overrides.templateDir, "adventure.json"));
     this.data.name = this.config.book.description;
     this.data.id = Helpers.randomString(10, "#aA");
-    this.data.required = {
+    this.required = {
       monsters: new Set(),
       monsterData: new Set(),
       items: new Set(),
@@ -146,6 +146,7 @@ class Adventure {
       actions: new Set(),
       weaponproperties: new Set(),
     };
+    this.data.required = {};
     this.data.version = parseFloat(this.config.data.schemaVersion);
     this.supports = {
       pages: parseFloat(this.config.data.schemaVersion) >= 4.0,
@@ -175,8 +176,8 @@ class Adventure {
   }
 
   #mockMonsterCreation() {
-    logger.debug(`Generating mock actor data now for ${this.data.required.monsters.size} monsters`);
-    this.data.required.monsterData = [...this.data.required.monsters]
+    logger.debug(`Generating mock actor data now for ${this.required.monsters.size} monsters`);
+    this.data.required.monsterData = [...this.required.monsters]
       .map((ddbId) => {
         const mockActor = {
           flags: {
@@ -429,6 +430,17 @@ class Adventure {
   }
 
   #outputAdventure() {
+
+    this.data.required.monsters = [...this.required.monsters];
+    this.data.required.items = [...this.required.items];
+    this.data.required.spells = [...this.required.spells];
+    this.data.required.vehicles = [...this.required.vehicles];
+    this.data.required.skills = [...this.required.skills];
+    this.data.required.senses = [...this.required.senses];
+    this.data.required.conditions = [...this.required.conditions];
+    this.data.required.actions = [...this.required.actions];
+    this.data.required.weaponproperties = [...this.required.weaponproperties];
+
     if (!fs.existsSync(this.config.outputDir)) {
       fs.mkdirSync(this.config.outputDir);
     }

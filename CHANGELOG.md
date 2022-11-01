@@ -1,6 +1,7 @@
 # 1.1.2
 
 * Note pins would be generated for some adventures, in some circumstances, even if you didn't want them to be.
+* In some circumstances the hints for what monsters/spells/items that are needed for an adventure were not generated for DDB Importer.
 
 # 1.1.1
 

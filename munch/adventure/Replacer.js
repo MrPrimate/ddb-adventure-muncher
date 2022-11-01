@@ -131,8 +131,8 @@ class DynamicLinkReplacer {
         const lookupMatch = node.outerHTML.match(lookupRegExp);
         const lookupValue = this.adventure.config.data.lookups[COMPENDIUM_MAP[lookupKey]];
         if (lookupValue) {
-          if (!this.adventure.data.required[COMPENDIUM_MAP[lookupKey]].has(String(lookupMatch[1]))) {
-            this.adventure.data.required[COMPENDIUM_MAP[lookupKey]].add(String(lookupMatch[1]));
+          if (!this.adventure.required[COMPENDIUM_MAP[lookupKey]].has(String(lookupMatch[1]))) {
+            this.adventure.required[COMPENDIUM_MAP[lookupKey]].add(String(lookupMatch[1]));
           }
           const lookupEntry = lookupValue.find((e) => e.id == lookupMatch[1]);
           if (lookupEntry) {
@@ -294,8 +294,8 @@ class StaticLinkReplacer {
         const lookupMatch = node.outerHTML.match(lookupRegExp);
         const lookupValue = this.adventure.config.data.lookups[COMPENDIUM_MAP[lookupKey]];
         if (lookupValue) {
-          if (!this.adventure.data.required[COMPENDIUM_MAP[lookupKey]].has(String(lookupMatch[1]))) {
-            this.adventure.data.required[COMPENDIUM_MAP[lookupKey]].add(String(lookupMatch[1]));
+          if (!this.adventure.required[COMPENDIUM_MAP[lookupKey]].has(String(lookupMatch[1]))) {
+            this.adventure.required[COMPENDIUM_MAP[lookupKey]].add(String(lookupMatch[1]));
           }
           const lookupEntry = lookupValue.find((e) => e.id == lookupMatch[1]);
           if (lookupEntry) {
