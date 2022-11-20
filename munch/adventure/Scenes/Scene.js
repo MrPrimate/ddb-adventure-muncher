@@ -237,6 +237,13 @@ class Scene {
       adjustment.flags.ddb["sceneAdjustment"] = true;
       logger.debug(adjustment.flags);
       logger.debug(this.data.flags);
+
+      if (this.adventure.config.data.schemaVersion >= 4.0 && adjustment.background) {
+        this.data.background = adjustment.background;
+        this.data.image = `${this.data.image}`;
+        delete this.data.image;
+      }
+
       this.data = _.merge(this.data, adjustment);
     } else {
       logger.info(`NO ADJUSTMENTS found with chunkid "${this.data.flags.ddb.contentChunkId}" and id ${this.data.flags.ddb.ddbId}`);
