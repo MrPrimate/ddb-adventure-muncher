@@ -303,6 +303,8 @@ async function importScene(conf, sceneFile) {
           exit();
         }
       } else {
+        token.name = token.name.replace(/\(\d+\)/, "").trim();
+        if (token.actorData.name) token.actorData.name = token.actorData.name.replace(/\(\d+\)/, "").trim();
         if (token.flags.ddbActorFlags.name !== token.name
           && token.name.endsWith(token.flags.ddbActorFlags.name))
         {
