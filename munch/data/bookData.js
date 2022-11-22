@@ -821,6 +821,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/26865/226/637921086362458107.jpeg",
     sourceURL: "sources/dosi",
   },
+  {
+    id: 95,
+    name: "SotDQ",
+    description: "Dragonlance: Shadow of the Dragon Queen",
+    sourceCategoryId: 14,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/27777/666/637951679601337771.jpeg",
+    sourceURL: "sources/sotdq",
+  },
 ];
 
 exports.sources = sources;
