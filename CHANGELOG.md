@@ -2,6 +2,14 @@
 
 * SotDQ support (Dragonlance)
 
+1.3 100
+
+2.2
+
+2.93
+
+2.81
+
 # 1.2.0
 
 * Support adventure scene adjustments exported just for v10. Some scene data would not be altered correctly in v10 if the scene data had been exported in v10.
