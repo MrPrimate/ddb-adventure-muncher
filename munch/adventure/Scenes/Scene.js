@@ -14,18 +14,20 @@ function unPad(match, p1) {
   }
 }
 
+const BAD_WORDS = ["The", "At", "Who", "the"];
+
 class Scene {
 
   get id() {
     return this.data._id;
   }
 
-  generateIcon(title) {
+  generateIcon(title, defaultPath = undefined) {
     // default path
-    let iconPath = "icons/svg/book.svg";
+    let iconPath = defaultPath ? defaultPath : "icons/svg/book.svg";
     let stub = title.trim().split(".")[0].split(" ")[0].split(":")[0];
     stub = stub.replace(/(\d+)/, unPad);
-    if (stub.length <= 4) {
+    if (stub.length <= 4 && !BAD_WORDS.includes(stub)) {
       const svgDirPath = path.join(this.adventure.config.outputDir, "assets", "icons");
       iconPath = path.join("assets","icons",`${stub}.svg`);
       const iconFileOutPath = path.join(this.adventure.config.outputDir, iconPath);
@@ -120,7 +122,6 @@ class Scene {
             "entryId": noteJournal.data._id,
             "x": position.x,
             "y": position.y,
-            "icon": this.generateIcon(note.label),
             "iconSize": note.iconSize ? note.iconSize : 40,
             "iconTint": "",
             "text": "",
@@ -132,7 +133,19 @@ class Scene {
           n.flags.ddb.linkName = noteJournal.data.flags.ddb.linkName;
           n.flags.ddb.slugLink = noteJournal.data.flags.ddb.slugLink;
           n.flags.ddb.linkId = noteId;
-          
+          // icon generation
+          const icon = this.generateIcon(note.label, note.texture?.src);
+          if (this.adventure.config.data.schemaVersion > 4.0) {
+            n.texture = note.texture;
+            n.texture.src = icon;
+            if (!icon.startsWith("icons/svg")) {
+              n.texture.rotation = 0;
+              n.texture.tint= null;
+            }
+          } else {
+            n.icon = icon;
+          }
+
           if (!this.adventure.config.data.createPinJournals && this.adventure.config.data.schemaVersion >= 4.2) {
             n.flags.ddb.labelName = `${note.label}`; 
             // generate slug, and strip 0, support for native ddb sluging
