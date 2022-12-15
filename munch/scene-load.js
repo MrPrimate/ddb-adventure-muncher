@@ -284,6 +284,19 @@ async function importScene(conf, sceneFile) {
     .filter((token) => token.flags.ddbActorFlags && token.flags.ddbActorFlags.id)
     .map((token) => {
       if (token.actorData) {
+        if (token.actorData.flags?.ddbimporter?.keepItems) {
+          token.flags.ddbItems = token.actorData.items.map((i) => {
+            const item = {
+              name: i.name,
+              type: i.type,
+              ddbId: i.flags?.ddbimporter?.id,
+              customItem: i.flags?.ddbimporter?.customItem,
+              data: i.flags?.ddbimporter?.customItem ? i : {},
+            };
+            return item;
+          });
+        }
+        token.flags.ddbActorEffects = token.actorData.effects;
         delete token.actorData.items;
         delete token.actorData.effects;
         // /if (token.actorData.data) delete(token.actorData.data.details);

@@ -1,3 +1,8 @@
+# 1.2.2
+
+* Capture alternative note icons for non-numeric entries.
+* Support capturing custom items on scene actors.
+
 # 1.2.1
 
 * SotDQ support (Dragonlance)
