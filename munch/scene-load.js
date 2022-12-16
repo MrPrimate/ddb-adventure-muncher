@@ -46,7 +46,7 @@ function listSceneIds(bookCode) {
 
   if (!idTable[adventure.bookCode]) {
     console.log(`No ids found for book code ${bookCode}`);
-    exit();
+    exit(1);
   }
   idTable[adventure.bookCode].filter((r) => r.docType == "Scene").forEach(r => {
     console.log(`${r.name} => ${r.contentChunkId}`);
@@ -175,7 +175,7 @@ async function importScene(conf, sceneFile) {
     console.log("######################################");
     console.log("######################################");
     console.log("######################################");
-    //exit();
+    //exit(1);
   }
   if (lookupFilter && (lookup && lookupFilter.length > 1) || (!lookup && lookupFilter.length > 0)) {
     console.log("######################################");
@@ -188,7 +188,7 @@ async function importScene(conf, sceneFile) {
       console.log("######################################");
       console.log("######################################");
       console.log("######################################");
-      // exit();
+      // exit(1);
     } else {
       console.log(`IN: ${inData.flags.ddb.contentChunkId } : ${inData.flags.ddb.ddbId }: ${inData.flags.ddb.cobaltId }: ${inData.flags.ddb.parentId }`);
       const singleMatch = lookupFilter[0];
@@ -284,7 +284,7 @@ async function importScene(conf, sceneFile) {
     .filter((token) => token.flags.ddbActorFlags && token.flags.ddbActorFlags.id)
     .map((token) => {
       if (token.actorData) {
-        if (token.actorData.flags?.ddbimporter?.keepItems) {
+        if (token.actorData.flags?.ddbimporter?.keepItems && token.actorData.items) {
           token.flags.ddbItems = token.actorData.items.map((i) => {
             const item = {
               name: i.name,
@@ -297,6 +297,23 @@ async function importScene(conf, sceneFile) {
           });
         }
         token.flags.ddbActorEffects = token.actorData.effects;
+        if (token.actorData.flags?.ddbimporter?.keepToken || token.actorData.flags?.ddbimporter?.keepAvatar) {
+          token.flags.ddbImages = {
+            keepToken: token.actorData.flags.ddbimporter.keepToken ?? false,
+            tokenImage: token.actorData.flags.ddbimporter.tokenImage ?? "",
+            keepAvatar: token.actorData.flags.ddbimporter.keepAvatar ?? false,
+            avatarImage: token.actorData.flags.ddbimporter.avatarImage ?? "",
+          };
+
+          if (token.flags.ddbImages.keepToken && token.flags.ddbImages.tokenImage === "") {
+            console.error(`ERROR! Could not find token image for ${token.name}`);
+            exit(1);
+          }
+          if (token.flags.ddbImages.keepAvatar && token.flags.ddbImages.avatarImage === "") {
+            console.error(`ERROR! Could not find token avatar image for ${token.name}`);
+            exit(1);
+          }
+        }
         delete token.actorData.items;
         delete token.actorData.effects;
         // /if (token.actorData.data) delete(token.actorData.data.details);
@@ -313,7 +330,7 @@ async function importScene(conf, sceneFile) {
           token.flags.ddbActorFlags.name = monsterLookup.name;
         } else {
           console.error(`ERROR! Could not find token lookup for ${token.name} with id ${token.flags.ddbActorFlags.id}`);
-          exit();
+          exit(1);
         }
       } else {
         token.name = token.name.replace(/\(\d+\)/, "").trim();
