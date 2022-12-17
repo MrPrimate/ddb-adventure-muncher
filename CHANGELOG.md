@@ -1,3 +1,8 @@
+# 1.3.0
+
+* Fix scene generation for some older scenes.
+* Bum electron version.
+
 # 1.2.2
 
 * Capture alternative note icons for non-numeric entries.
