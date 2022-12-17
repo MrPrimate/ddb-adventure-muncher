@@ -108,7 +108,7 @@ class Scene {
         : this.adventure.journals.find((journal) =>
           journal.data.flags.ddb.cobaltId == note.flags.ddb.parentId
         );
-      if (noteJournal) {
+      if (noteJournal && !note.flags.ddb?.noLink) {
         logger.info(`Found ${note.label} matched to ${noteJournal.data._id} (${noteJournal.data.name})`);
         note.positions.forEach((position) => {
           noteJournal.data.flags.ddb.pin = `${position.x}${position.y}`;
@@ -189,6 +189,21 @@ class Scene {
             }
           }
 
+          this.data.notes.push(n);
+        });
+      } else {
+        note.positions.forEach((position) => {
+          const n = {
+            "x": position.x,
+            "y": position.y,
+            "iconSize": note.iconSize ? note.iconSize : 40,
+            "iconTint": "",
+            "text": note.label ? note.label : note.text,
+            "fontFamily": note.fontFamily ? note.fontFamily : "Signika",
+            "fontSize": note.fontSize ? note.fontSize : 48,
+            "textAnchor": 1,
+            "textColor": note.textColor ? note.textColor : "",
+          };
           this.data.notes.push(n);
         });
       }

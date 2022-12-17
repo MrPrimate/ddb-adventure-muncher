@@ -1,3 +1,7 @@
+# 1.3.1
+
+* Handle notes not linked to Journals.
+
 # 1.3.0
 
 * Fix scene generation for some older scenes.
