@@ -90,15 +90,14 @@
   "homepage": "https://github.com/mrprimate",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^21.3.3",
-    "electron-builder": "^23.6.0",
+    "electron": "^22.0.0",
+    "electron-builder": "^22.10.3",
     "electron-rebuild": "^3.2.7",
     "electron-reload": "^1.5.0",
-    "eslint": "^7.32.0",
-    "spectre.css": "^0.5.9",
+    "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "2.3.2",
-    "eslint": "^8.11.0"
+    "spectre.css": "^0.5.9"
   },
   "dependencies": {
     "better-sqlite3-multiple-ciphers": "^8.0.1",
