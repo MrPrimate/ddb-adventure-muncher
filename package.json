@@ -60,7 +60,11 @@
       "entitlements": "./build/entitlements.mac.inherit.plist",
       "entitlementsInherit": "./build/entitlements.mac.inherit.plist",
       "target": {
-        "target": "dmg"
+        "target": "dmg",
+        "arch": [
+          "x64",
+          "arm64"
+        ]
       },
       "category": "public.app-category.developer-tools"
     },
@@ -86,8 +90,8 @@
   "homepage": "https://github.com/mrprimate",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^16.2.2",
-    "electron-builder": "^23.0.6",
+    "electron": "^21.3.3",
+    "electron-builder": "^23.6.0",
     "electron-rebuild": "^3.2.7",
     "electron-reload": "^1.5.0",
     "eslint": "^7.32.0",
@@ -97,9 +101,9 @@
     "eslint": "^8.11.0"
   },
   "dependencies": {
-    "better-sqlite3-multiple-ciphers": "^7.5.1",
+    "better-sqlite3-multiple-ciphers": "^8.0.1",
     "electron-log": "^4.4.1",
-    "electron-updater": "^5.0.2",
+    "electron-updater": "^5.3.0",
     "extract-zip": "^2.0.1",
     "fs-extra": "^9.1.0",
     "glob": "^8.0.1",
