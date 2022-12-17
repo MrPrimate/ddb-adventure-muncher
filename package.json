@@ -90,7 +90,7 @@
   "homepage": "https://github.com/mrprimate",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^21.3.3",
+    "electron": "^22.0.0",
     "electron-builder": "^23.6.0",
     "electron-rebuild": "^3.2.7",
     "electron-reload": "^1.5.0",
