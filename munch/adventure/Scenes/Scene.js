@@ -136,7 +136,7 @@ class Scene {
           // icon generation
           const icon = this.generateIcon(note.label, note.texture?.src);
           if (this.adventure.config.data.schemaVersion > 4.0) {
-            n.texture = note.texture;
+            n.texture = note.texture ?? {};
             n.texture.src = icon;
             if (!icon.startsWith("icons/svg")) {
               n.texture.rotation = 0;
