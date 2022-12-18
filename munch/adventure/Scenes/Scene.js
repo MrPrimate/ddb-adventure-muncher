@@ -108,6 +108,7 @@ class Scene {
         : this.adventure.journals.find((journal) =>
           journal.data.flags.ddb.cobaltId == note.flags.ddb.parentId
         );
+
       if (noteJournal && !note.flags.ddb?.noLink) {
         logger.info(`Found ${note.label} matched to ${noteJournal.data._id} (${noteJournal.data.name})`);
         note.positions.forEach((position) => {
@@ -185,6 +186,7 @@ class Scene {
                 parentId: note.flags.ddb.parentId,
                 idPageFlags: idPage ? idPage.flags.ddb : "No page",
                 nFlags: n.flags.ddb,
+                journalElementIds: noteJournal.elementIds,
               });
             }
           }
