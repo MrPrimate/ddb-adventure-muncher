@@ -1,6 +1,7 @@
 # 1.3.1
 
 * Handle notes not linked to Journals.
+* Prevent Images in journals opening in a new tab when clicked.
 
 # 1.3.0
 

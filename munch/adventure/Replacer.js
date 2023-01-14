@@ -174,8 +174,6 @@ class DynamicLinkReplacer {
     const reFileLink = new RegExp(`href="ddb:\/\/file\/${this.adventure.bookCode}\/(.*?)"`);
     const fileLinks = this.dom.querySelectorAll("a[href*=\"ddb://file\/\"]");
 
-    // for (let filesIndex = 0, filesLength = fileLinks.length; filesIndex < filesLength; filesIndex++) {
-    //   const node = fileLinks[filesIndex];
     fileLinks.forEach((node) =>{
       const target = `${node.outerHTML}`;
       const fileMatch = node.outerHTML.match(reFileLink);
@@ -353,9 +351,22 @@ class StaticLinkReplacer {
     // "ddb://image/idrotf/"
     // <a class="ddb-lightbox-outer compendium-image-center"  href="ddb://image/idrotf/00-000.intro-splash.jpg" data-lightbox="1" data-title="">
     // <img src="./idrotf/00-000.intro-splash.jpg" class="ddb-lightbox-inner" style="width: 650px;"></a>
-    const reImageLink = new RegExp(`href="ddb:\/\/image\/${this.adventure.bookCode}\/`, "g");
-    // text = text.replace(reImageLink, `href="adventure://assets/`);
-    this.dom.body.innerHTML = this.dom.body.innerHTML.replace(reImageLink, "href=\"assets/");
+    const reFileLink = new RegExp(`href="ddb:\/\/file\/${this.adventure.bookCode}\/(.*?)"`);
+    const fileLinks = this.dom.querySelectorAll("a[href*=\"ddb://file\/\"]");
+
+    fileLinks.forEach((node) =>{
+      const target = `${node.outerHTML}`;
+      const fileMatch = node.outerHTML.match(reFileLink);
+      if (fileMatch) {
+        if ((/(\.jpg|\.jpeg|\.gif|\.webp|\.webm|\.png)"/i).test(fileMatch[1].trim())) {
+          node.removeAttribute("href");
+          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.innerHTML);
+        } else {
+          node.setAttribute("href", `assets/${fileMatch[1]}`);
+          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
+        }
+      }
+    });
   }
 
 }
