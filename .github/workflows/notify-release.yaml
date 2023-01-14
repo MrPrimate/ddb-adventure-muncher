@@ -18,7 +18,7 @@ jobs:
       - name: Get Version
         shell: bash
         id: get-version
-        run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
+        run: echo "release_version=$(node ./.github/workflows/get-version.js)" >> $GITHUB_OUTPUT
       - name: Discord notification
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_HOOK }}

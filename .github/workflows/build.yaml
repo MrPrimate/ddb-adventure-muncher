@@ -55,28 +55,3 @@ jobs:
           mac_certs_password: ${{ secrets.mac_certs_password }}
           windows_certs: ${{ secrets.win_certs }}
           windows_certs_password: ${{ secrets.win_certs_password }}
-
-
-  # notify:
-  #   needs: release
-
-  #   runs-on: ubuntu-latest
-
-  #   strategy:
-  #     matrix:
-  #       os: [ubuntu-latest]
-
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - name: Get Version
-  #       shell: bash
-  #       id: get-version
-  #       run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
-  #     - name: Discord notification
-  #       env:
-  #         DISCORD_WEBHOOK: ${{ secrets.DISCORD_HOOK }}
-  #         DISCORD_USERNAME: "Quality Control Division"
-  #       uses: Ilshidur/action-discord@0.3.2
-  #       with:
-  #         args: 'DDB Adventure Muncher ${{ steps.get-version.outputs.version }} has been marked as built. The testing Kobolds are working hard and a release imminent...'
-
