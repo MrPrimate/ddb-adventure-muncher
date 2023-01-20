@@ -1,3 +1,7 @@
+# 1.3.2
+
+* ToD support.
+
 # 1.3.1
 
 * Handle notes not linked to Journals.
