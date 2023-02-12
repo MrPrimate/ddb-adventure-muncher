@@ -1,3 +1,7 @@
+# 1.3.4
+
+* KftGV support.
+
 # 1.3.3
 
 * Prisoner 13 support.
