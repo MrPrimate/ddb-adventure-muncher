@@ -1,3 +1,7 @@
+# 1.3.5
+
+* Some scenes would not generate notes/pins on them.
+
 # 1.3.4
 
 * KftGV support.
