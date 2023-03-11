@@ -251,11 +251,12 @@ class Scene {
         this.adventure.sceneFactory.fixedAdjustments.push(adjustmentCopy);
       }
 
+      logger.debug(`Contains ${adjustment.flags.ddb.tiles?.length} tiles, and ${adjustment.flags.ddb.notes?.length} notes`);
       if (adjustment.flags.ddb.tiles) {
         adjustment.tiles = adjustment.flags.ddb.tiles;
       }
       if (adjustment.flags.ddb.notes) {
-        this.notes = adjustment.flags.ddb.notes;
+        this.notes = Object.assign(this.notes, adjustment.flags.ddb.notes);
       }
       // never include these adjustment fields they are probs bad
       delete adjustment.flags.ddb.notes;
@@ -265,7 +266,9 @@ class Scene {
       delete adjustment.flags.ddb.contentChunkId;
       // mark as adjusted
       adjustment.flags.ddb["sceneAdjustment"] = true;
+      logger.debug("Adjustment flags");
       logger.debug(adjustment.flags);
+      logger.debug("Data flags");
       logger.debug(this.data.flags);
 
       if (this.adventure.config.data.schemaVersion >= 4.0 && adjustment.background) {

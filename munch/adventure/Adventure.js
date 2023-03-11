@@ -285,10 +285,11 @@ class Adventure {
       const db = new Database(this);
       db.getData();
 
-      this.sceneFactory.addNotes();
-
       // we do some second passes to fix up links for generated images, scenes etc
       this.#fixUpAdventure();
+
+      // link notes to scenes
+      this.sceneFactory.addNotes();
 
       // generate mock actors
       this.#mockMonsterCreation();
