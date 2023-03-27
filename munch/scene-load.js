@@ -347,6 +347,16 @@ async function importScene(conf, sceneFile) {
           token.actorData.name = token.flags.ddbActorFlags.name;
         }
       }
+      const allowedFlags = ["midi-qol", "dae", "ddbActorFlags", "ddb", "ddbimporter", "perfect-vision", "dynamic-illumination", "stairways", "monks-bloodsplats", "token-auras"];
+
+      for (const key of Object.keys(token.flags)) {
+        if (!allowedFlags.includes(key)) delete token.flags[key];
+      }
+      if (token.actorData && token.actorData.flags) {
+        for (const key of Object.keys(token.actorData.flags)) {
+          if (!allowedFlags.includes(key)) delete token.actorData.flags[key];
+        }
+      }
       return token;
     });
 
