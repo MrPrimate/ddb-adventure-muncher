@@ -212,6 +212,39 @@ class Scene {
     });
   }
 
+  #cleanupV4() {
+    if (this.adventure.config.data.schemaVersion < 4.0) return;
+
+    if (Number.isInteger(this.data.shiftX)) {
+      this.data.background.offsetX = this.data.shiftX;
+    }
+    if (Number.isInteger(this.data.shiftY)) {
+      this.data.background.offsetY = this.data.shiftY;
+    }
+    if (Number.isInteger(this.data.grid)) {
+      const gridData = {
+        size: this.data.grid,
+      };
+      if (this.data.gridAlpha !== undefined) gridData.alpha = this.data.gridAlpha;
+      if (this.data.gridColor !== undefined) gridData.color = this.data.gridColor;
+      if (this.data.gridDistance !== undefined) gridData.distance = this.data.gridDistance;
+      if (this.data.gridType !== undefined) gridData.type = this.data.gridType;
+      if (this.data.gridUnits !== undefined) gridData.units = this.data.gridUnits;
+
+      this.data.grid = gridData;
+    }
+
+    delete this.data.shiftX;
+    delete this.data.shiftY;
+    delete this.data.grid;
+    delete this.data.gridAlpha;
+    delete this.data.gridColor;
+    delete this.data.gridDistance;
+    delete this.data.gridType;
+    delete this.data.gridUnits;
+
+  }
+
   // here we load adjustment data from ddb-meta-data
   // this is the magic that adds walls, actor positions and note data
   #adjustment() {
@@ -219,65 +252,88 @@ class Scene {
     // if a single adjustment that matches the contentCHunk, lets assume that's correct
     const contentChunkUnique = this.adventure.enhancements.sceneAdjustments.filter((s) =>
       this.data.flags.ddb.contentChunkId
-      && this.data.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId);
-    
-    let adjustment = contentChunkUnique.length > 0
-      ? contentChunkUnique[0]
-      // okay so not unique
-      : (this.data.flags.ddb.contentChunkId)
-        // try and fins a specific scene data
-        ? this.adventure.enhancements.sceneAdjustments.find((s) =>
-          (this.data.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId
-          && this.data.flags.ddb.ddbId == s.flags.ddb.ddbId
-          && this.data.flags.ddb.parentId == s.flags.ddb.parentId
-          && this.data.flags.ddb.cobaltId == s.flags.ddb.cobaltId)
-          || (s.flags.ddb.alternateIds && s.flags.ddb.alternateIds.some((ai) =>
-            this.data.flags.ddb.contentChunkId === ai.contentChunkId
-            && this.data.flags.ddb.ddbId == ai.ddbId
-            && this.data.flags.ddb.parentId == ai.parentId
-            && this.data.flags.ddb.cobaltId == ai.cobaltId
-          ))
-        ) 
-        // can't match on chunk, so lets try name
-        : this.adventure.enhancements.sceneAdjustments.find((s) => this.data.name.includes(s.name));
+      && this.data.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId
+    );
+
+    logger.debug(`Discovered ${contentChunkUnique.length} possible adjustments based on content chunk ${this.data.flags.ddb.contentChunkId}`);
+    let adjustment;
+
+    if (contentChunkUnique.length === 1) {
+      logger.debug(`Found only a single match for ${this.data.name}`);
+      adjustment = contentChunkUnique[0];
+    }
+
+    if (!adjustment && contentChunkUnique.length > 1) {
+      logger.debug(`Checking for adjustment with contentChunkId "${this.data.flags.ddb.contentChunkId}" , ddbId: "${this.data.flags.ddb.ddbId}" and parentId: "${this.data.flags.ddb.parentId}"`);
+      adjustment = this.adventure.enhancements.sceneAdjustments.find((s) =>
+        this.data.flags.ddb.contentChunkId === s.flags.ddb.contentChunkId
+        && this.data.flags.ddb.ddbId == s.flags.ddb.ddbId
+        && this.data.flags.ddb.parentId == s.flags.ddb.parentId
+        && this.data.flags.ddb.cobaltId == s.flags.ddb.cobaltId
+      );
+    }
+
+    if (!adjustment && contentChunkUnique.length > 1) {
+      logger.debug("Checking for alternativeIds adjustment");
+      adjustment = this.adventure.enhancements.sceneAdjustments.find((s) =>
+        s.flags.ddb.alternateIds && s.flags.ddb.alternateIds.some((ai) =>
+          this.data.flags.ddb.contentChunkId === ai.contentChunkId
+          && this.data.flags.ddb.ddbId == ai.ddbId
+          && this.data.flags.ddb.parentId == ai.parentId
+          && this.data.flags.ddb.cobaltId == ai.cobaltId
+        )
+      );
+    }
+
+    // final name check if we haven't matched
+    if (!adjustment) {
+      logger.debug(`Doing final name check for adjustment with name ${this.data.name}`);
+      adjustment = this.adventure.enhancements.sceneAdjustments.find((s) => this.data.name.includes(s.name));
+    }
 
     if (adjustment) {
-      logger.info(`ADJUSTMENTS found named ${adjustment.name} with chunkid "${adjustment.flags.ddb.contentChunkId}" and id ${adjustment.flags.ddb.ddbId} for ${this.data.flags.ddb.ddbId}`);
+      let adjustmentClone = JSON.parse(JSON.stringify(adjustment));
+      logger.info(`ADJUSTMENTS found named ${adjustmentClone.name} with chunkid "${adjustmentClone.flags.ddb.contentChunkId}" and adjustment ${adjustmentClone.flags.ddb.ddbId} for scene ddbId ${this.data.flags.ddb.ddbId}`);
 
-      if (this.adventure.config.data.generateFixes && this.data.flags.ddb.ddbId == adjustment.flags.ddb.ddbId - 1) {
-        logger.warn(`GENERATING SCENE ADJUSTMENT FIX for ${adjustment.name} ContentChunkId ${adjustment.flags.ddb.contentChunkId} with id: ${adjustment.flags.ddb.ddbId}`);
-        const adjustmentCopy = JSON.parse(JSON.stringify(adjustment));
-        adjustmentCopy.flags.ddb.ddbId = adjustment.flags.ddb.ddbId -1;
+      if (this.adventure.config.data.generateFixes && this.data.flags.ddb.ddbId == adjustmentClone.flags.ddb.ddbId - 1) {
+        logger.warn(`GENERATING SCENE ADJUSTMENT FIX for ${adjustmentClone.name} ContentChunkId ${adjustmentClone.flags.ddb.contentChunkId} with id: ${adjustmentClone.flags.ddb.ddbId}`);
+        const adjustmentCopy = JSON.parse(JSON.stringify(adjustmentClone));
+        adjustmentCopy.flags.ddb.ddbId = adjustmentClone.flags.ddb.ddbId -1;
         this.adventure.sceneFactory.fixedAdjustments.push(adjustmentCopy);
+      } else if (this.data.flags.ddb.ddbId != adjustmentClone.flags.ddb.ddbId) {
+        logger.error(`Scene adjustment for ${this.data.name} ddbId does not match, likely error`);
       }
 
-      logger.debug(`Contains ${adjustment.flags.ddb.tiles?.length} tiles, and ${adjustment.flags.ddb.notes?.length} notes`);
-      if (adjustment.flags.ddb.tiles) {
-        adjustment.tiles = adjustment.flags.ddb.tiles;
+      if (adjustmentClone.flags.ddb.tiles) {
+        logger.debug(`Contains ${adjustmentClone.flags.ddb.tiles?.length} tiles`);
+        adjustmentClone.tiles = adjustmentClone.flags.ddb.tiles;
       }
-      if (adjustment.flags.ddb.notes) {
-        this.notes = Object.assign(this.notes, adjustment.flags.ddb.notes);
+      if (adjustmentClone.flags.ddb.notes) {
+        logger.debug(`Contains ${adjustmentClone.flags.ddb.notes?.length} notes`);
+        this.notes = Object.assign(this.notes, adjustmentClone.flags.ddb.notes);
       }
-      // never include these adjustment fields they are probs bad
-      delete adjustment.flags.ddb.notes;
-      delete adjustment.flags.ddb.cobaltId;
-      delete adjustment.flags.ddb.parentId;
-      delete adjustment.flags.ddb.ddbId;
-      delete adjustment.flags.ddb.contentChunkId;
+      // never include these adjustment fields we'll use the generated versions
+      delete adjustmentClone.flags.ddb.notes;
+      delete adjustmentClone.flags.ddb.cobaltId;
+      delete adjustmentClone.flags.ddb.parentId;
+      delete adjustmentClone.flags.ddb.ddbId;
+      delete adjustmentClone.flags.ddb.contentChunkId;
       // mark as adjusted
-      adjustment.flags.ddb["sceneAdjustment"] = true;
+      adjustmentClone.flags.ddb["sceneAdjustment"] = true;
       logger.debug("Adjustment flags");
-      logger.debug(adjustment.flags);
+      logger.debug(adjustmentClone.flags);
       logger.debug("Data flags");
       logger.debug(this.data.flags);
 
-      if (this.adventure.config.data.schemaVersion >= 4.0 && adjustment.background) {
-        this.data.background = adjustment.background;
+      if (this.adventure.config.data.schemaVersion >= 4.0 && adjustmentClone.background) {
+        this.data.background = adjustmentClone.background;
         this.data.image = `${this.data.image}`;
         delete this.data.image;
       }
 
-      this.data = _.merge(this.data, adjustment);
+      this.data = _.merge(this.data, adjustmentClone);
+      this.#cleanupV4();
+      logger.debug(`Adjustment for ${this.data.name} complete`, { data: this.data });
     } else {
       logger.info(`NO ADJUSTMENTS found with chunkid "${this.data.flags.ddb.contentChunkId}" and id ${this.data.flags.ddb.ddbId}`);
     }
@@ -294,7 +350,7 @@ class Scene {
         ? scene.missing && this.row.data.title === scene.name
         : true;
       return missingNameMatch 
-        && scene.img === this.data.img
+        && scene.img === this.image
         && scene.bookCode === this.adventure.config.bookCode;
     });
     if (this.adventure.config.debug) logger.debug(enhancedScene);
@@ -305,7 +361,7 @@ class Scene {
         this.data.navName = enhancedScene.adjustName;
       }
       if (enhancedScene.hiresImg && !disableEnhancedDownloads) {
-        this.adventure.downloadList.push({name: this.data.name, url: enhancedScene.hiresImg, path: this.data.img });
+        this.adventure.downloadList.push({name: this.data.name, url: enhancedScene.hiresImg, path: this.image });
       }
     }
   }
@@ -371,7 +427,10 @@ class Scene {
       : null;
 
     // load skeleton
-    this.data = JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"scene.json"))));
+    this.data = this.adventure.config.data.schemaVersion >= 4.0
+      ? JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "scene-4.json"))))
+      : JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"scene.json"))));
+
 
     // initial image size guess (used if not set by adjustment)
     const dimensions = this.imageSize();
@@ -380,8 +439,12 @@ class Scene {
 
     this.data.name = row.data.sceneName;
     this.data.navName = row.data.sceneName.split(":").pop().trim();
-    this.data.img = image;
+    // moving this here requires a ddb-importer update, this is not yet supported
+    this.adventure.config.data.schemaVersion >= 5.0
+      ? this.data.background.src = image
+      : this.data.img = image;
     this.data.sort = Journal.JOURNAL_SORT + parseInt(row.data.id);
+    this.data.img = image;
 
     // find matching journals and add
     this.#journalMatch();
@@ -416,7 +479,7 @@ class Scene {
     if (this.adventure.config.data.imageFind) {
       this.adventure.imageFinder.scenes.push({
         bookCode: this.adventure.bookCode,
-        img: this.data.img,
+        img: this.image,
         name: this.data.name,
         slug: row.data.slug,
         contentChunkId: this.contentChunkId,
@@ -428,16 +491,16 @@ class Scene {
 
     this.#enhancedScenes();
 
-    if (this.adventure.config.debug) logger.debug(`Scene name: "${this.data.name}" Img: "${this.data.img}"`);
+    if (this.adventure.config.debug) logger.debug(`Scene name: "${this.data.name}" Img: "${this.image}"`);
 
     this.data._id = this.adventure.idFactory.getId(this.data, "Scene");
 
     this.#tokens();
     this.#lights();
 
-    this.adventure.sceneImages.push(this.data.img);
-    const sceneCount = this.adventure.sceneImages.filter(img => img === this.data.img).length;
-    logger.info(`Generated Scene "${this.data.name}" with "${this.data.img}", (count ${sceneCount})`);
+    this.adventure.sceneImages.push(this.image);
+    const sceneCount = this.adventure.sceneImages.filter(img => img === this.image).length;
+    logger.info(`Generated Scene "${this.data.name}" with "${this.image}" and id "${this.data._id}", (count ${sceneCount})`);
   }
 
   toJson() {
