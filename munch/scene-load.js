@@ -571,7 +571,7 @@ async function importScene(conf, sceneFile) {
     inDataUpdate = true;
     alternativeSceneIdsUpdate = true;
     const oldData = oldSceneDataHints.find((scene) => scene.contentChunkId === inData.flags.ddb.contentChunkId);
-    const alternateId = sceneDataHints.find((scene) => scene.img === oldData.img);
+    const alternateId = sceneDataHints.find((scene) => scene.img === oldData.img || scene.background?.src === oldData.img);
     console.log(alternateId);
     if (inData.flags.ddb.alternateIds) {
       if (!inData.flags.ddb.alternateIds.some((ai) => ai.contentChunkId === alternateId.contentChunkId)) {
