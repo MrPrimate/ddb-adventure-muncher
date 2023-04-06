@@ -14,7 +14,7 @@ class Config {
   static ENHANCEMENT_ENDPOINT = "https://proxy.ddb.mrprimate.co.uk";
   static DEFAULT_CONFIG_DIR = "../dbs";
   static LATEST_MAJOR_SCHEMA = 4;
-  static LATEST_MINOR_SCHEMA = 4.2;
+  static LATEST_MINOR_SCHEMA = 4.3;
 
   setDataConfigSetting(settingName, defaultValue) {
     const value = this.options[settingName] !== undefined
