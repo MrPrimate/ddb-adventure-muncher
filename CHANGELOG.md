@@ -1,3 +1,9 @@
+# 1.4.0
+
+* Some adventures could load the wrong adventures data onto the scene! Notably WDH. This was a subtle bug that only appeared due to a particular duplication if the id used to identify the scene as well as scene enhancements added out of order. I don't think it impacted other adventures, but may have done.
+* Some general improvements around scenes in Foundry v10, and how data is loaded.
+* The next major release of Adventure Muncher is likely to drop support for Foundry v9. I suspect this will be around the time v11 enters a stable release cycle.
+
 # 1.3.5
 
 * Some scenes would not generate notes/pins on them.
