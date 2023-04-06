@@ -490,12 +490,13 @@ class Adventure {
 
   #outputScenes() {
     logger.info("Generated Scenes:");
-    logger.info(this.scenes.map((s) => `${s.data.name} : ${s.id} : ${s.data.flags.ddb.contentChunkId } : ${s.data.flags.ddb.ddbId } : ${s.data.flags.ddb.cobaltId } : ${s.data.flags.ddb.parentId } : ${s.data.img}`));
+    logger.info(this.scenes.map((s) => `${s.data.name} : ${s.id} : ${s.data.flags.ddb.contentChunkId } : ${s.data.flags.ddb.ddbId } : ${s.data.flags.ddb.cobaltId } : ${s.data.flags.ddb.parentId } : ${s.image}`));
 
     logger.info(`Exporting ${this.scenes.length} scenes...`);
 
     // scenes out
     this.scenes.forEach((scene) => {
+      logger.debug(`Exporting Scene ${scene.data.name} with id "${scene.id}"`);
       const filePath = path.join(this.config.outputDir,"scene",`${scene.id}.json`);
       logger.info({
         name: scene.data.name,
