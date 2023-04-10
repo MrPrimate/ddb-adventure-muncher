@@ -1,3 +1,7 @@
+# 1.4.1
+
+- Some adventures (such as LMoP) would import with grids misaligned.
+
 # 1.4.0
 
 * Some adventures could load the wrong adventures data onto the scene! Notably WDH. This was a subtle bug that only appeared due to a particular duplication if the id used to identify the scene as well as scene enhancements added out of order. I don't think it impacted other adventures, but may have done.
