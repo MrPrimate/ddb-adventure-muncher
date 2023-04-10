@@ -236,7 +236,6 @@ class Scene {
 
     delete this.data.shiftX;
     delete this.data.shiftY;
-    delete this.data.grid;
     delete this.data.gridAlpha;
     delete this.data.gridColor;
     delete this.data.gridDistance;
