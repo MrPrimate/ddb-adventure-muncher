@@ -355,6 +355,7 @@ class Scene {
     if (this.adventure.config.debug) logger.debug(enhancedScene);
 
     if (enhancedScene) {
+      logger.info(`Found enhanced scene ${enhancedScene.name} for ${this.data.name} with image ${enhancedScene.img}`);
       if (enhancedScene.adjustName && enhancedScene.adjustName.trim() != "") {
         this.data.name = enhancedScene.adjustName;
         this.data.navName = enhancedScene.adjustName;
@@ -362,6 +363,8 @@ class Scene {
       if (enhancedScene.hiresImg && !disableEnhancedDownloads) {
         this.adventure.downloadList.push({name: this.data.name, url: enhancedScene.hiresImg, path: this.image });
       }
+    } else {
+      logger.info(`No enhanced scene found for ${this.data.name} with image ${this.image}`);
     }
   }
 
