@@ -173,7 +173,9 @@ const menuTemplate = [
       {
         label: "Log file location",
         click: async () => {
-          const logFolder = path.join(configDir, "logs");
+          const logFolder = isMac
+            ? "~/Library/Logs/ddb-adventure-muncher/"
+            : path.join(configDir, "logs");
           const logFile = path.join(logFolder, "main.log");
           logger.info(logFolder);
           if (fs.existsSync(logFile)) {

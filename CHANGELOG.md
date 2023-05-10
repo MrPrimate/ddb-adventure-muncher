@@ -1,3 +1,7 @@
+# 1.4.2
+
+- Fix MacOS Log file location.
+
 # 1.4.1
 
 - Some adventures (such as LMoP) would import with grids misaligned.
