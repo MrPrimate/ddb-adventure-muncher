@@ -1,3 +1,7 @@
+# 1.4.3
+
+- New book release support.
+
 # 1.4.2
 
 - Fix MacOS Log file location.
