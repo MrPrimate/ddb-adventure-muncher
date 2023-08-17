@@ -920,6 +920,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/35565/813/638248467892742349.jpeg",
     sourceURL: "sources/gotsf",
   },
+  {
+    id: 123,
+    name: "TCSR",
+    description: "Tal’dorei Campaign Setting Reborn",
+    sourceCategoryId: 2,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/36235/402/638277146643998518.jpeg",
+    sourceURL: "sources/tcsr",
+  },
 ];
 
 exports.sources = sources;
