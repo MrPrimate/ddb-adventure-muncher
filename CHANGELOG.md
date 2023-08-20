@@ -1,3 +1,7 @@
+# 1.4.3
+
+- Support for Taldorei Reborn.
+
 # 1.4.2
 
 - New book release support.
