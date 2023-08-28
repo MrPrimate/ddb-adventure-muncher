@@ -1,3 +1,8 @@
+# 1.4.4
+
+- Support for Baldurs Gate Gazetteer
+- Improve donwnloading of high res images in some circumstances where they were previously missed.
+
 # 1.4.3
 
 - Support for Taldorei Reborn.
