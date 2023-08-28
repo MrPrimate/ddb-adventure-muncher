@@ -340,31 +340,38 @@ class Scene {
 
   // this enriches with enhanced scene data
   #enhancedScenes() {
+    logger.info(`Checking Enhanced Scene info for ${this.data.name}, with url "${this.image}"`);
     const disableEnhancedDownloads = (this.adventure.config.disableEnhancedDownloads) 
       ? this.adventure.config.disableEnhancedDownloads
       : false;
 
     const enhancedScene = this.adventure.enhancements.sceneEnhancements.find((scene) => {
-      const missingNameMatch = this.row.data.missing
-        ? scene.missing && this.row.data.title === scene.name
-        : true;
-      return missingNameMatch 
-        && scene.img === this.image
-        && scene.bookCode === this.adventure.config.bookCode;
+      return (scene.img === this.image) && scene.bookCode === this.adventure.config.bookCode;
     });
-    if (this.adventure.config.debug) logger.debug(enhancedScene);
+    if (this.adventure.config.debug) logger.debug("Enhanced Scene:", enhancedScene);
 
     if (enhancedScene) {
       logger.info(`Found enhanced scene ${enhancedScene.name} for ${this.data.name} with image ${enhancedScene.img}`);
-      if (enhancedScene.adjustName && enhancedScene.adjustName.trim() != "") {
+      // don't adjust names for missing images, we will just use the base
+      if (enhancedScene.adjustName && enhancedScene.adjustName.trim() != "" && !enhancedScene.missing) {
         this.data.name = enhancedScene.adjustName;
         this.data.navName = enhancedScene.adjustName;
       }
-      if (enhancedScene.hiresImg && !disableEnhancedDownloads) {
-        this.adventure.downloadList.push({name: this.data.name, url: enhancedScene.hiresImg, path: this.image });
-      }
     } else {
-      logger.info(`No enhanced scene found for ${this.data.name} with image ${this.image}`);
+      logger.info(`No enhanced scene found for "${this.data.name}" with image "${this.image}"`);
+    }
+
+    console.warn(this.row.data);
+
+    if (enhancedScene || this.row.data.missing) {
+      // add image if we have not already added
+      const url = enhancedScene?.hiresImg ?? this.row.data.hiresImg;
+      logger.info(`Found hires image for "${this.image}" at "${url}"`);
+      if (url && !disableEnhancedDownloads 
+        && !this.adventure.downloadList.find((d) => d.path === this.image)
+      ) {
+        this.adventure.downloadList.push({name: this.data.name, url, path: this.image });
+      }
     }
   }
 

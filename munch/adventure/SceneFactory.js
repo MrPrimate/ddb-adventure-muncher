@@ -76,6 +76,7 @@ class SceneFactory {
           sceneName: adjustName,
           contentChunkId: `ddb-missing-${this.adventure.bookCode}-${id}`,
           missing: true,
+          hiresImg: es.hiresImg,
         };
         logger.info(`Attempting Missing Scene ${row.title} with ${row.contentChunkId}`);
         if (this.adventure.return) this.adventure.returns.statusMessage(`Attempting Missing Scene ${row.title}`);
