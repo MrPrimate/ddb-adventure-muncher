@@ -1,3 +1,7 @@
+# 1.4.5
+
+- Phandelver and Below support.
+
 # 1.4.4
 
 - Support for Baldurs Gate Gazetteer
