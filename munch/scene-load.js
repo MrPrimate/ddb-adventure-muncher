@@ -250,14 +250,14 @@ async function importScene(conf, sceneFile) {
     if (!token.flags || !token.flags.ddbActorFlags || !token.flags.ddbActorFlags.id) {
       console.warn(`Bad token match for ${token.name}`, token);
       if (token.name) {
-        const monsterNameLookup = conf.lookups["monsters"].find((e) => e.name == token.name);
+        const monsterNameLookup = conf.data.lookups["monsters"].find((e) => e.name == token.name);
         if (monsterNameLookup) {
           token.flags.ddbActorFlags = {
             id: monsterNameLookup.id,
             name: monsterNameLookup.name,
           };
         } else {
-          const monsterPartialNameLookup = conf.lookups["monsters"].find((e) => token.name.includes(e.name));
+          const monsterPartialNameLookup = conf.data.lookups["monsters"].find((e) => token.name.includes(e.name));
           if (monsterPartialNameLookup) {
             console.log("***********************************");
             console.log("***********************************");
@@ -325,7 +325,7 @@ async function importScene(conf, sceneFile) {
       if (token.flags.compendiumActorId) delete token.flags.compendiumActorId;
       if (token.flags.actorFolderId) delete token.flags.actorFolderId;
       if (!token.flags.ddbActorFlags.name) {
-        const monsterLookup = conf.lookups["monsters"].find((e) => e.id == token.flags.ddbActorFlags.id);
+        const monsterLookup = conf.data.lookups["monsters"].find((e) => e.id == token.flags.ddbActorFlags.id);
         if (monsterLookup) {
           token.flags.ddbActorFlags.name = monsterLookup.name;
         } else {
@@ -617,7 +617,7 @@ function actorCheck(config) {
     if (scene.flags.ddb.tokens) {
       scene.flags.ddb.tokens
         .filter((token) => token.flags.ddbActorFlags && token.flags.ddbActorFlags.id)
-        .filter((token) => !config.lookups["monsters"].some((e) => e.id == token.flags.ddbActorFlags.id))
+        .filter((token) => !config.data.lookups["monsters"].some((e) => e.id == token.flags.ddbActorFlags.id))
         .forEach((token) => {
           const result = {
             tokenName: token.name,
