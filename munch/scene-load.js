@@ -307,11 +307,11 @@ async function importScene(conf, sceneFile) {
 
           if (token.flags.ddbImages.keepToken && token.flags.ddbImages.tokenImage === "") {
             console.error(`ERROR! Could not find token image for ${token.name}`);
-            exit(1);
+            // exit(1);
           }
           if (token.flags.ddbImages.keepAvatar && token.flags.ddbImages.avatarImage === "") {
             console.error(`ERROR! Could not find token avatar image for ${token.name}`);
-            exit(1);
+            // exit(1);
           }
         }
         delete token.actorData.items;

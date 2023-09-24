@@ -947,6 +947,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/36235/402/638277146643998518.jpeg",
     sourceURL: "sources/tcsr",
   },
+  {
+    id: 124,
+    name: "MCv4",
+    description: "Monstrous Compendium Vol. 4: Eldraine Creatures",
+    sourceCategoryId: 7,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/36797/447/638301391860014579.jpeg",
+    sourceURL: "sources/mcv4",
+  },
 ];
 
 exports.sources = sources;
