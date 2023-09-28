@@ -1,3 +1,7 @@
+# 1.4.6
+
+- Lightning Keep support.
+
 # 1.4.5
 
 - Phandelver and Below support.
