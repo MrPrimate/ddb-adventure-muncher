@@ -467,11 +467,11 @@ async function importScene(conf, sceneFile) {
   // tokens exist in the flags and are regenerated later
   delete inData.tokens;
 
-  if (inData.flags && inData.flags.ddb && inData.flags.ddb.contentChunkId && !inData.flags.ddb.contentChunkId.startsWith("ddb-missing") && inData.name !== lookup.name) {
-    inData.name = lookup.name;
-    console.log("Indata update from missing scene");
-    inDataUpdate = true;
-  }
+  // if (inData.flags && inData.flags.ddb && inData.flags.ddb.contentChunkId && !inData.flags.ddb.contentChunkId.startsWith("ddb-missing") && inData.name !== lookup.name) {
+  //   inData.name = lookup.name;
+  //   console.log("Indata update from missing scene");
+  //   inDataUpdate = true;
+  // }
 
   console.log("********************");
   console.log("Lookup data:");
