@@ -1,3 +1,8 @@
+# 1.4.7
+
+- Fix for rogue `}}` sometimes appearing after images.
+- Support for Planescape.
+
 # 1.4.6
 
 - Lightning Keep support.

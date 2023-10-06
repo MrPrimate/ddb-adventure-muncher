@@ -108,7 +108,7 @@ class SceneParser {
             // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkName}]{${journalEntry.name}}`);
             const linkId = journalEntry.data.flags.ddb.linkId ? journalEntry.data.flags.ddb.linkId : journalEntry.data._id;
             const dmText = this.adventure.config.data.createHandouts ? ` @JournalEntry[${linkId}]{${journalEntry.name}}` : "";
-            this.adventure.replaceLinks.push( {html: img.outerHTML, ref: `${img.outerHTML}${dmText}}` });
+            this.adventure.replaceLinks.push( {html: img.outerHTML, ref: `${img.outerHTML}${dmText}` });
           }
           // if (!journalEntry.flags.ddb.duplicate) {
           if (this.adventure.config.data.createHandouts) this.adventure.journals.push(journalEntry);
@@ -208,7 +208,7 @@ class SceneParser {
             // document.content = document.content.replace(img.outerHTML, `${img.outerHTML} @JournalEntry[${journalEntry.flags.ddb.linkId}]{${title}}`);
             const linkId = journalEntry.data.flags.ddb.linkId ? journalEntry.data.flags.ddb.linkId : journalEntry.data._id;
             const dmText = this.adventure.config.data.createHandouts ? ` @JournalEntry[${linkId}]{${title}}` : "";
-            this.adventure.replaceLinks.push( {html: img.outerHTML, ref: `${img.outerHTML}${dmText}}` });
+            this.adventure.replaceLinks.push( {html: img.outerHTML, ref: `${img.outerHTML}${dmText}` });
           }
           if (this.adventure.config.data.createHandouts) this.adventure.journals.push(journalEntry);
         }
