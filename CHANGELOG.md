@@ -1,3 +1,8 @@
+# 1.4.8
+
+- Support for Adventure Atlas: The Mortuary.
+- Support for The Book of Many Things.
+
 # 1.4.7
 
 - Fix for rogue `}}` sometimes appearing after images.

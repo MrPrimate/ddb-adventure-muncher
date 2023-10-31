@@ -867,6 +867,15 @@ const sources = [
     sourceURL: "sources/p13",
   },
   {
+    id: 109,
+    name: "TBoMT",
+    description: "The Book of Many Things ",
+    sourceCategoryId: 1,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/34541/95/638205353415863412.jpeg",
+    sourceURL: "sources/tbomt",
+  },
+  {
     id: 110,
     name: "GotG",
     description: "Bigby Presents: Glory of the Giants",
