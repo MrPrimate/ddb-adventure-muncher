@@ -9,13 +9,14 @@ const parseTable = require("./TableParser.js");
 
 class ParsedTable {
 
+  static DICE_REGEX = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*d*\d*)?)/, "g");
+
   findDiceColumns() {
     let result = [];
     if (this.tableNode.tHead) {
       const headings = parseTable.getHeadings(this.tableNode);
       headings.forEach((h) => {
-        const diceRegex = new RegExp(/(\d*d\d+(\s*[+-]?\s*\d*)?)/, "g");
-        const match = h.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").match(diceRegex);
+        const match = h.replace(/[­––−-]/gu, "-").replace(/-+/g, "-").match(ParsedTable.DICE_REGEX);
         if (match) {
           result.push(h);
         }

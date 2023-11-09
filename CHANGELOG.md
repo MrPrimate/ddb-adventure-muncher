@@ -1,3 +1,7 @@
+# NEXT UP
+
+- Improve table formula matching where multiple dice used (e.g. Curse of Strahd random encounter tables).
+
 # 1.4.8
 
 - Support for Adventure Atlas: The Mortuary.

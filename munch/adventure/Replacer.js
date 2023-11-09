@@ -445,7 +445,7 @@ class DiceReplacer {
   
       // sign. We only take the sign standing exactly in front of the dice string
       // so +-1d8 => -1d8. Just as a failsave
-      const sign = rawSign.slice(-1);
+      const sign = rawSign === "" ? "+" : rawSign.slice(-1);
       const parsedCount = parseInt(sign + count);
   
       if (die) {
