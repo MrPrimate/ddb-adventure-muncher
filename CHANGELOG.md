@@ -1,7 +1,7 @@
 # 1.4.9
 
 - Improve table formula matching where multiple dice used (e.g. Curse of Strahd random encounter tables).
-- Support for Heroes' Feast: Saving the Childrens Menu
+- Support for Heroes' Feast: Saving the Children's Menu
 
 # 1.4.8
 
