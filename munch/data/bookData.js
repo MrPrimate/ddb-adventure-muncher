@@ -1001,6 +1001,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/37224/332/638319433931865291.jpeg",
     sourceURL: "sources/itsi",
   },
+  {
+    id: 129,
+    name: "HFSCM",
+    description: "Heroes’ Feast: Saving the Children’s Menu ",
+    sourceCategoryId: 1,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/37957/430/638350488745211592.jpeg",
+    sourceURL: "sources/hfscm",
+  },
 ];
 
 exports.sources = sources;
