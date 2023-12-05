@@ -1,3 +1,7 @@
+# 1.4.10
+
+- Support for Lairs of Etharis
+
 # 1.4.9
 
 - Improve table formula matching where multiple dice used (e.g. Curse of Strahd random encounter tables).
