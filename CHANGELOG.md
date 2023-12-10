@@ -1,3 +1,7 @@
+# 1.4.11
+
+- Improve detection of local meta data when downloads fail.
+
 # 1.4.10
 
 - Support for Lairs of Etharis

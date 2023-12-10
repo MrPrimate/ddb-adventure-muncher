@@ -110,6 +110,7 @@ class Config {
     this.setDataConfigSetting("logLevel", "info");
     this.setDataConfigSetting("forceNew", false);
     this.setDataConfigSetting("disableEnhancedDownloads", false);
+    this.setDataConfigSetting("noRemoteMetaData", false);
     this.data.subDirs = [
       "journal",
       // "compendium",
@@ -140,14 +141,29 @@ class Config {
   async getMetaData() {
     // only grab remote data if we are not providing a SCENE_DIR as we want to act on the local one
     if (this.returns) this.returns.statusMessage("Checking Meta Data");
+    if (this.data.noRemoteMetaData) return;
     const remoteMetaDataVersion = process.env.SCENE_DIR ? "0.0.0" : await enhance.getMetaData(this);
     if (!this.data.metaDataVersion || remoteMetaDataVersion != this.data.metaDataVersion) {
       this.data.metaDataVersion = remoteMetaDataVersion;
     }
   }
 
+  async loadLocalMetaDataVersion() {
+    if (this.returns) this.returns.statusMessage("Checking Local Meta Data");
+
+    const metaFileLocation = path.resolve(__dirname, path.join(this.metaDir, "meta.json"));
+    const existingVersionContent = FileHelper.loadJSONFile(metaFileLocation);
+    if (existingVersionContent.version) {
+      logger.info(`Local Meta Data Version ${existingVersionContent.version} present`);
+      this.data.metaDataVersion = existingVersionContent.version;
+    } else {
+      this.data.metaDataVersion = "0.0.0";
+    }
+  }
+
   async loadBook(bookCode) {
     this.bookCode = bookCode.toLowerCase();
+    await this.loadLocalMetaDataVersion();
     await this.getMetaData();
   
     // Checking user and authentication
