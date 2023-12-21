@@ -1019,6 +1019,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/38227/385/638361857871304044.jpeg",
     sourceURL: "sources/loe",
   },
+  {
+    id: 131,
+    name: "DoDR",
+    description: "Dungeons of Drakkenheim",
+    sourceCategoryId: 19,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/38226/811/638361838185130525.jpeg",
+    sourceURL: "sources/dodr",
+  },
 ];
 
 exports.sources = sources;

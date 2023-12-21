@@ -1,3 +1,7 @@
+# 1.4.12
+
+- Support for Dungeons and Drakkenheim
+
 # 1.4.11
 
 - Improve detection of local meta data when downloads fail.
