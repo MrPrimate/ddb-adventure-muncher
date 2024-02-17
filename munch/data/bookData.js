@@ -1028,6 +1028,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/38226/811/638361838185130525.jpeg",
     sourceURL: "sources/dodr",
   },
+  {
+    id: 133,
+    name: "HCS",
+    description: "Humblewood Campaign Setting",
+    sourceCategoryId: 20,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/39695/377/638425036767623471.jpeg",
+    sourceURL: "sources/hcs",
+  },
 ];
 
 exports.sources = sources;
