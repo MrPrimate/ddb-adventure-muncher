@@ -1,3 +1,7 @@
+# 1.4.13
+
+- Support for Humblewood
+
 # 1.4.12
 
 - Support for Dungeons and Drakkenheim
