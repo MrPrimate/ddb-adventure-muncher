@@ -60,6 +60,10 @@ class FolderFactory {
         );
         break;
       }
+      // case "journal": {
+      //   folder = this.adventure.folderFactory.masterFolders[type];
+      //   break;
+      // }
       default: {
         if (row.data.cobaltId) {
           folder = this.adventure.folders.find((f) =>
@@ -80,6 +84,10 @@ class FolderFactory {
     }
 
     if (!folder) folder = new Folder(folderData);
+    // we discard folders for journals and use top level, but still need to create subs for images and notes
+    if (specialType === "journal") {
+      folder = this.adventure.folderFactory.masterFolders[type];
+    }
     return folder._id;
   }
 }

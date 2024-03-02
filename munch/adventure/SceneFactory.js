@@ -80,8 +80,6 @@ class SceneFactory {
         };
         logger.info(`Attempting Missing Scene ${row.title} with ${row.contentChunkId}`);
         if (this.adventure.return) this.adventure.returns.statusMessage(`Attempting Missing Scene ${row.title}`);
-        const playerEntry = this.adventure.journalFactory.createImageJournal({ data: row}, es.img);
-        this.adventure.journalFactory.addJournal(playerEntry);
         const scene = new Scene(this.adventure, { data: row}, es.img);
         this.adventure.scenes.push(scene);
       });

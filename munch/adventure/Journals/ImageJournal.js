@@ -86,18 +86,6 @@ class ImageJournal extends Journal {
 
   }
 
-  _generateJournalEntryNoPages() {
-    this.data.img = this.imageContent;
-
-    if (this.duplicate) {
-      const journalMatch = this.adventure.journals.find((j) => j.img === this.data.img);
-      this.data.flags.ddb.linkId = journalMatch ? journalMatch._id : null;
-      this.data.flags.ddb.linkName = journalMatch ? journalMatch.name : null;
-    }
-    this._generateJournalEntryShared();
-    this.data.flags.ddb.linkId = this.data._id;
-  }
-
   _additionalConstruction({ imagePath }) {
     this.imagePath = imagePath;
     this.imageContent = this.replaceImgLinksForJournal();

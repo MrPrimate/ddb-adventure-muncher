@@ -8,7 +8,7 @@ class Journal {
   static JOURNAL_SORT = 1000;
 
   get folderType() {
-    return "text";
+    return "journal";
   }
 
   get pageType() {
@@ -37,17 +37,13 @@ class Journal {
       logger.info(`Appending to chapter... ${this.row.data.title} ${this.row.data.parentId} search...`);
       this.adventure.journals.forEach((journal) => {
         if (journal.data.flags.ddb.cobaltId === this.row.data.parentId) {
-          if (this.data.pages.length > 0) {
-            const page = this.data.pages[0];
-            if (page.name != journal.data.name) {
-              page.title.show = true;
-            }
-            journal.data.pages.push(page);
-            journal.contentChunkIds[this.data._id] = this.contentChunkIds[this.data._id];
-            journal.elementIds[this.data._id] = this.elementIds[this.data._id];
-          } else {
-            journal.data.content += this.data.content;
+          const page = this.data.pages[0];
+          if (page.name != journal.data.name) {
+            page.title.show = true;
           }
+          journal.data.pages.push(page);
+          journal.contentChunkIds[this.data._id] = this.contentChunkIds[this.data._id];
+          journal.elementIds[this.data._id] = this.elementIds[this.data._id];
         }
       });
     }
@@ -92,10 +88,6 @@ class Journal {
 
   get forceAdd() {
     return Number.isInteger(parseInt(this.row.data.cobaltId));
-  }
-
-  get createHandouts() {
-    return this.adventure.config.data.createHandouts && !this.row.data.player;
   }
 
   get createSections() {
@@ -162,7 +154,8 @@ class Journal {
     if (row.data.parentId) this.data.flags.ddb.parentId = row.data.parentId;
     if (!this.row.ddbId) this.row.ddbId = row.data.id;
 
-    this.data.sort = this.JOURNAL_SORT + parseInt(row.data.id);
+    this.data.sort = Journal.JOURNAL_SORT + parseInt(row.data.id);
+
     this.getFolder();
     this.data._id = this.adventure.idFactory.getId(this.data, "JournalEntry");
 

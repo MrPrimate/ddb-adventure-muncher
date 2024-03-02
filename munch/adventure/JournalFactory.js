@@ -1,7 +1,6 @@
 const logger = require("../logger.js");
 const { Journal } = require("./Journals/Journal.js");
 const { ImageJournal } = require("./Journals/ImageJournal.js");
-const { NoteJournal } = require("./Journals/NoteJournal.js");
 
 class JournalFactory {
 
@@ -21,14 +20,8 @@ class JournalFactory {
     return journal;
   }
 
-  createNoteJournal(row) {
-    const journal = new NoteJournal(this.adventure, row);
-    this.addJournal(journal, row);
-    return journal;
-  }
-
   addJournal(journal) {
-    const validType = journal.forceAdd || journal.createHandouts || journal.createSections;
+    const validType = journal.forceAdd || journal.createSections;
     // we never add duplicates
     // return !this.duplicate && validType;
     if (!journal.duplicate && validType) {

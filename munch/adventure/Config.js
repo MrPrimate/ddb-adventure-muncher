@@ -99,7 +99,6 @@ class Config {
   #setDefaultConfig() {
     // const v5Schema = Number.parseFloat(this.data.schemaVersion) >= 5.0;
     this.setDataConfigSetting("schemaVersion", 5.0); // default schema is v3.0
-    this.setDataConfigSetting("createHandouts", false);
     this.setDataConfigSetting("observeAll", false);
     this.setDataConfigSetting("noteAdminMode", false);
     this.setDataConfigSetting("outputKey", false);

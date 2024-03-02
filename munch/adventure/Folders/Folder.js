@@ -18,11 +18,66 @@ class Folder {
     return this.data._id;
   }
 
+  getParentFolder() {
+    let parent = null;
+    switch (this.specialType) {
+      case "note": {
+        parent = this.adventure.folders.find((f) =>
+          f.flags.ddb.cobaltId == this.parentId
+          && f.type == this.type
+          && !f.flags.ddb.img
+          && !f.flags.ddb.note
+        );
+        break;
+      }
+      case "image": {
+        parent = this.adventure.folders.find((f) =>
+          f.flags.ddb.cobaltId == this.parentId
+          && f.type == this.type
+          && !f.flags.ddb.img
+          && !f.flags.ddb.note
+        );
+        break;
+      }
+      case "section": {
+        parent = this.adventure.folders.find((f) =>
+          f.flags.ddb.cobaltId == this.row.data.parentId
+          && f.type == this.type
+          && !f.flags.ddb.img
+        );
+        break;
+      }
+      case "base": {
+        break;
+      }
+      default: {
+        // place in root folder
+        parent = this.adventure.folders.find((f) =>
+          f.flags.ddb.cobaltId == -1
+          && f.type == this.type
+          && !f.flags.ddb.img
+        );
+        break;
+      }
+    }
+    if (!parent && this.specialType !== "base") {
+      parent = new Folder({
+        adventure: this.adventure,
+        row: this.row,
+        type: this.type,
+        specialType: this.specialType,
+      });
+    }
+    return parent;
+  }
+
 
   constructor({adventure, row, type, specialType = null}) {
     this.adventure = adventure;
     this.specialType = specialType;
     this.type = type;
+    this.specialType = specialType;
+    this.row = row;
     const folderJsonPath = path.join(this.adventure.overrides.templateDir, "folder.json");
     this.data = JSON.parse(JSON.stringify(require(folderJsonPath)));
 
@@ -41,33 +96,31 @@ class Folder {
       this.data.parent = this.adventure.folderFactory.masterFolders[type]._id;
     }
 
-    const parentId = (row.data.cobaltId) ? row.data.cobaltId : row.data.parentId;
+    this.parentId = (row.data.cobaltId) ? row.data.cobaltId : row.data.parentId;
+    this.parent = this.getParentFolder();
 
     // handle changes based on various folder types
     switch (specialType) {
       case "note": {
-        const parent = this.adventure.folders.find((f) => f.flags.ddb.cobaltId == parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
-        this.data.name = `[Pins] ${row.data.sceneName ? row.data.sceneName : parent.name}`;
+        this.data.name = `[Pins] ${row.data.sceneName ? row.data.sceneName : this.parent.name}`;
         this.data.sorting = "a";
-        this.data.parent = `${parent._id}`;
-        this.data.flags.ddb.parentId = parentId;
+        this.data.parent = `${this.parent._id}`;
+        this.data.flags.ddb.parentId = this.parentId;
         break;
       }
       case "image": {
-        const parent = this.adventure.folders.find((f) => f.flags.ddb.cobaltId == parentId && f.type == type && !f.flags.ddb.img && !f.flags.ddb.note);
-        this.data.name = `[Handouts] ${row.data.sceneName ? row.data.sceneName : (parent) ? parent.name : row.data.title }`;
+        this.data.name = `[Handouts] ${row.data.sceneName ? row.data.sceneName : (this.parent) ? this.parent.name : row.data.title }`;
         this.data.sort = 1000000;
-        if (parent) { // tmp fix for hftt, for some reason it does not generate a parent folder
-          this.data.parent = `${parent._id}`;
+        if (this.parent) { // tmp fix for hftt, for some reason it does not generate a parent folder
+          this.data.parent = `${this.parent._id}`;
         }
-        this.data.flags.ddb.parentId = parentId;
+        this.data.flags.ddb.parentId = this.parentId;
         break;
       }
       case "section": {
-        const parent = this.adventure.folders.find((f) => f.flags.ddb.cobaltId == row.data.parentId && f.type == type && !f.flags.ddb.img);
-        if (parent) {
-          this.data.parent = `${parent._id}`;
-          this.data.name = `[Sections] ${parent.name}`;
+        if (this.parent) {
+          this.data.parent = `${this.parent._id}`;
+          this.data.name = `[Sections] ${this.parent.name}`;
         }
         this.data.flags.ddb.parentId = row.data.parentId;
         if (!this.data.name || this.data.name === "") {
@@ -81,8 +134,7 @@ class Folder {
       }
       default: {
         // place in root folder
-        const parent = this.adventure.folders.find((f) => f.flags.ddb.cobaltId == -1 && f.type == type && !f.flags.ddb.img);
-        if (parent) this.data.parent = `${parent._id}`;
+        if (this.parent) this.data.parent = `${this.parent._id}`;
         if (!this.data.name || this.data.name === "") {
           logger.warn("NO NAME ROW FOUND!!!");
         }

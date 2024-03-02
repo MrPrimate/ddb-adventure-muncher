@@ -1,3 +1,9 @@
+# 2.0.0
+
+- Requires Foundry v11 and D&D 5e system 3.0.0 or higher and DDB Importer 4.1.0 or higher.
+- Generating Handout Journals has largely been removed. You can create hand outs for player by hovering over the images and selecting the Show Players Image option. It will offer to either show the image, or create a journal handout for the players to see.
+- Please generate a new config file from DDB Importer.
+
 # 1.4.13
 
 - Support for Humblewood
