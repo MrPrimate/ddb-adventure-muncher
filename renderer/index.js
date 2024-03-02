@@ -31,8 +31,6 @@ generateButton.addEventListener("click", (event) => {
   generateButton.disabled = true;
   const bookCode = document.getElementById("book-select");
   const createHandouts = document.getElementById("create-handouts");
-  const createPlayerHandouts = document.getElementById("create-player-handouts");
-  const createPinJournals = document.getElementById("create-pin-journals");
   const observeAll = document.getElementById("observe-all");
   const messageDiv = document.getElementById("message-div");
   messageDiv.innerHTML = "";
@@ -41,8 +39,6 @@ generateButton.addEventListener("click", (event) => {
     bookCode: bookCode.value,
     observeAll: observeAll.checked,
     createHandouts: createHandouts.checked,
-    createPlayerHandouts: createPlayerHandouts.checked,
-    createPinJournals: createPinJournals.checked,
   };
 
   if (Number.parseInt(bookCode.value) !== 0) {
@@ -120,17 +116,9 @@ window.api.receive("config", (config) => {
       outputLocation.innerHTML = config.data.outputDirEnv;
       window.api.send("books", config);
     }
-    const v4Schema = Number.parseFloat(config.data.schemaVersion) >= 4.0;
-    if (v4Schema) {
-      versionSupport.innerHTML = "<p><b>Version:</b> v10+ mode. To generate for v9, recreate your config file.</p>";
-    } else {
-      versionSupport.innerHTML = "<p><b>Version:</b> v9 mode. To generate for v10+, recreate your config file.</p>";
-      document.getElementById("create-pin-journals").checked = false;
-      document.getElementById("create-pin-journals").disabled = true;
-    }
+    versionSupport.innerHTML = "<p><b>Version:</b> v11+ mode. This version of Adventure Muncher recommends D&D 5e System v3.0.0 or higher.</p>";
+
     document.getElementById("create-handouts").checked = config.data.createHandouts === true;
-    document.getElementById("create-player-handouts").checked = config.data.createPlayerHandouts === true;
-    document.getElementById("create-pin-journals").checked = config.data.createPinJournals === true;
   } else {
     console.warn("No config file!");
     contentLoadMessage.innerHTML = "Config not found";

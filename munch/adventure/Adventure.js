@@ -149,7 +149,7 @@ class Adventure {
     this.data.required = {};
     this.data.version = parseFloat(this.config.data.schemaVersion);
     this.supports = {
-      pages: parseFloat(this.config.data.schemaVersion) >= 4.0,
+      pages: true,
     };
 
     this.replaceLinks = [];
@@ -222,19 +222,12 @@ class Adventure {
       logger.info(`Row name now: ${row.data.title}`);
       if (global.gc) global.gc();
 
-      // note journals split, and add notes to scenes
-      logger.info(`Generating Note Journals for ${row.data.title}`);
-      this.notesFactory.generateJournals(row);
-      if (global.gc) global.gc();
-
       logger.info(`Generating tables for ${row.data.title}`);
       this.tableFactory.generateTables(row);
       if (global.gc) global.gc();
 
       // if this is a top tier parent document we process it for scenes now.
-      const content = this.supports.pages
-        ? journal.data.pages[0]
-        : journal.data;
+      const content = journal.data.pages[0];
       // if (content && journal.data.flags.ddb.cobaltId) {
       if (content) {
         logger.info(`Finding Scenes for ${row.data.title}`);
@@ -327,8 +320,7 @@ class Adventure {
 
   getLookups(all = false) {
     logger.info("Getting lookups");
-    const fileName = this.supports.pages ? "lookupPages.json" : "lookup.json";
-    const lookupFile = path.resolve(__dirname, this.config.configDir, fileName);
+    const lookupFile = path.resolve(__dirname, this.config.configDir, "lookupPages.json");
     if (fs.existsSync(lookupFile)){
       const data = FileHelper.loadJSONFile(lookupFile);
       if (all){
@@ -344,8 +336,7 @@ class Adventure {
   #saveLookups() {
     const resolvedContent = this.getLookups(true);
     resolvedContent[this.bookCode] = this.ids;
-    const fileName = this.supports.pages ? "lookupPages.json" : "lookup.json";
-    const lookupFile = path.resolve(__dirname, this.config.configDir, fileName);
+    const lookupFile = path.resolve(__dirname, this.config.configDir, "lookupPages.json");
     FileHelper.saveJSONFile(resolvedContent, lookupFile);
   }
 

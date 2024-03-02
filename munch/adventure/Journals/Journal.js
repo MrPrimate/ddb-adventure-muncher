@@ -37,7 +37,7 @@ class Journal {
       logger.info(`Appending to chapter... ${this.row.data.title} ${this.row.data.parentId} search...`);
       this.adventure.journals.forEach((journal) => {
         if (journal.data.flags.ddb.cobaltId === this.row.data.parentId) {
-          if (this.adventure.supports.pages && this.data.pages.length > 0) {
+          if (this.data.pages.length > 0) {
             const page = this.data.pages[0];
             if (page.name != journal.data.name) {
               page.title.show = true;
@@ -72,11 +72,7 @@ class Journal {
 
   setPermissions() {
     if (this.adventure.config.data.observeAll) {
-      if (this.adventure.config.data.schemaVersion >= 4.0) {
-        this.data.ownership.default = 2;
-      } else {
-        this.data.permission.default = 2;
-      }
+      this.data.ownership.default = 2;
     }
   }
 
@@ -94,37 +90,16 @@ class Journal {
 
   }
 
-  _generateJournalEntryNoPages() {
-    const firstElement = this.row.doc.body.firstElementChild;
-    try {
-      const allFirstElements = this.row.doc.body.getElementsByTagName(firstElement.tagName);
-      if (firstElement.tagName === "H1" || (allFirstElements.length === 1 && firstElement.tagName !== "P")) {
-        firstElement.remove();
-      }
-      this.data.content = this.row.doc.body.innerHTML.replace(/\s+/g, " ");
-    } catch (err) {
-      logger.error("Journal Generation failed, bad note row?", this.row.data);
-      throw err;
-    }
-
-    this.data.flags.ddb.linkId = this.data._id;
-
-  }
-
   get forceAdd() {
     return Number.isInteger(parseInt(this.row.data.cobaltId));
   }
 
   get createHandouts() {
-    return ((this.adventure.config.data.createHandouts && !this.row.data.player)
-      || (this.row.player && this.config.data.createPlayerHandouts));
+    return this.adventure.config.data.createHandouts && !this.row.data.player;
   }
 
   get createSections() {
-    return this.adventure.supports.pages
-      // never with page support
-      ? !this.row.data.parentId || this.adventure.config.data.noteAdminMode
-      : this.adventure.config.data.createSections; // hidden setting in v9
+    return !this.row.data.parentId || this.adventure.config.data.noteAdminMode;
   }
 
   getFolder() {
@@ -156,9 +131,7 @@ class Journal {
     logger.info(`Starting journal entry creation ${row.data.title}`);
     this.adventure = adventure;
     this.row = row;
-    this.data = this.adventure.supports.pages
-      ? JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "journal-pages.json"))))
-      : JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"journal.json"))));
+    this.data = JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "journal-pages.json"))));
 
     this._additionalConstruction(options);
 
@@ -198,12 +171,7 @@ class Journal {
     this.contentChunkIds = {};
     this.elementIds = {};
     this.generateContentLinks();
-
-    if (this.adventure.supports.pages) {
-      this._generateJournalEntryWithPages();
-    } else {
-      this._generateJournalEntryNoPages();
-    }
+    this._generateJournalEntryWithPages();
 
     logger.info(`Generated journal entry ${this.data.name}`);
     if (this.adventure.return) this.adventure.returns.statusMessage(`Generated journal entry ${this.data.name}`);
@@ -219,40 +187,27 @@ class Journal {
     return JSON.parse(this.toJson());
   }
 
-  // this runs the replacer for each journal/journal page
+  // this runs the replacer for each journal page
   // it should be called after all journals, scenes and tables have been generated
   fixUp() {
     logger.info(`Fixing up text journal: ${this.data.name}`);
     this.adventure.replaceLinks.forEach((link) => {
-      if (this.adventure.supports.pages) {
-        this.data.pages.forEach((page) =>{
-          if (page.type === "text") {
-            page.text.content = page.text.content.replace(link.html, link.ref);
-          }
-        });
-      } else {
-        this.data.content = this.data.content.replace(link.html, link.ref);
-      }
-    });
- 
-    if (this.adventure.supports.pages) {
       this.data.pages.forEach((page) =>{
         if (page.type === "text") {
-          const linkDetails = { text: page.text.content, name: `${this.data.name}`, journal: this };
-          const links = new DynamicLinkReplacer(this.adventure, linkDetails);
-          links.process();
-          page.text.content = links.result;
-          page.text.content = page.text.content.replace(/\s+/g, " ");
+          page.text.content = page.text.content.replace(link.html, link.ref);
         }
       });
-    } else {
-      const linkDetails = { text: this.data.content, name: `${this.data.name}`, journal: this };
-      const links = new DynamicLinkReplacer(this.adventure, linkDetails);
-      links.process();
-      this.data.content = links.result;
-      this.data.content = this.data.content.replace(/\s+/g, " ");
-    }
+    });
 
+    this.data.pages.forEach((page) =>{
+      if (page.type === "text") {
+        const linkDetails = { text: page.text.content, name: `${this.data.name}`, journal: this };
+        const links = new DynamicLinkReplacer(this.adventure, linkDetails);
+        links.process();
+        page.text.content = links.result;
+        page.text.content = page.text.content.replace(/\s+/g, " ");
+      }
+    });
   }
 
   // returns page Id if content chunk id known in contents

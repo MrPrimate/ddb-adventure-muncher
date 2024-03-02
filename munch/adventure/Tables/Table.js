@@ -66,9 +66,7 @@ class Table {
   constructor({adventure, row, diceKey, tableData, count}) {
     this.adventure = adventure;
     this.contentChunkId = tableData.contentChunkId;
-    this.data = this.adventure.config.data.schemaVersion >= 4.0
-      ? JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "table-4.json"))))
-      : JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"table.json"))));
+    this.data = JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"table.json"))));
 
 
     const nameExtension = tableData.diceKeys > 1 ? ` [${tableData.diceKeys}]` : "";
@@ -88,11 +86,7 @@ class Table {
     if (row.parentId) this.data.flags.ddb.parentId = row.parentId;
 
     if (this.adventure.config.data.observeAll) {
-      if (this.adventure.config.data.schemaVersion >= 4.0) {
-        this.data.ownership.default = 2;
-      } else {
-        this.data.permission.default = 2;
-      }
+      this.data.ownership.default = 2;
     }
 
     const tableHint = this.adventure.enhancements.tableHints

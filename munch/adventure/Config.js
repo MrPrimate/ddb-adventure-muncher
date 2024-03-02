@@ -13,8 +13,8 @@ class Config {
   static TIMEOUT = 15000;
   static ENHANCEMENT_ENDPOINT = "https://proxy.ddb.mrprimate.co.uk";
   static DEFAULT_CONFIG_DIR = "../dbs";
-  static LATEST_MAJOR_SCHEMA = 4;
-  static LATEST_MINOR_SCHEMA = 4.3;
+  static LATEST_MAJOR_SCHEMA = 5;
+  static LATEST_MINOR_SCHEMA = 5.0;
 
   setDataConfigSetting(settingName, defaultValue) {
     const value = this.options[settingName] !== undefined
@@ -97,13 +97,10 @@ class Config {
   }
 
   #setDefaultConfig() {
-    const v4Schema = Number.parseFloat(this.data.schemaVersion) >= 4.0;
-    this.setDataConfigSetting("schemaVersion", 3.0); // default schema is v3.0
-    this.setDataConfigSetting("createHandouts", !v4Schema);
-    this.setDataConfigSetting("createPlayerHandouts", !v4Schema);
-    this.setDataConfigSetting("createPinJournals", !v4Schema);
+    // const v5Schema = Number.parseFloat(this.data.schemaVersion) >= 5.0;
+    this.setDataConfigSetting("schemaVersion", 5.0); // default schema is v3.0
+    this.setDataConfigSetting("createHandouts", false);
     this.setDataConfigSetting("observeAll", false);
-    this.setDataConfigSetting("createSections", !v4Schema);
     this.setDataConfigSetting("noteAdminMode", false);
     this.setDataConfigSetting("outputKey", false);
     this.setDataConfigSetting("generateFixes", false);

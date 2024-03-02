@@ -76,13 +76,12 @@ class DynamicLinkReplacer {
         // logger.info(slugMatch);
         const slug = slugMatch[1].replace(/\//g, "").split("#");
         const refactoredSlug = (slug.length > 1) ? `${slug[0].toLowerCase()}#${slug[1]}` : slug[0].toLowerCase();
-        const journalPageMap = this.adventure.supports.pages ? this.adventure.journals.map((j) => j.data.pages).flat() : this.adventure.journals;
-        const journalPage = journalPageMap.find((journalPage) => {
-          const pageData = this.adventure.supports.pages ? journalPage : journalPage.data;
+        const journalPageMap = this.adventure.journals.map((j) => j.data.pages).flat();
+        const journalPage = journalPageMap.find((pageData) => {
           let check = pageData.flags.ddb.slug === refactoredSlug;
           if (!check && slug.length > 1) check = pageData.flags.ddb.slug === slug[0].toLowerCase();
           const pageNameSlug = pageData.name.replace(/[^\w\d]+/g, "");
-          const pageCheck = this.adventure.supports.pages && slug.length > 2
+          const pageCheck = slug.length > 2
             ? !pageData.flags.ddb.img && !pageData.flags.ddb.note
               && pageNameSlug.toLowerCase() === slug[1].toLowerCase()
             : true;
@@ -91,17 +90,10 @@ class DynamicLinkReplacer {
         if (journalPage) {
           const textPointer = node.textContent.trim() !== "";
           const textValue = `${node.textContent}`;
-          if (this.adventure.supports.pages) {
-            
-            const journalEntry = this.adventure.journals.find((j) => j.data.pages.some((p) => p._id === journalPage._id));
-            const slugLink = (slug.length > 2) ? `#${slug[2].replace(/[^\w\d]+/g, "")}` : "";
-            const result = `@UUID[JournalEntry.${journalEntry.data._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`;
-            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, result);
-          } else {
-            const result = `@JournalEntry[${journalPage.data.name}]${textPointer ? textValue : ""}`;
-            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, result);
-          }
-          
+          const journalEntry = this.adventure.journals.find((j) => j.data.pages.some((p) => p._id === journalPage._id));
+          const slugLink = (slug.length > 2) ? `#${slug[2].replace(/[^\w\d]+/g, "")}` : "";
+          const result = `@UUID[JournalEntry.${journalEntry.data._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`;
+          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, result);
         } else {
           logger.warn(`NO JOURNAL for "${node.outerHTML}" Slugs: "${slug}" Refactored slug: "${refactoredSlug}"`);
         }
@@ -140,7 +132,7 @@ class DynamicLinkReplacer {
             const pageLink = lookupEntry.pageId ? `.JournalEntryPage.${lookupEntry.pageId}` : "";
             const linkStub = lookupEntry.headerLink ? `#${lookupEntry.headerLink}` : "";
             const link = `${lookupEntry.compendium}.${documentRef}${pageLink}${linkStub}`;
-            const linkType = this.adventure.supports.pages && lookupEntry._id ? "UUID[Compendium." : "Compendium[";
+            const linkType = lookupEntry._id ? "UUID[Compendium." : "Compendium[";
             this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@${linkType}${link}]{${node.textContent}}`);
           }
         } 
@@ -180,7 +172,7 @@ class DynamicLinkReplacer {
       if (fileMatch) {
         this.adventure.otherFiles.push({ name: node.inner, fileName: `assets/${fileMatch[1]}` });
 
-        if (this.adventure.supports.pages && this.journal) {
+        if (this.journal) {
           const pageData = {
             name: node.innerHTML,
             content: `assets/${fileMatch[1]}`,
@@ -301,7 +293,7 @@ class StaticLinkReplacer {
             const pageLink = lookupEntry.pageId ? `.JournalEntryPage.${lookupEntry.pageId}` : "";
             const linkStub = lookupEntry.headerLink ? `#${lookupEntry.headerLink}` : "";
             const link = `${lookupEntry.compendium}.${documentRef}${pageLink}${linkStub}`;
-            const linkType = this.adventure.supports.pages && lookupEntry._id ? "UUID[Compendium." : "Compendium[";
+            const linkType = lookupEntry._id ? "UUID[Compendium." : "Compendium[";
             this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@${linkType}${link}]{${node.textContent}}`);
           }
         } 

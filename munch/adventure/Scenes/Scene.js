@@ -60,18 +60,17 @@ class Scene {
   }
 
   #journalMatch() {
-    let journalMatch = this.adventure.supports.pages
-      ? this.adventure.journals.map((j) => j.data.pages).flat().find((journal) => journal._id === this.row.data.originDocId)
-      : this.adventure.journals.find((journal) => journal.data._id === this.row.data.originDocId);
+    let journalMatch = this.adventure.journals
+      .map((j) =>j.data.pages)
+      .flat()
+      .find((journal) => journal._id === this.row.data.originDocId);
     if (!journalMatch) {
-      journalMatch = this.adventure.supports.pages
-        ? this.adventure.journals.map((j) => j.data.pages).flat().find((journalPage) => 
+      journalMatch = this.adventure.journals
+        .map((j) => j.data.pages)
+        .flat()
+        .find((journalPage) => 
           journalPage.name.includes(this.data.navName)
           && !journalPage.flags.ddb.notes && !journalPage.flags.ddb.img && !journalPage.src
-        )
-        : this.adventure.journals.find((journal) => 
-          journal.data.name.includes(this.data.navName)
-          && !journal.data.flags.ddb.notes && !journal.data.flags.ddb.img && !journal.data.img
         );
     }
     if (journalMatch) this.data.journal = journalMatch._id;
@@ -80,34 +79,9 @@ class Scene {
   linkNotes() {
     this.notes.forEach((note) => {
       logger.info(`Checking ${note.label}`);
-      const noteJournal = this.adventure.config.data.createPinJournals || this.adventure.config.data.schemaVersion <= 4.1
-        ? this.adventure.journals.find((journal) => {
-          const contentChunkIdMatch = note.flags.ddb.contentChunkId
-            ? journal.data.flags.ddb && note.flags.ddb && journal.data.flags.ddb.contentChunkId == note.flags.ddb.contentChunkId
-            : false;
-
-          const noContentChunk = !note.flags.ddb.contentChunkId
-            && note.flags.ddb.originalLink && note.flags.ddb.ddbId && note.flags.ddb.parentId
-            && note.flags.ddb.slug && note.flags.ddb.linkName;
-          const originMatch = noContentChunk
-            ? journal.data.flags.ddb.slug == note.flags.ddb.slug
-            && journal.data.flags.ddb.ddbId == note.flags.ddb.ddbId
-            && journal.data.flags.ddb.parentId == note.flags.ddb.parentId
-            && journal.data.flags.ddb.cobaltId == note.flags.ddb.cobaltId
-            && journal.data.flags.ddb.originalLink == note.flags.ddb.originalLink
-            && journal.data.flags.ddb.linkName == note.flags.ddb.linkName
-            : false;
-          const journalNameMatch = !contentChunkIdMatch && !originMatch
-            ? this.adventure.supports.pages
-              ? journal.data.pages.some((page) => page.name.trim() === note.label.trim())
-              : journal.data.name.trim() == note.label.trim()
-            : false;
-          return contentChunkIdMatch || originMatch || journalNameMatch;
-
-        })
-        : this.adventure.journals.find((journal) =>
-          journal.data.flags.ddb.cobaltId == note.flags.ddb.parentId
-        );
+      const noteJournal = this.adventure.journals.find((journal) =>
+        journal.data.flags.ddb.cobaltId == note.flags.ddb.parentId
+      );
 
       if (noteJournal && !note.flags.ddb?.noLink) {
         logger.info(`Found ${note.label} matched to ${noteJournal.data._id} (${noteJournal.data.name})`);
@@ -136,59 +110,54 @@ class Scene {
           n.flags.ddb.linkId = noteId;
           // icon generation
           const icon = this.generateIcon(note.label, note.texture?.src);
-          if (this.adventure.config.data.schemaVersion > 4.0) {
-            n.texture = note.texture ?? {};
-            n.texture.src = icon;
-            if (!icon.startsWith("icons/svg")) {
-              n.texture.rotation = 0;
-              n.texture.tint= null;
-            }
-          } else {
-            n.icon = icon;
+
+          n.texture = note.texture ?? {};
+          n.texture.src = icon;
+          if (!icon.startsWith("icons/svg")) {
+            n.texture.rotation = 0;
+            n.texture.tint= null;
           }
 
-          if (!this.adventure.config.data.createPinJournals && this.adventure.config.data.schemaVersion >= 4.2) {
-            n.flags.ddb.labelName = `${note.label}`; 
-            // generate slug, and strip 0, support for native ddb sluging
-            n.flags.ddb.slugLink = note.label.replace(/[^\w\d]+/g, "").replace(/^([a-zA-Z]?)0+/, "$1");
-            // support for anchor links mondule
-            n.flags.anchor = {
-              slug: n.flags.ddb.slugLink
-            };
-            n.text = note.label;
+          n.flags.ddb.labelName = `${note.label}`; 
+          // generate slug, and strip 0, support for native ddb sluging
+          n.flags.ddb.slugLink = note.label.replace(/[^\w\d]+/g, "").replace(/^([a-zA-Z]?)0+/, "$1");
+          // support for anchor links mondule
+          n.flags.anchor = {
+            slug: n.flags.ddb.slugLink
+          };
+          n.text = note.label;
 
-            const contentChunkIdPageId = note.flags.ddb.contentChunkId
-              ? noteJournal.getPageIdForContentChunkId(note.flags.ddb.contentChunkId)
-              : undefined;
-            const slugLinkPageId = noteJournal.getPageIdForElementId(n.flags.ddb.slugLink);
+          const contentChunkIdPageId = note.flags.ddb.contentChunkId
+            ? noteJournal.getPageIdForContentChunkId(note.flags.ddb.contentChunkId)
+            : undefined;
+          const slugLinkPageId = noteJournal.getPageIdForElementId(n.flags.ddb.slugLink);
 
-            // console.warn("MATCHES", { slugLinkPageId, contentChunkIdPageId, noteFlags: note.flags.ddb });
-            // console.warn("PageIds", noteJournal.data.pages.map((p) => {return {id: p._id, flags: p.flags.ddb}}));
-            const journalPage = noteJournal.data.pages.find((page) =>
-              page.flags.ddb.parentId == note.flags.ddb.parentId
-              && (page.flags.ddb.slug == note.flags.ddb.slug
-              || page.flags.ddb.slug.replace(/^([a-zA-Z]?)0+/, "$1") == note.flags.ddb.slug
-              || page.flags.ddb.slug.startsWith(note.flags.ddb.slug))
-              && (page._id === contentChunkIdPageId || page._id === slugLinkPageId)
-            );
+          // console.warn("MATCHES", { slugLinkPageId, contentChunkIdPageId, noteFlags: note.flags.ddb });
+          // console.warn("PageIds", noteJournal.data.pages.map((p) => {return {id: p._id, flags: p.flags.ddb}}));
+          const journalPage = noteJournal.data.pages.find((page) =>
+            page.flags.ddb.parentId == note.flags.ddb.parentId
+            && (page.flags.ddb.slug == note.flags.ddb.slug
+            || page.flags.ddb.slug.replace(/^([a-zA-Z]?)0+/, "$1") == note.flags.ddb.slug
+            || page.flags.ddb.slug.startsWith(note.flags.ddb.slug))
+            && (page._id === contentChunkIdPageId || page._id === slugLinkPageId)
+          );
 
-            if (journalPage) {
-              n.pageId = journalPage._id;
-            } else {
-              logger.error(`Unable to find journal page for note ${note.label}`, note);
-              const idPage = noteJournal.data.pages.find((page) => page._id === contentChunkIdPageId || page._id === slugLinkPageId);
-              this.adventure.bad.notes.push({
-                noteLabel: note.label,
-                noteFlags: note.flags.ddb,
-                contentChunkIdPageId,
-                slugLinkPageId,
-                slug: note.flags.ddb.slug,
-                parentId: note.flags.ddb.parentId,
-                idPageFlags: idPage ? idPage.flags.ddb : "No page",
-                nFlags: n.flags.ddb,
-                journalElementIds: noteJournal.elementIds,
-              });
-            }
+          if (journalPage) {
+            n.pageId = journalPage._id;
+          } else {
+            logger.error(`Unable to find journal page for note ${note.label}`, note);
+            const idPage = noteJournal.data.pages.find((page) => page._id === contentChunkIdPageId || page._id === slugLinkPageId);
+            this.adventure.bad.notes.push({
+              noteLabel: note.label,
+              noteFlags: note.flags.ddb,
+              contentChunkIdPageId,
+              slugLinkPageId,
+              slug: note.flags.ddb.slug,
+              parentId: note.flags.ddb.parentId,
+              idPageFlags: idPage ? idPage.flags.ddb : "No page",
+              nFlags: n.flags.ddb,
+              journalElementIds: noteJournal.elementIds,
+            });
           }
 
           this.data.notes.push(n);
@@ -213,8 +182,6 @@ class Scene {
   }
 
   #cleanupV4() {
-    if (this.adventure.config.data.schemaVersion < 4.0) return;
-
     if (Number.isInteger(this.data.shiftX)) {
       this.data.background.offsetX = this.data.shiftX;
     }
@@ -324,7 +291,7 @@ class Scene {
       logger.debug("Data flags");
       logger.debug(this.data.flags);
 
-      if (this.adventure.config.data.schemaVersion >= 4.0 && adjustmentClone.background) {
+      if (adjustmentClone.background) {
         this.data.background = adjustmentClone.background;
         this.data.image = `${this.data.image}`;
         delete this.data.image;
@@ -436,9 +403,7 @@ class Scene {
       : null;
 
     // load skeleton
-    this.data = this.adventure.config.data.schemaVersion >= 4.0
-      ? JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "scene-4.json"))))
-      : JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir,"scene.json"))));
+    this.data = JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "scene.json"))));
 
 
     // initial image size guess (used if not set by adjustment)
@@ -448,10 +413,7 @@ class Scene {
 
     this.data.name = row.data.sceneName;
     this.data.navName = row.data.sceneName.split(":").pop().trim();
-    // moving this here requires a ddb-importer update, this is not yet supported
-    this.adventure.config.data.schemaVersion >= 5.0
-      ? this.data.background.src = image
-      : this.data.img = image;
+    this.data.background.src = image;
     this.data.sort = Journal.JOURNAL_SORT + parseInt(row.data.id);
     this.data.img = image;
 
