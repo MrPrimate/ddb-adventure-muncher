@@ -39,6 +39,15 @@ class Adventure {
     }
   }
 
+  loadJournalHints() {
+    const journalDataFile = path.join(this.config.journalInfoDir, `${this.bookCode}.json`);
+    const journalDataPath = path.resolve(__dirname, journalDataFile);
+
+    if (fs.existsSync(journalDataPath)){
+      this.enhancements.journalHints = FileHelper.loadJSONFile(journalDataPath);
+    }
+  }
+
   loadSceneAdjustments() {
     const jsonFiles = path.join(this.config.sceneInfoDir, this.config.bookCode, "*.json");
 
@@ -71,6 +80,7 @@ class Adventure {
   loadHints() {
     this.loadNoteHints();
     this.loadTableHints();
+    this.loadJournalHints();
     this.loadSceneAdjustments();
 
     logger.debug("Current config adjustments", {
@@ -78,6 +88,7 @@ class Adventure {
       sceneEnhancements: this.enhancements.sceneEnhancements.length,
       noteHints: this.enhancements.noteHints.length,
       tableHints: this.enhancements.tableHints.length,
+      journalHints: this.enhancements.journalHints.length,
     });
   }
 
@@ -116,6 +127,7 @@ class Adventure {
     this.enhancements = {
       noteHints: [],
       tableHints: [],
+      journalHints: [],
       sceneAdjustments: [],
       sceneEnhancements: [],
       hiRes: [],
@@ -128,6 +140,12 @@ class Adventure {
 
     this.bad = {
       notes: [],
+    };
+
+    this.rowHints = {
+      rows: [],
+      adjustedParents: [],
+      adjustedChildren: [],
     };
 
     // load adventure data skeleton

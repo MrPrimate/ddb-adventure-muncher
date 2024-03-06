@@ -56,7 +56,7 @@ class Journal {
       flags: this.data.flags,
       id: this.data._id,
       type: this.pageType,
-      level: 1,
+      level: this.row.data.levelHint ?? 1,
     });
     return page.toObject();
   }
@@ -137,6 +137,12 @@ class Journal {
     this.data.flags.ddb.originalLink = row.data.originalLink;
     this.data.flags.ddb.linkName = row.data.title;
     this.data.flags.ddb.slugLink = row.data.slugLink ?? row.data.title.replace(/[^\w\d]+/g, "");
+
+    const adjustParent = this.adventure.rowHints.adjustedParents.find((p) => p.id === row.id)
+      ?? this.adventure.rowHints.adjustedChildren.find((p) => p.id === row.id);
+    if (adjustParent) {
+      this.data.flags.ddb.original = adjustParent.original;
+    }
 
     this.duplicate = this.isDuplicate();
     this.data.flags.ddb.duplicate = this.duplicate;

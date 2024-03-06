@@ -37,6 +37,7 @@ class Config {
     this.notesDir = path.resolve(__dirname, path.join(this.metaDir, "note_info"));
     this.assetsDir = path.resolve(__dirname, path.join(this.metaDir, "assets"));
     this.tablesDir = path.resolve(__dirname, path.join(this.metaDir, "table_info"));
+    this.journalsDir = path.resolve(__dirname, path.join(this.metaDir, "journal_info"));
     const directories = [
       this.configDir,
       this.buildDir,
@@ -45,6 +46,7 @@ class Config {
       this.notesDir,
       this.assetsDir,
       this.tablesDir,
+      this.journalsDir,
     ];
     FileHelper.checkDirectories(directories);
   }
@@ -59,12 +61,14 @@ class Config {
     this.fixes.scenesDir = path.resolve(__dirname, `${this.fixes.dir}/scene_info`);
     this.fixes.notesDir = path.resolve(__dirname, `${this.fixes.dir}/note_info`);
     this.fixes.tablesDir = path.resolve(__dirname, `${this.fixes.dir}/table_info`);
+    this.fixes.journalsDir = path.resolve(__dirname, `${this.fixes.dir}/journal_info`);
 
     const directories = [
       this.fixes.dir,
       this.fixes.scenesDir,
       this.fixes.notesDir,
       this.fixes.tablesDir,
+      this.fixes.journalsDir,
     ];
     FileHelper.checkDirectories(directories);
   }
@@ -83,6 +87,7 @@ class Config {
     this.noteInfoDir = (process.env.NOTE_DIR) ? path.resolve(__dirname,process.env.NOTE_DIR) : path.resolve(__dirname, this.notesDir);
     this.assetsInfoDir = (process.env.ASSETS_DIR) ? path.resolve(__dirname,process.env.ASSETS_DIR) : path.resolve(__dirname, this.assetsDir);
     this.tableInfoDir = (process.env.TABLE_DIR) ? path.resolve(__dirname,process.env.TABLE_DIR) : path.resolve(__dirname, this.tablesDir);
+    this.journalInfoDir = (process.env.JOURNAL_DIR) ? path.resolve(__dirname,process.env.JOURNAL_DIR) : path.resolve(__dirname, this.journalsDir);
     this.enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : Config.ENHANCEMENT_ENDPOINT; 
     this.debug = (process.env.DEBUG) ? process.env.DEBUG : false; 
   
@@ -92,6 +97,7 @@ class Config {
       logger.debug(`SceneInfoDir ${this.sceneInfoDir}`);
       logger.debug(`NoteInfoDir ${this.noteInfoDir}`);
       logger.debug(`TableInfoDir ${this.tableInfoDir}`);
+      logger.debug(`JournalInfoDir ${this.journalInfoDir}`);
       logger.debug(`AssetsInfoDir ${this.assetsInfoDir}`);
     }
   }
