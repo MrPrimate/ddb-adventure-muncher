@@ -8,18 +8,27 @@ const { Helpers } = require("./Helpers.js");
 const { JSDOM } = jsdom;
 
 const COMPENDIUM_MAP = {
-  "skills": "skills",
-  "senses": "senses",
-  "conditions": "conditions",
+  // "skills": "skills",
+  // "senses": "senses",
+  // "conditions": "conditions",
   "spells": "spells",
   "magicitems": "items",
   "weapons": "items",
   "armor": "items",
   "adventuring-gear": "items",
   "monsters": "monsters",
-  "actions": "actions",
-  "weaponproperties": "weaponproperties",
+  // "actions": "actions",
+  // "weaponproperties": "weaponproperties",
   "vehicles": "vehicles",
+};
+
+const SQUARE_MAP = {
+  "skills": "skills",
+  "senses": "senses",
+  "conditions": "conditions",
+  "spells": "spells",
+  "magicitems": "items",
+  "actions": "actions",
 };
 
 class DynamicLinkReplacer {
@@ -135,6 +144,21 @@ class DynamicLinkReplacer {
             const linkType = lookupEntry._id ? "UUID[Compendium." : "Compendium[";
             this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@${linkType}${link}]{${node.textContent}}`);
           }
+        } 
+      });
+    }
+
+    for (const lookupKey in SQUARE_MAP) {
+      const compendiumLinks = this.dom.querySelectorAll(`a[href*=\"ddb://${lookupKey}\/\"]`);
+      const lookupRegExp = new RegExp(`ddb:\/\/${lookupKey}\/([0-9]*)`);
+      compendiumLinks.forEach((node) => {
+        const lookupMatch = node.outerHTML.match(lookupRegExp);
+        const lookupValue = this.adventure.config.data.lookups[COMPENDIUM_MAP[lookupKey]];
+        if (lookupValue) {
+          if (!this.adventure.required[COMPENDIUM_MAP[lookupKey]].has(String(lookupMatch[1]))) {
+            this.adventure.required[COMPENDIUM_MAP[lookupKey]].add(String(lookupMatch[1]));
+          }
+          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `[${COMPENDIUM_MAP[lookupKey]}]{${node.textContent}}[/${COMPENDIUM_MAP[lookupKey]}]`);
         } 
       });
     }
