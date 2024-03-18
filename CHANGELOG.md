@@ -1,3 +1,7 @@
+# 2.0.1
+
+- Small improvements to journal consolidation in upcoming data packs.
+
 # 2.0.0
 
 - Requires Foundry v11 and D&D 5e system 3.0.0 or higher and DDB Importer 5.0.0 or higher.
