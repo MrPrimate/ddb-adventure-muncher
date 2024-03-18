@@ -79,8 +79,10 @@ class Scene {
   linkNotes() {
     this.notes.forEach((note) => {
       logger.info(`Checking ${note.label}`);
+      const adjustedParent = this.adventure.rowHints.adjustedParents.find((p) => note.flags.ddb.parentId == p.original.cobaltId);
       const noteJournal = this.adventure.journals.find((journal) =>
-        journal.data.flags.ddb.cobaltId == note.flags.ddb.parentId
+        (adjustedParent && journal.data.flags.ddb.cobaltId == adjustedParent.parentId)
+        || journal.data.flags.ddb.cobaltId == note.flags.ddb.parentId
       );
 
       if (noteJournal && !note.flags.ddb?.noLink) {
@@ -134,8 +136,13 @@ class Scene {
 
           // console.warn("MATCHES", { slugLinkPageId, contentChunkIdPageId, noteFlags: note.flags.ddb });
           // console.warn("PageIds", noteJournal.data.pages.map((p) => {return {id: p._id, flags: p.flags.ddb}}));
+          // (adjustedParent && journal.data.flags.ddb.cobaltId == adjustedParent.parentId)
+          // || (!adjustedParent && journal.data.flags.ddb.cobaltId == note.flags.ddb.parentId)
+
+
           const journalPage = noteJournal.data.pages.find((page) =>
-            page.flags.ddb.parentId == note.flags.ddb.parentId
+            ((adjustedParent && page.flags.ddb.parentId == adjustedParent.parentId)
+            || (page.flags.ddb.parentId == note.flags.ddb.parentId))
             && (page.flags.ddb.slug == note.flags.ddb.slug
             || page.flags.ddb.slug.replace(/^([a-zA-Z]?)0+/, "$1") == note.flags.ddb.slug
             || page.flags.ddb.slug.startsWith(note.flags.ddb.slug))
