@@ -422,7 +422,6 @@ class Scene {
     this.data.navName = row.data.sceneName.split(":").pop().trim();
     this.data.background.src = image;
     this.data.sort = Journal.JOURNAL_SORT + parseInt(row.data.id);
-    this.data.img = image;
 
     // find matching journals and add
     this.#journalMatch();

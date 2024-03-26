@@ -1037,6 +1037,24 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/39695/377/638425036767623471.jpeg",
     sourceURL: "sources/hcs",
   },
+  {
+    id: 136,
+    name: "DiLCT",
+    description: "Descent into the Lost Caverns of Tsojcanth",
+    sourceCategoryId: 1,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/40132/872/638442415700463413.jpeg",
+    sourceURL: "sources/dilct",
+  },
+  {
+    id: 139,
+    name: "ToB1",
+    description: "Tome of Beasts 1",
+    sourceCategoryId: 21,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/40544/209/638459347386150459.jpeg",
+    sourceURL: "sources/tob1",
+  },
 ];
 
 exports.sources = sources;
