@@ -1,3 +1,7 @@
+# 2.0.2
+
+- Descent into the Lost Caverns of Tsojcanth support.
+
 # 2.0.1
 
 - Small improvements to journal consolidation in upcoming data packs.
