@@ -1,3 +1,7 @@
+# 2.0.3
+
+- Fix a bug where some older adventures would not import background images for scenes.
+
 # 2.0.2
 
 - Descent into the Lost Caverns of Tsojcanth support.

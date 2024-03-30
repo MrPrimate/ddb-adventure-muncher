@@ -300,7 +300,7 @@ class Scene {
 
       if (adjustmentClone.background) {
         this.data.background = adjustmentClone.background;
-        this.data.image = `${this.data.image}`;
+        this.data.background.src = `${this.image}`;
         delete this.data.image;
       }
 
