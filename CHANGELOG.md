@@ -1,3 +1,7 @@
+# 2.0.4
+
+- Vecna: Nest of the Eldritch Eye
+
 # 2.0.3
 
 - Fix a bug where some older adventures would not import background images for scenes.
