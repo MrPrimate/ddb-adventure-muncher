@@ -177,7 +177,7 @@ class Table {
       const linkDetails = { text: result.text, name: `${this.data.name}-${result._id}` };
       const replacer = new DynamicLinkReplacer(this.adventure, linkDetails);
       replacer.process();
-      result.text = replacer.result;
+      result.text = `${replacer.result}`;
     });
   }
 

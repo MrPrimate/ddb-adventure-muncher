@@ -203,7 +203,7 @@ class Journal {
         const linkDetails = { text: page.text.content, name: `${this.data.name}`, journal: this };
         const links = new DynamicLinkReplacer(this.adventure, linkDetails);
         links.process();
-        page.text.content = links.result;
+        page.text.content = `${links.result}`;
         page.text.content = page.text.content.replace(/\s+/g, " ");
       }
     });
