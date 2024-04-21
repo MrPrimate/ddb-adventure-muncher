@@ -40,17 +40,21 @@ class DynamicLinkReplacer {
     this.journal = journal;
   }
 
-  process() {
+  process({includeTables = true, includeImages = true} = {}) {
     logger.info(`Replacing links for ${this.name}`);
     if (this.adventure.return) this.adventure.returns.statusMessage(`Replacing links for ${this.name}`);
-    logger.debug(`Replacing image links for ${this.name}`);
-    this.replaceImageLinks();
+    if (includeImages) {
+      logger.debug(`Replacing image links for ${this.name}`);
+      this.replaceImageLinks();
+    }
     logger.debug(`Linking module content for ${this.name}`);
     this.moduleReplaceLinks();
     logger.debug(`Linking ddb-importer compendium content for ${this.name}`);
     this.foundryCompendiumReplace();
-    logger.debug("Updating Journal with Table Links");
-    this.replaceTables();
+    if (includeTables) {
+      logger.debug("Updating with Table Links");
+      this.replaceTables();
+    }
   }
 
   get result() {
