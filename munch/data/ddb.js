@@ -111,17 +111,29 @@ const BAD_IDS = [
   4, // EE players
   26, //cos players
   30, //ddb
-  14, // tftyp - appear as individual adventures
+  // 14, // tftyp - appear as individual adventures
 ];
-async function listBooks(cobalt, allBooks=true) {
+async function listBooks(cobalt, allBooks=true, noCheck=false) {
+  const ddbConfig = getDDBConfig();
+  // are we checking to see if the user owns the book, or just displaying the entire list?
+  if (noCheck) {
+    return ddbConfig.sources.map((b) => {
+      return {
+        id: b.id,
+        book: b,
+        description: b.description,
+        bookCode: b.name.toLowerCase(),
+        bookCodeNormal: b.name,
+      };
+    });
+  }
   const urlencoded = new URLSearchParams();
   urlencoded.append("token", `${cobalt}`);
+
 
   //  "EntityTypeID": 953599357 - this needs to be filtered out as it gives false positives
   // 496802664 is books
   // 953599357 dice sets
-  const ddbConfig = await getDDBConfig();
-
   const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v6/available-user-content", urlencoded);
   const books = result.Licenses.filter((f) => 
     f.EntityTypeID == "496802664"
