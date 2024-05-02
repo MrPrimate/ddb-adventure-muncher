@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
 
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.S3_KEY_ID }}
