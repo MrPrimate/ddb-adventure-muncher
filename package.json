@@ -31,6 +31,7 @@
     "copyright": "Copyright © 2021-2022 Jack Holloway",
     "artifactName": "${name}-${version}-${os}-${arch}.${ext}",
     "npmRebuild": false,
+    "notarize": true,
     "extraFiles": [
       {
         "from": "content/templates",
