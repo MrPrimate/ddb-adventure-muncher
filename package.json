@@ -31,7 +31,6 @@
     "copyright": "Copyright © 2021-2022 Jack Holloway",
     "artifactName": "${name}-${version}-${os}-${arch}.${ext}",
     "npmRebuild": false,
-    "notarize": true,
     "extraFiles": [
       {
         "from": "content/templates",
@@ -66,7 +65,8 @@
           "x64"
         ]
       },
-      "category": "public.app-category.developer-tools"
+      "category": "public.app-category.developer-tools",
+      "notarize": true
     },
     "linux": {
       "target": [
@@ -101,7 +101,6 @@
   },
   "dependencies": {
     "better-sqlite3-multiple-ciphers": "^9.5.0",
-    "electron-builder-notarize": "^1.5.2",
     "electron-log": "^4.4.1",
     "electron-updater": "^6.2.0",
     "extract-zip": "^2.0.1",
