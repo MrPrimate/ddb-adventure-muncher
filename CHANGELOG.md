@@ -1,6 +1,7 @@
-# 2.0.5
+# 2.1.1
 
 - Tales from the Yawning Portal is now a singular book download, not individual books for new purchases.
+- Electron and Node updates.
 
 # 2.0.4
 
