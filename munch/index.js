@@ -49,7 +49,14 @@ if (process.argv[2] === "config") {
     });
     exit();
   });
-} else if (process.argv[2] === "download") {
+} else if (process.argv[2] === "list-all") {
+  ddb.listBooks(configurator.cobalt, true, true).then((availableBooks) => {
+    availableBooks.forEach((book) => {
+      console.log(`${book.bookCode} : ${book.book.description}`);
+    });
+    exit();
+  });
+}  else if (process.argv[2] === "download") {
   downloadBooks()
     .then(() => {
       console.log("Downloads finished");

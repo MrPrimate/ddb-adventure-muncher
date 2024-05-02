@@ -223,7 +223,8 @@ const menuTemplate = [
 ];
 
 async function downloadBooks(config) {
-  const availableBooks = await ddb.listBooks(config.data.cobalt);
+  const noCheck = process.env.DDB_NO_CHECK === "true" || config.data.ddbNoCheck;
+  const availableBooks = await ddb.listBooks(config.data.cobalt, noCheck);
   // logger.info(bookIds)
   for (let i = 0; i < availableBooks.length; i++) {
     process.stdout.write(`Downloading ${availableBooks[i].book.description}`);

@@ -113,6 +113,7 @@ class Config {
     this.setDataConfigSetting("forceNew", false);
     this.setDataConfigSetting("disableEnhancedDownloads", false);
     this.setDataConfigSetting("noRemoteMetaData", false);
+    this.setDataConfigSetting("ddbNoCheck", false);
     this.data.subDirs = [
       "journal",
       // "compendium",
