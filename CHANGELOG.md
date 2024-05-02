@@ -1,3 +1,7 @@
+# 2.0.5
+
+- Tales from the Yawning Portal is now a singular book download, not individual books for new purchases.
+
 # 2.0.4
 
 - Vecna: Nest of the Eldritch Eye
