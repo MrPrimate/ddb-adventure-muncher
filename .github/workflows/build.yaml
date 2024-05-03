@@ -76,8 +76,8 @@ jobs:
           windows_certs_password: ${{ secrets.WIN_CERTS_PASSWORD }}
         env:
           # macOS notarization API key
-          APPLE_API_KEY: ${{ secrets.API_KEY }}
-          APPLE_API_KEY_ID: ${{ secrets.API_KEY_ID }}
-          APPLE_API_ISSUER: ${{ secrets.API_KEY_ISSUER_ID }}
-          API_KEY_ID: ${{ secrets.API_KEY_ID }}
-          API_KEY_ISSUER_ID: ${{ secrets.API_KEY_ISSUER_ID }}
+          APPLE_API_KEY: ~/private_keys/AuthKey_${{ secrets.API_KEY_ID }}.p8
+          APPLE_API_KEY_ID: '${{ secrets.API_KEY_ID }}'
+          APPLE_API_ISSUER: '${{ secrets.API_KEY_ISSUER_ID }}'
+          # API_KEY_ID: ${{ secrets.API_KEY_ID }}
+          # API_KEY_ISSUER_ID: ${{ secrets.API_KEY_ISSUER_ID }}
