@@ -416,7 +416,7 @@ function loadMainWindow() {
   // eslint-disable-next-line no-unused-vars
   ipcMain.on("books", (event, config) => {
     logger.info("Fetching books for UI");
-    ddb.listBooks(config.data.cobalt, allBooks).then((books) => {
+    ddb.listBooks(config.data.cobalt, allBooks, config.data.ddbNoCheck).then((books) => {
       books = _.orderBy(books, ["book.description"], ["asc"]);
       mainWindow.webContents.send("books", books);
     });

@@ -1,3 +1,7 @@
+# 2.1.2
+
+- Improved debug features for troubleshooting.
+
 # 2.1.1
 
 - Tales from the Yawning Portal is now a singular book download, not individual books for new purchases.
