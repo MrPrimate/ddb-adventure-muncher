@@ -1073,6 +1073,24 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/40544/209/638459347386150459.jpeg",
     sourceURL: "sources/tob1",
   },
+  {
+    id: 140,
+    name: "FMRP",
+    description: "Flee Mortals: Rule Primer",
+    sourceCategoryId: 22,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/41760/824/638512293338393278.jpeg",
+    sourceURL: "sources/fmrp",
+  },
+  {
+    id: 142,
+    name: "FM",
+    description: "Flee, Mortals!",
+    sourceCategoryId: 22,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/41757/185/638512177128217264.jpeg",
+    sourceURL: "sources/fm",
+  },
 ];
 
 exports.sources = sources;
