@@ -1,3 +1,7 @@
+# 2.1.3
+
+- Vecna: Eve of Ruin Support.
+
 # 2.1.2
 
 - Improved debug features for troubleshooting.
