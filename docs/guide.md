@@ -62,7 +62,7 @@ Once loaded into Adventure Muncher, you can remove the download. Adventure Munch
 6. You should now be able to select an adventure to generate.
 You need to have access to this content on D&D Beyond.
 7. Please note that not all scenes have actors placed on them at the moment.
-This is a community effort, and you can see the current progress at the [nice visual display](https://docs.ddb.mrprimate.co.uk/status.html) or the boring (but more detailed) [spreadsheet](https://docs.google.com/spreadsheets/d/17b4jG2W521N_nFkE1jr2UGEjixHGjHGnEO9eSKhFmwo/edit?usp=sharing).
+This is a community effort, and you can see the current progress at the [status page](https://docs.ddb.mrprimate.co.uk/status.html).
 8. If you wish all the Journal and Table entries to be viewable by players (useful in books such as The Players Handbook), tick this option.
 9. Click Generate.
 It may take a few minutes to generate an adventure, depending on the speed of your computer and internet.
