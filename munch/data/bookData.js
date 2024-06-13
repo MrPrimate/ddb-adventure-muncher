@@ -1091,6 +1091,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/41757/185/638512177128217264.jpeg",
     sourceURL: "sources/fm",
   },
+  {
+    id: 143,
+    name: "WEL",
+    description: "Where Evil Lives",
+    sourceCategoryId: 22,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/41757/270/638512180375164348.jpeg",
+    sourceURL: "sources/wel",
+  },
 ];
 
 exports.sources = sources;

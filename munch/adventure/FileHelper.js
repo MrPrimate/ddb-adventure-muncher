@@ -107,6 +107,9 @@ class FileHelper {
     const options = {
       url: url,
       encoding: null,
+      headers: {
+        "x-requested-with": "foundry",
+      },
     };
 
     return new Promise((resolve, reject) => {
