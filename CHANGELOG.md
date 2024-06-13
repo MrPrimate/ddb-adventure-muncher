@@ -1,6 +1,10 @@
+# 2.1.4
+
+- Where Evil Lives support.
+
 # 2.1.3
 
-- Vecna: Eve of Ruin Support.
+- Vecna: Eve of Ruin support.
 
 # 2.1.2
 
