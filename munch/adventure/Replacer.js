@@ -26,8 +26,8 @@ const SQUARE_MAP = {
   "skills": "skills",
   "senses": "senses",
   "conditions": "conditions",
-  "spells": "spells",
-  "magicitems": "items",
+  // "spells": "spells",
+  // "magicitems": "items",
   "actions": "actions",
 };
 
@@ -162,7 +162,7 @@ class DynamicLinkReplacer {
           if (!this.adventure.required[COMPENDIUM_MAP[lookupKey]].has(String(lookupMatch[1]))) {
             this.adventure.required[COMPENDIUM_MAP[lookupKey]].add(String(lookupMatch[1]));
           }
-          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `[${COMPENDIUM_MAP[lookupKey]}]{${node.textContent}}[/${COMPENDIUM_MAP[lookupKey]}]`);
+          // this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `[${COMPENDIUM_MAP[lookupKey]}]${node.textContent}[/${COMPENDIUM_MAP[lookupKey]}]`);
         } 
       });
     }

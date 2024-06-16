@@ -1,6 +1,7 @@
 # 2.1.4
 
 - Where Evil Lives support.
+- Fix to linking for spells and items in adventures.
 
 # 2.1.3
 
