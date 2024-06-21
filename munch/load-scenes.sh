@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-FILES="$1/*"
+FILES="$1/*.json"
 
 echo "Found files..."
 echo "${FILES}"
