@@ -1065,6 +1065,15 @@ const sources = [
     sourceURL: "sources/dilct",
   },
   {
+    id: 137,
+    name: "QftIS",
+    description: "Quests from the Infinite Staircase",
+    sourceCategoryId: 1,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/40544/16/638459335923192808.jpeg",
+    sourceURL: "sources/qftis",
+  },
+  {
     id: 139,
     name: "ToB1",
     description: "Tome of Beasts 1",
@@ -1099,6 +1108,15 @@ const sources = [
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/41757/270/638512180375164348.jpeg",
     sourceURL: "sources/wel",
+  },
+  {
+    id: 150,
+    name: "GHPP",
+    description: "Grim Hollow: Player Pack",
+    sourceCategoryId: 18,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/42333/528/638537169036542469.jpeg",
+    sourceURL: "sources/ghpp",
   },
 ];
 

@@ -463,6 +463,7 @@ class Scene {
         ddbId: this.data.flags.ddb.ddbId,
         parentId: this.data.flags.ddb.parentId,
         cobaltId: this.data.flags.ddb.cobaltId,
+        hiresImg: `https://media.dndbeyond.com/compendium-images/${this.adventure.bookCode}/REPLACE_ID/${this.image.split("/").pop()}`,
       });
     }
 
