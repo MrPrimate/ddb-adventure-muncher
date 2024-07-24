@@ -1,3 +1,7 @@
+# 2.1.5
+
+- Quests from the Infinite Staircase support.
+
 # 2.1.4
 
 - Where Evil Lives support.
