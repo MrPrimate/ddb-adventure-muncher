@@ -429,6 +429,7 @@ class Adventure {
 
   async downloadEnhancementAssets() {
     await this.assetFactory.downloadEnhancements(this.downloadList);
+    await this.assetFactory.upscaleImages(this.downloadList);
   }
 
   copyAssets() {
