@@ -5,59 +5,59 @@ const fs = require("fs");
 const fse = require("fs-extra");
 const path = require("path");
 
-const tf = require("@tensorflow/tfjs-node");
+// const tf = require("@tensorflow/tfjs-node");
 // const x2 = require("@upscalerjs/esrgan-thick/2x");
-const Upscaler = require("upscaler/node");
+// const Upscaler = require("upscaler/node");
 
 class Assets {
 
   constructor(adventure) {
     this.adventure = adventure;
-    this.upscaler = new Upscaler({
-      // model: x2,
-    });
+    // this.upscaler = new Upscaler({
+    //   // model: x2,
+    // });
   }
 
-  async upscaleImage(imagePath) {
-    if (!(/\.png|\.jpg|\.jpeg/i).test(imagePath)) return;
-    const image = tf.node.decodeImage(fs.readFileSync(imagePath), 3);
-    const tensor = await this.upscaler.upscale(image);
-    const upscaledTensor = imagePath.endsWith(".png")
-      ? await tf.node.encodePng(tensor, 9)
-      : await tf.node.encodeJpeg(tensor, "", 95, false, true);
-    fs.writeFileSync(`${imagePath}-upscaled.png`, upscaledTensor);
+  // async upscaleImage(imagePath) {
+  //   if (!(/\.png|\.jpg|\.jpeg/i).test(imagePath)) return;
+  //   const image = tf.node.decodeImage(fs.readFileSync(imagePath), 3);
+  //   const tensor = await this.upscaler.upscale(image);
+  //   const upscaledTensor = imagePath.endsWith(".png")
+  //     ? await tf.node.encodePng(tensor, 9)
+  //     : await tf.node.encodeJpeg(tensor, "", 95, false, true);
+  //   fs.writeFileSync(`${imagePath}-upscaled.png`, upscaledTensor);
 
-    // dispose the tensors!
-    image.dispose();
-    tensor.dispose();
-    // upscaledTensor.dispose();
-  }
+  //   // dispose the tensors!
+  //   image.dispose();
+  //   tensor.dispose();
+  //   // upscaledTensor.dispose();
+  // }
 
-  async upscaleImages(list) {
-    logger.info("Checking for scene upscaling...");
-    if (this.adventure.return) this.adventure.returns.statusMessage("Checking for scene upscaling...");
-    const upscaleScenes = this.adventure.config.upscaleScenes ?? false;
-    if (!upscaleScenes) return;
+  // async upscaleImages(list) {
+  //   logger.info("Checking for scene upscaling...");
+  //   if (this.adventure.return) this.adventure.returns.statusMessage("Checking for scene upscaling...");
+  //   const upscaleScenes = this.adventure.config.upscaleScenes ?? false;
+  //   if (!upscaleScenes) return;
 
-    let dlFile = FileHelper.loadFile(path.join(this.adventure.config.sourceDir, "upscale.json"));
-    let processed = dlFile && !this.adventure.config.data.forceNew
-      ? JSON.parse(dlFile)
-      : [];
-    if (!Array.isArray(processed)) processed = [];
-    for (let i = 0; i < list.length; i++) {
-      const listPath = list[i].path.replace(/^assets\//, "");
-      // we can only upscale certain images right now
-      if (!(/\.png|\.jpg|\.jpeg/i).test(listPath)) continue;
-      if (!processed.includes(listPath)) {
-        const dlPath = path.join(this.adventure.config.sourceDir, listPath);
-        logger.info(`Upscaling ${list[i].name} (${dlPath})`);
-        await this.upscaleImage(dlPath);
-        processed.push(listPath);
-      }
-    }
-    FileHelper.saveJSONFile(processed, path.join(this.adventure.config.sourceDir, "upscale.json"));
+  //   let dlFile = FileHelper.loadFile(path.join(this.adventure.config.sourceDir, "upscale.json"));
+  //   let processed = dlFile && !this.adventure.config.data.forceNew
+  //     ? JSON.parse(dlFile)
+  //     : [];
+  //   if (!Array.isArray(processed)) processed = [];
+  //   for (let i = 0; i < list.length; i++) {
+  //     const listPath = list[i].path.replace(/^assets\//, "");
+  //     // we can only upscale certain images right now
+  //     if (!(/\.png|\.jpg|\.jpeg/i).test(listPath)) continue;
+  //     if (!processed.includes(listPath)) {
+  //       const dlPath = path.join(this.adventure.config.sourceDir, listPath);
+  //       logger.info(`Upscaling ${list[i].name} (${dlPath})`);
+  //       await this.upscaleImage(dlPath);
+  //       processed.push(listPath);
+  //     }
+  //   }
+  //   FileHelper.saveJSONFile(processed, path.join(this.adventure.config.sourceDir, "upscale.json"));
 
-  }
+  // }
 
   async downloadEnhancements(list) {
     logger.info("Checking for download enhancements...");
