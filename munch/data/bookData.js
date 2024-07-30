@@ -1118,6 +1118,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/42333/528/638537169036542469.jpeg",
     sourceURL: "sources/ghpp",
   },
+  {
+    id: 151,
+    name: "BoET",
+    description: "Book of Ebon Tides",
+    sourceCategoryId: 21,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/42930/371/638563983452341674.jpeg",
+    sourceURL: "sources/dnd/boet",
+  },
 ];
 
 exports.sources = sources;
