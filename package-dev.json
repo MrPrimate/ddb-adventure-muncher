@@ -89,9 +89,10 @@
     "electron": "^24.8.8",
     "electron-builder": "^24.13.3",
     "electron-reload": "^1.5.0",
-    "eslint": "^8.11.0",
-    "eslint-config-prettier": "^8.3.0",
-    "prettier": "2.3.2",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "3.1.0",
+    "prettier-eslint": "^16.3.0",
     "spectre.css": "^0.5.9"
   },
   "dependencies": {

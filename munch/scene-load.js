@@ -517,6 +517,7 @@ async function importScene(conf, sceneFile) {
   console.log(`Name: ${inData.name}`);
   console.log(`Walls: ${inData.walls.length}`);
   console.log(`Lights: ${inData.lights.length}`);
+  console.log(`Regions: ${inData.regions.length}`);
   if (inData.drawings) console.log(`Drawings: ${inData.drawings.length}`);
   if (inData.flags.ddb.notes) console.log(`Notes: ${inData.flags.ddb.notes.length}`);
   if (inData.flags.ddb.tokens) console.log(`Tokens: ${inData.flags.ddb.tokens.length}`);
@@ -535,6 +536,7 @@ async function importScene(conf, sceneFile) {
       walls: ddbMetaDataVersion,
       lights: ddbMetaDataVersion,
       drawings: ddbMetaDataVersion,
+      regions: ddbMetaDataVersion,
       foundry: inData.flags.ddb.foundryVersion ? inData.flags.ddb.foundryVersion :  "0.8.9",
     };
 
@@ -544,6 +546,7 @@ async function importScene(conf, sceneFile) {
   if (sceneData && inData.flags?.ddb?.foundryVersion && sceneData.flags?.ddb?.foundryVersion && !_.isEqual(inData.flags.ddb.foundryVersion, sceneData.flags.ddb.foundryVersion)) sceneUpdateDiff.foundry = inData.flags.ddb.foundryVersion;
   if (sceneData && !_.isEqual(inData.walls, sceneData.walls)) sceneUpdateDiff.walls = ddbMetaDataVersion;
   if (sceneData && !_.isEqual(inData.lights, sceneData.lights)) sceneUpdateDiff.lights = ddbMetaDataVersion;
+  if (sceneData && !_.isEqual(inData.regions, sceneData.regions)) sceneUpdateDiff.regions = ddbMetaDataVersion;
   if (sceneData && inData.drawings && (!sceneData.drawings || !_.isEqual(inData.drawings, sceneData.drawings))) sceneUpdateDiff.drawings = ddbMetaDataVersion;
   if (sceneData && inData.flags.ddb.notes && sceneData.flags && (!sceneData.flags.ddb.notes || !_.isEqual(inData.flags.ddb.notes, sceneData.flags.ddb.notes))) sceneUpdateDiff.notes = ddbMetaDataVersion;
   if (sceneData && inData.flags.ddb.tokens && sceneData.flags && (!sceneData.flags.ddb.tokens || !_.isEqual(inData.flags.ddb.tokens, sceneData.flags.ddb.tokens))) sceneUpdateDiff.tokens = ddbMetaDataVersion;
