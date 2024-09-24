@@ -43,14 +43,14 @@ if (process.argv[2] === "config") {
   console.log(`Loaded ${process.argv[3]}`);
   exit();
 } else if (process.argv[2] === "list") {
-  ddb.listBooks(configurator.cobalt).then((availableBooks) => {
+  ddb.listBooks(configurator.data.cobalt).then((availableBooks) => {
     availableBooks.forEach((book) => {
       console.log(`${book.bookCode} : ${book.book.description}`);
     });
     exit();
   });
 } else if (process.argv[2] === "list-all") {
-  ddb.listBooks(configurator.cobalt, true, true).then((availableBooks) => {
+  ddb.listBooks(configurator.data.cobalt, true, true).then((availableBooks) => {
     availableBooks.forEach((book) => {
       console.log(`${book.bookCode} : ${book.book.description}`);
     });

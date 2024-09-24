@@ -130,7 +130,6 @@ async function listBooks(cobalt, allBooks=true, noCheck=false) {
   const urlencoded = new URLSearchParams();
   urlencoded.append("token", `${cobalt}`);
 
-
   //  "EntityTypeID": 953599357 - this needs to be filtered out as it gives false positives
   // 496802664 is books
   // 953599357 dice sets

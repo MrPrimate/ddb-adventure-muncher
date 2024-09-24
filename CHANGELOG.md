@@ -1,3 +1,7 @@
+# 2.1.7
+
+- PHB 2024/free-rules support.
+
 # 2.1.5
 
 - Quests from the Infinite Staircase support.

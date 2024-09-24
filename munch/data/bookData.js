@@ -945,6 +945,24 @@ const sources = [
     sourceURL: "sources/dnd/wel",
   },
   {
+    id: 145,
+    name: "PHB-2024",
+    description: "Player’s Handbook (2024)",
+    sourceCategoryId: 24,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/41956/70/638520961158909820.jpeg",
+    sourceURL: "sources/dnd/phb-2024",
+  },
+  {
+    id: 148,
+    name: "free-rules",
+    description: "D&D Free Rules (2024)",
+    sourceCategoryId: 24,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/43764/970/638599907621721321.jpeg",
+    sourceURL: "sources/dnd/free-rules",
+  },
+  {
     id: 150,
     name: "GHPP",
     description: "Grim Hollow: Player Pack",
@@ -962,15 +980,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/42930/371/638563983452341674.jpeg",
     sourceURL: "sources/dnd/boet",
   },
-  {
-    id: 152,
-    name: "TFtS",
-    description: "Tales from the Shadows",
-    sourceCategoryId: 21,
-    isReleased: true,
-    avatarURL: "https://www.dndbeyond.com/avatars/43141/46/638572767902627770.jpeg",
-    sourceURL: "sources/dnd/tfts",
-  },
+  // {
+  //   id: 152,
+  //   name: "TFtS",
+  //   description: "Tales from the Shadows",
+  //   sourceCategoryId: 21,
+  //   isReleased: true,
+  //   avatarURL: "https://www.dndbeyond.com/avatars/43141/46/638572767902627770.jpeg",
+  //   sourceURL: "sources/dnd/tfts",
+  // },
 ];
 
 exports.sources = sources;
