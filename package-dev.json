@@ -7,6 +7,7 @@
   "scripts": {
     "start": "npm run rebuild && NODE_ENV=DEV electron .",
     "start-debug": "NODE_ENV=DEV electron --inspect=5858 .",
+    "start_windows": "set NODE_ENV=DEV && electron .",
     "lint": "npx eslint ./",
     "lint-fix": "npx eslint ./ --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -51,16 +52,19 @@
         ]
       }
     ],
-    "afterSign": "electron-builder-notarize",
     "mac": {
       "hardenedRuntime": true,
       "gatekeeperAssess": false,
       "entitlements": "./build/entitlements.mac.inherit.plist",
       "entitlementsInherit": "./build/entitlements.mac.inherit.plist",
-      "target": [
-        "dmg"
-      ],
-      "category": "public.app-category.developer-tools"
+      "target": {
+        "target": "dmg",
+        "arch": [
+          "x64"
+        ]
+      },
+      "category": "public.app-category.developer-tools",
+      "notarize": true
     },
     "linux": {
       "target": [

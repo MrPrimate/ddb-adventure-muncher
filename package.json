@@ -5,7 +5,10 @@
   "repository": "https://github.com/MrPrimate/ddb-adventure-muncher",
   "main": "main.js",
   "scripts": {
+    "rebuild": "./node_modules/.bin/electron-rebuild",
+    "postinstall": "electron-builder install-app-deps",
     "start": "npm run rebuild && NODE_ENV=DEV electron .",
+    "start_windows": "set NODE_ENV=DEV && electron .",
     "start-debug": "NODE_ENV=DEV electron --inspect=5858 .",
     "lint": "npx eslint ./",
     "lint-fix": "npx eslint ./ --fix",
@@ -51,16 +54,19 @@
         ]
       }
     ],
-    "afterSign": "electron-builder-notarize",
     "mac": {
       "hardenedRuntime": true,
       "gatekeeperAssess": false,
       "entitlements": "./build/entitlements.mac.inherit.plist",
       "entitlementsInherit": "./build/entitlements.mac.inherit.plist",
-      "target": [
-        "dmg"
-      ],
-      "category": "public.app-category.developer-tools"
+      "target": {
+        "target": "dmg",
+        "arch": [
+          "x64"
+        ]
+      },
+      "category": "public.app-category.developer-tools",
+      "notarize": true
     },
     "linux": {
       "target": [
@@ -96,7 +102,6 @@
     "spectre.css": "^0.5.9"
   },
   "dependencies": {
-    "@tensorflow/tfjs-node": "^4.20.0",
     "better-sqlite3-multiple-ciphers": "^9.5.0",
     "electron-log": "^4.4.1",
     "electron-updater": "^6.2.0",
@@ -109,7 +114,7 @@
     "lodash": "^4.17.21",
     "node-fetch": "^2.6.7",
     "semver": "^7.3.5",
-    "upscaler": "^1.0.0-beta.19",
     "yargs": "^16.2.0"
   }
 }
+
