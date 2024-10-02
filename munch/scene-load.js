@@ -517,7 +517,7 @@ async function importScene(conf, sceneFile) {
   console.log(`Name: ${inData.name}`);
   console.log(`Walls: ${inData.walls.length}`);
   console.log(`Lights: ${inData.lights.length}`);
-  console.log(`Regions: ${inData.regions.length}`);
+  console.log(`Regions: ${inData.regions?.length ?? 0}`);
   if (inData.drawings) console.log(`Drawings: ${inData.drawings.length}`);
   if (inData.flags.ddb.notes) console.log(`Notes: ${inData.flags.ddb.notes.length}`);
   if (inData.flags.ddb.tokens) console.log(`Tokens: ${inData.flags.ddb.tokens.length}`);

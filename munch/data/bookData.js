@@ -963,6 +963,15 @@ const sources = [
     sourceURL: "sources/dnd/free-rules",
   },
   {
+    id: 149,
+    name: "UHLH",
+    description: "Uni and the Hunt for the Lost Horn",
+    sourceCategoryId: 1,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/44398/213/638624641190434995.jpeg",
+    sourceURL: "sources/dnd/uhlh",
+  },
+  {
     id: 150,
     name: "GHPP",
     description: "Grim Hollow: Player Pack",
