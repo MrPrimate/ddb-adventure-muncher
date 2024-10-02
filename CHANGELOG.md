@@ -1,3 +1,7 @@
+# 2.1.8
+
+- Uni and the Hunt for the Lost Horn support.
+
 # 2.1.7
 
 - PHB 2024/free-rules support.
