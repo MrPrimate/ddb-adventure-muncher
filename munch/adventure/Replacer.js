@@ -426,7 +426,7 @@ class DiceReplacer {
 
   static diceStringResultBuild (diceString, dice, bonus = "", mods = "", diceHint = "", specialFlags = "") {
     // const globalDamageHints = this.adventure.config.data.useDamageHints ? this.adventure.config.data.useDamageHints : true;
-    const globalDamageHints = true;
+    const globalDamageHints = false;
     const resultBonus = bonus === 0 ? "" : `${bonus > 0 ? " +" : ""} ${bonus}`;
     const diceHintAdd = globalDamageHints && diceHint && diceString && diceString !== "";
   
@@ -525,21 +525,20 @@ class DiceReplacer {
   }
 
 
-  static diceRollMatcher(match, p1, p2, p3, p4, p5) { 
-    if (p5 && p5.toLowerCase() === "damage") {
-      let dmgString = `${p4} damage`;
-      dmgString = dmgString[0].toUpperCase() + dmgString.substring(1);
-      const diceString = DiceReplacer.parseDiceString(p2, null, `[${p4.toLowerCase().trim()}]`).diceString;
-      return `${p1 ? p1: ""} [[/r ${diceString} # ${dmgString}]]${p3} ${p4} damage`;
-    } else if (p5 && p1 && p5.toLowerCase() === "points" && p1.toLowerCase() === "regains") {
-      const diceString = DiceReplacer.parseDiceString(p2, null, "[healing]").diceString;
-      return `${p1 ? p1: ""} [[/r ${diceString} # Healing]]${p3} hit points`;
+  static diceRollMatcher(match, p1, p2, p3, p4, p5, p6) { 
+    if (p6 && p6.toLowerCase() === "damage") {
+      const diceString = DiceReplacer.parseDiceString(p3, null, `[${p5.toLowerCase().trim()}]`).diceString;
+      return `${p1 ? p1: ""} [[/damage ${diceString} ${p5} average=true]] damage`;
+    } else if (p6 && p1 && p6.toLowerCase() === "points" && p1.toLowerCase() === "regains") {
+      const diceString = DiceReplacer.parseDiceString(p3, null, "[healing]").diceString;
+      return `${p1 ? p1: ""} [[/damage ${diceString} type=heal average=false]] hit points`;
     } else {
-      const diceString = DiceReplacer.parseDiceString(p2).diceString;
-      const rollString = `${p1 ? p1: ""} [[/r ${diceString}]]${p3 ? p3 : ""}${p4 ? p4 : ""} ${p5 ? p5 : ""} `;
+      const diceString = DiceReplacer.parseDiceString(p3).diceString;
+      // const rollString = `${p1 ? p1: ""} [[/roll ${diceString}]]${p3 ? p3 : ""}${p4 ? p4 : ""} ${p5 ? p5 : ""} `;
+      const rollString = `${p1 ? p1: ""} [[/damage ${diceString} ${p5 ? p5 : ""}]] ${p6 ? p6 : ""}`;
       const result = rollString
-        .replace("( [[/r ", "([[/r ")
-        .replace("> [[/r", ">[[/r")
+        .replace("( [[/roll ", "([[/roll ")
+        .replace("> [[/roll", ">[[/roll")
         .replace(/ {2}/g, " ")
         .replace(/^\(/, " (")
         .replace(/< $/, "<");
@@ -560,12 +559,12 @@ class DiceReplacer {
 
   replaceRollLinks() {
     this.text = this.text.replace(/[­––−-]/gu, "-").replace(/-+/g, "-");
-    const damageRegex = new RegExp(/([.>(^\s]|^|regains +)+(\d*d\d+(?:\s*[+-]\s*\d*d*\d*)*)( <|[.,<)$\s])+?(\s?[a-z,A-Z]*)\s*(damage|points)?/, "g");
+    const damageRegex = new RegExp(/(Hit:|[.>(^\s]|^|regains)+(?:([0-9]+))?(?: *\(([0-9]*d[0-9]+(?:\s*[-+]\s*[0-9]+)?)\))(<|[.,<)$\s])+?(\s?[a-z,A-Z]+)\s*(damage|points)?/, "ig");
     this.text = this.text.replace(damageRegex, DiceReplacer.diceRollMatcher);
-  
+    
     // to hit rolls
     const toHitRegex = new RegExp(/ ([+-]) *(\d+) to hit/, "g");
-    this.text = this.text.replace(toHitRegex, " [[/r 1d20 $1 $2]] to hit");
+    this.text = this.text.replace(toHitRegex, " [[/roll 1d20 $1 $2]] to hit");
   }
 }
 
