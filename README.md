@@ -20,7 +20,7 @@ You can download versions for [Mac, PC, and Linux](https://github.com/MrPrimate/
 
 All books with Scenes should now have notes generated. Please highlight if you find missing Notes/Pins.
 
-You can se the state of scene support at [this page](https://docs.ddb.mrprimate.co.uk/status.html).
+You can see the state of scene support at [this page](https://docs.ddb.mrprimate.co.uk/status.html).
 
 If you wish to help improve the scene wall and lighting information, see the [contributing page](./docs/scenes.md).
 

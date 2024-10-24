@@ -11,7 +11,7 @@ You can view a [YouTube walk through](https://www.youtube.com/watch?v=OMaJHLQORW
 
 ## Install
 
-There are two parts to install to get munching. This guide assumes you're using Adventure Muncher 0.4.0+ and DDB Importer 2.4.0+.
+There are two parts to install to get munching. 
 
 * Install the [DDB Importer](https://foundryvtt.com/packages/ddb-importer/) module into Foundry.
 * [Adventure Muncher](https://github.com/MrPrimate/ddb-adventure-muncher/releases/latest) to generate an adventure to import into Foundry using DDB Importer.
