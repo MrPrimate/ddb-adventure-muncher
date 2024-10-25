@@ -6,7 +6,7 @@ Run your D&D Beyond Adventures in Foundry VTT!
 
 ## Getting Started
 
-Please read the [Getting Started Guide](./docs/guide.md).
+Please read the [Documentation](https://docs.ddb.mrprimate.co.uk/docs/adventure-muncher/overview).
 
 ## Download Links
 
@@ -22,11 +22,11 @@ All books with Scenes should now have notes generated. Please highlight if you f
 
 You can see the state of scene support at [this page](https://docs.ddb.mrprimate.co.uk/status.html).
 
-If you wish to help improve the scene wall and lighting information, see the [contributing page](./docs/scenes.md).
+If you wish to help improve the scene wall and lighting information, see the [contributing page](https://docs.ddb.mrprimate.co.uk/docs/adventure-muncher/contributing).
 
 ## Contribution
 
-See [contributing page](./docs/scenes.md).
+See [contributing page](https://docs.ddb.mrprimate.co.uk/docs/adventure-muncher/contributing).
 
 ## How?
 
@@ -50,7 +50,7 @@ The adventure muncher will use these to construct links to the right spells/item
 
 ## Known Issues
 
-See the [FAQ section](./docs/guide.md#troubleshooting-and-faqs).
+See the [FAQ section](https://docs.ddb.mrprimate.co.uk/docs/faqs/adventure-muncher).
 
 ## Command Line
 
@@ -85,4 +85,6 @@ Examples:
 
 ## Fan Content
 
-The scene adjustments and walling data is released as unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+The scene adjustments and walling data is released as unofficial Fan Content permitted under the Fan Content Policy.
+Not approved/endorsed by Wizards.
+Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
