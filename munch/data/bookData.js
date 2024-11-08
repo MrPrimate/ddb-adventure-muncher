@@ -954,6 +954,15 @@ const sources = [
     sourceURL: "sources/dnd/phb-2024",
   },
   {
+    id: 146,
+    name: "DMG-2024",
+    description: "Dungeon Master’s Guide (2024)",
+    sourceCategoryId: 24,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/41956/43/638520960645819732.jpeg",
+    sourceURL: "sources/dnd/dmg-2024",
+  },
+  {
     id: 148,
     name: "free-rules",
     description: "D&D Free Rules (2024)",
@@ -998,6 +1007,15 @@ const sources = [
   //   avatarURL: "https://www.dndbeyond.com/avatars/43141/46/638572767902627770.jpeg",
   //   sourceURL: "sources/dnd/tfts",
   // },
+  {
+    id: 153,
+    name: "SoEE",
+    description: "Scions of Elemental Evil",
+    sourceCategoryId: 1,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/45054/529/638651161016677547.jpeg",
+    sourceURL: "sources/dnd/soee",
+  },
 ];
 
 exports.sources = sources;

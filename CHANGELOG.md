@@ -1,3 +1,7 @@
+# 2.1.10
+
+- DMG 2024 and SoEE support.
+
 # 2.1.9
 
 - Fix some damage generation and prevent some roll generation collision in v12 of Foundry.
