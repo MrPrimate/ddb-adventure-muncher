@@ -1,3 +1,7 @@
+# 2.1.11
+
+- LotRR and Illrigger support.
+
 # 2.1.10
 
 - DMG 2024 and SoEE support.
