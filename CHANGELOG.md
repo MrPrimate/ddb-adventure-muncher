@@ -1,3 +1,7 @@
+# 2.1.12
+
+- GSB2 support
+
 # 2.1.11
 
 - LotRR and Illrigger support.

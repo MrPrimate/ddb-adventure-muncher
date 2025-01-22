@@ -1034,6 +1034,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/45624/457/638675303929857493.png",
     sourceURL: "sources/dnd/tir",
   },
+  {
+    id: 156,
+    name: "GSB2",
+    description: "The Griffon’s Saddlebag: Book Two",
+    sourceCategoryId: 27,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/46162/28/638699693204142952.jpeg",
+    sourceURL: "sources/dnd/gsb2",
+  },
 ];
 
 exports.sources = sources;
