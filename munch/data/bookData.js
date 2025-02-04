@@ -963,6 +963,15 @@ const sources = [
     sourceURL: "sources/dnd/dmg-2024",
   },
   {
+    id: 147,
+    name: "MM-2024",
+    description: "Monster Manual (2024)",
+    sourceCategoryId: 24,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/41956/55/638520960905139721.jpeg",
+    sourceURL: "sources/dnd/mm-2024",
+  },
+  {
     id: 148,
     name: "free-rules",
     description: "D&D Free Rules (2024)",
@@ -1042,6 +1051,24 @@ const sources = [
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/46162/28/638699693204142952.jpeg",
     sourceURL: "sources/dnd/gsb2",
+  },
+  {
+    id: 157,
+    name: "HBTD",
+    description: "Hold Back The Dead",
+    sourceCategoryId: 1,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/46296/545/638705856968286256.jpeg",
+    sourceURL: "sources/dnd/hbtd",
+  },
+  {
+    id: 158,
+    name: "HWT",
+    description: "Humblewood Tales",
+    sourceCategoryId: 20,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/46767/260/638727288656465942.jpeg",
+    sourceURL: "sources/dnd/hwt",
   },
 ];
 
