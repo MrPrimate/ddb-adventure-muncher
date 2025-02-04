@@ -1,3 +1,7 @@
+# 2.1.13
+
+- MM 2024 Support
+
 # 2.1.12
 
 - GSB2 support
