@@ -87,6 +87,15 @@ if (process.argv[2] === "config") {
     console.log(`Current meta data is ${configurator.metaDataVersion}`);
     exit();
   });
+} else if (process.argv[2] === "monsters") {
+  configurator.loadBook(process.argv[3]).then(() => {
+    console.log(configurator);
+    const adventure = new Adventure(configurator);
+    adventure.processMonsters().then(() => {
+      // console.log(configurator);
+      console.warn("Done");
+    });
+  });
 }  else if (!process.argv[2] || process.argv[2] == "" ) {
   console.log("Please enter a book code or use 'list' to discover codes");
   exit();

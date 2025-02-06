@@ -17,6 +17,7 @@ const path = require("path");
 const glob = require("glob");
 const os = require("os");
 const _ = require("lodash");
+const { Monsters } = require("./Monsters.js");
 
 
 class Adventure {
@@ -274,6 +275,11 @@ class Adventure {
       this.notesFactory.writeFixes();
       this.sceneFactory.writeFixes();
     }
+  }
+
+  async processMonsters() {
+    const monsters = new Monsters(this);
+    await monsters.process();
   }
 
   async processAdventure() {

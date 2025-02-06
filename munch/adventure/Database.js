@@ -24,19 +24,42 @@ WHERE ParentId = '${cobaltId}'
 `;
   }
 
-  constructor(adventure) {
-    this.adventure = adventure;
+  static getMonstersSQL = `
+SELECT *
+FROM RPGMonster;
+`;
+
+  static getMonstersTreasureMapping = `
+SELECT *
+FROM RPGMonsterTreasureMapping
+`;
+
+  static getMonsterTreasures = `
+SELECT *
+FROM RPGTreasure
+`;
+
+  static getContentDetailByContentId(contentId) {
+    return `
+SELECT *
+FROM ContentDetail
+WHERE ContentID = '${contentId}'
+`;
   }
 
-  getData(){
-
-    const options = {
+  constructor(adventure) {
+    this.adventure = adventure;
+    this.options = {
       readonly: true,
       fileMustExist: true,
     };
-    const dbPath = path.join(this.adventure.config.sourceDir,`${this.adventure.bookCode}.db3`);
-    const db = new sqlite3(dbPath, options);
-  
+    this.dbPath = path.join(this.adventure.config.sourceDir,`${this.adventure.bookCode}.db3`);
+    this.db = null;
+  }
+
+  loadDB () {
+    const db = new sqlite3(this.dbPath, this.options);
+
     db.pragma("cipher='sqlcipher'");
     db.pragma("legacy=3");
     db.pragma(`key='${this.adventure.config.key}'`);
@@ -44,11 +67,37 @@ WHERE ParentId = '${cobaltId}'
     db.pragma("kdf_iter='64000'");
     db.pragma("cipher_hmac_algorithm='HMAC_SHA1'");
     db.pragma("cipher_kdf_algorithm='PBKDF2_HMAC_SHA1'");
+
+    this.db = db;
+  }
+
+  closeDB() {
+    if (this.db) {
+      this.db.close();
+      this.db = null;
+    }
+  }
+
+  query(sql){
+    if (!this.db) return new Error("Database not loaded");
   
-    logger.debug(db);
+    const results = [];
+    try {
+      const statement = this.db.prepare(sql);
+      results.push(...statement.all());  
+    } catch (err) {
+      logger.error(err);
+      logger.error(err.stack);
+    }
+    return results;
+  }
+
+  getData(){
+    this.loadDB();
+    logger.debug(this.db);
   
     try {
-      const statement = db.prepare(Database.getAllSQL);
+      const statement = this.db.prepare(Database.getAllSQL);
       const rows = statement.all();
   
       for (const row of rows) {
@@ -67,7 +116,7 @@ WHERE ParentId = '${cobaltId}'
       logger.error(err);
       logger.error(err.stack);
     }
-    db.close();
+    this.closeDB();
   }
 }
 
