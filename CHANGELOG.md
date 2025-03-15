@@ -1,3 +1,7 @@
+# 2.2.0
+
+- Fix Journal linking in 2024 books
+
 # 2.1.13
 
 - MM 2024 Support
