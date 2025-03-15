@@ -77,7 +77,7 @@ class DynamicLinkReplacer {
 
 
   moduleReplaceLinks() {
-    const bookSlugRegExp = new RegExp(`ddb:\/\/compendium\/${this.adventure.bookCode}\/([\\w0-9\-._#+@/]*)`);
+    const bookSlugRegExp = new RegExp(`ddb:\/\/compendium\/${this.adventure.bookCode}\/([\\w0-9-._#+@/]*)`);
 
     const fragmentLinks = this.dom.querySelectorAll(`a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
 
@@ -88,15 +88,16 @@ class DynamicLinkReplacer {
       if (slugMatch) {
         // logger.info(slugMatch);
         const slug = slugMatch[1].replace(/\//g, "").split("#");
-        const refactoredSlug = (slug.length > 1) ? `${slug[0].toLowerCase()}#${slug[1]}` : slug[0].toLowerCase();
+        const slug0Ref = slug[0].split("-").filter((x) => x.trim() !== "").join("-").toLowerCase();;
+        const refactoredSlug = (slug.length > 1) ? `${slug0Ref}#${slug[1]}` : slug0Ref;
         const journalPageMap = this.adventure.journals.map((j) => j.data.pages).flat();
         const journalPage = journalPageMap.find((pageData) => {
           let check = pageData.flags.ddb.slug === refactoredSlug;
-          if (!check && slug.length > 1) check = pageData.flags.ddb.slug === slug[0].toLowerCase();
+          if (!check && slug.length > 1) check = pageData.flags.ddb.slug === slug0Ref;
           const pageNameSlug = pageData.name.replace(/[^\w\d]+/g, "");
           const pageCheck = slug.length > 2
             ? !pageData.flags.ddb.img && !pageData.flags.ddb.note
-              && pageNameSlug.toLowerCase() === slug[1].toLowerCase()
+              && pageNameSlug.toLowerCase() === slug[1].toLowerCase().replace(/[^\w\d]+/g, "")
             : true;
           return check && pageCheck;
         }) ;
@@ -108,7 +109,7 @@ class DynamicLinkReplacer {
           const result = `@UUID[JournalEntry.${journalEntry.data._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`;
           this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, result);
         } else {
-          logger.warn(`NO JOURNAL for "${node.outerHTML}" Slugs: "${slug}" Refactored slug: "${refactoredSlug}"`);
+          logger.warn(`NO JOURNAL for "${node.outerHTML}" Slugs: "${slug}" Refactored slug: "${refactoredSlug} slug0Ref: "${slug0Ref}"`);
         }
       } else {
         logger.warn(`NO SLUGS FOR ${node.outerHTML}`);
@@ -168,7 +169,7 @@ class DynamicLinkReplacer {
     }
   
     const ddbLinks = this.dom.querySelectorAll("a[href*=\"ddb://compendium\/\"]");
-    const bookSlugRegExp = new RegExp("\"ddb:\/\/compendium\/(\\w+)(?:\/)?([\\w0-9\-._#+@/]*)\"");
+    const bookSlugRegExp = new RegExp("\"ddb:\/\/compendium\/([\\w-]+)([\/#][\\w0-9\-._#+@/]*)\"");
   
     // text = text.replace(compendiumReg, "https://www.dndbeyond.com/sources/");
     // 'ddb://compendium/idrotf/aurils',
@@ -180,7 +181,7 @@ class DynamicLinkReplacer {
         // logger.info(slugMatch);
         const book = this.adventure.config.ddbConfig.sources.find((source) => source.name.toLowerCase() == slugMatch[1].toLowerCase());
         if (book) {
-          node.setAttribute("href", `https://www.dndbeyond.com/${book.sourceURL}/${slugMatch[2]}`);
+          node.setAttribute("href", `https://www.dndbeyond.com/${book.sourceURL}${slugMatch[2]}`);
           this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
         } else {
           logger.error(`Unknown book reference found ${slugMatch[1]} in ${slugMatch[0]}`);
@@ -329,7 +330,7 @@ class StaticLinkReplacer {
     }
   
     const ddbLinks = this.dom.querySelectorAll("a[href*=\"ddb://compendium\/\"]");
-    const bookSlugRegExp = new RegExp("\"ddb:\/\/compendium\/(\\w+)(?:\/)?([\\w0-9\-._#+@/]*)\"");
+    const bookSlugRegExp = new RegExp("\"ddb:\/\/compendium\/([\\w-]+)([\/#][\\w0-9\-._#+@/]*)\"");
   
     // text = text.replace(compendiumReg, "https://www.dndbeyond.com/sources/");
     // 'ddb://compendium/idrotf/aurils',
@@ -341,7 +342,7 @@ class StaticLinkReplacer {
         // logger.info(slugMatch);
         const book = this.adventure.config.ddbConfig.sources.find((source) => source.name.toLowerCase() == slugMatch[1].toLowerCase());
         if (book) {
-          node.setAttribute("href", `https://www.dndbeyond.com/${book.sourceURL}/${slugMatch[2]}`);
+          node.setAttribute("href", `https://www.dndbeyond.com/${book.sourceURL}${slugMatch[2]}`);
           this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
         } else {
           logger.error(`Unknown book reference found ${slugMatch[1]} in ${slugMatch[0]}`);

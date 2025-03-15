@@ -1070,6 +1070,24 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/46767/260/638727288656465942.jpeg",
     sourceURL: "sources/dnd/hwt",
   },
+  {
+    id: 159,
+    name: "ISotSS",
+    description: "Dungeons of Drakkenheim: In Search of the Smuggler's Secrets",
+    sourceCategoryId: 19,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/47377/293/638751718810530425.jpeg",
+    sourceURL: "sources/dnd/isotss",
+  },
+  {
+    id: 162,
+    name: "HGtMH1",
+    description: "Heliana’s Guide to Monster Hunting: Part 1",
+    sourceCategoryId: 31,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/47743/901/638766077908089991.jpeg",
+    sourceURL: "sources/dnd/hgtmh1",
+  },
 ];
 
 exports.sources = sources;
