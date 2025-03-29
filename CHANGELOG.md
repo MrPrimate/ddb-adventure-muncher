@@ -1,3 +1,7 @@
+# 2.2.1
+
+- Support "Obojima: Tales from the Tall Grass" and "The Malady of Minarrh"
+
 # 2.2.0
 
 - Fix Journal linking in 2024 books
