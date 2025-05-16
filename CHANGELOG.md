@@ -1,3 +1,7 @@
+# 2.2.2
+
+- Griffons Saddlebag did not generate all journals.
+
 # 2.2.1
 
 - Support "Obojima: Tales from the Tall Grass" and "The Malady of Minarrh"
