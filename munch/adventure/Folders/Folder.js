@@ -45,6 +45,15 @@ class Folder {
           && f.type == this.type
           && !f.flags.ddb.img
         );
+        if (!parent) {
+          logger.warn(`No parent found for ${this.type} ${this.specialType} ${this.row.data.title}, forcing journal`);
+          parent = new Folder({
+            adventure: this.adventure,
+            row: this.row,
+            type: this.type,
+            specialType: "journal",
+          });
+        }
         break;
       }
       case "base": {
@@ -61,6 +70,7 @@ class Folder {
       }
     }
     if (!parent && this.specialType !== "base") {
+      logger.warn(`No parent found for ${this.type} ${this.specialType} ${this.row.data.title}`);
       parent = new Folder({
         adventure: this.adventure,
         row: this.row,
@@ -74,7 +84,6 @@ class Folder {
 
   constructor({adventure, row, type, specialType = null}) {
     this.adventure = adventure;
-    this.specialType = specialType;
     this.type = type;
     this.specialType = specialType;
     this.row = row;

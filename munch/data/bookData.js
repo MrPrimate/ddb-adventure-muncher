@@ -1106,6 +1106,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/47743/901/638766077908089991.jpeg",
     sourceURL: "sources/dnd/hgtmh1",
   },
+  {
+    id: 164,
+    name: "VSSPP",
+    description: "Valda’s Spire of Secrets: Player Pack",
+    sourceCategoryId: 32,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/48099/191/638780952881052606.jpeg",
+    sourceURL: "sources/dnd/vsspp",
+  },
 ];
 
 exports.sources = sources;
