@@ -25,13 +25,15 @@ class Helpers {
   static SKIPPING_WORDS = ["the", "of", "at", "it", "a"];
 
   static titleString(text) {
+    console.warn(text);
     //if (!text || text === "") return "";
     const prefixSplit = text.replace("\r\n", " ").trim().split(":");
     const words
-      = prefixSplit.length > 1
+      = (prefixSplit.length > 1
         ? prefixSplit[1].trim().split(" ")
-        : text.trim().split(" ");
-  
+        : text.trim().split(" "))
+        .filter((w) => w !== "");
+
     for (let i = 0; i < words.length; i++) {
       if (i == 0 || !Helpers.SKIPPING_WORDS.includes(words[i])) {
         words[i] = words[i][0].toUpperCase() + words[i].substr(1);

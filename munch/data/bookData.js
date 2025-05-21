@@ -1115,6 +1115,33 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/48099/191/638780952881052606.jpeg",
     sourceURL: "sources/dnd/vsspp",
   },
+  {
+    id: 188,
+    name: "OSWCST",
+    description: "One-Shot Wonders: 10 Coastal One-Shot Adventures",
+    sourceCategoryId: 33,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/49170/773/638827625542016751.jpeg",
+    sourceURL: "sources/dnd/oswcst",
+  },
+  {
+    id: 189,
+    name: "OSWDST",
+    description: "One-Shot Wonders: 10 Desert One-Shot Adventures",
+    sourceCategoryId: 33,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/49171/272/638827642097330346.jpeg",
+    sourceURL: "sources/dnd/oswdst",
+  },
+  {
+    id: 190,
+    name: "OSWFST",
+    description: "One-Shot Wonders: 10 Forest One-Shot Adventures",
+    sourceCategoryId: 33,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/49171/58/638827635248036080.jpeg",
+    sourceURL: "sources/dnd/oswfst",
+  },
 ];
 
 exports.sources = sources;

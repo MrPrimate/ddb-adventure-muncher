@@ -99,14 +99,18 @@ WHERE ContentID = '${contentId}'
     try {
       const statement = this.db.prepare(Database.getAllSQL);
       const rows = statement.all();
-  
+
       for (const row of rows) {
         this.adventure.rowHints.rows.push({
           id: row.id,
           title: `${row.title}`,
           parentId: row.parentId,
           cobaltId: row.cobaltId,
+          slug: `${row.slug}`,
         });
+      }
+
+      for (const row of rows) {
         const rowObject = new Row(this.adventure, row);
         this.adventure.processRow(rowObject);
       }

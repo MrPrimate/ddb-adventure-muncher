@@ -60,14 +60,14 @@ class ImageJournal extends Journal {
         this.adventure.imageFinder.journals.push({
           bookCode: this.adventure.bookCode,
           img: this.imageContent,
-          name: this.row.name,
-          slug: this.row.slug,
+          name: this.row.data.name,
+          slug: this.row.data.slug,
         });
       }
     }
     this.adventure.assets.push(this.imageContent);
     const journalHandoutCount = this.adventure.assets.filter(img => img === this.imageContent).length;
-    logger.debug(`Generated Handout ${this.row.name}, "${this.imageContent}", (count ${journalHandoutCount}), Duplicate? ${this.duplicate}`);
+    logger.debug(`Generated Handout ${this.row.data.name}, "${this.imageContent}", (count ${journalHandoutCount}), Duplicate? ${this.duplicate}`);
 
   }
 
@@ -81,7 +81,7 @@ class ImageJournal extends Journal {
 
     const page = this.generatePage(this.imageContent);
 
-    if (!this.row.parentId) this.data.flags.ddb.linkId = this.data._id;
+    if (!this.row.data.parentId) this.data.flags.ddb.linkId = this.data._id;
     this.data.pages.push(page);
 
   }

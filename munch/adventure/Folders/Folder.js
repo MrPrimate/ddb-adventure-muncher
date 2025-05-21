@@ -71,21 +71,50 @@ class Folder {
     }
     if (!parent && this.specialType !== "base") {
       logger.warn(`No parent found for ${this.type} ${this.specialType} ${this.row.data.title}`);
-      parent = new Folder({
-        adventure: this.adventure,
-        row: this.row,
-        type: this.type,
-        specialType: this.specialType,
-      });
+      if (this.nestedCall) {
+        logger.warn(`No parent found for ${this.type} ${this.specialType} ${this.row.data.title}`);
+        logger.warn({
+          parentId: this.parentId,
+          cobaltId: this.cobaltId,
+          type: this.type,
+          specialType: this.specialType,
+          nestedCall: true,
+        });
+        parent = new Folder({
+          adventure: this.adventure,
+          row: this.row,
+          type: this.type,
+          specialType: this.nestedCall ? null : this.specialType,
+          nestedCall: true,
+        });
+      } else {
+        parent = new Folder({
+          adventure: this.adventure,
+          row: this.row,
+          type: this.type,
+          // specialType: this.nestedCall ? null : this.specialType,
+          specialType: this.specialType,
+          nestedCall: true,
+        });
+      }
+      // parent = new Folder({
+      //   adventure: this.adventure,
+      //   row: this.row,
+      //   type: this.type,
+      //   // specialType: this.nestedCall ? null : this.specialType,
+      //   specialType: this.specialType,
+      //   nestedCall: true,
+      // });
     }
     return parent;
   }
 
 
-  constructor({adventure, row, type, specialType = null}) {
+  constructor({adventure, row, type, specialType = null, nestedCall = false}) {
     this.adventure = adventure;
     this.type = type;
     this.specialType = specialType;
+    this.nestedCall = nestedCall;
     this.row = row;
     const folderJsonPath = path.join(this.adventure.overrides.templateDir, "folder.json");
     this.data = JSON.parse(JSON.stringify(require(folderJsonPath)));
