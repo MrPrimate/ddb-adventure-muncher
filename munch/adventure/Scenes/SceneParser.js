@@ -75,13 +75,6 @@ class SceneParser {
           this.adventure.scenes.push(scene);
         }
 
-        let contentChunkId = node.getAttribute("data-content-chunk-id");
-        if (!contentChunkId) {
-          // figure type embedds mostly don't have content chunk Id's 
-          // we fall back to element ID which appears to be unique for the outer figure element
-          contentChunkId = node.id;
-        }
-
         if (!title || title === "") {
           title = `Handout ${this.factory.tracker[this.handoutTmpRef]}`;
           this.factory.tracker[this.handoutTmpRef]++;

@@ -101,13 +101,16 @@ WHERE ContentID = '${contentId}'
       const rows = statement.all();
 
       for (const row of rows) {
-        this.adventure.rowHints.rows.push({
+        const data = {
           id: row.id,
           title: `${row.title}`,
           parentId: row.parentId,
           cobaltId: row.cobaltId,
           slug: `${row.slug}`,
-        });
+        };
+        this.adventure.rowHints.rows.push(data);
+        if (row.cobaltId ?? row.cobaltId != null)
+          this.adventure.rowHints.parents.push(data);
       }
 
       for (const row of rows) {

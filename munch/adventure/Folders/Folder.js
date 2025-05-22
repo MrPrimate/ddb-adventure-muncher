@@ -193,6 +193,7 @@ class Folder {
       // we do this so the scene folder order matches the same as the journals as some
       // adventures e.g. CoS have different kind of scene detection
       this.adventure.folderFactory.getFolderId(row, "Scene", specialType);
+      // this.adventure.folderFactory.getFolderId(row, "Scene", "scene");
       this.adventure.folderFactory.getFolderId(row, "RollTable", specialType);
     }
   }

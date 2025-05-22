@@ -40,7 +40,7 @@ class Row {
     });
     if (enhancedRowHint) {
       row.levelHint = enhancedRowHint.levelHint ?? 1;
-      const parent = this.#adventure.rowHints.rows.find((row) => row.title == enhancedRowHint.parentName);
+      const parent = this.#adventure.rowHints.parents.find((row) => row.title == enhancedRowHint.parentName);
       if (parent) {
         row.original = {
           cobaltId: row.cobaltId,
@@ -60,7 +60,7 @@ class Row {
     
     if (!enhancedRowHint
       && row.parentId && row.parentId !== ""
-      && !this.#adventure.rowHints.rows.some((r) => r.cobaltId == row.parentId)
+      && !this.#adventure.rowHints.parents.some((r) => r.cobaltId == row.parentId)
     ) {
       // misformated db
       logger.warn("Unable to determine parentID, attempting row adjustment", {
@@ -71,24 +71,39 @@ class Row {
         slug: row.slug,
       });
 
-      row.original = {
-        cobaltId: row.cobaltId,
-        parentId: row.parentId,
-      };
+      // row.original = {
+      //   cobaltId: row.cobaltId,
+      //   parentId: row.parentId,
+      // };
       
       row.cobaltId = row.parentId;
       row.parentId = null;
 
-      this.#adventure.rowHints.adjustedParents.push({
+      // this.#adventure.rowHints.adjustedParents.push({
+      //   id: row.id,
+      //   title: `${row.title}`,
+      //   parentId: row.parentId,
+      //   cobaltId: row.cobaltId,
+      //   original: row.original,
+      // });
+      if (row.slug && row.slug.endsWith("#")) {
+        row.slug = row.slug.substring(0, row.slug.length - 1);
+      }
+
+      logger.warn("Adjusted Row data, adding new parent", {
+        id: row.id,
+        title: row.title,
+        parentId: row.parentId,
+        cobaltId: row.cobaltId,
+        slug: row.slug,
+      });
+      this.#adventure.rowHints.parents.push({
         id: row.id,
         title: `${row.title}`,
         parentId: row.parentId,
         cobaltId: row.cobaltId,
-        original: row.original,
+        slug: `${row.slug}`,
       });
-      if (row.slug && row.slug.endsWith("#")) {
-        row.slug = row.slug.substring(0, row.slug.length - 1);
-      }
     }
 
     const parentHint = this.#adventure.rowHints.adjustedParents.find((p) => row.parentId == p.original.cobaltId);

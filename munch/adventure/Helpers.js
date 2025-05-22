@@ -23,10 +23,18 @@ class Helpers {
   }
   
   static SKIPPING_WORDS = ["the", "of", "at", "it", "a"];
+  static REMOVE_STRINGS = [
+    "View Without Grid",
+    "View Player Version",
+    "View Unlabeled Version"
+  ];
+
 
   static titleString(text) {
-    console.warn(text);
     //if (!text || text === "") return "";
+    for (let i = 0; i < this.REMOVE_STRINGS.length; i++) {
+      text = text.replace(this.REMOVE_STRINGS[i], "");
+    }
     const prefixSplit = text.replace("\r\n", " ").trim().split(":");
     const words
       = (prefixSplit.length > 1

@@ -145,6 +145,7 @@ class Adventure {
 
     this.rowHints = {
       rows: [],
+      parents: [],
       adjustedParents: [],
       adjustedChildren: [],
     };
