@@ -1,3 +1,7 @@
+# 2.3.0
+
+- Adjustments to support one shot wonders.
+
 # 2.2.2
 
 - Griffons Saddlebag did not generate all journals.
