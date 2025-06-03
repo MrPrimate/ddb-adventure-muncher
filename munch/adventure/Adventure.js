@@ -258,6 +258,9 @@ class Adventure {
       logger.error(`Duplicate row parse attempted for ${row.data.id}`);
     }
 
+    // Clean up row to free memory
+    row.dispose();
+
   }
 
   saveJson() {

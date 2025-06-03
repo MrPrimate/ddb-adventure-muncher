@@ -27,7 +27,11 @@ class Row {
     const dice = new DiceReplacer(this.#adventure, links.result, `${row.slug}`);
     dice.process();
 
-    this.#frag = new JSDOM(dice.result.replace(/\s+/g, " "));
+    // Get processed text and clean up replacers to free memory
+    const processedText = dice.result.replace(/\s+/g, " ");
+    links.dispose();
+
+    this.#frag = new JSDOM(processedText);
     row.title = this.getTitle(row.title);
 
     const enhancedRowHint = adventure.enhancements.journalHints.find((hint) => 
@@ -157,6 +161,15 @@ class Row {
 
     return this.#frag.window.document.body.textContent;
 
+  }
+  
+  // Clean up JSDOM instance to free memory
+  dispose() {
+    if (this.#frag && this.#frag.window) {
+      this.#frag.window.close();
+    }
+    this.#frag = null;
+    this.doc = null;
   }
 
 }

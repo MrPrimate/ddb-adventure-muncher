@@ -205,6 +205,8 @@ class Journal {
         links.process();
         page.text.content = `${links.result}`;
         page.text.content = page.text.content.replace(/\s+/g, " ");
+        // Clean up to free memory
+        links.dispose();
       }
     });
   }

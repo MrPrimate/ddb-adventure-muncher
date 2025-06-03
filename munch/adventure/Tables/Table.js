@@ -178,6 +178,8 @@ class Table {
       const replacer = new DynamicLinkReplacer(this.adventure, linkDetails);
       replacer.process();
       result.text = `${replacer.result}`;
+      // Clean up to free memory
+      replacer.dispose();
     });
   }
 

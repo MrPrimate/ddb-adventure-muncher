@@ -39,6 +39,14 @@ class DynamicLinkReplacer {
     this.dom = new JSDOM(text).window.document;
     this.journal = journal;
   }
+  
+  // Clean up DOM to free memory
+  dispose() {
+    if (this.dom && this.dom.defaultView) {
+      this.dom.defaultView.close();
+    }
+    this.dom = null;
+  }
 
   process({includeTables = true, includeImages = true} = {}) {
     logger.info(`Replacing links for ${this.name}`);
@@ -78,8 +86,8 @@ class DynamicLinkReplacer {
 
   moduleReplaceLinks() {
     const bookSlugRegExp = new RegExp(`ddb:\/\/compendium\/${this.adventure.bookCode}\/([\\w0-9-._#+@/]*)`);
-
     const fragmentLinks = this.dom.querySelectorAll(`a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
+    const replacements = [];
 
     for (let fragmentIndex = 0, fragmentsLength = fragmentLinks.length; fragmentIndex < fragmentsLength; fragmentIndex++) {
       const node = fragmentLinks[fragmentIndex];
@@ -107,13 +115,25 @@ class DynamicLinkReplacer {
           const journalEntry = this.adventure.journals.find((j) => j.data.pages.some((p) => p._id === journalPage._id));
           const slugLink = (slug.length > 2) ? `#${slug[2].replace(/[^\w\d]+/g, "")}` : "";
           const result = `@UUID[JournalEntry.${journalEntry.data._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`;
-          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, result);
+          replacements.push({
+            oldText: node.outerHTML,
+            newText: result
+          });
         } else {
           logger.warn(`NO JOURNAL for "${node.outerHTML}" Slugs: "${slug}" Refactored slug: "${refactoredSlug} slug0Ref: "${slug0Ref}"`);
         }
       } else {
         logger.warn(`NO SLUGS FOR ${node.outerHTML}`);
       }
+    }
+    
+    // Batch all innerHTML replacements
+    if (replacements.length > 0) {
+      let html = this.dom.body.innerHTML;
+      for (const replacement of replacements) {
+        html = html.replace(replacement.oldText, replacement.newText);
+      }
+      this.dom.body.innerHTML = html;
     }
 
   }
@@ -130,6 +150,8 @@ class DynamicLinkReplacer {
     // actions
     // weaponproperties
 
+    const replacements = [];
+    
     for (const lookupKey in COMPENDIUM_MAP) {
       const compendiumLinks = this.dom.querySelectorAll(`a[href*=\"ddb://${lookupKey}\/\"]`);
       const lookupRegExp = new RegExp(`ddb:\/\/${lookupKey}\/([0-9]*)`);
@@ -147,7 +169,10 @@ class DynamicLinkReplacer {
             const linkStub = lookupEntry.headerLink ? `#${lookupEntry.headerLink}` : "";
             const link = `${lookupEntry.compendium}.${documentRef}${pageLink}${linkStub}`;
             const linkType = lookupEntry._id ? "UUID[Compendium." : "Compendium[";
-            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@${linkType}${link}]{${node.textContent}}`);
+            replacements.push({
+              oldText: node.outerHTML,
+              newText: `@${linkType}${link}]{${node.textContent}}`
+            });
           }
         } 
       });
@@ -167,7 +192,16 @@ class DynamicLinkReplacer {
         } 
       });
     }
-  
+
+    // Batch all innerHTML replacements to reduce DOM manipulation
+    if (replacements.length > 0) {
+      let html = this.dom.body.innerHTML;
+      for (const replacement of replacements) {
+        html = html.replace(replacement.oldText, replacement.newText);
+      }
+      this.dom.body.innerHTML = html;
+    }
+
     const ddbLinks = this.dom.querySelectorAll("a[href*=\"ddb://compendium\/\"]");
     const bookSlugRegExp = new RegExp("\"ddb:\/\/compendium\/([\\w-]+)([\/#][\\w0-9\-._#+@/]*)\"");
   
@@ -194,6 +228,7 @@ class DynamicLinkReplacer {
     // href="ddb://file/lmop/dwarf-cleric.pdf"
     const reFileLink = new RegExp(`href="ddb:\/\/file\/${this.adventure.bookCode}\/(.*?)"`);
     const fileLinks = this.dom.querySelectorAll("a[href*=\"ddb://file\/\"]");
+    const replacements = [];
 
     fileLinks.forEach((node) =>{
       const target = `${node.outerHTML}`;
@@ -212,16 +247,30 @@ class DynamicLinkReplacer {
           const page = new Page(pageData);
           this.journal.data.pages.push(page.toObject());
           const link = `@UUID[JournalEntry.${this.journal.data._id}.JournalEntryPage.${page.data._id}]`;
-          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, link);
+          replacements.push({
+            oldText: target,
+            newText: link
+          });
         } else {
           node.setAttribute("href", `assets/${fileMatch[1]}`);
-          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
+          replacements.push({
+            oldText: target,
+            newText: node.outerHTML
+          });
         }
 
         logger.info("fileMatchTarget", {fileMatch, target, inner: node.innerHTML, outer: node.outerHTML});
-        this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
       }
     });
+    
+    // Batch all innerHTML replacements
+    if (replacements.length > 0) {
+      let html = this.dom.body.innerHTML;
+      for (const replacement of replacements) {
+        html = html.replace(replacement.oldText, replacement.newText);
+      }
+      this.dom.body.innerHTML = html;
+    }
 
   }
 
@@ -234,6 +283,14 @@ class StaticLinkReplacer {
     this.name = name;
     this.dom = new JSDOM(text).window.document;
     this.journal = journal;
+  }
+  
+  // Clean up DOM to free memory
+  dispose() {
+    if (this.dom && this.dom.defaultView) {
+      this.dom.defaultView.close();
+    }
+    this.dom = null;
   }
 
   process() {
@@ -280,17 +337,34 @@ class StaticLinkReplacer {
     const h4Links = this.dom.querySelectorAll(`h4 a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
     const h5Links = this.dom.querySelectorAll(`h5 a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
     const hLinks = [h1Links, h2Links, h3Links, h4Links, h5Links];
+    const replacements = [];
+    
     hLinks.forEach((hLink) => {
       for (let headerIndex = 0, headerLength = hLink.length; headerIndex < headerLength; headerIndex++) {
         const node = hLink[headerIndex];
-        this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, node.textContent);
+        replacements.push({
+          oldText: node.outerHTML,
+          newText: node.textContent
+        });
       }
     });
 
     const headerLinks = this.dom.querySelectorAll("a[href^=\"#\"");
     for (let headerIndex = 0, headerLength = headerLinks.length; headerIndex < headerLength; headerIndex++) {
       const node = headerLinks[headerIndex];
-      this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, node.textContent);
+      replacements.push({
+        oldText: node.outerHTML,
+        newText: node.textContent
+      });
+    }
+    
+    // Batch all innerHTML replacements
+    if (replacements.length > 0) {
+      let html = this.dom.body.innerHTML;
+      for (const replacement of replacements) {
+        html = html.replace(replacement.oldText, replacement.newText);
+      }
+      this.dom.body.innerHTML = html;
     }
   }
 
@@ -305,6 +379,8 @@ class StaticLinkReplacer {
     // armor
     // actions
     // weaponproperties
+
+    const lookupReplacements = [];
 
     for (const lookupKey in COMPENDIUM_MAP) {
       const compendiumLinks = this.dom.querySelectorAll(`a[href*=\"ddb://${lookupKey}\/\"]`);
@@ -323,15 +399,28 @@ class StaticLinkReplacer {
             const linkStub = lookupEntry.headerLink ? `#${lookupEntry.headerLink}` : "";
             const link = `${lookupEntry.compendium}.${documentRef}${pageLink}${linkStub}`;
             const linkType = lookupEntry._id ? "UUID[Compendium." : "Compendium[";
-            this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `@${linkType}${link}]{${node.textContent}}`);
+            lookupReplacements.push({
+              oldText: node.outerHTML,
+              newText: `@${linkType}${link}]{${node.textContent}}`
+            });
           }
         } 
       });
     }
-  
+
+    // Batch all innerHTML replacements
+    if (lookupReplacements.length > 0) {
+      let html = this.dom.body.innerHTML;
+      for (const replacement of lookupReplacements) {
+        html = html.replace(replacement.oldText, replacement.newText);
+      }
+      this.dom.body.innerHTML = html;
+    }
+
+    const otherReplacements = [];
     const ddbLinks = this.dom.querySelectorAll("a[href*=\"ddb://compendium\/\"]");
     const bookSlugRegExp = new RegExp("\"ddb:\/\/compendium\/([\\w-]+)([\/#][\\w0-9\-._#+@/]*)\"");
-  
+
     // text = text.replace(compendiumReg, "https://www.dndbeyond.com/sources/");
     // 'ddb://compendium/idrotf/aurils',
     // 'ddb://compendium/idrotf/doom',
@@ -343,12 +432,24 @@ class StaticLinkReplacer {
         const book = this.adventure.config.ddbConfig.sources.find((source) => source.name.toLowerCase() == slugMatch[1].toLowerCase());
         if (book) {
           node.setAttribute("href", `https://www.dndbeyond.com/${book.sourceURL}${slugMatch[2]}`);
-          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
+          otherReplacements.push({
+            oldText: target,
+            newText: node.outerHTML
+          });
         } else {
           logger.error(`Unknown book reference found ${slugMatch[1]} in ${slugMatch[0]}`);
         }
       }
     });
+
+    // Batch all innerHTML replacements
+    if (otherReplacements.length > 0) {
+      let html = this.dom.body.innerHTML;
+      for (const replacement of otherReplacements) {
+        html = html.replace(replacement.oldText, replacement.newText);
+      }
+      this.dom.body.innerHTML = html;
+    }
   }
 
   replaceImageLinks() {
@@ -374,6 +475,7 @@ class StaticLinkReplacer {
     // <img src="./idrotf/00-000.intro-splash.jpg" class="ddb-lightbox-inner" style="width: 650px;"></a>
     const reFileLink = new RegExp(`href="ddb:\/\/file\/${this.adventure.bookCode}\/(.*?)"`);
     const fileLinks = this.dom.querySelectorAll("a[href*=\"ddb://file\/\"]");
+    const fileReplacements = [];
 
     fileLinks.forEach((node) =>{
       const target = `${node.outerHTML}`;
@@ -381,13 +483,28 @@ class StaticLinkReplacer {
       if (fileMatch) {
         if ((/(\.jpg|\.jpeg|\.gif|\.webp|\.webm|\.png)"/i).test(fileMatch[1].trim())) {
           node.removeAttribute("href");
-          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.innerHTML);
+          fileReplacements.push({
+            oldText: target,
+            newText: node.innerHTML
+          });
         } else {
           node.setAttribute("href", `assets/${fileMatch[1]}`);
-          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
+          fileReplacements.push({
+            oldText: target,
+            newText: node.outerHTML
+          });
         }
       }
     });
+    
+    // Batch all file link replacements
+    if (fileReplacements.length > 0) {
+      let html = this.dom.body.innerHTML;
+      for (const replacement of fileReplacements) {
+        html = html.replace(replacement.oldText, replacement.newText);
+      }
+      this.dom.body.innerHTML = html;
+    }
   }
 
 }
