@@ -20,6 +20,48 @@ class SceneParser {
     // this.unknownHandoutCount = Number.isInteger(unknownHandoutCount) ? unknownHandoutCount: 1;
   }
 
+
+  #processFigureScene({ title, node, imageRef, ref, caption, titleType }) {
+    logger.debug(`possibleFigureSceneNodes ${titleType} TITLE: ${title}`, {
+      title,
+      imageRef,
+      refLink: ref.href,
+    });
+
+    if (title !== ref.textContent) {
+      title = Helpers.titleString(title.replace(ref.textContent, "").trim());
+    }
+
+    let rowContentChunkId = caption.getAttribute("data-content-chunk-id");
+    if (!rowContentChunkId) {
+      // figure type embeds mostly don't have content chunk Id's 
+      // we fall back to element ID which appears to be unique for the outer figure element
+      rowContentChunkId = `${node.id}-${titleType.toLowerCase()}`;
+    }
+
+    let row = { data: {
+      title: `${title} (${titleType} Version)`,
+      id: 10000 + this.document.flags.ddb.ddbId + this.tmpCount,
+      parentId: this.document.flags.ddb.parentId,
+      cobaltId: this.document.flags.ddb.cobaltId,
+      slug: this.document.flags.ddb.slug,
+      documentName: this.document.name,
+      sceneName: title,
+      contentChunkId: rowContentChunkId,
+      originDocId: this.document._id,
+      originHint: `possibleFigureSceneNodes, ${titleType.toLowerCase()}`,
+      originalLink: ref.href,
+      player: true,
+    }};
+    this.tmpCount++;
+    // const imageRef =  !playerRef && ungriddedRef ? img.src : ref.href;
+    const playerEntry = new ImageJournal(this.adventure, row, imageRef.replace("ddb://image", "."));
+    this.adventure.replaceLinks.push( {html: ref.outerHTML, ref: "" });
+    this.document.text.content = this.document.text.content.replace(ref.outerHTML, "");
+    const scene = new Scene(this.adventure, row, playerEntry.data.pages[0].src);
+    this.adventure.scenes.push(scene);
+  }
+
   #possibleFigureScenes() {
 
     if (this.possibleFigureSceneNodes.length > 0) {
@@ -33,46 +75,39 @@ class SceneParser {
         if (!caption) return;
         // logger.info(document);
         let title = caption.textContent.trim();
-        const playerRef = node.querySelector("a[data-title~=Player]");
-        const unlabeledRef = node.querySelector("a[data-title~=Unlabeled]");
-        const ungriddedRef = node.querySelector("a[data-title~='Without Grid']");
+        const playerRef = node.querySelector("a[data-title*='player' i]");
+        const unlabeledRef = node.querySelector("a[data-title*='unlabeled' i]");
+        const ungriddedRef = node.querySelector("a[data-title*='without' i]");
+        const mapRef = title.toLowerCase().startsWith("map")
+          ? node.querySelector("a")
+          : null;
 
-        if (playerRef || unlabeledRef || ungriddedRef) {
-          const ref = playerRef ?? unlabeledRef ?? ungriddedRef;
+        if (playerRef || unlabeledRef) {
+          const ref = playerRef ?? unlabeledRef;
           let titleType = playerRef ? "Player" : "Unlabeled";
-          if (title !== ref.textContent) {
-            title = Helpers.titleString(title.replace(ref.textContent, "").trim());
-          }
           logger.debug(`possibleFigureSceneNodes ${titleType} TITLE: ${title}`);
 
-          let rowContentChunkId = caption.getAttribute("data-content-chunk-id");
-          if (!rowContentChunkId) {
-            // figure type embedds mostly don't have content chunk Id's 
-            // we fall back to element ID which appears to be unique for the outer figure element
-            rowContentChunkId = `${node.id}-${titleType.toLowerCase()}`;
-          }
+          this.#processFigureScene({
+            title,
+            node,
+            imageRef: ref.href,
+            ref,
+            caption,
+            titleType,
+          });
 
-          let row = { data: {
-            title: `${title} (${titleType} Version)`,
-            id: 10000 + this.document.flags.ddb.ddbId + this.tmpCount,
-            parentId: this.document.flags.ddb.parentId,
-            cobaltId: this.document.flags.ddb.cobaltId,
-            slug: this.document.flags.ddb.slug,
-            documentName: this.document.name,
-            sceneName: title,
-            contentChunkId: rowContentChunkId,
-            originDocId: this.document._id,
-            originHint: `possibleFigureSceneNodes, ${titleType.toLowerCase()}`,
-            originalLink: ref.href,
-            player: true,
-          }};
-          this.tmpCount++;
-          const imageRef =  !playerRef && ungriddedRef ? img.src : ref.href;
-          const playerEntry = new ImageJournal(this.adventure, row, imageRef.replace("ddb://image", "."));
-          this.adventure.replaceLinks.push( {html: ref.outerHTML, ref: "" });
-          this.document.text.content = this.document.text.content.replace(ref.outerHTML, "");
-          const scene = new Scene(this.adventure, row, playerEntry.data.pages[0].src);
-          this.adventure.scenes.push(scene);
+        } else if (ungriddedRef || mapRef) {
+          const ref = ungriddedRef ?? mapRef;
+          let titleType = ungriddedRef ? "Ungridded" : "Map";
+          logger.debug(`possibleFigureSceneNodes no player ${titleType} TITLE: ${title}`);
+          this.#processFigureScene({
+            title,
+            node,
+            imageRef: img.src,
+            ref,
+            caption,
+            titleType,
+          });
         }
 
         if (!title || title === "") {

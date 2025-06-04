@@ -1,3 +1,8 @@
+# 2.3.2
+
+- Some memory optimisations for munching books like XGTE, which could fail on some machines.
+- Some adventures started generating scenes for art pieces.
+
 # 2.3.0
 
 - Adjustments to support one shot wonders.
