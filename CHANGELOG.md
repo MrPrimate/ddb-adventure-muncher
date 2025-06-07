@@ -1,3 +1,7 @@
+# 2.3.3
+
+- Monsters of Drakkenheim and Borderlands Quest: Goblin Trouble support.
+
 # 2.3.2
 
 - Some memory optimisations for munching books like XGTE, which could fail on some machines.

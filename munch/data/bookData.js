@@ -1143,6 +1143,15 @@ const sources = [
     sourceURL: "sources/dnd/oswfst",
   },
   {
+    id: 195,
+    name: "BQGT",
+    description: "Borderlands Quest: Goblin Trouble",
+    sourceCategoryId: 1,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/49597/118/638846444787622576.jpeg",
+    sourceURL: "sources/dnd/bqgt",
+  },
+  {
     id: 196,
     name: "MoDr",
     description: "Monsters of Drakkenheim",
