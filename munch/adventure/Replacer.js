@@ -646,14 +646,14 @@ class DiceReplacer {
   static diceRollMatcher(match, p1, p2, p3, p4, p5, p6) { 
     if (p6 && p6.toLowerCase() === "damage") {
       const diceString = DiceReplacer.parseDiceString(p3, null, `[${p5.toLowerCase().trim()}]`).diceString;
-      return `${p1 ? p1: ""} [[/damage ${diceString} ${p5} average=true]] damage`;
+      return `${p1 ? p1: ""} [[/damage ${diceString} ${p5.toLowerCase().trim()} average=true]] damage`;
     } else if (p6 && p1 && p6.toLowerCase() === "points" && p1.toLowerCase() === "regains") {
       const diceString = DiceReplacer.parseDiceString(p3, null, "[healing]").diceString;
       return `${p1 ? p1: ""} [[/damage ${diceString} type=heal average=false]] hit points`;
     } else {
       const diceString = DiceReplacer.parseDiceString(p3).diceString;
       // const rollString = `${p1 ? p1: ""} [[/roll ${diceString}]]${p3 ? p3 : ""}${p4 ? p4 : ""} ${p5 ? p5 : ""} `;
-      const rollString = `${p1 ? p1: ""} [[/damage ${diceString} ${p5 ? p5 : ""}]] ${p6 ? p6 : ""}`;
+      const rollString = `${p1 ? p1: ""} [[/damage ${diceString} ${p5 ? p5.toLowerCase().trim() : ""}]] ${p6 ? p6 : ""}`;
       const result = rollString
         .replace("( [[/roll ", "([[/roll ")
         .replace("> [[/roll", ">[[/roll")

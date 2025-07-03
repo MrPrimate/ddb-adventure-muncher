@@ -1,3 +1,8 @@
+# 2.3.4
+
+- Support for The Crooked Moon and Dragon Delves
+- Some /damage rolls in journals did not parse the type lowercase, resulting in bad embeds.
+
 # 2.3.3
 
 - Monsters of Drakkenheim and Borderlands Quest: Goblin Trouble support.
