@@ -1,3 +1,7 @@
+# 2.3.5
+
+- Improved scene parsing for The Crooked Moon.
+
 # 2.3.4
 
 - Support for The Crooked Moon and Dragon Delves
