@@ -107,8 +107,6 @@ class Scene {
             "textAnchor": 1,
             "textColor": note.textColor ? note.textColor : "",
           };
-          n.flags.ddb.linkName = noteJournal.data.flags.ddb.linkName;
-          n.flags.ddb.slugLink = noteJournal.data.flags.ddb.slugLink;
           n.flags.ddb.linkId = noteId;
           // icon generation
           const icon = this.generateIcon(note.label, note.texture?.src);
@@ -122,17 +120,35 @@ class Scene {
 
           n.flags.ddb.labelName = `${note.label}`; 
           // generate slug, and strip 0, support for native ddb sluging
-          n.flags.ddb.slugLink = note.label.replace(/[^\w\d]+/g, "").replace(/^([a-zA-Z]?)0+/, "$1");
-          // support for anchor links mondule
-          n.flags.anchor = {
-            slug: n.flags.ddb.slugLink
-          };
+          const baseSlugLink = note.flags.ddb.slugLink;
+          const labelSlugLink = note.label.replace(/[^\w\d]+/g, "").replace(/^([a-zA-Z]?)0+/, "$1").replaceAll("\r\n", "");
+          n.flags.ddb.slugLink = baseSlugLink;
           n.text = note.label;
 
           const contentChunkIdPageId = note.flags.ddb.contentChunkId
             ? noteJournal.getPageIdForContentChunkId(note.flags.ddb.contentChunkId)
             : undefined;
-          const slugLinkPageId = noteJournal.getPageIdForElementId(n.flags.ddb.slugLink);
+
+          let slugLinkPageId = noteJournal.getPageIdForElementId(baseSlugLink);
+          if (!contentChunkIdPageId && !slugLinkPageId) {
+            slugLinkPageId = noteJournal.getPageIdForElementId(labelSlugLink);
+            n.flags.ddb.slugLink = labelSlugLink;
+          }
+
+          // support for anchor links module
+          n.flags.anchor = {
+            slug: n.flags.ddb.slugLink
+          };
+
+          // logger.warn("Slug link", {
+          //   note: note.flags.ddb.slugLink,
+          //   contentChunkId: note.flags.ddb.contentChunkId,
+          //   nLink: n.flags.ddb.slugLink,
+          //   baseSlugLink,
+          //   labelSlugLink,
+          //   noteJournalLengths: noteJournal.elementIds.length,
+          //   slugLinkPageId,
+          // });
 
           // console.warn("MATCHES", { slugLinkPageId, contentChunkIdPageId, noteFlags: note.flags.ddb });
           // console.warn("PageIds", noteJournal.data.pages.map((p) => {return {id: p._id, flags: p.flags.ddb}}));
@@ -152,18 +168,43 @@ class Scene {
           if (journalPage) {
             n.pageId = journalPage._id;
           } else {
-            logger.error(`Unable to find journal page for note ${note.label}`, note);
+            logger.error(`Unable to find journal page for note ${note.label}`, {
+              note,
+            });
             const idPage = noteJournal.data.pages.find((page) => page._id === contentChunkIdPageId || page._id === slugLinkPageId);
-            this.adventure.bad.notes.push({
+            const badNoteData = {
               noteLabel: note.label,
               noteFlags: note.flags.ddb,
-              contentChunkIdPageId,
-              slugLinkPageId,
+              contentChunkIdPageId: contentChunkIdPageId ?? null,
+              slugLinkPageId: slugLinkPageId ?? null,
               slug: note.flags.ddb.slug,
               parentId: note.flags.ddb.parentId,
               idPageFlags: idPage ? idPage.flags.ddb : "No page",
               nFlags: n.flags.ddb,
               journalElementIds: noteJournal.elementIds,
+            };
+            this.adventure.bad.notes.push(badNoteData);
+            logger.error(`Bad note data gathered ${note.label}`, {
+              badNoteData,
+              pageMatchBools: {
+                adjustedPage: noteJournal.data.pages.some((page) =>
+                  adjustedParent && page.flags.ddb.parentId == adjustedParent.parentId
+                ),
+                parentId: noteJournal.data.pages.some((page) =>
+                  page.flags.ddb.parentId == note.flags.ddb.parentId
+                ),
+                slugMatch: noteJournal.data.pages.some((page) =>
+                  page.flags.ddb.slug == note.flags.ddb.slug
+                  || page.flags.ddb.slug.replace(/^([a-zA-Z]?)0+/, "$1") == note.flags.ddb.slug
+                  || page.flags.ddb.slug.startsWith(note.flags.ddb.slug)
+                ),
+                chunkMatchPageId: noteJournal.data.pages.some((page) =>
+                  page._id === contentChunkIdPageId
+                ),
+                chunkMatchPageIdSlugLink: noteJournal.data.pages.some((page) =>
+                  page._id === slugLinkPageId
+                ),
+              }
             });
           }
 

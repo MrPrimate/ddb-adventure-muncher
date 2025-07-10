@@ -101,6 +101,8 @@ WHERE ContentID = '${contentId}'
       const rows = statement.all();
 
       for (const row of rows) {
+        if (row.slug && row.slug != "")
+          row.slug = `${row.slug}`.replaceAll("\r\n", "");
         const data = {
           id: row.id,
           title: `${row.title}`,

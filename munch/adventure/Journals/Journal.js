@@ -136,7 +136,7 @@ class Journal {
     this.data.flags.ddb.originHint = row.data.originHint;
     this.data.flags.ddb.originalLink = row.data.originalLink;
     this.data.flags.ddb.linkName = row.data.title;
-    this.data.flags.ddb.slugLink = row.data.slugLink ?? row.data.title.replace(/[^\w\d]+/g, "");
+    this.data.flags.ddb.slugLink = (row.data.slugLink ?? row.data.title.replace(/[^\w\d]+/g, ""));
 
     const adjustParent = this.adventure.rowHints.adjustedParents.find((p) => p.id === row.id)
       ?? this.adventure.rowHints.adjustedChildren.find((p) => p.id === row.id);
@@ -221,8 +221,20 @@ class Journal {
 
   // returns page Id if element id known in contents
   getPageIdForElementId(elementId) {
+    let i = 0;
+    let j = 0;
     for (const [key, value] of Object.entries(this.elementIds)) {
+      i++;
+      j += value.size;
       if (value.has(elementId)) return key;
+      // if (value.has(elementId.replace(/^0+/, ""))) return key;
+    }
+    logger.error(`Element id ${elementId} not found in journal ${this.data.name}, trying lowercase fallback`,
+      { i,j, length: this.elementIds.length }
+    );
+    for (const [key, value] of Object.entries(this.elementIds)) {
+      const values = new Set(Array.from(value).map((v) => v.toLowerCase()));
+      if (values.has(elementId.toLowerCase())) return key;
       // if (value.has(elementId.replace(/^0+/, ""))) return key;
     }
     return undefined;
