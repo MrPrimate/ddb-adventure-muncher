@@ -1,3 +1,7 @@
+# 2.3.6
+
+- Improved slug detection/journal note linking in The Crooked Moon.
+
 # 2.3.5
 
 - Improved scene parsing for The Crooked Moon.
