@@ -1,3 +1,7 @@
+# 2.3.7
+
+- Some older adventures would fail to parse.
+
 # 2.3.6
 
 - Improved slug detection/journal note linking in The Crooked Moon.

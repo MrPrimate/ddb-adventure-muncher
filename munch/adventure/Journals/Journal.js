@@ -221,6 +221,7 @@ class Journal {
 
   // returns page Id if element id known in contents
   getPageIdForElementId(elementId) {
+    if (!elementId) return undefined;
     let i = 0;
     let j = 0;
     for (const [key, value] of Object.entries(this.elementIds)) {
