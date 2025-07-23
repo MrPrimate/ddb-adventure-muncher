@@ -1,3 +1,9 @@
+# 2.3.8
+
+- Help improve some scene detection in older adventures.
+- SKT Scene detection improvements.
+- Some older adventures may generate multiple scenes where previously there was one, please report any adventures doing this.
+
 # 2.3.7
 
 - Some older adventures would fail to parse.
