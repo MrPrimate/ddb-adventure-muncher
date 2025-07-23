@@ -174,6 +174,7 @@ class Adventure {
 
     this.replaceLinks = [];
     this.tempHandouts = [];
+    this.forceNewLookups = config.forceNewLookups ?? false;
     this.ids = this.getLookups(false);
 
     // create global factories
@@ -349,7 +350,7 @@ class Adventure {
   getLookups(all = false) {
     logger.info("Getting lookups");
     const lookupFile = path.resolve(__dirname, this.config.configDir, "lookupPages.json");
-    if (fs.existsSync(lookupFile)){
+    if (!this.forceNewLookups && fs.existsSync(lookupFile)){
       const data = FileHelper.loadJSONFile(lookupFile);
       if (all){
         return data ? data : {};

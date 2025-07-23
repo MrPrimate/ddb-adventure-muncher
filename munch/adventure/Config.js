@@ -90,6 +90,7 @@ class Config {
     this.journalInfoDir = (process.env.JOURNAL_DIR) ? path.resolve(__dirname,process.env.JOURNAL_DIR) : path.resolve(__dirname, this.journalsDir);
     this.enhancementEndpoint = (process.env.ENDPOINT) ? process.env.ENDPOINT : Config.ENHANCEMENT_ENDPOINT; 
     this.debug = (process.env.DEBUG) ? process.env.DEBUG : false; 
+    this.forceNewLookups = (process.env.FORCE_NEW_LOOKUPS) ? process.env.FORCE_NEW_LOOKUPS : false;
   
     if (this.debug) {
       logger.debug(`DownloadDir ${this.downloadDir}`); 
@@ -215,7 +216,9 @@ class Config {
     if (fs.existsSync(this.sourceDir)) {
       logger.info(`Checking downloaded version of metadata ${this.ddbVersions.currentVersion}`);
       const downloadedVersionPath = path.resolve(__dirname, path.join(this.sourceDir, "version.txt"));
+      logger.info(`Version file ${downloadedVersionPath}`);
       const existingVersionContent = FileHelper.loadFile(downloadedVersionPath);
+      logger.info("Existing version content", existingVersionContent);
       this.ddbVersions.currentVersion = parseInt(existingVersionContent.trim());
       const latest = await ddb.checkLatestBookVersion(this.book.id, this.data.cobalt, this.ddbVersions.currentVersion);
       logger.info("Latest versions", latest);

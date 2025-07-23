@@ -75,7 +75,8 @@ class SceneParser {
         if (!caption) return;
         // logger.info(document);
         let title = caption.textContent.trim();
-        const playerRef = node.querySelector("a[data-title*='player' i]");
+        const playerAll = Array.from(node.querySelectorAll("a")).find((el) => el.textContent.toLowerCase().includes("player"));
+        const playerRef = node.querySelector("a[data-title*='player' i]") ?? playerAll;
         const unlabeledRef = node.querySelector("a[data-title*='unlabeled' i]");
         const ungriddedRef = node.querySelector("a[data-title*='without' i]");
         const mapRef = title.toLowerCase().startsWith("map") || img.src.includes("/map-")
