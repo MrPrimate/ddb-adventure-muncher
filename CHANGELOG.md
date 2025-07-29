@@ -1,3 +1,7 @@
+# 2.3.9
+
+- Support "The Gunslinger Class: Valda’s Spire of Secrets" and "Cthulhu by Torchlight".
+
 # 2.3.8
 
 - Help improve some scene detection in older adventures.
