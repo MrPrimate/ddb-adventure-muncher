@@ -1187,6 +1187,24 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/49204/418/638829230579961696.jpeg",
     sourceURL: "sources/dnd/modr",
   },
+  {
+    id: 197,
+    name: "TGC",
+    description: "The Gunslinger Class: Valda’s Spire of Secrets",
+    sourceCategoryId: 32,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/49204/548/638829235504613833.jpeg",
+    sourceURL: "sources/dnd/tgc",
+  },
+  {
+    id: 200,
+    name: "CtbT",
+    description: "Cthulhu by Torchlight",
+    sourceCategoryId: 36,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/50117/245/638869963334256166.jpeg",
+    sourceURL: "sources/dnd/ctbt",
+  },
 ];
 
 exports.sources = sources;
