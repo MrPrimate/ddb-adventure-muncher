@@ -1205,6 +1205,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/50117/245/638869963334256166.jpeg",
     sourceURL: "sources/dnd/ctbt",
   },
+  {
+    id: 202,
+    name: "AV",
+    description: "Abomination Vaults",
+    sourceCategoryId: 37,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/50664/299/638895107009815728.jpeg",
+    sourceURL: "sources/dnd/av",
+  },
 ];
 
 exports.sources = sources;

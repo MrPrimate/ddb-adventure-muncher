@@ -22,7 +22,7 @@ class SceneParser {
 
 
   #processFigureScene({ title, node, imageRef, ref, caption, titleType }) {
-    logger.debug(`possibleFigureSceneNodes ${titleType} TITLE: ${title}`, {
+    logger.debug(`processFigureScene ${titleType} TITLE: ${title}`, {
       title,
       imageRef,
       refLink: ref.href,
@@ -69,12 +69,12 @@ class SceneParser {
         let caption = node.querySelector("figcaption");
         let img = node.querySelector("img");
   
-        if (!img || !img.src) return;
+        const imgValid = img && img.src;
         this.tmpCount++;
   
         if (!caption) return;
         // logger.info(document);
-        let title = caption.textContent.trim();
+        let title = caption.textContent.trim().replaceAll("  ", " ");
         const playerAll = Array.from(node.querySelectorAll("a")).find((el) => el.textContent.toLowerCase().includes("player"));
         const playerRef = node.querySelector("a[data-title*='player' i]") ?? playerAll;
         const unlabeledRef = node.querySelector("a[data-title*='unlabeled' i]");
@@ -86,7 +86,7 @@ class SceneParser {
         if (playerRef || unlabeledRef) {
           const ref = playerRef ?? unlabeledRef;
           let titleType = playerRef ? "Player" : "Unlabeled";
-          logger.debug(`possibleFigureSceneNodes ${titleType} TITLE: ${title}`);
+          logger.debug(`processing possibleFigureSceneNodes ${titleType} TITLE: ${title}`);
 
           this.#processFigureScene({
             title,
@@ -97,10 +97,10 @@ class SceneParser {
             titleType,
           });
 
-        } else if (ungriddedRef || mapRef) {
+        } else if (imgValid && (ungriddedRef || mapRef)) {
           const ref = ungriddedRef ?? mapRef;
           let titleType = ungriddedRef ? "Ungridded" : "Map";
-          logger.debug(`possibleFigureSceneNodes no player ${titleType} TITLE: ${title}`);
+          logger.debug(`processing possibleFigureSceneNodes no player ${titleType} TITLE: ${title}`);
           this.#processFigureScene({
             title,
             node,

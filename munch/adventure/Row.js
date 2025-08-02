@@ -18,6 +18,7 @@ class Row {
   doc;
 
   constructor(adventure, row) {
+    logger.info(`Constructing DB Row: ${row.id} : ${row.title}`);
     this.#adventure = adventure;
 
     const linkDetails = { text: row.html, name: `${row.slug}` };
@@ -32,6 +33,8 @@ class Row {
     links.dispose();
 
     this.#frag = new JSDOM(processedText);
+    this._removeMapContainers();
+    this.doc = this.#frag.window.document;
     row.title = this.getTitle(row.title);
 
     const enhancedRowHint = adventure.enhancements.journalHints.find((hint) => 
@@ -170,6 +173,15 @@ class Row {
     }
     this.#frag = null;
     this.doc = null;
+  }
+
+  _removeMapContainers() {
+    logger.log(`Checking for figure.${this.#adventure.bookCode}-map-figure`);
+    const matches = this.#frag.window.document.body.querySelectorAll(`figure.${this.#adventure.bookCode}-map-figure, figure.${this.#adventure.bookCode}--map-figure`);
+    matches.forEach((mapContainer) => {
+      logger.warn("REMOVING QUERY SELECTOR");
+      mapContainer.remove();
+    });
   }
 
 }
