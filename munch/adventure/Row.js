@@ -176,10 +176,10 @@ class Row {
   }
 
   _removeMapContainers() {
-    logger.log(`Checking for figure.${this.#adventure.bookCode}-map-figure`);
+    logger.info(`Checking for figure.${this.#adventure.bookCode}-map-figure`);
     const matches = this.#frag.window.document.body.querySelectorAll(`figure.${this.#adventure.bookCode}-map-figure, figure.${this.#adventure.bookCode}--map-figure`);
     matches.forEach((mapContainer) => {
-      logger.warn("REMOVING QUERY SELECTOR");
+      logger.debug("REMOVING QUERY SELECTOR");
       mapContainer.remove();
     });
   }
