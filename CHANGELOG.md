@@ -1,3 +1,7 @@
+# 2.3.11
+
+- Grim Hollow: Player’s Guide support
+
 # 2.3.10
 
 - Support Abomination Vaults
