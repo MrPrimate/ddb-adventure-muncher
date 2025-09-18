@@ -1,3 +1,7 @@
+# 2.3.12
+
+- Heroes of the Borderlands support
+
 # 2.3.11
 
 - Grim Hollow: Player’s Guide support
