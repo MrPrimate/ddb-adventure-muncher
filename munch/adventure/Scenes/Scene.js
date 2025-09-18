@@ -353,39 +353,54 @@ class Scene {
     }
   }
 
-  // this enriches with enhanced scene data
-  #enhancedScenes() {
-    logger.info(`Checking Enhanced Scene info for ${this.data.name}, with url "${this.image}"`);
-    const disableEnhancedDownloads = (this.adventure.config.disableEnhancedDownloads) 
-      ? this.adventure.config.disableEnhancedDownloads
-      : false;
+  #loadEnhancedScene() {
+    this.enhancedScene = null;
+    logger.info(`Checking Enhanced Scene info for ${this.row.data.sceneName}, with url "${this.image}"`);
 
     const enhancedScene = this.adventure.enhancements.sceneEnhancements.find((scene) => {
       return (scene.img === this.image) && scene.bookCode === this.adventure.config.bookCode;
     });
     if (this.adventure.config.debug) logger.debug("Enhanced Scene:", enhancedScene);
 
-    if (enhancedScene) {
-      logger.info(`Found enhanced scene ${enhancedScene.name} for ${this.data.name} with image ${enhancedScene.img}`);
+    if (enhancedScene) { 
+      this.enhancedScene = enhancedScene;
+    }
+
+    if (enhancedScene?.scene_img) {
+      this.image = `${enhancedScene.scene_img}`;
+      logger.info(`Found replacement image for ${this.row.data.sceneName} with image ${enhancedScene.img} to ${this.enhancedScene.scene_img}`);
+    }
+
+  }
+
+  // this enriches with enhanced scene data
+  #enhancedScenes() {
+    const disableEnhancedDownloads = (this.adventure.config.disableEnhancedDownloads) 
+      ? this.adventure.config.disableEnhancedDownloads
+      : false;
+
+    if (this.enhancedScene) {
+      logger.info(`Found enhanced scene ${this.enhancedScene.name} for ${this.data.name} with image ${this.enhancedScene.img}`);
       // don't adjust names for missing images, we will just use the base
-      if (enhancedScene.adjustName && enhancedScene.adjustName.trim() != "" && !enhancedScene.missing) {
-        this.data.name = enhancedScene.adjustName;
-        this.data.navName = enhancedScene.adjustName;
+      if (this.enhancedScene.adjustName && this.enhancedScene.adjustName.trim() != "" && !this.enhancedScene.missing) {
+        this.data.name = this.enhancedScene.adjustName;
+        this.data.navName = this.enhancedScene.adjustName;
       }
     } else {
       logger.info(`No enhanced scene found for "${this.data.name}" with image "${this.image}"`);
     }
 
-    console.warn(this.row.data);
-
-    if (enhancedScene || this.row.data.missing) {
+    if (this.enhancedScene || this.row.data.missing) {
       // add image if we have not already added
-      const url = enhancedScene?.hiresImg ?? this.row.data.hiresImg;
+      const url = this.enhancedScene?.hiresImg ?? this.row.data.hiresImg;
       logger.info(`Found hires image for "${this.image}" at "${url}"`);
       if (url && !disableEnhancedDownloads 
         && !this.adventure.downloadList.find((d) => d.path === this.image)
       ) {
-        this.adventure.downloadList.push({name: this.data.name, url, path: this.image });
+        const path = this.enhancedScene?.scene_img
+          ? this.enhancedScene.img
+          : this.image;
+        this.adventure.downloadList.push({name: this.data.name, url, path });
       }
     }
   }
@@ -441,11 +456,12 @@ class Scene {
   constructor(adventure, row, image) {
     logger.info(`Generating Scene ${row.data.sceneName}`);
     if (adventure.returns) adventure.returns.statusMessage(`Generating Scene ${row.data.sceneName}`);
-    this.adventure = adventure;
     this.row = row;
+    this.adventure = adventure;
     this.image = image;
+    this.#loadEnhancedScene();
     this.notes = [];
-    this.imagePath = path.join(this.adventure.config.outputDir, image);
+    this.imagePath = path.join(this.adventure.config.outputDir, this.image);
     this.contentChunkId =  (row.data.contentChunkId && row.data.contentChunkId != "")
       ? row.data.contentChunkId
       : null;
@@ -461,7 +477,7 @@ class Scene {
 
     this.data.name = row.data.sceneName;
     this.data.navName = row.data.sceneName.split(":").pop().trim();
-    this.data.background.src = image;
+    this.data.background.src = this.image;
     this.data.sort = Journal.JOURNAL_SORT + parseInt(row.data.id);
 
     // find matching journals and add

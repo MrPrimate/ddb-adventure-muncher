@@ -185,7 +185,7 @@ class SceneParser {
             }};
             this.tmpCount++;
             const playerEntry = new ImageJournal(this.adventure, row, playerRef.href.replace("ddb://image", "."));
-            this.adventure.replaceLinks.push( {html: playerRef.outerHTML, ref: "" });
+            this.adventure.replaceLinks.push({html: playerRef.outerHTML, ref: "" });
             this.document.text.content = this.document.text.content.replace(playerRef.outerHTML, "");
 
             const scene = new Scene(this.adventure, row, playerEntry.data.pages[0].src);
