@@ -1,3 +1,7 @@
+# 2.3.13
+
+- Grim Hollow Campaign Guide
+
 # 2.3.12
 
 - Heroes of the Borderlands support
