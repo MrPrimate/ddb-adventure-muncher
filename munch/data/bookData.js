@@ -1232,6 +1232,15 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/51049/918/638912410729015597.jpeg",
     sourceURL: "sources/dnd/ghpg",
   },
+  {
+    id: 208,
+    name: "GHCG",
+    description: "Grim Hollow: Campaign Guide",
+    sourceCategoryId: 18,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/51623/637/638938109186580209.jpeg",
+    sourceURL: "sources/dnd/ghcg",
+  },
 ];
 
 exports.sources = sources;
