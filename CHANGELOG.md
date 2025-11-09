@@ -1,3 +1,8 @@
+# Next Up
+
+- Support for Stranger Things
+- Support for 2024 Forgotten Realms
+
 # 2.3.13
 
 - Grim Hollow Campaign Guide
