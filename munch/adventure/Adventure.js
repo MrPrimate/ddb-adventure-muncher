@@ -118,7 +118,7 @@ class Adventure {
     // track all tables
     this.tableMatched = [];
     // track all scene images found
-    this.sceneImages = [];
+    this.sceneImages = new Set();
     // enhancements to dl
     this.downloadList = [];
 
@@ -332,7 +332,7 @@ class Adventure {
       logger.info("Generated the following journal assets:");
       logger.info(this.assets);
       logger.info("Generated the following scene images:");
-      logger.info(this.sceneImages);
+      logger.info(Array.from(this.sceneImages));
       if (this.bad.notes.length > 0) {
         logger.error("Bad notes found");
         this.bad.notes.forEach((note) => {

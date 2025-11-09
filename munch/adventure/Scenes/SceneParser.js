@@ -58,8 +58,14 @@ class SceneParser {
     const playerEntry = new ImageJournal(this.adventure, row, imageRef.replace("ddb://image", "."));
     this.adventure.replaceLinks.push( {html: ref.outerHTML, ref: "" });
     this.document.text.content = this.document.text.content.replace(ref.outerHTML, "");
-    const scene = new Scene(this.adventure, row, playerEntry.data.pages[0].src);
-    this.adventure.scenes.push(scene);
+    
+    if (this.adventure.sceneImages.has(playerEntry.data.pages[0].src)) {
+      logger.debug(`Skipping duplicate scene image ${playerEntry.data.pages[0].src}`);
+    }  else {
+      const scene = new Scene(this.adventure, row, playerEntry.data.pages[0].src);
+      this.adventure.sceneImages.add(playerEntry.data.pages[0].src);
+      this.adventure.scenes.push(scene);
+    }
   }
 
   #possibleFigureScenes() {
@@ -85,6 +91,7 @@ class SceneParser {
 
         if (playerRef || unlabeledRef) {
           const ref = playerRef ?? unlabeledRef;
+          if (ref.href.endsWith(".pdf")) return;
           let titleType = playerRef ? "Player" : "Unlabeled";
           logger.debug(`processing possibleFigureSceneNodes ${titleType} TITLE: ${title}`);
 
@@ -188,8 +195,13 @@ class SceneParser {
             this.adventure.replaceLinks.push({html: playerRef.outerHTML, ref: "" });
             this.document.text.content = this.document.text.content.replace(playerRef.outerHTML, "");
 
-            const scene = new Scene(this.adventure, row, playerEntry.data.pages[0].src);
-            this.adventure.scenes.push(scene);
+            if (this.adventure.sceneImages.has(playerEntry.data.pages[0].src)) {
+              logger.debug(`Skipping duplicate scene image ${playerEntry.data.pages[0].src}`);
+            } else {
+              const scene = new Scene(this.adventure, row, playerEntry.data.pages[0].src);
+              this.adventure.sceneImages.add(playerEntry.data.pages[0].src);
+              this.adventure.scenes.push(scene);
+            }
           }
   
           // if (!playerVersion) {
@@ -238,8 +250,11 @@ class SceneParser {
           this.adventure.replaceLinks.push({ html: aNode.outerHTML, ref: "" });
           this.document.text.content = this.document.text.content.replace(aNode.outerHTML, "playerText");
         }
-        if (!this.adventure.sceneImages.includes(journalEntry.data.pages[0].src)) {
+        if (this.adventure.sceneImages.has(journalEntry.data.pages[0].src)) {
+          logger.debug(`Skipping duplicate scene image ${journalEntry.data.pages[0].src}`);
+        } else {
           const scene = new Scene(this.adventure, row, journalEntry.data.pages[0].src);
+          this.adventure.sceneImages.add(journalEntry.data.pages[0].src);
           this.adventure.scenes.push(scene);
         }
       });
@@ -248,7 +263,7 @@ class SceneParser {
 
   #possibleUnknownPlayerLinks() {
     this.possibleUnknownPlayerLinks.forEach((node) => {
-      if (this.adventure.sceneImages.includes(node.href)) return;
+      if (this.adventure.sceneImages.has(node.href)) return;
       const playerNode = node.textContent.toLowerCase().includes("player");
       const unlabeledNode = node.textContent.toLowerCase().includes("unlabeled");
       if (!playerNode && !unlabeledNode) return;
@@ -290,8 +305,11 @@ class SceneParser {
         this.adventure.replaceLinks.push( {html: node.outerHTML, ref: "" });
         this.document.text.content = this.document.text.content.replace(node.outerHTML, "");
       }
-      if (!this.adventure.sceneImages.includes(journalEntry.data.pages[0].src)) {
+      if (this.adventure.sceneImages.has(journalEntry.data.pages[0].src)) {
+        logger.debug(`Skipping duplicate scene image ${journalEntry.data.pages[0].src}`);
+      } else {
         const scene = new Scene(this.adventure, row, journalEntry.data.pages[0].src);
+        this.adventure.sceneImages.add(journalEntry.data.pages[0].src);
         this.adventure.scenes.push(scene);
       }
     });

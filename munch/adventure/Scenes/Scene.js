@@ -533,8 +533,8 @@ class Scene {
     this.#tokens();
     this.#lights();
 
-    this.adventure.sceneImages.push(this.image);
-    const sceneCount = this.adventure.sceneImages.filter(img => img === this.image).length;
+    this.adventure.sceneImages.add(this.image);
+    const sceneCount = Array.from(this.adventure.sceneImages).filter(img => img === this.image).length;
     logger.info(`Generated Scene "${this.data.name}" with "${this.image}" and id "${this.data._id}", (count ${sceneCount})`);
   }
 
