@@ -6,7 +6,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10434/136/637248073409717512.jpeg",
-    sourceURL: "sources/dnd/basic-rules-2014",
+    sourceURL: "sources/dnd/basic-rules-2014"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10435/389/637248131811862290.jpeg",
-    sourceURL: "sources/dnd/phb-2014",
+    sourceURL: "sources/dnd/phb-2014"
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10367/593/637245347063211867.jpeg",
-    sourceURL: "sources/dnd/dmg-2014",
+    sourceURL: "sources/dnd/dmg-2014"
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10434/816/637248105832999293.jpeg",
-    sourceURL: "sources/dnd/mm-2014",
+    sourceURL: "sources/dnd/mm-2014"
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10349/296/637244603965977140.jpeg",
-    sourceURL: "sources/dnd/cos",
+    sourceURL: "sources/dnd/cos"
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10432/68/637247937818392417.jpeg",
-    sourceURL: "sources/dnd/hotdq",
+    sourceURL: "sources/dnd/hotdq"
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10434/616/637248096401764265.jpeg",
-    sourceURL: "sources/dnd/lmop",
+    sourceURL: "sources/dnd/lmop"
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/19/735/636383500945700817.jpeg",
-    sourceURL: "sources/dnd/oota",
+    sourceURL: "sources/dnd/oota"
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10435/524/637248137744435932.jpeg",
-    sourceURL: "sources/dnd/pota",
+    sourceURL: "sources/dnd/pota"
   },
   {
     id: 11,
@@ -96,7 +96,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10435/605/637248141604547323.jpeg",
-    sourceURL: "sources/dnd/rot",
+    sourceURL: "sources/dnd/rot"
   },
   {
     id: 12,
@@ -105,7 +105,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/19/740/636383501361665378.jpeg",
-    sourceURL: "sources/dnd/skt",
+    sourceURL: "sources/dnd/skt"
   },
   {
     id: 13,
@@ -114,7 +114,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10435/793/637248149475504723.jpeg",
-    sourceURL: "sources/dnd/scag",
+    sourceURL: "sources/dnd/scag"
   },
   {
     id: 14,
@@ -123,7 +123,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10449/177/637248652153094716.jpeg",
-    sourceURL: "sources/dnd/tftyp",
+    sourceURL: "sources/dnd/tftyp"
   },
   {
     id: 15,
@@ -132,7 +132,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10449/464/637248679743732719.jpeg",
-    sourceURL: "sources/dnd/vgtm",
+    sourceURL: "sources/dnd/vgtm"
   },
   {
     id: 16,
@@ -141,7 +141,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10449/402/637248674372576676.jpeg",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 17,
@@ -150,7 +150,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10436/4/637248156999902689.jpeg",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 18,
@@ -159,7 +159,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10449/236/637248657347161458.jpeg",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 19,
@@ -168,7 +168,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10449/751/637248705560259195.jpeg",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 20,
@@ -177,7 +177,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10434/246/637248079254127234.jpeg",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 21,
@@ -186,7 +186,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10433/315/637248029897296032.jpeg",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 22,
@@ -195,7 +195,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10449/371/637248671854035769.jpeg",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 25,
@@ -204,7 +204,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10449/339/637248669136195626.jpeg",
-    sourceURL: "sources/dnd/toa",
+    sourceURL: "sources/dnd/toa"
   },
   {
     id: 26,
@@ -213,7 +213,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10349/289/637244603748885696.jpeg",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 27,
@@ -222,7 +222,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10449/803/637248709455777906.jpeg",
-    sourceURL: "sources/dnd/xgte",
+    sourceURL: "sources/dnd/xgte"
   },
   {
     id: 28,
@@ -231,7 +231,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/39/300/636411199124473334.png",
-    sourceURL: "sources/dnd/ttp",
+    sourceURL: "sources/dnd/ttp"
   },
   {
     id: 29,
@@ -240,7 +240,7 @@ const sources = [
     sourceCategoryId: 3,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/100/464/636506973225556542.png",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 31,
@@ -249,7 +249,7 @@ const sources = [
     sourceCategoryId: 2,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 33,
@@ -258,7 +258,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10434/949/637248111148617766.jpeg",
-    sourceURL: "sources/dnd/mtof",
+    sourceURL: "sources/dnd/mtof"
   },
   {
     id: 34,
@@ -267,7 +267,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/319/345/636622116959280867.jpeg",
-    sourceURL: "sources/dnd/ddia-mord",
+    sourceURL: "sources/dnd/ddia-mord"
   },
   {
     id: 35,
@@ -276,7 +276,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/343/499/636632335939805190.jpeg",
-    sourceURL: "sources/dnd/wdh",
+    sourceURL: "sources/dnd/wdh"
   },
   {
     id: 36,
@@ -285,7 +285,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10449/493/637248684031810278.jpeg",
-    sourceURL: "sources/dnd/wdotmm",
+    sourceURL: "sources/dnd/wdotmm"
   },
   {
     id: 37,
@@ -294,7 +294,7 @@ const sources = [
     sourceCategoryId: 8,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10449/715/637248702538222765.jpeg",
-    sourceURL: "sources/dnd/wgte",
+    sourceURL: "sources/dnd/wgte"
   },
   {
     id: 38,
@@ -303,7 +303,7 @@ const sources = [
     sourceCategoryId: 7,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/40948/83/638476689241305817.jpeg",
-    sourceURL: "sources/dnd/ggtr",
+    sourceURL: "sources/dnd/ggtr"
   },
   {
     id: 40,
@@ -312,7 +312,7 @@ const sources = [
     sourceCategoryId: 12,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10434/498/637248091075319276.jpeg",
-    sourceURL: "sources/dnd/llok",
+    sourceURL: "sources/dnd/llok"
   },
   {
     id: 41,
@@ -321,7 +321,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10350/957/637244676648122088.jpeg",
-    sourceURL: "sources/dnd/doip",
+    sourceURL: "sources/dnd/doip"
   },
   {
     id: 42,
@@ -330,7 +330,7 @@ const sources = [
     sourceCategoryId: 16,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/5336/630/636850745475942698.jpeg",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 43,
@@ -339,7 +339,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10370/66/637245493047936420.jpeg",
-    sourceURL: "sources/dnd/gos",
+    sourceURL: "sources/dnd/gos"
   },
   {
     id: 44,
@@ -348,7 +348,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10350/905/637244674570907870.jpeg",
-    sourceURL: "sources/dnd/ai",
+    sourceURL: "sources/dnd/ai"
   },
   {
     id: 47,
@@ -357,7 +357,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10432/12/637247932786703735.jpeg",
-    sourceURL: "sources/dnd/hftt",
+    sourceURL: "sources/dnd/hftt"
   },
   {
     id: 48,
@@ -366,7 +366,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10350/927/637244675832719441.jpeg",
-    sourceURL: "sources/dnd/bgdia",
+    sourceURL: "sources/dnd/bgdia"
   },
   {
     id: 49,
@@ -375,7 +375,7 @@ const sources = [
     sourceCategoryId: 8,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10368/6/637245381196842264.jpeg",
-    sourceURL: "sources/dnd/erftlw",
+    sourceURL: "sources/dnd/erftlw"
   },
   {
     id: 50,
@@ -384,7 +384,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10350/964/637244676927254855.jpeg",
-    sourceURL: "sources/dnd/slw",
+    sourceURL: "sources/dnd/slw"
   },
   {
     id: 51,
@@ -393,7 +393,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10350/959/637244676820916158.jpeg",
-    sourceURL: "sources/dnd/sdw",
+    sourceURL: "sources/dnd/sdw"
   },
   {
     id: 52,
@@ -402,7 +402,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10350/951/637244676535367295.jpeg",
-    sourceURL: "sources/dnd/dc",
+    sourceURL: "sources/dnd/dc"
   },
   {
     id: 53,
@@ -411,7 +411,7 @@ const sources = [
     sourceCategoryId: 16,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10435/702/637248145947271474.jpeg",
-    sourceURL: "sources/dnd/sac",
+    sourceURL: "sources/dnd/sac"
   },
   {
     id: 54,
@@ -420,7 +420,7 @@ const sources = [
     sourceCategoryId: 10,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10367/229/637245316031917098.jpeg",
-    sourceURL: "sources/dnd/ddvram",
+    sourceURL: "sources/dnd/ddvram"
   },
   {
     id: 55,
@@ -429,7 +429,7 @@ const sources = [
     sourceCategoryId: 12,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10434/650/637248098360957592.jpeg",
-    sourceURL: "sources/dnd/lr",
+    sourceURL: "sources/dnd/lr"
   },
   {
     id: 56,
@@ -438,7 +438,7 @@ const sources = [
     sourceCategoryId: 12,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10434/395/637248086063224834.jpeg",
-    sourceURL: "sources/dnd/imr",
+    sourceURL: "sources/dnd/imr"
   },
   {
     id: 57,
@@ -447,7 +447,7 @@ const sources = [
     sourceCategoryId: 12,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10434/743/637248102793792401.jpeg",
-    sourceURL: "sources/dnd/mffv1",
+    sourceURL: "sources/dnd/mffv1"
   },
   {
     id: 58,
@@ -456,7 +456,7 @@ const sources = [
     sourceCategoryId: 16,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10435/899/637248153278056972.jpeg",
-    sourceURL: "",
+    sourceURL: ""
   },
   {
     id: 59,
@@ -465,7 +465,7 @@ const sources = [
     sourceCategoryId: 2,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10367/769/637245363413951140.jpeg",
-    sourceURL: "sources/dnd/egtw",
+    sourceURL: "sources/dnd/egtw"
   },
   {
     id: 60,
@@ -474,7 +474,7 @@ const sources = [
     sourceCategoryId: 12,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10435/68/637248116464990081.jpeg",
-    sourceURL: "sources/dnd/oga",
+    sourceURL: "sources/dnd/oga"
   },
   {
     id: 61,
@@ -483,7 +483,7 @@ const sources = [
     sourceCategoryId: 7,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/10434/885/637248108609488365.jpeg",
-    sourceURL: "sources/dnd/moot",
+    sourceURL: "sources/dnd/moot"
   },
   {
     id: 62,
@@ -492,7 +492,7 @@ const sources = [
     sourceCategoryId: 2,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/9193/755/637200909525723425.jpeg",
-    sourceURL: "sources/dnd/wa",
+    sourceURL: "sources/dnd/wa"
   },
   {
     id: 66,
@@ -501,7 +501,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/11095/550/637278965847502335.jpeg",
-    sourceURL: "sources/dnd/idrotf",
+    sourceURL: "sources/dnd/idrotf"
   },
   {
     id: 67,
@@ -510,7 +510,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/13665/613/637400361423035085.jpeg",
-    sourceURL: "sources/dnd/tcoe",
+    sourceURL: "sources/dnd/tcoe"
   },
   {
     id: 68,
@@ -519,7 +519,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/14917/783/637456355214291364.jpeg",
-    sourceURL: "sources/dnd/cm",
+    sourceURL: "sources/dnd/cm"
   },
   {
     id: 69,
@@ -528,7 +528,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/15973/81/637496917952314322.jpeg",
-    sourceURL: "sources/dnd/vrgtr",
+    sourceURL: "sources/dnd/vrgtr"
   },
   {
     id: 79,
@@ -537,7 +537,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/18223/997/637587419509160992.jpeg",
-    sourceURL: "sources/dnd/twbtw",
+    sourceURL: "sources/dnd/twbtw"
   },
   {
     id: 80,
@@ -546,7 +546,7 @@ const sources = [
     sourceCategoryId: 7,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/18228/52/637587668398315568.jpeg",
-    sourceURL: "sources/dnd/sacoc",
+    sourceURL: "sources/dnd/sacoc"
   },
   {
     id: 81,
@@ -555,7 +555,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/19075/983/637620380256293999.jpeg",
-    sourceURL: "sources/dnd/ftod",
+    sourceURL: "sources/dnd/ftod"
   },
   {
     id: 83,
@@ -564,7 +564,7 @@ const sources = [
     sourceCategoryId: 2,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/20906/943/637695655261542821.jpeg",
-    sourceURL: "sources/dnd/cotn",
+    sourceURL: "sources/dnd/cotn"
   },
   {
     id: 85,
@@ -573,7 +573,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/22937/354/637776964748720726.jpeg",
-    sourceURL: "sources/dnd/motm",
+    sourceURL: "sources/dnd/motm"
   },
   {
     id: 87,
@@ -582,7 +582,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/24454/511/637830510509865265.jpeg",
-    sourceURL: "sources/dnd/jttrc",
+    sourceURL: "sources/dnd/jttrc"
   },
   {
     id: 89,
@@ -591,7 +591,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/25098/972/637854763136224645.jpeg",
-    sourceURL: "sources/dnd/mcv1",
+    sourceURL: "sources/dnd/mcv1"
   },
   {
     id: 90,
@@ -600,7 +600,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/25228/876/637859890823057854.jpeg",
-    sourceURL: "sources/dnd/sais",
+    sourceURL: "sources/dnd/sais"
   },
   {
     id: 91,
@@ -609,7 +609,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/26305/340/637901114717317528.jpeg",
-    sourceURL: "sources/dnd/tvd",
+    sourceURL: "sources/dnd/tvd"
   },
   {
     id: 92,
@@ -618,7 +618,7 @@ const sources = [
     sourceCategoryId: 16,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/26479/568/637907273106559243.jpeg",
-    sourceURL: "sources/dnd/trc",
+    sourceURL: "sources/dnd/trc"
   },
   {
     id: 93,
@@ -627,7 +627,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/26848/192/637920417931102595.jpeg",
-    sourceURL: "sources/dnd/sja",
+    sourceURL: "sources/dnd/sja"
   },
   {
     id: 94,
@@ -636,7 +636,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/26865/226/637921086362458107.jpeg",
-    sourceURL: "sources/dnd/dosi",
+    sourceURL: "sources/dnd/dosi"
   },
   {
     id: 95,
@@ -645,7 +645,7 @@ const sources = [
     sourceCategoryId: 14,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/27777/666/637951679601337771.jpeg",
-    sourceURL: "sources/dnd/sotdq",
+    sourceURL: "sources/dnd/sotdq"
   },
   {
     id: 100,
@@ -654,7 +654,7 @@ const sources = [
     sourceCategoryId: 3,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/34813/11/638216659733422039.jpeg",
-    sourceURL: "sources/dnd/ua",
+    sourceURL: "sources/dnd/ua"
   },
   {
     id: 101,
@@ -663,7 +663,7 @@ const sources = [
     sourceCategoryId: 14,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/30591/814/638054153540284547.jpeg",
-    sourceURL: "sources/dnd/mcv2",
+    sourceURL: "sources/dnd/mcv2"
   },
   {
     id: 102,
@@ -672,7 +672,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/31000/357/638070661674299942.jpeg",
-    sourceURL: "sources/dnd/tod",
+    sourceURL: "sources/dnd/tod"
   },
   {
     id: 103,
@@ -681,7 +681,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/31000/595/638070671792143197.jpeg",
-    sourceURL: "sources/dnd/kftgv",
+    sourceURL: "sources/dnd/kftgv"
   },
   {
     id: 104,
@@ -690,7 +690,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/32269/153/638120143799885947.jpeg",
-    sourceURL: "sources/dnd/tg",
+    sourceURL: "sources/dnd/tg"
   },
   {
     id: 105,
@@ -699,7 +699,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/31678/948/638097617627683009.jpeg",
-    sourceURL: "sources/dnd/p13",
+    sourceURL: "sources/dnd/p13"
   },
   {
     id: 109,
@@ -708,7 +708,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/34541/95/638205353415863412.jpeg",
-    sourceURL: "sources/dnd/tbomt",
+    sourceURL: "sources/dnd/tbomt"
   },
   {
     id: 110,
@@ -717,7 +717,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/33889/811/638179362850507516.jpeg",
-    sourceURL: "sources/dnd/gotg",
+    sourceURL: "sources/dnd/gotg"
   },
   {
     id: 111,
@@ -726,7 +726,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/32967/633/638146612553084319.jpeg",
-    sourceURL: "sources/dnd/lmi",
+    sourceURL: "sources/dnd/lmi"
   },
   {
     id: 112,
@@ -735,7 +735,7 @@ const sources = [
     sourceCategoryId: 12,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/33375/579/638161401159084318.jpeg",
-    sourceURL: "sources/dnd/mpmv1",
+    sourceURL: "sources/dnd/mpmv1"
   },
   {
     id: 113,
@@ -744,7 +744,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/35214/280/638233891719898500.jpeg",
-    sourceURL: "sources/dnd/pbtso",
+    sourceURL: "sources/dnd/pbtso"
   },
   {
     id: 114,
@@ -753,7 +753,7 @@ const sources = [
     sourceCategoryId: 17,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/33644/785/638170881547396926.jpeg",
-    sourceURL: "sources/dnd/paitm",
+    sourceURL: "sources/dnd/paitm"
   },
   {
     id: 115,
@@ -762,7 +762,7 @@ const sources = [
     sourceCategoryId: 15,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/33103/791/638151695270317390.jpeg",
-    sourceURL: "sources/dnd/mcv3",
+    sourceURL: "sources/dnd/mcv3"
   },
   {
     id: 116,
@@ -771,7 +771,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/33298/313/638158863440629290.jpeg",
-    sourceURL: "sources/dnd/dod",
+    sourceURL: "sources/dnd/dod"
   },
   {
     id: 121,
@@ -780,7 +780,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/36103/73/638271109629954129.jpeg",
-    sourceURL: "sources/dnd/gotsf",
+    sourceURL: "sources/dnd/gotsf"
   },
   {
     id: 122,
@@ -789,7 +789,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/35728/82/638254794193165644.jpeg",
-    sourceURL: "sources/dnd/bgg",
+    sourceURL: "sources/dnd/bgg"
   },
   {
     id: 123,
@@ -798,7 +798,7 @@ const sources = [
     sourceCategoryId: 2,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/36235/402/638277146643998518.jpeg",
-    sourceURL: "sources/dnd/tcsr",
+    sourceURL: "sources/dnd/tcsr"
   },
   {
     id: 124,
@@ -807,7 +807,7 @@ const sources = [
     sourceCategoryId: 7,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/36797/447/638301391860014579.jpeg",
-    sourceURL: "sources/dnd/mcv4",
+    sourceURL: "sources/dnd/mcv4"
   },
   {
     id: 125,
@@ -816,7 +816,7 @@ const sources = [
     sourceCategoryId: 17,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/36921/396/638306623652011464.jpeg",
-    sourceURL: "sources/dnd/aatm",
+    sourceURL: "sources/dnd/aatm"
   },
   {
     id: 126,
@@ -825,7 +825,7 @@ const sources = [
     sourceCategoryId: 15,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/36974/217/638309001082198146.jpeg",
-    sourceURL: "sources/dnd/lke",
+    sourceURL: "sources/dnd/lke"
   },
   {
     id: 128,
@@ -834,7 +834,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/37224/332/638319433931865291.jpeg",
-    sourceURL: "sources/dnd/itsi",
+    sourceURL: "sources/dnd/itsi"
   },
   {
     id: 129,
@@ -843,7 +843,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/37957/430/638350488745211592.jpeg",
-    sourceURL: "sources/dnd/hfscm",
+    sourceURL: "sources/dnd/hfscm"
   },
   {
     id: 130,
@@ -852,7 +852,7 @@ const sources = [
     sourceCategoryId: 18,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/38227/385/638361857871304044.jpeg",
-    sourceURL: "sources/dnd/loe",
+    sourceURL: "sources/dnd/loe"
   },
   {
     id: 131,
@@ -861,7 +861,7 @@ const sources = [
     sourceCategoryId: 19,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/38226/811/638361838185130525.jpeg",
-    sourceURL: "sources/dnd/dodr",
+    sourceURL: "sources/dnd/dodr"
   },
   {
     id: 132,
@@ -870,7 +870,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/39768/808/638427681488703113.jpeg",
-    sourceURL: "sources/dnd/veor",
+    sourceURL: "sources/dnd/veor"
   },
   {
     id: 133,
@@ -879,7 +879,7 @@ const sources = [
     sourceCategoryId: 20,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/39695/377/638425036767623471.jpeg",
-    sourceURL: "sources/dnd/hcs",
+    sourceURL: "sources/dnd/hcs"
   },
   {
     id: 135,
@@ -888,7 +888,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/40687/843/638465408127994219.jpeg",
-    sourceURL: "sources/dnd/vnee",
+    sourceURL: "sources/dnd/vnee"
   },
   {
     id: 136,
@@ -897,7 +897,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/40132/872/638442415700463413.jpeg",
-    sourceURL: "sources/dnd/dilct",
+    sourceURL: "sources/dnd/dilct"
   },
   {
     id: 137,
@@ -906,7 +906,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/40544/16/638459335923192808.jpeg",
-    sourceURL: "sources/dnd/qftis",
+    sourceURL: "sources/dnd/qftis"
   },
   {
     id: 139,
@@ -915,7 +915,7 @@ const sources = [
     sourceCategoryId: 21,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/40544/209/638459347386150459.jpeg",
-    sourceURL: "sources/dnd/tob1",
+    sourceURL: "sources/dnd/tob1"
   },
   {
     id: 140,
@@ -924,7 +924,7 @@ const sources = [
     sourceCategoryId: 16,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/41760/824/638512293338393278.jpeg",
-    sourceURL: "sources/dnd/fmrp",
+    sourceURL: "sources/dnd/fmrp"
   },
   {
     id: 142,
@@ -933,7 +933,7 @@ const sources = [
     sourceCategoryId: 22,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/41757/185/638512177128217264.jpeg",
-    sourceURL: "sources/dnd/fm",
+    sourceURL: "sources/dnd/fm"
   },
   {
     id: 143,
@@ -942,7 +942,7 @@ const sources = [
     sourceCategoryId: 22,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/41757/270/638512180375164348.jpeg",
-    sourceURL: "sources/dnd/wel",
+    sourceURL: "sources/dnd/wel"
   },
   {
     id: 145,
@@ -951,7 +951,7 @@ const sources = [
     sourceCategoryId: 24,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/41956/70/638520961158909820.jpeg",
-    sourceURL: "sources/dnd/phb-2024",
+    sourceURL: "sources/dnd/phb-2024"
   },
   {
     id: 146,
@@ -960,7 +960,7 @@ const sources = [
     sourceCategoryId: 24,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/41956/43/638520960645819732.jpeg",
-    sourceURL: "sources/dnd/dmg-2024",
+    sourceURL: "sources/dnd/dmg-2024"
   },
   {
     id: 147,
@@ -969,7 +969,7 @@ const sources = [
     sourceCategoryId: 24,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/41956/55/638520960905139721.jpeg",
-    sourceURL: "sources/dnd/mm-2024",
+    sourceURL: "sources/dnd/mm-2024"
   },
   {
     id: 148,
@@ -978,7 +978,7 @@ const sources = [
     sourceCategoryId: 24,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/43764/970/638599907621721321.jpeg",
-    sourceURL: "sources/dnd/free-rules",
+    sourceURL: "sources/dnd/free-rules"
   },
   {
     id: 149,
@@ -987,7 +987,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/44398/213/638624641190434995.jpeg",
-    sourceURL: "sources/dnd/uhlh",
+    sourceURL: "sources/dnd/uhlh"
   },
   {
     id: 150,
@@ -996,7 +996,7 @@ const sources = [
     sourceCategoryId: 18,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/42333/528/638537169036542469.jpeg",
-    sourceURL: "sources/dnd/ghpp",
+    sourceURL: "sources/dnd/ghpp"
   },
   {
     id: 151,
@@ -1005,7 +1005,7 @@ const sources = [
     sourceCategoryId: 21,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/42930/371/638563983452341674.jpeg",
-    sourceURL: "sources/dnd/boet",
+    sourceURL: "sources/dnd/boet"
   },
   {
     id: 152,
@@ -1014,7 +1014,7 @@ const sources = [
     sourceCategoryId: 21,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/43141/46/638572767902627770.jpeg",
-    sourceURL: "sources/dnd/tfts",
+    sourceURL: "sources/dnd/tfts"
   },
   {
     id: 153,
@@ -1023,7 +1023,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/45054/529/638651161016677547.jpeg",
-    sourceURL: "sources/dnd/soee",
+    sourceURL: "sources/dnd/soee"
   },
   {
     id: 154,
@@ -1032,7 +1032,7 @@ const sources = [
     sourceCategoryId: 25,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/45711/77/638679106266962749.jpeg",
-    sourceURL: "sources/dnd/lotrr",
+    sourceURL: "sources/dnd/lotrr"
   },
   {
     id: 155,
@@ -1041,7 +1041,7 @@ const sources = [
     sourceCategoryId: 22,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/45624/457/638675303929857493.png",
-    sourceURL: "sources/dnd/tir",
+    sourceURL: "sources/dnd/tir"
   },
   {
     id: 156,
@@ -1050,7 +1050,7 @@ const sources = [
     sourceCategoryId: 27,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/46162/28/638699693204142952.jpeg",
-    sourceURL: "sources/dnd/gsb2",
+    sourceURL: "sources/dnd/gsb2"
   },
   {
     id: 157,
@@ -1059,7 +1059,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/46296/545/638705856968286256.jpeg",
-    sourceURL: "sources/dnd/hbtd",
+    sourceURL: "sources/dnd/hbtd"
   },
   {
     id: 158,
@@ -1068,7 +1068,7 @@ const sources = [
     sourceCategoryId: 20,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/46767/260/638727288656465942.jpeg",
-    sourceURL: "sources/dnd/hwt",
+    sourceURL: "sources/dnd/hwt"
   },
   {
     id: 159,
@@ -1077,7 +1077,7 @@ const sources = [
     sourceCategoryId: 19,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/47377/293/638751718810530425.jpeg",
-    sourceURL: "sources/dnd/isotss",
+    sourceURL: "sources/dnd/isotss"
   },
   {
     id: 160,
@@ -1086,7 +1086,7 @@ const sources = [
     sourceCategoryId: 29,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/47916/932/638773269278133135.jpeg",
-    sourceURL: "sources/dnd/ottg",
+    sourceURL: "sources/dnd/ottg"
   },
   {
     id: 161,
@@ -1095,7 +1095,7 @@ const sources = [
     sourceCategoryId: 30,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/47952/374/638774901182361295.jpeg",
-    sourceURL: "sources/dnd/tmom",
+    sourceURL: "sources/dnd/tmom"
   },
   {
     id: 162,
@@ -1104,7 +1104,7 @@ const sources = [
     sourceCategoryId: 31,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/47743/901/638766077908089991.jpeg",
-    sourceURL: "sources/dnd/hgtmh1",
+    sourceURL: "sources/dnd/hgtmh1"
   },
   {
     id: 163,
@@ -1113,7 +1113,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/49845/417/638857756109181610.jpeg",
-    sourceURL: "sources/dnd/drde",
+    sourceURL: "sources/dnd/drde"
   },
   {
     id: 164,
@@ -1122,7 +1122,7 @@ const sources = [
     sourceCategoryId: 32,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/48099/191/638780952881052606.jpeg",
-    sourceURL: "sources/dnd/vsspp",
+    sourceURL: "sources/dnd/vsspp"
   },
   {
     id: 188,
@@ -1131,7 +1131,7 @@ const sources = [
     sourceCategoryId: 33,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/49170/773/638827625542016751.jpeg",
-    sourceURL: "sources/dnd/oswcst",
+    sourceURL: "sources/dnd/oswcst"
   },
   {
     id: 189,
@@ -1140,7 +1140,7 @@ const sources = [
     sourceCategoryId: 33,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/49171/272/638827642097330346.jpeg",
-    sourceURL: "sources/dnd/oswdst",
+    sourceURL: "sources/dnd/oswdst"
   },
   {
     id: 190,
@@ -1149,7 +1149,7 @@ const sources = [
     sourceCategoryId: 33,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/49171/58/638827635248036080.jpeg",
-    sourceURL: "sources/dnd/oswfst",
+    sourceURL: "sources/dnd/oswfst"
   },
   {
     id: 193,
@@ -1158,7 +1158,7 @@ const sources = [
     sourceCategoryId: 34,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/49759/721/638853793265845495.jpeg",
-    sourceURL: "sources/dnd/tcmp1",
+    sourceURL: "sources/dnd/tcmp1"
   },
   {
     id: 194,
@@ -1167,7 +1167,7 @@ const sources = [
     sourceCategoryId: 34,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/49759/762/638853794159826424.jpeg",
-    sourceURL: "sources/dnd/tcmp2",
+    sourceURL: "sources/dnd/tcmp2"
   },
   {
     id: 195,
@@ -1176,7 +1176,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/49597/118/638846444787622576.jpeg",
-    sourceURL: "sources/dnd/bqgt",
+    sourceURL: "sources/dnd/bqgt"
   },
   {
     id: 196,
@@ -1185,7 +1185,7 @@ const sources = [
     sourceCategoryId: 19,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/49204/418/638829230579961696.jpeg",
-    sourceURL: "sources/dnd/modr",
+    sourceURL: "sources/dnd/modr"
   },
   {
     id: 197,
@@ -1194,7 +1194,7 @@ const sources = [
     sourceCategoryId: 32,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/49204/548/638829235504613833.jpeg",
-    sourceURL: "sources/dnd/tgc",
+    sourceURL: "sources/dnd/tgc"
   },
   {
     id: 199,
@@ -1203,7 +1203,7 @@ const sources = [
     sourceCategoryId: 1,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/51322/302/638924470222941154.jpeg",
-    sourceURL: "sources/dnd/hotb",
+    sourceURL: "sources/dnd/hotb"
   },
   {
     id: 200,
@@ -1212,7 +1212,7 @@ const sources = [
     sourceCategoryId: 36,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/50117/245/638869963334256166.jpeg",
-    sourceURL: "sources/dnd/ctbt",
+    sourceURL: "sources/dnd/ctbt"
   },
   {
     id: 202,
@@ -1221,7 +1221,34 @@ const sources = [
     sourceCategoryId: 37,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/50664/299/638895107009815728.jpeg",
-    sourceURL: "sources/dnd/av",
+    sourceURL: "sources/dnd/av"
+  },
+  {
+    id: 203,
+    name: "WtHC",
+    description: "Stranger Things: Welcome to the Hellfire Club",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/51856/545/638947926379928149.jpeg",
+    sourceURL: "sources/dnd/wthc"
+  },
+  {
+    id: 205,
+    name: "FRHoF",
+    description: "Forgotten Realms: Heroes of Faerûn",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/52402/285/638971147782119777.jpeg",
+    sourceURL: "sources/dnd/frhof"
+  },
+  {
+    id: 206,
+    name: "FRAiF",
+    description: "Forgotten Realms: Adventures in Faerûn",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/52402/307/638971148264550068.jpeg",
+    sourceURL: "sources/dnd/fraif"
   },
   {
     id: 207,
@@ -1230,7 +1257,7 @@ const sources = [
     sourceCategoryId: 18,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/51049/918/638912410729015597.jpeg",
-    sourceURL: "sources/dnd/ghpg",
+    sourceURL: "sources/dnd/ghpg"
   },
   {
     id: 208,
@@ -1239,8 +1266,17 @@ const sources = [
     sourceCategoryId: 18,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/51623/637/638938109186580209.jpeg",
-    sourceURL: "sources/dnd/ghcg",
+    sourceURL: "sources/dnd/ghcg"
   },
+  {
+    id: 218,
+    name: "FRTTS",
+    description: "Forgotten Realms: The Tenebrous Stone",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/52183/568/638962183306995243.jpeg",
+    sourceURL: "sources/dnd/frtts"
+  }
 ];
 
 exports.sources = sources;
