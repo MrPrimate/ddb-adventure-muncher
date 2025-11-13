@@ -1269,6 +1269,24 @@ const sources = [
     sourceURL: "sources/dnd/ghcg"
   },
   {
+    id: 216,
+    name: "NF",
+    description: "Netheril’s Fall",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/52041/664/638956184000661571.jpeg",
+    sourceURL: "sources/dnd/nf",
+  },
+  {
+    id: 217,
+    name: "ABoH",
+    description: "Astarion's Book of Hungers",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/52637/468/638981487305001378.jpeg",
+    sourceURL: "sources/dnd/aboh",
+  },
+  {
     id: 218,
     name: "FRTTS",
     description: "Forgotten Realms: The Tenebrous Stone",

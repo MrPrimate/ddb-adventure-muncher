@@ -1,7 +1,10 @@
 # Next Up
 
-- Support for Stranger Things
-- Support for 2024 Forgotten Realms
+# 2.3.14
+
+- Support for Stranger Things (Incomplete scenes)
+- Support for 2024 Forgotten Realms Adventures in Faerun and Players (Players Guide Scenes are incomplete)
+- Support for Astarion's Book of Hungers
 
 # 2.3.13
 
