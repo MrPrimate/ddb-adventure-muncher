@@ -121,8 +121,9 @@ exports.getAdditionsMap = getAdditionsMap;
     logger.info("Exporting monster data...");
 
     // fs.writeFileSync(path.join(this.adventure.config.outputDir,"monster.json"), JSON.stringify(this.data));
-    fs.writeFileSync(path.join(this.destinationPath,`${this.adventure.bookCode}.json`), JSON.stringify(this.sourceData));
-    logger.info(`Exported ${this.sourceData.length} monsters to ${path.join(this.destinationPath,`${this.adventure.bookCode}.json`)}`);
+    const filePath = path.join(this.destinationPath,`${this.adventure.bookCode}.json`);
+    FileHelper.saveJSONFile(this.sourceData, filePath);
+    logger.info(`Exported ${this.sourceData.length} monsters to ${filePath}`);
   }
 
   async process() {
