@@ -96,6 +96,13 @@ if (process.argv[2] === "config") {
       console.warn("Done");
     });
   });
+} else if (process.argv[2] === "clear-cache") {
+  configurator.loadBook(process.argv[3]).then(() => {
+    console.log(configurator);
+    const adventure = new Adventure(configurator);
+    adventure.clearLookups();
+    console.warn(`Clearing cache for ${process.argv[3]}`);
+  });
 }  else if (!process.argv[2] || process.argv[2] == "" ) {
   console.log("Please enter a book code or use 'list' to discover codes");
   exit();

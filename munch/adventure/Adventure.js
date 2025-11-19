@@ -103,10 +103,10 @@ class Adventure {
     };
 
     this.overrides = _.merge(defaultOverrides, overrides);
+    this.id = config.book.id;
     this.bookCode = config.bookCode;
     this.name = config.book.description;
     this.folders = [];
-    
     this.journals = [];
     this.scenes = [];
     this.tables = [];
@@ -365,6 +365,13 @@ class Adventure {
   #saveLookups() {
     const resolvedContent = this.getLookups(true);
     resolvedContent[this.bookCode] = this.ids;
+    const lookupFile = path.resolve(__dirname, this.config.configDir, "lookupPages.json");
+    FileHelper.saveJSONFile(resolvedContent, lookupFile);
+  }
+
+  clearLookups() {
+    const resolvedContent = this.getLookups(true);
+    resolvedContent[this.bookCode] = [];
     const lookupFile = path.resolve(__dirname, this.config.configDir, "lookupPages.json");
     FileHelper.saveJSONFile(resolvedContent, lookupFile);
   }

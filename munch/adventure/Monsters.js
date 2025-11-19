@@ -4,6 +4,8 @@ const { Database } = require("./Database.js");
 
 const fs = require("fs");
 const path = require("path");
+const { FileHelper } = require("./FileHelper.js");
+const { sources } = require("../data/bookData.js");
 
 
 
@@ -16,6 +18,7 @@ class Monsters {
     this.data = [];
     this.sourceData = [];
     this.db = new Database(this.adventure);
+    this.destinationPath = process.env.MONSTER_OUTPUT_FILE ?? this.adventure.config.outputDir;
   }
 
   async load() {
@@ -75,7 +78,36 @@ class Monsters {
     }
   }
 
-  async write() {
+  generateAdditionsMap() {
+    const existingFiles = FileHelper.getFilePathsRecursively(this.destinationPath)
+      .filter((f) => f.endsWith(".json"));
+    
+    let data = "const ADDITIONS_MAP =  {";
+    for (const filePath of existingFiles) {
+      const fileName = path.basename(filePath, ".json");
+      const source = sources.find((s) => s.name.toLowerCase() === fileName.toLowerCase());
+      if (source) {
+        data += `\n  ${source.id}: require("./${fileName}.json"),`;
+      }
+    }
+    data += `
+};
+
+function getAdditionsMap() {
+  return ADDITIONS_MAP;
+}
+
+exports.getAdditionsMap = getAdditionsMap;
+`;
+    FileHelper.saveFile(data, path.join(this.destinationPath,"additions-map.js"));
+    logger.info(`Exported additions map to ${path.join(this.destinationPath,"additions-map.js")}`);
+  }
+
+  write() {
+    if (this.sourceData.length === 0) {
+      logger.info("No monster data to export.");
+      return;
+    }
     if (!fs.existsSync(this.adventure.config.outputDir)) {
       fs.mkdirSync(this.adventure.config.outputDir);
     }
@@ -89,13 +121,15 @@ class Monsters {
     logger.info("Exporting monster data...");
 
     // fs.writeFileSync(path.join(this.adventure.config.outputDir,"monster.json"), JSON.stringify(this.data));
-    fs.writeFileSync(path.join(this.adventure.config.outputDir,`${this.adventure.bookCode}.json`), JSON.stringify(this.sourceData));
+    fs.writeFileSync(path.join(this.destinationPath,`${this.adventure.bookCode}.json`), JSON.stringify(this.sourceData));
+    logger.info(`Exported ${this.sourceData.length} monsters to ${path.join(this.destinationPath,`${this.adventure.bookCode}.json`)}`);
   }
 
   async process() {
     await this.load();
     this.processMonsters();
-    await this.write();
+    this.write();
+    this.generateAdditionsMap();
     this.db.closeDB();
   }
 
