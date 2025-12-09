@@ -1125,6 +1125,15 @@ const sources = [
     sourceURL: "sources/dnd/vsspp"
   },
   {
+    id: 167,
+    name: "SSH",
+    description: "Ruins of Symbaroum: Setting Handbook",
+    sourceCategoryId: 25,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/48763/470/638809277854391620.jpeg",
+    sourceURL: "sources/dnd/ssh"
+  },
+  {
     id: 188,
     name: "OSWCST",
     description: "One-Shot Wonders: 10 Coastal One-Shot Adventures",
@@ -1150,6 +1159,15 @@ const sources = [
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/49171/58/638827635248036080.jpeg",
     sourceURL: "sources/dnd/oswfst"
+  },
+  {
+    id: 191,
+    name: "EFotA",
+    description: "Eberron: Forge of the Artificer",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/52984/257/638995467851050782.jpeg",
+    sourceURL: "sources/dnd/efota"
   },
   {
     id: 193,
@@ -1275,7 +1293,7 @@ const sources = [
     sourceCategoryId: 38,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/52041/664/638956184000661571.jpeg",
-    sourceURL: "sources/dnd/nf",
+    sourceURL: "sources/dnd/nf"
   },
   {
     id: 217,
@@ -1284,7 +1302,7 @@ const sources = [
     sourceCategoryId: 38,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/52637/468/638981487305001378.jpeg",
-    sourceURL: "sources/dnd/aboh",
+    sourceURL: "sources/dnd/aboh"
   },
   {
     id: 218,
@@ -1294,6 +1312,33 @@ const sources = [
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/52183/568/638962183306995243.jpeg",
     sourceURL: "sources/dnd/frtts"
+  },
+  {
+    id: 220,
+    name: "LFL",
+    description: "Lorwyn: First Light",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/52347/650/638969165222381014.jpeg",
+    sourceURL: "sources/dnd/lfl"
+  },
+  {
+    id: 222,
+    name: "FFotR",
+    description: "Fated Flight of the Recluse",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/53004/840/638996385206175334.jpeg",
+    sourceURL: "sources/dnd/ffotr"
+  },
+  {
+    id: 223,
+    name: "OSWHAP",
+    description: "One-Shot Wonders: Holiday Adventure Pack",
+    sourceCategoryId: 33,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/53150/45/639002889856585575.jpeg",
+    sourceURL: "sources/dnd/oswhap"
   }
 ];
 
