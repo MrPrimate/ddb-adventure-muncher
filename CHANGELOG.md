@@ -1,5 +1,9 @@
 # Next Up
 
+# 2.3.15
+
+- Support for One-Shot Wonders: Holiday Adventure Pack, Netheril’s Fall, Eberron: Forge of the Artificer, and Fated Flight of the Recluse.
+
 # 2.3.14
 
 - Support for Stranger Things (Incomplete scenes - coming soon).
