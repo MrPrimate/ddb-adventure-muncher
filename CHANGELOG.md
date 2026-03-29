@@ -1,5 +1,9 @@
 # Next Up
 
+# 2.3.16
+
+- Support for Heliana’s Guide to Monster Hunting: Part 2, Exploring Eberron, The Pugilist Class, Faster, Purple Worm! Everybody Dies, Vol. 1.
+
 # 2.3.15
 
 - Support for One-Shot Wonders: Holiday Adventure Pack, Netheril’s Fall, Eberron: Forge of the Artificer, and Fated Flight of the Recluse.
