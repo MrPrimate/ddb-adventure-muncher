@@ -1339,7 +1339,43 @@ const sources = [
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/53150/45/639002889856585575.jpeg",
     sourceURL: "sources/dnd/oswhap"
-  }
+  },
+  {
+    id: 224,
+    name: "HGtMH2",
+    description: "Heliana’s Guide to Monster Hunting: Part 2",
+    sourceCategoryId: 31,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/55300/534/639085005894216266.jpeg",
+    sourceURL: "sources/dnd/hgtmh2",
+  },
+  {
+    id: 225,
+    name: "ExEb",
+    description: "Exploring Eberron (2024)",
+    sourceCategoryId: 39,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/54336/220/639048037191148332.jpeg",
+    sourceURL: "sources/dnd/exeb",
+  },
+  {
+    id: 228,
+    name: "TPC",
+    description: "The Pugilist Class (2024)",
+    sourceCategoryId: 40,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/54296/216/639046483090649923.jpeg",
+    sourceURL: "sources/dnd/tpc",
+  },
+  {
+    id: 227,
+    name: "FPW1",
+    description: "Faster, Purple Worm! Everybody Dies, Vol. 1",
+    sourceCategoryId: 42,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/54921/214/639069559741302095.jpeg",
+    sourceURL: "sources/dnd/fpw1",
+  },
 ];
 
 exports.sources = sources;
