@@ -973,12 +973,12 @@ const sources = [
   },
   {
     id: 148,
-    name: "free-rules",
-    description: "D&D Free Rules (2024)",
+    name: "br-2024",
+    description: "D&D Beyond Basic Rules",
     sourceCategoryId: 24,
     isReleased: true,
-    avatarURL: "https://www.dndbeyond.com/avatars/43764/970/638599907621721321.jpeg",
-    sourceURL: "sources/dnd/free-rules"
+    avatarURL: "https://www.dndbeyond.com/avatars/48763/493/638809278615622299.jpeg",
+    sourceURL: "sources/dnd/br-2024"
   },
   {
     id: 149,
@@ -1347,7 +1347,7 @@ const sources = [
     sourceCategoryId: 31,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/55300/534/639085005894216266.jpeg",
-    sourceURL: "sources/dnd/hgtmh2",
+    sourceURL: "sources/dnd/hgtmh2"
   },
   {
     id: 225,
@@ -1356,7 +1356,7 @@ const sources = [
     sourceCategoryId: 39,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/54336/220/639048037191148332.jpeg",
-    sourceURL: "sources/dnd/exeb",
+    sourceURL: "sources/dnd/exeb"
   },
   {
     id: 228,
@@ -1365,7 +1365,7 @@ const sources = [
     sourceCategoryId: 40,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/54296/216/639046483090649923.jpeg",
-    sourceURL: "sources/dnd/tpc",
+    sourceURL: "sources/dnd/tpc"
   },
   {
     id: 227,
@@ -1374,8 +1374,17 @@ const sources = [
     sourceCategoryId: 42,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/54921/214/639069559741302095.jpeg",
-    sourceURL: "sources/dnd/fpw1",
+    sourceURL: "sources/dnd/fpw1"
   },
+  {
+    id: 229,
+    name: "GSB1",
+    description: "The Griffon’s Saddlebag: Book One",
+    sourceCategoryId: 27,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/55529/865/639094550191215856.jpeg",
+    sourceURL: "sources/dnd/gsb1"
+  }
 ];
 
 exports.sources = sources;
