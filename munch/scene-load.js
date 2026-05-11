@@ -58,12 +58,47 @@ function getDDBMetaData(conf) {
   return meta;
 }
 
-function updateDDBMetaData(conf, key, update) {
+function updateDDBMetaData(conf, bookCode) {
   const metaPath = path.resolve(conf.sceneInfoDir, "../meta.json");
+  console.log(`Updating meta data scene list for book ${bookCode} into ${metaPath}`);
   const meta = FileHelper.loadJSONFile(metaPath);
-  meta.scenes[key] = update;
+  const sceneInfoDir = path.resolve(conf.sceneInfoDir);
+
+  const bookDir = path.join(sceneInfoDir, bookCode);
+  const sceneFiles = fs.readdirSync(bookDir).filter((f) => f.endsWith(".json"));
+
+  const scenes = [];
+  for (const sceneFile of sceneFiles) {
+    const sceneData = FileHelper.loadJSONFile(path.join(bookDir, sceneFile));
+
+    scenes.push({
+      name: sceneData.name,
+      originalLink: sceneData.flags?.ddb?.originalLink ?? null,
+      filepath: sceneFile.split("/").pop(),
+    });
+  }
+
+  if (!meta.scenes) meta.scenes = {};
+  if (!meta.scenes[bookCode]) meta.scenes[bookCode] = {};
+  meta.scenes[bookCode] = scenes;
   FileHelper.saveJSONFile(meta, metaPath);
+  console.log(`Updated meta.json scene list for ${bookCode} book(s).`);
 }
+
+function updateMetaDataSceneList(conf) {
+  const sceneInfoDir = path.resolve(conf.sceneInfoDir);
+  const bookDirs = fs.readdirSync(sceneInfoDir, { withFileTypes: true })
+    .filter((d) => d.isDirectory())
+    .map((d) => d.name);
+
+  for (const bookCode of bookDirs) {
+    console.log(`Updating meta data for book ${bookCode}`);
+    updateDDBMetaData(conf, bookCode);
+  }
+
+  console.log(`Updated meta.json scene list for ${bookDirs.length} book(s).`);
+}
+
 
 async function importScene(conf, sceneFile) {
 
@@ -604,7 +639,6 @@ async function importScene(conf, sceneFile) {
     console.log("MetaData Update:");
     console.log(sceneUpdateDiff);
     console.log("********************");
-    updateDDBMetaData(conf, metaDataKey, sceneUpdateDiff);
   }
 
 }
@@ -683,3 +717,4 @@ exports.importScene = importScene;
 exports.listSceneIds = listSceneIds;
 exports.actorCheck = actorCheck;
 exports.sceneCheck = sceneCheck;
+exports.updateMetaDataSceneList = updateMetaDataSceneList;

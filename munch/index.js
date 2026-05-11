@@ -67,6 +67,10 @@ if (process.argv[2] === "config") {
     console.log("Imported scene updates");
     exit();
   });
+} else if (process.argv[2] === "update-meta-book") {
+  scene.updateMetaDataSceneList(configurator);
+  console.log("Updating meta data for book scenes");
+  exit();
 } else if (process.argv[2] === "scene-check") {
   scene.sceneCheck(process.argv[3]);
   exit();
