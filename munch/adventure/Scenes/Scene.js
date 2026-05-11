@@ -60,18 +60,39 @@ class Scene {
   }
 
   #journalMatch() {
-    let journalMatch = this.adventure.journals
-      .map((j) =>j.data.pages)
-      .flat()
-      .find((journal) => journal._id === this.row.data.originDocId);
-    if (!journalMatch) {
-      journalMatch = this.adventure.journals
-        .map((j) => j.data.pages)
-        .flat()
-        .find((journalPage) => 
+    // Use page index if available (built after all journals exist), otherwise search directly
+    let journalMatch;
+    if (this.adventure._pageById) {
+      journalMatch = this.adventure._pageById.get(this.row.data.originDocId);
+      if (!journalMatch) {
+        journalMatch = this.adventure._allPagesFlat.find((journalPage) =>
           journalPage.name.includes(this.data.navName)
           && !journalPage.flags.ddb.notes && !journalPage.flags.ddb.img && !journalPage.src
         );
+      }
+    } else {
+      // During row processing, index not yet built - search existing journals
+      for (const j of this.adventure.journals) {
+        for (const page of j.data.pages) {
+          if (page._id === this.row.data.originDocId) {
+            journalMatch = page;
+            break;
+          }
+        }
+        if (journalMatch) break;
+      }
+      if (!journalMatch) {
+        for (const j of this.adventure.journals) {
+          for (const page of j.data.pages) {
+            if (page.name.includes(this.data.navName)
+              && !page.flags.ddb.notes && !page.flags.ddb.img && !page.src) {
+              journalMatch = page;
+              break;
+            }
+          }
+          if (journalMatch) break;
+        }
+      }
     }
     if (journalMatch) this.data.journal = journalMatch._id;
   }
@@ -306,12 +327,12 @@ class Scene {
     }
 
     if (adjustment) {
-      let adjustmentClone = JSON.parse(JSON.stringify(adjustment));
+      let adjustmentClone = structuredClone(adjustment);
       logger.info(`ADJUSTMENTS found named ${adjustmentClone.name} with chunkid "${adjustmentClone.flags.ddb.contentChunkId}" and adjustment ${adjustmentClone.flags.ddb.ddbId} for scene ddbId ${this.data.flags.ddb.ddbId}`);
 
       if (this.adventure.config.data.generateFixes && this.data.flags.ddb.ddbId == adjustmentClone.flags.ddb.ddbId - 1) {
         logger.warn(`GENERATING SCENE ADJUSTMENT FIX for ${adjustmentClone.name} ContentChunkId ${adjustmentClone.flags.ddb.contentChunkId} with id: ${adjustmentClone.flags.ddb.ddbId}`);
-        const adjustmentCopy = JSON.parse(JSON.stringify(adjustmentClone));
+        const adjustmentCopy = structuredClone(adjustmentClone);
         adjustmentCopy.flags.ddb.ddbId = adjustmentClone.flags.ddb.ddbId -1;
         this.adventure.sceneFactory.fixedAdjustments.push(adjustmentCopy);
       } else if (this.data.flags.ddb.ddbId != adjustmentClone.flags.ddb.ddbId) {
@@ -467,7 +488,7 @@ class Scene {
       : null;
 
     // load skeleton
-    this.data = JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "scene.json"))));
+    this.data = structuredClone(require(path.join(this.adventure.overrides.templateDir, "scene.json")));
 
 
     // initial image size guess (used if not set by adjustment)
@@ -534,8 +555,7 @@ class Scene {
     this.#lights();
 
     this.adventure.sceneImages.add(this.image);
-    const sceneCount = Array.from(this.adventure.sceneImages).filter(img => img === this.image).length;
-    logger.info(`Generated Scene "${this.data.name}" with "${this.image}" and id "${this.data._id}", (count ${sceneCount})`);
+    logger.info(`Generated Scene "${this.data.name}" with "${this.image}" and id "${this.data._id}"`);
   }
 
   toJson() {

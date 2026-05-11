@@ -123,7 +123,7 @@ class Journal {
     logger.info(`Starting journal entry creation ${row.data.title}`);
     this.adventure = adventure;
     this.row = row;
-    this.data = JSON.parse(JSON.stringify(require(path.join(this.adventure.overrides.templateDir, "journal-pages.json"))));
+    this.data = structuredClone(require(path.join(this.adventure.overrides.templateDir, "journal-pages.json")));
 
     this._additionalConstruction(options);
 

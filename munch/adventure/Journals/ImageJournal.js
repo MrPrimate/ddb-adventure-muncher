@@ -51,7 +51,7 @@ class ImageJournal extends Journal {
 
   // we check the generated assets to see if this asset is unique (so far)
   isDuplicate() {
-    return this.adventure.assets.includes(this.imageContent);
+    return this.adventure.assets.has(this.imageContent);
   }
 
   _generateJournalEntryShared() {
@@ -65,15 +65,15 @@ class ImageJournal extends Journal {
         });
       }
     }
-    this.adventure.assets.push(this.imageContent);
-    const journalHandoutCount = this.adventure.assets.filter(img => img === this.imageContent).length;
-    logger.debug(`Generated Handout ${this.row.data.name}, "${this.imageContent}", (count ${journalHandoutCount}), Duplicate? ${this.duplicate}`);
+    this.adventure.assets.add(this.imageContent);
+    logger.debug(`Generated Handout ${this.row.data.name}, "${this.imageContent}", (total ${this.adventure.assets.size}), Duplicate? ${this.duplicate}`);
 
   }
 
   _generateJournalEntryWithPages() {
     if (this.duplicate) {
-      const journalMatch =  this.adventure.journals.map((j) => j.data.pages).flat().find((j) => j.src === this.imageContent);
+      const pageList = this.adventure._allPagesFlat || this.adventure.journals.map((j) => j.data.pages).flat();
+      const journalMatch = pageList.find((j) => j.src === this.imageContent);
       this.data.flags.ddb.linkId = journalMatch ? journalMatch._id : null;
       this.data.flags.ddb.linkName = journalMatch ? journalMatch.name : null;
     }

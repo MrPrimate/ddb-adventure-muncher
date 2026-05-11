@@ -98,7 +98,7 @@ class DynamicLinkReplacer {
         const slug = slugMatch[1].replace(/\//g, "").split("#");
         const slug0Ref = slug[0].split("-").filter((x) => x.trim() !== "").join("-").toLowerCase();;
         const refactoredSlug = (slug.length > 1) ? `${slug0Ref}#${slug[1]}` : slug0Ref;
-        const journalPageMap = this.adventure.journals.map((j) => j.data.pages).flat();
+        const journalPageMap = this.adventure._allPagesFlat || this.adventure.journals.map((j) => j.data.pages).flat();
         const journalPage = journalPageMap.find((pageData) => {
           let check = pageData.flags.ddb.slug === refactoredSlug;
           if (!check && slug.length > 1) check = pageData.flags.ddb.slug === slug0Ref;
@@ -112,7 +112,9 @@ class DynamicLinkReplacer {
         if (journalPage) {
           const textPointer = node.textContent.trim() !== "";
           const textValue = `${node.textContent}`;
-          const journalEntry = this.adventure.journals.find((j) => j.data.pages.some((p) => p._id === journalPage._id));
+          const journalEntry = this.adventure._pageToJournal
+            ? this.adventure._pageToJournal.get(journalPage._id)
+            : this.adventure.journals.find((j) => j.data.pages.some((p) => p._id === journalPage._id));
           const slugLink = (slug.length > 2) ? `#${slug[2].replace(/[^\w\d]+/g, "")}` : "";
           const result = `@UUID[JournalEntry.${journalEntry.data._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`;
           replacements.push({

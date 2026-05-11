@@ -64,7 +64,12 @@ class Adventure {
 
       const sceneDataPath = path.resolve(__dirname, sceneDataFile);
       if (fs.existsSync(sceneDataPath)){
-        this.enhancements.sceneAdjustments = this.enhancements.sceneAdjustments.concat(FileHelper.loadJSONFile(sceneDataPath));
+        const items = FileHelper.loadJSONFile(sceneDataPath);
+        if (Array.isArray(items)) {
+          this.enhancements.sceneAdjustments.push(...items);
+        } else {
+          this.enhancements.sceneAdjustments.push(items);
+        }
       }
     });
 
@@ -113,8 +118,8 @@ class Adventure {
     this.cards = [];
     this.actors = [];
 
-    // assets is a list of all images matches in journals for handouts
-    this.assets = [];
+    // assets is a set of all images matches in journals for handouts
+    this.assets = new Set();
     // track all tables
     this.tableMatched = [];
     // track all scene images found
@@ -222,7 +227,23 @@ class Adventure {
       });
   }
 
+  // Build lookup indexes for journal pages. Call after all journals are created.
+  buildPageIndex() {
+    this._pageById = new Map();
+    this._pageToJournal = new Map();
+    this._allPagesFlat = [];
+    for (const journal of this.journals) {
+      for (const page of journal.data.pages) {
+        this._pageById.set(page._id, page);
+        this._pageToJournal.set(page._id, journal);
+        this._allPagesFlat.push(page);
+      }
+    }
+  }
+
   #fixUpAdventure() {
+    // Build page index now that all journals exist
+    this.buildPageIndex();
     logger.info("Looking for missing scenes...");
     this.sceneFactory.generateMissingScenes();
     logger.info("Updating links...");
@@ -330,7 +351,7 @@ class Adventure {
       logger.error(error.stack);
     } finally {
       logger.info("Generated the following journal assets:");
-      logger.info(this.assets);
+      logger.info([...this.assets]);
       logger.info("Generated the following scene images:");
       logger.info(Array.from(this.sceneImages));
       if (this.bad.notes.length > 0) {
@@ -355,16 +376,17 @@ class Adventure {
       if (all){
         return data ? data : {};
       } else {
-        return data && data[this.bookCode] ? data[this.bookCode] : [];
+        const arr = data && data[this.bookCode] ? data[this.bookCode] : [];
+        return IdFactory.arrayToMap(arr);
       }
     } else {
-      return all ? {} : [];
+      return all ? {} : new Map();
     }
   }
 
   #saveLookups() {
     const resolvedContent = this.getLookups(true);
-    resolvedContent[this.bookCode] = this.ids;
+    resolvedContent[this.bookCode] = IdFactory.mapToArray(this.ids);
     const lookupFile = path.resolve(__dirname, this.config.configDir, "lookupPages.json");
     FileHelper.saveJSONFile(resolvedContent, lookupFile);
   }
@@ -554,51 +576,34 @@ class Adventure {
     });
   }
 
-  #hasFolderContent(folder) {
-    // console.warn(folder);
-    const hasContent = this.#foldersWithContent.includes(folder._id);
-    // console.warn({folder, hasContent})
-    if (hasContent) return true;
-  
+  #hasFolderContent(folder, contentFolderIds) {
+    if (contentFolderIds.has(folder._id)) return true;
+
     const childFolders = this.folders.filter((pFolder) => folder._id === pFolder.parent);
-    // console.warn({folder, childFolders})
-    if (!childFolders) return false;
-  
-    const hasChildrenWithContent = childFolders.some((childFolder) => this.folders.includes(childFolder._id));
-    // console.warn({folder, hasChildrenWithContent})
-    if (hasChildrenWithContent) return true;
-  
-    const hasRecursiveContent = childFolders.some((childFolder) => this.#hasFolderContent(childFolder));
-    // console.warn(hasRecursiveContent)
-  
-    return hasRecursiveContent;
-  
+    if (!childFolders || childFolders.length === 0) return false;
+
+    return childFolders.some((childFolder) => this.#hasFolderContent(childFolder, contentFolderIds));
   }
 
-  get #foldersWithContent() {
-    return this.folders.filter((folder) => {
-      const journalCheck = this.journals.some((content) =>
-        folder._id === content.data.folder
-        || this.folderFactory.masterFolders[folder.type]._id == folder._id
-      );
-      if (journalCheck) return true;
-      const sceneCheck = this.scenes.some((content) =>
-        folder._id === content.data.folder
-        || this.folderFactory.masterFolders[folder.type]._id == folder._id
-      );
-      if (sceneCheck) return true;
-      const tableCheck = this.tables.some((content) =>
-        folder._id === content.data.folder
-        || this.folderFactory.masterFolders[folder.type]._id == folder._id
-      );
-      if (tableCheck) return true;
-      if (folder.flags.ddb.specialType === "base") return true;
-    }).map((folder) => folder._id);
+  #computeFoldersWithContent() {
+    // Build a Set of all folder IDs that directly contain content or are master/base folders
+    const contentFolderIds = new Set();
+    const masterFolderIds = new Set(Object.values(this.folderFactory.masterFolders).map(f => f._id));
+
+    for (const folder of this.folders) {
+      if (folder.flags.ddb.specialType === "base") { contentFolderIds.add(folder._id); continue; }
+      if (masterFolderIds.has(folder._id)) { contentFolderIds.add(folder._id); continue; }
+      if (this.journals.some((content) => folder._id === content.data.folder)) { contentFolderIds.add(folder._id); continue; }
+      if (this.scenes.some((content) => folder._id === content.data.folder)) { contentFolderIds.add(folder._id); continue; }
+      if (this.tables.some((content) => folder._id === content.data.folder)) { contentFolderIds.add(folder._id); continue; }
+    }
+    return contentFolderIds;
   }
 
   #outputFolders() {
     logger.info("Exporting required folders...");
-    const finalFolders = this.folders.filter((folder) => this.#hasFolderContent(folder));
+    const contentFolderIds = this.#computeFoldersWithContent();
+    const finalFolders = this.folders.filter((folder) => this.#hasFolderContent(folder, contentFolderIds));
     const foldersData = JSON.stringify(finalFolders);
     fs.writeFileSync(path.join(this.config.outputDir,"folders.json"), foldersData);
   }

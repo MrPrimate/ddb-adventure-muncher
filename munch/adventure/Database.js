@@ -95,12 +95,10 @@ WHERE ContentID = '${contentId}'
   getData(){
     this.loadDB();
     logger.debug(this.db);
-  
-    try {
-      const statement = this.db.prepare(Database.getAllSQL);
-      const rows = statement.all();
 
-      for (const row of rows) {
+    try {
+      // Pass 1: collect row hints only (lightweight, no RenderedHTML retained)
+      for (const row of this.db.prepare(Database.getAllSQL).iterate()) {
         if (row.slug && row.slug != "")
           row.slug = `${row.slug}`.replaceAll("\r\n", "");
         const data = {
@@ -115,12 +113,14 @@ WHERE ContentID = '${contentId}'
           this.adventure.rowHints.parents.push(data);
       }
 
-      for (const row of rows) {
+      // Pass 2: process rows one at a time (streaming, only one row's HTML in memory)
+      for (const row of this.db.prepare(Database.getAllSQL).iterate()) {
+        if (row.slug && row.slug != "")
+          row.slug = `${row.slug}`.replaceAll("\r\n", "");
         const rowObject = new Row(this.adventure, row);
         this.adventure.processRow(rowObject);
       }
-      // this.finishedFunction(statement.length);
-  
+
     } catch (err) {
       logger.error(err);
       logger.error(err.stack);

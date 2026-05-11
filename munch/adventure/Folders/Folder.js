@@ -117,7 +117,7 @@ class Folder {
     this.nestedCall = nestedCall;
     this.row = row;
     const folderJsonPath = path.join(this.adventure.overrides.templateDir, "folder.json");
-    this.data = JSON.parse(JSON.stringify(require(folderJsonPath)));
+    this.data = structuredClone(require(folderJsonPath));
 
     this.data.name = row.data.title;
     this.data.type = type;

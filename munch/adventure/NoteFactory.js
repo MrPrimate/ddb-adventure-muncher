@@ -84,7 +84,7 @@ class NoteFactory {
       if ((tagMatch && !pTag) || stopChunk) {
         let noteRow = {
           doc: new JSDOM(html).window.document,
-          data: JSON.parse(JSON.stringify(row.data)),
+          data: structuredClone(row.data),
         };
         delete noteRow.data.html;
 
