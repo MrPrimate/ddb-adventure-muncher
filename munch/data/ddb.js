@@ -31,6 +31,28 @@ function ddbCall(url, urlencoded) {
   });
 }
 
+function decodeHtmlEntities(obj) {
+  if (typeof obj === "string") {
+    return obj
+      .replace(/&amp;/g, "&")
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">")
+      // eslint-disable-next-line quotes
+      .replace(/&quot;/g, '"')
+      .replace(/&#039;/g, "\u0027")
+      .replace(/&apos;/g, "\u0027");
+  } else if (Array.isArray(obj)) {
+    return obj.map(decodeHtmlEntities);
+  } else if (obj !== null && typeof obj === "object") {
+    const decoded = {};
+    for (const [key, value] of Object.entries(obj)) {
+      decoded[key] = decodeHtmlEntities(value);
+    }
+    return decoded;
+  }
+  return obj;
+}
+
 function getDDBConfig() {
   // const url = "https://www.dndbeyond.com/api/config/json";
   // const options = {
@@ -55,7 +77,14 @@ function getDDBConfig() {
   //       reject(error);
   //     });
   // });
-  return bookData;
+  const result = {
+    sources: bookData.sources.filter(source => source.isReleased
+      && source.sourceURL != ""
+      && ![16].includes(source.sourceCategoryId)
+    ),
+    categories: bookData.categories,
+  };
+  return decodeHtmlEntities(result);
 }
 
 
