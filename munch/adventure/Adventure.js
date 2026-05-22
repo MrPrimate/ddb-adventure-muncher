@@ -18,6 +18,7 @@ const glob = require("glob");
 const os = require("os");
 const _ = require("lodash");
 const { Monsters } = require("./Monsters.js");
+const { MemoryMonitor } = require("./MemoryMonitor.js");
 
 
 class Adventure {
@@ -199,6 +200,7 @@ class Adventure {
     // has returns?
     this.returns = config.returns;
 
+    this.memoryMonitor = new MemoryMonitor();
   }
 
   #mockMonsterCreation() {
@@ -246,10 +248,13 @@ class Adventure {
     this.buildPageIndex();
     logger.info("Looking for missing scenes...");
     this.sceneFactory.generateMissingScenes();
+    this.memoryMonitor.checkpoint("after generateMissingScenes");
     logger.info("Updating links...");
     this.journalFactory.fixUpJournals();
+    this.memoryMonitor.checkpoint("after fixUpJournals");
     logger.info("Fixing up tables...");
     this.tableFactory.fixUpTables();
+    this.memoryMonitor.checkpoint("after fixUpTables");
   }
 
   processRow(row) {
@@ -282,6 +287,7 @@ class Adventure {
 
     // Clean up row to free memory
     row.dispose();
+    this.memoryMonitor.row(row.data.title);
 
   }
 
@@ -311,14 +317,19 @@ class Adventure {
   async processAdventure() {
 
     try {
+      this.memoryMonitor.checkpoint("START");
+
       // reset build directories
       FileHelper.directoryReset(this.config);
       // we download assets first so we can use the image sizes for rough guesses
       await this.downloadAssets();
+      this.memoryMonitor.checkpoint("after downloadAssets");
+
       // get enriched data hints
       await this.loadEnhancements();
       // load up hint data
       this.loadHints();
+      this.memoryMonitor.checkpoint("after loadEnhancements + loadHints");
 
       // the this.processRow will loop through each row and do a first pass
       // for:
@@ -327,24 +338,34 @@ class Adventure {
       // process Tables
       const db = new Database(this);
       db.getData();
+      this.memoryMonitor.checkpoint("after db.getData (all rows processed)");
 
       // we do some second passes to fix up links for generated images, scenes etc
       this.#fixUpAdventure();
+      this.memoryMonitor.checkpoint("after fixUpAdventure (linking)");
 
       // link notes to scenes
       this.sceneFactory.addNotes();
+      this.memoryMonitor.checkpoint("after addNotes");
 
       // generate mock actors
       this.#mockMonsterCreation();
 
       // we copy assets and save out generated json
       await this.downloadEnhancementAssets();
+      this.memoryMonitor.checkpoint("after downloadEnhancementAssets");
+
       this.copyAssets();
+      this.memoryMonitor.checkpoint("after copyAssets");
+
       this.saveJson();
+      this.memoryMonitor.checkpoint("after saveJson");
+
       this.writeFixes();
 
       // save the zip out
       await this.saveZip();
+      this.memoryMonitor.checkpoint("after saveZip");
 
     } catch (error) {
       logger.error(`Error generating adventure: ${error}`);

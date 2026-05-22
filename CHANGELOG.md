@@ -1,5 +1,10 @@
 # Next Up
 
+- Books added up to Northlands release (no scene support yet).
+- Refactor of table relinker which grants:
+- Increased speed.
+- Massively reduced memory use.
+
 # 2.3.16
 
 - Support for Heliana’s Guide to Monster Hunting: Part 2, Exploring Eberron, The Pugilist Class, Faster, Purple Worm! Everybody Dies, Vol. 1.

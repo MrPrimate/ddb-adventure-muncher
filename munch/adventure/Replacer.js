@@ -31,21 +31,47 @@ const SQUARE_MAP = {
   "actions": "actions",
 };
 
+// Helpers for string-based HTML manipulation (no JSDOM needed)
+function stripTags(html) {
+  return html.replace(/<[^>]*>/g, "");
+}
+
+function getAttr(tagHtml, attr) {
+  const match = tagHtml.match(new RegExp(`${attr}="([^"]*)"`));
+  return match ? match[1] : null;
+}
+
+function matchAnchors(html, hrefPattern) {
+  const results = [];
+  const regex = new RegExp(`<a\\s[^>]*?href="${hrefPattern}"[^>]*?>[\\s\\S]*?<\\/a>`, "gi");
+  let match;
+  while ((match = regex.exec(html)) !== null) {
+    const outerHTML = match[0];
+    const href = getAttr(outerHTML, "href");
+    const innerStart = outerHTML.indexOf(">") + 1;
+    const innerEnd = outerHTML.lastIndexOf("</a>");
+    const innerHTML = outerHTML.substring(innerStart, innerEnd);
+    results.push({ outerHTML, href, innerHTML, textContent: stripTags(innerHTML) });
+  }
+  return results;
+}
+
+function escapeRegExp(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+
 class DynamicLinkReplacer {
 
   constructor(adventure, { text, name = null, journal = null}) {
     this.adventure = adventure;
     this.name = name;
-    this.dom = new JSDOM(text).window.document;
+    this.html = text;
     this.journal = journal;
   }
-  
-  // Clean up DOM to free memory
+
   dispose() {
-    if (this.dom && this.dom.defaultView) {
-      this.dom.defaultView.close();
-    }
-    this.dom = null;
+    this.html = null;
   }
 
   process({includeTables = true, includeImages = true} = {}) {
@@ -66,37 +92,42 @@ class DynamicLinkReplacer {
   }
 
   get result() {
-    return this.dom.body.innerHTML;
+    return this.html;
   }
 
   get textContent() {
-    return this.dom.body.textContent;
+    return stripTags(this.html);
   }
 
   replaceTables() {
     this.adventure.tables.forEach((table) => {
-      const tablePoint = this.dom.querySelector(`table[data-content-chunk-id="${table.data.flags.ddb.contentChunkId}"]`);
-      if (tablePoint) {
+      const chunkId = table.data.flags.ddb.contentChunkId;
+      if (!chunkId) return;
+      const tableRegex = new RegExp(
+        `(<table[^>]*data-content-chunk-id="${escapeRegExp(chunkId)}"[^>]*>[\\s\\S]*?<\\/table>)`,
+        "i"
+      );
+      const tableMatch = this.html.match(tableRegex);
+      if (tableMatch) {
         logger.info(`Updating table reference for: ${table.data.name}`);
-        tablePoint.insertAdjacentHTML("afterend", `<div id="table-link">@RollTable[${table.data.name}]{Open RollTable}</div>`);
+        this.html = this.html.replace(
+          tableMatch[0],
+          `${tableMatch[0]}<div id="table-link">@RollTable[${table.data.name}]{Open RollTable}</div>`
+        );
       }
     });
   }
 
-
   moduleReplaceLinks() {
-    const bookSlugRegExp = new RegExp(`ddb:\/\/compendium\/${this.adventure.bookCode}\/([\\w0-9-._#+@/]*)`);
-    const fragmentLinks = this.dom.querySelectorAll(`a[href*=\"ddb://compendium\/${this.adventure.bookCode}"]`);
-    const replacements = [];
+    const bookCode = this.adventure.bookCode;
+    const bookSlugRegExp = new RegExp(`ddb:\\/\\/compendium\\/${escapeRegExp(bookCode)}\\/([\\w0-9\\-._#+@/]*)`);
+    const anchors = matchAnchors(this.html, `ddb:\\/\\/compendium\\/${escapeRegExp(bookCode)}\\/[^"]*`);
 
-    for (let fragmentIndex = 0, fragmentsLength = fragmentLinks.length; fragmentIndex < fragmentsLength; fragmentIndex++) {
-      const node = fragmentLinks[fragmentIndex];
-
-      const slugMatch = node.outerHTML.match(bookSlugRegExp);
+    for (const anchor of anchors) {
+      const slugMatch = anchor.outerHTML.match(bookSlugRegExp);
       if (slugMatch) {
-        // logger.info(slugMatch);
         const slug = slugMatch[1].replace(/\//g, "").split("#");
-        const slug0Ref = slug[0].split("-").filter((x) => x.trim() !== "").join("-").toLowerCase();;
+        const slug0Ref = slug[0].split("-").filter((x) => x.trim() !== "").join("-").toLowerCase();
         const refactoredSlug = (slug.length > 1) ? `${slug0Ref}#${slug[1]}` : slug0Ref;
         const journalPageMap = this.adventure._allPagesFlat || this.adventure.journals.map((j) => j.data.pages).flat();
         const journalPage = journalPageMap.find((pageData) => {
@@ -108,57 +139,32 @@ class DynamicLinkReplacer {
               && pageNameSlug.toLowerCase() === slug[1].toLowerCase().replace(/[^\w\d]+/g, "")
             : true;
           return check && pageCheck;
-        }) ;
+        });
         if (journalPage) {
-          const textPointer = node.textContent.trim() !== "";
-          const textValue = `${node.textContent}`;
+          const textPointer = anchor.textContent.trim() !== "";
+          const textValue = anchor.textContent;
           const journalEntry = this.adventure._pageToJournal
             ? this.adventure._pageToJournal.get(journalPage._id)
             : this.adventure.journals.find((j) => j.data.pages.some((p) => p._id === journalPage._id));
           const slugLink = (slug.length > 2) ? `#${slug[2].replace(/[^\w\d]+/g, "")}` : "";
           const result = `@UUID[JournalEntry.${journalEntry.data._id}.JournalEntryPage.${journalPage._id}${slugLink}]${textPointer ? `{${textValue}}` : ""}`;
-          replacements.push({
-            oldText: node.outerHTML,
-            newText: result
-          });
+          this.html = this.html.replace(anchor.outerHTML, result);
         } else {
-          logger.warn(`NO JOURNAL for "${node.outerHTML}" Slugs: "${slug}" Refactored slug: "${refactoredSlug} slug0Ref: "${slug0Ref}"`);
+          logger.warn(`NO JOURNAL for "${anchor.outerHTML}" Slugs: "${slug}" Refactored slug: "${refactoredSlug} slug0Ref: "${slug0Ref}"`);
         }
       } else {
-        logger.warn(`NO SLUGS FOR ${node.outerHTML}`);
+        logger.warn(`NO SLUGS FOR ${anchor.outerHTML}`);
       }
     }
-    
-    // Batch all innerHTML replacements
-    if (replacements.length > 0) {
-      let html = this.dom.body.innerHTML;
-      for (const replacement of replacements) {
-        html = html.replace(replacement.oldText, replacement.newText);
-      }
-      this.dom.body.innerHTML = html;
-    }
-
   }
 
   foundryCompendiumReplace() {
-    // replace the ddb:// entries with known compendium look ups if we have them
-    // ddb://spells
-    // ddb://magicitems || weapons || adventuring-gear || armor
-    // ddb://monsters
-    // skills
-    // senses
-    // conditions
-    // armor
-    // actions
-    // weaponproperties
-
-    const replacements = [];
-    
     for (const lookupKey in COMPENDIUM_MAP) {
-      const compendiumLinks = this.dom.querySelectorAll(`a[href*=\"ddb://${lookupKey}\/\"]`);
-      const lookupRegExp = new RegExp(`ddb:\/\/${lookupKey}\/([0-9]*)`);
-      compendiumLinks.forEach((node) => {
-        const lookupMatch = node.outerHTML.match(lookupRegExp);
+      const lookupRegExp = new RegExp(`ddb:\\/\\/${escapeRegExp(lookupKey)}\\/([0-9]*)`);
+      const anchors = matchAnchors(this.html, `ddb:\\/\\/${escapeRegExp(lookupKey)}\\/[^"]*`);
+      for (const anchor of anchors) {
+        const lookupMatch = anchor.outerHTML.match(lookupRegExp);
+        if (!lookupMatch) continue;
         const lookupValue = this.adventure.config.data.lookups[COMPENDIUM_MAP[lookupKey]];
         if (lookupValue) {
           if (!this.adventure.required[COMPENDIUM_MAP[lookupKey]].has(String(lookupMatch[1]))) {
@@ -171,76 +177,56 @@ class DynamicLinkReplacer {
             const linkStub = lookupEntry.headerLink ? `#${lookupEntry.headerLink}` : "";
             const link = `${lookupEntry.compendium}.${documentRef}${pageLink}${linkStub}`;
             const linkType = lookupEntry._id ? "UUID[Compendium." : "Compendium[";
-            replacements.push({
-              oldText: node.outerHTML,
-              newText: `@${linkType}${link}]{${node.textContent}}`
-            });
+            this.html = this.html.replace(anchor.outerHTML, `@${linkType}${link}]{${anchor.textContent}}`);
           }
-        } 
-      });
+        }
+      }
     }
 
     for (const lookupKey in SQUARE_MAP) {
-      const compendiumLinks = this.dom.querySelectorAll(`a[href*=\"ddb://${lookupKey}\/\"]`);
-      const lookupRegExp = new RegExp(`ddb:\/\/${lookupKey}\/([0-9]*)`);
-      compendiumLinks.forEach((node) => {
-        const lookupMatch = node.outerHTML.match(lookupRegExp);
+      const lookupRegExp = new RegExp(`ddb:\\/\\/${escapeRegExp(lookupKey)}\\/([0-9]*)`);
+      const anchors = matchAnchors(this.html, `ddb:\\/\\/${escapeRegExp(lookupKey)}\\/[^"]*`);
+      for (const anchor of anchors) {
+        const lookupMatch = anchor.outerHTML.match(lookupRegExp);
+        if (!lookupMatch) continue;
         const lookupValue = this.adventure.config.data.lookups[COMPENDIUM_MAP[lookupKey]];
         if (lookupValue) {
           if (!this.adventure.required[COMPENDIUM_MAP[lookupKey]].has(String(lookupMatch[1]))) {
             this.adventure.required[COMPENDIUM_MAP[lookupKey]].add(String(lookupMatch[1]));
           }
-          // this.dom.body.innerHTML = this.dom.body.innerHTML.replace(node.outerHTML, `[${COMPENDIUM_MAP[lookupKey]}]${node.textContent}[/${COMPENDIUM_MAP[lookupKey]}]`);
-        } 
-      });
-    }
-
-    // Batch all innerHTML replacements to reduce DOM manipulation
-    if (replacements.length > 0) {
-      let html = this.dom.body.innerHTML;
-      for (const replacement of replacements) {
-        html = html.replace(replacement.oldText, replacement.newText);
+        }
       }
-      this.dom.body.innerHTML = html;
     }
 
-    const ddbLinks = this.dom.querySelectorAll("a[href*=\"ddb://compendium\/\"]");
-    const bookSlugRegExp = new RegExp("\"ddb:\/\/compendium\/([\\w-]+)([\/#][\\w0-9\-._#+@/]*)\"");
-  
-    // text = text.replace(compendiumReg, "https://www.dndbeyond.com/sources/");
-    // 'ddb://compendium/idrotf/aurils',
-    // 'ddb://compendium/idrotf/doom',
-    ddbLinks.forEach((node) => {
-      const target = node.outerHTML;
-      const slugMatch = node.outerHTML.match(bookSlugRegExp);
+    const bookSlugRegExp = new RegExp("href=\"ddb:\\/\\/compendium\\/([\\w-]+)([\\/\\#][\\w0-9\\-._#+@/]*)\"");
+    const ddbAnchors = matchAnchors(this.html, "ddb:\\/\\/compendium\\/[^\"]*");
+    for (const anchor of ddbAnchors) {
+      const slugMatch = anchor.outerHTML.match(bookSlugRegExp);
       if (slugMatch) {
-        // logger.info(slugMatch);
         const book = this.adventure.config.ddbConfig.sources.find((source) => source.name.toLowerCase() == slugMatch[1].toLowerCase());
         if (book) {
-          node.setAttribute("href", `https://www.dndbeyond.com/${book.sourceURL}${slugMatch[2]}`);
-          this.dom.body.innerHTML = this.dom.body.innerHTML.replace(target, node.outerHTML);
+          const newHref = `https://www.dndbeyond.com/${book.sourceURL}${slugMatch[2]}`;
+          const newAnchor = anchor.outerHTML.replace(`href="${anchor.href}"`, `href="${newHref}"`);
+          this.html = this.html.replace(anchor.outerHTML, newAnchor);
         } else {
           logger.error(`Unknown book reference found ${slugMatch[1]} in ${slugMatch[0]}`);
         }
       }
-    });
+    }
   }
 
   replaceImageLinks() {
-    // href="ddb://file/lmop/dwarf-cleric.pdf"
-    const reFileLink = new RegExp(`href="ddb:\/\/file\/${this.adventure.bookCode}\/(.*?)"`);
-    const fileLinks = this.dom.querySelectorAll("a[href*=\"ddb://file\/\"]");
-    const replacements = [];
+    const reFileLink = new RegExp("href=\"ddb:\\/\\/file\\/" + escapeRegExp(this.adventure.bookCode) + "\\/(.*?)\"");
+    const anchors = matchAnchors(this.html, "ddb:\\/\\/file\\/[^\"]*");
 
-    fileLinks.forEach((node) =>{
-      const target = `${node.outerHTML}`;
-      const fileMatch = node.outerHTML.match(reFileLink);
+    for (const anchor of anchors) {
+      const fileMatch = anchor.outerHTML.match(reFileLink);
       if (fileMatch) {
-        this.adventure.otherFiles.push({ name: node.inner, fileName: `assets/${fileMatch[1]}` });
+        this.adventure.otherFiles.push({ name: anchor.innerHTML, fileName: `assets/${fileMatch[1]}` });
 
         if (this.journal) {
           const pageData = {
-            name: node.innerHTML,
+            name: anchor.innerHTML,
             content: `assets/${fileMatch[1]}`,
             flags: this.journal.data.flags,
             id: Helpers.randomString(16,"#aA"),
@@ -249,31 +235,15 @@ class DynamicLinkReplacer {
           const page = new Page(pageData);
           this.journal.data.pages.push(page.toObject());
           const link = `@UUID[JournalEntry.${this.journal.data._id}.JournalEntryPage.${page.data._id}]`;
-          replacements.push({
-            oldText: target,
-            newText: link
-          });
+          this.html = this.html.replace(anchor.outerHTML, link);
         } else {
-          node.setAttribute("href", `assets/${fileMatch[1]}`);
-          replacements.push({
-            oldText: target,
-            newText: node.outerHTML
-          });
+          const newAnchor = anchor.outerHTML.replace(`href="${anchor.href}"`, `href="assets/${fileMatch[1]}"`);
+          this.html = this.html.replace(anchor.outerHTML, newAnchor);
         }
 
-        logger.info("fileMatchTarget", {fileMatch, target, inner: node.innerHTML, outer: node.outerHTML});
+        logger.info("fileMatchTarget", {fileMatch, target: anchor.outerHTML, inner: anchor.innerHTML, outer: anchor.outerHTML});
       }
-    });
-    
-    // Batch all innerHTML replacements
-    if (replacements.length > 0) {
-      let html = this.dom.body.innerHTML;
-      for (const replacement of replacements) {
-        html = html.replace(replacement.oldText, replacement.newText);
-      }
-      this.dom.body.innerHTML = html;
     }
-
   }
 
 }
