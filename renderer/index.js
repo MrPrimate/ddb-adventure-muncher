@@ -114,7 +114,7 @@ window.api.receive("config", (config) => {
       outputLocation.innerHTML = config.data.outputDirEnv;
       window.api.send("books", config);
     }
-    versionSupport.innerHTML = "<p><b>Version:</b> v11+ mode. This version of Adventure Muncher recommends D&D 5e System v3.0.0 or higher, and DDB Importer v4.1.0 or higher.</p>";
+    versionSupport.innerHTML = "<p><b>Version:</b> Foundry v13+ mode. This version of Adventure Muncher recommends D&D 5e System v5.0.0 or higher.</p>";
   } else {
     console.warn("No config file!");
     contentLoadMessage.innerHTML = "Config not found";
