@@ -16,5 +16,8 @@
   width: 100%;
 }
 #book-select{
-  width:400px;   
+  width:400px;
+}
+#category-select{
+  width:400px;
 }

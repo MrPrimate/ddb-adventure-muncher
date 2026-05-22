@@ -6,6 +6,8 @@ const setOutputDir = document.getElementById("set-output-dir");
 const patreonLink = document.getElementById("patreon-link");
 const outputLocation = document.getElementById("output-location");
 const bookList = document.getElementById("book-select");
+const categoryList = document.getElementById("category-select");
+let allBooks = [];
 const contentLoadMessage = document.getElementById("config-loader");
 const generateButton = document.getElementById("munch-book");
 const userField = document.getElementById("user");
@@ -79,16 +81,33 @@ window.api.receive("stateMessage", (message) => {
   messageDiv.innerHTML = `<p style="color:${colour};">${message}</p>`;
 });
 
+function resetBookList() {
+  bookList.innerHTML = "<option value=\"0\">Select book:</option>";
+  bookList.disabled = true;
+}
+
 window.api.receive("books", (data) => {
-  data.forEach((book) => {
-    console.log(`${book.bookCode} : ${book.book.description}`);
-    console.log(book);
-  });
-  const bookHtml = data.reduce((html, book) => {
+  allBooks = data;
+  const categories = [...new Set(allBooks.map((b) => b.categoryName))].sort();
+  categoryList.innerHTML = categories.reduce((html, category) => {
+    html += `<option value="${category}">${category}</option>`;
+    return html;
+  }, "<option value=\"0\">Select category:</option>");
+  resetBookList();
+});
+
+categoryList.addEventListener("change", () => {
+  const category = categoryList.value;
+  if (category === "0") {
+    resetBookList();
+    return;
+  }
+  const books = allBooks.filter((book) => book.categoryName === category);
+  bookList.innerHTML = books.reduce((html, book) => {
     html += `<option value="${book.bookCode}">${book.book.description}</option>`;
     return html;
   }, "<option value=\"0\">Select book:</option>");
-  bookList.innerHTML = bookHtml;
+  bookList.disabled = false;
 });
 
 window.api.receive("user", (data) => {

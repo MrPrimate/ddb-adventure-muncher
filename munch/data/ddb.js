@@ -144,6 +144,7 @@ const BAD_IDS = [
 ];
 async function listBooks(cobalt, allBooks=true, noCheck=false) {
   const ddbConfig = getDDBConfig();
+  const categoryMap = new Map(ddbConfig.categories.map((c) => [c.id, c.name]));
   // are we checking to see if the user owns the book, or just displaying the entire list?
   if (noCheck) {
     return ddbConfig.sources.map((b) => {
@@ -153,6 +154,8 @@ async function listBooks(cobalt, allBooks=true, noCheck=false) {
         description: b.description,
         bookCode: b.name.toLowerCase(),
         bookCodeNormal: b.name,
+        sourceCategoryId: b.sourceCategoryId,
+        categoryName: categoryMap.get(b.sourceCategoryId) ?? "Other",
       };
     });
   }
@@ -177,6 +180,8 @@ async function listBooks(cobalt, allBooks=true, noCheck=false) {
           description: book.description,
           bookCode: book.name.toLowerCase(),
           bookCodeNormal: book.name,
+          sourceCategoryId: book.sourceCategoryId,
+          categoryName: categoryMap.get(book.sourceCategoryId) ?? "Other",
         };
       })
   )
