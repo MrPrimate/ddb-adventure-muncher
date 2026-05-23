@@ -76,6 +76,9 @@
       ]
     },
     "win": {
+      "signtoolOptions": {
+        "publisherName": "DDBAdventureMuncher"
+      },
       "target": [
         "nsis"
       ]
