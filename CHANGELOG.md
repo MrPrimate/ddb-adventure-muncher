@@ -1,5 +1,9 @@
 # Next Up
 
+# 2.4.0
+
+- Node and Electron versions bumped.
+- Books are now filtered by category.
 - Books added up to Northlands release (no scene support yet).
 - Refactor of table relinker which grants:
 - Increased speed.
