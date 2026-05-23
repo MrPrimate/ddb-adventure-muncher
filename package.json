@@ -28,7 +28,7 @@
   },
   "build": {
     "appId": "ddb-adventure-munch",
-    "copyright": "Copyright © 2021-2022 Jack Holloway",
+    "copyright": "Copyright © 2021-2026 Jack Holloway",
     "artifactName": "${name}-${version}-${os}-${arch}.${ext}",
     "npmRebuild": false,
     "extraFiles": [
@@ -76,7 +76,6 @@
       ]
     },
     "win": {
-      "publisherName": "DDBAdventureMuncher",
       "target": [
         "nsis"
       ]
@@ -91,7 +90,6 @@
   "license": "MIT",
   "devDependencies": {
     "@electron/notarize": "^3.1.1",
-    "@electron/rebuild": "^4.0.4",
     "electron": "^41.6.1",
     "electron-builder": "^26.10.0",
     "electron-reload": "^1.5.0",
