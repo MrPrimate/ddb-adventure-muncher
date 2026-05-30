@@ -1611,6 +1611,15 @@ const sources = [
     sourceURL: "sources/dnd/dddod"
   },
   {
+    id: 237,
+    name: "BQDD",
+    description: "Borderlands Quest: Dagger Danger!",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/56858/694/639155103860974349.jpeg",
+    sourceURL: "sources/dnd/bqdd",
+  },
+  {
     id: 238,
     name: "NWB",
     description: "Northlands Worldbook",
@@ -1698,7 +1707,7 @@ const sources = [
     sourceCategoryId: 44,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/56054/466/639117855810415949.jpeg",
-    sourceURL: "sources/dnd/logeer"
+    sourceURL: "sources/dnd/logeer",
   },
   {
     id: 287,
