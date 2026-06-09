@@ -1611,13 +1611,22 @@ const sources = [
     sourceURL: "sources/dnd/dddod"
   },
   {
+    id: 232,
+    name: "RtHW",
+    description: "Ravenloft: The Horrors Within",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/56964/690/639159698254960679.jpeg",
+    sourceURL: "sources/dnd/rthw",
+  },
+  {
     id: 237,
     name: "BQDD",
     description: "Borderlands Quest: Dagger Danger!",
     sourceCategoryId: 38,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/56858/694/639155103860974349.jpeg",
-    sourceURL: "sources/dnd/bqdd",
+    sourceURL: "sources/dnd/bqdd"
   },
   {
     id: 238,
@@ -1701,19 +1710,28 @@ const sources = [
     sourceURL: "sources/dnd/dmr6"
   },
   {
+    id: 248,
+    name: "SoS",
+    description: "Shadows of Sithicus",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/56973/884/639160264393583757.jpeg",
+    sourceURL: "sources/dnd/sos",
+  },
+  {
     id: 269,
     name: "LoGEER",
     description: "Legends of Greyhawk: Elemental Evil Rising",
     sourceCategoryId: 44,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/56054/466/639117855810415949.jpeg",
-    sourceURL: "sources/dnd/logeer",
+    sourceURL: "sources/dnd/logeer"
   },
   {
     id: 287,
     name: "LoGTTC",
     description: "Legends of Greyhawk: Tales from Turtleback Cove",
-    sourceCategoryId: 38,
+    sourceCategoryId: 48,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/56596/1/639143144825732718.jpeg",
     sourceURL: "sources/dnd/logttc"
@@ -2106,7 +2124,7 @@ const categories = [
     description: "<p>This contains content from&nbsp;Baldman Games.</p>",
     isHideable: false,
     isEnabledByDefault: false,
-    isToggleable: false,
+    isToggleable: true,
     avatarUrl: ""
   },
   {
@@ -2123,6 +2141,25 @@ const categories = [
     id: 46,
     name: "Subscriber Content",
     description: "<p>This contains content from D&amp;D Beyond Drops, the subscription library.</p>",
+    isHideable: false,
+    isEnabledByDefault: false,
+    isToggleable: true,
+    avatarUrl: ""
+  },
+  {
+    id: 47,
+    name: "Floral Dragons",
+    description:
+      "<p>This contains content from&nbsp;<em>The Field Guide to Floral Dragons</em>, by Hit Point Press</p>",
+    isHideable: false,
+    isEnabledByDefault: false,
+    isToggleable: false,
+    avatarUrl: ""
+  },
+  {
+    id: 48,
+    name: "GameConclave",
+    description: "<p>This contains content from GameConclave.</p>",
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: true,
