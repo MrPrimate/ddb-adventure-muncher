@@ -1,5 +1,9 @@
 # Next Up
 
+# 2.4.1
+
+- Support for Ravenloft and Legends of Greyhawk: Secrets of the Free City
+
 # 2.4.0
 
 - Node and Electron versions bumped.
