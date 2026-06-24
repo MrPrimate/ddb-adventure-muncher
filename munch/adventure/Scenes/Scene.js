@@ -402,8 +402,13 @@ class Scene {
 
     if (this.enhancedScene) {
       logger.info(`Found enhanced scene ${this.enhancedScene.name} for ${this.data.name} with image ${this.enhancedScene.img}`);
-      // don't adjust names for missing images, we will just use the base
-      if (this.enhancedScene.adjustName && this.enhancedScene.adjustName.trim() != "" && !this.enhancedScene.missing) {
+      // Don't rename missing scenes. They share their image with the non-missing
+      // journal scene, so #loadEnhancedScene (which matches by image only) returns
+      // that non-missing enhancement here - applying its adjustName would clobber
+      // the per-variant name already set from the ddb-meta-data adjustment. Guard
+      // on THIS scene being missing, not on the matched enhancement.
+      if (this.enhancedScene.adjustName && this.enhancedScene.adjustName.trim() != ""
+        && !this.enhancedScene.missing && !this.row.data.missing) {
         this.data.name = this.enhancedScene.adjustName;
         this.data.navName = this.enhancedScene.adjustName;
       }
