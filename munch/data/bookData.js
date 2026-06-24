@@ -1735,7 +1735,25 @@ const sources = [
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/56596/1/639143144825732718.jpeg",
     sourceURL: "sources/dnd/logttc"
-  }
+  },
+  {
+    id: 295,
+    name: "LoGSFC",
+    description: "Legends of Greyhawk: Secrets of the Free City",
+    sourceCategoryId: 44,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/57031/403/639162964931864688.jpeg",
+    sourceURL: "sources/dnd/logsfc",
+  },
+  {
+    id: 296,
+    name: "dmr9",
+    description: "Dungeon Masters: Ravenloft - Aberrant Death's Head",
+    sourceCategoryId: 16,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/",
+    sourceURL: "sources/dnd/dmr9",
+  },
 ];
 
 const categories = [

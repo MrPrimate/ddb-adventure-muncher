@@ -132,16 +132,8 @@ async function downloadBook(bookId, cobalt, destination, timeout = 30000) {
   return true;
 }
 
-const BAD_IDS = [
-  31, // CR data, file not found
-  53, // SAC, file not found
-  42, // TMR, file not found
-  29, // UA - no content
-  4, // EE players
-  26, //cos players
-  30, //ddb
-  // 14, // tftyp - appear as individual adventures
-];
+const BAD_IDS = [250,252,253,254,256,257,258,259,260,261,262,263,264,272, 31, 53, 42, 29, 4, 26, 30];
+const BAD_SOURCE_CATEGORIES = [46,28,16,11,9,6];
 async function listBooks(cobalt, allBooks=true, noCheck=false) {
   const ddbConfig = getDDBConfig();
   const categoryMap = new Map(ddbConfig.categories.map((c) => [c.id, c.name]));
@@ -166,12 +158,21 @@ async function listBooks(cobalt, allBooks=true, noCheck=false) {
   // 496802664 is books
   // 953599357 dice sets
   const result = await ddbCall("https://www.dndbeyond.com/mobile/api/v6/available-user-content", urlencoded);
+
+  console.log(`Found ${result.Licenses.length} licenses, filtering for books`);
+  console.log(result.Licenses.filter((f) => f.EntityTypeID == "496802664")
+    .map((block) => block.Entities));
+
   const books = result.Licenses.filter((f) => 
     f.EntityTypeID == "496802664"
   ).map((block) =>
     block.Entities
       .filter((b) => (allBooks || b.isOwned) && !BAD_IDS.includes(b.id))
       .filter((b) => ddbConfig.sources.some((s)  => b.id === s.id && s.isReleased))
+      .filter((e) => {
+        const source = ddbConfig.sources.find((s) => e.id === s.id);
+        return source && !BAD_SOURCE_CATEGORIES.includes(source.categoryID);
+      })
       .map((b) => {
         const book = ddbConfig.sources.find((s)  => b.id === s.id);
         return {
