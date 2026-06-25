@@ -85,7 +85,7 @@ class SceneParser {
         const playerRef = node.querySelector("a[data-title*='player' i]") ?? playerAll;
         const unlabeledRef = node.querySelector("a[data-title*='unlabeled' i]");
         const ungriddedRef = node.querySelector("a[data-title*='without' i]");
-        const mapRef = title.toLowerCase().startsWith("map") || img.src.includes("/map-")
+        const mapRef = title.toLowerCase().startsWith("map") || (imgValid && img.src.includes("/map-"))
           ? node.querySelector("a")
           : null;
 
