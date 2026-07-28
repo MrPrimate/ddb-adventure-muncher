@@ -1,5 +1,7 @@
 # Next Up
 
+- Steinhardt's Guide to the Eldritch Hunt Player Pack
+
 # 2.4.2
 
 - Fixes for Shadows of Sithicus
