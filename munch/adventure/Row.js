@@ -176,12 +176,34 @@ class Row {
   }
 
   _removeMapContainers() {
-    logger.info(`Checking for figure.${this.#adventure.bookCode}-map-figure`);
-    const matches = this.#frag.window.document.body.querySelectorAll(`figure.${this.#adventure.bookCode}-map-figure, figure.${this.#adventure.bookCode}--map-figure`);
-    matches.forEach((mapContainer) => {
-      logger.debug("REMOVING QUERY SELECTOR");
-      mapContainer.remove();
+    // DDB map bars are <figure class="<prefix>-map-figure"> or "<prefix>--map-figure".
+    // The prefix is normally the book code, but not always, so match on the suffix.
+    const MAP_FIGURE_CLASS = /(?:^|-)map-figure$/i;
+    const body = this.#frag.window.document.body;
+    const figures = body.querySelectorAll("figure[class]");
+    const removed = [];
+
+    figures.forEach((figure) => {
+      const match = Array.from(figure.classList).find((klass) => MAP_FIGURE_CLASS.test(klass));
+      if (!match) return;
+      removed.push(match);
+      figure.remove();
     });
+
+    // The map bar's nav wrapper, always this exact class.
+    body.querySelectorAll("div.map-nav-container").forEach((navContainer) => {
+      removed.push("map-nav-container");
+      navContainer.remove();
+    });
+
+    if (removed.length > 0) {
+      logger.info(`Removed ${removed.length} map bar element(s): ${[...new Set(removed)].join(", ")}`);
+    } else {
+      logger.debug("No map bar elements found", {
+        bookCode: this.#adventure.bookCode,
+        figureClasses: [...new Set(Array.from(figures).map((f) => f.className))],
+      });
+    }
   }
 
 }

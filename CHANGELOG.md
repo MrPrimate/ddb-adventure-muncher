@@ -1,6 +1,9 @@
 # Next Up
 
+- Book Support upto and including Arcana Unleashed 
 - Steinhardt's Guide to the Eldritch Hunt Player Pack
+- Map bar removal no longer relies on the book code matching the map figure's class prefix, so map bars are stripped from all books.
+- Map bar nav containers are now removed from journals.
 
 # 2.4.2
 
