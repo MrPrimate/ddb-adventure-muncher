@@ -2088,10 +2088,37 @@ const sources = [
     sourceURL: "",
   },
   {
+    id: 291,
+    name: "DMLS",
+    description: "Dungeon Masters: Living Spells Play-Along Pack",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/57636/77/639190372394674440.jpeg",
+    sourceURL: "sources/dnd/dmls",
+  },
+  {
+    id: 292,
+    name: "DMAU",
+    description: "Dungeon Masters: Arcana Unleashed Play-Along Pack",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/57660/6/639191453758170826.jpeg",
+    sourceURL: "sources/dnd/dmau",
+  },
+  {
+    id: 293,
+    name: "FGFD",
+    description: "The Field Guide to Floral Dragons",
+    sourceCategoryId: 47,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/58073/476/639210382668485800.jpeg",
+    sourceURL: "sources/dnd/fgfd",
+  },
+  {
     id: 294,
     name: "DDBD-626",
     description: "D&amp;D Beyond Drops - June 2026",
-    sourceCategoryId: 46,
+    sourceCategoryId: 16,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/",
     sourceURL: "sources/dnd/ddbd",
@@ -2106,13 +2133,40 @@ const sources = [
     sourceURL: "sources/dnd/logsfc",
   },
   {
-    id: 296,
-    name: "dmr9",
-    description: "Dungeon Masters: Ravenloft - Aberrant Death's Head",
+    id: 300,
+    name: "FoEQ",
+    description: "Frontiers of Eberron: Quickstone",
+    sourceCategoryId: 39,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/58036/14/639208513073279563.jpeg",
+    sourceURL: "sources/dnd/foeq",
+  },
+  {
+    id: 301,
+    name: "AU",
+    description: "Arcana Unleashed",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/58590/215/639234955044123715.jpeg",
+    sourceURL: "sources/dnd/au",
+  },
+  {
+    id: 302,
+    name: "AUD",
+    description: "Arcana Unleashed: Deadfall",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/58590/220/639234955418000596.jpeg",
+    sourceURL: "sources/dnd/aud",
+  },
+  {
+    id: 303,
+    name: "AUMP",
+    description: "Arcana Unleashed Digital Map Pack",
     sourceCategoryId: 16,
     isReleased: true,
     avatarURL: "https://www.dndbeyond.com/avatars/",
-    sourceURL: "sources/dnd/dmr9",
+    sourceURL: "",
   },
   {
     id: 304,
@@ -2132,6 +2186,51 @@ const sources = [
     avatarURL: "https://www.dndbeyond.com/avatars/57412/510/639180190136593932.jpeg",
     sourceURL: "sources/dnd/tfj",
   },
+  {
+    id: 307,
+    name: "RWG",
+    description: "Red Wizards’ Gambit",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/58590/243/639234956685776363.jpeg",
+    sourceURL: "sources/dnd/rwg",
+  },
+  {
+    id: 308,
+    name: "DDBD-0826",
+    description: "D&amp;D Beyond Drops: Sewer Sticker Pack",
+    sourceCategoryId: 46,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/",
+    sourceURL: "sources/dnd/ddbd",
+  },
+  {
+    id: 309,
+    name: "LoGSoS",
+    description: "Legends of Greyhawk: Saviors of Safeton",
+    sourceCategoryId: 49,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/58025/662/639207929929442877.jpeg",
+    sourceURL: "sources/dnd/logsos",
+  },
+  {
+    id: 310,
+    name: "JIM",
+    description: "Jimothy",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/57908/428/639202577925195244.jpeg",
+    sourceURL: "sources/dnd/jim",
+  },
+  {
+    id: 314,
+    name: "DPPAP",
+    description: "Dungeon Masters: Deadfall Press Play-Along Pack",
+    sourceCategoryId: 38,
+    isReleased: true,
+    avatarURL: "https://www.dndbeyond.com/avatars/58114/864/639212260187681012.png",
+    sourceURL: "sources/dnd/dppap",
+  },
 ];
 
 const categories = [
@@ -2143,7 +2242,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 2,
@@ -2152,7 +2251,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: "https://www.dndbeyond.com/avatars/105/174/636512853628516966.png"
+    avatarUrl: "https://www.dndbeyond.com/avatars/105/174/636512853628516966.png",
   },
   {
     id: 3,
@@ -2162,7 +2261,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: false,
-    avatarUrl: "https://www.dndbeyond.com/avatars/110/171/636516074887091041.png"
+    avatarUrl: "https://www.dndbeyond.com/avatars/110/171/636516074887091041.png",
   },
   {
     id: 6,
@@ -2171,7 +2270,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: false,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 7,
@@ -2180,7 +2279,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: false,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 8,
@@ -2189,7 +2288,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: false,
-    avatarUrl: "https://www.dndbeyond.com/avatars/2588/861/636681435608150525.png"
+    avatarUrl: "https://www.dndbeyond.com/avatars/2588/861/636681435608150525.png",
   },
   {
     id: 9,
@@ -2198,7 +2297,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: false,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 10,
@@ -2207,7 +2306,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 11,
@@ -2217,7 +2316,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: false,
-    avatarUrl: "https://www.dndbeyond.com/avatars/11008/904/637274855809570341.png"
+    avatarUrl: "https://www.dndbeyond.com/avatars/11008/904/637274855809570341.png",
   },
   {
     id: 12,
@@ -2227,7 +2326,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: false,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 13,
@@ -2236,7 +2335,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: false,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 14,
@@ -2245,7 +2344,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: false,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 15,
@@ -2254,7 +2353,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 16,
@@ -2264,7 +2363,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: false,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 17,
@@ -2273,7 +2372,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: false,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 18,
@@ -2282,7 +2381,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 19,
@@ -2292,7 +2391,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 20,
@@ -2301,7 +2400,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 21,
@@ -2310,7 +2409,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 22,
@@ -2319,7 +2418,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 23,
@@ -2329,7 +2428,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 24,
@@ -2339,7 +2438,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 25,
@@ -2348,7 +2447,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 26,
@@ -2358,7 +2457,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 27,
@@ -2367,7 +2466,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 28,
@@ -2376,7 +2475,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: true,
     isToggleable: false,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 29,
@@ -2385,7 +2484,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 30,
@@ -2394,7 +2493,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 31,
@@ -2403,17 +2502,17 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 32,
     name: "Mage Hand Press",
     description:
-      "<p><span style=\"color: rgba(58, 70, 72, 1); font-family: &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 12.012px; font-style: normal; font-weight: 400; text-align: left; text-indent: 0; text-transform: none; display: inline !important; float: none\">This contains content from Mage Hand Press.</span></p>",
+      "<p><span style=\"color: rgba(58, 70, 72, 1); font-family: &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 12.012px; font-style: normal; font-weight: 400; text-align: left; text-indent: 0; text-transform: none; background-color: rgba(255, 255, 255, 1); display: inline !important; float: none\">This contains content from Mage Hand Press.</span></p>",
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 33,
@@ -2422,7 +2521,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 34,
@@ -2431,7 +2530,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 35,
@@ -2440,7 +2539,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: true,
     isToggleable: false,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 36,
@@ -2449,7 +2548,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 37,
@@ -2458,7 +2557,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 38,
@@ -2467,7 +2566,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 39,
@@ -2476,7 +2575,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 40,
@@ -2485,7 +2584,7 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 41,
@@ -2494,7 +2593,7 @@ const categories = [
     isHideable: true,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 42,
@@ -2503,11 +2602,11 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: true,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 43,
-    name: "Monkey DM",
+    name: "MonkeyDM",
     description: "<p>This contains content from MonkeyDM.</p>",
     isHideable: true,
     isEnabledByDefault: true,
@@ -2521,36 +2620,35 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 45,
-    name: "Vampire: The Dark Ages",
-    description:
-      "<p>This contains content from&nbsp;<em>Vampire: The Dark Ages</em>.</p>\n<div id=\"tooltip-tag-f3a23x80\">&nbsp;</div>",
-    isHideable: false,
-    isEnabledByDefault: false,
-    isToggleable: false,
-    avatarUrl: ""
+    name: "Vampire: The Masquerade",
+    description: "<p>This contains content from <em>Vampire: The Masquerade</em>.</p>",
+    isHideable: true,
+    isEnabledByDefault: true,
+    isToggleable: true,
+    avatarUrl: "",
   },
   {
     id: 46,
-    name: "Subscriber Content",
+    name: "D&amp;D Beyond Drops",
     description: "<p>This contains content from D&amp;D Beyond Drops, the subscription library.</p>",
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: true,
-    avatarUrl: ""
+    avatarUrl: "",
   },
   {
     id: 47,
     name: "Floral Dragons",
     description:
       "<p>This contains content from&nbsp;<em>The Field Guide to Floral Dragons</em>, by Hit Point Press</p>",
-    isHideable: false,
-    isEnabledByDefault: false,
-    isToggleable: false,
-    avatarUrl: ""
+    isHideable: true,
+    isEnabledByDefault: true,
+    isToggleable: true,
+    avatarUrl: "",
   },
   {
     id: 48,
@@ -2559,8 +2657,26 @@ const categories = [
     isHideable: false,
     isEnabledByDefault: false,
     isToggleable: true,
-    avatarUrl: ""
-  }
+    avatarUrl: "",
+  },
+  {
+    id: 49,
+    name: "West Coast Adventurers Guild",
+    description: "<p>This contains content from West Coast Adventurers Guild.</p>",
+    isHideable: false,
+    isEnabledByDefault: false,
+    isToggleable: false,
+    avatarUrl: "",
+  },
+  {
+    id: 50,
+    name: "KibblesTasty",
+    description: "<p>This contains content from KibblesTasty.</p>",
+    isHideable: false,
+    isEnabledByDefault: false,
+    isToggleable: false,
+    avatarUrl: "",
+  },
 ];
 
 exports.sources = sources;
